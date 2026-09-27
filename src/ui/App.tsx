@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { getFormat, getRegion, getRegions, getTemplate, makePlate } from '../core/registry';
 import { createRng } from '../core/random';
+import { regenerateParts } from '../core/lettering';
 import type { Parts, Plate } from '../core/types';
 import { BatchView } from './BatchView';
 import { download, fileSafe, serializeSvg, svgToPngBlob } from './exporting';
@@ -59,7 +60,7 @@ export function App() {
   }, []);
 
   const regenerate = useCallback(() => {
-    setParts(format.generate(createRng()));
+    setParts((previous) => regenerateParts(format, previous, createRng()));
     setSpin((n) => n + 1);
   }, [format]);
 

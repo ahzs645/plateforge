@@ -1,4 +1,5 @@
 import type { Parts, PlateFormat, Region } from '../../core/types';
+import { withLettering } from '../../core/lettering';
 import type { Rng } from '../../core/random';
 import { BC_RECONSTRUCTION_NOTE, BC_SOURCES, BC_YEARS, bcYear, type BcYear } from './bc-data';
 
@@ -68,7 +69,7 @@ function makeFormat(recipe: BcYear, dashless = false): PlateFormat {
     fields: [
       { key: 'serial', label: 'Plate serial', maxLength: 7, placeholder: dashless ? '1877' : recipe.sample },
       ...(hasTab ? [{ key: 'tabSerial', label: 'Renewal tab number (optional)', maxLength: 6, placeholder: 'Separate from plate serial' }] : []),
-      { key: 'finish', label: 'Rendering', options: [{ value: 'flat', label: 'Flat / editable SVG' }, { value: 'embossed', label: 'Subtle embossed preview' }] },
+      { key: 'finish', label: 'Rendering', preserveOnGenerate: true, options: [{ value: 'flat', label: 'Flat / editable SVG' }, { value: 'embossed', label: 'Subtle embossed preview' }] },
     ],
     design: { year: recipe.year, dashless },
     generate: (rng): Parts => ({ serial: dashless ? String(rng.int(1000, 1999)) : generateSerial(recipe, rng),
@@ -87,6 +88,6 @@ function makeFormat(recipe: BcYear, dashless = false): PlateFormat {
 export const britishColumbia: Region = {
   id: 'ca-bc', name: 'British Columbia', code: 'BC', group: 'Canada', flag: '🇨🇦',
   template: 'bc-historical', design: { year: 1940 },
-  formats: [...BC_YEARS.map((year) => makeFormat(year)), makeFormat(bcYear(1962), true)],
+  formats: [...BC_YEARS.map((year) => makeFormat(year)), makeFormat(bcYear(1962), true)].map(withLettering),
   notes: BC_RECONSTRUCTION_NOTE,
 };

@@ -1,3 +1,4 @@
+import { LetteringPicker } from './LetteringPicker';
 import type { Parts, PlateFormat, Region } from '../core/types';
 import { AlertIcon, CheckIcon, DownloadIcon } from './icons';
 
@@ -26,6 +27,10 @@ export function Inspector({ region, format, parts, onChange, onExport, onCopyLin
         </header>
         <div className="fields">
           {format.fields.map((field) => {
+            if (field.key === 'lettering') return (
+              <LetteringPicker key={field.key} field={field} value={parts.lettering ?? 'default'}
+                onChange={(lettering) => onChange({ ...parts, lettering })} />
+            );
             const id = `field-${field.key}`;
             const wide = !field.options && (field.maxLength ?? 12) > 6 && format.fields.length > 1;
             return (

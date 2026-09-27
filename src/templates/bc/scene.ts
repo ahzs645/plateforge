@@ -1,5 +1,11 @@
 /** Pure SVG scene builder. React and standalone previews use the SAME primitives.
- * No fonts or source photographs are embedded here. Text remains <text>. */
+ * No fonts or source photographs are embedded here. Default inscriptions remain
+ * <text>; optional procedural serial lettering is emitted as paths. */
+import { isLetteringType, letteringMetadata } from '../../core/lettering';
+import { buildLettering, supportsLettering } from '../lettering';
+import { node as n, serializeSvgNode as serializeBcNode, type SvgNode } from '../svg-scene';
+export { escapeXml, serializeSvgNode as serializeBcNode } from '../svg-scene';
+export type { SvgNode } from '../svg-scene';
 import type { Parts } from '../../core/types';
 import { bcYear, BC_SOURCES, BC_RECONSTRUCTION_NOTE } from '../../regions/canada/bc-data';
 import { compactBcSerial, displayBcSerial } from '../../regions/canada/bc';
@@ -12,12 +18,6 @@ export interface BcDesign {
   ink?: string;
   serialFontFamily?: string;
 }
-export interface SvgNode {
-  tag: string;
-  attrs: Record<string, string | number>;
-  children: Array<SvgNode | string>;
-}
-const n = (tag: string, attrs: SvgNode['attrs'] = {}, ...children: SvgNode['children']): SvgNode => ({ tag, attrs, children });
 const FAMILY = '"Barlow Condensed", "Arial Narrow", sans-serif';
 
 export function bcGeometry(design: BcDesign, parts: Parts = {}) {
@@ -59,6 +59,10 @@ export function buildBcScene(design: BcDesign, parts: Parts, scope = 'bc-plate')
   const ink = typeof design.ink === 'string' ? design.ink : r.ink;
   const background = typeof design.background === 'string' ? design.background : r.background;
   const serial = displayBcSerial(parts.serial ?? '', design.dashless === true);
+  const vectorType = isLetteringType(parts.lettering) && supportsLettering(serial) ? parts.lettering : null;
+  const serialLabel = (value: string, x: number, y: number, size: number, width: number, color: string, role: string, extra: SvgNode['attrs']): SvgNode => vectorType
+    ? buildLettering({ text: value, type: vectorType, centerX: x, baseline: y, height: size * 0.76, maxWidth: width, ink: color, role })
+    : label(value, x, y, size, width, color, role, extra);
   const embossed = parts.finish === 'embossed';
   const totem = r.layout === 'totem-base';
   const standard = r.layout === 'annual-standard';
@@ -94,21 +98,21 @@ export function buildBcScene(design: BcDesign, parts: Parts, scope = 'bc-plate')
     'data-die-profile': standard || centenary ? 'oakalla-block-proxy' : 'oakalla-rounded-proxy',
   };
   if (totem) {
-    inscriptions.push(label(serial, (w - 99) / 2, 96, 104, w - 121, ink, 'serial', serialFont));
+    inscriptions.push(serialLabel(serial, (w - 99) / 2, 96, 104, w - 121, ink, 'serial', serialFont));
     inscriptions.push(label('BRITISH COLUMBIA', (w - 99) / 2, 122, 25, w - 121, ink, 'province', {}, true));
     inscriptions.push(label('5·2', w - 47, 43, 39, 76, ink, 'base-year', {}, true));
     inscriptions.push(n('use', { href: `#${id}-totem`, x: w - 88, y: 48, width: 79, height: 81, color: ink, 'data-role': 'base-emblem', 'data-accuracy': 'approximate' }));
   } else if (centenary) {
     inscriptions.push(label('BRITISH COLUMBIA', w / 2, 28, 24, w - 49, ink, 'province', {}, true));
-    inscriptions.push(label(serial, w / 2, 111, 109, w - 22, ink, 'serial', serialFont));
+    inscriptions.push(serialLabel(serial, w / 2, 111, 109, w - 22, ink, 'serial', serialFont));
     inscriptions.push(label('1858   CENTENARY   1958', w / 2, 139, 21, w - 19, ink, 'centenary', {}, true));
   } else if (standard) {
-    inscriptions.push(label(serial, w / 2, 109, 118, w - 30, ink, 'serial', serialFont));
+    inscriptions.push(serialLabel(serial, w / 2, 109, 118, w - 30, ink, 'serial', serialFont));
     inscriptions.push(label('BRITISH COLUMBIA', (w - 54) / 2 + 6, 133, 23, w - 73, ink, 'province', {}, true));
     inscriptions.push(label(String(r.year).slice(2), w - 27, 134, 30, 34, ink, 'base-year'));
     if (r.year > 1957) inscriptions.push(n('circle', { cx: w - 51, cy: 127, r: 1.9, fill: ink }));
   } else {
-    inscriptions.push(label(serial, (w - 28) / 2, 98, 104, w - 48, ink, 'serial', serialFont));
+    inscriptions.push(serialLabel(serial, (w - 28) / 2, 98, 104, w - 48, ink, 'serial', serialFont));
     inscriptions.push(label('BRITISH COLUMBIA', w / 2, 121, 24, w - 28, ink, 'province', {}, true));
     const yy = String(r.baseYear).slice(2);
     inscriptions.push(label(yy[0], w - 18, 48, 34, 17, ink, 'base-year-tens'));
@@ -141,7 +145,8 @@ export function buildBcScene(design: BcDesign, parts: Parts, scope = 'bc-plate')
       : r.year === 1951 ? { kind: 'bottom-strip', widthMm: long ? 318 : 270, heightMm: 36 } : null,
     material: totem || (r.year === 1951 && Number(compactBcSerial(parts.serial ?? '')) > 230000) ? 'aluminum' : r.year >= 1955 ? 'steel' : 'metal',
     colourDescription: r.colourDescription, source: BC_SOURCES[r.source],
-    reconstruction: { colours: 'approximate', typography: 'proxy; not original dies', geometry: 'source dimensions; estimated detail positions', emblem: totem ? 'approximate' : 'not applicable' },
+    lettering: { ...letteringMetadata(vectorType ?? 'default'), requested: parts.lettering ?? 'default', fallback: isLetteringType(parts.lettering) && !vectorType },
+    reconstruction: { colours: 'approximate', typography: vectorType ? 'procedural category; not original dies' : 'proxy; not original dies', geometry: 'source dimensions; estimated detail positions', emblem: totem ? 'approximate' : 'not applicable' },
   };
   return n('svg', { xmlns: 'http://www.w3.org/2000/svg', viewBox: `0 0 ${w} ${h}`, width: w, height: h, role: 'img', 'aria-label': `British Columbia ${r.year}: ${serial}` },
     n('title', {}, `British Columbia passenger plate · ${r.year} · ${serial}`),
@@ -153,17 +158,6 @@ export function buildBcScene(design: BcDesign, parts: Parts, scope = 'bc-plate')
   );
 }
 
-const attrNames: Record<string, string> = {
-  fontFamily: 'font-family', fontSize: 'font-size', fontWeight: 'font-weight', fontStyle: 'font-style',
-  textAnchor: 'text-anchor', strokeWidth: 'stroke-width', strokeLinejoin: 'stroke-linejoin',
-  strokeLinecap: 'stroke-linecap', floodColor: 'flood-color', floodOpacity: 'flood-opacity',
-};
-export const escapeXml = (value: string): string => value.replace(/[&<>"']/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[ch]!));
-export function serializeBcNode(node: SvgNode | string): string {
-  if (typeof node === 'string') return escapeXml(node);
-  const attrs = Object.entries(node.attrs).map(([key, value]) => ` ${attrNames[key] ?? key}="${escapeXml(String(value))}"`).join('');
-  return `<${node.tag}${attrs}>${node.children.map(serializeBcNode).join('')}</${node.tag}>`;
-}
 export function renderBcSvg(design: BcDesign, parts: Parts, scope?: string): string {
   return serializeBcNode(buildBcScene(design, parts, scope));
 }
