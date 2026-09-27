@@ -16,12 +16,13 @@ function metadata(year: number, serial: string) {
 }
 
 describe('British Columbia passenger system', () => {
-  it('covers every chart year with five families and a separate 1962 variant', () => {
+  it('covers every chart year with five families plus the 1962 no-dash and 1961 late-date variants', () => {
     equal(BC_YEARS.length, 24);
-    equal(britishColumbia.formats.length, 25);
+    equal(britishColumbia.formats.length, 26);
     equal(new Set(BC_YEARS.map((r) => r.layout)).size, 5);
     deepEqual(BC_YEARS.map((r) => r.year), Array.from({ length: 24 }, (_, i) => 1940 + i));
-    equal(new Set(britishColumbia.formats.map((f) => f.id)).size, 25);
+    equal(new Set(britishColumbia.formats.map((f) => f.id)).size, 26);
+    ok(britishColumbia.formats.some((f) => f.id === '1961-late-date'));
     throws(() => bcYear(1939), RangeError);
     throws(() => bcYear(1964), RangeError);
   });

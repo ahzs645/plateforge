@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import { generateBatch, getRegions } from '../core/registry';
+import { countryOf, regionsInCountry } from '../core/timeline';
 import type { Plate, PlateFormat, Region } from '../core/types';
 import { batchToCsv, batchToJson, download } from './exporting';
 import { DownloadIcon, ShuffleIcon } from './icons';
 import { PlateView } from './PlateView';
 
-type Scope = 'format' | 'group' | 'all';
+type Scope = 'format' | 'country' | 'group' | 'all';
 
 interface Props {
   region: Region;
@@ -24,7 +25,7 @@ export function BatchView({ region, format, onPick }: Props) {
     const source =
       scope === 'format'
         ? { region, format }
-        : { regionPool: scope === 'group' ? all.filter((r) => r.group === region.group) : all };
+        : { regionPool: scope === 'country' ? regionsInCountry(all, region) : scope === 'group' ? all.filter((r) => r.group === region.group) : all };
     setPlates(generateBatch(count, seed, source));
   };
 
@@ -40,7 +41,8 @@ export function BatchView({ region, format, onPick }: Props) {
               <option value="format">
                 {region.name} — {format.label}
               </option>
-              <option value="group">Every region in {region.group}</option>
+              <option value="country">Every format in {countryOf(region)}</option>
+              <option value="group">Every country in {region.group}</option>
               <option value="all">Every region</option>
             </select>
           </div>

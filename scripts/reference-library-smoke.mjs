@@ -42,12 +42,12 @@ try {
   await page.getByLabel('Show externally hosted images').uncheck();
   await page.getByRole('button', { name: 'British Columbia · 1968', exact: true }).click();
   await page.locator('#field-serial').fill('123-456');
-  assert.equal(await page.locator('.chip').count(), 41);
+  assert(await page.locator('.timeline-node').count() >= 42);
   const metadata = await page.locator('.plate-preview metadata').evaluate((e) => JSON.parse(e.textContent));
   assert.equal(metadata.baseYear, 1968);
-  assert.equal(metadata.accuracy.dies, 'proxy or category illustration');
+  assert(['legend-approximation', 'specimen-matched'].includes(metadata.accuracy.dies), 'default B.C. lettering uses a source die');
   await page.screenshot({ path: 'test-results/reference-library/bc-1968-editor.png', fullPage: false });
-  await page.locator('.chip').filter({ hasText: /^1979 base · AAA block$/ }).click();
+  await page.locator('.timeline-node[title="1979 base · AAA block"]').click();
   await page.locator('#field-serial').fill('ABC-123');
   await page.screenshot({ path: 'test-results/reference-library/bc-1979-editor.png', fullPage: false });
   await page.goto(`${base}#/library`);

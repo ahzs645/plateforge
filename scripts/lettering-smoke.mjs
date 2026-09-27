@@ -20,8 +20,8 @@ try {
   await page.locator('.region-trigger').click();
   await page.getByLabel('Search regions').fill('British Columbia');
   await page.getByRole('option', { name: /British Columbia/ }).click();
-  assert.equal(await page.locator('.chip').count(), 41);
-  await page.locator('.chip').filter({ hasText: /^1953$/ }).click();
+  assert(await page.locator('.timeline-node').count() >= 42);
+  await page.locator('.timeline-node[title="1953"]').click();
   await page.locator('#field-serial').fill('33-638');
   await page.locator('#field-tabSerial').fill('148879');
   await page.locator('.lettering-comparison summary').click();
@@ -39,12 +39,21 @@ try {
   await page.locator('.readout button.primary').click();
   assert.equal(await page.locator('#field-lettering').inputValue(), 'hybrid');
   assert.equal(await page.locator('#field-finish').inputValue(), 'embossed');
-  for (let i = 0; i < 41; i++) {
-    await page.locator('.chip').nth(i).click();
+  let letteredPresets = 0;
+  const nodes = await page.locator('.timeline-node').count();
+  for (let i = 0; i < nodes; i++) {
+    await page.locator('.timeline-node').nth(i).click();
+    // Plate-kit formats draw with their own dies and have no lettering selector.
+    if (!await page.locator('#field-lettering').count()) continue;
+    letteredPresets++;
     await page.locator('#field-lettering').selectOption('squarish');
     assert.equal(await page.locator('.plate-preview [data-role="serial"][data-lettering="squarish"]').count(), 1);
     assert(!await page.locator('.plate-preview').evaluate((element) => element.innerHTML.includes('NaN')));
   }
+  assert(letteredPresets >= 42, `expected the 42 lettered presets, saw ${letteredPresets}`);
+  // Finish on a lettered preset so the export below carries the chosen lettering.
+  await page.locator('.timeline-node[title="1953"]').click();
+  await page.locator('#field-lettering').selectOption('squarish');
   const download = async (kind) => {
     const [file] = await Promise.all([
       page.waitForEvent('download'),
@@ -70,7 +79,7 @@ try {
   assert.equal(await page.locator('.plate-preview [data-role="serial"][data-lettering="oval"]').count(), 1);
   assert.equal((await meta()).lettering.category, 'oval');
   assert.deepEqual(errors, []);
-  console.log('PASS: actual app region picker; all 41 BC presets; four lettering switches; persistent settings; default text; SVG and PNG downloads; mobile width; US rendering; no page errors.');
+  console.log('PASS: actual app region picker; every lettered BC preset; four lettering switches; persistent settings; default text; SVG and PNG downloads; mobile width; US rendering; no page errors.');
 } finally {
   await browser?.close();
   server.kill('SIGTERM');

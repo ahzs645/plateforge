@@ -16,9 +16,10 @@ function meta(root: SvgNode) {
 }
 describe('B.C. later passenger bases', () => {
   it('extends the registry without replacing the twenty-five legacy formats', () => {
-    expect(BC_LATER_RECIPES).toHaveLength(16);
-    expect(britishColumbia.formats).toHaveLength(41);
-    expect(new Set(britishColumbia.formats.map((f) => f.id)).size).toBe(41);
+    expect(BC_LATER_RECIPES).toHaveLength(17);
+    expect(britishColumbia.formats.length).toBeGreaterThanOrEqual(42);
+    expect(new Set(britishColumbia.formats.map((f) => f.id)).size).toBe(britishColumbia.formats.length);
+    for (const f of bcLaterFormats) expect(britishColumbia.formats.some((g) => g.id === f.id)).toBe(true);
     expect(britishColumbia.formats.some((f) => f.id === '1962-no-dash')).toBe(true);
     expect(() => bcLaterRecipe({ year: 1986 })).toThrow();
   });
@@ -35,6 +36,12 @@ describe('B.C. later passenger bases', () => {
       expect(meta(scene).source.url).toBe(format.references![0].url);
       expect(meta(scene).accuracy.dies).toContain('proxy');
     }
+  });
+  it('limits the 1985 fourth block to the source-reported ALA–AXK and BLA–BRB runs', () => {
+    const recipe = bcLaterRecipe({ baseId: '1985-fourth' });
+    for (const serial of ['ALA-001', 'AXK-999', 'BLA-500', 'BPK-123', 'BRA-001', 'BRB-999']) expect(validateLaterSerial(serial, recipe), serial).toBeNull();
+    for (const serial of ['ALL-001', 'AAA-001', 'BRC-001', 'BSA-001', 'CLA-001']) expect(validateLaterSerial(serial, recipe), serial).not.toBeNull();
+    expect(recipe.prefixes).toHaveLength(10 * 10 + 4 * 10 + 2);
   });
   it('preserves century/year placements and the explicit 1967 over-run range', () => {
     const normal = buildBcLaterScene({ year: 1967 }, { serial: '650-000' });

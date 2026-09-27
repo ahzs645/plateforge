@@ -68,6 +68,7 @@ export const china: Region = {
   name: 'China (mainland)',
   code: 'CN',
   group: 'Asia',
+  country: 'China',
   flag: '🇨🇳',
   template: 'cn',
   design: { variant: 'blue' },

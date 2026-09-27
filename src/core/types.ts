@@ -52,6 +52,43 @@ export interface PlateFormat {
   text?(parts: Parts): string;
   /** Merged over the region's design. */
   design?: Design;
+  /** Years this format was issued or valid (inclusive). Enables the timeline. */
+  period?: readonly [number, number];
+  /** Id of the region era this format belongs to; inferred from `period` when omitted. */
+  era?: string;
+  /** Plate family within the region (passenger, motorcycle, …); defaults to the region's first family. */
+  family?: string;
+  /** Issue status; anything other than `issued` is shown with a badge. */
+  status?: PlateStatus;
+}
+
+export type PlateStatus = 'issued' | 'official-sample' | 'prototype' | 'proposal' | 'souvenir' | 'prop' | 'reproduction' | 'uncertain';
+
+/** A group of related formats with its own timeline, e.g. passenger or motorcycle plates. */
+export interface PlateFamily {
+  id: string;
+  label: string;
+  summary?: string;
+}
+
+/** A named span of a region's plate history, used to group the timeline and gallery. */
+export interface PlateEra {
+  id: string;
+  label: string;
+  period: readonly [number, number];
+  summary?: string;
+  /** Family this era belongs to; defaults to the region's first family. */
+  family?: string;
+}
+
+/** A documented period with no editable reconstruction yet; shown so gaps are explicit. */
+export interface PlateGap {
+  id: string;
+  label: string;
+  period: readonly [number, number];
+  note?: string;
+  sources: readonly { title: string; url: string }[];
+  family?: string;
 }
 
 export interface Region {
@@ -59,12 +96,24 @@ export interface Region {
   name: string;
   /** Short code shown in lists, e.g. `CA`, `D`, `JP`. */
   code: string;
-  /** Top-level grouping in the picker. */
+  /** Continent-level grouping in the picker, e.g. `North America`, `Europe`. */
   group: string;
+  /** Issuing country. Defaults to `name` for national regions. */
+  country?: string;
+  /** Country flag when it differs from the region's own flag. */
+  countryFlag?: string;
   flag: string;
   template: string;
   design: Design;
   formats: PlateFormat[];
+  /** Plate families; each gets its own timeline. The first is the default. */
+  families?: readonly PlateFamily[];
+  /** Chronological eras; together with format periods these drive the timeline. */
+  eras?: readonly PlateEra[];
+  /** Documented but unbuilt periods, placed on the timeline as placeholders. */
+  gaps?: readonly PlateGap[];
+  /** In-app route to a fuller coverage checklist, e.g. `#/library/coverage`. */
+  coverageRoute?: string;
   notes?: string;
 }
 

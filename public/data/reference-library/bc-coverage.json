@@ -1,0 +1,2516 @@
+{
+ "schemaVersion": 1,
+ "reviewDate": "2026-09-27",
+ "repository": "ahzs645/plateforge",
+ "reviewedCommit": "ffadf0e47f9fd33ee7c1471b82ef7871461f5529",
+ "scope": "Main BCpl8s plate/topic navigation (links 1–55), specialty programme link 65 and selected linked child families. Family-level audit, not exhaustive specimen adjudication.",
+ "limitations": [
+  "No application code was changed.",
+  "No repository checkout, test suite or browser-render comparison was completed in this review.",
+  "No font or glyph masters were produced.",
+  "Thousands of referenced photographs have not each been visually inspected.",
+  "Repository reference-index inclusion is not independently checked per family in this manifest.",
+  "Documented source attribution may be tentative and does not certify actual issuance."
+ ],
+ "counts": {
+  "inventoryRecords": 67,
+  "homepageTopics": 56,
+  "selectedChildTopics": 11,
+  "registeredPassengerPresets": 81,
+  "earlyPresets": 25,
+  "laterPresets": 17,
+  "countsUnit": "Inventory topics and presets, NOT distinct historical plate designs",
+  "registeredPresets": 433
+ },
+ "registeredPresets": {
+  "passenger": [
+   "1940",
+   "1941",
+   "1942",
+   "1943",
+   "1944",
+   "1945",
+   "1946",
+   "1947",
+   "1948",
+   "1949",
+   "1950",
+   "1951",
+   "1952",
+   "1953",
+   "1954",
+   "1955",
+   "1956",
+   "1957",
+   "1958",
+   "1959",
+   "1960",
+   "1961",
+   "1962",
+   "1963",
+   "1962-no-dash",
+   "1961-late-date",
+   "1964",
+   "1965",
+   "1966",
+   "1967",
+   "1967-overrun",
+   "1968",
+   "1969",
+   "1970-1972",
+   "1972-overrun",
+   "1973-1974",
+   "1975-1977",
+   "1977-1978",
+   "1978-acme",
+   "1979-first",
+   "1979-second",
+   "1982-third",
+   "1985-fourth",
+   "1985-flag",
+   "2001-flag",
+   "2013-flag-dual",
+   "2014-flag",
+   "2025-flag",
+   "1904-leather",
+   "1908-porcelain",
+   "1913",
+   "1914",
+   "1915",
+   "1916",
+   "1917",
+   "1918",
+   "1919-tab",
+   "1919-cardboard",
+   "1920",
+   "1921-tab",
+   "1922-tab",
+   "1923",
+   "1924",
+   "1925",
+   "1926",
+   "1927",
+   "1928",
+   "1929",
+   "1930",
+   "1931",
+   "1932",
+   "1933",
+   "1934",
+   "1935",
+   "1930-long",
+   "1931-long",
+   "1935-long",
+   "1936",
+   "1937",
+   "1938",
+   "1939"
+  ],
+  "samples": [
+   "sample-1940",
+   "sample-1951-strip",
+   "sample-1955",
+   "sample-1964",
+   "sample-1970-000",
+   "souvenir-1970-expo",
+   "sample-1973",
+   "sample-1979",
+   "sample-flag",
+   "souvenir-bc0000",
+   "prototype-1964-colours",
+   "prototype-1968-paint",
+   "prop-1959-repro",
+   "prop-flag-xqz",
+   "reproduction-1920",
+   "prototype-super-natural",
+   "prototype-dogwood",
+   "prototype-a-new-bc"
+  ],
+  "commercial": [
+   "commercial-1924",
+   "commercial-1936",
+   "commercial-1949",
+   "commercial-1949-long",
+   "commercial-1952",
+   "commercial-1953-tab",
+   "commercial-1955",
+   "commercial-1958",
+   "commercial-1964",
+   "commercial-1965",
+   "commercial-1965-decal",
+   "commercial-1968",
+   "commercial-1972",
+   "commercial-1973",
+   "commercial-1973-no-dash",
+   "commercial-1976",
+   "commercial-1979",
+   "commercial-flag",
+   "commercial-flag-2008",
+   "commercial-flag-2008-dual"
+  ],
+  "farm": [
+   "farm-tractor-1948",
+   "farm-tractor-1955",
+   "farm-tractor-1968",
+   "farm-tractor-1974",
+   "farm-tractor-1976",
+   "farm-tractor-1979",
+   "farm-tractor-flag",
+   "farm-tractor-flag-dual",
+   "farm-truck-1961",
+   "farm-truck-1974",
+   "farm-truck-1976",
+   "farm-truck-1979",
+   "farm-truck-flag",
+   "farm-truck-flag-dual",
+   "farm-truck-2025"
+  ],
+  "trailer": [
+   "trailer-1921",
+   "trailer-1927",
+   "trailer-1936",
+   "trailer-1949",
+   "trailer-comm-1972",
+   "trailer-comm-1973",
+   "trailer-comm-1976",
+   "trailer-comm-1979",
+   "trailer-comm-flag",
+   "trailer-comm-flag-dual",
+   "trailer-utility-1955",
+   "trailer-utility-1970",
+   "trailer-utility-1974",
+   "trailer-utility-1979",
+   "trailer-utility-flag",
+   "trailer-utility-flag-2000",
+   "trailer-utility-2016",
+   "trailer-floater-1974",
+   "trailer-floater-1979",
+   "trailer-floater-1983",
+   "trailer-floater-flag"
+  ],
+  "motorcycle": [
+   "motorcycle-1949",
+   "motorcycle-1973",
+   "motorcycle-1974",
+   "motorcycle-1974-prototype",
+   "motorcycle-1979",
+   "motorcycle-flag",
+   "motorcycle-2011",
+   "motorcycle-dealer-1968",
+   "motorcycle-dealer-1973",
+   "motorcycle-dealer-1976",
+   "motorcycle-dealer-1979",
+   "motorcycle-dealer-flag"
+  ],
+  "trade": [
+   "trade-dealer-1913",
+   "trade-dealer-1950",
+   "trade-dealer-1968",
+   "trade-dealer-1976",
+   "trade-dealer-1979",
+   "trade-dealer-flag",
+   "trade-dealer-mc-1976",
+   "trade-dealer-mc-1979",
+   "trade-dealer-mc-flag",
+   "trade-manufacturer-1968",
+   "trade-manufacturer-1979",
+   "trade-manufacturer-flag",
+   "trade-repairer-1974",
+   "trade-repairer-1979",
+   "trade-repairer-flag",
+   "trade-repairer-flag-1995",
+   "trade-transporter-1964",
+   "trade-transporter-1979",
+   "trade-transporter-flag"
+  ],
+  "industrial": [
+   "industrial-x-1957",
+   "industrial-xh-1958",
+   "industrial-x-1964",
+   "industrial-x-1972",
+   "industrial-x-1976",
+   "industrial-x-1979",
+   "industrial-x-flag",
+   "industrial-logging-pf-1938",
+   "industrial-logging-1961",
+   "industrial-logging-1963",
+   "industrial-logging-1972",
+   "industrial-logging-1980",
+   "industrial-logging-1984",
+   "industrial-logging-1985",
+   "industrial-logging-flag",
+   "industrial-restricted",
+   "industrial-off-road",
+   "industrial-sa-1973",
+   "industrial-sa-1976",
+   "industrial-sa-1979",
+   "industrial-sa-flag"
+  ],
+  "carrier": [
+   "carrier-pwd-1928",
+   "carrier-pc-1934",
+   "carrier-cl-1936",
+   "carrier-cl-1946",
+   "carrier-cl-1951",
+   "carrier-mc-1970",
+   "carrier-mc-1974",
+   "carrier-mc-1975",
+   "carrier-mc-1982",
+   "carrier-mc-1985",
+   "carrier-mc-1988",
+   "carrier-mc-1995",
+   "carrier-mc-taxi",
+   "carrier-passenger-2005",
+   "carrier-passenger-2010",
+   "carrier-fuel-1961",
+   "carrier-fuel-1969",
+   "carrier-prorate-1962",
+   "carrier-prorate-1964",
+   "carrier-prorate-1972",
+   "carrier-prorate-1979",
+   "carrier-prorate-1981",
+   "carrier-prorate-flag-1985",
+   "carrier-prorate-flag-1989",
+   "carrier-prorate-apportioned",
+   "carrier-reciprocity-1963",
+   "carrier-reciprocity-1973",
+   "carrier-reciprocity-1980",
+   "carrier-temporary-x"
+  ],
+  "specialty": [
+   "parks-kermode",
+   "parks-purcell",
+   "parks-porteau",
+   "parks-prototype",
+   "olympic-passenger",
+   "olympic-truck",
+   "olympic-farm",
+   "olympic-trailer",
+   "olympic-motorcycle",
+   "olympic-utility",
+   "veteran-passenger",
+   "veteran-passenger-dual",
+   "veteran-truck",
+   "veteran-motorcycle",
+   "memorial-passenger",
+   "memorial-truck",
+   "memorial-keepsake",
+   "collector-passenger",
+   "collector-passenger-dual",
+   "collector-multi",
+   "collector-motorcycle",
+   "collector-motorcycle-multi",
+   "antique-1966",
+   "antique-1975",
+   "antique-motorcycle",
+   "personalized-1979",
+   "personalized-astro",
+   "personalized-reversed",
+   "personalized-waldale",
+   "personalized-sample",
+   "personalized-motorcycle",
+   "personalized-motorcycle-prototype"
+  ],
+  "consular": [
+   "consular-1967",
+   "consular-1973",
+   "consular-1979",
+   "consular-flag",
+   "consular-red"
+  ],
+  "ham-radio": [
+   "ham-radio-1963",
+   "ham-radio-1964",
+   "ham-radio-1965",
+   "ham-radio-1968",
+   "ham-radio-1969",
+   "ham-radio-1970",
+   "ham-radio-1973",
+   "ham-radio-1977-acme",
+   "ham-radio-1979",
+   "ham-radio-1986-flag",
+   "ham-radio-2002-flag",
+   "ham-radio-2014-flag",
+   "ham-radio-booster"
+  ],
+  "official": [
+   "official-victoria-1913",
+   "official-foreign-1924",
+   "official-doctor-1930",
+   "official-doctor-1931",
+   "official-doctor-1936",
+   "official-doctor-pn-1938",
+   "official-doctor-pn-1940",
+   "official-pw-1938",
+   "official-pw-1940",
+   "official-government-1948",
+   "official-defence-1941",
+   "official-defence-motorcycle",
+   "official-defence-1949",
+   "official-defence-1952",
+   "official-defence-1955",
+   "official-defence-1964",
+   "official-defence-1965",
+   "official-defence-1968",
+   "official-defence-canada",
+   "official-defence-pcmr",
+   "official-defence-esquimalt",
+   "official-defence-comox",
+   "official-parks-1927",
+   "official-parks-1930",
+   "official-parks-1936",
+   "official-lt-governor-arms",
+   "official-lt-governor-crest"
+  ],
+  "events": [
+   "events-royal-1951",
+   "events-royal-1987",
+   "events-royal-1994",
+   "events-royal-1994-prototype",
+   "events-royal-crown",
+   "events-apec-1997",
+   "events-apec-1997-military",
+   "events-expo86-presentation",
+   "events-expo86-booster",
+   "events-expo86-booster-aamva",
+   "events-expo86-prototype",
+   "events-expo86-souvenir",
+   "events-expo86-stencil",
+   "events-expo86-concours",
+   "events-expo86-nwt",
+   "events-vancouver-100"
+  ],
+  "municipal": [
+   "municipal-prov-1963",
+   "municipal-prov-1979",
+   "municipal-prov-1983",
+   "municipal-exempt-1963",
+   "municipal-exempt-1964",
+   "municipal-exempt-1965",
+   "municipal-exempt-1966",
+   "municipal-exempt-1967",
+   "municipal-exempt-1968",
+   "municipal-exempt-1969",
+   "municipal-exempt-1970",
+   "municipal-exempt-1971",
+   "municipal-exempt-1972",
+   "municipal-exempt-1973",
+   "municipal-exempt-1974",
+   "municipal-city-agassiz",
+   "municipal-city-alberni",
+   "municipal-city-burnaby",
+   "municipal-city-chilliwack",
+   "municipal-city-coquitlam",
+   "municipal-city-delta",
+   "municipal-city-langley",
+   "municipal-city-maple-ridge",
+   "municipal-city-matsqui",
+   "municipal-city-mission",
+   "municipal-city-nanaimo",
+   "municipal-city-new-westminster",
+   "municipal-city-north-vancouver",
+   "municipal-city-port-alberni",
+   "municipal-city-port-coquitlam",
+   "municipal-city-port-moody",
+   "municipal-city-powell-river",
+   "municipal-city-prince-george",
+   "municipal-city-richmond",
+   "municipal-city-saanich",
+   "municipal-city-sumas",
+   "municipal-city-surrey",
+   "municipal-city-trail",
+   "municipal-city-victoria",
+   "municipal-city-west-vancouver",
+   "municipal-victoria-1913",
+   "municipal-tahsis-1966",
+   "municipal-vancouver-disc-1919",
+   "municipal-vancouver-disc-1931",
+   "municipal-vancouver-vehicle-1950",
+   "municipal-vancouver-vehicle-1962",
+   "municipal-vancouver-conveyance-1947",
+   "municipal-vancouver-conveyance-1958",
+   "municipal-vancouver-express-dray-1912",
+   "municipal-vancouver-express-dray-1934",
+   "municipal-vancouver-auto-taxi-1923",
+   "municipal-vancouver-taxi-1956",
+   "municipal-vancouver-taxi-1997",
+   "municipal-vancouver-for-hire-1949",
+   "municipal-vancouver-for-hire-1970",
+   "municipal-vancouver-for-hire-1995",
+   "municipal-vancouver-commercial-1972",
+   "municipal-vancouver-commercial-1982",
+   "municipal-vancouver-commercial-1993",
+   "municipal-vancouver-commercial-1994",
+   "municipal-vancouver-commercial-2004",
+   "municipal-vancouver-junk-1965",
+   "municipal-vancouver-junk-1989",
+   "municipal-vancouver-funeral-cab-1983"
+  ],
+  "bicycle": [
+   "bicycle-cranbrook",
+   "bicycle-esquimalt",
+   "bicycle-fernie-1949",
+   "bicycle-fernie",
+   "bicycle-kelowna-1964",
+   "bicycle-kelowna-1970",
+   "bicycle-nelson-1942",
+   "bicycle-nelson-1943",
+   "bicycle-nelson-1944",
+   "bicycle-nelson-1945",
+   "bicycle-nelson-1946",
+   "bicycle-nelson-1947",
+   "bicycle-nelson-1951",
+   "bicycle-nelson-1952",
+   "bicycle-nelson-hex-1956",
+   "bicycle-nelson-hex-1974",
+   "bicycle-oak-bay-1948",
+   "bicycle-oak-bay-hex",
+   "bicycle-oak-bay-shield",
+   "bicycle-penticton-1947",
+   "bicycle-penticton-1955",
+   "bicycle-penticton-1958",
+   "bicycle-port-coquitlam",
+   "bicycle-prince-george-1953",
+   "bicycle-prince-george-1958",
+   "bicycle-prince-george-1959",
+   "bicycle-trail-1935",
+   "bicycle-trail-oval",
+   "bicycle-trail-1955",
+   "bicycle-trail-1962",
+   "bicycle-trail-1967",
+   "bicycle-valemount",
+   "bicycle-vancouver-1904",
+   "bicycle-vancouver-1940s",
+   "bicycle-vancouver-courier-1989",
+   "bicycle-victoria-1946",
+   "bicycle-victoria-1952",
+   "bicycle-west-vancouver-licence",
+   "bicycle-west-vancouver-license",
+   "bicycle-williams-lake"
+  ]
+ },
+ "repositoryEvidence": [
+  {
+   "id": "registered-coverage",
+   "title": "41 passenger presets, not 25",
+   "path": "src/regions/canada/index.ts",
+   "url": "https://github.com/ahzs645/plateforge/blob/ffadf0e47f9fd33ee7c1471b82ef7871461f5529/src/regions/canada/index.ts",
+   "finding": "The registry combines 25 early presets with 16 later presets. Existing documentation has not fully caught up.",
+   "resolved": true
+  },
+  {
+   "id": "reference-not-renderer",
+   "title": "Reference imports are not editable designs",
+   "path": "public/data/reference-library/coverage-report.json",
+   "url": "https://github.com/ahzs645/plateforge/blob/ffadf0e47f9fd33ee7c1471b82ef7871461f5529/public/data/reference-library/coverage-report.json",
+   "finding": "The recorded import has 320 B.C. pages, 30 failed URLs, 10 manual Leeward references and 16,474 unique image references. It reports zero editable designs imported from images; existing manually built templates still exist."
+  },
+  {
+   "id": "live-text-proxy",
+   "title": "Default inscriptions use a proxy typeface",
+   "path": "src/templates/bc/scene.ts",
+   "url": "https://github.com/ahzs645/plateforge/blob/ffadf0e47f9fd33ee7c1471b82ef7871461f5529/src/templates/bc/scene.ts",
+   "finding": "Barlow Condensed / Arial Narrow is used for default lettering. Estimated text widths and spacingAndGlyphs fitting do not recover historical outlines.",
+   "resolved": true
+  },
+  {
+   "id": "generic-vectors",
+   "title": "Procedural lettering is category-level",
+   "path": "src/templates/lettering.ts",
+   "url": "https://github.com/ahzs645/plateforge/blob/ffadf0e47f9fd33ee7c1471b82ef7871461f5529/src/templates/lettering.ts",
+   "finding": "Shared centreline strokes, 56-unit alphanumeric advances, an 8-unit gap and a single stroke weight are not maker-specific dies. Width fitting can reduce overall height.",
+   "resolved": true
+  },
+  {
+   "id": "serial-only",
+   "title": "Lettering selection misses other inscription roles",
+   "path": "docs/lettering.md",
+   "url": "https://github.com/ahzs645/plateforge/blob/ffadf0e47f9fd33ee7c1471b82ef7871461f5529/docs/lettering.md",
+   "finding": "The selectable construction modes affect the serial only, not province, dates, renewal text or slogans.",
+   "resolved": true
+  },
+  {
+   "id": "fourth-block",
+   "title": "1985 fourth block is missing",
+   "path": "src/regions/canada/bc-later.ts",
+   "url": "https://github.com/ahzs645/plateforge/blob/ffadf0e47f9fd33ee7c1471b82ef7871461f5529/src/regions/canada/bc-later.ts",
+   "finding": "The blue-base recipes stop at the third block. BCpl8s documents a fourth block; this is distinct from the also-missing 1985 flag base.",
+   "resolved": true
+  },
+  {
+   "id": "acme-label-not-die",
+   "title": "An ACME preset is not an ACME glyph set",
+   "path": "src/regions/canada/bc-later.ts",
+   "url": "https://github.com/ahzs645/plateforge/blob/ffadf0e47f9fd33ee7c1471b82ef7871461f5529/src/regions/canada/bc-later.ts",
+   "finding": "The 1978 ACME serial subset exists, but its precise Quebec-style dies are explicitly not reproduced.",
+   "resolved": true
+  },
+  {
+   "id": "renewals-existing",
+   "title": "Keep the renewal work that already exists",
+   "path": "src/regions/canada/bc.ts",
+   "url": "https://github.com/ahzs645/plateforge/blob/ffadf0e47f9fd33ee7c1471b82ef7871461f5529/src/regions/canada/bc.ts",
+   "finding": "1951 strip and 1953/54 tabs, loose/base-only modes, W/Y entries and blank-base options already exist. Some accompanying notes incorrectly describe these as absent."
+  }
+ ],
+ "proposedDieProfiles": [
+  {
+   "id": "bc-early-rounded-candidate",
+   "label": "Early rounded historical dies",
+   "scope": "Existing 1940–1954 passenger reconstructions; boundaries require specimen review",
+   "sourceUrl": "https://www.bcpl8s.ca/Passenger-1940-1948.html",
+   "task": "Rebuild digit silhouettes, counter shapes, slant and narrow legends from multiple straight-on originals; do not equate generic oval with a recovered die.",
+   "status": "proposed-not-drawn",
+   "confidence": "needs-glyph-review"
+  },
+  {
+   "id": "bc-oakalla-block-candidate",
+   "label": "Oakalla block-era variants",
+   "scope": "Existing 1955 onward historical plates; split only where supported",
+   "sourceUrl": "https://www.bcpl8s.ca/Passenger-1955-1963.html",
+   "task": "Build numerals plus independent province/date faces; preserve documented year-specific differences.",
+   "status": "proposed-not-drawn",
+   "confidence": "needs-glyph-review"
+  },
+  {
+   "id": "bc-acme-1978-candidate",
+   "label": "ACME narrow / Quebec-style",
+   "scope": "1978 ACME subset",
+   "sourceUrl": "https://www.bcpl8s.ca/Passenger-1973-1978.html",
+   "task": "Use the B.C. numeral comparison specimens, not Quebec comparators alone.",
+   "status": "proposed-not-drawn",
+   "confidence": "needs-glyph-review"
+  },
+  {
+   "id": "bc-acme-1979-candidate",
+   "label": "ACME blue-base comparison",
+   "scope": "1979-base specimens",
+   "sourceUrl": "https://www.bcpl8s.ca/Passenger-1979-1985.html",
+   "task": "Check differences against the 1978 set before deciding which master geometry can be shared.",
+   "status": "proposed-not-drawn",
+   "confidence": "needs-glyph-review"
+  },
+  {
+   "id": "bc-hi-signs-candidate",
+   "label": "Hi-Signs / Nova Scotia-style",
+   "scope": "Early-1980s blue-base specimens",
+   "sourceUrl": "https://www.bcpl8s.ca/Passenger-1979-1985.html",
+   "task": "Rebuild from B.C. specimens; use approximate transition evidence rather than a universal hard serial boundary.",
+   "status": "proposed-not-drawn",
+   "confidence": "needs-glyph-review"
+  },
+  {
+   "id": "bc-astrographic-male-female-candidate",
+   "label": "Astrographic male/female die form",
+   "scope": "Flag-era documented comparison",
+   "sourceUrl": "https://www.bcpl8s.ca/Passenger-1985-2001.html",
+   "task": "Build a separately evidenced profile, not a year-only automatic rule.",
+   "status": "proposed-not-drawn",
+   "confidence": "needs-glyph-review"
+  },
+  {
+   "id": "bc-astrographic-neoprene-candidate",
+   "label": "Astrographic neoprene-top form",
+   "scope": "Flag-era documented comparison",
+   "sourceUrl": "https://www.bcpl8s.ca/Passenger-1985-2001.html",
+   "task": "Record stroke and counter changes independently of plate wear.",
+   "status": "proposed-not-drawn",
+   "confidence": "needs-glyph-review"
+  },
+  {
+   "id": "bc-astrographic-nonpassenger-candidate",
+   "label": "Astrographic non-passenger form",
+   "scope": "Non-passenger and some passenger specimens",
+   "sourceUrl": "https://www.bcpl8s.ca/Passenger-1985-2001.html",
+   "task": "Allow cross-class use only for documented specimens; a class name is not an exclusive assignment rule.",
+   "status": "proposed-not-drawn",
+   "confidence": "needs-glyph-review"
+  },
+  {
+   "id": "bc-astrographic-classic-candidate",
+   "label": "Astrographic classic form",
+   "scope": "Flag-era documented comparison",
+   "sourceUrl": "https://www.bcpl8s.ca/Passenger-1985-2001.html",
+   "task": "Reconstruct independently before measuring shared geometry.",
+   "status": "proposed-not-drawn",
+   "confidence": "needs-glyph-review"
+  },
+  {
+   "id": "bc-waldale-candidate",
+   "label": "Waldale",
+   "scope": "Late-2002/2003 transition onward; overlaps and exceptions exist",
+   "sourceUrl": "https://www.bcpl8s.ca/Passenger-2001-2014.html",
+   "task": "Do not label all 2001 numeric-first plates Waldale; carry specimen evidence and maker exceptions.",
+   "status": "proposed-not-drawn",
+   "confidence": "needs-glyph-review"
+  },
+  {
+   "id": "bc-small-format-candidates",
+   "label": "Small-format class-specific profiles",
+   "scope": "Motorcycle, off-road, dealer motorcycle and related forms",
+   "sourceUrl": "https://www.bcpl8s.ca/Motorcycle.htm",
+   "task": "Measure actual small-format dies and legends rather than scaling a full-size master.",
+   "status": "proposed-not-drawn",
+   "confidence": "needs-glyph-review"
+  }
+ ],
+ "officialSerialConfigurationReference": {
+  "sourceUrl": "https://partners.icbc.com/assets/5GMseymkqs8E4Otb8osoGQ/bulletin-33-new-licence-plate-configurations.pdf",
+  "publicationDate": "2025-06-09",
+  "notation": "@ = variable letter; # = variable digit; other printed letters are literal. Dash placement is separate layout data.",
+  "status": "Announced configurations, not a claim every type is already in circulation",
+  "note": "ICBC says the new configurations retain six characters and do not by themselves change the plate design/material. Keep inventory-transition exceptions.",
+  "configurations": [
+   {
+    "family": "Passenger",
+    "pattern": "@###@@",
+    "example": "A123BC"
+   },
+   {
+    "family": "Parks: Porteau Cove",
+    "pattern": "S###@@",
+    "example": "S123AA"
+   },
+   {
+    "family": "Parks: Kermode bear",
+    "pattern": "P###@@",
+    "example": "P123AA"
+   },
+   {
+    "family": "Parks: Purcell Mountains",
+    "pattern": "R###@@",
+    "example": "R123AA"
+   },
+   {
+    "family": "Commercial",
+    "pattern": "#@@###",
+    "example": "1AB234"
+   },
+   {
+    "family": "Farm truck",
+    "pattern": "#####A",
+    "example": "12345A"
+   },
+   {
+    "family": "Utility trailer",
+    "pattern": "#U@@@#",
+    "example": "1UABC2"
+   },
+   {
+    "family": "Prorate",
+    "pattern": "####P#",
+    "example": "1234P5"
+   },
+   {
+    "family": "Industrial",
+    "pattern": "#X####",
+    "example": "1X2345"
+   }
+  ]
+ },
+ "records": [
+  {
+   "id": "passenger",
+   "name": "Passenger",
+   "sourceUrl": "https://www.bcpl8s.ca/Passenger.html",
+   "group": "Passenger",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 1,
+   "parentId": null,
+   "distinctions": [
+    "42 registered presets: 25 early (1940–1963) and 17 later (1964–1985) passenger bases and variants.",
+    "Pre-1940 passenger designs and the 1985 flag base onward are absent.",
+    "The 1985 fourth serial block on the blue 1979 base was added after this review."
+   ],
+   "nextAction": "Correct existing die profiles; add missing base families and separately identified production variants.",
+   "caution": "A preset is not an annual issue count. “Through 1985” refers to the blue 1979 base, not the flag design.",
+   "additionalSources": [
+    "https://www.bcpl8s.ca/Passenger-1979-1985.html",
+    "https://www.bcpl8s.ca/Passenger-1985-2001.html",
+    "https://www.bcpl8s.ca/Passenger-2001-2014.html",
+    "https://www.bcpl8s.ca/Passenger-2014-2025.html",
+    "https://www.bcpl8s.ca/Passenger-2025.html"
+   ],
+   "formats": [
+    "1940",
+    "1941",
+    "1942",
+    "1943",
+    "1944",
+    "1945",
+    "1946",
+    "1947",
+    "1948",
+    "1949",
+    "1950",
+    "1951",
+    "1952",
+    "1953",
+    "1954",
+    "1955",
+    "1956",
+    "1957",
+    "1958",
+    "1959",
+    "1960",
+    "1961",
+    "1962",
+    "1963",
+    "1962-no-dash",
+    "1961-late-date",
+    "1964",
+    "1965",
+    "1966",
+    "1967",
+    "1967-overrun",
+    "1968",
+    "1969",
+    "1970-1972",
+    "1972-overrun",
+    "1973-1974",
+    "1975-1977",
+    "1977-1978",
+    "1978-acme",
+    "1979-first",
+    "1979-second",
+    "1982-third",
+    "1985-fourth",
+    "1985-flag",
+    "2001-flag",
+    "2013-flag-dual",
+    "2014-flag",
+    "2025-flag",
+    "1904-leather",
+    "1908-porcelain",
+    "1913",
+    "1914",
+    "1915",
+    "1916",
+    "1917",
+    "1918",
+    "1919-tab",
+    "1919-cardboard",
+    "1920",
+    "1921-tab",
+    "1922-tab",
+    "1923",
+    "1924",
+    "1925",
+    "1926",
+    "1927",
+    "1928",
+    "1929",
+    "1930",
+    "1931",
+    "1932",
+    "1933",
+    "1934",
+    "1935",
+    "1930-long",
+    "1931-long",
+    "1935-long",
+    "1936",
+    "1937",
+    "1938",
+    "1939"
+   ]
+  },
+  {
+   "id": "antique",
+   "name": "Antique",
+   "sourceUrl": "https://www.bcpl8s.ca/Antique.htm",
+   "group": "Optional and heritage",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 2,
+   "parentId": null,
+   "distinctions": [
+    "Full-size and motorcycle forms; early large numerals and later smaller numeral settings.",
+    "Samples and prototypes need separate evidence records."
+   ],
+   "nextAction": "Create antique artwork and size profiles; do not reuse Collector as a synonym.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "antique-1966",
+    "antique-1975",
+    "antique-motorcycle"
+   ]
+  },
+  {
+   "id": "apec",
+   "name": "APEC",
+   "sourceUrl": "https://www.bcpl8s.ca/APEC.htm",
+   "group": "Events and ceremonial",
+   "issueScope": "mixed-provincial-federal-event",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 3,
+   "parentId": null,
+   "distinctions": [
+    "1997 provincial motorcade plates and separate military event plates."
+   ],
+   "nextAction": "Keep issuer, event role and artwork variant explicit.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "events-apec-1997",
+    "events-apec-1997-military"
+   ]
+  },
+  {
+   "id": "bc-parks",
+   "name": "BC Parks",
+   "sourceUrl": "https://www.bcpl8s.ca/BCParks.html",
+   "group": "Optional and heritage",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 4,
+   "parentId": null,
+   "distinctions": [
+    "Kermode bear, Purcell Mountains and Porteau Cove are three artwork masters.",
+    "Serial-block changes do not necessarily create a new artwork design."
+   ],
+   "nextAction": "Build three graphics with shared full-size components and versioned serial rules.",
+   "caution": null,
+   "additionalSources": [
+    "https://www.bcpl8s.ca/BCParks-Gallery.html"
+   ],
+   "formats": [
+    "parks-kermode",
+    "parks-purcell",
+    "parks-porteau",
+    "parks-prototype"
+   ]
+  },
+  {
+   "id": "chauffeur-badges",
+   "name": "Chauffeur Badges",
+   "sourceUrl": "https://www.bcpl8s.ca/Chauffeurs-Badges.html",
+   "group": "Related artefacts",
+   "issueScope": "badge",
+   "reviewDepth": "family-page",
+   "implementationStatus": "not-a-plate",
+   "homepageLinkId": 5,
+   "parentId": null,
+   "distinctions": [
+    "Class and year variants; metal and wartime fibreboard examples."
+   ],
+   "nextAction": "Use badge templates, not the vehicle plate generator.",
+   "caution": null,
+   "additionalSources": []
+  },
+  {
+   "id": "collector",
+   "name": "Collector",
+   "sourceUrl": "https://www.bcpl8s.ca/Collector.htm",
+   "group": "Optional and heritage",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 6,
+   "parentId": null,
+   "distinctions": [
+    "Passenger, multi-vehicle/floater, motorcycle and motorcycle floater.",
+    "Maker, numeral, decal-well and serial-generation changes."
+   ],
+   "nextAction": "Model vehicle class and multi-vehicle status independently.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "collector-passenger",
+    "collector-passenger-dual",
+    "collector-multi",
+    "collector-motorcycle",
+    "collector-motorcycle-multi"
+   ]
+  },
+  {
+   "id": "commercial-truck",
+   "name": "Commercial Truck",
+   "sourceUrl": "https://www.bcpl8s.ca/Commercial-Truck.html",
+   "group": "Commercial and vehicle classes",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 7,
+   "parentId": null,
+   "distinctions": [
+    "Historical annual and multi-year bases; full commercial chronology is distinct from passenger."
+   ],
+   "nextAction": "Reuse measured shells where justified; supply class-specific lettering and serial grammars.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "commercial-1924",
+    "commercial-1936",
+    "commercial-1949",
+    "commercial-1949-long",
+    "commercial-1952",
+    "commercial-1953-tab",
+    "commercial-1955",
+    "commercial-1958",
+    "commercial-1964",
+    "commercial-1965",
+    "commercial-1965-decal",
+    "commercial-1968",
+    "commercial-1972",
+    "commercial-1973",
+    "commercial-1973-no-dash",
+    "commercial-1976",
+    "commercial-1979",
+    "commercial-flag",
+    "commercial-flag-2008",
+    "commercial-flag-2008-dual"
+   ]
+  },
+  {
+   "id": "consular",
+   "name": "Consular",
+   "sourceUrl": "https://www.bcpl8s.ca/Consular.htm",
+   "group": "Official and public service",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 8,
+   "parentId": null,
+   "distinctions": [
+    "Historical CONSUL bases, flag-era bases, and the red 2007 design.",
+    "Red-series categories: DL, CC, HC, CS and SR."
+   ],
+   "nextAction": "Add five category prefixes to one red-base family; keep historical CONSUL legends distinct.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "consular-1967",
+    "consular-1973",
+    "consular-1979",
+    "consular-flag",
+    "consular-red"
+   ]
+  },
+  {
+   "id": "dealer",
+   "name": "Dealer",
+   "sourceUrl": "https://www.bcpl8s.ca/Dealer.htm",
+   "group": "Commercial and vehicle classes",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 9,
+   "parentId": null,
+   "distinctions": [
+    "Early dealer construction, later D legends, big-D/little-D variants.",
+    "Motorcycle dealer is a separate size and serial family."
+   ],
+   "nextAction": "Build dealer-specific legends and prefixes; do not just prepend D to a passenger serial.",
+   "caution": null,
+   "additionalSources": [
+    "https://www.bcpl8s.ca/Dealer-Motorcycle.htm"
+   ],
+   "formats": [
+    "trade-dealer-1913",
+    "trade-dealer-1950",
+    "trade-dealer-1968",
+    "trade-dealer-1976",
+    "trade-dealer-1979",
+    "trade-dealer-flag",
+    "trade-dealer-mc-1976",
+    "trade-dealer-mc-1979",
+    "trade-dealer-mc-flag"
+   ]
+  },
+  {
+   "id": "decals",
+   "name": "Decals",
+   "sourceUrl": "https://www.bcpl8s.ca/Decals.htm",
+   "group": "Renewals and permits",
+   "issueScope": "renewal-component",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 10,
+   "parentId": null,
+   "distinctions": [
+    "Passenger, commercial and sample decals; distinct annual graphics and day/month arrangements."
+   ],
+   "nextAction": "Create a reusable dated decal library and compatibility rules for plate wells.",
+   "caution": "Historical decal graphics are not evidence that decals remain required today. Check official contemporary policy.",
+   "additionalSources": [],
+   "formats": [
+    "(decal library: 1970–2023)"
+   ]
+  },
+  {
+   "id": "drivers-licences",
+   "name": "Driver’s Licences",
+   "sourceUrl": "https://www.bcpl8s.ca/Drivers-Licences.html",
+   "group": "Related artefacts",
+   "issueScope": "document",
+   "reviewDepth": "page-structure",
+   "implementationStatus": "not-a-plate",
+   "homepageLinkId": 11,
+   "parentId": null,
+   "distinctions": [
+    "Historical driver documents, rather than vehicle plate designs."
+   ],
+   "nextAction": "Catalogue as documents with separate layouts and evidence.",
+   "caution": null,
+   "additionalSources": []
+  },
+  {
+   "id": "expo-86",
+   "name": "Expo 86",
+   "sourceUrl": "https://www.bcpl8s.ca/Expo-86.htm",
+   "group": "Events and ceremonial",
+   "issueScope": "mixed-road-and-souvenir",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 12,
+   "parentId": null,
+   "distinctions": [
+    "Presentation/personalized examples, Expo renewal decal and booster/souvenir plates.",
+    "Other jurisdictions’ pavilion examples are not B.C. road issues."
+   ],
+   "nextAction": "Split road, renewal, souvenir and outside-jurisdiction examples.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "souvenir-1970-expo",
+    "events-expo86-presentation",
+    "events-expo86-booster",
+    "events-expo86-booster-aamva",
+    "events-expo86-prototype",
+    "events-expo86-souvenir",
+    "events-expo86-stencil",
+    "events-expo86-concours",
+    "events-expo86-nwt"
+   ]
+  },
+  {
+   "id": "farm-tractor",
+   "name": "Farm / Farm Tractor",
+   "sourceUrl": "https://www.bcpl8s.ca/Farm.html",
+   "group": "Commercial and vehicle classes",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 13,
+   "parentId": null,
+   "distinctions": [
+    "F-marked agricultural plates; separate from the farm-truck family."
+   ],
+   "nextAction": "Build farm-tractor recipes and keep the meaning of F tied to class and period.",
+   "caution": "Do not retroactively interpret every historical passenger F prefix as a farm plate.",
+   "additionalSources": [
+    "https://www.bcpl8s.ca/Farm-Truck.html"
+   ],
+   "formats": [
+    "farm-tractor-1948",
+    "farm-tractor-1955",
+    "farm-tractor-1968",
+    "farm-tractor-1974",
+    "farm-tractor-1976",
+    "farm-tractor-1979",
+    "farm-tractor-flag",
+    "farm-tractor-flag-dual"
+   ]
+  },
+  {
+   "id": "foreign-touring",
+   "name": "Foreign Touring",
+   "sourceUrl": "https://www.bcpl8s.ca/ForeignTouring.html",
+   "group": "Official and public service",
+   "issueScope": "provincial-road-and-permit",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 14,
+   "parentId": null,
+   "distinctions": [
+    "1924 F plates and associated windshield documents."
+   ],
+   "nextAction": "Separate plate and permit artefacts; preserve the historical meaning of F.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "official-foreign-1924"
+   ]
+  },
+  {
+   "id": "government",
+   "name": "Government",
+   "sourceUrl": "https://www.bcpl8s.ca/Government.html",
+   "group": "Official and public service",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 15,
+   "parentId": null,
+   "distinctions": [
+    "1948 E government issue."
+   ],
+   "nextAction": "Add the documented government recipe, not a generic modern government plate.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "official-government-1948"
+   ]
+  },
+  {
+   "id": "guinness",
+   "name": "Guinness / Victoria hired vehicles",
+   "sourceUrl": "https://www.bcpl8s.ca/Guinness.html",
+   "group": "Research and attribution",
+   "issueScope": "historical-attribution",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 16,
+   "parentId": null,
+   "distinctions": [
+    "The article identifies the disputed Victoria porcelain plate as a 1913 municipal hired-vehicle issue.",
+    "Comparative lettering and municipal badges are additional evidence."
+   ],
+   "nextAction": "Cross-link to municipal designs rather than creating a “world-record” plate class.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "official-victoria-1913",
+    "municipal-city-victoria",
+    "municipal-victoria-1913",
+    "bicycle-victoria-1946",
+    "bicycle-victoria-1952"
+   ]
+  },
+  {
+   "id": "ham-radio",
+   "name": "Ham Radio",
+   "sourceUrl": "https://www.bcpl8s.ca/HamRadio.htm",
+   "group": "Optional and heritage",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 17,
+   "parentId": null,
+   "distinctions": [
+    "VE7 and VA7 call-sign arrangements; historical spacing and maker changes."
+   ],
+   "nextAction": "Use call-sign grammar and separate layouts for short and longer runs.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "ham-radio-1963",
+    "ham-radio-1964",
+    "ham-radio-1965",
+    "ham-radio-1968",
+    "ham-radio-1969",
+    "ham-radio-1970",
+    "ham-radio-1973",
+    "ham-radio-1977-acme",
+    "ham-radio-1979",
+    "ham-radio-1986-flag",
+    "ham-radio-2002-flag",
+    "ham-radio-2014-flag",
+    "ham-radio-booster"
+   ]
+  },
+  {
+   "id": "industrial",
+   "name": "Industrial Vehicle",
+   "sourceUrl": "https://www.bcpl8s.ca/IndustrialVehicle.htm",
+   "group": "Commercial and vehicle classes",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 18,
+   "parentId": null,
+   "distinctions": [
+    "Historical X-prefix bases; maker changes; new serial configuration announced in 2025."
+   ],
+   "nextAction": "Keep industrial separate from restricted and off-road; version serial rules.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "industrial-x-1957",
+    "industrial-xh-1958",
+    "industrial-x-1964",
+    "industrial-x-1972",
+    "industrial-x-1976",
+    "industrial-x-1979",
+    "industrial-x-flag",
+    "industrial-logging-pf-1938",
+    "industrial-logging-1961",
+    "industrial-logging-1963",
+    "industrial-logging-1972",
+    "industrial-logging-1980",
+    "industrial-logging-1984",
+    "industrial-logging-1985",
+    "industrial-logging-flag",
+    "industrial-restricted",
+    "industrial-off-road",
+    "industrial-sa-1973",
+    "industrial-sa-1976",
+    "industrial-sa-1979",
+    "industrial-sa-flag"
+   ]
+  },
+  {
+   "id": "keytags",
+   "name": "Keytags",
+   "sourceUrl": "https://www.bcpl8s.ca/Keytags.html",
+   "group": "Related artefacts",
+   "issueScope": "miniature",
+   "reviewDepth": "page-structure",
+   "implementationStatus": "not-a-plate",
+   "homepageLinkId": 19,
+   "parentId": null,
+   "distinctions": [
+    "Miniature plate-like tags are not full-scale die specimens."
+   ],
+   "nextAction": "Catalogue tag shapes and makers separately.",
+   "caution": null,
+   "additionalSources": []
+  },
+  {
+   "id": "lieutenant-governor",
+   "name": "Lieutenant Governor",
+   "sourceUrl": "https://www.bcpl8s.ca/LGpl8.htm",
+   "group": "Events and ceremonial",
+   "issueScope": "ceremonial-and-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 20,
+   "parentId": null,
+   "distinctions": [
+    "Heraldic plaques, crest changes, smaller vehicle examples and a personalized example."
+   ],
+   "nextAction": "Keep heraldic plaques separate from standard plates carrying personalized text.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "official-lt-governor-arms",
+    "official-lt-governor-crest"
+   ]
+  },
+  {
+   "id": "logging",
+   "name": "Logging",
+   "sourceUrl": "https://www.bcpl8s.ca/Logging.htm",
+   "group": "Commercial and vehicle classes",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 21,
+   "parentId": null,
+   "distinctions": [
+    "Historical forestry/logging prefixes and later logging bases."
+   ],
+   "nextAction": "Build a logging family; link Special Agreement and company VIN identification without merging them.",
+   "caution": "Some early prefix dates and allocations remain uncertain.",
+   "additionalSources": [],
+   "formats": [
+    "industrial-logging-pf-1938",
+    "industrial-logging-1961",
+    "industrial-logging-1963",
+    "industrial-logging-1972",
+    "industrial-logging-1980",
+    "industrial-logging-1984",
+    "industrial-logging-1985",
+    "industrial-logging-flag"
+   ]
+  },
+  {
+   "id": "manufacturer",
+   "name": "Manufacturer",
+   "sourceUrl": "https://www.bcpl8s.ca/Manufacturer.htm",
+   "group": "Commercial and vehicle classes",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 22,
+   "parentId": null,
+   "distinctions": [
+    "MANUFACTURER legend forms, later MA forms and reused base components."
+   ],
+   "nextAction": "Create independent legend placement and class grammar.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "trade-manufacturer-1968",
+    "trade-manufacturer-1979",
+    "trade-manufacturer-flag"
+   ]
+  },
+  {
+   "id": "medical-doctor",
+   "name": "Medical Doctor",
+   "sourceUrl": "https://www.bcpl8s.ca/MedicalDoctor.htm",
+   "group": "Official and public service",
+   "issueScope": "mixed-road-allocation-and-accessory",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 23,
+   "parentId": null,
+   "distinctions": [
+    "Early reserved passenger numbers, PN plates and doctor-related toppers."
+   ],
+   "nextAction": "Distinguish allocation-only examples from genuinely different plate designs.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "official-doctor-1930",
+    "official-doctor-1931",
+    "official-doctor-1936",
+    "official-doctor-pn-1938",
+    "official-doctor-pn-1940"
+   ]
+  },
+  {
+   "id": "memorial-cross",
+   "name": "Memorial Cross",
+   "sourceUrl": "https://www.bcpl8s.ca/MemorialCross.html",
+   "group": "Optional and heritage",
+   "issueScope": "road-and-keepsake",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 24,
+   "parentId": null,
+   "distinctions": [
+    "Road plate and keepsake versions need separate records."
+   ],
+   "nextAction": "Build an artwork master with explicit road/keepsake type.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "memorial-passenger",
+    "memorial-truck",
+    "memorial-keepsake"
+   ]
+  },
+  {
+   "id": "motive-fuel",
+   "name": "Motive Fuel",
+   "sourceUrl": "https://www.bcpl8s.ca/MotiveFuel.htm",
+   "group": "Commercial and vehicle classes",
+   "issueScope": "supplementary-plate-and-decal",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 25,
+   "parentId": null,
+   "distinctions": [
+    "Early-1960s and later-1960s layouts; related fuel-tax decals."
+   ],
+   "nextAction": "Treat tax identification as a supplementary family rather than a passenger base.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "carrier-fuel-1961",
+    "carrier-fuel-1969"
+   ]
+  },
+  {
+   "id": "motor-carrier",
+   "name": "Motor Carrier",
+   "sourceUrl": "https://www.bcpl8s.ca/MotorCarrier.htm",
+   "group": "Commercial and vehicle classes",
+   "issueScope": "supplementary-plate-and-decal",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 26,
+   "parentId": null,
+   "distinctions": [
+    "Letter-classification plates, changing layouts and later decals."
+   ],
+   "nextAction": "Represent carrier class, period and artefact type independently.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "carrier-cl-1936",
+    "carrier-cl-1946",
+    "carrier-cl-1951",
+    "carrier-mc-1970",
+    "carrier-mc-1974",
+    "carrier-mc-1975",
+    "carrier-mc-1982",
+    "carrier-mc-1985",
+    "carrier-mc-1988",
+    "carrier-mc-1995",
+    "carrier-mc-taxi"
+   ]
+  },
+  {
+   "id": "motorcycle",
+   "name": "Motorcycle",
+   "sourceUrl": "https://www.bcpl8s.ca/Motorcycle.htm",
+   "group": "Commercial and vehicle classes",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 27,
+   "parentId": null,
+   "distinctions": [
+    "Own size chronology and dies; later larger characters, B.C. mark and well changes."
+   ],
+   "nextAction": "Create size-specific masters; do not scale full-size plates indiscriminately.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "motorcycle-1949",
+    "motorcycle-1973",
+    "motorcycle-1974",
+    "motorcycle-1974-prototype",
+    "motorcycle-1979",
+    "motorcycle-flag",
+    "motorcycle-2011",
+    "motorcycle-dealer-1968",
+    "motorcycle-dealer-1973",
+    "motorcycle-dealer-1976",
+    "motorcycle-dealer-1979",
+    "motorcycle-dealer-flag"
+   ]
+  },
+  {
+   "id": "movie-props",
+   "name": "Movie Props",
+   "sourceUrl": "https://www.bcpl8s.ca/Movies.htm",
+   "group": "Non-issued and creative",
+   "issueScope": "prop",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 28,
+   "parentId": null,
+   "distinctions": [
+    "Fictional serials, altered legends, construction and layouts."
+   ],
+   "nextAction": "Keep a prop collection explicitly separate from historical issued designs.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "prop-1959-repro",
+    "prop-flag-xqz"
+   ]
+  },
+  {
+   "id": "municipal",
+   "name": "Municipal",
+   "sourceUrl": "https://www.bcpl8s.ca/Municipal.htm",
+   "group": "Municipal and local",
+   "issueScope": "municipal",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 29,
+   "parentId": null,
+   "distinctions": [
+    "City-issued commercial/vehicle-for-hire plates, provincial municipal series and later labels."
+   ],
+   "nextAction": "Use issuing municipality as a first-class field; catalogue local shapes independently.",
+   "caution": null,
+   "additionalSources": [
+    "https://www.bcpl8s.ca/Municipal-City-Issues.htm"
+   ],
+   "formats": [
+    "municipal-prov-1963",
+    "municipal-prov-1979",
+    "municipal-prov-1983",
+    "municipal-exempt-1963",
+    "municipal-exempt-1964",
+    "municipal-exempt-1965",
+    "municipal-exempt-1966",
+    "municipal-exempt-1967",
+    "municipal-exempt-1968",
+    "municipal-exempt-1969",
+    "municipal-exempt-1970",
+    "municipal-exempt-1971",
+    "municipal-exempt-1972",
+    "municipal-exempt-1973",
+    "municipal-exempt-1974",
+    "municipal-city-agassiz",
+    "municipal-city-alberni",
+    "municipal-city-burnaby",
+    "municipal-city-chilliwack",
+    "municipal-city-coquitlam",
+    "municipal-city-delta",
+    "municipal-city-langley",
+    "municipal-city-maple-ridge",
+    "municipal-city-matsqui",
+    "municipal-city-mission",
+    "municipal-city-nanaimo",
+    "municipal-city-new-westminster",
+    "municipal-city-north-vancouver",
+    "municipal-city-port-alberni",
+    "municipal-city-port-coquitlam",
+    "municipal-city-port-moody",
+    "municipal-city-powell-river",
+    "municipal-city-prince-george",
+    "municipal-city-richmond",
+    "municipal-city-saanich",
+    "municipal-city-sumas",
+    "municipal-city-surrey",
+    "municipal-city-trail",
+    "municipal-city-victoria",
+    "municipal-city-west-vancouver",
+    "municipal-victoria-1913",
+    "municipal-tahsis-1966",
+    "municipal-vancouver-disc-1919",
+    "municipal-vancouver-disc-1931",
+    "municipal-vancouver-vehicle-1950",
+    "municipal-vancouver-vehicle-1962",
+    "municipal-vancouver-conveyance-1947",
+    "municipal-vancouver-conveyance-1958",
+    "municipal-vancouver-express-dray-1912",
+    "municipal-vancouver-express-dray-1934",
+    "municipal-vancouver-auto-taxi-1923",
+    "municipal-vancouver-taxi-1956",
+    "municipal-vancouver-taxi-1997",
+    "municipal-vancouver-for-hire-1949",
+    "municipal-vancouver-for-hire-1970",
+    "municipal-vancouver-for-hire-1995",
+    "municipal-vancouver-commercial-1972",
+    "municipal-vancouver-commercial-1982",
+    "municipal-vancouver-commercial-1993",
+    "municipal-vancouver-commercial-1994",
+    "municipal-vancouver-commercial-2004",
+    "municipal-vancouver-junk-1965",
+    "municipal-vancouver-junk-1989",
+    "municipal-vancouver-funeral-cab-1983"
+   ]
+  },
+  {
+   "id": "national-defence",
+   "name": "National Defence",
+   "sourceUrl": "https://www.bcpl8s.ca/NationalDefence.html",
+   "group": "Official and public service",
+   "issueScope": "mixed-provincial-federal",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 30,
+   "parentId": null,
+   "distinctions": [
+    "B.C.-issued N plates, motorcycle examples and later federal military plates."
+   ],
+   "nextAction": "Separate B.C. historical issues from Canada-wide military jurisdiction.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "official-defence-1941",
+    "official-defence-motorcycle",
+    "official-defence-1949",
+    "official-defence-1952",
+    "official-defence-1955",
+    "official-defence-1964",
+    "official-defence-1965",
+    "official-defence-1968",
+    "official-defence-canada",
+    "official-defence-pcmr",
+    "official-defence-esquimalt",
+    "official-defence-comox"
+   ]
+  },
+  {
+   "id": "national-parks",
+   "name": "National Parks",
+   "sourceUrl": "https://www.bcpl8s.ca/NationalParks.html",
+   "group": "Related artefacts",
+   "issueScope": "mixed-attribution-and-federal-access",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 31,
+   "parentId": null,
+   "distinctions": [
+    "Attributed early red-border plates; buffalo radiator badges, toppers and permits."
+   ],
+   "nextAction": "Keep federal park-access artefacts separate from modern B.C. Parks plates.",
+   "caution": "The early red-border plate attribution is an interpretation in the source, not a fully verified issue record.",
+   "additionalSources": [],
+   "formats": [
+    "official-parks-1927",
+    "official-parks-1930",
+    "official-parks-1936"
+   ]
+  },
+  {
+   "id": "off-road",
+   "name": "Off-Road Vehicle",
+   "sourceUrl": "https://www.bcpl8s.ca/Off-Road.html",
+   "group": "Commercial and vehicle classes",
+   "issueScope": "registration-plate-and-sticker",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 32,
+   "parentId": null,
+   "distinctions": [
+    "Metal plate and adhesive registration sticker are distinct artefacts."
+   ],
+   "nextAction": "Build both formats with their own dimensions and typography.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "industrial-off-road"
+   ]
+  },
+  {
+   "id": "olympics",
+   "name": "Olympics",
+   "sourceUrl": "https://www.bcpl8s.ca/Olympics.htm",
+   "group": "Events and ceremonial",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 33,
+   "parentId": null,
+   "distinctions": [
+    "Six forms: passenger, truck, farm truck, commercial trailer, motorcycle and utility trailer."
+   ],
+   "nextAction": "Use shared Olympic artwork with six class/size/serial recipes, not one passenger template.",
+   "caution": null,
+   "additionalSources": [
+    "https://www.bcpl8s.ca/Olympics-Gallery.htm"
+   ],
+   "formats": [
+    "olympic-passenger",
+    "olympic-truck",
+    "olympic-farm",
+    "olympic-trailer",
+    "olympic-motorcycle",
+    "olympic-utility"
+   ]
+  },
+  {
+   "id": "passenger-carrier",
+   "name": "Passenger Carrier",
+   "sourceUrl": "https://www.bcpl8s.ca/PassengerCarrier.html",
+   "group": "Commercial and vehicle classes",
+   "issueScope": "supplementary-plate",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 34,
+   "parentId": null,
+   "distinctions": [
+    "Regular passenger-carrier identification and yellow Olympic-period temporary examples."
+   ],
+   "nextAction": "Keep distinct from motor-carrier classifications and from consumer Olympic plates.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "carrier-passenger-2005"
+   ]
+  },
+  {
+   "id": "personalized",
+   "name": "Personalized",
+   "sourceUrl": "https://www.bcpl8s.ca/Personalized.htm",
+   "group": "Optional and heritage",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 35,
+   "parentId": null,
+   "distinctions": [
+    "Full-size and motorcycle layouts; varying spacing, emblem positioning and makers."
+   ],
+   "nextAction": "Use its own grammar, centring rules and artwork placement.",
+   "caution": "Promotional or sample examples are not proof of the ordinary issued serial rules.",
+   "additionalSources": [],
+   "formats": [
+    "personalized-1979",
+    "personalized-astro",
+    "personalized-reversed",
+    "personalized-waldale",
+    "personalized-sample",
+    "personalized-motorcycle",
+    "personalized-motorcycle-prototype"
+   ]
+  },
+  {
+   "id": "prototype",
+   "name": "Prototype",
+   "sourceUrl": "https://www.bcpl8s.ca/Prototype.htm",
+   "group": "Non-issued and creative",
+   "issueScope": "prototype-and-test",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 36,
+   "parentId": null,
+   "distinctions": [
+    "Colour trials, unreleased concepts and altered/repainted specimens."
+   ],
+   "nextAction": "Record experimental status and evidence; do not expose as an ordinary issued year.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "prototype-1964-colours",
+    "prototype-1968-paint",
+    "prototype-super-natural",
+    "prototype-dogwood",
+    "prototype-a-new-bc"
+   ]
+  },
+  {
+   "id": "prorated",
+   "name": "Prorated",
+   "sourceUrl": "https://www.bcpl8s.ca/Prorate.htm",
+   "group": "Commercial and vehicle classes",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 37,
+   "parentId": null,
+   "distinctions": [
+    "Annual and multi-year P-series; decal and layout variants."
+   ],
+   "nextAction": "Add base recipes plus versioned prorate serial patterns.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "carrier-prorate-1962",
+    "carrier-prorate-1964",
+    "carrier-prorate-1972",
+    "carrier-prorate-1979",
+    "carrier-prorate-1981",
+    "carrier-prorate-flag-1985",
+    "carrier-prorate-flag-1989",
+    "carrier-prorate-apportioned"
+   ]
+  },
+  {
+   "id": "public-works",
+   "name": "Public Works",
+   "sourceUrl": "https://www.bcpl8s.ca/PublicWorks.htm",
+   "group": "Official and public service",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 38,
+   "parentId": null,
+   "distinctions": [
+    "Historical PW plates."
+   ],
+   "nextAction": "Use documented specimens and retain unknown end dates as unknown.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "official-pw-1938",
+    "official-pw-1940"
+   ]
+  },
+  {
+   "id": "reciprocity",
+   "name": "Reciprocity",
+   "sourceUrl": "https://www.bcpl8s.ca/Reciprocity.htm",
+   "group": "Commercial and vehicle classes",
+   "issueScope": "supplementary-plate-and-decal",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 39,
+   "parentId": null,
+   "distinctions": [
+    "Historical metal plates and later interjurisdictional decals."
+   ],
+   "nextAction": "Keep uncertain early examples marked tentative.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "carrier-reciprocity-1963",
+    "carrier-reciprocity-1973",
+    "carrier-reciprocity-1980"
+   ]
+  },
+  {
+   "id": "repairer",
+   "name": "Repairer",
+   "sourceUrl": "https://www.bcpl8s.ca/Repairer.htm",
+   "group": "Commercial and vehicle classes",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 40,
+   "parentId": null,
+   "distinctions": [
+    "REPAIRER and REPAIRMAN inscriptions; changing top/bottom placement."
+   ],
+   "nextAction": "Model legend text and location by period instead of merely changing serials.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "trade-repairer-1974",
+    "trade-repairer-1979",
+    "trade-repairer-flag",
+    "trade-repairer-flag-1995"
+   ]
+  },
+  {
+   "id": "restricted",
+   "name": "Restricted",
+   "sourceUrl": "https://www.bcpl8s.ca/Restricted.html",
+   "group": "Commercial and vehicle classes",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 41,
+   "parentId": null,
+   "distinctions": [
+    "AT-prefix and X-suffix forms; maker-specific spacing differences."
+   ],
+   "nextAction": "Separate from industrial X-prefix and off-road registrations.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "industrial-restricted"
+   ]
+  },
+  {
+   "id": "royal-visits",
+   "name": "Royal Visits",
+   "sourceUrl": "https://www.bcpl8s.ca/Royal.html",
+   "group": "Events and ceremonial",
+   "issueScope": "ceremonial-event",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 42,
+   "parentId": null,
+   "distinctions": [
+    "1951, ROYAL-series, Commonwealth Games and later heraldic forms.",
+    "Trial/prototype designs must remain distinct."
+   ],
+   "nextAction": "Use event-specific components and avoid assuming one universal royal plate.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "events-royal-1951",
+    "events-royal-1987",
+    "events-royal-1994",
+    "events-royal-1994-prototype",
+    "events-royal-crown"
+   ]
+  },
+  {
+   "id": "sample",
+   "name": "Sample",
+   "sourceUrl": "https://www.bcpl8s.ca/Sample.htm",
+   "group": "Non-issued and creative",
+   "issueScope": "official-sample-and-souvenir",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 43,
+   "parentId": null,
+   "distinctions": [
+    "Passenger and non-passenger samples; renewal pieces and decal samples.",
+    "Zero-filled serials and manufacturing sample inscriptions can be legitimate sample evidence."
+   ],
+   "nextAction": "Add sample status and a separate validation grammar; distinguish souvenirs.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "sample-1940",
+    "sample-1951-strip",
+    "sample-1955",
+    "sample-1964",
+    "sample-1970-000",
+    "sample-1973",
+    "sample-1979",
+    "sample-flag"
+   ]
+  },
+  {
+   "id": "special-agreement",
+   "name": "Special Agreement",
+   "sourceUrl": "https://www.bcpl8s.ca/SpecialAgreement.htm",
+   "group": "Commercial and vehicle classes",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 44,
+   "parentId": null,
+   "distinctions": [
+    "Gold River GR and Cominco CL families; later consolidated SA form."
+   ],
+   "nextAction": "Represent GR, CL and SA as linked but distinct recipes.",
+   "caution": "Some historical allocation ranges are explicitly estimates; recent sightings do not define a continuous issuance range.",
+   "additionalSources": [],
+   "formats": [
+    "industrial-sa-1973",
+    "industrial-sa-1976",
+    "industrial-sa-1979",
+    "industrial-sa-flag"
+   ]
+  },
+  {
+   "id": "temporary-permits",
+   "name": "Temporary Permits",
+   "sourceUrl": "https://www.bcpl8s.ca/Temporary-Permits.html",
+   "group": "Renewals and permits",
+   "issueScope": "paper-permit",
+   "reviewDepth": "family-page",
+   "implementationStatus": "not-a-plate",
+   "homepageLinkId": 45,
+   "parentId": null,
+   "distinctions": [
+    "Operating, testing/demonstration and interim forms; later serial-format changes.",
+    "Early undated X-plate attribution is tentative."
+   ],
+   "nextAction": "Add paper dimensions and fields; distinguish TOP from COVID-era TNP.",
+   "caution": null,
+   "additionalSources": [
+    "https://www.bcpl8s.ca/TemporaryNumberPlates.html"
+   ]
+  },
+  {
+   "id": "trailer",
+   "name": "Trailer / Commercial Trailer",
+   "sourceUrl": "https://www.bcpl8s.ca/Trailer.htm",
+   "group": "Commercial and vehicle classes",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 46,
+   "parentId": null,
+   "distinctions": [
+    "Commercial trailer chronology; utility and floater are separate linked families."
+   ],
+   "nextAction": "Create separate commercial, utility and floater recipes.",
+   "caution": "Do not infer that every historical T prefix denotes a trailer.",
+   "additionalSources": [
+    "https://www.bcpl8s.ca/Trailer-Utility.htm",
+    "https://www.bcpl8s.ca/Trailer-Floater.htm"
+   ],
+   "formats": [
+    "trailer-1921",
+    "trailer-1927",
+    "trailer-1936",
+    "trailer-1949",
+    "trailer-comm-1972",
+    "trailer-comm-1973",
+    "trailer-comm-1976",
+    "trailer-comm-1979",
+    "trailer-comm-flag",
+    "trailer-comm-flag-dual",
+    "trailer-utility-1955",
+    "trailer-utility-1970",
+    "trailer-utility-1974",
+    "trailer-utility-1979",
+    "trailer-utility-flag",
+    "trailer-utility-flag-2000",
+    "trailer-utility-2016",
+    "trailer-floater-1974",
+    "trailer-floater-1979",
+    "trailer-floater-1983",
+    "trailer-floater-flag"
+   ]
+  },
+  {
+   "id": "transporter",
+   "name": "Transporter",
+   "sourceUrl": "https://www.bcpl8s.ca/Transporter.htm",
+   "group": "Commercial and vehicle classes",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 47,
+   "parentId": null,
+   "distinctions": [
+    "Changing legend positions; later TR and TS sequences."
+   ],
+   "nextAction": "Build transporter-specific legends and grammar.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "trade-transporter-1964",
+    "trade-transporter-1979",
+    "trade-transporter-flag"
+   ]
+  },
+  {
+   "id": "veteran",
+   "name": "Veteran",
+   "sourceUrl": "https://www.bcpl8s.ca/Veteran.html",
+   "group": "Optional and heritage",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 48,
+   "parentId": null,
+   "distinctions": [
+    "Passenger, truck and motorcycle types."
+   ],
+   "nextAction": "Build shared commemorative artwork with class-specific layout and serial rules.",
+   "caution": null,
+   "additionalSources": [
+    "https://www.bcpl8s.ca/Veteran-Gallery.html"
+   ],
+   "formats": [
+    "veteran-passenger",
+    "veteran-passenger-dual",
+    "veteran-truck",
+    "veteran-motorcycle"
+   ]
+  },
+  {
+   "id": "vin-program",
+   "name": "VIN Program",
+   "sourceUrl": "https://www.bcpl8s.ca/VIN.html",
+   "group": "Related artefacts",
+   "issueScope": "company-identification",
+   "reviewDepth": "family-page",
+   "implementationStatus": "not-a-plate",
+   "homepageLinkId": 49,
+   "parentId": null,
+   "distinctions": [
+    "Large forestry-company vehicle identification boards."
+   ],
+   "nextAction": "Keep company identification separate from road registrations and modern 17-character VINs.",
+   "caution": null,
+   "additionalSources": []
+  },
+  {
+   "id": "highs",
+   "name": "Highs",
+   "sourceUrl": "https://www.bcpl8s.ca/Highs.htm",
+   "group": "Research and attribution",
+   "issueScope": "serial-observation",
+   "reviewDepth": "page-structure",
+   "implementationStatus": "research-not-template",
+   "homepageLinkId": 50,
+   "parentId": null,
+   "distinctions": [
+    "Observed high numbers assist chronology and allocation research."
+   ],
+   "nextAction": "Attach observations to recipes; do not generate a new design for each high.",
+   "caution": null,
+   "additionalSources": []
+  },
+  {
+   "id": "lows",
+   "name": "Lows",
+   "sourceUrl": "https://www.bcpl8s.ca/Lows.htm",
+   "group": "Research and attribution",
+   "issueScope": "serial-observation",
+   "reviewDepth": "page-structure",
+   "implementationStatus": "research-not-template",
+   "homepageLinkId": 51,
+   "parentId": null,
+   "distinctions": [
+    "Low-number specimens can help assess spacing and die dimensions."
+   ],
+   "nextAction": "Attach observations to recipes rather than counting every low as a base.",
+   "caution": null,
+   "additionalSources": []
+  },
+  {
+   "id": "bicycles",
+   "name": "Bicycles",
+   "sourceUrl": "https://www.bcpl8s.ca/Bicycle.html",
+   "group": "Municipal and local",
+   "issueScope": "municipal",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 52,
+   "parentId": null,
+   "distinctions": [
+    "Municipal plates and labels; multiple local shapes and materials.",
+    "The index includes Prince George and Williams Lake."
+   ],
+   "nextAction": "Add issuer-specific bicycle families and do not infer unknown years.",
+   "caution": null,
+   "additionalSources": [
+    "https://www.bcpl8s.ca/Bicycle-PrinceGeorge.html",
+    "https://www.bcpl8s.ca/Bicycle-WilliamsLake.html"
+   ],
+   "formats": [
+    "bicycle-cranbrook",
+    "bicycle-esquimalt",
+    "bicycle-fernie-1949",
+    "bicycle-fernie",
+    "bicycle-kelowna-1964",
+    "bicycle-kelowna-1970",
+    "bicycle-nelson-1942",
+    "bicycle-nelson-1943",
+    "bicycle-nelson-1944",
+    "bicycle-nelson-1945",
+    "bicycle-nelson-1946",
+    "bicycle-nelson-1947",
+    "bicycle-nelson-1951",
+    "bicycle-nelson-1952",
+    "bicycle-nelson-hex-1956",
+    "bicycle-nelson-hex-1974",
+    "bicycle-oak-bay-1948",
+    "bicycle-oak-bay-hex",
+    "bicycle-oak-bay-shield",
+    "bicycle-penticton-1947",
+    "bicycle-penticton-1955",
+    "bicycle-penticton-1958",
+    "bicycle-port-coquitlam",
+    "bicycle-prince-george-1953",
+    "bicycle-prince-george-1958",
+    "bicycle-prince-george-1959",
+    "bicycle-trail-1935",
+    "bicycle-trail-oval",
+    "bicycle-trail-1955",
+    "bicycle-trail-1962",
+    "bicycle-trail-1967",
+    "bicycle-valemount",
+    "bicycle-vancouver-1904",
+    "bicycle-vancouver-1940s",
+    "bicycle-vancouver-courier-1989",
+    "bicycle-victoria-1946",
+    "bicycle-victoria-1952",
+    "bicycle-west-vancouver-licence",
+    "bicycle-west-vancouver-license",
+    "bicycle-williams-lake"
+   ]
+  },
+  {
+   "id": "front-plate-debate",
+   "name": "Front Plate Debate",
+   "sourceUrl": "https://www.bcpl8s.ca/",
+   "group": "Research and attribution",
+   "issueScope": "background",
+   "reviewDepth": "homepage-navigation-only",
+   "implementationStatus": "research-not-template",
+   "homepageLinkId": 53,
+   "parentId": null,
+   "distinctions": [
+    "Homepage-linked policy/history topic, not a distinct plate family."
+   ],
+   "nextAction": "Keep as contextual research.",
+   "caution": null,
+   "additionalSources": []
+  },
+  {
+   "id": "historic-numbers",
+   "name": "Historic Numbers",
+   "sourceUrl": "https://www.bcpl8s.ca/HistoricNumbers.htm",
+   "group": "Research and attribution",
+   "issueScope": "serial-history",
+   "reviewDepth": "page-structure",
+   "implementationStatus": "research-not-template",
+   "homepageLinkId": 54,
+   "parentId": null,
+   "distinctions": [
+    "Pre-provincial number history is evidence for early passenger records."
+   ],
+   "nextAction": "Link to early specimens without converting numbers into separate visual designs.",
+   "caution": null,
+   "additionalSources": []
+  },
+  {
+   "id": "miscellaneous",
+   "name": "Miscellaneous",
+   "sourceUrl": "https://www.bcpl8s.ca/Misc.htm",
+   "group": "Non-issued and creative",
+   "issueScope": "mixed",
+   "reviewDepth": "family-page",
+   "implementationStatus": "partial",
+   "homepageLinkId": 55,
+   "parentId": null,
+   "distinctions": [
+    "Conference commemoratives, event boards, uncertain prototypes and other curios.",
+    "Linked collections: boosters, reproduction/counterfeit examples, fire departments and toppers."
+   ],
+   "nextAction": "Classify individual records before rendering; keep uncertain attribution explicit.",
+   "caution": null,
+   "additionalSources": [
+    "https://www.bcpl8s.ca/Boosters.html",
+    "https://www.bcpl8s.ca/Counterfeit.html",
+    "https://www.bcpl8s.ca/FireDepartments.html",
+    "https://www.bcpl8s.ca/Toppers.html"
+   ],
+   "formats": [
+    "souvenir-1970-expo",
+    "souvenir-bc0000"
+   ]
+  },
+  {
+   "id": "specialty-proposals",
+   "name": "Specialty programme / proposals",
+   "sourceUrl": "https://www.bcpl8s.ca/SpecialtyPlates.html",
+   "group": "Non-issued and creative",
+   "issueScope": "proposal-and-programme-history",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": 65,
+   "parentId": null,
+   "distinctions": [
+    "Proposed themed plates and comparative examples from other jurisdictions."
+   ],
+   "nextAction": "Do not mark proposal artwork as an issued B.C. design.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "prototype-super-natural",
+    "prototype-dogwood",
+    "prototype-a-new-bc"
+   ]
+  },
+  {
+   "id": "farm-truck",
+   "name": "Farm Truck",
+   "sourceUrl": "https://www.bcpl8s.ca/Farm-Truck.html",
+   "group": "Commercial and vehicle classes",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": null,
+   "parentId": "farm-tractor",
+   "distinctions": [
+    "A and G historical series; newer A-suffix configuration."
+   ],
+   "nextAction": "Create farm-truck base and serial recipes, separate from F farm tractors.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "farm-truck-1961",
+    "farm-truck-1974",
+    "farm-truck-1976",
+    "farm-truck-1979",
+    "farm-truck-flag",
+    "farm-truck-flag-dual",
+    "farm-truck-2025",
+    "olympic-farm"
+   ]
+  },
+  {
+   "id": "dealer-motorcycle",
+   "name": "Motorcycle Dealer",
+   "sourceUrl": "https://www.bcpl8s.ca/Dealer-Motorcycle.htm",
+   "group": "Commercial and vehicle classes",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": null,
+   "parentId": "dealer",
+   "distinctions": [
+    "Motorcycle-sized dealer forms and later DM serials."
+   ],
+   "nextAction": "Add a motorcycle-dealer layout and grammar.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "motorcycle-dealer-1968",
+    "motorcycle-dealer-1973",
+    "motorcycle-dealer-1976",
+    "motorcycle-dealer-1979",
+    "motorcycle-dealer-flag",
+    "trade-dealer-mc-1976",
+    "trade-dealer-mc-1979",
+    "trade-dealer-mc-flag"
+   ]
+  },
+  {
+   "id": "utility-trailer",
+   "name": "Utility Trailer",
+   "sourceUrl": "https://www.bcpl8s.ca/Trailer-Utility.htm",
+   "group": "Commercial and vehicle classes",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": null,
+   "parentId": "trailer",
+   "distinctions": [
+    "Utility trailer series and associated special-issue forms."
+   ],
+   "nextAction": "Build separately from commercial trailer.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "trailer-utility-1955",
+    "trailer-utility-1970",
+    "trailer-utility-1974",
+    "trailer-utility-1979",
+    "trailer-utility-flag",
+    "trailer-utility-flag-2000",
+    "trailer-utility-2016",
+    "olympic-utility"
+   ]
+  },
+  {
+   "id": "trailer-floater",
+   "name": "Trailer Floater",
+   "sourceUrl": "https://www.bcpl8s.ca/Trailer-Floater.htm",
+   "group": "Commercial and vehicle classes",
+   "issueScope": "provincial-road",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": null,
+   "parentId": "trailer",
+   "distinctions": [
+    "Multi-trailer/floater identification, distinct from a normal trailer registration."
+   ],
+   "nextAction": "Create its own recipe family.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "trailer-floater-1974",
+    "trailer-floater-1979",
+    "trailer-floater-1983",
+    "trailer-floater-flag"
+   ]
+  },
+  {
+   "id": "temporary-number-plates",
+   "name": "Temporary Number Plates",
+   "sourceUrl": "https://www.bcpl8s.ca/TemporaryNumberPlates.html",
+   "group": "Renewals and permits",
+   "issueScope": "paper-registration",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": null,
+   "parentId": "temporary-permits",
+   "distinctions": [
+    "COVID-era paper number plates, superficially similar to TOP forms."
+   ],
+   "nextAction": "Keep separate from temporary operating permits and model historically, not as a current entitlement.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "carrier-temporary-x"
+   ]
+  },
+  {
+   "id": "boosters",
+   "name": "Boosters",
+   "sourceUrl": "https://www.bcpl8s.ca/Boosters.html",
+   "group": "Non-issued and creative",
+   "issueScope": "souvenir-and-promotional",
+   "reviewDepth": "page-structure",
+   "implementationStatus": "not-a-plate",
+   "homepageLinkId": null,
+   "parentId": "miscellaneous",
+   "distinctions": [
+    "Promotional plate-like objects are not proof of provincial road issuance."
+   ],
+   "nextAction": "Add an explicitly non-issued creative catalogue.",
+   "caution": null,
+   "additionalSources": []
+  },
+  {
+   "id": "reproductions",
+   "name": "Reproductions / Counterfeits",
+   "sourceUrl": "https://www.bcpl8s.ca/Counterfeit.html",
+   "group": "Research and attribution",
+   "issueScope": "non-original-specimen",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": null,
+   "parentId": "miscellaneous",
+   "distinctions": [
+    "Examples help exclude modern reproductions from historical die calibration."
+   ],
+   "nextAction": "Record provenance warnings, not a verified historical master.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "reproduction-1920"
+   ]
+  },
+  {
+   "id": "fire-departments",
+   "name": "Fire Department plates",
+   "sourceUrl": "https://www.bcpl8s.ca/FireDepartments.html",
+   "group": "Non-issued and creative",
+   "issueScope": "departmental-and-booster",
+   "reviewDepth": "page-structure",
+   "implementationStatus": "not-a-plate",
+   "homepageLinkId": null,
+   "parentId": "miscellaneous",
+   "distinctions": [
+    "Local department artwork and plate-like identifiers."
+   ],
+   "nextAction": "Record issuer and use; do not automatically label all as provincial registrations.",
+   "caution": null,
+   "additionalSources": []
+  },
+  {
+   "id": "toppers",
+   "name": "Toppers and Radiator Badges",
+   "sourceUrl": "https://www.bcpl8s.ca/Toppers.html",
+   "group": "Related artefacts",
+   "issueScope": "accessory",
+   "reviewDepth": "page-structure",
+   "implementationStatus": "not-a-plate",
+   "homepageLinkId": null,
+   "parentId": "miscellaneous",
+   "distinctions": [
+    "Accessories mounted above plates or on radiators."
+   ],
+   "nextAction": "Create accessory components, not standard plate shells.",
+   "caution": null,
+   "additionalSources": []
+  },
+  {
+   "id": "bicycle-prince-george",
+   "name": "Prince George bicycle plates",
+   "sourceUrl": "https://www.bcpl8s.ca/Bicycle-PrinceGeorge.html",
+   "group": "Municipal and local",
+   "issueScope": "municipal",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": null,
+   "parentId": "bicycles",
+   "distinctions": [
+    "Tin examples; dates and dimensions are not established on the source page."
+   ],
+   "nextAction": "Catalogue pictured specimens without inventing dates or exact scale.",
+   "caution": "Manufacturer attribution is marked estimated/unconfirmed in the source.",
+   "additionalSources": [],
+   "formats": [
+    "bicycle-prince-george-1953",
+    "bicycle-prince-george-1958",
+    "bicycle-prince-george-1959"
+   ]
+  },
+  {
+   "id": "bicycle-williams-lake",
+   "name": "Williams Lake bicycle plates",
+   "sourceUrl": "https://www.bcpl8s.ca/Bicycle-WilliamsLake.html",
+   "group": "Municipal and local",
+   "issueScope": "municipal",
+   "reviewDepth": "family-page",
+   "implementationStatus": "implemented",
+   "homepageLinkId": null,
+   "parentId": "bicycles",
+   "distinctions": [
+    "Plastic example under a 1977–unknown heading; dimensions and issuer chronology incomplete."
+   ],
+   "nextAction": "Reconstruct a documented specimen only after checking a usable reference.",
+   "caution": null,
+   "additionalSources": [],
+   "formats": [
+    "bicycle-williams-lake"
+   ]
+  }
+ ],
+ "repositoryUpdates": [
+  {
+   "id": "fourth-block",
+   "summary": "1985 fourth block (ALA–AXK, BLA–BRB) added as the 1985-fourth preset on the 1979 base.",
+   "resolves": "fourth-block"
+  },
+  {
+   "id": "registered-coverage",
+   "summary": "Documentation updated to describe all registered presets.",
+   "resolves": "registered-coverage"
+  },
+  {
+   "id": "die-library",
+   "summary": "Source-matched die library (ACME, Hi-Signs, Astrographic, Waldale from digit comparisons; earlier dies from gallery photos) replaces the stretched stand-in font for serials and legends.",
+   "resolves": "live-text-proxy"
+  },
+  {
+   "id": "passenger-1904-2026",
+   "summary": "Passenger plates now span 1904–2026: owner-made, porcelain, tin, steel with tabs, 1924–39 annuals and the 1985 flag base in all serial generations.",
+   "resolves": "passenger"
+  },
+  {
+   "id": "decal-library",
+   "summary": "Renewal decals 1970–2023 with day stickers fill the decal boxes and wells.",
+   "resolves": "decals"
+  },
+  {
+   "id": "families",
+   "summary": "Specialty, consular, commercial, farm, trailer, motorcycle, trade, industrial, carrier, amateur radio, official, events, municipal and bicycle families, plus samples, prototypes and props with explicit status.",
+   "resolves": "all-families"
+  }
+ ]
+}

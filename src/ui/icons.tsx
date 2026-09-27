@@ -90,3 +90,21 @@ export const Logo = () => (
     <path d="M6.5 12h4M13.5 12h4" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" />
   </svg>
 );
+export const ChevronLeft = () => (
+  <Icon>
+    <path d="m12 5-5 5 5 5" />
+  </Icon>
+);
+export const ChevronRight = () => (
+  <Icon>
+    <path d="m8 5 5 5-5 5" />
+  </Icon>
+);
+export const GridIcon = () => (
+  <Icon>
+    <rect x="3" y="3" width="6" height="6" rx="1.2" />
+    <rect x="11" y="3" width="6" height="6" rx="1.2" />
+    <rect x="3" y="11" width="6" height="6" rx="1.2" />
+    <rect x="11" y="11" width="6" height="6" rx="1.2" />
+  </Icon>
+);

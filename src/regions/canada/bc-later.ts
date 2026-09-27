@@ -1,5 +1,5 @@
 import { withLettering } from '../../core/lettering';
-import type { Parts, PlateFormat } from '../../core/types';
+import type { FieldDef, Parts, PlateFormat } from '../../core/types';
 import type { Rng } from '../../core/random';
 export const BC_FIRST_ALPHABET = 'ABCDEFGHJK';
 export const BC_SECOND_ALPHABET = 'LMNPRSTVWX';
@@ -45,6 +45,8 @@ export const BC_LATER_RECIPES: readonly BcLaterRecipe[] = [
   base('1979-first', '1979 base · AAA block', 1979, [1979, 1979], prefixes([A, A, A], (p) => p !== 'KKK'), 'First block. The source has conflicting KKL/KKJ endpoint text; this subset conservatively omits KKK. Wide lower-centre decal box; white on blue.'),
   base('1979-second', '1979 base · AAL block', 1979, [1979, 1982], prefixes([A, A, B]), 'AAL–KKX block; the approximate issue period overlaps later blocks. Clean/sloppy paint and stamping variants are not simulated.'),
   base('1982-third', '1979 base · ALL block', 1979, [1982, 1985], prefixes([A, B, B]), 'ALL–KXX block on the 1979 base. ACME/Hi-Signs transition near ARX is not treated as an exact boundary or a separate recovered die.'),
+  base('1985-fourth', '1985 · ALA block', 1979, [1985, 1985], prefixes(['AB', B, A], (p) => p[0] === 'A' || 'LMNP'.includes(p[1]) || (p[1] === 'R' && 'AB'.includes(p[2]))),
+    'Fourth block, issued in 1985 while the flag base was delayed: ALA–AXK, then BLA–BRB (source-reported). Hi-Signs production; the Nova Scotia-style dies are not reproduced.'),
 ];
 export function bcLaterRecipe(design: Record<string, unknown>): BcLaterRecipe {
   const id = typeof design.baseId === 'string' ? design.baseId : String(design.year);
@@ -73,14 +75,26 @@ function generateSerial(recipe: BcLaterRecipe, rng: Rng): string {
   const pool = recipe.prefixes.filter((p) => !appExcluded.has(p));
   return `${rng.pick(pool)}-${String(rng.int(1, 999)).padStart(3, '0')}`;
 }
+/** Documented production variants that change a detail of one base, not its serials. */
+function variantFields(recipe: BcLaterRecipe): FieldDef[] {
+  if (recipe.id === '1964') return [{ key: 'legendDie', label: 'Province legend die', preserveOnGenerate: true, options: [
+    { value: 'short', label: 'Short 1964 die' }, { value: 'long', label: 'Long 1955–63 die (random re-use)' }] }];
+  if (['1972-overrun', '1973-1974', '1975-1977', '1977-1978'].includes(recipe.id)) return [{ key: 'separator', label: 'Separator', preserveOnGenerate: true, options: [
+    { value: 'dot', label: 'Dot' }, { value: 'gap', label: 'No separator (Oakalla was inconsistent)' }] }];
+  return [];
+}
+
 export const bcLaterFormats: PlateFormat[] = BC_LATER_RECIPES.map((recipe) => withLettering({
   id: recipe.id, label: recipe.label, pattern: recipe.prefixes ? 'AAA-999 (supported block)' : '123-456',
   description: `${recipe.note} ${BC_LATER_NOTE}`, references: [recipe.source],
   design: { year: recipe.year, baseId: recipe.id },
+  period: recipe.period,
   fields: [{ key: 'serial', label: 'Plate serial', maxLength: 7 },
+    ...variantFields(recipe),
     { key: 'finish', label: 'Rendering', preserveOnGenerate: true, options: [{ value: 'flat', label: 'Flat / editable SVG' }, { value: 'embossed', label: 'Subtle embossed preview' }] }],
-  generate: (rng): Parts => ({ serial: generateSerial(recipe, rng), finish: 'flat' }),
+  generate: (rng): Parts => ({ serial: generateSerial(recipe, rng), ...Object.fromEntries(variantFields(recipe).map((f) => [f.key, f.options![0].value])), finish: 'flat' }),
   validate: (parts) => validateLaterSerial(parts.serial ?? '', recipe)
+    ?? (variantFields(recipe).some((f) => parts[f.key] !== undefined && !f.options!.some((o) => o.value === parts[f.key])) ? 'Choose a listed variant.' : null)
     ?? (parts.finish === undefined || ['flat', 'embossed'].includes(parts.finish) ? null : 'Choose flat or embossed rendering.'),
   text: (parts) => laterSerial(parts.serial ?? ''),
 }));

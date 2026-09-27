@@ -1,5 +1,6 @@
 import { LetteringPicker } from './LetteringPicker';
 import type { Parts, PlateFormat, Region } from '../core/types';
+import { statusBadge } from '../core/timeline';
 import { AlertIcon, CheckIcon, DownloadIcon } from './icons';
 
 interface Props {
@@ -84,6 +85,12 @@ export function Inspector({ region, format, parts, onChange, onExport, onCopyLin
             <dt>Type</dt>
             <dd>{format.label}</dd>
           </div>
+          {statusBadge(format) && (
+            <div>
+              <dt>Status</dt>
+              <dd><span className="status-badge">{statusBadge(format)}</span> <span className="muted">not an issued registration</span></dd>
+            </div>
+          )}
           {format.pattern && (
             <div>
               <dt>Pattern</dt>

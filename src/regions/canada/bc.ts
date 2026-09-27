@@ -59,14 +59,14 @@ function generateSerial(recipe: BcYear, rng: Rng): string {
   return displayBcSerial(String(rng.int(1, recipe.generationMax)));
 }
 
-function makeFormat(recipe: BcYear, dashless = false): PlateFormat {
+function makeFormat(recipe: BcYear, dashless = false, lateDate = false): PlateFormat {
   const hasTab = [1951, 1953, 1954].includes(recipe.year);
   return {
-    id: `${recipe.year}${dashless ? '-no-dash' : ''}`,
-    label: `${recipe.year}${dashless ? ' · no dash' : ''}`,
+    id: `${recipe.year}${dashless ? '-no-dash' : ''}${lateDate ? '-late-date' : ''}`,
+    label: `${recipe.year}${dashless ? ' · no dash' : ''}${lateDate ? ' · late date stamp' : ''}`,
     pattern: dashless ? '1000–1999' : recipe.layout === 'totem-base' ? '12-345 / A1-234 / 1A-123'
       : recipe.prefixes ? `12-345 / ${recipe.prefixes[0]}1-234` : recipe.year <= 1951 ? '12-345 / 123-456' : '123-456',
-    description: `${recipe.colourDescription}. ${recipe.note} ${BC_RECONSTRUCTION_NOTE}`,
+    description: `${recipe.colourDescription}. ${lateDate ? 'Late in the 1961 run the date stamp shows the squarer 6 later used for 1962 (source die lettering only; no serial range is documented). ' : ''}${recipe.note} ${BC_RECONSTRUCTION_NOTE}`,
     references: [BC_SOURCES[recipe.source]],
     fields: [
       { key: 'serial', label: 'Plate serial', maxLength: 7, placeholder: dashless ? '1877' : recipe.sample },
@@ -80,7 +80,8 @@ function makeFormat(recipe: BcYear, dashless = false): PlateFormat {
       ] }] : []),
       { key: 'finish', label: 'Rendering', preserveOnGenerate: true, options: [{ value: 'flat', label: 'Flat / editable SVG' }, { value: 'embossed', label: 'Subtle embossed preview' }] },
     ],
-    design: { year: recipe.year, dashless },
+    design: { year: recipe.year, dashless, ...(lateDate ? { dateDie: 'bc-oakalla-1955' } : {}) },
+    period: [recipe.year, recipe.year],
     generate: (rng): Parts => ({ serial: dashless ? String(rng.int(1000, 1999)) : generateSerial(recipe, rng),
       ...(hasTab ? { tabSerial: '', renewal: 'on-plate' } : {}), finish: 'flat' }),
     validate: (parts) => {
@@ -96,8 +97,8 @@ function makeFormat(recipe: BcYear, dashless = false): PlateFormat {
 }
 
 export const britishColumbia: Region = {
-  id: 'ca-bc', name: 'British Columbia', code: 'BC', group: 'Canada', flag: '🇨🇦',
+  id: 'ca-bc', name: 'British Columbia', code: 'BC', group: 'North America', country: 'Canada', flag: '🇨🇦',
   template: 'bc-historical', design: { year: 1940 },
-  formats: [...BC_YEARS.map((year) => makeFormat(year)), makeFormat(bcYear(1962), true)].map(withLettering),
+  formats: [...BC_YEARS.map((year) => makeFormat(year)), makeFormat(bcYear(1962), true), makeFormat(bcYear(1961), false, true)].map(withLettering),
   notes: BC_RECONSTRUCTION_NOTE,
 };
