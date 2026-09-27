@@ -4,7 +4,8 @@ on:
   pull_request:
     paths:
       - 'src/**'
-      - 'scripts/lettering-smoke.mjs'
+      - 'public/data/**'
+      - 'scripts/**'
       - 'package*.json'
       - 'tsconfig*.json'
       - 'vite.config.*'
@@ -29,5 +30,15 @@ jobs:
       - name: Install isolated browser-test tooling
         run: npm install --no-save --package-lock=false playwright@1.63.0
       - run: npx playwright install --with-deps chromium
-      - name: Check typography in the built application
+      - name: Check typography and every B.C. format in the built application
         run: node scripts/lettering-smoke.mjs
+      - name: Check reference library and source-to-editor navigation
+        run: node scripts/reference-library-smoke.mjs
+      - name: Retain application screenshots for visual review
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: reference-library-screenshots
+          path: test-results/reference-library/*.png
+          if-no-files-found: ignore
+          retention-days: 7

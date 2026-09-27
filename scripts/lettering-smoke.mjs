@@ -1,9 +1,8 @@
-// CI-only browser check; does not add a runtime dependency or transmit plate data.
+// CI-only browser check; no runtime dependency or transmission of plate data.
 import { chromium } from 'playwright';
 import assert from 'node:assert/strict';
 import { spawn } from 'node:child_process';
 import { setTimeout as delay } from 'node:timers/promises';
-
 const server = spawn(process.execPath, ['node_modules/vite/bin/vite.js', 'preview', '--host', '127.0.0.1', '--port', '4173', '--strictPort'], { stdio: 'inherit' });
 let browser;
 try {
@@ -21,7 +20,7 @@ try {
   await page.locator('.region-trigger').click();
   await page.getByLabel('Search regions').fill('British Columbia');
   await page.getByRole('option', { name: /British Columbia/ }).click();
-  assert.equal(await page.locator('.chip').count(), 25);
+  assert.equal(await page.locator('.chip').count(), 41);
   await page.locator('.chip').filter({ hasText: /^1953$/ }).click();
   await page.locator('#field-serial').fill('33-638');
   await page.locator('#field-tabSerial').fill('148879');
@@ -40,14 +39,13 @@ try {
   await page.locator('.readout button.primary').click();
   assert.equal(await page.locator('#field-lettering').inputValue(), 'hybrid');
   assert.equal(await page.locator('#field-finish').inputValue(), 'embossed');
-  for (let i = 0; i < 25; i++) {
+  for (let i = 0; i < 41; i++) {
     await page.locator('.chip').nth(i).click();
     await page.locator('#field-lettering').selectOption('squarish');
     assert.equal(await page.locator('.plate-preview [data-role="serial"][data-lettering="squarish"]').count(), 1);
     assert(!await page.locator('.plate-preview').evaluate((element) => element.innerHTML.includes('NaN')));
   }
   const download = async (kind) => {
-    // Accessible names normalize the whitespace around icon + label.
     const [file] = await Promise.all([
       page.waitForEvent('download'),
       page.locator('.export-section').getByRole('button', { name: kind, exact: true }).click(),
@@ -62,7 +60,6 @@ try {
   const png = await download('PNG');
   assert.equal(png.subarray(1, 4).toString(), 'PNG');
   assert(png.length > 2000);
-  // Default still exports the serial as live text.
   await page.locator('#field-lettering').selectOption('default');
   assert.equal(await page.locator('.plate-preview text[data-role="serial"]').count(), 1);
   await page.setViewportSize({ width: 390, height: 844 });
@@ -73,7 +70,7 @@ try {
   assert.equal(await page.locator('.plate-preview [data-role="serial"][data-lettering="oval"]').count(), 1);
   assert.equal((await meta()).lettering.category, 'oval');
   assert.deepEqual(errors, []);
-  console.log('PASS: main-app region picker; 25 BC presets; four type switches; persistent settings; default text; SVG and PNG downloads; mobile overflow; US rendering; no page errors.');
+  console.log('PASS: actual app region picker; all 41 BC presets; four lettering switches; persistent settings; default text; SVG and PNG downloads; mobile width; US rendering; no page errors.');
 } finally {
   await browser?.close();
   server.kill('SIGTERM');
