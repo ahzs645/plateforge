@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { BUILT_IN_REGIONS } from '../regions';
-import { buildTimeline, countryOf, groupByCountry, regionsInCountry, stepTimeline } from './timeline';
+import { buildTimeline, countryOf, familyOf, groupByCountry, regionsInCountry, stepTimeline } from './timeline';
 
 const bc = BUILT_IN_REGIONS.find((r) => r.id === 'ca-bc')!;
 
@@ -23,12 +23,14 @@ describe('country grouping', () => {
 });
 
 describe('timeline', () => {
-  const timeline = buildTimeline(bc)!;
+  const timeline = buildTimeline(bc, 'passenger')!;
 
   it('places every B.C. preset in a chronological era', () => {
-    expect(timeline.order).toHaveLength(bc.formats.length);
-    expect(timeline.span).toEqual([1940, 1985]);
-    expect(timeline.eras.map((e) => e.id)).toEqual(['annual-1940', 'bases-1949', 'totem-1952', 'annual-1955', 'beautiful-1964', 'decal-1970', 'blue-1979']);
+    const passenger = bc.formats.filter((f) => familyOf(bc, f) === 'passenger' && f.period);
+    expect(timeline.order).toHaveLength(passenger.length);
+    expect(timeline.span[0]).toBe(Math.min(...passenger.map((f) => f.period![0])));
+    expect(timeline.eras.map((e) => e.id).slice(0, 8)).toEqual(['annual-1940', 'bases-1949', 'totem-1952', 'annual-1955', 'beautiful-1964', 'decal-1970', 'blue-1979', 'flag-1985'].filter((id) => timeline.eras.some((e) => e.id === id)).slice(0, 8));
+    expect(timeline.eras.at(-1)!.id).toBe('flag-1985');
     const starts = timeline.order.map((e) => e.period[0]);
     expect(starts).toEqual([...starts].sort((a, b) => a - b));
     for (const era of timeline.eras) for (const e of era.entries) {
@@ -40,15 +42,16 @@ describe('timeline', () => {
     expect(stepTimeline(timeline, '1940', -1)).toBeUndefined();
     expect(stepTimeline(timeline, '1940', 1)?.id).toBe('1941');
     expect(stepTimeline(timeline, '1969', 1)?.id).toBe('1970-1972');
-    expect(stepTimeline(timeline, '1985-fourth', 1)).toBeUndefined();
+    expect(stepTimeline(timeline, '1985-fourth', 1)?.id).toBe('1985-flag');
+    expect(stepTimeline(timeline, timeline.order.at(-1)!.format.id, 1)).toBeUndefined();
   });
   it('is absent for regions without dated formats', () => {
     expect(buildTimeline(BUILT_IN_REGIONS.find((r) => r.id === 'us-ca')!)).toBeNull();
     expect(buildTimeline(BUILT_IN_REGIONS.find((r) => r.id === 'cn')!)).toBeNull();
   });
   it('falls back to decade eras when a region declares none', () => {
-    const t = buildTimeline({ ...bc, eras: undefined })!;
-    expect(t.eras[0].id).toBe('1940s');
-    expect(t.order).toHaveLength(bc.formats.length);
+    const t = buildTimeline({ ...bc, eras: undefined }, 'passenger')!;
+    expect(t.eras[0].id).toBe(`${Math.floor(t.span[0] / 10) * 10}s`);
+    expect(t.order).toHaveLength(timeline.order.length);
   });
 });

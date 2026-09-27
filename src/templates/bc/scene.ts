@@ -10,6 +10,8 @@ import type { Parts } from '../../core/types';
 import { bcYear, BC_SOURCES, BC_RECONSTRUCTION_NOTE } from '../../regions/canada/bc-data';
 import { compactBcSerial, displayBcSerial } from '../../regions/canada/bc';
 import { totemEmblemSymbol } from './totem-emblem';
+import { bcDieSet, dieLabel, type BcDieSet } from './dies';
+import { dieProfile } from '../dies/profiles';
 
 export interface BcDesign {
   [key: string]: unknown;
@@ -70,13 +72,20 @@ function label(value: string, x: number, y: number, size: number, maxWidth: numb
   }, value);
 }
 
+type Labeler = typeof label;
+/** Label maker that uses the period's legend die when source-die lettering is on, else live text. */
+function labeler(dies: BcDieSet | null): Labeler {
+  return (value, x, y, size, maxWidth, ink, role, extra = {}, stretch = false) =>
+    (dies && dieLabel(dies.legend, value, x, y, size, maxWidth, ink, role, stretch)) || label(value, x, y, size, maxWidth, ink, role, extra, stretch);
+}
+
 /** 1951 blue-on-white strip in its own coordinates (0,0 top-left). */
-function renewalStrip(width: number, holeXs: number[], parts: Parts, withHoles: boolean): SvgNode[] {
+function renewalStrip(width: number, holeXs: number[], parts: Parts, withHoles: boolean, lab: Labeler = label): SvgNode[] {
   return [
     n('rect', { width, height: STRIP_HEIGHT, rx: 2, fill: '#f0eee0', stroke: '#254658', strokeWidth: 1 }),
     n('rect', { x: 2.5, y: 2.5, width: width - 5, height: STRIP_HEIGHT - 5, rx: 1.5, fill: 'none', stroke: '#254658', strokeWidth: 0.8, opacity: 0.55 }),
-    label('BRITISH·51·COLUMBIA', width / 2, 25, 25, width - 12, '#254658', 'renewal-legend', {}, true),
-    ...(parts.tabSerial ? [label(parts.tabSerial, width / 2, 33.5, 5, 22, '#8a9699', 'tab-serial')] : []),
+    lab('BRITISH·51·COLUMBIA', width / 2, 25, 25, width - 12, '#254658', 'renewal-legend', {}, true),
+    ...(parts.tabSerial ? [lab(parts.tabSerial, width / 2, 33.5, 5, 22, '#8a9699', 'tab-serial')] : []),
     ...(withHoles ? holeXs.map((cx) => n('circle', { cx, cy: STRIP_HOLE_Y, r: 3.2, fill: 'black', 'data-role': 'strip-hole' })) : []),
   ];
 }
@@ -90,7 +99,7 @@ const rightRim = (inset: number, w: number, h: number, r: number): string =>
   `M0 ${inset}H${inset + w - r}A${r} ${r} 0 0 1 ${inset + w} ${inset + r}V${inset + h - r}A${r} ${r} 0 0 1 ${inset + w - r} ${inset + h}H0`;
 
 /** 1953/54 side tab in its own coordinates: year at top, emblem, stamped number. */
-function renewalTab(year: number, emblem: string, parts: Parts, withHoles: boolean): SvgNode[] {
+function renewalTab(year: number, emblem: string, parts: Parts, withHoles: boolean, lab: Labeler = label): SvgNode[] {
   const tabInk = year === 1953 ? '#f1ede0' : '#e4c879';
   const tabBackground = year === 1953 ? '#266b87' : '#202525';
   const { width: w, height: h } = TAB;
@@ -99,9 +108,9 @@ function renewalTab(year: number, emblem: string, parts: Parts, withHoles: boole
     n('path', { d: rightRounded(0, 0, w, h, 6), fill: tabBackground, 'data-role': 'tab-shell' }),
     // Raised rim runs top, right and bottom only; the sheared left edge has none.
     n('path', { d: rightRim(3, w - 6, h - 6, 5), fill: 'none', stroke: tabInk, strokeWidth: 1.5, strokeLinecap: 'butt' }),
-    label(`5 ${year % 10}`, w / 2, 44, 40, 70, tabInk, 'renewal-year', {}, true),
+    lab(`5 ${year % 10}`, w / 2, 44, 40, 70, tabInk, 'renewal-year', {}, true),
     n('use', { href: `#${emblem}`, x: 7, y: 50, width: 76, height: 74, color: tabInk, 'data-role': 'tab-emblem', 'data-accuracy': 'approximate' }),
-    ...(parts.tabSerial ? [label(parts.tabSerial, w - 22, h - 6.5, 7, 32, tabInk, 'tab-serial', { opacity: 0.8 })] : []),
+    ...(parts.tabSerial ? [lab(parts.tabSerial, w - 22, h - 6.5, 7, 32, tabInk, 'tab-serial', { opacity: 0.8 })] : []),
     ...(withHoles ? TAB_HOLE_YS.map((cy) => n('circle', { cx: w / 2, cy, r: 3, fill: 'black', 'data-role': 'tab-hole' })) : []),
   ];
 }
@@ -124,7 +133,8 @@ function buildLooseRenewal(design: BcDesign, parts: Parts, id: string): SvgNode 
   const plate = long ? r.longWidthMm! : r.widthMm;
   const strip = r.year === 1951;
   const holeXs = [plate * 0.21, plate * 0.79].map((x) => x - (plate - w) / 2);
-  const piece = strip ? renewalStrip(w, holeXs, parts, true) : renewalTab(r.year, `${id}-totem`, parts, true);
+  const lab = labeler(parts.lettering === 'die' ? bcDieSet(design) : null);
+  const piece = strip ? renewalStrip(w, holeXs, parts, true, lab) : renewalTab(r.year, `${id}-totem`, parts, true, lab);
   const holes = [...piece].filter((item) => ['strip-hole', 'tab-hole'].includes(String(item.attrs['data-role'])));
   const metadata = {
     jurisdiction: 'CA-BC', vehicleClass: 'passenger', year: r.year, baseYear: r.baseYear, serial: null, parts,
@@ -159,9 +169,11 @@ export function buildBcScene(design: BcDesign, parts: Parts, scope = 'bc-plate')
   const background = typeof design.background === 'string' ? design.background : r.background;
   const serial = displayBcSerial(parts.serial ?? '', design.dashless === true);
   const vectorType = isLetteringType(parts.lettering) && supportsLettering(serial) ? parts.lettering : null;
+  const dies = parts.lettering === 'die' ? bcDieSet(design) : null;
+  const L = labeler(dies);
   const serialLabel = (value: string, x: number, y: number, size: number, width: number, color: string, role: string, extra: SvgNode['attrs']): SvgNode => vectorType
     ? buildLettering({ text: value, type: vectorType, centerX: x, baseline: y, height: size * 0.76, maxWidth: width, ink: color, role })
-    : label(value, x, y, size, width, color, role, extra);
+    : (dies && dieLabel(dies.serial, value.replace('-', dies.separator), x, y, size, width, color, role)) || label(value, x, y, size, width, color, role, extra);
   const embossed = parts.finish === 'embossed';
   const totem = r.layout === 'totem-base';
   const standard = r.layout === 'annual-standard';
@@ -202,25 +214,25 @@ export function buildBcScene(design: BcDesign, parts: Parts, scope = 'bc-plate')
   };
   if (totem) {
     inscriptions.push(serialLabel(serial, (w - 99) / 2, 96, 104, w - 121, ink, 'serial', serialFont));
-    inscriptions.push(label('BRITISH COLUMBIA', (w - 99) / 2, 122, 25, w - 121, ink, 'province', {}, true));
+    inscriptions.push(L('BRITISH COLUMBIA', (w - 99) / 2, 122, 25, w - 121, ink, 'province', {}, true));
     // Late 1953/54 over-run bases left this panel empty, pre-drilled for the tab.
-    if (!blank) inscriptions.push(label('52', w - 47, 44, 40, 58, ink, 'base-year', {}, true));
+    if (!blank) inscriptions.push(L('52', w - 47, 44, 40, 58, ink, 'base-year', {}, true));
     if (!blank) inscriptions.push(n('use', { href: `#${id}-totem`, x: w - 88, y: 48, width: 79, height: 81, color: ink, 'data-role': 'base-emblem', 'data-accuracy': 'approximate' }));
   } else if (centenary) {
-    inscriptions.push(label('BRITISH COLUMBIA', w / 2, 28, 24, w - 49, ink, 'province', {}, true));
+    inscriptions.push(L('BRITISH COLUMBIA', w / 2, 28, 24, w - 49, ink, 'province', {}, true));
     inscriptions.push(serialLabel(serial, w / 2, 111, 109, w - 22, ink, 'serial', serialFont));
-    inscriptions.push(label('1858   CENTENARY   1958', w / 2, 139, 21, w - 19, ink, 'centenary', {}, true));
+    inscriptions.push(L('1858   CENTENARY   1958', w / 2, 139, 21, w - 19, ink, 'centenary', {}, true));
   } else if (standard) {
     inscriptions.push(serialLabel(serial, w / 2, 109, 118, w - 30, ink, 'serial', serialFont));
-    inscriptions.push(label('BRITISH COLUMBIA', (w - 54) / 2 + 6, 133, 23, w - 73, ink, 'province', {}, true));
-    inscriptions.push(label(String(r.year).slice(2), w - 27, 134, 30, 34, ink, 'base-year'));
+    inscriptions.push(L('BRITISH COLUMBIA', (w - 54) / 2 + 6, 133, 23, w - 73, ink, 'province', {}, true));
+    inscriptions.push(L(String(r.year).slice(2), w - 27, 134, 30, 34, ink, 'base-year'));
     if (r.year > 1957) inscriptions.push(n('circle', { cx: w - 51, cy: 127, r: 1.9, fill: ink }));
   } else {
     inscriptions.push(serialLabel(serial, (w - 28) / 2, 98, 104, w - 48, ink, 'serial', serialFont));
-    inscriptions.push(label('BRITISH COLUMBIA', w / 2, 121, 24, w - 28, ink, 'province', {}, true));
+    inscriptions.push(L('BRITISH COLUMBIA', w / 2, 121, 24, w - 28, ink, 'province', {}, true));
     const yy = String(r.baseYear).slice(2);
-    inscriptions.push(label(yy[0], w - 18, 48, 34, 17, ink, 'base-year-tens'));
-    inscriptions.push(label(yy[1], w - 18, 88, 34, 17, ink, 'base-year-ones'));
+    inscriptions.push(L(yy[0], w - 18, 48, 34, 17, ink, 'base-year-tens'));
+    inscriptions.push(L(yy[1], w - 18, 88, 34, 17, ink, 'base-year-ones'));
   }
   // Renewal pieces were separately issued; they sit above the base rather than
   // replacing its artwork, so the retained base date and emblem stay underneath.
@@ -231,12 +243,12 @@ export function buildBcScene(design: BcDesign, parts: Parts, scope = 'bc-plate')
     const slotY = mount === 'top' ? slotInset(h) : h - slotInset(h);
     const holeXs = [w * 0.21, w * 0.79];
     overlays.push(n('g', { 'data-role': 'renewal-strip', 'data-year': 1951, 'data-mount': mount, transform: `translate(${x} ${slotY - STRIP_HOLE_Y})`, filter: `url(#${id}-lift)` },
-      ...renewalStrip(stripWidth, holeXs.map((cx) => cx - x), parts, false)));
+      ...renewalStrip(stripWidth, holeXs.map((cx) => cx - x), parts, false, L)));
     overlays.push(...holeXs.map((cx) => bolt(cx, slotY)));
   }
   if (fitted && renewed) {
     overlays.push(n('g', { 'data-role': 'renewal-tab', 'data-year': r.year, 'data-mount': mount, transform: `translate(${w - TAB.width} 0)`, filter: `url(#${id}-lift)` },
-      ...renewalTab(r.year, `${id}-totem`, parts, false)));
+      ...renewalTab(r.year, `${id}-totem`, parts, false, L)));
     overlays.push(...TAB_HOLE_YS.map((cy) => bolt(w - TAB.width / 2, cy)));
   }
   const metadata = {
@@ -245,8 +257,9 @@ export function buildBcScene(design: BcDesign, parts: Parts, scope = 'bc-plate')
     physicalMm: { width: w, height: h }, renewal: renewalMetadata(r.year, long, mount),
     material: totem || (r.year === 1951 && Number(compactBcSerial(parts.serial ?? '')) > 230000) ? 'aluminum' : r.year >= 1955 ? 'steel' : 'metal',
     colourDescription: r.colourDescription, source: BC_SOURCES[r.source],
-    lettering: { ...letteringMetadata(vectorType ?? 'default'), requested: parts.lettering ?? 'default', fallback: isLetteringType(parts.lettering) && !vectorType },
-    reconstruction: { colours: 'approximate', typography: vectorType ? 'procedural category; not original dies' : 'proxy; not original dies', geometry: 'source dimensions; estimated detail positions', emblem: totem ? 'approximate' : 'not applicable' },
+    lettering: dies ? { mode: 'source-die', serial: dies.serial, legend: dies.legend, evidence: dieProfile(dies.serial).evidence.status, requested: 'die', fallback: false }
+      : { ...letteringMetadata(vectorType ?? 'default'), requested: parts.lettering ?? 'default', fallback: isLetteringType(parts.lettering) && !vectorType },
+    reconstruction: { colours: 'approximate', typography: dies ? `die reconstruction (${dieProfile(dies.serial).evidence.status})` : vectorType ? 'procedural category; not original dies' : 'proxy; not original dies', geometry: 'source dimensions; estimated detail positions', emblem: totem ? 'approximate' : 'not applicable' },
   };
   const plate = [
     n('g', { mask: `url(#${id}-holes)` }, ...base,

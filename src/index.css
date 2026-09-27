@@ -1103,3 +1103,27 @@ kbd {
     transition: none !important;
   }
 }
+
+/* ── Plate families (above the timeline) ─────────────────────────────── */
+.family-tabs {
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding: 2px;
+  margin: 0 -2px;
+}
+.family-tabs::-webkit-scrollbar {
+  display: none;
+}
+.chip-count {
+  margin-left: 6px;
+  font-size: 11px;
+  opacity: 0.65;
+}
+@media (max-width: 640px) {
+  .family-tabs {
+    margin: 0 -16px;
+    padding: 2px 16px;
+  }
+}

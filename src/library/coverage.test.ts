@@ -11,9 +11,9 @@ describe('B.C. coverage manifest', () => {
     expect(manifest.records).toHaveLength(67);
   });
   it('lists exactly the presets the registry actually has', () => {
-    const listed = [...manifest.registeredPresets.early, ...manifest.registeredPresets.later].sort();
+    const listed = Object.values(manifest.registeredPresets).flat().sort();
     expect(listed).toEqual(britishColumbia.formats.map((f) => f.id).sort());
-    expect(manifest.counts.registeredPassengerPresets).toBe(britishColumbia.formats.length);
+    expect(manifest.counts.registeredPresets).toBe(britishColumbia.formats.length);
   });
   it('filters by text, group and status', () => {
     const parks = manifest.records.filter((r) => coverageMatches(r, 'kermode'));

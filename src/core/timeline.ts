@@ -2,7 +2,7 @@
  * Region organisation helpers: country/continent grouping and the
  * chronological timeline built from format periods and region eras.
  */
-import type { PlateEra, PlateFormat, Region } from './types';
+import type { PlateEra, PlateFamily, PlateFormat, PlateGap, Region } from './types';
 
 export const countryOf = (region: Region): string => region.country ?? region.name;
 
@@ -37,6 +37,19 @@ export function groupByCountry(regions: readonly Region[]): ContinentGroup[] {
 export const regionsInCountry = (regions: readonly Region[], region: Region): Region[] =>
   regions.filter((r) => countryOf(r) === countryOf(region));
 
+/** Family a format belongs to; undefined when the region declares no families. */
+export const familyOf = (region: Region, format: PlateFormat): string | undefined => format.family ?? region.families?.[0]?.id;
+const inFamily = (region: Region, family: string | undefined, own: string | undefined) =>
+  family === undefined || (own ?? region.families?.[0]?.id) === family;
+
+export interface FamilySummary extends PlateFamily { formats: PlateFormat[] }
+/** Declared families that have at least one format, in declaration order. */
+export function regionFamilies(region: Region): FamilySummary[] {
+  return (region.families ?? []).map((f) => ({ ...f, formats: region.formats.filter((fmt) => familyOf(region, fmt) === f.id) }))
+    .filter((f) => f.formats.length);
+}
+export const gapsFor = (region: Region, family?: string): PlateGap[] => (region.gaps ?? []).filter((g) => inFamily(region, family, g.family));
+
 export interface TimelineEntry {
   format: PlateFormat;
   period: readonly [number, number];
@@ -45,6 +58,7 @@ export interface TimelineEra extends PlateEra {
   entries: TimelineEntry[];
 }
 export interface Timeline {
+  family?: string;
   span: readonly [number, number];
   eras: TimelineEra[];
   /** Every dated format in chronological order, across eras. */
@@ -60,10 +74,10 @@ const byPeriod = (a: TimelineEntry, b: TimelineEntry) => a.period[0] - b.period[
  * assigned to their declared era, else the era whose range contains their
  * start year; anything left over lands in a synthetic per-decade era.
  */
-export function buildTimeline(region: Region): Timeline | null {
-  const dated = region.formats.filter((f): f is PlateFormat & { period: readonly [number, number] } => !!f.period);
+export function buildTimeline(region: Region, family?: string): Timeline | null {
+  const dated = region.formats.filter((f): f is PlateFormat & { period: readonly [number, number] } => !!f.period && inFamily(region, family, f.family));
   if (dated.length < 2) return null;
-  const eras = new Map<string, TimelineEra>((region.eras ?? []).map((era) => [era.id, { ...era, entries: [] }]));
+  const eras = new Map<string, TimelineEra>((region.eras ?? []).filter((era) => inFamily(region, family, era.family)).map((era) => [era.id, { ...era, entries: [] }]));
   for (const format of dated) {
     const entry = { format, period: format.period };
     const era = (format.era && eras.get(format.era))
@@ -80,7 +94,7 @@ export function buildTimeline(region: Region): Timeline | null {
     .sort((a, b) => a.period[0] - b.period[0]);
   const order = list.flatMap((e) => e.entries);
   const span = [Math.min(...order.map((e) => e.period[0])), Math.max(...order.map((e) => e.period[1]))] as const;
-  return { span, eras: list, order };
+  return { family, span, eras: list, order };
 }
 
 /** The next/previous dated format in chronological order, or undefined at either end. */

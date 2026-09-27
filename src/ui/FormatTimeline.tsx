@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { formatPeriod, stepTimeline, type Timeline, type TimelineEra } from '../core/timeline';
+import { formatPeriod, gapsFor, stepTimeline, type Timeline, type TimelineEra } from '../core/timeline';
 import type { PlateFormat, Region } from '../core/types';
 import { ChevronLeft, ChevronRight, GridIcon } from './icons';
 import { PlateView } from './PlateView';
@@ -24,7 +24,7 @@ export function FormatTimeline({ region, timeline, format, onSelect, onOpenGalle
   const next = stepTimeline(timeline, format.id, 1);
   // Built eras and documented-but-unbuilt gaps share one chronological axis.
   const items = [...timeline.eras.map((era) => ({ kind: 'era' as const, start: era.period[0], era })),
-    ...(region.gaps ?? []).map((gap) => ({ kind: 'gap' as const, start: gap.period[0], gap }))].sort((a, b) => a.start - b.start);
+    ...gapsFor(region, timeline.family).map((gap) => ({ kind: 'gap' as const, start: gap.period[0], gap }))].sort((a, b) => a.start - b.start);
 
   useEffect(() => {
     const track = trackRef.current;

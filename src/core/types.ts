@@ -56,6 +56,19 @@ export interface PlateFormat {
   period?: readonly [number, number];
   /** Id of the region era this format belongs to; inferred from `period` when omitted. */
   era?: string;
+  /** Plate family within the region (passenger, motorcycle, …); defaults to the region's first family. */
+  family?: string;
+  /** Issue status; anything other than `issued` is shown with a badge. */
+  status?: PlateStatus;
+}
+
+export type PlateStatus = 'issued' | 'official-sample' | 'prototype' | 'proposal' | 'souvenir' | 'prop' | 'uncertain';
+
+/** A group of related formats with its own timeline, e.g. passenger or motorcycle plates. */
+export interface PlateFamily {
+  id: string;
+  label: string;
+  summary?: string;
 }
 
 /** A named span of a region's plate history, used to group the timeline and gallery. */
@@ -64,6 +77,8 @@ export interface PlateEra {
   label: string;
   period: readonly [number, number];
   summary?: string;
+  /** Family this era belongs to; defaults to the region's first family. */
+  family?: string;
 }
 
 /** A documented period with no editable reconstruction yet; shown so gaps are explicit. */
@@ -73,6 +88,7 @@ export interface PlateGap {
   period: readonly [number, number];
   note?: string;
   sources: readonly { title: string; url: string }[];
+  family?: string;
 }
 
 export interface Region {
@@ -90,6 +106,8 @@ export interface Region {
   template: string;
   design: Design;
   formats: PlateFormat[];
+  /** Plate families; each gets its own timeline. The first is the default. */
+  families?: readonly PlateFamily[];
   /** Chronological eras; together with format periods these drive the timeline. */
   eras?: readonly PlateEra[];
   /** Documented but unbuilt periods, placed on the timeline as placeholders. */

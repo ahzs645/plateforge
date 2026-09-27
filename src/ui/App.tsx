@@ -2,7 +2,7 @@ import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } fro
 import { getFormat, getRegion, getRegions, getTemplate, makePlate } from '../core/registry';
 import { createRng } from '../core/random';
 import { regenerateParts } from '../core/lettering';
-import { buildTimeline, countryOf, stepTimeline } from '../core/timeline';
+import { buildTimeline, countryOf, familyOf, regionFamilies, stepTimeline } from '../core/timeline';
 import type { Parts, Plate } from '../core/types';
 import { BatchView } from './BatchView';
 import { download, fileSafe, serializeSvg, svgToPngBlob } from './exporting';
@@ -54,7 +54,10 @@ export function App() {
   const fontsVersion = useFontsVersion();
   const { theme, cycle } = useTheme();
   const plate: Plate = makePlate(region, format, parts);
-  const timeline = useMemo(() => buildTimeline(region), [region]);
+  const family = familyOf(region, format);
+  const families = useMemo(() => regionFamilies(region), [region]);
+  const timeline = useMemo(() => buildTimeline(region, family), [region, family]);
+  const familyFormats = families.find((f) => f.id === family)?.formats ?? region.formats;
   const country = countryOf(region);
   const select = useCallback((nextRegion: string, nextFormat?: string, nextParts?: Parts) => {
     const r = getRegion(nextRegion);
@@ -147,8 +150,10 @@ export function App() {
         : view === 'gallery' ? <GalleryView regions={regions} region={region} format={format} onOpen={openEditor} />
         : view === 'single' ? <>
           <section className="stage-col">
+            {families.length > 1 && <nav className="family-tabs" aria-label="Plate family">{families.map((f) => <button key={f.id} className="chip" aria-pressed={f.id === family} title={f.summary}
+              onClick={() => { if (f.id !== family) { const t = buildTimeline(region, f.id); select(region.id, (t?.order.at(-1)?.format ?? f.formats[0]).id); } }}>{f.label}<span className="chip-count">{f.formats.length}</span></button>)}</nav>}
             {timeline ? <FormatTimeline region={region} timeline={timeline} format={format} onSelect={(id) => select(region.id, id)} onOpenGallery={() => { setView('gallery'); window.scrollTo({ top: 0 }); }} />
-              : region.formats.length > 1 && <nav className="chips" aria-label="Plate format">{region.formats.map((f) => <button key={f.id} className="chip" aria-pressed={f.id === format.id} onClick={() => select(region.id, f.id)}>{f.label}</button>)}</nav>}
+              : familyFormats.length > 1 && <nav className="chips" aria-label="Plate format">{familyFormats.map((f) => <button key={f.id} className="chip" aria-pressed={f.id === format.id} onClick={() => select(region.id, f.id)}>{f.label}</button>)}</nav>}
             <div className="stage"><PlateView key={spin} ref={previewRef} plate={plate} className="plate-preview" /></div>
             <div className="readout">
               <button className="readout-text mono" onClick={copyText} title="Copy serial"><span>{plate.text}</span><CopyIcon /></button>

@@ -398,3 +398,16 @@
   color: var(--text);
   text-decoration: none;
 }
+.gallery-family select {
+  height: 38px;
+  padding: 0 34px 0 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+}
+@media (max-width: 640px) {
+  .gallery-family,
+  .gallery-family select {
+    width: 100%;
+  }
+}

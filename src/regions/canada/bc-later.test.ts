@@ -17,8 +17,9 @@ function meta(root: SvgNode) {
 describe('B.C. later passenger bases', () => {
   it('extends the registry without replacing the twenty-five legacy formats', () => {
     expect(BC_LATER_RECIPES).toHaveLength(17);
-    expect(britishColumbia.formats).toHaveLength(42);
-    expect(new Set(britishColumbia.formats.map((f) => f.id)).size).toBe(42);
+    expect(britishColumbia.formats.length).toBeGreaterThanOrEqual(42);
+    expect(new Set(britishColumbia.formats.map((f) => f.id)).size).toBe(britishColumbia.formats.length);
+    for (const f of bcLaterFormats) expect(britishColumbia.formats.some((g) => g.id === f.id)).toBe(true);
     expect(britishColumbia.formats.some((f) => f.id === '1962-no-dash')).toBe(true);
     expect(() => bcLaterRecipe({ year: 1986 })).toThrow();
   });

@@ -13,8 +13,8 @@ export interface SerialConfiguration { family: string; pattern: string; example:
 export interface CoverageEvidence { id: string; title: string; finding: string; resolved?: boolean }
 export interface CoverageManifest {
   schemaVersion: 1; reviewDate: string; reviewedCommit: string; scope: string; limitations: string[];
-  counts: { inventoryRecords: number; registeredPassengerPresets: number };
-  registeredPresets: { early: string[]; later: string[] };
+  counts: { inventoryRecords: number; registeredPassengerPresets: number; registeredPresets?: number };
+  registeredPresets: Record<string, string[]>;
   repositoryEvidence: CoverageEvidence[];
   repositoryUpdates?: { id: string; summary: string; resolves: string }[];
   proposedDieProfiles: DieProfile[];
@@ -35,7 +35,7 @@ const has = (v: unknown, keys: string[]) => record(v) && keys.every((k) => str(v
 
 export function parseCoverageManifest(value: unknown): CoverageManifest {
   const ok = record(value) && value.schemaVersion === 1 && str(value.reviewDate) && str(value.reviewedCommit) && strings(value.limitations)
-    && record(value.registeredPresets) && strings(value.registeredPresets.early) && strings(value.registeredPresets.later)
+    && record(value.registeredPresets) && Object.values(value.registeredPresets).every(strings)
     && Array.isArray(value.repositoryEvidence) && value.repositoryEvidence.every((e) => has(e, ['id', 'title', 'finding']))
     && Array.isArray(value.proposedDieProfiles) && value.proposedDieProfiles.every((p) => has(p, ['id', 'label', 'scope', 'task', 'status']) && safeWebUrl((p as DieProfile).sourceUrl))
     && record(value.officialSerialConfigurationReference) && safeWebUrl(value.officialSerialConfigurationReference.sourceUrl)

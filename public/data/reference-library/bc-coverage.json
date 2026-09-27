@@ -16,13 +16,14 @@
   "inventoryRecords": 67,
   "homepageTopics": 56,
   "selectedChildTopics": 11,
-  "registeredPassengerPresets": 42,
+  "registeredPassengerPresets": 47,
   "earlyPresets": 25,
   "laterPresets": 17,
-  "countsUnit": "Inventory topics and presets, NOT distinct historical plate designs"
+  "countsUnit": "Inventory topics and presets, NOT distinct historical plate designs",
+  "registeredPresets": 47
  },
  "registeredPresets": {
-  "early": [
+  "passenger": [
    "1940",
    "1941",
    "1942",
@@ -47,9 +48,7 @@
    "1961",
    "1962",
    "1963",
-   "1962-no-dash"
-  ],
-  "later": [
+   "1962-no-dash",
    "1964",
    "1965",
    "1966",
@@ -66,7 +65,12 @@
    "1979-first",
    "1979-second",
    "1982-third",
-   "1985-fourth"
+   "1985-fourth",
+   "1985-flag",
+   "2001-flag",
+   "2013-flag-dual",
+   "2014-flag",
+   "2025-flag"
   ]
  },
  "repositoryEvidence": [
