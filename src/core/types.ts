@@ -52,6 +52,18 @@ export interface PlateFormat {
   text?(parts: Parts): string;
   /** Merged over the region's design. */
   design?: Design;
+  /** Years this format was issued or valid (inclusive). Enables the timeline. */
+  period?: readonly [number, number];
+  /** Id of the region era this format belongs to; inferred from `period` when omitted. */
+  era?: string;
+}
+
+/** A named span of a region's plate history, used to group the timeline and gallery. */
+export interface PlateEra {
+  id: string;
+  label: string;
+  period: readonly [number, number];
+  summary?: string;
 }
 
 export interface Region {
@@ -59,12 +71,18 @@ export interface Region {
   name: string;
   /** Short code shown in lists, e.g. `CA`, `D`, `JP`. */
   code: string;
-  /** Top-level grouping in the picker. */
+  /** Continent-level grouping in the picker, e.g. `North America`, `Europe`. */
   group: string;
+  /** Issuing country. Defaults to `name` for national regions. */
+  country?: string;
+  /** Country flag when it differs from the region's own flag. */
+  countryFlag?: string;
   flag: string;
   template: string;
   design: Design;
   formats: PlateFormat[];
+  /** Chronological eras; together with format periods these drive the timeline. */
+  eras?: readonly PlateEra[];
   notes?: string;
 }
 

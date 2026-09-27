@@ -77,6 +77,7 @@ export const bcLaterFormats: PlateFormat[] = BC_LATER_RECIPES.map((recipe) => wi
   id: recipe.id, label: recipe.label, pattern: recipe.prefixes ? 'AAA-999 (supported block)' : '123-456',
   description: `${recipe.note} ${BC_LATER_NOTE}`, references: [recipe.source],
   design: { year: recipe.year, baseId: recipe.id },
+  period: recipe.period,
   fields: [{ key: 'serial', label: 'Plate serial', maxLength: 7 },
     { key: 'finish', label: 'Rendering', preserveOnGenerate: true, options: [{ value: 'flat', label: 'Flat / editable SVG' }, { value: 'embossed', label: 'Subtle embossed preview' }] }],
   generate: (rng): Parts => ({ serial: generateSerial(recipe, rng), finish: 'flat' }),

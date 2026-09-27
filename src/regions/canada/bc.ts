@@ -81,6 +81,7 @@ function makeFormat(recipe: BcYear, dashless = false): PlateFormat {
       { key: 'finish', label: 'Rendering', preserveOnGenerate: true, options: [{ value: 'flat', label: 'Flat / editable SVG' }, { value: 'embossed', label: 'Subtle embossed preview' }] },
     ],
     design: { year: recipe.year, dashless },
+    period: [recipe.year, recipe.year],
     generate: (rng): Parts => ({ serial: dashless ? String(rng.int(1000, 1999)) : generateSerial(recipe, rng),
       ...(hasTab ? { tabSerial: '', renewal: 'on-plate' } : {}), finish: 'flat' }),
     validate: (parts) => {
@@ -96,7 +97,7 @@ function makeFormat(recipe: BcYear, dashless = false): PlateFormat {
 }
 
 export const britishColumbia: Region = {
-  id: 'ca-bc', name: 'British Columbia', code: 'BC', group: 'Canada', flag: '🇨🇦',
+  id: 'ca-bc', name: 'British Columbia', code: 'BC', group: 'North America', country: 'Canada', flag: '🇨🇦',
   template: 'bc-historical', design: { year: 1940 },
   formats: [...BC_YEARS.map((year) => makeFormat(year)), makeFormat(bcYear(1962), true)].map(withLettering),
   notes: BC_RECONSTRUCTION_NOTE,

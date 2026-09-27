@@ -20,8 +20,8 @@ try {
   await page.locator('.region-trigger').click();
   await page.getByLabel('Search regions').fill('British Columbia');
   await page.getByRole('option', { name: /British Columbia/ }).click();
-  assert.equal(await page.locator('.chip').count(), 41);
-  await page.locator('.chip').filter({ hasText: /^1953$/ }).click();
+  assert.equal(await page.locator('.timeline-node').count(), 41);
+  await page.locator('.timeline-node[title="1953"]').click();
   await page.locator('#field-serial').fill('33-638');
   await page.locator('#field-tabSerial').fill('148879');
   await page.locator('.lettering-comparison summary').click();
@@ -40,7 +40,7 @@ try {
   assert.equal(await page.locator('#field-lettering').inputValue(), 'hybrid');
   assert.equal(await page.locator('#field-finish').inputValue(), 'embossed');
   for (let i = 0; i < 41; i++) {
-    await page.locator('.chip').nth(i).click();
+    await page.locator('.timeline-node').nth(i).click();
     await page.locator('#field-lettering').selectOption('squarish');
     assert.equal(await page.locator('.plate-preview [data-role="serial"][data-lettering="squarish"]').count(), 1);
     assert(!await page.locator('.plate-preview').evaluate((element) => element.innerHTML.includes('NaN')));
