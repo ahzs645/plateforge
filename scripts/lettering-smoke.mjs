@@ -16,7 +16,7 @@ try {
   browser = await chromium.launch();
   const page = await browser.newPage({ viewport: { width: 1440, height: 1000 }, acceptDownloads: true });
   const errors = [];
-  page.on('pageerror', (error) => errors.push(error.message));
+  page.on('pageerror', (error) => { errors.push(error.message); console.error('PAGE ERROR:', error.message); });
   await page.goto('http://127.0.0.1:4173/');
   await page.locator('.region-trigger').click();
   await page.getByLabel('Search regions').fill('British Columbia');
@@ -47,9 +47,11 @@ try {
     assert(!await page.locator('.plate-preview').evaluate((element) => element.innerHTML.includes('NaN')));
   }
   const download = async (kind) => {
-    const pending = page.waitForEvent('download');
-    await page.locator('.export-section button').filter({ hasText: new RegExp(`^${kind}$`) }).click();
-    const file = await pending;
+    // Accessible names normalize the whitespace around icon + label.
+    const [file] = await Promise.all([
+      page.waitForEvent('download'),
+      page.locator('.export-section').getByRole('button', { name: kind, exact: true }).click(),
+    ]);
     const chunks = [];
     for await (const chunk of await file.createReadStream()) chunks.push(chunk);
     return Buffer.concat(chunks);
