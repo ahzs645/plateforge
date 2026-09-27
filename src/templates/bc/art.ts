@@ -68,7 +68,41 @@ function spiritFlag(): SvgNode[] {
     n('path', { d: band(64, 9), fill: DEEP, ...hair }))];
 }
 
+/** Interlaced "BC" monogram (1914 porcelain, 1918–23 steel), 60 × 60, drawn in currentColor. */
+function bcMonogram(): SvgNode[] {
+  const stroke = { fill: 'none', stroke: 'currentColor', strokeWidth: 5.5, strokeLinecap: 'round' as const };
+  return [
+    // Large open C sweeping round the left.
+    n('path', { d: 'M52 14 C44 4 24 3 14 14 C4 25 5 41 15 50 C25 58 44 57 52 46', ...stroke }),
+    // B: stem with two bowls, set over the C.
+    n('path', { d: 'M26 7 V55', ...stroke }),
+    n('path', { d: 'M20 7 H38 C49 7 49 29 38 29 H26 M26 29 H40 C53 29 53 55 40 55 H20', ...stroke }),
+  ];
+}
+
+/** Provincial coat of arms, simplified for small line-art use (1915–17 tin, 1919 cardboard), 50 × 62.
+ * Crest crown, shield (Union upper third; sun over waves below) and motto scroll; supporters omitted. */
+function bcArms(): SvgNode[] {
+  const line = { fill: 'none', stroke: 'currentColor', strokeWidth: 1.6, strokeLinejoin: 'round' as const };
+  return [
+    n('path', { d: 'M17 9 L19 3 L22 7 L25 2 L28 7 L31 3 L33 9 Z', ...line, 'data-part': 'crown' }),
+    n('path', { d: 'M9 12 H41 V33 C41 46 33 52 25 56 C17 52 9 46 9 33 Z', ...line, 'data-part': 'shield' }),
+    n('path', { d: 'M9 22 H41 M25 12 V22 M9 12 L41 22 M41 12 L9 22', ...line, strokeWidth: 1.1 }),
+    n('path', { d: 'M17 32 A8 8 0 0 1 33 32', ...line }),
+    ...[36, 41, 46].map((y) => n('path', { d: `M11 ${y} q3.5 -2 7 0 t7 0 t7 0 t7 0`, ...line, strokeWidth: 1.1 })),
+    n('path', { d: 'M4 56 Q14 61 25 58 Q36 61 46 56 L44 61 Q35 63 25 61 Q15 63 6 61 Z', ...line, strokeWidth: 1.1, 'data-part': 'motto-scroll' }),
+  ];
+}
+
+/** Cream panel with an arched top behind the 1915 coat of arms, 34 × 60. */
+function armsPanel(): SvgNode[] {
+  return [n('path', { d: 'M0 60 V8 Q0 0 8 0 H26 Q34 0 34 8 V60 Z', fill: '#ece4bd' })];
+}
+
 const MASTERS: Record<string, ArtMaster> = {
+  'arms-panel': { viewBox: [34, 60], draw: armsPanel, aspect: 'stretch' },
+  'bc-monogram': { viewBox: [60, 60], draw: bcMonogram },
+  'bc-arms': { viewBox: [50, 62], draw: bcArms },
   'bc-spirit-flag': { viewBox: [100, 76], draw: spiritFlag },
   'bc-flag': { viewBox: [60, 36], draw: bcFlag },
 };
@@ -77,12 +111,12 @@ export const hasArtwork = (id: string): boolean => id in MASTERS;
 export function registerArtwork(id: string, master: ArtMaster): void { MASTERS[id] = master; }
 
 /** Places an artwork master in a box (mm). */
-export function artwork(id: string, box: ArtBox, role = 'artwork'): SvgNode {
+export function artwork(id: string, box: ArtBox & { color?: string }, role = 'artwork'): SvgNode {
   const master = MASTERS[id];
   if (!master) throw new RangeError(`Unknown plate artwork: ${id}`);
   const [vw, vh] = master.viewBox;
   const sx = box.width / vw, sy = box.height / vh;
   const [kx, ky] = master.aspect === 'stretch' ? [sx, sy] : [Math.min(sx, sy), Math.min(sx, sy)];
   const dx = box.x + (box.width - vw * kx) / 2, dy = box.y + (box.height - vh * ky) / 2;
-  return n('g', { 'data-role': role, 'data-art': id, 'data-accuracy': 'approximate', transform: `translate(${dx.toFixed(3)} ${dy.toFixed(3)}) scale(${kx.toFixed(5)} ${ky.toFixed(5)})` }, ...master.draw());
+  return n('g', { 'data-role': role, 'data-art': id, 'data-accuracy': 'approximate', ...(box.color ? { color: box.color } : {}), transform: `translate(${dx.toFixed(3)} ${dy.toFixed(3)}) scale(${kx.toFixed(5)} ${ky.toFixed(5)})` }, ...master.draw());
 }

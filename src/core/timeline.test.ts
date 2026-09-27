@@ -29,7 +29,7 @@ describe('timeline', () => {
     const passenger = bc.formats.filter((f) => familyOf(bc, f) === 'passenger' && f.period);
     expect(timeline.order).toHaveLength(passenger.length);
     expect(timeline.span[0]).toBe(Math.min(...passenger.map((f) => f.period![0])));
-    expect(timeline.eras.map((e) => e.id).slice(0, 8)).toEqual(['annual-1940', 'bases-1949', 'totem-1952', 'annual-1955', 'beautiful-1964', 'decal-1970', 'blue-1979', 'flag-1985'].filter((id) => timeline.eras.some((e) => e.id === id)).slice(0, 8));
+    expect(timeline.eras.map((e) => e.id)).toEqual(['owner-1904', 'enamel-1913', 'steel-1918', 'annual-1924', 'annual-1940', 'bases-1949', 'totem-1952', 'annual-1955', 'beautiful-1964', 'decal-1970', 'blue-1979', 'flag-1985']);
     expect(timeline.eras.at(-1)!.id).toBe('flag-1985');
     const starts = timeline.order.map((e) => e.period[0]);
     expect(starts).toEqual([...starts].sort((a, b) => a - b));
@@ -39,7 +39,8 @@ describe('timeline', () => {
     }
   });
   it('steps through designs and stops at either end', () => {
-    expect(stepTimeline(timeline, '1940', -1)).toBeUndefined();
+    expect(stepTimeline(timeline, timeline.order[0].format.id, -1)).toBeUndefined();
+    expect(stepTimeline(timeline, '1939', 1)?.id).toBe('1940');
     expect(stepTimeline(timeline, '1940', 1)?.id).toBe('1941');
     expect(stepTimeline(timeline, '1969', 1)?.id).toBe('1970-1972');
     expect(stepTimeline(timeline, '1985-fourth', 1)?.id).toBe('1985-flag');

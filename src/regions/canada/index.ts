@@ -1,6 +1,12 @@
 import { britishColumbia as earlyBritishColumbia } from './bc';
 import { bcLaterFormats } from './bc-later';
 import { bcFlagFormats } from './bc-flag';
+import { bcEarlyFormats } from './bc-early';
+import { BC_SPECIALTY_ERAS, BC_SPECIALTY_FAMILIES, BC_SPECIALTY_FORMATS } from './bc-specialty';
+import { BC_VEHICLE_ERAS, BC_VEHICLE_FAMILIES, BC_VEHICLE_FORMATS } from './bc-vehicles';
+import { BC_TRADE_ERAS, BC_TRADE_FAMILIES, BC_TRADE_FORMATS } from './bc-trade';
+import { BC_OFFICIAL_ERAS, BC_OFFICIAL_FAMILIES, BC_OFFICIAL_FORMATS } from './bc-official';
+import { BC_MUNICIPAL_ERAS, BC_MUNICIPAL_FAMILIES, BC_MUNICIPAL_FORMATS } from './bc-municipal';
 import { withBcDecals, withBcDies } from './bc-dies';
 import { BC_LATER_RECIPES } from './bc-later';
 import type { PlateEra, PlateFamily, PlateGap } from '../../core/types';
@@ -12,6 +18,10 @@ export const BC_FAMILIES: readonly PlateFamily[] = [
 
 /** Timeline groupings for the passenger presets; periods follow the BCpl8s chapter breaks. */
 export const BC_ERAS: readonly PlateEra[] = [
+  { id: 'owner-1904', label: 'Owner-made plates', period: [1904, 1912], summary: 'Permanent registration numbers made up by owners, usually house numerals on leather.' },
+  { id: 'enamel-1913', label: 'Porcelain & tin', period: [1913, 1917], summary: 'Provincial issue begins: porcelain in 1913–14, then lithographed tin with the coat of arms.' },
+  { id: 'steel-1918', label: 'Steel bases & tabs', period: [1918, 1923], summary: 'Embossed steel meant for several years, renewed with tabs in 1919, 1921 and 1922.' },
+  { id: 'annual-1924', label: 'BRITISH COLUMBIA annuals', period: [1924, 1939], summary: 'Annual embossed plates with the province name along the bottom and a small date.' },
   { id: 'annual-1940', label: 'Annual plates', period: [1940, 1948], summary: 'A new plate and colour pair every year, with the year stacked beside the serial.' },
   { id: 'bases-1949', label: 'Short & long bases', period: [1949, 1951], summary: 'Five-digit short and six-digit long bases; 1951 renews the 1950 plate with a bolted strip.' },
   { id: 'totem-1952', label: '1952 totem base', period: [1952, 1954], summary: 'Aluminum base with the totem emblem, renewed by side tabs in 1953 and 1954.' },
@@ -22,11 +32,8 @@ export const BC_ERAS: readonly PlateEra[] = [
   { id: 'flag-1985', label: 'Flag base', period: [1985, 2026], summary: 'Reflective white base with the waving flag between serial halves and “Beautiful British Columbia” above; serial generations change, the design does not.' },
 ];
 
-const chapter = (period: string) => ({ title: `BCpl8s · Passenger ${period.replace('-', '–')}`, url: `https://www.bcpl8s.ca/Passenger-${period}.html` });
 /** Passenger chapters BCpl8s documents that have no editable preset yet. */
 export const BC_GAPS: readonly PlateGap[] = [
-  { id: 'early-1904', label: 'Early plates', period: [1904, 1939], note: 'Includes porcelain and other early construction types that cannot safely be forced into the standard 12 × 6 shell.',
-    sources: ['1904-1912', '1913-1914', '1915-1917', '1918-1923', '1924-1929', '1930', '1931-1935', '1936-1939'].map(chapter) },
 ];
 
 /** Decal years for a 1970–85 base: its own issue period, then renewals until the next general reissue. No 1973 or 1979 decals exist. */
@@ -43,9 +50,11 @@ export const britishColumbia = {
     ...earlyBritishColumbia.formats.map(withBcDies),
     ...bcLaterFormats.map((f) => withBcDies(decalYears(f.id) ? withBcDecals(f, decalYears(f.id)!) : f)),
     ...bcFlagFormats,
+    ...bcEarlyFormats,
+    ...BC_VEHICLE_FORMATS, ...BC_TRADE_FORMATS, ...BC_SPECIALTY_FORMATS, ...BC_OFFICIAL_FORMATS, ...BC_MUNICIPAL_FORMATS,
   ],
-  families: BC_FAMILIES,
-  eras: BC_ERAS,
+  families: [...BC_FAMILIES, ...BC_VEHICLE_FAMILIES, ...BC_TRADE_FAMILIES, ...BC_SPECIALTY_FAMILIES, ...BC_OFFICIAL_FAMILIES, ...BC_MUNICIPAL_FAMILIES],
+  eras: [...BC_ERAS, ...BC_VEHICLE_ERAS, ...BC_TRADE_ERAS, ...BC_SPECIALTY_ERAS, ...BC_OFFICIAL_ERAS, ...BC_MUNICIPAL_ERAS],
   gaps: BC_GAPS,
   coverageRoute: '#/library/coverage',
   notes: 'Passenger base reconstructions, 1940–1985, with selected production and serial variants. Reference-library coverage is much broader than editable coverage. Exact dies, decals, colours and artwork are not certified.',

@@ -175,6 +175,8 @@ export function skeletonGlyph(char: string, p: SkeletonParams): SkeletonGlyph | 
       return { advance: d.width + s, paths: [`M${f(h)} ${f(d.y ?? 52)} H${f(d.width + h)}`], ...(d.weight ? { stroke: d.weight } : {}) };
     }
     case '·': return g([`M${f(s * 0.8)} ${f(52)} h0.01`], s * 1.6);
+    // Long raised bar used in front of four-digit numbers (1933–39).
+    case '‒': return g([`M${f(h)} ${f(p.dash?.y ?? 52)} H${f(w * 0.9)}`], w * 0.9 + h);
     case '.': return g([`M${f(s * 0.8)} ${f(B)} h0.01`], s * 1.6);
     case '&': return null;
     case ' ': return g([], w * 0.45);

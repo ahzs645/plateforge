@@ -12,6 +12,24 @@ import { BC_DECALS, decalId, decalsBetween, type BcDecal } from './bc-decals';
 import { dieProfile } from '../../templates/dies/profiles';
 import { dieSupports } from '../../templates/dies/engine';
 
+/**
+ * Numeric registration numbers in documented ranges. With `dash`, numbers of
+ * four or more figures carry a dash between thousands and hundreds (1924 on);
+ * without it the plate shows plain figures.
+ */
+export function numericGrammar(ranges: readonly (readonly [number, number])[], dash: boolean): SerialGrammar {
+  const show = (n: number) => { const t = String(n); return dash && t.length > 3 ? `${t.slice(0, -3)}-${t.slice(-3)}` : t; };
+  const valid = (serial: string) => {
+    if (!(dash ? /^(?:[1-9]\d{0,2}|[1-9]\d{0,2}-\d{3})$/ : /^[1-9]\d{0,5}$/).test(serial)) return false;
+    if (dash && serial.replace('-', '').length > 3 && !serial.includes('-')) return false;
+    const n = Number(serial.replace('-', ''));
+    return ranges.some(([lo, hi]) => n >= lo && n <= hi);
+  };
+  const hint = ranges.map(([lo, hi]) => `${show(lo)}–${show(hi)}`).join(', ');
+  return { blocks: [], hint: `${hint}${dash ? ' (dash before the last three figures)' : ''}`,
+    custom: { generate: (rng) => { const [lo, hi] = rng.pick(ranges); return show(rng.int(lo, hi)); }, test: valid } };
+}
+
 /** B.C. letter groups used by the serial allocations: A–K and L–X, each skipping look-alikes. */
 export const BC_AK = 'ABCDEFGHJK';
 export const BC_LX = 'LMNPRSTVWX';
@@ -19,6 +37,8 @@ export const BC_LX = 'LMNPRSTVWX';
 export interface SerialBlock { pattern: string; label?: string }
 export interface SerialGrammar {
   blocks: readonly SerialBlock[];
+  /** Rule-based serials (e.g. numeric ranges) instead of, or besides, pattern blocks. */
+  custom?: { generate(rng: Rng): string; test(serial: string): boolean };
   sets?: Record<string, string>;
   /** Serials a generator must avoid (e.g. withheld numbers); still valid when typed. */
   avoid?: (serial: string) => boolean;
@@ -97,11 +117,12 @@ export function kitFormat(spec: KitFormatSpec): PlateFormat {
     ...(spec.recipe.embossed ? [{ key: 'finish', label: 'Rendering', preserveOnGenerate: true, options: [{ value: 'flat', label: 'Flat / editable SVG' }, { value: 'embossed', label: 'Subtle embossed preview' }] }] : []),
   ];
   const generateSerial = (rng: Rng): string => {
+    const one = () => spec.grammar.custom && (!blocks.length || rng.chance(0.5)) ? spec.grammar.custom.generate(rng) : rng.pick(blocks).generate(rng);
     for (let tries = 0; tries < 50; tries++) {
-      const serial = rng.pick(blocks).generate(rng);
+      const serial = one();
       if (!spec.grammar.avoid?.(serial)) return serial;
     }
-    return rng.pick(blocks).generate(rng);
+    return one();
   };
   return {
     id: spec.id,
@@ -124,10 +145,10 @@ export function kitFormat(spec: KitFormatSpec): PlateFormat {
     }),
     validate: (parts) => {
       const serial = parts.serial ?? '';
-      if (!blocks.some((b) => b.test(serial))) return `Supported serials: ${spec.grammar.hint}. This checks the documented format, not a real registration.`;
+      if (!blocks.some((b) => b.test(serial)) && !spec.grammar.custom?.test(serial)) return `Supported serials: ${spec.grammar.hint}. This checks the documented format, not a real registration.`;
       const die = parts.die ?? dies[0].id;
       if (!dies.some((d) => d.id === die)) return 'Choose one of the listed dies.';
-      if (!dieSupports(dieProfile(die), serial.replace('-', ''))) return 'This die has no glyph for one of these characters.';
+      if (!spec.recipe.serial.font && !dieSupports(dieProfile(die), serial.replace('-', ''))) return 'This die has no glyph for one of these characters.';
       if (parts.decal !== undefined && !decalOptions.some((o) => o.value === parts.decal)) return 'Choose a listed renewal decal.';
       if (parts.decalMonth !== undefined && !(MONTHS as readonly string[]).includes(parts.decalMonth)) return 'Choose a decal month.';
       if (parts.finish !== undefined && !['flat', 'embossed'].includes(parts.finish)) return 'Choose flat or embossed rendering.';

@@ -47,6 +47,47 @@ export const DIE_PROFILES: readonly DieProfile[] = [
   },
   // ── Early and Oakalla serial dies (gallery photos only; no per-digit crops exist) ──
   {
+    id: 'bc-porcelain-1913', label: '1913 porcelain numerals',
+    params: { width: 38, stroke: 11, curve: 'stadium', tracking: 7, one: 'flag', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'straight', nine: 'curved', narrow: 0.62, wide: 1.2 },
+    evidence: { status: 'legend-approximation', specimens: [page('1913-1914')], notes: 'Tall, very condensed white numerals on the 1913 porcelain (6543).' },
+  },
+  {
+    id: 'bc-porcelain-1914', label: '1914 porcelain numerals',
+    params: { width: 44, stroke: 14, curve: 'stadium', tracking: 8, one: 'flag-base', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'straight', nine: 'curved', narrow: 0.62, wide: 1.2 },
+    evidence: { status: 'legend-approximation', specimens: [page('1913-1914')], notes: 'Heavier condensed numerals with a flat-topped 5 (1914 5318).' },
+  },
+  {
+    id: 'bc-tin-1915', label: '1915–17 tin numerals',
+    params: { width: 46, stroke: 13, curve: 'box', boxRadius: 9, tracking: 9, one: 'flag-base', two: 'curved', three: 'round', four: 'closed', six: 'straight', seven: 'straight', nine: 'straight', narrow: 0.6, wide: 1.2 },
+    evidence: { status: 'legend-approximation', specimens: [page('1915-1917')], notes: 'Very tall squarish numerals on lithographed tin (1915 5244, 1916 7462, 1917 12963).' },
+  },
+  {
+    id: 'bc-block-1918', label: '1918–23 block dies',
+    params: { width: 48, stroke: 13, curve: 'stadium', tracking: 9, one: 'flag-base', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'straight', nine: 'curved', narrow: 0.62, wide: 1.2 },
+    evidence: { status: 'legend-approximation', specimens: [page('1918-1923')], notes: 'Embossed block numerals from Washington-derived dies with a based 1 (1918 12741, 1920 25085).' },
+  },
+  {
+    id: 'bc-tacey-1924', label: '1924–27, 1931 slanted dies', maker: 'J.R. Tacey & Son',
+    params: { width: 46, stroke: 14, curve: 'stadium', tracking: 9, one: 'flag-base', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'straight', nine: 'curved', narrow: 0.62, wide: 1.2, dash: { width: 14 } },
+    slant: 5,
+    evidence: { status: 'legend-approximation', specimens: [page('1924-1929'), page('1931-1935')], notes: 'Slanted rounded numerals used 1924–27 and again in 1931 (1924 25-610).' },
+  },
+  {
+    id: 'bc-straight-1928', label: '1928–30, 1933–35 straight dies',
+    params: { width: 46, stroke: 14, curve: 'stadium', tracking: 9, one: 'flag-base', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'straight', nine: 'curved', narrow: 0.62, wide: 1.2, dash: { width: 14 } },
+    evidence: { status: 'legend-approximation', specimens: [page('1924-1929'), page('1931-1935')], notes: 'Straighter upright numerals introduced in 1928 (1929 41-311).' },
+  },
+  {
+    id: 'bc-tacey-1936', label: '1936–39 slanted dies',
+    params: { width: 50, stroke: 13, curve: 'oval', tracking: 9, one: 'flag-base', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'straight', nine: 'curved', narrow: 0.62, wide: 1.2, dash: { width: 14 } },
+    slant: 4,
+    evidence: { status: 'legend-approximation', specimens: [page('1936-1939')], notes: 'Slanted Tacey-style dies with an oval 0; the 1938 dies were made to match 1937 (1937 -2-200).' },
+  },
+  {
+    id: 'bc-legend-1924', label: 'Legend · 1924–39', params: { width: 66, stroke: 14, curve: 'stadium', tracking: 9, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.5, wide: 1.2 },
+    evidence: { status: 'legend-approximation', specimens: [page('1924-1929'), page('1936-1939')], notes: 'Bold condensed BRITISH COLUMBIA legend spanning the lower edge.' },
+  },
+  {
     id: 'bc-early-1940', label: 'Early rounded dies (1940–54)',
     params: { width: 50, stroke: 16, curve: 'stadium', tracking: 9, one: 'flag', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'curved', nine: 'curved', narrow: 0.6, wide: 1.2, dash: { width: 16 } },
     evidence: { status: 'legend-approximation', specimens: [page('1940-1948'), page('1949-1951'), page('1952-1954')], notes: 'Bold, fairly wide rounded numerals (W/H about 0.5, stroke 0.15–0.18) with a curved 7 and closed 4, read from gallery photos (1948 76-487, 1951 217-639); BCpl8s has no digit comparison for these years.' },
@@ -111,6 +152,14 @@ export const DIE_PROFILES: readonly DieProfile[] = [
 ];
 
 const byId = new Map(DIE_PROFILES.map((p) => [p.id, p]));
+/** Lets family modules add their own profiles (e.g. small-format motorcycle dies) without editing this list. */
+export function registerDieProfile(...profiles: DieProfile[]): void {
+  for (const p of profiles) {
+    if (byId.has(p.id) && byId.get(p.id) !== p) throw new Error(`Duplicate die profile id ${p.id}`);
+    byId.set(p.id, p);
+  }
+}
+export const allDieProfiles = (): DieProfile[] => [...byId.values()];
 export function dieProfile(id: string): DieProfile {
   const profile = byId.get(id);
   if (!profile) throw new RangeError(`Unknown die profile: ${id}`);
