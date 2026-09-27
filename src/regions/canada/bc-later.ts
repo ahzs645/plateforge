@@ -1,5 +1,5 @@
 import { withLettering } from '../../core/lettering';
-import type { Parts, PlateFormat } from '../../core/types';
+import type { FieldDef, Parts, PlateFormat } from '../../core/types';
 import type { Rng } from '../../core/random';
 export const BC_FIRST_ALPHABET = 'ABCDEFGHJK';
 export const BC_SECOND_ALPHABET = 'LMNPRSTVWX';
@@ -75,15 +75,26 @@ function generateSerial(recipe: BcLaterRecipe, rng: Rng): string {
   const pool = recipe.prefixes.filter((p) => !appExcluded.has(p));
   return `${rng.pick(pool)}-${String(rng.int(1, 999)).padStart(3, '0')}`;
 }
+/** Documented production variants that change a detail of one base, not its serials. */
+function variantFields(recipe: BcLaterRecipe): FieldDef[] {
+  if (recipe.id === '1964') return [{ key: 'legendDie', label: 'Province legend die', preserveOnGenerate: true, options: [
+    { value: 'short', label: 'Short 1964 die' }, { value: 'long', label: 'Long 1955–63 die (random re-use)' }] }];
+  if (['1972-overrun', '1973-1974', '1975-1977', '1977-1978'].includes(recipe.id)) return [{ key: 'separator', label: 'Separator', preserveOnGenerate: true, options: [
+    { value: 'dot', label: 'Dot' }, { value: 'gap', label: 'No separator (Oakalla was inconsistent)' }] }];
+  return [];
+}
+
 export const bcLaterFormats: PlateFormat[] = BC_LATER_RECIPES.map((recipe) => withLettering({
   id: recipe.id, label: recipe.label, pattern: recipe.prefixes ? 'AAA-999 (supported block)' : '123-456',
   description: `${recipe.note} ${BC_LATER_NOTE}`, references: [recipe.source],
   design: { year: recipe.year, baseId: recipe.id },
   period: recipe.period,
   fields: [{ key: 'serial', label: 'Plate serial', maxLength: 7 },
+    ...variantFields(recipe),
     { key: 'finish', label: 'Rendering', preserveOnGenerate: true, options: [{ value: 'flat', label: 'Flat / editable SVG' }, { value: 'embossed', label: 'Subtle embossed preview' }] }],
-  generate: (rng): Parts => ({ serial: generateSerial(recipe, rng), finish: 'flat' }),
+  generate: (rng): Parts => ({ serial: generateSerial(recipe, rng), ...Object.fromEntries(variantFields(recipe).map((f) => [f.key, f.options![0].value])), finish: 'flat' }),
   validate: (parts) => validateLaterSerial(parts.serial ?? '', recipe)
+    ?? (variantFields(recipe).some((f) => parts[f.key] !== undefined && !f.options!.some((o) => o.value === parts[f.key])) ? 'Choose a listed variant.' : null)
     ?? (parts.finish === undefined || ['flat', 'embossed'].includes(parts.finish) ? null : 'Choose flat or embossed rendering.'),
   text: (parts) => laterSerial(parts.serial ?? ''),
 }));

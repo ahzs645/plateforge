@@ -75,7 +75,7 @@ export const bcFlagFormats: PlateFormat[] = [
     id: '2025-flag', label: '2025 flag · A99-9AA', family: 'passenger', period: [2025, 2026], era: 'flag-1985',
     recipe: { ...flagRecipe('flag-2025', '2025 flag base · A99-9AA', 'bc-waldale', '2025', false), decal: null, extraWells: [] },
     grammar: { sets: { z: `${BC_AK}${BC_LX}UYZ` }, hint: 'A99-9AA (A block from August 2025; B projected for June 2026; U, Y and Z now used)',
-      blocks: [{ pattern: 'A99-9{z}{z}' }, { pattern: 'B99-9{z}{z}' }] },
+      blocks: [{ pattern: '\\A99-9{z}{z}' }, { pattern: 'B99-9{z}{z}' }] },
     description: 'ICBC’s 2025 configuration: same design, reflectivity and materials, with U, Y and Z added. Decal wells were dropped after SF9-99X in 2022, so none are drawn.',
   }),
 ];

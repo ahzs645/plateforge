@@ -6,6 +6,7 @@ import { BC_SPECIALTY_ERAS, BC_SPECIALTY_FAMILIES, BC_SPECIALTY_FORMATS } from '
 import { BC_VEHICLE_ERAS, BC_VEHICLE_FAMILIES, BC_VEHICLE_FORMATS } from './bc-vehicles';
 import { BC_TRADE_ERAS, BC_TRADE_FAMILIES, BC_TRADE_FORMATS } from './bc-trade';
 import { BC_OFFICIAL_ERAS, BC_OFFICIAL_FAMILIES, BC_OFFICIAL_FORMATS } from './bc-official';
+import { BC_SAMPLE_FAMILIES, bcSampleFormats } from './bc-samples';
 import { BC_MUNICIPAL_ERAS, BC_MUNICIPAL_FAMILIES, BC_MUNICIPAL_FORMATS } from './bc-municipal';
 import { withBcDecals, withBcDies } from './bc-dies';
 import { BC_LATER_RECIPES } from './bc-later';
@@ -43,17 +44,22 @@ function decalYears(id: string): readonly [number, number] | null {
   return [r.period[0], r.baseYear === 1979 ? 1985 : 1978];
 }
 
-/** Preserve legacy recipe exports/tests while extending the registered region. */
-export const britishColumbia = {
-  ...earlyBritishColumbia,
-  formats: [
+const BASE_FORMATS = [
     ...earlyBritishColumbia.formats.map(withBcDies),
     ...bcLaterFormats.map((f) => withBcDies(decalYears(f.id) ? withBcDecals(f, decalYears(f.id)!) : f)),
     ...bcFlagFormats,
     ...bcEarlyFormats,
+];
+
+/** Preserve legacy recipe exports/tests while extending the registered region. */
+export const britishColumbia = {
+  ...earlyBritishColumbia,
+  formats: [
+    ...BASE_FORMATS,
+    ...bcSampleFormats((id) => BASE_FORMATS.find((f) => f.id === id)),
     ...BC_VEHICLE_FORMATS, ...BC_TRADE_FORMATS, ...BC_SPECIALTY_FORMATS, ...BC_OFFICIAL_FORMATS, ...BC_MUNICIPAL_FORMATS,
   ],
-  families: [...BC_FAMILIES, ...BC_VEHICLE_FAMILIES, ...BC_TRADE_FAMILIES, ...BC_SPECIALTY_FAMILIES, ...BC_OFFICIAL_FAMILIES, ...BC_MUNICIPAL_FAMILIES],
+  families: [...BC_FAMILIES, ...BC_VEHICLE_FAMILIES, ...BC_TRADE_FAMILIES, ...BC_SPECIALTY_FAMILIES, ...BC_OFFICIAL_FAMILIES, ...BC_MUNICIPAL_FAMILIES, ...BC_SAMPLE_FAMILIES],
   eras: [...BC_ERAS, ...BC_VEHICLE_ERAS, ...BC_TRADE_ERAS, ...BC_SPECIALTY_ERAS, ...BC_OFFICIAL_ERAS, ...BC_MUNICIPAL_ERAS],
   gaps: BC_GAPS,
   coverageRoute: '#/library/coverage',

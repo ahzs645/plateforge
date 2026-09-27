@@ -16,11 +16,11 @@
   "inventoryRecords": 67,
   "homepageTopics": 56,
   "selectedChildTopics": 11,
-  "registeredPassengerPresets": 80,
+  "registeredPassengerPresets": 81,
   "earlyPresets": 25,
   "laterPresets": 17,
   "countsUnit": "Inventory topics and presets, NOT distinct historical plate designs",
-  "registeredPresets": 80
+  "registeredPresets": 99
  },
  "registeredPresets": {
   "passenger": [
@@ -49,6 +49,7 @@
    "1962",
    "1963",
    "1962-no-dash",
+   "1961-late-date",
    "1964",
    "1965",
    "1966",
@@ -104,6 +105,26 @@
    "1937",
    "1938",
    "1939"
+  ],
+  "samples": [
+   "sample-1940",
+   "sample-1951-strip",
+   "sample-1955",
+   "sample-1964",
+   "sample-1970-000",
+   "souvenir-1970-expo",
+   "sample-1973",
+   "sample-1979",
+   "sample-flag",
+   "souvenir-bc0000",
+   "prototype-1964-colours",
+   "prototype-1968-paint",
+   "prop-1959-repro",
+   "prop-flag-xqz",
+   "reproduction-1920",
+   "prototype-super-natural",
+   "prototype-dogwood",
+   "prototype-a-new-bc"
   ]
  },
  "repositoryEvidence": [

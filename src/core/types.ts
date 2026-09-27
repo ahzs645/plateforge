@@ -62,7 +62,7 @@ export interface PlateFormat {
   status?: PlateStatus;
 }
 
-export type PlateStatus = 'issued' | 'official-sample' | 'prototype' | 'proposal' | 'souvenir' | 'prop' | 'uncertain';
+export type PlateStatus = 'issued' | 'official-sample' | 'prototype' | 'proposal' | 'souvenir' | 'prop' | 'reproduction' | 'uncertain';
 
 /** A group of related formats with its own timeline, e.g. passenger or motorcycle plates. */
 export interface PlateFamily {

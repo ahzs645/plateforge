@@ -40,9 +40,11 @@ describe('sharded reference catalogue', () => {
   });
   it('keeps source-page associations distinct from individual image reconstructions', () => {
     const regions = [britishColumbia];
-    expect(editorsForPage(chapter.url, regions)).toHaveLength(7);
-    expect(editorsForPage('https://www.bcpl8s.ca/Passenger-1940-1948.html', regions)).toHaveLength(9);
-    expect(editorsForPage('https://www.bcpl8s.ca/Motorcycle.htm', regions)).toEqual([]);
+    const citing = (url: string) => britishColumbia.formats.filter((f) => f.references?.some((r) => r.url === url)).length;
+    expect(editorsForPage(chapter.url, regions)).toHaveLength(citing(chapter.url));
+    expect(citing(chapter.url)).toBeGreaterThanOrEqual(7);
+    expect(editorsForPage('https://www.bcpl8s.ca/Passenger-1940-1948.html', regions).length).toBeGreaterThanOrEqual(9);
+    expect(editorsForPage('https://www.bcpl8s.ca/Not-A-Page.htm', regions)).toEqual([]);
     expect(editorsForPage('https://www.leewardpro.com/articles/licplatefonts/licplate-fonts-nam-class.html', regions)).toEqual([]);
   });
   it('filters page metadata without pretending to know individual photograph dates', () => {

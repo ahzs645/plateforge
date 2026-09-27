@@ -225,7 +225,7 @@ export function buildBcScene(design: BcDesign, parts: Parts, scope = 'bc-plate')
   } else if (standard) {
     inscriptions.push(serialLabel(serial, w / 2, 109, 118, w - 30, ink, 'serial', serialFont));
     inscriptions.push(L('BRITISH COLUMBIA', (w - 54) / 2 + 6, 133, 23, w - 73, ink, 'province', {}, true));
-    inscriptions.push(L(String(r.year).slice(2), w - 27, 134, 30, 34, ink, 'base-year'));
+    inscriptions.push((dies && typeof design.dateDie === 'string' && dieLabel(design.dateDie, String(r.year).slice(2), w - 27, 134, 30, 34, ink, 'base-year')) || L(String(r.year).slice(2), w - 27, 134, 30, 34, ink, 'base-year'));
     if (r.year > 1957) inscriptions.push(n('circle', { cx: w - 51, cy: 127, r: 1.9, fill: ink }));
   } else {
     inscriptions.push(serialLabel(serial, (w - 28) / 2, 98, 104, w - 48, ink, 'serial', serialFont));
