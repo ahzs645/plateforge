@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { formatPeriod, stepTimeline, type Timeline } from '../core/timeline';
+import { formatPeriod, stepTimeline, type Timeline, type TimelineEra } from '../core/timeline';
 import type { PlateFormat, Region } from '../core/types';
 import { ChevronLeft, ChevronRight, GridIcon } from './icons';
 import { PlateView } from './PlateView';
@@ -22,6 +22,9 @@ export function FormatTimeline({ region, timeline, format, onSelect, onOpenGalle
   const entry = timeline.order[position];
   const prev = stepTimeline(timeline, format.id, -1);
   const next = stepTimeline(timeline, format.id, 1);
+  // Built eras and documented-but-unbuilt gaps share one chronological axis.
+  const items = [...timeline.eras.map((era) => ({ kind: 'era' as const, start: era.period[0], era })),
+    ...(region.gaps ?? []).map((gap) => ({ kind: 'gap' as const, start: gap.period[0], gap }))].sort((a, b) => a.start - b.start);
 
   useEffect(() => {
     const track = trackRef.current;
@@ -31,6 +34,25 @@ export function FormatTimeline({ region, timeline, format, onSelect, onOpenGalle
     const left = node.offsetLeft - track.clientWidth / 2 + node.offsetWidth / 2;
     track.scrollTo({ left, behavior: 'smooth' });
   }, [format.id]);
+
+  const renderEra = (e: TimelineEra) => (
+    <div key={e.id} className="timeline-era" data-active={e.id === era?.id}>
+      <div className="timeline-era-label" title={e.summary}>
+        <span className="mono">{formatPeriod(e.period)}</span> {e.label}
+      </div>
+      <ol className="timeline-nodes">
+        {e.entries.map(({ format: f, period }) => (
+          <li key={f.id}>
+            <button className="timeline-node" aria-current={f.id === format.id} onClick={() => onSelect(f.id)} title={f.label}>
+              <PlateView plate={samplePlate(region, f)} className="timeline-thumb" />
+              <span className="timeline-year mono">{formatPeriod(period)}</span>
+              {f.label !== formatPeriod(period) && <span className="timeline-variant">{f.label.replace(/^\d{4}(?:–\d{4})?\s*·\s*/, '')}</span>}
+            </button>
+          </li>
+        ))}
+      </ol>
+    </div>
+  );
 
   return (
     <section className="timeline" aria-label={`${region.name} plate timeline`}>
@@ -47,24 +69,16 @@ export function FormatTimeline({ region, timeline, format, onSelect, onOpenGalle
         </div>
       </header>
       <div className="timeline-track" ref={trackRef}>
-        {timeline.eras.map((e) => (
-          <div key={e.id} className="timeline-era" data-active={e.id === era?.id}>
-            <div className="timeline-era-label" title={e.summary}>
-              <span className="mono">{formatPeriod(e.period)}</span> {e.label}
-            </div>
-            <ol className="timeline-nodes">
-              {e.entries.map(({ format: f, period }) => (
-                <li key={f.id}>
-                  <button className="timeline-node" aria-current={f.id === format.id} onClick={() => onSelect(f.id)} title={f.label}>
-                    <PlateView plate={samplePlate(region, f)} className="timeline-thumb" />
-                    <span className="timeline-year mono">{formatPeriod(period)}</span>
-                    {f.label !== formatPeriod(period) && <span className="timeline-variant">{f.label.replace(/^\d{4}(?:–\d{4})?\s*·\s*/, '')}</span>}
-                  </button>
-                </li>
-              ))}
-            </ol>
+        {items.map((item) => item.kind === 'gap' ? (
+          <div key={item.gap.id} className="timeline-era timeline-gap">
+            <div className="timeline-era-label"><span className="mono">{formatPeriod(item.gap.period)}</span> {item.gap.label}</div>
+            <a className="timeline-gap-node" href={region.coverageRoute ?? item.gap.sources[0]?.url} {...(region.coverageRoute ? {} : { target: '_blank', rel: 'noreferrer' })}
+              title={item.gap.note ?? 'Documented, not yet reconstructed'}>
+              <span>Not built yet</span>
+              <span className="timeline-variant">{region.coverageRoute ? 'See coverage' : 'Source chapter ↗'}</span>
+            </a>
           </div>
-        ))}
+        ) : renderEra(item.era))}
       </div>
       {era && entry && <p className="timeline-caption">
         <strong>{era.label}</strong> <span className="mono">{formatPeriod(era.period)}</span>{era.summary ? ` — ${era.summary}` : ''}

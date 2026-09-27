@@ -44,3 +44,18 @@
 .reference-library button:disabled { opacity:.4; cursor:not-allowed; }
 @media(max-width:1100px) { .reference-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
 @media(max-width:650px) { .view-library .workspace { padding:20px 16px 40px; } .reference-grid { grid-template-columns:minmax(0,1fr); } .reference-stats { gap:16px; } .reference-stats span { width:calc(50% - 8px); } .reference-pager { justify-content:space-between; gap:6px; } .reference-pager .btn { padding:8px 10px; } .reference-filters label { flex-basis:100%; } .reference-modes .btn { font-size:12px; } }
+.coverage { display:grid; gap:24px; min-width:0; }
+.coverage-block { display:grid; gap:12px; min-width:0; }
+.coverage-block > h2 { font-size:20px; letter-spacing:-.02em; }
+.coverage-block > h3 { font-size:15px; margin-top:8px; }
+.coverage-list { display:grid; gap:6px; padding-left:18px; font-size:13px; }
+.reference-notice details { margin-top:10px; font-size:12px; color:var(--muted); }
+.reference-notice details ul { margin:8px 0 0 18px; display:grid; gap:4px; }
+.coverage-badges { display:flex; flex-wrap:wrap; gap:6px; }
+.coverage-card[data-status=partial] .coverage-status { background:color-mix(in srgb, var(--accent) 16%, transparent); color:var(--accent); }
+.coverage-card[data-status=research-not-template] .coverage-status { font-style:italic; }
+.coverage-links { display:flex; flex-wrap:wrap; gap:6px 14px; margin-top:auto; }
+.coverage-table-wrap { overflow-x:auto; }
+.coverage-table { border-collapse:collapse; font-size:13px; min-width:420px; }
+.coverage-table th,.coverage-table td { text-align:left; padding:8px 16px 8px 0; border-bottom:1px solid var(--border); }
+.coverage-table th { font-size:11px; color:var(--muted); font-weight:600; }

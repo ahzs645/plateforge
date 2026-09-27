@@ -45,6 +45,8 @@ export const BC_LATER_RECIPES: readonly BcLaterRecipe[] = [
   base('1979-first', '1979 base · AAA block', 1979, [1979, 1979], prefixes([A, A, A], (p) => p !== 'KKK'), 'First block. The source has conflicting KKL/KKJ endpoint text; this subset conservatively omits KKK. Wide lower-centre decal box; white on blue.'),
   base('1979-second', '1979 base · AAL block', 1979, [1979, 1982], prefixes([A, A, B]), 'AAL–KKX block; the approximate issue period overlaps later blocks. Clean/sloppy paint and stamping variants are not simulated.'),
   base('1982-third', '1979 base · ALL block', 1979, [1982, 1985], prefixes([A, B, B]), 'ALL–KXX block on the 1979 base. ACME/Hi-Signs transition near ARX is not treated as an exact boundary or a separate recovered die.'),
+  base('1985-fourth', '1985 · ALA block', 1979, [1985, 1985], prefixes(['AB', B, A], (p) => p[0] === 'A' || 'LMNP'.includes(p[1]) || (p[1] === 'R' && 'AB'.includes(p[2]))),
+    'Fourth block, issued in 1985 while the flag base was delayed: ALA–AXK, then BLA–BRB (source-reported). Hi-Signs production; the Nova Scotia-style dies are not reproduced.'),
 ];
 export function bcLaterRecipe(design: Record<string, unknown>): BcLaterRecipe {
   const id = typeof design.baseId === 'string' ? design.baseId : String(design.year);

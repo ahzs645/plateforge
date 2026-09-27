@@ -345,3 +345,56 @@
     font-size: 16px;
   }
 }
+
+/* Documented periods with no reconstruction yet. */
+.timeline-gap .timeline-era-label {
+  color: var(--faint);
+}
+.timeline-gap-node {
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 2px;
+  width: 104px;
+  min-height: 84px;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius-sm);
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.timeline-gap-node:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.gallery-section.gap .gallery-era {
+  border-left-style: dashed;
+  border-left-color: var(--border-strong);
+}
+.gallery-section.gap .gallery-era-period {
+  color: var(--muted);
+}
+.gallery-gap {
+  display: grid;
+  justify-items: start;
+  gap: 10px;
+  padding: 18px;
+  border: 1px dashed var(--border-strong);
+  border-radius: var(--radius);
+  color: var(--muted);
+  font-size: 13px;
+}
+.gallery-gap-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+}
+.gallery-gap a:not(.btn) {
+  color: var(--accent);
+  text-underline-offset: 3px;
+}
+.gallery-gap a.btn {
+  color: var(--text);
+  text-decoration: none;
+}

@@ -20,7 +20,7 @@ try {
   await page.locator('.region-trigger').click();
   await page.getByLabel('Search regions').fill('British Columbia');
   await page.getByRole('option', { name: /British Columbia/ }).click();
-  assert.equal(await page.locator('.timeline-node').count(), 41);
+  assert.equal(await page.locator('.timeline-node').count(), 42);
   await page.locator('.timeline-node[title="1953"]').click();
   await page.locator('#field-serial').fill('33-638');
   await page.locator('#field-tabSerial').fill('148879');
@@ -39,7 +39,7 @@ try {
   await page.locator('.readout button.primary').click();
   assert.equal(await page.locator('#field-lettering').inputValue(), 'hybrid');
   assert.equal(await page.locator('#field-finish').inputValue(), 'embossed');
-  for (let i = 0; i < 41; i++) {
+  for (let i = 0; i < 42; i++) {
     await page.locator('.timeline-node').nth(i).click();
     await page.locator('#field-lettering').selectOption('squarish');
     assert.equal(await page.locator('.plate-preview [data-role="serial"][data-lettering="squarish"]').count(), 1);
@@ -70,7 +70,7 @@ try {
   assert.equal(await page.locator('.plate-preview [data-role="serial"][data-lettering="oval"]').count(), 1);
   assert.equal((await meta()).lettering.category, 'oval');
   assert.deepEqual(errors, []);
-  console.log('PASS: actual app region picker; all 41 BC presets; four lettering switches; persistent settings; default text; SVG and PNG downloads; mobile width; US rendering; no page errors.');
+  console.log('PASS: actual app region picker; all 42 BC presets; four lettering switches; persistent settings; default text; SVG and PNG downloads; mobile width; US rendering; no page errors.');
 } finally {
   await browser?.close();
   server.kill('SIGTERM');

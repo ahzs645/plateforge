@@ -66,6 +66,15 @@ export interface PlateEra {
   summary?: string;
 }
 
+/** A documented period with no editable reconstruction yet; shown so gaps are explicit. */
+export interface PlateGap {
+  id: string;
+  label: string;
+  period: readonly [number, number];
+  note?: string;
+  sources: readonly { title: string; url: string }[];
+}
+
 export interface Region {
   id: string;
   name: string;
@@ -83,6 +92,10 @@ export interface Region {
   formats: PlateFormat[];
   /** Chronological eras; together with format periods these drive the timeline. */
   eras?: readonly PlateEra[];
+  /** Documented but unbuilt periods, placed on the timeline as placeholders. */
+  gaps?: readonly PlateGap[];
+  /** In-app route to a fuller coverage checklist, e.g. `#/library/coverage`. */
+  coverageRoute?: string;
   notes?: string;
 }
 

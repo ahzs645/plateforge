@@ -40,7 +40,7 @@ describe('timeline', () => {
     expect(stepTimeline(timeline, '1940', -1)).toBeUndefined();
     expect(stepTimeline(timeline, '1940', 1)?.id).toBe('1941');
     expect(stepTimeline(timeline, '1969', 1)?.id).toBe('1970-1972');
-    expect(stepTimeline(timeline, '1982-third', 1)).toBeUndefined();
+    expect(stepTimeline(timeline, '1985-fourth', 1)).toBeUndefined();
   });
   it('is absent for regions without dated formats', () => {
     expect(buildTimeline(BUILT_IN_REGIONS.find((r) => r.id === 'us-ca')!)).toBeNull();

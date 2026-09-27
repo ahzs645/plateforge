@@ -42,7 +42,7 @@ try {
   await page.getByLabel('Show externally hosted images').uncheck();
   await page.getByRole('button', { name: 'British Columbia · 1968', exact: true }).click();
   await page.locator('#field-serial').fill('123-456');
-  assert.equal(await page.locator('.timeline-node').count(), 41);
+  assert.equal(await page.locator('.timeline-node').count(), 42);
   const metadata = await page.locator('.plate-preview metadata').evaluate((e) => JSON.parse(e.textContent));
   assert.equal(metadata.baseYear, 1968);
   assert.equal(metadata.accuracy.dies, 'proxy or category illustration');

@@ -6,9 +6,13 @@ import { editorsForPage, pageMatches, pageSlice, parseReferenceIndex, parseRefer
 import { LEEWARD_DATE_SOURCE, LEEWARD_JURISDICTIONS } from '../library/leeward';
 import { buildLettering } from '../templates/lettering';
 import { SvgScene } from '../templates/SvgScene';
+import { BcCoverage } from './BcCoverage';
 import './reference-library.css';
 
 interface Props { regions: Region[]; onOpenFormat(regionId: string, formatId: string): void }
+type Mode = 'sources' | 'lettering' | 'coverage';
+const MODES: readonly Mode[] = ['sources', 'lettering', 'coverage'];
+const modeFromHash = (): Mode => MODES.find((m) => location.hash === `#/library/${m}`) ?? 'sources';
 const DATA = `${import.meta.env.BASE_URL}data/reference-library/`;
 const PAGE_SIZE = 24;
 const errorText = (e: unknown) => e instanceof Error ? e.message : 'Unable to load reference metadata.';
@@ -48,7 +52,8 @@ export function ReferenceLibrary({ regions, onOpenFormat }: Props) {
   const [index, setIndex] = useState<ReferenceIndex>();
   const [error, setError] = useState('');
   const [retry, setRetry] = useState(0);
-  const [mode, setMode] = useState<'sources' | 'lettering'>('sources');
+  const [mode, setMode] = useState<Mode>(modeFromHash);
+  useEffect(() => { history.replaceState(null, '', mode === 'sources' ? '#/library' : `#/library/${mode}`); }, [mode]);
   const [query, setQuery] = useState('');
   const [source, setSource] = useState('');
   const [category, setCategory] = useState('Passenger bases');
@@ -102,8 +107,10 @@ export function ReferenceLibrary({ regions, onOpenFormat }: Props) {
     <nav className="reference-modes" aria-label="Library section">
       <button className="btn" aria-pressed={mode === 'sources'} onClick={() => setMode('sources')}>Source collections</button>
       <button className="btn" aria-pressed={mode === 'lettering'} onClick={() => setMode('lettering')}>Lettering catalogue ({LEEWARD_JURISDICTIONS.length})</button>
+      <button className="btn" aria-pressed={mode === 'coverage'} onClick={() => setMode('coverage')}>B.C. coverage &amp; gaps</button>
     </nav>
-    {mode === 'lettering' ? <>
+    {mode === 'coverage' ? <BcCoverage builtPresets={regions.find((r) => r.id === 'ca-bc')?.formats.length ?? 0} />
+    : mode === 'lettering' ? <>
       <div className="reference-notice"><strong>Historical survey · February 2011.</strong> These are Leeward’s classifications, not verified present-day assignments or exact die fonts. <ExternalLink url={LEEWARD_DATE_SOURCE}>Survey date and introduction ↗</ExternalLink></div>
       <div className="reference-filters">
         <label>Find a jurisdiction<input aria-label="Find a lettering jurisdiction" value={fontQuery} onChange={(e) => setFontQuery(e.target.value)} placeholder="British Columbia, California, Mexico…" /></label>

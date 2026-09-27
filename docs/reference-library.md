@@ -19,7 +19,7 @@ The September 27, 2026 metadata snapshot contains:
 | Image references | 16,474 unique URLs, occurring 17,385 times across the indexed pages. Counts include supporting documents, people, page decorations and other images as well as plates. They are not counts of unique plate designs or verified working images. |
 | Leeward article series | Ten browser-verified article links. The automated HTTP response did not establish usable article-series coverage, so it is explicitly marked partial rather than silently treated as a successful complete crawl. |
 | Leeward jurisdiction classifications | 70 dated records transcribed from the classification article: 51 U.S. entries including D.C., 13 Canadian provinces/territories, five other source jurisdictions, and one aggregate Mexico entry. The introduction dates the survey to February 2011. |
-| Editable B.C. generators | 41 presets: the original 25 plus 16 new presets for 1964–1985 passenger bases and selected serial/manufacturing variants. |
+| Editable B.C. generators | 42 presets: the original 25 plus 17 presets for 1964–1985 passenger bases and selected serial/manufacturing variants. |
 
 The committed `public/data/reference-library/coverage-report.json` preserves the exact missing URLs and import limitations. Neither this documentation nor the UI calls the whole task a complete archival reconstruction.
 
@@ -30,7 +30,7 @@ The new files `src/regions/canada/bc-later.ts` and `src/templates/bc/later-scene
 - **1964–1969 annual BEAUTIFUL plates:** annual colours and date placement, including a separate approximate 1967 over-run subset using the split 19/67 arrangement.
 - **1970 base / 1970–1972:** first ten-letter alphabet and a distinct KLL–KXX over-run preset, with the small lower-centre renewal box.
 - **1973 aluminum base / 1973–1978:** LAA, LLA and LLL allocation-block presets, plus the documented ACME subset. The renewal box is at the upper right.
-- **1979 aluminum base / 1979–1985:** AAA, AAL and ALL block presets, white-on-blue with a wider lower-centre renewal box.
+- **1979 aluminum base / 1979–1985:** AAA, AAL and ALL block presets, plus the 1985 fourth block (ALA–AXK, BLA–BRB) issued while the flag base was delayed; white-on-blue with a wider lower-centre renewal box.
 
 Sources, dimensions, issue periods, base years and limitations are recorded in each recipe and SVG metadata. Annual number ranges and alphabet combinations are supported subsets, not a registration database or an exhaustive official allocation engine. The generator avoids a small application-level list of offensive combinations; that is not an asserted complete official blacklist.
 
@@ -64,6 +64,6 @@ No photographs, article copies, new font binaries, or external scripts are inclu
 
 ## Verification and remaining work
 
-Unit tests validate every committed JSON shard and recompute image totals, source associations and category coverage. They also exercise seeded generation, serial boundaries, retained base years, SVG escaping and optional lettering on the new bases. Browser scripts test the actual production build, including all 41 B.C. presets, exports, library filters, navigation, privacy defaults, failed previews, retry and mobile layout. Browser tests mock external photographs; a successful test does not certify every remote image is available. Actual pass/fail results are reported by CI.
+Unit tests validate every committed JSON shard and recompute image totals, source associations and category coverage. They also exercise seeded generation, serial boundaries, retained base years, SVG escaping and optional lettering on the new bases. Browser scripts test the actual production build, including all 42 B.C. presets, exports, library filters, navigation, privacy defaults, failed previews, retry and mobile layout. Browser tests mock external photographs; a successful test does not certify every remote image is available. Actual pass/fail results are reported by CI.
 
 Still reference-only: B.C. pre-1940 and post-1985 base reconstructions, most non-passenger and specialty classes, individual specimens/decals, downstream external archives, and exact jurisdiction-specific fonts. These require further source review and dedicated reusable artwork, not a generic recolour labelled complete.

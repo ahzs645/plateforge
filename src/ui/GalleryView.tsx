@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react';
 import { buildTimeline, countryOf, formatPeriod, groupByCountry, type CountryGroup } from '../core/timeline';
-import type { PlateFormat, Region } from '../core/types';
+import type { PlateFormat, PlateGap, Region } from '../core/types';
 import { PlateView } from './PlateView';
 import { samplePlate } from './samples';
 import './timeline.css';
@@ -15,7 +15,7 @@ interface Props {
 }
 
 interface Card { region: Region; format: PlateFormat; title: string; meta: string }
-interface Section { id: string; heading: string; period?: string; summary?: string; cards: Card[] }
+interface Section { id: string; heading: string; period?: string; start?: number; summary?: string; cards: Card[]; gap?: PlateGap; coverageRoute?: string }
 
 function sectionsFor(group: CountryGroup, query: string): Section[] {
   const q = query.trim().toLowerCase();
@@ -26,10 +26,14 @@ function sectionsFor(group: CountryGroup, query: string): Section[] {
   for (const region of group.regions) {
     const timeline = buildTimeline(region);
     if (timeline) {
+      const dated: Section[] = [];
       for (const era of timeline.eras) {
         const cards = era.entries.map(({ format, period }) => ({ region, format, title: format.label, meta: multi ? `${region.name} · ${formatPeriod(period)}` : formatPeriod(period) })).filter(keep);
-        if (cards.length) sections.push({ id: `${region.id}/${era.id}`, heading: multi ? `${region.name} · ${era.label}` : era.label, period: formatPeriod(era.period), summary: era.summary, cards });
+        if (cards.length) dated.push({ id: `${region.id}/${era.id}`, heading: multi ? `${region.name} · ${era.label}` : era.label, period: formatPeriod(era.period), start: era.period[0], summary: era.summary, cards });
       }
+      // Unbuilt periods stay visible (unless filtering) so the history reads without silent holes.
+      if (!q) for (const gap of region.gaps ?? []) dated.push({ id: `${region.id}/${gap.id}`, heading: multi ? `${region.name} · ${gap.label}` : gap.label, period: formatPeriod(gap.period), start: gap.period[0], summary: gap.note, cards: [], gap, coverageRoute: region.coverageRoute });
+      sections.push(...dated.sort((a, b) => a.start! - b.start!));
       const undated = region.formats.filter((f) => !f.period);
       loose.push(...undated.map((format) => ({ region, format, title: format.label, meta: region.name })).filter(keep));
     } else {
@@ -90,14 +94,18 @@ export function GalleryView({ regions, region, format, onOpen }: Props) {
         <div key={key} className="gallery-country">
           {scope === 'continent' && group && <h2 className="gallery-country-title"><span aria-hidden="true">{group.flag}</span> {group.country}<span>{group.regions.length > 1 ? `${group.regions.length} regions` : ''}</span></h2>}
           {sections.map((s) => (
-            <section key={s.id} className={`gallery-section ${s.period ? 'dated' : ''}`}>
+            <section key={s.id} className={`gallery-section ${s.period ? 'dated' : ''} ${s.gap ? 'gap' : ''}`}>
               <div className="gallery-era">
                 {s.period && <span className="gallery-era-period mono">{s.period}</span>}
                 <h3>{s.heading}</h3>
                 {s.summary && <p>{s.summary}</p>}
-                <span className="gallery-era-count">{s.cards.length} {s.cards.length === 1 ? 'design' : 'designs'}</span>
+                <span className="gallery-era-count">{s.gap ? 'Not reconstructed yet' : `${s.cards.length} ${s.cards.length === 1 ? 'design' : 'designs'}`}</span>
               </div>
-              <ul className="gallery-grid">
+              {s.gap ? <div className="gallery-gap">
+                <p>Documented by the source, with no editable preset yet.</p>
+                <div className="gallery-gap-links">{s.gap.sources.map((src) => <a key={src.url} href={src.url} target="_blank" rel="noreferrer">{src.title} ↗</a>)}</div>
+                {s.coverageRoute && <a className="btn" href={s.coverageRoute}>See coverage &amp; gaps</a>}
+              </div> : <ul className="gallery-grid">
                 {s.cards.map((c) => (
                   <li key={`${c.region.id}/${c.format.id}`}>
                     <button className="gallery-card" aria-current={c.region.id === region.id && c.format.id === format.id} onClick={() => onOpen(c.region.id, c.format.id)}>
@@ -107,7 +115,7 @@ export function GalleryView({ regions, region, format, onOpen }: Props) {
                     </button>
                   </li>
                 ))}
-              </ul>
+              </ul>}
             </section>
           ))}
         </div>

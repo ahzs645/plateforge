@@ -19,8 +19,9 @@ npm run build
 - **Timeline**: regions whose formats carry issue periods (currently British Columbia, 1940–1985) replace the format chips with a filmstrip grouped into eras. Step through designs with `←`/`→` or the arrows.
 - **Gallery** (`#/gallery/<region>`): every design for the current country as thumbnails, laid out era-by-era when a timeline exists; switch to the whole continent to see countries side by side.
 - Seeded batches for one format, a country, a continent or all regions; CSV and JSON export.
-- British Columbia: **41 passenger presets**, spanning 1940–1985 base systems and selected variants. These include short/long bases, 1951 renewal strips, 1953/54 side tabs, the 1958 centenary and later permanent bases. Paint, dies and fine geometry remain approximate; later renewal boxes are blank.
+- British Columbia: **42 passenger presets**, spanning 1940–1985 base systems and selected variants (including the 1985 fourth block on the blue 1979 base). These include short/long bases, 1951 renewal strips, 1953/54 side tabs, the 1958 centenary and later permanent bases. Paint, dies and fine geometry remain approximate; later renewal boxes are blank.
 - B.C. and U.S. serial-lettering choices: default text, semicircular/DIN-style, squarish, oval, and hybrid. These are category-inspired illustrations, not imported official die fonts. Appearance choices persist through Generate.
+- **B.C. coverage** (`#/library/coverage`): a 67-topic inventory of BCpl8s plate families against what PlateForge can render, the proposed die-profile backlog, and ICBC's announced 2025 serial configurations. Unbuilt passenger periods (1904–1939, 1985 onward) appear as placeholders in the timeline and gallery. See [B.C. coverage and lettering plan](docs/bc-coverage.md).
 - **Library** (`#/library`): searchable source collections, page-period filters, paginated image references, source credits and links into available editors. Remote photo previews are off until enabled, and are loaded one visible page at a time.
 - **Lettering catalogue**: 70 jurisdiction entries from Leeward's February 2011 survey, with explicit historical dating and exceptions. This does not assign fonts to current state plates or every B.C. year automatically.
 - Existing routes remain available, such as `#/eu-de/standard`, `#/jp/kei`, `#/ca-bc/1953`, and `#/ca-bc/1979-first`. Region/format links do not encode edited serials or appearance settings.
@@ -31,7 +32,7 @@ The committed reference snapshot contains 320 parsed BCpl8s pages, including all
 
 Thirty discovered B.C. URLs returned 404. The automated Leeward response did not establish usable series coverage; its article records are therefore link-only rather than falsely reported as a full crawl. External archives, unlinked pages, PDF contents and most individual plate reconstructions are outside the verified import. Exact gaps are retained in `public/data/reference-library/coverage-report.json` and displayed in the UI.
 
-Read [reference-library scope and architecture](docs/reference-library.md), [early B.C. reconstruction notes](docs/british-columbia.md), and [lettering controls and limits](docs/lettering.md).
+Read [reference-library scope and architecture](docs/reference-library.md), [early B.C. reconstruction notes](docs/british-columbia.md), [B.C. coverage and lettering plan](docs/bc-coverage.md), and [lettering controls and limits](docs/lettering.md).
 
 ## Architecture
 

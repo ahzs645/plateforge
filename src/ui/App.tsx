@@ -74,7 +74,9 @@ export function App() {
     if (next) select(region.id, next.id);
   }, [timeline, format.id, region.id, select]);
   useEffect(() => {
-    history.replaceState(null, '', view === 'library' ? '#/library' : view === 'gallery' ? `#/gallery/${region.id}` : `#/${region.id}/${format.id}`);
+    // The library owns its sub-route (#/library/coverage etc.).
+    if (view === 'library') { if (!location.hash.startsWith('#/library')) history.replaceState(null, '', '#/library'); return; }
+    history.replaceState(null, '', view === 'gallery' ? `#/gallery/${region.id}` : `#/${region.id}/${format.id}`);
   }, [region.id, format.id, view]);
   useEffect(() => {
     const onHash = () => {

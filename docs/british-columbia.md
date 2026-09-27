@@ -1,6 +1,6 @@
 # British Columbia passenger system: 1940–1963
 
-Implementation scope: 24 annual recipes, plus the documented 1962 four-digit no-dash variant. Region `ca-bc`, template `bc-historical`, group `Canada`. No other Canadian province or BC vehicle class is implied. Example routes: `#/ca-bc/1951`, `#/ca-bc/1953`, `#/ca-bc/1958`, `#/ca-bc/1962-no-dash`.
+Implementation scope of this document: 24 annual recipes, plus the documented 1962 four-digit no-dash variant (25 presets). The registered region also includes 17 later presets for 1964–1985, described in [the reference-library notes](reference-library.md), for **42 B.C. presets** in total. Region `ca-bc`, template `bc-historical` (later bases are drawn by `src/templates/bc/later-scene.ts` inside the same template), country Canada. For what is still missing and the lettering plan, see [B.C. coverage and lettering plan](bc-coverage.md). No other Canadian province or BC vehicle class is implied. Example routes: `#/ca-bc/1951`, `#/ca-bc/1953`, `#/ca-bc/1958`, `#/ca-bc/1962-no-dash`.
 
 ## Evidence and reconstruction
 
@@ -26,7 +26,7 @@ Dimensions are the site's reported millimetres, not a claim that rounded centime
 | Totem/maple-leaf emblem | One editable **approximate** vector master (`src/templates/bc/totem-emblem.ts`), shared by the base and tabs. It is an authored cubic-Bézier reconstruction with seven named even-odd totem parts and a separately clipped maple-leaf frame, not a trace or a verified official master. |
 | Rim, corner radii, slots, text metrics, tab-ID positions | Estimated geometry; not a fabrication drawing. |
 | Serial validation | Supported syntax and year-specific subset only; not actual registration verification or a complete issue-allocation database. |
-| Weathering, repainted/re-stamped 1943 surfaces, late blank-base and suffix variants | Not reproduced. 1952-base W/Y over-runs and additional regional details remain outside this first subset. |
+| Weathering, repainted/re-stamped 1943 surfaces, suffix variants | Not reproduced. The late blank 1952 base and W/Y over-run prefixes (from 1953) **are** implemented; see [Renewal pieces](#renewal-pieces). Suffix over-runs remain outside the supported subset. |
 
 No source photographs or font files are included in this change. Existing app font imports are reused. BCpl8s photographs remain the property of their respective rights holders. Generated plates are for research, mockups and design, not official issuance.
 
@@ -36,7 +36,7 @@ No source photographs or font files are included in this change. Existing app fo
 
 `src/templates/bc/scene.ts` builds one SVG scene tree from shared label, shell, rim, mounting-slot, date, strip, side-tab and emblem primitives. `src/templates/bc.tsx` is only the React adapter. The pure scene serializer also drives the standalone preview, so it is not a second set of plate drawings.
 
-Five layout families compose the 25 formats:
+Five layout families compose these 25 early formats:
 
 - `stacked-year`: 1940–1950.
 - `renewal-strip`: 1951, retaining the 1950 base date.
@@ -70,4 +70,4 @@ Random generation deliberately samples a conservative supported subset. Manual e
 
 Run `npm ci`, `npm test`, and `npm run build` in the complete repository. Local validation for this package used TypeScript compilation of the pure modules and a Node assertion harness executing these same test callbacks; this is not a claim of having run the full app/Vitest build in that environment. Browser preview checks are recorded separately in the delivery package.
 
-For the next accuracy pass, audit original numeral/letter dies and the 1952 emblem against multiple straight-on specimens. Preserve profile IDs and replace masters, not 24 independent drawings. Then extend the same model to pre-1940 and post-1963 bases, later stickers/renewals and separate commercial, farm, motorcycle and trailer classes. Those are **future work**, not implemented coverage.
+For the next accuracy pass, audit original numeral/letter dies and the 1952 emblem against multiple straight-on specimens. Preserve profile IDs and replace masters, not 24 independent drawings. Post-1963 bases through 1985 now exist; pre-1940 and post-1985 bases, dated decals and the separate commercial, farm, motorcycle, trailer and specialty classes remain **future work**. The full checklist is in [bc-coverage.md](bc-coverage.md) and in the app at `#/library/coverage`.
