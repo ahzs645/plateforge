@@ -2,7 +2,7 @@ import { withLettering } from '../core/lettering';
 import { registerRegion } from '../core/registry';
 import { china } from './asia/china';
 import { japan } from './asia/japan';
-import { britishColumbia } from './canada/bc';
+import { britishColumbia } from './canada';
 import { europeRegions } from './europe';
 import { usRegions } from './us';
 
