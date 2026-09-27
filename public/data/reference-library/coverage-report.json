@@ -1,0 +1,172 @@
+{
+  "totals": {
+    "pages": 330,
+    "uniqueImageReferences": 16474,
+    "imageOccurrences": 17385,
+    "browserVerifiedArticleLinks": 10,
+    "editableDesignsImportedFromImages": 0
+  },
+  "reports": [
+    {
+      "source": "bcpl8s",
+      "robots": "not-found-404",
+      "complete": false,
+      "scope": "linked HTML in configured scope only; not unlinked pages, image contents, PDF contents or external archives",
+      "discovered": 350,
+      "attempted": 350,
+      "indexed": 320,
+      "failures": [
+        {
+          "url": "https://www.bcpl8s.ca/Veteran.htm",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/Passenger-2013.html",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/Passenger-1952-1954.htm",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/Passenger-1970-1978.html",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/Passenger-2014-2023.html",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/Passenger-2023.html",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/MLPM.html",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/Passenger-2001-2013.html",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/ATV.htm",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/Trailer-Commercial.htm",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/Passenger-1913-1914.htm",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/Passenger-2002-2004.htm",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/Truck.htm",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/Decals-Samples.htm",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/Agriculture-F.htm",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/Sample-Passenger.htm",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/Dealer-Passenger.htm",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/Trailer-Standard.htm",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/Passenger-1936-1948.htm",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/Passenger-1924-1935.htm",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/Decals-Non-Passenger.htm",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/Decals-Samples-Non-Passenger.htm",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/requests/article15839765/",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/guestbook.html",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/Passenger-1918-1930.html",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/Passenger-1931-1951.html",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/Passenger-1955-1969.html",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/Passenger-2014.html",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/thesis/PDFS/",
+          "reason": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://www.bcpl8s.ca/thesis/index.html",
+          "reason": "HTTP Error 404: Not Found"
+        }
+      ],
+      "remaining": []
+    },
+    {
+      "source": "leeward",
+      "complete": false,
+      "indexed": 0,
+      "manualReferences": 10,
+      "scope": "Ten browser-verified article links plus the separately curated historical classification; external specimen galleries not crawled.",
+      "failures": [
+        {
+          "url": "https://www.leewardpro.com/articles/licplatefonts/licplate-fonts-nam-class.html",
+          "reason": "Automated response did not establish article-series coverage. Replaced with explicitly link-only browser-verified records; no completeness claim."
+        }
+      ],
+      "remaining": [],
+      "automatedResponseDiagnostic": [
+        {
+          "url": "https://www.leewardpro.com/articles/licplatefonts/licplate-fonts-nam-class.html",
+          "title": "licplate-fonts-nam-class.html",
+          "headings": [],
+          "galleries": [],
+          "imageCount": 0
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Counts are reference URLs, not distinct plate designs or verified working images.",
+    "Unclassified images may include documents, people and other supporting material.",
+    "No photographs, fonts or article bodies are mirrored. Article titles are bibliographic metadata.",
+    "Missing and unlinked source pages, PDF contents and external archives are outside verified coverage."
+  ]
+}

@@ -1,0 +1,46 @@
+.view-library .workspace { display:block; max-width:1440px; margin:auto; padding:32px; }
+.reference-library { display:grid; gap:24px; min-width:0; }
+.reference-header { display:grid; gap:12px; max-width:1060px; }
+.reference-eyebrow { font-size:11px; font-weight:700; letter-spacing:.15em; color:var(--muted); }
+.reference-header h1 { font-size:clamp(24px,3vw,38px); line-height:1.16; letter-spacing:-.035em; }
+.reference-header > p:not(.reference-eyebrow) { color:var(--muted); max-width:75ch; }
+.reference-stats { display:flex; flex-wrap:wrap; gap:16px 32px; padding:18px 0; border-bottom:1px solid var(--border); }
+.reference-stats span { display:grid; gap:3px; color:var(--muted); font-size:12px; }
+.reference-stats strong { font-size:26px; color:var(--text); letter-spacing:-.04em; }
+.reference-modes,.reference-pager { display:flex; align-items:center; flex-wrap:wrap; gap:12px; }
+.reference-modes [aria-pressed=true] { border-color:var(--accent); color:var(--accent); }
+.reference-filters { display:flex; flex-wrap:wrap; gap:16px; align-items:end; }
+.reference-filters label { display:grid; gap:6px; flex:1 1 160px; font-weight:600; font-size:12px; }
+.reference-filters label:first-child { flex:2 1 240px; }
+.reference-filters input:not([type=checkbox]),.reference-filters select { width:100%; min-width:0; background:var(--surface); border:1px solid var(--border-strong); border-radius:8px; padding:10px 12px; }
+.reference-filters .reference-checkbox { display:flex; align-items:center; gap:8px; min-height:42px; font-weight:400; }
+.reference-checkbox input { accent-color:var(--accent); }
+.reference-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+.reference-page-card,.reference-image-card,.reference-font-card { display:flex; flex-direction:column; align-items:start; gap:12px; padding:20px; background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); min-width:0; overflow:hidden; }
+.reference-page-card h2,.reference-font-card h2,.reference-image-card h3 { font-size:17px; line-height:1.4; overflow-wrap:anywhere; }
+.reference-page-card p,.reference-font-card p { font-size:13px; }
+.reference-page-card .btn { margin-top:auto; }
+.reference-library a { color:var(--accent); overflow-wrap:anywhere; text-underline-offset:3px; font-size:13px; }
+.reference-badge { font-size:11px; color:var(--muted); background:var(--surface-2); padding:4px 7px; border-radius:4px; }
+.reference-muted { font-size:12px; color:var(--muted); }
+.reference-notice,.reference-coverage { padding:18px; background:var(--surface-2); border:1px solid var(--border); border-radius:10px; }
+.reference-coverage summary { cursor:pointer; font-weight:600; }
+.reference-coverage section { margin:16px 0; display:grid; gap:8px; }
+.reference-coverage p { overflow-wrap:anywhere; font-size:12px; color:var(--muted); }
+.reference-detail { display:grid; gap:20px; min-width:0; }
+.reference-detail header { display:grid; gap:8px; }
+.reference-detail h2 { font-size:24px; line-height:1.3; }
+.reference-detail section h3 { margin-bottom:10px; }
+.reference-editor-links { border:1px solid var(--border); padding:18px; border-radius:10px; }
+.reference-editor-links > div { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+.reference-editor-links .btn { font-size:12px; }
+.reference-image-stage { width:100%; height:170px; display:grid; place-items:center; background:var(--stage); border-radius:6px; padding:10px; }
+.reference-image-stage img { max-width:100%; max-height:150px; object-fit:contain; }
+.reference-image-stage p { font-size:12px; text-align:center; color:var(--muted); }
+.reference-font-specimen { width:100%; padding:12px 0; }
+.reference-font-specimen svg { width:100%; display:block; }
+.reference-serif { font-family:Georgia,'Times New Roman',serif; font-size:42px; letter-spacing:6px; }
+.reference-pager span { color:var(--muted); font-size:12px; }
+.reference-library button:disabled { opacity:.4; cursor:not-allowed; }
+@media(max-width:1100px) { .reference-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media(max-width:650px) { .view-library .workspace { padding:20px 16px 40px; } .reference-grid { grid-template-columns:minmax(0,1fr); } .reference-stats { gap:16px; } .reference-stats span { width:calc(50% - 8px); } .reference-pager { justify-content:space-between; gap:6px; } .reference-pager .btn { padding:8px 10px; } .reference-filters label { flex-basis:100%; } .reference-modes .btn { font-size:12px; } }
