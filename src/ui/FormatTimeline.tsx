@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import { formatPeriod, gapsFor, stepTimeline, type Timeline, type TimelineEra } from '../core/timeline';
+import { formatPeriod, gapsFor, statusBadge, stepTimeline, type Timeline, type TimelineEra } from '../core/timeline';
 import type { PlateFormat, Region } from '../core/types';
 import { ChevronLeft, ChevronRight, GridIcon } from './icons';
 import { PlateView } from './PlateView';
@@ -45,6 +45,7 @@ export function FormatTimeline({ region, timeline, format, onSelect, onOpenGalle
           <li key={f.id}>
             <button className="timeline-node" aria-current={f.id === format.id} onClick={() => onSelect(f.id)} title={f.label}>
               <PlateView plate={samplePlate(region, f)} className="timeline-thumb" />
+              {statusBadge(f) && <span className="status-badge timeline-status">{statusBadge(f)}</span>}
               <span className="timeline-year mono">{formatPeriod(period)}</span>
               {f.label !== formatPeriod(period) && <span className="timeline-variant">{f.label.replace(/^\d{4}(?:–\d{4})?\s*·\s*/, '')}</span>}
             </button>

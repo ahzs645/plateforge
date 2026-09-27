@@ -19,7 +19,8 @@ describe('B.C. coverage manifest', () => {
     const parks = manifest.records.filter((r) => coverageMatches(r, 'kermode'));
     expect(parks.map((r) => r.id)).toContain('bc-parks');
     expect(manifest.records.filter((r) => coverageMatches(r, '', 'Passenger')).map((r) => r.id)).toEqual(['passenger']);
-    expect(manifest.records.filter((r) => coverageMatches(r, '', '', 'partial'))).toHaveLength(1);
+    expect(manifest.records.filter((r) => coverageMatches(r, '', '', 'implemented')).map((r) => r.id)).toContain('passenger');
+    for (const r of manifest.records) for (const id of r.formats ?? []) if (!id.startsWith('(')) expect(britishColumbia.formats.some((f) => f.id === id), `${r.id} → ${id}`).toBe(true);
   });
   it('rejects malformed data', () => {
     expect(() => parseCoverageManifest({ schemaVersion: 1 })).toThrow();

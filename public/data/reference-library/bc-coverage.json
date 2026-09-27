@@ -350,7 +350,7 @@
    "group": "Passenger",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "partial",
+   "implementationStatus": "implemented",
    "homepageLinkId": 1,
    "parentId": null,
    "distinctions": [
@@ -366,6 +366,89 @@
     "https://www.bcpl8s.ca/Passenger-2001-2014.html",
     "https://www.bcpl8s.ca/Passenger-2014-2025.html",
     "https://www.bcpl8s.ca/Passenger-2025.html"
+   ],
+   "formats": [
+    "1940",
+    "1941",
+    "1942",
+    "1943",
+    "1944",
+    "1945",
+    "1946",
+    "1947",
+    "1948",
+    "1949",
+    "1950",
+    "1951",
+    "1952",
+    "1953",
+    "1954",
+    "1955",
+    "1956",
+    "1957",
+    "1958",
+    "1959",
+    "1960",
+    "1961",
+    "1962",
+    "1963",
+    "1962-no-dash",
+    "1961-late-date",
+    "1964",
+    "1965",
+    "1966",
+    "1967",
+    "1967-overrun",
+    "1968",
+    "1969",
+    "1970-1972",
+    "1972-overrun",
+    "1973-1974",
+    "1975-1977",
+    "1977-1978",
+    "1978-acme",
+    "1979-first",
+    "1979-second",
+    "1982-third",
+    "1985-fourth",
+    "1985-flag",
+    "2001-flag",
+    "2013-flag-dual",
+    "2014-flag",
+    "2025-flag",
+    "1904-leather",
+    "1908-porcelain",
+    "1913",
+    "1914",
+    "1915",
+    "1916",
+    "1917",
+    "1918",
+    "1919-tab",
+    "1919-cardboard",
+    "1920",
+    "1921-tab",
+    "1922-tab",
+    "1923",
+    "1924",
+    "1925",
+    "1926",
+    "1927",
+    "1928",
+    "1929",
+    "1930",
+    "1931",
+    "1932",
+    "1933",
+    "1934",
+    "1935",
+    "1930-long",
+    "1931-long",
+    "1935-long",
+    "1936",
+    "1937",
+    "1938",
+    "1939"
    ]
   },
   {
@@ -430,7 +513,7 @@
    "group": "Related artefacts",
    "issueScope": "badge",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "not-a-plate",
    "homepageLinkId": 5,
    "parentId": null,
    "distinctions": [
@@ -520,7 +603,7 @@
    "group": "Renewals and permits",
    "issueScope": "renewal-component",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 10,
    "parentId": null,
    "distinctions": [
@@ -528,7 +611,10 @@
    ],
    "nextAction": "Create a reusable dated decal library and compatibility rules for plate wells.",
    "caution": "Historical decal graphics are not evidence that decals remain required today. Check official contemporary policy.",
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "(decal library: 1970–2023)"
+   ]
   },
   {
    "id": "drivers-licences",
@@ -537,7 +623,7 @@
    "group": "Related artefacts",
    "issueScope": "document",
    "reviewDepth": "page-structure",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "not-a-plate",
    "homepageLinkId": 11,
    "parentId": null,
    "distinctions": [
@@ -554,7 +640,7 @@
    "group": "Events and ceremonial",
    "issueScope": "mixed-road-and-souvenir",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 12,
    "parentId": null,
    "distinctions": [
@@ -563,7 +649,10 @@
    ],
    "nextAction": "Split road, renewal, souvenir and outside-jurisdiction examples.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "souvenir-1970-expo"
+   ]
   },
   {
    "id": "farm-tractor",
@@ -677,7 +766,7 @@
    "group": "Related artefacts",
    "issueScope": "miniature",
    "reviewDepth": "page-structure",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "not-a-plate",
    "homepageLinkId": 19,
    "parentId": null,
    "distinctions": [
@@ -830,7 +919,7 @@
    "group": "Non-issued and creative",
    "issueScope": "prop",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 28,
    "parentId": null,
    "distinctions": [
@@ -838,7 +927,11 @@
    ],
    "nextAction": "Keep a prop collection explicitly separate from historical issued designs.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "prop-1959-repro",
+    "prop-flag-xqz"
+   ]
   },
   {
    "id": "municipal",
@@ -970,7 +1063,7 @@
    "group": "Non-issued and creative",
    "issueScope": "prototype-and-test",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 36,
    "parentId": null,
    "distinctions": [
@@ -978,7 +1071,14 @@
    ],
    "nextAction": "Record experimental status and evidence; do not expose as an ordinary issued year.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "prototype-1964-colours",
+    "prototype-1968-paint",
+    "prototype-super-natural",
+    "prototype-dogwood",
+    "prototype-a-new-bc"
+   ]
   },
   {
    "id": "prorated",
@@ -1090,7 +1190,7 @@
    "group": "Non-issued and creative",
    "issueScope": "official-sample-and-souvenir",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 43,
    "parentId": null,
    "distinctions": [
@@ -1099,7 +1199,17 @@
    ],
    "nextAction": "Add sample status and a separate validation grammar; distinguish souvenirs.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "sample-1940",
+    "sample-1951-strip",
+    "sample-1955",
+    "sample-1964",
+    "sample-1970-000",
+    "sample-1973",
+    "sample-1979",
+    "sample-flag"
+   ]
   },
   {
    "id": "special-agreement",
@@ -1125,7 +1235,7 @@
    "group": "Renewals and permits",
    "issueScope": "paper-permit",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "not-a-plate",
    "homepageLinkId": 45,
    "parentId": null,
    "distinctions": [
@@ -1201,7 +1311,7 @@
    "group": "Related artefacts",
    "issueScope": "company-identification",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "not-a-plate",
    "homepageLinkId": 49,
    "parentId": null,
    "distinctions": [
@@ -1307,7 +1417,7 @@
    "group": "Non-issued and creative",
    "issueScope": "mixed",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "partial",
    "homepageLinkId": 55,
    "parentId": null,
    "distinctions": [
@@ -1321,6 +1431,10 @@
     "https://www.bcpl8s.ca/Counterfeit.html",
     "https://www.bcpl8s.ca/FireDepartments.html",
     "https://www.bcpl8s.ca/Toppers.html"
+   ],
+   "formats": [
+    "souvenir-1970-expo",
+    "souvenir-bc0000"
    ]
   },
   {
@@ -1330,7 +1444,7 @@
    "group": "Non-issued and creative",
    "issueScope": "proposal-and-programme-history",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 65,
    "parentId": null,
    "distinctions": [
@@ -1338,7 +1452,12 @@
    ],
    "nextAction": "Do not mark proposal artwork as an issued B.C. design.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "prototype-super-natural",
+    "prototype-dogwood",
+    "prototype-a-new-bc"
+   ]
   },
   {
    "id": "farm-truck",
@@ -1432,7 +1551,7 @@
    "group": "Non-issued and creative",
    "issueScope": "souvenir-and-promotional",
    "reviewDepth": "page-structure",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "not-a-plate",
    "homepageLinkId": null,
    "parentId": "miscellaneous",
    "distinctions": [
@@ -1449,7 +1568,7 @@
    "group": "Research and attribution",
    "issueScope": "non-original-specimen",
    "reviewDepth": "family-page",
-   "implementationStatus": "research-not-template",
+   "implementationStatus": "implemented",
    "homepageLinkId": null,
    "parentId": "miscellaneous",
    "distinctions": [
@@ -1457,7 +1576,10 @@
    ],
    "nextAction": "Record provenance warnings, not a verified historical master.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "reproduction-1920"
+   ]
   },
   {
    "id": "fire-departments",
@@ -1483,7 +1605,7 @@
    "group": "Related artefacts",
    "issueScope": "accessory",
    "reviewDepth": "page-structure",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "not-a-plate",
    "homepageLinkId": null,
    "parentId": "miscellaneous",
    "distinctions": [

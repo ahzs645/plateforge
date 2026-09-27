@@ -103,3 +103,10 @@ export function stepTimeline(timeline: Timeline, formatId: string, delta: 1 | -1
   if (i < 0) return timeline.order[delta > 0 ? 0 : timeline.order.length - 1]?.format;
   return timeline.order[i + delta]?.format;
 }
+
+const STATUS_LABELS: Record<string, string> = {
+  'official-sample': 'Sample', prototype: 'Prototype', proposal: 'Proposal', souvenir: 'Souvenir',
+  prop: 'Prop', reproduction: 'Reproduction', uncertain: 'Uncertain',
+};
+/** Short badge text for anything other than an issued plate. */
+export const statusBadge = (format: PlateFormat): string | null => (format.status && format.status !== 'issued' ? STATUS_LABELS[format.status] ?? format.status : null);

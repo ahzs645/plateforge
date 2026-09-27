@@ -1,10 +1,10 @@
 # Serial lettering in PlateForge
 
-The B.C. passenger system is integrated in the main application under **Canada → British Columbia**, with 25 formats (1940–1963 plus the separate 1962 no-dash variant).
+The B.C. plates are in the main application under **Canada → British Columbia**. Their default is now **Source die** lettering, drawn from period die profiles for the serial and every legend; see [B.C. die library](bc-dies.md). The controls below remain available as alternatives.
 
 ## Using the controls
 
-The inspector's **Serial lettering** control is available for B.C. and all existing U.S. regions. Default preserves the existing editable-font rendering. Four optional vector modes are provided: semicircular/DIN-style, squarish, oval, and hybrid. Expand **Compare the four construction types** for clickable specimens. The control affects the large serial only, not province/state legends, dates, renewal-strip text, slogans or emblems.
+The inspector's **Serial lettering** control is available for B.C. and all existing U.S. regions. For U.S. regions, Default preserves the existing editable-font rendering; B.C. adds a Source die option first. Four optional vector modes are provided: semicircular/DIN-style, squarish, oval, and hybrid. Expand **Compare the four construction types** for clickable specimens. The control affects the large serial only, not province/state legends, dates, renewal-strip text, slogans or emblems.
 
 The selection and B.C. finish survive **Generate**. Selecting a different format starts with that format's default. Batch generators use the default rendering; selecting a batch result restores any lettering value carried in its parts. SVG/PNG exports follow the preview. CSV/JSON include the `lettering` part. Existing share links continue to identify region/format only, not edited serial or lettering.
 

@@ -59,3 +59,5 @@
 .coverage-table { border-collapse:collapse; font-size:13px; min-width:420px; }
 .coverage-table th,.coverage-table td { text-align:left; padding:8px 16px 8px 0; border-bottom:1px solid var(--border); }
 .coverage-table th { font-size:11px; color:var(--muted); font-weight:600; }
+.coverage-card[data-status=implemented] .coverage-status { background:color-mix(in srgb, #16a34a 16%, transparent); color:#15803d; }
+.coverage-formats { font-size:12.5px; }

@@ -16,7 +16,8 @@ export function LetteringPicker({ field, value, onChange }: Props) {
         </select>
       </div>
       <p className="insp-note" id="lettering-status" aria-live="polite">
-        {selected ? `${selected.description} Vector serial; category-inspired, not an exact die.` : 'Existing template font. Serial exports as editable text.'}
+        {value === 'die' ? 'Serial and legends drawn from die profiles reconstructed for this period and maker (vector paths, never stretched). See the B.C. die library notes.'
+          : selected ? `${selected.description} Vector serial; category-inspired, not an exact die.` : 'Existing template font. Serial exports as editable text.'}
       </p>
       <details className="lettering-comparison">
         <summary>Compare the four construction types</summary>

@@ -411,3 +411,8 @@
     width: 100%;
   }
 }
+/* Hundreds of plate SVGs: let the browser skip laying out off-screen cards. */
+.gallery-grid > li {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 170px;
+}

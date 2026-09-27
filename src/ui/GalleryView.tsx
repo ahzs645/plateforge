@@ -1,5 +1,5 @@
 import { useMemo, useState } from 'react';
-import { buildTimeline, countryOf, familyOf, formatPeriod, gapsFor, groupByCountry, regionFamilies, type CountryGroup } from '../core/timeline';
+import { buildTimeline, countryOf, familyOf, formatPeriod, gapsFor, groupByCountry, regionFamilies, statusBadge, type CountryGroup } from '../core/timeline';
 import type { PlateFormat, PlateGap, Region } from '../core/types';
 import { PlateView } from './PlateView';
 import { samplePlate } from './samples';
@@ -127,6 +127,7 @@ export function GalleryView({ regions, region, format, onOpen }: Props) {
                   <li key={`${c.region.id}/${c.format.id}`}>
                     <button className="gallery-card" aria-current={c.region.id === region.id && c.format.id === format.id} onClick={() => onOpen(c.region.id, c.format.id)}>
                       <PlateView plate={samplePlate(c.region, c.format)} className="thumb" />
+                      {statusBadge(c.format) && <span className="status-badge gallery-status">{statusBadge(c.format)}</span>}
                       <span className="gallery-card-title">{s.id === 'national' ? <><span aria-hidden="true">{c.region.flag}</span> </> : null}{c.title}</span>
                       {c.meta !== c.title && <span className="batch-meta">{c.meta}</span>}
                     </button>

@@ -2,11 +2,13 @@
  * plus the proposed die-profile backlog. Research topics, NOT distinct designs. */
 import { safeWebUrl } from './catalogue';
 
-export type ImplementationStatus = 'partial' | 'missing-renderer' | 'research-not-template';
+export type ImplementationStatus = 'implemented' | 'partial' | 'missing-renderer' | 'research-not-template' | 'not-a-plate';
 export interface CoverageRecord {
   id: string; name: string; sourceUrl: string; group: string; issueScope: string;
   reviewDepth: string; implementationStatus: ImplementationStatus; parentId: string | null;
   distinctions: string[]; nextAction: string; caution: string | null; additionalSources: string[];
+  /** Editable format ids in PlateForge for this topic (added when built). */
+  formats?: string[];
 }
 export interface DieProfile { id: string; label: string; scope: string; sourceUrl: string; task: string; status: string; confidence: string }
 export interface SerialConfiguration { family: string; pattern: string; example: string }
@@ -23,7 +25,9 @@ export interface CoverageManifest {
 }
 
 export const STATUS_LABELS: Record<ImplementationStatus, string> = {
+  implemented: 'Built',
   partial: 'Partly built',
+  'not-a-plate': 'Catalogued · not a plate',
   'missing-renderer': 'No renderer yet',
   'research-not-template': 'Research material, not a plate template',
 };

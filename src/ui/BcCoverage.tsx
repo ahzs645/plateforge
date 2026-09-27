@@ -39,10 +39,10 @@ export function BcCoverage({ builtPresets }: { builtPresets: number }) {
       <details><summary>Limitations</summary><ul>{manifest.limitations.map((l) => <li key={l}>{l}</li>)}</ul></details>
     </div>
     <div className="reference-stats" aria-label="Coverage summary">
-      <span><strong>{builtPresets}</strong> editable passenger presets</span>
-      <span><strong>{tally('partial')}</strong> {STATUS_LABELS.partial.toLowerCase()} (passenger)</span>
-      <span><strong>{tally('missing-renderer')}</strong> families with no renderer</span>
-      <span><strong>{tally('research-not-template')}</strong> research-only topics</span>
+      <span><strong>{builtPresets}</strong> editable B.C. designs</span>
+      <span><strong>{tally('implemented') + tally('partial')}</strong> topics built or partly built</span>
+      <span><strong>{tally('missing-renderer')}</strong> topics with no renderer yet</span>
+      <span><strong>{tally('research-not-template') + tally('not-a-plate')}</strong> research or non-plate topics</span>
     </div>
     {!!manifest.repositoryUpdates?.length && <section className="coverage-block"><h2>Fixed since the review</h2>
       <ul className="coverage-list">{manifest.repositoryUpdates.map((u) => <li key={u.id}>{u.summary}</li>)}</ul></section>}
@@ -81,7 +81,8 @@ export function BcCoverage({ builtPresets }: { builtPresets: number }) {
         <div className="coverage-badges"><span className="reference-badge">{r.group}</span><span className="reference-badge coverage-status">{STATUS_LABELS[r.implementationStatus]}</span></div>
         <h2>{r.name}</h2>
         <ul className="coverage-list">{r.distinctions.map((d) => <li key={d}>{d}</li>)}</ul>
-        <p><strong>Next:</strong> {r.nextAction}</p>
+        {r.formats?.length ? <p className="coverage-formats"><strong>In PlateForge:</strong> {r.formats.slice(0, 6).map((id, i) => <span key={id}>{i ? ', ' : ''}{id.startsWith('(') ? id : <a href={`#/ca-bc/${id}`}>{id}</a>}</span>)}{r.formats.length > 6 ? ` and ${r.formats.length - 6} more` : ''}</p>
+          : <p><strong>Next:</strong> {r.nextAction}</p>}
         {r.caution && <p className="reference-muted"><strong>Caution:</strong> {r.caution}</p>}
         <div className="coverage-links"><Link url={r.sourceUrl}>BCpl8s page ↗</Link>{r.additionalSources.map((u) => <Link key={u} url={u}>{host(u)} ↗</Link>)}</div>
       </article>)}</div>
