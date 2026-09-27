@@ -92,12 +92,47 @@ describe('British Columbia passenger system', () => {
   it('reuses one totem master across the 1952 base and 1953/54 overlays', () => {
     for (const year of [1953, 1954]) {
       const scene = buildBcScene({ year }, { serial: '12345' }, `year-${year}`);
-      equal(nodes(scene, 'base-year')[0].children[0], '5·2');
-      equal(nodes(scene, 'renewal-year')[0].children[0], `5·${year % 10}`);
+      equal(nodes(scene, 'base-year')[0].children[0], '52');
+      equal(nodes(scene, 'renewal-year')[0].children[0], `5 ${year % 10}`);
       equal(nodes(scene, 'base-emblem')[0].attrs.href, nodes(scene, 'tab-emblem')[0].attrs.href);
       equal(metadata(year, '12345').renewal.widthMm, 90);
       equal(metadata(year, '12345').baseYear, 1952);
     }
+  });
+  it('draws renewal pieces as separate overlays that can be fitted, omitted or shown alone', () => {
+    const onPlate = buildBcScene({ year: 1953 }, { serial: '33-638', renewal: 'on-plate' }, 'fit');
+    equal(nodes(onPlate, 'renewal-tab')[0].attrs['data-mount'], 'on-plate');
+    equal(nodes(onPlate, 'fastener').length, 2);
+    const baseOnly = buildBcScene({ year: 1953 }, { serial: '33-638', renewal: 'base-only' }, 'bare');
+    equal(nodes(baseOnly, 'renewal-tab').length, 0);
+    equal(nodes(baseOnly, 'base-emblem').length, 1);
+    equal(nodes(baseOnly, 'base-year')[0].children[0], '52');
+    const blank = buildBcScene({ year: 1953 }, { serial: 'Y8-719', renewal: 'blank-base' }, 'blank');
+    equal(nodes(blank, 'renewal-tab').length, 0);
+    equal(nodes(blank, 'base-emblem').length, 0);
+    equal(nodes(blank, 'base-year').length, 0);
+    equal(britishColumbia.formats.find((f) => f.id === '1953')!.validate?.({ serial: 'Y8-719', renewal: 'blank-base' }), null);
+    ok(validateBcSerial('Y8-719', bcYear(1952)));
+    deepEqual(bcGeometry({ year: 1954 }, { serial: '12345', renewal: 'loose' }), { width: 90, height: 140, long: false });
+    const loose = buildBcScene({ year: 1954 }, { serial: '12345', tabSerial: '349156', renewal: 'loose' }, 'tab');
+    equal(nodes(loose, 'serial').length, 0);
+    equal(nodes(loose, 'tab-serial')[0].children[0], '349156');
+    equal(nodes(loose, 'tab-emblem').length, 1);
+    deepEqual(bcGeometry({ year: 1951 }, { serial: '123-456', renewal: 'loose' }), { width: 318, height: 36, long: true });
+    const top = bcGeometry({ year: 1951 }, { serial: '79-583', renewal: 'top' });
+    ok(top.height > 137);
+    equal(nodes(buildBcScene({ year: 1951 }, { serial: '79-583', renewal: 'top' }), 'renewal-strip')[0].attrs['data-mount'], 'top');
+    // "top" is a documented 1951 misapplication only; tabs fall back to fitted.
+    equal(nodes(buildBcScene({ year: 1953 }, { serial: '12345', renewal: 'top' }), 'renewal-tab')[0].attrs['data-mount'], 'on-plate');
+    ok(britishColumbia.formats.find((f) => f.id === '1953')!.validate?.({ serial: '12345', renewal: 'top' }));
+  });
+  it('uses the reconstructed totem and maple-leaf vector, with no raster data', () => {
+    const svg = renderBcSvg({ year: 1952 }, { serial: '12-753' }, 'emblem');
+    ok(svg.includes('data-part="maple-leaf"'));
+    ok(svg.includes('data-part="body-with-openings"'));
+    ok(svg.includes('clip-path="url(#emblem-totem-leaf-clip)"'));
+    ok(svg.includes('fill-rule="evenodd"'));
+    ok(!renderBcSvg({ year: 1950 }, { serial: '12-345' }).includes('data-part="maple-leaf"'));
   });
   it('uses the independent centenary inscriptions and plate date', () => {
     const scene = buildBcScene({ year: 1958 }, { serial: '126175' });

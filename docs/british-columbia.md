@@ -23,7 +23,7 @@ Dimensions are the site's reported millimetres, not a claim that rounded centime
 | Width/height and renewal dimensions | Source-reported measurements; not newly measured from an original plate. |
 | Paint hex values | Digital approximations. Aging, scanning and illumination prevent calibrated paint recovery from the chart. |
 | Original stamping dies | **Not reproduced.** Existing Barlow Condensed is a live-text proxy with rounded/italic and block profiles. Do not describe these as exact historical fonts. |
-| Totem/maple-leaf emblem | One original, editable **approximate** vector master shared by the base and tabs. Needs a dedicated reference comparison before archival use. |
+| Totem/maple-leaf emblem | One editable **approximate** vector master (`src/templates/bc/totem-emblem.ts`), shared by the base and tabs. It is an authored cubic-Bézier reconstruction with seven named even-odd totem parts and a separately clipped maple-leaf frame, not a trace or a verified official master. |
 | Rim, corner radii, slots, text metrics, tab-ID positions | Estimated geometry; not a fabrication drawing. |
 | Serial validation | Supported syntax and year-specific subset only; not actual registration verification or a complete issue-allocation database. |
 | Weathering, repainted/re-stamped 1943 surfaces, late blank-base and suffix variants | Not reproduced. 1952-base W/Y over-runs and additional regional details remain outside this first subset. |
@@ -47,6 +47,16 @@ Five layout families compose the 25 formats:
 In default lettering mode all inscriptions remain SVG `<text>`. Optional construction-type modes render the serial as procedural paths; see [Serial lettering](lettering.md). The totem is a single `<symbol>` used by `<use>` instances. Hole masks cut through base and overlays. IDs are scoped using React `useId` to prevent cross-plate collisions in a batch. Flat rendering is the default; embossing is optional. Arbitrary serial text is escaped by the standalone serializer and handled as React text nodes in the app.
 
 The existing region picker, format chips, seeded batches, CSV/JSON export and PNG/SVG export require no BC-specific UI branches. SVG exports include machine-readable year, baseYear, dimensions, source, material note and reconstruction status. An optional generic `PlateFormat.references` field adds source links to the inspector. `PlateTemplate.size` accepts optional parts for serial-dependent dimensions; current exports already use the rendered viewBox.
+
+## Renewal pieces
+
+The 1951 strip and 1953/54 tabs are drawn as separate pieces laid over the base, with a drop shadow and bolts, rather than painted into it. The base's own date and emblem stay underneath. The `renewal` field selects:
+
+- `on-plate` (default): bolted in its normal position, the strip across the lower legend or the tab over the 52 emblem.
+- `base-only`: the un-renewed 1950 or 1952 base, with no piece fitted.
+- `blank-base` (1953/54 only): a late over-run base with the right-hand panel left empty (no 52 or emblem) but drilled for a tab, shown with no tab fitted. W and Y prefixes, such as Y8-719, validate from 1953.
+- `loose`: the strip (270/318 × 36 mm) or tab (90 × 140 mm) on its own, with open bolt holes. The plate serial is not drawn.
+- `top` (1951 only): strip bolted through the upper slots, overhanging the top edge. A 1951 newspaper warning shows many motorists did this, contrary to Motor Vehicle Branch instructions. The SVG grows taller to fit.
 
 ## Editable fields
 

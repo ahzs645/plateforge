@@ -9,6 +9,7 @@ export type { SvgNode } from '../svg-scene';
 import type { Parts } from '../../core/types';
 import { bcYear, BC_SOURCES, BC_RECONSTRUCTION_NOTE } from '../../regions/canada/bc-data';
 import { compactBcSerial, displayBcSerial } from '../../regions/canada/bc';
+import { totemEmblemSymbol } from './totem-emblem';
 
 export interface BcDesign {
   [key: string]: unknown;
@@ -20,12 +21,42 @@ export interface BcDesign {
 }
 const FAMILY = '"Barlow Condensed", "Arial Narrow", sans-serif';
 
+/** How a separately issued renewal piece relates to its base: bolted on,
+ * not yet fitted (base only), shown loose on its own, fitted to nothing on a
+ * late blank base (no 52 or emblem), or misapplied across the
+ * top of the plate as many 1951 motorists did. */
+export type BcRenewalMount = 'on-plate' | 'base-only' | 'blank-base' | 'loose' | 'top';
+export const BC_RENEWAL_YEARS = [1951, 1953, 1954] as const;
+const TAB = { width: 90, height: 140 };
+const STRIP_HEIGHT = 36;
+const TAB_HOLE_YS = [12, TAB.height - 12];
+/** Strip bolt holes sit this far down the strip, matching the base's lower slots. */
+const STRIP_HOLE_Y = 28;
+
+export function bcRenewalMount(year: number, parts: Parts = {}): BcRenewalMount | null {
+  if (!(BC_RENEWAL_YEARS as readonly number[]).includes(year)) return null;
+  const mount = parts.renewal;
+  if (mount === 'base-only' || mount === 'loose') return mount;
+  if (mount === 'top' && year === 1951) return mount;
+  if (mount === 'blank-base' && year !== 1951) return mount;
+  return 'on-plate';
+}
+
 export function bcGeometry(design: BcDesign, parts: Parts = {}) {
   const r = bcYear(design.year);
   const raw = compactBcSerial(parts.serial ?? r.sample);
   const long = !!r.longWidthMm && raw !== null && /^\d{6}$/.test(raw);
-  return { width: long ? r.longWidthMm! : r.widthMm, height: r.heightMm, long };
+  const mount = bcRenewalMount(r.year, parts);
+  if (mount === 'loose') return r.year === 1951
+    ? { width: long ? 318 : 270, height: STRIP_HEIGHT, long }
+    : { width: TAB.width, height: TAB.height, long };
+  const height = r.heightMm + (mount === 'top' ? stripOverhang(r.heightMm) : 0);
+  return { width: long ? r.longWidthMm! : r.widthMm, height, long };
 }
+
+/** A strip bolted through the base's upper slots stands proud of the top edge. */
+const stripOverhang = (plateHeight: number) => STRIP_HOLE_Y - slotInset(plateHeight);
+const slotInset = (_plateHeight: number) => 10;
 
 /** Fits a live text node into a slot; short serials retain a natural width. */
 function label(value: string, x: number, y: number, size: number, maxWidth: number,
@@ -39,23 +70,91 @@ function label(value: string, x: number, y: number, size: number, maxWidth: numb
   }, value);
 }
 
-/** Editable, original approximation of the historic plate emblem, not a scan
- * and not an authoritative reproduction. Replace this ONE master when audited. */
-function totemMaster(id: string): SvgNode {
-  return n('symbol', { id, viewBox: '0 0 80 85' },
-    n('g', { fill: 'none', stroke: 'currentColor', strokeWidth: 1.8, strokeLinejoin: 'round', strokeLinecap: 'round' },
-      n('path', { d: 'M40 3 L49 12 56 10 55 24 66 23 68 20 70 28 77 27 73 42 76 47 66 53 72 68 59 66 59 74 47 70 42 81 36 73 23 72 22 67 8 69 14 54 5 48 10 41 5 28 13 29 14 23 24 26 24 12 32 13 Z' }),
-      n('path', { d: 'M36 18 Q43 14 48 18 L45 23 Q36 20 34 26 Q34 29 40 29 Q48 27 47 34 Q45 38 39 34 L35 36 40 41 36 46 38 68 44 70 42 77' }),
-      n('path', { d: 'M39 42 L51 40 60 43 61 53 Q52 58 44 52 L43 63 Q48 68 44 71 M36 42 L25 40 25 48 30 54 35 53 M39 52 L34 56 38 59 34 64 M39 61 Q45 58 45 64' }),
-      n('path', { d: 'M33 18 L30 23 34 26 M52 44 L52 50 M56 45 L56 51 M28 44 L29 49 M39 31 L43 32 M39 46 L43 45' }),
-    ),
+/** 1951 blue-on-white strip in its own coordinates (0,0 top-left). */
+function renewalStrip(width: number, holeXs: number[], parts: Parts, withHoles: boolean): SvgNode[] {
+  return [
+    n('rect', { width, height: STRIP_HEIGHT, rx: 2, fill: '#f0eee0', stroke: '#254658', strokeWidth: 1 }),
+    n('rect', { x: 2.5, y: 2.5, width: width - 5, height: STRIP_HEIGHT - 5, rx: 1.5, fill: 'none', stroke: '#254658', strokeWidth: 0.8, opacity: 0.55 }),
+    label('BRITISH·51·COLUMBIA', width / 2, 25, 25, width - 12, '#254658', 'renewal-legend', {}, true),
+    ...(parts.tabSerial ? [label(parts.tabSerial, width / 2, 33.5, 5, 22, '#8a9699', 'tab-serial')] : []),
+    ...(withHoles ? holeXs.map((cx) => n('circle', { cx, cy: STRIP_HOLE_Y, r: 3.2, fill: 'black', 'data-role': 'strip-hole' })) : []),
+  ];
+}
+
+/** Rectangle with square left corners and rounded right corners. */
+const rightRounded = (x: number, y: number, w: number, h: number, r: number): string =>
+  `M${x} ${y}H${x + w - r}A${r} ${r} 0 0 1 ${x + w} ${y + r}V${y + h - r}A${r} ${r} 0 0 1 ${x + w - r} ${y + h}H${x}Z`;
+
+/** Open rim: from the left edge along the top, down the rounded right side, back along the bottom. */
+const rightRim = (inset: number, w: number, h: number, r: number): string =>
+  `M0 ${inset}H${inset + w - r}A${r} ${r} 0 0 1 ${inset + w} ${inset + r}V${inset + h - r}A${r} ${r} 0 0 1 ${inset + w - r} ${inset + h}H0`;
+
+/** 1953/54 side tab in its own coordinates: year at top, emblem, stamped number. */
+function renewalTab(year: number, emblem: string, parts: Parts, withHoles: boolean): SvgNode[] {
+  const tabInk = year === 1953 ? '#f1ede0' : '#e4c879';
+  const tabBackground = year === 1953 ? '#266b87' : '#202525';
+  const { width: w, height: h } = TAB;
+  return [
+    // Sheared straight on the left where it meets the base; rounded on the outer edge.
+    n('path', { d: rightRounded(0, 0, w, h, 6), fill: tabBackground, 'data-role': 'tab-shell' }),
+    // Raised rim runs top, right and bottom only; the sheared left edge has none.
+    n('path', { d: rightRim(3, w - 6, h - 6, 5), fill: 'none', stroke: tabInk, strokeWidth: 1.5, strokeLinecap: 'butt' }),
+    label(`5 ${year % 10}`, w / 2, 44, 40, 70, tabInk, 'renewal-year', {}, true),
+    n('use', { href: `#${emblem}`, x: 7, y: 50, width: 76, height: 74, color: tabInk, 'data-role': 'tab-emblem', 'data-accuracy': 'approximate' }),
+    ...(parts.tabSerial ? [label(parts.tabSerial, w - 22, h - 6.5, 7, 32, tabInk, 'tab-serial', { opacity: 0.8 })] : []),
+    ...(withHoles ? TAB_HOLE_YS.map((cy) => n('circle', { cx: w / 2, cy, r: 3, fill: 'black', 'data-role': 'tab-hole' })) : []),
+  ];
+}
+
+const bolt = (cx: number, cy: number): SvgNode => n('g', { 'data-role': 'fastener' },
+  n('circle', { cx, cy, r: 4.4, fill: '#6b4a33' }),
+  n('circle', { cx: cx - 1, cy: cy - 1, r: 2.2, fill: '#8d6a4c' }),
+  n('path', { d: `M${cx - 3} ${cy} H${cx + 3}`, stroke: '#3d2a1d', strokeWidth: 1 }));
+
+function renewalMetadata(year: number, long: boolean, mount: BcRenewalMount | null) {
+  if (!mount) return null;
+  return year === 1951 ? { kind: 'bottom-strip', widthMm: long ? 318 : 270, heightMm: STRIP_HEIGHT, mount }
+    : { kind: 'side-tab', widthMm: TAB.width, heightMm: TAB.height, mount };
+}
+
+/** A renewal piece drawn alone, as it was sold before fitting. */
+function buildLooseRenewal(design: BcDesign, parts: Parts, id: string): SvgNode {
+  const r = bcYear(design.year);
+  const { width: w, height: h, long } = bcGeometry(design, parts);
+  const plate = long ? r.longWidthMm! : r.widthMm;
+  const strip = r.year === 1951;
+  const holeXs = [plate * 0.21, plate * 0.79].map((x) => x - (plate - w) / 2);
+  const piece = strip ? renewalStrip(w, holeXs, parts, true) : renewalTab(r.year, `${id}-totem`, parts, true);
+  const holes = [...piece].filter((item) => ['strip-hole', 'tab-hole'].includes(String(item.attrs['data-role'])));
+  const metadata = {
+    jurisdiction: 'CA-BC', vehicleClass: 'passenger', year: r.year, baseYear: r.baseYear, serial: null, parts,
+    physicalMm: { width: w, height: h }, renewal: renewalMetadata(r.year, long, 'loose'),
+    material: 'metal', source: BC_SOURCES[r.source],
+    reconstruction: { colours: 'approximate', typography: 'proxy; not original dies', geometry: 'source dimensions; estimated detail positions', emblem: strip ? 'not applicable' : 'approximate' },
+  };
+  const label1 = strip ? `British Columbia ${r.year} renewal strip` : `British Columbia ${r.year} renewal tab`;
+  return n('svg', { xmlns: 'http://www.w3.org/2000/svg', viewBox: `0 0 ${w} ${h}`, width: w, height: h, role: 'img', 'aria-label': label1 },
+    n('title', {}, `${label1}${parts.tabSerial ? ` · ${parts.tabSerial}` : ''}`),
+    n('desc', {}, `${BC_RECONSTRUCTION_NOTE} Shown unattached; the plate serial is not part of this piece.`),
+    n('metadata', {}, JSON.stringify(metadata)),
+    n('defs', {},
+      n('mask', { id: `${id}-holes`, maskUnits: 'userSpaceOnUse', x: 0, y: 0, width: w, height: h },
+        n('rect', { width: w, height: h, fill: 'white' }), ...holes),
+      ...(strip ? [] : [totemEmblemSymbol(`${id}-totem`)])),
+    n('g', { mask: `url(#${id}-holes)`, 'data-role': strip ? 'renewal-strip' : 'renewal-tab', 'data-year': r.year },
+      ...piece.filter((item) => !holes.includes(item))),
   );
 }
 
 export function buildBcScene(design: BcDesign, parts: Parts, scope = 'bc-plate'): SvgNode {
   const r = bcYear(design.year);
-  const { width: w, height: h, long } = bcGeometry(design, parts);
   const id = scope.replace(/[^a-zA-Z0-9_-]/g, '') || 'bc-plate';
+  const mount = bcRenewalMount(r.year, parts);
+  if (mount === 'loose') return buildLooseRenewal(design, parts, id);
+  const { width: w, height: fullHeight, long } = bcGeometry(design, parts);
+  const h = r.heightMm;
+  /** Vertical offset of the base when a misapplied strip overhangs its top edge. */
+  const oy = fullHeight - h;
   const ink = typeof design.ink === 'string' ? design.ink : r.ink;
   const background = typeof design.background === 'string' ? design.background : r.background;
   const serial = displayBcSerial(parts.serial ?? '', design.dashless === true);
@@ -68,6 +167,8 @@ export function buildBcScene(design: BcDesign, parts: Parts, scope = 'bc-plate')
   const standard = r.layout === 'annual-standard';
   const centenary = r.layout === 'centenary';
   const renewed = r.year === 1953 || r.year === 1954;
+  const fitted = mount === 'on-plate' || mount === 'top';
+  const blank = mount === 'blank-base';
   const slots: SvgNode[] = [];
   for (const x of [w * (totem ? 0.27 : 0.21), w * (totem ? 0.70 : 0.79)]) {
     for (const y of [10, h - 10]) {
@@ -80,11 +181,13 @@ export function buildBcScene(design: BcDesign, parts: Parts, scope = 'bc-plate')
     n('circle', { cx: w - 51, cy: 127, r: 1.9, fill: 'black' }),
     n('rect', { x: w - 8, y: 120, width: 2.5, height: 13, rx: 1, fill: 'black' }),
   );
-  if (renewed) for (const y of [12, h - 12]) slots.push(n('circle', { cx: w - 45, cy: y, r: 3, fill: 'black' }));
+  if (renewed && (fitted || blank)) for (const y of TAB_HOLE_YS) slots.push(n('circle', { cx: w - TAB.width / 2, cy: y, r: 3, fill: 'black' }));
   const defs = n('defs', {},
     n('mask', { id: `${id}-holes`, maskUnits: 'userSpaceOnUse', x: 0, y: 0, width: w, height: h },
       n('rect', { width: w, height: h, fill: 'white' }), ...slots),
-    totemMaster(`${id}-totem`),
+    ...(totem && !blank ? [totemEmblemSymbol(`${id}-totem`)] : []),
+    n('filter', { id: `${id}-lift`, x: '-10%', y: '-20%', width: '120%', height: '150%' },
+      n('feDropShadow', { dx: 0.8, dy: 1.2, stdDeviation: 0.9, floodColor: '#000000', floodOpacity: 0.4 })),
     n('filter', { id: `${id}-relief`, x: '-5%', y: '-10%', width: '110%', height: '125%' },
       n('feDropShadow', { dx: 0.6, dy: 0.7, stdDeviation: 0.25, floodColor: '#000000', floodOpacity: 0.3 })),
   );
@@ -100,8 +203,9 @@ export function buildBcScene(design: BcDesign, parts: Parts, scope = 'bc-plate')
   if (totem) {
     inscriptions.push(serialLabel(serial, (w - 99) / 2, 96, 104, w - 121, ink, 'serial', serialFont));
     inscriptions.push(label('BRITISH COLUMBIA', (w - 99) / 2, 122, 25, w - 121, ink, 'province', {}, true));
-    inscriptions.push(label('5·2', w - 47, 43, 39, 76, ink, 'base-year', {}, true));
-    inscriptions.push(n('use', { href: `#${id}-totem`, x: w - 88, y: 48, width: 79, height: 81, color: ink, 'data-role': 'base-emblem', 'data-accuracy': 'approximate' }));
+    // Late 1953/54 over-run bases left this panel empty, pre-drilled for the tab.
+    if (!blank) inscriptions.push(label('52', w - 47, 44, 40, 58, ink, 'base-year', {}, true));
+    if (!blank) inscriptions.push(n('use', { href: `#${id}-totem`, x: w - 88, y: 48, width: 79, height: 81, color: ink, 'data-role': 'base-emblem', 'data-accuracy': 'approximate' }));
   } else if (centenary) {
     inscriptions.push(label('BRITISH COLUMBIA', w / 2, 28, 24, w - 49, ink, 'province', {}, true));
     inscriptions.push(serialLabel(serial, w / 2, 111, 109, w - 22, ink, 'serial', serialFont));
@@ -118,43 +222,42 @@ export function buildBcScene(design: BcDesign, parts: Parts, scope = 'bc-plate')
     inscriptions.push(label(yy[0], w - 18, 48, 34, 17, ink, 'base-year-tens'));
     inscriptions.push(label(yy[1], w - 18, 88, 34, 17, ink, 'base-year-ones'));
   }
+  // Renewal pieces were separately issued; they sit above the base rather than
+  // replacing its artwork, so the retained base date and emblem stay underneath.
   const overlays: SvgNode[] = [];
-  if (r.layout === 'renewal-strip') {
+  if (fitted && r.layout === 'renewal-strip') {
     const stripWidth = long ? 318 : 270;
-    overlays.push(n('g', { 'data-role': 'renewal-strip', 'data-year': 1951 },
-      n('rect', { x: (w - stripWidth) / 2, y: h - 38, width: stripWidth, height: 36, rx: 2, fill: '#f0eee0', stroke: '#254658', strokeWidth: 1 }),
-      label('BRITISH·51·COLUMBIA', w / 2, h - 12, 25, stripWidth - 10, '#254658', 'renewal-legend', {}, true),
-      ...(parts.tabSerial ? [label(parts.tabSerial, w - 27, h - 3, 5.5, 26, '#596a70', 'tab-serial')] : []),
-    ));
+    const x = (w - stripWidth) / 2;
+    const slotY = mount === 'top' ? slotInset(h) : h - slotInset(h);
+    const holeXs = [w * 0.21, w * 0.79];
+    overlays.push(n('g', { 'data-role': 'renewal-strip', 'data-year': 1951, 'data-mount': mount, transform: `translate(${x} ${slotY - STRIP_HOLE_Y})`, filter: `url(#${id}-lift)` },
+      ...renewalStrip(stripWidth, holeXs.map((cx) => cx - x), parts, false)));
+    overlays.push(...holeXs.map((cx) => bolt(cx, slotY)));
   }
-  if (renewed) {
-    const tabInk = r.year === 1953 ? '#f1ede0' : '#e4c879';
-    const tabBackground = r.year === 1953 ? '#266b87' : '#202525';
-    overlays.push(n('g', { 'data-role': 'renewal-tab', 'data-year': r.year },
-      n('rect', { x: w - 90, y: 0, width: 90, height: h, rx: 5, fill: tabBackground }),
-      n('rect', { x: w - 87, y: 3, width: 84, height: h - 6, rx: 5, fill: 'none', stroke: tabInk, strokeWidth: 1.5 }),
-      label(`5·${r.year % 10}`, w - 45, 43, 39, 74, tabInk, 'renewal-year', {}, true),
-      n('use', { href: `#${id}-totem`, x: w - 84, y: 48, width: 78, height: 80, color: tabInk, 'data-role': 'tab-emblem', 'data-accuracy': 'approximate' }),
-      ...(parts.tabSerial ? [label(parts.tabSerial, w - 22, h - 6, 7, 34, tabInk, 'tab-serial')] : []),
-    ));
+  if (fitted && renewed) {
+    overlays.push(n('g', { 'data-role': 'renewal-tab', 'data-year': r.year, 'data-mount': mount, transform: `translate(${w - TAB.width} 0)`, filter: `url(#${id}-lift)` },
+      ...renewalTab(r.year, `${id}-totem`, parts, false)));
+    overlays.push(...TAB_HOLE_YS.map((cy) => bolt(w - TAB.width / 2, cy)));
   }
   const metadata = {
     jurisdiction: 'CA-BC', vehicleClass: 'passenger', year: r.year, baseYear: r.baseYear,
     variant: design.dashless ? 'no-dash' : 'standard', serial, parts,
-    physicalMm: { width: w, height: h }, renewal: renewed ? { kind: 'side-tab', widthMm: 90, heightMm: 140 }
-      : r.year === 1951 ? { kind: 'bottom-strip', widthMm: long ? 318 : 270, heightMm: 36 } : null,
+    physicalMm: { width: w, height: h }, renewal: renewalMetadata(r.year, long, mount),
     material: totem || (r.year === 1951 && Number(compactBcSerial(parts.serial ?? '')) > 230000) ? 'aluminum' : r.year >= 1955 ? 'steel' : 'metal',
     colourDescription: r.colourDescription, source: BC_SOURCES[r.source],
     lettering: { ...letteringMetadata(vectorType ?? 'default'), requested: parts.lettering ?? 'default', fallback: isLetteringType(parts.lettering) && !vectorType },
     reconstruction: { colours: 'approximate', typography: vectorType ? 'procedural category; not original dies' : 'proxy; not original dies', geometry: 'source dimensions; estimated detail positions', emblem: totem ? 'approximate' : 'not applicable' },
   };
-  return n('svg', { xmlns: 'http://www.w3.org/2000/svg', viewBox: `0 0 ${w} ${h}`, width: w, height: h, role: 'img', 'aria-label': `British Columbia ${r.year}: ${serial}` },
+  const plate = [
+    n('g', { mask: `url(#${id}-holes)` }, ...base,
+      n('g', { ...(embossed ? { filter: `url(#${id}-relief)` } : {}), 'data-role': 'inscriptions' }, ...inscriptions)),
+    ...overlays,
+  ];
+  return n('svg', { xmlns: 'http://www.w3.org/2000/svg', viewBox: `0 0 ${w} ${fullHeight}`, width: w, height: fullHeight, role: 'img', 'aria-label': `British Columbia ${r.year}: ${serial}` },
     n('title', {}, `British Columbia passenger plate · ${r.year} · ${serial}`),
     n('desc', {}, `${BC_RECONSTRUCTION_NOTE} ${r.note}`),
     n('metadata', {}, JSON.stringify(metadata)), defs,
-    n('g', { mask: `url(#${id}-holes)` }, ...base,
-      n('g', { ...(embossed ? { filter: `url(#${id}-relief)` } : {}), 'data-role': 'inscriptions' }, ...inscriptions),
-      ...overlays),
+    ...(oy ? [n('g', { transform: `translate(0 ${oy})` }, ...plate)] : plate),
   );
 }
 

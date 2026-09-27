@@ -37,8 +37,10 @@ export function validateBcSerial(value: string, recipe: BcYear, dashless = false
   }
   if (recipe.layout === 'totem-base') {
     if (/^[A-Z][1-9]\d{0,3}$/.test(raw) && totemPrefixes.includes(raw[0])) return null;
+    // W and Y over-runs were issued on 1952-style bases during the 1953/54 renewal years.
+    if (recipe.year >= 1953 && /^[WY][1-9]\d{0,3}$/.test(raw)) return null;
     if (/^[1-9][AEHJKPRST]\d{1,3}$/.test(raw) && Number(raw.slice(2)) > 0) return null;
-    return 'Supported 1952-base subset: 1–99999, A/E/H/J/K/P/R/S/T/U prefixes, or regional letters in the second position. Late blank-base/suffix variants are not included.';
+    return 'Supported 1952-base subset: 1–99999, A/E/H/J/K/P/R/S/T/U prefixes (W/Y from 1953), or regional letters in the second position. Suffix variants are not included.';
   }
   if (/^[A-Z][1-9]\d{0,3}$/.test(raw) && recipe.prefixes.includes(raw[0])) return null;
   return recipe.prefixes ? `Supported passenger prefixes for ${recipe.year}: ${recipe.prefixes.split('').join(', ')}.` : 'This format uses an all-numeric passenger serial.';
@@ -69,15 +71,23 @@ function makeFormat(recipe: BcYear, dashless = false): PlateFormat {
     fields: [
       { key: 'serial', label: 'Plate serial', maxLength: 7, placeholder: dashless ? '1877' : recipe.sample },
       ...(hasTab ? [{ key: 'tabSerial', label: 'Renewal tab number (optional)', maxLength: 6, placeholder: 'Separate from plate serial' }] : []),
+      ...(hasTab ? [{ key: 'renewal', label: recipe.year === 1951 ? 'Renewal strip' : 'Renewal tab', preserveOnGenerate: true, options: [
+        { value: 'on-plate', label: recipe.year === 1951 ? 'Bolted across the bottom' : 'Bolted over the 52 emblem' },
+        { value: 'base-only', label: recipe.year === 1951 ? 'Hide strip · show 1950 base' : 'Hide tab · show 1952 base' },
+        ...(recipe.year === 1951 ? [] : [{ value: 'blank-base', label: 'Hide tab · blank base (no 52 or emblem)' }]),
+        { value: 'loose', label: recipe.year === 1951 ? 'Strip on its own' : 'Tab on its own' },
+        ...(recipe.year === 1951 ? [{ value: 'top', label: 'Across the top (misapplied)' }] : []),
+      ] }] : []),
       { key: 'finish', label: 'Rendering', preserveOnGenerate: true, options: [{ value: 'flat', label: 'Flat / editable SVG' }, { value: 'embossed', label: 'Subtle embossed preview' }] },
     ],
     design: { year: recipe.year, dashless },
     generate: (rng): Parts => ({ serial: dashless ? String(rng.int(1000, 1999)) : generateSerial(recipe, rng),
-      ...(hasTab ? { tabSerial: '' } : {}), finish: 'flat' }),
+      ...(hasTab ? { tabSerial: '', renewal: 'on-plate' } : {}), finish: 'flat' }),
     validate: (parts) => {
       const serialError = validateBcSerial(parts.serial ?? '', recipe, dashless);
       if (serialError) return serialError;
       if (parts.finish !== undefined && !['flat', 'embossed'].includes(parts.finish)) return 'Choose flat or embossed rendering.';
+      if (hasTab && parts.renewal !== undefined && !['on-plate', 'base-only', 'loose', ...(recipe.year === 1951 ? ['top'] : ['blank-base'])].includes(parts.renewal)) return 'Choose how the renewal piece is shown.';
       if (hasTab && parts.tabSerial && !/^[1-9]\d{5}$/.test(parts.tabSerial)) return 'Tab numbers must contain six digits, with no leading zero.';
       return null;
     },
