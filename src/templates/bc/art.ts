@@ -6,7 +6,8 @@
 import { node as n, type SvgNode } from '../svg-scene';
 
 export interface ArtBox { x: number; y: number; width: number; height: number }
-interface ArtMaster { viewBox: [number, number]; draw(): SvgNode[]; aspect?: 'stretch' | 'meet' }
+/** A vector master drawn in its own viewBox units; `aspect: 'stretch'` fills the box, otherwise it is fitted. */
+export interface ArtMaster { viewBox: [number, number]; draw(): SvgNode[]; aspect?: 'stretch' | 'meet' }
 
 const FLAG_BLUE = '#1f3f8f', FLAG_RED = '#c8203a', FLAG_GOLD = '#f2b632';
 

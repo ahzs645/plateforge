@@ -46,6 +46,9 @@ export interface SerialGrammar {
   hint: string;
 }
 
+/** An annual colour scheme on a shared layout; `year` fills {yy}/{yyyy} legend tokens. */
+export interface KitPalette { id: string; label: string; background: string; ink: string; year?: number }
+
 export interface KitFormatSpec {
   id: string;
   label: string;
@@ -59,11 +62,20 @@ export interface KitFormatSpec {
   dies?: readonly { id: string; label?: string }[];
   /** Years of dated renewal decals offered for the well (inclusive). */
   decals?: readonly [number, number];
+  /** Annual colours for one layout; the first is the default. */
+  palettes?: readonly KitPalette[];
   description: string;
   references?: readonly { title: string; url: string }[];
 }
 
-const recipes = new Map<string, { recipe: KitRecipe }>();
+const recipes = new Map<string, { recipe: KitRecipe; palettes: readonly KitPalette[] }>();
+/** Colour and token overrides for the chosen palette, if any. */
+export function kitPalette(recipeId: string, paletteId: string | undefined): { background?: string; ink?: string; tokens?: Record<string, string> } {
+  const entry = recipes.get(recipeId);
+  const p = entry?.palettes.find((x) => x.id === paletteId) ?? entry?.palettes[0];
+  if (!p) return {};
+  return { background: p.background, ink: p.ink, ...(p.year ? { tokens: { yy: String(p.year).slice(2), yyyy: String(p.year) } } : {}) };
+}
 export function kitRecipe(id: string): KitRecipe {
   const entry = recipes.get(id);
   if (!entry) throw new RangeError(`Unknown B.C. kit recipe: ${id}`);
@@ -101,7 +113,8 @@ function compile(grammar: SerialGrammar): CompiledPattern[] {
 
 export function kitFormat(spec: KitFormatSpec): PlateFormat {
   if (recipes.has(spec.recipe.id) && recipes.get(spec.recipe.id)!.recipe !== spec.recipe) throw new Error(`Duplicate kit recipe id ${spec.recipe.id}`);
-  recipes.set(spec.recipe.id, { recipe: spec.recipe });
+  recipes.set(spec.recipe.id, { recipe: spec.recipe, palettes: spec.palettes ?? [] });
+  const paletteOptions: FieldOption[] = (spec.palettes ?? []).map((p) => ({ value: p.id, label: p.label }));
   const blocks = compile(spec.grammar);
   const dies = spec.dies ?? [{ id: spec.recipe.serial.die }];
   const dieOptions: FieldOption[] = dies.map((d) => ({ value: d.id, label: d.label ?? dieProfile(d.id).label }));
@@ -111,6 +124,7 @@ export function kitFormat(spec: KitFormatSpec): PlateFormat {
   const monthField = decals.some((d) => d.year >= 1980);
   const fields: FieldDef[] = [
     { key: 'serial', label: 'Plate serial', maxLength: 9 },
+    ...(paletteOptions.length > 1 ? [{ key: 'palette', label: 'Year / colours', options: paletteOptions, preserveOnGenerate: true }] : []),
     ...(dieOptions.length > 1 ? [{ key: 'die', label: 'Serial die', options: dieOptions, preserveOnGenerate: true }] : []),
     ...(decalOptions.length ? [{ key: 'decal', label: 'Renewal decal', options: decalOptions, preserveOnGenerate: true }] : []),
     ...(monthField ? [{ key: 'decalMonth', label: 'Decal month', options: MONTHS.map((m) => ({ value: m, label: m })), preserveOnGenerate: true }] : []),
@@ -138,6 +152,7 @@ export function kitFormat(spec: KitFormatSpec): PlateFormat {
     design: { kit: spec.recipe.id, year: spec.period[0] },
     generate: (rng): Parts => ({
       serial: generateSerial(rng),
+      ...(paletteOptions.length > 1 ? { palette: paletteOptions[0].value } : {}),
       ...(dieOptions.length > 1 ? { die: dieOptions[0].value } : {}),
       ...(decalOptions.length ? { decal: 'blank' } : {}),
       ...(monthField ? { decalMonth: 'JAN' } : {}),
@@ -149,6 +164,7 @@ export function kitFormat(spec: KitFormatSpec): PlateFormat {
       const die = parts.die ?? dies[0].id;
       if (!dies.some((d) => d.id === die)) return 'Choose one of the listed dies.';
       if (!spec.recipe.serial.font && !dieSupports(dieProfile(die), serial.replace('-', ''))) return 'This die has no glyph for one of these characters.';
+      if (parts.palette !== undefined && paletteOptions.length && !paletteOptions.some((o) => o.value === parts.palette)) return 'Choose a listed year.';
       if (parts.decal !== undefined && !decalOptions.some((o) => o.value === parts.decal)) return 'Choose a listed renewal decal.';
       if (parts.decalMonth !== undefined && !(MONTHS as readonly string[]).includes(parts.decalMonth)) return 'Choose a decal month.';
       if (parts.finish !== undefined && !['flat', 'embossed'].includes(parts.finish)) return 'Choose flat or embossed rendering.';

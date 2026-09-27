@@ -172,6 +172,8 @@ function panel(p: KitPanel, serial: string, id: string): SvgNode {
 
 export interface KitSceneOptions {
   scope?: string;
+  /** Values for {yy}/{yyyy} tokens in legends (annual palettes). */
+  tokens?: Record<string, string>;
   /** Optional overrides from the editor. */
   background?: string;
   ink?: string;
@@ -206,7 +208,8 @@ export function buildKitScene(recipe: KitRecipe, parts: Parts, options: KitScene
   const fontLegends = (recipe.fontLegends ?? []).map((t) => n('text', { x: t.x, y: t.baseline, fill: t.color ?? ink, fontFamily: fonts[t.font], fontSize: t.size,
     fontWeight: t.weight ?? 400, ...(t.italic ? { fontStyle: 'italic' } : {}), textAnchor: 'middle', ...(t.width ? { textLength: t.width, lengthAdjust: 'spacing' } : {}),
     'data-role': t.role, 'data-lettering': 'typeface-proxy' }, t.text));
-  const inscriptions = [...(recipe.shapes ?? []).map((sh) => shape(sh, ink)), ...recipe.legends.map((t) => text(t, ink)), ...serialNode];
+  const fill = (value: string) => value.replace(/\{(\w+)\}/g, (m, k: string) => options.tokens?.[k] ?? m);
+  const inscriptions = [...(recipe.shapes ?? []).map((sh) => shape(sh, ink)), ...recipe.legends.map((t) => text({ ...t, text: fill(t.text) }, ink)), ...serialNode];
   const panels = (recipe.panels ?? []).map((p) => panel(p, serial, id));
   const meta = {
     jurisdiction: 'CA-BC', recipe: recipe.id, status: recipe.status ?? 'issued', physicalMm: { width: w, height: h },

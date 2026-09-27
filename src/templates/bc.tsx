@@ -5,12 +5,13 @@ import { FONTS } from './fonts';
 import { bcGeometry, buildBcScene, type BcDesign } from './bc/scene';
 import { bcLaterGeometry, buildBcLaterScene } from './bc/later-scene';
 import { buildKitScene, kitGeometry } from './bc/kit';
-import { kitDecal, kitRecipe } from '../regions/canada/bc-kit';
+import { kitDecal, kitPalette, kitRecipe } from '../regions/canada/bc-kit';
 
 function kitScene(design: BcDesign, parts: Parameters<typeof buildKitScene>[1], scope: string) {
   const recipe = kitRecipe(String(design.kit));
   const withDie = typeof parts.die === 'string' ? { ...recipe, serial: { ...recipe.serial, die: parts.die } } : recipe;
-  return buildKitScene(withDie, parts, { scope, decal: kitDecal(recipe.id, parts),
+  const palette = kitPalette(recipe.id, parts.palette);
+  return buildKitScene(withDie, parts, { scope, decal: kitDecal(recipe.id, parts), ...palette,
     ...(typeof design.background === 'string' ? { background: design.background } : {}), ...(typeof design.ink === 'string' ? { ink: design.ink } : {}) });
 }
 
