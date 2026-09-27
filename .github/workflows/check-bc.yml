@@ -4,6 +4,7 @@ on:
   pull_request:
     paths:
       - 'src/**'
+      - 'scripts/lettering-smoke.mjs'
       - 'package*.json'
       - 'tsconfig*.json'
       - 'vite.config.*'
@@ -25,3 +26,8 @@ jobs:
       - run: npm ci
       - run: npm test
       - run: npm run build
+      - name: Install isolated browser-test tooling
+        run: npm install --no-save --package-lock=false playwright@1.63.0
+      - run: npx playwright install --with-deps chromium
+      - name: Check typography in the built application
+        run: node scripts/lettering-smoke.mjs

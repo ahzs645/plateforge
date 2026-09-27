@@ -29,6 +29,8 @@ export interface FieldDef {
   /** Uppercase input automatically. Defaults to true. */
   uppercase?: boolean;
   placeholder?: string;
+  /** Keep appearance controls when generating a new serial. */
+  preserveOnGenerate?: boolean;
 }
 
 /** Design values are template-specific; each template exports its own type. */

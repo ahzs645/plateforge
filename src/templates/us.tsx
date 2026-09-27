@@ -1,5 +1,8 @@
 import { useId } from 'react';
-import type { PlateTemplate } from '../core/types';
+import type { Parts, PlateTemplate } from '../core/types';
+import { isLetteringType, letteringMetadata } from '../core/lettering';
+import { buildLettering, supportsLettering } from './lettering';
+import { SvgScene } from './SvgScene';
 import { CONDENSED, FONTS } from './fonts';
 import { fit, safeId } from './measure';
 
@@ -25,13 +28,14 @@ const W = 600;
 const H = 300;
 const SCRIPT = '"Snell Roundhand", "Brush Script MT", "Segoe Script", cursive';
 
-function UsPlate({ design: d, text }: { design: UsDesign; text: string }) {
+function UsPlate({ design: d, text, parts }: { design: UsDesign; text: string; parts: Parts }) {
   const id = safeId(useId());
   const ink = d.text ?? '#1c2e6b';
   const [top, bottom] = d.bg ?? ['#ffffff', '#f1f3f6'];
   const headerColor = d.headerColor ?? ink;
   const sloganColor = d.sloganColor ?? ink;
   const script = d.headerStyle === 'script';
+  const vectorType = isLetteringType(parts.lettering) && supportsLettering(text) ? parts.lettering : null;
 
   const serialFont = { family: CONDENSED, size: 170, weight: 600, letterSpacing: 6 };
   const serial = fit(text, serialFont, 520);
@@ -47,6 +51,10 @@ function UsPlate({ design: d, text }: { design: UsDesign; text: string }) {
 
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={text}>
+      <metadata>{JSON.stringify({ serial: text, parts, lettering: {
+        ...letteringMetadata(vectorType ?? 'default'), requested: parts.lettering ?? 'default',
+        fallback: isLetteringType(parts.lettering) && !vectorType,
+      } })}</metadata>
       <defs>
         <linearGradient id={`${id}bg`} x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stopColor={top} />
@@ -88,11 +96,17 @@ function UsPlate({ design: d, text }: { design: UsDesign; text: string }) {
         {d.header}
       </text>
 
-      {/* Embossed serial: shadow, then face. */}
+      {/* Both layers use the same geometry; headers/slogans retain their fonts. */}
       {[
         { dx: 3, dy: 4, fill: '#000', opacity: 0.22 },
         { dx: 0, dy: 0, fill: ink, opacity: 1 },
-      ].map((layer, i) => (
+      ].map((layer, i) => vectorType ? (
+        <g key={i} opacity={layer.opacity}>
+          <SvgScene node={buildLettering({ text, type: vectorType,
+            centerX: W / 2 + layer.dx, baseline: 214 + layer.dy,
+            height: 124, maxWidth: 520, ink: layer.fill, role: i === 0 ? 'serial-shadow' : 'serial' })} />
+        </g>
+      ) : (
         <text
           key={i}
           x={W / 2 + layer.dx}
@@ -133,6 +147,6 @@ export const usTemplate: PlateTemplate<UsDesign> = {
   id: 'us',
   name: 'North American 12×6″',
   size: () => ({ width: W, height: H }),
-  render: ({ design, text }) => <UsPlate design={design} text={text} />,
+  render: ({ design, text, parts }) => <UsPlate design={design} text={text} parts={parts} />,
   fonts: [FONTS.barlow600, FONTS.barlow700],
 };

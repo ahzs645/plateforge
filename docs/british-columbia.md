@@ -44,7 +44,7 @@ Five layout families compose the 25 formats:
 - `annual-standard`: 1955–1957 and 1959–1963.
 - `centenary`: 1958, province above and anniversary inscription below.
 
-All inscriptions remain SVG `<text>`. The totem is a single `<symbol>` used by `<use>` instances. Hole masks cut through base and overlays. IDs are scoped using React `useId` to prevent cross-plate collisions in a batch. Flat rendering is the default; embossing is optional. Arbitrary serial text is escaped by the standalone serializer and handled as React text nodes in the app.
+In default lettering mode all inscriptions remain SVG `<text>`. Optional construction-type modes render the serial as procedural paths; see [Serial lettering](lettering.md). The totem is a single `<symbol>` used by `<use>` instances. Hole masks cut through base and overlays. IDs are scoped using React `useId` to prevent cross-plate collisions in a batch. Flat rendering is the default; embossing is optional. Arbitrary serial text is escaped by the standalone serializer and handled as React text nodes in the app.
 
 The existing region picker, format chips, seeded batches, CSV/JSON export and PNG/SVG export require no BC-specific UI branches. SVG exports include machine-readable year, baseYear, dimensions, source, material note and reconstruction status. An optional generic `PlateFormat.references` field adds source links to the inspector. `PlateTemplate.size` accepts optional parts for serial-dependent dimensions; current exports already use the rendered viewBox.
 
