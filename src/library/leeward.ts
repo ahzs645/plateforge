@@ -23,7 +23,7 @@ function rows(group: string, prefix: string, category: LetteringReference['categ
       ...(prefix === 'us' || id === 'ca-bc' ? { regionId: id } : {}) };
   });
 }
-export const LEEWARD_JURISDICTIONS: readonly LetteringReference[] = [
+export const LEEWARD_JURISDICTIONS: readonly LetteringReference[] = ([
   ...rows('United States', 'us', 'semicircular', 'CA:California|LA:Louisiana|ME:Maine|MA:Massachusetts|MO:Missouri|NH:New Hampshire|ND:North Dakota|OH:Ohio|WA:Washington|WI:Wisconsin|DC:District of Columbia|ID:Idaho|IN:Indiana|IA:Iowa|MT:Montana|NE:Nebraska|NV:Nevada|TX:Texas|WY:Wyoming'),
   ...rows('United States', 'us', 'squarish', 'CO:Colorado|FL:Florida|MI:Michigan|NJ:New Jersey|NM:New Mexico|NC:North Carolina|VT:Vermont'),
   ...rows('United States', 'us', 'oval', 'AR:Arkansas|HI:Hawaii|KS:Kansas|NY:New York|OR:Oregon'),
@@ -38,4 +38,4 @@ export const LEEWARD_JURISDICTIONS: readonly LetteringReference[] = [
   ...rows('Other jurisdictions in the survey', 'survey', 'hybrid', 'GU:Guam'),
   { id: 'mx-survey', name: 'Mexico (states grouped by the source)', group: 'Mexico', category: 'oval', sourceDate: '2011-02', source: LEEWARD_SOURCE,
     note: 'One aggregate survey entry, not individually researched state plate designs or current specifications.' },
-].sort((a, b) => a.group.localeCompare(b.group) || a.name.localeCompare(b.name));
+] satisfies LetteringReference[]).sort((a, b) => a.group.localeCompare(b.group) || a.name.localeCompare(b.name));
