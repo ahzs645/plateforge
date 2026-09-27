@@ -1,0 +1,26 @@
+name: Prepare lazy reference catalogue
+on:
+  push:
+    branches: [feat/plate-reference-library]
+    paths: ['scripts/prepare_reference_library.py']
+permissions:
+  contents: write
+jobs:
+  prepare:
+    if: github.repository == 'ahzs645/plateforge' && github.ref == 'refs/heads/feat/plate-reference-library'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: feat/plate-reference-library
+      - run: python scripts/prepare_reference_library.py
+      - name: Commit prepared metadata only to the feature branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/data/reference-library
+          if ! git diff --cached --quiet; then
+            git commit -m 'Prepare paged reference catalogue and explicit coverage report'
+            git push origin HEAD:feat/plate-reference-library
+          fi
