@@ -1,0 +1,37 @@
+name: Import plate reference metadata
+
+on:
+  push:
+    branches: [feat/plate-reference-library]
+    paths: ['scripts/import_reference_library.py']
+
+# One-off import only into the named feature branch, never main or a fork.
+permissions:
+  contents: write
+
+concurrency:
+  group: plate-reference-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    if: github.repository == 'ahzs645/plateforge' && github.ref == 'refs/heads/feat/plate-reference-library'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: feat/plate-reference-library
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - run: python scripts/import_reference_library.py
+      - name: Save the generated reference snapshot on the feature branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add public/data/plate-reference-library.json public/data/plate-reference-import-report.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Index reference-site pages and image links; preserve crawl gaps'
+            git push origin HEAD:feat/plate-reference-library
+          fi
