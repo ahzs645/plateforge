@@ -63,5 +63,5 @@ export const britishColumbia = {
   eras: [...BC_ERAS, ...BC_VEHICLE_ERAS, ...BC_TRADE_ERAS, ...BC_SPECIALTY_ERAS, ...BC_OFFICIAL_ERAS, ...BC_MUNICIPAL_ERAS],
   gaps: BC_GAPS,
   coverageRoute: '#/library/coverage',
-  notes: 'Passenger base reconstructions, 1940–1985, with selected production and serial variants. Reference-library coverage is much broader than editable coverage. Exact dies, decals, colours and artwork are not certified.',
+  notes: 'Research reconstructions of B.C. plates from 1904 to 2026 across passenger, specialty, vehicle-class, official, municipal and bicycle families, from BCpl8s sources. Dies, decals, colours and artwork are approximate; serial validation checks documented formats, not real registrations.',
 };

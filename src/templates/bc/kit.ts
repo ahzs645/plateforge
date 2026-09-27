@@ -141,7 +141,7 @@ function serialNodes(recipe: KitRecipe, serial: string, ink: string): { nodes: S
     let x = s.x - total / 2;
     const l = buildDieText({ text: left, profile, x, baseline: s.baseline, capHeight: cap, anchor: 'start', ink: color, role: 'serial-left' });
     x += l.width + sep.gap * k;
-    const artNode = artwork(sep.art.art, { x, y: sep.art.y + (sep.art.height * (1 - k)) / 2, width: sep.art.width * k, height: sep.art.height * k }, 'serial-separator');
+    const artNode = artwork(sep.art.art, { x, y: sep.art.y + (sep.art.height * (1 - k)) / 2, width: sep.art.width * k, height: sep.art.height * k, color: sep.art.color ?? color }, 'serial-separator');
     x += sep.art.width * k + sep.gap * k;
     const r = buildDieText({ text: right, profile, x, baseline: s.baseline, capHeight: cap, anchor: 'start', ink: color, role: 'serial-right' });
     return { nodes: [n('g', { 'data-role': 'serial', 'aria-label': serial }, l.node, artNode, r.node)], fit: k < 1 ? 'reduced' : 'natural' };
@@ -172,7 +172,7 @@ function panel(p: KitPanel, serial: string, id: string): SvgNode {
 
 export interface KitSceneOptions {
   scope?: string;
-  /** Values for {yy}/{yyyy} tokens in legends (annual palettes). */
+  /** Values for {yy}/{yyyy}/{y1}/{y2} tokens in legends (annual palettes; y1/y2 are the year's last two digits). */
   tokens?: Record<string, string>;
   /** Optional overrides from the editor. */
   background?: string;
@@ -189,8 +189,8 @@ export function buildKitScene(recipe: KitRecipe, parts: Parts, options: KitScene
   const serial = parts.serial ?? '';
   const serialProfile = dieProfile(recipe.serial.die);
   const printable = serial.replace('-', '');
-  if (!recipe.serial.font && !dieSupports(serialProfile, printable)) throw new RangeError(`Serial “${serial}” has characters the ${serialProfile.label} die does not include.`);
-  const { nodes: serialNode, fit } = serialNodes(recipe, serial, ink);
+  if (serial && !recipe.serial.font && !dieSupports(serialProfile, printable)) throw new RangeError(`Serial “${serial}” has characters the ${serialProfile.label} die does not include.`);
+  const { nodes: serialNode, fit } = serial ? serialNodes(recipe, serial, ink) : { nodes: [], fit: 'natural' as const };
   const holes = recipe.holes ?? 'slots';
   const hx = recipe.holeAt?.x.map((v) => v * w) ?? [w * 0.2, w * 0.8];
   const hy = recipe.holeAt?.y.map((v) => v * h) ?? [9, h - 9];

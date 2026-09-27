@@ -30,6 +30,9 @@ export function numericGrammar(ranges: readonly (readonly [number, number])[], d
     custom: { generate: (rng) => { const [lo, hi] = rng.pick(ranges); return show(rng.int(lo, hi)); }, test: valid } };
 }
 
+/** For plates that carry no number (crests, event logos): no serial field, nothing drawn. */
+export const NO_SERIAL: SerialGrammar = { blocks: [], hint: 'No number on this plate', custom: { generate: () => '', test: (s) => s === '' } };
+
 /** B.C. letter groups used by the serial allocations: A–K and L–X, each skipping look-alikes. */
 export const BC_AK = 'ABCDEFGHJK';
 export const BC_LX = 'LMNPRSTVWX';
@@ -74,7 +77,8 @@ export function kitPalette(recipeId: string, paletteId: string | undefined): { b
   const entry = recipes.get(recipeId);
   const p = entry?.palettes.find((x) => x.id === paletteId) ?? entry?.palettes[0];
   if (!p) return {};
-  return { background: p.background, ink: p.ink, ...(p.year ? { tokens: { yy: String(p.year).slice(2), yyyy: String(p.year) } } : {}) };
+  const yy = p.year ? String(p.year).slice(2) : '';
+  return { background: p.background, ink: p.ink, ...(p.year ? { tokens: { yy, yyyy: String(p.year), y1: yy[0], y2: yy[1] } } : {}) };
 }
 export function kitRecipe(id: string): KitRecipe {
   const entry = recipes.get(id);
@@ -122,8 +126,9 @@ export function kitFormat(spec: KitFormatSpec): PlateFormat {
   const decalOptions: FieldOption[] = decals.length ? [{ value: 'blank', label: 'Empty well' },
     ...decals.map((d) => ({ value: decalId(d), label: `${d.year}${d.variant ? ` (${d.variant})` : ''} · ${d.colours}` }))] : [];
   const monthField = decals.some((d) => d.year >= 1980);
+  const numbered = spec.grammar !== NO_SERIAL;
   const fields: FieldDef[] = [
-    { key: 'serial', label: 'Plate serial', maxLength: 9 },
+    ...(numbered ? [{ key: 'serial', label: 'Plate serial', maxLength: 9 }] : []),
     ...(paletteOptions.length > 1 ? [{ key: 'palette', label: 'Year / colours', options: paletteOptions, preserveOnGenerate: true }] : []),
     ...(dieOptions.length > 1 ? [{ key: 'die', label: 'Serial die', options: dieOptions, preserveOnGenerate: true }] : []),
     ...(decalOptions.length ? [{ key: 'decal', label: 'Renewal decal', options: decalOptions, preserveOnGenerate: true }] : []),
@@ -170,6 +175,6 @@ export function kitFormat(spec: KitFormatSpec): PlateFormat {
       if (parts.finish !== undefined && !['flat', 'embossed'].includes(parts.finish)) return 'Choose flat or embossed rendering.';
       return null;
     },
-    text: (parts) => parts.serial ?? '',
+    text: (parts) => (numbered ? parts.serial ?? '' : spec.label),
   };
 }

@@ -20,7 +20,7 @@
   "earlyPresets": 25,
   "laterPresets": 17,
   "countsUnit": "Inventory topics and presets, NOT distinct historical plate designs",
-  "registeredPresets": 99
+  "registeredPresets": 433
  },
  "registeredPresets": {
   "passenger": [
@@ -125,6 +125,368 @@
    "prototype-super-natural",
    "prototype-dogwood",
    "prototype-a-new-bc"
+  ],
+  "commercial": [
+   "commercial-1924",
+   "commercial-1936",
+   "commercial-1949",
+   "commercial-1949-long",
+   "commercial-1952",
+   "commercial-1953-tab",
+   "commercial-1955",
+   "commercial-1958",
+   "commercial-1964",
+   "commercial-1965",
+   "commercial-1965-decal",
+   "commercial-1968",
+   "commercial-1972",
+   "commercial-1973",
+   "commercial-1973-no-dash",
+   "commercial-1976",
+   "commercial-1979",
+   "commercial-flag",
+   "commercial-flag-2008",
+   "commercial-flag-2008-dual"
+  ],
+  "farm": [
+   "farm-tractor-1948",
+   "farm-tractor-1955",
+   "farm-tractor-1968",
+   "farm-tractor-1974",
+   "farm-tractor-1976",
+   "farm-tractor-1979",
+   "farm-tractor-flag",
+   "farm-tractor-flag-dual",
+   "farm-truck-1961",
+   "farm-truck-1974",
+   "farm-truck-1976",
+   "farm-truck-1979",
+   "farm-truck-flag",
+   "farm-truck-flag-dual",
+   "farm-truck-2025"
+  ],
+  "trailer": [
+   "trailer-1921",
+   "trailer-1927",
+   "trailer-1936",
+   "trailer-1949",
+   "trailer-comm-1972",
+   "trailer-comm-1973",
+   "trailer-comm-1976",
+   "trailer-comm-1979",
+   "trailer-comm-flag",
+   "trailer-comm-flag-dual",
+   "trailer-utility-1955",
+   "trailer-utility-1970",
+   "trailer-utility-1974",
+   "trailer-utility-1979",
+   "trailer-utility-flag",
+   "trailer-utility-flag-2000",
+   "trailer-utility-2016",
+   "trailer-floater-1974",
+   "trailer-floater-1979",
+   "trailer-floater-1983",
+   "trailer-floater-flag"
+  ],
+  "motorcycle": [
+   "motorcycle-1949",
+   "motorcycle-1973",
+   "motorcycle-1974",
+   "motorcycle-1974-prototype",
+   "motorcycle-1979",
+   "motorcycle-flag",
+   "motorcycle-2011",
+   "motorcycle-dealer-1968",
+   "motorcycle-dealer-1973",
+   "motorcycle-dealer-1976",
+   "motorcycle-dealer-1979",
+   "motorcycle-dealer-flag"
+  ],
+  "trade": [
+   "trade-dealer-1913",
+   "trade-dealer-1950",
+   "trade-dealer-1968",
+   "trade-dealer-1976",
+   "trade-dealer-1979",
+   "trade-dealer-flag",
+   "trade-dealer-mc-1976",
+   "trade-dealer-mc-1979",
+   "trade-dealer-mc-flag",
+   "trade-manufacturer-1968",
+   "trade-manufacturer-1979",
+   "trade-manufacturer-flag",
+   "trade-repairer-1974",
+   "trade-repairer-1979",
+   "trade-repairer-flag",
+   "trade-repairer-flag-1995",
+   "trade-transporter-1964",
+   "trade-transporter-1979",
+   "trade-transporter-flag"
+  ],
+  "industrial": [
+   "industrial-x-1957",
+   "industrial-xh-1958",
+   "industrial-x-1964",
+   "industrial-x-1972",
+   "industrial-x-1976",
+   "industrial-x-1979",
+   "industrial-x-flag",
+   "industrial-logging-pf-1938",
+   "industrial-logging-1961",
+   "industrial-logging-1963",
+   "industrial-logging-1972",
+   "industrial-logging-1980",
+   "industrial-logging-1984",
+   "industrial-logging-1985",
+   "industrial-logging-flag",
+   "industrial-restricted",
+   "industrial-off-road",
+   "industrial-sa-1973",
+   "industrial-sa-1976",
+   "industrial-sa-1979",
+   "industrial-sa-flag"
+  ],
+  "carrier": [
+   "carrier-pwd-1928",
+   "carrier-pc-1934",
+   "carrier-cl-1936",
+   "carrier-cl-1946",
+   "carrier-cl-1951",
+   "carrier-mc-1970",
+   "carrier-mc-1974",
+   "carrier-mc-1975",
+   "carrier-mc-1982",
+   "carrier-mc-1985",
+   "carrier-mc-1988",
+   "carrier-mc-1995",
+   "carrier-mc-taxi",
+   "carrier-passenger-2005",
+   "carrier-passenger-2010",
+   "carrier-fuel-1961",
+   "carrier-fuel-1969",
+   "carrier-prorate-1962",
+   "carrier-prorate-1964",
+   "carrier-prorate-1972",
+   "carrier-prorate-1979",
+   "carrier-prorate-1981",
+   "carrier-prorate-flag-1985",
+   "carrier-prorate-flag-1989",
+   "carrier-prorate-apportioned",
+   "carrier-reciprocity-1963",
+   "carrier-reciprocity-1973",
+   "carrier-reciprocity-1980",
+   "carrier-temporary-x"
+  ],
+  "specialty": [
+   "parks-kermode",
+   "parks-purcell",
+   "parks-porteau",
+   "parks-prototype",
+   "olympic-passenger",
+   "olympic-truck",
+   "olympic-farm",
+   "olympic-trailer",
+   "olympic-motorcycle",
+   "olympic-utility",
+   "veteran-passenger",
+   "veteran-passenger-dual",
+   "veteran-truck",
+   "veteran-motorcycle",
+   "memorial-passenger",
+   "memorial-truck",
+   "memorial-keepsake",
+   "collector-passenger",
+   "collector-passenger-dual",
+   "collector-multi",
+   "collector-motorcycle",
+   "collector-motorcycle-multi",
+   "antique-1966",
+   "antique-1975",
+   "antique-motorcycle",
+   "personalized-1979",
+   "personalized-astro",
+   "personalized-reversed",
+   "personalized-waldale",
+   "personalized-sample",
+   "personalized-motorcycle",
+   "personalized-motorcycle-prototype"
+  ],
+  "consular": [
+   "consular-1967",
+   "consular-1973",
+   "consular-1979",
+   "consular-flag",
+   "consular-red"
+  ],
+  "ham-radio": [
+   "ham-radio-1963",
+   "ham-radio-1964",
+   "ham-radio-1965",
+   "ham-radio-1968",
+   "ham-radio-1969",
+   "ham-radio-1970",
+   "ham-radio-1973",
+   "ham-radio-1977-acme",
+   "ham-radio-1979",
+   "ham-radio-1986-flag",
+   "ham-radio-2002-flag",
+   "ham-radio-2014-flag",
+   "ham-radio-booster"
+  ],
+  "official": [
+   "official-victoria-1913",
+   "official-foreign-1924",
+   "official-doctor-1930",
+   "official-doctor-1931",
+   "official-doctor-1936",
+   "official-doctor-pn-1938",
+   "official-doctor-pn-1940",
+   "official-pw-1938",
+   "official-pw-1940",
+   "official-government-1948",
+   "official-defence-1941",
+   "official-defence-motorcycle",
+   "official-defence-1949",
+   "official-defence-1952",
+   "official-defence-1955",
+   "official-defence-1964",
+   "official-defence-1965",
+   "official-defence-1968",
+   "official-defence-canada",
+   "official-defence-pcmr",
+   "official-defence-esquimalt",
+   "official-defence-comox",
+   "official-parks-1927",
+   "official-parks-1930",
+   "official-parks-1936",
+   "official-lt-governor-arms",
+   "official-lt-governor-crest"
+  ],
+  "events": [
+   "events-royal-1951",
+   "events-royal-1987",
+   "events-royal-1994",
+   "events-royal-1994-prototype",
+   "events-royal-crown",
+   "events-apec-1997",
+   "events-apec-1997-military",
+   "events-expo86-presentation",
+   "events-expo86-booster",
+   "events-expo86-booster-aamva",
+   "events-expo86-prototype",
+   "events-expo86-souvenir",
+   "events-expo86-stencil",
+   "events-expo86-concours",
+   "events-expo86-nwt",
+   "events-vancouver-100"
+  ],
+  "municipal": [
+   "municipal-prov-1963",
+   "municipal-prov-1979",
+   "municipal-prov-1983",
+   "municipal-exempt-1963",
+   "municipal-exempt-1964",
+   "municipal-exempt-1965",
+   "municipal-exempt-1966",
+   "municipal-exempt-1967",
+   "municipal-exempt-1968",
+   "municipal-exempt-1969",
+   "municipal-exempt-1970",
+   "municipal-exempt-1971",
+   "municipal-exempt-1972",
+   "municipal-exempt-1973",
+   "municipal-exempt-1974",
+   "municipal-city-agassiz",
+   "municipal-city-alberni",
+   "municipal-city-burnaby",
+   "municipal-city-chilliwack",
+   "municipal-city-coquitlam",
+   "municipal-city-delta",
+   "municipal-city-langley",
+   "municipal-city-maple-ridge",
+   "municipal-city-matsqui",
+   "municipal-city-mission",
+   "municipal-city-nanaimo",
+   "municipal-city-new-westminster",
+   "municipal-city-north-vancouver",
+   "municipal-city-port-alberni",
+   "municipal-city-port-coquitlam",
+   "municipal-city-port-moody",
+   "municipal-city-powell-river",
+   "municipal-city-prince-george",
+   "municipal-city-richmond",
+   "municipal-city-saanich",
+   "municipal-city-sumas",
+   "municipal-city-surrey",
+   "municipal-city-trail",
+   "municipal-city-victoria",
+   "municipal-city-west-vancouver",
+   "municipal-victoria-1913",
+   "municipal-tahsis-1966",
+   "municipal-vancouver-disc-1919",
+   "municipal-vancouver-disc-1931",
+   "municipal-vancouver-vehicle-1950",
+   "municipal-vancouver-vehicle-1962",
+   "municipal-vancouver-conveyance-1947",
+   "municipal-vancouver-conveyance-1958",
+   "municipal-vancouver-express-dray-1912",
+   "municipal-vancouver-express-dray-1934",
+   "municipal-vancouver-auto-taxi-1923",
+   "municipal-vancouver-taxi-1956",
+   "municipal-vancouver-taxi-1997",
+   "municipal-vancouver-for-hire-1949",
+   "municipal-vancouver-for-hire-1970",
+   "municipal-vancouver-for-hire-1995",
+   "municipal-vancouver-commercial-1972",
+   "municipal-vancouver-commercial-1982",
+   "municipal-vancouver-commercial-1993",
+   "municipal-vancouver-commercial-1994",
+   "municipal-vancouver-commercial-2004",
+   "municipal-vancouver-junk-1965",
+   "municipal-vancouver-junk-1989",
+   "municipal-vancouver-funeral-cab-1983"
+  ],
+  "bicycle": [
+   "bicycle-cranbrook",
+   "bicycle-esquimalt",
+   "bicycle-fernie-1949",
+   "bicycle-fernie",
+   "bicycle-kelowna-1964",
+   "bicycle-kelowna-1970",
+   "bicycle-nelson-1942",
+   "bicycle-nelson-1943",
+   "bicycle-nelson-1944",
+   "bicycle-nelson-1945",
+   "bicycle-nelson-1946",
+   "bicycle-nelson-1947",
+   "bicycle-nelson-1951",
+   "bicycle-nelson-1952",
+   "bicycle-nelson-hex-1956",
+   "bicycle-nelson-hex-1974",
+   "bicycle-oak-bay-1948",
+   "bicycle-oak-bay-hex",
+   "bicycle-oak-bay-shield",
+   "bicycle-penticton-1947",
+   "bicycle-penticton-1955",
+   "bicycle-penticton-1958",
+   "bicycle-port-coquitlam",
+   "bicycle-prince-george-1953",
+   "bicycle-prince-george-1958",
+   "bicycle-prince-george-1959",
+   "bicycle-trail-1935",
+   "bicycle-trail-oval",
+   "bicycle-trail-1955",
+   "bicycle-trail-1962",
+   "bicycle-trail-1967",
+   "bicycle-valemount",
+   "bicycle-vancouver-1904",
+   "bicycle-vancouver-1940s",
+   "bicycle-vancouver-courier-1989",
+   "bicycle-victoria-1946",
+   "bicycle-victoria-1952",
+   "bicycle-west-vancouver-licence",
+   "bicycle-west-vancouver-license",
+   "bicycle-williams-lake"
   ]
  },
  "repositoryEvidence": [
@@ -148,21 +510,24 @@
    "title": "Default inscriptions use a proxy typeface",
    "path": "src/templates/bc/scene.ts",
    "url": "https://github.com/ahzs645/plateforge/blob/ffadf0e47f9fd33ee7c1471b82ef7871461f5529/src/templates/bc/scene.ts",
-   "finding": "Barlow Condensed / Arial Narrow is used for default lettering. Estimated text widths and spacingAndGlyphs fitting do not recover historical outlines."
+   "finding": "Barlow Condensed / Arial Narrow is used for default lettering. Estimated text widths and spacingAndGlyphs fitting do not recover historical outlines.",
+   "resolved": true
   },
   {
    "id": "generic-vectors",
    "title": "Procedural lettering is category-level",
    "path": "src/templates/lettering.ts",
    "url": "https://github.com/ahzs645/plateforge/blob/ffadf0e47f9fd33ee7c1471b82ef7871461f5529/src/templates/lettering.ts",
-   "finding": "Shared centreline strokes, 56-unit alphanumeric advances, an 8-unit gap and a single stroke weight are not maker-specific dies. Width fitting can reduce overall height."
+   "finding": "Shared centreline strokes, 56-unit alphanumeric advances, an 8-unit gap and a single stroke weight are not maker-specific dies. Width fitting can reduce overall height.",
+   "resolved": true
   },
   {
    "id": "serial-only",
    "title": "Lettering selection misses other inscription roles",
    "path": "docs/lettering.md",
    "url": "https://github.com/ahzs645/plateforge/blob/ffadf0e47f9fd33ee7c1471b82ef7871461f5529/docs/lettering.md",
-   "finding": "The selectable construction modes affect the serial only, not province, dates, renewal text or slogans."
+   "finding": "The selectable construction modes affect the serial only, not province, dates, renewal text or slogans.",
+   "resolved": true
   },
   {
    "id": "fourth-block",
@@ -177,7 +542,8 @@
    "title": "An ACME preset is not an ACME glyph set",
    "path": "src/regions/canada/bc-later.ts",
    "url": "https://github.com/ahzs645/plateforge/blob/ffadf0e47f9fd33ee7c1471b82ef7871461f5529/src/regions/canada/bc-later.ts",
-   "finding": "The 1978 ACME serial subset exists, but its precise Quebec-style dies are explicitly not reproduced."
+   "finding": "The 1978 ACME serial subset exists, but its precise Quebec-style dies are explicitly not reproduced.",
+   "resolved": true
   },
   {
    "id": "renewals-existing",
@@ -458,7 +824,7 @@
    "group": "Optional and heritage",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 2,
    "parentId": null,
    "distinctions": [
@@ -467,7 +833,12 @@
    ],
    "nextAction": "Create antique artwork and size profiles; do not reuse Collector as a synonym.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "antique-1966",
+    "antique-1975",
+    "antique-motorcycle"
+   ]
   },
   {
    "id": "apec",
@@ -476,7 +847,7 @@
    "group": "Events and ceremonial",
    "issueScope": "mixed-provincial-federal-event",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 3,
    "parentId": null,
    "distinctions": [
@@ -484,7 +855,11 @@
    ],
    "nextAction": "Keep issuer, event role and artwork variant explicit.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "events-apec-1997",
+    "events-apec-1997-military"
+   ]
   },
   {
    "id": "bc-parks",
@@ -493,7 +868,7 @@
    "group": "Optional and heritage",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 4,
    "parentId": null,
    "distinctions": [
@@ -504,6 +879,12 @@
    "caution": null,
    "additionalSources": [
     "https://www.bcpl8s.ca/BCParks-Gallery.html"
+   ],
+   "formats": [
+    "parks-kermode",
+    "parks-purcell",
+    "parks-porteau",
+    "parks-prototype"
    ]
   },
   {
@@ -530,7 +911,7 @@
    "group": "Optional and heritage",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 6,
    "parentId": null,
    "distinctions": [
@@ -539,7 +920,14 @@
    ],
    "nextAction": "Model vehicle class and multi-vehicle status independently.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "collector-passenger",
+    "collector-passenger-dual",
+    "collector-multi",
+    "collector-motorcycle",
+    "collector-motorcycle-multi"
+   ]
   },
   {
    "id": "commercial-truck",
@@ -548,7 +936,7 @@
    "group": "Commercial and vehicle classes",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 7,
    "parentId": null,
    "distinctions": [
@@ -556,7 +944,29 @@
    ],
    "nextAction": "Reuse measured shells where justified; supply class-specific lettering and serial grammars.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "commercial-1924",
+    "commercial-1936",
+    "commercial-1949",
+    "commercial-1949-long",
+    "commercial-1952",
+    "commercial-1953-tab",
+    "commercial-1955",
+    "commercial-1958",
+    "commercial-1964",
+    "commercial-1965",
+    "commercial-1965-decal",
+    "commercial-1968",
+    "commercial-1972",
+    "commercial-1973",
+    "commercial-1973-no-dash",
+    "commercial-1976",
+    "commercial-1979",
+    "commercial-flag",
+    "commercial-flag-2008",
+    "commercial-flag-2008-dual"
+   ]
   },
   {
    "id": "consular",
@@ -565,7 +975,7 @@
    "group": "Official and public service",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 8,
    "parentId": null,
    "distinctions": [
@@ -574,7 +984,14 @@
    ],
    "nextAction": "Add five category prefixes to one red-base family; keep historical CONSUL legends distinct.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "consular-1967",
+    "consular-1973",
+    "consular-1979",
+    "consular-flag",
+    "consular-red"
+   ]
   },
   {
    "id": "dealer",
@@ -583,7 +1000,7 @@
    "group": "Commercial and vehicle classes",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 9,
    "parentId": null,
    "distinctions": [
@@ -594,6 +1011,17 @@
    "caution": null,
    "additionalSources": [
     "https://www.bcpl8s.ca/Dealer-Motorcycle.htm"
+   ],
+   "formats": [
+    "trade-dealer-1913",
+    "trade-dealer-1950",
+    "trade-dealer-1968",
+    "trade-dealer-1976",
+    "trade-dealer-1979",
+    "trade-dealer-flag",
+    "trade-dealer-mc-1976",
+    "trade-dealer-mc-1979",
+    "trade-dealer-mc-flag"
    ]
   },
   {
@@ -651,7 +1079,15 @@
    "caution": null,
    "additionalSources": [],
    "formats": [
-    "souvenir-1970-expo"
+    "souvenir-1970-expo",
+    "events-expo86-presentation",
+    "events-expo86-booster",
+    "events-expo86-booster-aamva",
+    "events-expo86-prototype",
+    "events-expo86-souvenir",
+    "events-expo86-stencil",
+    "events-expo86-concours",
+    "events-expo86-nwt"
    ]
   },
   {
@@ -661,7 +1097,7 @@
    "group": "Commercial and vehicle classes",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 13,
    "parentId": null,
    "distinctions": [
@@ -671,6 +1107,16 @@
    "caution": "Do not retroactively interpret every historical passenger F prefix as a farm plate.",
    "additionalSources": [
     "https://www.bcpl8s.ca/Farm-Truck.html"
+   ],
+   "formats": [
+    "farm-tractor-1948",
+    "farm-tractor-1955",
+    "farm-tractor-1968",
+    "farm-tractor-1974",
+    "farm-tractor-1976",
+    "farm-tractor-1979",
+    "farm-tractor-flag",
+    "farm-tractor-flag-dual"
    ]
   },
   {
@@ -680,7 +1126,7 @@
    "group": "Official and public service",
    "issueScope": "provincial-road-and-permit",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 14,
    "parentId": null,
    "distinctions": [
@@ -688,7 +1134,10 @@
    ],
    "nextAction": "Separate plate and permit artefacts; preserve the historical meaning of F.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "official-foreign-1924"
+   ]
   },
   {
    "id": "government",
@@ -697,7 +1146,7 @@
    "group": "Official and public service",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 15,
    "parentId": null,
    "distinctions": [
@@ -705,7 +1154,10 @@
    ],
    "nextAction": "Add the documented government recipe, not a generic modern government plate.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "official-government-1948"
+   ]
   },
   {
    "id": "guinness",
@@ -714,7 +1166,7 @@
    "group": "Research and attribution",
    "issueScope": "historical-attribution",
    "reviewDepth": "family-page",
-   "implementationStatus": "research-not-template",
+   "implementationStatus": "implemented",
    "homepageLinkId": 16,
    "parentId": null,
    "distinctions": [
@@ -723,7 +1175,14 @@
    ],
    "nextAction": "Cross-link to municipal designs rather than creating a “world-record” plate class.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "official-victoria-1913",
+    "municipal-city-victoria",
+    "municipal-victoria-1913",
+    "bicycle-victoria-1946",
+    "bicycle-victoria-1952"
+   ]
   },
   {
    "id": "ham-radio",
@@ -732,7 +1191,7 @@
    "group": "Optional and heritage",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 17,
    "parentId": null,
    "distinctions": [
@@ -740,7 +1199,22 @@
    ],
    "nextAction": "Use call-sign grammar and separate layouts for short and longer runs.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "ham-radio-1963",
+    "ham-radio-1964",
+    "ham-radio-1965",
+    "ham-radio-1968",
+    "ham-radio-1969",
+    "ham-radio-1970",
+    "ham-radio-1973",
+    "ham-radio-1977-acme",
+    "ham-radio-1979",
+    "ham-radio-1986-flag",
+    "ham-radio-2002-flag",
+    "ham-radio-2014-flag",
+    "ham-radio-booster"
+   ]
   },
   {
    "id": "industrial",
@@ -749,7 +1223,7 @@
    "group": "Commercial and vehicle classes",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 18,
    "parentId": null,
    "distinctions": [
@@ -757,7 +1231,30 @@
    ],
    "nextAction": "Keep industrial separate from restricted and off-road; version serial rules.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "industrial-x-1957",
+    "industrial-xh-1958",
+    "industrial-x-1964",
+    "industrial-x-1972",
+    "industrial-x-1976",
+    "industrial-x-1979",
+    "industrial-x-flag",
+    "industrial-logging-pf-1938",
+    "industrial-logging-1961",
+    "industrial-logging-1963",
+    "industrial-logging-1972",
+    "industrial-logging-1980",
+    "industrial-logging-1984",
+    "industrial-logging-1985",
+    "industrial-logging-flag",
+    "industrial-restricted",
+    "industrial-off-road",
+    "industrial-sa-1973",
+    "industrial-sa-1976",
+    "industrial-sa-1979",
+    "industrial-sa-flag"
+   ]
   },
   {
    "id": "keytags",
@@ -783,7 +1280,7 @@
    "group": "Events and ceremonial",
    "issueScope": "ceremonial-and-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 20,
    "parentId": null,
    "distinctions": [
@@ -791,7 +1288,11 @@
    ],
    "nextAction": "Keep heraldic plaques separate from standard plates carrying personalized text.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "official-lt-governor-arms",
+    "official-lt-governor-crest"
+   ]
   },
   {
    "id": "logging",
@@ -800,7 +1301,7 @@
    "group": "Commercial and vehicle classes",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 21,
    "parentId": null,
    "distinctions": [
@@ -808,7 +1309,17 @@
    ],
    "nextAction": "Build a logging family; link Special Agreement and company VIN identification without merging them.",
    "caution": "Some early prefix dates and allocations remain uncertain.",
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "industrial-logging-pf-1938",
+    "industrial-logging-1961",
+    "industrial-logging-1963",
+    "industrial-logging-1972",
+    "industrial-logging-1980",
+    "industrial-logging-1984",
+    "industrial-logging-1985",
+    "industrial-logging-flag"
+   ]
   },
   {
    "id": "manufacturer",
@@ -817,7 +1328,7 @@
    "group": "Commercial and vehicle classes",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 22,
    "parentId": null,
    "distinctions": [
@@ -825,7 +1336,12 @@
    ],
    "nextAction": "Create independent legend placement and class grammar.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "trade-manufacturer-1968",
+    "trade-manufacturer-1979",
+    "trade-manufacturer-flag"
+   ]
   },
   {
    "id": "medical-doctor",
@@ -834,7 +1350,7 @@
    "group": "Official and public service",
    "issueScope": "mixed-road-allocation-and-accessory",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 23,
    "parentId": null,
    "distinctions": [
@@ -842,7 +1358,14 @@
    ],
    "nextAction": "Distinguish allocation-only examples from genuinely different plate designs.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "official-doctor-1930",
+    "official-doctor-1931",
+    "official-doctor-1936",
+    "official-doctor-pn-1938",
+    "official-doctor-pn-1940"
+   ]
   },
   {
    "id": "memorial-cross",
@@ -851,7 +1374,7 @@
    "group": "Optional and heritage",
    "issueScope": "road-and-keepsake",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 24,
    "parentId": null,
    "distinctions": [
@@ -859,7 +1382,12 @@
    ],
    "nextAction": "Build an artwork master with explicit road/keepsake type.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "memorial-passenger",
+    "memorial-truck",
+    "memorial-keepsake"
+   ]
   },
   {
    "id": "motive-fuel",
@@ -868,7 +1396,7 @@
    "group": "Commercial and vehicle classes",
    "issueScope": "supplementary-plate-and-decal",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 25,
    "parentId": null,
    "distinctions": [
@@ -876,7 +1404,11 @@
    ],
    "nextAction": "Treat tax identification as a supplementary family rather than a passenger base.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "carrier-fuel-1961",
+    "carrier-fuel-1969"
+   ]
   },
   {
    "id": "motor-carrier",
@@ -885,7 +1417,7 @@
    "group": "Commercial and vehicle classes",
    "issueScope": "supplementary-plate-and-decal",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 26,
    "parentId": null,
    "distinctions": [
@@ -893,7 +1425,20 @@
    ],
    "nextAction": "Represent carrier class, period and artefact type independently.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "carrier-cl-1936",
+    "carrier-cl-1946",
+    "carrier-cl-1951",
+    "carrier-mc-1970",
+    "carrier-mc-1974",
+    "carrier-mc-1975",
+    "carrier-mc-1982",
+    "carrier-mc-1985",
+    "carrier-mc-1988",
+    "carrier-mc-1995",
+    "carrier-mc-taxi"
+   ]
   },
   {
    "id": "motorcycle",
@@ -902,7 +1447,7 @@
    "group": "Commercial and vehicle classes",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 27,
    "parentId": null,
    "distinctions": [
@@ -910,7 +1455,21 @@
    ],
    "nextAction": "Create size-specific masters; do not scale full-size plates indiscriminately.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "motorcycle-1949",
+    "motorcycle-1973",
+    "motorcycle-1974",
+    "motorcycle-1974-prototype",
+    "motorcycle-1979",
+    "motorcycle-flag",
+    "motorcycle-2011",
+    "motorcycle-dealer-1968",
+    "motorcycle-dealer-1973",
+    "motorcycle-dealer-1976",
+    "motorcycle-dealer-1979",
+    "motorcycle-dealer-flag"
+   ]
   },
   {
    "id": "movie-props",
@@ -940,7 +1499,7 @@
    "group": "Municipal and local",
    "issueScope": "municipal",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 29,
    "parentId": null,
    "distinctions": [
@@ -950,6 +1509,72 @@
    "caution": null,
    "additionalSources": [
     "https://www.bcpl8s.ca/Municipal-City-Issues.htm"
+   ],
+   "formats": [
+    "municipal-prov-1963",
+    "municipal-prov-1979",
+    "municipal-prov-1983",
+    "municipal-exempt-1963",
+    "municipal-exempt-1964",
+    "municipal-exempt-1965",
+    "municipal-exempt-1966",
+    "municipal-exempt-1967",
+    "municipal-exempt-1968",
+    "municipal-exempt-1969",
+    "municipal-exempt-1970",
+    "municipal-exempt-1971",
+    "municipal-exempt-1972",
+    "municipal-exempt-1973",
+    "municipal-exempt-1974",
+    "municipal-city-agassiz",
+    "municipal-city-alberni",
+    "municipal-city-burnaby",
+    "municipal-city-chilliwack",
+    "municipal-city-coquitlam",
+    "municipal-city-delta",
+    "municipal-city-langley",
+    "municipal-city-maple-ridge",
+    "municipal-city-matsqui",
+    "municipal-city-mission",
+    "municipal-city-nanaimo",
+    "municipal-city-new-westminster",
+    "municipal-city-north-vancouver",
+    "municipal-city-port-alberni",
+    "municipal-city-port-coquitlam",
+    "municipal-city-port-moody",
+    "municipal-city-powell-river",
+    "municipal-city-prince-george",
+    "municipal-city-richmond",
+    "municipal-city-saanich",
+    "municipal-city-sumas",
+    "municipal-city-surrey",
+    "municipal-city-trail",
+    "municipal-city-victoria",
+    "municipal-city-west-vancouver",
+    "municipal-victoria-1913",
+    "municipal-tahsis-1966",
+    "municipal-vancouver-disc-1919",
+    "municipal-vancouver-disc-1931",
+    "municipal-vancouver-vehicle-1950",
+    "municipal-vancouver-vehicle-1962",
+    "municipal-vancouver-conveyance-1947",
+    "municipal-vancouver-conveyance-1958",
+    "municipal-vancouver-express-dray-1912",
+    "municipal-vancouver-express-dray-1934",
+    "municipal-vancouver-auto-taxi-1923",
+    "municipal-vancouver-taxi-1956",
+    "municipal-vancouver-taxi-1997",
+    "municipal-vancouver-for-hire-1949",
+    "municipal-vancouver-for-hire-1970",
+    "municipal-vancouver-for-hire-1995",
+    "municipal-vancouver-commercial-1972",
+    "municipal-vancouver-commercial-1982",
+    "municipal-vancouver-commercial-1993",
+    "municipal-vancouver-commercial-1994",
+    "municipal-vancouver-commercial-2004",
+    "municipal-vancouver-junk-1965",
+    "municipal-vancouver-junk-1989",
+    "municipal-vancouver-funeral-cab-1983"
    ]
   },
   {
@@ -959,7 +1584,7 @@
    "group": "Official and public service",
    "issueScope": "mixed-provincial-federal",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 30,
    "parentId": null,
    "distinctions": [
@@ -967,7 +1592,21 @@
    ],
    "nextAction": "Separate B.C. historical issues from Canada-wide military jurisdiction.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "official-defence-1941",
+    "official-defence-motorcycle",
+    "official-defence-1949",
+    "official-defence-1952",
+    "official-defence-1955",
+    "official-defence-1964",
+    "official-defence-1965",
+    "official-defence-1968",
+    "official-defence-canada",
+    "official-defence-pcmr",
+    "official-defence-esquimalt",
+    "official-defence-comox"
+   ]
   },
   {
    "id": "national-parks",
@@ -976,7 +1615,7 @@
    "group": "Related artefacts",
    "issueScope": "mixed-attribution-and-federal-access",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 31,
    "parentId": null,
    "distinctions": [
@@ -984,7 +1623,12 @@
    ],
    "nextAction": "Keep federal park-access artefacts separate from modern B.C. Parks plates.",
    "caution": "The early red-border plate attribution is an interpretation in the source, not a fully verified issue record.",
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "official-parks-1927",
+    "official-parks-1930",
+    "official-parks-1936"
+   ]
   },
   {
    "id": "off-road",
@@ -993,7 +1637,7 @@
    "group": "Commercial and vehicle classes",
    "issueScope": "registration-plate-and-sticker",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 32,
    "parentId": null,
    "distinctions": [
@@ -1001,7 +1645,10 @@
    ],
    "nextAction": "Build both formats with their own dimensions and typography.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "industrial-off-road"
+   ]
   },
   {
    "id": "olympics",
@@ -1010,7 +1657,7 @@
    "group": "Events and ceremonial",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 33,
    "parentId": null,
    "distinctions": [
@@ -1020,6 +1667,14 @@
    "caution": null,
    "additionalSources": [
     "https://www.bcpl8s.ca/Olympics-Gallery.htm"
+   ],
+   "formats": [
+    "olympic-passenger",
+    "olympic-truck",
+    "olympic-farm",
+    "olympic-trailer",
+    "olympic-motorcycle",
+    "olympic-utility"
    ]
   },
   {
@@ -1029,7 +1684,7 @@
    "group": "Commercial and vehicle classes",
    "issueScope": "supplementary-plate",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 34,
    "parentId": null,
    "distinctions": [
@@ -1037,7 +1692,10 @@
    ],
    "nextAction": "Keep distinct from motor-carrier classifications and from consumer Olympic plates.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "carrier-passenger-2005"
+   ]
   },
   {
    "id": "personalized",
@@ -1046,7 +1704,7 @@
    "group": "Optional and heritage",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 35,
    "parentId": null,
    "distinctions": [
@@ -1054,7 +1712,16 @@
    ],
    "nextAction": "Use its own grammar, centring rules and artwork placement.",
    "caution": "Promotional or sample examples are not proof of the ordinary issued serial rules.",
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "personalized-1979",
+    "personalized-astro",
+    "personalized-reversed",
+    "personalized-waldale",
+    "personalized-sample",
+    "personalized-motorcycle",
+    "personalized-motorcycle-prototype"
+   ]
   },
   {
    "id": "prototype",
@@ -1087,7 +1754,7 @@
    "group": "Commercial and vehicle classes",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 37,
    "parentId": null,
    "distinctions": [
@@ -1095,7 +1762,17 @@
    ],
    "nextAction": "Add base recipes plus versioned prorate serial patterns.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "carrier-prorate-1962",
+    "carrier-prorate-1964",
+    "carrier-prorate-1972",
+    "carrier-prorate-1979",
+    "carrier-prorate-1981",
+    "carrier-prorate-flag-1985",
+    "carrier-prorate-flag-1989",
+    "carrier-prorate-apportioned"
+   ]
   },
   {
    "id": "public-works",
@@ -1104,7 +1781,7 @@
    "group": "Official and public service",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 38,
    "parentId": null,
    "distinctions": [
@@ -1112,7 +1789,11 @@
    ],
    "nextAction": "Use documented specimens and retain unknown end dates as unknown.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "official-pw-1938",
+    "official-pw-1940"
+   ]
   },
   {
    "id": "reciprocity",
@@ -1121,7 +1802,7 @@
    "group": "Commercial and vehicle classes",
    "issueScope": "supplementary-plate-and-decal",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 39,
    "parentId": null,
    "distinctions": [
@@ -1129,7 +1810,12 @@
    ],
    "nextAction": "Keep uncertain early examples marked tentative.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "carrier-reciprocity-1963",
+    "carrier-reciprocity-1973",
+    "carrier-reciprocity-1980"
+   ]
   },
   {
    "id": "repairer",
@@ -1138,7 +1824,7 @@
    "group": "Commercial and vehicle classes",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 40,
    "parentId": null,
    "distinctions": [
@@ -1146,7 +1832,13 @@
    ],
    "nextAction": "Model legend text and location by period instead of merely changing serials.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "trade-repairer-1974",
+    "trade-repairer-1979",
+    "trade-repairer-flag",
+    "trade-repairer-flag-1995"
+   ]
   },
   {
    "id": "restricted",
@@ -1155,7 +1847,7 @@
    "group": "Commercial and vehicle classes",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 41,
    "parentId": null,
    "distinctions": [
@@ -1163,7 +1855,10 @@
    ],
    "nextAction": "Separate from industrial X-prefix and off-road registrations.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "industrial-restricted"
+   ]
   },
   {
    "id": "royal-visits",
@@ -1172,7 +1867,7 @@
    "group": "Events and ceremonial",
    "issueScope": "ceremonial-event",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 42,
    "parentId": null,
    "distinctions": [
@@ -1181,7 +1876,14 @@
    ],
    "nextAction": "Use event-specific components and avoid assuming one universal royal plate.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "events-royal-1951",
+    "events-royal-1987",
+    "events-royal-1994",
+    "events-royal-1994-prototype",
+    "events-royal-crown"
+   ]
   },
   {
    "id": "sample",
@@ -1218,7 +1920,7 @@
    "group": "Commercial and vehicle classes",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 44,
    "parentId": null,
    "distinctions": [
@@ -1226,7 +1928,13 @@
    ],
    "nextAction": "Represent GR, CL and SA as linked but distinct recipes.",
    "caution": "Some historical allocation ranges are explicitly estimates; recent sightings do not define a continuous issuance range.",
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "industrial-sa-1973",
+    "industrial-sa-1976",
+    "industrial-sa-1979",
+    "industrial-sa-flag"
+   ]
   },
   {
    "id": "temporary-permits",
@@ -1255,7 +1963,7 @@
    "group": "Commercial and vehicle classes",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 46,
    "parentId": null,
    "distinctions": [
@@ -1266,6 +1974,29 @@
    "additionalSources": [
     "https://www.bcpl8s.ca/Trailer-Utility.htm",
     "https://www.bcpl8s.ca/Trailer-Floater.htm"
+   ],
+   "formats": [
+    "trailer-1921",
+    "trailer-1927",
+    "trailer-1936",
+    "trailer-1949",
+    "trailer-comm-1972",
+    "trailer-comm-1973",
+    "trailer-comm-1976",
+    "trailer-comm-1979",
+    "trailer-comm-flag",
+    "trailer-comm-flag-dual",
+    "trailer-utility-1955",
+    "trailer-utility-1970",
+    "trailer-utility-1974",
+    "trailer-utility-1979",
+    "trailer-utility-flag",
+    "trailer-utility-flag-2000",
+    "trailer-utility-2016",
+    "trailer-floater-1974",
+    "trailer-floater-1979",
+    "trailer-floater-1983",
+    "trailer-floater-flag"
    ]
   },
   {
@@ -1275,7 +2006,7 @@
    "group": "Commercial and vehicle classes",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 47,
    "parentId": null,
    "distinctions": [
@@ -1283,7 +2014,12 @@
    ],
    "nextAction": "Build transporter-specific legends and grammar.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "trade-transporter-1964",
+    "trade-transporter-1979",
+    "trade-transporter-flag"
+   ]
   },
   {
    "id": "veteran",
@@ -1292,7 +2028,7 @@
    "group": "Optional and heritage",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 48,
    "parentId": null,
    "distinctions": [
@@ -1302,6 +2038,12 @@
    "caution": null,
    "additionalSources": [
     "https://www.bcpl8s.ca/Veteran-Gallery.html"
+   ],
+   "formats": [
+    "veteran-passenger",
+    "veteran-passenger-dual",
+    "veteran-truck",
+    "veteran-motorcycle"
    ]
   },
   {
@@ -1362,7 +2104,7 @@
    "group": "Municipal and local",
    "issueScope": "municipal",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": 52,
    "parentId": null,
    "distinctions": [
@@ -1374,6 +2116,48 @@
    "additionalSources": [
     "https://www.bcpl8s.ca/Bicycle-PrinceGeorge.html",
     "https://www.bcpl8s.ca/Bicycle-WilliamsLake.html"
+   ],
+   "formats": [
+    "bicycle-cranbrook",
+    "bicycle-esquimalt",
+    "bicycle-fernie-1949",
+    "bicycle-fernie",
+    "bicycle-kelowna-1964",
+    "bicycle-kelowna-1970",
+    "bicycle-nelson-1942",
+    "bicycle-nelson-1943",
+    "bicycle-nelson-1944",
+    "bicycle-nelson-1945",
+    "bicycle-nelson-1946",
+    "bicycle-nelson-1947",
+    "bicycle-nelson-1951",
+    "bicycle-nelson-1952",
+    "bicycle-nelson-hex-1956",
+    "bicycle-nelson-hex-1974",
+    "bicycle-oak-bay-1948",
+    "bicycle-oak-bay-hex",
+    "bicycle-oak-bay-shield",
+    "bicycle-penticton-1947",
+    "bicycle-penticton-1955",
+    "bicycle-penticton-1958",
+    "bicycle-port-coquitlam",
+    "bicycle-prince-george-1953",
+    "bicycle-prince-george-1958",
+    "bicycle-prince-george-1959",
+    "bicycle-trail-1935",
+    "bicycle-trail-oval",
+    "bicycle-trail-1955",
+    "bicycle-trail-1962",
+    "bicycle-trail-1967",
+    "bicycle-valemount",
+    "bicycle-vancouver-1904",
+    "bicycle-vancouver-1940s",
+    "bicycle-vancouver-courier-1989",
+    "bicycle-victoria-1946",
+    "bicycle-victoria-1952",
+    "bicycle-west-vancouver-licence",
+    "bicycle-west-vancouver-license",
+    "bicycle-williams-lake"
    ]
   },
   {
@@ -1466,7 +2250,7 @@
    "group": "Commercial and vehicle classes",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": null,
    "parentId": "farm-tractor",
    "distinctions": [
@@ -1474,7 +2258,17 @@
    ],
    "nextAction": "Create farm-truck base and serial recipes, separate from F farm tractors.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "farm-truck-1961",
+    "farm-truck-1974",
+    "farm-truck-1976",
+    "farm-truck-1979",
+    "farm-truck-flag",
+    "farm-truck-flag-dual",
+    "farm-truck-2025",
+    "olympic-farm"
+   ]
   },
   {
    "id": "dealer-motorcycle",
@@ -1483,7 +2277,7 @@
    "group": "Commercial and vehicle classes",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": null,
    "parentId": "dealer",
    "distinctions": [
@@ -1491,7 +2285,17 @@
    ],
    "nextAction": "Add a motorcycle-dealer layout and grammar.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "motorcycle-dealer-1968",
+    "motorcycle-dealer-1973",
+    "motorcycle-dealer-1976",
+    "motorcycle-dealer-1979",
+    "motorcycle-dealer-flag",
+    "trade-dealer-mc-1976",
+    "trade-dealer-mc-1979",
+    "trade-dealer-mc-flag"
+   ]
   },
   {
    "id": "utility-trailer",
@@ -1500,7 +2304,7 @@
    "group": "Commercial and vehicle classes",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": null,
    "parentId": "trailer",
    "distinctions": [
@@ -1508,7 +2312,17 @@
    ],
    "nextAction": "Build separately from commercial trailer.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "trailer-utility-1955",
+    "trailer-utility-1970",
+    "trailer-utility-1974",
+    "trailer-utility-1979",
+    "trailer-utility-flag",
+    "trailer-utility-flag-2000",
+    "trailer-utility-2016",
+    "olympic-utility"
+   ]
   },
   {
    "id": "trailer-floater",
@@ -1517,7 +2331,7 @@
    "group": "Commercial and vehicle classes",
    "issueScope": "provincial-road",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": null,
    "parentId": "trailer",
    "distinctions": [
@@ -1525,7 +2339,13 @@
    ],
    "nextAction": "Create its own recipe family.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "trailer-floater-1974",
+    "trailer-floater-1979",
+    "trailer-floater-1983",
+    "trailer-floater-flag"
+   ]
   },
   {
    "id": "temporary-number-plates",
@@ -1534,7 +2354,7 @@
    "group": "Renewals and permits",
    "issueScope": "paper-registration",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": null,
    "parentId": "temporary-permits",
    "distinctions": [
@@ -1542,7 +2362,10 @@
    ],
    "nextAction": "Keep separate from temporary operating permits and model historically, not as a current entitlement.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "carrier-temporary-x"
+   ]
   },
   {
    "id": "boosters",
@@ -1588,7 +2411,7 @@
    "group": "Non-issued and creative",
    "issueScope": "departmental-and-booster",
    "reviewDepth": "page-structure",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "not-a-plate",
    "homepageLinkId": null,
    "parentId": "miscellaneous",
    "distinctions": [
@@ -1622,7 +2445,7 @@
    "group": "Municipal and local",
    "issueScope": "municipal",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": null,
    "parentId": "bicycles",
    "distinctions": [
@@ -1630,7 +2453,12 @@
    ],
    "nextAction": "Catalogue pictured specimens without inventing dates or exact scale.",
    "caution": "Manufacturer attribution is marked estimated/unconfirmed in the source.",
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "bicycle-prince-george-1953",
+    "bicycle-prince-george-1958",
+    "bicycle-prince-george-1959"
+   ]
   },
   {
    "id": "bicycle-williams-lake",
@@ -1639,7 +2467,7 @@
    "group": "Municipal and local",
    "issueScope": "municipal",
    "reviewDepth": "family-page",
-   "implementationStatus": "missing-renderer",
+   "implementationStatus": "implemented",
    "homepageLinkId": null,
    "parentId": "bicycles",
    "distinctions": [
@@ -1647,7 +2475,10 @@
    ],
    "nextAction": "Reconstruct a documented specimen only after checking a usable reference.",
    "caution": null,
-   "additionalSources": []
+   "additionalSources": [],
+   "formats": [
+    "bicycle-williams-lake"
+   ]
   }
  ],
  "repositoryUpdates": [
@@ -1660,6 +2491,26 @@
    "id": "registered-coverage",
    "summary": "Documentation updated to describe all registered presets.",
    "resolves": "registered-coverage"
+  },
+  {
+   "id": "die-library",
+   "summary": "Source-matched die library (ACME, Hi-Signs, Astrographic, Waldale from digit comparisons; earlier dies from gallery photos) replaces the stretched stand-in font for serials and legends.",
+   "resolves": "live-text-proxy"
+  },
+  {
+   "id": "passenger-1904-2026",
+   "summary": "Passenger plates now span 1904–2026: owner-made, porcelain, tin, steel with tabs, 1924–39 annuals and the 1985 flag base in all serial generations.",
+   "resolves": "passenger"
+  },
+  {
+   "id": "decal-library",
+   "summary": "Renewal decals 1970–2023 with day stickers fill the decal boxes and wells.",
+   "resolves": "decals"
+  },
+  {
+   "id": "families",
+   "summary": "Specialty, consular, commercial, farm, trailer, motorcycle, trade, industrial, carrier, amateur radio, official, events, municipal and bicycle families, plus samples, prototypes and props with explicit status.",
+   "resolves": "all-families"
   }
  ]
 }
