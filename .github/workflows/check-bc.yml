@@ -1,0 +1,27 @@
+name: Check plate systems
+
+on:
+  pull_request:
+    paths:
+      - 'src/**'
+      - 'package*.json'
+      - 'tsconfig*.json'
+      - 'vite.config.*'
+      - '.github/workflows/check-bc.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  test-and-build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - run: npm run build

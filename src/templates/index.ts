@@ -1,4 +1,5 @@
 import { registerTemplate } from '../core/registry';
+import { bcTemplate } from './bc';
 import { cnTemplate } from './cn';
 import { euTemplate } from './eu';
 import { jpTemplate } from './jp';
@@ -8,3 +9,4 @@ registerTemplate(usTemplate);
 registerTemplate(euTemplate);
 registerTemplate(cnTemplate);
 registerTemplate(jpTemplate);
+registerTemplate(bcTemplate);

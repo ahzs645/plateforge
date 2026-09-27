@@ -38,6 +38,8 @@ export interface PlateFormat {
   id: string;
   label: string;
   description?: string;
+  /** Public historical/specification references; optional for existing formats. */
+  references?: readonly { title: string; url: string }[];
   /** Human readable shape, e.g. `AAA-9999`. */
   pattern?: string;
   fields: FieldDef[];
@@ -80,7 +82,7 @@ export interface FontAsset {
 export interface PlateTemplate<D extends Design = Design> {
   id: string;
   name: string;
-  size(design: D): { width: number; height: number };
+  size(design: D, parts?: Parts): { width: number; height: number };
   render(props: TemplateProps<D>): ReactElement;
   /** Fonts to inline when exporting SVG / PNG. */
   fonts?: FontAsset[];

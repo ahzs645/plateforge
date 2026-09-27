@@ -89,6 +89,11 @@ export function Inspector({ region, format, parts, onChange, onExport, onCopyLin
         {(format.description || region.notes) && (
           <p className="insp-note">{format.description ?? region.notes}</p>
         )}
+        {format.references?.map((source) => (
+          <p className="insp-note" key={source.url}>
+            <a href={source.url} target="_blank" rel="noreferrer">{source.title}</a>
+          </p>
+        ))}
       </section>
 
       <section className="insp-section export-section">
