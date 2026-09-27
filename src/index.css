@@ -1159,7 +1159,6 @@ kbd {
   padding: 0 4px;
 }
 .gallery-status {
-  position: absolute;
-  top: 18px;
-  right: 18px;
+  margin-right: 6px;
+  vertical-align: 1px;
 }

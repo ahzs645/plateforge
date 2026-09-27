@@ -51,6 +51,9 @@ try {
     assert(!await page.locator('.plate-preview').evaluate((element) => element.innerHTML.includes('NaN')));
   }
   assert(letteredPresets >= 42, `expected the 42 lettered presets, saw ${letteredPresets}`);
+  // Finish on a lettered preset so the export below carries the chosen lettering.
+  await page.locator('.timeline-node[title="1953"]').click();
+  await page.locator('#field-lettering').selectOption('squarish');
   const download = async (kind) => {
     const [file] = await Promise.all([
       page.waitForEvent('download'),

@@ -19,7 +19,7 @@ The September 27, 2026 metadata snapshot contains:
 | Image references | 16,474 unique URLs, occurring 17,385 times across the indexed pages. Counts include supporting documents, people, page decorations and other images as well as plates. They are not counts of unique plate designs or verified working images. |
 | Leeward article series | Ten browser-verified article links. The automated HTTP response did not establish usable article-series coverage, so it is explicitly marked partial rather than silently treated as a successful complete crawl. |
 | Leeward jurisdiction classifications | 70 dated records transcribed from the classification article: 51 U.S. entries including D.C., 13 Canadian provinces/territories, five other source jurisdictions, and one aggregate Mexico entry. The introduction dates the survey to February 2011. |
-| Editable B.C. generators | 42 presets: the original 25 plus 17 presets for 1964–1985 passenger bases and selected serial/manufacturing variants. |
+| Editable B.C. generators | 433 designs in 16 families; the original 1940–1985 passenger presets are described here, the rest in [bc-coverage.md](bc-coverage.md). |
 
 The committed `public/data/reference-library/coverage-report.json` preserves the exact missing URLs and import limitations. Neither this documentation nor the UI calls the whole task a complete archival reconstruction.
 

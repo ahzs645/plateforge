@@ -1,56 +1,58 @@
-# British Columbia: coverage gaps and lettering plan
+# British Columbia: coverage and plate kit
 
-This summarises a family-level audit of [BCpl8s](https://www.bcpl8s.ca/) against PlateForge, reviewed 2026-09-27 at commit `ffadf0e`. The machine-readable inventory is `public/data/reference-library/bc-coverage.json`, browsable in the app at `#/library/coverage`. It has 67 **research topics**. That is not 67 distinct plate designs, and not a verification of every photograph.
+PlateForge covers British Columbia with **433 editable designs in 16 families**, reconstructed from [BCpl8s](https://www.bcpl8s.ca/) research. Each family has its own timeline and gallery section. The in-app checklist at `#/library/coverage` maps all 67 BCpl8s topics to the formats that draw them. Its data file is `public/data/reference-library/bc-coverage.json`, and a test keeps it in step with the registry.
 
-## What exists
+| Family | Designs | Scope |
+|---|---|---|
+| Passenger | 81 | 1904 owner-made leather; 1913–14 porcelain; 1915–17 tin; 1918–23 steel with 1919/21/22 tabs and the 1919 cardboard temporary; 1924–39 annuals; 1940–1985 original presets; 1985 flag base through the 2025 A99-9AA series |
+| Commercial truck | 20 | 1924 T through the 2008 AA-9999 flag series |
+| Farm | 15 | Tractor F and truck A/G, 1948–2025 |
+| Trailers | 21 | Commercial, 5 × 8 in utility, floater |
+| Motorcycle | 12 | 1949 to the 2011 BC Mark base; motorcycle dealer |
+| Dealer & trade | 19 | Dealer (DEMONSTRATION), manufacturer, repairer, transporter |
+| Industrial | 21 | X/XH industrial, logging, restricted, off-road, Special Agreement |
+| Carrier | 29 | Motor and passenger carrier, motive fuel, prorate/APPORTIONED, reciprocity |
+| Specialty | 32 | BC Parks, 2010 Olympics (six classes), Veteran, Memorial Cross, Collector, Antique, Personalized |
+| Consular | 5 | CONSUL bases from 1967 and the 2007 red series |
+| Amateur radio | 13 | Annual 1963–69, decal bases, flag base |
+| Government & official | 27 | Public Works, doctors, government E, foreign touring, National Defence, National Parks, Lieutenant Governor, 1913 Victoria hired vehicles |
+| Events & ceremonial | 16 | Royal tours, 1994 Commonwealth Games, APEC 1997, Expo 86 |
+| Municipal | 64 | Province-issued MUNICIPAL/EXEMPT, city-issued plates for 26 municipalities, City of Vancouver categories |
+| Bicycle | 40 | 16 municipalities, including die-cut shields, hexagons and ovals |
+| Samples, prototypes & props | 18 | Official samples by era, souvenirs, paint tests, unissued designs, film props, a reproduction |
 
-| Area | Presets |
-|---|---|
-| 1940–1963 passenger | 24 annual presets + 1962 no-dash = 25 |
-| 1964–1985 passenger | 17: annual BEAUTIFUL plates, the 1967 and 1972 over-runs, 1970/1973 decal-base blocks, the 1978 ACME subset, and four blocks on the blue 1979 base |
-| Renewal pieces | 1951 strip, 1953/54 side tabs, loose/base-only/blank-base modes, W/Y over-run prefixes |
-| Non-passenger and specialty | None |
+Anything that is not an issued road plate carries an explicit **status** (sample, prototype, proposal, souvenir, prop, reproduction, uncertain). The editor, timeline and gallery show it as a badge.
 
-"Through 1985" means the blue 1979 base, which stayed in use while the 1985 flag base was delayed. It does not include the flag design.
+## Not rendered
 
-Fixed since the audit: the **1985 fourth block** (`1985-fourth`, ALA–AXK then BLA–BRB, Hi-Signs) is now a preset. The documentation now describes all registered presets. The manifest records both changes under `repositoryUpdates`, and a unit test checks that its preset list matches the registry.
+These items stay in the checklist only, because they are not plates:
 
-## What is missing
+- chauffeur badges, keytags and radiator badges
+- toppers and boosters with no serial
+- driver's licences, paper permits and certificates
+- stand-alone decals and stickers
+- VIN-program boards
+- fire-department boosters
 
-**Passenger periods.** The 1904–1939 chapters and everything from the 1985 flag base onward (1985–2001, 2001–2014, 2014–2025, 2025 configurations) have no preset yet. `BC_GAPS` in `src/regions/canada/index.ts` lists these. The timeline and gallery show them as dashed placeholders, so the history has no silent holes.
+Each family module lists smaller omitted variants in its format descriptions. Examples are designs known only from a mention, not a photo, and a few one-off errors.
 
-**Smaller gaps inside built periods.**
-- 1972 dashless and re-struck production variants.
-- Real ACME glyphs for the 1978 subset. The serial block exists; the die does not.
-- A dated decal library. Renewal boxes on later bases are currently blank.
-- Suffix over-runs on the 1952 base.
+## How it is built
 
-**Other families.** 60 families have no renderer. They keep their subtypes rather than collapsing into a single "design":
-- BC Parks: three separate artwork masters.
-- Olympics: six vehicle classes.
-- Veteran, Collector and Antique: passenger, motorcycle and floater layouts.
-- Consular: CONSUL bases and the red DL/CC/HC/CS/SR series.
-- Also Memorial Cross, Personalized, commercial, farm, trailers, motorcycles, dealer and industrial classes, carrier/tax, official, ceremonial and municipal plates.
+- **Plate kit** (`src/templates/bc/kit.ts`): one data-driven scene builder. A recipe gives the shell, holes, rim, artwork, drawn shapes, riveted tab panels, die legends, typeface legends, the serial (die, separator or artwork separator, leading bar) and renewal wells. All units are millimetres.
+- **Formats** (`src/regions/canada/bc-kit.ts`): `kitFormat` pairs a recipe with a serial grammar (pattern blocks, numeric ranges, or no number), die choices, annual palettes (colours plus `{yy}`, `{yyyy}`, `{y1}`, `{y2}` year tokens) and dated decals.
+- **Dies** (`src/templates/dies/`): see [bc-dies.md](bc-dies.md).
+- **Decals** (`src/regions/canada/bc-decals.ts`, `src/templates/bc/decal.ts`): renewal decals for 1970–2023 in four era layouts, with day stickers from 1993. There were no decals in 1973 or 1979, and the wells end after SF9-99X (2022).
+- **Artwork** (`src/templates/bc/art*.ts`): simplified flat vectors registered by id. Examples are the flag, monogram, coat of arms, Parks scenes, the Olympic emblem, war memorial figures, crests and event logos.
+- **Families** (`src/regions/canada/bc-*.ts`): one module per group. Each exports its families, eras and formats, and has a test that accepts the photographed serials and renders every palette and die option.
 
-Samples, prototypes, movie props, boosters, reproductions and accessories are **not** issued plates. They need an explicit status and should not calibrate historical dies.
+## Accuracy
 
-ICBC's 9 June 2025 bulletin announced new six-character serial arrangements; examples are listed in the app. Keep artwork version, serial-pattern version and die version independent. A new serial pattern is not a new plate design.
+These are research reconstructions:
 
-## Why the lettering looks wrong, and the plan
+- Colours are read from aged photographs.
+- Sizes are documented where BCpl8s gives them. Otherwise they are estimated, and each description says so.
+- Artwork is simplified.
+- Dies are reconstructions, not recovered tooling.
+- Serial validation checks documented formats and ranges, not real registrations.
 
-- **Default text is a proxy.** Barlow Condensed / Arial Narrow is fitted with `textLength` and `lengthAdjust="spacingAndGlyphs"`, which stretches or squeezes glyphs to fit a box.
-- **The procedural "construction types" are generic.** They use one advance width, one gap and one stroke weight. They are category illustrations, not recovered dies.
-- **Only the serial changes.** The province name, dates, slogans and renewal inscriptions stay in the proxy typeface.
-
-The fix is a **source-backed die library**, not a better substitute font. Each profile would hold reusable glyph outlines with their own advances, side bearings and baseline. There would be separate profiles for serials, province legends, dates, slogans, class prefixes and tab numbers. The serial stays an editable string; the renderer places glyphs from the profile. Where a run does not fit, use a documented narrow die or flag the plate as an approximation, instead of silently stretching it.
-
-Proposed profiles (none drawn yet): early rounded 1940–54, Oakalla block-era, ACME 1978, ACME 1979-base, Hi-Signs "Nova Scotia" dies, four Astrographic forms (male/female, neoprene-top, non-passenger, classic), Waldale, and small-format (motorcycle and similar). BCpl8s has digit-by-digit die comparisons (0–9) for ACME, Hi-Signs and Astrographic, which are the best starting specimens.
-
-Glyph workflow:
-1. Pick several straight-on, unrepainted originals per die. Record serial, year, maker and URL.
-2. Keep pixel measurements separate from millimetres.
-3. Redraw outlines with editable curves, starting with the digits.
-4. Compare glyph by glyph, then as whole runs.
-5. Check against a held-out specimen before marking a profile reviewed.
-
-Source photographs remain on BCpl8s. They are references and are not copied into this repository.
+Source photographs remain on BCpl8s and are not copied into this repository.
