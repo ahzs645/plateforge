@@ -8,6 +8,7 @@
  */
 import { node as n, type SvgNode } from '../svg-scene';
 import { registerArtwork } from './art';
+import { PROTOTYPE_CAR, PROTOTYPE_CAR_BOX, VINTAGE_CAR, VINTAGE_CAR_BOX, type CarElement } from './vintage-cars';
 
 type Pt = readonly [number, number];
 const poly = (pts: readonly Pt[], fill: string, extra: Record<string, string | number> = {}) =>
@@ -191,31 +192,15 @@ function memorialCross(): SvgNode[] {
 function tilde(): SvgNode[] {
   return [n('path', { d: 'M1.5 5.2 C4 1.4 7.5 1.6 10 4 S16 6.6 18.5 2.8', fill: 'none', stroke: 'currentColor', strokeWidth: 1.9, strokeLinecap: 'round' })];
 }
-/** Early open touring car in side view (VINTAGE plates), facing right, 140 × 90, currentColor on the plate colour. */
-function touringCar(): SvgNode[] {
-  const wheel = (cx: number) => [
-    n('circle', { cx, cy: 72, r: 16.5, fill: 'currentColor' }),
-    n('circle', { cx, cy: 72, r: 12, fill: 'none', stroke: '#ffffff', strokeWidth: 1.6 }),
-    ...[0, 30, 60, 90, 120, 150].map((deg) => { const a = (deg * Math.PI) / 180; return n('path', { d: `M${(cx - Math.cos(a) * 11).toFixed(2)} ${(72 - Math.sin(a) * 11).toFixed(2)} L${(cx + Math.cos(a) * 11).toFixed(2)} ${(72 + Math.sin(a) * 11).toFixed(2)}`, stroke: '#ffffff', strokeWidth: 1.1 }); }),
-    n('circle', { cx, cy: 72, r: 2.6, fill: '#ffffff' }),
-  ];
-  return [
-    // Canopy on four posts.
-    n('path', { d: 'M6 6 H104 Q108 6 108 10 H4 Q4 6 6 6 Z', fill: 'currentColor' }),
-    ...[8, 50, 100].map((x) => rect(x, 8, 2.4, 36, 'currentColor')),
-    // Tonneau body, seats, driver and bonnet.
-    n('path', { d: 'M4 60 V36 Q4 30 12 30 H26 Q30 30 30 36 V42 H62 V34 Q62 28 70 28 H78 V46 H104 L128 44 Q134 44 134 50 V62 H4 Z', fill: 'currentColor' }),
-    n('circle', { cx: 86, cy: 22, r: 4.4, fill: 'currentColor' }),
-    n('path', { d: 'M81 26 H91 L94 44 H80 Z', fill: 'currentColor' }),
-    n('path', { d: 'M92 30 L102 38', stroke: 'currentColor', strokeWidth: 2.2 }),
-    rect(40, 22, 7, 20, 'currentColor'), n('circle', { cx: 43.5, cy: 18, r: 4, fill: 'currentColor' }),
-    // Fenders and running board.
-    n('path', { d: 'M10 64 Q30 46 50 64 Z M92 64 Q112 46 132 64 Z', fill: 'currentColor' }),
-    rect(46, 62, 50, 3, 'currentColor'),
-    ...wheel(30), ...wheel(112),
-    // Radiator and lamp.
-    rect(132, 40, 5, 22, 'currentColor'), n('circle', { cx: 128, cy: 38, r: 3, fill: 'currentColor' }),
-  ];
+/** VINTAGE plate touring car (flat silhouette, facing right) in currentColor; the hub style changed between 1961 and 2500. */
+function vintageCar(hubs: keyof typeof VINTAGE_CAR): () => SvgNode[] {
+  const [x, y] = VINTAGE_CAR_BOX;
+  return () => [n('g', { transform: `translate(${-x} ${-y})`, fill: 'currentColor', fillRule: 'evenodd' }, ...VINTAGE_CAR[hubs].map((d) => n('path', { d })))];
+}
+/** The detailed three-quarter touring car of the Prototype 91 plate. */
+function prototypeCar(): SvgNode[] {
+  const build = ([tag, attrs, kids = []]: CarElement): SvgNode => n(tag, attrs, ...kids.map(build));
+  return PROTOTYPE_CAR.map(build);
 }
 /** Pacific dogwood outline (personalized plates' ocean band), 20 × 20, white. */
 function dogwood(): SvgNode[] {
@@ -250,7 +235,9 @@ registerArtwork('bc-poppy', { viewBox: [20, 20], draw: poppy });
 registerArtwork('canada-flag', { viewBox: [40, 20], draw: canadaFlag });
 registerArtwork('bc-memorial-cross', { viewBox: [60, 80], draw: memorialCross });
 registerArtwork('bc-collector-tilde', { viewBox: [20, 8], draw: tilde, aspect: 'stretch' });
-registerArtwork('bc-touring-car', { viewBox: [140, 90], draw: touringCar });
+registerArtwork('bc-vintage-car-solid-hubs', { viewBox: [VINTAGE_CAR_BOX[2], VINTAGE_CAR_BOX[3]], draw: vintageCar('solidHubs') });
+registerArtwork('bc-vintage-car-open-hubs', { viewBox: [VINTAGE_CAR_BOX[2], VINTAGE_CAR_BOX[3]], draw: vintageCar('openHubs') });
+registerArtwork('bc-vintage-car-prototype', { viewBox: [PROTOTYPE_CAR_BOX[2], PROTOTYPE_CAR_BOX[3]], draw: prototypeCar });
 registerArtwork('bc-dogwood', { viewBox: [20, 20], draw: dogwood });
 /** Personalized graphic colourways: plate maker eras and the black-printed SAMPLE. */
 export const PERSONALIZED_GRAPHICS = {

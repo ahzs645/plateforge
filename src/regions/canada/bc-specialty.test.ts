@@ -28,7 +28,7 @@ describe('B.C. specialty and consular plates', () => {
       'memorial-passenger': ['MC112R'], 'memorial-truck': ['MC1000'], 'memorial-keepsake': ['MC000R'],
       'collector-passenger': ['B00-195', 'B55-228'], 'collector-passenger-dual': ['B31-865', '0M1-138'], 'collector-multi': ['B6-0565'],
       'collector-motorcycle': ['B8-0764', '0P-1186'], 'collector-motorcycle-multi': ['B7-5024'],
-      'antique-1966': ['524', '88', '7'], 'antique-1975': ['1036', '9535'], 'antique-motorcycle': ['BC 5', 'BC 136', 'BC 630'],
+      'antique-1966': ['524', '88', '7'], 'antique-1975': ['1036', '1961'], 'antique-1975-open-hubs': ['3112', '9535'], 'antique-prototype-91': ['91'], 'antique-motorcycle': ['BC 5', 'BC 136', 'BC 630'],
       'personalized-waldale': ['BCPL8S', 'OL-PAPA', 'ALL4ME'], 'personalized-sample': ['SAMPLE'], 'personalized-motorcycle-prototype': ['123678'],
       'consular-1967': ['554', '622'], 'consular-1973': ['252', '500'], 'consular-1979': ['004', '851'], 'consular-flag': ['178', 'A02', 'D17'],
       'consular-red': ['DL-000A', 'CS-008A', 'SR-001A'],

@@ -299,10 +299,12 @@ const collector: PlateFormat[] = [
 
 // ── Antique (1966–): VINTAGE, embossed touring car, permanent plate ──
 const ANT_NOTE = `Antique reconstruction: the embossed touring car is a flat silhouette; legend and serial dies are stand-ins from the passenger dies of the period. ${ART_NOTE}`;
-function antiqueRecipe(id: string, label: string, serial: KitSerial): KitRecipe {
+/** Hub style of the car: solid hubs on the 1966 plates and four-digit plates to at least 1961 (photographed),
+ * open hubs from at least 3112; BCpl8s places the change between 1500 and 2500. */
+function antiqueRecipe(id: string, label: string, serial: KitSerial, hubs: 'solid' | 'open'): KitRecipe {
   return plate(id, label, FULL, SRC.antique, ANT_NOTE, {
     background: '#f2f2ee', ink: '#111111', radius: 5, rim: { inset: 3, width: 1.6 }, holeAt: { x: [0.24, 0.76], y: [0.06] },
-    art: [{ art: 'bc-touring-car', x: 14, y: 33, width: 130, height: 84, color: '#111111', role: 'touring-car' }],
+    art: [{ art: `bc-vintage-car-${hubs}-hubs`, x: 12, y: 36, width: 132, height: 80, color: '#111111', role: 'touring-car' }],
     legends: [die('VINTAGE', 141, 27, 12, 'bc-legend-1964', 'legend-top', { maxWidth: 100, spread: true }),
       die('BRITISH COLUMBIA', 150, 134, 12, 'bc-legend-1964', 'legend-bottom', { maxWidth: 222, spread: true })],
     serial,
@@ -312,15 +314,33 @@ const ANT_DESC = 'Permanent (non-revalidated) plates for antique vehicles: VINTA
 const antique: PlateFormat[] = [
   kitFormat({
     id: 'antique-1966', label: 'Antique · VINTAGE (1–999)', family: 'specialty', period: [1966, 1974], era: 'specialty-antique',
-    recipe: antiqueRecipe('antique-1966', 'Antique · VINTAGE · one to three digits', { x: 217, baseline: 109, cap: 70, maxWidth: 118, die: 'bc-oakalla-1955' }),
+    recipe: antiqueRecipe('antique-1966', 'Antique · VINTAGE · one to three digits', { x: 217, baseline: 109, cap: 70, maxWidth: 118, die: 'bc-oakalla-1955' }, 'solid'),
     grammar: numericGrammar([[1, 99], [101, 999]], false),
     description: `${ANT_DESC} Numbers 101 upward from 1966, then single- and double-digit numbers in 1972–74; the three-digit plates use noticeably larger dies than the later four-digit ones.`,
   }),
   kitFormat({
-    id: 'antique-1975', label: 'Antique · VINTAGE (four digits)', family: 'specialty', period: [1975, 2026], era: 'specialty-antique',
-    recipe: antiqueRecipe('antique-1975', 'Antique · VINTAGE · four digits', { x: 213, baseline: 105, cap: 56, maxWidth: 116, die: 'bc-oakalla-1973' }),
-    grammar: numericGrammar([[1000, 9999]], false),
-    description: `${ANT_DESC} Four-digit plates from 1975 (e.g. 1036, 3112, 9535). Somewhere between 1500 and 2500 the car was drawn with different wheel rims; that change is not reproduced.`,
+    id: 'antique-1975', label: 'Antique · VINTAGE (four digits · solid hubs)', family: 'specialty', period: [1975, 1980], era: 'specialty-antique',
+    recipe: antiqueRecipe('antique-1975', 'Antique · VINTAGE · four digits · solid hubs', { x: 213, baseline: 105, cap: 56, maxWidth: 116, die: 'bc-oakalla-1973' }, 'solid'),
+    grammar: numericGrammar([[1000, 2500]], false),
+    description: `${ANT_DESC} Four-digit plates from 1975 (1036, 1111, 1236, 1633 and 1961 photographed) with the original car: thin spokes meeting a solid hub. BCpl8s places the rim change between 1500 and 2500; 1961 still has the solid hubs, so this format accepts up to 2500. The end year is approximate.`,
+  }),
+  kitFormat({
+    id: 'antique-1975-open-hubs', label: 'Antique · VINTAGE (four digits · open hubs)', family: 'specialty', period: [1980, 2026], era: 'specialty-antique',
+    recipe: antiqueRecipe('antique-1975-open-hubs', 'Antique · VINTAGE · four digits · open hubs', { x: 213, baseline: 105, cap: 56, maxWidth: 116, die: 'bc-oakalla-1973' }, 'open'),
+    grammar: numericGrammar([[1962, 9999]], false),
+    description: `${ANT_DESC} Later four-digit plates (3112, 3902, 6072 and 9535 photographed) with the car’s different rims: wider openings round an open hub. The change fell between 1961 and 2500, so this format accepts 1962 upward. The start year is approximate.`,
+  }),
+  kitFormat({
+    id: 'antique-prototype-91', label: 'Antique · VINTAGE prototype 91', family: 'specialty', period: [1966, 1966], era: 'specialty-antique', status: 'prototype',
+    recipe: plate('antique-prototype-91', 'Antique · VINTAGE prototype 91', FULL, SRC.antique, `Prototype reconstruction from the BCpl8s photograph: the detailed touring car is a vector redraw and the serif lettering uses a system serif. ${ART_NOTE}`, {
+      background: '#f4f4f2', ink: '#111111', radius: 7, rim: { inset: 4.5, width: 2 }, holeAt: { x: [0.23, 0.775], y: [0.12, 0.88] },
+      art: [{ art: 'bc-vintage-car-prototype', x: 14.6, y: 35.9, width: 102.6, height: 68.4, color: '#111111', role: 'touring-car' }],
+      fontLegends: [serif('VINTAGE', 151, 38.5, 20, '#111111', 'legend-top'),
+        serif('British Columbia', 151, 124.5, 23, '#111111', 'legend-bottom')],
+      serial: { x: 190, baseline: 93, cap: 41, maxWidth: 70, die: 'bc-oakalla-1955', font: { family: 'serif', weight: 400 } },
+    }),
+    grammar: { hint: '91 (the prototype’s number)', blocks: blocks('91') },
+    description: 'A prototype of the VINTAGE plate with a detailed three-quarter drawing of an early touring car (canopy, buttoned seats, spoked wheels) in place of the flat silhouette, serif VINTAGE above and “British Columbia” in serif capitals and lower case below, and a serif number 91 at right. Undated on BCpl8s; the design year is set to the program’s start.',
   }),
   kitFormat({
     id: 'antique-motorcycle', label: 'Antique · VINTAGE MOTORCYCLE', family: 'specialty', period: [1966, 2026], era: 'specialty-antique',

@@ -20,7 +20,7 @@
   "earlyPresets": 25,
   "laterPresets": 17,
   "countsUnit": "Inventory topics and presets, NOT distinct historical plate designs",
-  "registeredPresets": 433
+  "registeredPresets": 435
  },
  "registeredPresets": {
   "passenger": [
@@ -302,6 +302,8 @@
    "collector-motorcycle-multi",
    "antique-1966",
    "antique-1975",
+   "antique-1975-open-hubs",
+   "antique-prototype-91",
    "antique-motorcycle",
    "personalized-1979",
    "personalized-astro",
@@ -837,6 +839,8 @@
    "formats": [
     "antique-1966",
     "antique-1975",
+    "antique-1975-open-hubs",
+    "antique-prototype-91",
     "antique-motorcycle"
    ]
   },
