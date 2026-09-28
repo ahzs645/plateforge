@@ -1,5 +1,6 @@
 import { registerTemplate } from '../core/registry';
 import { bcTemplate } from './bc';
+import { caTemplate } from './ca';
 import { cnTemplate } from './cn';
 import { crTemplate } from './cr';
 import { euTemplate } from './eu';
@@ -15,6 +16,7 @@ registerTemplate(euTemplate);
 registerTemplate(cnTemplate);
 registerTemplate(jpTemplate);
 registerTemplate(bcTemplate);
+registerTemplate(caTemplate);
 registerTemplate(iqTemplate);
 registerTemplate(irTemplate);
 registerTemplate(krTemplate);

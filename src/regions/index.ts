@@ -8,9 +8,10 @@ import { japan } from './asia/japan';
 import { korea } from './asia/korea';
 import { vietnam } from './asia/vietnam';
 import { britishColumbia } from './canada';
+import { canadianProvinces } from './canada/provinces';
 import { europeRegions } from './europe';
 import { usRegions } from './us';
 
-export const BUILT_IN_REGIONS = [...usRegions.map((region) => ({ ...region, formats: region.formats.map(withLettering) })), ...europeRegions, china, japan, britishColumbia, iraq, iran, korea, vietnam, costaRica];
+export const BUILT_IN_REGIONS = [...usRegions.map((region) => ({ ...region, formats: region.formats.map(withLettering) })), ...europeRegions, china, japan, britishColumbia, ...canadianProvinces, iraq, iran, korea, vietnam, costaRica];
 
 registerRegion(...BUILT_IN_REGIONS);
