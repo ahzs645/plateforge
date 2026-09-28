@@ -1,6 +1,6 @@
 # PlateForge
 
-A Vite 8 + React 19 + TypeScript app that generates license plate serials **and** renders them as plates. Editable regions cover all 50 US states and DC, 17 European countries, China, Japan, and historical British Columbia passenger bases.
+A Vite 8 + React 19 + TypeScript app that generates license plate serials **and** renders them as plates. Editable regions cover all 50 US states, DC and Puerto Rico, all 13 Canadian provinces and territories (British Columbia in historical depth), 18 European countries, China, Japan, South Korea, Vietnam, Iraq, Iran, Costa Rica, and the Mercosur countries Brazil, Argentina, Uruguay and Paraguay.
 
 **Single**, **Gallery**, **Batch**, and **Library** are modes of the same application. The reference library is broader than the editable renderer collection: a source photograph is not a finished SVG reconstruction.
 
@@ -16,10 +16,18 @@ npm run build
 - Choose a region with the picker (`⌘K` or `/`). The picker is organised continent → country → state/province, with a country filter row; select a format, then press **Generate** (`Space` or `R`). Editable fields validate supported serial formats, not actual registrations.
 - Desktop inspector, mobile region sheet and action bar; light, dark or system theme.
 - Copy serial text or export PNG (4×) and SVG. Default serials remain live font text; optional procedural lettering exports the serial as paths with text/provenance metadata.
+- **Save for Tesla** exports a 400×200 PNG (400×100 for plates 3:1 or wider), fitted with transparent padding. Copy it to a `LicensePlate` folder on the car's USB drive.
 - **Families and timelines**: regions can group formats into families (B.C. has 16). Each family's dated formats form a filmstrip grouped into eras; step through with `←`/`→`.
 - **Gallery** (`#/gallery/<region>`): every design for the current country as thumbnails, laid out era-by-era when a timeline exists; switch to the whole continent to see countries side by side.
 - Seeded batches for one format, a country, a continent or all regions; CSV and JSON export.
 - British Columbia: **433 designs in 16 families**, 1904–2026: passenger (1904 leather to the 2025 flag base), commercial, farm, trailer, motorcycle, trade, industrial, carrier, specialty (BC Parks, Olympics, Veteran…), consular, amateur radio, official, events, municipal and bicycle plates, plus samples, prototypes and props with an explicit status. Lettering uses **source-matched die profiles** instead of a stretched font; renewal decals 1970–2023 fill the decal wells. See [B.C. coverage and plate kit](docs/bc-coverage.md) and [B.C. die library](docs/bc-dies.md).
+- Canada beyond B.C. (`#/ca-ab` … `#/ca-nu`): current passenger plates for the other 12 jurisdictions, including Alberta Moraine Lake (2026), Ontario green-vehicle and French plates, Québec electric and earlier series, and the NWT/Nunavut polar-bear plates. The `ca` template draws its own emblems and prints them between serial groups where the real plate does.
+- U.S. template: top/bottom bands, drawn scenes, an EV marker and state-outline separators (Nevada, New York). Dated variants for California (1956, 1963, 1970, Legacy), Arizona alternative fuel, Illinois EV, New York (2001, 2010, Excelsior) and Pennsylvania (visitPA, Liberty Bell); Puerto Rico added.
+- China follows GA 36-2018 geometry: blue, yellow front and two-row rear, trailer 挂, driving school 学, Hong Kong/Macau, small and large new-energy, police 警, embassy 使 and consulate 领. Military plates are not modelled.
+- Czech Republic: region-letter select, lettered series, EL and historic plates, personalised plates (8/7/5 characters with forbidden-letter and reserved-word checks), and the ministry's plate sizes: 520×110, 340×200, 280×200, 320×160, motorcycle 200×160 and moped 80×110. The EU template gained these sizes, two-row layouts and Czech sticker marks. Finland accepts 2–3 letters and 1–3 digits, plus personalised plates.
+- South Korea (7- and 8-character, 2020 reflective with KOR band, electric, rental, corporate, yellow commercial one- and two-row) and Vietnam (long and two-row cars, yellow commercial, blue state, motorcycles; local codes annotated for the 2025 province merger). Hangul uses system fonts.
+- Costa Rica: the 2013 Registro Nacional series (private, electric, motorcycle, disabled, cargo, taxi and bus province codes, official and diplomatic) and the earlier embossed plate.
+- South America (Mercosur): Brazil (CONTRAN 780/2019 use classes, the 2018 state/city marks, motorcycle, and the grey 1990–2020 series), Argentina (Mercosur and the 1995 black plate), Uruguay (department letters, special codes) and Paraguay, drawn by a shared `mercosur` template in millimetres. Venezuela never issued Mercosur plates and Bolivia's are international-transport only, so neither is included.
 - B.C. and U.S. serial-lettering choices: default text, semicircular/DIN-style, squarish, oval, and hybrid. These are category-inspired illustrations, not imported official die fonts. Appearance choices persist through Generate.
 - **B.C. coverage** (`#/library/coverage`): the 67 BCpl8s topics, each linked to the formats that draw it, with ICBC's announced 2025 serial configurations.
 - **Library** (`#/library`): searchable source collections, page-period filters, paginated image references, source credits and links into available editors. Remote photo previews are off until enabled, and are loaded one visible page at a time.
@@ -28,7 +36,7 @@ npm run build
 
 ## Reference scope
 
-The committed reference snapshot contains 320 parsed BCpl8s pages, including all 20 linked passenger-history chapters, plus ten browser-verified Leeward article-link records. There are 16,474 unique image URLs, not 16,474 distinct plate designs. Supporting documents, people and decorations also occur in source pages.
+The committed reference snapshot contains 320 parsed BCpl8s pages, including all 20 linked passenger-history chapters, plus ten browser-verified Leeward article-link records and 94 link-only [Not a Tesla App](https://www.notateslaapp.com/tesla-customizations/license-plates/) visualisation pages (no artwork imported; regenerate with `python3 scripts/prepare_reference_library.py`, which reads `scripts/data/notateslaapp-catalog.tsv`). There are 16,474 unique image URLs, not 16,474 distinct plate designs. Supporting documents, people and decorations also occur in source pages.
 
 Thirty discovered B.C. URLs returned 404. The automated Leeward response did not establish usable series coverage; its article records are therefore link-only rather than falsely reported as a full crawl. External archives, unlinked pages, PDF contents and most individual plate reconstructions are outside the verified import. Exact gaps are retained in `public/data/reference-library/coverage-report.json` and displayed in the UI.
 
@@ -92,6 +100,8 @@ Keep source dates, base years, renewal mechanisms and reconstruction status sepa
 ## Provenance
 
 Inspired by and partly ported from `license-plate-serial-generator` (U.S. ranges), `license-plate-generator` (European layout/fonts), `china-license-plate-generator`, `japanLicensePlate_Generator`, and the EU-band idea in `react-license-plate`.
+
+The 2026 coverage expansion used other generators only as a source of facts (sizes, box positions, colours, class lists): `Pengfei8324/chinese_license_plate_generator`, `yakhyo/korean-license-plate-generator`, `NNDam/Vietnamese-License-Plate-Generator`, `apereiracvo/cr-plates-generator`, `vinihcampos/plates-generator` (Mercosur), `barzansaeedpour/iranian-license-plate-generator`, the konfiguratorspz.cz configurator and notateslaapp.com. No code, template images, glyph bitmaps or fonts were copied from them; plates are drawn from our own SVG geometry and checked against the cited primary or secondary sources. Formats that could not be confirmed carry an **Uncertain** badge.
 
 B.C. research uses [BCpl8s](https://www.bcpl8s.ca/). Lettering categories and the dated survey use [Leeward Productions](https://www.leewardpro.com/articles/licplatefonts/licplate-fonts-nam-class.html). Source photographs, article bodies and new font binaries are not mirrored by the reference import. Their rights remain with their creators and credited contributors.
 
