@@ -6,6 +6,8 @@
  */
 import type { Parts } from '../../core/types';
 import { node as n, type SvgNode } from '../svg-scene';
+import { buildLeatherScene } from './leather-scene';
+import { leatherGeometry } from './leather-specimens';
 import { buildDieText, dieRunWidth, dieSupports, type DieRun } from '../dies/engine';
 import { dieProfile } from '../dies/profiles';
 import { artwork } from './art';
@@ -78,6 +80,8 @@ export interface KitPanel {
 }
 
 export interface KitRecipe {
+  /** Pre-provincial specimen renderer. Its coordinates are image-relative, not measured mm. */
+  leatherSpecimen?: string;
   id: string;
   label: string;
   /** Physical size, mm. */
@@ -110,6 +114,7 @@ export interface KitRecipe {
 
 
 export function kitGeometry(recipe: KitRecipe) {
+  if (recipe.leatherSpecimen || recipe.id === 'early-1904') return leatherGeometry(recipe.leatherSpecimen ?? '1143');
   return { width: recipe.width, height: recipe.height };
 }
 
@@ -187,6 +192,9 @@ export interface KitSceneOptions {
 }
 
 export function buildKitScene(recipe: KitRecipe, parts: Parts, options: KitSceneOptions = {}): SvgNode {
+  if (recipe.leatherSpecimen || recipe.id === 'early-1904') return buildLeatherScene(parts, {
+    ...options, specimen: recipe.leatherSpecimen ?? '1143',
+  });
   const w = recipe.width, h = recipe.height;
   const id = (options.scope ?? `kit-${recipe.id}`).replace(/[^a-zA-Z0-9_-]/g, '') || 'kit';
   const ink = options.ink ?? recipe.ink, bg = options.background ?? recipe.background;

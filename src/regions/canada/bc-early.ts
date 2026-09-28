@@ -8,6 +8,7 @@
 import type { PlateFormat } from '../../core/types';
 import type { KitPanel, KitRecipe, KitShape, KitText } from '../../templates/bc/kit';
 import { kitFormat, numericGrammar, type SerialGrammar } from './bc-kit';
+import { bcLeatherFormats } from './bc-leather';
 
 const chapter = (period: string) => ({ title: `BCpl8s · Passenger ${period.replace('-', '–')}`, url: `https://www.bcpl8s.ca/Passenger-${period}.html` });
 const NOTE = 'Early-plate reconstruction from BCpl8s photographs: layout proportions and colours are approximate, and the numerals are die reconstructions read from gallery photos. Validation checks the documented number range, not a real registration.';
@@ -240,4 +241,4 @@ const specs: EarlySpec[] = [
 export const bcEarlyFormats: PlateFormat[] = specs.map((s) => kitFormat({
   id: s.id, label: s.label, family: 'passenger', period: s.period, era: s.period[0] < 1913 ? 'owner-1904' : s.period[0] < 1918 ? 'enamel-1913' : s.period[0] < 1924 ? 'steel-1918' : 'annual-1924',
   ...(s.status ? { status: s.status } : {}), recipe: s.recipe, grammar: s.grammar, description: s.description,
-}));
+})).flatMap((format) => format.id === '1904-leather' ? bcLeatherFormats : [format]);
