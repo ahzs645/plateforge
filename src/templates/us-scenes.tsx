@@ -119,7 +119,7 @@ export const SCENES: Record<UsSceneId, UsScene> = {
   // A garita (sentry box) on a stretch of wall, in outline.
   'pr-garita': {
     under: () => (
-      <g transform="translate(36 22) scale(0.88)" fill="#f3e8da" stroke="#c49c6e" strokeWidth="3" strokeLinejoin="round">
+      <g transform="translate(36 22) scale(0.88)" fill="#f3e8da" stroke="#c49c6e" strokeWidth="3" strokeLinejoin="round" opacity="0.55">
         <rect x="300" y="128" width="112" height="118" />
         {[151, 174, 197, 220].map((y) => <line key={y} x1="300" y1={y} x2="412" y2={y} />)}
         {[128, 151, 174, 197, 220].map((y, row) => [0, 1, 2].map((c) => {
