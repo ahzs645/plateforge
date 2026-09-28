@@ -208,16 +208,17 @@ const veteran: PlateFormat[] = [
 ];
 
 // ── Memorial Cross (2016–): purple on reflective white ──
-const MC_NOTE = `Memorial Cross reconstruction: the silver cross is simplified line-and-fill artwork; the “Mississippi” die is matched by eye. ${ART_NOTE}`;
-const PURPLE = '#4b1245';
+const MC_NOTE = `Memorial Cross reconstruction: the silver cross is a supplied generated image (not the official artwork); layout and colours follow the bc-memorial-cross-plate study of the MC000R sample; the “Mississippi” die is matched by eye. ${ART_NOTE}`;
+const MC_TEXT = '#402b59', MC_SERIAL = '#654d80';
+/** Positions are the study's 822 × 398 screenshot coordinates scaled to 300 × 150 mm (estimates, not measured dies). */
 function memorialRecipe(id: string, label: string): KitRecipe {
   return plate(id, label, FULL, SRC.memorial, MC_NOTE, {
-    background: '#e4e4e6', ink: '#320d52', rim: { inset: 1.6, width: 1, color: '#c9c9cc' },
-    art: [{ art: 'bc-memorial-cross', x: 20, y: 36, width: 56, height: 75, role: 'memorial-cross' }, { art: 'canada-flag', x: 258, y: 14, width: 30, height: 15, role: 'canada-flag' }],
-    fontLegends: [serif('Memorial Cross Recipient', 152, 31, 17, PURPLE, 'legend-top', { width: 178, weight: 700, italic: true }),
-      serif('British', 63, 128, 18, PURPLE, 'legend-left'), serif('Columbia', 250, 128, 18, PURPLE, 'legend-right')],
-    serial: { x: 181, baseline: 109, cap: 68, maxWidth: 212, die: 'bc-mississippi', color: '#320d52' },
-    ...dual(well(104, 113, 28, 28), well(135, 113, 52, 28)),
+    background: '#ececee', ink: MC_SERIAL, rim: { inset: 1.6, width: 1, color: '#c9c9cc' }, holeAt: { x: [0.2, 0.8], y: [0.085, 0.92] },
+    art: [{ art: 'bc-memorial-cross', x: 6, y: 39.8, width: 67.2, height: 70.1, role: 'memorial-cross' }, { art: 'canada-flag', x: 259.5, y: 14.9, width: 29.6, height: 15.3, role: 'canada-flag' }],
+    fontLegends: [serif('Memorial Cross Recipient', 149.3, 30.2, 15, MC_TEXT, 'legend-top', { width: 186, weight: 700, italic: true }),
+      serif('British', 46.7, 131.5, 20, MC_TEXT, 'legend-left', { width: 48 }), serif('Columbia', 252, 131.5, 20, MC_TEXT, 'legend-right', { width: 72 })],
+    serial: { x: 182.3, baseline: 107.2, cap: 66.5, maxWidth: 206, die: 'bc-mississippi', color: MC_SERIAL },
+    ...dual(well(94, 117, 37, 30), well(137.2, 117, 68.3, 30)),
   });
 }
 const MC_DESC = 'Free plates for Memorial Cross recipients: purple letters on reflective white, the Memorial Cross at left and the Canadian flag at top right, Waldale “Mississippi” dies, two decal wells.';

@@ -12,6 +12,7 @@ import parksPurcellUrl from '../../assets/bc-parks/purcell-mountains.jpg';
 import olympicGaribaldiUrl from '../../assets/bc-olympic/garibaldi.jpg';
 import veteranMemorialUrl from '../../assets/bc-veteran/war-memorial.jpg';
 import veteranPoppyUrl from '../../assets/bc-veteran/poppy.png';
+import memorialCrossUrl from '../../assets/bc-memorial/memorial-cross.webp';
 import { node as n, type SvgNode } from '../svg-scene';
 import { registerArtwork, type ArtMaster } from './art';
 import { OLYMPIC_2010_BOX, OLYMPIC_2010_PATHS } from './olympic-emblem';
@@ -48,22 +49,8 @@ function canadaFlag(): SvgNode[] {
   return [rect(0, 0, 40, 20, '#ffffff'), rect(0, 0, 10, 20, '#d52b1e'), rect(30, 0, 10, 20, '#d52b1e'), n('path', { d: leaf, fill: '#d52b1e' }),
     rect(0, 0, 40, 20, 'none', { stroke: '#b9b9b9', strokeWidth: 0.4 })];
 }
-/** Memorial Cross: a silver cross with flared arms over a laurel ring, crown above and a central ER cypher, 60 × 80. */
-function memorialCross(): SvgNode[] {
-  const silver = '#9c988c', light = '#c4c0b4', dark = '#4e4b44';
-  const edge = { stroke: dark, strokeWidth: 0.9, strokeLinejoin: 'round' as const };
-  return [
-    n('circle', { cx: 30, cy: 46, r: 17, fill: 'none', stroke: silver, strokeWidth: 4.5 }),
-    n('circle', { cx: 30, cy: 46, r: 17, fill: 'none', stroke: dark, strokeWidth: 0.6, strokeDasharray: '2 1.6' }),
-    // Cross pattée: four flared arms meeting at the centre.
-    n('path', { d: 'M21 13 H39 L35 41 L56 37 V55 L35 51 L39 79 H21 L25 51 L4 55 V37 L25 41 Z', fill: silver, ...edge }),
-    n('path', { d: 'M24 16 H30 V76 H24 Z M7 40 H30 V46 H7 Z', fill: light, opacity: 0.7 }),
-    rect(24, 41, 12, 10, light, { stroke: dark, strokeWidth: 0.7 }),
-    n('text', { x: 30, y: 48.6, fontFamily: 'Georgia, "Times New Roman", serif', fontSize: 6, fill: dark, textAnchor: 'middle' }, 'ER'),
-    // Crown on the upper arm.
-    n('path', { d: 'M24 13 L23 5 L26.5 8 L30 3 L33.5 8 L37 5 L36 13 Z', fill: light, ...edge }),
-  ];
-}
+/** Memorial Cross (supplied transparent image of the silver cross, suspension removed), 460 × 445. */
+const memorialCrossImage: ArtMaster = { viewBox: [460, 445], draw: () => [n('image', { href: memorialCrossUrl, x: 0, y: 0, width: 460, height: 445, 'data-part': 'memorial-cross' })] };
 
 // ── Collector, Antique, Personalized ───────────────────────────────────────
 
@@ -111,7 +98,7 @@ registerArtwork('bc-veteran-memorial', platePhoto(veteranMemorialUrl, 'war-memor
 registerArtwork('bc-veteran-memorial-small', platePhoto(veteranMemorialUrl, 'war-memorial', 203, 127, 'xMinYMid'));
 registerArtwork('bc-poppy', poppyImage);
 registerArtwork('canada-flag', { viewBox: [40, 20], draw: canadaFlag });
-registerArtwork('bc-memorial-cross', { viewBox: [60, 80], draw: memorialCross });
+registerArtwork('bc-memorial-cross', memorialCrossImage);
 registerArtwork('bc-collector-tilde', { viewBox: [20, 8], draw: tilde, aspect: 'stretch' });
 registerArtwork('bc-vintage-car-solid-hubs', { viewBox: [VINTAGE_CAR_BOX[2], VINTAGE_CAR_BOX[3]], draw: vintageCar('solidHubs') });
 registerArtwork('bc-vintage-car-open-hubs', { viewBox: [VINTAGE_CAR_BOX[2], VINTAGE_CAR_BOX[3]], draw: vintageCar('openHubs') });

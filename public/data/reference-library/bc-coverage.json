@@ -20,7 +20,7 @@
   "earlyPresets": 25,
   "laterPresets": 17,
   "countsUnit": "Inventory topics and presets, NOT distinct historical plate designs",
-  "registeredPresets": 435
+  "registeredPresets": 438
  },
  "registeredPresets": {
   "passenger": [
@@ -73,6 +73,9 @@
    "2014-flag",
    "2025-flag",
    "1904-leather",
+   "1904-leather-2685",
+   "1904-leather-3432",
+   "1904-leather-4189",
    "1908-porcelain",
    "1913",
    "1914",
@@ -785,6 +788,9 @@
     "2014-flag",
     "2025-flag",
     "1904-leather",
+    "1904-leather-2685",
+    "1904-leather-3432",
+    "1904-leather-4189",
     "1908-porcelain",
     "1913",
     "1914",
