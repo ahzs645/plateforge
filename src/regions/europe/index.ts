@@ -1,7 +1,9 @@
 import { codedFormat, patternFormat } from '../../core/format';
 import { compilePattern } from '../../core/pattern';
+import type { Rng } from '../../core/random';
 import type { PlateFormat, Region } from '../../core/types';
 import type { EuDesign } from '../../templates/eu';
+import { czechRepublic } from './czech';
 
 const eu = (
   id: string,
@@ -115,6 +117,59 @@ const ukFormats = (): PlateFormat[] => {
   ];
 };
 
+// ── Finland ───────────────────────────────────────────────────────────────
+// 2–3 letters and a 1–3 digit number without a leading zero. Randomly issued
+// plates are almost always three letters + three digits; C/CD is diplomatic,
+// D, P and W start trailer series and ÅL is Åland's own system.
+const FI_REFS = [
+  { title: 'Traficom — Hae ajoneuvolle erityiskilpeä', url: 'https://traficom.fi/fi/autoilijat/hae-ajoneuvolle-erityiskilpea' },
+  { title: 'Suomalainen rekisterikilpi — Wikipedia', url: 'https://fi.wikipedia.org/wiki/Suomalainen_rekisterikilpi' },
+];
+const FI_ISSUED = 'ABCDEFGHIJKLMNOPRSTUVXYZ'; // Q and W are avoided in generation (unverified)
+const FI_FIRST = 'ABEFGHIJKLMNORSTUVXYZ'; // no C, D, P, W (diplomatic, trailers)
+const fiNumber = (rng: Rng, max: number) => `${rng.int(1, 10 ** rng.int(1, max) - 1)}`;
+const FI_SHAPE = /^([A-ZÅÄÖ]{2,3})-([1-9]\d{0,2})$/;
+
+const finlandFormats: PlateFormat[] = [
+  {
+    id: 'standard',
+    label: 'Standard (1989+)',
+    pattern: 'AAA-999  |  AAA-99  |  AAA-9  |  AA-999',
+    description: 'Randomly assigned: three letters and a number up to 999 (1–2 digit numbers are rarer); two-letter plates are older issues. No Å/Ä/Ö, and no C, D, P or W first letter (diplomatic and trailer series).',
+    references: FI_REFS,
+    fields: [{ key: 'serial', label: 'Serial', maxLength: 7 }],
+    generate: (rng) => {
+      const letters = rng.pick(FI_FIRST) + Array.from({ length: rng.chance(0.08) ? 1 : 2 }, () => rng.pick(FI_ISSUED)).join('');
+      return { serial: `${letters}-${rng.chance(0.85) ? rng.int(100, 999) : fiNumber(rng, 2)}` };
+    },
+    validate: ({ serial = '' }) => {
+      const m = FI_SHAPE.exec(serial);
+      if (!m || /[ÅÄÖ]/.test(m[1])) return 'Expected 2–3 letters (A–Z), a dash and 1–3 digits without a leading zero';
+      if (/^[CDPW]/.test(m[1])) return 'C, D, P and W are reserved first letters (diplomatic, trailers)';
+      return null;
+    },
+  },
+  {
+    id: 'personalised',
+    label: 'Personalised (erityiskilpi)',
+    status: 'uncertain',
+    pattern: 'AA[A]-9[99]',
+    description: 'Chosen for a fee: 2–3 letters and 1–3 digits; zero can neither lead nor stand alone, and CD is reserved for diplomats. Whether Å, Ä and Ö may be chosen is not stated by Traficom, so they are accepted but not generated.',
+    references: FI_REFS,
+    fields: [{ key: 'serial', label: 'Serial', maxLength: 7 }],
+    generate: (rng) => {
+      const letters = Array.from({ length: rng.int(2, 3) }, () => rng.pick(FI_ISSUED)).join('');
+      const serial = `${letters.startsWith('CD') ? `X${letters.slice(1)}` : letters}-${fiNumber(rng, 3)}`;
+      return { serial };
+    },
+    validate: ({ serial = '' }) => {
+      const m = FI_SHAPE.exec(serial);
+      if (!m) return 'Expected 2–3 letters, a dash and 1–3 digits without a leading zero';
+      return m[1].startsWith('CD') ? 'CD is reserved for diplomatic vehicles' : null;
+    },
+  },
+];
+
 export const europeRegions: Region[] = [
   eu('de', 'Germany', 'D', '🇩🇪', [
     germany,
@@ -153,18 +208,14 @@ export const europeRegions: Region[] = [
   eu('pl', 'Poland', 'PL', '🇵🇱', [
     codedFormat({ id: 'standard', label: 'Standard', code: { key: 'county', label: 'Voivodeship / county', values: PL_COUNTIES }, pattern: ['99999', '9999A', '999AA', '9A999', '9AA99'], options: { exclude: 'BDIOZ' } }),
   ]),
-  eu('cz', 'Czech Republic', 'CZ', '🇨🇿', [
-    patternFormat({ id: 'standard', label: 'Standard', pattern: '9A9 9999', options: { exclude: 'GOQW' } }),
-  ]),
+  czechRepublic,
   eu('dk', 'Denmark', 'DK', '🇩🇰', [
     patternFormat({ id: 'standard', label: 'Standard', pattern: 'AA 99 999', options: { exclude: 'IOQ' } }),
   ], { border: '#c8102e' }),
   eu('se', 'Sweden', 'S', '🇸🇪', [
     patternFormat({ id: 'standard', label: 'Standard', pattern: ['AAA 999', 'AAA 99A'], options: { exclude: 'IQVO' }, description: 'Since 2019 the last character may be a letter.' }),
   ]),
-  eu('fi', 'Finland', 'FIN', '🇫🇮', [
-    patternFormat({ id: 'standard', label: 'Standard', pattern: 'AAA-999', options: { exclude: 'QW' } }),
-  ]),
+  eu('fi', 'Finland', 'FIN', '🇫🇮', finlandFormats),
   eu('no', 'Norway', 'N', '🇳🇴', [
     patternFormat({ id: 'standard', label: 'Standard', pattern: 'AA 99999', options: { exclude: 'GIMOQW' } }),
     patternFormat({ id: 'ev', label: 'Electric (EL/EK/EV…)', pattern: 'E[BCDEKLV] 99999', design: { text: '#0a6e3c' } }),
