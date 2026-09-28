@@ -8,6 +8,7 @@ import { iqTemplate } from './iq';
 import { irTemplate } from './ir';
 import { jpTemplate } from './jp';
 import { krTemplate } from './kr';
+import { mercosurTemplate } from './mercosur';
 import { usTemplate } from './us';
 import { vnTemplate } from './vn';
 
@@ -22,3 +23,4 @@ registerTemplate(irTemplate);
 registerTemplate(krTemplate);
 registerTemplate(vnTemplate);
 registerTemplate(crTemplate);
+registerTemplate(mercosurTemplate);
