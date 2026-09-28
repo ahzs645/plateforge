@@ -26,7 +26,7 @@ try {
   for (const country of ['Iraq', 'Iran']) {
     await page.locator('.region-trigger').click();
     await page.getByLabel('Search regions').fill(country);
-    await page.getByRole('option', { name: new RegExp(country) }).click();
+    await page.locator('#picker-list').getByRole('option', { name: new RegExp(country) }).click();
     const panel = page.getByRole('region', { name: 'Typography reference comparison' });
     await panel.locator('summary').click();
     assert.equal(await panel.locator('select').count(), 2);

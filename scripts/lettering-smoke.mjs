@@ -19,7 +19,7 @@ try {
   await page.goto('http://127.0.0.1:4173/');
   await page.locator('.region-trigger').click();
   await page.getByLabel('Search regions').fill('British Columbia');
-  await page.getByRole('option', { name: /British Columbia/ }).click();
+  await page.locator('#picker-list').getByRole('option', { name: /British Columbia/ }).click();
   assert(await page.locator('.timeline-node').count() >= 42);
   await page.locator('.timeline-node[title="1953"]').click();
   await page.locator('#field-serial').fill('33-638');

@@ -172,7 +172,7 @@ export function App() {
         {saveOpen && <div className="save-menu" role="menu"><button role="menuitem" onClick={() => exportAs('png')}>Save PNG</button><button role="menuitem" onClick={() => exportAs('svg')}>Save SVG</button><button role="menuitem" onClick={() => exportAs('tesla')} title={TESLA_HINT}>Save for Tesla</button><button role="menuitem" onClick={copyLink}>Copy link</button></div>}
       </div>
     </div>}
-    <RegionPicker open={pickerOpen} regions={regions} selected={region.id} onSelect={(id) => { select(id); setView((v) => v === 'gallery' ? 'gallery' : 'single'); }} onClose={() => setPickerOpen(false)} />
+    <RegionPicker open={pickerOpen} regions={regions} selected={region.id} selectedFormat={format.id} onSelect={(id, f) => { select(id, f); setView((v) => v === 'gallery' ? 'gallery' : 'single'); }} onClose={() => setPickerOpen(false)} />
     <div className={`toast ${toast ? 'show' : ''}`} role="status" aria-live="polite">{toast}</div>
   </div>;
 }
