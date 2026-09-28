@@ -594,7 +594,7 @@ const motorcycles: Spec[] = [
   { id: 'motorcycle-2011', label: 'Motorcycle 2011 · BC Mark', family: 'motorcycle', era: 'motorcycle-flag', period: [2011, 2025],
     recipe: smallFlag('motorcycle-2011', 'Motorcycle 2011 base', SRC.mc, SMALL, 'dual', mcFlagLegends, {
       serial: SER({ ...SMALL, bg: '', ink: '' }, 0.5, 0.655, 0.44, 0.94, 'bc-waldale', { color: FLAG_INK }),
-      art: [{ art: 'vehicles-bc-mark', x: SMALL.w * 0.76, y: SMALL.h * 0.69, width: SMALL.w * 0.18, height: SMALL.h * 0.2, role: 'bc-mark' }],
+      art: [{ art: 'bc-logo-wordmark', x: SMALL.w * 0.76, y: SMALL.h * 0.69, width: SMALL.w * 0.18, height: SMALL.h * 0.2, role: 'bc-mark' }],
       decal: box({ ...SMALL, bg: '', ink: '' }, 0.42, 0.705, 0.72, 0.94), extraWells: [box({ ...SMALL, bg: '', ink: '' }, 0.26, 0.705, 0.39, 0.94)] }),
     dies: WALDALE, decals: [2011, 2023],
     grammar: g('S59000–S99999 (2011); 0000A1–9999A9 (2023)', ['S[5-9]9999', '9999\\A[1-9]']),

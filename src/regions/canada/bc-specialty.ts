@@ -126,7 +126,7 @@ function olympicRecipe(id: string, label: string, size: Size): KitRecipe {
     separator: { kind: 'art', gap, art: { art: 'bc-olympic-emblem', x: 0, y: sb - scap / 2 - eh / 2, width: ew, height: eh } } };
   return plate(id, label, size, SRC.olympic, OLY_NOTE, {
     background: '#53a7d5', ink: '#1a1a1a', holeAt: full ? { x: [0.22, 0.78], y: [0.06, 0.95] } : { x: [0.17, 0.83], y: [0.06, 0.94] },
-    art: [{ art: 'bc-olympic-garibaldi', x: 0, y: 0, width: size.w, height: size.h }, { art: 'bc-sun-logo', ...s.logo, role: 'bc-logo' }],
+    art: [{ art: 'bc-olympic-garibaldi', x: 0, y: 0, width: size.w, height: size.h }, { art: 'bc-logo', ...s.logo, role: 'bc-logo' }],
     fontLegends: [serif('The Best Place on Earth', s.slogan[0], s.slogan[1], s.slogan[2], GOLD, 'slogan', { width: s.slogan[3], weight: 700 }),
       serif('BRITISH', s.legend[0], s.legend[2], s.legend[3], GOLD, 'legend-left', { weight: 700 }), serif('COLUMBIA', s.legend[1], s.legend[2], s.legend[3], GOLD, 'legend-right', { weight: 700 })],
     serial, ...s.wells,
@@ -479,7 +479,7 @@ const consular: PlateFormat[] = [
       background: '#a21b22', ink: '#f4f4f4', rim: { inset: 2.5, width: 1.2, color: '#f4f4f4' },
       fontLegends: [serif('BRITISH COLUMBIA', 150, 29, 13, '#f4f4f4', 'legend-top', { width: 132 })],
       serial: { x: 150, baseline: 108, cap: 63, maxWidth: 264, die: 'bc-waldale', color: '#f4f4f4',
-        separator: { kind: 'art', gap: 3, art: { art: 'bc-sun-logo-wordmark', x: 0, y: 108 - 31.5 - 16, width: 36, height: 32 } } },
+        separator: { kind: 'art', gap: 3, art: { art: 'bc-logo-wordmark-mono', x: 0, y: 108 - 31.5 - 16, width: 36, height: 32, color: '#f4f4f4' } } },
       ...dual(well(96, 114, 28, 26), well(128, 114, 76, 26)),
     }),
     grammar: { hint: 'DL, CC, HC, CS or SR, then 000A onward (all examples end in A)', blocks: blocks(...['DL', 'CC', 'HC', 'CS', 'SR'].map((p) => `${p}-999\\A`)) }, decals: [2007, 2023],

@@ -4,6 +4,7 @@
  * licence plate, not official artwork files.
  */
 import { node as n, type SvgNode } from '../svg-scene';
+import { BC_LOGO, MONOGRAM_1914, MONOGRAM_1918, SPIRIT_FLAG } from './emblems';
 
 export interface ArtBox { x: number; y: number; width: number; height: number }
 /** A vector master drawn in its own viewBox units; `aspect: 'stretch'` fills the box, otherwise it is fitted. */
@@ -37,48 +38,31 @@ function bcFlag(): SvgNode[] {
   ];
 }
 
-/** The plate's waving "Spirit" flag, 100 × 76: Union Jack fragments and a scalloped sun over wavy bands. */
+/** The plate's waving flag (shared by every 1985– flag base), 940 × 724 in the supplied vector's units. */
 function spiritFlag(): SvgNode[] {
-  const RED = '#c41b23', BLUE = '#1650b0', DEEP = '#0d3f95', SUN = '#f4d925';
-  // A horizontal band that follows the wave: y offset = amplitude * sin.
-  const band = (y0: number, thick: number, x0 = 4, x1 = 96, amp = 3.2) => {
-    const pts = (y: number) => Array.from({ length: 13 }, (_, i) => { const x = x0 + ((x1 - x0) * i) / 12; return [x, y + amp * Math.sin((x / 100) * Math.PI * 2 + 0.6)] as const; });
-    const top = pts(y0), bottom = pts(y0 + thick).reverse();
-    return 'M' + [...top, ...bottom].map(([x, y]) => `${x.toFixed(1)} ${y.toFixed(1)}`).join(' L') + ' Z';
-  };
-  const hair = { stroke: '#ffffff', strokeWidth: 1, strokeLinejoin: 'round' as const };
-  const rays = Array.from({ length: 11 }, (_, i) => {
-    const a = Math.PI * (0.08 + (0.84 * i) / 10);
-    const r1 = 13.5, r2 = 17;
-    return `${(50 - Math.cos(a) * (i % 2 ? r2 : r1)).toFixed(1)} ${(47 - Math.sin(a) * (i % 2 ? r2 : r1)).toFixed(1)}`;
-  });
-  return [n('g', { transform: 'skewY(-9) translate(0 9)', 'data-part': 'spirit-flag' },
-    // Union Jack fragments rising above the stripes.
-    n('path', { d: 'M20 22 L28 6 L44 12 L40 24 Z', fill: BLUE, ...hair }),
-    n('path', { d: 'M46 24 L50 4 L56 24 Z', fill: RED, ...hair }),
-    n('path', { d: 'M58 24 L64 7 L74 16 L70 24 Z', fill: BLUE, ...hair }),
-    n('path', { d: 'M70 24 L90 4 L94 10 L78 26 Z', fill: RED, ...hair }),
-    n('path', { d: 'M82 26 L96 14 L96 26 Z', fill: BLUE, ...hair }),
-    // Stripes, top to bottom; the sun covers their centre.
-    n('path', { d: band(22, 8), fill: RED, ...hair }),
-    n('path', { d: band(30, 8), fill: BLUE, ...hair }),
-    n('path', { d: band(38, 8), fill: RED, ...hair }),
-    n('path', { d: `M${rays.join(' L')} L${(50 + 13.5 * Math.cos(Math.PI * 0.08)).toFixed(1)} 48 L${(50 - 13.5 * Math.cos(Math.PI * 0.08)).toFixed(1)} 48 Z`, fill: SUN, ...hair, 'data-part': 'sun' }),
-    n('path', { d: band(46, 9), fill: BLUE, ...hair }),
-    n('path', { d: band(55, 9), fill: DEEP, ...hair }),
-    n('path', { d: band(64, 9), fill: DEEP, ...hair }))];
+  const [x, y] = SPIRIT_FLAG.box;
+  return [n('g', { transform: `translate(${-x} ${-y})`, 'data-part': 'spirit-flag' }, ...SPIRIT_FLAG.paths.map(({ fill, d }) => n('path', { d, fill })))];
 }
 
-/** Interlaced "BC" monogram (1914 porcelain, 1918–23 steel), 60 × 60, drawn in currentColor. */
+/** Interlaced "BC" monogram of the 1918–23 steel plates and tabs, 640 × 603, drawn in currentColor. */
 function bcMonogram(): SvgNode[] {
-  const stroke = { fill: 'none', stroke: 'currentColor', strokeWidth: 5.5, strokeLinecap: 'round' as const };
-  return [
-    // Large open C sweeping round the left.
-    n('path', { d: 'M52 14 C44 4 24 3 14 14 C4 25 5 41 15 50 C25 58 44 57 52 46', ...stroke }),
-    // B: stem with two bowls, set over the C.
-    n('path', { d: 'M26 7 V55', ...stroke }),
-    n('path', { d: 'M20 7 H38 C49 7 49 29 38 29 H26 M26 29 H40 C53 29 53 55 40 55 H20', ...stroke }),
-  ];
+  const [x, y] = MONOGRAM_1918.box;
+  return [n('path', { d: MONOGRAM_1918.d, transform: `translate(${-x} ${-y})`, fill: 'currentColor', fillRule: 'evenodd' })];
+}
+
+/** Serif "BC" monogram of the 1914 porcelain plate, 924 × 1084, drawn in currentColor. */
+function bcMonogram1914(): SvgNode[] {
+  const [x, y] = MONOGRAM_1914.box;
+  return [n('g', { transform: `translate(${-x} ${-y})`, fill: 'currentColor' }, ...MONOGRAM_1914.paths.map(({ id, d }) => n('path', { d, 'data-part': id })))];
+}
+
+/** The B.C. government logo; `wordmark` adds BRITISH COLUMBIA below the sun and mountains.
+ * `mono` draws it in currentColor with no white knockout, for dark or coloured plates. */
+function bcLogo(wordmark: boolean, mono = false): () => SvgNode[] {
+  const [x, y] = wordmark ? BC_LOGO.fullBox : BC_LOGO.symbolBox;
+  const paths = BC_LOGO.paths.filter((p) => (wordmark || p.part !== 'wordmark') && !(mono && p.part === 'knockout'));
+  return () => [n('g', { transform: `translate(${-x} ${-y})`, 'data-part': 'bc-logo' },
+    ...paths.map(({ part, fill, d }) => n('path', { d, fill: mono ? 'currentColor' : fill, 'data-part': part })))];
 }
 
 /** Provincial coat of arms, simplified for small line-art use (1915–17 tin, 1919 cardboard), 50 × 62.
@@ -102,10 +86,14 @@ function armsPanel(): SvgNode[] {
 
 const MASTERS: Record<string, ArtMaster> = {
   'arms-panel': { viewBox: [34, 60], draw: armsPanel, aspect: 'stretch' },
-  'bc-monogram': { viewBox: [60, 60], draw: bcMonogram },
+  'bc-monogram': { viewBox: [MONOGRAM_1918.box[2], MONOGRAM_1918.box[3]], draw: bcMonogram },
+  'bc-monogram-1914': { viewBox: [MONOGRAM_1914.box[2], MONOGRAM_1914.box[3]], draw: bcMonogram1914 },
   'bc-arms': { viewBox: [50, 62], draw: bcArms },
-  'bc-spirit-flag': { viewBox: [100, 76], draw: spiritFlag },
+  'bc-spirit-flag': { viewBox: [SPIRIT_FLAG.box[2], SPIRIT_FLAG.box[3]], draw: spiritFlag },
   'bc-flag': { viewBox: [60, 36], draw: bcFlag },
+  'bc-logo': { viewBox: [BC_LOGO.symbolBox[2], BC_LOGO.symbolBox[3]], draw: bcLogo(false) },
+  'bc-logo-wordmark': { viewBox: [BC_LOGO.fullBox[2], BC_LOGO.fullBox[3]], draw: bcLogo(true) },
+  'bc-logo-wordmark-mono': { viewBox: [BC_LOGO.fullBox[2], BC_LOGO.fullBox[3]], draw: bcLogo(true, true) },
 };
 
 export const hasArtwork = (id: string): boolean => id in MASTERS;

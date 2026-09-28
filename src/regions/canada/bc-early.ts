@@ -62,7 +62,7 @@ const porcelain1913 = recipe('early-1913', '1913 porcelain', p1913, '1913-1914',
 const p1914: Base = { w: 305, h: 167, bg: '#f3ede5', ink: '#1a1712' };
 const porcelain1914 = recipe('early-1914', '1914 porcelain', p1914, '1913-1914', {
   embossed: false, rim: null, shapes: grommets(p1914),
-  art: [{ art: 'bc-monogram', x: p1914.w * 0.025, y: p1914.h * 0.19, width: p1914.w * 0.185, height: p1914.h * 0.47, color: p1914.ink }],
+  art: [{ art: 'bc-monogram-1914', x: p1914.w * 0.025, y: p1914.h * 0.19, width: p1914.w * 0.185, height: p1914.h * 0.47, color: p1914.ink }],
   legends: [{ text: '1914', x: p1914.w * 0.11, baseline: p1914.h * 0.83, cap: p1914.h * 0.13, die: 'bc-porcelain-1914', role: 'year' }],
   serial: { x: p1914.w * 0.61, baseline: p1914.h * 0.88, cap: p1914.h * 0.74, maxWidth: p1914.w * 0.66, die: 'bc-porcelain-1914' },
 });

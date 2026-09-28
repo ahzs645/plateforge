@@ -339,7 +339,7 @@ const restricted = small('industrial-restricted', 'Restricted · RESTRICTED bar'
 const offRoad = small('industrial-off-road', 'Off-Road Vehicle', SMALL('#fbfafb', '#26262c'), SRC.offRoad, {
   radius: 7, rim: null, holeAt: { x: [0.15, 0.85], y: [0.07, 0.93] },
   art: [{ art: 'trade-solid', x: 0, y: 0, width: 203, height: 26, color: '#3c4fa8', role: 'orv-bar' },
-    { art: 'trade-bc-mark', x: 160, y: 94, width: 36, height: 23, role: 'bc-mark' }],
+    { art: 'bc-logo-wordmark', x: 160, y: 90, width: 36, height: 24.5, role: 'bc-mark' }],
   legends: [t('OFF ROAD VEHICLE', 101.5, 20, 12, 'bc-legend-condensed', { maxWidth: 130, color: '#ffffff', role: 'class-word' }), t('BC', 22, 110, 11, 'bc-legend-condensed', { role: 'province' })],
   serial: { x: 101.5, baseline: 86, cap: 50, maxWidth: 190, die: 'bc-waldale' },
   decal: { x: 76, y: 94, width: 76, height: 27 }, extraWells: [{ x: 40, y: 94, width: 32, height: 27 }],
@@ -524,12 +524,11 @@ const passengerCarrier = small('carrier-passenger-2005', 'Passenger Carrier · f
 });
 const passengerCarrier2010 = small('carrier-passenger-2010', '2010 Games Passenger Transportation (temporary)', SMALL('#ecd13c', '#101010'), SRC.passengerCarrier, {
   rim: null, holes: 'slots', holeAt: { x: [0.18, 0.82], y: [0.07, 0.93] },
-  art: [{ art: 'trade-bc-mark', x: 89, y: 72, width: 25, height: 16, role: 'bc-logo' }],
   legends: [],
   fontLegends: [serif('BRITISH COLUMBIA', 101.5, 26, 13, '#3a3220', { weight: 700, width: 136, role: 'province' }),
     { text: 'PASSENGER', x: 34, baseline: 112, size: 8, font: 'sans', weight: 700, color: '#101010', role: 'class-left' },
     { text: 'TRANSPORTATION', x: 162, baseline: 112, size: 7.5, font: 'sans', weight: 700, color: '#101010', role: 'class-right' }],
-  serial: { x: 101.5, baseline: 84, cap: 44, maxWidth: 190, die: 'bc-waldale', separator: { kind: 'gap' } },
+  serial: { x: 101.5, baseline: 84, cap: 44, maxWidth: 190, die: 'bc-waldale', separator: { kind: 'art', gap: 2.5, art: { art: 'bc-logo-wordmark', x: 0, y: 44, width: 34, height: 38, role: 'bc-logo' } } },
   decal: { x: 76, y: 92, width: 52, height: 28 },
 });
 

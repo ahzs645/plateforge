@@ -28,20 +28,6 @@ export function registerLetterBox(id: string, color: string, o: { letter: number
   ] });
 }
 
-/** The "BC Mark" (gold sun over blue waves) of 2014 Off-Road Vehicle plates, 40 × 26. */
-registerArtwork('trade-bc-mark', { viewBox: [40, 26], draw: () => {
-  const rays = Array.from({ length: 11 }, (_, i) => {
-    const a = Math.PI * (0.06 + (0.88 * i) / 10);
-    return n('path', { d: `M${(20 - Math.cos(a) * 9.5).toFixed(2)} ${(15 - Math.sin(a) * 9.5).toFixed(2)} L${(20 - Math.cos(a) * 14).toFixed(2)} ${(15 - Math.sin(a) * 14).toFixed(2)}`, stroke: '#f2b632', strokeWidth: 2.2 });
-  });
-  return [
-    ...rays,
-    n('path', { d: 'M11 15 A9 9 0 0 1 29 15 Z', fill: '#f2b632' }),
-    n('path', { d: 'M2 15 L10 11.5 L15 14 L21 9.5 L27 13.5 L32 11 L38 15 Z', fill: '#1f3f8f' }),
-    ...[17, 21].map((y) => n('path', { d: `M3 ${y} q4.2 -2 8.5 0 t8.5 0 t8.5 0 t8.5 0 V${y + 2.4} q-4.2 2 -8.5 0 t-8.5 0 t-8.5 0 t-8.5 0 Z`, fill: '#2b64b5' })),
-  ];
-} });
-
 /** The provincial flag printed faintly across a Passenger Carrier plate (2005–), 60 × 36. */
 registerArtwork('trade-flag-wash', { viewBox: [60, 36], aspect: 'stretch', draw: () => [
   artwork('bc-flag', { x: 0, y: 0, width: 60, height: 36 }, 'flag-background'),

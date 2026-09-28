@@ -117,28 +117,6 @@ function garibaldi(): SvgNode[] {
     n('path', { d: 'M0 112 C70 100 140 118 210 106 C250 100 280 106 300 104 V150 H0 Z', fill: '#f2f4f7' }),
   ];
 }
-/** The 2005 B.C. government logo: a rising sun over blue mountains and water, 40 × 24 (optionally with its wordmark, 40 × 36). */
-function bcSunLogo(wordmark: boolean): () => SvgNode[] {
-  return () => {
-    const rays = Array.from({ length: 11 }, (_, i) => {
-      const a = Math.PI * (0.1 + (0.8 * i) / 10), c = Math.cos(a), s = Math.sin(a);
-      return poly([[+(20 - c * 7).toFixed(2), +(17 - s * 7).toFixed(2)], [+(20 - c * 15 - s * 1.4).toFixed(2), +(17 - s * 15 + c * 1.4).toFixed(2)], [+(20 - c * 15 + s * 1.4).toFixed(2), +(17 - s * 15 - c * 1.4).toFixed(2)]], '#ffffff');
-    });
-    return [
-      n('path', { d: 'M3 17 A17 17 0 0 1 37 17 Z', fill: '#f5b800' }),
-      ...rays,
-      n('path', { d: 'M13 17 A7 7 0 0 1 27 17 Z', fill: '#ffffff' }),
-      poly([[3, 17], [10, 11], [15, 15], [21, 9], [28, 15], [32, 12], [37, 17], [37, 23], [3, 23]], '#1e2d6e'),
-      poly([[10, 11], [12.5, 13], [8, 14.5]], '#ffffff'), poly([[21, 9], [24, 12], [18, 12.5]], '#ffffff'),
-      n('path', { d: 'M5 20.5 Q11 18.8 17 20.5 T29 20.5 T37 20', stroke: '#ffffff', strokeWidth: 0.8, fill: 'none' }),
-      ...(wordmark ? [
-        n('text', { x: 20, y: 29, fontFamily: 'Georgia, "Times New Roman", serif', fontSize: 5.4, fill: '#1e2d6e', textAnchor: 'middle', textLength: 30, lengthAdjust: 'spacing' }, 'BRITISH'),
-        n('text', { x: 20, y: 34, fontFamily: 'Georgia, "Times New Roman", serif', fontSize: 4.6, fill: '#1e2d6e', textAnchor: 'middle', textLength: 34, lengthAdjust: 'spacing' }, 'COLUMBIA'),
-        rect(3, 35, 34, 0.8, '#f5b800'),
-      ] : []),
-    ];
-  };
-}
 /** Vancouver 2010 emblem on its white panel: the Ilanaaq inukshuk, "vancouver 2010" and the rings, 36 × 52. */
 function olympicEmblem(): SvgNode[] {
   const ring = (cx: number, cy: number, stroke: string) => n('circle', { cx, cy, r: 3, fill: 'none', stroke, strokeWidth: 0.8 });
@@ -267,8 +245,6 @@ registerArtwork('bc-parks-purcell', { viewBox: [300, 150], draw: parksPurcell, a
 registerArtwork('bc-parks-porteau', { viewBox: [300, 150], draw: parksPorteau, aspect: 'stretch' });
 registerArtwork('bc-olympic-garibaldi', { viewBox: [300, 150], draw: garibaldi, aspect: 'stretch' });
 registerArtwork('bc-olympic-emblem', { viewBox: [36, 52], draw: olympicEmblem });
-registerArtwork('bc-sun-logo', { viewBox: [40, 24], draw: bcSunLogo(false) });
-registerArtwork('bc-sun-logo-wordmark', { viewBox: [40, 36], draw: bcSunLogo(true) });
 registerArtwork('bc-war-memorial', { viewBox: [60, 130], draw: warMemorial });
 registerArtwork('bc-poppy', { viewBox: [20, 20], draw: poppy });
 registerArtwork('canada-flag', { viewBox: [40, 20], draw: canadaFlag });
