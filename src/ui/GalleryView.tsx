@@ -5,13 +5,15 @@ import { PlateView } from './PlateView';
 import { samplePlate } from './samples';
 import './timeline.css';
 
-type Scope = 'country' | 'continent';
+type Scope = 'region' | 'country' | 'continent';
 
 interface Props {
   regions: Region[];
   region: Region;
   format: PlateFormat;
   onOpen(regionId: string, formatId: string): void;
+  /** Switches the gallery to another region without leaving it. */
+  onSelectRegion(regionId: string): void;
 }
 
 interface Card { region: Region; format: PlateFormat; title: string; meta: string }
@@ -56,15 +58,21 @@ function sectionsFor(group: CountryGroup, query: string, familyFilter = ''): Sec
   return sections;
 }
 
-/** Every design for the current country (or continent), with dated regions laid out as a timeline. */
-export function GalleryView({ regions, region, format, onOpen }: Props) {
-  const [scope, setScope] = useState<Scope>('country');
+/** Every design for the current state/province, country or continent, with dated regions laid out as a timeline. */
+export function GalleryView({ regions, region, format, onOpen, onSelectRegion }: Props) {
+  const continent = useMemo(() => groupByCountry(regions).find((c) => c.continent === region.group), [regions, region.group]);
+  const current = continent?.countries.find((g) => g.country === countryOf(region));
+  // Countries made of states or provinces open on the one being edited; the country is a tab away.
+  const subdivided = (current?.regions.length ?? 0) > 1;
+  const [chosen, setScope] = useState<Scope>(subdivided ? 'region' : 'country');
+  const scope: Scope = chosen === 'region' && !subdivided ? 'country' : chosen;
   const [query, setQuery] = useState('');
   const families = useMemo(() => regionFamilies(region), [region]);
   const [familyFilter, setFamilyFilter] = useState('');
-  const activeFamily = scope === 'country' && families.some((f) => f.id === familyFilter) ? familyFilter : '';
-  const continent = useMemo(() => groupByCountry(regions).find((c) => c.continent === region.group), [regions, region.group]);
-  const countries = useMemo(() => (continent?.countries ?? []).filter((g) => scope === 'continent' || g.country === countryOf(region)), [continent, scope, region]);
+  const activeFamily = scope !== 'continent' && families.some((f) => f.id === familyFilter) ? familyFilter : '';
+  const countries = useMemo(() => scope === 'region'
+    ? (current ? [{ ...current, regions: [region] }] : [])
+    : (continent?.countries ?? []).filter((g) => scope === 'continent' || g.country === countryOf(region)), [continent, current, scope, region]);
   const blocks = useMemo(() => {
     // Across a continent, single-region undated countries share one grid instead of a section each.
     const simple = (g: CountryGroup) => scope === 'continent' && g.regions.length === 1 && !buildTimeline(g.regions[0]);
@@ -76,7 +84,6 @@ export function GalleryView({ regions, region, format, onOpen }: Props) {
     return list.filter((b) => b.sections.length);
   }, [countries, query, scope, region, activeFamily]);
   const countryCount = new Set(blocks.flatMap((b) => b.sections.flatMap((s) => s.cards.map((c) => countryOf(c.region))))).size;
-  const current = countries.find((g) => g.country === countryOf(region));
   const total = blocks.reduce((n, b) => n + b.sections.reduce((m, s) => m + s.cards.length, 0), 0);
   const timeline = buildTimeline(region, familyOf(region, format));
 
@@ -84,22 +91,27 @@ export function GalleryView({ regions, region, format, onOpen }: Props) {
     <section className="gallery" aria-label="Plate gallery">
       <header className="gallery-head">
         <div>
-          <p className="gallery-eyebrow">{region.group}{scope === 'country' && current ? ` / ${current.country}` : ''}</p>
+          <p className="gallery-eyebrow">{region.group}{scope !== 'continent' && current ? ` / ${current.country}` : ''}</p>
           <h1>
-            {scope === 'country' && current ? <><span aria-hidden="true">{current.flag}</span> {current.country}</> : region.group}
+            {scope === 'region' ? <><span aria-hidden="true">{region.flag}</span> {region.name}</>
+              : scope === 'country' && current ? <><span aria-hidden="true">{current.flag}</span> {current.country}</> : region.group}
           </h1>
           <p className="gallery-sub">
             {total} {total === 1 ? 'design' : 'designs'}
-            {scope === 'continent' ? ` across ${countryCount} ${countryCount === 1 ? 'country' : 'countries'}` : current && current.regions.length > 1 ? ` across ${current.regions.length} regions` : ''}
-            {scope === 'country' && timeline ? ` · ${formatPeriod(timeline.span)} timeline` : ''}
+            {scope === 'continent' ? ` across ${countryCount} ${countryCount === 1 ? 'country' : 'countries'}` : scope === 'country' && subdivided ? ` across ${current!.regions.length} regions` : ''}
+            {scope !== 'continent' && (scope === 'region' || !subdivided) && timeline ? ` · ${formatPeriod(timeline.span)} timeline` : ''}
           </p>
         </div>
         <div className="gallery-controls">
           <div className="tabs" role="tablist" aria-label="Gallery scope">
+            {subdivided && <button role="tab" aria-selected={scope === 'region'} onClick={() => setScope('region')}>{region.name}</button>}
             <button role="tab" aria-selected={scope === 'country'} onClick={() => setScope('country')}>{current?.country ?? 'Country'}</button>
-            <button role="tab" aria-selected={scope === 'continent'} onClick={() => setScope('continent')}>All of {region.group}</button>
+            <button role="tab" aria-selected={scope === 'continent'} onClick={() => setScope('continent')}><span className="wide-only">All of </span>{region.group}</button>
           </div>
-          {scope === 'country' && families.length > 1 && <div className="select gallery-family"><select aria-label="Plate family" value={activeFamily} onChange={(e) => setFamilyFilter(e.target.value)}>
+          {scope === 'region' && current && <div className="select gallery-family"><select aria-label={`Choose a ${current.country} region`} value={region.id} onChange={(e) => onSelectRegion(e.target.value)}>
+            {current.regions.map((r) => <option key={r.id} value={r.id}>{r.name} ({r.formats.length})</option>)}
+          </select></div>}
+          {scope !== 'continent' && families.length > 1 && <div className="select gallery-family"><select aria-label="Plate family" value={activeFamily} onChange={(e) => setFamilyFilter(e.target.value)}>
             <option value="">All families ({families.reduce((n, f) => n + f.formats.length, 0)})</option>
             {families.map((f) => <option key={f.id} value={f.id}>{f.label} ({f.formats.length})</option>)}
           </select></div>}

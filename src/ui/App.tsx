@@ -148,7 +148,7 @@ export function App() {
     <div className="mobile-tabs tabs" role="tablist" aria-label="Mode">{VIEWS.map((v) => <button key={v} role="tab" aria-selected={view === v} onClick={() => setView(v)}>{v === 'single' ? 'Plate' : VIEW_LABELS[v]}</button>)}</div>
     <main className="workspace" key={fontsVersion}>
       {view === 'library' ? <Suspense fallback={<p role="status">Loading reference library…</p>}><ReferenceLibrary regions={regions} onOpenFormat={openEditor} /></Suspense>
-        : view === 'gallery' ? <GalleryView regions={regions} region={region} format={format} onOpen={openEditor} />
+        : view === 'gallery' ? <GalleryView regions={regions} region={region} format={format} onOpen={openEditor} onSelectRegion={(id) => select(id)} />
         : view === 'single' ? <>
           <section className="stage-col">
             {families.length > 1 && <nav className="family-tabs" aria-label="Plate family">{families.map((f) => <button key={f.id} className="chip" aria-pressed={f.id === family} title={f.summary}

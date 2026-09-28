@@ -332,7 +332,9 @@
     width: 100%;
   }
   .gallery-controls .tabs button {
-    flex: 1;
+    flex: 1 1 auto;
+    padding: 0 10px;
+    white-space: nowrap;
   }
   .gallery-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -415,4 +417,9 @@
 .gallery-grid > li {
   content-visibility: auto;
   contain-intrinsic-size: auto 170px;
+}
+@media (max-width: 640px) {
+  .gallery-controls .wide-only {
+    display: none;
+  }
 }
