@@ -15,6 +15,11 @@ const MODES: readonly Mode[] = ['sources', 'lettering', 'coverage'];
 const modeFromHash = (): Mode => MODES.find((m) => location.hash === `#/library/${m}`) ?? 'sources';
 const DATA = `${import.meta.env.BASE_URL}data/reference-library/`;
 const PAGE_SIZE = 24;
+const REVIEW_NOTES: Record<string, string> = {
+  'browser-verified-link-only': 'Browser-verified article link; contents not imported.',
+  'catalogue-link-only': 'Catalogue link only; artwork stays on the source site.',
+  'detail-captured-link-only': 'Detail page reviewed; link only, artwork stays on the source site.',
+};
 const errorText = (e: unknown) => e instanceof Error ? e.message : 'Unable to load reference metadata.';
 async function readJson(url: string, signal: AbortSignal): Promise<unknown> {
   const response = await fetch(url, { signal });
@@ -150,7 +155,7 @@ export function ReferenceLibrary({ regions, onOpenFormat }: Props) {
         {!selected ? <>
           <div className="reference-filters">
             <label>Search source pages<input aria-label="Search source pages" value={query} onChange={(e) => resetPage(setQuery, e.target.value)} placeholder="Passenger, motorcycle, dealer, 1953…" /></label>
-            <label>Source<select aria-label="Filter reference source" value={source} onChange={(e) => { resetPage(setSource, e.target.value); setCategory(''); }}><option value="">Both references</option>{index.sites.map((s) => <option key={s.id} value={s.id}>{s.name}</option>)}</select></label>
+            <label>Source<select aria-label="Filter reference source" value={source} onChange={(e) => { resetPage(setSource, e.target.value); setCategory(''); }}><option value="">All sources</option>{index.sites.map((s) => <option key={s.id} value={s.id}>{s.name}</option>)}</select></label>
             <label>Collection<select aria-label="Filter reference collection" value={category} onChange={(e) => resetPage(setCategory, e.target.value)}><option value="">All source material</option>{categories.map((c) => <option key={c}>{c}</option>)}</select></label>
             <label>Page period<input aria-label="Filter page period" inputMode="numeric" maxLength={4} value={year} onChange={(e) => resetPage(setYear, e.target.value)} placeholder="e.g. 1975" /></label>
           </div>
@@ -160,7 +165,7 @@ export function ReferenceLibrary({ regions, onOpenFormat }: Props) {
             {pageSlice(matches, page).map((p) => <article className="reference-page-card" key={p.id}>
               <span className="reference-badge">{p.source} · {p.category}</span><h2>{p.title}</h2>
               <p>{p.imageCount.toLocaleString()} image references · {p.documentCount} document links</p>
-              <p className="reference-muted">{p.reviewStatus === 'browser-verified-link-only' ? 'Browser-verified article link; contents not imported.' : 'Indexed reference material; individual images not yet curated.'}</p>
+              <p className="reference-muted">{REVIEW_NOTES[p.reviewStatus] ?? 'Indexed reference material; individual images not yet curated.'}</p>
               <button className="btn primary" onClick={() => setSelected(p.id)}>Browse references</button>
               <ExternalLink url={p.url}>Source page ↗</ExternalLink>
             </article>)}

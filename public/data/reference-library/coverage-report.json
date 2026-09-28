@@ -1,10 +1,11 @@
 {
   "totals": {
-    "pages": 330,
+    "pages": 424,
     "uniqueImageReferences": 16474,
     "imageOccurrences": 17385,
     "browserVerifiedArticleLinks": 10,
-    "editableDesignsImportedFromImages": 0
+    "editableDesignsImportedFromImages": 0,
+    "linkOnlyCatalogueEntries": 94
   },
   "reports": [
     {
@@ -161,12 +162,24 @@
           "imageCount": 0
         }
       ]
+    },
+    {
+      "source": "notateslaapp",
+      "complete": false,
+      "indexed": 0,
+      "catalogueLinks": 94,
+      "detailPagesCaptured": 3,
+      "imagesImported": 0,
+      "scope": "94 catalogue entries recorded as links; 3 detail pages captured for research; no images imported. Plate visualisations remain on Not a Tesla App and are not redistributed or previewed.",
+      "failures": [],
+      "remaining": []
     }
   ],
   "notes": [
     "Counts are reference URLs, not distinct plate designs or verified working images.",
     "Unclassified images may include documents, people and other supporting material.",
     "No photographs, fonts or article bodies are mirrored. Article titles are bibliographic metadata.",
+    "Not a Tesla App records are catalogue links only; its plate artwork is neither imported nor previewed.",
     "Missing and unlinked source pages, PDF contents and external archives are outside verified coverage."
   ]
 }

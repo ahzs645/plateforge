@@ -5,7 +5,7 @@ import { regenerateParts } from '../core/lettering';
 import { buildTimeline, countryOf, familyOf, regionFamilies, stepTimeline } from '../core/timeline';
 import type { Parts, Plate } from '../core/types';
 import { BatchView } from './BatchView';
-import { download, fileSafe, serializeSvg, svgToPngBlob } from './exporting';
+import { download, fileSafe, serializeSvg, svgToPngBlob, svgToTeslaPngBlob, TESLA_HINT, type ExportKind } from './exporting';
 import { FormatTimeline } from './FormatTimeline';
 import { GalleryView } from './GalleryView';
 import { ChevronDown, CopyIcon, DownloadIcon, Logo, MonitorIcon, MoonIcon, RefreshIcon, SunIcon } from './icons';
@@ -112,16 +112,17 @@ export function App() {
     setToast(msg); window.clearTimeout(toastTimer.current);
     toastTimer.current = window.setTimeout(() => setToast(''), 1800);
   };
-  const exportAs = async (kind: 'svg' | 'png') => {
+  const exportAs = async (kind: ExportKind) => {
     setSaveOpen(false);
     const svg = previewRef.current?.querySelector('svg');
     if (!svg) return;
     try {
       const text = await serializeSvg(svg, getTemplate(region.template).fonts);
       const name = `${region.code}-${fileSafe(plate.text)}`;
+      const { width, height } = svg.viewBox.baseVal;
       if (kind === 'svg') download(new Blob([text], { type: 'image/svg+xml' }), `${name}.svg`);
-      else { const { width, height } = svg.viewBox.baseVal; download(await svgToPngBlob(text, width, height, 4), `${name}.png`); }
-      flash(`Saved ${name}.${kind}`);
+      else download(await (kind === 'tesla' ? svgToTeslaPngBlob(text, width, height) : svgToPngBlob(text, width, height, 4)), `${name}.png`);
+      flash(kind === 'tesla' ? `Saved ${name}.png for Tesla. ${TESLA_HINT}.` : `Saved ${name}.${kind}`);
     } catch (e) { flash(e instanceof Error ? `Export failed: ${e.message}` : 'Export failed.'); }
   };
   const copy = async (value: string, label: string) => {
@@ -168,7 +169,7 @@ export function App() {
       <button className="btn primary grow" onClick={regenerate}><RefreshIcon /> Generate</button>
       <div className="save-wrap">
         <button className="btn save-trigger" onClick={() => setSaveOpen((o) => !o)} aria-expanded={saveOpen} aria-label="Save"><DownloadIcon /></button>
-        {saveOpen && <div className="save-menu" role="menu"><button role="menuitem" onClick={() => exportAs('png')}>Save PNG</button><button role="menuitem" onClick={() => exportAs('svg')}>Save SVG</button><button role="menuitem" onClick={copyLink}>Copy link</button></div>}
+        {saveOpen && <div className="save-menu" role="menu"><button role="menuitem" onClick={() => exportAs('png')}>Save PNG</button><button role="menuitem" onClick={() => exportAs('svg')}>Save SVG</button><button role="menuitem" onClick={() => exportAs('tesla')} title={TESLA_HINT}>Save for Tesla</button><button role="menuitem" onClick={copyLink}>Copy link</button></div>}
       </div>
     </div>}
     <RegionPicker open={pickerOpen} regions={regions} selected={region.id} onSelect={(id) => { select(id); setView((v) => v === 'gallery' ? 'gallery' : 'single'); }} onClose={() => setPickerOpen(false)} />

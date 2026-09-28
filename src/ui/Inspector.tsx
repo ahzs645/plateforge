@@ -3,13 +3,14 @@ import { TypefaceReview } from './TypefaceReview';
 import type { Parts, PlateFormat, Region } from '../core/types';
 import { statusBadge } from '../core/timeline';
 import { AlertIcon, CheckIcon, DownloadIcon } from './icons';
+import { TESLA_HINT, type ExportKind } from './exporting';
 
 interface Props {
   region: Region;
   format: PlateFormat;
   parts: Parts;
   onChange(parts: Parts): void;
-  onExport(kind: 'png' | 'svg'): void;
+  onExport(kind: ExportKind): void;
   onCopyLink(): void;
 }
 
@@ -122,10 +123,14 @@ export function Inspector({ region, format, parts, onChange, onExport, onCopyLin
           <button className="btn" onClick={() => onExport('svg')}>
             <DownloadIcon /> SVG
           </button>
+          <button className="btn" onClick={() => onExport('tesla')} title={TESLA_HINT}>
+            <DownloadIcon /> For Tesla
+          </button>
           <button className="btn" onClick={onCopyLink}>
             Copy link
           </button>
         </div>
+        <p className="insp-note">Tesla: 400×200 PNG (400×100 for long plates). {TESLA_HINT}.</p>
       </section>
     </aside>
   );
