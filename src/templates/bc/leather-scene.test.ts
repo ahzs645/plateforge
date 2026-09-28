@@ -42,17 +42,21 @@ describe('BC pre-provincial specimen reconstructions',()=>{
     }
   });
   it('fits every supported custom number without overlapping its next glyph',()=>{
+    // ~40k layouts: collect violations and assert once, since per-box expect() calls
+    // push this past the default timeout on loaded CI runners.
+    const problems:string[]=[];
     for(const s of LEATHER_SPECIMENS) for(let number=1;number<=9999;number++){
       const serial=String(number),boxes=leatherLayout(s,serial);
-      expect(boxes).toHaveLength(serial.length);
+      if(boxes.length!==serial.length){problems.push(`${s.id}/${serial}: ${boxes.length} boxes`);continue;}
       if(serial===s.id)continue;
       for(let i=0;i<boxes.length;i++){
         const b=boxes[i];
-        expect(b.x).toBeGreaterThanOrEqual(s.custom.x-0.001);
-        expect(b.x+b.width).toBeLessThanOrEqual(s.custom.x+s.custom.width+0.001);
-        if(i)expect(b.x).toBeGreaterThanOrEqual(boxes[i-1].x+boxes[i-1].width-0.001);
+        if(b.x<s.custom.x-0.001) problems.push(`${s.id}/${serial}[${i}]: starts left of the custom area`);
+        if(b.x+b.width>s.custom.x+s.custom.width+0.001) problems.push(`${s.id}/${serial}[${i}]: ends right of the custom area`);
+        if(i&&b.x<boxes[i-1].x+boxes[i-1].width-0.001) problems.push(`${s.id}/${serial}[${i}]: overlaps the previous glyph`);
       }
     }
+    expect(problems.slice(0,20)).toEqual([]);
   });
   it('does not sanitize arbitrary input into a different registration',()=>{
     for(const bad of ['0','0123','12345','12A3','12-3','<script>','']){
