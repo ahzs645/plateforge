@@ -14,4 +14,6 @@ export const FONTS = {
 
 /** CJK text relies on system fonts (these are available to SVG images, so PNG export still works). */
 export const CJK_STACK = '"PingFang SC", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans CJK SC", "Noto Sans JP", "Microsoft YaHei", "Yu Gothic", sans-serif';
+/** Korean hangul via system fonts; kept apart from CJK_STACK so Chinese/Japanese rendering is unchanged. */
+export const KR_STACK = '"Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Nanum Gothic", sans-serif';
 export const CONDENSED = '"Barlow Condensed", "Arial Narrow", sans-serif';

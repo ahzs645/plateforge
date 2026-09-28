@@ -5,7 +5,9 @@ import { euTemplate } from './eu';
 import { iqTemplate } from './iq';
 import { irTemplate } from './ir';
 import { jpTemplate } from './jp';
+import { krTemplate } from './kr';
 import { usTemplate } from './us';
+import { vnTemplate } from './vn';
 
 registerTemplate(usTemplate);
 registerTemplate(euTemplate);
@@ -14,3 +16,5 @@ registerTemplate(jpTemplate);
 registerTemplate(bcTemplate);
 registerTemplate(iqTemplate);
 registerTemplate(irTemplate);
+registerTemplate(krTemplate);
+registerTemplate(vnTemplate);
