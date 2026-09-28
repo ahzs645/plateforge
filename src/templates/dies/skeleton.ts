@@ -31,9 +31,12 @@ export interface SkeletonParams {
   /** Short horizontal foot under the 4's stem (ACME). */
   fourFoot?: boolean;
   six?: 'curved' | 'straight';
-  seven?: 'straight' | 'curved';
+  /** `bent`: the bar turns down early and the stem finishes near-vertical (Waldale). */
+  seven?: 'straight' | 'curved' | 'bent';
   nine?: 'curved' | 'straight';
   zero?: 'plain' | 'narrow';
+  /** Bowl construction for the 0 alone, when it differs from the other bowls (Waldale's straight-sided 0). */
+  zeroCurve?: CurveStyle;
   /** Middle junction height of B, 3, 8 etc. as a fraction of cap height (0.5 = centred). */
   waist?: number;
   /** Width of the dash separator, cap-height units, and its vertical position. */
@@ -88,7 +91,7 @@ export function skeletonGlyph(char: string, p: SkeletonParams): SkeletonGlyph | 
     // ── Digits ──────────────────────────────────────────────────────────
     case '0': {
       const inset = p.zero === 'narrow' ? w * 0.06 : 0;
-      return g([loop(p, { l: L + inset, t: T, r: R - inset, b: B })]);
+      return g([loop(p.zeroCurve ? { ...p, curve: p.zeroCurve } : p, { l: L + inset, t: T, r: R - inset, b: B })]);
     }
     case '1': {
       const x = p.one === 'plain' ? narrowW / 2 : narrowW * 0.62;
@@ -125,7 +128,9 @@ export function skeletonGlyph(char: string, p: SkeletonParams): SkeletonGlyph | 
     case '7':
       return g([p.seven === 'curved'
         ? `M${f(L)} ${f(T)} H${f(R)} C${f(R - w * 0.08)} ${f(38)} ${f(MX - 2)} ${f(62)} ${f(MX - 4)} ${f(B)}`
-        : `M${f(L)} ${f(T)} H${f(R)} L${f(L + w * 0.28)} ${f(B)}`]);
+        : p.seven === 'bent'
+          ? `M${f(L)} ${f(T)} H${f(R)} C${f(MX + 4.5)} ${f(30)} ${f(MX - 3.5)} ${f(57)} ${f(MX - 3.5)} ${f(B)}`
+          : `M${f(L)} ${f(T)} H${f(R)} L${f(L + w * 0.28)} ${f(B)}`]);
     case '8':
       return g([loop(p, { l: L + w * 0.05, t: T, r: R - w * 0.05, b: waist }), loop(p, { l: L, t: waist, r: R, b: B })]);
     case '9': {

@@ -8,7 +8,7 @@ A die profile is a set of monoline glyph skeletons (`src/templates/dies/skeleton
 
 - advance width and stroke weight
 - bowl construction: stadium, oval or rounded box
-- diagnostic shapes: open or closed 4, a flag or foot on the 1, flat-topped or round 3, straight or curved 7, and the tails of 6 and 9
+- diagnostic shapes: open or closed 4, a flag or foot on the 1, flat-topped or round 3, straight, curved or bent 7, a separate bowl style for the 0, and the tails of 6 and 9
 - the separator: dash, square dot, or the long leading bar used 1933–39
 
 `src/templates/dies/engine.ts` places glyphs at their own advances and scales a run **uniformly**. If a run cannot fit, the whole run is reduced and marked `data-fit="reduced"`; glyphs are never stretched individually. Legends that were stamped across the full plate width are spread with letter spacing, not by widening letters.
@@ -25,6 +25,15 @@ Each profile records how it was derived (`evidence.status`):
 | `legend-approximation` | Read from gallery plate photographs; BCpl8s has no digit comparison for these years. | 1913–14 porcelain, 1915–17 tin, 1918–23 block, 1924–39 Tacey and straight dies, 1940–54 early dies, Oakalla 1955–77, and all legend dies |
 
 Letters on every profile use the same construction as its digits. They were checked against plate photos only, so they are less certain than the digits.
+
+## Waldale 0 and 7 (September 2026)
+
+A comparison with BCpl8s photographs of 098 SJF, 976 SKP and JA7 91L changed two Waldale glyphs:
+
+- The **0** has straight sides (`zeroCurve: 'stadium'`). The other bowls stay oval. Switching the whole profile to stadium bowls would also have changed 6, 8, 9 and P, and that was not an improvement.
+- The **7** is `bent`: the bar turns down early, and the stem ends almost vertical. The older `curved` 7 leaves the bar too steeply. The new bend is set by eye, not fitted to the photos.
+
+Every other glyph, advance and stroke weight is unchanged (`src/templates/dies/waldale.test.ts`). Not yet addressed: the P bowl should be closer to a rounded rectangle, the J needs a small top projection, and the A and 1 details differ. Published Driver Gothic and License Plate specimens were compared too. Their upright, hooked 6 and 9 do not match the sweeping B.C. forms, so neither font replaces the die.
 
 ## Which die a plate uses
 
