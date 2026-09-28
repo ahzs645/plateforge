@@ -1,0 +1,45 @@
+{
+  "inspectedOn": "2026-09-28",
+  "codeBranch": "main (not commit pinned)",
+  "photos": [
+    {
+      "text": "098 SJF",
+      "url": "https://www.bcpl8s.ca/images/Passenger/2001-2014/2011-098SJF%28XL%29.jpg",
+      "page": "https://www.bcpl8s.ca/Passenger-2001-2014.html",
+      "note": "Useful for the straight-sided 0, curved 9, rounded 8 and the small top projection on J."
+    },
+    {
+      "text": "976 SKP",
+      "url": "https://www.bcpl8s.ca/images/Passenger/2001-2014/2011-976SKP%28XL%29.jpg",
+      "page": "https://www.bcpl8s.ca/Passenger-2001-2014.html",
+      "note": "Useful for the sweeping 6/9, the changing slope of 7, and the rounded-rectangular bowl of P."
+    },
+    {
+      "text": "JA7 91L",
+      "url": "https://www.bcpl8s.ca/images/Passenger/2014-2023/2019-JA791L%28XL%29.jpg",
+      "page": "https://www.bcpl8s.ca/Passenger-2014-2025.html",
+      "note": "Later-period cross-check: the curved 7 and diagonal sweep of 9 remain visible. J and 1 need their own details."
+    }
+  ],
+  "vendors": [
+    {
+      "name": "Driver Gothic",
+      "url": "https://www.leewardpro.com/graphics/articles/licplatefonts/driver-gothic-specmn.png",
+      "page": "https://www.leewardpro.com/articles/licplatefonts/font-driver-gothic.html",
+      "publisher": "https://canadatype.com/product/driver-gothic/",
+      "note": "Published default specimen, with its displayed alternate row. The 6 and 9 have upright, hooked constructions unlike the photographed B.C. sweeps. The default 1 has a foot, and the 7 is more diagonal/straight. No licensed font was installed or bundled."
+    },
+    {
+      "name": "License Plate — Dave Hansen",
+      "url": "https://www.leewardpro.com/graphics/articles/licplatefonts/license-plate-washg-specmn.png",
+      "page": "https://www.leewardpro.com/articles/licplatefonts/font-license-plate-washg.html",
+      "publisher": "https://www.fontspace.com/license-plate-font-f3359",
+      "note": "Published specimen, not a substituted system font. A useful condensed plate style, but its 6/9, narrower overall construction, S and J details do not reproduce the photographed B.C. alphabet. No font file was installed or bundled."
+    }
+  ],
+  "code": [
+    "https://raw.githubusercontent.com/ahzs645/plateforge/main/src/templates/dies/profiles.ts",
+    "https://raw.githubusercontent.com/ahzs645/plateforge/main/src/templates/dies/skeleton.ts",
+    "https://raw.githubusercontent.com/ahzs645/plateforge/main/src/templates/dies/engine.ts"
+  ]
+}

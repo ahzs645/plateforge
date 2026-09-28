@@ -146,9 +146,9 @@ export const DIE_PROFILES: readonly DieProfile[] = [
   },
   {
     id: 'bc-waldale', label: 'Waldale', maker: 'Waldale',
-    params: { width: 53, stroke: 11, curve: 'oval', zeroCurve: 'stadium', tracking: 8, one: 'flag', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'bent', nine: 'curved', narrow: 0.58, wide: 1.2 },
+    params: { width: 53, stroke: 11, curve: 'oval', glyphCurve: { '0': 'stadium', P: 'box' }, boxRadius: 16, tracking: 8, one: 'short-flag', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'bent', nine: 'curved', a: 'flat', j: 'spur', narrow: 0.58, wide: 1.2 },
     evidence: { status: 'specimen-matched', specimens: [page('2001-2014'), page('2014-2025')],
-      notes: `Thinner, crisper strokes than Astrographic; narrow oval bowls, a straight-sided 0 and a bent 7 (098 SJF, 976 SKP, JA7 91L). The 7's bend is set by eye, not fitted. ${lettersNote}` },
+      notes: `Thinner, crisper strokes than Astrographic; narrow oval bowls with a straight-sided 0, a bent 7 and a short-flagged 1. Letters checked on 098 SJF, 976 SKP and JA7 91L: rounded-rectangle P bowl, spurred J, flat-topped A. The 7's bend and the letter details are set by eye, not fitted. ${lettersNote}` },
   },
 ];
 

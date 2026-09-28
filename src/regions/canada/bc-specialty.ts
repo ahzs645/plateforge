@@ -37,8 +37,8 @@ const sets = { s: BC_AK + BC_LX, k: BC_AK };
 /** Waldale's narrower "Mississippi" dies named on the Memorial Cross page. */
 registerDieProfile({
   id: 'bc-mississippi', label: 'Waldale “Mississippi” dies', maker: 'Waldale',
-  params: { width: 45, stroke: 10.5, curve: 'oval', tracking: 7, one: 'flag', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'straight', nine: 'curved', narrow: 0.55, wide: 1.12 },
-  evidence: { status: 'category', specimens: [SRC.memorial], notes: 'BCpl8s says the Memorial Cross base uses the Waldale "Mississippi" dies; proportions (narrower and rounder than the standard dies) are matched by eye from MC000R.' },
+  params: { width: 45, stroke: 10.5, curve: 'stadium', tracking: 7, one: 'flag-base', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'straight', nine: 'curved', narrow: 0.55, wide: 1.12 },
+  evidence: { status: 'category', specimens: [SRC.memorial], notes: 'BCpl8s says the Memorial Cross base uses the Waldale "Mississippi" dies. Proportions are matched by eye from MC000R; MC000R, MC1000 and MC127R show straight-sided O, 0, C and R bowls, a flagged 1 with a base and a near-straight 7.' },
 });
 
 function plate(id: string, label: string, size: Size, source: KitRecipe['source'], note: string,
