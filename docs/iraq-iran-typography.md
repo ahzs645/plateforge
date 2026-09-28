@@ -71,7 +71,11 @@ The Wikipedia SVG illustrations that identify B Roya as their creation font were
 
 ## Implementation decision
 
-The first pass is retained as the generator default while this lab supplies inspectable evidence. Production promotion should separately resolve font rights, complete required character mappings (including هـ and الف), measure die-specific metrics, and compare more independent specimens. Visual fit alone is not sufficient to label a typeface official.
+**Implemented (2026-09-28):** modern federal / KRG Latin lettering (class strip, governorate code, series letter and serial) now renders EuroPlate outlines converted to SVG paths (`src/templates/westasia-euro.ts`), scaled uniformly to the run height and centred, never stretched. No font file is embedded in the plate SVG. Iranian heh now uses the plate form هـ (a hand-drawn path, not a font outline). The bilingual 2008, side-legend and older Iraqi layouts, and all other Iranian glyphs, keep the geometric first pass.
+
+**Not implemented:** IR Plate / B Roya outlines (font rights unresolved), die-specific widths (the embossed ۴ / ۷ and narrower Iraqi digits) and untested Latin letters, which remain EuroPlate's shapes.
+
+The remaining first-pass glyphs stay the generator default while this lab supplies inspectable evidence. Production promotion should separately resolve font rights, complete required character mappings (including هـ and الف), measure die-specific metrics, and compare more independent specimens. Visual fit alone is not sufficient to label a typeface official.
 
 This is a completed **comparison pass**, not a claimed completion of die reconstruction. No font binaries, font outline libraries or full source photographs are included in the report assets. SVG serial generation and all existing country implementations are unchanged by the comparison controls.
 

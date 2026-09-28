@@ -4,6 +4,7 @@
  * Country words and province legends are deliberately still editable SVG text.
  */
 import { normalizeLetter } from '../regions/asia/plate-script';
+import { EURO_PLATE_GLYPHS } from './westasia-euro';
 export const xml = (value: unknown): string => String(value ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[c]!));
 const path = (d: string, width = 7) => `<path d="${d}" fill="none" stroke="currentColor" stroke-width="${width}" stroke-linecap="square" stroke-linejoin="round"/>`;
 const dot = (x: number, y: number, r = 3.6) => `<circle cx="${x}" cy="${y}" r="${r}" fill="currentColor"/>`;
@@ -71,23 +72,33 @@ const LETTERS: Record<string, string> = {
   'ل': path('M38 11V55Q36 73 19 71Q6 68 8 52'),
   'م': path('M7 72V57L25 47Q39 54 42 41Q43 28 32 27Q20 30 25 47'),
   'ن': path(bowl) + dot(25, 28), 'و': path('M38 45Q12 49 14 32Q18 17 32 26Q47 39 35 59Q26 71 7 73'),
-  'ه': path('M25 27Q6 34 9 53Q13 67 25 57Q39 66 42 53Q46 36 25 27ZM25 27V57'),
+  // Plate form (initial هـ): a solid teardrop leaning right from a top-left point, a flat tail along the baseline and
+  // two counters. The typography review scored this form 0.87 against 0.63 for the isolated ه on a private plate.
+  'ه': '<path fill="currentColor" fill-rule="evenodd" d="M0 66H9C6 50 9 29 19 6C21 2 25 2 27 5C38 18 50 36 50 56C50 72 42 80 30 80H0ZM20 40C14 40 12 46 12 50C12 56 16 58 20 58C25 58 28 54 28 49C28 44 25 40 20 40ZM35 61C32 62 31 66 33 70C35 73 39 73 41 71C42 68 40 63 35 61Z"/>',
   'ی': path('M41 26Q29 15 21 29Q15 38 37 45Q45 60 29 69Q7 79 6 59'),
 };
 export function hasPlateGlyph(character: string): boolean {
   const key = normalizeLetter(character);
   return key === ' ' || !!(LATIN[key] || ARABIC[key] || PERSIAN[key] || LETTERS[key]);
 }
-export function glyph(character: string): string {
+/** `euro`: EuroPlate outlines for Latin characters (modern Iraq / KRG); anything else falls back to the geometric set. */
+export type GlyphProfile = 'geometric' | 'euro';
+const euroGlyph = (key: string) => EURO_PLATE_GLYPHS[key] ? `<path d="${EURO_PLATE_GLYPHS[key]}" fill="currentColor"/>` : '';
+export function glyph(character: string, profile: GlyphProfile = 'geometric'): string {
   const key = normalizeLetter(character);
-  return LATIN[key] || ARABIC[key] || PERSIAN[key] || LETTERS[key] || (key === ' ' ? '' : path('M8 8H42V72H8ZM8 8L42 72M42 8L8 72', 3));
+  return (profile === 'euro' && euroGlyph(key)) || LATIN[key] || ARABIC[key] || PERSIAN[key] || LETTERS[key] || (key === ' ' ? '' : path('M8 8H42V72H8ZM8 8L42 72M42 8L8 72', 3));
 }
-/** Fixed-position cells are deliberately independent of the browser bidi algorithm. */
-export function glyphRun(value: string, x: number, y: number, width: number, height: number, gap = 3): string {
+/** Fixed-position cells are deliberately independent of the browser bidi algorithm. Font-derived (euro) glyphs keep
+ * their own proportions: scaled uniformly to the run height and centred in the cell, never stretched to fill it. */
+export function glyphRun(value: string, x: number, y: number, width: number, height: number, gap = 3, profile: GlyphProfile = 'geometric'): string {
   const chars = [...value].slice(0, 32); // Bound untrusted URL edits; validators still report errors.
   if (!chars.length) return '';
   const cell = Math.max(1, (width - gap * (chars.length - 1)) / chars.length);
-  return chars.map((ch, i) => `<g data-glyph="${xml(ch)}" transform="translate(${x + i * (cell + gap)} ${y}) scale(${cell / 50} ${height / 80})">${glyph(ch)}</g>`).join('');
+  return chars.map((ch, i) => {
+    const left = x + i * (cell + gap), euro = profile === 'euro' && !!euroGlyph(normalizeLetter(ch));
+    const k = height / 80, transform = euro ? `translate(${left + (cell - 50 * k) / 2} ${y}) scale(${k})` : `translate(${left} ${y}) scale(${cell / 50} ${k})`;
+    return `<g data-glyph="${xml(ch)}"${euro ? ' data-profile="euro"' : ''} transform="${transform}">${glyph(ch, profile)}</g>`;
+  }).join('');
 }
 /** The accessibility class symbol is actual geometry, never an emoji/font fallback. */
 export function accessibility(x: number, y: number, size: number): string {

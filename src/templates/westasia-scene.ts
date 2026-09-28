@@ -2,7 +2,7 @@
 import type { Design, Parts } from '../core/types';
 import { IRAQ_LETTERS, iraqGovernorate } from '../regions/asia/iraq-data';
 import { asciiDigits, displayDigits, normalizeLetter } from '../regions/asia/plate-script';
-import { accessibility, glyphRun, xml } from './westasia-glyphs';
+import { accessibility, glyphRun, xml, type GlyphProfile } from './westasia-glyphs';
 
 export interface PlateScene { width: number; height: number; body: string }
 const colour = (value: unknown, fallback: string): string => typeof value === 'string' && /^#(?:[0-9a-f]{3}|[0-9a-f]{4}|[0-9a-f]{6}|[0-9a-f]{8})$/i.test(value) ? value : fallback;
@@ -24,10 +24,10 @@ function iranStrip(w: number, h: number): string {
     `<g transform="translate(${9 + fw / 2 - 3} 19) scale(.12)" fill="none" stroke="#d52731" stroke-width="5"><path d="M25 1V50M12 4Q-7 25 17 47M38 4Q57 25 33 47M15 13Q8 36 25 48Q42 36 35 13"/></g></g>` +
     `<g color="#ffffff">${legend('I.R.', w / 2 + 2, h - 32, 10, w - 14)}${legend('IRAN', w / 2 + 2, h - 15, 10, w - 11)}</g>`;
 }
-function serialRun(value: string, x: number, y: number, width: number, height: number, gap: number): string {
+function serialRun(value: string, x: number, y: number, width: number, height: number, gap: number, profile: GlyphProfile = 'geometric'): string {
   // Short historical/carried-over serials retain their die proportions instead of stretching to five slots.
   const fitted = Math.min(width, Math.max(0, [...value].length * height * .61 + ([...value].length - 1) * gap));
-  return glyphRun(value, x + (width - fitted) / 2, y, fitted, height, gap);
+  return glyphRun(value, x + (width - fitted) / 2, y, fitted, height, gap, profile);
 }
 function metadata(text: string, country: string): string {
   return `<title>${xml(text)}</title><desc>PlateForge ${country}: editable geometric reconstruction, not official manufacturing artwork. Serial glyphs are paths; joined legends use system-font SVG text. Colours, flag detail and unverified historical dimensions are approximate. Research snapshot 2026-09-27.</desc>`;
@@ -44,22 +44,23 @@ export function iraqScene(design: Design, parts: Parts, text = ''): PlateScene {
   const serial = asciiDigits(parts.serial ?? '');
   let body = metadata(text, 'Iraq') + `<g color="${ink}">` + shell(w, h, bg);
   if (design.system === 'modern') {
+    // Modern federal / KRG Latin lettering uses EuroPlate outlines (typography review: 0.80 vs 0.49 overlap).
     const compact = w < 400, stripW = compact ? 32 : 38;
     body += `<g data-layer="class-strip">` + rect(4, 4, stripW - 4, h - 8, colour(design.strip, '#f8f8f3')) + `</g>` + rule(stripW, 4, stripW, h - 4);
     body += `<g color="${colour(design.stripInk, ink)}">`;
     const sy = compact ? 24 : 12, dy = compact ? 31 : 25;
-    for (const [i, ch] of [...'IRQ'].entries()) body += glyphRun(ch, 11, sy + i * dy, stripW - 18, 22);
-    if (design.kr === true) body += glyphRun('KR', 9, h - 23, stripW - 14, 13, 2);
+    for (const [i, ch] of [...'IRQ'].entries()) body += glyphRun(ch, 11, sy + i * dy, stripW - 18, 22, 3, 'euro');
+    if (design.kr === true) body += glyphRun('KR', 9, h - 23, stripW - 14, 13, 2, 'euro');
     body += '</g>';
     const code = asciiDigits(parts.governorate ?? '');
     if (compact) {
-      body += `<g data-layer="governorate">${glyphRun(code, 88, 12, 88, 53)}</g>`;
-      body += `<g data-layer="series">${glyphRun(parts.letter ?? '', 213, 12, 36, 53)}</g>`;
-      body += `<g data-layer="serial">${serialRun(serial, 54, 73, 259, 65, 9)}</g>`;
+      body += `<g data-layer="governorate">${glyphRun(code, 88, 12, 88, 53, 3, 'euro')}</g>`;
+      body += `<g data-layer="series">${glyphRun(parts.letter ?? '', 213, 12, 36, 53, 3, 'euro')}</g>`;
+      body += `<g data-layer="serial">${serialRun(serial, 54, 73, 259, 65, 9, 'euro')}</g>`;
     } else {
-      body += `<g data-layer="governorate">${glyphRun(code, 51, 17, 94, 77, 7)}</g>`;
-      body += `<g data-layer="series">${glyphRun(parts.letter ?? '', 162, 17, 44, 77)}</g>`;
-      body += `<g data-layer="serial">${serialRun(serial, 228, 17, 276, 77, 8)}</g>`;
+      body += `<g data-layer="governorate">${glyphRun(code, 51, 17, 94, 77, 7, 'euro')}</g>`;
+      body += `<g data-layer="series">${glyphRun(parts.letter ?? '', 162, 17, 44, 77, 3, 'euro')}</g>`;
+      body += `<g data-layer="serial">${serialRun(serial, 228, 17, 276, 77, 8, 'euro')}</g>`;
     }
   } else if (design.system === 'bilingual') {
     body += rule(31, 4, 31, h - 4) + rule(31, 114, w - 4, 114);
