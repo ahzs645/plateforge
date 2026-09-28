@@ -24,16 +24,24 @@ export interface SkeletonParams {
   wide?: number;
   /** Space between glyphs, cap-height units. */
   tracking: number;
-  one?: 'plain' | 'flag' | 'flag-base';
+  /** `short-flag`: a short, shallow wedge instead of the long diagonal flag (Waldale). */
+  one?: 'plain' | 'flag' | 'flag-base' | 'short-flag';
   two?: 'curved' | 'angled';
   three?: 'round' | 'flat-top';
   four?: 'closed' | 'open';
   /** Short horizontal foot under the 4's stem (ACME). */
   fourFoot?: boolean;
   six?: 'curved' | 'straight';
-  seven?: 'straight' | 'curved';
+  /** `bent`: the bar turns down early and the stem finishes near-vertical (Waldale). */
+  seven?: 'straight' | 'curved' | 'bent';
   nine?: 'curved' | 'straight';
   zero?: 'plain' | 'narrow';
+  /** Bowl construction for individual glyphs that differ from the rest (Waldale's straight-sided 0 and boxy P). */
+  glyphCurve?: Readonly<Partial<Record<string, CurveStyle>>>;
+  /** `flat`: the A's legs meet in a short flat top, with the bar lower. */
+  a?: 'pointed' | 'flat';
+  /** `spur`: a short projection to the left at the top of the J. */
+  j?: 'plain' | 'spur';
   /** Middle junction height of B, 3, 8 etc. as a fraction of cap height (0.5 = centred). */
   waist?: number;
   /** Width of the dash separator, cap-height units, and its vertical position. */
@@ -76,7 +84,9 @@ const rightBowl = (p: SkeletonParams, box: Box, from: number) =>
   `M${f(from)} ${f(box.t)} H${f((box.l + box.r) / 2)} ${quarters(p, box).slice(0, 2).join(' ')} H${f(from)}`;
 
 /** Returns the skeleton for one character, or null when the profile has no such glyph. */
-export function skeletonGlyph(char: string, p: SkeletonParams): SkeletonGlyph | null {
+export function skeletonGlyph(char: string, params: SkeletonParams): SkeletonGlyph | null {
+  const curve = params.glyphCurve?.[char];
+  const p = curve ? { ...params, curve } : params;
   const w = p.width, s = p.stroke, h = s / 2;
   const L = h, R = w - h, T = h, B = 100 - h, MX = w / 2;
   const waist = 100 * (p.waist ?? 0.5);
@@ -93,7 +103,9 @@ export function skeletonGlyph(char: string, p: SkeletonParams): SkeletonGlyph | 
     case '1': {
       const x = p.one === 'plain' ? narrowW / 2 : narrowW * 0.62;
       // One path so the flag joins the stem instead of capping past it.
-      const paths = [p.one === 'plain' ? `M${f(x)} ${f(T)} V${f(B)}` : `M${f(h + 1)} ${f(T + 18)} L${f(x)} ${f(T)} V${f(B)}`];
+      const paths = [p.one === 'plain' ? `M${f(x)} ${f(T)} V${f(B)}`
+        : p.one === 'short-flag' ? `M${f(x - 7)} ${f(T + 6)} L${f(x)} ${f(T)} V${f(B)}`
+        : `M${f(h + 1)} ${f(T + 18)} L${f(x)} ${f(T)} V${f(B)}`];
       if (p.one === 'flag-base') paths.push(`M${f(h)} ${f(B)} H${f(narrowW - h)}`);
       return g(paths, narrowW);
     }
@@ -125,7 +137,9 @@ export function skeletonGlyph(char: string, p: SkeletonParams): SkeletonGlyph | 
     case '7':
       return g([p.seven === 'curved'
         ? `M${f(L)} ${f(T)} H${f(R)} C${f(R - w * 0.08)} ${f(38)} ${f(MX - 2)} ${f(62)} ${f(MX - 4)} ${f(B)}`
-        : `M${f(L)} ${f(T)} H${f(R)} L${f(L + w * 0.28)} ${f(B)}`]);
+        : p.seven === 'bent'
+          ? `M${f(L)} ${f(T)} H${f(R)} C${f(MX + 4.5)} ${f(30)} ${f(MX - 3.5)} ${f(57)} ${f(MX - 3.5)} ${f(B)}`
+          : `M${f(L)} ${f(T)} H${f(R)} L${f(L + w * 0.28)} ${f(B)}`]);
     case '8':
       return g([loop(p, { l: L + w * 0.05, t: T, r: R - w * 0.05, b: waist }), loop(p, { l: L, t: waist, r: R, b: B })]);
     case '9': {
@@ -135,7 +149,12 @@ export function skeletonGlyph(char: string, p: SkeletonParams): SkeletonGlyph | 
         : `M${f(R)} ${f(29)} C${f(R + 2)} ${f(66)} ${f(MX + 4)} ${f(B - 4)} ${f(L + 6)} ${f(B)}`]);
     }
     // ── Letters ─────────────────────────────────────────────────────────
-    case 'A': return g([`M${f(L)} ${f(B)} L${f(MX)} ${f(T)} L${f(R)} ${f(B)}`, `M${f(L + w * 0.17)} ${f(66)} H${f(R - w * 0.17)}`]);
+    case 'A': {
+      if (p.a !== 'flat') return g([`M${f(L)} ${f(B)} L${f(MX)} ${f(T)} L${f(R)} ${f(B)}`, `M${f(L + w * 0.17)} ${f(66)} H${f(R - w * 0.17)}`]);
+      // The bar sits lower, at 70; its square caps end on the legs' centrelines.
+      const top = w * 0.06, bar = 70, inset = (MX - top - L) * (B - bar) / (B - T) + h;
+      return g([`M${f(L)} ${f(B)} L${f(MX - top)} ${f(T)} H${f(MX + top)} L${f(R)} ${f(B)}`, `M${f(L + inset)} ${f(bar)} H${f(R - inset)}`]);
+    }
     case 'B': return g([`M${f(L)} ${f(B)} V${f(T)}`, rightBowl(p, { l: L, t: T, r: R - w * 0.05, b: waist }, L), rightBowl(p, { l: L, t: waist, r: R, b: B }, L)]);
     case 'C': return g([openBowl(p, full)]);
     case 'D': return g([`M${f(L)} ${f(B)} V${f(T)}`, rightBowl(p, full, L)]);
@@ -144,7 +163,8 @@ export function skeletonGlyph(char: string, p: SkeletonParams): SkeletonGlyph | 
     case 'G': return g([skeletonGlyph('C', p)!.paths[0], `M${f(R)} ${f(B - 20)} V${f(56)} H${f(MX + 2)}`]);
     case 'H': return g([`M${f(L)} ${f(T)} V${f(B)}`, `M${f(R)} ${f(T)} V${f(B)}`, `M${f(L)} ${f(waist)} H${f(R)}`]);
     case 'I': return g([`M${f(narrowW / 2)} ${f(T)} V${f(B)}`], narrowW);
-    case 'J': return g([`M${f(R)} ${f(T)} V${f(B - 24)} Q${f(R)} ${f(B)} ${f(MX)} ${f(B)} Q${f(L)} ${f(B)} ${f(L)} ${f(B - 24)}`]);
+    // The spur is a separate subpath so the stem keeps its square top corner.
+    case 'J': return g([`${p.j === 'spur' ? `M${f(R - s * 0.35)} ${f(T)} H${f(R)} ` : ''}M${f(R)} ${f(T)} V${f(B - 24)} Q${f(R)} ${f(B)} ${f(MX)} ${f(B)} Q${f(L)} ${f(B)} ${f(L)} ${f(B - 24)}`]);
     case 'K': return g([`M${f(L)} ${f(T)} V${f(B)}`, `M${f(R)} ${f(T)} L${f(L)} ${f(62)}`, `M${f(L + w * 0.3)} ${f(46)} L${f(R)} ${f(B)}`]);
     case 'L': return g([`M${f(L)} ${f(T)} V${f(B)} H${f(R)}`]);
     case 'M': {

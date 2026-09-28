@@ -1,0 +1,11 @@
+{
+  "scope": "Offline HTML functionality only; remote photos not browser-validated in this environment",
+  "passed": 4,
+  "checks": [
+    "Static HTML has all 12 strips and 6 diagnostic glyph rows; no font substitute rendered.",
+    "Blocked external images produce an explicit source-link fallback and retry button.",
+    "Local font-loading panel works with a system test font; no errors. No font file exported.",
+    "Narrow viewport has no document-level horizontal overflow."
+  ],
+  "page_errors": []
+}

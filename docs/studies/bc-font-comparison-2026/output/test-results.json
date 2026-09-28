@@ -1,0 +1,51 @@
+{
+  "runAt": "2026-09-28T20:09:05.243Z",
+  "scope": "Isolated transcribed glyph harness; NOT repository CI or an image-match benchmark",
+  "passed": 11,
+  "tests": [
+    {
+      "name": "Baseline parameters equal inspected bc-waldale source",
+      "status": "pass"
+    },
+    {
+      "name": "Baseline seven path equals evaluated source formula",
+      "status": "pass"
+    },
+    {
+      "name": "Built-in curved seven equals evaluated source formula",
+      "status": "pass"
+    },
+    {
+      "name": "Zero changes from ellipse commands to arcs and vertical segments",
+      "status": "pass"
+    },
+    {
+      "name": "Minimal and exploratory variants leave non-0/7 glyphs unchanged",
+      "status": "pass"
+    },
+    {
+      "name": "Every tested variant preserves advances and stroke weights",
+      "status": "pass"
+    },
+    {
+      "name": "Global stadium control also changes 6 8 9 P",
+      "status": "pass"
+    },
+    {
+      "name": "Exploratory seven differs from both stock alternatives",
+      "status": "pass"
+    },
+    {
+      "name": "All three serials render in every study variant",
+      "status": "pass"
+    },
+    {
+      "name": "Unsupported glyphs/variants fail explicitly",
+      "status": "pass"
+    },
+    {
+      "name": "Call ordering does not reuse another variant geometry",
+      "status": "pass"
+    }
+  ]
+}
