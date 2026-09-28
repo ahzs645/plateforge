@@ -52,6 +52,8 @@ export interface PlateFormat {
   text?(parts: Parts): string;
   /** Merged over the region's design. */
   design?: Design;
+  /** Template id when this format is drawn differently from the rest of its region (e.g. stand-in artwork). */
+  template?: string;
   /** Years this format was issued or valid (inclusive). Enables the timeline. */
   period?: readonly [number, number];
   /** Id of the region era this format belongs to; inferred from `period` when omitted. */
@@ -62,7 +64,9 @@ export interface PlateFormat {
   status?: PlateStatus;
 }
 
-export type PlateStatus = 'issued' | 'official-sample' | 'prototype' | 'proposal' | 'souvenir' | 'prop' | 'reproduction' | 'uncertain';
+export type PlateStatus = 'issued' | 'official-sample' | 'prototype' | 'proposal' | 'souvenir' | 'prop' | 'reproduction' | 'uncertain'
+  /** Third-party raster artwork shown until an SVG reconstruction exists. */
+  | 'stand-in';
 
 /** A group of related formats with its own timeline, e.g. passenger or motorcycle plates. */
 export interface PlateFamily {
@@ -126,7 +130,8 @@ export interface TemplateProps<D extends Design = Design> {
 export interface FontAsset {
   family: string;
   url: string;
-  weight?: number;
+  /** A number, or a range such as `'400 700'` for variable fonts. */
+  weight?: number | string;
   format?: 'woff2' | 'truetype';
 }
 

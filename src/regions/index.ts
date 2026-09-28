@@ -1,5 +1,6 @@
 import { withLettering } from '../core/lettering';
 import { registerRegion } from '../core/registry';
+import { withStandIns } from '../stand-ins/regions';
 import { costaRica } from './americas/costa-rica';
 import { mercosurRegions } from './americas/mercosur';
 import { china } from './asia/china';
@@ -15,4 +16,7 @@ import { usRegions } from './us';
 
 export const BUILT_IN_REGIONS = [...usRegions.map((region) => ({ ...region, formats: region.formats.map(withLettering) })), ...europeRegions, china, japan, britishColumbia, ...canadianProvinces, iraq, iran, korea, vietnam, costaRica, ...mercosurRegions];
 
-registerRegion(...BUILT_IN_REGIONS);
+/** Built-in regions plus stand-in artwork formats (and the themed-plates region) from `src/stand-ins`. */
+export const REGIONS = withStandIns(BUILT_IN_REGIONS);
+
+registerRegion(...REGIONS);

@@ -30,6 +30,9 @@ export function getTemplate(id: string): PlateTemplate<any> {
   return t;
 }
 
+/** The template a plate is drawn with: the format's own, else its region's. */
+export const templateFor = (region: Region, format: PlateFormat): PlateTemplate<any> => getTemplate(format.template ?? region.template);
+
 export function getFormat(region: Region, formatId?: string): PlateFormat {
   return region.formats.find((f) => f.id === formatId) ?? region.formats[0];
 }

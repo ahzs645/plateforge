@@ -5,7 +5,7 @@ import { getRegion, getTemplate } from '../../core/registry';
 import type { PlateFormat, Region } from '../../core/types';
 import { caTemplate, type CaDesign } from '../../templates/ca';
 import '../../templates';
-import { BUILT_IN_REGIONS } from '../index';
+import { REGIONS } from '../index';
 import { canadianProvinces, series } from './provinces';
 
 const CODES = ['AB', 'SK', 'MB', 'ON', 'QC', 'NB', 'NS', 'PE', 'NL', 'YT', 'NT', 'NU'];
@@ -25,7 +25,7 @@ describe('Canadian provinces and territories', () => {
     for (const code of CODES) {
       const r = getRegion(`ca-${code.toLowerCase()}`);
       expect(r, code).toBeDefined();
-      expect(BUILT_IN_REGIONS).toContain(r);
+      expect(REGIONS).toContain(r);
       expect(r).toMatchObject({ group: 'North America', country: 'Canada', flag: '🇨🇦', template: 'ca' });
       expect(r!.formats[0].id).toBe('standard');
       for (const f of r!.formats) expect(f.references?.length, `${code}/${f.id}`).toBeGreaterThan(0);

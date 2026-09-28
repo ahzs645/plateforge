@@ -1,5 +1,5 @@
 import { memo, type Ref } from 'react';
-import { getTemplate, resolveDesign } from '../core/registry';
+import { resolveDesign, templateFor } from '../core/registry';
 import type { Design, Plate } from '../core/types';
 
 interface Props {
@@ -9,9 +9,9 @@ interface Props {
   ref?: Ref<HTMLDivElement>;
 }
 
-/** Renders any plate through its region's template. */
+/** Renders any plate through its format's (or region's) template. */
 export const PlateView = memo(function PlateView({ plate, overrides, className, ref }: Props) {
-  const template = getTemplate(plate.region.template);
+  const template = templateFor(plate.region, plate.format);
   const design = resolveDesign(plate.region, plate.format, overrides);
   const Render = template.render;
   return (

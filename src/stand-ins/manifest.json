@@ -1,0 +1,3503 @@
+{
+ "source": "https://www.notateslaapp.com/tesla-customizations/license-plates/",
+ "capturedDate": "2026-09-27",
+ "credit": "Artwork and text settings from Not a Tesla App (notateslaapp.com); rights remain with their owners.",
+ "plates": [
+  {
+   "id": "ka-chow",
+   "name": "Ka-Chow",
+   "country": null,
+   "region": null,
+   "category": "Themed",
+   "customizable": false,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/famous-themed/ka-chow/",
+   "artwork": {
+    "file": "ka-chow/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "351489464b7c8db89f7e82dd24e3204d053b422ec73d39c6dbd0276a51e2f69f"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#12306b",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 102
+   }
+  },
+  {
+   "id": "lightning-mcqueen",
+   "name": "Lightning McQueen",
+   "country": null,
+   "region": null,
+   "category": "Themed",
+   "customizable": false,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/famous-themed/lightning-mcqueen/",
+   "artwork": {
+    "file": "lightning-mcqueen/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "ea6b2a81aaee123f2e8a75f1d2dbc4ad1400185b8b4404ebf2b35524547bc202"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#12306b",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 102
+   }
+  },
+  {
+   "id": "new-york-standard-2001",
+   "name": "New York (2001)",
+   "country": "United States",
+   "region": "New York",
+   "category": "Legacy",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/new-york/new-york-standard-2001/",
+   "artwork": {
+    "file": "new-york-standard-2001/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "122bdf86bdb897a0f4b401fc7a0c4fb16da830fae1eb1883a2e52b889eb1f2bb"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "new-york-standard-2001/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     482,
+     283,
+     126,
+     103
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#111536",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 500,
+    "y": 112
+   }
+  },
+  {
+   "id": "new-york-standard-2010",
+   "name": "New York (2010)",
+   "country": "United States",
+   "region": "New York",
+   "category": "Legacy",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/new-york/new-york-standard-2010/",
+   "artwork": {
+    "file": "new-york-standard-2010/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "895577f28411c6598afb686101635e937599e5caf346b0b07079954f98408913"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "new-york-standard-2010/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     482,
+     283,
+     126,
+     103
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#000000",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 500,
+    "y": 104
+   }
+  },
+  {
+   "id": "rusty-plate",
+   "name": "Rusty Plate",
+   "country": null,
+   "region": null,
+   "category": "Themed",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/famous-themed/rusty-plate/",
+   "artwork": {
+    "file": "rusty-plate/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "2d03bf512f7c4b5549ccfad14e526390fcfc2ff27068ed7f76ad1c6476559046"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#924A0E",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 500,
+    "y": 100
+   }
+  },
+  {
+   "id": "scary-eyes",
+   "name": "Scary Eyes",
+   "country": null,
+   "region": null,
+   "category": "Themed",
+   "customizable": false,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/famous-themed/scary-eyes/",
+   "artwork": {
+    "file": "scary-eyes/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "1c225da411be670b16a4ee43d6e6c93729cef2e0e2350fd45f89d61afaa920e9"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#12306b",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 102
+   }
+  },
+  {
+   "id": "superman",
+   "name": "Superman",
+   "country": null,
+   "region": null,
+   "category": "Themed",
+   "customizable": false,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/famous-themed/superman/",
+   "artwork": {
+    "file": "superman/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "f0573e2482dfa17db37581b2f32e9338cc48c2a2b1e34d1f0d5dceab019a7d13"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#12306b",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 102
+   }
+  },
+  {
+   "id": "tesla-fsd",
+   "name": "Tesla FSD",
+   "country": null,
+   "region": null,
+   "category": "Themed",
+   "customizable": false,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/famous-themed/tesla-fsd/",
+   "artwork": {
+    "file": "tesla-fsd/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "fac33bba04f60ea4e1296804710d9b5fcff6361540dc6e243a88c3c4407633ea"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#12306b",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 102
+   }
+  },
+  {
+   "id": "tesla-plaid",
+   "name": "Tesla Plaid",
+   "country": null,
+   "region": null,
+   "category": "Themed",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/famous-themed/tesla-plaid/",
+   "artwork": {
+    "file": "tesla-plaid/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "05545b1c2f78cdc860b13b85ead98863b1015b8debb658fafff3a91c5e988a9a"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#ffffff",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 10,
+    "maxLength": 11,
+    "outline": {
+     "color": "#202020",
+     "width": 8
+    },
+    "size": 125,
+    "space": 400,
+    "weight": 700,
+    "y": 100
+   }
+  },
+  {
+   "id": "fresh-prince-of-bel-air",
+   "name": "The Fresh Prince of Bel-Air",
+   "country": "United States",
+   "region": "California",
+   "category": "Famous Plate",
+   "customizable": false,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/famous-themed/fresh-prince-of-bel-air/",
+   "artwork": {
+    "file": "fresh-prince-of-bel-air/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "8083d713d0a39eeb33ea2f15752ddd069fec522530d0b5cd79866e7e527fc955"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#12306b",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 102
+   }
+  },
+  {
+   "id": "back-to-the-future-outatime",
+   "name": "Back to the Future",
+   "country": "United States",
+   "region": "California",
+   "category": "Famous Plate",
+   "customizable": false,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/famous-themed/back-to-the-future-outatime/",
+   "artwork": {
+    "file": "back-to-the-future-outatime/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "9c343d7dd297f163911730d20570d17cd5b8e6f638f6ce069b6356d6e13989db"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#12306b",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 102
+   }
+  },
+  {
+   "id": "back-to-the-future-part-ii",
+   "name": "Back to the Future Part II",
+   "country": "United States",
+   "region": "California",
+   "category": "Famous Plate",
+   "customizable": false,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/famous-themed/back-to-the-future-part-ii/",
+   "artwork": {
+    "file": "back-to-the-future-part-ii/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "f85080c0316ba8eb5600e0ddd1310c7e2cc792d4f8ede1d0959cd4bdfb109132"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#12306b",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 102
+   }
+  },
+  {
+   "id": "batman-logo",
+   "name": "Batman",
+   "country": null,
+   "region": null,
+   "category": "Themed",
+   "customizable": false,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/famous-themed/batman-logo/",
+   "artwork": {
+    "file": "batman-logo/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "35071e2148d2a8d4d2fe48a30a1004ecd7d25b6b4ac450c3b2a9fad07db92923"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#12306b",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 102
+   }
+  },
+  {
+   "id": "batmobile-bat-1",
+   "name": "Batmobile",
+   "country": null,
+   "region": null,
+   "category": "Famous Plate",
+   "customizable": false,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/famous-themed/batmobile-bat-1/",
+   "artwork": {
+    "file": "batmobile-bat-1/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "338b45ef862346ab8d29aa3324c1575fe22991a8da7fd03ef46d8c8a686ee13b"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#12306b",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 102
+   }
+  },
+  {
+   "id": "ghostbusters-ecto-1",
+   "name": "Ghostbusters",
+   "country": "United States",
+   "region": "New York",
+   "category": "Famous Plate",
+   "customizable": false,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/famous-themed/ghostbusters-ecto-1/",
+   "artwork": {
+    "file": "ghostbusters-ecto-1/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "23fb162aa2ec3a93ab1206c8aba0e16faec87ccef79823b696955a8bcbc03d3a"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#12306b",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 102
+   }
+  },
+  {
+   "id": "herbie-ofp-857",
+   "name": "Herbie",
+   "country": "United States",
+   "region": "California",
+   "category": "Famous Plate",
+   "customizable": false,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/famous-themed/herbie-ofp-857/",
+   "artwork": {
+    "file": "herbie-ofp-857/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "1b399170d704b43327fb2934caaf730bc9710208fe281b9f16fdc1d3ee655ec7"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#12306b",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 102
+   }
+  },
+  {
+   "id": "herbie-53",
+   "name": "Herbie 53",
+   "country": null,
+   "region": null,
+   "category": "Themed",
+   "customizable": false,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/famous-themed/herbie-53/",
+   "artwork": {
+    "file": "herbie-53/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "0f1be081016ea712b7a4f1db60bc63f7951c91ae455add3a6bf2d106c3da4d1f"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#12306b",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 102
+   }
+  },
+  {
+   "id": "iron-man-stark-4",
+   "name": "Iron Man",
+   "country": "United States",
+   "region": "California",
+   "category": "Famous Plate",
+   "customizable": false,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/famous-themed/iron-man-stark-4/",
+   "artwork": {
+    "file": "iron-man-stark-4/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "3dc2e7bea38ed802b2a57d470712824c73351dd200a7416d72cbe154b708b328"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#12306b",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 102
+   }
+  },
+  {
+   "id": "knight-rider-knight",
+   "name": "Knight Rider",
+   "country": "United States",
+   "region": "California",
+   "category": "Famous Plate",
+   "customizable": false,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/famous-themed/knight-rider-knight/",
+   "artwork": {
+    "file": "knight-rider-knight/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "c410d322aea8d6c745aa0823cf6f7c74d3823bde6c01f6af8d2b3ae99e985f8d"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#12306b",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 102
+   }
+  },
+  {
+   "id": "scooby-doo-zoinks",
+   "name": "Scooby-Doo",
+   "country": null,
+   "region": null,
+   "category": "Themed",
+   "customizable": false,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/famous-themed/scooby-doo-zoinks/",
+   "artwork": {
+    "file": "scooby-doo-zoinks/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "1073de71cd45de4d9af38595fff496d7888095db376be1ec2fe5a99e7cc7d713"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#12306b",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 102
+   }
+  },
+  {
+   "id": "flintstones-bedrock",
+   "name": "The Flintstones",
+   "country": null,
+   "region": null,
+   "category": "Themed",
+   "customizable": false,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/famous-themed/flintstones-bedrock/",
+   "artwork": {
+    "file": "flintstones-bedrock/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "92bc435d2f1439fde8e1961db728d2f2662805348bf8e96eb652a0e0a709465d"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#12306b",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 102
+   }
+  },
+  {
+   "id": "toy-story-a113",
+   "name": "Toy Story",
+   "country": null,
+   "region": null,
+   "category": "Famous Plate",
+   "customizable": false,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/famous-themed/toy-story-a113/",
+   "artwork": {
+    "file": "toy-story-a113/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "7f31615e1af359264697ca31018a47150ab5f187bddebfeef49e4282a51814b5"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#12306b",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 102
+   }
+  },
+  {
+   "id": "district-of-columbia-standard",
+   "name": "District of Columbia",
+   "country": "United States",
+   "region": "District of Columbia",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/district-of-columbia/district-of-columbia-standard/",
+   "artwork": {
+    "file": "district-of-columbia-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "883ca370d29feffd8ee533f6a25029f35f02bb5dc08fb082f4932b25d8fb94c2"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "district-of-columbia-standard/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     533,
+     235,
+     135,
+     132
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#002C8C",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 500,
+    "y": 101
+   }
+  },
+  {
+   "id": "illinois-electric-vehicle",
+   "name": "Illinois Electric Vehicle",
+   "country": "United States",
+   "region": "Illinois",
+   "category": "Specialty",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/illinois/illinois-electric-vehicle/",
+   "artwork": {
+    "file": "illinois-electric-vehicle/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "2ef38e1ac2c94463d9c7ca8072ac1e97412ed2e262ab229338a08b4f2dbceabc"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "right",
+    "color": "#000000",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "placeholder": "12345",
+    "size": 105,
+    "space": 400,
+    "weight": 500,
+    "x": 260,
+    "y": 115
+   }
+  },
+  {
+   "id": "alberta-standard",
+   "name": "Alberta",
+   "country": "Canada",
+   "region": "Alberta",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/ca/alberta/alberta-standard/",
+   "artwork": {
+    "file": "alberta-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "96030a2796cbda9c34020633f7257ab49292b1c2c1e0e2c582df452cc357453d"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "alberta-standard/separator.webp",
+    "imageWidth": 63,
+    "imageHeight": 33,
+    "bounds": [
+     2,
+     2,
+     59,
+     29
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#AC2026",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 108,
+    "space": 400,
+    "weight": 500,
+    "y": 110
+   }
+  },
+  {
+   "id": "alberta-moraine-lake",
+   "name": "Alberta Moraine Lake",
+   "country": "Canada",
+   "region": "Alberta",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/ca/alberta/alberta-moraine-lake/",
+   "artwork": {
+    "file": "alberta-moraine-lake/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "c31d8cb99410ec92904ae5c80f0ecd0d291d5e17c5cf786af8dbbb2bdfb2bd24"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "alberta-moraine-lake/separator.webp",
+    "imageWidth": 170,
+    "imageHeight": 125,
+    "bounds": [
+     4,
+     5,
+     162,
+     114
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#1A4B9F",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 500,
+    "y": 105
+   }
+  },
+  {
+   "id": "british-columbia-standard",
+   "name": "British Columbia",
+   "country": "Canada",
+   "region": "British Columbia",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/ca/british-columbia/british-columbia-standard/",
+   "artwork": {
+    "file": "british-columbia-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "90a8f35437bb299932b9282d5f7dcfc2443dde1c6935eaf364f06465bd2c400a"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "british-columbia-standard/separator.webp",
+    "imageWidth": 158,
+    "imageHeight": 117,
+    "bounds": [
+     0,
+     0,
+     158,
+     117
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#2264B5",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 500,
+    "y": 104
+   }
+  },
+  {
+   "id": "manitoba-standard",
+   "name": "Manitoba",
+   "country": "Canada",
+   "region": "Manitoba",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/ca/manitoba/manitoba-standard/",
+   "artwork": {
+    "file": "manitoba-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "8118cb2b52cdb18d496ceba3de5f2579b798e664068c809fc87b2b15816110dc"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#041e4f",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 120,
+    "space": 400,
+    "weight": 500,
+    "y": 102
+   }
+  },
+  {
+   "id": "new-brunswick-standard",
+   "name": "New Brunswick",
+   "country": "Canada",
+   "region": "New Brunswick",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/ca/new-brunswick/new-brunswick-standard/",
+   "artwork": {
+    "file": "new-brunswick-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "d52f975722963256bf012ddff979c4fb819a716f7deff080ca5bcb563e5762c7"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#970f1f",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 130,
+    "space": 400,
+    "weight": 500,
+    "y": 120
+   }
+  },
+  {
+   "id": "newfoundland-labrador-standard",
+   "name": "Newfoundland and Labrador",
+   "country": "Canada",
+   "region": "Newfoundland and Labrador",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/ca/newfoundland-labrador/newfoundland-labrador-standard/",
+   "artwork": {
+    "file": "newfoundland-labrador-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "d96990eb69ab491f68515f117d7f769db95ed58ac004bc8e9624c8377a7cade6"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#053493",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 125,
+    "space": 400,
+    "weight": 700,
+    "y": 85
+   }
+  },
+  {
+   "id": "northwest-territories-standard",
+   "name": "Northwest Territories",
+   "country": "Canada",
+   "region": "Northwest Territories",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/ca/northwest-territories/northwest-territories-standard/",
+   "artwork": {
+    "file": "northwest-territories-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "1f0a7c920fd612f5b59f94f91070dd89e9ae853fcbb4c8e517529070914a6335"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#023295",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 10,
+    "maxLength": 11,
+    "outline": null,
+    "size": 74,
+    "space": 400,
+    "weight": 700,
+    "x": 180,
+    "y": 94
+   }
+  },
+  {
+   "id": "nova-scotia-standard",
+   "name": "Nova Scotia",
+   "country": "Canada",
+   "region": "Nova Scotia",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/ca/nova-scotia/nova-scotia-standard/",
+   "artwork": {
+    "file": "nova-scotia-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "eb0dc8af5012e5482d83d47e396afc5caa8f57abddff8bc67fdfddc98db50c55"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "nova-scotia-standard/separator.webp",
+    "imageWidth": 347,
+    "imageHeight": 307,
+    "bounds": [
+     1,
+     0,
+     345,
+     306
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#0D3886",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 101
+   }
+  },
+  {
+   "id": "nunavut-standard",
+   "name": "Nunavut",
+   "country": "Canada",
+   "region": "Nunavut",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/ca/nunavut/nunavut-standard/",
+   "artwork": {
+    "file": "nunavut-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "fc775572d98ef10dd9b7eff2ee2ade414ef486c87b20af601ffaaa2e4fc3bac2"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#000000",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 105,
+    "space": 400,
+    "weight": 400,
+    "y": 95
+   }
+  },
+  {
+   "id": "ontario-standard",
+   "name": "Ontario",
+   "country": "Canada",
+   "region": "Ontario",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/ca/ontario/ontario-standard/",
+   "artwork": {
+    "file": "ontario-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "aad554a325a6aaabbda2ab96dada97eb95d495184fa2bb7722327665cacf53b7"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#03825E",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 500,
+    "y": 100
+   }
+  },
+  {
+   "id": "prince-edward-island-standard",
+   "name": "Prince Edward Island",
+   "country": "Canada",
+   "region": "Prince Edward Island",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/ca/prince-edward-island/prince-edward-island-standard/",
+   "artwork": {
+    "file": "prince-edward-island-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "9aea3cb8ff3e1228e7e7e4aefe85274d4cf1208d24b43e25c399eb8d13685e3d"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "prince-edward-island-standard/separator.webp",
+    "imageWidth": 175,
+    "imageHeight": 223,
+    "bounds": [
+     1,
+     1,
+     173,
+     221
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#3c865e",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 500,
+    "y": 99
+   }
+  },
+  {
+   "id": "puerto-rico-standard",
+   "name": "Puerto Rico",
+   "country": "United States",
+   "region": "Puerto Rico",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/puerto-rico/puerto-rico-standard/",
+   "artwork": {
+    "file": "puerto-rico-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "d13dcb3ac58d0ab57ba0162333d7bc3359daccda9c700156b0f4e669781a1775"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#000000",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 500,
+    "y": 100
+   }
+  },
+  {
+   "id": "quebec-standard",
+   "name": "Québec",
+   "country": "Canada",
+   "region": "Québec",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/ca/quebec/quebec-standard/",
+   "artwork": {
+    "file": "quebec-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "283f5f3ee72d6dfdfcf4f5b8b605b81893dad11e1ec682151f3e1ccd4b079c15"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#010057",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 500,
+    "y": 104
+   }
+  },
+  {
+   "id": "quebec-electric-vehicle",
+   "name": "Québec Electric Vehicle",
+   "country": "Canada",
+   "region": "Québec",
+   "category": "Specialty",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/ca/quebec/quebec-electric-vehicle/",
+   "artwork": {
+    "file": "quebec-electric-vehicle/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "c6367f30049938f06bf4e1d57a9d4f212e07f103993e1ccada5911fc66c23899"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#0F6435",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 500,
+    "y": 104
+   }
+  },
+  {
+   "id": "saskatchewan-standard",
+   "name": "Saskatchewan",
+   "country": "Canada",
+   "region": "Saskatchewan",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/ca/saskatchewan/saskatchewan-standard/",
+   "artwork": {
+    "file": "saskatchewan-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "facd90eaad3b3a8db708407eb052b6092cba5da7e37c79b67e19ddbadfc67543"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "saskatchewan-standard/separator.webp",
+    "imageWidth": 97,
+    "imageHeight": 260,
+    "bounds": [
+     0,
+     0,
+     97,
+     260
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#046f58",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 400,
+    "y": 105
+   }
+  },
+  {
+   "id": "yukon-standard",
+   "name": "Yukon",
+   "country": "Canada",
+   "region": "Yukon",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/ca/yukon/yukon-standard/",
+   "artwork": {
+    "file": "yukon-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "1a5f7c2a9146a7a3b1c606f7c86cdce38be40ccfc12e35f940e95ce9a1552985"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#0d0d0d",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 7,
+    "outline": null,
+    "size": 103,
+    "space": 400,
+    "weight": "400",
+    "x": 230,
+    "y": 92
+   }
+  },
+  {
+   "id": "arizona-clean-air-blue-skies",
+   "name": "Arizona Clean Air",
+   "country": "United States",
+   "region": "Arizona",
+   "category": "Specialty",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/arizona/arizona-clean-air-blue-skies/",
+   "artwork": {
+    "file": "arizona-clean-air-blue-skies/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "9377bd972c6f294b4cc2c97a004004b362454073dbc555a5e7f97797792337ff"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#1a1b5a",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 103,
+    "space": 400,
+    "weight": 600,
+    "y": 108
+   }
+  },
+  {
+   "id": "pennsylvania-2006",
+   "name": "Pennsylvania 2006",
+   "country": "United States",
+   "region": "Pennsylvania",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/pennsylvania/pennsylvania-2006/",
+   "artwork": {
+    "file": "pennsylvania-2006/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "faa68b169240b4204d28524ded7af4d0974b1f6c03534d387df743c8c0fff9ca"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "pennsylvania-2006/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     559,
+     261,
+     80,
+     79
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#00295d",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 110,
+    "space": 400,
+    "weight": 400,
+    "y": 100
+   }
+  },
+  {
+   "id": "california-black-white",
+   "name": "California Black & White",
+   "country": "United States",
+   "region": "California",
+   "category": "Legacy",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/california/california-black-white/",
+   "artwork": {
+    "file": "california-black-white/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "15496221e51e82b2767fb97f2b019e6cb8afb517102b3bc7b8f2a8a649033bcc"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#ffffff",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 400,
+    "y": 115
+   }
+  },
+  {
+   "id": "california-black-yellow",
+   "name": "California Black & Yellow",
+   "country": "United States",
+   "region": "California",
+   "category": "Legacy",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/california/california-black-yellow/",
+   "artwork": {
+    "file": "california-black-yellow/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "9aa4343d598fbb0729dd4795a6bf7eec0e540816e760e1e991610f1d4124e84a"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#fcd716",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 105,
+    "space": 400,
+    "weight": 400,
+    "y": 120
+   }
+  },
+  {
+   "id": "alabama-standard",
+   "name": "Alabama",
+   "country": "United States",
+   "region": "Alabama",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/alabama/alabama-standard/",
+   "artwork": {
+    "file": "alabama-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "4b5a80e250662495407049b0f1bae2c76795b3911b12423747085773bf1825ef"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#1a1a1a",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 92,
+    "space": 400,
+    "weight": 700,
+    "y": 105
+   }
+  },
+  {
+   "id": "alaska-standard",
+   "name": "Alaska",
+   "country": "United States",
+   "region": "Alaska",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/alaska/alaska-standard/",
+   "artwork": {
+    "file": "alaska-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "e51de8e9be404e4052e3507cbaf9b150f3ab5acc6b0f2868a7059b0be59836e7"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "alaska-standard/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     519,
+     221,
+     160,
+     190
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#0a285c",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": {
+     "color": "#f2c202",
+     "width": 3
+    },
+    "size": 101,
+    "space": 400,
+    "weight": 500,
+    "y": 106
+   }
+  },
+  {
+   "id": "arizona-standard",
+   "name": "Arizona",
+   "country": "United States",
+   "region": "Arizona",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/arizona/arizona-standard/",
+   "artwork": {
+    "file": "arizona-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "c4e9815ada3b06b0c867c5a8c4bb8c6b97c2ac17e4fbd2c6003a8c32c83cc59e"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#103646",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 92,
+    "space": 400,
+    "weight": 600,
+    "y": 105
+   }
+  },
+  {
+   "id": "arkansas-standard",
+   "name": "Arkansas",
+   "country": "United States",
+   "region": "Arkansas",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/arkansas/arkansas-standard/",
+   "artwork": {
+    "file": "arkansas-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "cd31238d693339dd6671cec8e0124981b4cae3aa9d525b5a60f49ca8523a32da"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#1a1a1a",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 90,
+    "space": 400,
+    "weight": 700,
+    "y": 115
+   }
+  },
+  {
+   "id": "california-standard",
+   "name": "California",
+   "country": "United States",
+   "region": "California",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/california/california-standard/",
+   "artwork": {
+    "file": "california-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "1d42315a73fad6499c26d4b1287aa08a82321b720d477043dbc2a6eb4f6d7f0d"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#1D2156",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 85,
+    "space": 400,
+    "weight": 400,
+    "y": 122
+   }
+  },
+  {
+   "id": "colorado-standard",
+   "name": "Colorado",
+   "country": "United States",
+   "region": "Colorado",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/colorado/colorado-standard/",
+   "artwork": {
+    "file": "colorado-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "28896278f29c218a21810a7d6b18805142c2343b2f8b79630fda7b4c7c8c17e2"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "colorado-standard/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     568,
+     284,
+     49,
+     39
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#023823",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 95,
+    "space": 400,
+    "weight": 700,
+    "y": 105
+   }
+  },
+  {
+   "id": "connecticut-standard",
+   "name": "Connecticut",
+   "country": "United States",
+   "region": "Connecticut",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/connecticut/connecticut-standard/",
+   "artwork": {
+    "file": "connecticut-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "5d3127d3463300cda7d629ea2fad616139878779e52eb7f7b40cbd96f5b48f6f"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "connecticut-standard/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     372,
+     268,
+     46,
+     46
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#12306b",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 102
+   }
+  },
+  {
+   "id": "delaware-standard",
+   "name": "Delaware",
+   "country": "United States",
+   "region": "Delaware",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/delaware/delaware-standard/",
+   "artwork": {
+    "file": "delaware-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "cbecba80ede33afd591ed3ac184c627510ca94b8aa90d02c53b76af5379748b6"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#d8b45c",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 700,
+    "y": 97
+   }
+  },
+  {
+   "id": "florida-standard",
+   "name": "Florida",
+   "country": "United States",
+   "region": "Florida",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/florida/florida-standard/",
+   "artwork": {
+    "file": "florida-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "f6f920b0fe6f9e4999439ef580eb183b5a8de80815ccfe5e337c0a8116419016"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "florida-standard/separator.webp",
+    "imageWidth": 600,
+    "imageHeight": 100,
+    "bounds": [
+     258,
+     95,
+     14,
+     5
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#024F31",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": {
+     "color": "#B4CCC2",
+     "width": 2
+    },
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 100
+   }
+  },
+  {
+   "id": "georgia-standard",
+   "name": "Georgia",
+   "country": "United States",
+   "region": "Georgia",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/georgia/georgia-standard/",
+   "artwork": {
+    "file": "georgia-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "f466769cfb4065980d6835cc43a16de7a553c614e115a54840ee0a148adba96c"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#1a1a1a",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 110,
+    "space": 400,
+    "weight": 700,
+    "y": 100
+   }
+  },
+  {
+   "id": "hawaii-standard",
+   "name": "Hawaii",
+   "country": "United States",
+   "region": "Hawaii",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/hawaii/hawaii-standard/",
+   "artwork": {
+    "file": "hawaii-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "d1324fb9df330175186385bf537035e785aad43cb456e534012be14a019407e4"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#1a1a1a",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 110,
+    "space": 400,
+    "weight": 500,
+    "y": 100
+   }
+  },
+  {
+   "id": "idaho-standard",
+   "name": "Idaho",
+   "country": "United States",
+   "region": "Idaho",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/idaho/idaho-standard/",
+   "artwork": {
+    "file": "idaho-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "7fe7e9e0f0a4292a74c7ac9cc60036d63f7b0d1cb05bba1be7c2d648d6dd4e13"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#000",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 108
+   }
+  },
+  {
+   "id": "illinois-standard",
+   "name": "Illinois",
+   "country": "United States",
+   "region": "Illinois",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/illinois/illinois-standard/",
+   "artwork": {
+    "file": "illinois-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "bcaca390d21687e1e5b1db7efcdf575a36c053f376309060883d0c6b0fbe9878"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#9C1724",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 700,
+    "y": 105
+   }
+  },
+  {
+   "id": "indiana-standard",
+   "name": "Indiana",
+   "country": "United States",
+   "region": "Indiana",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/indiana/indiana-standard/",
+   "artwork": {
+    "file": "indiana-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "beb12c0c55a8d9dc8ebefabdaf05a269ef3e605194f7e19f3ea5f015c0975e72"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#3551A3",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 700,
+    "y": 95
+   }
+  },
+  {
+   "id": "iowa-standard",
+   "name": "Iowa",
+   "country": "United States",
+   "region": "Iowa",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/iowa/iowa-standard/",
+   "artwork": {
+    "file": "iowa-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "9b3bd5c234a4393c73ee6e81c30c6d5f14f34f9c52d1b8dbfc5dee34192aa282"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#000",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 105,
+    "space": 400,
+    "weight": 700,
+    "y": 105
+   }
+  },
+  {
+   "id": "kansas-standard",
+   "name": "Kansas",
+   "country": "United States",
+   "region": "Kansas",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/kansas/kansas-standard/",
+   "artwork": {
+    "file": "kansas-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "79acd269b4f6e59fc842097b08119e0d913387e9e79f77769d4c9f712216bf7a"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#13202C",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 82,
+    "space": 400,
+    "weight": 700,
+    "y": 118
+   }
+  },
+  {
+   "id": "kentucky-standard",
+   "name": "Kentucky",
+   "country": "United States",
+   "region": "Kentucky",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/kentucky/kentucky-standard/",
+   "artwork": {
+    "file": "kentucky-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "dc67bb3a8b01d7b3a3b72614447cb4c90808820336126e812ed660daa127edc3"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "right",
+    "color": "#0C1C59",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 100
+   }
+  },
+  {
+   "id": "louisiana-standard",
+   "name": "Louisiana",
+   "country": "United States",
+   "region": "Louisiana",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/louisiana/louisiana-standard/",
+   "artwork": {
+    "file": "louisiana-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "090678e5e2cac19a56040785cc01e56b8d24a1bdceb20aeb886d98212d671d38"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#1a1a1a",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 700,
+    "y": 102
+   }
+  },
+  {
+   "id": "maine-standard",
+   "name": "Maine",
+   "country": "United States",
+   "region": "Maine",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/maine/maine-standard/",
+   "artwork": {
+    "file": "maine-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "0351e459d85f552f84a50616608d5cf60b29417afa5affc782d415306eec2038"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "maine-standard/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     688,
+     266,
+     35,
+     33
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#0A2749",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 100
+   }
+  },
+  {
+   "id": "maryland-standard",
+   "name": "Maryland",
+   "country": "United States",
+   "region": "Maryland",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/maryland/maryland-standard/",
+   "artwork": {
+    "file": "maryland-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "8468d620452b8cc9617988e442600bd40c4dcffb1d592a4483f89943e0e6ec02"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#1a1a1a",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 500,
+    "y": 105
+   }
+  },
+  {
+   "id": "massachusetts-standard",
+   "name": "Massachusetts",
+   "country": "United States",
+   "region": "Massachusetts",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/massachusetts/massachusetts-standard/",
+   "artwork": {
+    "file": "massachusetts-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "e4ba4dbfca3819ea712842b8d50a8dd6c518a9929dea15a2f4f87b00ef5c9e98"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#c1121f",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 500,
+    "y": 105
+   }
+  },
+  {
+   "id": "michigan-standard",
+   "name": "Michigan",
+   "country": "United States",
+   "region": "Michigan",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/michigan/michigan-standard/",
+   "artwork": {
+    "file": "michigan-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "89f8c8207b7621fb131183f39f47a2c95e29ea9502e1df83872559eea666f67a"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#0b2a7a",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 96
+   }
+  },
+  {
+   "id": "minnesota-standard",
+   "name": "Minnesota",
+   "country": "United States",
+   "region": "Minnesota",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/minnesota/minnesota-standard/",
+   "artwork": {
+    "file": "minnesota-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "b9da1284ed9b7cf5715d277477b2e140b4a4af2525057726328d2c6464cda683"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "minnesota-standard/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     550,
+     256,
+     107,
+     129
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#000",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": {
+     "color": "#ffffff",
+     "width": 3
+    },
+    "size": 120,
+    "space": 400,
+    "weight": 700,
+    "y": 110
+   }
+  },
+  {
+   "id": "mississippi-standard",
+   "name": "Mississippi",
+   "country": "United States",
+   "region": "Mississippi",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/mississippi/mississippi-standard/",
+   "artwork": {
+    "file": "mississippi-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "08f467c6659e7458b2315019296dfd90123ed6b216084d49510e540c11ad7f82"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "mississippi-standard/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     457,
+     178,
+     260,
+     256
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#0c2543",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": {
+     "color": "#ffffff",
+     "width": 3
+    },
+    "size": 100,
+    "space": 400,
+    "weight": 700,
+    "y": 110
+   }
+  },
+  {
+   "id": "missouri-standard",
+   "name": "Missouri",
+   "country": "United States",
+   "region": "Missouri",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/missouri/missouri-standard/",
+   "artwork": {
+    "file": "missouri-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "4a3ed1488c82a1180d1522486e98a442e6dda79083da62bc0f9115d8ce524bc1"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#123058",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 105,
+    "space": 400,
+    "weight": 700,
+    "y": 100
+   }
+  },
+  {
+   "id": "montana-standard",
+   "name": "Montana",
+   "country": "United States",
+   "region": "Montana",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/montana/montana-standard/",
+   "artwork": {
+    "file": "montana-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "23e17d5f4c472deed6f5f0d0430f8f46a3ddacaac420926021a65f51af88e028"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "montana-standard/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     298,
+     244,
+     61,
+     65
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#ffffff",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 80,
+    "space": 400,
+    "weight": 700,
+    "x": 220,
+    "y": 90
+   }
+  },
+  {
+   "id": "nebraska-standard",
+   "name": "Nebraska",
+   "country": "United States",
+   "region": "Nebraska",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/nebraska/nebraska-standard/",
+   "artwork": {
+    "file": "nebraska-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "197ad73784a05dc87f8e7d7617cbd7fb24a98f937ef750de2e18a32f2b60e00a"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "nebraska-standard/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     418,
+     282,
+     96,
+     32
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#2d386e",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 112
+   }
+  },
+  {
+   "id": "nevada-standard",
+   "name": "Nevada",
+   "country": "United States",
+   "region": "Nevada",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/nevada/nevada-standard/",
+   "artwork": {
+    "file": "nevada-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "d3e791d3196c87c0cd0e79022e3ebd0875fcaadfc24e3d17c2bef6e4c38d8159"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "nevada-standard/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     575,
+     307,
+     46,
+     66
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#1a1a1a",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 10,
+    "maxLength": 11,
+    "outline": null,
+    "size": 105,
+    "space": 400,
+    "weight": 400,
+    "y": 105
+   }
+  },
+  {
+   "id": "new-hampshire-standard",
+   "name": "New Hampshire",
+   "country": "United States",
+   "region": "New Hampshire",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/new-hampshire/new-hampshire-standard/",
+   "artwork": {
+    "file": "new-hampshire-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "f9c38dfb0b89fd185150182332c38683ff8a627b8b583cb228580be8dafa4a02"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#0d3b2e",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 500,
+    "y": 92
+   }
+  },
+  {
+   "id": "new-jersey-standard",
+   "name": "New Jersey",
+   "country": "United States",
+   "region": "New Jersey",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/new-jersey/new-jersey-standard/",
+   "artwork": {
+    "file": "new-jersey-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "dbaaa4dab12fff02901141aa8900534a977ea2b942f1c076d1e322c9b5a22260"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "new-jersey-standard/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     563,
+     224,
+     77,
+     141
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#1a1a1a",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 102
+   }
+  },
+  {
+   "id": "new-mexico-standard",
+   "name": "New Mexico",
+   "country": "United States",
+   "region": "New Mexico",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/new-mexico/new-mexico-standard/",
+   "artwork": {
+    "file": "new-mexico-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "04ab9482b67c62a7914e0790f1e1abcc025b02bae316dc7bb7902be6b21ae176"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "new-mexico-standard/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     469,
+     144,
+     261,
+     274
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#FAE94F",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 110,
+    "space": 400,
+    "weight": 700,
+    "y": 95
+   }
+  },
+  {
+   "id": "new-york-standard",
+   "name": "New York",
+   "country": "United States",
+   "region": "New York",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/new-york/new-york-standard/",
+   "artwork": {
+    "file": "new-york-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "96486d0f4d4412da2332825f5c66e2a5017a56cbe10ece267c6a3066b7637d08"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "new-york-standard/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     482,
+     283,
+     126,
+     103
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#16305e",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 105,
+    "space": 400,
+    "weight": 400,
+    "y": 100
+   }
+  },
+  {
+   "id": "north-carolina-standard",
+   "name": "North Carolina",
+   "country": "United States",
+   "region": "North Carolina",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/north-carolina/north-carolina-standard/",
+   "artwork": {
+    "file": "north-carolina-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "a414b15ccac5c0a074ed863edff7cc93c38da87fac4a8c87ca94d448bb487860"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "north-carolina-standard/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     510,
+     287,
+     51,
+     25
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#14315e",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 700,
+    "y": 95
+   }
+  },
+  {
+   "id": "north-dakota-standard",
+   "name": "North Dakota",
+   "country": "United States",
+   "region": "North Dakota",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/north-dakota/north-dakota-standard/",
+   "artwork": {
+    "file": "north-dakota-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "e3e28d756029fa795974f3ee834bc59a6212fb8adf64ace35cfc6bae4a0f9719"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#16233a",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 86,
+    "space": 400,
+    "weight": 700,
+    "y": 96
+   }
+  },
+  {
+   "id": "ohio-standard",
+   "name": "Ohio",
+   "country": "United States",
+   "region": "Ohio",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/ohio/ohio-standard/",
+   "artwork": {
+    "file": "ohio-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "563358b1e1cd5988a94dc892437a4de0c80910f3bcf528c8fd2da4be2cd9099c"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#02115A",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 700,
+    "y": 110
+   }
+  },
+  {
+   "id": "oklahoma-standard",
+   "name": "Oklahoma",
+   "country": "United States",
+   "region": "Oklahoma",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/oklahoma/oklahoma-standard/",
+   "artwork": {
+    "file": "oklahoma-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "aed0650cfde700da88fc26095e937d9cd9d9767d90e93be9e177ce68a29272c6"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "oklahoma-standard/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     491,
+     192,
+     224,
+     214
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#ffffff",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 105,
+    "space": 400,
+    "weight": 400,
+    "y": 100
+   }
+  },
+  {
+   "id": "oregon-standard",
+   "name": "Oregon",
+   "country": "United States",
+   "region": "Oregon",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/oregon/oregon-standard/",
+   "artwork": {
+    "file": "oregon-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "7cdd8375a582ba85dde20ea144b1b6db51ef4994cad0e5352fd6e842c2079074"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#0b1c4a",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 110,
+    "space": 400,
+    "weight": 400,
+    "y": 110
+   }
+  },
+  {
+   "id": "pennsylvania-standard",
+   "name": "Pennsylvania",
+   "country": "United States",
+   "region": "Pennsylvania",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/pennsylvania/pennsylvania-standard/",
+   "artwork": {
+    "file": "pennsylvania-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "84530725f28aab82ed2e7c6ad1c08d9e352edd5255e517ba5f346bddf5ce579f"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#16305e",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 115,
+    "space": 400,
+    "weight": 400,
+    "y": 103
+   }
+  },
+  {
+   "id": "rhode-island-standard",
+   "name": "Rhode Island",
+   "country": "United States",
+   "region": "Rhode Island",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/rhode-island/rhode-island-standard/",
+   "artwork": {
+    "file": "rhode-island-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "9e6667453b4c9b809653aa20b467c53b2cacd96cab7e0004bbcf1ffb7ad367a9"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#0d2b6b",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 105,
+    "space": 400,
+    "weight": 700,
+    "y": 100
+   }
+  },
+  {
+   "id": "south-carolina-standard",
+   "name": "South Carolina",
+   "country": "United States",
+   "region": "South Carolina",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/south-carolina/south-carolina-standard/",
+   "artwork": {
+    "file": "south-carolina-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "f4b6b6714b740f54fba5a3e971b1c0aa4013c929f66dac32f8ac33a0607842a8"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#1a1a1a",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 98,
+    "space": 400,
+    "weight": 700,
+    "x": 238,
+    "y": 100
+   }
+  },
+  {
+   "id": "south-dakota-standard",
+   "name": "South Dakota",
+   "country": "United States",
+   "region": "South Dakota",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/south-dakota/south-dakota-standard/",
+   "artwork": {
+    "file": "south-dakota-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "a87f02c68f136d3a28c39f72acc98a2e6ec5c94670528a559c140f47ba2e7bca"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#000",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 700,
+    "y": 103
+   }
+  },
+  {
+   "id": "tennessee-standard",
+   "name": "Tennessee",
+   "country": "United States",
+   "region": "Tennessee",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/tennessee/tennessee-standard/",
+   "artwork": {
+    "file": "tennessee-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "7fa8714c2a192c991f0019b9d607a57bfad8d7b5265a2ffb00c37bacba99fd53"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "tennessee-standard/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     519,
+     235,
+     156,
+     154
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#ffffff",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 105,
+    "space": 400,
+    "weight": "500",
+    "y": 102
+   }
+  },
+  {
+   "id": "texas-standard",
+   "name": "Texas",
+   "country": "United States",
+   "region": "Texas",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/texas/texas-standard/",
+   "artwork": {
+    "file": "texas-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "5131e07f863696036c30a7554ea08d036839c6ae5e8e49701432fd4ae5e9cf7b"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "texas-standard/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     548,
+     268,
+     92,
+     90
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#1a1a1a",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 700,
+    "y": 105
+   }
+  },
+  {
+   "id": "utah-standard",
+   "name": "Utah",
+   "country": "United States",
+   "region": "Utah",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/utah/utah-standard/",
+   "artwork": {
+    "file": "utah-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "af08810419509be1ea0523b61919847fadec73b968fb2a464137720a974f69f6"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#000B54",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 105,
+    "space": 400,
+    "weight": 500,
+    "y": 115
+   }
+  },
+  {
+   "id": "vermont-standard",
+   "name": "Vermont",
+   "country": "United States",
+   "region": "Vermont",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/vermont/vermont-standard/",
+   "artwork": {
+    "file": "vermont-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "eab0a79dd4e975d06c2db2567c73ea5511f31b15048e16d4bb012fffc18fed22"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#ffffff",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 500,
+    "y": 100
+   }
+  },
+  {
+   "id": "virginia-standard",
+   "name": "Virginia",
+   "country": "United States",
+   "region": "Virginia",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/virginia/virginia-standard/",
+   "artwork": {
+    "file": "virginia-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "9ec19facaa1db9836e6c90b56eb5a72dbe68d066e77e8ad7083095aa1c48c268"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "virginia-standard/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     507,
+     283,
+     52,
+     25
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#000B54",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 500,
+    "y": 102
+   }
+  },
+  {
+   "id": "washington-standard",
+   "name": "Washington",
+   "country": "United States",
+   "region": "Washington",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/washington/washington-standard/",
+   "artwork": {
+    "file": "washington-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "5e5f00e104735da0fb7bab34fd3cf05bed481c9a1e71ac7bab998a5127195c9b"
+   },
+   "separator": {
+    "available": false,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3
+   },
+   "text": {
+    "align": "center",
+    "color": "#040f54",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 110,
+    "space": 400,
+    "weight": 500,
+    "y": 120
+   }
+  },
+  {
+   "id": "west-virginia-standard",
+   "name": "West Virginia",
+   "country": "United States",
+   "region": "West Virginia",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/west-virginia/west-virginia-standard/",
+   "artwork": {
+    "file": "west-virginia-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "a1a3bc862481b785e129a7a12a8588dd5636b4647871a6247e3858245066e692"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "west-virginia-standard/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     556,
+     269,
+     89,
+     83
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#0d2a63",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 110,
+    "space": 400,
+    "weight": 400,
+    "y": 112
+   }
+  },
+  {
+   "id": "wisconsin-standard",
+   "name": "Wisconsin",
+   "country": "United States",
+   "region": "Wisconsin",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/wisconsin/wisconsin-standard/",
+   "artwork": {
+    "file": "wisconsin-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "0dfc98700acd910bfaf50ee7f0268af9bb8c5e75cca41dbd74600e628adb945f"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "wisconsin-standard/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     513,
+     288,
+     46,
+     25
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#1a1a1a",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 100,
+    "space": 400,
+    "weight": 500,
+    "y": 105
+   }
+  },
+  {
+   "id": "wyoming-standard",
+   "name": "Wyoming",
+   "country": "United States",
+   "region": "Wyoming",
+   "category": "Standard Issue",
+   "customizable": true,
+   "sourceUrl": "https://www.notateslaapp.com/tesla-customizations/license-plates/north-america/us/wyoming/wyoming-standard/",
+   "artwork": {
+    "file": "wyoming-standard/background.webp",
+    "width": 600,
+    "height": 300,
+    "sha256": "732b2f592ea6744c3cd1421baa6c9900b6fea123da309dfa0bbf901a624aa183"
+   },
+   "separator": {
+    "available": true,
+    "space": 1200,
+    "gap": 5,
+    "height": null,
+    "max": 3,
+    "file": "wyoming-standard/separator.webp",
+    "imageWidth": 1200,
+    "imageHeight": 600,
+    "bounds": [
+     338,
+     134,
+     249,
+     353
+    ]
+   },
+   "text": {
+    "align": "center",
+    "color": "#ffffff",
+    "font": "'Antonio', 'Oswald', 'Arial Narrow', Arial, sans-serif",
+    "letterSpacing": 3,
+    "maxLength": 11,
+    "outline": null,
+    "size": 125,
+    "space": 400,
+    "weight": 500,
+    "y": 105
+   }
+  }
+ ]
+}

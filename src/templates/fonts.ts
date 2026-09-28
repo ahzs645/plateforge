@@ -1,5 +1,6 @@
 import barlow600 from '@fontsource/barlow-condensed/files/barlow-condensed-latin-600-normal.woff2?url';
 import barlow700 from '@fontsource/barlow-condensed/files/barlow-condensed-latin-700-normal.woff2?url';
+import antonio from '../assets/fonts/Antonio-latin.woff2?url';
 import euroPlate from '../assets/fonts/EuroPlate.ttf?url';
 import ukPlate from '../assets/fonts/UKNumberPlate.ttf?url';
 import type { FontAsset } from '../core/types';
@@ -10,6 +11,8 @@ export const FONTS = {
   barlow700: { family: 'Barlow Condensed', url: barlow700, weight: 700, format: 'woff2' },
   euro: { family: 'EuroPlate', url: euroPlate, format: 'truetype' },
   uk: { family: 'UKNumberPlate', url: ukPlate, format: 'truetype' },
+  /** Variable (400–700), SIL OFL; the stand-in artwork's lettering. */
+  antonio: { family: 'Antonio', url: antonio, weight: '400 700', format: 'woff2' },
 } satisfies Record<string, FontAsset>;
 
 /** CJK text relies on system fonts (these are available to SVG images, so PNG export still works). */

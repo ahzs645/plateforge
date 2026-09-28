@@ -1,5 +1,5 @@
 import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from 'react';
-import { getFormat, getRegion, getRegions, getTemplate, makePlate } from '../core/registry';
+import { getFormat, getRegion, getRegions, makePlate, templateFor } from '../core/registry';
 import { createRng } from '../core/random';
 import { regenerateParts } from '../core/lettering';
 import { buildTimeline, countryOf, familyOf, regionFamilies, stepTimeline } from '../core/timeline';
@@ -30,7 +30,7 @@ function readHash(): { region: string; format?: string; view: View } {
 function useFontsVersion(): number {
   const [version, setVersion] = useState(0);
   useEffect(() => {
-    const specs = ['86px EuroPlate', '84px UKNumberPlate', '600 100px "Barlow Condensed"', '700 46px "Barlow Condensed"'];
+    const specs = ['86px EuroPlate', '84px UKNumberPlate', '600 100px "Barlow Condensed"', '700 46px "Barlow Condensed"', '400 100px Antonio', '500 100px Antonio', '700 100px Antonio'];
     Promise.allSettled(specs.map((s) => document.fonts.load(s))).then(() => setVersion((v) => v + 1));
   }, []);
   return version;
@@ -117,7 +117,7 @@ export function App() {
     const svg = previewRef.current?.querySelector('svg');
     if (!svg) return;
     try {
-      const text = await serializeSvg(svg, getTemplate(region.template).fonts);
+      const text = await serializeSvg(svg, templateFor(region, format).fonts);
       const name = `${region.code}-${fileSafe(plate.text)}`;
       const { width, height } = svg.viewBox.baseVal;
       if (kind === 'svg') download(new Blob([text], { type: 'image/svg+xml' }), `${name}.svg`);
