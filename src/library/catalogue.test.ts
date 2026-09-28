@@ -82,6 +82,33 @@ describe('sharded reference catalogue', () => {
   });
 });
 
+describe('Not a Tesla App catalogue links', () => {
+  const tesla = index.pages.filter((p) => p.source === 'notateslaapp');
+  it('records all ninety-four catalogue entries as link-only pages with deterministic ids', async () => {
+    const { createHash } = await import('node:crypto');
+    expect(tesla).toHaveLength(94);
+    expect(index.sites.find((s) => s.id === 'notateslaapp')!.credit).toContain('link-only');
+    for (const p of tesla) {
+      expect(isReferenceId(p.id)).toBe(true);
+      expect(p.id).toBe(createHash('sha256').update(p.url).digest('hex').slice(0, 16));
+      expect(p.url.startsWith('https://www.notateslaapp.com/tesla-customizations/license-plates/')).toBe(true);
+      expect(p.reviewStatus).toMatch(/-link-only$/);
+      expect([p.imageCount, p.candidateImageCount, p.galleryCount, p.documentCount]).toEqual([0, 0, 0, 0]);
+      const detail = parseReferencePage(read(`pages/${p.id}.json`), p.id);
+      expect(detail.images).toEqual([]);
+    }
+    expect(tesla.filter((p) => p.reviewStatus === 'detail-captured-link-only')).toHaveLength(3);
+    expect(new Set(tesla.map((p) => p.category))).toEqual(new Set(['Canadian provinces and territories', 'U.S. states and territories', 'Novelty and themed']));
+  });
+  it('never embeds artwork from that host and reports that nothing was imported', () => {
+    expect(safePreviewUrl('https://www.notateslaapp.com/assets/customizations/license-plates/alberta.png')).toBe(false);
+    const report = index.reports.find((r) => r.source === 'notateslaapp')!;
+    expect(report.complete).toBe(false);
+    expect(report.scope).toContain('94 catalogue entries recorded as links; 3 detail pages captured');
+    expect(report.scope).toContain('no images imported');
+  });
+});
+
 describe('dated Leeward classification, not current plate specifications', () => {
   it('contains the complete seventy-entry jurisdiction summary without duplicate identifiers', () => {
     expect(LEEWARD_JURISDICTIONS).toHaveLength(70);
