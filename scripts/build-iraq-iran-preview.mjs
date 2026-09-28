@@ -46,7 +46,7 @@ function fields(){
     if(field.options) input.append(...field.options.map(o=>option(o.value,o.label)));
     else {input.maxLength=field.maxLength??32;input.spellcheck=false;input.autocomplete='off';input.dir='ltr';}
     input.value=parts[field.key]??'';
-    input.addEventListener(field.options?'change':'input',()=>{parts[field.key]=field.uppercase===false?input.value:input.value.toUpperCase();render();});
+    input.addEventListener(field.options?'change':'input',()=>{parts[field.key]=field.options||field.uppercase===false?input.value:input.value.toUpperCase();render();});
     label.append(input);return label;
   }));render();
 }
