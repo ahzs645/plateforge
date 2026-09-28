@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "input_commit": "248588cd2b7b21d81b595832ffc791df12fde0fe",
+  "input_commit": "b7309fd8d533e005a6cb3c1b93ed4df3b0104fce",
   "font_assets": [
     {
       "id": "euro",
@@ -37,6 +37,22 @@
     {
       "id": "roya",
       "label": "B Roya Bold",
+      "url": "https://raw.githubusercontent.com/mahdi-ataollahi/PlateModel.Wpf/65a4dc3ed2d4424d401ddc2a1a70db77f51f8cf5/Source/IRPlateModel.Wpf/Fonts/BRoyaBd.ttf",
+      "git_blob_sha": "44292a704b90c4d571f9cafd8cd7b53fdcd44097",
+      "sha256": "9b2ceb7ce3c44ff7faad7873bfc56f9b70963f0cdd545b60e91f8db89edec5d7",
+      "names": {
+        "0": "(c) 2000 Borna Rayaneh",
+        "1": "B Roya",
+        "2": "Bold",
+        "5": "Version 2.01 - Build 1379",
+        "8": null,
+        "13": null,
+        "14": null
+      }
+    },
+    {
+      "id": "roya-plate-form",
+      "label": "B Roya Bold / plate heh",
       "url": "https://raw.githubusercontent.com/mahdi-ataollahi/PlateModel.Wpf/65a4dc3ed2d4424d401ddc2a1a70db77f51f8cf5/Source/IRPlateModel.Wpf/Fonts/BRoyaBd.ttf",
       "git_blob_sha": "44292a704b90c4d571f9cafd8cd7b53fdcd44097",
       "sha256": "9b2ceb7ce3c44ff7faad7873bfc56f9b70963f0cdd545b60e91f8db89edec5d7",
@@ -159,7 +175,7 @@
       ],
       "scores": {
         "original": {
-          "mean_silhouette_iou": 0.4747,
+          "mean_silhouette_iou": 0.4868,
           "glyphs": [
             {
               "char": "2",
@@ -174,7 +190,8 @@
             {
               "char": "C",
               "silhouette_iou": 0.39,
-              "width_ratio_candidate_to_reference": 0.9413
+              "width_ratio_candidate_to_reference": 0.9413,
+              "excluded_from_mean": true
             },
             {
               "char": "7",
@@ -204,7 +221,7 @@
           ]
         },
         "euro": {
-          "mean_silhouette_iou": 0.7651,
+          "mean_silhouette_iou": 0.8008,
           "glyphs": [
             {
               "char": "2",
@@ -219,7 +236,8 @@
             {
               "char": "C",
               "silhouette_iou": 0.5154,
-              "width_ratio_candidate_to_reference": 0.9788
+              "width_ratio_candidate_to_reference": 0.9788,
+              "excluded_from_mean": true
             },
             {
               "char": "7",
@@ -248,7 +266,14 @@
             }
           ]
         }
-      }
+      },
+      "excluded_from_mean": [
+        {
+          "index": 2,
+          "char": "C",
+          "reason": "Hand/edge contamination; not reliable glyph-only evidence."
+        }
+      ]
     },
     {
       "id": "iran-flat",
@@ -737,8 +762,368 @@
           ]
         }
       }
+    },
+    {
+      "id": "iran-heh",
+      "title": "Iran / private — ۸۸ هـ ۸۶۳ | ۳۶",
+      "kind": "Independent low-resolution photograph (346 x 81); use primarily to compare the contextual heh form",
+      "source": "https://commons.wikimedia.org/wiki/File:Iranianplate.jpg",
+      "credit": "MohsenKalali, 29 March 2018, CC BY-SA 4.0. Cropped, rectified and enlarged. https://creativecommons.org/licenses/by-sa/4.0/",
+      "corners": [
+        [
+          17.34,
+          17.34
+        ],
+        [
+          982.66,
+          20.23
+        ],
+        [
+          982.66,
+          213.87
+        ],
+        [
+          14.45,
+          213.87
+        ]
+      ],
+      "chars": "۸۸ه۸۶۳۳۶",
+      "candidates": [
+        "original",
+        "irplate",
+        "roya",
+        "roya-plate-form"
+      ],
+      "threshold": 105,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Iranianplate.jpg",
+      "boxes": [
+        {
+          "box": [
+            110,
+            30,
+            83,
+            157
+          ],
+          "char": "۸"
+        },
+        {
+          "box": [
+            211,
+            30,
+            82,
+            158
+          ],
+          "char": "۸"
+        },
+        {
+          "box": [
+            334,
+            40,
+            131,
+            140
+          ],
+          "char": "ه"
+        },
+        {
+          "box": [
+            507,
+            29,
+            84,
+            160
+          ],
+          "char": "۸"
+        },
+        {
+          "box": [
+            610,
+            27,
+            83,
+            161
+          ],
+          "char": "۶"
+        },
+        {
+          "box": [
+            712,
+            27,
+            83,
+            161
+          ],
+          "char": "۳"
+        },
+        {
+          "box": [
+            843,
+            64,
+            81,
+            134
+          ],
+          "char": "۳"
+        },
+        {
+          "box": [
+            943,
+            64,
+            81,
+            134
+          ],
+          "char": "۶"
+        }
+      ],
+      "scores": {
+        "original": {
+          "mean_silhouette_iou": 0.4438,
+          "glyphs": [
+            {
+              "char": "۸",
+              "silhouette_iou": 0.5053,
+              "width_ratio_candidate_to_reference": 1.2796
+            },
+            {
+              "char": "۸",
+              "silhouette_iou": 0.5068,
+              "width_ratio_candidate_to_reference": 1.3034
+            },
+            {
+              "char": "ه",
+              "silhouette_iou": 0.4546,
+              "width_ratio_candidate_to_reference": 1.0687
+            },
+            {
+              "char": "۸",
+              "silhouette_iou": 0.5036,
+              "width_ratio_candidate_to_reference": 1.2885
+            },
+            {
+              "char": "۶",
+              "silhouette_iou": 0.3218,
+              "width_ratio_candidate_to_reference": 1.0756
+            },
+            {
+              "char": "۳",
+              "silhouette_iou": 0.4347,
+              "width_ratio_candidate_to_reference": 1.2991
+            },
+            {
+              "char": "۳",
+              "silhouette_iou": 0.4601,
+              "width_ratio_candidate_to_reference": 1.1079
+            },
+            {
+              "char": "۶",
+              "silhouette_iou": 0.3632,
+              "width_ratio_candidate_to_reference": 0.9173
+            }
+          ]
+        },
+        "irplate": {
+          "mean_silhouette_iou": 0.6386,
+          "glyphs": [
+            {
+              "char": "۸",
+              "silhouette_iou": 0.5557,
+              "width_ratio_candidate_to_reference": 1.4108
+            },
+            {
+              "char": "۸",
+              "silhouette_iou": 0.5601,
+              "width_ratio_candidate_to_reference": 1.4371
+            },
+            {
+              "char": "ه",
+              "silhouette_iou": 0.8657,
+              "width_ratio_candidate_to_reference": 1.0064
+            },
+            {
+              "char": "۸",
+              "silhouette_iou": 0.5541,
+              "width_ratio_candidate_to_reference": 1.4206
+            },
+            {
+              "char": "۶",
+              "silhouette_iou": 0.7216,
+              "width_ratio_candidate_to_reference": 1.277
+            },
+            {
+              "char": "۳",
+              "silhouette_iou": 0.4628,
+              "width_ratio_candidate_to_reference": 1.4225
+            },
+            {
+              "char": "۳",
+              "silhouette_iou": 0.5653,
+              "width_ratio_candidate_to_reference": 1.2132
+            },
+            {
+              "char": "۶",
+              "silhouette_iou": 0.8231,
+              "width_ratio_candidate_to_reference": 1.0891
+            }
+          ]
+        },
+        "roya": {
+          "mean_silhouette_iou": 0.6092,
+          "glyphs": [
+            {
+              "char": "۸",
+              "silhouette_iou": 0.5568,
+              "width_ratio_candidate_to_reference": 1.4108
+            },
+            {
+              "char": "۸",
+              "silhouette_iou": 0.5611,
+              "width_ratio_candidate_to_reference": 1.4371
+            },
+            {
+              "char": "ه",
+              "silhouette_iou": 0.6275,
+              "width_ratio_candidate_to_reference": 0.7971
+            },
+            {
+              "char": "۸",
+              "silhouette_iou": 0.5549,
+              "width_ratio_candidate_to_reference": 1.4206
+            },
+            {
+              "char": "۶",
+              "silhouette_iou": 0.7215,
+              "width_ratio_candidate_to_reference": 1.277
+            },
+            {
+              "char": "۳",
+              "silhouette_iou": 0.463,
+              "width_ratio_candidate_to_reference": 1.4225
+            },
+            {
+              "char": "۳",
+              "silhouette_iou": 0.5657,
+              "width_ratio_candidate_to_reference": 1.2132
+            },
+            {
+              "char": "۶",
+              "silhouette_iou": 0.8229,
+              "width_ratio_candidate_to_reference": 1.0891
+            }
+          ]
+        },
+        "roya-plate-form": {
+          "mean_silhouette_iou": 0.639,
+          "glyphs": [
+            {
+              "char": "۸",
+              "silhouette_iou": 0.5568,
+              "width_ratio_candidate_to_reference": 1.4108
+            },
+            {
+              "char": "۸",
+              "silhouette_iou": 0.5611,
+              "width_ratio_candidate_to_reference": 1.4371
+            },
+            {
+              "char": "ه",
+              "silhouette_iou": 0.8659,
+              "width_ratio_candidate_to_reference": 1.0064
+            },
+            {
+              "char": "۸",
+              "silhouette_iou": 0.5549,
+              "width_ratio_candidate_to_reference": 1.4206
+            },
+            {
+              "char": "۶",
+              "silhouette_iou": 0.7215,
+              "width_ratio_candidate_to_reference": 1.277
+            },
+            {
+              "char": "۳",
+              "silhouette_iou": 0.463,
+              "width_ratio_candidate_to_reference": 1.4225
+            },
+            {
+              "char": "۳",
+              "silhouette_iou": 0.5657,
+              "width_ratio_candidate_to_reference": 1.2132
+            },
+            {
+              "char": "۶",
+              "silhouette_iou": 0.8229,
+              "width_ratio_candidate_to_reference": 1.0891
+            }
+          ]
+        }
+      }
     }
   ],
   "method": "Per-glyph connected components from manual perspective correction. Uniform height normalization, native candidate aspect ratio, centered alignment +/-4px translation. Whole rows use reference-derived positions. No held-out accuracy estimate; Iran photographs share one serial/collection.",
-  "licensing": "No font binaries or extracted font libraries published. Font names/origins are recorded, not a redistribution clearance. Iranian reference crops: CC BY-SA 4.0, credited. 964 crop for visual criticism, original rights retained."
+  "licensing": "No font binaries or extracted font libraries published. Font names/origins are recorded, not a redistribution clearance. Iranian reference crops: CC BY-SA 4.0, credited. 964 crop for visual criticism, original rights retained.",
+  "candidate_pair_comparison": {
+    "description": "IR Plate vs B Roya Bold, same normalization as specimens; similarity is NOT a provenance determination.",
+    "glyphs": [
+      {
+        "char": "۰",
+        "silhouette_iou": 0.9999,
+        "width_ratio_candidate_to_reference": 1.0
+      },
+      {
+        "char": "۱",
+        "silhouette_iou": 0.998,
+        "width_ratio_candidate_to_reference": 1.0
+      },
+      {
+        "char": "۲",
+        "silhouette_iou": 0.9972,
+        "width_ratio_candidate_to_reference": 1.0
+      },
+      {
+        "char": "۳",
+        "silhouette_iou": 0.9967,
+        "width_ratio_candidate_to_reference": 1.0
+      },
+      {
+        "char": "۴",
+        "silhouette_iou": 0.996,
+        "width_ratio_candidate_to_reference": 1.0
+      },
+      {
+        "char": "۵",
+        "silhouette_iou": 0.9899,
+        "width_ratio_candidate_to_reference": 0.9938
+      },
+      {
+        "char": "۶",
+        "silhouette_iou": 0.9961,
+        "width_ratio_candidate_to_reference": 1.0
+      },
+      {
+        "char": "۷",
+        "silhouette_iou": 0.9972,
+        "width_ratio_candidate_to_reference": 1.0
+      },
+      {
+        "char": "۸",
+        "silhouette_iou": 0.9972,
+        "width_ratio_candidate_to_reference": 1.0
+      },
+      {
+        "char": "۹",
+        "silhouette_iou": 0.9972,
+        "width_ratio_candidate_to_reference": 1.0
+      },
+      {
+        "char": "ع",
+        "silhouette_iou": 0.9941,
+        "width_ratio_candidate_to_reference": 1.0
+      },
+      {
+        "char": "س",
+        "silhouette_iou": 0.9971,
+        "width_ratio_candidate_to_reference": 1.0
+      },
+      {
+        "char": "ب",
+        "silhouette_iou": 0.9973,
+        "width_ratio_candidate_to_reference": 1.0
+      }
+    ]
+  }
 }
