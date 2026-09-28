@@ -39,8 +39,9 @@ try {
         await page.waitForFunction(() => [...document.querySelectorAll('[aria-label="Typography reference comparison"] img')].every((im) => im.complete && im.naturalWidth === 1040));
       }
     }
-    await page.locator('#typeface-opacity').fill('75');
-    assert.equal(await page.locator('#typeface-opacity').inputValue(), '75');
+    await page.locator('#typeface-opacity').focus();
+    await page.locator('#typeface-opacity').press('End');
+    assert.equal(await page.locator('#typeface-opacity').inputValue(), '100');
     await page.screenshot({ path: `${out}/${country.toLowerCase()}-inspector.png`, fullPage: true });
   }
   const [download] = await Promise.all([
