@@ -1,9 +1,9 @@
 import type { FontAsset, Plate } from '../core/types';
 
-const fontCache = new Map<string, Promise<string>>();
+const assetCache = new Map<string, Promise<string>>();
 
 function toDataUrl(url: string): Promise<string> {
-  let p = fontCache.get(url);
+  let p = assetCache.get(url);
   if (!p) {
     p = fetch(url)
       .then((r) => r.blob())
@@ -16,14 +16,19 @@ function toDataUrl(url: string): Promise<string> {
             reader.readAsDataURL(blob);
           }),
       );
-    fontCache.set(url, p);
+    assetCache.set(url, p);
   }
   return p;
 }
 
-/** Serializes a rendered plate <svg>, inlining its fonts so it renders identically anywhere. */
+/** Serializes a rendered plate <svg>, inlining its fonts and linked images (e.g. photo backgrounds) so it renders
+ * identically anywhere, including when drawn to a canvas for PNG export, where external images never load. */
 export async function serializeSvg(svg: SVGSVGElement, fonts: FontAsset[] = []): Promise<string> {
   const clone = svg.cloneNode(true) as SVGSVGElement;
+  await Promise.all([...clone.querySelectorAll('image')].map(async (image) => {
+    const href = image.getAttribute('href');
+    if (href && !href.startsWith('data:')) image.setAttribute('href', await toDataUrl(new URL(href, document.baseURI).href));
+  }));
   const faces = await Promise.all(
     fonts.map(async (f) => {
       const data = await toDataUrl(f.url);

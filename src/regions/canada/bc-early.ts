@@ -71,11 +71,17 @@ const porcelain1914 = recipe('early-1914', '1914 porcelain', p1914, '1913-1914',
 function tin(year: number, b: Base, cap: number, baseline: number, panel: boolean): KitRecipe {
   return recipe(`early-${year}`, `${year} tin`, b, '1915-1917', {
     embossed: false, rim: { inset: 1.5, width: 1.4 }, shapes: grommets(b),
-    art: [
-      ...(panel ? [{ art: 'arms-panel', x: b.w * 0.02, y: b.h * 0.08, width: b.w * 0.17, height: b.h * 0.41 }] : []),
-      { art: 'bc-arms', x: b.w * 0.04, y: b.h * 0.09, width: b.w * 0.15, height: b.h * 0.36, color: panel ? b.bg : b.ink },
+    // 1915 (cream panel) proportions are measured from BCpl8s No. 228: the arms fill the panel, the crown just under the arch.
+    art: panel ? [
+      { art: 'arms-panel', x: b.w * 0.014, y: b.h * 0.09, width: b.w * 0.176, height: b.h * 0.411, color: b.ink },
+      { art: 'bc-arms', x: b.w * 0.018, y: b.h * 0.115, width: b.w * 0.168, height: b.h * 0.36, color: b.bg },
+    ] : [
+      { art: 'bc-arms', x: b.w * 0.04, y: b.h * 0.09, width: b.w * 0.15, height: b.h * 0.36, color: b.ink },
     ],
-    legends: [
+    legends: panel ? [
+      { text: 'B.C.', x: b.w * 0.107, baseline: b.h * 0.695, cap: b.h * 0.106, die: 'bc-legend-condensed', role: 'legend' },
+      { text: String(year), x: b.w * 0.1, baseline: b.h * 0.937, cap: b.h * 0.188, maxWidth: b.w * 0.165, die: 'bc-tin-1915', role: 'year' },
+    ] : [
       { text: 'B.C.', x: b.w * 0.11, baseline: b.h * (year === 1917 ? 0.59 : 0.66), cap: b.h * 0.13, die: 'bc-legend-condensed', role: 'legend' },
       { text: String(year), x: b.w * 0.11, baseline: b.h * (year === 1917 ? 0.86 : 0.9), cap: b.h * (year === 1917 ? 0.24 : 0.18), maxWidth: b.w * 0.16, die: 'bc-tin-1915', role: 'year' },
     ],
@@ -192,7 +198,7 @@ const specs: EarlySpec[] = [
   { id: '1916', label: '1916 · tin', period: [1916, 1916], recipe: tin(1916, { w: 323, h: 146, bg: '#cc8d0b', ink: '#312b1e' }, 0.82, 0.92, false), grammar: plain(9342),
     description: 'Dark on orange-yellow tin. Over-run plates above 9,000 came from a new maker with a different font and cruder arms (not separately drawn).' },
   { id: '1917', label: '1917 · tin', period: [1917, 1917], recipe: tin(1917, { w: 342, h: 139, bg: '#ebebd7', ink: '#161318' }, 0.7, 0.83, false), grammar: plain(13000),
-    description: 'Black on cream tin, 342 × 139 mm, numbers to 13,000. Three or four coat-of-arms renderings exist; one simplified version is drawn.' },
+    description: 'Black on cream tin, 342 × 139 mm, numbers to 13,000. Three or four coat-of-arms renderings exist; one shared rendering is drawn.' },
   { id: '1918', label: '1918 · steel', period: [1918, 1918], recipe: steel(1918, s1918, 'frame'), grammar: plain(20500),
     description: 'Embossed yellow on black steel meant to last three years with renewal tabs; the framed monogram area is where the tab fits. Numbers 1–15,000 with an over-run to 20,500.' },
   { id: '1919-tab', label: '1919 · green tab', period: [1919, 1919],

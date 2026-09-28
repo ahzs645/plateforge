@@ -6,7 +6,7 @@ export interface SvgNode {
 }
 export const node = (tag: string, attrs: SvgNode['attrs'] = {}, ...children: SvgNode['children']): SvgNode => ({ tag, attrs, children });
 const attrNames: Record<string, string> = {
-  fontFamily: 'font-family', fontSize: 'font-size', fontWeight: 'font-weight', fontStyle: 'font-style',
+  fontFamily: 'font-family', fontSize: 'font-size', fontWeight: 'font-weight', fontStyle: 'font-style', fontVariant: 'font-variant',
   textAnchor: 'text-anchor', strokeWidth: 'stroke-width', strokeLinejoin: 'stroke-linejoin',
   strokeLinecap: 'stroke-linecap', strokeDasharray: 'stroke-dasharray', fillRule: 'fill-rule', clipRule: 'clip-rule', clipPath: 'clip-path', floodColor: 'flood-color', floodOpacity: 'flood-opacity',
 };

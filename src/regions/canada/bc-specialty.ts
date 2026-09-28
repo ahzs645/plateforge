@@ -11,6 +11,7 @@
 import '../../templates/bc/art-specialty';
 import type { PlateEra, PlateFamily, PlateFormat } from '../../core/types';
 import type { KitArt, KitDecal, KitFontText, KitRecipe, KitSerial, KitText } from '../../templates/bc/kit';
+import { PERSONALIZED_BRITISH, PERSONALIZED_COLUMBIA, PERSONALIZED_DOGWOOD, PERSONALIZED_FRAME } from '../../templates/bc/personalized-art';
 import { registerDieProfile } from '../../templates/dies/profiles';
 import { BC_AK, BC_LX, kitFormat, numericGrammar, type SerialGrammar } from './bc-kit';
 
@@ -63,7 +64,7 @@ function paddedGrammar(ranges: readonly (readonly [number, number])[]): SerialGr
 }
 
 // ── BC Parks (2017–): three photo designs with a continuous serial shifted right ──
-const PARKS_NOTE = `BC Parks reconstruction: the photographic backgrounds and bear are simplified flat artwork. ${ART_NOTE}`;
+const PARKS_NOTE = `BC Parks reconstruction: the backgrounds are supplied stand-in photographs of each scene, not the official plate image files. ${ART_NOTE}`;
 const PARKS_WELLS = dual(well(114, 119, 24, 24), well(141, 119, 48, 24));
 function parksRecipe(id: string, label: string, background: string, art: KitArt[], top = 'Beautiful British Columbia', left = 'Discover'): KitRecipe {
   return plate(id, label, FULL, SRC.parks, PARKS_NOTE, {
@@ -74,15 +75,14 @@ function parksRecipe(id: string, label: string, background: string, art: KitArt[
     ...PARKS_WELLS,
   });
 }
-const kermodeArt = (x: number, y: number, w: number): KitArt[] => [
-  { art: 'bc-parks-meadow', x: 0, y: 0, width: 300, height: 150 },
-  { art: 'bc-parks-kermode-bear', x, y, width: w, height: w * 2, role: 'kermode-bear' }];
+/** The Kermode photo; `zoom` enlarges it about the bottom-left corner (the prototype's larger bear), clipped by the plate. */
+const kermodeArt = (zoom = 1): KitArt[] => [{ art: 'bc-parks-kermode', x: 0, y: 150 * (1 - zoom), width: 300 * zoom, height: 150 * zoom, role: 'kermode-bear' }];
 const PARKS_DESCRIPTION = 'Continuous six-character serials (no separator), standard passenger dies, “Beautiful British Columbia” above and “Discover … BC Parks” below, with the day and month/year decals between them.';
 
 const parks: PlateFormat[] = [
   kitFormat({
     id: 'parks-kermode', label: 'BC Parks · Kermode bear', family: 'specialty', period: [2017, 2026], era: 'specialty-parks',
-    recipe: parksRecipe('parks-kermode', 'BC Parks · Kermode bear', '#8fb040', kermodeArt(-3, 26, 66)),
+    recipe: parksRecipe('parks-kermode', 'BC Parks · Kermode bear', '#8fb040', kermodeArt()),
     grammar: { sets, hint: 'PA9-99X … PJ9-99X (2017–23), RK–RN blocks (2024–25), shown without a dash', blocks: blocks('P[A-HJ]999{s}', 'R[KLMN]999{s}') },
     decals: [2017, 2023],
     description: `The Kermode (spirit) bear “Molly” in a meadow. ${PARKS_DESCRIPTION} Blocks PA (January 2017) to PJ (2023), then RK, RL, RM and RN.`,
@@ -105,15 +105,17 @@ const parks: PlateFormat[] = [
   }),
   kitFormat({
     id: 'parks-prototype', label: 'BC Parks · 2016 prototype', family: 'specialty', period: [2016, 2016], era: 'specialty-parks', status: 'prototype',
-    recipe: parksRecipe('parks-prototype', 'BC Parks · 2016 prototype', '#8fb040', kermodeArt(-6, 12, 76), 'British Columbia', 'Explore'),
+    recipe: parksRecipe('parks-prototype', 'BC Parks · 2016 prototype', '#8fb040', kermodeArt(1.2), 'British Columbia', 'Explore'),
     grammar: { hint: '000000 (the prototype’s serial)', blocks: blocks('000000') },
     description: 'Prototype dated 25 August 2016: “British Columbia” alone at the top (no “Beautiful”), “Explore” instead of “Discover”, and a larger bear. Serial 000000. The bear enlargement is estimated from the photo.',
   }),
 ];
 
 // ── 2010 Olympic Winter Games (2007–10): Mount Garibaldi, emblem separator ──
-const OLY_NOTE = `2010 Olympic base: Mount Garibaldi photo, B.C. logo and the Vancouver 2010 emblem are redrawn as flat artwork; the gold slogan and legends use a serif stand-in. ${ART_NOTE}`;
+const OLY_NOTE = `2010 Olympic base: the Mount Garibaldi background is a supplied stand-in photograph (not the official plate image); the Vancouver 2010 emblem is redrawn as flat artwork; the gold slogan and legends use a serif stand-in. ${ART_NOTE}`;
 const GOLD = '#c8841c';
+/** The Olympic plates' dark drop shadow, scaled with the lettering. */
+const shade = (size: number) => ({ dx: size * 0.045, dy: size * 0.05, color: '#2b2116' });
 function olympicRecipe(id: string, label: string, size: Size): KitRecipe {
   const full = size === FULL;
   const s = full
@@ -126,9 +128,12 @@ function olympicRecipe(id: string, label: string, size: Size): KitRecipe {
     separator: { kind: 'art', gap, art: { art: 'bc-olympic-emblem', x: 0, y: sb - scap / 2 - eh / 2, width: ew, height: eh } } };
   return plate(id, label, size, SRC.olympic, OLY_NOTE, {
     background: '#53a7d5', ink: '#1a1a1a', holeAt: full ? { x: [0.22, 0.78], y: [0.06, 0.95] } : { x: [0.17, 0.83], y: [0.06, 0.94] },
-    art: [{ art: 'bc-olympic-garibaldi', x: 0, y: 0, width: size.w, height: size.h }, { art: 'bc-logo', ...s.logo, role: 'bc-logo' }],
-    fontLegends: [serif('The Best Place on Earth', s.slogan[0], s.slogan[1], s.slogan[2], GOLD, 'slogan', { width: s.slogan[3], weight: 700 }),
-      serif('BRITISH', s.legend[0], s.legend[2], s.legend[3], GOLD, 'legend-left', { weight: 700 }), serif('COLUMBIA', s.legend[1], s.legend[2], s.legend[3], GOLD, 'legend-right', { weight: 700 })],
+    art: [{ art: full ? 'bc-olympic-garibaldi' : 'bc-olympic-garibaldi-small', x: 0, y: 0, width: size.w, height: size.h }, { art: 'bc-logo', ...s.logo, role: 'bc-logo' }],
+    // Gold lettering with a hard dark drop shadow; BRITISH / COLUMBIA are small capitals (photos of 005 MAA, 480 MAE, 011 MJB).
+    // Sizes from 480 MAE: slogan capitals ~9.7 mm over ~143 mm, BRITISH / COLUMBIA capitals ~9.6 mm.
+    fontLegends: [serif('The Best Place on Earth', s.slogan[0], s.slogan[1], s.slogan[2] * 0.78, GOLD, 'slogan', { width: s.slogan[3], weight: 700, shadow: shade(s.slogan[2] * 0.78) }),
+      serif('British', s.legend[0], s.legend[2], s.legend[3], GOLD, 'legend-left', { weight: 700, smallCaps: true, shadow: shade(s.legend[3]) }),
+      serif('Columbia', s.legend[1], s.legend[2], s.legend[3], GOLD, 'legend-right', { weight: 700, smallCaps: true, shadow: shade(s.legend[3]) })],
     serial, ...s.wells,
   });
 }
@@ -155,11 +160,11 @@ const olympic: PlateFormat[] = OLYMPIC.map((o) => kitFormat({
 }));
 
 // ── Veteran (2004–): powder blue, war memorial and poppy, continuous serial ──
-const VET_NOTE = `Veteran reconstruction: the National War Memorial photo is redrawn as flat silhouettes with the poppy over it. ${ART_NOTE}`;
+const VET_NOTE = `Veteran reconstruction: the National War Memorial background is a supplied stand-in photograph (not the official plate image), with a supplied poppy over it. ${ART_NOTE}`;
 function veteranRecipe(id: string, label: string, wells: 'single' | 'dual'): KitRecipe {
   return plate(id, label, FULL, SRC.veteran, VET_NOTE, {
     background: '#8ec8d8', ink: '#0a0f0f',
-    art: [{ art: 'bc-war-memorial', x: 0, y: 18, width: 60, height: 130 }, { art: 'bc-poppy', x: 25, y: 79, width: 28, height: 28, role: 'poppy' },
+    art: [{ art: 'bc-veteran-memorial', x: 0, y: 0, width: 300, height: 150 }, { art: 'bc-poppy', x: 29, y: 68, width: 38, height: 36, role: 'poppy' },
       { art: 'canada-flag', x: 252, y: 18, width: 30, height: 15, role: 'canada-flag' }],
     fontLegends: [serif('VETERAN', 157, 33, 20, '#0a0f0f', 'legend-top', { width: 93 }), serif('British', 70, 127, 17, '#0a0f0f', 'legend-left'), serif('Columbia', 248, 127, 17, '#0a0f0f', 'legend-right')],
     serial: { x: 174, baseline: 109, cap: 60, maxWidth: 226, die: 'bc-waldale', color: '#0a0f0f' },
@@ -190,7 +195,7 @@ const veteran: PlateFormat[] = [
     id: 'veteran-motorcycle', label: 'Veteran · motorcycle', family: 'specialty', period: [2004, 2026], era: 'specialty-veteran',
     recipe: plate('veteran-motorcycle', 'Veteran · motorcycle', SMALL, SRC.veteran, VET_NOTE, {
       background: '#8ec8d8', ink: '#0a0f0f',
-      art: [{ art: 'bc-war-memorial', x: -4, y: 23, width: 48, height: 104 }, { art: 'bc-poppy', x: 13, y: 69, width: 22, height: 22, role: 'poppy' },
+      art: [{ art: 'bc-veteran-memorial-small', x: 0, y: 0, width: 203, height: 127 }, { art: 'bc-poppy', x: 11, y: 64, width: 29, height: 27, role: 'poppy' },
         { art: 'canada-flag', x: 158, y: 18, width: 24, height: 12, role: 'canada-flag' }],
       fontLegends: [serif('VETERAN', 95, 26, 16, '#0a0f0f', 'legend-top', { width: 72 }), serif('British', 176, 101, 9.5, '#0a0f0f', 'legend-1'), serif('Columbia', 176, 112, 9.5, '#0a0f0f', 'legend-2')],
       serial: { x: 118, baseline: 81, cap: 42, maxWidth: 150, die: 'bc-waldale', color: '#0a0f0f' },
@@ -357,7 +362,7 @@ const antique: PlateFormat[] = [
 ];
 
 // ── Personalized (1979–): the mountain-ocean graphic base ──
-const PER_NOTE = `Personalized reconstruction: the mountain and ocean bands and the dogwood are flat artwork in the colours of each maker's plates; BEAUTIFUL and BRITISH / COLUMBIA are sans legends drawn with a die stand-in. ${ART_NOTE}`;
+const PER_NOTE = `Personalized reconstruction: one shared vector of the mountain band, ocean banner, dogwood and outlined BRITISH / COLUMBIA (a Roboto stand-in for the unestablished face), recoloured for each maker's plates; BEAUTIFUL is a die stand-in. ${ART_NOTE}`;
 const EXAMPLES = ['HEALEY', 'DAZZLE', 'IMAGE', 'OL-PAPA', '2GOOD', 'MURALS', 'BCPL8S', 'NUTBAR', 'CHRISG', 'ALL4ME'];
 const ALNUM = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 const vanity: SerialGrammar = {
@@ -368,7 +373,16 @@ const vanity: SerialGrammar = {
   },
 };
 type Graphic = 'acme' | 'astro' | 'reversed' | 'waldale' | 'sample';
-const OCEAN: Record<Graphic, string> = { acme: '#10192a', astro: '#1c2a55', reversed: '#1c2a55', waldale: '#2b56b0', sample: '#1a1a1a' };
+const OCEAN: Record<Graphic, string> = { acme: '#141c28', astro: '#141d33', reversed: '#141d33', waldale: '#0a45a0', sample: '#1a1a1a' };
+/** Dogwood and BRITISH / COLUMBIA from the artwork frame (1774 × 887), scaled uniformly by the plate width so the
+ * lettering is never squashed on the narrower motorcycle plate, and centred where the frame puts them. */
+function personalizedPieces(size: Size): KitArt[] {
+  const [fw, fh] = PERSONALIZED_FRAME, k = size.w / fw, ky = size.h / fh;
+  return ([['dogwood', PERSONALIZED_DOGWOOD.box], ['british', PERSONALIZED_BRITISH.box], ['columbia', PERSONALIZED_COLUMBIA.box]] as const).map(([part, [x0, y0, x1, y1]]) => {
+    const width = (x1 - x0) * k, height = (y1 - y0) * k;
+    return { art: `bc-personalized-${part}`, x: ((x0 + x1) / 2) * k - width / 2, y: ((y0 + y1) / 2) * ky - height / 2, width, height, color: '#ffffff', role: part };
+  });
+}
 function personalizedRecipe(id: string, label: string, size: Size, graphic: Graphic, o: { ink: string; baseline: number; die: string; dualWells: boolean }): KitRecipe {
   const full = size === FULL, ocean = OCEAN[graphic];
   const wells = full
@@ -376,13 +390,10 @@ function personalizedRecipe(id: string, label: string, size: Size, graphic: Grap
     : dual(well(62, 98, 22, 20), well(87, 98, 50, 20));
   return plate(id, label, size, SRC.personalized, PER_NOTE, {
     background: '#f0f0ee', ink: o.ink, rim: { inset: 1.4, width: 1, color: '#d0d4da' }, holeAt: full ? { x: [0.2, 0.8], y: [0.1, 0.92] } : { x: [0.18, 0.82], y: [0.09, 0.93] },
-    art: [{ art: `bc-personalized-${graphic}`, x: 0, y: 0, width: size.w, height: size.h },
-      full ? { art: 'bc-dogwood', x: 10, y: 118, width: 20, height: 22, role: 'dogwood' } : { art: 'bc-dogwood', x: 7, y: 99, width: 17, height: 18, role: 'dogwood' }],
-    legends: full
-      ? [die('BEAUTIFUL', 150, 25, 12.5, 'bc-legend-1973', 'legend-top', { color: ocean, maxWidth: 92, spread: true }),
-        die('BRITISH', 61.5, 130, 9.5, 'bc-legend-1973', 'legend-left', { color: '#ffffff' }), die('COLUMBIA', 252, 130, 9.5, 'bc-legend-1973', 'legend-right', { color: '#ffffff' })]
-      : [die('BEAUTIFUL', 101.5, 19, 8, 'bc-legend-1973', 'legend-top', { color: ocean, maxWidth: 62, spread: true }),
-        die('BRITISH', 40, 113, 6, 'bc-legend-1973', 'legend-left', { color: '#ffffff' }), die('COLUMBIA', 167, 113, 6, 'bc-legend-1973', 'legend-right', { color: '#ffffff' })],
+    art: [{ art: `bc-personalized-${graphic}`, x: 0, y: 0, width: size.w, height: size.h }, ...personalizedPieces(size)],
+    // BEAUTIFUL starts just past the outlined snow peak, as on the photographed plates.
+    legends: [full ? die('BEAUTIFUL', 154, 25, 12.5, 'bc-legend-1973', 'legend-top', { color: ocean, maxWidth: 86, spread: true })
+      : die('BEAUTIFUL', 104.5, 19, 8, 'bc-legend-1973', 'legend-top', { color: ocean, maxWidth: 58, spread: true })],
     serial: full ? { x: 150, baseline: o.baseline, cap: 62, maxWidth: 240, die: o.die } : { x: 101.5, baseline: o.baseline, cap: 44, maxWidth: 176, die: o.die },
     ...wells,
   });
@@ -391,26 +402,26 @@ const PER_DESC = 'Vanity plates of two to six characters on the mountain-ocean g
 const personalized: PlateFormat[] = [
   kitFormat({
     id: 'personalized-1979', label: 'Personalized · 1979 Acme', family: 'specialty', period: [1979, 1984], era: 'specialty-personalized',
-    recipe: personalizedRecipe('personalized-1979', 'Personalized · 1979 Acme', FULL, 'acme', { ink: '#1a1f2a', baseline: 108, die: 'bc-acme-1979', dualWells: false }),
+    recipe: personalizedRecipe('personalized-1979', 'Personalized · 1979 Acme', FULL, 'acme', { ink: '#151a22', baseline: 108, die: 'bc-acme-1979', dualWells: false }),
     grammar: vanity, decals: [1979, 1984],
     description: `${PER_DESC} The originals were made by Acme Signal Signs of Montreal; the photo (DAZZLE) shows a near-black slogan and darker green and navy graphics. The changeover to Astrographic (mid-1980s) is not dated exactly.`,
   }),
   kitFormat({
     id: 'personalized-astro', label: 'Personalized · Astrographic', family: 'specialty', period: [1984, 2002], era: 'specialty-personalized',
-    recipe: personalizedRecipe('personalized-astro', 'Personalized · Astrographic', FULL, 'astro', { ink: '#1c2f6a', baseline: 111, die: 'bc-astro-4', dualWells: false }),
+    recipe: personalizedRecipe('personalized-astro', 'Personalized · Astrographic', FULL, 'astro', { ink: '#141c30', baseline: 111, die: 'bc-astro-4', dualWells: false }),
     grammar: vanity, decals: [1984, 2002],
-    palettes: [{ id: 'dark', label: 'Dark blue digits (usual)', background: '#f0f0ee', ink: '#1c2f6a' }, { id: 'light', label: 'Mid-1990s light blue digits', background: '#f0f0ee', ink: '#4f7fcf' }],
+    palettes: [{ id: 'dark', label: 'Near-black blue digits (usual)', background: '#f0f0ee', ink: '#141c30' }, { id: 'light', label: 'Mid-1990s light blue digits', background: '#f0f0ee', ink: '#2f55b5' }],
     description: `${PER_DESC} Astrographic plates (mid-1980s to 2002) use a dark blue slogan and navy ocean, with the slogan sitting low into the ocean band; a brief mid-1990s run has very noticeable light blue digits (MURALS).`,
   }),
   kitFormat({
     id: 'personalized-reversed', label: 'Personalized · reversed mountains', family: 'specialty', period: [1984, 1986], era: 'specialty-personalized',
-    recipe: personalizedRecipe('personalized-reversed', 'Personalized · reversed mountain graphic', FULL, 'reversed', { ink: '#1c2f6a', baseline: 111, die: 'bc-astro-4', dualWells: false }),
+    recipe: personalizedRecipe('personalized-reversed', 'Personalized · reversed mountain graphic', FULL, 'reversed', { ink: '#141c30', baseline: 111, die: 'bc-astro-4', dualWells: false }),
     grammar: vanity, decals: [1984, 1986],
     description: `${PER_DESC} A brief mid-1980s run on which the mountain graphic was erroneously reversed left to right (OL-PAPA); exact years are not given.`,
   }),
   kitFormat({
     id: 'personalized-waldale', label: 'Personalized · Waldale', family: 'specialty', period: [2002, 2026], era: 'specialty-personalized',
-    recipe: personalizedRecipe('personalized-waldale', 'Personalized · Waldale', FULL, 'waldale', { ink: '#2b56b0', baseline: 106, die: 'bc-waldale', dualWells: true }),
+    recipe: personalizedRecipe('personalized-waldale', 'Personalized · Waldale', FULL, 'waldale', { ink: '#0a45a0', baseline: 106, die: 'bc-waldale', dualWells: true }),
     grammar: vanity, decals: [2002, 2023],
     description: `${PER_DESC} Waldale plates (late 2002 on): slogan shifted slightly higher for legibility and printed in the same light blue as the ocean band; later plates have separate day and month/year wells (BCPL8S, 2012).`,
   }),
@@ -422,13 +433,13 @@ const personalized: PlateFormat[] = [
   }),
   kitFormat({
     id: 'personalized-motorcycle', label: 'Personalized · motorcycle', family: 'specialty', period: [2000, 2026], era: 'specialty-personalized',
-    recipe: personalizedRecipe('personalized-motorcycle', 'Personalized · motorcycle', SMALL, 'waldale', { ink: '#2b56b0', baseline: 84, die: 'bc-waldale', dualWells: true }),
+    recipe: personalizedRecipe('personalized-motorcycle', 'Personalized · motorcycle', SMALL, 'waldale', { ink: '#0a45a0', baseline: 84, die: 'bc-waldale', dualWells: true }),
     grammar: vanity, dies: [{ id: 'bc-waldale', label: 'Waldale (late 2002 on)' }, { id: 'bc-astro-4', label: 'Astrographic (2000–02)' }], decals: [2000, 2023],
     description: `${PER_DESC} Personalized plates first appeared on motorcycles in 2000; the same graphic is compressed onto the small plate (NUTBAR, 2016). The maximum length on motorcycles is not stated, so the car rule is used. Colours follow the Waldale plates.`,
   }),
   kitFormat({
     id: 'personalized-motorcycle-prototype', label: 'Personalized · motorcycle prototype', family: 'specialty', period: [2001, 2001], era: 'specialty-personalized', status: 'prototype',
-    recipe: personalizedRecipe('personalized-motorcycle-prototype', 'Personalized · motorcycle prototype', SMALL, 'waldale', { ink: '#2b56b0', baseline: 84, die: 'bc-astro-4', dualWells: true }),
+    recipe: personalizedRecipe('personalized-motorcycle-prototype', 'Personalized · motorcycle prototype', SMALL, 'waldale', { ink: '#0a45a0', baseline: 84, die: 'bc-astro-4', dualWells: true }),
     grammar: { hint: '123678 (the prototype’s number)', blocks: blocks('123678') },
     description: `${PER_DESC} Astrographic prototype of the personalized motorcycle plate, assumed by BCpl8s to date from about 2001, numbered 123678.`,
   }),

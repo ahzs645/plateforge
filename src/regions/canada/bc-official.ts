@@ -418,8 +418,8 @@ const officialSpecs: Spec[] = [
     description: 'In 1936 the Golden plates were CF451–CF575 (CF-472 pictured), cream on green with the red rim and stacked year.' },
   { id: 'official-lt-governor-arms', label: 'Lieutenant Governor · coat of arms', family: 'official', era: 'official-federal', period: [1998, 2008],
     recipe: recipe('official-lg-arms', 'Lieutenant Governor coat of arms', { w: 300, h: 150 }, SRC.lg, {
-      embossed: false, radius: 6, background: '#101010', ink: '#b08a3a', holes: 'round', holeAt: { x: [0.2, 0.8], y: [0.08] }, rim: null, note: `${NOTE} Size assumed 300 × 150 mm; the die-struck arms are simplified.`,
-      art: [{ art: 'official-bc-arms', x: 90, y: 16, width: 120, height: 118 }], legends: [], serial: NO_NUMBER }),
+      embossed: false, radius: 6, background: '#101010', ink: '#b08a3a', holes: 'round', holeAt: { x: [0.2, 0.8], y: [0.08] }, rim: null, note: `${NOTE} Size assumed 300 × 150 mm; the die-struck arms are drawn as flat gold ink.`,
+      art: [{ art: 'bc-arms', x: 90, y: 12, width: 120, height: 126, color: '#c49a3e' }], legends: [], serial: NO_NUMBER }),
     grammar: noNumber,
     description: 'The Lieutenant Governor’s car carried a large die-struck British Columbia coat of arms on a black plate until 2008; when it started is not known (possibly the late 1990s).' },
   { id: 'official-lt-governor-crest', label: 'Lieutenant Governor · crest', family: 'official', era: 'official-federal', period: [2008, 2026],

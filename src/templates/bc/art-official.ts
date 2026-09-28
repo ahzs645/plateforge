@@ -76,24 +76,6 @@ function lgCrest(): SvgNode[] {
   ];
 }
 
-/** British Columbia coat of arms, 100 × 90, die-struck gold with an enamelled shield: stag and ram, crest, motto. */
-function bcArmsFull(): SvgNode[] {
-  const g = { fill: '#c49a3e', stroke: '#6d5222', strokeWidth: 0.8 };
-  return [
-    // Supporters: wapiti stag (left) and bighorn ram (right), rearing.
-    n('path', { d: 'M28 70 C20 62 17 50 20 40 C16 36 14 30 17 26 L12 16 L16 18 L14 10 L19 17 L20 11 L23 20 C27 21 29 25 28 30 C33 34 34 44 32 52 L35 70 Z', ...g }),
-    n('path', { d: 'M72 70 C80 62 83 50 80 40 C85 36 87 31 84 26 C88 22 88 16 83 14 C78 12 75 17 77 21 C73 22 71 26 72 30 C67 34 66 44 68 52 L65 70 Z', ...g }),
-    // Crest: crowned lion on a helm and wreath.
-    n('path', { d: 'M40 24 C40 18 44 14 50 14 C56 14 60 18 60 24 Z', ...g }),
-    n('path', { d: 'M44 14 C43 9 46 5 50 5 C54 5 57 8 56 12 C58 10 60 12 58 14 Z', ...g }),
-    place(43, 0, 0.23, ...crown('#e0c060')),
-    place(33, 24, 0.85, ...bcShield()),
-    // Motto scroll and dogwood flowers.
-    n('path', { d: 'M14 72 Q30 80 50 76 Q70 80 86 72 L88 80 Q70 88 50 84 Q30 88 12 80 Z', ...g }),
-    ...[[22, 84], [36, 87], [50, 88], [64, 87], [78, 84]].map(([cx, cy]) => n('circle', { cx, cy, r: 2.6, fill: '#f1eadb', stroke: '#6d5222', strokeWidth: 0.5 })),
-  ];
-}
-
 /** Royal Arms of Canada as on the 1951 tour plate, 100 × 90: crown, lion, unicorn, shield, scroll. */
 function canadaArms(): SvgNode[] {
   const gold = { fill: '#d0b25c', stroke: '#6b5520', strokeWidth: 0.6 };
@@ -223,7 +205,6 @@ function totem(): SvgNode[] {
 registerArtwork('official-maple-leaf', { viewBox: [40, 40], draw: () => [leaf(0, 0, 40, '#d52b1e')] });
 registerArtwork('official-crown', { viewBox: [60, 50], draw: () => crown('#d4b04a', '#9a1b20') });
 registerArtwork('official-canada-arms', { viewBox: [100, 90], draw: canadaArms });
-registerArtwork('official-bc-arms', { viewBox: [100, 90], draw: bcArmsFull });
 registerArtwork('official-lg-crest', { viewBox: [100, 100], draw: lgCrest });
 registerArtwork('official-apec', { viewBox: [120, 70], draw: apecGlobe });
 registerArtwork('official-apec-sticker', { viewBox: [70, 60], draw: apecSticker });

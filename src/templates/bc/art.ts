@@ -4,6 +4,7 @@
  * licence plate, not official artwork files.
  */
 import { node as n, type SvgNode } from '../svg-scene';
+import { CREST_BOX, CREST_PATH } from './crest';
 import { BC_LOGO, MONOGRAM_1914, MONOGRAM_1918, SPIRIT_FLAG } from './emblems';
 
 export interface ArtBox { x: number; y: number; width: number; height: number }
@@ -65,30 +66,21 @@ function bcLogo(wordmark: boolean, mono = false): () => SvgNode[] {
     ...paths.map(({ part, fill, d }) => n('path', { d, fill: mono ? 'currentColor' : fill, 'data-part': part })))];
 }
 
-/** Provincial coat of arms, simplified for small line-art use (1915–17 tin, 1919 cardboard), 50 × 62.
- * Crest crown, shield (Union upper third; sun over waves below) and motto scroll; supporters omitted. */
+/** Provincial coat of arms (1915–17 tin, 1919 cardboard, the Lieutenant Governor's plate), one ink in currentColor. */
 function bcArms(): SvgNode[] {
-  const line = { fill: 'none', stroke: 'currentColor', strokeWidth: 1.6, strokeLinejoin: 'round' as const };
-  return [
-    n('path', { d: 'M17 9 L19 3 L22 7 L25 2 L28 7 L31 3 L33 9 Z', ...line, 'data-part': 'crown' }),
-    n('path', { d: 'M9 12 H41 V33 C41 46 33 52 25 56 C17 52 9 46 9 33 Z', ...line, 'data-part': 'shield' }),
-    n('path', { d: 'M9 22 H41 M25 12 V22 M9 12 L41 22 M41 12 L9 22', ...line, strokeWidth: 1.1 }),
-    n('path', { d: 'M17 32 A8 8 0 0 1 33 32', ...line }),
-    ...[36, 41, 46].map((y) => n('path', { d: `M11 ${y} q3.5 -2 7 0 t7 0 t7 0 t7 0`, ...line, strokeWidth: 1.1 })),
-    n('path', { d: 'M4 56 Q14 61 25 58 Q36 61 46 56 L44 61 Q35 63 25 61 Q15 63 6 61 Z', ...line, strokeWidth: 1.1, 'data-part': 'motto-scroll' }),
-  ];
+  return [n('path', { d: CREST_PATH, fill: 'currentColor', fillRule: 'evenodd' })];
 }
 
-/** Cream panel with an arched top behind the 1915 coat of arms, 34 × 60. */
+/** Panel behind the 1915 coat of arms, 34 × 60: straight sides meeting a domed top at sharp corners (arch fitted to BCpl8s No. 228); printed in the figures' colour (currentColor). */
 function armsPanel(): SvgNode[] {
-  return [n('path', { d: 'M0 60 V8 Q0 0 8 0 H26 Q34 0 34 8 V60 Z', fill: '#ece4bd' })];
+  return [n('path', { d: 'M0 60 V6.4 C8 -1.6 26 -1.6 34 6.4 V60 Z', fill: 'currentColor' })];
 }
 
 const MASTERS: Record<string, ArtMaster> = {
   'arms-panel': { viewBox: [34, 60], draw: armsPanel, aspect: 'stretch' },
   'bc-monogram': { viewBox: [MONOGRAM_1918.box[2], MONOGRAM_1918.box[3]], draw: bcMonogram },
   'bc-monogram-1914': { viewBox: [MONOGRAM_1914.box[2], MONOGRAM_1914.box[3]], draw: bcMonogram1914 },
-  'bc-arms': { viewBox: [50, 62], draw: bcArms },
+  'bc-arms': { viewBox: [CREST_BOX[0], CREST_BOX[1]], draw: bcArms },
   'bc-spirit-flag': { viewBox: [SPIRIT_FLAG.box[2], SPIRIT_FLAG.box[3]], draw: spiritFlag },
   'bc-flag': { viewBox: [60, 36], draw: bcFlag },
   'bc-logo': { viewBox: [BC_LOGO.symbolBox[2], BC_LOGO.symbolBox[3]], draw: bcLogo(false) },

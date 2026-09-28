@@ -23,6 +23,10 @@ export interface KitFontText {
   weight?: number;
   italic?: boolean;
   color?: string;
+  /** Printed small capitals (e.g. "British" → B + small RITISH). */
+  smallCaps?: boolean;
+  /** Hard drop shadow: a copy of the line in `color`, offset by dx/dy mm, drawn underneath. */
+  shadow?: { dx: number; dy: number; color: string };
   role: string;
 }
 export interface KitText {
@@ -205,9 +209,12 @@ export function buildKitScene(recipe: KitRecipe, parts: Parts, options: KitScene
   const wells = (recipe.extraWells ?? []).map((well) => n('rect', { x: well.x, y: well.y, width: well.width, height: well.height, rx: well.rx ?? 2, fill: 'none', stroke: recipe.rim?.color ?? ink, strokeWidth: 0.8, 'data-role': 'renewal-well' }));
   const rim = recipe.rim === undefined ? { inset: 4, width: 1.5 } : recipe.rim;
   const fonts = FONTS;
-  const fontLegends = (recipe.fontLegends ?? []).map((t) => n('text', { x: t.x, y: t.baseline, fill: t.color ?? ink, fontFamily: fonts[t.font], fontSize: t.size,
-    fontWeight: t.weight ?? 400, ...(t.italic ? { fontStyle: 'italic' } : {}), textAnchor: 'middle', ...(t.width ? { textLength: t.width, lengthAdjust: 'spacing' } : {}),
-    'data-role': t.role, 'data-lettering': 'typeface-proxy' }, t.text));
+  const fontLegend = (t: KitFontText, x: number, y: number, fillColor: string, role: string) => n('text', { x, y, fill: fillColor, fontFamily: fonts[t.font], fontSize: t.size,
+    fontWeight: t.weight ?? 400, ...(t.italic ? { fontStyle: 'italic' } : {}), ...(t.smallCaps ? { fontVariant: 'small-caps' } : {}), textAnchor: 'middle',
+    ...(t.width ? { textLength: t.width, lengthAdjust: 'spacing' } : {}), 'data-role': role, 'data-lettering': 'typeface-proxy' }, t.text);
+  const fontLegends = (recipe.fontLegends ?? []).flatMap((t) => [
+    ...(t.shadow ? [fontLegend(t, t.x + t.shadow.dx, t.baseline + t.shadow.dy, t.shadow.color, `${t.role}-shadow`)] : []),
+    fontLegend(t, t.x, t.baseline, t.color ?? ink, t.role)]);
   const fill = (value: string) => value.replace(/\{(\w+)\}/g, (m, k: string) => options.tokens?.[k] ?? m);
   const inscriptions = [...(recipe.shapes ?? []).map((sh) => shape(sh, ink)), ...recipe.legends.map((t) => text({ ...t, text: fill(t.text) }, ink)), ...serialNode];
   const panels = (recipe.panels ?? []).map((p) => panel(p, serial, id));
