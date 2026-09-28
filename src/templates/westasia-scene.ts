@@ -106,18 +106,20 @@ export function iranScene(design: Design, parts: Parts, text = ''): PlateScene {
     body += legend('تشریفات', 159, 57, 36, 165, true) + legend('PROTOCOL', 159, 87, 18, 147);
     body += `<g data-layer="serial">${glyphRun(displayDigits(parts.serial ?? '', 'persian'), 276, 18, 227, 76, 9)}</g>`;
   } else {
-    body += iranStrip(42, h) + rule(431, 4, 431, h - 4) + rule(431, 35, w - 4, 35);
-    body += `<g data-layer="prefix">${glyphRun(displayDigits(parts.prefix ?? '', 'persian'), 54, 18, 100, 78, 6)}</g>`;
+    // Divider at 0.79 of the width: measured 0.77–0.80 on three rectified photographs (typography-review/iran-*-reference.png).
+    // None of them shows a rule under ایران, so the allocation box is open.
+    body += iranStrip(42, h) + rule(410, 4, 410, h - 4);
+    body += `<g data-layer="prefix">${glyphRun(displayDigits(parts.prefix ?? '', 'persian'), 53, 18, 95, 78, 6)}</g>`;
     const classLetter = String(design.classLetter ?? normalizeLetter(parts.letter));
     body += '<g data-layer="series">';
-    if (design.accessible === true) body += accessibility(171, 20, 68);
-    else if (classLetter === 'الف') body += legend('الف', 207, 81, 54, 78, true);
-    else body += glyphRun(normalizeLetter(classLetter), 178, design.vehicleClass === 'taxi' ? 39 : 19, 61, design.vehicleClass === 'taxi' ? 55 : 76);
-    if (design.vehicleClass === 'taxi') body += legend('TAXI', 208, 27, 13, 48);
+    if (design.accessible === true) body += accessibility(164, 20, 66);
+    else if (classLetter === 'الف') body += legend('الف', 198, 81, 54, 74, true);
+    else body += glyphRun(normalizeLetter(classLetter), 170, design.vehicleClass === 'taxi' ? 39 : 19, 58, design.vehicleClass === 'taxi' ? 55 : 76);
+    if (design.vehicleClass === 'taxi') body += legend('TAXI', 199, 27, 13, 46);
     body += '</g>';
-    body += `<g data-layer="serial">${glyphRun(displayDigits((design.mission === true ? parts.mission : parts.serial) ?? '', 'persian'), 267, 18, 150, 78, 5)}</g>`;
-    body += legend('ایران', 473, 26, 22, 63, true);
-    body += `<g data-layer="allocation">${glyphRun(displayDigits(parts.code ?? '', 'persian'), 442, 44, 64, 56, 4)}</g>`;
+    body += `<g data-layer="serial">${glyphRun(displayDigits((design.mission === true ? parts.mission : parts.serial) ?? '', 'persian'), 255, 18, 142, 78, 5)}</g>`;
+    body += legend('ایران', 463, 27, 22, 66, true);
+    body += `<g data-layer="allocation">${glyphRun(displayDigits(parts.code ?? '', 'persian'), 427, 38, 72, 60, 5)}</g>`;
   }
   return { width: w, height: h, body: body + '</g>' };
 }
