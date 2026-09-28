@@ -5,6 +5,7 @@ on:
     paths:
       - 'src/**'
       - 'public/data/**'
+      - 'public/typography-review/**'
       - 'scripts/**'
       - 'package*.json'
       - 'tsconfig*.json'
@@ -34,6 +35,8 @@ jobs:
         run: node scripts/lettering-smoke.mjs
       - name: Check reference library and source-to-editor navigation
         run: node scripts/reference-library-smoke.mjs
+      - name: Check Iraq and Iran font comparisons, including offline use
+        run: node scripts/typography-review-smoke.mjs
       - name: Retain application screenshots for visual review
         if: always()
         uses: actions/upload-artifact@v4
@@ -42,3 +45,13 @@ jobs:
           path: test-results/reference-library/*.png
           if-no-files-found: ignore
           retention-days: 7
+      - name: Retain typography report and browser screenshots
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: typography-review-and-screenshots
+          path: |
+            public/typography-review/
+            test-results/typography/
+          if-no-files-found: ignore
+          retention-days: 30

@@ -1,4 +1,5 @@
 import { LetteringPicker } from './LetteringPicker';
+import { TypefaceReview } from './TypefaceReview';
 import type { Parts, PlateFormat, Region } from '../core/types';
 import { statusBadge } from '../core/timeline';
 import { AlertIcon, CheckIcon, DownloadIcon } from './icons';
@@ -107,6 +108,8 @@ export function Inspector({ region, format, parts, onChange, onExport, onCopyLin
           </p>
         ))}
       </section>
+
+      {(region.id === 'iraq' || region.id === 'iran') && <TypefaceReview key={region.id} country={region.id} />}
 
       <section className="insp-section export-section">
         <header className="insp-head">
