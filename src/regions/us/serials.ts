@@ -318,3 +318,66 @@ export const wisconsin: SerialFn = (rng) => {
 
 export const wyoming: SerialFn = (rng) =>
   `${rng.pick([...rangeInt(1, 23), 99])}-${numeric(rng, 99999)}`;
+
+// ── Variant and territory series (ranges from the Wikipedia plate tables, as of 2026) ──
+
+const noIOQ = (s: string) => !/[IOQ]/.test(s);
+const letter = (rng: Rng) => randomBb26(rng, 'A', 'AA');
+
+/** Puerto Rico 2023 base: `ABC 123`, KBV 001 → KYN 025 (Sept 2026). */
+export const puertoRico: SerialFn = (rng) => {
+  const letters = randomBb26(rng, 'KBV', 'KYO');
+  return `${letters} ${numeric(rng, 1, letters === 'KYN' ? 25 : 999, 3)}`;
+};
+
+/** California 1956 black-on-yellow and 1963 gold-on-black bases: `ABC 123`. */
+export const californiaAbc123: SerialFn = (rng) => `${randomBb26(rng, 'AAA', 'AAAA')} ${numeric(rng, 999)}`;
+/** California 1969/70 gold-on-blue base: `123 ABC`. */
+export const california123Abc: SerialFn = (rng) => `${numeric(rng, 999)} ${randomBb26(rng, 'AAA', 'AAAA')}`;
+/** California Legacy (2015–): `A123B4`, B001A0 → L783N1. */
+export const californiaLegacy: SerialFn = (rng) => {
+  const first = randomBb26(rng, 'B', 'M');
+  return first + numeric(rng, 1, first === 'L' ? 783 : 999, 3) + letter(rng) + rng.int(9);
+};
+/** California 2026 order: `123ABC1`, 000AAA1 → ~801BEZ1. */
+export const california2026: SerialFn = (rng) => `${numeric(rng, 999)}${randomBb26(rng, 'AAA', 'BFA')}1`;
+
+/** Arizona alternative fuel: `AF·1234`, then `AF·123A`, `AF·12A3`, `AF12A3`, `AF·1A23`, `1A23AF`. */
+export const arizonaAltFuel: SerialFn = (rng) =>
+  rng.pick<SerialFn>([
+    (r) => `AF${DOT}${numeric(r, 9999)}`,
+    (r) => `AF${DOT}${numeric(r, 999)}${letter(r)}`,
+    (r) => `AF${DOT}${numeric(r, 99)}${letter(r)}${r.int(9)}`,
+    (r) => `AF${numeric(r, 99)}${letter(r)}${r.int(9)}`,
+    (r) => `AF${DOT}${r.int(9)}${letter(r)}${numeric(r, 99)}`,
+    (r) => `${r.int(9)}${letter(r)}${numeric(r, 99)}AF`,
+  ])(rng);
+
+/** Illinois electric vehicle (2020–): `12345 EL`, later `A1234 EL` (A1001 → D1748). */
+export const illinoisEv: SerialFn = (rng) => {
+  if (rng.chance(0.5)) return `${rng.int(1, 99999)} EL`;
+  const first = randomBb26(rng, 'A', 'E');
+  return `${first}${numeric(rng, first === 'A' ? 1001 : 0, first === 'D' ? 1748 : 9999, 4)} EL`;
+};
+
+const NY_2001 = bb26Range('ACA', 'EYI').filter(noIOQ);
+/** New York 2001–2010 Empire State: ACA-1000 → EYH-2999, no I/O/Q. */
+export const newYork2001: SerialFn = (rng) => {
+  const letters = rng.pick(NY_2001);
+  return `${letters}-${numeric(rng, letters === 'ACA' ? 1000 : 0, letters === 'EYH' ? 2999 : 9999, 4)}`;
+};
+const NY_2020 = bb26Range('KDA', 'MHU').filter(noIOQ);
+/** New York 2020 Excelsior: reissued from KDA (KAA–KCH recalled), through MHT (July 2026). */
+export const newYork2020: SerialFn = (rng) => {
+  const letters = rng.pick(NY_2020);
+  return `${letters}-${numeric(rng, letters === 'KDA' ? 1000 : 0, letters === 'MHT' ? 1800 : 9999, 4)}`;
+};
+
+const PA_2004 = bb26Range('GBA', 'KLF').filter((s) => !/[AE]/.test(s[1]));
+/** Pennsylvania 2004 visitPA.com: GBA-0000 → KLE-9999, second letter never A or E. */
+export const pennsylvania2004: SerialFn = (rng) => `${rng.pick(PA_2004)}-${numeric(rng, 9999)}`;
+/** Pennsylvania 2025 Liberty Bell: `ABC1234`, MYR0200 → NJS3686 (Sept 2026). */
+export const pennsylvania2025: SerialFn = (rng) => {
+  const letters = randomBb26(rng, 'MYR', 'NJT');
+  return letters + numeric(rng, letters === 'MYR' ? 200 : 0, letters === 'NJS' ? 3686 : 9999, 4);
+};

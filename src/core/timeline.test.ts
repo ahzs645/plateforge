@@ -12,7 +12,7 @@ describe('country grouping', () => {
     expect(groups.flatMap((c) => c.countries.flatMap((g) => g.regions))).toHaveLength(BUILT_IN_REGIONS.length);
   });
   it('groups U.S. states and Canadian provinces under their countries in North America', () => {
-    expect(country('United States')?.regions).toHaveLength(51);
+    expect(country('United States')?.regions).toHaveLength(52);
     expect(country('Canada')?.regions.map((r) => r.id)).toEqual(['ca-bc']);
     expect(groups.find((c) => c.continent === 'North America')?.countries.map((g) => g.country)).toEqual(['Canada', 'United States']);
   });
@@ -47,7 +47,7 @@ describe('timeline', () => {
     expect(stepTimeline(timeline, timeline.order.at(-1)!.format.id, 1)).toBeUndefined();
   });
   it('is absent for regions without dated formats', () => {
-    expect(buildTimeline(BUILT_IN_REGIONS.find((r) => r.id === 'us-ca')!)).toBeNull();
+    expect(buildTimeline(BUILT_IN_REGIONS.find((r) => r.id === 'us-tx')!)).toBeNull();
     expect(buildTimeline(BUILT_IN_REGIONS.find((r) => r.id === 'cn')!)).toBeNull();
   });
   it('falls back to decade eras when a region declares none', () => {
