@@ -86,7 +86,7 @@ def old_glyphs() -> dict[str,str]:
     js=r'''import fs from 'node:fs';import os from 'node:os';import path from 'node:path';import ts from 'typescript';import {createRequire} from 'node:module';
 const dir=fs.mkdtempSync(path.join(os.tmpdir(),'pf-original-'));try{
 fs.writeFileSync(path.join(dir,'package.json'),' {"type":"commonjs"}');
-for(const id of ['regions/asia/plate-script','templates/westasia-glyphs']){const to=path.join(dir,id+'.js');fs.mkdirSync(path.dirname(to),{recursive:true});fs.writeFileSync(to,ts.transpileModule(fs.readFileSync('src/'+id+'.ts','utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.CommonJS}}).outputText)}
+for(const id of ['regions/asia/plate-script','templates/westasia-euro','templates/westasia-arabic','templates/westasia-glyphs']){const to=path.join(dir,id+'.js');fs.mkdirSync(path.dirname(to),{recursive:true});fs.writeFileSync(to,ts.transpileModule(fs.readFileSync('src/'+id+'.ts','utf8'),{compilerOptions:{target:ts.ScriptTarget.ES2022,module:ts.ModuleKind.CommonJS}}).outputText)}
 const {glyph}=createRequire(import.meta.url)(path.join(dir,'templates/westasia-glyphs.js'));
 console.log(JSON.stringify(Object.fromEntries([...'0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ۰۱۲۳۴۵۶۷۸۹عسبه'].map(c=>[c,glyph(c)]))));
 }finally{fs.rmSync(dir,{recursive:true,force:true})}'''
