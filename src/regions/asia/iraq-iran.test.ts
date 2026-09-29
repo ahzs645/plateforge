@@ -5,7 +5,8 @@ import { iran } from './iran';
 import { IRAQ_GOVERNORATES, IRAQ_LETTERS } from './iraq-data';
 import { IRAN_CODES, IRAN_MOTORCYCLE_CODES, IRAN_PRIVATE_LETTERS } from './iran-data';
 import { asciiDigits, displayDigits, isDigits, normalizeLetter } from './plate-script';
-import { accessibility, glyph, hasPlateGlyph } from '../../templates/westasia-glyphs';
+import { accessibility, glyph, glyphRun, hasPlateGlyph } from '../../templates/westasia-glyphs';
+import { NASKH_PLATE_GLYPHS } from '../../templates/westasia-arabic';
 import { iranScene, iranSize, iraqScene, iraqSize, sceneSvg } from '../../templates/westasia-scene';
 
 const iq = (id: string) => iraq.formats.find((f) => f.id === id)!;
@@ -98,6 +99,51 @@ describe('script and allocation handling', () => {
     expect(p.code).toBe('11');
     expect(f.validate?.({ ...p, code: '22' })).not.toBeNull();
     expect(ir('national-government').design?.classLetter).toBe('الف');
+  });
+});
+
+describe('Arabic-script outlines (naskh profile)', () => {
+  const digits = '٠١٢٣٤٥٦٧٨٩۰۱۲۳۴۵۶۷۸۹', letters = [...IRAQ_LETTERS.map((l) => l.arabic), ...IRAN_PRIVATE_LETTERS, 'ت', 'ع', 'ک', 'پ', 'ث', 'ش', 'ز', 'ف', 'ی'];
+  it('covers every digit and every selectable Arabic-script letter except the hand-drawn plate هـ', () => {
+    for (const ch of digits) expect(NASKH_PLATE_GLYPHS[ch], ch).toBeDefined();
+    for (const l of letters) if (normalizeLetter(l) !== 'ه') expect(NASKH_PLATE_GLYPHS[normalizeLetter(l)], l).toBeDefined();
+    expect(glyph('ه', 'naskh')).toBe(glyph('ه'));
+  });
+  it('keeps the Persian and Arabic 4/5/6 masters distinct and paints outlines, never text', () => {
+    for (const [a, b] of [['۴', '٤'], ['۵', '٥'], ['۶', '٦']]) expect(glyph(a, 'naskh')).not.toBe(glyph(b, 'naskh'));
+    const g = glyph('۲', 'naskh');
+    expect(g).toMatch(/^<path d="M[^"]+" fill="currentColor" stroke="currentColor" stroke-width="3(\.0)?" stroke-linejoin="round"\/>$/);
+    expect(g).not.toMatch(/<text|font/);
+    for (const [w, d] of Object.values(NASKH_PLATE_GLYPHS)) { expect(w).toBeGreaterThan(0); expect(d).not.toMatch(/NaN|Infinity|undefined/); }
+  });
+  it('leaves the default profile geometric and falls back for Latin', () => {
+    expect(glyph('۲')).toBe(glyph('۲', 'geometric'));
+    expect(glyph('۲')).not.toBe(glyph('۲', 'naskh'));
+    expect(glyph('D', 'naskh')).toBe(glyph('D'));
+    expect(glyphRun('D', 0, 0, 50, 80, 3, 'naskh')).not.toContain('data-profile');
+  });
+  it('scales uniformly and never lets a glyph overflow its cell', () => {
+    for (const ch of digits + letters.join('')) {
+      const entry = NASKH_PLATE_GLYPHS[normalizeLetter(ch)]; if (!entry) continue;
+      for (const [cell, height] of [[20, 78], [44, 78], [96, 60], [10, 80]]) {
+        const run = glyphRun(ch, 0, 0, cell, height, 3, 'naskh');
+        const [, left, scale] = run.match(/translate\(([-\d.e]+) [-\d.e]+\) scale\(([\d.e-]+)\)/) ?? [];
+        expect(scale, `${ch} ${cell}`).toBeDefined();
+        expect(Number(scale) * entry[0], `${ch} width in ${cell}`).toBeLessThanOrEqual(cell + 1e-6);
+        expect(Number(scale)).toBeLessThanOrEqual(height / 80 + 1e-9);
+        expect(Number(left)).toBeGreaterThanOrEqual(-1e-6);
+      }
+    }
+  });
+  it('is used for Iranian and older Iraqi Arabic-script runs, and not for Latin lines or modern Iraq', () => {
+    const iranBody = iranScene(ir('national-private').design!, { prefix: '12', letter: 'ب', serial: '345', code: '11' }).body;
+    expect(iranBody).toContain('data-profile="naskh"');
+    expect(iranBody).not.toContain('data-profile="euro"');
+    const bilingual = iraqScene(iq('bilingual-2008-private').design!, iq('bilingual-2008-private').generate(createRng('x'))).body;
+    expect(bilingual).toContain('data-profile="naskh"');
+    expect(bilingual.match(/data-layer="latin-serial">(?:(?!<\/g><\/g>).)*/s)?.[0]).not.toContain('naskh');
+    const modern = iraqScene(iq('federal-modern-private').design!, iq('federal-modern-private').generate(createRng('x'))).body;
+    expect(modern).not.toContain('data-profile="naskh"');
   });
 });
 

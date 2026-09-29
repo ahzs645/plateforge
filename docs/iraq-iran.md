@@ -17,11 +17,11 @@ These counts describe code recipes, not unique historical issues or a complete w
 
 `src/regions/asia/iraq-data.ts` and `iran-data.ts` hold source references, allocations, and class vocabularies. `plate-script.ts` converts Arabic/Persian digits without reversing their logical order or discarding zeros. `iraq.ts` and `iran.ts` define fields, validation, generation and period/family metadata.
 
-`src/templates/westasia-glyphs.ts` contains original geometric studies for Latin letters, Arabic-Indic digits, Persian digits and the required isolated series letters. Arabic ٤/٥/٦ and Persian ۴/۵/۶ are distinct masters. The accessibility mark is geometry, not an emoji.
+`src/templates/westasia-glyphs.ts` contains original geometric studies for Latin letters, Arabic-Indic digits, Persian digits and the required isolated series letters. Iranian plates and the older Iraqi Arabic-digit plates draw those digits and letters from converted OFL outlines instead (`westasia-arabic.ts`, profile `naskh`; see [Iraq / Iran typography](iraq-iran-typography.md)); the geometric set is the fallback and the default profile. Arabic ٤/٥/٦ and Persian ۴/۵/۶ are distinct masters. The accessibility mark is geometry, not an emoji.
 
 `westasia-scene.ts` places serial groups explicitly and returns an escaped SVG scene. It is independent of React and shared by the two thin React template adapters and the standalone preview. Unknown characters produce a visible missing-glyph cell rather than silently disappearing. Short Iraqi serials retain reasonable character proportions instead of stretching one digit over an entire number panel.
 
-No font binaries, scraped photographs, external image references or security features are bundled. **Joined province/country words, the government word الف, and small legends are SVG text using system fonts.** They remain editable and joined, but are not font-independent outlined wordmarks. Browser and export font substitution can therefore affect them.
+No font binaries (only outlines converted from OFL fonts, with their licence in `src/assets/fonts/Parastoo-Sahel-OFL.txt`), scraped photographs, external image references or security features are bundled. **Joined province/country words, the government word الف, and small legends are SVG text using system fonts.** They remain editable and joined, but are not font-independent outlined wordmarks. Browser and export font substitution can therefore affect them.
 
 ## Evidence ledger
 
@@ -60,7 +60,7 @@ There are 86 distinct right-hand codes in the encoded table and 183 motorcycle c
 
 ## Fidelity and remaining work
 
-All serial glyphs are **original geometric approximations**, not measured dies. Colours are screen approximations, not official paint specifications. Flag micro-calligraphy, security marks, reflective surfaces, fastening details, exact small-lettering masters and manufacturing tolerances are not reconstructed.
+Serial glyphs are **approximations, not measured dies**: original geometric drawings, or (Arabic-script digits and letters, modern Iraqi Latin) converted font outlines. Colours are screen approximations, not official paint specifications. Flag micro-calligraphy, security marks, reflective surfaces, fastening details, exact small-lettering masters and manufacturing tolerances are not reconstructed.
 
 Next evidence passes should prioritize actual die masters or well-scaled front-on specimens; full WorldLicensePlates access; pre-1988 Iraq and pre-national Iran; Iraqi motorcycles/ICTS; Iranian temporary expiry layouts; museum plates with Bagh-e Melli artwork; all seven free-zone emblems; earlier political/service plates; and date-dependent county/letter allocation validation.
 
