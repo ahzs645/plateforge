@@ -7,7 +7,7 @@ import path from 'node:path';
 import ts from 'typescript';
 
 const ids = ['core/random', 'regions/asia/plate-script', 'regions/asia/iraq-data', 'regions/asia/iran-data',
-  'regions/asia/iraq', 'regions/asia/iran', 'templates/westasia-glyphs', 'templates/westasia-scene'];
+  'regions/asia/iraq', 'regions/asia/iran', 'templates/westasia-euro', 'templates/westasia-arabic', 'templates/westasia-glyphs', 'templates/westasia-scene'];
 const modules = ids.map((id) => {
   const source = fs.readFileSync(path.join('src', id + '.ts'), 'utf8');
   const result = ts.transpileModule(source, { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.CommonJS, strict: true } });

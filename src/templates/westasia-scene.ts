@@ -10,6 +10,10 @@ function rect(x: number, y: number, w: number, h: number, fill: string, more = '
   return `<rect x="${x}" y="${y}" width="${w}" height="${h}" fill="${fill}" ${more}/>`;
 }
 const rule = (x1: number, y1: number, x2: number, y2: number) => `<path d="M${x1} ${y1}L${x2} ${y2}" fill="none" stroke="currentColor" stroke-width="2"/>`;
+/** Die-level narrowing of the Arabic-Indic digits on the older Iraqi plates: the Wikipedia specimens are 0.75 (2008) and
+ * about 0.8 (1988) of the width of the source font's digits, by measured aspect ratio. The 2001 specimen is far narrower
+ * still (about 0.5) but on a 2.2:1 plate, so it is not applied to our 4.7:1 canvas (docs/iraq-iran-typography.md). */
+const IRAQ_CONDENSE = { bilingual: .75, legacy: .8 } as const;
 /** Only words use SVG text. Unlike numeric blocks, Arabic words must remain joined and RTL. */
 function legend(value: string, x: number, y: number, size: number, width: number, rtl = false): string {
   return `<text x="${x}" y="${y}" text-anchor="middle" font-family="${rtl ? 'Tahoma,Arial,sans-serif' : 'Arial,sans-serif'}" font-size="${size}" font-weight="700" fill="currentColor" direction="${rtl ? 'rtl' : 'ltr'}" unicode-bidi="isolate" textLength="${width}" lengthAdjust="spacingAndGlyphs">${xml(value.slice(0, 100))}</text>`;
@@ -24,13 +28,13 @@ function iranStrip(w: number, h: number): string {
     `<g transform="translate(${9 + fw / 2 - 3} 19) scale(.12)" fill="none" stroke="#d52731" stroke-width="5"><path d="M25 1V50M12 4Q-7 25 17 47M38 4Q57 25 33 47M15 13Q8 36 25 48Q42 36 35 13"/></g></g>` +
     `<g color="#ffffff">${legend('I.R.', w / 2 + 2, h - 32, 10, w - 14)}${legend('IRAN', w / 2 + 2, h - 15, 10, w - 11)}</g>`;
 }
-function serialRun(value: string, x: number, y: number, width: number, height: number, gap: number, profile: GlyphProfile = 'geometric'): string {
+function serialRun(value: string, x: number, y: number, width: number, height: number, gap: number, profile: GlyphProfile = 'geometric', condense = 1): string {
   // Short historical/carried-over serials retain their die proportions instead of stretching to five slots.
-  const fitted = Math.min(width, Math.max(0, [...value].length * height * .61 + ([...value].length - 1) * gap));
-  return glyphRun(value, x + (width - fitted) / 2, y, fitted, height, gap, profile);
+  const fitted = Math.min(width, Math.max(0, [...value].length * height * .61 * condense + ([...value].length - 1) * gap));
+  return glyphRun(value, x + (width - fitted) / 2, y, fitted, height, gap, profile, condense);
 }
 function metadata(text: string, country: string): string {
-  return `<title>${xml(text)}</title><desc>PlateForge ${country}: editable geometric reconstruction, not official manufacturing artwork. Serial glyphs are paths; joined legends use system-font SVG text. Colours, flag detail and unverified historical dimensions are approximate. Research snapshot 2026-09-27.</desc>`;
+  return `<title>${xml(text)}</title><desc>PlateForge ${country}: editable geometric reconstruction, not official manufacturing artwork. Serial glyphs are paths (Arabic/Persian outlines from SIL OFL fonts); joined legends use system-font SVG text. Colours, flag detail and unverified historical dimensions are approximate. Research snapshot 2026-09-27.</desc>`;
 }
 
 export function iraqSize(design: Design, parts: Parts = {}): { width: number; height: number } {
@@ -66,7 +70,7 @@ export function iraqScene(design: Design, parts: Parts, text = ''): PlateScene {
     body += rule(31, 4, 31, h - 4) + rule(31, 114, w - 4, 114);
     for (const [i, ch] of [...'IRAQ'].entries()) body += glyphRun(ch, 10, 18 + i * 31, 14, 25);
     const ar = IRAQ_LETTERS.find((l) => l.latin === parts.letter)?.arabic ?? parts.letter ?? '';
-    body += `<g data-layer="arabic-serial">${glyphRun(normalizeLetter(ar), 45, 12, 44, 63)}${glyphRun(displayDigits(serial, 'arabic'), 112, 12, 207, 63, 7)}</g>`;
+    body += `<g data-layer="arabic-serial">${glyphRun(normalizeLetter(ar), 45, 12, 44, 63, 3, 'naskh')}${glyphRun(displayDigits(serial, 'arabic'), 112, 12, 207, 63, 7, 'naskh', IRAQ_CONDENSE.bilingual)}</g>`;
     body += `<g data-layer="latin-serial">${glyphRun(`${parts.letter ?? ''} ${serial}`, 101, 80, 175, 24, 4)}</g>`;
     const label = String(design.classLabel ?? '');
     body += design.national === true ? legend(label, 182, 142, 23, Math.min(250, Math.max(92, label.length * 9)), true) :
@@ -74,10 +78,10 @@ export function iraqScene(design: Design, parts: Parts, text = ''): PlateScene {
   } else if (design.system === 'side') {
     body += rule(152, 4, 152, h - 4) + rule(4, 55, 152, 55);
     body += legend('العراق', 79, 42, 33, 97, true) + legend(province, 79, 91, 31, 128, true);
-    body += `<g data-layer="serial">${serialRun(displayDigits(serial, 'arabic'), 174, 17, 324, 78, 8)}</g>`;
+    body += `<g data-layer="serial">${serialRun(displayDigits(serial, 'arabic'), 174, 17, 324, 78, 8, 'naskh')}</g>`;
   } else {
     body += rule(4, 94, w - 4, 94) + rule(w / 2, 94, w / 2, h - 4);
-    body += `<g data-layer="serial">${serialRun(displayDigits(serial, 'arabic'), 18, 12, w - 36, 70, 10)}</g>`;
+    body += `<g data-layer="serial">${serialRun(displayDigits(serial, 'arabic'), 18, 12, w - 36, 70, 10, 'naskh', IRAQ_CONDENSE.legacy)}</g>`;
     body += legend(province, w / 4, 133, 30, Math.min(141, Math.max(72, province.length * 13)), true) + legend('العراق', w * .75, 133, 31, 100, true);
   }
   return { width: w, height: h, body: body + '</g>' };
@@ -94,32 +98,32 @@ export function iranScene(design: Design, parts: Parts, text = ''): PlateScene {
   let body = metadata(text, 'Iran') + `<g color="${ink}">` + shell(w, h, colour(design.bg, '#fafaf6'));
   if (design.system === 'motorcycle') {
     body += iranStrip(31, h) + legend('ایران', 165, 18, 14, 39, true);
-    body += `<g data-layer="allocation">${glyphRun(displayDigits(parts.code ?? '', 'persian'), 53, 30, 114, 43, 5)}</g>`;
-    body += `<g data-layer="serial">${glyphRun(displayDigits(parts.serial ?? '', 'persian'), 40, 85, 151, 52, 5)}</g>`;
+    body += `<g data-layer="allocation">${glyphRun(displayDigits(parts.code ?? '', 'persian'), 53, 30, 114, 43, 5, 'naskh')}</g>`;
+    body += `<g data-layer="serial">${glyphRun(displayDigits(parts.serial ?? '', 'persian'), 40, 85, 151, 52, 5, 'naskh')}</g>`;
   } else if (design.system === 'free-zone') {
     body += iranStrip(58, h);
     body += `<g color="#ffffff">${legend('LOGO', 31, 60, 10, 38)}${legend('PENDING', 31, 74, 8, 42)}${legend(parts.zone ?? '', 31, 98, 10, 43)}</g>`;
-    body += `<g data-layer="persian-serial">${glyphRun(displayDigits(parts.serial ?? '', 'persian'), 76, 16, 209, 54, 7)}</g>`;
+    body += `<g data-layer="persian-serial">${glyphRun(displayDigits(parts.serial ?? '', 'persian'), 76, 16, 209, 54, 7, 'naskh')}</g>`;
     body += `<g data-layer="latin-serial">${glyphRun(asciiDigits(parts.serial), 76, 85, 209, 53, 7)}</g>`;
   } else if (design.system === 'protocol') {
     body += iranStrip(42, h);
     body += legend('تشریفات', 159, 57, 36, 165, true) + legend('PROTOCOL', 159, 87, 18, 147);
-    body += `<g data-layer="serial">${glyphRun(displayDigits(parts.serial ?? '', 'persian'), 276, 18, 227, 76, 9)}</g>`;
+    body += `<g data-layer="serial">${glyphRun(displayDigits(parts.serial ?? '', 'persian'), 276, 18, 227, 76, 9, 'naskh')}</g>`;
   } else {
     // Divider at 0.79 of the width: measured 0.77–0.80 on three rectified photographs (typography-review/iran-*-reference.png).
     // None of them shows a rule under ایران, so the allocation box is open.
     body += iranStrip(42, h) + rule(410, 4, 410, h - 4);
-    body += `<g data-layer="prefix">${glyphRun(displayDigits(parts.prefix ?? '', 'persian'), 53, 18, 95, 78, 6)}</g>`;
+    body += `<g data-layer="prefix">${glyphRun(displayDigits(parts.prefix ?? '', 'persian'), 53, 18, 95, 78, 6, 'naskh')}</g>`;
     const classLetter = String(design.classLetter ?? normalizeLetter(parts.letter));
     body += '<g data-layer="series">';
     if (design.accessible === true) body += accessibility(164, 20, 66);
     else if (classLetter === 'الف') body += legend('الف', 198, 81, 54, 74, true);
-    else body += glyphRun(normalizeLetter(classLetter), 170, design.vehicleClass === 'taxi' ? 39 : 19, 58, design.vehicleClass === 'taxi' ? 55 : 76);
+    else body += glyphRun(normalizeLetter(classLetter), 170, design.vehicleClass === 'taxi' ? 39 : 19, 58, design.vehicleClass === 'taxi' ? 55 : 76, 3, 'naskh');
     if (design.vehicleClass === 'taxi') body += legend('TAXI', 199, 27, 13, 46);
     body += '</g>';
-    body += `<g data-layer="serial">${glyphRun(displayDigits((design.mission === true ? parts.mission : parts.serial) ?? '', 'persian'), 255, 18, 142, 78, 5)}</g>`;
+    body += `<g data-layer="serial">${glyphRun(displayDigits((design.mission === true ? parts.mission : parts.serial) ?? '', 'persian'), 255, 18, 142, 78, 5, 'naskh')}</g>`;
     body += legend('ایران', 463, 27, 22, 66, true);
-    body += `<g data-layer="allocation">${glyphRun(displayDigits(parts.code ?? '', 'persian'), 427, 38, 72, 60, 5)}</g>`;
+    body += `<g data-layer="allocation">${glyphRun(displayDigits(parts.code ?? '', 'persian'), 427, 38, 72, 60, 5, 'naskh')}</g>`;
   }
   return { width: w, height: h, body: body + '</g>' };
 }

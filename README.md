@@ -112,5 +112,6 @@ B.C. research uses [BCpl8s](https://www.bcpl8s.ca/). Lettering categories and th
 - CJK text uses available system fonts.
 - Stand-in artwork under `src/stand-ins/assets/` is Not a Tesla App's published work (and, for the themed designs, their studios' and brands'); it is included as a temporary reference and its rights remain with those owners. Antonio is under the SIL Open Font License (`src/assets/fonts/Antonio-OFL.txt`).
 - Existing `EuroPlate.ttf` and `UKNumberPlate.ttf` assets came from the upstream reference project; check their licences before redistribution.
+- Iranian and older Iraqi Arabic-script digits and letters are outlines converted from Parastoo Bold and Sahel Bold (SIL OFL 1.1, Saber Rastikerdar); the notice is in `src/assets/fonts/Parastoo-Sahel-OFL.txt`. Regenerate with `scripts/build-westasia-arabic.py`.
 - Browser tests mock third-party image responses. Passing CI does not verify every remote photograph.
 - Generated plates are for mockups, research, testing and design. They do not represent real registrations or official issuance.

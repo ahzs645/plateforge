@@ -5,6 +5,7 @@
  */
 import { normalizeLetter } from '../regions/asia/plate-script';
 import { EURO_PLATE_GLYPHS } from './westasia-euro';
+import { NASKH_PLATE_GLYPHS } from './westasia-arabic';
 export const xml = (value: unknown): string => String(value ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[c]!));
 const path = (d: string, width = 7) => `<path d="${d}" fill="none" stroke="currentColor" stroke-width="${width}" stroke-linecap="square" stroke-linejoin="round"/>`;
 const dot = (x: number, y: number, r = 3.6) => `<circle cx="${x}" cy="${y}" r="${r}" fill="currentColor"/>`;
@@ -81,23 +82,40 @@ export function hasPlateGlyph(character: string): boolean {
   const key = normalizeLetter(character);
   return key === ' ' || !!(LATIN[key] || ARABIC[key] || PERSIAN[key] || LETTERS[key]);
 }
-/** `euro`: EuroPlate outlines for Latin characters (modern Iraq / KRG); anything else falls back to the geometric set. */
-export type GlyphProfile = 'geometric' | 'euro';
+/** `euro`: EuroPlate outlines for Latin characters (modern Iraq / KRG). `naskh`: Parastoo/Sahel outlines (SIL OFL) for
+ * Arabic-Indic and Persian digits and Arabic-script letters, drawn with a stroke to match plate weight. Anything a profile
+ * does not cover (Latin under `naskh`, هـ, unknown characters) falls back to the geometric set. */
+export type GlyphProfile = 'geometric' | 'euro' | 'naskh';
 const euroGlyph = (key: string) => EURO_PLATE_GLYPHS[key] ? `<path d="${EURO_PLATE_GLYPHS[key]}" fill="currentColor"/>` : '';
+const naskhEntry = (key: string) => NASKH_PLATE_GLYPHS[key];
+const naskhGlyph = (key: string) => {
+  const entry = naskhEntry(key);
+  if (!entry) return '';
+  return `<path d="${entry[1]}" fill="currentColor"${entry[2] ? ` stroke="currentColor" stroke-width="${entry[2]}" stroke-linejoin="round"` : ''}/>`;
+};
 export function glyph(character: string, profile: GlyphProfile = 'geometric'): string {
   const key = normalizeLetter(character);
-  return (profile === 'euro' && euroGlyph(key)) || LATIN[key] || ARABIC[key] || PERSIAN[key] || LETTERS[key] || (key === ' ' ? '' : path('M8 8H42V72H8ZM8 8L42 72M42 8L8 72', 3));
+  return (profile === 'euro' && euroGlyph(key)) || (profile === 'naskh' && naskhGlyph(key)) || LATIN[key] || ARABIC[key] || PERSIAN[key] || LETTERS[key] || (key === ' ' ? '' : path('M8 8H42V72H8ZM8 8L42 72M42 8L8 72', 3));
 }
-/** Fixed-position cells are deliberately independent of the browser bidi algorithm. Font-derived (euro) glyphs keep
- * their own proportions: scaled uniformly to the run height and centred in the cell, never stretched to fill it. */
-export function glyphRun(value: string, x: number, y: number, width: number, height: number, gap = 3, profile: GlyphProfile = 'geometric'): string {
+/** Fixed-position cells are deliberately independent of the browser bidi algorithm. Font-derived glyphs (`euro`, `naskh`)
+ * keep their own proportions: scaled uniformly to the run height, centred in the cell, and shrunk uniformly (never
+ * stretched or overlapped) if wider than the cell. `condense` narrows every `naskh` glyph in the run by one die-level
+ * factor (measured per plate design, not fitted per glyph) for dies narrower than the source font. */
+export function glyphRun(value: string, x: number, y: number, width: number, height: number, gap = 3, profile: GlyphProfile = 'geometric', condense = 1): string {
   const chars = [...value].slice(0, 32); // Bound untrusted URL edits; validators still report errors.
   if (!chars.length) return '';
   const cell = Math.max(1, (width - gap * (chars.length - 1)) / chars.length);
   return chars.map((ch, i) => {
-    const left = x + i * (cell + gap), euro = profile === 'euro' && !!euroGlyph(normalizeLetter(ch));
-    const k = height / 80, transform = euro ? `translate(${left + (cell - 50 * k) / 2} ${y}) scale(${k})` : `translate(${left} ${y}) scale(${cell / 50} ${k})`;
-    return `<g data-glyph="${xml(ch)}"${euro ? ' data-profile="euro"' : ''} transform="${transform}">${glyph(ch, profile)}</g>`;
+    const left = x + i * (cell + gap), key = normalizeLetter(ch);
+    const naskh = profile === 'naskh' && !!naskhEntry(key), euro = profile === 'euro' && !!euroGlyph(key);
+    const k = height / 80;
+    let transform = `translate(${left} ${y}) scale(${cell / 50} ${k})`;
+    if (euro) transform = `translate(${left + (cell - 50 * k) / 2} ${y}) scale(${k})`;
+    if (naskh) {
+      const w = naskhEntry(key)![0] * condense, s = Math.min(k, cell / w);
+      transform = `translate(${left + (cell - w * s) / 2} ${y + (height - 80 * s) / 2}) scale(${s * condense} ${s})`;
+    }
+    return `<g data-glyph="${xml(ch)}"${euro ? ' data-profile="euro"' : naskh ? ' data-profile="naskh"' : ''} transform="${transform}">${glyph(ch, profile)}</g>`;
   }).join('');
 }
 /** The accessibility class symbol is actual geometry, never an emoji/font fallback. */

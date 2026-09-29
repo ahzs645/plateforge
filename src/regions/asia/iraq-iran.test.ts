@@ -5,7 +5,8 @@ import { iran } from './iran';
 import { IRAQ_GOVERNORATES, IRAQ_LETTERS } from './iraq-data';
 import { IRAN_CODES, IRAN_MOTORCYCLE_CODES, IRAN_PRIVATE_LETTERS } from './iran-data';
 import { asciiDigits, displayDigits, isDigits, normalizeLetter } from './plate-script';
-import { accessibility, glyph, hasPlateGlyph } from '../../templates/westasia-glyphs';
+import { accessibility, glyph, glyphRun, hasPlateGlyph } from '../../templates/westasia-glyphs';
+import { NASKH_PLATE_GLYPHS } from '../../templates/westasia-arabic';
 import { iranScene, iranSize, iraqScene, iraqSize, sceneSvg } from '../../templates/westasia-scene';
 
 const iq = (id: string) => iraq.formats.find((f) => f.id === id)!;
@@ -98,6 +99,68 @@ describe('script and allocation handling', () => {
     expect(p.code).toBe('11');
     expect(f.validate?.({ ...p, code: '22' })).not.toBeNull();
     expect(ir('national-government').design?.classLetter).toBe('الف');
+  });
+});
+
+describe('Arabic-script outlines (naskh profile)', () => {
+  const digits = '٠١٢٣٤٥٦٧٨٩۰۱۲۳۴۵۶۷۸۹', letters = [...IRAQ_LETTERS.map((l) => l.arabic), ...IRAN_PRIVATE_LETTERS, 'ت', 'ع', 'ک', 'پ', 'ث', 'ش', 'ز', 'ف', 'ی'];
+  it('covers every digit and every selectable Arabic-script letter except the hand-drawn plate هـ', () => {
+    for (const ch of digits) expect(NASKH_PLATE_GLYPHS[ch], ch).toBeDefined();
+    for (const l of letters) if (normalizeLetter(l) !== 'ه') expect(NASKH_PLATE_GLYPHS[normalizeLetter(l)], l).toBeDefined();
+    expect(glyph('ه', 'naskh')).toBe(glyph('ه'));
+  });
+  it('keeps the Persian and Arabic 4/5/6 masters distinct and paints outlines, never text', () => {
+    for (const [a, b] of [['۴', '٤'], ['۵', '٥'], ['۶', '٦']]) expect(glyph(a, 'naskh')).not.toBe(glyph(b, 'naskh'));
+    const g = glyph('۲', 'naskh');
+    expect(g).toMatch(/^<path d="M[^"]+" fill="currentColor" stroke="currentColor" stroke-width="3" stroke-linejoin="round"\/>$/);
+    expect(glyph('س', 'naskh')).toMatch(/^<path d="M[^"]+" fill="currentColor"\/>$/); // letters are unthickened
+    expect(g).not.toMatch(/<text|font/);
+    for (const [w, d, stroke] of Object.values(NASKH_PLATE_GLYPHS)) { expect(w).toBeGreaterThan(0); expect(stroke).toBeGreaterThanOrEqual(0); expect(d).not.toMatch(/NaN|Infinity|undefined/); }
+  });
+  it('leaves the default profile geometric and falls back for Latin', () => {
+    expect(glyph('۲')).toBe(glyph('۲', 'geometric'));
+    expect(glyph('۲')).not.toBe(glyph('۲', 'naskh'));
+    expect(glyph('D', 'naskh')).toBe(glyph('D'));
+    expect(glyphRun('D', 0, 0, 50, 80, 3, 'naskh')).not.toContain('data-profile');
+  });
+  it('scales uniformly and never lets a glyph overflow its cell', () => {
+    for (const ch of digits + letters.join('')) {
+      const entry = NASKH_PLATE_GLYPHS[normalizeLetter(ch)]; if (!entry) continue;
+      for (const [cell, height] of [[20, 78], [44, 78], [96, 60], [10, 80]]) {
+        const run = glyphRun(ch, 0, 0, cell, height, 3, 'naskh');
+        const [, left, scale] = run.match(/translate\(([-\d.e]+) [-\d.e]+\) scale\(([\d.e-]+)(?: [\d.e-]+)?\)/) ?? [];
+        expect(scale, `${ch} ${cell}`).toBeDefined();
+        expect(Number(scale) * entry[0], `${ch} width in ${cell}`).toBeLessThanOrEqual(cell + 1e-6);
+        expect(Number(scale)).toBeLessThanOrEqual(height / 80 + 1e-9);
+        expect(Number(left)).toBeGreaterThanOrEqual(-1e-6);
+      }
+    }
+  });
+  it('condenses a run by one die-level factor, uniformly and within its cell', () => {
+    // x/y scale ratio of every naskh glyph in a rendered fragment
+    const ratios = (svg: string) => [...svg.matchAll(/data-profile="naskh" transform="translate\([-\d.e]+ [-\d.e]+\) scale\(([\d.e-]+) ([\d.e-]+)\)/g)].map((m) => Number(m[1]) / Number(m[2]));
+    for (const r of ratios(glyphRun('٣٤', 0, 0, 120, 78, 3, 'naskh'))) expect(r).toBeCloseTo(1);
+    const narrow = ratios(glyphRun('٣٤', 0, 0, 120, 78, 3, 'naskh', .75));
+    expect(narrow).toHaveLength(2);
+    for (const r of narrow) expect(r).toBeCloseTo(.75);
+    expect(glyphRun('D', 0, 0, 60, 78, 3, 'naskh', .5)).not.toContain('data-profile'); // Latin is never condensed
+    const body = (id: string) => { const f = iq(id); return iraqScene(f.design!, f.generate(createRng('c'))).body; };
+    const digitRatios = (id: string) => ratios(body(id).match(/data-layer="(?:arabic-)?serial">.*/s)![0]);
+    expect(digitRatios('bilingual-2008-private').slice(-5).every((r) => Math.abs(r - .75) < 1e-6)).toBe(true);
+    expect(digitRatios('private-1988').every((r) => Math.abs(r - .8) < 1e-6)).toBe(true);
+    expect(digitRatios('kr-legacy-private').every((r) => Math.abs(r - .8) < 1e-6)).toBe(true);
+    // no die measurement for the 2001 plate on this canvas, so it keeps the font's own proportions
+    expect(digitRatios('private-2001').every((r) => Math.abs(r - 1) < 1e-6)).toBe(true);
+  });
+  it('is used for Iranian and older Iraqi Arabic-script runs, and not for Latin lines or modern Iraq', () => {
+    const iranBody = iranScene(ir('national-private').design!, { prefix: '12', letter: 'ب', serial: '345', code: '11' }).body;
+    expect(iranBody).toContain('data-profile="naskh"');
+    expect(iranBody).not.toContain('data-profile="euro"');
+    const bilingual = iraqScene(iq('bilingual-2008-private').design!, iq('bilingual-2008-private').generate(createRng('x'))).body;
+    expect(bilingual).toContain('data-profile="naskh"');
+    expect(bilingual.match(/data-layer="latin-serial">(?:(?!<\/g><\/g>).)*/s)?.[0]).not.toContain('naskh');
+    const modern = iraqScene(iq('federal-modern-private').design!, iq('federal-modern-private').generate(createRng('x'))).body;
+    expect(modern).not.toContain('data-profile="naskh"');
   });
 });
 
