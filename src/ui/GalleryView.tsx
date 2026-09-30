@@ -1,6 +1,7 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { buildTimeline, countryOf, familyOf, formatPeriod, gapsFor, groupByCountry, regionFamilies, statusBadge, type CountryGroup } from '../core/timeline';
 import type { PlateFormat, PlateGap, Region } from '../core/types';
+import { ChevronDown, CloseIcon, SearchIcon } from './icons';
 import { PlateView } from './PlateView';
 import { samplePlate } from './samples';
 import './timeline.css';
@@ -86,6 +87,20 @@ export function GalleryView({ regions, region, format, onOpen, onSelectRegion }:
   const countryCount = new Set(blocks.flatMap((b) => b.sections.flatMap((s) => s.cards.map((c) => countryOf(c.region))))).size;
   const total = blocks.reduce((n, b) => n + b.sections.reduce((m, s) => m + s.cards.length, 0), 0);
   const timeline = buildTimeline(region, familyOf(region, format));
+  const [filtersOpen, setFiltersOpen] = useState(false);
+  const family = families.find((f) => f.id === activeFamily);
+  const scopeLabel = [scope === 'region' ? region.name : scope === 'country' ? current?.country ?? 'Country' : region.group, family?.label].filter(Boolean).join(' · ');
+  // Once the bar is stuck, a new filter starts the results from the top instead of leaving you mid-list.
+  const sentinel = useRef<HTMLDivElement>(null);
+  const changed = useRef(false);
+  useEffect(() => {
+    if (!changed.current) { changed.current = true; return; }
+    const el = sentinel.current;
+    if (!el) return;
+    const offset = parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--topbar')) || 60;
+    const top = el.getBoundingClientRect().top;
+    if (top < offset) window.scrollBy({ top: top - offset });
+  }, [query, scope, activeFamily, region.id]);
 
   return (
     <section className="gallery" aria-label="Plate gallery">
@@ -102,7 +117,22 @@ export function GalleryView({ regions, region, format, onOpen, onSelectRegion }:
             {scope !== 'continent' && (scope === 'region' || !subdivided) && timeline ? ` · ${formatPeriod(timeline.span)} timeline` : ''}
           </p>
         </div>
-        <div className="gallery-controls">
+      </header>
+
+      {/* Sticky so the filter stays at hand while scrolling hundreds of plates. On phones the scope and family
+          controls fold behind one button, leaving a single row. */}
+      <div ref={sentinel} className="gallery-bar-sentinel" aria-hidden="true" />
+      <div className="gallery-bar" role="search">
+        <div className="gallery-search">
+          <SearchIcon />
+          <input aria-label="Filter designs" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Filter by name, year or code…"
+            spellCheck={false} autoComplete="off" enterKeyHint="search" onKeyDown={(e) => { if (e.key === 'Escape') setQuery(''); }} />
+          {query && <button type="button" className="icon-btn" aria-label="Clear filter" onClick={() => setQuery('')}><CloseIcon /></button>}
+        </div>
+        <button type="button" className="gallery-filter-toggle" aria-expanded={filtersOpen} aria-controls="gallery-filters" onClick={() => setFiltersOpen(!filtersOpen)}>
+          <span>{scopeLabel}</span><ChevronDown />
+        </button>
+        <div id="gallery-filters" className="gallery-controls" data-open={filtersOpen}>
           <div className="tabs" role="tablist" aria-label="Gallery scope">
             {subdivided && <button role="tab" aria-selected={scope === 'region'} onClick={() => setScope('region')}>{region.name}</button>}
             <button role="tab" aria-selected={scope === 'country'} onClick={() => setScope('country')}>{current?.country ?? 'Country'}</button>
@@ -115,9 +145,8 @@ export function GalleryView({ regions, region, format, onOpen, onSelectRegion }:
             <option value="">All families ({families.reduce((n, f) => n + f.formats.length, 0)})</option>
             {families.map((f) => <option key={f.id} value={f.id}>{f.label} ({f.formats.length})</option>)}
           </select></div>}
-          <input className="gallery-search" aria-label="Filter designs" value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Filter by name, year or code…" spellCheck={false} autoComplete="off" />
         </div>
-      </header>
+      </div>
 
       {blocks.map(({ key, group, sections }) => (
         <div key={key} className="gallery-country">
