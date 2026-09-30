@@ -96,3 +96,21 @@ photos and traces the averages into filled outlines (`src/templates/dies/traced-
 keep their constructed parameters as a fallback for characters the photos don't cover, such as most serial
 prefix letters. The layout measurements above are unchanged.
 
+### 1915–17: two makers, not one tin die
+
+BCpl8s documents a change of maker partway through 1916. MacDonald Manufacturing of Toronto printed 1915 and 1916
+up to No. 9,000. The over-run above 9,000, issued from late 1916, and all of 1917 came from J.R. Tacey & Sons of
+Vancouver. Averaging photos by maker confirms two distinct numeral designs: MacDonald's very condensed figures
+(W/H about 0.33) and Tacey's wider, heavier ones (about 0.48). They are now separate dies (`bc-tin-macdonald`,
+`bc-tin-tacey`).
+
+The over-run is its own format (`1916 · Tacey over-run`, Nos. 9,001–9,342), with a slightly longer plate and the
+cruder arms. 1917 is split by coat-of-arms quality, following BCpl8s's three photographed types:
+
+- **Type 1**: crude, blotted arms and a wire rim with crimped edging copied from MacDonald.
+- **Type 2**: the fine line drawing.
+- **Type 3**: a heavier rendering.
+
+The change-over numbers (about 3,000, 10,000 and 12,000) are estimates, because photographs are missing between
+3,000 and 6,500. The formats use 1–2,999, 3,000–9,999 and 10,000–13,000.
+

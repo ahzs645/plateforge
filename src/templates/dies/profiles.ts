@@ -5,7 +5,7 @@
  * reconstructions for illustration, not recovered tooling.
  */
 import type { DieProfile } from './engine';
-import { BC_LEGEND_1940, BC_SERIAL_1940, BC_STRIP_1951, BC_TAB_1953, BC_YEAR_1940, BC_YEAR_1952 } from './traced-1940';
+import { BC_LEGEND_1940, BC_SERIAL_1940, BC_STRIP_1951, BC_TAB_1953, BC_TIN_MACDONALD, BC_TIN_TACEY, BC_YEAR_1940, BC_YEAR_1952 } from './traced-1940';
 
 const page = (period: string) => ({ title: `BCpl8s · Passenger ${period.replace('-', '–')}`, url: `https://www.bcpl8s.ca/Passenger-${period}.html` });
 const lettersNote = 'Letters follow the same construction and were checked against plate photos only.';
@@ -83,6 +83,18 @@ export const DIE_PROFILES: readonly DieProfile[] = [
     id: 'bc-tin-1915', label: '1915–17 tin numerals',
     params: { width: 46, stroke: 13, curve: 'box', boxRadius: 9, tracking: 9, one: 'flag-base', two: 'curved', three: 'round', four: 'closed', six: 'straight', seven: 'straight', nine: 'straight', narrow: 0.6, wide: 1.2 },
     evidence: { status: 'legend-approximation', specimens: [page('1915-1917')], notes: 'Very tall squarish numerals on lithographed tin (1915 5244, 1916 7462, 1917 12963).' },
+  },
+  {
+    id: 'bc-tin-macdonald', label: '1915–16 tin numerals (MacDonald)', maker: 'MacDonald Manufacturing',
+    params: { width: 34, stroke: 12, curve: 'box', boxRadius: 7, tracking: 8, one: 'plain', two: 'curved', three: 'round', four: 'closed', six: 'straight', seven: 'straight', nine: 'straight', narrow: 0.4, wide: 1.2 },
+    overrides: BC_TIN_MACDONALD,
+    evidence: { status: 'photo-averaged', specimens: [page('1915-1917')], notes: 'Very condensed lithographed numerals (W/H about 0.33), traced from averaged photos of 1915 and 1916 plates up to No. 9,000.' },
+  },
+  {
+    id: 'bc-tin-tacey', label: '1916 over-run and 1917 tin numerals (Tacey)', maker: 'J.R. Tacey & Sons',
+    params: { width: 48, stroke: 17, curve: 'box', boxRadius: 7, tracking: 8, one: 'flag-base', two: 'curved', three: 'round', four: 'closed', six: 'straight', seven: 'straight', nine: 'straight', narrow: 0.4, wide: 1.2 },
+    overrides: BC_TIN_TACEY,
+    evidence: { status: 'photo-averaged', specimens: [page('1915-1917')], notes: 'Wider, heavier numerals (W/H about 0.48) from the late-1916 over-run and 1917 plates, traced from averaged photos.' },
   },
   {
     id: 'bc-block-1918', label: '1918–23 block dies',

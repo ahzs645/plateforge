@@ -32,6 +32,23 @@ def trim(im):
     if len(rows) < h * 0.6 or len(cols) < w * 0.6: return im
     return im[rows.min():rows.max() + 1, cols.min():cols.max() + 1]
 
+
+NAME = re.compile(r'(\d{4})-([0-9A-Z]+?)(?:\(XL\)\d?|XL)?\.jpg$')
+def best_photos(pattern):
+    """One file per plate (year, serial): the largest copy, usually the linked "(XL)" photo."""
+    best = {}
+    for fn in glob.glob(pattern):
+        m = NAME.match(os.path.basename(fn))
+        if not m: continue
+        key = (int(m.group(1)), m.group(2))
+        size = Image.open(fn).size
+        if key not in best or size[0] > best[key][1][0]: best[key] = (fn, size)
+    return sorted((k[0], k[1], v[0]) for k, v in best.items())
+def load(fn, max_w=1200):
+    im = Image.open(fn).convert('RGB')
+    if im.width > max_w: im = im.resize((max_w, round(im.height * max_w / im.width)), Image.LANCZOS)
+    return np.asarray(im)
+
 acc = {}   # (set, era, char) -> [sum, count, widths]
 log = []
 def add(kind, era, ch, soft):
@@ -48,13 +65,10 @@ def add(kind, era, ch, soft):
         if k not in acc: acc[k] = [np.zeros_like(canvas), 0, []]
         acc[k][0] += canvas; acc[k][1] += 1; acc[k][2].append(w / h)
 
-for fn in sorted(glob.glob(f'{SRC}/19[45]?-*.jpg')):
-    m = re.match(r'(\d{4})-([0-9A-Z]+)\.jpg', os.path.basename(fn))
-    if not m: continue
-    year, serial = int(m.group(1)), m.group(2)
+for year, serial, fn in best_photos(f'{SRC}/19[45]?-*.jpg'):
     if year > 1954 or set(serial) == {'0'}: continue
     era = next(k for k, r in eras.items() if year in r)
-    im = np.asarray(Image.open(fn).convert('RGB'))
+    im = load(fn)
     if im.shape[0] < 90: continue
     im = trim(im); H, W, _ = im.shape
     inner = im[int(H * .08):int(H * .92), int(W * .03):int(W * .97)].reshape(-1, 3).astype(float)

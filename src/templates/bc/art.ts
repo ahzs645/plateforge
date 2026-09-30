@@ -71,6 +71,14 @@ function bcArms(): SvgNode[] {
   return [n('path', { d: CREST_PATH, fill: 'currentColor', fillRule: 'evenodd' })];
 }
 
+/** The 1917 Tacey coat of arms came in three qualities (BCpl8s, Passenger 1915–1917): a crude, blotted early
+ * rendering (Type 1), the fine line drawing (Type 2, the shared master) and a heavier later one (Type 3). The
+ * variants thicken the same master with a stroke of its own colour: 40 units (about 1.6 mm) merges the detail
+ * into blobs, 14 units gives the bolder line. */
+function bcArmsWeighted(weight: number): () => SvgNode[] {
+  return () => [n('path', { d: CREST_PATH, fill: 'currentColor', fillRule: 'evenodd', stroke: 'currentColor', strokeWidth: weight, strokeLinejoin: 'round' })];
+}
+
 /** Panel behind the 1915 coat of arms, 34 × 60: straight sides meeting a domed top at sharp corners (arch fitted to BCpl8s No. 228); printed in the figures' colour (currentColor). */
 function armsPanel(): SvgNode[] {
   return [n('path', { d: 'M0 60 V6.4 C8 -1.6 26 -1.6 34 6.4 V60 Z', fill: 'currentColor' })];
@@ -81,6 +89,8 @@ const MASTERS: Record<string, ArtMaster> = {
   'bc-monogram': { viewBox: [MONOGRAM_1918.box[2], MONOGRAM_1918.box[3]], draw: bcMonogram },
   'bc-monogram-1914': { viewBox: [MONOGRAM_1914.box[2], MONOGRAM_1914.box[3]], draw: bcMonogram1914 },
   'bc-arms': { viewBox: [CREST_BOX[0], CREST_BOX[1]], draw: bcArms },
+  'bc-arms-crude': { viewBox: [CREST_BOX[0], CREST_BOX[1]], draw: bcArmsWeighted(40) },
+  'bc-arms-bold': { viewBox: [CREST_BOX[0], CREST_BOX[1]], draw: bcArmsWeighted(14) },
   'bc-spirit-flag': { viewBox: [SPIRIT_FLAG.box[2], SPIRIT_FLAG.box[3]], draw: spiritFlag },
   'bc-flag': { viewBox: [60, 36], draw: bcFlag },
   'bc-logo': { viewBox: [BC_LOGO.symbolBox[2], BC_LOGO.symbolBox[3]], draw: bcLogo(false) },

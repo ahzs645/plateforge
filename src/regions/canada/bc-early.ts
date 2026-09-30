@@ -69,15 +69,27 @@ const porcelain1914 = recipe('early-1914', '1914 porcelain', p1914, '1913-1914',
 });
 
 // ── 1915–1917 lithographed tin with the coat of arms ────────────────────────
-function tin(year: number, b: Base, cap: number, baseline: number, panel: boolean): KitRecipe {
-  return recipe(`early-${year}`, `${year} tin`, b, '1915-1917', {
-    embossed: false, rim: { inset: 1.5, width: 1.4 }, shapes: grommets(b),
+// Two makers (BCpl8s, Passenger 1915–1917): MacDonald Manufacturing of Toronto printed 1915 and 1916 up to
+// No. 9,000 with very condensed numerals and a wire rim with crimped edging; J.R. Tacey & Sons of Vancouver made
+// the late-1916 over-run (9,001–9,342) and 1917 with wider, heavier numerals. Tacey's 1917 coat of arms came in
+// three qualities, and its first plates copied MacDonald's wire rim before a plainer edge took over.
+type TinMaker = 'macdonald' | 'tacey';
+type ArmsType = 'fine' | 'crude' | 'bold';
+interface TinOptions { maker: TinMaker; arms?: ArmsType; wireRim?: boolean; id?: string; label?: string }
+const ARMS_ART: Record<ArmsType, string> = { fine: 'bc-arms', crude: 'bc-arms-crude', bold: 'bc-arms-bold' };
+function tin(year: number, b: Base, cap: number, baseline: number, panel: boolean, o: TinOptions): KitRecipe {
+  const die = o.maker === 'macdonald' ? 'bc-tin-macdonald' : 'bc-tin-tacey';
+  const arms = ARMS_ART[o.arms ?? 'fine'];
+  const wire = o.wireRim ?? o.maker === 'macdonald';
+  return recipe(o.id ?? `early-${year}`, o.label ?? `${year} tin`, b, '1915-1917', {
+    // Wire rim with crimped edging (MacDonald, early Tacey) reads as a heavy edge band; later Tacey plates a plain edge.
+    embossed: false, rim: wire ? { inset: 1.8, width: 2.6 } : { inset: 1.5, width: 1.2 }, shapes: grommets(b),
     // 1915 (cream panel) proportions are measured from BCpl8s No. 228: the arms fill the panel, the crown just under the arch.
     art: panel ? [
       { art: 'arms-panel', x: b.w * 0.014, y: b.h * 0.09, width: b.w * 0.176, height: b.h * 0.411, color: b.ink },
       { art: 'bc-arms', x: b.w * 0.018, y: b.h * 0.115, width: b.w * 0.168, height: b.h * 0.36, color: b.bg },
     ] : [
-      { art: 'bc-arms', x: b.w * 0.04, y: b.h * 0.09, width: b.w * 0.15, height: b.h * 0.36, color: b.ink },
+      { art: arms, x: b.w * 0.04, y: b.h * 0.09, width: b.w * 0.15, height: b.h * 0.36, color: b.ink },
     ],
     legends: panel ? [
       { text: 'B.C.', x: b.w * 0.107, baseline: b.h * 0.695, cap: b.h * 0.106, die: 'bc-legend-condensed', role: 'legend' },
@@ -86,7 +98,7 @@ function tin(year: number, b: Base, cap: number, baseline: number, panel: boolea
       { text: 'B.C.', x: b.w * 0.11, baseline: b.h * (year === 1917 ? 0.59 : 0.66), cap: b.h * 0.13, die: 'bc-legend-condensed', role: 'legend' },
       { text: String(year), x: b.w * 0.11, baseline: b.h * (year === 1917 ? 0.86 : 0.9), cap: b.h * (year === 1917 ? 0.24 : 0.18), maxWidth: b.w * 0.16, die: 'bc-tin-1915', role: 'year' },
     ],
-    serial: { x: b.w * 0.6, baseline: b.h * baseline, cap: b.h * cap, maxWidth: b.w * 0.7, die: 'bc-tin-1915' },
+    serial: { x: b.w * 0.6, baseline: b.h * baseline, cap: b.h * cap, maxWidth: b.w * 0.7, die },
   });
 }
 
@@ -194,12 +206,21 @@ const specs: EarlySpec[] = [
     description: 'The first provincial plates: white on blue porcelain, 305 × 167 mm, with B.C. and the year stacked either side of the number between two rules. Numbers 1–7,000.' },
   { id: '1914', label: '1914 · porcelain', period: [1914, 1914], recipe: porcelain1914, grammar: plain(8000),
     description: 'Black on white porcelain with the interlaced BC monogram and 1914 at left. Estimated 1–7,500; No. 7968 is known.' },
-  { id: '1915', label: '1915 · tin', period: [1915, 1915], recipe: tin(1915, { w: 323, h: 146, bg: '#4e6735', ink: '#e2d795' }, 0.84, 0.92, true), grammar: plain(8199),
+  { id: '1915', label: '1915 · tin', period: [1915, 1915], recipe: tin(1915, { w: 323, h: 146, bg: '#4e6735', ink: '#e2d795' }, 0.84, 0.92, true, { maker: 'macdonald' }), grammar: plain(8199),
     description: 'Lithographed tin, dark green with “pearl white” figures, the coat of arms on a cream panel. Numbers 1–8,000 plus an over-run to 8,199.' },
-  { id: '1916', label: '1916 · tin', period: [1916, 1916], recipe: tin(1916, { w: 323, h: 146, bg: '#cc8d0b', ink: '#312b1e' }, 0.82, 0.92, false), grammar: plain(9342),
-    description: 'Dark on orange-yellow tin. Over-run plates above 9,000 came from a new maker with a different font and cruder arms (not separately drawn).' },
-  { id: '1917', label: '1917 · tin', period: [1917, 1917], recipe: tin(1917, { w: 342, h: 139, bg: '#ebebd7', ink: '#161318' }, 0.7, 0.83, false), grammar: plain(13000),
-    description: 'Black on cream tin, 342 × 139 mm, numbers to 13,000. Three or four coat-of-arms renderings exist; one shared rendering is drawn.' },
+  { id: '1916', label: '1916 · tin', period: [1916, 1916], recipe: tin(1916, { w: 323, h: 146, bg: '#cc8d0b', ink: '#312b1e' }, 0.82, 0.92, false, { maker: 'macdonald' }), grammar: plain(9000),
+    description: 'Dark on orange-yellow tin by MacDonald Manufacturing, numbers 1–9,000. The over-run above 9,000 is a separate design.' },
+  { id: '1916-overrun', label: '1916 · Tacey over-run', period: [1916, 1916],
+    recipe: tin(1916, { w: 342, h: 146, bg: '#cc8d0b', ink: '#2c261c' }, 0.76, 0.9, false, { maker: 'tacey', arms: 'crude', id: 'early-1916-overrun', label: '1916 over-run (Tacey)' }), grammar: plain(9342, 9001),
+    description: 'Nos. 9,001–9,342, issued from late 1916 and most likely made by J.R. Tacey & Sons, who won the 1917 contract: heavier, wider numerals, a cruder coat of arms, and a slightly longer plate (about 342 mm, scaled from the BCpl8s side-by-side photo).' },
+  { id: '1917', label: '1917 · tin', period: [1917, 1917], recipe: tin(1917, { w: 342, h: 139, bg: '#ebebd7', ink: '#161318' }, 0.7, 0.83, false, { maker: 'tacey' }), grammar: plain(9999, 3000),
+    description: 'Black on cream tin by J.R. Tacey & Sons, 342 × 139 mm, with the fine (Type 2) coat of arms. BCpl8s places the change-overs between arms types around Nos. 3,000, 10,000 and 12,000, but a gap in photographs from 3,000 to 6,500 leaves them uncertain.' },
+  { id: '1917-early', label: '1917 · early (Type 1 arms)', period: [1917, 1917],
+    recipe: tin(1917, { w: 342, h: 139, bg: '#ebebd7', ink: '#161318' }, 0.7, 0.83, false, { maker: 'tacey', arms: 'crude', wireRim: true, id: 'early-1917-type1', label: '1917 tin, Type 1 arms' }), grammar: plain(2999),
+    description: 'Low-number 1917 plates: a crude, blotted coat of arms and a wire rim with crimped edging copied from MacDonald. These wore badly within months. The upper number is an estimate.' },
+  { id: '1917-late', label: '1917 · late (Type 3 arms)', period: [1917, 1917],
+    recipe: tin(1917, { w: 342, h: 139, bg: '#ebebd7', ink: '#161318' }, 0.7, 0.83, false, { maker: 'tacey', arms: 'bold', id: 'early-1917-type3', label: '1917 tin, Type 3 arms' }), grammar: plain(13000, 10000),
+    description: 'High-number 1917 plates with the heavier (Type 3) coat of arms; the change-over number is an estimate.' },
   { id: '1918', label: '1918 · steel', period: [1918, 1918], recipe: steel(1918, s1918, 'frame'), grammar: plain(20500),
     description: 'Embossed yellow on black steel meant to last three years with renewal tabs; the framed monogram area is where the tab fits. Numbers 1–15,000 with an over-run to 20,500.' },
   { id: '1919-tab', label: '1919 · green tab', period: [1919, 1919],

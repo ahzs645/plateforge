@@ -7,6 +7,9 @@ import potrace
 
 def trace(png, thresh=0.5, sigma=2.0):
     a = 1 - np.asarray(Image.open(png).convert('L')).astype(float) / 255   # 1 = ink
+    # Stretch faint averages (samples that align loosely) so the threshold sits mid-stroke, not in the blur.
+    peak = np.percentile(a[a > 0.1], 95) if (a > 0.1).any() else 1
+    a = np.clip(a / max(peak, 0.5), 0, 1)
     a = ndimage.gaussian_filter(a, sigma)
     ink = a > thresh
     # Shave averaging flares (emboss highlights at the glyph ends) without eroding the strokes.
@@ -45,5 +48,5 @@ out = {}
 for name, spec in sets.items():
     prefix, chars, *rest = spec
     out[name] = {c: trace(f'out/{prefix}-{"dot" if c == "·" else c}.png', sigma=rest[0] if rest else 2.0) for c in chars}
-json.dump(out, open("out/traced.json", "w"), indent=1)
+json.dump(out, open(sys.argv[2] if len(sys.argv) > 2 else "out/traced.json", "w"), indent=1)
 for name, g in out.items(): print(name, {c: v['advance'] for c, v in g.items()})
