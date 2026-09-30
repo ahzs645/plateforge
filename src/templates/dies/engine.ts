@@ -71,7 +71,8 @@ export function buildDieText(p: DieTextProps): DieRun {
   const left = p.anchor === 'start' ? p.x : p.anchor === 'end' ? p.x - width : p.x - width / 2;
   let cursor = 0;
   const children = glyphs.map(({ char, glyph }) => {
-    const item = n('g', { transform: `translate(${round(cursor)} 0)`, 'data-character': char, ...(glyph.stroke ? { strokeWidth: glyph.stroke } : {}) },
+    const item = n('g', { transform: `translate(${round(cursor)} 0)`, 'data-character': char, ...(glyph.stroke ? { strokeWidth: glyph.stroke } : {}),
+      ...(glyph.cap ? { strokeLinecap: glyph.cap } : {}) },
       ...glyph.paths.map((d) => n('path', { d })));
     cursor += glyph.advance + spacing;
     return item;

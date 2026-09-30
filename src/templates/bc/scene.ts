@@ -79,13 +79,21 @@ function labeler(dies: BcDieSet | null): Labeler {
     (dies && dieLabel(dies.legend, value, x, y, size, maxWidth, ink, role, stretch)) || label(value, x, y, size, maxWidth, ink, role, extra, stretch);
 }
 
-/** 1951 blue-on-white strip in its own coordinates (0,0 top-left). */
-function renewalStrip(width: number, holeXs: number[], parts: Parts, withHoles: boolean, lab: Labeler = label): SvgNode[] {
+/** 1951 blue-on-white strip in its own coordinates (0,0 top-left). Photographed strips show a white enamel face with a
+ *  plain raised edge (no painted border), heavy blue legend filling about 60% of the height, round raised dots, and a
+ *  small unpainted strip number stamped under the 51 between the bolts. */
+const STRIP = { face: '#eceee8', edge: '#b7bbb4', ink: '#2f5f98', number: '#a2a79f' };
+function renewalStrip(width: number, holeXs: number[], parts: Parts, withHoles: boolean, lab: Labeler = label, die = false): SvgNode[] {
+  const legend = 'BRITISH·51·COLUMBIA';
+  const baseline = 26.3, size = 22 / 0.7, span = width * 0.955;
   return [
-    n('rect', { width, height: STRIP_HEIGHT, rx: 2, fill: '#f0eee0', stroke: '#254658', strokeWidth: 1 }),
-    n('rect', { x: 2.5, y: 2.5, width: width - 5, height: STRIP_HEIGHT - 5, rx: 1.5, fill: 'none', stroke: '#254658', strokeWidth: 0.8, opacity: 0.55 }),
-    lab('BRITISH·51·COLUMBIA', width / 2, 25, 25, width - 12, '#254658', 'renewal-legend', {}, true),
-    ...(parts.tabSerial ? [lab(parts.tabSerial, width / 2, 33.5, 5, 22, '#8a9699', 'tab-serial')] : []),
+    n('rect', { width, height: STRIP_HEIGHT, rx: 2.5, fill: STRIP.face, stroke: STRIP.edge, strokeWidth: 0.8, 'data-role': 'strip-face' }),
+    // Pressed edge: a light highlight with a soft shadow just inside it.
+    n('rect', { x: 1.8, y: 1.8, width: width - 3.6, height: STRIP_HEIGHT - 3.6, rx: 1.8, fill: 'none', stroke: '#ffffff', strokeWidth: 1.1, opacity: 0.85 }),
+    n('rect', { x: 2.7, y: 2.7, width: width - 5.4, height: STRIP_HEIGHT - 5.4, rx: 1.4, fill: 'none', stroke: STRIP.edge, strokeWidth: 0.45, opacity: 0.7 }),
+    (die && dieLabel('bc-strip-1951', legend, width / 2, baseline, size, span, STRIP.ink, 'renewal-legend', true))
+      || lab(legend, width / 2, baseline, size, span, STRIP.ink, 'renewal-legend', {}, true),
+    ...(parts.tabSerial ? [lab(parts.tabSerial, width / 2, 34, 6.4, 26, STRIP.number, 'tab-serial')] : []),
     ...(withHoles ? holeXs.map((cx) => n('circle', { cx, cy: STRIP_HOLE_Y, r: 3.2, fill: 'black', 'data-role': 'strip-hole' })) : []),
   ];
 }
@@ -134,7 +142,7 @@ function buildLooseRenewal(design: BcDesign, parts: Parts, id: string): SvgNode 
   const strip = r.year === 1951;
   const holeXs = [plate * 0.21, plate * 0.79].map((x) => x - (plate - w) / 2);
   const lab = labeler(parts.lettering === 'die' ? bcDieSet(design) : null);
-  const piece = strip ? renewalStrip(w, holeXs, parts, true, lab) : renewalTab(r.year, `${id}-totem`, parts, true, lab);
+  const piece = strip ? renewalStrip(w, holeXs, parts, true, lab, parts.lettering === 'die') : renewalTab(r.year, `${id}-totem`, parts, true, lab);
   const holes = [...piece].filter((item) => ['strip-hole', 'tab-hole'].includes(String(item.attrs['data-role'])));
   const metadata = {
     jurisdiction: 'CA-BC', vehicleClass: 'passenger', year: r.year, baseYear: r.baseYear, serial: null, parts,
@@ -243,7 +251,7 @@ export function buildBcScene(design: BcDesign, parts: Parts, scope = 'bc-plate')
     const slotY = mount === 'top' ? slotInset(h) : h - slotInset(h);
     const holeXs = [w * 0.21, w * 0.79];
     overlays.push(n('g', { 'data-role': 'renewal-strip', 'data-year': 1951, 'data-mount': mount, transform: `translate(${x} ${slotY - STRIP_HOLE_Y})`, filter: `url(#${id}-lift)` },
-      ...renewalStrip(stripWidth, holeXs.map((cx) => cx - x), parts, false, L)));
+      ...renewalStrip(stripWidth, holeXs.map((cx) => cx - x), parts, false, L, !!dies)));
     overlays.push(...holeXs.map((cx) => bolt(cx, slotY)));
   }
   if (fitted && renewed) {

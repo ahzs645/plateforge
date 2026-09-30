@@ -46,6 +46,8 @@ export interface SkeletonParams {
   waist?: number;
   /** Width of the dash separator, cap-height units, and its vertical position. */
   dash?: { width: number; y?: number; weight?: number };
+  /** Shape of the raised centre dot (·): square punch (default) or round (1951 strip). */
+  dot?: 'square' | 'round';
 }
 
 export interface SkeletonGlyph {
@@ -53,6 +55,8 @@ export interface SkeletonGlyph {
   paths: string[];
   /** Stroke weight override for this glyph (e.g. a heavier dash). */
   stroke?: number;
+  /** Line-cap override, e.g. round dots on a die that otherwise has square ends. */
+  cap?: 'round';
 }
 
 const K = 0.5522847498307936;
@@ -175,7 +179,8 @@ export function skeletonGlyph(char: string, params: SkeletonParams): SkeletonGly
     case 'O': return g([loop(p, full)]);
     case 'P': return g([`M${f(L)} ${f(B)} V${f(T)}`, rightBowl(p, { l: L, t: T, r: R, b: waist + 4 }, L)]);
     case 'Q': return g([loop(p, full), `M${f(MX + 4)} ${f(72)} L${f(R + 1)} ${f(B + 2)}`]);
-    case 'R': return g([`M${f(L)} ${f(B)} V${f(T)}`, rightBowl(p, { l: L, t: T, r: R, b: waist + 2 }, L), `M${f(MX)} ${f(waist + 2)} L${f(R)} ${f(B)}`]);
+    // The leg starts inside the bowl's lower stroke so its square cap can't poke into the counter.
+    case 'R': return g([`M${f(L)} ${f(B)} V${f(T)}`, rightBowl(p, { l: L, t: T, r: R, b: waist + 2 }, L), `M${f(MX - h)} ${f(waist + 2)} H${f(MX)} L${f(R)} ${f(B)}`]);
     case 'S': return g([p.curve === 'box'
       ? `M${f(R)} ${f(T + 14)} V${f(T + (p.boxRadius ?? 8))} Q${f(R)} ${f(T)} ${f(R - 8)} ${f(T)} H${f(L + 8)} Q${f(L)} ${f(T)} ${f(L)} ${f(T + 8)} V${f(waist - 8)} Q${f(L)} ${f(waist)} ${f(L + 8)} ${f(waist)} H${f(R - 8)} Q${f(R)} ${f(waist)} ${f(R)} ${f(waist + 8)} V${f(B - 8)} Q${f(R)} ${f(B)} ${f(R - 8)} ${f(B)} H${f(L + 8)} Q${f(L)} ${f(B)} ${f(L)} ${f(B - 8)} V${f(B - 14)}`
       : `M${f(R)} ${f(T + 16)} C${f(R)} ${f(T - 4)} ${f(L)} ${f(T - 4)} ${f(L)} ${f(T + 24)} C${f(L)} ${f(waist - 2)} ${f(R)} ${f(waist - 4)} ${f(R)} ${f(B - 24)} C${f(R)} ${f(B + 4)} ${f(L)} ${f(B + 4)} ${f(L)} ${f(B - 16)}`]);
@@ -194,7 +199,9 @@ export function skeletonGlyph(char: string, params: SkeletonParams): SkeletonGly
       const d = p.dash ?? { width: w * 0.42 };
       return { advance: d.width + s, paths: [`M${f(h)} ${f(d.y ?? 52)} H${f(d.width + h)}`], ...(d.weight ? { stroke: d.weight } : {}) };
     }
-    case '·': return g([`M${f(s * 0.8)} ${f(52)} h0.01`], s * 1.6);
+    case '·': return p.dot === 'round'
+      ? { advance: s * 1.9, paths: [`M${f(s * 0.95)} ${f(52)} h0.01`], stroke: f(s * 1.25), cap: 'round' }
+      : g([`M${f(s * 0.8)} ${f(52)} h0.01`], s * 1.6);
     // Long raised bar used in front of four-digit numbers (1933–39).
     case '‒': return g([`M${f(h)} ${f(p.dash?.y ?? 52)} H${f(w * 0.9)}`], w * 0.9 + h);
     case '.': return g([`M${f(s * 0.8)} ${f(B)} h0.01`], s * 1.6);

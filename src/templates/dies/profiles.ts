@@ -26,6 +26,10 @@ export const DIE_PROFILES: readonly DieProfile[] = [
     evidence: { status: 'legend-approximation', specimens: [page('1940-1948'), page('1952-1954')], notes: 'Bold condensed caps, W/H about 0.55–0.6 (1940 99-830, 1948 76-487, 1952 42-289).' },
   },
   {
+    id: 'bc-strip-1951', label: 'Legend · 1951 renewal strip', params: { width: 66, stroke: 18, curve: 'stadium', tracking: 12, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.46, wide: 1.2, dot: 'round' },
+    evidence: { status: 'legend-approximation', specimens: [page('1949-1951')], notes: 'BRITISH·51·COLUMBIA on the blue-on-white strip: heavy, wide rounded caps (W/H about 0.65–0.7, stroke about 0.18) filling roughly 60% of the strip height, with round raised dots at mid-height. Matched by eye to strip photos.' },
+  },
+  {
     id: 'bc-legend-1955', label: 'Legend · 1955–63 long die', params: { width: 55, stroke: 15, curve: 'stadium', tracking: 9, one: 'plain', three: 'round', four: 'open', seven: 'straight', narrow: 0.5, wide: 1.2 },
     evidence: { status: 'legend-approximation', specimens: [page('1955-1963')], notes: 'Long legend die: bold, fairly condensed caps (W/H about 0.55), spread across most of the width.' },
   },
