@@ -57,6 +57,8 @@ export interface SkeletonGlyph {
   stroke?: number;
   /** Line-cap override, e.g. round dots on a die that otherwise has square ends. */
   cap?: 'round';
+  /** Filled outline (traced from photographs) instead of a stroked centreline. */
+  fill?: boolean;
 }
 
 const K = 0.5522847498307936;

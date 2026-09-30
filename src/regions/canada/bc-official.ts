@@ -353,7 +353,7 @@ const officialSpecs: Spec[] = [
       radius: 9, holes: 'round', holeAt: { x: [0.27, 0.693], y: [13 / 140, 125 / 140] }, rim: { inset: 2.8, width: 3.2 }, note: BASE_NOTE,
       art: [{ art: 'official-totem', x: 264.8, y: 50.2, width: 69.4, height: 67.6 }],
       legends: [{ text: 'BRITISH COLUMBIA', x: 137, baseline: 122, cap: 21, maxWidth: 243, die: 'bc-legend-1940', role: 'province', spread: true },
-        { text: '{yy}', x: 302.6, baseline: 55, cap: 34, maxWidth: 55, die: 'bc-legend-1940', role: 'year', spread: true }],
+        { text: '{yy}', x: 302.6, baseline: 55, cap: 34, maxWidth: 55, die: 'bc-year-1952', role: 'year', spread: true }],
       serial: { x: 137, baseline: 92.5, cap: 70, maxWidth: 244, die: 'bc-early-1940', separator: { kind: 'dot' } } }),
     palettes: years(P1940, [1952]), grammar: listed('N-1 … N-999', [1, 999, (n) => `N-${n}`]),
     description: 'N-24 on the 1952 aluminium totem base (geometry from the passenger totem base, scene.ts), 52 and the totem emblem at the right.' },

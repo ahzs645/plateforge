@@ -5,6 +5,7 @@
  * reconstructions for illustration, not recovered tooling.
  */
 import type { DieProfile } from './engine';
+import { BC_LEGEND_1940, BC_SERIAL_1940, BC_STRIP_1951, BC_TAB_1953, BC_YEAR_1940, BC_YEAR_1952 } from './traced-1940';
 
 const page = (period: string) => ({ title: `BCpl8s · Passenger ${period.replace('-', '–')}`, url: `https://www.bcpl8s.ca/Passenger-${period}.html` });
 const lettersNote = 'Letters follow the same construction and were checked against plate photos only.';
@@ -23,19 +24,29 @@ export const DIE_PROFILES: readonly DieProfile[] = [
   },
   {
     id: 'bc-legend-1940', label: 'Legend · 1940–54 bold', params: { width: 64, stroke: 20, curve: 'stadium', tracking: 16, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.36, wide: 1.2 },
-    evidence: { status: 'legend-approximation', specimens: [page('1940-1948'), page('1949-1951'), page('1952-1954')], notes: 'Bold caps with ordinary spacing, measured from photos: cap 20–21 mm, W/H about 0.65, stroke about 0.2, gaps 3–6 mm (1940 99·830, 1949 71·064, 1950 230·229, 1952 42-289). On long bases the gaps open up to fill the plate.' },
+    // B R I T S H C O L U M A are traced from averaged photo samples; other letters and digits are constructed.
+    overrides: BC_LEGEND_1940,
+    evidence: { status: 'photo-averaged', specimens: [page('1940-1948'), page('1949-1951'), page('1952-1954')], notes: 'The BRITISH COLUMBIA letters are traced from the average of 76–227 samples each from 1940–54 plate photos. Bold caps with ordinary spacing, measured from photos: cap 20–21 mm, W/H about 0.65, stroke about 0.2, gaps 3–6 mm (1940 99·830, 1949 71·064, 1950 230·229, 1952 42-289). On long bases the gaps open up to fill the plate.' },
   },
   {
     id: 'bc-year-1940', label: 'Stacked year · 1940–51', params: { width: 42, stroke: 12, curve: 'stadium', tracking: 8, one: 'plain', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'straight', nine: 'curved', narrow: 0.6, wide: 1.2 },
-    evidence: { status: 'legend-approximation', specimens: [page('1940-1948'), page('1949-1951')], notes: 'Stacked two-digit year at the right of 1940–51 bases: 32 mm digits, W/H about 0.4–0.5 (1940 99·830, 1950 230·229, 1951 217·639).' },
+    overrides: BC_YEAR_1940,
+    evidence: { status: 'photo-averaged', specimens: [page('1940-1948'), page('1949-1951')], notes: 'Digits traced from averaged photo samples (4: 99, 0: 19, others 4–21). Stacked two-digit year at the right of 1940–51 bases: 32 mm digits, W/H about 0.4–0.5 (1940 99·830, 1950 230·229, 1951 217·639).' },
   },
   {
     id: 'bc-strip-1951', label: 'Legend · 1951 renewal strip', params: { width: 65, stroke: 17, curve: 'stadium', tracking: 21, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.32, wide: 1.25, dot: 'round' },
-    evidence: { status: 'legend-approximation', specimens: [page('1949-1951')], notes: 'BRITISH·51·COLUMBIA on the blue-on-white strip, measured from 1951 217·639 and loose long/short strips: 21 mm caps (about 58% of the 36 mm strip), W/H about 0.65, stroke about 0.17, 4.5 mm letter gaps, round raised dots; the 51 is a slightly smaller die set about 4 mm higher.' },
+    overrides: BC_STRIP_1951,
+    evidence: { status: 'photo-averaged', specimens: [page('1949-1951')], notes: 'Letters and 51 traced from two high-resolution strip photos (smoothed); dots constructed. BRITISH·51·COLUMBIA on the blue-on-white strip, measured from 1951 217·639 and loose long/short strips: 21 mm caps (about 58% of the 36 mm strip), W/H about 0.65, stroke about 0.17, 4.5 mm letter gaps, round raised dots; the 51 is a slightly smaller die set about 4 mm higher.' },
+  },
+  {
+    id: 'bc-year-1952', label: '1952 base year', params: { width: 63, stroke: 18, curve: 'stadium', tracking: 12, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.5, wide: 1.2 },
+    overrides: BC_YEAR_1952,
+    evidence: { status: 'photo-averaged', specimens: [page('1952-1954')], notes: 'The 52 at the top right of the 1952 base, traced from 34 averaged samples per digit (W/H about 0.63).' },
   },
   {
     id: 'bc-tab-1953', label: '1953/54 tab year', params: { width: 61, stroke: 13, curve: 'stadium', tracking: 10, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.5, wide: 1.2 },
-    evidence: { status: 'legend-approximation', specimens: [page('1952-1954')], notes: 'Year pair on the 1953/54 renewal tabs: 32.5 mm digits, W/H about 0.6, light stroke about 0.13 (1953 148879 and loose tab, 1954 306142 and loose tab).' },
+    overrides: BC_TAB_1953,
+    evidence: { status: 'photo-averaged', specimens: [page('1952-1954')], notes: '5, 3 and 4 traced from averaged tab photos (3–7 samples). Year pair on the 1953/54 renewal tabs: 32.5 mm digits, W/H about 0.6, light stroke about 0.13 (1953 148879 and loose tab, 1954 306142 and loose tab).' },
   },
   {
     id: 'bc-legend-1955', label: 'Legend · 1955–63 long die', params: { width: 55, stroke: 15, curve: 'stadium', tracking: 9, one: 'plain', three: 'round', four: 'open', seven: 'straight', narrow: 0.5, wide: 1.2 },
@@ -102,7 +113,9 @@ export const DIE_PROFILES: readonly DieProfile[] = [
   {
     id: 'bc-early-1940', label: 'Early rounded dies (1940–54)',
     params: { width: 55, stroke: 14.5, curve: 'stadium', tracking: 11, one: 'flag', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'curved', nine: 'curved', narrow: 0.6, wide: 1.2, dash: { width: 4, weight: 17, y: 51 }, dot: 'round' },
-    evidence: { status: 'legend-approximation', specimens: [page('1940-1948'), page('1949-1951'), page('1952-1954')], notes: 'Bold, fairly wide rounded numerals measured from gallery photos: cap about 71 mm, W/H about 0.55, stroke about 0.145, gaps about 7.5 mm (1940 99·830, 1950 230·229, 1951 217·639, 1952 42-289). 1940–51 bases use an 11 mm raised round dot between the groups; the 1952 base a short, thick 14 × 12 mm dash. BCpl8s has no digit comparison for these years.' },
+    // Digits and A, B, F are traced from averaged photo samples; other letters fall back to the construction above.
+    overrides: BC_SERIAL_1940,
+    evidence: { status: 'photo-averaged', specimens: [page('1940-1948'), page('1949-1951'), page('1952-1954')], notes: 'Digits traced from the average of 32–64 labelled samples each from 1940–51 plate photos (A, B, F from 7–15 samples; other letters constructed). Bold, fairly wide rounded numerals measured from gallery photos: cap about 71 mm, W/H about 0.55, stroke about 0.145, gaps about 7.5 mm (1940 99·830, 1950 230·229, 1951 217·639, 1952 42-289). 1940–51 bases use an 11 mm raised round dot between the groups; the 1952 base a short, thick 14 × 12 mm dash. BCpl8s has no digit comparison for these years.' },
   },
   {
     id: 'bc-oakalla-1955', label: 'Oakalla block dies (1955–69)', maker: 'Oakalla Prison Plate Shop',

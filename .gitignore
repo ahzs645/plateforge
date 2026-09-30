@@ -5,3 +5,7 @@ dist
 .claude
 *.tsbuildinfo
 test-results/
+
+# Photo cache and intermediate bitmaps for scripts/trace-bc-dies
+scripts/trace-bc-dies/.cache/
+scripts/trace-bc-dies/out/

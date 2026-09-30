@@ -22,7 +22,8 @@ Each profile records how it was derived (`evidence.status`):
 | Status | Meaning | Profiles |
 |---|---|---|
 | `specimen-matched` | Width, stroke and digit shapes read from BCpl8s straight-on 0–9 digit comparisons (measured ratios ±0.02). | ACME 1978 and 1979, Hi-Signs 1982, the four Astrographic forms (male/female, neoprene-top, non-passenger, Classic), Waldale |
-| `legend-approximation` | Read from gallery plate photographs; BCpl8s has no digit comparison for these years. | 1913–14 porcelain, 1915–17 tin, 1918–23 block, 1924–39 Tacey and straight dies, 1940–54 early dies, Oakalla 1955–77, and all legend dies |
+| `photo-averaged` | Filled outlines traced from the average of many labelled photo samples (see [scripts/trace-bc-dies](../scripts/trace-bc-dies/README.md)). | 1940–54 serial digits and A/B/F, the BRITISH COLUMBIA legend, the 1940–51 stacked year, the 1952 52, the 1951 strip and the 1953/54 tab year |
+| `legend-approximation` | Read from gallery plate photographs; BCpl8s has no digit comparison for these years. | 1913–14 porcelain, 1915–17 tin, 1918–23 block, 1924–39 Tacey and straight dies, Oakalla 1955–77, other legend dies, and constructed fallbacks for characters the photos don't cover |
 
 Letters on every profile use the same construction as its digits. They were checked against plate photos only, so they are less certain than the digits.
 
@@ -86,4 +87,12 @@ The 1940–51 stacked-year bases, the 1951 strip, the 1952 base and the 1953/54 
 - **Slots and rim**: 1940–51 slot centres are ±80 mm from the middle and 12.5 mm in from the edges, on both widths. The rim is a heavy raised band at the edge.
 - **1951 strip** (`bc-strip-1951`): the strip top sits at about 94.5 mm and the bolts go through the lower slots. The legend has 21 mm caps about 9.5 mm in from each end, with a slightly smaller 51 set about 4 mm higher. The face is white, the ink a mid blue, and the stamped number uses small serif digits.
 - **1953/54 tabs** (`bc-tab-1953`): 32.5 mm year digits paired across 14–70 mm. The holes, digits and leaf centre about 41.5 mm across, because only the right side has a rim. The corners are rounder, and the colours were sampled from the photographs.
+
+### Traced glyphs
+
+The 1940–54 shapes themselves are now traced from photographs rather than constructed. No published font
+matches these dies, so `scripts/trace-bc-dies` averages every labelled character found in about 240 BCpl8s
+photos and traces the averages into filled outlines (`src/templates/dies/traced-1940.ts`). The profiles
+keep their constructed parameters as a fallback for characters the photos don't cover, such as most serial
+prefix letters. The layout measurements above are unchanged.
 

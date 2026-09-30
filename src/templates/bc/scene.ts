@@ -272,7 +272,7 @@ export function buildBcScene(design: BcDesign, parts: Parts, scope = 'bc-plate')
     inscriptions.push(serialLabel(serial, 137, 92.5, 100, 244, ink, 'serial', serialFont));
     inscriptions.push(L('BRITISH COLUMBIA', 137, 122, 30, 243, ink, 'province', {}, true));
     // Late 1953/54 over-run bases left this panel empty, pre-drilled for the tab.
-    if (!blank) inscriptions.push(L('52', w - 47.4, 55, 48.6, 55, ink, 'base-year', {}, true));
+    if (!blank) inscriptions.push((dies && dieLabel('bc-year-1952', '52', w - 47.4, 55, 48.6, 55, ink, 'base-year', true)) || L('52', w - 47.4, 55, 48.6, 55, ink, 'base-year', {}, true));
     if (!blank) inscriptions.push(n('use', { href: `#${id}-totem`, x: w - 85.2, y: 50.2, width: 69.4, height: 67.6, color: ink, 'data-role': 'base-emblem', 'data-accuracy': 'approximate' }));
   } else if (centenary) {
     inscriptions.push(L('BRITISH COLUMBIA', w / 2, 28, 24, w - 49, ink, 'province', {}, true));
