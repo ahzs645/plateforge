@@ -199,8 +199,9 @@ export function skeletonGlyph(char: string, params: SkeletonParams): SkeletonGly
       const d = p.dash ?? { width: w * 0.42 };
       return { advance: d.width + s, paths: [`M${f(h)} ${f(d.y ?? 52)} H${f(d.width + h)}`], ...(d.weight ? { stroke: d.weight } : {}) };
     }
+    // A round dot is a stroke-wide disc with the ordinary letter gap either side (1940–51 bases: 11 mm on 71 mm).
     case '·': return p.dot === 'round'
-      ? { advance: s * 1.9, paths: [`M${f(s * 0.95)} ${f(52)} h0.01`], stroke: f(s * 1.25), cap: 'round' }
+      ? { advance: s * 1.2, paths: [`M${f(s * 0.6)} ${f(50)} h0.01`], cap: 'round' }
       : g([`M${f(s * 0.8)} ${f(52)} h0.01`], s * 1.6);
     // Long raised bar used in front of four-digit numbers (1933–39).
     case '‒': return g([`M${f(h)} ${f(p.dash?.y ?? 52)} H${f(w * 0.9)}`], w * 0.9 + h);

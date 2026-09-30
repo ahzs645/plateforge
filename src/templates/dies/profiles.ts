@@ -22,12 +22,20 @@ export const DIE_PROFILES: readonly DieProfile[] = [
     evidence: { status: 'legend-approximation', specimens: [page('1985-2001')], notes: 'Lighter screened legends on flat and flag-era plates.' },
   },
   {
-    id: 'bc-legend-1940', label: 'Legend · 1940–54 bold', params: { width: 58, stroke: 16, curve: 'stadium', tracking: 9, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.5, wide: 1.2 },
-    evidence: { status: 'legend-approximation', specimens: [page('1940-1948'), page('1952-1954')], notes: 'Bold condensed caps, W/H about 0.55–0.6 (1940 99-830, 1948 76-487, 1952 42-289).' },
+    id: 'bc-legend-1940', label: 'Legend · 1940–54 bold', params: { width: 64, stroke: 20, curve: 'stadium', tracking: 16, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.36, wide: 1.2 },
+    evidence: { status: 'legend-approximation', specimens: [page('1940-1948'), page('1949-1951'), page('1952-1954')], notes: 'Bold caps with ordinary spacing, measured from photos: cap 20–21 mm, W/H about 0.65, stroke about 0.2, gaps 3–6 mm (1940 99·830, 1949 71·064, 1950 230·229, 1952 42-289). On long bases the gaps open up to fill the plate.' },
   },
   {
-    id: 'bc-strip-1951', label: 'Legend · 1951 renewal strip', params: { width: 66, stroke: 18, curve: 'stadium', tracking: 12, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.46, wide: 1.2, dot: 'round' },
-    evidence: { status: 'legend-approximation', specimens: [page('1949-1951')], notes: 'BRITISH·51·COLUMBIA on the blue-on-white strip: heavy, wide rounded caps (W/H about 0.65–0.7, stroke about 0.18) filling roughly 60% of the strip height, with round raised dots at mid-height. Matched by eye to strip photos.' },
+    id: 'bc-year-1940', label: 'Stacked year · 1940–51', params: { width: 42, stroke: 12, curve: 'stadium', tracking: 8, one: 'plain', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'straight', nine: 'curved', narrow: 0.6, wide: 1.2 },
+    evidence: { status: 'legend-approximation', specimens: [page('1940-1948'), page('1949-1951')], notes: 'Stacked two-digit year at the right of 1940–51 bases: 32 mm digits, W/H about 0.4–0.5 (1940 99·830, 1950 230·229, 1951 217·639).' },
+  },
+  {
+    id: 'bc-strip-1951', label: 'Legend · 1951 renewal strip', params: { width: 65, stroke: 17, curve: 'stadium', tracking: 21, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.32, wide: 1.25, dot: 'round' },
+    evidence: { status: 'legend-approximation', specimens: [page('1949-1951')], notes: 'BRITISH·51·COLUMBIA on the blue-on-white strip, measured from 1951 217·639 and loose long/short strips: 21 mm caps (about 58% of the 36 mm strip), W/H about 0.65, stroke about 0.17, 4.5 mm letter gaps, round raised dots; the 51 is a slightly smaller die set about 4 mm higher.' },
+  },
+  {
+    id: 'bc-tab-1953', label: '1953/54 tab year', params: { width: 61, stroke: 13, curve: 'stadium', tracking: 10, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.5, wide: 1.2 },
+    evidence: { status: 'legend-approximation', specimens: [page('1952-1954')], notes: 'Year pair on the 1953/54 renewal tabs: 32.5 mm digits, W/H about 0.6, light stroke about 0.13 (1953 148879 and loose tab, 1954 306142 and loose tab).' },
   },
   {
     id: 'bc-legend-1955', label: 'Legend · 1955–63 long die', params: { width: 55, stroke: 15, curve: 'stadium', tracking: 9, one: 'plain', three: 'round', four: 'open', seven: 'straight', narrow: 0.5, wide: 1.2 },
@@ -93,8 +101,8 @@ export const DIE_PROFILES: readonly DieProfile[] = [
   },
   {
     id: 'bc-early-1940', label: 'Early rounded dies (1940–54)',
-    params: { width: 50, stroke: 16, curve: 'stadium', tracking: 9, one: 'flag', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'curved', nine: 'curved', narrow: 0.6, wide: 1.2, dash: { width: 16 } },
-    evidence: { status: 'legend-approximation', specimens: [page('1940-1948'), page('1949-1951'), page('1952-1954')], notes: 'Bold, fairly wide rounded numerals (W/H about 0.5, stroke 0.15–0.18) with a curved 7 and closed 4, read from gallery photos (1948 76-487, 1951 217-639); BCpl8s has no digit comparison for these years.' },
+    params: { width: 55, stroke: 14.5, curve: 'stadium', tracking: 11, one: 'flag', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'curved', nine: 'curved', narrow: 0.6, wide: 1.2, dash: { width: 4, weight: 17, y: 51 }, dot: 'round' },
+    evidence: { status: 'legend-approximation', specimens: [page('1940-1948'), page('1949-1951'), page('1952-1954')], notes: 'Bold, fairly wide rounded numerals measured from gallery photos: cap about 71 mm, W/H about 0.55, stroke about 0.145, gaps about 7.5 mm (1940 99·830, 1950 230·229, 1951 217·639, 1952 42-289). 1940–51 bases use an 11 mm raised round dot between the groups; the 1952 base a short, thick 14 × 12 mm dash. BCpl8s has no digit comparison for these years.' },
   },
   {
     id: 'bc-oakalla-1955', label: 'Oakalla block dies (1955–69)', maker: 'Oakalla Prison Plate Shop',

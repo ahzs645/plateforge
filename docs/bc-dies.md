@@ -9,7 +9,7 @@ A die profile is a set of monoline glyph skeletons (`src/templates/dies/skeleton
 - advance width and stroke weight
 - bowl construction: stadium, oval or rounded box
 - diagnostic shapes: open or closed 4, a flag or foot on the 1 (long or short flag), a flat or pointed A, a spur on the J, flat-topped or round 3, straight, curved or bent 7, bowl styles for single glyphs such as the 0 and P, and the tails of 6 and 9
-- the separator: dash, square dot, or the long leading bar used 1933–39
+- the separator: dash, square or round dot, or the long leading bar used 1933–39
 
 `src/templates/dies/engine.ts` places glyphs at their own advances and scales a run **uniformly**. If a run cannot fit, the whole run is reduced and marked `data-fit="reduced"`; glyphs are never stretched individually. Legends that were stamped across the full plate width are spread with letter spacing, not by widening letters.
 
@@ -74,3 +74,16 @@ The lettering control still offers editable font text and the four procedural co
   - the Oakalla separator on the 1972 over-run and 1973 blocks
 - The 1940 and 1949 samples' pear-shaped zeros are not drawn.
 - The flag base's slogan is a typeface stand-in (serif, mixed case). Dies here cover capitals, digits and separators only.
+
+## 1940–54 bases and renewal pieces, measured from photos (September 2026)
+
+The 1940–51 stacked-year bases, the 1951 strip, the 1952 base and the 1953/54 tabs were overlaid on BCpl8s photographs (1940 99·830, 1949 71·064 and 121·464, 1950 230·229, 1951 217·639 and the loose long/short strips, 1952 42-289, 1953 148879 and loose tab, 1954 306142 and loose tab). Positions were then measured from the photos rather than estimated. The photographs are references only and are not bundled.
+
+- **Separator**: 1940–51 bases carry an 11 mm raised **round dot**, not a dash (`dot: 'round'` on `bc-early-1940`). The 1952 base has a short, thick 14 × 12 mm dash.
+- **Serial** (`bc-early-1940`): cap about 71 mm, W/H about 0.55, stroke about 0.145, gaps about 7.5 mm. On 1940–51 bases it spans about 13 mm to w − 29 mm on a 90 mm baseline; on the 1952 base it spans 15–258 mm on a 92.5 mm baseline.
+- **Stacked year** (`bc-year-1940`): 32 mm digits 15 mm from the right edge, level with the top and baseline of the serial.
+- **Legend** (`bc-legend-1940`): 20.5–21 mm bold caps with ordinary 3–6 mm gaps. Only the word gap widens on long bases.
+- **Slots and rim**: 1940–51 slot centres are ±80 mm from the middle and 12.5 mm in from the edges, on both widths. The rim is a heavy raised band at the edge.
+- **1951 strip** (`bc-strip-1951`): the strip top sits at about 94.5 mm and the bolts go through the lower slots. The legend has 21 mm caps about 9.5 mm in from each end, with a slightly smaller 51 set about 4 mm higher. The face is white, the ink a mid blue, and the stamped number uses small serif digits.
+- **1953/54 tabs** (`bc-tab-1953`): 32.5 mm year digits paired across 14–70 mm. The holes, digits and leaf centre about 41.5 mm across, because only the right side has a rim. The corners are rounder, and the colours were sampled from the photographs.
+
