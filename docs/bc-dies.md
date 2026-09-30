@@ -22,8 +22,8 @@ Each profile records how it was derived (`evidence.status`):
 | Status | Meaning | Profiles |
 |---|---|---|
 | `specimen-matched` | Width, stroke and digit shapes read from BCpl8s straight-on 0–9 digit comparisons (measured ratios ±0.02). | ACME 1978 and 1979, Hi-Signs 1982, the four Astrographic forms (male/female, neoprene-top, non-passenger, Classic), Waldale |
-| `photo-averaged` | Filled outlines traced from the average of many labelled photo samples (see [scripts/trace-bc-dies](../scripts/trace-bc-dies/README.md)). | 1940–54 serial digits and A/B/F, the BRITISH COLUMBIA legend, the 1940–51 stacked year, the 1952 52, the 1951 strip and the 1953/54 tab year |
-| `legend-approximation` | Read from gallery plate photographs; BCpl8s has no digit comparison for these years. | 1913–14 porcelain, 1915–17 tin, 1918–23 block, 1924–39 Tacey and straight dies, Oakalla 1955–77, other legend dies, and constructed fallbacks for characters the photos don't cover |
+| `photo-averaged` | Filled outlines traced from the average of many labelled photo samples (see [scripts/trace-bc-dies](../scripts/trace-bc-dies/README.md)). | 1915–16 MacDonald and 1916–17 Tacey tin numerals; the 1924–39 slanted (1924–27, 1931–32), straight (1928–29, 1933–35) and slimline (1936–39) serial and legend dies; the 1930 Thompson serial and legend; each 1924–39 year's date stamp; the 1940–54 serial digits and A/B/F, BRITISH COLUMBIA legend, 1940–51 stacked year, 1952 52, 1951 strip and 1953/54 tab year |
+| `legend-approximation` | Read from gallery plate photographs; BCpl8s has no digit comparison for these years. | 1913–14 porcelain, 1918–23 block, Oakalla 1955–77, other legend dies, and constructed fallbacks for characters the photos don't cover (most prefix letters, and the 1930 8) |
 
 Letters on every profile use the same construction as its digits. They were checked against plate photos only, so they are less certain than the digits.
 
@@ -52,7 +52,8 @@ The narrower Waldale **"Mississippi"** die on Memorial Cross plates was checked 
 
 | Plates | Serial die | Separator |
 |---|---|---|
-| 1940–54 | early rounded | dash |
+| 1940–51 | early rounded | raised round dot |
+| 1952–54 | early rounded | short, thick dash |
 | 1955–69 | Oakalla block | square dot |
 | 1970–77 | Oakalla (open 4 from 1973) | square dot |
 | 1978 ACME subset | ACME 1978 | dash |
@@ -114,3 +115,24 @@ cruder arms. 1917 is split by coat-of-arms quality, following BCpl8s's three pho
 The change-over numbers (about 3,000, 10,000 and 12,000) are estimates, because photographs are missing between
 3,000 and 6,500. The formats use 1–2,999, 3,000–9,999 and 10,000–13,000.
 
+### 1924–39: three die families, a one-off 1930 set, and per-year date stamps
+
+The same photo averaging was run over the 1924–39 passenger pages. The results, and BCpl8s's own notes, give:
+
+- **Slanted "oval or scroll" dies** (`bc-tacey-1924`, legend `bc-legend-1924`): 1924–27, and again in 1931–32.
+  1932 previously used the straight dies; the photos show the slanted ones.
+- **Straight dies** (`bc-straight-1928`, legend `bc-legend-1928`): 1928–29 and 1933–35, with the long leading bar on
+  four-figure numbers from 1933.
+- **Slimline dies** (`bc-tacey-1936`, legend `bc-legend-1936`): 1936–39, with the date stacked at the right.
+- **1930 Thompson dies** (`bc-thompson-1930`, legend `bc-legend-1930`): made by Thompson Heating & Ventilating and
+  never used again. The average comes from seven plates. None of them shows an 8, so the 8 is built from the traced
+  3 and its mirror image.
+- **Separators**: a raised dot on 1930 and 1936–39 plates; a dash on the other years.
+- **Date stamps** (`bc-date-<year>`): the small date was struck with its own dies, which changed from year to year,
+  so each year has its own traced date die rather than a scaled-down serial die.
+- **Layout**: serial, legend and date positions are medians measured over the photographed plates
+  (`scripts/trace-bc-dies/layout.py`).
+
+The weakest averages have few samples, such as the 1936–39 7 (three photos) and 1924's date 4. Sample counts, and the script that
+builds a 0–9 die chart for each era from the photos (kept out of the repo), are in [scripts/trace-bc-dies](../scripts/trace-bc-dies/README.md). The era survey
+across every BCpl8s page is in [bc-font-eras.md](bc-font-eras.md).
