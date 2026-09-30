@@ -13,5 +13,7 @@ python3 vectorize.py '{"serial": ["serial-4051", "0123456789"], "serialLetters":
   "strip": ["strip-all", "BRITSHCOLUMA51", 4.0], "tab": ["tab-all", "534", 3.0]}'
 python3 tin.py .cache/tin
 python3 vectorize.py '{"macdonald": ["serial-macdonald", "0123456789", 3.2], "tacey": ["serial-tacey", "0123456789", 4.0]}' out/traced-tin.json
+python3 series.py series/1930.json
+python3 vectorize.py '{"serial": ["thompson-1930-serial", "012345679", 3.0], "legend": ["thompson-1930-legend", "BRITSHCOLUMA", 3.0]}' out/traced-1930.json
 python3 emit.py ../../src/templates/dies/traced-1940.ts
 echo "wrote src/templates/dies/traced-1940.ts (averaged bitmaps are in out/)"

@@ -25,6 +25,18 @@ copies 1970s-or-later U.S. or Ontario lettering. So these glyphs are built from 
 Run everything with `./run.sh` (Python 3 with `numpy pillow scipy potracer`). The output is
 deterministic: rerunning on the same photos reproduces the committed file.
 
+## Die-type charts and small series
+
+`series.py series/<name>.json` handles a series with only a few photos, such as 1930's one-year Thompson dies.
+The config lists each photo, the text it shows and where it can be downloaded. It writes:
+
+- `out/<name>-chart.png`: the sharpest real crop of each digit 0–9, laid out like the BCpl8s "Die Types (0-9)"
+  charts, captioned with the plate it came from. A grey tile marks a digit no photo shows.
+- the per-character averages for `vectorize.py`.
+
+The charts are built from BCpl8s photographs, so they stay in the git-ignored `out/` folder and are not committed.
+1930 has no photographed 8; `emit.py` builds one from the traced 3 and its mirror image and marks it as synthesised.
+
 ## Sample counts (September 2026, full-size photos where available)
 
 | Set | Samples per character |
@@ -38,6 +50,8 @@ deterministic: rerunning on the same photos reproduces the committed file.
 | 1953/54 tab year | 3–7 |
 | 1915–16 numerals, MacDonald | 6–14 (the 4 is loosely aligned and the least reliable) |
 | 1916 over-run and 1917 numerals, Tacey | 2–17 |
+| 1930 numerals, Thompson | 1–6 (no 8; synthesised from the 3) |
+| 1930 legend, Thompson | 6 (I: 18, B: 12) |
 
 Characters with few samples are the least reliable. More photos, especially high-resolution
 ones, can be dropped into `.cache/` (named `YYYY-SERIAL.jpg`) to strengthen the averages.

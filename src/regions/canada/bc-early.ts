@@ -130,9 +130,10 @@ function annual1924(year: number, b: Base, die: string, dashYear: boolean, leadi
     holeAt: { x: [0.195, 0.805], y: [0.06] }, rim: { inset: 3, width: 1.6 },
     legends: [
       { text: `${dashYear ? '-' : ''}${String(year).slice(2)}`, x: b.w * 0.885, baseline: b.h * 0.49, cap: b.h * 0.17, maxWidth: b.w * 0.14, die, role: 'year' },
-      { text: 'BRITISH COLUMBIA', x: b.w * (year === 1930 ? 0.48 : 0.5), baseline: b.h * 0.88, cap: b.h * 0.13, maxWidth: b.w * legendWidth, die: 'bc-legend-1924', role: 'province', spread: true },
+      { text: 'BRITISH COLUMBIA', x: b.w * (year === 1930 ? 0.48 : 0.5), baseline: b.h * 0.88, cap: b.h * 0.13, maxWidth: b.w * legendWidth, die: year === 1930 ? 'bc-legend-1930' : 'bc-legend-1924', role: 'province', spread: true },
     ],
-    serial: { x: b.w * 0.43, baseline: b.h * 0.67, cap: b.h * 0.54, maxWidth: b.w * 0.74, die, leadingBar },
+    // 1930's Thompson plates separate the groups with a small raised dot (36·349, 102·963), not a dash.
+    serial: { x: b.w * 0.43, baseline: b.h * 0.67, cap: b.h * 0.54, maxWidth: b.w * 0.74, die, leadingBar, ...(year === 1930 ? { separator: { kind: 'dot' as const } } : {}) },
   });
 }
 
@@ -162,7 +163,7 @@ const annual: Array<[number, Base, string, boolean, boolean, number]> = [
   [1927, { w: 340, h: 148, bg: '#e67620', ink: '#31302f' }, 'bc-tacey-1924', false, false, 78000],
   [1928, { w: 340, h: 147, bg: '#2e2a29', ink: '#d47e38' }, 'bc-straight-1928', false, false, 90000],
   [1929, { w: 345, h: 148, bg: '#dcc79a', ink: '#333a36' }, 'bc-straight-1928', false, false, 99999],
-  [1930, { w: 338, h: 148, bg: '#8e2c2a', ink: '#d99206' }, 'bc-straight-1928', true, false, 99999],
+  [1930, { w: 338, h: 148, bg: '#8e2c2a', ink: '#d99206' }, 'bc-thompson-1930', true, false, 99999],
   [1931, { w: 338, h: 148, bg: '#ece2cc', ink: '#2b2c2e' }, 'bc-tacey-1924', false, false, 99999],
   // 1932 photos (223, 103-216) show the curved, slanted Tacey dies of 1931, not the straight ones of 1933–35.
   [1932, { w: 340, h: 149, bg: '#4a2722', ink: '#dacfac' }, 'bc-tacey-1924', false, false, 99999],
@@ -175,14 +176,14 @@ const annualNotes: Record<number, string> = {
   1926: 'Black on white with a -26 date; most survivors have discoloured paint.',
   1927: 'Last year of the 1924 slanted dies; early numbers have extra top holes.',
   1928: 'New straighter dies; one- to three-figure numbers are centred.',
-  1930: 'Made by Thompson Heating & Ventilating with one-off dies never used again (drawn here with the 1928 straight dies as the nearest match) and a -30 date; six-figure numbers went on a longer base.',
+  1930: 'Made by Thompson Heating & Ventilating with one-off dies never used again (traced from photographs; no 8 is known, so it is built from the 3) and a -30 date; six-figure numbers went on a longer base.',
   1931: 'Slanted dies return; about 7,000 unissued sets were dumped at sea.',
   1932: 'The slanted Tacey dies again; about 30,000 sets went unissued, and some turned up in an Oakalla wall in 1991.',
   1933: 'Straight dies 1933–35; four-figure numbers carry a long leading bar.',
   1934: 'Licence year moved to March 1; four-figure numbers carry the leading bar.',
 };
 const longBases: Array<[number, Base, string, number, number]> = [
-  [1930, { w: 355, h: 148, bg: '#8e2c2a', ink: '#d99206' }, 'bc-straight-1928', 100001, 105000],
+  [1930, { w: 355, h: 148, bg: '#8e2c2a', ink: '#d99206' }, 'bc-thompson-1930', 100001, 105000],
   [1931, { w: 355, h: 148, bg: '#ece2cc', ink: '#2b2c2e' }, 'bc-tacey-1924', 100000, 115000],
   [1935, { w: 360, h: 149, bg: '#e6e8e2', ink: '#1a344f' }, 'bc-straight-1928', 100000, 105000],
 ];

@@ -5,7 +5,7 @@
  * reconstructions for illustration, not recovered tooling.
  */
 import type { DieProfile } from './engine';
-import { BC_LEGEND_1940, BC_SERIAL_1940, BC_STRIP_1951, BC_TAB_1953, BC_TIN_MACDONALD, BC_TIN_TACEY, BC_YEAR_1940, BC_YEAR_1952 } from './traced-1940';
+import { BC_LEGEND_1940, BC_SERIAL_1940, BC_STRIP_1951, BC_TAB_1953, BC_LEGEND_1930, BC_THOMPSON_1930, BC_TIN_MACDONALD, BC_TIN_TACEY, BC_YEAR_1940, BC_YEAR_1952 } from './traced-1940';
 
 const page = (period: string) => ({ title: `BCpl8s · Passenger ${period.replace('-', '–')}`, url: `https://www.bcpl8s.ca/Passenger-${period}.html` });
 const lettersNote = 'Letters follow the same construction and were checked against plate photos only.';
@@ -111,6 +111,18 @@ export const DIE_PROFILES: readonly DieProfile[] = [
     id: 'bc-straight-1928', label: '1928–30, 1933–35 straight dies',
     params: { width: 46, stroke: 14, curve: 'stadium', tracking: 9, one: 'flag-base', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'straight', nine: 'curved', narrow: 0.62, wide: 1.2, dash: { width: 14 } },
     evidence: { status: 'legend-approximation', specimens: [page('1924-1929'), page('1931-1935')], notes: 'Straighter upright numerals introduced in 1928 (1929 41-311).' },
+  },
+  {
+    id: 'bc-thompson-1930', label: '1930 one-year dies (Thompson)', maker: 'Thompson Heating & Ventilating',
+    params: { width: 49, stroke: 16, curve: 'stadium', tracking: 6, one: 'plain', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'straight', nine: 'curved', narrow: 0.4, wide: 1.2 },
+    overrides: BC_THOMPSON_1930,
+    evidence: { status: 'photo-averaged', specimens: [page('1930')], notes: 'Dies used only in 1930 (BCpl8s: "one-and-done"), traced from averaged 1930 passenger and doctor plates (1–6 samples per digit). No 8 is photographed; it is built from the traced 3 and its mirror image.' },
+  },
+  {
+    id: 'bc-legend-1930', label: 'Legend · 1930 (Thompson)', maker: 'Thompson Heating & Ventilating',
+    params: { width: 77, stroke: 17, curve: 'stadium', tracking: 12, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.22, wide: 1.3 },
+    overrides: BC_LEGEND_1930,
+    evidence: { status: 'photo-averaged', specimens: [page('1930')], notes: 'Wide BRITISH COLUMBIA letters (W/H about 0.77), traced from six 1930 plates.' },
   },
   {
     id: 'bc-tacey-1936', label: '1936–39 slanted dies',
