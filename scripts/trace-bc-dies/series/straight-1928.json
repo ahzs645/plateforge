@@ -1,0 +1,209 @@
+{
+ "name": "straight-1928",
+ "title": "1928-29 & 1933-35 British Columbia Die Types (0-9) · Tacey straight",
+ "band": [
+  0.04,
+  0.8,
+  0.02,
+  0.83
+ ],
+ "height": [
+  0.3,
+  0.8
+ ],
+ "photos": [
+  {
+   "file": ".cache/dates/1928-101972.jpg",
+   "text": "101972",
+   "label": "1928 101-972"
+  },
+  {
+   "file": ".cache/dates/1928-160541.jpg",
+   "text": "160541",
+   "label": "1928 160-541"
+  },
+  {
+   "file": ".cache/dates/1928-26714.jpg",
+   "text": "26714",
+   "label": "1928 26-714"
+  },
+  {
+   "file": ".cache/dates/1928-27582(XL).jpg",
+   "text": "27582",
+   "label": "1928 27-582"
+  },
+  {
+   "file": ".cache/dates/1928-389.jpg",
+   "text": "389",
+   "label": "1928 389"
+  },
+  {
+   "file": ".cache/dates/1928-426(XL).jpg",
+   "text": "426",
+   "label": "1928 426"
+  },
+  {
+   "file": ".cache/dates/1928-4291(XL).jpg",
+   "text": "4291",
+   "label": "1928 4-291"
+  },
+  {
+   "file": ".cache/dates/1928-4481.jpg",
+   "text": "4481",
+   "label": "1928 4-481"
+  },
+  {
+   "file": ".cache/dates/1929-100000(XL).jpg",
+   "text": "100000",
+   "label": "1929 100-000"
+  },
+  {
+   "file": ".cache/dates/1929-1001.jpg",
+   "text": "1001",
+   "label": "1929 1-001"
+  },
+  {
+   "file": ".cache/dates/1929-120234.jpg",
+   "text": "120234",
+   "label": "1929 120-234"
+  },
+  {
+   "file": ".cache/dates/1929-17235.jpg",
+   "text": "17235",
+   "label": "1929 17-235"
+  },
+  {
+   "file": ".cache/dates/1929-41311(XL).jpg",
+   "text": "41311",
+   "label": "1929 41-311"
+  },
+  {
+   "file": ".cache/dates/1929-45069.jpg",
+   "text": "45069",
+   "label": "1929 45-069"
+  },
+  {
+   "file": ".cache/dates/1929-51677(XL).jpg",
+   "text": "51677",
+   "label": "1929 51-677"
+  },
+  {
+   "file": ".cache/dates/1929-72515(XL).jpg",
+   "text": "72515",
+   "label": "1929 72-515"
+  },
+  {
+   "file": ".cache/dates/1929-79394(XL).jpg",
+   "text": "79394",
+   "label": "1929 79-394"
+  },
+  {
+   "file": ".cache/dates/1929-99450(XL).jpg",
+   "text": "99450",
+   "label": "1929 99-450"
+  },
+  {
+   "file": ".cache/dates/1933-13496(XL).jpg",
+   "text": "13496",
+   "label": "1933 13-496"
+  },
+  {
+   "file": ".cache/dates/1933-144834.jpg",
+   "text": "144834",
+   "label": "1933 144-834"
+  },
+  {
+   "file": ".cache/dates/1933-180(XL).jpg",
+   "text": "180",
+   "label": "1933 180"
+  },
+  {
+   "file": ".cache/dates/1933-21268(XL).jpg",
+   "text": "21268",
+   "label": "1933 21-268"
+  },
+  {
+   "file": ".cache/dates/1933-5076.jpg",
+   "text": "5076",
+   "label": "1933 5-076"
+  },
+  {
+   "file": ".cache/dates/1933-75(XL).jpg",
+   "text": "75",
+   "label": "1933 75"
+  },
+  {
+   "file": ".cache/dates/1933-9(XL).jpg",
+   "text": "9",
+   "label": "1933 9"
+  },
+  {
+   "file": ".cache/dates/1934-175682.jpg",
+   "text": "175682",
+   "label": "1934 175-682"
+  },
+  {
+   "file": ".cache/dates/1934-25(XL).jpg",
+   "text": "25",
+   "label": "1934 25"
+  },
+  {
+   "file": ".cache/dates/1934-55191(XL).jpg",
+   "text": "55191",
+   "label": "1934 55-191"
+  },
+  {
+   "file": ".cache/dates/1934-612(XL).jpg",
+   "text": "612",
+   "label": "1934 612"
+  },
+  {
+   "file": ".cache/dates/1934-6814(XL).jpg",
+   "text": "6814",
+   "label": "1934 6-814"
+  },
+  {
+   "file": ".cache/dates/1934-71368.jpg",
+   "text": "71368",
+   "label": "1934 71-368"
+  },
+  {
+   "file": ".cache/dates/1935-101830(XL).jpg",
+   "text": "101830",
+   "label": "1935 101-830"
+  },
+  {
+   "file": ".cache/dates/1935-1984(XL).jpg",
+   "text": "1984",
+   "label": "1935 1-984"
+  },
+  {
+   "file": ".cache/dates/1935-56144(XL).jpg",
+   "text": "56144",
+   "label": "1935 56-144"
+  },
+  {
+   "file": ".cache/dates/1935-933(XL).jpg",
+   "text": "933",
+   "label": "1935 933"
+  }
+ ],
+ "extra": [
+  {
+   "kind": "legend",
+   "text": "BRITISHCOLUMBIA",
+   "band": [
+    0.7,
+    0.98,
+    0.02,
+    0.98
+   ],
+   "height": [
+    0.08,
+    0.3
+   ],
+   "minw": 0.003,
+   "ratio": 0.015
+  }
+ ]
+}

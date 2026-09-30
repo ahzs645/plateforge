@@ -5,7 +5,7 @@
  * reconstructions for illustration, not recovered tooling.
  */
 import type { DieProfile } from './engine';
-import { BC_DATES, BC_LEGEND_1940, BC_SERIAL_1940, BC_STRIP_1951, BC_TAB_1953, BC_LEGEND_1930, BC_THOMPSON_1930, BC_TIN_MACDONALD, BC_TIN_TACEY, BC_YEAR_1940, BC_YEAR_1952 } from './traced-1940';
+import { BC_DATES, BC_LEGEND_SLANT, BC_LEGEND_SLIM, BC_LEGEND_STRAIGHT, BC_SLANT_1924, BC_SLIM_1936, BC_STRAIGHT_1928, BC_LEGEND_1940, BC_SERIAL_1940, BC_STRIP_1951, BC_TAB_1953, BC_LEGEND_1930, BC_THOMPSON_1930, BC_TIN_MACDONALD, BC_TIN_TACEY, BC_YEAR_1940, BC_YEAR_1952 } from './traced-1940';
 
 const page = (period: string) => ({ title: `BCpl8s · Passenger ${period.replace('-', '–')}`, url: `https://www.bcpl8s.ca/Passenger-${period}.html` });
 const lettersNote = 'Letters follow the same construction and were checked against plate photos only.';
@@ -105,12 +105,14 @@ export const DIE_PROFILES: readonly DieProfile[] = [
     id: 'bc-tacey-1924', label: '1924–27, 1931 slanted dies', maker: 'J.R. Tacey & Son',
     params: { width: 46, stroke: 14, curve: 'stadium', tracking: 9, one: 'flag-base', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'straight', nine: 'curved', narrow: 0.62, wide: 1.2, dash: { width: 14 } },
     slant: 5,
-    evidence: { status: 'legend-approximation', specimens: [page('1924-1929'), page('1931-1935')], notes: 'Slanted rounded numerals used 1924–27 and again in 1931 (1924 25-610).' },
+    overrides: BC_SLANT_1924,
+    evidence: { status: 'photo-averaged', specimens: [page('1924-1929'), page('1931-1935')], notes: 'Traced from averaged photos of 1924–27 and 1931–32 plates (4–15 samples per digit). Slanted rounded numerals used 1924–27 and again in 1931 (1924 25-610).' },
   },
   {
     id: 'bc-straight-1928', label: '1928–30, 1933–35 straight dies',
     params: { width: 46, stroke: 14, curve: 'stadium', tracking: 9, one: 'flag-base', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'straight', nine: 'curved', narrow: 0.62, wide: 1.2, dash: { width: 14 } },
-    evidence: { status: 'legend-approximation', specimens: [page('1924-1929'), page('1931-1935')], notes: 'Straighter upright numerals introduced in 1928 (1929 41-311).' },
+    overrides: BC_STRAIGHT_1928,
+    evidence: { status: 'photo-averaged', specimens: [page('1924-1929'), page('1931-1935')], notes: 'Traced from averaged photos of 1928–29 and 1933–35 plates (6–15 samples per digit). Straighter upright numerals introduced in 1928 (1929 41-311).' },
   },
   {
     id: 'bc-thompson-1930', label: '1930 one-year dies (Thompson)', maker: 'Thompson Heating & Ventilating',
@@ -128,11 +130,23 @@ export const DIE_PROFILES: readonly DieProfile[] = [
     id: 'bc-tacey-1936', label: '1936–39 slanted dies',
     params: { width: 50, stroke: 13, curve: 'oval', tracking: 9, one: 'flag-base', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'straight', nine: 'curved', narrow: 0.62, wide: 1.2, dash: { width: 14 } },
     slant: 4,
-    evidence: { status: 'legend-approximation', specimens: [page('1936-1939')], notes: 'Slanted Tacey-style dies with an oval 0; the 1938 dies were made to match 1937 (1937 -2-200).' },
+    overrides: BC_SLIM_1936,
+    evidence: { status: 'photo-averaged', specimens: [page('1936-1939')], notes: 'Traced from averaged photos of 1936–39 plates (3–19 samples per digit). Slanted Tacey-style dies with an oval 0; the 1938 dies were made to match 1937 (1937 -2-200).' },
   },
   {
     id: 'bc-legend-1924', label: 'Legend · 1924–39', params: { width: 66, stroke: 14, curve: 'stadium', tracking: 9, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.5, wide: 1.2 },
-    evidence: { status: 'legend-approximation', specimens: [page('1924-1929'), page('1936-1939')], notes: 'Bold condensed BRITISH COLUMBIA legend spanning the lower edge.' },
+    overrides: BC_LEGEND_SLANT,
+    evidence: { status: 'photo-averaged', specimens: [page('1924-1929'), page('1936-1939')], notes: 'Letters traced from 1924–27 and 1931–32 plates (19 samples each). Bold condensed BRITISH COLUMBIA legend spanning the lower edge.' },
+  },
+  {
+    id: 'bc-legend-1928', label: 'Legend · 1928–29, 1933–35', params: { width: 70, stroke: 17, curve: 'stadium', tracking: 9, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.3, wide: 1.25 },
+    overrides: BC_LEGEND_STRAIGHT,
+    evidence: { status: 'photo-averaged', specimens: [page('1924-1929'), page('1931-1935')], notes: 'BRITISH COLUMBIA on the straight-die years, traced from averaged photos (16 samples per letter).' },
+  },
+  {
+    id: 'bc-legend-1936', label: 'Legend · 1936–39 slimline', params: { width: 66, stroke: 17, curve: 'stadium', tracking: 9, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.3, wide: 1.2 },
+    overrides: BC_LEGEND_SLIM,
+    evidence: { status: 'photo-averaged', specimens: [page('1936-1939')], notes: 'BRITISH COLUMBIA on the 1936–39 slimline plates, traced from averaged photos (12 samples per letter).' },
   },
   {
     id: 'bc-early-1940', label: 'Early rounded dies (1940–54)',

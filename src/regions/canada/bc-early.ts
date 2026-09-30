@@ -125,13 +125,15 @@ function renewalTab(year: number, x: number, y: number, width: number, height: n
 
 // ── 1924–1935: serial with a small year at right, BRITISH COLUMBIA below ───
 function annual1924(year: number, b: Base, die: string, dashYear: boolean, leadingBar: boolean, long = false): KitRecipe {
-  const legendWidth = year === 1930 ? 0.8 : 0.9;
+  const legendWidth = year === 1930 ? 0.8 : 0.925;
   return recipe(`early-${year}${long ? '-long' : ''}`, `${year}${long ? ' long base' : ''}`, b, year === 1930 ? '1930' : year < 1930 ? '1924-1929' : '1931-1935', {
     holeAt: { x: [0.195, 0.805], y: [0.06] }, rim: { inset: 3, width: 1.6 },
     legends: [
       // The date was struck with its own small dies each year, not the serial's (traced per year from photos).
-      { text: `${dashYear ? '-' : ''}${String(year).slice(2)}`, x: b.w * 0.885, baseline: b.h * 0.49, cap: b.h * 0.17, maxWidth: b.w * 0.14, die: `bc-date-${year}`, role: 'year' },
-      { text: 'BRITISH COLUMBIA', x: b.w * (year === 1930 ? 0.48 : 0.5), baseline: b.h * 0.88, cap: b.h * 0.13, maxWidth: b.w * legendWidth, die: year === 1930 ? 'bc-legend-1930' : 'bc-legend-1924', role: 'province', spread: true },
+      // Measured over about 50 photographed plates: digits 25% of the height across 0.83–0.96 of the width, baseline at 51%.
+      { text: `${dashYear ? '-' : ''}${String(year).slice(2)}`, x: b.w * (dashYear ? 0.878 : 0.8925), baseline: b.h * 0.513, cap: b.h * 0.253, maxWidth: b.w * (dashYear ? 0.17 : 0.14), die: `bc-date-${year}`, role: 'year' },
+      // Legend 16.5% of the height, spanning about 0.035–0.96 of the width, baseline at 90%.
+      { text: 'BRITISH COLUMBIA', x: b.w * (year === 1930 ? 0.48 : 0.497), baseline: b.h * 0.9, cap: b.h * 0.165, maxWidth: b.w * legendWidth, die: year === 1930 ? 'bc-legend-1930' : die === 'bc-straight-1928' ? 'bc-legend-1928' : 'bc-legend-1924', role: 'province', spread: true },
     ],
     // 1930's Thompson plates separate the groups with a small raised dot (36·349, 102·963), not a dash.
     serial: { x: b.w * 0.43, baseline: b.h * 0.67, cap: b.h * 0.54, maxWidth: b.w * 0.74, die, leadingBar, ...(year === 1930 ? { separator: { kind: 'dot' as const } } : {}) },
@@ -144,10 +146,12 @@ function annual1936(year: number, b: Base): KitRecipe {
   return recipe(`early-${year}`, String(year), b, '1936-1939', {
     holeAt: { x: [0.22, 0.77], y: [0.1, 0.9] }, rim: { inset: 3, width: 1.6 },
     legends: [
-      ...stacked(yy, b.w * 0.93, b.h * 0.36, b.h * 0.22, b.h * 0.19, `bc-date-${year}`, 'year'),
-      { text: 'BRITISH COLUMBIA', x: b.w * 0.505, baseline: b.h * 0.85, cap: b.h * 0.12, maxWidth: b.w * 0.87, die: 'bc-legend-1924', role: 'province', spread: true },
+      // Measured over 22 plates: 23%-high digits centred at 0.94 of the width, baselines at 37% and 63%.
+      ...stacked(yy, b.w * 0.938, b.h * 0.367, b.h * 0.264, b.h * 0.233, `bc-date-${year}`, 'year'),
+      { text: 'BRITISH COLUMBIA', x: b.w * 0.504, baseline: b.h * 0.866, cap: b.h * 0.155, maxWidth: b.w * 0.88, die: 'bc-legend-1936', role: 'province', spread: true },
     ],
-    serial: { x: b.w * 0.465, baseline: b.h * 0.65, cap: b.h * 0.48, maxWidth: b.w * 0.8, die: 'bc-tacey-1936', leadingBar: true },
+    // Serial 50.5% of the height, spanning up to 0.045–0.89 of the width; a raised dot between the groups (3·620, 30·503).
+    serial: { x: b.w * 0.468, baseline: b.h * 0.645, cap: b.h * 0.505, maxWidth: b.w * 0.85, die: 'bc-tacey-1936', leadingBar: true, separator: { kind: 'dot' } },
   });
 }
 

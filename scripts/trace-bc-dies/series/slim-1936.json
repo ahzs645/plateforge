@@ -1,0 +1,309 @@
+{
+ "name": "slim-1936",
+ "title": "1936-39 British Columbia Die Types (0-9) · slimline",
+ "band": [
+  0.04,
+  0.8,
+  0.02,
+  0.9
+ ],
+ "height": [
+  0.3,
+  0.8
+ ],
+ "photos": [
+  {
+   "file": ".cache/dates/1936-1(XL).jpg",
+   "text": "1",
+   "label": "1936 1"
+  },
+  {
+   "file": ".cache/dates/1936-18(XL).jpg",
+   "text": "18",
+   "label": "1936 18"
+  },
+  {
+   "file": ".cache/dates/1936-238495.jpg",
+   "text": "238495",
+   "label": "1936 238-495"
+  },
+  {
+   "file": ".cache/dates/1936-3620.jpg",
+   "text": "3620",
+   "label": "1936 3-620"
+  },
+  {
+   "file": ".cache/dates/1936-380(XL).jpg",
+   "text": "380",
+   "label": "1936 380"
+  },
+  {
+   "file": ".cache/dates/1936-64563.jpg",
+   "text": "64563",
+   "label": "1936 64-563"
+  },
+  {
+   "file": ".cache/dates/1936-88551(XL).jpg",
+   "text": "88551",
+   "label": "1936 88-551"
+  },
+  {
+   "file": ".cache/dates/1937-1(XL).jpg",
+   "text": "1",
+   "label": "1937 1"
+  },
+  {
+   "file": ".cache/dates/1937-2.jpg",
+   "text": "2",
+   "label": "1937 2"
+  },
+  {
+   "file": ".cache/dates/1937-2200(XL).jpg",
+   "text": "2200",
+   "label": "1937 2-200"
+  },
+  {
+   "file": ".cache/dates/1937-25(XL).jpg",
+   "text": "25",
+   "label": "1937 25"
+  },
+  {
+   "file": ".cache/dates/1937-3.jpg",
+   "text": "3",
+   "label": "1937 3"
+  },
+  {
+   "file": ".cache/dates/1937-30503(XL).jpg",
+   "text": "30503",
+   "label": "1937 30-503"
+  },
+  {
+   "file": ".cache/dates/1937-33510.jpg",
+   "text": "33510",
+   "label": "1937 33-510"
+  },
+  {
+   "file": ".cache/dates/1937-4.jpg",
+   "text": "4",
+   "label": "1937 4"
+  },
+  {
+   "file": ".cache/dates/1937-5.jpg",
+   "text": "5",
+   "label": "1937 5"
+  },
+  {
+   "file": ".cache/dates/1937-595(XL).jpg",
+   "text": "595",
+   "label": "1937 595"
+  },
+  {
+   "file": ".cache/dates/1937-6.jpg",
+   "text": "6",
+   "label": "1937 6"
+  },
+  {
+   "file": ".cache/dates/1937-7.jpg",
+   "text": "7",
+   "label": "1937 7"
+  },
+  {
+   "file": ".cache/dates/1937-8.jpg",
+   "text": "8",
+   "label": "1937 8"
+  },
+  {
+   "file": ".cache/dates/1937-9.jpg",
+   "text": "9",
+   "label": "1937 9"
+  },
+  {
+   "file": ".cache/dates/1938-1.jpg",
+   "text": "1",
+   "label": "1938 1"
+  },
+  {
+   "file": ".cache/dates/1938-2.jpg",
+   "text": "2",
+   "label": "1938 2"
+  },
+  {
+   "file": ".cache/dates/1938-24(XL).jpg",
+   "text": "24",
+   "label": "1938 24"
+  },
+  {
+   "file": ".cache/dates/1938-3.jpg",
+   "text": "3",
+   "label": "1938 3"
+  },
+  {
+   "file": ".cache/dates/1938-38466(XL).jpg",
+   "text": "38466",
+   "label": "1938 38-466"
+  },
+  {
+   "file": ".cache/dates/1938-38473.jpg",
+   "text": "38473",
+   "label": "1938 38-473"
+  },
+  {
+   "file": ".cache/dates/1938-4.jpg",
+   "text": "4",
+   "label": "1938 4"
+  },
+  {
+   "file": ".cache/dates/1938-4639(XL).jpg",
+   "text": "4639",
+   "label": "1938 4-639"
+  },
+  {
+   "file": ".cache/dates/1938-5.jpg",
+   "text": "5",
+   "label": "1938 5"
+  },
+  {
+   "file": ".cache/dates/1938-507(XL).jpg",
+   "text": "507",
+   "label": "1938 507"
+  },
+  {
+   "file": ".cache/dates/1938-6.jpg",
+   "text": "6",
+   "label": "1938 6"
+  },
+  {
+   "file": ".cache/dates/1938-65932(XL).jpg",
+   "text": "65932",
+   "label": "1938 65-932"
+  },
+  {
+   "file": ".cache/dates/1938-7.jpg",
+   "text": "7",
+   "label": "1938 7"
+  },
+  {
+   "file": ".cache/dates/1938-8.jpg",
+   "text": "8",
+   "label": "1938 8"
+  },
+  {
+   "file": ".cache/dates/1938-9.jpg",
+   "text": "9",
+   "label": "1938 9"
+  },
+  {
+   "file": ".cache/dates/1939-1001.jpg",
+   "text": "1001",
+   "label": "1939 1-001"
+  },
+  {
+   "file": ".cache/dates/1939-14410(XL).jpg",
+   "text": "14410",
+   "label": "1939 14-410"
+  },
+  {
+   "file": ".cache/dates/1939-20160.jpg",
+   "text": "20160",
+   "label": "1939 20-160"
+  },
+  {
+   "file": ".cache/dates/1939-21204(XL).jpg",
+   "text": "21204",
+   "label": "1939 21-204"
+  },
+  {
+   "file": ".cache/dates/1939-24(XL).jpg",
+   "text": "24",
+   "label": "1939 24"
+  },
+  {
+   "file": ".cache/dates/1939-29706(XL).jpg",
+   "text": "29706",
+   "label": "1939 29-706"
+  },
+  {
+   "file": ".cache/dates/1939-3.jpg",
+   "text": "3",
+   "label": "1939 3"
+  },
+  {
+   "file": ".cache/dates/1939-344(XL).jpg",
+   "text": "344",
+   "label": "1939 344"
+  },
+  {
+   "file": ".cache/dates/1939-41.jpg",
+   "text": "41",
+   "label": "1939 41"
+  },
+  {
+   "file": ".cache/dates/1939-4427(XL).jpg",
+   "text": "4427",
+   "label": "1939 4-427"
+  },
+  {
+   "file": ".cache/dates/1939-45449(XL).jpg",
+   "text": "45449",
+   "label": "1939 45-449"
+  },
+  {
+   "file": ".cache/dates/1939-60106(XL).jpg",
+   "text": "60106",
+   "label": "1939 60-106"
+  },
+  {
+   "file": ".cache/dates/1939-666(XL).jpg",
+   "text": "666",
+   "label": "1939 666"
+  },
+  {
+   "file": ".cache/dates/1939-77282.jpg",
+   "text": "77282",
+   "label": "1939 77-282"
+  },
+  {
+   "file": ".cache/dates/1939-82665.jpg",
+   "text": "82665",
+   "label": "1939 82-665"
+  },
+  {
+   "file": ".cache/dates/1939-85222.jpg",
+   "text": "85222",
+   "label": "1939 85-222"
+  },
+  {
+   "file": ".cache/dates/1939-85480(XL).jpg",
+   "text": "85480",
+   "label": "1939 85-480"
+  },
+  {
+   "file": ".cache/dates/1939-9458(XL).jpg",
+   "text": "9458",
+   "label": "1939 9-458"
+  },
+  {
+   "file": ".cache/dates/1939-98593(XL).jpg",
+   "text": "98593",
+   "label": "1939 98-593"
+  }
+ ],
+ "extra": [
+  {
+   "kind": "legend",
+   "text": "BRITISHCOLUMBIA",
+   "band": [
+    0.7,
+    0.98,
+    0.02,
+    0.98
+   ],
+   "height": [
+    0.08,
+    0.3
+   ],
+   "minw": 0.003,
+   "ratio": 0.015
+  }
+ ]
+}

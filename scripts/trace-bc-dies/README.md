@@ -37,6 +37,13 @@ The config lists each photo, the text it shows and where it can be downloaded. I
 The charts are built from BCpl8s photographs, so they stay in the git-ignored `out/` folder and are not committed.
 1930 has no photographed 8; `emit.py` builds one from the traced 3 and its mirror image and marks it as synthesised.
 
+## Annual plates, 1924–39
+
+`gen_annual.py` writes a series config per serial die family: Tacey slanted (1924–27, 1931–32), Tacey straight
+(1928–29, 1933–35) and slimline (1936–39). `series.py` then produces each family's die-type chart plus its serial
+and legend averages. `layout.py` measures the median positions of the serial, legend and date over the same photos;
+those numbers are written into `src/regions/canada/bc-early.ts`.
+
 ## Date stamps, 1924–39
 
 The small date ("-24" … "-35", stacked "36" … "39") was struck with its own dies each year, not the serial's.
@@ -60,6 +67,9 @@ crop of each year's date. Each year becomes its own die (`bc-date-1924` … `bc-
 | 1916 over-run and 1917 numerals, Tacey | 2–17 |
 | 1930 numerals, Thompson | 1–6 (no 8; synthesised from the 3) |
 | 1930 legend, Thompson | 6 (I: 18, B: 12) |
+| 1924–27 & 1931–32 serial / legend | 4–15 / 19 |
+| 1928–29 & 1933–35 serial / legend | 6–15 / 16 |
+| 1936–39 serial / legend | 3–19 / 12 |
 
 Characters with few samples are the least reliable. More photos, especially high-resolution
 ones, can be dropped into `.cache/` (named `YYYY-SERIAL.jpg`) to strengthen the averages.

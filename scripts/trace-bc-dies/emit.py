@@ -25,6 +25,17 @@ sets += [
   ('BC_TIN_MACDONALD', '1915 and 1916 (to No. 9,000) numerals, MacDonald Manufacturing.', tin['macdonald'], tc['serial-macdonald']),
   ('BC_TIN_TACEY', '1916 over-run and 1917 numerals, J.R. Tacey & Sons.', tin['tacey'], tc['serial-tacey']),
 ]
+# 1924–39 serial and legend dies, one set per die family (gen_annual.py + series.py).
+ta = json.load(open('out/traced-annual.json'))
+ca = {n: json.load(open(f'out/{n}-counts.json')) for n in ('slant-1924', 'straight-1928', 'slim-1936')}
+sets += [
+  ('BC_SLANT_1924', 'Tacey slanted serial dies: 1924–27, and at Oakalla 1931–32.', ta['slant'], ca['slant-1924']['serial']),
+  ('BC_STRAIGHT_1928', 'Tacey straight serial dies: 1928–29 and 1933–35.', ta['straight'], ca['straight-1928']['serial']),
+  ('BC_SLIM_1936', 'Slimline serial dies, 1936–39 (the slanted design; identical replacements from 1938).', ta['slim'], ca['slim-1936']['serial']),
+  ('BC_LEGEND_SLANT', 'BRITISH COLUMBIA legend on the slanted-die years (1924–27, 1931–32).', ta['legendSlant'], ca['slant-1924']['legend']),
+  ('BC_LEGEND_STRAIGHT', 'BRITISH COLUMBIA legend on the straight-die years (1928–29, 1933–35).', ta['legendStraight'], ca['straight-1928']['legend']),
+  ('BC_LEGEND_SLIM', 'BRITISH COLUMBIA legend on the 1936–39 slimline plates.', ta['legendSlim'], ca['slim-1936']['legend']),
+]
 # 1924–39 date stamps: each year's two date digits are their own small dies (dates.py).
 td = json.load(open('out/traced-dates.json')); dc = json.load(open('out/date-counts.json'))
 date_sets = [(y[4:], g) for y, g in sorted(td.items())]
