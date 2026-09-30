@@ -17,6 +17,7 @@ fetch_page() {  # page, filename pattern, cache dir
 }
 for page in 1940-1948 1949-1951 1952-1954; do fetch_page "$page" '19[45][0-9]-[0-9A-Z]+' .cache/plates; done
 fetch_page 1915-1917 '191[567]-[0-9]+' .cache/tin
+for page in 1924-1929 1930 1931-1935 1936-1939; do fetch_page "$page" '19[23][0-9]-[0-9]+' .cache/dates; done
 # Loose strips, the high-resolution 217·639 and loose tabs for the strip and tab dies.
 for path in "1949-1951/1951-Tab(long).jpg" "1949-1951/1951-Tab(short).jpg" "1949-1951/1951Strip.jpg" "1949-1951/1951-217639.jpg" \
   1952-1954/1953-Tab.jpg 1952-1954/1953-148879.jpg 1952-1954/1953-349016.jpg 1952-1954/1953-217791.jpg \

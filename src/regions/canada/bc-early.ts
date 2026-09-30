@@ -129,7 +129,8 @@ function annual1924(year: number, b: Base, die: string, dashYear: boolean, leadi
   return recipe(`early-${year}${long ? '-long' : ''}`, `${year}${long ? ' long base' : ''}`, b, year === 1930 ? '1930' : year < 1930 ? '1924-1929' : '1931-1935', {
     holeAt: { x: [0.195, 0.805], y: [0.06] }, rim: { inset: 3, width: 1.6 },
     legends: [
-      { text: `${dashYear ? '-' : ''}${String(year).slice(2)}`, x: b.w * 0.885, baseline: b.h * 0.49, cap: b.h * 0.17, maxWidth: b.w * 0.14, die, role: 'year' },
+      // The date was struck with its own small dies each year, not the serial's (traced per year from photos).
+      { text: `${dashYear ? '-' : ''}${String(year).slice(2)}`, x: b.w * 0.885, baseline: b.h * 0.49, cap: b.h * 0.17, maxWidth: b.w * 0.14, die: `bc-date-${year}`, role: 'year' },
       { text: 'BRITISH COLUMBIA', x: b.w * (year === 1930 ? 0.48 : 0.5), baseline: b.h * 0.88, cap: b.h * 0.13, maxWidth: b.w * legendWidth, die: year === 1930 ? 'bc-legend-1930' : 'bc-legend-1924', role: 'province', spread: true },
     ],
     // 1930's Thompson plates separate the groups with a small raised dot (36·349, 102·963), not a dash.
@@ -143,7 +144,7 @@ function annual1936(year: number, b: Base): KitRecipe {
   return recipe(`early-${year}`, String(year), b, '1936-1939', {
     holeAt: { x: [0.22, 0.77], y: [0.1, 0.9] }, rim: { inset: 3, width: 1.6 },
     legends: [
-      ...stacked(yy, b.w * 0.93, b.h * 0.36, b.h * 0.22, b.h * 0.19, 'bc-tacey-1936', 'year'),
+      ...stacked(yy, b.w * 0.93, b.h * 0.36, b.h * 0.22, b.h * 0.19, `bc-date-${year}`, 'year'),
       { text: 'BRITISH COLUMBIA', x: b.w * 0.505, baseline: b.h * 0.85, cap: b.h * 0.12, maxWidth: b.w * 0.87, die: 'bc-legend-1924', role: 'province', spread: true },
     ],
     serial: { x: b.w * 0.465, baseline: b.h * 0.65, cap: b.h * 0.48, maxWidth: b.w * 0.8, die: 'bc-tacey-1936', leadingBar: true },

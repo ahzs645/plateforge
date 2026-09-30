@@ -37,6 +37,14 @@ The config lists each photo, the text it shows and where it can be downloaded. I
 The charts are built from BCpl8s photographs, so they stay in the git-ignored `out/` folder and are not committed.
 1930 has no photographed 8; `emit.py` builds one from the traced 3 and its mirror image and marks it as synthesised.
 
+## Date stamps, 1924–39
+
+The small date ("-24" … "-35", stacked "36" … "39") was struck with its own dies each year, not the serial's.
+`dates.py` finds the two date digits on every 1924–39 plate photo (a level, same-height pair right of the serial,
+or a stacked pair at the far right), averages them per year and writes `out/dates-chart.png`, the sharpest real
+crop of each year's date. Each year becomes its own die (`bc-date-1924` … `bc-date-1939`, from `BC_DATES`), with
+2–11 plates per year.
+
 ## Sample counts (September 2026, full-size photos where available)
 
 | Set | Samples per character |

@@ -25,6 +25,9 @@ sets += [
   ('BC_TIN_MACDONALD', '1915 and 1916 (to No. 9,000) numerals, MacDonald Manufacturing.', tin['macdonald'], tc['serial-macdonald']),
   ('BC_TIN_TACEY', '1916 over-run and 1917 numerals, J.R. Tacey & Sons.', tin['tacey'], tc['serial-tacey']),
 ]
+# 1924–39 date stamps: each year's two date digits are their own small dies (dates.py).
+td = json.load(open('out/traced-dates.json')); dc = json.load(open('out/date-counts.json'))
+date_sets = [(y[4:], g) for y, g in sorted(td.items())]
 # 1930, Thompson Heating & Ventilating's one-year dies (series.py series/1930.json). No 8 was photographed.
 t30 = json.load(open('out/traced-1930.json')); c30 = json.load(open('out/thompson-1930-counts.json'))
 def mirror_x(d, width):
@@ -60,4 +63,12 @@ for name, doc, glyphs, cnt in sets:
         paths = v['d'].split(' @@ ') if ' @@ ' in v['d'] else [v['d']]
         out.append(f"  // {cnt.get(c, 0)} samples\n  {json.dumps(c)}: {{ advance: {v['advance']}, fill: true, paths: {json.dumps(paths)} }},")
     out.append('};\n')
+out.append('/** 1924–39 date stamps by year: each year\'s two date digits (dates.py). Keyed by year, then character. */')
+out.append('export const BC_DATES: Readonly<Record<number, Readonly<Record<string, SkeletonGlyph>>>> = {')
+for year, glyphs in date_sets:
+    out.append(f'  {year}: {{')
+    for c, v in glyphs.items():
+        out.append(f"    // {dc[year].get(c, 0)} samples\n    {json.dumps(c)}: {{ advance: {v['advance']}, fill: true, paths: [{json.dumps(v['d'])}] }},")
+    out.append('  },')
+out.append('};\n')
 open(sys.argv[1], 'w').write('\n'.join(out))

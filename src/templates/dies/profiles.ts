@@ -5,7 +5,7 @@
  * reconstructions for illustration, not recovered tooling.
  */
 import type { DieProfile } from './engine';
-import { BC_LEGEND_1940, BC_SERIAL_1940, BC_STRIP_1951, BC_TAB_1953, BC_LEGEND_1930, BC_THOMPSON_1930, BC_TIN_MACDONALD, BC_TIN_TACEY, BC_YEAR_1940, BC_YEAR_1952 } from './traced-1940';
+import { BC_DATES, BC_LEGEND_1940, BC_SERIAL_1940, BC_STRIP_1951, BC_TAB_1953, BC_LEGEND_1930, BC_THOMPSON_1930, BC_TIN_MACDONALD, BC_TIN_TACEY, BC_YEAR_1940, BC_YEAR_1952 } from './traced-1940';
 
 const page = (period: string) => ({ title: `BCpl8s · Passenger ${period.replace('-', '–')}`, url: `https://www.bcpl8s.ca/Passenger-${period}.html` });
 const lettersNote = 'Letters follow the same construction and were checked against plate photos only.';
@@ -199,6 +199,14 @@ export const DIE_PROFILES: readonly DieProfile[] = [
     evidence: { status: 'specimen-matched', specimens: [page('2001-2014'), page('2014-2025')],
       notes: `Thinner, crisper strokes than Astrographic; narrow oval bowls with a straight-sided 0, a bent 7 and a short-flagged 1. Letters checked on 098 SJF, 976 SKP and JA7 91L: rounded-rectangle P bowl, spurred J, flat-topped A. The 7's bend and the letter details are set by eye, not fitted. ${lettersNote}` },
   },
+  // 1924–39 date stamps: each year's two date digits were separate small dies, traced per year from photos.
+  ...Object.entries(BC_DATES).map(([year, glyphs]): DieProfile => ({
+    id: `bc-date-${year}`, label: `${year} date stamp`,
+    params: { width: 55, stroke: 15, curve: 'stadium', tracking: 8, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.45, wide: 1.2, dash: { width: 22 } },
+    overrides: glyphs,
+    evidence: { status: 'photo-averaged', specimens: [page(Number(year) <= 1929 ? '1924-1929' : Number(year) === 1930 ? '1930' : Number(year) <= 1935 ? '1931-1935' : '1936-1939')],
+      notes: `The ${year} date digits, traced from averaged photos of that year's plates; they differ from the serial dies.` },
+  })),
 ];
 
 const byId = new Map(DIE_PROFILES.map((p) => [p.id, p]));

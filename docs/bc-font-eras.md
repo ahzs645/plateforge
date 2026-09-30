@@ -33,6 +33,10 @@ and the ACME→Hi-Signs switch within a 1982 serial block.
 | 1985–2001 | Astrographic Industries, Surrey | Four die types: male/female (early LAA), neoprene-top, narrow **non-passenger** dies (N/P block and the 1984 reveal plates), and **Classic** for the rest. A short **Waldale** run (KRL–ARC) appeared in 1998–99. | `bc-astro-1` to `bc-astro-4`, `bc-waldale` |
 | 2002– | Waldale, Amherst NS | Waldale dies from 000-HGA (December 2002), with some overlap (HFE; JFG–JFK). | `bc-waldale` |
 
+**Date stamps.** The small date on 1924–39 plates was struck with its own dies, which changed from year to
+year: bold and rounded 1924–29, light and narrow in 1930, curly in 1933, and narrow and stacked in 1936–39. Each
+year has its own traced date die (`bc-date-<year>`), not the serial die.
+
 ## Other plate types
 
 - **Commercial truck 1973–75**: the passenger BRITISH COLUMBIA die appears at random late in the 1973 base. A
