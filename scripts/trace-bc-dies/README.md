@@ -37,6 +37,15 @@ deterministic: rerunning on the same photos reproduces the committed file.
 Characters with few samples are the least reliable. More photos, especially high-resolution
 ones, can be dropped into `.cache/` (named `YYYY-SERIAL.jpg`) to strengthen the averages.
 
+## Are 1940–54 one die or several?
+
+`eras.py` measures every digit sample by year and asks which era's average each one matches best. Across 521
+samples, width (about 0.55 of cap height) and stroke fill (about 0.50) are flat from 1940 to 1954. A 1940–48
+digit is as likely to match the 1949–51 average as its own (182 vs 148 of 344), and 1952–54 digits match the
+earlier averages better than their own. At this photo resolution the numerals are one die family. What does
+change is the separator (a round dot to 1951, a short thick dash from 1952), the layout, and the renewal
+pieces, which have their own dies (strip lettering, tab year).
+
 ## Other sources looked at
 
 - Wikimedia Commons, *Security license plate font British Columbia deco 1924-1954* (CC BY-SA 4.0): a
