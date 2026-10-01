@@ -1,0 +1,207 @@
+{
+ "name": "tin-tacey",
+ "title": "1916-17 British Columbia Die Types (0-9) · J.R. Tacey & Sons",
+ "band": [
+  0.03,
+  0.98,
+  0.22,
+  0.995
+ ],
+ "height": [
+  0.5,
+  0.95
+ ],
+ "photos": [
+  {
+   "file": ".cache/tin/1916-9034(XL).jpg",
+   "text": "9034",
+   "label": "1916 9-034"
+  },
+  {
+   "file": ".cache/tin/1916-9094.jpg",
+   "text": "9094",
+   "label": "1916 9-094"
+  },
+  {
+   "file": ".cache/tin/1916-9268(XL).jpg",
+   "text": "9268",
+   "label": "1916 9-268"
+  },
+  {
+   "file": ".cache/tin/1916-9316(XL).jpg",
+   "text": "9316",
+   "label": "1916 9-316"
+  },
+  {
+   "file": ".cache/tin/1917-1(XL).jpg",
+   "text": "1",
+   "label": "1917 1"
+  },
+  {
+   "file": ".cache/tin/1917-10942XL.jpg",
+   "text": "10942",
+   "label": "1917 10-942"
+  },
+  {
+   "file": ".cache/tin/1917-11407(XL).jpg",
+   "text": "11407",
+   "label": "1917 11-407"
+  },
+  {
+   "file": ".cache/tin/1917-11442(XL).jpg",
+   "text": "11442",
+   "label": "1917 11-442"
+  },
+  {
+   "file": ".cache/tin/1917-11732(XL).jpg",
+   "text": "11732",
+   "label": "1917 11-732"
+  },
+  {
+   "file": ".cache/tin/1917-11847(XL).jpg",
+   "text": "11847",
+   "label": "1917 11-847"
+  },
+  {
+   "file": ".cache/tin/1917-12123(XL).jpg",
+   "text": "12123",
+   "label": "1917 12-123"
+  },
+  {
+   "file": ".cache/tin/1917-12325.jpg",
+   "text": "12325",
+   "label": "1917 12-325"
+  },
+  {
+   "file": ".cache/tin/1917-12741(XL).jpg",
+   "text": "12741",
+   "label": "1917 12-741"
+  },
+  {
+   "file": ".cache/tin/1917-12963(XL).jpg",
+   "text": "12963",
+   "label": "1917 12-963"
+  },
+  {
+   "file": ".cache/tin/1917-1416(XL).jpg",
+   "text": "1416",
+   "label": "1917 1-416"
+  },
+  {
+   "file": ".cache/tin/1917-14401(XL).jpg",
+   "text": "14401",
+   "label": "1917 14-401"
+  },
+  {
+   "file": ".cache/tin/1917-1825(XL).jpg",
+   "text": "1825",
+   "label": "1917 1-825"
+  },
+  {
+   "file": ".cache/tin/1917-2(XL).jpg",
+   "text": "2",
+   "label": "1917 2"
+  },
+  {
+   "file": ".cache/tin/1917-218(XL).jpg",
+   "text": "218",
+   "label": "1917 218"
+  },
+  {
+   "file": ".cache/tin/1917-2489.jpg",
+   "text": "2489",
+   "label": "1917 2-489"
+  },
+  {
+   "file": ".cache/tin/1917-2940(XL).jpg",
+   "text": "2940",
+   "label": "1917 2-940"
+  },
+  {
+   "file": ".cache/tin/1917-3646(XL).jpg",
+   "text": "3646",
+   "label": "1917 3-646"
+  },
+  {
+   "file": ".cache/tin/1917-4039.jpg",
+   "text": "4039",
+   "label": "1917 4-039"
+  },
+  {
+   "file": ".cache/tin/1917-5760(XL).jpg",
+   "text": "5760",
+   "label": "1917 5-760"
+  },
+  {
+   "file": ".cache/tin/1917-5955(XL).jpg",
+   "text": "5955",
+   "label": "1917 5-955"
+  },
+  {
+   "file": ".cache/tin/1917-6434.jpg",
+   "text": "6434",
+   "label": "1917 6-434"
+  },
+  {
+   "file": ".cache/tin/1917-6543(XL).jpg",
+   "text": "6543",
+   "label": "1917 6-543"
+  },
+  {
+   "file": ".cache/tin/1917-6607(XL).jpg",
+   "text": "6607",
+   "label": "1917 6-607"
+  },
+  {
+   "file": ".cache/tin/1917-6752.jpg",
+   "text": "6752",
+   "label": "1917 6-752"
+  },
+  {
+   "file": ".cache/tin/1917-6781(XL).jpg",
+   "text": "6781",
+   "label": "1917 6-781"
+  },
+  {
+   "file": ".cache/tin/1917-6991(XL).jpg",
+   "text": "6991",
+   "label": "1917 6-991"
+  },
+  {
+   "file": ".cache/tin/1917-7195(XL).jpg",
+   "text": "7195",
+   "label": "1917 7-195"
+  },
+  {
+   "file": ".cache/tin/1917-7646XL.jpg",
+   "text": "7646",
+   "label": "1917 7-646"
+  },
+  {
+   "file": ".cache/tin/1917-8028(XL).jpg",
+   "text": "8028",
+   "label": "1917 8-028"
+  },
+  {
+   "file": ".cache/tin/1917-8277(XL).jpg",
+   "text": "8277",
+   "label": "1917 8-277"
+  },
+  {
+   "file": ".cache/tin/1917-8775(XL).jpg",
+   "text": "8775",
+   "label": "1917 8-775"
+  },
+  {
+   "file": ".cache/tin/1917-8913.jpg",
+   "text": "8913",
+   "label": "1917 8-913"
+  },
+  {
+   "file": ".cache/tin/1917-9(XL).jpg",
+   "text": "9",
+   "label": "1917 9"
+  }
+ ],
+ "chartOnly": true
+}

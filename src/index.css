@@ -49,6 +49,7 @@
   --radius: 12px;
   --radius-sm: 8px;
   --topbar: 60px;
+  --action-bar: 67px;
   --font: 'Inter Variable', Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
   --mono: ui-monospace, 'SF Mono', SFMono-Regular, 'JetBrains Mono', Menlo, Consolas, monospace;
 }
@@ -499,30 +500,52 @@ kbd {
 }
 
 /* ── Inspector ───────────────────────────────────────────────────────── */
+/* Desktop: a sticky side panel that scrolls on its own, so export stays reachable. */
 .inspector {
   position: sticky;
   top: calc(var(--topbar) + 24px);
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - var(--topbar) - 48px);
   border: 1px solid var(--border);
   border-radius: 16px;
   background: var(--surface);
   box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+.insp-body {
+  flex: 0 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+}
+.sheet-handle,
+.sheet-more,
+.sheet-backdrop {
+  display: none;
 }
 .insp-section {
   padding: 18px;
 }
-.insp-section + .insp-section {
+.insp-section + .insp-section,
+.insp-more > .insp-section,
+.insp-more > section {
   border-top: 1px solid var(--border);
 }
 .insp-head {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin-bottom: 14px;
+  gap: 8px;
+  margin-bottom: 12px;
 }
 .insp-head h2 {
-  font-size: 13px;
+  margin-right: auto;
+  font-size: 12px;
   font-weight: 600;
-  letter-spacing: -0.005em;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--muted);
 }
 .status {
   display: inline-flex;
@@ -544,11 +567,16 @@ kbd {
 .fields {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
+  gap: 14px 12px;
 }
 .fields .field.wide,
 .fields .field:only-child {
   grid-column: 1 / -1;
+}
+.insp-serial .field input {
+  height: 46px;
+  font-size: 20px;
+  font-weight: 500;
 }
 .field-error {
   margin-top: 10px;
@@ -561,7 +589,7 @@ kbd {
 }
 .facts div {
   display: grid;
-  grid-template-columns: 72px 1fr;
+  grid-template-columns: 64px 1fr;
   gap: 12px;
   font-size: 13px;
 }
@@ -581,13 +609,71 @@ kbd {
   font-size: 13px;
   line-height: 1.55;
 }
+.insp-note.small {
+  font-size: 12px;
+  line-height: 1.5;
+}
+.insp-about .insp-note[data-clamped='true'] {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+.insp-about .insp-note::first-letter {
+  text-transform: uppercase;
+}
+.link-btn {
+  margin-top: 4px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--accent);
+  font-size: 12.5px;
+  font-weight: 500;
+}
+.link-btn:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.insp-sources {
+  margin-top: 14px;
+}
+.insp-sources h3 {
+  margin-bottom: 6px;
+  color: var(--muted);
+  font-size: 12px;
+  font-weight: 600;
+}
+.insp-sources ul {
+  display: grid;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.insp-sources a {
+  color: var(--accent);
+  font-size: 12.5px;
+  line-height: 1.45;
+  text-decoration: none;
+}
+.insp-sources a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
 .btn-row {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
 }
 .btn-row .btn {
-  flex: 1;
+  padding: 0 8px;
+}
+.btn-row .btn.ghost {
+  grid-column: 1 / -1;
+}
+.btn.ghost {
+  background: transparent;
 }
 
 /* ── Batch ───────────────────────────────────────────────────────────── */
@@ -752,6 +838,7 @@ kbd {
   flex: 1;
   min-width: 0;
   overflow-y: auto;
+  scrollbar-gutter: stable;
   scroll-padding-top: 64px;
   overscroll-behavior: contain;
   padding: 6px;
@@ -888,9 +975,11 @@ kbd {
 .picker-expand[aria-expanded='true'] svg {
   transform: rotate(180deg);
 }
-/* The highlighted region's designs; the whole pane follows the list cursor. */
+/* The highlighted region's designs; the whole pane follows the list cursor.
+   Fixed width (min-width: 0) so long design names never widen it and shove the list sideways. */
 .picker-options {
   flex: 0 0 360px;
+  min-width: 0;
   display: flex;
   flex-direction: column;
   min-height: 0;
@@ -914,6 +1003,7 @@ kbd {
   font-size: 12px;
 }
 .picker-preview {
+  flex: none;
   display: grid;
   gap: 6px;
   justify-items: center;
@@ -923,18 +1013,27 @@ kbd {
   font-size: 12px;
   text-align: center;
 }
+.picker-preview > span {
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* A fixed plate box, so tall and wide plates don't push the design list up and down. */
 .picker-preview > div {
   width: 100%;
+  height: 150px;
 }
 .picker-preview svg {
   display: block;
   width: 100%;
-  max-height: 150px;
+  height: 100%;
   filter: drop-shadow(0 2px 6px rgb(0 0 0 / 0.18));
 }
 .picker-options-list {
   flex: 1;
   overflow-y: auto;
+  scrollbar-gutter: stable;
   overscroll-behavior: contain;
   padding: 4px 6px 8px;
 }
@@ -1089,6 +1188,7 @@ kbd {
   }
   .inspector {
     position: static;
+    max-height: none;
   }
 }
 
@@ -1125,8 +1225,9 @@ kbd {
     gap: 16px;
     padding: 16px;
   }
+  /* Room for the action bar plus the peeking details sheet. */
   .view-single .workspace {
-    padding-bottom: calc(88px + env(safe-area-inset-bottom));
+    padding-bottom: calc(var(--action-bar) + var(--sheet-peek, 120px) + 16px + env(safe-area-inset-bottom));
   }
   .stage {
     min-height: 200px;
@@ -1137,16 +1238,101 @@ kbd {
   .export-section {
     display: none;
   }
-  .readout-text {
-    font-size: 18px;
+  /* The sheet's serial field and the action bar's copy button cover the readout on phones. */
+  .view-single .readout {
+    display: none;
   }
   .chips {
     margin: 0 -16px;
     padding: 2px 16px;
     scroll-padding-inline: 16px;
   }
+  /* Details sheet: peeks above the action bar with the serial, swipes or taps up for style, notes and sources. */
+  .inspector {
+    position: fixed;
+    top: auto;
+    left: 0;
+    right: 0;
+    bottom: calc(var(--action-bar) + env(safe-area-inset-bottom));
+    z-index: 26;
+    max-height: calc(100dvh - var(--topbar) - var(--action-bar) - env(safe-area-inset-bottom) - 12px);
+    border: 0;
+    border-top: 1px solid var(--border);
+    border-radius: 18px 18px 0 0;
+    box-shadow: 0 -8px 28px -10px rgb(17 17 20 / 0.22);
+    transition: box-shadow 0.2s;
+  }
+  .inspector[data-expanded='false'] .insp-more {
+    display: none;
+  }
+  .inspector[data-expanded='false'] .insp-body {
+    overflow: hidden;
+  }
+  /* One serial box explains itself in the peek; labels come back when expanded or with several parts. */
+  .inspector[data-expanded='false'] .insp-serial .field:only-child label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+  .sheet-handle {
+    display: grid;
+    place-items: center;
+    flex: none;
+    width: 100%;
+    height: 22px;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    touch-action: none;
+  }
+  .sheet-grabber {
+    width: 38px;
+    height: 5px;
+    border-radius: 99px;
+    background: var(--border-strong);
+  }
+  .sheet-more {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    height: 30px;
+    margin-left: 4px;
+    padding: 0 8px 0 10px;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    background: var(--surface-2);
+    color: var(--text);
+    font-size: 12.5px;
+    font-weight: 500;
+  }
+  .sheet-more svg {
+    width: 14px;
+    height: 14px;
+    transform: rotate(180deg);
+    transition: transform 0.2s;
+  }
+  .sheet-more[aria-expanded='true'] svg {
+    transform: none;
+  }
+  .sheet-backdrop {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 25;
+    background: var(--overlay);
+    animation: fade 0.16s ease-out;
+    touch-action: none;
+  }
   .insp-section {
-    padding: 16px;
+    padding: 14px 16px;
+  }
+  .insp-serial {
+    padding-top: 0;
+  }
+  .insp-head {
+    margin-bottom: 10px;
   }
   .field input,
   .field select {
@@ -1174,7 +1360,7 @@ kbd {
     font-size: 15px;
   }
   .view-single .toast {
-    bottom: calc(80px + env(safe-area-inset-bottom));
+    bottom: calc(var(--action-bar) + var(--sheet-peek, 120px) + 12px + env(safe-area-inset-bottom));
   }
 
   .picker-backdrop {

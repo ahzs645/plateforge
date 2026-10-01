@@ -16,11 +16,11 @@
   "inventoryRecords": 67,
   "homepageTopics": 56,
   "selectedChildTopics": 11,
-  "registeredPassengerPresets": 81,
+  "registeredPassengerPresets": 84,
   "earlyPresets": 25,
   "laterPresets": 17,
   "countsUnit": "Inventory topics and presets, NOT distinct historical plate designs",
-  "registeredPresets": 438
+  "registeredPresets": 441
  },
  "registeredPresets": {
   "passenger": [
@@ -81,7 +81,10 @@
    "1914",
    "1915",
    "1916",
+   "1916-overrun",
    "1917",
+   "1917-early",
+   "1917-late",
    "1918",
    "1919-tab",
    "1919-cardboard",
@@ -796,7 +799,10 @@
     "1914",
     "1915",
     "1916",
+    "1916-overrun",
     "1917",
+    "1917-early",
+    "1917-late",
     "1918",
     "1919-tab",
     "1919-cardboard",

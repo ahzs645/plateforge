@@ -1,0 +1,647 @@
+{
+ "name": "early-1940",
+ "title": "1940-54 British Columbia Die Types (0-9) · Oakalla rounded",
+ "band": [
+  0.06,
+  0.74,
+  0.015,
+  0.905
+ ],
+ "height": [
+  0.3,
+  0.75
+ ],
+ "photos": [
+  {
+   "file": ".cache/plates/1940-1(XL).jpg",
+   "text": "1",
+   "label": "1940 1"
+  },
+  {
+   "file": ".cache/plates/1940-11084(XL).jpg",
+   "text": "11084",
+   "label": "1940 11-084"
+  },
+  {
+   "file": ".cache/plates/1940-133.jpg",
+   "text": "133",
+   "label": "1940 133"
+  },
+  {
+   "file": ".cache/plates/1940-1381(XL).jpg",
+   "text": "1381",
+   "label": "1940 1-381"
+  },
+  {
+   "file": ".cache/plates/1940-25(XL).jpg",
+   "text": "25",
+   "label": "1940 25"
+  },
+  {
+   "file": ".cache/plates/1940-99830(XL).jpg",
+   "text": "99830",
+   "label": "1940 99-830"
+  },
+  {
+   "file": ".cache/plates/1941-1381(XL).jpg",
+   "text": "1381",
+   "label": "1941 1-381"
+  },
+  {
+   "file": ".cache/plates/1941-30220.jpg",
+   "text": "30220",
+   "label": "1941 30-220"
+  },
+  {
+   "file": ".cache/plates/1941-43(XL).jpg",
+   "text": "43",
+   "label": "1941 43"
+  },
+  {
+   "file": ".cache/plates/1941-6.jpg",
+   "text": "6",
+   "label": "1941 6"
+  },
+  {
+   "file": ".cache/plates/1941-709(XL).jpg",
+   "text": "709",
+   "label": "1941 709"
+  },
+  {
+   "file": ".cache/plates/1941-76477(XL).jpg",
+   "text": "76477",
+   "label": "1941 76-477"
+  },
+  {
+   "file": ".cache/plates/1941-9000(XL).jpg",
+   "text": "9000",
+   "label": "1941 9-000"
+  },
+  {
+   "file": ".cache/plates/1941-92081(XL).jpg",
+   "text": "92081",
+   "label": "1941 92-081"
+  },
+  {
+   "file": ".cache/plates/1942-124(XL).jpg",
+   "text": "124",
+   "label": "1942 124"
+  },
+  {
+   "file": ".cache/plates/1942-1381(XL).jpg",
+   "text": "1381",
+   "label": "1942 1-381"
+  },
+  {
+   "file": ".cache/plates/1942-295518(XL).jpg",
+   "text": "295518",
+   "label": "1942 295-518"
+  },
+  {
+   "file": ".cache/plates/1942-41.jpg",
+   "text": "41",
+   "label": "1942 41"
+  },
+  {
+   "file": ".cache/plates/1942-6.jpg",
+   "text": "6",
+   "label": "1942 6"
+  },
+  {
+   "file": ".cache/plates/1942-70557(XL).jpg",
+   "text": "70557",
+   "label": "1942 70-557"
+  },
+  {
+   "file": ".cache/plates/1942-72476(XL).jpg",
+   "text": "72476",
+   "label": "1942 72-476"
+  },
+  {
+   "file": ".cache/plates/1942-879(XL).jpg",
+   "text": "879",
+   "label": "1942 879"
+  },
+  {
+   "file": ".cache/plates/1943-1001(XL).jpg",
+   "text": "1001",
+   "label": "1943 1-001"
+  },
+  {
+   "file": ".cache/plates/1943-3(XL).jpg",
+   "text": "3",
+   "label": "1943 3"
+  },
+  {
+   "file": ".cache/plates/1943-36285(XL).jpg",
+   "text": "36285",
+   "label": "1943 36-285"
+  },
+  {
+   "file": ".cache/plates/1943-374564.jpg",
+   "text": "374564",
+   "label": "1943 374-564"
+  },
+  {
+   "file": ".cache/plates/1943-555(XL).jpg",
+   "text": "555",
+   "label": "1943 555"
+  },
+  {
+   "file": ".cache/plates/1943-842612.jpg",
+   "text": "842612",
+   "label": "1943 842-612"
+  },
+  {
+   "file": ".cache/plates/1943-879(XL).jpg",
+   "text": "879",
+   "label": "1943 879"
+  },
+  {
+   "file": ".cache/plates/1944-10.jpg",
+   "text": "10",
+   "label": "1944 10"
+  },
+  {
+   "file": ".cache/plates/1944-167(XL).jpg",
+   "text": "167",
+   "label": "1944 167"
+  },
+  {
+   "file": ".cache/plates/1944-3333(XL).jpg",
+   "text": "3333",
+   "label": "1944 3-333"
+  },
+  {
+   "file": ".cache/plates/1944-351857(XL).jpg",
+   "text": "351857",
+   "label": "1944 351-857"
+  },
+  {
+   "file": ".cache/plates/1944-43298.jpg",
+   "text": "43298",
+   "label": "1944 43-298"
+  },
+  {
+   "file": ".cache/plates/1944-55831(XL).jpg",
+   "text": "55831",
+   "label": "1944 55-831"
+  },
+  {
+   "file": ".cache/plates/1944-77840.jpg",
+   "text": "77840",
+   "label": "1944 77-840"
+  },
+  {
+   "file": ".cache/plates/1945-1381(XL).jpg",
+   "text": "1381",
+   "label": "1945 1-381"
+  },
+  {
+   "file": ".cache/plates/1945-14922(XL).jpg",
+   "text": "14922",
+   "label": "1945 14-922"
+  },
+  {
+   "file": ".cache/plates/1945-163.jpg",
+   "text": "163",
+   "label": "1945 163"
+  },
+  {
+   "file": ".cache/plates/1945-708(XL).jpg",
+   "text": "708",
+   "label": "1945 708"
+  },
+  {
+   "file": ".cache/plates/1945-71(XL).jpg",
+   "text": "71",
+   "label": "1945 71"
+  },
+  {
+   "file": ".cache/plates/1946-1381(XL).jpg",
+   "text": "1381",
+   "label": "1946 1-381"
+  },
+  {
+   "file": ".cache/plates/1946-23(XL).jpg",
+   "text": "23",
+   "label": "1946 23"
+  },
+  {
+   "file": ".cache/plates/1946-36506(XL).jpg",
+   "text": "36506",
+   "label": "1946 36-506"
+  },
+  {
+   "file": ".cache/plates/1946-708(XL).jpg",
+   "text": "708",
+   "label": "1946 708"
+  },
+  {
+   "file": ".cache/plates/1947-1381(XL).jpg",
+   "text": "1381",
+   "label": "1947 1-381"
+  },
+  {
+   "file": ".cache/plates/1947-197793.jpg",
+   "text": "197793",
+   "label": "1947 197-793"
+  },
+  {
+   "file": ".cache/plates/1947-354520.jpg",
+   "text": "354520",
+   "label": "1947 354-520"
+  },
+  {
+   "file": ".cache/plates/1947-41275(XL).jpg",
+   "text": "41275",
+   "label": "1947 41-275"
+  },
+  {
+   "file": ".cache/plates/1947-604217.jpg",
+   "text": "604217",
+   "label": "1947 604-217"
+  },
+  {
+   "file": ".cache/plates/1947-61456.jpg",
+   "text": "61456",
+   "label": "1947 61-456"
+  },
+  {
+   "file": ".cache/plates/1947-632.jpg",
+   "text": "632",
+   "label": "1947 632"
+  },
+  {
+   "file": ".cache/plates/1948-160255.jpg",
+   "text": "160255",
+   "label": "1948 160-255"
+  },
+  {
+   "file": ".cache/plates/1948-2597(XL).jpg",
+   "text": "2597",
+   "label": "1948 2-597"
+  },
+  {
+   "file": ".cache/plates/1948-3(XL).jpg",
+   "text": "3",
+   "label": "1948 3"
+  },
+  {
+   "file": ".cache/plates/1948-343162.jpg",
+   "text": "343162",
+   "label": "1948 343-162"
+  },
+  {
+   "file": ".cache/plates/1948-43118.jpg",
+   "text": "43118",
+   "label": "1948 43-118"
+  },
+  {
+   "file": ".cache/plates/1948-43780(XL).jpg",
+   "text": "43780",
+   "label": "1948 43-780"
+  },
+  {
+   "file": ".cache/plates/1948-666(XL).jpg",
+   "text": "666",
+   "label": "1948 666"
+  },
+  {
+   "file": ".cache/plates/1948-76487.jpg",
+   "text": "76487",
+   "label": "1948 76-487"
+  },
+  {
+   "file": ".cache/plates/1948-88356.jpg",
+   "text": "88356",
+   "label": "1948 88-356"
+  },
+  {
+   "file": ".cache/plates/1948-89511.jpg",
+   "text": "89511",
+   "label": "1948 89-511"
+  },
+  {
+   "file": ".cache/plates/1948-90621.jpg",
+   "text": "90621",
+   "label": "1948 90-621"
+  },
+  {
+   "file": ".cache/plates/1949-121464(XL).jpg",
+   "text": "121464",
+   "label": "1949 121-464"
+  },
+  {
+   "file": ".cache/plates/1949-21408.jpg",
+   "text": "21408",
+   "label": "1949 21-408"
+  },
+  {
+   "file": ".cache/plates/1949-258.jpg",
+   "text": "258",
+   "label": "1949 258"
+  },
+  {
+   "file": ".cache/plates/1949-28(XL).jpg",
+   "text": "28",
+   "label": "1949 28"
+  },
+  {
+   "file": ".cache/plates/1949-5(XL).jpg",
+   "text": "5",
+   "label": "1949 5"
+  },
+  {
+   "file": ".cache/plates/1949-646798.jpg",
+   "text": "646798",
+   "label": "1949 646-798"
+  },
+  {
+   "file": ".cache/plates/1949-708(XL).jpg",
+   "text": "708",
+   "label": "1949 708"
+  },
+  {
+   "file": ".cache/plates/1949-71064(XL).jpg",
+   "text": "71064",
+   "label": "1949 71-064"
+  },
+  {
+   "file": ".cache/plates/1949-7461(XL).jpg",
+   "text": "7461",
+   "label": "1949 7-461"
+  },
+  {
+   "file": ".cache/plates/1950-100000(XL).jpg",
+   "text": "100000",
+   "label": "1950 100-000"
+  },
+  {
+   "file": ".cache/plates/1950-10277(XL).jpg",
+   "text": "10277",
+   "label": "1950 10-277"
+  },
+  {
+   "file": ".cache/plates/1950-200001.jpg",
+   "text": "200001",
+   "label": "1950 200-001"
+  },
+  {
+   "file": ".cache/plates/1950-230229(XL).jpg",
+   "text": "230229",
+   "label": "1950 230-229"
+  },
+  {
+   "file": ".cache/plates/1950-234638(XL).jpg",
+   "text": "234638",
+   "label": "1950 234-638"
+  },
+  {
+   "file": ".cache/plates/1950-236609(XL).jpg",
+   "text": "236609",
+   "label": "1950 236-609"
+  },
+  {
+   "file": ".cache/plates/1950-29130(XL).jpg",
+   "text": "29130",
+   "label": "1950 29-130"
+  },
+  {
+   "file": ".cache/plates/1950-3781(XL).jpg",
+   "text": "3781",
+   "label": "1950 3-781"
+  },
+  {
+   "file": ".cache/plates/1950-692.jpg",
+   "text": "692",
+   "label": "1950 692"
+  },
+  {
+   "file": ".cache/plates/1950-7(XL).jpg",
+   "text": "7",
+   "label": "1950 7"
+  },
+  {
+   "file": ".cache/plates/1950-992.jpg",
+   "text": "992",
+   "label": "1950 992"
+  },
+  {
+   "file": ".cache/plates/1950-99999(XL).jpg",
+   "text": "99999",
+   "label": "1950 99-999"
+  },
+  {
+   "file": ".cache/plates/1951-110097.jpg",
+   "text": "110097",
+   "label": "1951 110-097"
+  },
+  {
+   "file": ".cache/plates/1951-142338.jpg",
+   "text": "142338",
+   "label": "1951 142-338"
+  },
+  {
+   "file": ".cache/plates/1951-180787.jpg",
+   "text": "180787",
+   "label": "1951 180-787"
+  },
+  {
+   "file": ".cache/plates/1951-202324.jpg",
+   "text": "202324",
+   "label": "1951 202-324"
+  },
+  {
+   "file": ".cache/plates/1951-217639.jpg",
+   "text": "217639",
+   "label": "1951 217-639"
+  },
+  {
+   "file": ".cache/plates/1951-250035(XL).jpg",
+   "text": "250035",
+   "label": "1951 250-035"
+  },
+  {
+   "file": ".cache/plates/1951-658337.jpg",
+   "text": "658337",
+   "label": "1951 658-337"
+  },
+  {
+   "file": ".cache/plates/1952-2386(XL).jpg",
+   "text": "2386",
+   "label": "1952 2-386"
+  },
+  {
+   "file": ".cache/plates/1952-42289(XL).jpg",
+   "text": "42289",
+   "label": "1952 42-289"
+  },
+  {
+   "file": ".cache/plates/1952-44075(XL).jpg",
+   "text": "44075",
+   "label": "1952 44-075"
+  },
+  {
+   "file": ".cache/plates/1952-45448(XL).jpg",
+   "text": "45448",
+   "label": "1952 45-448"
+  },
+  {
+   "file": ".cache/plates/1952-49031(XL).jpg",
+   "text": "49031",
+   "label": "1952 49-031"
+  },
+  {
+   "file": ".cache/plates/1952-52290(XL).jpg",
+   "text": "52290",
+   "label": "1952 52-290"
+  },
+  {
+   "file": ".cache/plates/1952-54366.jpg",
+   "text": "54366",
+   "label": "1952 54-366"
+  },
+  {
+   "file": ".cache/plates/1952-58147(XL).jpg",
+   "text": "58147",
+   "label": "1952 58-147"
+  },
+  {
+   "file": ".cache/plates/1952-60051(XL).jpg",
+   "text": "60051",
+   "label": "1952 60-051"
+  },
+  {
+   "file": ".cache/plates/1952-66950(XL).jpg",
+   "text": "66950",
+   "label": "1952 66-950"
+  },
+  {
+   "file": ".cache/plates/1952-71756(XL).jpg",
+   "text": "71756",
+   "label": "1952 71-756"
+  },
+  {
+   "file": ".cache/plates/1952-72(XL).jpg",
+   "text": "72",
+   "label": "1952 72"
+  },
+  {
+   "file": ".cache/plates/1952-75107(XL).jpg",
+   "text": "75107",
+   "label": "1952 75-107"
+  },
+  {
+   "file": ".cache/plates/1952-76287(XL).jpg",
+   "text": "76287",
+   "label": "1952 76-287"
+  },
+  {
+   "file": ".cache/plates/1952-79779(XL).jpg",
+   "text": "79779",
+   "label": "1952 79-779"
+  },
+  {
+   "file": ".cache/plates/1952-80566(XL).jpg",
+   "text": "80566",
+   "label": "1952 80-566"
+  },
+  {
+   "file": ".cache/plates/1952-85753(XL).jpg",
+   "text": "85753",
+   "label": "1952 85-753"
+  },
+  {
+   "file": ".cache/plates/1952-86893(XL).jpg",
+   "text": "86893",
+   "label": "1952 86-893"
+  },
+  {
+   "file": ".cache/plates/1952-90729.jpg",
+   "text": "90729",
+   "label": "1952 90-729"
+  },
+  {
+   "file": ".cache/plates/1952-91034(XL).jpg",
+   "text": "91034",
+   "label": "1952 91-034"
+  },
+  {
+   "file": ".cache/plates/1952-93831(XL).jpg",
+   "text": "93831",
+   "label": "1952 93-831"
+  },
+  {
+   "file": ".cache/plates/1952-95581(XL).jpg",
+   "text": "95581",
+   "label": "1952 95-581"
+  },
+  {
+   "file": ".cache/plates/1952-98982(XL).jpg",
+   "text": "98982",
+   "label": "1952 98-982"
+  },
+  {
+   "file": ".cache/plates/1953-100081(XL).jpg",
+   "text": "100081",
+   "label": "1953 100-081"
+  },
+  {
+   "file": ".cache/plates/1953-148879.jpg",
+   "text": "148879",
+   "label": "1953 148-879"
+  },
+  {
+   "file": ".cache/plates/1953-217791(XL).jpg",
+   "text": "217791",
+   "label": "1953 217-791"
+  },
+  {
+   "file": ".cache/plates/1953-320529.jpg",
+   "text": "320529",
+   "label": "1953 320-529"
+  },
+  {
+   "file": ".cache/plates/1953-349016.jpg",
+   "text": "349016",
+   "label": "1953 349-016"
+  },
+  {
+   "file": ".cache/plates/1953-54992(XL).jpg",
+   "text": "54992",
+   "label": "1953 54-992"
+  },
+  {
+   "file": ".cache/plates/1954-306142(XL).jpg",
+   "text": "306142",
+   "label": "1954 306-142"
+  },
+  {
+   "file": ".cache/plates/1954-351016.jpg",
+   "text": "351016",
+   "label": "1954 351-016"
+  },
+  {
+   "file": ".cache/plates/1954-351154.jpg",
+   "text": "351154",
+   "label": "1954 351-154"
+  },
+  {
+   "file": ".cache/plates/1954-59334(XL).jpg",
+   "text": "59334",
+   "label": "1954 59-334"
+  },
+  {
+   "file": ".cache/plates/1954-63604.jpg",
+   "text": "63604",
+   "label": "1954 63-604"
+  },
+  {
+   "file": ".cache/plates/1954-82674.jpg",
+   "text": "82674",
+   "label": "1954 82-674"
+  }
+ ],
+ "chartOnly": true
+}

@@ -19,7 +19,9 @@ export function bcDieSet(design: Record<string, unknown>): BcDieSet {
   if (year >= 1970) return { serial: 'bc-oakalla-1970', legend: 'bc-legend-1964', separator: '·' };
   if (year >= 1964) return { serial: 'bc-oakalla-1955', legend: 'bc-legend-1964', separator: '·' };
   if (year >= 1955) return { serial: 'bc-oakalla-1955', legend: 'bc-legend-1955', separator: '·' };
-  return { serial: 'bc-early-1940', legend: 'bc-legend-1940', separator: '-' };
+  // 1940–51 bases carry a raised round dot (99·830, 121·464, 230·229); the 1952 base a short, thick dash (42-289).
+  if (year >= 1952) return { serial: 'bc-early-1940', legend: 'bc-legend-1940', separator: '-' };
+  return { serial: 'bc-early-1940', legend: 'bc-legend-1940', separator: '·' };
 }
 
 /**

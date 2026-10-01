@@ -5,6 +5,7 @@
  * reconstructions for illustration, not recovered tooling.
  */
 import type { DieProfile } from './engine';
+import { BC_DATES, BC_LEGEND_SLANT, BC_LEGEND_SLIM, BC_LEGEND_STRAIGHT, BC_SLANT_1924, BC_SLIM_1936, BC_STRAIGHT_1928, BC_LEGEND_1940, BC_SERIAL_1940, BC_STRIP_1951, BC_TAB_1953, BC_LEGEND_1930, BC_THOMPSON_1930, BC_TIN_MACDONALD, BC_TIN_TACEY, BC_YEAR_1940, BC_YEAR_1952 } from './traced-1940';
 
 const page = (period: string) => ({ title: `BCpl8s · Passenger ${period.replace('-', '–')}`, url: `https://www.bcpl8s.ca/Passenger-${period}.html` });
 const lettersNote = 'Letters follow the same construction and were checked against plate photos only.';
@@ -22,8 +23,30 @@ export const DIE_PROFILES: readonly DieProfile[] = [
     evidence: { status: 'legend-approximation', specimens: [page('1985-2001')], notes: 'Lighter screened legends on flat and flag-era plates.' },
   },
   {
-    id: 'bc-legend-1940', label: 'Legend · 1940–54 bold', params: { width: 58, stroke: 16, curve: 'stadium', tracking: 9, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.5, wide: 1.2 },
-    evidence: { status: 'legend-approximation', specimens: [page('1940-1948'), page('1952-1954')], notes: 'Bold condensed caps, W/H about 0.55–0.6 (1940 99-830, 1948 76-487, 1952 42-289).' },
+    id: 'bc-legend-1940', label: 'Legend · 1940–54 bold', params: { width: 64, stroke: 20, curve: 'stadium', tracking: 16, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.36, wide: 1.2 },
+    // B R I T S H C O L U M A are traced from averaged photo samples; other letters and digits are constructed.
+    overrides: BC_LEGEND_1940,
+    evidence: { status: 'photo-averaged', specimens: [page('1940-1948'), page('1949-1951'), page('1952-1954')], notes: 'The BRITISH COLUMBIA letters are traced from the average of 76–227 samples each from 1940–54 plate photos. Bold caps with ordinary spacing, measured from photos: cap 20–21 mm, W/H about 0.65, stroke about 0.2, gaps 3–6 mm (1940 99·830, 1949 71·064, 1950 230·229, 1952 42-289). On long bases the gaps open up to fill the plate.' },
+  },
+  {
+    id: 'bc-year-1940', label: 'Stacked year · 1940–51', params: { width: 42, stroke: 12, curve: 'stadium', tracking: 8, one: 'plain', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'straight', nine: 'curved', narrow: 0.6, wide: 1.2 },
+    overrides: BC_YEAR_1940,
+    evidence: { status: 'photo-averaged', specimens: [page('1940-1948'), page('1949-1951')], notes: 'Digits traced from averaged photo samples (4: 99, 0: 19, others 4–21). Stacked two-digit year at the right of 1940–51 bases: 32 mm digits, W/H about 0.4–0.5 (1940 99·830, 1950 230·229, 1951 217·639).' },
+  },
+  {
+    id: 'bc-strip-1951', label: 'Legend · 1951 renewal strip', params: { width: 65, stroke: 17, curve: 'stadium', tracking: 21, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.32, wide: 1.25, dot: 'round' },
+    overrides: BC_STRIP_1951,
+    evidence: { status: 'photo-averaged', specimens: [page('1949-1951')], notes: 'Letters and 51 traced from two high-resolution strip photos (smoothed); dots constructed. BRITISH·51·COLUMBIA on the blue-on-white strip, measured from 1951 217·639 and loose long/short strips: 21 mm caps (about 58% of the 36 mm strip), W/H about 0.65, stroke about 0.17, 4.5 mm letter gaps, round raised dots; the 51 is a slightly smaller die set about 4 mm higher.' },
+  },
+  {
+    id: 'bc-year-1952', label: '1952 base year', params: { width: 63, stroke: 18, curve: 'stadium', tracking: 12, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.5, wide: 1.2 },
+    overrides: BC_YEAR_1952,
+    evidence: { status: 'photo-averaged', specimens: [page('1952-1954')], notes: 'The 52 at the top right of the 1952 base, traced from 34 averaged samples per digit (W/H about 0.63).' },
+  },
+  {
+    id: 'bc-tab-1953', label: '1953/54 tab year', params: { width: 61, stroke: 13, curve: 'stadium', tracking: 10, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.5, wide: 1.2 },
+    overrides: BC_TAB_1953,
+    evidence: { status: 'photo-averaged', specimens: [page('1952-1954')], notes: '5, 3 and 4 traced from averaged tab photos (3–7 samples). Year pair on the 1953/54 renewal tabs: 32.5 mm digits, W/H about 0.6, light stroke about 0.13 (1953 148879 and loose tab, 1954 306142 and loose tab).' },
   },
   {
     id: 'bc-legend-1955', label: 'Legend · 1955–63 long die', params: { width: 55, stroke: 15, curve: 'stadium', tracking: 9, one: 'plain', three: 'round', four: 'open', seven: 'straight', narrow: 0.5, wide: 1.2 },
@@ -62,6 +85,18 @@ export const DIE_PROFILES: readonly DieProfile[] = [
     evidence: { status: 'legend-approximation', specimens: [page('1915-1917')], notes: 'Very tall squarish numerals on lithographed tin (1915 5244, 1916 7462, 1917 12963).' },
   },
   {
+    id: 'bc-tin-macdonald', label: '1915–16 tin numerals (MacDonald)', maker: 'MacDonald Manufacturing',
+    params: { width: 34, stroke: 12, curve: 'box', boxRadius: 7, tracking: 8, one: 'plain', two: 'curved', three: 'round', four: 'closed', six: 'straight', seven: 'straight', nine: 'straight', narrow: 0.4, wide: 1.2 },
+    overrides: BC_TIN_MACDONALD,
+    evidence: { status: 'photo-averaged', specimens: [page('1915-1917')], notes: 'Very condensed lithographed numerals (W/H about 0.33), traced from averaged photos of 1915 and 1916 plates up to No. 9,000.' },
+  },
+  {
+    id: 'bc-tin-tacey', label: '1916 over-run and 1917 tin numerals (Tacey)', maker: 'J.R. Tacey & Sons',
+    params: { width: 48, stroke: 17, curve: 'box', boxRadius: 7, tracking: 8, one: 'flag-base', two: 'curved', three: 'round', four: 'closed', six: 'straight', seven: 'straight', nine: 'straight', narrow: 0.4, wide: 1.2 },
+    overrides: BC_TIN_TACEY,
+    evidence: { status: 'photo-averaged', specimens: [page('1915-1917')], notes: 'Wider, heavier numerals (W/H about 0.48) from the late-1916 over-run and 1917 plates, traced from averaged photos.' },
+  },
+  {
     id: 'bc-block-1918', label: '1918–23 block dies',
     params: { width: 48, stroke: 13, curve: 'stadium', tracking: 9, one: 'flag-base', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'straight', nine: 'curved', narrow: 0.62, wide: 1.2 },
     evidence: { status: 'legend-approximation', specimens: [page('1918-1923')], notes: 'Embossed block numerals from Washington-derived dies with a based 1 (1918 12741, 1920 25085).' },
@@ -70,27 +105,55 @@ export const DIE_PROFILES: readonly DieProfile[] = [
     id: 'bc-tacey-1924', label: '1924–27, 1931 slanted dies', maker: 'J.R. Tacey & Son',
     params: { width: 46, stroke: 14, curve: 'stadium', tracking: 9, one: 'flag-base', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'straight', nine: 'curved', narrow: 0.62, wide: 1.2, dash: { width: 14 } },
     slant: 5,
-    evidence: { status: 'legend-approximation', specimens: [page('1924-1929'), page('1931-1935')], notes: 'Slanted rounded numerals used 1924–27 and again in 1931 (1924 25-610).' },
+    overrides: BC_SLANT_1924,
+    evidence: { status: 'photo-averaged', specimens: [page('1924-1929'), page('1931-1935')], notes: 'Traced from averaged photos of 1924–27 and 1931–32 plates (4–15 samples per digit). Slanted rounded numerals used 1924–27 and again in 1931 (1924 25-610).' },
   },
   {
     id: 'bc-straight-1928', label: '1928–30, 1933–35 straight dies',
     params: { width: 46, stroke: 14, curve: 'stadium', tracking: 9, one: 'flag-base', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'straight', nine: 'curved', narrow: 0.62, wide: 1.2, dash: { width: 14 } },
-    evidence: { status: 'legend-approximation', specimens: [page('1924-1929'), page('1931-1935')], notes: 'Straighter upright numerals introduced in 1928 (1929 41-311).' },
+    overrides: BC_STRAIGHT_1928,
+    evidence: { status: 'photo-averaged', specimens: [page('1924-1929'), page('1931-1935')], notes: 'Traced from averaged photos of 1928–29 and 1933–35 plates (6–15 samples per digit). Straighter upright numerals introduced in 1928 (1929 41-311).' },
+  },
+  {
+    id: 'bc-thompson-1930', label: '1930 one-year dies (Thompson)', maker: 'Thompson Heating & Ventilating',
+    params: { width: 49, stroke: 16, curve: 'stadium', tracking: 6, one: 'plain', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'straight', nine: 'curved', narrow: 0.4, wide: 1.2 },
+    overrides: BC_THOMPSON_1930,
+    evidence: { status: 'photo-averaged', specimens: [page('1930')], notes: 'Dies used only in 1930 (BCpl8s: "one-and-done"), traced from averaged 1930 passenger and doctor plates (1–6 samples per digit). No 8 is photographed; it is built from the traced 3 and its mirror image.' },
+  },
+  {
+    id: 'bc-legend-1930', label: 'Legend · 1930 (Thompson)', maker: 'Thompson Heating & Ventilating',
+    params: { width: 77, stroke: 17, curve: 'stadium', tracking: 12, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.22, wide: 1.3 },
+    overrides: BC_LEGEND_1930,
+    evidence: { status: 'photo-averaged', specimens: [page('1930')], notes: 'Wide BRITISH COLUMBIA letters (W/H about 0.77), traced from six 1930 plates.' },
   },
   {
     id: 'bc-tacey-1936', label: '1936–39 slanted dies',
     params: { width: 50, stroke: 13, curve: 'oval', tracking: 9, one: 'flag-base', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'straight', nine: 'curved', narrow: 0.62, wide: 1.2, dash: { width: 14 } },
     slant: 4,
-    evidence: { status: 'legend-approximation', specimens: [page('1936-1939')], notes: 'Slanted Tacey-style dies with an oval 0; the 1938 dies were made to match 1937 (1937 -2-200).' },
+    overrides: BC_SLIM_1936,
+    evidence: { status: 'photo-averaged', specimens: [page('1936-1939')], notes: 'Traced from averaged photos of 1936–39 plates (3–19 samples per digit). Slanted Tacey-style dies with an oval 0; the 1938 dies were made to match 1937 (1937 -2-200).' },
   },
   {
     id: 'bc-legend-1924', label: 'Legend · 1924–39', params: { width: 66, stroke: 14, curve: 'stadium', tracking: 9, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.5, wide: 1.2 },
-    evidence: { status: 'legend-approximation', specimens: [page('1924-1929'), page('1936-1939')], notes: 'Bold condensed BRITISH COLUMBIA legend spanning the lower edge.' },
+    overrides: BC_LEGEND_SLANT,
+    evidence: { status: 'photo-averaged', specimens: [page('1924-1929'), page('1936-1939')], notes: 'Letters traced from 1924–27 and 1931–32 plates (19 samples each). Bold condensed BRITISH COLUMBIA legend spanning the lower edge.' },
+  },
+  {
+    id: 'bc-legend-1928', label: 'Legend · 1928–29, 1933–35', params: { width: 70, stroke: 17, curve: 'stadium', tracking: 9, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.3, wide: 1.25 },
+    overrides: BC_LEGEND_STRAIGHT,
+    evidence: { status: 'photo-averaged', specimens: [page('1924-1929'), page('1931-1935')], notes: 'BRITISH COLUMBIA on the straight-die years, traced from averaged photos (16 samples per letter).' },
+  },
+  {
+    id: 'bc-legend-1936', label: 'Legend · 1936–39 slimline', params: { width: 66, stroke: 17, curve: 'stadium', tracking: 9, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.3, wide: 1.2 },
+    overrides: BC_LEGEND_SLIM,
+    evidence: { status: 'photo-averaged', specimens: [page('1936-1939')], notes: 'BRITISH COLUMBIA on the 1936–39 slimline plates, traced from averaged photos (12 samples per letter).' },
   },
   {
     id: 'bc-early-1940', label: 'Early rounded dies (1940–54)',
-    params: { width: 50, stroke: 16, curve: 'stadium', tracking: 9, one: 'flag', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'curved', nine: 'curved', narrow: 0.6, wide: 1.2, dash: { width: 16 } },
-    evidence: { status: 'legend-approximation', specimens: [page('1940-1948'), page('1949-1951'), page('1952-1954')], notes: 'Bold, fairly wide rounded numerals (W/H about 0.5, stroke 0.15–0.18) with a curved 7 and closed 4, read from gallery photos (1948 76-487, 1951 217-639); BCpl8s has no digit comparison for these years.' },
+    params: { width: 55, stroke: 14.5, curve: 'stadium', tracking: 11, one: 'flag', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'curved', nine: 'curved', narrow: 0.6, wide: 1.2, dash: { width: 4, weight: 17, y: 51 }, dot: 'round' },
+    // Digits and A, B, F are traced from averaged photo samples; other letters fall back to the construction above.
+    overrides: BC_SERIAL_1940,
+    evidence: { status: 'photo-averaged', specimens: [page('1940-1948'), page('1949-1951'), page('1952-1954')], notes: 'Digits traced from the average of 32–64 labelled samples each from 1940–51 plate photos (A, B, F from 7–15 samples; other letters constructed). Bold, fairly wide rounded numerals measured from gallery photos: cap about 71 mm, W/H about 0.55, stroke about 0.145, gaps about 7.5 mm (1940 99·830, 1950 230·229, 1951 217·639, 1952 42-289). 1940–51 bases use an 11 mm raised round dot between the groups; the 1952 base a short, thick 14 × 12 mm dash. BCpl8s has no digit comparison for these years.' },
   },
   {
     id: 'bc-oakalla-1955', label: 'Oakalla block dies (1955–69)', maker: 'Oakalla Prison Plate Shop',
@@ -150,6 +213,14 @@ export const DIE_PROFILES: readonly DieProfile[] = [
     evidence: { status: 'specimen-matched', specimens: [page('2001-2014'), page('2014-2025')],
       notes: `Thinner, crisper strokes than Astrographic; narrow oval bowls with a straight-sided 0, a bent 7 and a short-flagged 1. Letters checked on 098 SJF, 976 SKP and JA7 91L: rounded-rectangle P bowl, spurred J, flat-topped A. The 7's bend and the letter details are set by eye, not fitted. ${lettersNote}` },
   },
+  // 1924–39 date stamps: each year's two date digits were separate small dies, traced per year from photos.
+  ...Object.entries(BC_DATES).map(([year, glyphs]): DieProfile => ({
+    id: `bc-date-${year}`, label: `${year} date stamp`,
+    params: { width: 55, stroke: 15, curve: 'stadium', tracking: 8, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.45, wide: 1.2, dash: { width: 22 } },
+    overrides: glyphs,
+    evidence: { status: 'photo-averaged', specimens: [page(Number(year) <= 1929 ? '1924-1929' : Number(year) === 1930 ? '1930' : Number(year) <= 1935 ? '1931-1935' : '1936-1939')],
+      notes: `The ${year} date digits, traced from averaged photos of that year's plates; they differ from the serial dies.` },
+  })),
 ];
 
 const byId = new Map(DIE_PROFILES.map((p) => [p.id, p]));

@@ -1,0 +1,76 @@
+{
+  "name": "thompson-1930",
+  "title": "1930 British Columbia Die Types (0-9) · Thompson Heating & Ventilating",
+  "band": [
+    0.04,
+    0.76,
+    0.02,
+    0.86
+  ],
+  "height": [
+    0.3,
+    0.8
+  ],
+  "photos": [
+    {
+      "file": ".cache/p1930/1930-1001(XL).jpg",
+      "text": "1001",
+      "url": "https://www.bcpl8s.ca/images/Passenger/1930/1930-1001(XL).jpg"
+    },
+    {
+      "file": ".cache/p1930/1930-102963(XL).jpg",
+      "text": "102963",
+      "url": "https://www.bcpl8s.ca/images/Passenger/1930/1930-102963(XL).jpg"
+    },
+    {
+      "file": ".cache/p1930/1930-25(XL).jpg",
+      "text": "25",
+      "url": "https://www.bcpl8s.ca/images/Passenger/1930/1930-25(XL).jpg"
+    },
+    {
+      "file": ".cache/p1930/1930-36349(XL).jpg",
+      "text": "36349",
+      "url": "https://www.bcpl8s.ca/images/Passenger/1930/1930-36349(XL).jpg"
+    },
+    {
+      "file": ".cache/p1930/x_Passenger_index_1930-47746.jpg",
+      "text": "47746",
+      "url": "https://www.bcpl8s.ca/images/Passenger/index/1930-47746.jpg"
+    },
+    {
+      "file": ".cache/p1930/1930-47746.jpg",
+      "text": "47746",
+      "url": "https://www.bcpl8s.ca/images/Passenger/1930/1930-47746.jpg"
+    },
+    {
+      "file": ".cache/p1930/1930-794(XL).jpg",
+      "text": "794",
+      "url": "https://www.bcpl8s.ca/images/Passenger/1930/1930-794(XL).jpg"
+    },
+    {
+      "file": ".cache/p1930/x_Medical-Doctor_1930-19033(XL).jpg",
+      "text": "19033",
+      "label": "19-033 (doctor)",
+      "url": "https://www.bcpl8s.ca/images/Medical-Doctor/1930-19033(XL).jpg"
+    }
+  ],
+  "note": "The 1930 manufacturer sample (000-000) is left out: its figures are painted as outlines. No 1930 photo on BCpl8s shows an 8.",
+  "extra": [
+    {
+      "kind": "legend",
+      "text": "BRITISHCOLUMBIA",
+      "band": [
+        0.7,
+        0.97,
+        0.03,
+        0.97
+      ],
+      "height": [
+        0.08,
+        0.28
+      ],
+      "minw": 0.003,
+      "ratio": 0.015
+    }
+  ]
+}

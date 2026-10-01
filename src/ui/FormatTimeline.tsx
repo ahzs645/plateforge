@@ -26,14 +26,23 @@ export function FormatTimeline({ region, timeline, format, onSelect, onOpenGalle
   const items = [...timeline.eras.map((era) => ({ kind: 'era' as const, start: era.period[0], era })),
     ...gapsFor(region, timeline.family).map((gap) => ({ kind: 'gap' as const, start: gap.period[0], gap }))].sort((a, b) => a.start - b.start);
 
+  // Only scroll the strip when the active design is out of sight (arrow keys, ‹ ›, a new family); clicking a
+  // visible design just moves the highlight. The first reveal centres it, later ones nudge it in from the edge.
+  const revealed = useRef<Timeline | null>(null);
   useEffect(() => {
     const track = trackRef.current;
     const node = track?.querySelector<HTMLElement>('[aria-current="true"]');
     if (!track || !node) return;
-    // Centre the active node without scrolling the page vertically.
-    const left = node.offsetLeft - track.clientWidth / 2 + node.offsetWidth / 2;
-    track.scrollTo({ left, behavior: 'smooth' });
-  }, [format.id]);
+    const t = track.getBoundingClientRect(), r = node.getBoundingClientRect();
+    const first = revealed.current !== timeline;
+    revealed.current = timeline;
+    if (!first && r.left >= t.left && r.right <= t.right) return;
+    const pad = 24;
+    const delta = first ? r.left + r.width / 2 - (t.left + t.width / 2)
+      : r.left < t.left ? r.left - t.left - pad : r.right - t.right + pad;
+    // Horizontal only, so the page itself never jumps.
+    track.scrollTo({ left: track.scrollLeft + delta, behavior: first ? 'auto' : 'smooth' });
+  }, [format.id, timeline]);
 
   const renderEra = (e: TimelineEra) => (
     <div key={e.id} className="timeline-era" data-active={e.id === era?.id}>

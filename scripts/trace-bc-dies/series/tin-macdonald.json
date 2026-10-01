@@ -1,0 +1,319 @@
+{
+ "name": "tin-macdonald",
+ "title": "1915-16 British Columbia Die Types (0-9) · MacDonald Manufacturing",
+ "band": [
+  0.03,
+  0.98,
+  0.22,
+  0.995
+ ],
+ "height": [
+  0.5,
+  0.95
+ ],
+ "photos": [
+  {
+   "file": ".cache/tin/1915-116925(XL).jpg",
+   "text": "116925",
+   "label": "1915 116-925"
+  },
+  {
+   "file": ".cache/tin/1915-142.jpg",
+   "text": "142",
+   "label": "1915 142"
+  },
+  {
+   "file": ".cache/tin/1915-1825(XL).jpg",
+   "text": "1825",
+   "label": "1915 1-825"
+  },
+  {
+   "file": ".cache/tin/1915-1839.jpg",
+   "text": "1839",
+   "label": "1915 1-839"
+  },
+  {
+   "file": ".cache/tin/1915-2049(XL).jpg",
+   "text": "2049",
+   "label": "1915 2-049"
+  },
+  {
+   "file": ".cache/tin/1915-2106.jpg",
+   "text": "2106",
+   "label": "1915 2-106"
+  },
+  {
+   "file": ".cache/tin/1915-2171(XL).jpg",
+   "text": "2171",
+   "label": "1915 2-171"
+  },
+  {
+   "file": ".cache/tin/1915-218(XL).jpg",
+   "text": "218",
+   "label": "1915 218"
+  },
+  {
+   "file": ".cache/tin/1915-228(XL).jpg",
+   "text": "228",
+   "label": "1915 228"
+  },
+  {
+   "file": ".cache/tin/1915-23.jpg",
+   "text": "23",
+   "label": "1915 23"
+  },
+  {
+   "file": ".cache/tin/1915-2346(XL).jpg",
+   "text": "2346",
+   "label": "1915 2-346"
+  },
+  {
+   "file": ".cache/tin/1915-2904.jpg",
+   "text": "2904",
+   "label": "1915 2-904"
+  },
+  {
+   "file": ".cache/tin/1915-3115.jpg",
+   "text": "3115",
+   "label": "1915 3-115"
+  },
+  {
+   "file": ".cache/tin/1915-3517.jpg",
+   "text": "3517",
+   "label": "1915 3-517"
+  },
+  {
+   "file": ".cache/tin/1915-3685(XL).jpg",
+   "text": "3685",
+   "label": "1915 3-685"
+  },
+  {
+   "file": ".cache/tin/1915-4072(XL).jpg",
+   "text": "4072",
+   "label": "1915 4-072"
+  },
+  {
+   "file": ".cache/tin/1915-432.jpg",
+   "text": "432",
+   "label": "1915 432"
+  },
+  {
+   "file": ".cache/tin/1915-4508.jpg",
+   "text": "4508",
+   "label": "1915 4-508"
+  },
+  {
+   "file": ".cache/tin/1915-5244(XL).jpg",
+   "text": "5244",
+   "label": "1915 5-244"
+  },
+  {
+   "file": ".cache/tin/1915-5701(XL).jpg",
+   "text": "5701",
+   "label": "1915 5-701"
+  },
+  {
+   "file": ".cache/tin/1915-5853(XL).jpg",
+   "text": "5853",
+   "label": "1915 5-853"
+  },
+  {
+   "file": ".cache/tin/1915-621(XL).jpg",
+   "text": "621",
+   "label": "1915 621"
+  },
+  {
+   "file": ".cache/tin/1915-6566(XL).jpg",
+   "text": "6566",
+   "label": "1915 6-566"
+  },
+  {
+   "file": ".cache/tin/1915-6607(XL).jpg",
+   "text": "6607",
+   "label": "1915 6-607"
+  },
+  {
+   "file": ".cache/tin/1915-7195(XL).jpg",
+   "text": "7195",
+   "label": "1915 7-195"
+  },
+  {
+   "file": ".cache/tin/1915-7508(XL).jpg",
+   "text": "7508",
+   "label": "1915 7-508"
+  },
+  {
+   "file": ".cache/tin/1915-758.jpg",
+   "text": "758",
+   "label": "1915 758"
+  },
+  {
+   "file": ".cache/tin/1915-7582(XL).jpg",
+   "text": "7582",
+   "label": "1915 7-582"
+  },
+  {
+   "file": ".cache/tin/1915-7646XL.jpg",
+   "text": "7646",
+   "label": "1915 7-646"
+  },
+  {
+   "file": ".cache/tin/1915-7684.jpg",
+   "text": "7684",
+   "label": "1915 7-684"
+  },
+  {
+   "file": ".cache/tin/1915-7716(XL).jpg",
+   "text": "7716",
+   "label": "1915 7-716"
+  },
+  {
+   "file": ".cache/tin/1915-85(XL).jpg",
+   "text": "85",
+   "label": "1915 85"
+  },
+  {
+   "file": ".cache/tin/1915-9(XL).jpg",
+   "text": "9",
+   "label": "1915 9"
+  },
+  {
+   "file": ".cache/tin/1916-1825(XL).jpg",
+   "text": "1825",
+   "label": "1916 1-825"
+  },
+  {
+   "file": ".cache/tin/1916-1839.jpg",
+   "text": "1839",
+   "label": "1916 1-839"
+  },
+  {
+   "file": ".cache/tin/1916-2066(XL).jpg",
+   "text": "2066",
+   "label": "1916 2-066"
+  },
+  {
+   "file": ".cache/tin/1916-2106.jpg",
+   "text": "2106",
+   "label": "1916 2-106"
+  },
+  {
+   "file": ".cache/tin/1916-218(XL).jpg",
+   "text": "218",
+   "label": "1916 218"
+  },
+  {
+   "file": ".cache/tin/1916-3685(XL).jpg",
+   "text": "3685",
+   "label": "1916 3-685"
+  },
+  {
+   "file": ".cache/tin/1916-4123(XL).jpg",
+   "text": "4123",
+   "label": "1916 4-123"
+  },
+  {
+   "file": ".cache/tin/1916-5244(XL).jpg",
+   "text": "5244",
+   "label": "1916 5-244"
+  },
+  {
+   "file": ".cache/tin/1916-5655(XL).jpg",
+   "text": "5655",
+   "label": "1916 5-655"
+  },
+  {
+   "file": ".cache/tin/1916-566(XL).jpg",
+   "text": "566",
+   "label": "1916 566"
+  },
+  {
+   "file": ".cache/tin/1916-6423(XL).jpg",
+   "text": "6423",
+   "label": "1916 6-423"
+  },
+  {
+   "file": ".cache/tin/1916-7047(XL).jpg",
+   "text": "7047",
+   "label": "1916 7-047"
+  },
+  {
+   "file": ".cache/tin/1916-7195(XL).jpg",
+   "text": "7195",
+   "label": "1916 7-195"
+  },
+  {
+   "file": ".cache/tin/1916-7330(XL).jpg",
+   "text": "7330",
+   "label": "1916 7-330"
+  },
+  {
+   "file": ".cache/tin/1916-7462(XL).jpg",
+   "text": "7462",
+   "label": "1916 7-462"
+  },
+  {
+   "file": ".cache/tin/1916-7508(XL).jpg",
+   "text": "7508",
+   "label": "1916 7-508"
+  },
+  {
+   "file": ".cache/tin/1916-758.jpg",
+   "text": "758",
+   "label": "1916 758"
+  },
+  {
+   "file": ".cache/tin/1916-7646XL.jpg",
+   "text": "7646",
+   "label": "1916 7-646"
+  },
+  {
+   "file": ".cache/tin/1916-787(XL).jpg",
+   "text": "787",
+   "label": "1916 787"
+  },
+  {
+   "file": ".cache/tin/1916-8277(XL).jpg",
+   "text": "8277",
+   "label": "1916 8-277"
+  },
+  {
+   "file": ".cache/tin/1916-8674.jpg",
+   "text": "8674",
+   "label": "1916 8-674"
+  },
+  {
+   "file": ".cache/tin/1916-8766(XL).jpg",
+   "text": "8766",
+   "label": "1916 8-766"
+  },
+  {
+   "file": ".cache/tin/1916-8913.jpg",
+   "text": "8913",
+   "label": "1916 8-913"
+  },
+  {
+   "file": ".cache/tin/1916-9(XL).jpg",
+   "text": "9",
+   "label": "1916 9"
+  },
+  {
+   "file": ".cache/tin/1916-903.jpg",
+   "text": "903",
+   "label": "1916 903"
+  },
+  {
+   "file": ".cache/tin/1916-975(XL).jpg",
+   "text": "975",
+   "label": "1916 975"
+  }
+ ],
+ "chartOnly": true,
+ "serial": {
+  "ratio": 0.1,
+  "maxRight": 0.99
+ },
+ "pin": {
+  "9": "1916 9"
+ }
+}

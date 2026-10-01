@@ -1,6 +1,6 @@
 # British Columbia: coverage and plate kit
 
-PlateForge covers British Columbia with **433 editable designs in 16 families**, reconstructed from [BCpl8s](https://www.bcpl8s.ca/) research. Each family has its own timeline and gallery section. The in-app checklist at `#/library/coverage` maps all 67 BCpl8s topics to the formats that draw them. Its data file is `public/data/reference-library/bc-coverage.json`, and a test keeps it in step with the registry.
+PlateForge covers British Columbia with **441 editable designs in 16 families**, reconstructed from [BCpl8s](https://www.bcpl8s.ca/) research. Each family has its own timeline and gallery section. The in-app checklist at `#/library/coverage` maps all 67 BCpl8s topics to the formats that draw them. Its data file is `public/data/reference-library/bc-coverage.json`, and a test keeps it in step with the registry.
 
 | Family | Designs | Scope |
 |---|---|---|

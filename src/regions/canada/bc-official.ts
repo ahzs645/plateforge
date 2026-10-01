@@ -77,15 +77,16 @@ function base1936(id: string, label: string, b: Size, source: typeof SRC.md, sep
     serial: { x: b.w * 0.465, baseline: b.h * 0.65, cap: b.h * 0.48, maxWidth: b.w * 0.8, die: 'bc-tacey-1936', separator: sep }, ...extra,
   });
 }
-/** 1940–51 stacked-year base (scene.ts, stacked-year layout; die cap = 0.7 × label size). */
+/** 1940–51 stacked-year base, kept in step with scene.ts's stacked-year layout (measured from BCpl8s photos): slots
+ *  ±80 mm from the middle, heavy edge rim, 71 mm serial, 32 mm stacked year, 20.5 mm legend. */
 function base1940(id: string, label: string, source: typeof SRC.md, sep: KitSerial['separator'], w = 290, h = 137): KitRecipe {
   return recipe(id, label, { w, h }, source, {
-    radius: 9, holes: 'slots', holeAt: { x: [0.21, 0.79], y: [10 / h, 1 - 10 / h] }, rim: { inset: 4, width: 1.6 }, note: BASE_NOTE,
+    radius: 9, holes: 'slots', holeAt: { x: [(w / 2 - 80) / w, (w / 2 + 80) / w], y: [12.5 / h, 1 - 12.5 / h] }, rim: { inset: 2.8, width: 3.2 }, note: BASE_NOTE,
     legends: [
-      ...stackedYear(w - 18, 48, 40, 23.8, 'bc-legend-1940'),
-      { text: 'BRITISH COLUMBIA', x: w / 2, baseline: 121, cap: 16.8, maxWidth: w - 28, die: 'bc-legend-1940', role: 'province', spread: true },
+      ...stackedYear(w - 15, 51.5, 38.5, 32, 'bc-year-1940').map((t) => ({ ...t, maxWidth: 17 })),
+      { text: 'BRITISH COLUMBIA', x: (w - 1) / 2, baseline: 120.5, cap: 20.5, maxWidth: w - 29, die: 'bc-legend-1940', role: 'province', spread: true },
     ],
-    serial: { x: (w - 28) / 2, baseline: 98, cap: 72.8, maxWidth: w - 48, die: 'bc-early-1940', separator: sep },
+    serial: { x: (w - 16) / 2, baseline: 90, cap: 71, maxWidth: w - 42, die: 'bc-early-1940', separator: sep },
   });
 }
 /** 1955–63 standard base (scene.ts annual-standard): BRITISH COLUMBIA and the date along the bottom. */
@@ -349,11 +350,11 @@ const officialSpecs: Spec[] = [
     description: 'Stacked-year N plates (N-999 in 1949; N-840 and N1371 in 1954, when passengers still renewed the 1952 base but N plates got a new plate). 1950, 1951 and 1953 N plates are not pictured and not offered.' },
   { id: 'official-defence-1952', label: '1952 · National Defence N', family: 'official', era: 'official-prefix-1938', period: [1952, 1952],
     recipe: recipe('official-nd-1952', '1952 National Defence (totem base)', { w: 350, h: 140 }, SRC.nd, {
-      radius: 9, holes: 'round', holeAt: { x: [0.27, 0.7], y: [10 / 140, 130 / 140] }, rim: { inset: 4, width: 1.6 }, note: BASE_NOTE,
-      art: [{ art: 'official-totem', x: 262, y: 48, width: 79, height: 81 }],
-      legends: [{ text: 'BRITISH COLUMBIA', x: 125.5, baseline: 122, cap: 17.5, maxWidth: 229, die: 'bc-legend-1940', role: 'province', spread: true },
-        { text: '{yy}', x: 303, baseline: 44, cap: 28, maxWidth: 58, die: 'bc-legend-1940', role: 'year' }],
-      serial: { x: 125.5, baseline: 96, cap: 72.8, maxWidth: 229, die: 'bc-early-1940', separator: { kind: 'dot' } } }),
+      radius: 9, holes: 'round', holeAt: { x: [0.27, 0.693], y: [13 / 140, 125 / 140] }, rim: { inset: 2.8, width: 3.2 }, note: BASE_NOTE,
+      art: [{ art: 'official-totem', x: 264.8, y: 50.2, width: 69.4, height: 67.6 }],
+      legends: [{ text: 'BRITISH COLUMBIA', x: 137, baseline: 122, cap: 21, maxWidth: 243, die: 'bc-legend-1940', role: 'province', spread: true },
+        { text: '{yy}', x: 302.6, baseline: 55, cap: 34, maxWidth: 55, die: 'bc-year-1952', role: 'year', spread: true }],
+      serial: { x: 137, baseline: 92.5, cap: 70, maxWidth: 244, die: 'bc-early-1940', separator: { kind: 'dot' } } }),
     palettes: years(P1940, [1952]), grammar: listed('N-1 … N-999', [1, 999, (n) => `N-${n}`]),
     description: 'N-24 on the 1952 aluminium totem base (geometry from the passenger totem base, scene.ts), 52 and the totem emblem at the right.' },
   { id: 'official-defence-1955', label: '1955–63 · National Defence N', family: 'official', era: 'official-prefix-1938', period: [1955, 1963],

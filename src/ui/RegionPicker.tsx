@@ -79,6 +79,8 @@ export function RegionPicker({ open, regions, selected, selectedFormat, onSelect
   const inputRef = useRef<HTMLInputElement>(null);
   const listRef = useRef<HTMLDivElement>(null);
   const optionsRef = useRef<HTMLDivElement>(null);
+  /** Set when the cursor moves by keyboard (or on open); hover only highlights and never scrolls the list. */
+  const reveal = useRef<ScrollLogicalPosition | null>(null);
 
   const all = useMemo(() => groupByCountry(regions), [regions]);
   const countries = useMemo(() => all.flatMap((c) => c.countries), [all]);
@@ -120,6 +122,7 @@ export function RegionPicker({ open, regions, selected, selectedFormat, onSelect
 
   useEffect(() => {
     const i = matches.findIndex((r) => r.id === selected);
+    reveal.current = 'center';
     setCursor(!query && i >= 0 ? i : 0);
     // Only re-anchor when the visible set changes, not on every hover.
   }, [query, country, open]);
@@ -128,8 +131,11 @@ export function RegionPicker({ open, regions, selected, selectedFormat, onSelect
   useEffect(() => { setOption(null); setHovered(null); }, [activeRegion?.id]);
 
   useEffect(() => {
-    listRef.current?.querySelector('.picker-item[data-active="true"]')?.scrollIntoView({ block: 'nearest' });
-  }, [cursor, open]);
+    const block = reveal.current;
+    reveal.current = null;
+    if (!block) return;
+    listRef.current?.querySelector('.picker-item[data-active="true"]')?.scrollIntoView({ block });
+  }, [cursor, open, query, country]);
   useEffect(() => {
     if (option !== null) optionsRef.current?.querySelector('[data-active="true"]')?.scrollIntoView({ block: 'nearest' });
   }, [option]);
@@ -158,9 +164,11 @@ export function RegionPicker({ open, regions, selected, selectedFormat, onSelect
       setOption(Math.max(0, current));
     } else if (e.key === 'ArrowDown') {
       e.preventDefault();
+      reveal.current = 'nearest';
       setCursor((c) => Math.min(matches.length - 1, c + 1));
     } else if (e.key === 'ArrowUp') {
       e.preventDefault();
+      reveal.current = 'nearest';
       setCursor((c) => Math.max(0, c - 1));
     } else if (e.key === 'Enter') {
       e.preventDefault();

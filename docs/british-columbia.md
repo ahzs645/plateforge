@@ -1,6 +1,6 @@
 # British Columbia passenger system: 1940–1963
 
-Implementation scope of this document: 24 annual recipes, plus the documented 1962 four-digit no-dash variant (25 presets). The registered region also includes 17 later presets for 1964–1985, described in [the reference-library notes](reference-library.md), for **42 B.C. presets** in total. Region `ca-bc`, template `bc-historical` (later bases are drawn by `src/templates/bc/later-scene.ts` inside the same template), country Canada. The full B.C. collection (433 designs, 16 families) and the plate kit are described in [B.C. coverage and plate kit](bc-coverage.md); lettering in [B.C. die library](bc-dies.md). No other Canadian province or BC vehicle class is implied. Example routes: `#/ca-bc/1951`, `#/ca-bc/1953`, `#/ca-bc/1958`, `#/ca-bc/1962-no-dash`.
+Implementation scope of this document: 24 annual recipes, plus the documented 1962 four-digit no-dash variant (25 presets). The registered region also includes 17 later presets for 1964–1985, described in [the reference-library notes](reference-library.md), for **42 B.C. presets** in total. Region `ca-bc`, template `bc-historical` (later bases are drawn by `src/templates/bc/later-scene.ts` inside the same template), country Canada. The full B.C. collection (441 designs, 16 families) and the plate kit are described in [B.C. coverage and plate kit](bc-coverage.md); lettering in [B.C. die library](bc-dies.md). No other Canadian province or BC vehicle class is implied. Example routes: `#/ca-bc/1951`, `#/ca-bc/1953`, `#/ca-bc/1958`, `#/ca-bc/1962-no-dash`.
 
 ## Evidence and reconstruction
 
@@ -22,13 +22,13 @@ Dimensions are the site's reported millimetres, not a claim that rounded centime
 | Years, base/renewal relationships, colour names, broad layouts | Researched against BCpl8s; source attached to every format and SVG metadata. |
 | Width/height and renewal dimensions | Source-reported measurements; not newly measured from an original plate. |
 | Paint hex values | Digital approximations. Aging, scanning and illumination prevent calibrated paint recovery from the chart. |
-| Original stamping dies | **Not reproduced.** Existing Barlow Condensed is a live-text proxy with rounded/italic and block profiles. Do not describe these as exact historical fonts. |
+| Original stamping dies | **Reconstructed, not recovered.** The serial, legend, stacked year, 1952 date, 1951 strip and 1953/54 tab numbers use die profiles whose outlines are traced from averaged BCpl8s photographs; see [B.C. die library](bc-dies.md). They remain reconstructions, not the historical tooling. Barlow Condensed stays available as a live-text option. |
 | Totem/maple-leaf emblem | One editable **approximate** vector master (`src/templates/bc/totem-emblem.ts`), shared by the base and tabs. It is an authored cubic-Bézier reconstruction with seven named even-odd totem parts and a separately clipped maple-leaf frame, not a trace or a verified official master. |
-| Rim, corner radii, slots, text metrics, tab-ID positions | Estimated geometry; not a fabrication drawing. |
+| Rim, corner radii, slots, text metrics, tab-ID positions | Slots (±80 mm, 12.5 mm in), rim, serial/legend/year positions, strip and tab placement are measured from photographs (see [bc-dies.md](bc-dies.md#1940-54-bases-and-renewal-pieces-measured-from-photos-september-2026)). Corner radii and the remaining details are estimated; this is not a fabrication drawing. |
 | Serial validation | Supported syntax and year-specific subset only; not actual registration verification or a complete issue-allocation database. |
 | Weathering, repainted/re-stamped 1943 surfaces, suffix variants | Not reproduced. The late blank 1952 base and W/Y over-run prefixes (from 1953) **are** implemented; see [Renewal pieces](#renewal-pieces). Suffix over-runs remain outside the supported subset. |
 
-No source photographs or font files are included in this change. Existing app font imports are reused. BCpl8s photographs remain the property of their respective rights holders. Generated plates are for research, mockups and design, not official issuance.
+No source photographs or font files are bundled with the app. Research crops and overlays derived from BCpl8s photographs are kept, with credits, in [research/bc-lettering](research/bc-lettering/README.md). Existing app font imports are reused. BCpl8s photographs remain the property of their respective rights holders. Generated plates are for research, mockups and design, not official issuance.
 
 ## Shared implementation
 

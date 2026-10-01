@@ -8,9 +8,10 @@ import { skeletonGlyph, type SkeletonGlyph, type SkeletonParams } from './skelet
 
 export interface DieEvidence {
   /** `specimen-matched`: proportions and diagnostic shapes read from BCpl8s die comparisons.
+   *  `photo-averaged`: glyph outlines traced from the average of many labelled photo samples.
    *  `legend-approximation`: small legends matched by eye from plate photos.
    *  `category`: a construction category only. */
-  status: 'specimen-matched' | 'legend-approximation' | 'category';
+  status: 'specimen-matched' | 'photo-averaged' | 'legend-approximation' | 'category';
   specimens: readonly { title: string; url: string }[];
   notes: string;
 }
@@ -71,7 +72,10 @@ export function buildDieText(p: DieTextProps): DieRun {
   const left = p.anchor === 'start' ? p.x : p.anchor === 'end' ? p.x - width : p.x - width / 2;
   let cursor = 0;
   const children = glyphs.map(({ char, glyph }) => {
-    const item = n('g', { transform: `translate(${round(cursor)} 0)`, 'data-character': char, ...(glyph.stroke ? { strokeWidth: glyph.stroke } : {}) },
+    const item = n('g', { transform: `translate(${round(cursor)} 0)`, 'data-character': char, ...(glyph.stroke ? { strokeWidth: glyph.stroke } : {}),
+      ...(glyph.cap ? { strokeLinecap: glyph.cap } : {}),
+      // Traced outlines are filled shapes, not centrelines.
+      ...(glyph.fill ? { fill: p.ink, stroke: 'none', fillRule: 'evenodd' } : {}) },
       ...glyph.paths.map((d) => n('path', { d })));
     cursor += glyph.advance + spacing;
     return item;
