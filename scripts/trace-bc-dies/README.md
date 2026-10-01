@@ -9,7 +9,9 @@ copies 1970s-or-later U.S. or Ontario lettering. So these glyphs are built from 
 1. `fetch.sh` downloads the 1915–17 and 1940–54 passenger photos, preferring the full-size "(XL)" copies
    the galleries link to, from [BCpl8s](https://www.bcpl8s.ca) into `.cache/`.
    BCpl8s names each photo after its plate (`1940-99830.jpg` is 99·830), so every character is labelled.
-   The cache is git-ignored; the photographs are references only and are never committed or bundled.
+   The cache is git-ignored; the full photographs are references only and are never committed or bundled.
+   Charts, averages and overlays derived from them are published to
+   [docs/research/bc-lettering](../../docs/research/bc-lettering/README.md) by `publish.py` (see below).
 2. `extract.py` trims the photo background, splits each plate into its two colours to find the ink, and
    cuts out the serial characters, the `BRITISH COLUMBIA` legend letters, the stacked year (1940–51) and
    the 52 (1952 base). A photo counts only when the number of shapes found equals the text it must show.
@@ -34,7 +36,9 @@ The config lists each photo, the text it shows and where it can be downloaded. I
   charts, captioned with the plate it came from. A grey tile marks a digit no photo shows.
 - the per-character averages for `vectorize.py`.
 
-The charts are built from BCpl8s photographs, so they stay in the git-ignored `out/` folder and are not committed.
+`gen_charts.py` writes chart-only configs (`"chartOnly": true`, no averages) for the 1915–16 MacDonald, 1916–17 Tacey
+and 1940–54 dies, whose averages come from `tin.py` and `extract.py`. A config can `pin` a digit to a named photo
+when the sharpest crop is a poor example.
 1930 has no photographed 8; `emit.py` builds one from the traced 3 and its mirror image and marks it as synthesised.
 
 ## Annual plates, 1924–39
@@ -51,6 +55,13 @@ The small date ("-24" … "-35", stacked "36" … "39") was struck with its own 
 or a stacked pair at the far right), averages them per year and writes `out/dates-chart.png`, the sharpest real
 crop of each year's date. Each year becomes its own die (`bc-date-1924` … `bc-date-1939`, from `BC_DATES`), with
 2–11 plates per year.
+
+## Publishing to the repository
+
+`out/` stays git-ignored. `publish.py` copies the charts and builds one sheet of averaged glyphs per die, with
+sample counts and photo lists, into [docs/research/bc-lettering](../../docs/research/bc-lettering/README.md).
+`compare.cjs` renders overlays of the app on the cached photos (cases in `comparisons.json`; needs `npm run dev`
+and Playwright). `survey.py` writes the BCpl8s lettering excerpts used for the era survey.
 
 ## Sample counts (September 2026, full-size photos where available)
 

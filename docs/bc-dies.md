@@ -79,7 +79,7 @@ The lettering control still offers editable font text and the four procedural co
 
 ## 1940–54 bases and renewal pieces, measured from photos (September 2026)
 
-The 1940–51 stacked-year bases, the 1951 strip, the 1952 base and the 1953/54 tabs were overlaid on BCpl8s photographs (1940 99·830, 1949 71·064 and 121·464, 1950 230·229, 1951 217·639 and the loose long/short strips, 1952 42-289, 1953 148879 and loose tab, 1954 306142 and loose tab). Positions were then measured from the photos rather than estimated. The photographs are references only and are not bundled.
+The 1940–51 stacked-year bases, the 1951 strip, the 1952 base and the 1953/54 tabs were overlaid on BCpl8s photographs (1940 99·830, 1949 71·064 and 121·464, 1950 230·229, 1951 217·639 and the loose long/short strips, 1952 42-289, 1953 148879 and loose tab, 1954 306142 and loose tab). Positions were then measured from the photos rather than estimated. The photographs are references only and are not bundled with the app; the overlays are in [research/bc-lettering](research/bc-lettering/README.md#overlay-comparisons-comparisons).
 
 - **Separator**: 1940–51 bases carry an 11 mm raised **round dot**, not a dash (`dot: 'round'` on `bc-early-1940`). The 1952 base has a short, thick 14 × 12 mm dash.
 - **Serial** (`bc-early-1940`): cap about 71 mm, W/H about 0.55, stroke about 0.145, gaps about 7.5 mm. On 1940–51 bases it spans about 13 mm to w − 29 mm on a 90 mm baseline; on the 1952 base it spans 15–258 mm on a 92.5 mm baseline.
@@ -133,6 +133,7 @@ The same photo averaging was run over the 1924–39 passenger pages. The results
 - **Layout**: serial, legend and date positions are medians measured over the photographed plates
   (`scripts/trace-bc-dies/layout.py`).
 
-The weakest averages have few samples, such as the 1936–39 7 (three photos) and 1924's date 4. Sample counts, and the script that
-builds a 0–9 die chart for each era from the photos (kept out of the repo), are in [scripts/trace-bc-dies](../scripts/trace-bc-dies/README.md). The era survey
+The weakest averages have few samples, such as the 1936–39 7 (three photos) and 1924's date 4. The 0–9 die charts for each era, the
+averaged glyphs with sample counts, and photo overlays are in [research/bc-lettering](research/bc-lettering/README.md); the method is in
+[scripts/trace-bc-dies](../scripts/trace-bc-dies/README.md). The era survey
 across every BCpl8s page is in [bc-font-eras.md](bc-font-eras.md).

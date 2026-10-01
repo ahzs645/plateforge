@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Download the BCpl8s 1940–54 passenger photos used as references into .cache/ (never committed).
+# Download the BCpl8s passenger photos used as references into .cache/ (never committed).
 # Polite: one request at a time with a short pause; files already cached are skipped.
 set -euo pipefail
 cd "$(dirname "$0")"

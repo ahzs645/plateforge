@@ -28,7 +28,7 @@ Dimensions are the site's reported millimetres, not a claim that rounded centime
 | Serial validation | Supported syntax and year-specific subset only; not actual registration verification or a complete issue-allocation database. |
 | Weathering, repainted/re-stamped 1943 surfaces, suffix variants | Not reproduced. The late blank 1952 base and W/Y over-run prefixes (from 1953) **are** implemented; see [Renewal pieces](#renewal-pieces). Suffix over-runs remain outside the supported subset. |
 
-No source photographs or font files are included in this change. Existing app font imports are reused. BCpl8s photographs remain the property of their respective rights holders. Generated plates are for research, mockups and design, not official issuance.
+No source photographs or font files are bundled with the app. Research crops and overlays derived from BCpl8s photographs are kept, with credits, in [research/bc-lettering](research/bc-lettering/README.md). Existing app font imports are reused. BCpl8s photographs remain the property of their respective rights holders. Generated plates are for research, mockups and design, not official issuance.
 
 ## Shared implementation
 

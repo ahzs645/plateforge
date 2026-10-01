@@ -5,7 +5,9 @@ which dies or lettering they used. The lettering changes when the **maker** or t
 does not always line up with a new plate design. Two changes happened partway through a year: the 1916 over-run,
 and the ACME→Hi-Signs switch within a 1982 serial block.
 
-"In PlateForge" gives the die profile that draws each era (see [bc-dies.md](bc-dies.md)).
+"In PlateForge" gives the die profile that draws each era (see [bc-dies.md](bc-dies.md)). The die-type charts,
+averaged glyphs, photo overlays and the BCpl8s excerpts this survey is based on are in
+[research/bc-lettering](research/bc-lettering/README.md).
 
 ## Passenger plates
 
