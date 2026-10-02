@@ -1,0 +1,46 @@
+[
+  {
+    "id": "truck-131098",
+    "label": "Erbil commercial truck · 2015 photograph",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Erbil_Iraq_number_plate_truck_2015.jpg",
+    "author": "Kurdistantolive",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "outline": "M48 50 C259 42 439 37 542 33 L961 18 L1519 5 Q1558 24 1578 68 L1581 274 C1584 517 1554 721 1534 816 L1499 833 C1260 832 1105 824 936 813 Q865 788 784 812 L130 807 Q106 803 91 780 C65 670 37 550 28 403 L15 107 Q10 83 48 50 Z",
+    "borders": [
+      "M538 65 L47 85 L36 100 L48 224 M52 290 L52 460 C54 552 82 705 111 790 L273 796 M404 801 L783 806 M800 805 C842 797 895 800 934 808 L1181 815 M1326 822 L1521 825 C1545 694 1562 562 1561 462 L1560 262 M1558 193 L1557 57 L959 70",
+      "M49 464 C257 469 512 465 784 465 L1560 464",
+      "M794 463 L789 805"
+    ],
+    "unknown": [
+      {
+        "path": "M538 0 L965 0 C908 49 843 80 738 81 C649 81 591 55 538 0 Z"
+      },
+      {
+        "path": "M46 224 C86 202 120 227 110 263 C103 289 79 298 48 282 Z M1531 197 C1567 180 1591 201 1584 234 C1578 260 1547 266 1524 252 Z M273 793 C311 772 368 783 402 802 L401 828 L278 828 Z M1183 815 C1225 797 1284 809 1327 827 L1327 834 L1183 834 Z"
+      }
+    ]
+  },
+  {
+    "id": "motorcycle-8795",
+    "label": "Erbil motorcycle · 2015 photograph",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Erbil_Iraq_motorcycle_number_plate_2015.jpg",
+    "author": "Kurdistantolive; cropped by PawelMM",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "outline": "M20 1 L349 1 Q365 1 372 14 L373 245 Q374 257 364 265 L18 268 Q4 266 3 254 L2 22 Q1 8 20 1 Z",
+    "borders": [
+      "M82 6 L16 7 L10 12 L8 99 L6 138 L7 155 L7 254 M11 260 L28 263 M56 262 L181 261 L263 260 M280 260 L358 260 L368 250 L369 16 L363 9 L307 7",
+      "M7 141 C106 141 251 140 368 137",
+      "M190 141 L187 259"
+    ],
+    "unknown": [
+      {
+        "path": "M89 0 L307 0 L304 17 C290 31 267 36 238 36 L136 35 C108 35 96 26 90 13 Z"
+      },
+      {
+        "path": "M82 5 C76 8 72 18 74 31 C76 45 86 53 100 54 C112 53 122 45 124 35 L113 24 Z M254 27 L289 19 C291 32 284 43 274 47 C263 49 253 45 250 35 Z"
+      }
+    ]
+  }
+]

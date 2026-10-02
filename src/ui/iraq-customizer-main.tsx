@@ -1,5 +1,5 @@
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
-import { IraqCustomizer } from './IraqCustomizer';
+import { IraqWorkspace } from './IraqWorkspace';
 
-createRoot(document.getElementById('root')!).render(<StrictMode><IraqCustomizer /></StrictMode>);
+createRoot(document.getElementById('root')!).render(<StrictMode><IraqWorkspace /></StrictMode>);

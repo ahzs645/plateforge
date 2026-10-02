@@ -1241,9 +1241,16 @@ kbd {
   .mobile-tabs {
     display: flex;
     margin: 12px 16px 0;
+    /* Six modes no longer fit a phone width: scroll the row, not the page. */
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .mobile-tabs::-webkit-scrollbar {
+    display: none;
   }
   .mobile-tabs button {
-    flex: 1;
+    flex: 1 0 auto;
+    white-space: nowrap;
   }
   .workspace {
     gap: 16px;

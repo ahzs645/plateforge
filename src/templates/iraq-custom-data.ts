@@ -1348,7 +1348,7 @@ export const IRAQ_CUSTOM_PRESETS: IraqCustomPreset[] = [
     "label": "Flat Anbar · condensed taxi",
     "family": "Flat specimen-derived presets",
     "kind": "side",
-    "kr": true,
+    "kr": false,
     "evidence": "Flat editable interpretation of one photographed specimen. Geometry is canonical, not the source photograph. Only documented font subsets are observed; changed text may require explicit fallback.",
     "defaults": {
       "presetId": "flat-anbar-taxi",
@@ -1723,7 +1723,7 @@ export const IRAQ_CUSTOM_PRESETS: IraqCustomPreset[] = [
     "label": "International Erbil · flat diagram interpretation",
     "family": "Additional source-illustration layouts",
     "kind": "international",
-    "kr": false,
+    "kr": true,
     "evidence": "Illustration-derived customizable layout, not a photographed manufacturing specification. All changed lettering uses explicitly labelled candidate or fallback outlines.",
     "defaults": {
       "presetId": "illustration-international-erbil",

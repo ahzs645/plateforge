@@ -37,6 +37,7 @@ const html = `<!doctype html>
 fs.mkdirSync(path.dirname(out), { recursive: true });
 fs.writeFileSync(out, html);
 const sourceFiles = [
+  'src/ui/IraqWorkspace.tsx', 'src/ui/IraqTimeline.tsx', 'src/ui/iraq-timeline.css', 'src/templates/iraq-custom-timeline.ts',
   'src/ui/IraqCustomizer.tsx', 'src/ui/iraq-customizer.css', 'src/ui/iraq-customizer-main.tsx',
   'src/ui/exporting.ts', 'src/templates/iraq-custom-scene.ts', 'src/templates/iraq-custom-fonts.ts',
   'src/templates/iraq-custom-data.ts', 'src/templates/iraq-custom-types.ts', 'src/regions/asia/iraq-data.ts',
