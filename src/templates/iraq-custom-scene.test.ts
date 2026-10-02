@@ -1,4 +1,4 @@
-import { existsSync, readFileSync } from 'node:fs';
+import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import { iraq } from '../regions/asia/iraq';
 import { IRAQ_CUSTOM_PRESETS, IRAQ_CUSTOM_SOURCE_COVERAGE } from './iraq-custom-data';
@@ -7,9 +7,6 @@ import type { IraqCustomState } from './iraq-custom-types';
 import { IRAQ_FONT_PROFILES, IRAQ_WORDMARKS, renderGlyphRun, renderWordmark } from './iraq-custom-fonts';
 
 const readJson = (path: string) => JSON.parse(readFileSync(path, 'utf8'));
-// The earlier photo-reconstruction study is not in this repo; checks against its exact paths run only where it is present.
-const SOURCE_STUDY = 'docs/research/iraq-complete';
-const hasSourceStudy = existsSync(SOURCE_STUDY);
 // Compare rendered shapes independently of titles, evidence notices and saved-state metadata.
 const artwork = (svg: string) => svg.replace(/<(title|desc|metadata)\b[^>]*>[\s\S]*?<\/\1>/g, '');
 const presetForSource = (sourceId: string) => {
@@ -158,8 +155,7 @@ describe('flat Iraq parametric scenes', () => {
     expect(edit.svg).toContain('fill="#123456"');
     expect(edit.svg).not.toContain('data-role="flat-border"');
     expect(edit).toMatchObject({ width: 520, height: 180 });
-    if (!hasSourceStudy) return;
-    const utility = readJson(`${SOURCE_STUDY}/utility/specimens.json`) as { outline: string; borders: string[]; unknown: { path: string }[] }[];
+    const utility = readJson('docs/research/iraq-customizer/fixtures/utility-frame-paths.json') as { outline: string; borders: string[]; unknown: { path: string }[] }[];
     for (const id of ['flat-erbil-truck', 'flat-erbil-motorcycle']) {
       const svg = renderIraqCustom(customizerState(id)).svg;
       for (const specimen of utility) {
@@ -288,8 +284,8 @@ describe('flat Iraq parametric scenes', () => {
     }
   });
 
-  it.skipIf(!hasSourceStudy)('retains the original bounded Anbar non-security emblem as one uniformly scaled object', () => {
-    const source = readFileSync(`${SOURCE_STUDY}/anbar-taxi/complete-plate.svg`, 'utf8');
+  it('retains the original bounded Anbar non-security emblem as one uniformly scaled object', () => {
+    const source = readFileSync('docs/research/iraq-customizer/fixtures/anbar-nonsecurity-emblem.svg', 'utf8');
     const sourceEmblem = source.match(/<g id="bounded-nonsecurity-emblem">([\s\S]*?)<\/g>/)![1];
     const sourcePaths = [...sourceEmblem.matchAll(/<path[^>]* d="([^"]*)"/g)].map(match => match[1]);
     expect(sourcePaths).toHaveLength(2);

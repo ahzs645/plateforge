@@ -18,7 +18,7 @@ Edits are retained while switching presets within the open session. Restore pres
 
 ### In PlateForge
 
-Run the existing development/build workflow and choose **Iraq editor**, or open `#/iraq-customizer`. Existing country pages and BC work are preserved. This is a separate explicit editor, not a silent replacement of every historical country default.
+Run the existing development/build workflow and choose **Iraq history** (`#/iraq-timeline`) or **Iraq editor** (`#/iraq-customizer/<preset-id>`). The original Iraq page links directly to its matching editor preset and to the new history view. Timeline cards render using the actual editor engine and open that exact preset. History filters distinguish federal/Kurdistan, class, era and evidence. The same history/editor workspace is included in the offline HTML. Original recipe previews remain available; their timeline labels now flag uncertain indexing rather than assert unsupported exact issue dates. See `PATCH-HANDOFF.md` for the exact clean-baseline application procedure.
 
 ## Implemented scope
 
@@ -40,6 +40,9 @@ Some class descriptions and unsourced combinations are clearly labelled candidat
 - `src/templates/iraq-custom-data.ts`: presets, controls, source mapping and palettes
 - `src/templates/iraq-custom-fonts.ts`: reusable outline font/wordmark API and evidence metadata
 - `src/templates/iraq-custom-scene.ts`: actual parametric layout/validation/export SVG renderer
+- `src/templates/iraq-custom-timeline.ts`: source-dated chronology covering all 38 presets
+- `src/ui/IraqTimeline.tsx`: filterable history with actual renderer previews and edit links
+- `src/ui/IraqWorkspace.tsx`: shared website/offline history and preset URL routing
 - `src/ui/IraqCustomizer.tsx`: React controls, pure state reducer and export actions
 - `src/ui/iraq-customizer.css`: isolated UI styling
 - `src/ui/iraq-customizer-main.tsx`: standalone entry
@@ -63,7 +66,7 @@ The included reviewable patch contains the new source, tests/docs/fixtures and t
 
 ## Validation and exact limits
 
-Passed on the final implementation: TypeScript, full 1,355-test suite (two pre-existing skips), production build, 85 independent scene/UI-state/SSR/export-state tests, 12 font runtime tests and 60 SVG-to-TTF raster checks. All 38 presets in both layouts render without errors, and example SVGs parse correctly. Font and plate raster proofs were visually inspected. The offline HTML's checksum and ten source-file hashes match its build manifest; it has no external runtime assets.
+Passed on the final working implementation (clean-baseline patch results are recorded separately in PATCH-HANDOFF.md): TypeScript, working-checkout 1,365-test suite (two pre-existing skips), production build, 85 independent scene/UI-state/SSR/export-state tests, 10 new timeline/route tests, 12 font runtime tests and 60 SVG-to-TTF raster checks. All 38 presets in both layouts render without errors, and example SVGs parse correctly. Font and plate raster proofs were visually inspected. The offline HTML's checksum and source-file hashes match its build manifest; it has no external runtime assets.
 
 **Actual browser interaction/download/navigation QA was not completed.** The permitted cloud browser rejected local Vite with `ERR_BLOCKED_BY_CLIENT`; no successful browser screenshots or downloads are claimed. UI state transitions, conditional fields, reset/reselection and strict/fallback export-button behavior were tested directly and via React server rendering. PNG conversion uses the existing browser export helper, but actual browser download completion is unverified here.
 

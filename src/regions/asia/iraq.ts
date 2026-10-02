@@ -3,7 +3,7 @@ import { IRAQ_CLASSES, IRAQ_GOVERNORATES, IRAQ_LETTERS, IRAQ_SOURCES, iraqGovern
 import { asciiDigits, displayDigits, isDigits, randomDigits } from './plate-script';
 
 const REVIEW_YEAR = 2026; // End of researched coverage, NOT a withdrawal date.
-const NOTE = 'Editable reconstruction: original approximate glyphs and screen colours, not measured manufacturing dies. Validation checks the documented pattern, not whether a registration was issued.';
+const NOTE = 'For source-reviewed flat templates and date confidence, open Iraq history or Iraq editor. Original recipe preview: editable reconstruction: original approximate glyphs and screen colours, not measured manufacturing dies. Validation checks the documented pattern, not whether a registration was issued.';
 const layout: FieldDef = { key: 'layout', label: 'Plate layout', preserveOnGenerate: true, options: [
   { value: 'long', label: 'Long · 520 × 110 mm' }, { value: 'compact', label: 'Compact · 335 × 155 mm' },
 ] };
@@ -64,7 +64,7 @@ function historical(id: string, label: string, period: readonly [number, number]
   return {
     id, label, period, family: kr ? 'kurdistan' : 'federal', era: kr ? 'kr-legacy' : system === 'side' ? 'side-2001' : 'legacy-1988',
     references: [IRAQ_SOURCES[0]], pattern: '1–6 Arabic digits · province name',
-    description: `${system === 'side' ? '2001 arrangement: country above province at left; serial at right. Long geometry uses an illustrative 520 × 110 canvas, not a verified historical dimension.' : '1988 arrangement: serial above a horizontal divider; province lower left and country lower right. Representative 335 × 155 canvas; historical dimensions varied.'} ${kr ? 'Erbil, Sulaymaniyah and Duhok only; no invented Halabja legacy allocation. ' : ''}${NOTE}`,
+    description: `${system === 'side' ? 'Attributed 2001 arrangement (family, not a verified issue date for every specimen): country above province at left; serial at right. Long geometry uses an illustrative 520 × 110 canvas, not a verified historical dimension.' : 'Legacy arrangement (introduction disputed: 1982 versus 1988): serial above a horizontal divider; province lower left and country lower right. Representative 335 × 155 canvas; historical dimensions varied.'} ${kr ? 'Erbil, Sulaymaniyah and Duhok only; no invented Halabja legacy allocation. ' : ''}${NOTE}`,
     fields: [{ key: 'governorate', label: 'Province', options: pool.map((g) => ({ value: g.code, label: `${g.name} · ${g.arabic}` })) }, serial(1, 6)],
     generate: (rng) => ({ governorate: rng.pick(pool).code, serial: randomDigits(rng, 6) }),
     validate: (p) => !pool.some((g) => g.code === asciiDigits(p.governorate)) ? 'Choose a documented province for this period.' : isDigits(p.serial, 1, 6) ? null : 'Use one to six digits.',
@@ -75,20 +75,20 @@ function historical(id: string, label: string, period: readonly [number, number]
 
 export const iraq: Region = {
   id: 'iraq', name: 'Iraq', code: 'IRQ', flag: '🇮🇶', group: 'Asia', template: 'iq', design: {},
-  notes: `${NOTE} Timeline end 2026 means researched through 2026, not a retirement date.`,
+  notes: `${NOTE} Timeline ranges below are legacy recipe indexing, not proven introduction/withdrawal boundaries. Legacy start is disputed (1982/1988), and bilingual rollout is reported as 2008/2010. Source-reviewed chronology and all 38 editable presets are in Iraq history. End 2026 means researched through 2026, not a retirement date.`,
   families: [{ id: 'federal', label: 'Federal / earlier national systems' }, { id: 'kurdistan', label: 'Kurdistan Region' }],
   eras: [
-    { id: 'legacy-1988', label: '1988 divided plate', period: [1988, 2001], family: 'federal' },
-    { id: 'side-2001', label: '2001 side legends', period: [2001, 2008], family: 'federal' },
-    { id: 'bilingual', label: '2008 bilingual', period: [2008, 2024], family: 'federal' },
+    { id: 'legacy-1988', label: 'Legacy divided · 1982/1988 disputed', period: [1988, 2001], family: 'federal' },
+    { id: 'side-2001', label: 'Side legends · attributed 2001', period: [2001, 2008], family: 'federal' },
+    { id: 'bilingual', label: 'Bilingual · 2008/2010 reported', period: [2008, 2024], family: 'federal' },
     { id: 'federal-unified', label: 'Unified Latin · federal', period: [2024, REVIEW_YEAR], family: 'federal' },
-    { id: 'kr-legacy', label: 'Legacy divided plate', period: [1988, 2022], family: 'kurdistan' },
+    { id: 'kr-legacy', label: 'Legacy divided · start disputed', period: [1988, 2022], family: 'kurdistan' },
     { id: 'kr-unified', label: 'Unified Latin · KRG', period: [2022, REVIEW_YEAR], family: 'kurdistan' },
   ],
   formats: [
     ...modern(false), ...modern(true), ...bilingual,
-    historical('private-1988', '1988–2001 · Private', [1988, 2001], 'legacy', false),
-    historical('private-2001', '2001–2008 · Private', [2001, 2008], 'side', false),
+    historical('private-1988', 'Legacy divided · Private (attributed range)', [1988, 2001], 'legacy', false),
+    historical('private-2001', 'Side legends · Private (attributed range)', [2001, 2008], 'side', false),
     historical('kr-legacy-private', 'KRG legacy · Private', [1988, 2022], 'legacy', true),
     historical('kr-legacy-hire', 'KRG legacy · For hire', [1988, 2022], 'legacy', true, '#ba242b', '#ffffff'),
     historical('kr-legacy-commercial', 'KRG legacy · Commercial', [1988, 2022], 'legacy', true, '#f1cb31'),
@@ -98,7 +98,7 @@ export const iraq: Region = {
   ],
   gaps: [
     { id: 'pre-1988', label: 'Earlier Iraqi issues: reference audit pending', period: [1930, 1987], family: 'federal', sources: [IRAQ_SOURCES[0]], note: 'Research window only; this is not a claimed introduction date. WorldLicensePlates could not be retrieved in this review.' },
-    { id: 'special-2008', label: 'Motorcycle / ICTS / further temporary issues', period: [2008, 2024], family: 'federal', sources: [IRAQ_SOURCES[0]], note: 'Known categories; exact dimensions and layouts require stronger references before editable reconstruction.' },
-    { id: 'kr-international', label: 'KRG international and motorcycle variants', period: [1988, 2022], family: 'kurdistan', sources: [IRAQ_SOURCES[0]], note: 'Reference-only; do not mistake the six legacy colour recipes for complete KRG coverage.' },
+    { id: 'special-2008', label: 'Motorcycle / ICTS / further temporary issues', period: [2008, 2024], family: 'federal', sources: [IRAQ_SOURCES[0]], note: 'Illustration-based editable motorcycle, inspection-temporary and ICTS presets are now available through Iraq history. Exact physical dimensions and manufacturing dies remain unverified.' },
+    { id: 'kr-international', label: 'KRG international and motorcycle variants', period: [1988, 2022], family: 'kurdistan', sources: [IRAQ_SOURCES[0]], note: 'Flat source-derived motorcycle and illustration-based international Erbil presets are available through Iraq history. Their date range is uncertain; this legacy interval is only an index.' },
   ],
 };

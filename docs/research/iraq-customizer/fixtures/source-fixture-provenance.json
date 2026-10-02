@@ -1,0 +1,17 @@
+{
+  "purpose": "Independent test evidence copied from earlier specimen reconstructions, without importing runtime renderer output. Frame and unknown-feature paths are exclusion fixtures and must never be rendered by the flat customizer.",
+  "fixtures": [
+    {
+      "fixture": "utility-frame-paths.json",
+      "original_path": "docs/research/iraq-complete/utility/specimens.json",
+      "original_sha256": "02b954b62478b247a22a6222215935a77667b2d2ea2f38aa6fcb5d9c26dab001",
+      "extraction": "Only original identity, attribution, outline, borders and unknown-feature paths; no path alterations."
+    },
+    {
+      "fixture": "anbar-nonsecurity-emblem.svg",
+      "original_path": "docs/research/iraq-complete/anbar-taxi/complete-plate.svg",
+      "original_sha256": "7293d3aca43c565b330c66ca13bc0b8e3c80a362d95c7f3ba62da22ca811e945",
+      "extraction": "Original bounded-nonsecurity-emblem group and attribution metadata copied verbatim into a small SVG wrapper."
+    }
+  ]
+}
