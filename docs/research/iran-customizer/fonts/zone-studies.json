@@ -1,0 +1,542 @@
+[
+  {
+    "id": "source-freezone-chabahar-wordmark",
+    "label": "Chabahar complete word · source diagram",
+    "sourceId": "source-freezone-chabahar-wordmark:Anvaripour-2016",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelake_MAT_Chabahar.png",
+    "sourceFile": "zone-reference/chabahar-source.png",
+    "sourceSha256": "08c53c5453e410af2c6009bcdf1e029c17fded88f5ed8b1fc8a2e49adaf09d43",
+    "credit": "Anvaripour, 26 September 2016, Wikimedia Commons. Original diagram adapted as smooth whole-word paths.",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "rights": "Anvaripour (2016), CC BY-SA 4.0. This source-guided adaptation is distributed under CC BY-SA 4.0; attribution, license link and modification notice must be retained.",
+    "provenance": "observed",
+    "capHeight": 27.169565217391295,
+    "baseline": 109.3,
+    "note": "Hand-authored smooth whole-word reconstruction of the observed 250×125 diagram; native proportions preserved, no generic-font stretching, raster tracing or PUA alphabet substitution. This is illustrative lettering, not an authenticated manufacturing master.",
+    "glyphs": [],
+    "wordmarks": [
+      {
+        "id": "chabahar",
+        "text": "چابهار",
+        "path": "M7 104.2 C11.6 104.5 15.9 102.7 18.8 99.3 Q19.2 98.6 18.8 97.7 L17.5 95.2 Q17.1 94 18.1 93.2 Q18.6 93 18.8 94.2 L19.8 97.3 C21 100.2 17.1 103.9 14 105.2 Q10.5 106.7 7 105.8 Z M22.1 82.2 Q23.1 81.8 23.5 83.7 L23.8 94.7 Q23.8 97.9 25.7 98.1 L27.6 98.1 Q28.7 94.8 29.1 92.3 L29.7 89 Q30.3 88.5 30.9 90 Q32.1 93.5 31.8 95.8 Q31.7 97.3 31.1 98.4 L35.1 98.4 Q38.1 98.4 38.1 96.5 Q38 95.4 36.3 94 L36.1 92.5 Q36.9 91.6 37.9 92.8 C40.5 94.8 39.8 98.8 37.5 99.7 Q35.8 100.4 32.9 100.3 L32.8 102.9 C32.5 106.4 30.4 107.1 28.1 106.1 Q26.6 105.3 26.5 100.3 L24.7 100.3 C22.2 100.1 22.1 97.4 22 94.9 L21.8 85 Q21.6 83 22.1 82.2 Z M29.6 93.2 Q29.1 94.8 29.1 96.4 L30.1 96.6 Q30.8 94.8 29.6 93.2 Z M28.1 100.3 L28.3 102.8 Q28.9 104.4 31 103.6 L31.1 102.3 Z M34.5 104.2 L36.3 105.2 L36.2 106.5 L34.4 106 L34 105.1 Z M41.4 82.3 L42.3 82.4 Q42.8 83.2 42.7 85 L42.9 94.7 Q43 98.2 44.8 98.2 L47.8 98.2 Q50.5 97.6 52.2 96 L48 95.2 Q47 95.1 45.8 96.2 L45.6 94.5 Q46.8 92.4 48.4 92.8 L55.7 93.7 L57.3 93.7 Q57.6 95 55.8 95.8 L53.6 96.6 C51.6 98.1 50 100.3 46.7 100.2 L43.5 100.2 C41.4 100 41.3 96.2 41.2 92.7 L41 85 Q40.8 82.6 41.4 82.3 Z M47.5 104.1 L49.1 105 L49 106.2 L47.4 106 L46.9 105 Z M50.2 104.1 L51.9 105 L51.8 106.3 L50.2 106.2 L49.7 105.2 Z M49.5 107 L51.1 107.9 L50.9 109.3 L49.3 108.7 L48.9 107.8 Z",
+        "sourceBox": [
+          7.0,
+          82.1304347826087,
+          57.34285714285714,
+          109.3
+        ],
+        "sourcePlateSize": [
+          250,
+          125
+        ],
+        "sourcePlateFractions": [
+          0.028,
+          0.6570434782608696,
+          0.20137142857142856,
+          0.21735652173913037
+        ],
+        "sourceId": "source-freezone-chabahar-wordmark:Anvaripour-2016",
+        "role": "zone-name",
+        "kind": "zone",
+        "note": "Hand-authored smooth whole-word reconstruction of the observed 250×125 diagram; native proportions preserved, no generic-font stretching, raster tracing or PUA alphabet substitution. This is illustrative lettering, not an authenticated manufacturing master.",
+        "fillRule": "evenodd"
+      }
+    ]
+  },
+  {
+    "id": "source-freezone-qeshm-wordmark",
+    "label": "Qeshm complete word · source diagram",
+    "sourceId": "source-freezone-qeshm-wordmark:Anvaripour-2016",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelake_MAT_Qeshm.png",
+    "sourceFile": "zone-reference/qeshm-source.png",
+    "sourceSha256": "51e8c9f1b2889abbf78adac73c238549b5c65f413a60ae07d1dd81f439d1c0de",
+    "credit": "Anvaripour, 26 September 2016, Wikimedia Commons. Original diagram adapted as smooth whole-word paths.",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "rights": "Anvaripour (2016), CC BY-SA 4.0. This source-guided adaptation is distributed under CC BY-SA 4.0; attribution, license link and modification notice must be retained.",
+    "provenance": "observed",
+    "capHeight": 38.5,
+    "baseline": 109.5,
+    "note": "Hand-authored smooth whole-word reconstruction of the observed 250×125 diagram; native proportions preserved, no generic-font stretching, raster tracing or PUA alphabet substitution. This is illustrative lettering, not an authenticated manufacturing master.",
+    "glyphs": [],
+    "wordmarks": [
+      {
+        "id": "qeshm",
+        "text": "قشم",
+        "path": "M15.7 109.2 C15.4 104.5 14.2 99.9 13.6 95.2 C12.8 89.7 15.8 88.4 20.3 85.2 L21 85.3 Q20.7 88.4 22.1 89.6 Q24 91.4 27.4 91.1 Q29.3 91.1 29.7 89.6 L30.3 87.9 L31.2 87.3 Q31.5 88.5 30.9 90.4 Q31 91.4 34.1 91.2 Q36.8 91.2 37.1 89.9 L37.7 88 L38.5 87.6 L38.4 90.6 Q38.5 91.4 39.6 91.2 L40.3 88.9 L41.1 88.2 Q41.6 89 41.4 91.2 L46.3 91.2 Q50.5 91.2 52.1 89.8 Q52.9 89.1 52.1 87 Q50.2 88.7 47.3 88.9 Q46.5 88.7 46.5 87.5 C46.6 83.8 47.7 81.1 49.3 79.8 Q50.1 79.2 50.8 80.3 C53.1 83.4 54.4 87.2 53.5 90.4 C52.7 94.3 43.9 95 40.3 94.4 Q38.9 94.7 38.3 94 Q36.6 94.7 35.3 94.3 Q31.1 94.8 29.8 94.2 Q24.4 95.1 22.8 94 Q19.7 94.5 18.6 92.5 L17.6 91.8 Q16.7 90.1 15.3 92 Q14.5 93.7 15 97 L17 109.5 Z M48.3 84.7 Q49.2 85.7 50.8 84.5 Q50.2 83.1 49.5 83 Q48.8 82.9 48.3 84.7 Z M44.1 71 L46.2 72 L46.8 73.6 L45.5 74.5 L43.3 73.1 Z M48.1 71.5 L50.4 72.3 L51.1 73.8 L49.9 74.6 L47.5 73.8 L46.8 72.9 Z M33 74.4 L35.2 75.5 L35.8 77.2 L34.3 78.2 L32.2 76.8 Z M32.1 78.4 L34.3 79.3 L34.8 81.1 L33.6 82.1 L31.4 80.9 Z M36.1 78.5 L38.2 79.5 L38.8 81.3 L37.8 82.3 L35.3 81.1 Z",
+        "sourceBox": [
+          13.470864589703933,
+          71.0,
+          53.787375702158556,
+          109.5
+        ],
+        "sourcePlateSize": [
+          250,
+          125
+        ],
+        "sourcePlateFractions": [
+          0.05388345835881573,
+          0.568,
+          0.16126604444981849,
+          0.308
+        ],
+        "sourceId": "source-freezone-qeshm-wordmark:Anvaripour-2016",
+        "role": "zone-name",
+        "kind": "zone",
+        "note": "Hand-authored smooth whole-word reconstruction of the observed 250×125 diagram; native proportions preserved, no generic-font stretching, raster tracing or PUA alphabet substitution. This is illustrative lettering, not an authenticated manufacturing master.",
+        "fillRule": "evenodd"
+      }
+    ]
+  },
+  {
+    "id": "source-freezone-latin-wide",
+    "label": "Free-zone Latin wide · source-style complete numerals",
+    "sourceId": "source-freezone-latin-wide:Anvaripour-2016",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelake_MAT_Qeshm.png",
+    "sourceFile": "zone-reference/wide-latin-source.png",
+    "sourceSha256": "51e8c9f1b2889abbf78adac73c238549b5c65f413a60ae07d1dd81f439d1c0de",
+    "credit": "Anvaripour, 26 September 2016; Wikimedia Commons diagram adapted to smooth numeric outlines.",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "rights": "Anvaripour (2016), CC BY-SA 4.0. Source-guided adaptations under CC BY-SA 4.0; retain attribution, license and modification notice. No manufacturing certification.",
+    "provenance": "observed",
+    "script": "latin",
+    "capHeight": 25,
+    "baseline": 107,
+    "note": "Separate native wide Latin serial role. 1/2/3/5/6 observed; 0/4/7/8/9 explicitly inferred. Smooth original contours; no generic font or independent x/y scaling.",
+    "glyphs": [
+      {
+        "character": "0",
+        "path": "M13.0 82.0C22.0 82.0 26.0 87.0 26.0 95.0C26.0 104.0 22.0 108.0 13.0 108.0C4.0 108.0 0.0 104.0 0.0 95.0C0.0 87.0 4.0 82.0 13.0 82.0ZM13.0 85.0C7.0 85.0 5.0 89.0 5.0 95.0C5.0 102.0 7.0 105.0 13.0 105.0C19.0 105.0 21.0 102.0 21.0 95.0C21.0 89.0 19.0 85.0 13.0 85.0Z",
+        "sourceAdvance": 29.5,
+        "provenance": "inferred",
+        "sourceBox": [
+          0.0,
+          82.0,
+          26.0,
+          108.0
+        ],
+        "occurrence": "Not visible in selected diagram",
+        "sourceId": "source-freezone-latin-wide:Anvaripour-2016",
+        "note": "Inferred numeral: Hand-authored smooth source-native Latin figure; uniform cap metrics. Explicit style reconstruction, not an observed manufacturing die.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6"
+          ],
+          "designNotes": "Original construction using the observed stem width, bowl curvature, terminal treatment, cap and baseline of 1/2/3/5/6 in this specific diagram role; not stretched from a generic font."
+        }
+      },
+      {
+        "character": "1",
+        "path": "M87.0 88.0Q94.0 86.0 98.0 82.0H101.0V107.0H96.0V88.0Q92.0 90.0 87.0 91.0V88.0Z",
+        "sourceAdvance": 25,
+        "provenance": "observed",
+        "sourceBox": [
+          87.0,
+          82.0,
+          101.0,
+          107.0
+        ],
+        "occurrence": "Latin 12356 row",
+        "sourceId": "source-freezone-latin-wide:Anvaripour-2016",
+        "note": "Hand-authored smooth source-native Latin figure; uniform cap metrics. Observed silhouette simplified from diagram."
+      },
+      {
+        "character": "2",
+        "path": "M112.0 89.0C113.0 84.0 117.0 82.0 124.0 82.0C132.0 82.0 137.0 85.0 137.0 89.0C137.0 93.0 132.0 96.0 126.0 99.0Q119.0 102.0 118.0 104.0H137.0V107.0H112.0Q112.0 102.0 121.0 98.0L128.0 94.0Q132.0 92.0 132.0 89.0C132.0 86.0 129.0 85.0 124.0 85.0Q118.0 85.0 117.0 89.0H112.0Z",
+        "sourceAdvance": 29.5,
+        "provenance": "observed",
+        "sourceBox": [
+          112.0,
+          82.0,
+          137.0,
+          107.0
+        ],
+        "occurrence": "Latin 12356 row",
+        "sourceId": "source-freezone-latin-wide:Anvaripour-2016",
+        "note": "Hand-authored smooth source-native Latin figure; uniform cap metrics. Observed silhouette simplified from diagram."
+      },
+      {
+        "character": "3",
+        "path": "M142.0 88.0C143.0 84.0 148.0 82.0 154.0 82.0C162.0 82.0 166.0 85.0 166.0 89.0Q166.0 92.0 160.0 94.0C165.0 95.0 167.0 97.0 167.0 100.0C167.0 105.0 162.0 108.0 154.0 108.0C147.0 108.0 143.0 105.0 142.0 101.0L147.0 100.0C148.0 103.0 150.0 105.0 154.0 105.0C159.0 105.0 162.0 103.0 162.0 100.0C162.0 97.0 158.0 95.0 151.0 95.0L152.0 92.0C158.0 92.0 161.0 91.0 161.0 89.0C161.0 86.0 158.0 85.0 154.0 85.0Q149.0 85.0 147.0 89.0L142.0 88.0Z",
+        "sourceAdvance": 29.5,
+        "provenance": "observed",
+        "sourceBox": [
+          142.0,
+          82.0,
+          167.0,
+          108.0
+        ],
+        "occurrence": "Latin 12356 row",
+        "sourceId": "source-freezone-latin-wide:Anvaripour-2016",
+        "note": "Hand-authored smooth source-native Latin figure; uniform cap metrics. Observed silhouette simplified from diagram."
+      },
+      {
+        "character": "4",
+        "path": "M16.0 82.0H21.0V98.0H26.0V101.0H21.0V107.0H16.0V101.0H0.0V97.0L16.0 82.0ZM16.0 87.0 5.0 98.0H16.0V87.0Z",
+        "sourceAdvance": 29.5,
+        "provenance": "inferred",
+        "sourceBox": [
+          0.0,
+          82.0,
+          26.0,
+          107.0
+        ],
+        "occurrence": "Not visible in selected diagram",
+        "sourceId": "source-freezone-latin-wide:Anvaripour-2016",
+        "note": "Inferred numeral: Hand-authored smooth source-native Latin figure; uniform cap metrics. Explicit style reconstruction, not an observed manufacturing die.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6"
+          ],
+          "designNotes": "Original construction using the observed stem width, bowl curvature, terminal treatment, cap and baseline of 1/2/3/5/6 in this specific diagram role; not stretched from a generic font."
+        }
+      },
+      {
+        "character": "5",
+        "path": "M175.0 82.0H195.0V85.0H179.0L177.0 92.0Q181.0 90.0 185.0 90.0C192.0 90.0 197.0 93.0 197.0 99.0C197.0 104.0 192.0 108.0 184.0 108.0C177.0 108.0 172.0 105.0 171.0 101.0L176.0 100.0Q177.0 105.0 184.0 105.0C189.0 105.0 192.0 103.0 192.0 99.0C192.0 95.0 189.0 93.0 184.0 93.0Q179.0 93.0 176.0 95.0L172.0 94.0L175.0 82.0Z",
+        "sourceAdvance": 29.5,
+        "provenance": "observed",
+        "sourceBox": [
+          171.0,
+          82.0,
+          197.0,
+          108.0
+        ],
+        "occurrence": "Latin 12356 row",
+        "sourceId": "source-freezone-latin-wide:Anvaripour-2016",
+        "note": "Hand-authored smooth source-native Latin figure; uniform cap metrics. Observed silhouette simplified from diagram."
+      },
+      {
+        "character": "6",
+        "path": "M224.0 88.0 219.0 89.0Q218.0 85.0 213.0 85.0C207.0 85.0 205.0 89.0 205.0 94.0C208.0 92.0 211.0 91.0 214.0 91.0C221.0 91.0 226.0 94.0 226.0 100.0C226.0 105.0 221.0 108.0 214.0 108.0C205.0 108.0 200.0 103.0 200.0 95.0C200.0 87.0 205.0 82.0 213.0 82.0Q222.0 82.0 224.0 88.0ZM205.0 100.0C205.0 103.0 208.0 105.0 214.0 105.0C218.0 105.0 221.0 103.0 221.0 100.0C221.0 96.0 218.0 94.0 214.0 94.0C209.0 94.0 205.0 96.0 205.0 100.0Z",
+        "sourceAdvance": 29.5,
+        "provenance": "observed",
+        "sourceBox": [
+          200.0,
+          82.0,
+          226.0,
+          108.0
+        ],
+        "occurrence": "Latin 12356 row",
+        "sourceId": "source-freezone-latin-wide:Anvaripour-2016",
+        "note": "Hand-authored smooth source-native Latin figure; uniform cap metrics. Observed silhouette simplified from diagram."
+      },
+      {
+        "character": "7",
+        "path": "M0.0 82.0H26.0V85.0C17.0 92.0 13.0 99.0 11.0 107.0H6.0C8.0 98.0 13.0 91.0 20.0 85.0H0.0V82.0Z",
+        "sourceAdvance": 29.5,
+        "provenance": "inferred",
+        "sourceBox": [
+          0.0,
+          82.0,
+          26.0,
+          107.0
+        ],
+        "occurrence": "Not visible in selected diagram",
+        "sourceId": "source-freezone-latin-wide:Anvaripour-2016",
+        "note": "Inferred numeral: Hand-authored smooth source-native Latin figure; uniform cap metrics. Explicit style reconstruction, not an observed manufacturing die.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6"
+          ],
+          "designNotes": "Original construction using the observed stem width, bowl curvature, terminal treatment, cap and baseline of 1/2/3/5/6 in this specific diagram role; not stretched from a generic font."
+        }
+      },
+      {
+        "character": "8",
+        "path": "M13.0 82.0C20.0 82.0 24.0 85.0 24.0 89.0Q24.0 93.0 19.0 94.0Q26.0 96.0 26.0 101.0C26.0 106.0 21.0 108.0 13.0 108.0C5.0 108.0 0.0 106.0 0.0 101.0Q0.0 96.0 7.0 94.0Q2.0 92.0 2.0 89.0C2.0 85.0 6.0 82.0 13.0 82.0ZM13.0 85.0C9.0 85.0 7.0 87.0 7.0 89.0C7.0 92.0 9.0 93.0 13.0 93.0C17.0 93.0 19.0 92.0 19.0 89.0C19.0 87.0 17.0 85.0 13.0 85.0ZM13.0 96.0C8.0 96.0 5.0 98.0 5.0 101.0C5.0 104.0 8.0 105.0 13.0 105.0C18.0 105.0 21.0 104.0 21.0 101.0C21.0 98.0 18.0 96.0 13.0 96.0Z",
+        "sourceAdvance": 29.5,
+        "provenance": "inferred",
+        "sourceBox": [
+          0.0,
+          82.0,
+          26.0,
+          108.0
+        ],
+        "occurrence": "Not visible in selected diagram",
+        "sourceId": "source-freezone-latin-wide:Anvaripour-2016",
+        "note": "Inferred numeral: Hand-authored smooth source-native Latin figure; uniform cap metrics. Explicit style reconstruction, not an observed manufacturing die.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6"
+          ],
+          "designNotes": "Original construction using the observed stem width, bowl curvature, terminal treatment, cap and baseline of 1/2/3/5/6 in this specific diagram role; not stretched from a generic font."
+        }
+      },
+      {
+        "character": "9",
+        "path": "M2.0 102.0 7.0 101.0Q8.0 105.0 13.0 105.0C19.0 105.0 21.0 101.0 21.0 96.0C18.0 98.0 15.0 99.0 12.0 99.0C5.0 99.0 0.0 96.0 0.0 90.0C0.0 85.0 5.0 82.0 12.0 82.0C21.0 82.0 26.0 87.0 26.0 95.0C26.0 103.0 21.0 108.0 13.0 108.0Q4.0 108.0 2.0 102.0ZM21.0 90.0C21.0 87.0 18.0 85.0 12.0 85.0C8.0 85.0 5.0 87.0 5.0 90.0C5.0 94.0 8.0 96.0 12.0 96.0C17.0 96.0 21.0 94.0 21.0 90.0Z",
+        "sourceAdvance": 29.5,
+        "provenance": "inferred",
+        "sourceBox": [
+          0.0,
+          82.0,
+          26.0,
+          108.0
+        ],
+        "occurrence": "Not visible in selected diagram",
+        "sourceId": "source-freezone-latin-wide:Anvaripour-2016",
+        "note": "Inferred numeral: Hand-authored smooth source-native Latin figure; uniform cap metrics. Explicit style reconstruction, not an observed manufacturing die.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6"
+          ],
+          "designNotes": "Original construction using the observed stem width, bowl curvature, terminal treatment, cap and baseline of 1/2/3/5/6 in this specific diagram role; not stretched from a generic font."
+        }
+      }
+    ],
+    "wordmarks": []
+  },
+  {
+    "id": "source-freezone-latin-tall",
+    "label": "Free-zone Latin tall · source-style complete numerals",
+    "sourceId": "source-freezone-latin-tall:Haghal-Jagul-2012",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelake_MAT_Aras.png",
+    "sourceFile": "zone-reference/tall-latin-source.png",
+    "sourceSha256": "827b96cc4080c4857dd25c43895c04795a65ddd10fe13464fd7ff4f392d0249f",
+    "credit": "Haghal Jagul, 9 October 2012; Wikimedia Commons Aras diagram adapted to smooth numeric outlines.",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "rights": "Haghal Jagul (2012), CC BY-SA 3.0. Source-guided adaptation under CC BY-SA 3.0; retain attribution, license and modification notice. No manufacturing certification.",
+    "provenance": "observed",
+    "script": "latin",
+    "capHeight": 37,
+    "baseline": 109,
+    "note": "Separate native tall Latin serial role. 1/2/3/5/6 observed; 0/4/7/8/9 explicitly inferred. Smooth original contours; no generic font or independent x/y scaling.",
+    "glyphs": [
+      {
+        "character": "0",
+        "path": "M13.0 72.0C22.0 72.0 26.0 79.0 26.0 91.0C26.0 104.0 22.0 110.0 13.0 110.0C4.0 110.0 0.0 104.0 0.0 91.0C0.0 79.0 4.0 72.0 13.0 72.0ZM13.0 76.0C7.0 76.0 5.0 82.0 5.0 91.0C5.0 101.0 7.0 106.0 13.0 106.0C19.0 106.0 21.0 101.0 21.0 91.0C21.0 82.0 19.0 76.0 13.0 76.0Z",
+        "sourceAdvance": 29.5,
+        "provenance": "inferred",
+        "sourceBox": [
+          0.0,
+          72.0,
+          26.0,
+          110.0
+        ],
+        "occurrence": "Not visible in selected diagram",
+        "sourceId": "source-freezone-latin-tall:Haghal-Jagul-2012",
+        "note": "Inferred numeral: Hand-authored smooth source-native Latin figure; uniform cap metrics. Explicit style reconstruction, not an observed manufacturing die.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6"
+          ],
+          "designNotes": "Original construction using the observed stem width, bowl curvature, terminal treatment, cap and baseline of 1/2/3/5/6 in this specific diagram role; not stretched from a generic font."
+        }
+      },
+      {
+        "character": "1",
+        "path": "M101.0 80.0Q109.0 77.0 111.0 72.0H115.0V109.0H110.0V80.0Q106.0 83.0 101.0 85.0V80.0Z",
+        "sourceAdvance": 25,
+        "provenance": "observed",
+        "sourceBox": [
+          101.0,
+          72.0,
+          115.0,
+          109.0
+        ],
+        "occurrence": "Latin 12365 row",
+        "sourceId": "source-freezone-latin-tall:Haghal-Jagul-2012",
+        "note": "Hand-authored smooth source-native Latin figure; uniform cap metrics. Observed silhouette simplified from diagram."
+      },
+      {
+        "character": "2",
+        "path": "M126.0 82.0C127.0 75.0 132.0 72.0 138.0 72.0C146.0 72.0 151.0 76.0 151.0 83.0C151.0 88.0 147.0 92.0 140.0 98.0Q133.0 104.0 132.0 105.0H151.0V109.0H126.0Q126.0 104.0 135.0 96.0L142.0 90.0C145.0 87.0 146.0 85.0 146.0 82.0C146.0 78.0 143.0 76.0 138.0 76.0Q132.0 76.0 131.0 83.0L126.0 82.0Z",
+        "sourceAdvance": 29.5,
+        "provenance": "observed",
+        "sourceBox": [
+          126.0,
+          72.0,
+          151.0,
+          109.0
+        ],
+        "occurrence": "Latin 12365 row",
+        "sourceId": "source-freezone-latin-tall:Haghal-Jagul-2012",
+        "note": "Hand-authored smooth source-native Latin figure; uniform cap metrics. Observed silhouette simplified from diagram."
+      },
+      {
+        "character": "3",
+        "path": "M156.0 81.0C157.0 75.0 162.0 72.0 168.0 72.0C176.0 72.0 180.0 76.0 180.0 82.0Q180.0 88.0 174.0 90.0C179.0 92.0 181.0 95.0 181.0 100.0C181.0 106.0 176.0 110.0 168.0 110.0C161.0 110.0 157.0 106.0 156.0 100.0L161.0 99.0C162.0 104.0 164.0 106.0 168.0 106.0C173.0 106.0 176.0 104.0 176.0 99.0C176.0 94.0 172.0 92.0 165.0 92.0L166.0 88.0C172.0 88.0 175.0 86.0 175.0 82.0C175.0 78.0 172.0 76.0 168.0 76.0Q163.0 76.0 161.0 82.0L156.0 81.0Z",
+        "sourceAdvance": 29.5,
+        "provenance": "observed",
+        "sourceBox": [
+          156.0,
+          72.0,
+          181.0,
+          110.0
+        ],
+        "occurrence": "Latin 12365 row",
+        "sourceId": "source-freezone-latin-tall:Haghal-Jagul-2012",
+        "note": "Hand-authored smooth source-native Latin figure; uniform cap metrics. Observed silhouette simplified from diagram."
+      },
+      {
+        "character": "4",
+        "path": "M16.0 72.0H21.0V96.0H26.0V100.0H21.0V109.0H16.0V100.0H0.0V95.0L16.0 72.0ZM16.0 79.0 5.0 96.0H16.0V79.0Z",
+        "sourceAdvance": 29.5,
+        "provenance": "inferred",
+        "sourceBox": [
+          0.0,
+          72.0,
+          26.0,
+          109.0
+        ],
+        "occurrence": "Not visible in selected diagram",
+        "sourceId": "source-freezone-latin-tall:Haghal-Jagul-2012",
+        "note": "Inferred numeral: Hand-authored smooth source-native Latin figure; uniform cap metrics. Explicit style reconstruction, not an observed manufacturing die.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6"
+          ],
+          "designNotes": "Original construction using the observed stem width, bowl curvature, terminal treatment, cap and baseline of 1/2/3/5/6 in this specific diagram role; not stretched from a generic font."
+        }
+      },
+      {
+        "character": "5",
+        "path": "M218.0 72.0H238.0V76.0H222.0L220.0 87.0Q224.0 84.0 228.0 84.0C235.0 84.0 240.0 89.0 240.0 97.0C240.0 105.0 235.0 110.0 227.0 110.0C220.0 110.0 215.0 106.0 214.0 100.0L219.0 99.0Q220.0 106.0 227.0 106.0C232.0 106.0 235.0 103.0 235.0 97.0C235.0 91.0 232.0 88.0 227.0 88.0Q222.0 88.0 219.0 92.0L215.0 90.0L218.0 72.0Z",
+        "sourceAdvance": 29.5,
+        "provenance": "observed",
+        "sourceBox": [
+          214.0,
+          72.0,
+          240.0,
+          110.0
+        ],
+        "occurrence": "Latin 12365 row",
+        "sourceId": "source-freezone-latin-tall:Haghal-Jagul-2012",
+        "note": "Hand-authored smooth source-native Latin figure; uniform cap metrics. Observed silhouette simplified from diagram."
+      },
+      {
+        "character": "6",
+        "path": "M208.0 80.0 203.0 81.0Q202.0 76.0 197.0 76.0C191.0 76.0 189.0 83.0 189.0 90.0C192.0 86.0 195.0 85.0 198.0 85.0C205.0 85.0 210.0 90.0 210.0 98.0C210.0 105.0 205.0 110.0 198.0 110.0C189.0 110.0 184.0 103.0 184.0 91.0C184.0 79.0 189.0 72.0 197.0 72.0Q206.0 72.0 208.0 80.0ZM189.0 98.0C189.0 103.0 192.0 106.0 198.0 106.0C202.0 106.0 205.0 103.0 205.0 98.0C205.0 92.0 202.0 89.0 198.0 89.0C193.0 89.0 189.0 92.0 189.0 98.0Z",
+        "sourceAdvance": 29.5,
+        "provenance": "observed",
+        "sourceBox": [
+          184.0,
+          72.0,
+          210.0,
+          110.0
+        ],
+        "occurrence": "Latin 12365 row",
+        "sourceId": "source-freezone-latin-tall:Haghal-Jagul-2012",
+        "note": "Hand-authored smooth source-native Latin figure; uniform cap metrics. Observed silhouette simplified from diagram."
+      },
+      {
+        "character": "7",
+        "path": "M0.0 72.0H26.0V76.0C17.0 86.0 13.0 97.0 11.0 109.0H6.0C8.0 96.0 13.0 85.0 20.0 76.0H0.0V72.0Z",
+        "sourceAdvance": 29.5,
+        "provenance": "inferred",
+        "sourceBox": [
+          0.0,
+          72.0,
+          26.0,
+          109.0
+        ],
+        "occurrence": "Not visible in selected diagram",
+        "sourceId": "source-freezone-latin-tall:Haghal-Jagul-2012",
+        "note": "Inferred numeral: Hand-authored smooth source-native Latin figure; uniform cap metrics. Explicit style reconstruction, not an observed manufacturing die.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6"
+          ],
+          "designNotes": "Original construction using the observed stem width, bowl curvature, terminal treatment, cap and baseline of 1/2/3/5/6 in this specific diagram role; not stretched from a generic font."
+        }
+      },
+      {
+        "character": "8",
+        "path": "M13.0 72.0C20.0 72.0 24.0 76.0 24.0 82.0Q24.0 88.0 19.0 90.0Q26.0 93.0 26.0 100.0C26.0 107.0 21.0 110.0 13.0 110.0C5.0 110.0 0.0 107.0 0.0 100.0Q0.0 93.0 7.0 90.0Q2.0 87.0 2.0 82.0C2.0 76.0 6.0 72.0 13.0 72.0ZM13.0 76.0C9.0 76.0 7.0 78.0 7.0 82.0C7.0 86.0 9.0 88.0 13.0 88.0C17.0 88.0 19.0 86.0 19.0 82.0C19.0 78.0 17.0 76.0 13.0 76.0ZM13.0 92.0C8.0 92.0 5.0 95.0 5.0 100.0C5.0 104.0 8.0 106.0 13.0 106.0C18.0 106.0 21.0 104.0 21.0 100.0C21.0 95.0 18.0 92.0 13.0 92.0Z",
+        "sourceAdvance": 29.5,
+        "provenance": "inferred",
+        "sourceBox": [
+          0.0,
+          72.0,
+          26.0,
+          110.0
+        ],
+        "occurrence": "Not visible in selected diagram",
+        "sourceId": "source-freezone-latin-tall:Haghal-Jagul-2012",
+        "note": "Inferred numeral: Hand-authored smooth source-native Latin figure; uniform cap metrics. Explicit style reconstruction, not an observed manufacturing die.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6"
+          ],
+          "designNotes": "Original construction using the observed stem width, bowl curvature, terminal treatment, cap and baseline of 1/2/3/5/6 in this specific diagram role; not stretched from a generic font."
+        }
+      },
+      {
+        "character": "9",
+        "path": "M2.0 102.0 7.0 101.0Q8.0 106.0 13.0 106.0C19.0 106.0 21.0 99.0 21.0 92.0C18.0 96.0 15.0 97.0 12.0 97.0C5.0 97.0 0.0 92.0 0.0 84.0C0.0 77.0 5.0 72.0 12.0 72.0C21.0 72.0 26.0 79.0 26.0 91.0C26.0 103.0 21.0 110.0 13.0 110.0Q4.0 110.0 2.0 102.0ZM21.0 84.0C21.0 79.0 18.0 76.0 12.0 76.0C8.0 76.0 5.0 79.0 5.0 84.0C5.0 90.0 8.0 93.0 12.0 93.0C17.0 93.0 21.0 90.0 21.0 84.0Z",
+        "sourceAdvance": 29.5,
+        "provenance": "inferred",
+        "sourceBox": [
+          0.0,
+          72.0,
+          26.0,
+          110.0
+        ],
+        "occurrence": "Not visible in selected diagram",
+        "sourceId": "source-freezone-latin-tall:Haghal-Jagul-2012",
+        "note": "Inferred numeral: Hand-authored smooth source-native Latin figure; uniform cap metrics. Explicit style reconstruction, not an observed manufacturing die.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "1",
+            "2",
+            "3",
+            "5",
+            "6"
+          ],
+          "designNotes": "Original construction using the observed stem width, bowl curvature, terminal treatment, cap and baseline of 1/2/3/5/6 in this specific diagram role; not stretched from a generic font."
+        }
+      }
+    ],
+    "wordmarks": []
+  }
+]

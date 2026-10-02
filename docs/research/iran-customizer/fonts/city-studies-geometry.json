@@ -1,0 +1,534 @@
+[
+  {
+    "profileId": "historic-1964-city-study",
+    "presetId": "full-city-1964",
+    "sourceFile": "city-reference/iran70acaru-reference.jpg",
+    "sourcePlateBox": [
+      5,
+      4,
+      244,
+      93
+    ],
+    "roles": {
+      "serial": {
+        "sourceBox": [
+          81,
+          17,
+          220,
+          80
+        ],
+        "rectFraction": {
+          "x": 0.31799,
+          "y": 0.14607,
+          "width": 0.58159,
+          "height": 0.70787
+        }
+      },
+      "city": {
+        "wordmarkId": "tehran",
+        "sourceBox": [
+          14.75,
+          13.0,
+          70.0,
+          40.0
+        ],
+        "rectFraction": {
+          "x": 0.04079,
+          "y": 0.10112,
+          "width": 0.23117,
+          "height": 0.30337
+        },
+        "fit": "contain; one uniform whole-word scale; preserve complete ink aspect"
+      },
+      "extension": {
+        "sourceBox": [
+          27,
+          49,
+          69,
+          83
+        ],
+        "rectFraction": {
+          "x": 0.09205,
+          "y": 0.50562,
+          "width": 0.17573,
+          "height": 0.38202
+        },
+        "fontRole": "extension"
+      }
+    }
+  },
+  {
+    "profileId": "historic-1969-rasht-study",
+    "presetId": "full-city-gilan",
+    "sourceFile": "city-reference/ir-wlp-1969-gilan.jpg",
+    "sourcePlateBox": [
+      2,
+      1,
+      170,
+      86
+    ],
+    "roles": {
+      "serial": {
+        "sourceBox": [
+          15,
+          12,
+          156,
+          49
+        ],
+        "rectFraction": {
+          "x": 0.07738,
+          "y": 0.12941,
+          "width": 0.83929,
+          "height": 0.43529
+        }
+      },
+      "city": {
+        "wordmarkId": "rasht",
+        "sourceBox": [
+          34.410961475897984,
+          46.0,
+          137.97056274847714,
+          70.52254248593736
+        ],
+        "rectFraction": {
+          "x": 0.19292,
+          "y": 0.52941,
+          "width": 0.61643,
+          "height": 0.2885
+        },
+        "fit": "contain; one uniform whole-word scale; preserve complete ink aspect"
+      }
+    }
+  },
+  {
+    "profileId": "historic-1969-tehran-study",
+    "presetId": "full-city-numeric",
+    "sourceFile": "city-reference/ir-wlp-1969-tehran.jpg",
+    "sourcePlateBox": [
+      1,
+      3,
+      169,
+      87
+    ],
+    "roles": {
+      "serial": {
+        "sourceBox": [
+          24,
+          14,
+          145,
+          53
+        ],
+        "rectFraction": {
+          "x": 0.1369,
+          "y": 0.13095,
+          "width": 0.72024,
+          "height": 0.46429
+        }
+      },
+      "city": {
+        "wordmarkId": "tehran",
+        "sourceBox": [
+          68.0,
+          54.0,
+          153.54639781775012,
+          81.0
+        ],
+        "rectFraction": {
+          "x": 0.39881,
+          "y": 0.60714,
+          "width": 0.5092,
+          "height": 0.32143
+        },
+        "fit": "contain; one uniform whole-word scale; preserve complete ink aspect"
+      },
+      "extension": {
+        "sourceBox": [
+          24,
+          60,
+          64,
+          77
+        ],
+        "rectFraction": {
+          "x": 0.1369,
+          "y": 0.67857,
+          "width": 0.2381,
+          "height": 0.20238
+        },
+        "fontRole": "extension"
+      }
+    }
+  },
+  {
+    "profileId": "historic-fullcity-letter-study",
+    "presetId": "full-city-letter",
+    "sourceFile": "city-reference/iran70bcaru-reference.jpg",
+    "sourcePlateBox": [
+      1,
+      1,
+      217,
+      100
+    ],
+    "roles": {
+      "serial": {
+        "sourceBox": [
+          29,
+          12,
+          188,
+          54
+        ],
+        "rectFraction": {
+          "x": 0.12963,
+          "y": 0.11111,
+          "width": 0.73611,
+          "height": 0.42424
+        }
+      },
+      "city": {
+        "wordmarkId": "tehran",
+        "sourceBox": [
+          77.87381778762989,
+          62.0,
+          189.0,
+          89.0
+        ],
+        "rectFraction": {
+          "x": 0.3559,
+          "y": 0.61616,
+          "width": 0.51447,
+          "height": 0.27273
+        },
+        "fit": "contain; one uniform whole-word scale; preserve complete ink aspect"
+      },
+      "extension": {
+        "sourceBox": [
+          31,
+          62,
+          73,
+          90
+        ],
+        "rectFraction": {
+          "x": 0.13889,
+          "y": 0.61616,
+          "width": 0.19444,
+          "height": 0.28283
+        },
+        "fontRole": "extension"
+      }
+    }
+  },
+  {
+    "profileId": "historic-1970-commercial-study",
+    "presetId": "full-city-commercial",
+    "sourceFile": "city-reference/ir-wlp-circa1970-commercial.jpg",
+    "sourcePlateBox": [
+      1,
+      1,
+      169,
+      85
+    ],
+    "roles": {
+      "serial": {
+        "sourceBox": [
+          24,
+          11,
+          148,
+          46
+        ],
+        "rectFraction": {
+          "x": 0.1369,
+          "y": 0.11905,
+          "width": 0.7381,
+          "height": 0.41667
+        }
+      },
+      "city": {
+        "wordmarkId": "tehran",
+        "sourceBox": [
+          71.0,
+          52.0,
+          158.74433316206373,
+          76.0
+        ],
+        "rectFraction": {
+          "x": 0.41667,
+          "y": 0.60714,
+          "width": 0.52229,
+          "height": 0.28571
+        },
+        "fit": "contain; one uniform whole-word scale; preserve complete ink aspect"
+      },
+      "extension": {
+        "sourceBox": [
+          12,
+          54,
+          59,
+          77
+        ],
+        "rectFraction": {
+          "x": 0.06548,
+          "y": 0.63095,
+          "width": 0.27976,
+          "height": 0.27381
+        },
+        "fontRole": "extension"
+      }
+    }
+  },
+  {
+    "profileId": "historic-old-government-study",
+    "presetId": "old-government",
+    "sourceFile": "city-reference/iran72govtu-reference.jpg",
+    "sourcePlateBox": [
+      1,
+      1,
+      217,
+      109
+    ],
+    "roles": {
+      "serial": {
+        "sourceBox": [
+          24,
+          32,
+          194,
+          76
+        ],
+        "rectFraction": {
+          "x": 0.10648,
+          "y": 0.28704,
+          "width": 0.78704,
+          "height": 0.40741
+        }
+      }
+    }
+  },
+  {
+    "profileId": "historic-1993-private-study",
+    "presetId": "city-band-header-code",
+    "sourceFile": "city-reference/ir-wlp-1993-private.jpg",
+    "sourcePlateBox": [
+      2,
+      1,
+      175,
+      78
+    ],
+    "roles": {
+      "serial": {
+        "sourceBox": [
+          16,
+          36,
+          159,
+          71
+        ],
+        "rectFraction": {
+          "x": 0.08092,
+          "y": 0.45455,
+          "width": 0.82659,
+          "height": 0.45455
+        }
+      },
+      "city": {
+        "wordmarkId": "tehran",
+        "sourceBox": [
+          67.4,
+          9.0,
+          133.1384387633061,
+          30.0
+        ],
+        "rectFraction": {
+          "x": 0.37803,
+          "y": 0.1039,
+          "width": 0.37999,
+          "height": 0.27273
+        },
+        "fit": "contain; one uniform whole-word scale; preserve complete ink aspect"
+      },
+      "extension": {
+        "sourceBox": [
+          20,
+          8,
+          63,
+          31
+        ],
+        "rectFraction": {
+          "x": 0.10405,
+          "y": 0.09091,
+          "width": 0.24855,
+          "height": 0.2987
+        },
+        "fontRole": "extension"
+      }
+    }
+  },
+  {
+    "profileId": "historic-1993-commercial-study",
+    "presetId": "city-band-commercial-wlp",
+    "sourceFile": "city-reference/ir-wlp-1993-commercial.jpg",
+    "sourcePlateBox": [
+      1,
+      1,
+      171,
+      72
+    ],
+    "roles": {
+      "serial": {
+        "sourceBox": [
+          11,
+          33,
+          157,
+          67
+        ],
+        "rectFraction": {
+          "x": 0.05882,
+          "y": 0.4507,
+          "width": 0.85882,
+          "height": 0.47887
+        }
+      },
+      "city": {
+        "wordmarkId": "tehran",
+        "sourceBox": [
+          58.0,
+          9.428571428571429,
+          113.8113883008419,
+          28.25483399593904
+        ],
+        "rectFraction": {
+          "x": 0.33529,
+          "y": 0.11871,
+          "width": 0.3283,
+          "height": 0.26516
+        },
+        "fit": "contain; one uniform whole-word scale; preserve complete ink aspect"
+      }
+    }
+  },
+  {
+    "profileId": "historic-1993-government-study",
+    "presetId": "city-band-government",
+    "sourceFile": "city-reference/ir-wlp-1993-government.jpg",
+    "sourcePlateBox": [
+      1,
+      1,
+      174,
+      78
+    ],
+    "roles": {
+      "serial": {
+        "sourceBox": [
+          11,
+          35,
+          164,
+          71
+        ],
+        "rectFraction": {
+          "x": 0.0578,
+          "y": 0.44156,
+          "width": 0.88439,
+          "height": 0.46753
+        }
+      },
+      "city": {
+        "wordmarkId": "tehran",
+        "sourceBox": [
+          52.68629150101524,
+          10.0,
+          118.5,
+          29.348469228349536
+        ],
+        "rectFraction": {
+          "x": 0.29876,
+          "y": 0.11688,
+          "width": 0.38043,
+          "height": 0.25128
+        },
+        "fit": "contain; one uniform whole-word scale; preserve complete ink aspect"
+      }
+    }
+  },
+  {
+    "profileId": "historic-cityband-truck-study",
+    "presetId": "city-band-commercial",
+    "sourceFile": "city-reference/iran98trucku-reference.jpg",
+    "sourcePlateBox": [
+      0,
+      0,
+      218,
+      104
+    ],
+    "roles": {
+      "serial": {
+        "sourceBox": [
+          17,
+          47,
+          200,
+          96
+        ],
+        "rectFraction": {
+          "x": 0.07798,
+          "y": 0.45192,
+          "width": 0.83945,
+          "height": 0.47115
+        }
+      },
+      "city": {
+        "wordmarkId": "tehran",
+        "sourceBox": [
+          64.87381778762989,
+          14.0,
+          148.6875,
+          43.12741699796952
+        ],
+        "rectFraction": {
+          "x": 0.29759,
+          "y": 0.13462,
+          "width": 0.38447,
+          "height": 0.28007
+        },
+        "fit": "contain; one uniform whole-word scale; preserve complete ink aspect"
+      }
+    }
+  },
+  {
+    "profileId": "historic-1960s-consular-study",
+    "presetId": "consular-1960s",
+    "sourceFile": "city-reference/ir-wlp-1960s-consular.jpg",
+    "sourcePlateBox": [
+      1,
+      1,
+      198,
+      76
+    ],
+    "roles": {
+      "serial": {
+        "sourceBox": [
+          121,
+          13,
+          129,
+          60
+        ],
+        "rectFraction": {
+          "x": 0.60914,
+          "y": 0.16,
+          "width": 0.04061,
+          "height": 0.62667
+        }
+      },
+      "class": {
+        "wordmarkId": "consular",
+        "sourceBox": [
+          11.803847577293368,
+          16.0,
+          77.0,
+          57.0
+        ],
+        "rectFraction": {
+          "x": 0.05484,
+          "y": 0.2,
+          "width": 0.33094,
+          "height": 0.54667
+        },
+        "fit": "contain; one uniform whole-word scale; preserve complete ink aspect"
+      }
+    }
+  }
+]

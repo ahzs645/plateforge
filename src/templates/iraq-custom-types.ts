@@ -9,4 +9,4 @@ export interface IraqCustomPreset {
   defaults: IraqCustomState; fields: (keyof IraqCustomState)[]; sourceArtworks: string[]; notes: string[];
 }
 export interface IraqCustomSourceCoverage { id: string; label: string; presetId: string | null; status: string; note: string; sourceUrl: string }
-export interface IraqCustomResult { svg: string; width: number; height: number; warnings: string[]; errors: string[] }
+export interface IraqCustomResult { svg: string; body: string; width: number; height: number; warnings: string[]; errors: string[] }

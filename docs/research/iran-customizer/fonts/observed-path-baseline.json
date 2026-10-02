@@ -1,0 +1,1066 @@
+[
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1947-study",
+    "role": "main",
+    "character": "۳",
+    "pathSha256": "10d7bcc45f35c2bb541440e0e33548bd5662e081d00ca7e9e044d22229a5e548"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1947-study",
+    "role": "main",
+    "character": "۶",
+    "pathSha256": "cf6f64337d91bb30bc4058ddc0fdbfe0b237d427f80c77bfb1060b93fa7ec14a"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1947-study",
+    "role": "main",
+    "character": "۷",
+    "pathSha256": "058496b1ec3ae6510e596799aa9e59137b8ecf01a499982ef19e287641b6e7ae"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1947-study",
+    "role": "city-initial",
+    "character": "ط",
+    "pathSha256": "0c99fd13fd5129ee027e92ddffc05d1fcff9a0c9e6d5d5a4fe275102289d206e"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1947-study",
+    "role": "year",
+    "character": "۲",
+    "pathSha256": "9df2598291391743f7a79b4f7053dfb4040132851e333f2cbb29926ef3cc9483"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1947-study",
+    "role": "year",
+    "character": "۶",
+    "pathSha256": "5fbb94712f9a057335e8cb89600d444301fb0c2a699a60477f02fde4e711f18c"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1949-study",
+    "role": "main",
+    "character": "۳",
+    "pathSha256": "6d067967b11a04cd0c6e846c04ee1b716bcb7b01bd5613f4cd79eef5c3f90934"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1949-study",
+    "role": "main",
+    "character": "۴",
+    "pathSha256": "6118d0c602674f66e9b363f85aa7f613c832a7ff24298a00c8040879650dd0f8"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1949-study",
+    "role": "main",
+    "character": "۵",
+    "pathSha256": "6f4b124c3351a11697b2d833c76ac40482e7dcc83074bf6254c61214c382d3cf"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1949-study",
+    "role": "city-initial",
+    "character": "ط",
+    "pathSha256": "c00563e00d35f9647466baeddc7aa844b3f683b1cdcc921d29acd5daea4ca46d"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1949-study",
+    "role": "year",
+    "character": "۲",
+    "pathSha256": "12f32997dba0a62a12af16cb3afb098660483017fc76684aaa0cd92519cc3519"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1949-study",
+    "role": "year",
+    "character": "۸",
+    "pathSha256": "208ae374476e811cf6f06a287d3387dacca948335312112ed04e4f3f0bd98686"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1954-study",
+    "role": "main",
+    "character": "۲",
+    "pathSha256": "8c00e9bfc0b6054d098bab5e90898b9a9a6a66c821b058a61ba6f8a80a45fac6"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1954-study",
+    "role": "main",
+    "character": "۰",
+    "pathSha256": "681f8c3b96a8f9f599bc4462c01c5ba1cbc527118ea900f6acb77ec940860a53"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1954-study",
+    "role": "city-initial",
+    "character": "ط",
+    "pathSha256": "34b46b79b0663644485dd403755849397b2258569a44233ac490383f32eb841a"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1954-study",
+    "role": "year",
+    "character": "۳",
+    "pathSha256": "58b55d778763cf178b03b48f8b16006fdca9754bebbe6750341f89b72ba4e494"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1956-study",
+    "role": "main",
+    "character": "۲",
+    "pathSha256": "8a939c4cfcdc694965fc219c35a29d9941e3e990cba422a1309a6246fb984468"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1956-study",
+    "role": "main",
+    "character": "۴",
+    "pathSha256": "4413bd235ca9fe8098329b614c92665047787c20545c33806612561ca4cc1047"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1956-study",
+    "role": "main",
+    "character": "۵",
+    "pathSha256": "2ad2ce7b07d7c0a0bc85105e919344be4b0132aec235481623a0855a6199d7fd"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1956-study",
+    "role": "city-initial",
+    "character": "ط",
+    "pathSha256": "fd2045e7543e66e8a3e932c980d77dc89774a325b7b18e5218f10b09a29c143b"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1956-study",
+    "role": "year",
+    "character": "۳",
+    "pathSha256": "f7a8701915aad745612e8b33985199c4d07efccfd53592cb465c2cb9445fc32b"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1956-study",
+    "role": "year",
+    "character": "۵",
+    "pathSha256": "1360aae1bd122d2e7c3db42975c7ca36360f45fd8d4c42dc5bb8967d839b1df3"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1960-study",
+    "role": "main",
+    "character": "۱",
+    "pathSha256": "0bb06e588f13889e4ca2cab3a8d991eb0317608721a1d82fa3354f4ba8034559"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1960-study",
+    "role": "main",
+    "character": "۸",
+    "pathSha256": "e9a4771beeb044bbc1556fe635531ab05741011a98aae069f987c3a5ed427053"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1960-study",
+    "role": "main",
+    "character": "۲",
+    "pathSha256": "4777857f0b56403e39a0479ec1d4f956879f947d0735e2c03fc48f4e04edf6d1"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1960-study",
+    "role": "main",
+    "character": "۷",
+    "pathSha256": "7c3fe20a9ab268c4df535291242c193347578c0e98ad789c08a0fd13d6369cbe"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1960-study",
+    "role": "city-initial",
+    "character": "ط",
+    "pathSha256": "89e030f7dac7e43b21ca715dc34d34a8991d45e9c29496e06e2571d602007a33"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1960-study",
+    "role": "year",
+    "character": "۳",
+    "pathSha256": "b7e5a13b9d6d6c51c0f270b5d99940827c874e85af2177da6c7f01121c7bc3fb"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1960-study",
+    "role": "year",
+    "character": "۹",
+    "pathSha256": "3ce0861685568e90db40b48e9ec78f3de5bfa1ed00a7b29ff0c8116aca1c911e"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1961-study",
+    "role": "main",
+    "character": "۲",
+    "pathSha256": "1843ed16391de1d03632b13214fe20854e01d71e6d24eee509016d9372cd3aa0"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1961-study",
+    "role": "main",
+    "character": "۵",
+    "pathSha256": "13505f4f76e93d27faa6c830cd0a0ba40918d66a8e3ef1bcd7da99906882f33c"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1961-study",
+    "role": "main",
+    "character": "۷",
+    "pathSha256": "1595587befb21ce73cf6a7844e50156b44f88bab83f6753765061a012c283839"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1961-study",
+    "role": "main",
+    "character": "۸",
+    "pathSha256": "bab7728184ad0cea7af58414e7f44e15c0aeec3e471fda0909f00f13ffac4a03"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1961-study",
+    "role": "city-initial",
+    "character": "ط",
+    "pathSha256": "ecb171fb2c3974510868feca47c7116d501b631a2e300e79beca969b7649d9ef"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1961-study",
+    "role": "year",
+    "character": "۴",
+    "pathSha256": "37ef85b38f5876c52318dff0a5255a8bbcfbb020ba4c19fb2f631999413c4a37"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1961-study",
+    "role": "year",
+    "character": "۰",
+    "pathSha256": "208bb4d4162f8ebdfd5a6214cae54612329d2812c3e402459ce2901a13103232"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1963-study",
+    "role": "main",
+    "character": "۰",
+    "pathSha256": "753d83fe792e8c8832a12b0f21dbfe5f5f40f1c307f3462cd232d78a29e695e2"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1963-study",
+    "role": "main",
+    "character": "۱",
+    "pathSha256": "4d72101e38670149c3a4fa367fab772496e402c963f7dfaf87cfbade64d71b95"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1963-study",
+    "role": "main",
+    "character": "۲",
+    "pathSha256": "f2b57cd607b49438821778c8f96fa8fb89812ed040b68043c4ba5d330c969cb2"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1963-study",
+    "role": "main",
+    "character": "۶",
+    "pathSha256": "8f0f453dfd627796ff08c59efc25e05c6defb419bb85322619fdbb1ac22a7ba8"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1963-study",
+    "role": "main",
+    "character": "۹",
+    "pathSha256": "f34ce4257b13afd1d661f0d177c9983faad1801944795c9f4041da8d19bac138"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1963-study",
+    "role": "city-initial",
+    "character": "ط",
+    "pathSha256": "36682daf17707d8767eff17cf0362e550eff78b95702aaefd46182f412a9940d"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1963-study",
+    "role": "year",
+    "character": "۴",
+    "pathSha256": "321b2bcb0bb3695c851a8751fe0bf811f4d44c9eda7be7ad2077f186f4cb1054"
+  },
+  {
+    "file": "historical-studies.json",
+    "profile": "historic-1963-study",
+    "role": "year",
+    "character": "۲",
+    "pathSha256": "53bcbb100e09072c40b21ba31b001d926db5ac6526ab3f4d4f1bcdf8350fd6ca"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1964-city-study",
+    "role": "main",
+    "character": "۱",
+    "pathSha256": "73590c8000a5d0e4029e2988240e7afb266efed550476a3aa30725bb84bea43a"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1964-city-study",
+    "role": "main",
+    "character": "۲",
+    "pathSha256": "bca8105c54fe10b112c02bcc0ab99912c4c0585d679ea04fb6dbd797242b7705"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1964-city-study",
+    "role": "main",
+    "character": "۳",
+    "pathSha256": "c77eb7f34af7ba13aaecf57576ac4aaf771deb921a5749f548d8972a19b658a9"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1964-city-study",
+    "role": "extension",
+    "character": "۱",
+    "pathSha256": "77179131c7cc1cad419f3e1185114370d6a6e046556b09fb08761a78111f01ab"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1964-city-study",
+    "role": "extension",
+    "character": "۳",
+    "pathSha256": "e2ff5abd6200a2008f3e7064241ebd5da5aa41f6d349e7b995057fb05ff69ae2"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1969-rasht-study",
+    "role": "main",
+    "character": "۱",
+    "pathSha256": "d817fc4878cd87c7de9e038acb4cac0386d6f43fb413714b9578d88a981203bc"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1969-rasht-study",
+    "role": "main",
+    "character": "۲",
+    "pathSha256": "246446208653d525c632f7496871603694f7fa882b7004908186295c0949267f"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1969-rasht-study",
+    "role": "main",
+    "character": "۳",
+    "pathSha256": "561eb814a5764881d8cac40ed0cd68a9f673a0d323390f9b9f07d5d8b6d76296"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1969-rasht-study",
+    "role": "main",
+    "character": "۷",
+    "pathSha256": "e34e9ce69656ea6128b8ee5ea00b3a4f08caebf702c522a0ddd33765d84a9bd8"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1969-tehran-study",
+    "role": "main",
+    "character": "۴",
+    "pathSha256": "f5a240a4219ac1c71b3b7e7a7c16a4048bd17fef7ee1f7c8ea11dc6039e2752a"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1969-tehran-study",
+    "role": "main",
+    "character": "۱",
+    "pathSha256": "863513965b0cdda7d0f506309bcc1f653dfa507d8a5ee3bdb866639a18a2c55d"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1969-tehran-study",
+    "role": "main",
+    "character": "۶",
+    "pathSha256": "bfa3350ff81e380fa7698fbc94bfa12ddec26082e5206517c291dbe0a6884c69"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1969-tehran-study",
+    "role": "main",
+    "character": "۲",
+    "pathSha256": "05ce948f5a231df12b88b5e789d970b7215f33363e9f80318146e8bb44d22a08"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1969-tehran-study",
+    "role": "main",
+    "character": "۹",
+    "pathSha256": "9e611fcc87f9a9ac437eb6373e24af98f9be9cec717c200e1aadde1ffe65a234"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1969-tehran-study",
+    "role": "extension",
+    "character": "۹",
+    "pathSha256": "04f59e14901d861710f3d9d4f40c4e79a3b0298e119980abc9eabd4979fe1d91"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1969-tehran-study",
+    "role": "extension",
+    "character": "۱",
+    "pathSha256": "2cba955074d39dccb427ca84ddd1e137e94ab2221a4143dd097fd7f69b713b70"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1969-tehran-study",
+    "role": "extension",
+    "character": "-",
+    "pathSha256": "7b8c2e50b48384a17ac0b6992017592dce869a088c7fd0fc381f4e4b5872f8a8"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-fullcity-letter-study",
+    "role": "main",
+    "character": "۹",
+    "pathSha256": "1a6ffcdc3142858ce2f5794231f87f4493818aace7946edd839d832be96f769f"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-fullcity-letter-study",
+    "role": "main",
+    "character": "۴",
+    "pathSha256": "492a26d98b464cef932e755fc6c181a7ee4ef64d32703d4fff272cf8845c81dc"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-fullcity-letter-study",
+    "role": "main",
+    "character": "۶",
+    "pathSha256": "a90ba5c6a6d16aea07a3f442bea278bc75ed4734703fe48eb365201499a78d93"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-fullcity-letter-study",
+    "role": "extension",
+    "character": "ج",
+    "pathSha256": "b48c75064bd2af6b8bc0fb54339b5a325fd7dddd06e46adc69b96c53e963fd8d"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-fullcity-letter-study",
+    "role": "extension",
+    "character": "-",
+    "pathSha256": "7d31b9d9188b606a0ceef8c2ca1650d62ceebbbcc35121107bbae4936c2e2a90"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1970-commercial-study",
+    "role": "main",
+    "character": "۱",
+    "pathSha256": "550abb6686e501632a4ab0b836d24505230858902b89d6584cc2bab6c98b4a89"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1970-commercial-study",
+    "role": "main",
+    "character": "۶",
+    "pathSha256": "94e381b0e3446bdae83b11d93df9e260c4075a5009d242c3d059bee4066d4c57"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1970-commercial-study",
+    "role": "main",
+    "character": "۸",
+    "pathSha256": "bf8c8794e3b87908e4aa38538f5b3ec57cbf190dec5d6b47f34f2c73f2cec36b"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1970-commercial-study",
+    "role": "extension",
+    "character": "۱",
+    "pathSha256": "83ea8c88426d40df449caeab597d37388ef73c28e2e3374a6f1ebce7bb9a5bf4"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1970-commercial-study",
+    "role": "extension",
+    "character": "۲",
+    "pathSha256": "4dbc690e49c3abd7728e117403901759f9ed87bae89f830a7bd80a4a37fc4482"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1970-commercial-study",
+    "role": "extension",
+    "character": "-",
+    "pathSha256": "994c2b6a7c2e2b010c7c57c19fec27103f80d81abfbee9aec71fd66bc0d93cc7"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-old-government-study",
+    "role": "main",
+    "character": "۳",
+    "pathSha256": "673d7e49573dd8bbb0493c0113cbcee6002ef56e7e041b1d84a2b712d69b20ac"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-old-government-study",
+    "role": "main",
+    "character": "۴",
+    "pathSha256": "18f32adbb3917324e53f3b74b2204a136741197fa3d2dafc9303536a5d630efa"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-old-government-study",
+    "role": "main",
+    "character": "۰",
+    "pathSha256": "c9e98724625bd01488afe83dd749f08d15d02e279c046aac66a79a4957c9203f"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-old-government-study",
+    "role": "main",
+    "character": "۲",
+    "pathSha256": "3aa151ca5409ad92199eeb5b8cd29711fa3d752c667a227d9b74414290a5186a"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-old-government-study",
+    "role": "main",
+    "character": "۷",
+    "pathSha256": "4662d8eba93ac41dfeb6350f0881591943e43b1427a82564a6e2b8341a68e776"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1993-private-study",
+    "role": "main",
+    "character": "۱",
+    "pathSha256": "152e3a02f664096d65dafb5d6a1c994711024ff139b0478556a23b900f6888e2"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1993-private-study",
+    "role": "main",
+    "character": "۴",
+    "pathSha256": "df022aca06507db36f0655c9a4d4172a91e23d3701b685f26d76530fe1e5ef5e"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1993-private-study",
+    "role": "main",
+    "character": "۷",
+    "pathSha256": "4cf058874e76e2c0147463ec148a491f6530ed5f7bab8188f9ec7e2c39dd35d2"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1993-private-study",
+    "role": "main",
+    "character": "ل",
+    "pathSha256": "412f92ded456b3a7c9dcb09f5de235d2b5346197ff9bc84bc7eaa2990ad7f7c5"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1993-private-study",
+    "role": "extension",
+    "character": "۱",
+    "pathSha256": "52b6b5a04d382906b956e61799132f512572f7d13b2ca5a5801754d3b6dd707f"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1993-private-study",
+    "role": "extension",
+    "character": "۴",
+    "pathSha256": "a651779150891e3a98a2bbcb38232f8ac79d198377a4fa6e349a0d0b6cef57ce"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1993-private-study",
+    "role": "extension",
+    "character": "-",
+    "pathSha256": "e3bfe26a47c7709d51d1e2befb1051d41f1a613d77e5501cfce0b9fe721f465f"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1993-commercial-study",
+    "role": "main",
+    "character": "۱",
+    "pathSha256": "5b3e1b77121ee67d5b7eb4c924b8f87f73fa610cdd1995369d272f8a470ab74d"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1993-commercial-study",
+    "role": "main",
+    "character": "۵",
+    "pathSha256": "ca74edea53d2f04b30156ed3c86e1153045d584f0cd705b1f3add3b36c662daf"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1993-commercial-study",
+    "role": "main",
+    "character": "۶",
+    "pathSha256": "1b904af9d83963cb0136773b64982e8b05234327b606226231554bf1a93e81b4"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1993-commercial-study",
+    "role": "main",
+    "character": "ط",
+    "pathSha256": "7bbe5915e593938180bbfc4899cdedd9cd012509057a688eea2401400580fce7"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1993-government-study",
+    "role": "main",
+    "character": "۱",
+    "pathSha256": "1fbd837c638907908e0c2d1f2f03c0aef8e2e4be2c74d53b59eb712590996fdc"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1993-government-study",
+    "role": "main",
+    "character": "۶",
+    "pathSha256": "dbbab6f2a009912a80f53a4f5f3e74269ce31ef6bde55b24888a93db0cda90a4"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1993-government-study",
+    "role": "main",
+    "character": "۲",
+    "pathSha256": "586974a1878968057517c1e8cab53191273c9899e6df874e1e38c503f40f5b82"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1993-government-study",
+    "role": "main",
+    "character": "۴",
+    "pathSha256": "fd4a5694d63e5235124b3010a39918a0b8450b8bf6538cd47a16cc6723323011"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1993-government-study",
+    "role": "main",
+    "character": "۵",
+    "pathSha256": "1d458e6145a9c0cb33b272f2e2c7cf1a147e12edb2d788e7816852545509e3ba"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1993-government-study",
+    "role": "main",
+    "character": "ب",
+    "pathSha256": "c7850ee7084308d224fd2dc211f89ab77ee6bbcca8d95c18bb26bfcb27af3958"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-cityband-truck-study",
+    "role": "main",
+    "character": "۱",
+    "pathSha256": "2add06c235e60050b2390a7b30f0e6e9f9f57a45a1fecc1fa7800f16b7b83c85"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-cityband-truck-study",
+    "role": "main",
+    "character": "۹",
+    "pathSha256": "d1f14df167573da4260c590eba20cdff4f09373b9e1975aa1065c0b26e830ddd"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-cityband-truck-study",
+    "role": "main",
+    "character": "۴",
+    "pathSha256": "9f55b0c5f9371a01ef97841cbe91750524d49ae7feec19ce0a2076c73ba9a250"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-cityband-truck-study",
+    "role": "main",
+    "character": "۷",
+    "pathSha256": "3a40ba9bfe43ad44289e4dfbcc519141f83c1643268a0bd2e48064dcd2f9fea1"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-cityband-truck-study",
+    "role": "main",
+    "character": "ط",
+    "pathSha256": "e6dbdd75a217303df3728f9f96f8d56572707da5c077e9d86c1ab6a19615ea5f"
+  },
+  {
+    "file": "city-studies.json",
+    "profile": "historic-1960s-consular-study",
+    "role": "main",
+    "character": "۱",
+    "pathSha256": "6f1911d605a4be6867780c5d49aa7c6307a111bc8fbced4c9f0f9811af300196"
+  },
+  {
+    "file": "role-studies.json",
+    "profile": "source-national-lettering",
+    "role": "main",
+    "character": "ع",
+    "pathSha256": "ac6724c406d257c8c8d2bb66e7cd0def25324186980e8cadbfe18a0d25b2642b"
+  },
+  {
+    "file": "role-studies.json",
+    "profile": "source-national-lettering",
+    "role": "series",
+    "character": "ع",
+    "pathSha256": "ac6724c406d257c8c8d2bb66e7cd0def25324186980e8cadbfe18a0d25b2642b"
+  },
+  {
+    "file": "role-studies.json",
+    "profile": "source-diplomatic-lettering",
+    "role": "main",
+    "character": "D",
+    "pathSha256": "7ce19bb944b3df0fa132bce5f8456cee3ff4a8da120b3a674d401d20bbd5ece6"
+  },
+  {
+    "file": "role-studies.json",
+    "profile": "source-diplomatic-lettering",
+    "role": "series",
+    "character": "D",
+    "pathSha256": "7ce19bb944b3df0fa132bce5f8456cee3ff4a8da120b3a674d401d20bbd5ece6"
+  },
+  {
+    "file": "role-studies.json",
+    "profile": "source-service-lettering",
+    "role": "main",
+    "character": "S",
+    "pathSha256": "21d82488865acfbfc6f5b235dcf54a029bb8b4faf8b1de291e15b4cc342216d6"
+  },
+  {
+    "file": "role-studies.json",
+    "profile": "source-service-lettering",
+    "role": "series",
+    "character": "S",
+    "pathSha256": "21d82488865acfbfc6f5b235dcf54a029bb8b4faf8b1de291e15b4cc342216d6"
+  },
+  {
+    "file": "role-studies.json",
+    "profile": "source-national-heh-lettering",
+    "role": "main",
+    "character": "هـ",
+    "pathSha256": "560385c2871057d3ddf880aeac30788aa5d3fe0cc890fa742e6aade9974561bf"
+  },
+  {
+    "file": "role-studies.json",
+    "profile": "source-national-heh-lettering",
+    "role": "series",
+    "character": "هـ",
+    "pathSha256": "560385c2871057d3ddf880aeac30788aa5d3fe0cc890fa742e6aade9974561bf"
+  },
+  {
+    "file": "role-studies.json",
+    "profile": "source-taxi-lettering",
+    "role": "main",
+    "character": "ت",
+    "pathSha256": "1fe98965a7863165d2f2f6b846981c1278d1a6be736b8b2fc67604aadb6fed08"
+  },
+  {
+    "file": "role-studies.json",
+    "profile": "source-taxi-lettering",
+    "role": "series",
+    "character": "ت",
+    "pathSha256": "1fe98965a7863165d2f2f6b846981c1278d1a6be736b8b2fc67604aadb6fed08"
+  },
+  {
+    "file": "role-studies.json",
+    "profile": "source-agricultural-lettering",
+    "role": "main",
+    "character": "ک",
+    "pathSha256": "b209f03a9038770cc63a5ad62154b31f0dece3468535f6bcd276260e52bbfc2f"
+  },
+  {
+    "file": "role-studies.json",
+    "profile": "source-agricultural-lettering",
+    "role": "series",
+    "character": "ک",
+    "pathSha256": "b209f03a9038770cc63a5ad62154b31f0dece3468535f6bcd276260e52bbfc2f"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-teh-black-study",
+    "role": "main",
+    "character": "T",
+    "pathSha256": "69eb3994db4af13377d49f81aaa51ddf0c75a6d7c9d74d5ca1bcf93720db236b"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-teh-black-study",
+    "role": "main",
+    "character": "E",
+    "pathSha256": "c1a61a18f7da0879aaef4ba8acd9c4b4e2923980168e82337a992731059ec667"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-teh-black-study",
+    "role": "main",
+    "character": "H",
+    "pathSha256": "629ad999aea3c7ae757bdfbc7f38dd33e25f19defceb0908a8b79a7ec7de6837"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-teh-black-study",
+    "role": "main",
+    "character": "-",
+    "pathSha256": "b68f0a3829bd0214810b02215da9b4bb4e8cd00da2672e54bfc5f0a573f0cb62"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-teh-black-study",
+    "role": "main",
+    "character": "4",
+    "pathSha256": "d021489ac13b188ff5602b09298d150ff1ff28e2a34873b92c947fccdd48e8dc"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-teh-black-study",
+    "role": "main",
+    "character": "7",
+    "pathSha256": "f8efac857e726d331ef0195e7f06a216c480084cff3629081d388fb64f6e688c"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-teh-black-study",
+    "role": "main",
+    "character": "0",
+    "pathSha256": "b5699da01ab29ef0559dd4c66942cdfb8d63a491f1fcf4ca08225ddffa803882"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-teh-green-study",
+    "role": "main",
+    "character": "T",
+    "pathSha256": "6eaf8646a14e95fb39e134a2d9370854bb1f64d539dbbb140ebe03fff38efbc7"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-teh-green-study",
+    "role": "main",
+    "character": "E",
+    "pathSha256": "f696a0d972ed42b14258ae194e147e24be704932a93dfc9f9b968aa5076c5da4"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-teh-green-study",
+    "role": "main",
+    "character": "H",
+    "pathSha256": "e973a57f11e909d6279624ffa66f4429fe962de960a1fd22080d712ce33d59cc"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-teh-green-study",
+    "role": "main",
+    "character": "-",
+    "pathSha256": "e21a930d690f4c58dbddc8ca17ce1ec47a6dcb306f5202a386d5e134cd7f7421"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-teh-green-study",
+    "role": "main",
+    "character": "3",
+    "pathSha256": "f2afb0e8bd4c8eff5a705908da4ea60e82f8b001a1a85102585b121798ebca99"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-teh-green-study",
+    "role": "main",
+    "character": "2",
+    "pathSha256": "7067fe185ed9c60441e282992c0a9977357a69c2c570612d0b2d7613d1420a91"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-teh-green-study",
+    "role": "main",
+    "character": "1",
+    "pathSha256": "aad8b520940c3955a7f21ad3f6d7afae3c625ed3c79e4a80b0abba22ff89f501"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-thr-travel-study",
+    "role": "main",
+    "character": "T",
+    "pathSha256": "28ccb2fefb2ff43399f1a20c1c257f494c99348b69b8d54b741aa967f5de12a4"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-thr-travel-study",
+    "role": "main",
+    "character": "H",
+    "pathSha256": "83101455681d70b96d2001826328700bc1ab6eaa5df3256396d25e30f6ae49e6"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-thr-travel-study",
+    "role": "main",
+    "character": "R",
+    "pathSha256": "bbcb8af582e7d871fa6bbc48a61d20714101123afbb9c24e884f854d3e17e3f6"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-thr-travel-study",
+    "role": "main",
+    "character": "-",
+    "pathSha256": "1b79e36e35e0b2d40bf38ee58a38baa70e326a4392d0d362d6866d6d1fe10b1a"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-thr-travel-study",
+    "role": "main",
+    "character": "7",
+    "pathSha256": "e2fdb5bc4e986598e079e753544dead883e6b2583735f1ef5c0a8a1454b8ccd0"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-thr-travel-study",
+    "role": "main",
+    "character": "0",
+    "pathSha256": "feb9e1c1edc55ae969b739fccc2709f3285bbb3ca0e9fec013f45edd1ef36c0d"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-thr-travel-study",
+    "role": "main",
+    "character": "6",
+    "pathSha256": "c1402c03411e252622a84b80f6a064fc9f0fc1c0c903496fc2c0be268c57a5e6"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-touring-2010-study",
+    "role": "main",
+    "character": "3",
+    "pathSha256": "4cc75261f20c621a2d3cdc040994892be67996fd381f9f91388eea01ab24ce9f"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-touring-2010-study",
+    "role": "main",
+    "character": "4",
+    "pathSha256": "81dcbf860b91b36c37a6ee35782b63e8666d193edb3419584d2cfc79c64e54e3"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-touring-2010-study",
+    "role": "main",
+    "character": "7",
+    "pathSha256": "1a286fac0fb85078de7d8db48dc9a175dad16523a95262773856afdd6edbcda6"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-touring-2010-study",
+    "role": "letter",
+    "character": "E",
+    "pathSha256": "052a4966e8052b8da6564a50b0e3cffdb401b393530e9136810b4635f4ef6d51"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-touring-2010-study",
+    "role": "code",
+    "character": "1",
+    "pathSha256": "5d8e0fc94a286dc9f061a8fa7569b97ce211c39dbc6070dfc1141d0ea3d60a95"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-touring-2010-study",
+    "role": "code",
+    "character": "0",
+    "pathSha256": "55065867737499cdeb6f41a42e3539d1e8829e7b24ad13d28bdeba7c343287e2"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-touring-2010-study",
+    "role": "country",
+    "character": "I",
+    "pathSha256": "de7af451f94f9344451a5ad149b26434277d213231e4ac174eab3e4cf38c67cf"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-touring-2010-study",
+    "role": "country",
+    "character": "R",
+    "pathSha256": "87dd47313e613341472e735d79abdfbe6ab24cfb1b333ede891a3f8aae9aae75"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-touring-2010-study",
+    "role": "country",
+    "character": "A",
+    "pathSha256": "768643a6d2ae02f44e9af58a6ca3876c9397040d4b419a1eb14f46d54bc5f51a"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-touring-2010-study",
+    "role": "country",
+    "character": "N",
+    "pathSha256": "cd66a03a3b349dfec8467b9be5c87c0b026cc49f784dd8845a9d59dd43bc71bc"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-uniimog-study",
+    "role": "main",
+    "character": "5",
+    "pathSha256": "02adaa8cf0285862361fd63def6a44ba741916b6b9c027a4c78144cda3f1116a"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-us-military-study",
+    "role": "main",
+    "character": "۸",
+    "pathSha256": "1b626f45fdae04193b7b5d839902eb7b4c27cfc421ad40f5d0be9519711e7d32"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-us-military-study",
+    "role": "main",
+    "character": "۰",
+    "pathSha256": "3084d13492e2a5d3995e00f37da2c5db167365421605f5a47779b1dd78d56cf9"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-us-military-study",
+    "role": "main",
+    "character": "۶",
+    "pathSha256": "adefaa36ee24eab6be4a3ea992bc9113e1d5d76c35551e265f47247dff1d2fa6"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-us-topographical-study",
+    "role": "main",
+    "character": "۳",
+    "pathSha256": "020397cd98e15f124507c43961fc9f21acc23e7929b4dfa5bd9eeaba7ae2867a"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-us-topographical-study",
+    "role": "main",
+    "character": "۰",
+    "pathSha256": "7b205f987d341e39f75edd9e8bd57b674767795fc779c0f51d93bc731605d076"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-us-topographical-study",
+    "role": "main",
+    "character": "۷",
+    "pathSha256": "028602e6c6fd13e9182e64f02afc097c47d3fc60402ccd8f8cdb4562103622ce"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-us-topographical-study",
+    "role": "main",
+    "character": "۸",
+    "pathSha256": "83da071f6314cc22bfb5599a16bf99e30435049da551b07f8e007b269ddffb4b"
+  },
+  {
+    "file": "parallel-studies.json",
+    "profile": "wlp-us-topographical-study",
+    "role": "main",
+    "character": "۴",
+    "pathSha256": "8f4e03c0f87b6b6561ec8d551570839662ff808b86d78fbfc47efe75368b388b"
+  }
+]

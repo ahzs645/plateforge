@@ -1,0 +1,34 @@
+[
+  {
+    "zone": "chabahar",
+    "sourcePixels": 4023,
+    "reconstructionPixels": 3871,
+    "intersectionOverUnion": 0.6391,
+    "sourceRecall": 0.7651,
+    "pathPrecision": 0.7951,
+    "registration": "Identity, source 250\u00d7125 pixel plane, rendered at uniform 4\u00d7; no fitted rotation, stretch or local warp",
+    "threshold": "Source RGB bright/white on blue for Chabahar; grayscale <130 for Qeshm; reconstruction alpha >.5",
+    "cropPixelsAtSource": [
+      5,
+      74,
+      61,
+      113
+    ]
+  },
+  {
+    "zone": "qeshm",
+    "sourcePixels": 4913,
+    "reconstructionPixels": 4136,
+    "intersectionOverUnion": 0.722,
+    "sourceRecall": 0.7722,
+    "pathPrecision": 0.9173,
+    "registration": "Identity, source 250\u00d7125 pixel plane, rendered at uniform 4\u00d7; no fitted rotation, stretch or local warp",
+    "threshold": "Source RGB bright/white on blue for Chabahar; grayscale <130 for Qeshm; reconstruction alpha >.5",
+    "cropPixelsAtSource": [
+      5,
+      70,
+      61,
+      113
+    ]
+  }
+]

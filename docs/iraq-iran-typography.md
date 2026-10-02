@@ -1,5 +1,7 @@
 # Iraq / Iran typography comparison
 
+> Current Iran update, 2 October 2026: the historical comparisons below remain evidence for those measured specimens. Registered Iran presets now use a dedicated path-based renderer, licensed candidate glyph profiles and complete shaped wordmarks. See [Iran font provenance](research/iran-customizer/fonts/README.md) and [registry integration](iran-region-integration.md). Earlier statements that every Iranian legend is system-font text describe the September implementation, not the current one.
+
 This pass renders the actual candidate fonts against attributed photographs. It does **not** replace the production glyph defaults or certify an official stamping font.
 
 ## Open the comparison

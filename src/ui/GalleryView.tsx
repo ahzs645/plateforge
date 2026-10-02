@@ -20,7 +20,7 @@ interface Props {
 interface Card { region: Region; format: PlateFormat; title: string; meta: string }
 interface Section { id: string; heading: string; period?: string; start?: number; summary?: string; cards: Card[]; gap?: PlateGap; coverageRoute?: string }
 
-function sectionsFor(group: CountryGroup, query: string, familyFilter = ''): Section[] {
+export function gallerySectionsFor(group: CountryGroup, query: string, familyFilter = ''): Section[] {
   const q = query.trim().toLowerCase();
   const keep = (c: Card) => !q || `${c.title} ${c.meta} ${c.region.name} ${c.region.code} ${c.format.id}`.toLowerCase().includes(q);
   const multi = group.regions.length > 1;
@@ -53,11 +53,21 @@ function sectionsFor(group: CountryGroup, query: string, familyFilter = ''): Sec
           ? { region, format, title: region.name, meta: region.formats.length > 1 ? format.label : region.code }
           : { region, format, title: format.label, meta: format.pattern ?? region.code }).filter(keep));
       }
+      // A family can have too few dated designs for a timeline and still have documented gaps.
+      // Keep its existing source periods; never manufacture another dated format just to show them.
+      if (!timeline && !q) for (const gap of gapsFor(region, family?.id)) sections.push({
+        id: `${region.id}/${gap.id}`, heading: head(gap.label), period: formatPeriod(gap.period),
+        start: gap.period[0], summary: gap.note, cards: [], gap, coverageRoute: region.coverageRoute,
+      });
     }
   }
   if (loose.length) sections.push({ id: `${group.country}/designs`, heading: sections.length ? 'Other designs' : multi ? 'All regions' : 'Designs', cards: loose });
   return sections;
 }
+
+/** Gap-bearing countries need their own sections even when their formats do not form a timeline. */
+export const galleryCountryIsSimple = (group: CountryGroup): boolean => group.regions.length === 1
+  && !buildTimeline(group.regions[0]) && !(group.regions[0].gaps?.length);
 
 /** Every design for the current state/province, country or continent, with dated regions laid out as a timeline. */
 export function GalleryView({ regions, region, format, onOpen, onSelectRegion }: Props) {
@@ -76,11 +86,11 @@ export function GalleryView({ regions, region, format, onOpen, onSelectRegion }:
     : (continent?.countries ?? []).filter((g) => scope === 'continent' || g.country === countryOf(region)), [continent, current, scope, region]);
   const blocks = useMemo(() => {
     // Across a continent, single-region undated countries share one grid instead of a section each.
-    const simple = (g: CountryGroup) => scope === 'continent' && g.regions.length === 1 && !buildTimeline(g.regions[0]);
+    const simple = (g: CountryGroup) => scope === 'continent' && galleryCountryIsSimple(g);
     const q = query.trim().toLowerCase();
     const national: Card[] = countries.filter(simple).flatMap((g) => g.regions[0].formats.map((f) => ({ region: g.regions[0], format: f, title: g.country, meta: f.label })))
       .filter((c) => !q || `${c.title} ${c.meta} ${c.region.code}`.toLowerCase().includes(q));
-    const list = countries.filter((g) => !simple(g)).map((g) => ({ key: g.country, group: g as CountryGroup | undefined, sections: sectionsFor(g, query, g.regions.includes(region) ? activeFamily : '') }));
+    const list = countries.filter((g) => !simple(g)).map((g) => ({ key: g.country, group: g as CountryGroup | undefined, sections: gallerySectionsFor(g, query, g.regions.includes(region) ? activeFamily : '') }));
     if (national.length) list.push({ key: 'national', group: undefined, sections: [{ id: 'national', heading: 'National designs', summary: 'Countries with a single national plate system.', cards: national }] });
     return list.filter((b) => b.sections.length);
   }, [countries, query, scope, region, activeFamily]);

@@ -1,27 +1,27 @@
 # Iraq and Iran: implementation and research notes
 
-Research snapshot: **27 September 2026**. Implementation base: `e411fdccdd90d017a55688c735073b8509efa585`.
+Iraq research snapshot: **27 September 2026**. Iran registry integration and bounded source audit: **2 October 2026**. See [Iran integration and chronology](iran-region-integration.md) for the current Iran contract; the earlier typography report retains its historical measurements.
 
 ## What is implemented
 
-Two registered country regions (`iraq`, `iran`), two SVG templates (`iq`, `ir`), shared script normalization, shared geometric glyph masters, seeded generation and per-format validation. The existing PlateForge region picker, format fields, gallery, timeline, batch generation and export pipeline discover these through the normal registries. No new application dependency or existing plate renderer is required.
+Two registered country regions (`iraq`, `iran`), SVG templates (`iq-flat` for Iraq, `ir` for Iran), shared script normalization, shared geometric glyph masters, seeded generation and per-format validation. The existing PlateForge region picker, format fields, gallery, timeline, batch generation and export pipeline discover these through the normal registries. No new application dependency or existing plate renderer is required.
 
 | Region | Recipes | Coverage |
 |---|---:|---|
-| Iraq | 27 | Six modern federal class recipes; six modern KRG class recipes; seven 2008 bilingual classes; two earlier private layouts; six KRG legacy colour classes. Modern recipes each have long/compact layout controls. |
-| Iran | 16 | Thirteen standard/class recipes; protocol; motorcycle; **one explicitly unfinished free-zone layout study**, with seven zone choices. |
+| Iraq | 38 | Every flat-editor preset (see `docs/research/iraq-customizer/README.md`): the 27 original recipes below, seven flat specimen-derived presets and four illustration-based layouts, drawn by the `iq-flat` template. |
+| Iran | 54 | All 53 source-guided Iran workshop presets (national classes, dated historical specimens, city/city-band layouts, temporary, earlier diplomatic/service, seven local free zones, foreign-travel and observer designs), plus the preserved `free-zone-study` alias. |
 
-These counts describe code recipes, not unique historical issues or a complete worldwide catalogue. In particular, seven zone choices are **not** seven completed emblem reconstructions.
+The original 27 Iraq recipes (six modern federal and six modern KRG classes, seven 2008 bilingual classes, two earlier private layouts, six KRG legacy colour classes) and their `iq` renderer are kept in `src/regions/asia/iraq-recipes.ts` for this preview and its tests; the app draws the same ids with the flat engine. These counts describe code recipes, not unique historical issues or a complete worldwide catalogue. The seven local free-zone layouts have source-guided emblem reconstructions; they are not authenticated production masters or the separate 2017 redesign.
 
 ## Architecture
 
 `src/regions/asia/iraq-data.ts` and `iran-data.ts` hold source references, allocations, and class vocabularies. `plate-script.ts` converts Arabic/Persian digits without reversing their logical order or discarding zeros. `iraq.ts` and `iran.ts` define fields, validation, generation and period/family metadata.
 
-`src/templates/westasia-glyphs.ts` contains original geometric studies for Latin letters, Arabic-Indic digits, Persian digits and the required isolated series letters. Iranian plates and the older Iraqi Arabic-digit plates draw those digits and letters from converted OFL outlines instead (`westasia-arabic.ts`, profile `naskh`; see [Iraq / Iran typography](iraq-iran-typography.md)); the geometric set is the fallback and the default profile. Arabic ٤/٥/٦ and Persian ۴/۵/۶ are distinct masters. The accessibility mark is geometry, not an emoji.
+`src/templates/westasia-glyphs.ts` contains original geometric studies for Latin letters, Arabic-Indic digits, Persian digits and the required isolated series letters. The original Iraqi Arabic-digit recipes use converted OFL outlines (`westasia-arabic.ts`, profile `naskh`; see [Iraq / Iran typography](iraq-iran-typography.md)). Iranian plates use the dedicated `iran-custom-fonts.ts` profiles and pre-shaped complete wordmarks; the app's Iraq plates use the flat editor's `iraq-custom-fonts.ts` profiles. Arabic ٤/٥/٦ and Persian ۴/۵/۶ are distinct masters. The accessibility mark is geometry, not an emoji.
 
-`westasia-scene.ts` places serial groups explicitly and returns an escaped SVG scene. It is independent of React and shared by the two thin React template adapters and the standalone preview. Unknown characters produce a visible missing-glyph cell rather than silently disappearing. Short Iraqi serials retain reasonable character proportions instead of stretching one digit over an entire number panel.
+`westasia-scene.ts` places serial groups explicitly and returns an escaped SVG scene; it now draws only the original Iraq recipes (`iraq-recipes.ts`) and the legacy Iran compatibility scene. `ir.ts` adapts Iran Parts through `iran-region-bridge.ts` and renders `renderIranCustom`; `iq-flat.ts` does the same for Iraq with `renderIraqCustom`. Unknown characters produce a visible missing-glyph cell rather than silently disappearing. Short Iraqi serials retain reasonable character proportions instead of stretching one digit over an entire number panel.
 
-No font binaries (only outlines converted from OFL fonts, with their licence in `src/assets/fonts/Parastoo-Sahel-OFL.txt`), scraped photographs, external image references or security features are bundled. **Joined province/country words, the government word الف, and small legends are SVG text using system fonts.** They remain editable and joined, but are not font-independent outlined wordmarks. Browser and export font substitution can therefore affect them.
+Rendered Iran and Iraq SVGs contain portable glyph and complete joined-wordmark paths, not system-font text or source photographs. Iran's candidate typefaces and artwork provenance are documented in [Iran fonts](research/iran-customizer/fonts/README.md) and [Iran artwork](research/iran-customizer/artwork.md). The original Iraq recipes' joined legends still use system-font SVG text. Security features are not reproduced.
 
 ## Evidence ledger
 
@@ -32,7 +32,7 @@ No font binaries (only outlines converted from OFL fonts, with their licence in 
 - [Original plate-class figure by Tourani et al.](https://www.researchgate.net/figure/Different-types-of-Iranian-vehicle-license-plates-with-their-corresponding-labels_fig1_346851347), from *A Robust Deep Learning Approach for Automatic Iranian Vehicle License Plate Detection and Recognition for Surveillance Systems*. Used as a visual cross-check, not a source of downloadable glyphs or official specifications.
 - Modern Iraqi plate photographs checked via [Nabaa](https://nbanews.net/arabic/hMy4HZ4i) and the [Al-Zawraa plate photograph](https://alzawraapaper.com/vrsfls/cntnt/pctr/119139.jpg). These support the white face with a coloured side strip and examples of shorter federal numbers. Photograph dates are not treated as introduction dates. Images are not redistributed.
 
-Requested atlas references: [WorldLicensePlates — Iraq](http://www.worldlicenseplates.com/world/AS_IRAQ.html) and [WorldLicensePlates — Iran](http://www.worldlicenseplates.com/world/AS_IRAN.html). Retrieval failed in this environment, including alternative HTTP/HTTPS attempts. They are **pending sources**, not evidence for completed coverage. No claim is made to have imported their collections.
+Requested atlas references: [WorldLicensePlates — Iraq](http://www.worldlicenseplates.com/world/AS_IRAQ.html) remained a retrieval gap in the September pass. The October Iran pass inspected the bounded [WorldLicensePlates — Iran](http://www.worldlicenseplates.com/world/AS_IRAN.html) and Wikipedia image set, plus separately labelled prior photographs and contemporary reports. It does not claim every Iranian issue or redistribute the catalogue photographs.
 
 ## Important modelling decisions
 
@@ -56,13 +56,13 @@ Military/police/diplomatic recipes cover the documented **starting national code
 
 There are 86 distinct right-hand codes in the encoded table and 183 motorcycle codes after removing zero-containing numbers. These are snapshot counts, not live availability. Code 32 has multiple provincial associations; 42 has historical exceptions; 64 includes the Tabas exception. Country-level code options do **not** constitute a complete county/letter/prefix/date resolver. A generated combination passing structural checks is not asserted to have been issued.
 
-2003 (system introduction in one source section) and 2005 (European dimensions) are kept distinct. The initial long-format civilian recipes use a 2005 coverage bound, not a claim that all classes were launched in the same year. Protocol, motorcycle and free-zone recipes do not fabricate a precise introduction date. Four-digit protocol/free-zone nonzero generators are conservative sample choices rather than proven exhaustive issuance ranges.
+2003 is a collector system label. [Radio Farda, 26 April 2004](https://www.radiofarda.com/a/340739.html), reports operation since Esfand 1382 (February–March 2004) and 52 × 11 cm; the private/public national timeline starts at 2004. Other undated subclasses are not assigned a shared launch year. D/S plates were unveiled on 6 March 2016, with operation planned for April–May 2016, not confirmed fleet completion. Protocol, motorcycle, temporary, historic-vehicle and most local free-zone layouts stay undated. Qeshm has a circa-2010 collector specimen marker, not a universal free-zone introduction. Existing protocol/free-zone legacy nonzero validators are preserved as conservative sample contracts.
 
 ## Fidelity and remaining work
 
 Serial glyphs are **approximations, not measured dies**: original geometric drawings, or (Arabic-script digits and letters, modern Iraqi Latin) converted font outlines. Colours are screen approximations, not official paint specifications. Flag micro-calligraphy, security marks, reflective surfaces, fastening details, exact small-lettering masters and manufacturing tolerances are not reconstructed.
 
-Next evidence passes should prioritize actual die masters or well-scaled front-on specimens; full WorldLicensePlates access; pre-1988 Iraq and pre-national Iran; Iraqi motorcycles/ICTS; Iranian temporary expiry layouts; museum plates with Bagh-e Melli artwork; all seven free-zone emblems; earlier political/service plates; and date-dependent county/letter allocation validation.
+Next evidence passes should prioritize actual die masters or well-scaled front-on specimens; pre-1988 Iraq and Iraqi motorcycles/ICTS; earliest pre-1947 Iranian specimens; the 2017 free-zone geometry and code assignments; and date-dependent county/letter allocation validation. Temporary expiry, Bagh-e Melli historic-vehicle artwork, seven local free-zone emblems and earlier political/service layouts now have separate source-guided reconstructions. Their precise manufacturing specifications and many introduction dates remain unresolved.
 
 The timeline's 2026 endpoints mean “researched through 2026,” not withdrawal. Broad gap intervals are research windows; their lower bounds are not asserted introduction years. Labels and notes make those limitations explicit.
 
@@ -78,8 +78,6 @@ npm run build
 node scripts/build-iraq-iran-preview.mjs
 ```
 
-Open `preview/iraq-iran.html` for a self-contained offline editor. It uses the same source modules and scene builders; it is not a separate hand-drawn mockup. It supports country/format selection, editable fields, seeded regeneration, validation feedback, source links, a recipe gallery, gap notes, and SVG/PNG downloads.
+Use the Vite application for canonical Single, Gallery, Batch and timeline review. The Iran region is edited in the main inspector (font profile, glyph policy, layout, ratio, spacing and palette sit under Style); `#/iran/historical-1326`, `#/iran/temporary` and `#/gallery/iran` exercise the standard registry integration. `build-iraq-iran-preview.mjs` now bundles the expanded Iran scene and bridge too; regenerate its offline output before review rather than inspecting a stale 16-recipe preview.
 
-The new tests check 500 seeded examples per recipe (21,500 examples), editable-field completeness, allocation membership, digit normalization, zero rules, distinct glyph sets, compact sizing, class-specific fields, SVG escaping and actual React server rendering. The PR workflow runs the complete repository tests and build, not only the new test files.
-
-Local verification used TypeScript 5.8.3 with the fetched core contracts and a minimal React declaration fixture because this environment could not install the repository's dependencies. Pure generation/validation/rendering assertions were executed; the standalone editor was exercised in Chromium. These checks are **not a substitute for a successful full repository CI run**. Consult the pull request's actual checks rather than assuming they passed.
+The country contract tests validate 500 seeded examples per recipe, field completeness, allocations, normalization and zero rules. `iran-region.test.ts` additionally validates and renders 20 seeded examples per Iran route through both the canonical scene and actual React template, checks every selectable city/letter/zone, preserves old route semantics, and tests chronology and appearance/identifier separation. Run the complete repository suite and build after all changes; historical verification notes are not evidence of a current CI pass.

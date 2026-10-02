@@ -1,0 +1,529 @@
+[
+  {
+    "sourceUrl": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "sourceFile": "bilingual-reference/ir-wlp-aa-public-2002.jpg",
+    "license": "Source-image reuse rights unverified",
+    "rights": "Private critical study only. WorldLicensePlates and original photograph contributors; source photograph reuse permission is not established. These are source-guided and explicitly inferred research drawings, not certified dies.",
+    "credit": "WorldLicensePlates Iran collector sheet AS_IRAN_OT2.jpg, crop [323,141,581,242]; source attribution only; photographic capture date unknown.",
+    "provenance": "observed",
+    "id": "source-bilingual-2002-persian",
+    "label": "2002 AA bilingual · Persian upper numerals (observed + inferred)",
+    "sourceId": "ir-wlp-aa-public-2002:persian-upper-study",
+    "script": "persian",
+    "capHeight": 25.6,
+    "baseline": 40.3,
+    "note": "Independent 2002 AA upper-Persian numeral study. Main ۱۶۹ and prefix۱ are source-observed; remaining digits in each role are labelled stylistically inferred. Main and allocation metrics are independent. Thin tapered downstrokes and broad head strokes are retained; no font substitution.",
+    "glyphs": [
+      {
+        "character": "۰",
+        "path": "M102 28.4 L105.2 31.6 L102 34.8 L98.8 31.6 Z",
+        "provenance": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۶",
+            "۹"
+          ],
+          "designNotes": "Small lozenge zero is a conventional Persian construction inferred at roughly one-quarter cap height; its presence, size and lozenge form are not evidenced by this specimen."
+        },
+        "note": "Stylistically inferred; this character is not observed in this role in the source photograph. Small lozenge zero is a conventional Persian construction inferred at roughly one-quarter cap height; its presence, size and lozenge form are not evidenced by this specimen.",
+        "sourceAdvance": 11
+      },
+      {
+        "character": "۱",
+        "path": "M100.6 14.8 C102.3 18.1 103.9 22.7 104.6 27.3 C105.2 32.3 103.5 37.2 101.1 40 C101.6 34.9 101.2 29.7 99.9 25.8 C99.1 23.9 97.7 22.2 97 20.5 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          97,
+          14,
+          106,
+          41
+        ],
+        "occurrence": "First digit of upper Persian serial ۱۹۹۱۶",
+        "note": "Observed source-guided smooth outline from the 258 × 101 pixel 2002 AA specimen. Hand-authored Bézier reconstruction omits wear and blur; not an official die master.",
+        "sourceAdvance": 29.0
+      },
+      {
+        "character": "۲",
+        "path": "M99.7 15.3 L102.5 14.7 C103.3 18.2 105.5 20.3 108.2 20.1 C110.1 19.9 111.4 18.6 112.4 16.6 L115.3 19.1 C113.5 22.9 111.1 25 107.6 25 C105.9 25 104.6 24.4 103.8 23.8 C105.5 29.8 106 34.2 104.1 38.1 L102.5 40.2 C103 33.8 101.9 28.3 99.9 23.9 L97.6 20.5 Z",
+        "provenance": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۶",
+            "۹"
+          ],
+          "designNotes": "Conventional Persian two skeleton drawn with the observed one’s tapered downstroke, oblique entry and the six’s broad upper-to-thin lower contrast; upper hook is inferred."
+        },
+        "note": "Stylistically inferred; this character is not observed in this role in the source photograph. Conventional Persian two skeleton drawn with the observed one’s tapered downstroke, oblique entry and the six’s broad upper-to-thin lower contrast; upper hook is inferred.",
+        "sourceAdvance": 28.8
+      },
+      {
+        "character": "۳",
+        "path": "M99.6 15.3 L102.4 14.7 C103.1 18.2 104.5 20.1 106.2 20.1 C108 20.1 108.7 18.3 108.7 16.7 L111.8 16.5 C111.9 19.2 113.1 20.3 114.7 20.1 C116.6 19.9 117.7 18.2 118.1 16.7 L121.3 19 C120.2 22.9 118 24.9 114.7 24.9 C112.5 24.9 110.9 24 110.3 22.5 C109.5 24.2 108.1 25 106.3 25 C105.2 25 104.2 24.5 103.7 24 C105.4 30 105.7 34.3 104 38.1 L102.4 40.2 C102.9 33.8 101.7 28.3 99.8 23.9 L97.6 20.5 Z",
+        "provenance": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۶",
+            "۹"
+          ],
+          "designNotes": "Conventional twin-hook Persian three drawn with the observed one’s tapered downstroke and six’s upper stroke weight. Twin hooks are stylistically inferred."
+        },
+        "note": "Stylistically inferred; this character is not observed in this role in the source photograph. Conventional twin-hook Persian three drawn with the observed one’s tapered downstroke and six’s upper stroke weight. Twin hooks are stylistically inferred.",
+        "sourceAdvance": 34.8
+      },
+      {
+        "character": "۴",
+        "path": "M110.7 14.9 L114 17.1 L108.6 22.5 C111.8 23.8 114.5 22.2 116.2 19.6 L119.2 22 C116.9 26 113.7 28 109.7 27.2 C107.8 27 106.2 26.3 105.3 25.4 C106.1 29.3 106.1 34.1 104.7 37.4 L102.8 40.2 C103.3 34.2 102.2 29.7 100.1 25.5 L97.7 22.3 L100.5 18.3 C102.1 20.6 103.6 21.9 105.1 22.3 Z",
+        "provenance": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۶",
+            "۹"
+          ],
+          "designNotes": "Conventional open Persian four skeleton with an angular upper fork, thick entry and tapering lower stem; branch design is inferred, not a source trace."
+        },
+        "note": "Stylistically inferred; this character is not observed in this role in the source photograph. Conventional open Persian four skeleton with an angular upper fork, thick entry and tapering lower stem; branch design is inferred, not a source trace.",
+        "sourceAdvance": 33.0
+      },
+      {
+        "character": "۵",
+        "path": "M109.4 14.8 C112.3 18 116.8 23.6 119 27.9 C121.3 32.3 120 37.3 116.3 39.3 C113.6 40.7 111.3 39.8 109.4 37.8 C107.5 39.8 105.1 40.7 102.4 39.3 C98.7 37.3 97.4 32.3 99.7 27.9 C101.9 23.6 106.4 18 109.4 14.8 Z M109.4 21.9 C107.4 24.3 104.6 28.4 103.7 31.2 C102.9 33.6 103.8 35.3 105.5 35.3 C106.9 35.3 108.2 33.8 109.4 32.5 C110.5 33.8 111.8 35.3 113.2 35.3 C114.9 35.3 115.8 33.6 115 31.2 C114.1 28.4 111.3 24.3 109.4 21.9 Z",
+        "provenance": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۶",
+            "۹"
+          ],
+          "designNotes": "Conventional closed Persian five skeleton with the observed nine’s counter scale and thick-to-thin transitions. The two-lobed base is inferred."
+        },
+        "note": "Stylistically inferred; this character is not observed in this role in the source photograph. Conventional closed Persian five skeleton with the observed nine’s counter scale and thick-to-thin transitions. The two-lobed base is inferred.",
+        "sourceAdvance": 34.0
+      },
+      {
+        "character": "۶",
+        "path": "M224.1 16.7 C229.3 19.4 235.4 19.7 240.8 17.1 L238.3 22.7 C236.5 27.4 236.7 32.1 237.2 35.9 L234.1 40.2 C233.1 35 233.6 29.7 234.5 24.1 C230.6 24.8 226.3 24.1 222.6 22.4 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          222,
+          16,
+          242,
+          41
+        ],
+        "occurrence": "Last digit of upper Persian serial ۱۹۹۱۶",
+        "note": "Observed source-guided smooth outline from the 258 × 101 pixel 2002 AA specimen. Hand-authored Bézier reconstruction omits wear and blur; not an official die master.",
+        "sourceAdvance": 28.0
+      },
+      {
+        "character": "۷",
+        "path": "M99.1 14.8 L103 15 C103.9 21.6 106.2 28.1 108.8 34.6 C111.5 28.3 113.4 21.5 114.4 14.8 L118.3 15 C116.9 25.2 113.5 33.9 109.9 40.3 L107.9 40.3 C104 33.7 100.6 25.2 99.1 14.8 Z",
+        "provenance": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۶",
+            "۹"
+          ],
+          "designNotes": "Persian seven’s conventional V skeleton uses narrow pointed lower terminal and hand-modulated strokes derived from source one/six; outline not observed."
+        },
+        "note": "Stylistically inferred; this character is not observed in this role in the source photograph. Persian seven’s conventional V skeleton uses narrow pointed lower terminal and hand-modulated strokes derived from source one/six; outline not observed.",
+        "sourceAdvance": 32.0
+      },
+      {
+        "character": "۸",
+        "path": "M107.9 14.8 L110 14.8 C113.8 21.4 117.1 30 118.7 40 L114.7 40.2 C113.8 33.6 111.5 26.9 108.9 20.5 C106.3 26.9 104.3 33.8 103.2 40.2 L99.3 40 C100.9 30 104.3 21.5 107.9 14.8 Z",
+        "provenance": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۶",
+            "۹"
+          ],
+          "designNotes": "Persian eight’s conventional inverted-V skeleton uses the same tapered stroke contrast as inferred seven and the observed one. The form is inferred."
+        },
+        "note": "Stylistically inferred; this character is not observed in this role in the source photograph. Persian eight’s conventional inverted-V skeleton uses the same tapered stroke contrast as inferred seven and the observed one. The form is inferred.",
+        "sourceAdvance": 32.0
+      },
+      {
+        "character": "۹",
+        "path": "M137.1 14.7 C140.4 14.6 141.5 16.4 141.2 19.5 L140.8 29.3 C140.6 32.4 141 35.7 141.2 37 L138.2 40.3 C137.2 36.8 136.6 32.5 137.1 27.4 C134.7 29.2 131 29.6 128.6 28.6 C126.2 27.7 125.1 26.5 125.6 24.2 C126.1 21.1 132 14.8 137.1 14.7 Z M135.6 19.4 C133.1 19.9 131.2 21.3 130.6 23 C132 24.6 135.1 24.6 137.4 22.8 L137.6 20.2 C137.4 19.5 136.6 19.2 135.6 19.4 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          125,
+          14,
+          142,
+          41
+        ],
+        "occurrence": "First of two upper Persian nines; second occurrence corroborates loop/stem structure",
+        "note": "Observed source-guided smooth outline from the 258 × 101 pixel 2002 AA specimen. Hand-authored Bézier reconstruction omits wear and blur; not an official die master.",
+        "sourceAdvance": 33.8
+      }
+    ],
+    "roles": {
+      "allocation": {
+        "label": "Upper-left allocation digits · independently measured 111 role",
+        "capHeight": 28.3,
+        "baseline": 43,
+        "glyphs": [
+          {
+            "character": "۰",
+            "path": "M41.656000000000006 29.793333333333333 44.31200000000001 33.34470588235294 41.656000000000006 36.896078431372544 39.0 33.34470588235294 41.656000000000006 29.793333333333333Z",
+            "provenance": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱"
+              ],
+              "designNotes": "Independent allocation-role reconstruction: source prefix one establishes taller, narrower proportions. Conventional numeral structure is adapted from this specimen’s main-role study; no ۰ is visible in the allocation block."
+            },
+            "note": "Stylistically inferred; this character is not observed in this role in the source photograph. Independent allocation-role reconstruction: source prefix one establishes taller, narrower proportions. Conventional numeral structure is adapted from this specimen’s main-role study; no ۰ is visible in the allocation block.",
+            "sourceAdvance": 13.4
+          },
+          {
+            "character": "۱",
+            "path": "M39.8 14.7 C41.7 18.7 42.7 24.1 42.9 29.1 C43.1 34.8 41.8 39.6 40 43 C40.4 35.8 39.9 29.6 38.5 25.8 L36.4 21.4 Z",
+            "provenance": "observed",
+            "sourceBox": [
+              36,
+              14,
+              44,
+              44
+            ],
+            "occurrence": "Leftmost digit in independent upper ۱۱۱ allocation block",
+            "note": "Observed source-guided smooth outline from the 258 × 101 pixel 2002 AA specimen. Hand-authored Bézier reconstruction omits wear and blur; not an official die master.",
+            "sourceAdvance": 13.4
+          },
+          {
+            "character": "۲",
+            "path": "M40.74300000000001 15.254901960784313 43.06700000000001 14.589019607843134C43.730999999999995 18.473333333333333 45.557 20.80392156862745 47.798 20.581960784313726C49.375 20.36 50.45400000000001 18.917254901960785 51.284000000000006 16.69764705882353L53.691 19.4721568627451C52.197 23.68941176470588 50.205 26.02 47.3 26.02C45.88900000000001 26.02 44.81 25.35411764705882 44.146 24.688235294117646C45.557 31.347058823529416 45.971999999999994 36.230196078431376 44.394999999999996 40.55843137254902L43.06700000000001 42.88901960784314C43.482 35.78627450980392 42.569 29.68235294117647 40.909000000000006 24.799215686274508L39.0 21.025882352941178L40.74300000000001 15.254901960784313Z",
+            "provenance": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱"
+              ],
+              "designNotes": "Independent allocation-role reconstruction: source prefix one establishes taller, narrower proportions. Conventional numeral structure is adapted from this specimen’s main-role study; no ۲ is visible in the allocation block."
+            },
+            "note": "Stylistically inferred; this character is not observed in this role in the source photograph. Independent allocation-role reconstruction: source prefix one establishes taller, narrower proportions. Conventional numeral structure is adapted from this specimen’s main-role study; no ۲ is visible in the allocation block.",
+            "sourceAdvance": 21.091
+          },
+          {
+            "character": "۳",
+            "path": "M40.66 15.254901960784313 42.98400000000001 14.589019607843134C43.565 18.473333333333333 44.727000000000004 20.581960784313726 46.138000000000005 20.581960784313726C47.632000000000005 20.581960784313726 48.21300000000001 18.584313725490198 48.21300000000001 16.808627450980392L50.786 16.586666666666666C50.869 19.58313725490196 51.864999999999995 20.80392156862745 53.193 20.581960784313726C54.769999999999996 20.36 55.68300000000001 18.473333333333333 56.015 16.808627450980392L58.67099999999999 19.361176470588234C57.757999999999996 23.68941176470588 55.932 25.909019607843135 53.193 25.909019607843135C51.367000000000004 25.909019607843135 50.039 24.910196078431373 49.541 23.245490196078432C48.876999999999995 25.1321568627451 47.71499999999999 26.02 46.221000000000004 26.02C45.30800000000001 26.02 44.47800000000001 25.465098039215686 44.063 24.910196078431373C45.474000000000004 31.56901960784314 45.723 36.34117647058823 44.312 40.55843137254902L42.98400000000001 42.88901960784314C43.399 35.78627450980392 42.403000000000006 29.68235294117647 40.82599999999999 24.799215686274508L39.0 21.025882352941178L40.66 15.254901960784313Z",
+            "provenance": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱"
+              ],
+              "designNotes": "Independent allocation-role reconstruction: source prefix one establishes taller, narrower proportions. Conventional numeral structure is adapted from this specimen’s main-role study; no ۳ is visible in the allocation block."
+            },
+            "note": "Stylistically inferred; this character is not observed in this role in the source photograph. Independent allocation-role reconstruction: source prefix one establishes taller, narrower proportions. Conventional numeral structure is adapted from this specimen’s main-role study; no ۳ is visible in the allocation block.",
+            "sourceAdvance": 26.071000000000005
+          },
+          {
+            "character": "۴",
+            "path": "M49.790000000000006 14.810980392156864 52.528999999999996 17.252549019607844 48.047 23.245490196078432C50.703 24.688235294117646 52.944 22.91254901960784 54.355000000000004 20.027058823529412L56.845 22.69058823529412C54.93600000000001 27.129803921568627 52.28 29.349411764705884 48.96000000000001 28.46156862745098C47.382999999999996 28.239607843137254 46.05500000000001 27.462745098039218 45.30799999999999 26.46392156862745C45.971999999999994 30.792156862745102 45.971999999999994 36.119215686274515 44.81 39.78156862745098L43.233000000000004 42.88901960784314C43.647999999999996 36.230196078431376 42.735 31.236078431372547 40.99199999999999 26.574901960784313L39.0 23.023529411764706L41.324 18.584313725490198C42.652 21.13686274509804 43.89699999999999 22.579607843137254 45.141999999999996 23.023529411764706L49.790000000000006 14.810980392156864Z",
+            "provenance": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱"
+              ],
+              "designNotes": "Independent allocation-role reconstruction: source prefix one establishes taller, narrower proportions. Conventional numeral structure is adapted from this specimen’s main-role study; no ۴ is visible in the allocation block."
+            },
+            "note": "Stylistically inferred; this character is not observed in this role in the source photograph. Independent allocation-role reconstruction: source prefix one establishes taller, narrower proportions. Conventional numeral structure is adapted from this specimen’s main-role study; no ۴ is visible in the allocation block.",
+            "sourceAdvance": 24.244999999999997
+          },
+          {
+            "character": "۵",
+            "path": "M48.0011051756487 14.7C50.408105175648686 18.251372549019607 54.143105175648685 24.466274509803924 55.96910517564869 29.23843137254902C57.878105175648685 34.121568627450976 56.79910517564869 39.67058823529411 53.72810517564869 41.89019607843137C51.48710517564869 43.44392156862745 49.57810517564869 42.44509803921569 48.0011051756487 40.22549019607843C46.42410517564869 42.44509803921569 44.43210517564869 43.44392156862745 42.1911051756487 41.89019607843137C39.12010517564869 39.67058823529411 38.041105175648696 34.121568627450976 39.9501051756487 29.23843137254902C41.776105175648695 24.466274509803924 45.511105175648694 18.251372549019607 48.0011051756487 14.7ZM48.0011051756487 22.579607843137254C46.34110517564869 25.24313725490196 44.017105175648695 29.793333333333333 43.270105175648695 32.90078431372549C42.60610517564869 35.5643137254902 43.35310517564869 37.45098039215686 44.764105175648695 37.45098039215686C45.9261051756487 37.45098039215686 47.005105175648694 35.78627450980392 48.0011051756487 34.343529411764706C48.914105175648686 35.78627450980392 49.993105175648694 37.45098039215686 51.1551051756487 37.45098039215686C52.5661051756487 37.45098039215686 53.31310517564869 35.5643137254902 52.649105175648685 32.90078431372549C51.902105175648686 29.793333333333333 49.57810517564869 25.24313725490196 48.0011051756487 22.579607843137254Z",
+            "provenance": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱"
+              ],
+              "designNotes": "Independent allocation-role reconstruction: source prefix one establishes taller, narrower proportions. Conventional numeral structure is adapted from this specimen’s main-role study; no ۵ is visible in the allocation block."
+            },
+            "note": "Stylistically inferred; this character is not observed in this role in the source photograph. Independent allocation-role reconstruction: source prefix one establishes taller, narrower proportions. Conventional numeral structure is adapted from this specimen’s main-role study; no ۵ is visible in the allocation block.",
+            "sourceAdvance": 24.319210351297393
+          },
+          {
+            "character": "۶",
+            "path": "M40.245000000000005 16.808627450980392C44.56100000000001 19.805098039215686 49.624000000000024 20.138039215686273 54.10600000000002 17.252549019607844L52.031000000000006 23.467450980392154C50.537000000000006 28.683529411764706 50.703 33.899607843137254 51.117999999999995 38.11686274509804L48.545000000000016 42.88901960784314C47.715 37.118039215686274 48.129999999999995 31.236078431372547 48.87700000000001 25.021176470588237C45.640000000000015 25.798039215686277 42.071000000000026 25.021176470588237 39.0 23.134509803921567L40.245000000000005 16.808627450980392Z",
+            "provenance": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱"
+              ],
+              "designNotes": "Independent allocation-role reconstruction: source prefix one establishes taller, narrower proportions. Conventional numeral structure is adapted from this specimen’s main-role study; no ۶ is visible in the allocation block."
+            },
+            "note": "Stylistically inferred; this character is not observed in this role in the source photograph. Independent allocation-role reconstruction: source prefix one establishes taller, narrower proportions. Conventional numeral structure is adapted from this specimen’s main-role study; no ۶ is visible in the allocation block.",
+            "sourceAdvance": 21.506000000000014
+          },
+          {
+            "character": "۷",
+            "path": "M39.0 14.7 42.23700000000001 14.921960784313725C42.98400000000001 22.24666666666667 44.893000000000015 29.460392156862746 47.051 36.67411764705883C49.292000000000016 29.68235294117647 50.869000000000014 22.135686274509805 51.69900000000001 14.7L54.93600000000001 14.921960784313725C53.774000000000015 26.241960784313726 50.95200000000001 35.897254901960785 47.96400000000001 43.0H46.304000000000016C43.06700000000001 35.67529411764706 40.245000000000005 26.241960784313726 39.0 14.7Z",
+            "provenance": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱"
+              ],
+              "designNotes": "Independent allocation-role reconstruction: source prefix one establishes taller, narrower proportions. Conventional numeral structure is adapted from this specimen’s main-role study; no ۷ is visible in the allocation block."
+            },
+            "note": "Stylistically inferred; this character is not observed in this role in the source photograph. Independent allocation-role reconstruction: source prefix one establishes taller, narrower proportions. Conventional numeral structure is adapted from this specimen’s main-role study; no ۷ is visible in the allocation block.",
+            "sourceAdvance": 22.336000000000002
+          },
+          {
+            "character": "۸",
+            "path": "M46.138000000000005 14.7H47.881C51.035 22.02470588235294 53.77399999999999 31.56901960784314 55.102000000000004 42.66705882352941L51.782 42.88901960784314C51.035 35.5643137254902 49.126000000000005 28.128627450980392 46.968 21.025882352941178C44.81 28.128627450980392 43.14999999999999 35.78627450980392 42.236999999999995 42.88901960784314L39.0 42.66705882352941C40.328 31.56901960784314 43.14999999999999 22.135686274509805 46.138000000000005 14.7Z",
+            "provenance": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱"
+              ],
+              "designNotes": "Independent allocation-role reconstruction: source prefix one establishes taller, narrower proportions. Conventional numeral structure is adapted from this specimen’s main-role study; no ۸ is visible in the allocation block."
+            },
+            "note": "Stylistically inferred; this character is not observed in this role in the source photograph. Independent allocation-role reconstruction: source prefix one establishes taller, narrower proportions. Conventional numeral structure is adapted from this specimen’s main-role study; no ۸ is visible in the allocation block.",
+            "sourceAdvance": 22.502000000000002
+          },
+          {
+            "character": "۹",
+            "path": "M48.64323698873095 14.589019607843134C51.38223698873095 14.478039215686273 52.29523698873095 16.4756862745098 52.04623698873094 19.916078431372547L51.71423698873096 30.792156862745102C51.54823698873095 34.232549019607845 51.88023698873096 37.89490196078432 52.04623698873094 39.33764705882353L49.556236988730944 43.0C48.726236988730946 39.1156862745098 48.22823698873094 34.343529411764706 48.64323698873095 28.683529411764706C46.65123698873094 30.681176470588234 43.580236988730945 31.125098039215686 41.58823698873094 30.01529411764706C39.59623698873095 29.016470588235293 38.68323698873094 27.68470588235294 39.098236988730946 25.1321568627451C39.51323698873095 21.691764705882353 44.410236988730944 14.7 48.64323698873095 14.589019607843134ZM47.39823698873094 19.805098039215686C45.32323698873094 20.36 43.74623698873094 21.91372549019608 43.24823698873095 23.800392156862745C44.410236988730944 25.57607843137255 46.98323698873095 25.57607843137255 48.89223698873096 23.57843137254902L49.05823698873094 20.692941176470587C48.89223698873096 19.916078431372547 48.22823698873094 19.58313725490196 47.39823698873094 19.805098039215686Z",
+            "provenance": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱"
+              ],
+              "designNotes": "Independent allocation-role reconstruction: source prefix one establishes taller, narrower proportions. Conventional numeral structure is adapted from this specimen’s main-role study; no ۹ is visible in the allocation block."
+            },
+            "note": "Stylistically inferred; this character is not observed in this role in the source photograph. Independent allocation-role reconstruction: source prefix one establishes taller, narrower proportions. Conventional numeral structure is adapted from this specimen’s main-role study; no ۹ is visible in the allocation block.",
+            "sourceAdvance": 19.48547351212887
+          }
+        ]
+      }
+    },
+    "wordmarks": []
+  },
+  {
+    "sourceUrl": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "sourceFile": "bilingual-reference/ir-wlp-aa-public-2002.jpg",
+    "license": "Source-image reuse rights unverified",
+    "rights": "Private critical study only. WorldLicensePlates and original photograph contributors; source photograph reuse permission is not established. These are source-guided and explicitly inferred research drawings, not certified dies.",
+    "credit": "WorldLicensePlates Iran collector sheet AS_IRAN_OT2.jpg, crop [323,141,581,242]; source attribution only; photographic capture date unknown.",
+    "provenance": "observed",
+    "id": "source-bilingual-2002-latin",
+    "label": "2002 AA bilingual · bold Latin lower numerals (observed + inferred)",
+    "sourceId": "ir-wlp-aa-public-2002:latin-lower-study",
+    "script": "latin",
+    "capHeight": 24.9,
+    "baseline": 85,
+    "note": "Independent bold, broad lower-Latin numeric role. 1,6,9 are observed; 0,2,3,4,5,7,8 are original stylistic reconstructions at the same role cap/baseline and heavy bowl/stem metrics. AA code is deliberately a different alphabet.",
+    "glyphs": [
+      {
+        "character": "0",
+        "path": "M112.9 60.2 C121.6 60.2 125.7 64.1 125.7 72.7 C125.7 81.3 121.6 85.2 112.9 85.2 C104.2 85.2 100.1 81.3 100.1 72.7 C100.1 64.1 104.2 60.2 112.9 60.2 Z M112.9 63.9 C109.3 63.9 108.1 66.5 108.1 72.7 C108.1 78.9 109.3 81.5 112.9 81.5 C116.5 81.5 117.7 78.9 117.7 72.7 C117.7 66.5 116.5 63.9 112.9 63.9 Z",
+        "provenance": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "1",
+            "6",
+            "9"
+          ],
+          "designNotes": "Wide oval Latin zero built from the observed six/nine bowl weight, cap, counter and overshoot. Zero itself is absent from the source."
+        },
+        "note": "Stylistically inferred; this character is not observed in this role in the source photograph. Wide oval Latin zero built from the observed six/nine bowl weight, cap, counter and overshoot. Zero itself is absent from the source.",
+        "sourceAdvance": 30.0
+      },
+      {
+        "character": "1",
+        "path": "M106.7 60.6 H113.9 V85 H105.6 V68.8 C102.9 70.1 99.7 70.9 96.4 71.2 V66.3 C100.9 65.4 104.3 63.5 106.7 60.6 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          96,
+          60,
+          115,
+          86
+        ],
+        "occurrence": "First Latin one in lower serial 19916; fourth digit corroborates flag and wide stem",
+        "note": "Observed source-guided smooth outline from the 258 × 101 pixel 2002 AA specimen. Hand-authored Bézier reconstruction omits wear and blur; not an official die master.",
+        "sourceAdvance": 28.2
+      },
+      {
+        "character": "2",
+        "path": "M100.2 67.2 C101.1 62.5 105.2 60.1 112.7 60.1 C120.8 60.1 125 62.8 125 67.4 C125 71.7 120.5 74 116.6 76.3 L108.8 80.4 H125.4 V85 H100.1 V81.1 C102.9 77.8 107.3 74.9 112.2 72.1 C115.8 70.1 117.4 68.7 117.4 66.8 C117.4 65 115.7 63.8 112.8 63.8 C109.9 63.8 108.3 65.1 107.9 67.9 Z",
+        "provenance": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "1",
+            "6",
+            "9"
+          ],
+          "designNotes": "Latin two’s wide bowl, flat base and compact counter space drawn at observed six/nine weight and cap. Curved-to-diagonal transition is inferred."
+        },
+        "note": "Stylistically inferred; this character is not observed in this role in the source photograph. Latin two’s wide bowl, flat base and compact counter space drawn at observed six/nine weight and cap. Curved-to-diagonal transition is inferred.",
+        "sourceAdvance": 30.0
+      },
+      {
+        "character": "3",
+        "path": "M100.5 65.2 C102.8 61.8 106.7 60.1 112.7 60.1 C120.4 60.1 124.7 62.4 124.7 66.5 C124.7 69.1 122.8 71 119.4 71.9 C123.5 72.6 125.6 74.6 125.6 77.7 C125.6 82.6 120.8 85.3 112.6 85.3 C106.2 85.3 101.9 83.4 99.9 79.8 L107.5 78.7 C108.4 80.7 110.1 81.7 112.7 81.7 C116.1 81.7 118.1 80.2 118.1 77.8 C118.1 75.5 116.2 74.3 112.1 74.3 H109.4 V70.2 H111.9 C115.6 70.2 117.3 69.1 117.3 66.9 C117.3 64.9 115.6 63.7 112.8 63.7 C110.4 63.7 108.7 64.7 107.8 66.5 Z",
+        "provenance": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "1",
+            "6",
+            "9"
+          ],
+          "designNotes": "Latin three uses paired broad bowls and short middle bar, retaining source six/nine heavy sidewalls and fine horizontal curves. Shape is inferred."
+        },
+        "note": "Stylistically inferred; this character is not observed in this role in the source photograph. Latin three uses paired broad bowls and short middle bar, retaining source six/nine heavy sidewalls and fine horizontal curves. Shape is inferred.",
+        "sourceAdvance": 30.0
+      },
+      {
+        "character": "4",
+        "path": "M114.5 60.5 H121.4 V75.4 H126.4 V80 H121.4 V85 H113.6 V80 H99.1 V75.9 Z M106.3 75.4 H113.6 V66.7 Z",
+        "provenance": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "1",
+            "6",
+            "9"
+          ],
+          "designNotes": "Open-counter Latin four inferred with the observed one’s straight thick stem and six/nine cap width. No four is observed."
+        },
+        "note": "Stylistically inferred; this character is not observed in this role in the source photograph. Open-counter Latin four inferred with the observed one’s straight thick stem and six/nine cap width. No four is observed.",
+        "sourceAdvance": 30.8
+      },
+      {
+        "character": "5",
+        "path": "M102 60.6 H124 V65.3 H109 L108.4 70.6 C110.4 69.6 112.7 69.1 115.3 69.1 C122.4 69.1 126.1 72.1 126.1 77 C126.1 82.4 121.4 85.3 113.1 85.3 C106.3 85.3 101.9 83.4 99.9 79.7 L107.8 78.5 C108.5 80.6 110.4 81.7 113.2 81.7 C116.7 81.7 118.6 80.1 118.6 77.4 C118.6 74.6 116.6 73 113.3 73 C111 73 109.1 73.7 107.8 75 L100.7 74.1 Z",
+        "provenance": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "1",
+            "6",
+            "9"
+          ],
+          "designNotes": "Latin five’s lower bowl echoes observed six; top bar and upright drawn at the same heavy stem weight. Whole form is inferred."
+        },
+        "note": "Stylistically inferred; this character is not observed in this role in the source photograph. Latin five’s lower bowl echoes observed six; top bar and upright drawn at the same heavy stem weight. Whole form is inferred.",
+        "sourceAdvance": 30.6
+      },
+      {
+        "character": "6",
+        "path": "M226.6 60.2 C232.6 60.2 236.7 62.3 238.6 65.5 L231.1 66.4 C230.3 64.6 228.7 63.6 226.6 63.6 C222.7 63.6 220.4 66.5 220.1 71.1 C222.1 69.9 224.5 69.4 227.6 69.4 C235.5 69.4 239.6 72.3 239.6 77.4 C239.6 82.8 234.8 85.3 226.7 85.3 C217.3 85.3 212.6 81.2 212.6 73.1 C212.6 64.9 217.5 60.2 226.6 60.2 Z M226.8 73 C223.3 73 221.1 74.5 221.1 77.1 C221.1 80.2 223 81.9 226.8 81.9 C230.3 81.9 232.3 80.3 232.3 77.5 C232.3 74.7 230.4 73 226.8 73 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          212,
+          60,
+          241,
+          86
+        ],
+        "occurrence": "Final Latin six in lower serial 19916",
+        "note": "Observed source-guided smooth outline from the 258 × 101 pixel 2002 AA specimen. Hand-authored Bézier reconstruction omits wear and blur; not an official die master.",
+        "sourceAdvance": 31.0
+      },
+      {
+        "character": "7",
+        "path": "M99.9 60.6 H125.8 V64.8 C119.6 70.2 116.1 76.6 114.8 85 H106.5 C107.6 77.7 111.6 71 117.5 65.5 H99.9 Z",
+        "provenance": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "1",
+            "6",
+            "9"
+          ],
+          "designNotes": "Latin seven inferred with flat heavy top bar, broad overall width and tapering diagonal that reaches the shared baseline."
+        },
+        "note": "Stylistically inferred; this character is not observed in this role in the source photograph. Latin seven inferred with flat heavy top bar, broad overall width and tapering diagonal that reaches the shared baseline.",
+        "sourceAdvance": 30.0
+      },
+      {
+        "character": "8",
+        "path": "M113 60.1 C120.8 60.1 125.1 62.5 125.1 66.5 C125.1 69.1 123.3 70.9 120.2 71.9 C124 72.7 126.1 74.8 126.1 77.9 C126.1 82.7 121.4 85.3 113 85.3 C104.6 85.3 99.9 82.7 99.9 77.9 C99.9 74.8 102 72.7 105.8 71.9 C102.7 70.9 100.9 69.1 100.9 66.5 C100.9 62.5 105.2 60.1 113 60.1 Z M113 63.6 C110.1 63.6 108.4 64.9 108.4 66.9 C108.4 69 110.1 70.2 113 70.2 C115.9 70.2 117.6 69 117.6 66.9 C117.6 64.9 115.9 63.6 113 63.6 Z M113 74 C109.5 74 107.5 75.4 107.5 77.8 C107.5 80.2 109.5 81.7 113 81.7 C116.5 81.7 118.5 80.2 118.5 77.8 C118.5 75.4 116.5 74 113 74 Z",
+        "provenance": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "1",
+            "6",
+            "9"
+          ],
+          "designNotes": "Latin eight inferred from the observed six/nine oval counters and bowl weight. Upper bowl slightly smaller; shared cap, baseline and overshoot retained."
+        },
+        "note": "Stylistically inferred; this character is not observed in this role in the source photograph. Latin eight inferred from the observed six/nine oval counters and bowl weight. Upper bowl slightly smaller; shared cap, baseline and overshoot retained.",
+        "sourceAdvance": 30.2
+      },
+      {
+        "character": "9",
+        "path": "M135.6 60.1 C143.9 60.1 148.6 64.4 148.6 72.2 C148.6 80.4 144.2 85.1 136.1 85.1 C130.1 85.1 126 83.2 124 79.8 L131.6 78.9 C132.4 80.6 133.8 81.7 136.1 81.7 C139.7 81.7 141.3 78.9 141.3 74.8 C139.6 75.9 137.2 76.4 134.6 76.4 C127.2 76.4 123.5 73.3 123.5 68.4 C123.5 63.2 127.9 60.1 135.6 60.1 Z M135.7 64 C132.6 64 131 65.8 131 68.4 C131 71.3 132.7 72.9 135.8 72.9 C138.9 72.9 140.7 71.1 140.7 68.4 C140.7 65.6 138.9 64 135.7 64 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          123,
+          60,
+          150,
+          86
+        ],
+        "occurrence": "First Latin nine; second confirms the broad oval bowl and heavy curved tail",
+        "note": "Observed source-guided smooth outline from the 258 × 101 pixel 2002 AA specimen. Hand-authored Bézier reconstruction omits wear and blur; not an official die master.",
+        "sourceAdvance": 30.0
+      }
+    ],
+    "roles": {},
+    "wordmarks": []
+  },
+  {
+    "sourceUrl": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "sourceFile": "bilingual-reference/ir-wlp-aa-public-2002.jpg",
+    "license": "Source-image reuse rights unverified",
+    "rights": "Private critical study only. WorldLicensePlates and original photograph contributors; source photograph reuse permission is not established. These are source-guided and explicitly inferred research drawings, not certified dies.",
+    "credit": "WorldLicensePlates Iran collector sheet AS_IRAN_OT2.jpg, crop [323,141,581,242]; source attribution only; photographic capture date unknown.",
+    "provenance": "observed",
+    "id": "source-bilingual-2002-code",
+    "label": "2002 AA bilingual · thin AA class code",
+    "sourceId": "ir-wlp-aa-public-2002:thin-aa-study",
+    "script": "latin",
+    "capHeight": 23.7,
+    "baseline": 89.5,
+    "note": "Observed thin Latin A for the AA class code only. The source AA has narrow strokes and cannot use the heavy Latin serial alphabet. No other class letters are claimed observed.",
+    "glyphs": [
+      {
+        "character": "A",
+        "path": "M37.2 89.5 L44.0 65.8 H45.6 L52.2 89.5 H50.6 L48.5 82.2 H41.0 L38.8 89.5 Z M41.5 80.6 H48.0 L44.8 68.7 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          37,
+          65,
+          53,
+          90
+        ],
+        "occurrence": "First A in lower-left AA class code; second A corroborates thin strokes and crossbar",
+        "note": "Observed thin AA class-code A. Approximately 1.5 px stems at 23.7 px cap, independent of the bold Latin numeric alphabet; hand-authored smooth geometric outline, not a substituted font.",
+        "sourceAdvance": 16.3
+      }
+    ],
+    "roles": {},
+    "wordmarks": []
+  }
+]

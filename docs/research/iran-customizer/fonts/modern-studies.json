@@ -1,0 +1,2144 @@
+[
+  {
+    "id": "source-national-numerals",
+    "label": "Older national diagram numerals · open teardrop۵",
+    "script": "persian",
+    "sourceId": "source-national-numerals:manual-smooth-2026-10-02",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelak_melie_siasi.png",
+    "sourceFile": "modern-reference/wiki-diplomatic.png",
+    "credit": "Haghal Jagul / Wikimedia Commons diagram",
+    "license": "CC BY-SA 3.0",
+    "rights": "Diagram-derived manual reconstruction. Older national diagram attributed CC BY-SA 3.0; share adaptations under that license. Private 2023 SVG declares PD-Iran but expiration basis remains unverified; no reusable font license or official die certification is asserted.",
+    "provenance": "observed",
+    "evidenceKind": "diagram-derived",
+    "capHeight": 68,
+    "baseline": 87,
+    "note": "Original low-anchor smooth contours in native source pixels. Complete Persian U+06F0–U+06F9 only; Arabic-indic codepoints are deliberately not aliases. Observed and inferred per-glyph provenance retained. Shared cap/baseline and native advances; no per-glyph warping. This is an illustration-led reconstruction, not an authenticated physical die.",
+    "glyphs": [
+      {
+        "character": "۰",
+        "path": "M16.32 46.2 26.520000000000003 55.04 17.68 65.24000000000001 7.48 56.400000000000006 16.32 46.2Z",
+        "sourceAdvance": 29.92,
+        "provenance": "inferred",
+        "evidenceKind": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۵",
+            "۶"
+          ],
+          "designNotes": "۰ is an unobserved diamond-form completion."
+        },
+        "note": "Inferred source-style reconstruction. ۰ is an unobserved diamond-form completion.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      },
+      {
+        "character": "۱",
+        "path": "M72 19 C82 29 89 56 89 86 H77 C77 60 72 42 65 31 Z",
+        "sourceBox": [
+          65.0,
+          19.0,
+          89.0,
+          86.0
+        ],
+        "sourceAdvance": 28,
+        "occurrence": "main numeral in source diagram",
+        "sourceId": "wiki-diplomatic",
+        "sourceFile": "modern-reference/wiki-diplomatic.png",
+        "provenance": "observed",
+        "evidenceKind": "diagram-derived",
+        "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelak_melie_siasi.png",
+        "license": "CC BY-SA 3.0",
+        "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+        "advanceProvenance": "observed",
+        "advanceNote": "Measured adjacent numeral ink-origin separation in unchanged source pixels. No per-glyph scaling."
+      },
+      {
+        "character": "۲",
+        "path": "M101 19 C106 33 109 39 120 39 Q126 39 124 31 L123 27 L133 20 C138 42 136 52 123 52 H117 Q119 67 118 87 H106 C106 63 101 45 93 31 Z",
+        "sourceBox": [
+          93.0,
+          19.0,
+          135.52,
+          87.0
+        ],
+        "sourceAdvance": 53.4,
+        "occurrence": "main numeral in source diagram",
+        "sourceId": "wiki-diplomatic",
+        "sourceFile": "modern-reference/wiki-diplomatic.png",
+        "provenance": "observed",
+        "evidenceKind": "diagram-derived",
+        "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelak_melie_siasi.png",
+        "license": "CC BY-SA 3.0",
+        "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      },
+      {
+        "character": "۳",
+        "path": "M226 19 C231 32 234 34 239 34 Q243 34 242 21 H250 V31 Q250 35 254 35 Q259 35 259 30 L258 24 L267 19 C271 38 267 45 257 45 Q252 45 249 42 Q246 47 240 47 Q243 65 243 86 H231 C231 61 227 44 218 31 Z",
+        "sourceBox": [
+          218.0,
+          19.0,
+          268.533,
+          86.0
+        ],
+        "sourceAdvance": 59,
+        "occurrence": "main numeral in source diagram",
+        "sourceId": "wiki-diplomatic",
+        "sourceFile": "modern-reference/wiki-diplomatic.png",
+        "provenance": "observed",
+        "evidenceKind": "diagram-derived",
+        "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelak_melie_siasi.png",
+        "license": "CC BY-SA 3.0",
+        "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+        "advanceProvenance": "observed",
+        "advanceNote": "Measured adjacent numeral ink-origin separation in unchanged source pixels. No per-glyph scaling."
+      },
+      {
+        "character": "۴",
+        "path": "M308.46376811594206 19.0 311.4202898550725 26.884057971014492C292.69565217391306 30.82608695652174 292.69565217391306 37.72463768115942 308.46376811594206 42.65217391304348V49.55072463768116C297.6231884057971 58.42028985507246 290.72463768115944 65.31884057971014 292.69565217391306 72.21739130434783Q294.6666666666667 76.15942028985508 314.37681159420293 75.17391304347827V87.0H295.6521739130435C268.05797101449275 87.0 279.8840579710145 63.347826086956516 292.69565217391306 50.53623188405797C272.9855072463768 42.65217391304348 281.8550724637681 25.89855072463768 308.46376811594206 19.0Z",
+        "sourceAdvance": 46.412,
+        "provenance": "inferred",
+        "evidenceKind": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۵",
+            "۶"
+          ],
+          "designNotes": "Epsilon-style۴ drawn from temporary diagram, transferred uniformly into this national family; unseen in D/S main row."
+        },
+        "note": "Inferred source-style reconstruction. Epsilon-style۴ drawn from temporary diagram, transferred uniformly into this national family; unseen in D/S main row.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      },
+      {
+        "character": "۵",
+        "path": "M343 18 C366 34 378 55 378 70 C378 82 370 88 354 88 C337 88 330 83 330 70 C330 56 337 42 343 33 L338 29 Z M350 41 C343 53 340 61 341 68 Q341 75 354 75 Q367 75 366 67 C365 59 357 47 350 41 Z",
+        "sourceBox": [
+          330.0,
+          18.0,
+          378.0,
+          88.0
+        ],
+        "sourceAdvance": 58.88,
+        "occurrence": "main numeral in source diagram",
+        "sourceId": "wiki-diplomatic",
+        "sourceFile": "modern-reference/wiki-diplomatic.png",
+        "provenance": "observed",
+        "evidenceKind": "diagram-derived",
+        "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelak_melie_siasi.png",
+        "license": "CC BY-SA 3.0",
+        "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      },
+      {
+        "character": "۶",
+        "path": "M310 22 L307 30 C299 27 292 30 289 36 C285 43 290 46 300 43 L319 36 L322 45 C305 53 293 70 285 88 L277 80 C283 69 289 60 295 54 C281 55 274 49 278 38 C283 25 298 14 310 22 Z",
+        "sourceBox": [
+          276.884,
+          19.287,
+          322.0,
+          88.0
+        ],
+        "sourceAdvance": 53,
+        "occurrence": "main numeral in source diagram",
+        "sourceId": "wiki-diplomatic",
+        "sourceFile": "modern-reference/wiki-diplomatic.png",
+        "provenance": "observed",
+        "evidenceKind": "diagram-derived",
+        "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelak_melie_siasi.png",
+        "license": "CC BY-SA 3.0",
+        "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+        "advanceProvenance": "observed",
+        "advanceNote": "Measured adjacent numeral ink-origin separation in unchanged source pixels. No per-glyph scaling."
+      },
+      {
+        "character": "۷",
+        "path": "M8.84 19.0C22.44 30.560000000000002 28.560000000000002 50.96 30.6 60.480000000000004C33.32 43.480000000000004 39.440000000000005 26.48 50.32 19.0L56.440000000000005 30.560000000000002C41.480000000000004 48.24 38.080000000000005 65.24000000000001 38.080000000000005 87.0H24.48C24.48 63.88 18.360000000000003 44.16 2.72 31.240000000000002L8.84 19.0Z",
+        "sourceAdvance": 64.6,
+        "provenance": "inferred",
+        "evidenceKind": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۵",
+            "۶"
+          ],
+          "designNotes": "Motorcycle diagram supplies numeral structure; national stroke mass reconstructed. Not directly observed in this national main role."
+        },
+        "note": "Inferred source-style reconstruction. Motorcycle diagram supplies numeral structure; national stroke mass reconstructed. Not directly observed in this national main role.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      },
+      {
+        "character": "۸",
+        "path": "M23.12 19.0H36.720000000000006C36.720000000000006 48.92 44.2 65.92 57.120000000000005 76.12L51.00000000000001 87.0C38.760000000000005 78.84 32.64 60.480000000000004 29.92 50.28C27.200000000000003 63.88 19.720000000000002 78.84 9.520000000000001 87.0L3.4000000000000004 75.44C17.0 60.480000000000004 23.12 43.480000000000004 23.12 19.0Z",
+        "sourceAdvance": 64.6,
+        "provenance": "inferred",
+        "evidenceKind": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۵",
+            "۶"
+          ],
+          "designNotes": "Motorcycle diagram supplies numeral structure; national stroke mass reconstructed. Not directly observed in this national main role."
+        },
+        "note": "Inferred source-style reconstruction. Motorcycle diagram supplies numeral structure; national stroke mass reconstructed. Not directly observed in this national main role.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      },
+      {
+        "character": "۹",
+        "path": "M28.560000000000002 19.0C42.160000000000004 19.0 43.52 29.200000000000003 43.52 44.84C43.52 65.92 46.92 74.76 53.040000000000006 80.2L45.56 88.36C36.720000000000006 80.88 31.96 66.6 31.96 55.04H22.44C6.800000000000001 55.04 7.48 42.120000000000005 12.24 30.560000000000002C15.64 23.08 21.080000000000002 19.0 28.560000000000002 19.0ZM27.880000000000003 29.200000000000003C23.12 29.200000000000003 19.720000000000002 36.68 20.400000000000002 42.120000000000005Q20.400000000000002 45.52 31.28 44.84C31.28 34.64 30.6 29.200000000000003 27.880000000000003 29.200000000000003Z",
+        "sourceAdvance": 54.668,
+        "provenance": "inferred",
+        "evidenceKind": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۵",
+            "۶"
+          ],
+          "designNotes": "Motorcycle diagram supplies numeral structure; national stroke mass reconstructed. Not directly observed in this national main role."
+        },
+        "note": "Inferred source-style reconstruction. Motorcycle diagram supplies numeral structure; national stroke mass reconstructed. Not directly observed in this national main role.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      }
+    ],
+    "wordmarks": [],
+    "roles": {
+      "region": {
+        "capHeight": 63,
+        "baseline": 96,
+        "glyphs": [
+          {
+            "character": "۰",
+            "path": "M15.120000000000001 58.199999999999996 24.570000000000004 66.38999999999999 16.38 75.84 6.930000000000001 67.65 15.120000000000001 58.199999999999996Z",
+            "sourceAdvance": 27.72,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۱",
+            "path": "M404 33 C417 44 422 68 422 96 H410 C410 76 405 60 396 47 Z",
+            "sourceBox": [
+              396.0,
+              33.0,
+              422.0,
+              96.0
+            ],
+            "sourceAdvance": 50,
+            "occurrence": "region numeral in source diagram",
+            "sourceId": "wiki-diplomatic",
+            "sourceFile": "modern-reference/wiki-diplomatic.png",
+            "provenance": "observed",
+            "evidenceKind": "diagram-derived",
+            "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelak_melie_siasi.png",
+            "license": "CC BY-SA 3.0",
+            "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+            "advanceProvenance": "observed",
+            "advanceNote": "Measured adjacent numeral ink-origin separation in unchanged source pixels. No per-glyph scaling."
+          },
+          {
+            "character": "۲",
+            "path": "M93.57352941176471 33.0C98.20588235294117 45.970588235294116 100.98529411764706 51.52941176470588 111.1764705882353 51.52941176470588Q116.73529411764706 51.52941176470588 114.88235294117648 44.11764705882352L113.95588235294119 40.41176470588235L123.22058823529412 33.92647058823529C127.8529411764706 54.30882352941176 126.0 63.5735294117647 113.95588235294119 63.5735294117647H108.39705882352942Q110.25 77.47058823529412 109.32352941176471 96.0H98.20588235294117C98.20588235294117 73.76470588235293 93.57352941176471 57.088235294117645 86.16176470588236 44.11764705882352L93.57352941176471 33.0Z",
+            "sourceAdvance": 49.473,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۳",
+            "path": "M209.3823529411765 33.0C214.01470588235296 45.04411764705882 216.79411764705884 46.897058823529406 221.4264705882353 46.897058823529406Q225.1323529411765 46.897058823529406 224.2058823529412 34.85294117647058H231.61764705882354V44.11764705882352Q231.61764705882354 47.8235294117647 235.32352941176472 47.8235294117647Q239.9558823529412 47.8235294117647 239.9558823529412 43.19117647058823L239.02941176470588 37.632352941176464L247.36764705882354 33.0C251.07352941176472 50.60294117647059 247.36764705882354 57.088235294117645 238.1029411764706 57.088235294117645Q233.47058823529412 57.088235294117645 230.69117647058823 54.30882352941176Q227.91176470588238 58.94117647058823 222.3529411764706 58.94117647058823Q225.1323529411765 75.61764705882354 225.1323529411765 95.07352941176471H214.01470588235296C214.01470588235296 71.91176470588235 210.30882352941177 56.16176470588235 201.97058823529412 44.11764705882352L209.3823529411765 33.0Z",
+            "sourceAdvance": 56.897,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۴",
+            "path": "M285.7826086956522 33.0 288.5217391304348 40.30434782608695C271.1739130434783 43.95652173913043 271.1739130434783 50.347826086956516 285.7826086956522 54.91304347826087V61.30434782608695C275.7391304347826 69.52173913043478 269.34782608695656 75.91304347826086 271.1739130434783 82.30434782608695Q273.00000000000006 85.95652173913044 291.26086956521743 85.04347826086956V96.0H273.9130434782609C248.34782608695653 96.0 259.304347826087 74.08695652173913 271.1739130434783 62.21739130434782C252.91304347826087 54.91304347826087 261.1304347826087 39.39130434782608 285.7826086956522 33.0Z",
+            "sourceAdvance": 42.999,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۵",
+            "path": "M317.7794117647059 32.073529411764696C339.0882352941177 46.897058823529406 350.2058823529412 66.35294117647058 350.2058823529412 80.25C350.2058823529412 91.36764705882352 342.79411764705884 96.92647058823529 327.97058823529414 96.92647058823529C312.22058823529414 96.92647058823529 305.7352941176471 92.29411764705883 305.7352941176471 80.25C305.7352941176471 67.27941176470588 312.22058823529414 54.30882352941176 317.7794117647059 45.970588235294116L313.14705882352945 42.264705882352935L317.7794117647059 32.073529411764696ZM324.2647058823529 53.382352941176464C317.7794117647059 64.5 315.0 71.91176470588235 315.9264705882353 78.3970588235294Q315.9264705882353 84.88235294117646 327.97058823529414 84.88235294117646Q340.0147058823529 84.88235294117646 339.0882352941177 77.47058823529412C338.1617647058824 70.05882352941177 330.75 58.94117647058823 324.2647058823529 53.382352941176464Z",
+            "sourceAdvance": 54.551,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۶",
+            "path": "M287.2058823529412 35.77941176470588 284.4264705882353 43.19117647058823C277.0147058823529 40.41176470588235 270.5294117647059 43.19117647058823 267.75 48.74999999999999C264.04411764705884 55.23529411764706 268.6764705882353 58.014705882352935 277.94117647058823 55.23529411764706L295.54411764705884 48.74999999999999L298.3235294117647 57.088235294117645C282.5735294117647 64.5 271.45588235294116 80.25 264.04411764705884 96.92647058823529L256.63235294117646 89.51470588235294C262.19117647058823 79.3235294117647 267.75 70.98529411764706 273.30882352941177 65.42647058823529C260.3382352941177 66.35294117647058 253.8529411764706 60.79411764705882 257.55882352941177 50.60294117647059C262.19117647058823 38.55882352941176 276.0882352941177 28.367647058823522 287.2058823529412 35.77941176470588Z",
+            "sourceAdvance": 51.879,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۷",
+            "path": "M8.19 33.0C20.790000000000003 43.709999999999994 26.460000000000004 62.61 28.35 71.43C30.87 55.68 36.540000000000006 39.92999999999999 46.620000000000005 33.0L52.290000000000006 43.709999999999994C38.43000000000001 60.089999999999996 35.28000000000001 75.84 35.28000000000001 96.0H22.68C22.68 74.58 17.010000000000005 56.309999999999995 2.5200000000000005 44.339999999999996L8.19 33.0Z",
+            "sourceAdvance": 59.85,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۸",
+            "path": "M21.42 33.0H34.02000000000001C34.02000000000001 60.72 40.95 76.47 52.92000000000001 85.92L47.25000000000001 96.0C35.910000000000004 88.44 30.240000000000002 71.43 27.720000000000002 61.98C25.200000000000003 74.58 18.270000000000003 88.44 8.820000000000002 96.0L3.1500000000000004 85.28999999999999C15.75 71.43 21.42 55.68 21.42 33.0Z",
+            "sourceAdvance": 59.85,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۹",
+            "path": "M26.460000000000004 33.0C39.06 33.0 40.32000000000001 42.45 40.32000000000001 56.94C40.32000000000001 76.47 43.470000000000006 84.66 49.14000000000001 89.7L42.21 97.25999999999999C34.02000000000001 90.33 29.610000000000003 77.1 29.610000000000003 66.38999999999999H20.790000000000003C6.300000000000001 66.38999999999999 6.930000000000001 54.42 11.34 43.709999999999994C14.490000000000002 36.779999999999994 19.53 33.0 26.460000000000004 33.0ZM25.830000000000002 42.45C21.42 42.45 18.270000000000003 49.379999999999995 18.900000000000002 54.42Q18.900000000000002 57.57 28.980000000000004 56.94C28.980000000000004 47.489999999999995 28.35 42.45 25.830000000000002 42.45Z",
+            "sourceAdvance": 50.649,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          }
+        ],
+        "evidenceKind": "diagram-derived-and-inferred",
+        "note": "Region header is excluded. Shared role scale, no glyph-by-glyph fitting."
+      },
+      "series": {
+        "capHeight": 80,
+        "baseline": 96,
+        "glyphs": [
+          {
+            "character": "ب",
+            "path": "M139 25 L149 28 C144 40 147 44 170 46 C189 47 204 43 206 39 L201 31 L206 17 C221 31 218 48 205 54 C189 65 148 64 139 56 C132 50 132 39 139 25 Z M170 69 L181 76 L174 89 L162 81 Z",
+            "sourceBox": [
+              133.75,
+              17.0,
+              216.053,
+              89.0
+            ],
+            "sourceAdvance": 95.103,
+            "occurrence": "series numeral in source diagram",
+            "sourceId": "wiki-private",
+            "sourceFile": "modern-reference/wiki-private.png",
+            "provenance": "observed",
+            "evidenceKind": "diagram-derived",
+            "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iran_private_vehicle_number_plate.svg",
+            "license": "Commons PD-Iran declaration; expiration basis unverified",
+            "rights": "Source-guided diagram adaptation; no claim of official die certification. 2023 own-work PD-Iran declaration requires independent reuse review.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "پ",
+            "path": "M153 34 L161 37 C154 49 160 53 175 53 C194 53 210 50 215 46 L209 38 L216 27 C226 39 224 53 215 58 C202 66 160 67 153 57 C147 53 147 43 153 34 Z M177 72 L183 76 L178 83 L172 79 Z M188 71 L195 76 L190 83 L183 79 Z M185 82 L192 87 L186 93 L180 88 Z",
+            "sourceBox": [
+              148.5,
+              27.0,
+              222.669,
+              93.0
+            ],
+            "sourceAdvance": 86.969,
+            "occurrence": "series numeral in source diagram",
+            "sourceId": "wiki-police",
+            "sourceFile": "modern-reference/wiki-police.png",
+            "provenance": "observed",
+            "evidenceKind": "diagram-derived",
+            "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelak_melie_polis.png",
+            "license": "CC BY-SA 3.0",
+            "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "ث",
+            "path": "M150 54 L158 57 C151 69 157 73 174 73 C190 73 207 69 213 65 L207 57 L214 48 C224 62 220 74 212 78 C197 87 157 86 150 78 C144 74 144 64 150 54 Z M180 30 L187 35 L182 41 L175 36 Z M176 40 L183 45 L178 51 L171 47 Z M184 43 L191 48 L186 54 L179 49 Z",
+            "sourceBox": [
+              145.5,
+              30.0,
+              219.932,
+              84.381
+            ],
+            "sourceAdvance": 87.232,
+            "occurrence": "series numeral in source diagram",
+            "sourceId": "wiki-irgc",
+            "sourceFile": "modern-reference/wiki-irgc.png",
+            "provenance": "observed",
+            "evidenceKind": "diagram-derived",
+            "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelak_melie_sepah.png",
+            "license": "CC BY-SA 3.0",
+            "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "ش",
+            "path": "M146 58 L153 60 C147 77 153 85 166 85 C178 85 184 76 178 60 L173 48 L181 42 C188 56 187 63 194 63 Q199 62 197 45 H204 V57 Q205 63 211 62 Q217 59 211 46 L219 41 C229 58 223 68 215 69 Q207 69 203 64 Q199 72 188 66 C191 87 177 96 160 94 C143 92 139 77 146 58 Z M197 13 L204 19 L197 26 L190 20 Z M191 25 L197 30 L191 36 L185 30 Z M203 27 L209 32 L203 38 L197 33 Z",
+            "sourceBox": [
+              142.721,
+              13.0,
+              224.238,
+              94.272
+            ],
+            "sourceAdvance": 94.317,
+            "occurrence": "series numeral in source diagram",
+            "sourceId": "wiki-army",
+            "sourceFile": "modern-reference/wiki-army.png",
+            "provenance": "observed",
+            "evidenceKind": "diagram-derived",
+            "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelak_melie_artesh.png",
+            "license": "CC BY-SA 3.0",
+            "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "ز",
+            "path": "M176 23 L182 29 L176 35 L170 29 Z M179 41 C197 64 180 79 158 90 L153 82 C180 65 181 62 173 47 Z",
+            "sourceBox": [
+              153.0,
+              23.0,
+              186.563,
+              90.0
+            ],
+            "sourceAdvance": 46.363,
+            "occurrence": "series numeral in source diagram",
+            "sourceId": "wiki-defence",
+            "sourceFile": "modern-reference/wiki-defence.png",
+            "provenance": "observed",
+            "evidenceKind": "diagram-derived",
+            "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelak_melie_vezarat_defa'.png",
+            "license": "CC BY-SA 3.0",
+            "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "ف",
+            "path": "M190 29 L197 35 L191 42 L184 36 Z M192 46 C207 47 214 65 208 78 Q204 84 192 84 H151 Q137 83 138 64 H147 V70 Q147 74 153 74 H193 Q202 73 201 69 C184 72 179 62 185 51 Q188 46 192 46 Z M192 54 Q187 58 193 61 H201 Q199 54 192 54 Z",
+            "sourceBox": [
+              137.933,
+              29.0,
+              210.143,
+              84.0
+            ],
+            "sourceAdvance": 85.01,
+            "occurrence": "series numeral in source diagram",
+            "sourceId": "wiki-staff",
+            "sourceFile": "modern-reference/wiki-staff.png",
+            "provenance": "observed",
+            "evidenceKind": "diagram-derived",
+            "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelak_melie_setad_kol.png",
+            "license": "CC BY-SA 3.0",
+            "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          }
+        ],
+        "note": "Bounded illustration-led observed class forms. Different source diagrams retained per glyph."
+      }
+    },
+    "sourceImageSize": [
+      500,
+      110
+    ],
+    "sourceRoleBoxes": {
+      "prefix": [
+        65,
+        19,
+        136,
+        87
+      ],
+      "serial": [
+        218,
+        19,
+        378,
+        88
+      ],
+      "rightcode": [
+        396,
+        33,
+        472,
+        96
+      ]
+    },
+    "sourceRoleBoxConvention": "x0,y0,x1,y1; original source plate pixels, excludes header and border; adjacent numeral group observed as a group",
+    "numericCompletion": {
+      "required": "۰۱۲۳۴۵۶۷۸۹",
+      "observed": "۱۲۳۵۶",
+      "inferred": "۰۴۷۸۹",
+      "unicodePolicy": "Persian U+06F0–U+06F9; no Arabic-indic substitutions"
+    }
+  },
+  {
+    "id": "source-national-private-numerals",
+    "label": "Newer private-family diagram numerals · heart۵",
+    "script": "persian",
+    "sourceId": "source-national-private-numerals:manual-smooth-2026-10-02",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iran_private_vehicle_number_plate.svg",
+    "sourceFile": "modern-reference/wiki-private.png",
+    "credit": "Isochrone / Wikimedia Commons diagram, 2023",
+    "license": "Commons PD-Iran declaration; expiration basis unverified",
+    "rights": "Diagram-derived manual reconstruction. Older national diagram attributed CC BY-SA 3.0; share adaptations under that license. Private 2023 SVG declares PD-Iran but expiration basis remains unverified; no reusable font license or official die certification is asserted.",
+    "provenance": "observed",
+    "evidenceKind": "diagram-derived",
+    "capHeight": 79,
+    "baseline": 93,
+    "note": "Original low-anchor smooth contours in native source pixels. Complete Persian U+06F0–U+06F9 only; Arabic-indic codepoints are deliberately not aliases. Observed and inferred per-glyph provenance retained. Shared cap/baseline and native advances; no per-glyph warping. This is an illustration-led reconstruction, not an authenticated physical die.",
+    "glyphs": [
+      {
+        "character": "۰",
+        "path": "M18.96 45.6 30.810000000000002 55.870000000000005 20.54 67.72 8.690000000000001 57.45 18.96 45.6Z",
+        "sourceAdvance": 34.76,
+        "provenance": "inferred",
+        "evidenceKind": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۵",
+            "۶"
+          ],
+          "designNotes": "۰ is an unobserved diamond-form completion."
+        },
+        "note": "Inferred source-style reconstruction. ۰ is an unobserved diamond-form completion.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      },
+      {
+        "character": "۱",
+        "path": "M63 14 C76 30 80 62 80 93 H69 C69 65 65 48 55 34 Z",
+        "sourceBox": [
+          55.0,
+          14.0,
+          80.0,
+          93.0
+        ],
+        "sourceAdvance": 32,
+        "occurrence": "main numeral in source diagram",
+        "sourceId": "wiki-private",
+        "sourceFile": "modern-reference/wiki-private.png",
+        "provenance": "observed",
+        "evidenceKind": "diagram-derived",
+        "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iran_private_vehicle_number_plate.svg",
+        "license": "Commons PD-Iran declaration; expiration basis unverified",
+        "rights": "Source-guided diagram adaptation; no claim of official die certification. 2023 own-work PD-Iran declaration requires independent reuse review.",
+        "advanceProvenance": "observed",
+        "advanceNote": "Measured adjacent numeral ink-origin separation in unchanged source pixels. No per-glyph scaling."
+      },
+      {
+        "character": "۲",
+        "path": "M95 14 C101 27 104 32 111 32 Q118 32 118 19 L128 14 C129 36 125 49 110 51 Q113 69 113 93 H101 C101 66 97 48 87 34 Z",
+        "sourceBox": [
+          87.0,
+          14.0,
+          128.144,
+          93.0
+        ],
+        "sourceAdvance": 53.784,
+        "occurrence": "main numeral in source diagram",
+        "sourceId": "wiki-private",
+        "sourceFile": "modern-reference/wiki-private.png",
+        "provenance": "observed",
+        "evidenceKind": "diagram-derived",
+        "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iran_private_vehicle_number_plate.svg",
+        "license": "Commons PD-Iran declaration; expiration basis unverified",
+        "rights": "Source-guided diagram adaptation; no claim of official die certification. 2023 own-work PD-Iran declaration requires independent reuse review.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      },
+      {
+        "character": "۳",
+        "path": "M229 14 C235 28 239 33 243 32 Q247 32 246 21 L255 16 Q255 33 260 32 Q264 32 263 21 L272 15 C274 39 268 49 257 49 Q252 49 250 47 Q247 51 241 51 Q246 72 246 93 H235 C235 67 231 50 221 34 Z",
+        "sourceBox": [
+          221.0,
+          14.0,
+          272.381,
+          93.0
+        ],
+        "sourceAdvance": 59,
+        "occurrence": "main numeral in source diagram",
+        "sourceId": "wiki-private",
+        "sourceFile": "modern-reference/wiki-private.png",
+        "provenance": "observed",
+        "evidenceKind": "diagram-derived",
+        "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iran_private_vehicle_number_plate.svg",
+        "license": "Commons PD-Iran declaration; expiration basis unverified",
+        "rights": "Source-guided diagram adaptation; no claim of official die certification. 2023 own-work PD-Iran declaration requires independent reuse review.",
+        "advanceProvenance": "observed",
+        "advanceNote": "Measured adjacent numeral ink-origin separation in unchanged source pixels. No per-glyph scaling."
+      },
+      {
+        "character": "۴",
+        "path": "M286 15 L294 26 C300 10 312 10 322 20 L319 28 C310 23 305 25 303 30 C301 39 315 39 325 30 L328 38 C324 49 314 53 302 52 Q305 71 305 93 H293 C293 64 289 48 280 33 Z",
+        "sourceBox": [
+          280.0,
+          13.119,
+          328.0,
+          93.0
+        ],
+        "sourceAdvance": 51,
+        "occurrence": "main numeral in source diagram",
+        "sourceId": "wiki-private",
+        "sourceFile": "modern-reference/wiki-private.png",
+        "provenance": "observed",
+        "evidenceKind": "diagram-derived",
+        "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iran_private_vehicle_number_plate.svg",
+        "license": "Commons PD-Iran declaration; expiration basis unverified",
+        "rights": "Source-guided diagram adaptation; no claim of official die certification. 2023 own-work PD-Iran declaration requires independent reuse review.",
+        "advanceProvenance": "observed",
+        "advanceNote": "Measured adjacent numeral ink-origin separation in unchanged source pixels. No per-glyph scaling."
+      },
+      {
+        "character": "۵",
+        "path": "M350 15 C369 30 378 53 378 69 C378 86 371 98 355 89 C345 99 331 92 331 75 C330 60 339 45 345 36 L342 33 Z M353 43 C347 51 341 64 342 70 Q342 79 350 73 L355 68 Q360 78 366 73 C370 66 361 50 353 43 Z",
+        "sourceBox": [
+          330.923,
+          15.0,
+          378.0,
+          93.608
+        ],
+        "sourceAdvance": 59.717,
+        "occurrence": "main numeral in source diagram",
+        "sourceId": "wiki-private",
+        "sourceFile": "modern-reference/wiki-private.png",
+        "provenance": "observed",
+        "evidenceKind": "diagram-derived",
+        "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iran_private_vehicle_number_plate.svg",
+        "license": "Commons PD-Iran declaration; expiration basis unverified",
+        "rights": "Source-guided diagram adaptation; no claim of official die certification. 2023 own-work PD-Iran declaration requires independent reuse review.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      },
+      {
+        "character": "۶",
+        "path": "M360.14705882352945 17.485294117647058 356.6617647058824 26.779411764705884C347.36764705882354 23.294117647058822 339.2352941176471 26.779411764705884 335.75 33.75C331.1029411764706 41.88235294117647 336.9117647058824 45.36764705882353 348.5294117647059 41.88235294117647L370.6029411764706 33.75L374.0882352941177 44.205882352941174C354.3382352941177 53.5 340.39705882352945 73.25 331.1029411764706 94.16176470588236L321.80882352941177 84.86764705882354C328.7794117647059 72.08823529411765 335.75 61.63235294117648 342.72058823529414 54.661764705882355C326.4558823529412 55.82352941176471 318.32352941176475 48.85294117647059 322.97058823529414 36.0735294117647C328.7794117647059 20.970588235294116 346.2058823529412 8.191176470588232 360.14705882352945 17.485294117647058Z",
+        "sourceAdvance": 65.054,
+        "provenance": "inferred",
+        "evidenceKind": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۵",
+            "۶"
+          ],
+          "designNotes": "۶ is present in the older national diagram family; transferred uniformly to the newer private family, whose sample omits it."
+        },
+        "note": "Inferred source-style reconstruction. ۶ is present in the older national diagram family; transferred uniformly to the newer private family, whose sample omits it.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      },
+      {
+        "character": "۷",
+        "path": "M10.27 14.0C26.07 27.43 33.18 51.13 35.550000000000004 62.190000000000005C38.71 42.44 45.82 22.69 58.46 14.0L65.57000000000001 27.43C48.190000000000005 47.97 44.24 67.72 44.24 93.0H28.44C28.44 66.14 21.330000000000002 43.230000000000004 3.16 28.22L10.27 14.0Z",
+        "sourceAdvance": 75.05,
+        "provenance": "inferred",
+        "evidenceKind": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۵",
+            "۶"
+          ],
+          "designNotes": "Motorcycle diagram supplies numeral structure; national stroke mass reconstructed. Not directly observed in this national main role."
+        },
+        "note": "Inferred source-style reconstruction. Motorcycle diagram supplies numeral structure; national stroke mass reconstructed. Not directly observed in this national main role.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      },
+      {
+        "character": "۸",
+        "path": "M26.86 14.0H42.660000000000004C42.660000000000004 48.760000000000005 51.35 68.51 66.36 80.36L59.25 93.0C45.03 83.52000000000001 37.92 62.190000000000005 34.760000000000005 50.34C31.6 66.14 22.91 83.52000000000001 11.06 93.0L3.95 79.57000000000001C19.75 62.190000000000005 26.86 42.44 26.86 14.0Z",
+        "sourceAdvance": 75.05,
+        "provenance": "inferred",
+        "evidenceKind": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۵",
+            "۶"
+          ],
+          "designNotes": "Motorcycle diagram supplies numeral structure; national stroke mass reconstructed. Not directly observed in this national main role."
+        },
+        "note": "Inferred source-style reconstruction. Motorcycle diagram supplies numeral structure; national stroke mass reconstructed. Not directly observed in this national main role.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      },
+      {
+        "character": "۹",
+        "path": "M33.18 14.0C48.980000000000004 14.0 50.56 25.85 50.56 44.02C50.56 68.51 54.510000000000005 78.78 61.620000000000005 85.10000000000001L52.93 94.58C42.660000000000004 85.89 37.13 69.30000000000001 37.13 55.870000000000005H26.07C7.9 55.870000000000005 8.690000000000001 40.86 14.22 27.43C18.17 18.740000000000002 24.490000000000002 14.0 33.18 14.0ZM32.39 25.85C26.86 25.85 22.91 34.54 23.700000000000003 40.86Q23.700000000000003 44.81 36.34 44.02C36.34 32.17 35.550000000000004 25.85 32.39 25.85Z",
+        "sourceAdvance": 63.512,
+        "provenance": "inferred",
+        "evidenceKind": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۵",
+            "۶"
+          ],
+          "designNotes": "Motorcycle diagram supplies numeral structure; national stroke mass reconstructed. Not directly observed in this national main role."
+        },
+        "note": "Inferred source-style reconstruction. Motorcycle diagram supplies numeral structure; national stroke mass reconstructed. Not directly observed in this national main role.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      }
+    ],
+    "wordmarks": [],
+    "roles": {
+      "region": {
+        "capHeight": 69,
+        "baseline": 99,
+        "glyphs": [
+          {
+            "character": "۰",
+            "path": "M16.560000000000002 57.6 26.91 66.57000000000001 17.939999999999998 76.92 7.590000000000001 67.95 16.560000000000002 57.6Z",
+            "sourceAdvance": 30.36,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۱",
+            "path": "M418 29 C430 43 434 70 434 99 H423 C423 73 418 56 409 46 Z",
+            "sourceBox": [
+              409.0,
+              29.0,
+              434.0,
+              99.0
+            ],
+            "sourceAdvance": 44,
+            "occurrence": "region numeral in source diagram",
+            "sourceId": "wiki-private",
+            "sourceFile": "modern-reference/wiki-private.png",
+            "provenance": "observed",
+            "evidenceKind": "diagram-derived",
+            "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iran_private_vehicle_number_plate.svg",
+            "license": "Commons PD-Iran declaration; expiration basis unverified",
+            "rights": "Source-guided diagram adaptation; no claim of official die certification. 2023 own-work PD-Iran declaration requires independent reuse review.",
+            "advanceProvenance": "observed",
+            "advanceNote": "Measured adjacent numeral ink-origin separation in unchanged source pixels. No per-glyph scaling."
+          },
+          {
+            "character": "۲",
+            "path": "M82.9746835443038 30.0C88.21518987341771 41.35443037974684 90.83544303797468 45.721518987341774 96.94936708860759 45.721518987341774Q103.0632911392405 45.721518987341774 103.0632911392405 34.36708860759494L111.79746835443038 30.0C112.67088607594937 49.21518987341773 109.17721518987342 60.56962025316456 96.07594936708861 62.31645569620253Q98.69620253164557 78.0379746835443 98.69620253164557 99.0H88.21518987341771C88.21518987341771 75.41772151898735 84.72151898734177 59.69620253164557 75.9873417721519 47.46835443037975L82.9746835443038 30.0Z",
+            "sourceAdvance": 46.976,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۳",
+            "path": "M200.0126582278481 30.0C205.25316455696202 42.22784810126582 208.74683544303798 46.59493670886076 212.2405063291139 45.721518987341774Q215.73417721518987 45.721518987341774 214.86075949367088 36.11392405063292L222.72151898734177 31.746835443037977Q222.72151898734177 46.59493670886076 227.08860759493672 45.721518987341774Q230.58227848101265 45.721518987341774 229.70886075949366 36.11392405063292L237.56962025316454 30.87341772151899C239.31645569620252 51.835443037974684 234.0759493670886 60.56962025316456 224.46835443037975 60.56962025316456Q220.1012658227848 60.56962025316456 218.35443037974684 58.822784810126585Q215.73417721518987 62.31645569620253 210.49367088607596 62.31645569620253Q214.86075949367088 80.65822784810126 214.86075949367088 99.0H205.25316455696202C205.25316455696202 76.29113924050634 201.7594936708861 61.44303797468355 193.0253164556962 47.46835443037975L200.0126582278481 30.0Z",
+            "sourceAdvance": 55.917,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۴",
+            "path": "M249.79746835443038 30.87341772151899 256.7848101265823 40.481012658227854C262.0253164556962 26.506329113924053 272.50632911392404 26.506329113924053 281.24050632911394 35.24050632911393L278.62025316455697 42.22784810126582C270.75949367088606 37.860759493670884 266.39240506329116 39.607594936708864 264.6455696202532 43.9746835443038C262.8987341772152 51.835443037974684 275.126582278481 51.835443037974684 283.86075949367086 43.9746835443038L286.4810126582278 50.9620253164557C282.9873417721519 60.56962025316456 274.253164556962 64.0632911392405 263.7721518987342 63.18987341772152Q266.39240506329116 79.78481012658227 266.39240506329116 99.0H255.91139240506328C255.91139240506328 73.67088607594937 252.41772151898735 59.69620253164557 244.55696202531647 46.59493670886076L249.79746835443038 30.87341772151899Z",
+            "sourceAdvance": 52.964,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۵",
+            "path": "M305.69620253164555 30.87341772151899C322.2911392405063 43.9746835443038 330.1518987341772 64.0632911392405 330.1518987341772 78.0379746835443C330.1518987341772 92.8860759493671 324.0379746835443 103.36708860759494 310.0632911392405 95.50632911392405C301.3291139240506 104.24050632911393 289.1012658227848 98.12658227848101 289.1012658227848 83.27848101265823C288.2278481012658 70.17721518987342 296.0886075949367 57.07594936708861 301.3291139240506 49.21518987341773L298.7088607594937 46.59493670886076L305.69620253164555 30.87341772151899ZM308.3164556962025 55.32911392405064C303.0759493670886 62.31645569620253 297.8354430379747 73.67088607594937 298.7088607594937 78.9113924050633Q298.7088607594937 86.77215189873418 305.69620253164555 81.53164556962025L310.0632911392405 77.16455696202532Q314.43037974683546 85.89873417721519 319.67088607594934 81.53164556962025C323.1645569620253 75.41772151898735 315.30379746835445 61.44303797468355 308.3164556962025 55.32911392405064Z",
+            "sourceAdvance": 52.158,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۶",
+            "path": "M314.55882352941177 33.044117647058826 311.514705882353 41.161764705882355C303.3970588235294 38.11764705882353 296.29411764705884 41.161764705882355 293.25 47.25C289.19117647058823 54.352941176470594 294.264705882353 57.39705882352941 304.4117647058824 54.352941176470594L323.69117647058823 47.25L326.7352941176471 56.38235294117647C309.4852941176471 64.5 297.30882352941177 81.75 289.19117647058823 100.01470588235296L281.0735294117647 91.89705882352942C287.1617647058824 80.73529411764707 293.25 71.6029411764706 299.3382352941177 65.51470588235294C285.1323529411765 66.52941176470588 278.0294117647059 60.44117647058824 282.0882352941177 49.279411764705884C287.1617647058824 36.08823529411765 302.3823529411765 24.926470588235293 314.55882352941177 33.044117647058826Z",
+            "sourceAdvance": 56.82,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۷",
+            "path": "M8.969999999999999 30.0C22.77 41.730000000000004 28.98 62.43000000000001 31.050000000000004 72.09C33.81 54.84 40.02 37.59 51.06 30.0L57.27 41.730000000000004C42.09 59.67 38.64 76.92 38.64 99.0H24.84C24.84 75.53999999999999 18.630000000000003 55.53000000000001 2.7600000000000002 42.42L8.969999999999999 30.0Z",
+            "sourceAdvance": 65.55,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۸",
+            "path": "M23.46 30.0H37.260000000000005C37.260000000000005 60.36000000000001 44.85 77.61000000000001 57.96 87.96000000000001L51.75 99.0C39.33 90.72000000000001 33.120000000000005 72.09 30.360000000000003 61.74C27.6 75.53999999999999 20.01 90.72000000000001 9.66 99.0L3.45 87.27000000000001C17.25 72.09 23.46 54.84 23.46 30.0Z",
+            "sourceAdvance": 65.55,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۹",
+            "path": "M28.98 30.0C42.78 30.0 44.160000000000004 40.35000000000001 44.160000000000004 56.220000000000006C44.160000000000004 77.61000000000001 47.61000000000001 86.58 53.82 92.10000000000001L46.23 100.38C37.260000000000005 92.79 32.43 78.30000000000001 32.43 66.57000000000001H22.77C6.9 66.57000000000001 7.590000000000001 53.46 12.42 41.730000000000004C15.870000000000001 34.14 21.39 30.0 28.98 30.0ZM28.29 40.35000000000001C23.46 40.35000000000001 20.01 47.94 20.700000000000003 53.46Q20.700000000000003 56.910000000000004 31.740000000000002 56.220000000000006C31.740000000000002 45.870000000000005 31.050000000000004 40.35000000000001 28.29 40.35000000000001Z",
+            "sourceAdvance": 55.472,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          }
+        ],
+        "evidenceKind": "diagram-derived-and-inferred",
+        "note": "Region header is excluded. Shared role scale, no glyph-by-glyph fitting."
+      }
+    },
+    "sourceImageSize": [
+      500,
+      112
+    ],
+    "sourceRoleBoxes": {
+      "prefix": [
+        55,
+        15,
+        128,
+        92
+      ],
+      "serial": [
+        221,
+        13,
+        378,
+        93
+      ],
+      "rightcode": [
+        409,
+        30,
+        477,
+        99
+      ],
+      "series": [
+        134,
+        17,
+        213,
+        89
+      ]
+    },
+    "sourceRoleBoxConvention": "x0,y0,x1,y1; original source plate pixels, excludes header and border; adjacent numeral group observed as a group",
+    "numericCompletion": {
+      "required": "۰۱۲۳۴۵۶۷۸۹",
+      "observed": "۱۲۳۴۵",
+      "inferred": "۰۶۷۸۹",
+      "unicodePolicy": "Persian U+06F0–U+06F9; no Arabic-indic substitutions"
+    }
+  },
+  {
+    "id": "source-national-temporary-numerals",
+    "label": "Temporary main numeric variant · epsilon۴",
+    "script": "persian",
+    "sourceId": "source-national-temporary-numerals:manual-smooth-2026-10-02",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:پلاک_موقت.jpg",
+    "sourceFile": "modern-reference/wiki-temporary.png",
+    "credit": "Haghal Jagul / Wikimedia Commons diagram",
+    "license": "CC BY-SA 3.0",
+    "rights": "Diagram-derived manual reconstruction. Older national diagram attributed CC BY-SA 3.0; share adaptations under that license. Private 2023 SVG declares PD-Iran but expiration basis remains unverified; no reusable font license or official die certification is asserted.",
+    "provenance": "observed",
+    "evidenceKind": "diagram-derived",
+    "capHeight": 69,
+    "baseline": 90,
+    "note": "Original low-anchor smooth contours in native source pixels. Complete Persian U+06F0–U+06F9 only; Arabic-indic codepoints are deliberately not aliases. Observed and inferred per-glyph provenance retained. Shared cap/baseline and native advances; no per-glyph warping. This is an illustration-led reconstruction, not an authenticated physical die.",
+    "glyphs": [
+      {
+        "character": "۰",
+        "path": "M16.56 48.599999999999994 26.909999999999997 57.57 17.939999999999998 67.91999999999999 7.59 58.949999999999996 16.56 48.599999999999994Z",
+        "sourceAdvance": 30.36,
+        "provenance": "inferred",
+        "evidenceKind": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "Transferred national-family completion; absent from this temporary main sample."
+        },
+        "note": "Inferred source-style reconstruction. Transferred national-family completion; absent from this temporary main sample.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      },
+      {
+        "character": "۱",
+        "path": "M60 22 C70 36 76 62 76 91 H64 C64 65 59 47 51 35 Z",
+        "sourceBox": [
+          51.0,
+          22.0,
+          76.0,
+          91.0
+        ],
+        "sourceAdvance": 34,
+        "occurrence": "main numeral in source diagram",
+        "sourceId": "wiki-temporary",
+        "sourceFile": "modern-reference/wiki-temporary.png",
+        "provenance": "observed",
+        "evidenceKind": "diagram-derived",
+        "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:پلاک_موقت.jpg",
+        "license": "CC BY-SA 3.0",
+        "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+        "advanceProvenance": "observed",
+        "advanceNote": "Measured adjacent numeral ink-origin separation in unchanged source pixels. No per-glyph scaling."
+      },
+      {
+        "character": "۲",
+        "path": "M94 22 C99 34 103 42 114 41 Q119 41 117 34 L116 29 L125 22 C132 45 126 55 113 55 H107 Q110 72 109 91 H97 C97 66 93 49 85 35 Z",
+        "sourceBox": [
+          85.0,
+          22.0,
+          127.957,
+          91.0
+        ],
+        "sourceAdvance": 53.997,
+        "occurrence": "main numeral in source diagram",
+        "sourceId": "wiki-temporary",
+        "sourceFile": "modern-reference/wiki-temporary.png",
+        "provenance": "observed",
+        "evidenceKind": "diagram-derived",
+        "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:پلاک_موقت.jpg",
+        "license": "CC BY-SA 3.0",
+        "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      },
+      {
+        "character": "۳",
+        "path": "M234 20 C241 34 245 38 249 33 V21 H258 V33 Q259 38 264 36 Q268 35 267 27 L266 25 L274 20 C280 43 271 50 258 44 Q255 50 247 50 Q251 67 251 89 H238 C238 61 232 46 225 32 Z",
+        "sourceBox": [
+          225.0,
+          20.0,
+          275.899,
+          89.0
+        ],
+        "sourceAdvance": 59,
+        "occurrence": "main numeral in source diagram",
+        "sourceId": "wiki-temporary",
+        "sourceFile": "modern-reference/wiki-temporary.png",
+        "provenance": "observed",
+        "evidenceKind": "diagram-derived",
+        "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:پلاک_موقت.jpg",
+        "license": "CC BY-SA 3.0",
+        "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+        "advanceProvenance": "observed",
+        "advanceNote": "Measured adjacent numeral ink-origin separation in unchanged source pixels. No per-glyph scaling."
+      },
+      {
+        "character": "۴",
+        "path": "M313 20 L316 28 C297 32 297 39 313 44 V51 C302 60 295 67 297 74 Q299 78 319 77 V89 H300 C272 89 284 65 297 52 C277 44 286 27 313 20 Z",
+        "sourceBox": [
+          282.946,
+          20.0,
+          319.0,
+          89.0
+        ],
+        "sourceAdvance": 43,
+        "occurrence": "main numeral in source diagram",
+        "sourceId": "wiki-temporary",
+        "sourceFile": "modern-reference/wiki-temporary.png",
+        "provenance": "observed",
+        "evidenceKind": "diagram-derived",
+        "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:پلاک_موقت.jpg",
+        "license": "CC BY-SA 3.0",
+        "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+        "advanceProvenance": "observed",
+        "advanceNote": "Measured adjacent numeral ink-origin separation in unchanged source pixels. No per-glyph scaling."
+      },
+      {
+        "character": "۵",
+        "path": "M340 20 C362 36 376 57 376 73 C376 85 368 91 352 91 C335 91 327 83 327 70 C327 56 334 43 340 34 L335 30 Z M346 42 C338 55 335 63 337 71 Q338 78 352 77 Q366 77 363 67 C360 57 352 47 346 42 Z",
+        "sourceBox": [
+          327.0,
+          20.0,
+          376.0,
+          91.0
+        ],
+        "sourceAdvance": 60.04,
+        "occurrence": "main numeral in source diagram",
+        "sourceId": "wiki-temporary",
+        "sourceFile": "modern-reference/wiki-temporary.png",
+        "provenance": "observed",
+        "evidenceKind": "diagram-derived",
+        "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:پلاک_موقت.jpg",
+        "license": "CC BY-SA 3.0",
+        "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      },
+      {
+        "character": "۶",
+        "path": "M314.55882352941177 24.04411764705882 311.5147058823529 32.16176470588235C303.3970588235294 29.117647058823525 296.2941176470588 32.16176470588235 293.25 38.25C289.19117647058823 45.35294117647059 294.2647058823529 48.397058823529406 304.4117647058823 45.35294117647059L323.69117647058823 38.25L326.735294117647 47.382352941176464C309.485294117647 55.49999999999999 297.30882352941177 72.75 289.19117647058823 91.01470588235293L281.0735294117647 82.8970588235294C287.1617647058823 71.73529411764706 293.25 62.60294117647058 299.3382352941176 56.514705882352935C285.13235294117646 57.52941176470588 278.02941176470586 51.44117647058823 282.0882352941176 40.27941176470588C287.1617647058823 27.088235294117645 302.38235294117646 15.926470588235292 314.55882352941177 24.04411764705882Z",
+        "sourceAdvance": 56.82,
+        "sourceId": "wiki-diplomatic",
+        "sourceFile": "modern-reference/wiki-diplomatic.png",
+        "provenance": "inferred",
+        "evidenceKind": "inferred",
+        "note": "Inferred source-style reconstruction. Transferred national-family completion; absent from this temporary main sample.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "Transferred national-family completion; absent from this temporary main sample."
+        },
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      },
+      {
+        "character": "۷",
+        "path": "M8.969999999999999 21.0C22.77 32.73 28.979999999999997 53.43 31.049999999999997 63.089999999999996C33.809999999999995 45.839999999999996 40.019999999999996 28.59 51.059999999999995 21.0L57.269999999999996 32.73C42.089999999999996 50.67 38.64 67.91999999999999 38.64 90.0H24.839999999999996C24.839999999999996 66.53999999999999 18.63 46.53 2.76 33.42L8.969999999999999 21.0Z",
+        "sourceAdvance": 65.55,
+        "provenance": "inferred",
+        "evidenceKind": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "Transferred national-family completion; absent from this temporary main sample."
+        },
+        "note": "Inferred source-style reconstruction. Transferred national-family completion; absent from this temporary main sample.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      },
+      {
+        "character": "۸",
+        "path": "M23.459999999999997 21.0H37.26C37.26 51.36 44.849999999999994 68.61 57.959999999999994 78.96L51.74999999999999 90.0C39.33 81.72 33.12 63.089999999999996 30.36 52.739999999999995C27.599999999999998 66.53999999999999 20.009999999999998 81.72 9.66 90.0L3.4499999999999997 78.27C17.25 63.089999999999996 23.459999999999997 45.839999999999996 23.459999999999997 21.0Z",
+        "sourceAdvance": 65.55,
+        "provenance": "inferred",
+        "evidenceKind": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "Transferred national-family completion; absent from this temporary main sample."
+        },
+        "note": "Inferred source-style reconstruction. Transferred national-family completion; absent from this temporary main sample.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      },
+      {
+        "character": "۹",
+        "path": "M28.979999999999997 21.0C42.779999999999994 21.0 44.16 31.35 44.16 47.22C44.16 68.61 47.61 77.58 53.81999999999999 83.1L46.23 91.38C37.26 83.78999999999999 32.43 69.3 32.43 57.57H22.77C6.8999999999999995 57.57 7.59 44.459999999999994 12.419999999999998 32.73C15.87 25.14 21.389999999999997 21.0 28.979999999999997 21.0ZM28.29 31.35C23.459999999999997 31.35 20.009999999999998 38.94 20.7 44.459999999999994Q20.7 47.91 31.74 47.22C31.74 36.87 31.049999999999997 31.35 28.29 31.35Z",
+        "sourceAdvance": 55.472,
+        "provenance": "inferred",
+        "evidenceKind": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "Transferred national-family completion; absent from this temporary main sample."
+        },
+        "note": "Inferred source-style reconstruction. Transferred national-family completion; absent from this temporary main sample.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      }
+    ],
+    "wordmarks": [],
+    "roles": {
+      "series": {
+        "capHeight": 69,
+        "baseline": 91,
+        "glyphs": [
+          {
+            "character": "گ",
+            "path": "M212 24 L215 30 L186 39 L183 33 Z M217 33 L220 42 L196 49 Q193 50 195 55 L203 73 C207 83 199 91 190 91 H148 C135 91 132 86 132 67 H142 V74 Q142 79 149 79 H189 Q196 79 194 74 L184 54 C180 45 186 42 192 40 Z",
+            "sourceBox": [
+              132.0,
+              24.0,
+              220.0,
+              91.0
+            ],
+            "sourceAdvance": 99.04,
+            "occurrence": "series numeral in source diagram",
+            "sourceId": "wiki-temporary",
+            "sourceFile": "modern-reference/wiki-temporary.png",
+            "provenance": "observed",
+            "evidenceKind": "diagram-derived",
+            "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:پلاک_موقت.jpg",
+            "license": "CC BY-SA 3.0",
+            "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          }
+        ]
+      },
+      "region": {
+        "capHeight": 28,
+        "baseline": 59,
+        "glyphs": [
+          {
+            "character": "۰",
+            "path": "M6.72 42.2 10.92 45.84 7.279999999999999 50.04 3.08 46.400000000000006 6.72 42.2Z",
+            "sourceAdvance": 12.32,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۱",
+            "path": "M424 31 C429 37 430 47 430 59 H425 Q425 45 421 35 Z",
+            "sourceBox": [
+              421.0,
+              31.0,
+              430.0,
+              59.0
+            ],
+            "sourceAdvance": 21,
+            "occurrence": "region numeral in source diagram",
+            "sourceId": "wiki-temporary",
+            "sourceFile": "modern-reference/wiki-temporary.png",
+            "provenance": "observed",
+            "evidenceKind": "diagram-derived",
+            "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:پلاک_موقت.jpg",
+            "license": "CC BY-SA 3.0",
+            "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+            "advanceProvenance": "observed",
+            "advanceNote": "Measured adjacent numeral ink-origin separation in unchanged source pixels. No per-glyph scaling."
+          },
+          {
+            "character": "۲",
+            "path": "M41.58823529411765 31.0C43.64705882352941 36.76470588235294 44.88235294117647 39.23529411764706 49.41176470588235 39.23529411764706Q51.88235294117647 39.23529411764706 51.05882352941176 35.94117647058823L50.64705882352941 34.294117647058826L54.764705882352935 31.411764705882355C56.82352941176471 40.470588235294116 56.0 44.58823529411765 50.64705882352941 44.58823529411765H48.1764705882353Q49.0 50.76470588235294 48.58823529411765 59.0H43.64705882352941C43.64705882352941 49.11764705882353 41.58823529411765 41.705882352941174 38.294117647058826 35.94117647058823L41.58823529411765 31.0Z",
+            "sourceAdvance": 21.988,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۳",
+            "path": "M93.05882352941177 31.0C95.11764705882352 36.35294117647059 96.3529411764706 37.1764705882353 98.41176470588235 37.1764705882353Q100.05882352941177 37.1764705882353 99.6470588235294 31.823529411764707H102.94117647058823V35.94117647058823Q102.94117647058823 37.58823529411765 104.58823529411765 37.58823529411765Q106.64705882352942 37.58823529411765 106.64705882352942 35.529411764705884L106.23529411764704 33.05882352941177L109.94117647058825 31.0C111.58823529411767 38.82352941176471 109.94117647058825 41.705882352941174 105.8235294117647 41.705882352941174Q103.76470588235294 41.705882352941174 102.52941176470588 40.470588235294116Q101.29411764705883 42.529411764705884 98.8235294117647 42.529411764705884Q100.05882352941177 49.94117647058823 100.05882352941177 58.58823529411765H95.11764705882352C95.11764705882352 48.294117647058826 93.47058823529412 41.294117647058826 89.76470588235294 35.94117647058823L93.05882352941177 31.0Z",
+            "sourceAdvance": 25.288,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۴",
+            "path": "M127.0144927536232 30.594202898550726 128.23188405797103 33.84057971014493C120.5217391304348 35.46376811594203 120.5217391304348 38.30434782608696 127.0144927536232 40.333333333333336V43.173913043478265C122.55072463768117 46.82608695652174 119.71014492753623 49.66666666666667 120.5217391304348 52.507246376811594Q121.33333333333334 54.1304347826087 129.44927536231884 53.72463768115942V58.594202898550726H121.73913043478262C110.3768115942029 58.594202898550726 115.24637681159422 48.85507246376812 120.5217391304348 43.57971014492754C112.40579710144928 40.333333333333336 116.05797101449276 33.434782608695656 127.0144927536232 30.594202898550726Z",
+            "sourceAdvance": 19.111,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۵",
+            "path": "M141.23529411764704 30.58823529411765C150.7058823529412 37.1764705882353 155.64705882352942 45.82352941176471 155.64705882352942 52.0C155.64705882352942 56.94117647058824 152.3529411764706 59.41176470588235 145.76470588235296 59.41176470588235C138.76470588235296 59.41176470588235 135.88235294117646 57.35294117647059 135.88235294117646 52.0C135.88235294117646 46.23529411764706 138.76470588235296 40.470588235294116 141.23529411764704 36.76470588235294L139.1764705882353 35.11764705882353L141.23529411764704 30.58823529411765ZM144.11764705882354 40.05882352941177C141.23529411764704 45.0 140.0 48.294117647058826 140.41176470588235 51.1764705882353Q140.41176470588235 54.05882352941177 145.76470588235296 54.05882352941177Q151.11764705882354 54.05882352941177 150.7058823529412 50.76470588235294C150.29411764705884 47.470588235294116 147.0 42.529411764705884 144.11764705882354 40.05882352941177Z",
+            "sourceAdvance": 24.245,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۶",
+            "path": "M127.64705882352942 32.23529411764706 126.41176470588236 35.529411764705884C123.11764705882354 34.294117647058826 120.23529411764704 35.529411764705884 119.00000000000001 38.0C117.3529411764706 40.88235294117647 119.41176470588236 42.11764705882353 123.52941176470587 40.88235294117647L131.3529411764706 38.0L132.58823529411762 41.705882352941174C125.58823529411764 45.0 120.64705882352942 52.0 117.3529411764706 59.41176470588235L114.05882352941177 56.11764705882353C116.52941176470587 51.58823529411765 119.00000000000001 47.88235294117647 121.47058823529412 45.41176470588235C115.70588235294119 45.82352941176471 112.8235294117647 43.352941176470594 114.47058823529412 38.82352941176471C116.52941176470587 33.470588235294116 122.70588235294119 28.941176470588236 127.64705882352942 32.23529411764706Z",
+            "sourceAdvance": 23.057,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۷",
+            "path": "M3.6399999999999997 31.0C9.24 35.760000000000005 11.76 44.160000000000004 12.6 48.08C13.719999999999999 41.08 16.24 34.08 20.72 31.0L23.24 35.760000000000005C17.08 43.040000000000006 15.680000000000001 50.04 15.680000000000001 59.0H10.079999999999998C10.079999999999998 49.480000000000004 7.5600000000000005 41.36 1.1199999999999999 36.040000000000006L3.6399999999999997 31.0Z",
+            "sourceAdvance": 26.6,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۸",
+            "path": "M9.52 31.0H15.120000000000001C15.120000000000001 43.32000000000001 18.2 50.32000000000001 23.52 54.52L21.0 59.0C15.96 55.64 13.44 48.08 12.32 43.879999999999995C11.2 49.480000000000004 8.12 55.64 3.9200000000000004 59.0L1.4 54.24C7.0 48.08 9.52 41.08 9.52 31.0Z",
+            "sourceAdvance": 26.6,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۹",
+            "path": "M11.76 31.0C17.36 31.0 17.919999999999998 35.2 17.919999999999998 41.64C17.919999999999998 50.32000000000001 19.32 53.96 21.84 56.2L18.76 59.56C15.120000000000001 56.48 13.16 50.6 13.16 45.84H9.24C2.8 45.84 3.08 40.519999999999996 5.039999999999999 35.760000000000005C6.44 32.68 8.68 31.0 11.76 31.0ZM11.48 35.2C9.52 35.2 8.12 38.28 8.4 40.519999999999996Q8.4 41.92 12.88 41.64C12.88 37.44 12.6 35.2 11.48 35.2Z",
+            "sourceAdvance": 22.51,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed."
+            },
+            "note": "Inferred source-style reconstruction. Unseen region-code glyph reconstructed from this family main numeral with one uniform cap-height scale; the region ۱ is independently observed.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          }
+        ],
+        "evidenceKind": "diagram-derived-and-inferred",
+        "note": "Region header is excluded. Shared role scale, no glyph-by-glyph fitting."
+      },
+      "expiry": {
+        "capHeight": 28,
+        "baseline": 95,
+        "glyphs": [
+          {
+            "character": "۰",
+            "path": "M6.72 78.2 10.92 81.84 7.279999999999999 86.03999999999999 3.08 82.4 6.72 78.2Z",
+            "sourceAdvance": 12.32,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unobserved expiry numeral inferred from national family with uniform role scaling."
+            },
+            "note": "Inferred source-style reconstruction. Unobserved expiry numeral inferred from national family with uniform role scaling.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۱",
+            "path": "M401 68 C406 74 407 84 407 95 H402 Q402 81 398 72 Z",
+            "sourceAdvance": 13.48,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unobserved expiry numeral inferred from national family with uniform role scaling."
+            },
+            "note": "Inferred source-style reconstruction. Unobserved expiry numeral inferred from national family with uniform role scaling.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۲",
+            "path": "M38.14492753623189 67.40579710144928C40.173913043478265 72.27536231884058 41.79710144927537 75.52173913043478 46.26086956521739 75.1159420289855Q48.28985507246377 75.1159420289855 47.47826086956522 72.27536231884058L47.072463768115945 70.2463768115942L50.72463768115942 67.40579710144928C53.56521739130435 76.73913043478261 51.1304347826087 80.79710144927537 45.85507246376812 80.79710144927537H43.42028985507247Q44.637681159420296 87.69565217391305 44.231884057971016 95.40579710144928H39.36231884057971C39.36231884057971 85.26086956521739 37.73913043478261 78.36231884057972 34.492753623188406 72.68115942028986L38.14492753623189 67.40579710144928Z",
+            "sourceAdvance": 21.912,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unobserved expiry numeral inferred from national family with uniform role scaling."
+            },
+            "note": "Inferred source-style reconstruction. Unobserved expiry numeral inferred from national family with uniform role scaling.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۳",
+            "path": "M94.95652173913044 66.59420289855072C97.79710144927537 72.27536231884058 99.42028985507247 73.89855072463769 101.04347826086958 71.86956521739131V67.0H104.69565217391305V71.86956521739131Q105.10144927536233 73.89855072463769 107.1304347826087 73.08695652173913Q108.75362318840581 72.68115942028986 108.34782608695653 69.43478260869566L107.94202898550725 68.62318840579711L111.18840579710145 66.59420289855072C113.62318840579711 75.92753623188406 109.97101449275362 78.76811594202898 104.69565217391305 76.33333333333334Q103.47826086956522 78.76811594202898 100.23188405797102 78.76811594202898Q101.85507246376812 85.66666666666667 101.85507246376812 94.59420289855072H96.57971014492755C96.57971014492755 83.23188405797102 94.14492753623189 77.14492753623189 91.30434782608697 71.46376811594203L94.95652173913044 66.59420289855072Z",
+            "sourceAdvance": 25.135,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unobserved expiry numeral inferred from national family with uniform role scaling."
+            },
+            "note": "Inferred source-style reconstruction. Unobserved expiry numeral inferred from national family with uniform role scaling.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۴",
+            "path": "M466 66 L469 70 Q473 63 480 68 L478 71 Q474 69 472 72 Q474 75 481 72 L482 75 Q477 79 472 78 L473 94 H468 Q469 79 463 71 Z",
+            "sourceBox": [
+              463.0,
+              65.917,
+              482.0,
+              94.0
+            ],
+            "sourceAdvance": 23.48,
+            "occurrence": "expiry numeral in source diagram",
+            "sourceId": "wiki-temporary",
+            "sourceFile": "modern-reference/wiki-temporary.png",
+            "provenance": "observed",
+            "evidenceKind": "diagram-derived",
+            "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:پلاک_موقت.jpg",
+            "license": "CC BY-SA 3.0",
+            "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۵",
+            "path": "M137.97101449275362 66.59420289855072C146.8985507246377 73.08695652173913 152.57971014492756 81.6086956521739 152.57971014492756 88.10144927536231C152.57971014492756 92.97101449275362 149.33333333333334 95.40579710144928 142.84057971014494 95.40579710144928C135.94202898550725 95.40579710144928 132.69565217391306 92.15942028985508 132.69565217391306 86.8840579710145C132.69565217391306 81.20289855072464 135.53623188405797 75.92753623188406 137.97101449275362 72.27536231884058L135.94202898550725 70.65217391304348L137.97101449275362 66.59420289855072ZM140.40579710144928 75.52173913043478C137.1594202898551 80.79710144927537 135.94202898550725 84.04347826086956 136.7536231884058 87.28985507246378Q137.1594202898551 90.1304347826087 142.84057971014494 89.72463768115942Q148.52173913043478 89.72463768115942 147.30434782608697 85.66666666666667C146.08695652173913 81.6086956521739 142.84057971014494 77.55072463768116 140.40579710144928 75.52173913043478Z",
+            "sourceAdvance": 24.364,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unobserved expiry numeral inferred from national family with uniform role scaling."
+            },
+            "note": "Inferred source-style reconstruction. Unobserved expiry numeral inferred from national family with uniform role scaling.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۶",
+            "path": "M439 68 L438 71 Q432 69 430 72 Q427 76 434 75 L441 73 L441 77 Q431 83 427 95 L423 92 Q426 85 430 81 Q418 82 425 72 Q432 64 439 68 Z",
+            "sourceBox": [
+              422.421,
+              66.667,
+              441.0,
+              95.0
+            ],
+            "sourceAdvance": 23.059,
+            "occurrence": "expiry numeral in source diagram",
+            "sourceId": "wiki-temporary",
+            "sourceFile": "modern-reference/wiki-temporary.png",
+            "provenance": "observed",
+            "evidenceKind": "diagram-derived",
+            "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:پلاک_موقت.jpg",
+            "license": "CC BY-SA 3.0",
+            "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۷",
+            "path": "M3.6399999999999997 67.0C9.24 71.76 11.76 80.16 12.6 84.08C13.719999999999999 77.08 16.24 70.08 20.72 67.0L23.24 71.76C17.08 79.04 15.680000000000001 86.03999999999999 15.680000000000001 95.0H10.079999999999998C10.079999999999998 85.48 7.5600000000000005 77.36 1.1199999999999999 72.04L3.6399999999999997 67.0Z",
+            "sourceAdvance": 26.6,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unobserved expiry numeral inferred from national family with uniform role scaling."
+            },
+            "note": "Inferred source-style reconstruction. Unobserved expiry numeral inferred from national family with uniform role scaling.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۸",
+            "path": "M9.52 67.0H15.120000000000001C15.120000000000001 79.32000000000001 18.2 86.32000000000001 23.52 90.52000000000001L21.0 95.0C15.96 91.64 13.44 84.08 12.32 79.88C11.2 85.48 8.12 91.64 3.9200000000000004 95.0L1.4 90.24000000000001C7.0 84.08 9.52 77.08 9.52 67.0Z",
+            "sourceAdvance": 26.6,
+            "provenance": "inferred",
+            "evidenceKind": "inferred",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳",
+                "۵",
+                "۶"
+              ],
+              "designNotes": "Unobserved expiry numeral inferred from national family with uniform role scaling."
+            },
+            "note": "Inferred source-style reconstruction. Unobserved expiry numeral inferred from national family with uniform role scaling.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "۹",
+            "path": "M407 66 Q415 66 413 78 Q413 87 416 91 L412 95 Q407 88 407 81 Q398 82 400 73 Q402 66 407 66 Z M406 71 Q403 72 404 76 H408 Q409 70 406 71 Z",
+            "sourceBox": [
+              399.636,
+              66.0,
+              416.0,
+              95.0
+            ],
+            "sourceAdvance": 20.844,
+            "occurrence": "expiry numeral in source diagram",
+            "sourceId": "wiki-temporary",
+            "sourceFile": "modern-reference/wiki-temporary.png",
+            "provenance": "observed",
+            "evidenceKind": "diagram-derived",
+            "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:پلاک_موقت.jpg",
+            "license": "CC BY-SA 3.0",
+            "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          },
+          {
+            "character": "/",
+            "path": "M454 67 H458 L450 96 H446 Z",
+            "sourceBox": [
+              446.0,
+              67.0,
+              458.0,
+              96.0
+            ],
+            "sourceAdvance": 16.48,
+            "occurrence": "expiry numeral in source diagram",
+            "sourceId": "wiki-temporary",
+            "sourceFile": "modern-reference/wiki-temporary.png",
+            "provenance": "observed",
+            "evidenceKind": "diagram-derived",
+            "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:پلاک_موقت.jpg",
+            "license": "CC BY-SA 3.0",
+            "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+            "advanceProvenance": "inferred",
+            "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+          }
+        ],
+        "evidenceKind": "diagram-derived-and-inferred",
+        "note": "Region header is excluded. Shared role scale, no glyph-by-glyph fitting."
+      }
+    },
+    "sourceImageSize": [
+      500,
+      111
+    ],
+    "sourceRoleBoxes": {
+      "prefix": [
+        51,
+        23,
+        128,
+        91
+      ],
+      "serial": [
+        225,
+        20,
+        376,
+        91
+      ],
+      "rightcode": [
+        421,
+        31,
+        452,
+        59
+      ],
+      "expiry": [
+        400,
+        66,
+        482,
+        96
+      ],
+      "series": [
+        132,
+        24,
+        220,
+        91
+      ]
+    },
+    "sourceRoleBoxConvention": "x0,y0,x1,y1; original source plate pixels, excludes header and border; adjacent numeral group observed as a group",
+    "numericCompletion": {
+      "required": "۰۱۲۳۴۵۶۷۸۹",
+      "observed": "۱۲۳۴۵",
+      "inferred": "۰۶۷۸۹",
+      "unicodePolicy": "Persian U+06F0–U+06F9; no Arabic-indic substitutions"
+    }
+  },
+  {
+    "id": "source-freezone-persian-numerals",
+    "label": "Free-zone Persian upper row · Qeshm diagram",
+    "script": "persian",
+    "sourceId": "source-freezone-persian-numerals:manual-smooth-2026-10-02",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qeshm_plate.png",
+    "sourceFile": "modern-reference/wiki-freezone-Qeshm.png",
+    "credit": "Wikimedia Commons free-zone diagram; exact source title recorded per glyph.",
+    "license": "CC BY-SA 3.0",
+    "rights": "Diagram-derived manual reconstruction. Older national diagram attributed CC BY-SA 3.0; share adaptations under that license. Private 2023 SVG declares PD-Iran but expiration basis remains unverified; no reusable font license or official die certification is asserted.",
+    "provenance": "observed",
+    "evidenceKind": "diagram-derived",
+    "capHeight": 40,
+    "baseline": 61,
+    "note": "Original low-anchor smooth contours in native source pixels. Complete Persian U+06F0–U+06F9 only; Arabic-indic codepoints are deliberately not aliases. Observed and inferred per-glyph provenance retained. Shared cap/baseline and native advances; no per-glyph warping. This is an illustration-led reconstruction, not an authenticated physical die.",
+    "glyphs": [
+      {
+        "character": "۰",
+        "path": "M9.600000000000001 37.0 15.600000000000001 42.2 10.4 48.2 4.4 43.0 9.600000000000001 37.0Z",
+        "sourceAdvance": 17.6,
+        "provenance": "inferred",
+        "evidenceKind": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۵",
+            "۶"
+          ],
+          "designNotes": "۰ is an unobserved diamond-form completion."
+        },
+        "note": "Inferred source-style reconstruction. ۰ is an unobserved diamond-form completion.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      },
+      {
+        "character": "۱",
+        "path": "M83 21 C90 30 93 45 93 61 H86 C86 47 83 34 79 27 Z",
+        "sourceBox": [
+          79.0,
+          21.0,
+          93.0,
+          61.0
+        ],
+        "sourceAdvance": 28,
+        "occurrence": "main numeral in source diagram",
+        "sourceId": "wiki-freezone-Qeshm",
+        "sourceFile": "modern-reference/wiki-freezone-Qeshm.png",
+        "provenance": "observed",
+        "evidenceKind": "diagram-derived",
+        "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qeshm_plate.png",
+        "license": "CC BY-SA 3.0",
+        "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+        "advanceProvenance": "observed",
+        "advanceNote": "Measured adjacent numeral ink-origin separation in unchanged source pixels. No per-glyph scaling."
+      },
+      {
+        "character": "۲",
+        "path": "M112 21 C116 30 119 33 125 32 Q128 31 126 25 L131 21 C137 35 132 39 120 38 Q122 48 122 61 H115 C115 46 111 35 107 27 Z",
+        "sourceBox": [
+          107.0,
+          21.0,
+          133.542,
+          61.0
+        ],
+        "sourceAdvance": 32,
+        "occurrence": "main numeral in source diagram",
+        "sourceId": "wiki-freezone-Qeshm",
+        "sourceFile": "modern-reference/wiki-freezone-Qeshm.png",
+        "provenance": "observed",
+        "evidenceKind": "diagram-derived",
+        "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qeshm_plate.png",
+        "license": "CC BY-SA 3.0",
+        "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+        "advanceProvenance": "observed",
+        "advanceNote": "Measured adjacent numeral ink-origin separation in unchanged source pixels. No per-glyph scaling."
+      },
+      {
+        "character": "۳",
+        "path": "M145 21 C150 31 151 34 155 32 V23 H161 V31 Q165 34 164 25 L168 22 C171 36 167 40 159 37 Q156 40 151 39 Q154 49 154 61 H147 C147 46 143 35 139 27 Z",
+        "sourceBox": [
+          139.0,
+          21.0,
+          168.996,
+          61.0
+        ],
+        "sourceAdvance": 33,
+        "occurrence": "main numeral in source diagram",
+        "sourceId": "wiki-freezone-Qeshm",
+        "sourceFile": "modern-reference/wiki-freezone-Qeshm.png",
+        "provenance": "observed",
+        "evidenceKind": "diagram-derived",
+        "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qeshm_plate.png",
+        "license": "CC BY-SA 3.0",
+        "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+        "advanceProvenance": "observed",
+        "advanceNote": "Measured adjacent numeral ink-origin separation in unchanged source pixels. No per-glyph scaling."
+      },
+      {
+        "character": "۴",
+        "path": "M181.44927536231884 21.0 183.18840579710147 25.63768115942029C172.17391304347828 27.956521739130434 172.17391304347828 32.01449275362319 181.44927536231884 34.91304347826087V38.971014492753625C175.07246376811594 44.188405797101446 171.0144927536232 48.2463768115942 172.17391304347828 52.30434782608695Q173.33333333333334 54.6231884057971 184.92753623188406 54.04347826086956V61.0H173.91304347826087C157.68115942028987 61.0 164.63768115942028 47.08695652173913 172.17391304347828 39.55072463768116C160.57971014492753 34.91304347826087 165.79710144927537 25.05797101449275 181.44927536231884 21.0Z",
+        "sourceAdvance": 27.301,
+        "provenance": "inferred",
+        "evidenceKind": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۵",
+            "۶"
+          ],
+          "designNotes": "Epsilon-style۴ drawn from temporary diagram, transferred uniformly into this national family; unseen in D/S main row."
+        },
+        "note": "Inferred source-style reconstruction. Epsilon-style۴ drawn from temporary diagram, transferred uniformly into this national family; unseen in D/S main row.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      },
+      {
+        "character": "۵",
+        "path": "M213 21 C226 30 234 42 233 51 Q233 61 220 61 Q205 61 205 51 C205 41 211 33 214 29 L210 27 Z M217 34 C211 43 209 49 211 53 Q213 56 220 56 Q228 56 227 50 C226 44 221 37 217 34 Z",
+        "sourceBox": [
+          205.0,
+          21.0,
+          233.084,
+          61.0
+        ],
+        "sourceAdvance": 34.484,
+        "occurrence": "main numeral in source diagram",
+        "sourceId": "wiki-freezone-Qeshm",
+        "sourceFile": "modern-reference/wiki-freezone-Qeshm.png",
+        "provenance": "observed",
+        "evidenceKind": "diagram-derived",
+        "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qeshm_plate.png",
+        "license": "CC BY-SA 3.0",
+        "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      },
+      {
+        "character": "۶",
+        "path": "M193 22 L191 27 Q183 24 179 31 C177 38 187 35 198 31 L201 37 Q185 43 177 61 H172 C175 52 180 46 184 41 Q169 43 173 33 C178 22 188 17 193 22 Z",
+        "sourceBox": [
+          172.0,
+          20.057,
+          201.0,
+          61.0
+        ],
+        "sourceAdvance": 33,
+        "occurrence": "main numeral in source diagram",
+        "sourceId": "wiki-freezone-Qeshm",
+        "sourceFile": "modern-reference/wiki-freezone-Qeshm.png",
+        "provenance": "observed",
+        "evidenceKind": "diagram-derived",
+        "note": "Manually authored smooth source-guided contour; observed illustration, not photographic evidence or official die.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Qeshm_plate.png",
+        "license": "CC BY-SA 3.0",
+        "rights": "Source-guided diagram adaptation; no claim of official die certification. Retain attribution and share-alike under CC BY-SA 3.0.",
+        "advanceProvenance": "observed",
+        "advanceNote": "Measured adjacent numeral ink-origin separation in unchanged source pixels. No per-glyph scaling."
+      },
+      {
+        "character": "۷",
+        "path": "M5.2 21.0C13.200000000000001 27.8 16.8 39.8 18.0 45.400000000000006C19.6 35.4 23.200000000000003 25.4 29.6 21.0L33.2 27.8C24.400000000000002 38.2 22.400000000000002 48.2 22.400000000000002 61.0H14.4C14.4 47.400000000000006 10.8 35.8 1.6 28.2L5.2 21.0Z",
+        "sourceAdvance": 38.0,
+        "provenance": "inferred",
+        "evidenceKind": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۵",
+            "۶"
+          ],
+          "designNotes": "Motorcycle diagram supplies numeral structure; national stroke mass reconstructed. Not directly observed in this national main role."
+        },
+        "note": "Inferred source-style reconstruction. Motorcycle diagram supplies numeral structure; national stroke mass reconstructed. Not directly observed in this national main role.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      },
+      {
+        "character": "۸",
+        "path": "M13.600000000000001 21.0H21.6C21.6 38.6 26.0 48.6 33.6 54.6L30.0 61.0C22.8 56.2 19.200000000000003 45.400000000000006 17.6 39.400000000000006C16.0 47.400000000000006 11.600000000000001 56.2 5.6000000000000005 61.0L2.0 54.2C10.0 45.400000000000006 13.600000000000001 35.4 13.600000000000001 21.0Z",
+        "sourceAdvance": 38.0,
+        "provenance": "inferred",
+        "evidenceKind": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۵",
+            "۶"
+          ],
+          "designNotes": "Motorcycle diagram supplies numeral structure; national stroke mass reconstructed. Not directly observed in this national main role."
+        },
+        "note": "Inferred source-style reconstruction. Motorcycle diagram supplies numeral structure; national stroke mass reconstructed. Not directly observed in this national main role.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      },
+      {
+        "character": "۹",
+        "path": "M16.8 21.0C24.8 21.0 25.6 27.0 25.6 36.2C25.6 48.6 27.6 53.800000000000004 31.200000000000003 57.0L26.8 61.800000000000004C21.6 57.4 18.8 49.0 18.8 42.2H13.200000000000001C4.0 42.2 4.4 34.6 7.2 27.8C9.200000000000001 23.4 12.4 21.0 16.8 21.0ZM16.400000000000002 27.0C13.600000000000001 27.0 11.600000000000001 31.4 12.0 34.6Q12.0 36.6 18.400000000000002 36.2C18.400000000000002 30.200000000000003 18.0 27.0 16.400000000000002 27.0Z",
+        "sourceAdvance": 32.158,
+        "provenance": "inferred",
+        "evidenceKind": "inferred",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۵",
+            "۶"
+          ],
+          "designNotes": "Motorcycle diagram supplies numeral structure; national stroke mass reconstructed. Not directly observed in this national main role."
+        },
+        "note": "Inferred source-style reconstruction. Motorcycle diagram supplies numeral structure; national stroke mass reconstructed. Not directly observed in this national main role.",
+        "advanceProvenance": "inferred",
+        "advanceNote": "Designed native advance; sample does not expose a following numeral for direct measurement."
+      }
+    ],
+    "wordmarks": [],
+    "roles": {},
+    "sourceImageSize": [
+      250,
+      125
+    ],
+    "sourceRoleBoxes": {
+      "main": [
+        79,
+        20,
+        234,
+        62
+      ]
+    },
+    "sourceRoleBoxConvention": "x0,y0,x1,y1; original source plate pixels, excludes header and border; adjacent numeral group observed as a group",
+    "numericCompletion": {
+      "required": "۰۱۲۳۴۵۶۷۸۹",
+      "observed": "۱۲۳۵۶",
+      "inferred": "۰۴۷۸۹",
+      "unicodePolicy": "Persian U+06F0–U+06F9; no Arabic-indic substitutions"
+    }
+  }
+]

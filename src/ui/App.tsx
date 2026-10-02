@@ -15,20 +15,22 @@ import { RegionPicker } from './RegionPicker';
 import { useTheme } from './useTheme';
 
 const ReferenceLibrary = lazy(() => import('./ReferenceLibrary').then((module) => ({ default: module.ReferenceLibrary })));
-const IraqWorkspace = lazy(() => import('./IraqWorkspace').then((module) => ({ default: module.IraqWorkspace })));
 const DEFAULT_REGION = 'us-ca';
-type View = 'single' | 'gallery' | 'batch' | 'library' | 'iraq-customizer' | 'iraq-timeline';
-const VIEWS: View[] = ['single', 'gallery', 'batch', 'library', 'iraq-customizer', 'iraq-timeline'];
-const VIEW_LABELS: Record<View, string> = { single: 'Single', gallery: 'Gallery', batch: 'Batch', library: 'Library', 'iraq-customizer': 'Iraq editor', 'iraq-timeline': 'Iraq history' };
-function readHash(): { region: string; format?: string; view: View } {
+type View = 'single' | 'gallery' | 'batch' | 'library';
+const VIEWS: View[] = ['single', 'gallery', 'batch', 'library'];
+const VIEW_LABELS: Record<View, string> = { single: 'Single', gallery: 'Gallery', batch: 'Batch', library: 'Library' };
+export function readAppRoute(hashInput: string): { region: string; format?: string; view: View } {
   let hash = '';
-  try { hash = decodeURIComponent(location.hash.replace(/^#\/?/, '')); } catch { /* malformed shared URL */ }
+  try { hash = decodeURIComponent(hashInput.replace(/^#\/?/, '')); } catch { /* malformed shared URL */ }
   const [region, format] = hash.split('/');
-  if (region === 'iraq-customizer' || region === 'iraq-timeline') return { region: 'iraq', view: region };
+  // The Iraq and Iran editor/history pages became each region's editor and gallery; keep their old links working.
+  if (region === 'iraq-customizer' || region === 'iran-customizer') return { region: region.slice(0, 4), format, view: 'single' };
+  if (region === 'iraq-timeline' || region === 'iran-timeline') return { region: region.slice(0, 4), view: 'gallery' };
   if (region === 'library') return { region: DEFAULT_REGION, view: 'library' };
   if (region === 'gallery') return { region: getRegion(format) ? format : DEFAULT_REGION, view: 'gallery' };
   return getRegion(region) ? { region, format, view: 'single' } : { region: DEFAULT_REGION, view: 'single' };
 }
+const readHash = () => readAppRoute(location.hash);
 function useFontsVersion(): number {
   const [version, setVersion] = useState(0);
   useEffect(() => {
@@ -79,7 +81,6 @@ export function App() {
     if (next) select(region.id, next.id);
   }, [timeline, format.id, region.id, select]);
   useEffect(() => {
-    if (view === 'iraq-customizer' || view === 'iraq-timeline') { if (!location.hash.startsWith(`#/${view}`)) history.replaceState(null, '', `#/${view}`); return; }
     // The library owns its sub-route (#/library/coverage etc.).
     if (view === 'library') { if (!location.hash.startsWith('#/library')) history.replaceState(null, '', '#/library'); return; }
     history.replaceState(null, '', view === 'gallery' ? `#/gallery/${region.id}` : `#/${region.id}/${format.id}`);
@@ -87,7 +88,7 @@ export function App() {
   useEffect(() => {
     const onHash = () => {
       const next = readHash();
-      if (next.view !== 'library' && next.view !== 'iraq-customizer' && next.view !== 'iraq-timeline') select(next.region, next.format);
+      if (next.view !== 'library') select(next.region, next.format);
       setView(next.view);
     };
     window.addEventListener('hashchange', onHash);
@@ -139,23 +140,21 @@ export function App() {
     <header className="topbar">
       <a className="brand" href="#/" onClick={(e) => e.preventDefault()} aria-label="PlateForge"><Logo /><span>PlateForge</span></a>
       <button className="region-trigger" onClick={() => setPickerOpen(true)} aria-haspopup="dialog">
-        <span className="flag" aria-hidden="true">{(view === 'iraq-customizer' || view === 'iraq-timeline') ? '🇮🇶' : region.flag}</span>
-        <span className="region-trigger-text"><span className="region-trigger-name">{(view === 'iraq-customizer' || view === 'iraq-timeline') ? 'Iraq' : region.name}</span><span className="region-trigger-group">{(view === 'iraq-customizer' || view === 'iraq-timeline') ? 'Templates & history' : country === region.name ? region.group : country}</span></span>
+        <span className="flag" aria-hidden="true">{region.flag}</span>
+        <span className="region-trigger-text"><span className="region-trigger-name">{region.name}</span><span className="region-trigger-group">{country === region.name ? region.group : country}</span></span>
         <ChevronDown /><kbd className="hide-mobile">{isMac ? '⌘' : 'Ctrl'} K</kbd>
       </button>
       <div className="topbar-end">
-        <div className="tabs hide-mobile" role="tablist" aria-label="Mode">{VIEWS.map((v) => <button key={v} role="tab" aria-selected={view === v} onClick={() => { if (v === 'iraq-customizer' || v === 'iraq-timeline') location.hash = `#/${v}`; else setView(v); }}>{VIEW_LABELS[v]}</button>)}</div>
+        <div className="tabs hide-mobile" role="tablist" aria-label="Mode">{VIEWS.map((v) => <button key={v} role="tab" aria-selected={view === v} onClick={() => setView(v)}>{VIEW_LABELS[v]}</button>)}</div>
         <button className="icon-btn" onClick={cycle} aria-label={`Theme: ${theme}`} title={`Theme: ${theme}`}><ThemeIcon /></button>
       </div>
     </header>
-    <div className="mobile-tabs tabs" role="tablist" aria-label="Mode">{VIEWS.map((v) => <button key={v} role="tab" aria-selected={view === v} onClick={() => { if (v === 'iraq-customizer' || v === 'iraq-timeline') location.hash = `#/${v}`; else setView(v); }}>{v === 'single' ? 'Plate' : VIEW_LABELS[v]}</button>)}</div>
-    <main className="workspace" key={(view === 'iraq-customizer' || view === 'iraq-timeline') ? 'iraq-editor' : fontsVersion}>
-      {(view === 'iraq-customizer' || view === 'iraq-timeline') ? <Suspense fallback={<p role="status">Loading Iraqi plates…</p>}><IraqWorkspace /></Suspense>
-        : view === 'library' ? <Suspense fallback={<p role="status">Loading reference library…</p>}><ReferenceLibrary regions={regions} onOpenFormat={openEditor} /></Suspense>
+    <div className="mobile-tabs tabs" role="tablist" aria-label="Mode">{VIEWS.map((v) => <button key={v} role="tab" aria-selected={view === v} onClick={() => setView(v)}>{v === 'single' ? 'Plate' : VIEW_LABELS[v]}</button>)}</div>
+    <main className="workspace" key={fontsVersion}>
+      {view === 'library' ? <Suspense fallback={<p role="status">Loading reference library…</p>}><ReferenceLibrary regions={regions} onOpenFormat={openEditor} /></Suspense>
         : view === 'gallery' ? <GalleryView regions={regions} region={region} format={format} onOpen={openEditor} onSelectRegion={(id) => select(id)} />
         : view === 'single' ? <>
           <section className="stage-col">
-            {region.id === 'iraq' && <nav aria-label="Source-backed Iraq tools" className="chips"><a className="chip" href="#/iraq-timeline">Iraq history &amp; sources</a><a className="chip" href={`#/iraq-customizer/${format.id}`}>Customize this Iraqi design</a></nav>}
             {families.length > 1 && <nav className="family-tabs" aria-label="Plate family">{families.map((f) => <button key={f.id} className="chip" aria-pressed={f.id === family} title={f.summary}
               onClick={() => { if (f.id !== family) { const t = buildTimeline(region, f.id); select(region.id, (t?.order.at(-1)?.format ?? f.formats[0]).id); } }}>{f.label}<span className="chip-count">{f.formats.length}</span></button>)}</nav>}
             {timeline ? <FormatTimeline region={region} timeline={timeline} format={format} onSelect={(id) => select(region.id, id)} onOpenGallery={() => { setView('gallery'); window.scrollTo({ top: 0 }); }} />

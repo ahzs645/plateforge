@@ -1,0 +1,2195 @@
+[
+  {
+    "id": "source-previous-diplomatic-numerals",
+    "label": "Earlier diplomatic numeric diagram · complete inferred repertoire",
+    "sourceId": "source-previous-diplomatic-numerals/manual-smooth-diagram",
+    "sourceFile": "role-reference/wiki-diplomatic-previous.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelak_siasi.png",
+    "script": "persian",
+    "license": "CC BY-SA 3.0",
+    "credit": "Haghal Jagul; original illustrative diagram; smooth outline adaptation. https://creativecommons.org/licenses/by-sa/3.0/",
+    "rights": "Haghal Jagul; original illustrative diagram; smooth outline adaptation. https://creativecommons.org/licenses/by-sa/3.0/ Smooth outline adaptation is shared under CC BY-SA 3.0. Diagram evidence is not manufacturing certification.",
+    "capHeight": 50,
+    "baseline": 65,
+    "observedSerial": "۳۴۵",
+    "note": "Source-specific numeric study of the inspected illustrative diagram. Observed contours and independently inferred additions are marked per glyph. This is not an authenticated plate-manufacturing typeface.",
+    "glyphs": [
+      {
+        "character": "۳",
+        "path": "M68 15 C72 24 78 25 82 20 L84 15 C87 24 94 26 97 15 L99 15 Q100 33 92 33 Q88 33 85 30 Q82 34 78 34 C80 45 80 57 76 65 L75 65 C74 48 70 35 64 26 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          64.0,
+          15.0,
+          99.11111111111111,
+          65.0
+        ],
+        "occurrence": "main-row",
+        "fillRule": "evenodd",
+        "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+        "sourceAdvance": 51
+      },
+      {
+        "character": "۴",
+        "path": "M120 16 L116 22 L115 27 C121 39 124 50 124 65 L126 65 C130 55 129 42 129 36 C138 38 143 34 144 25 L143 24 C139 26 135 29 131 27 C132 23 136 19 143 21 L141 17 C135 14 129 18 127 24 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          115.0,
+          15.979810846020783,
+          144.0,
+          65.0
+        ],
+        "occurrence": "main-row",
+        "fillRule": "evenodd",
+        "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+        "sourceAdvance": 42
+      },
+      {
+        "character": "۵",
+        "path": "M169 15 C183 24 188 39 188 50 C188 65 180 67 173 63 Q166 68 160 63 C153 57 159 38 166 25 L164 25 Z M169 29 C165 38 161 48 163 52 Q166 58 173 52 Q179 59 182 52 C184 44 176 33 169 29 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          156.87970446014035,
+          15.0,
+          188.0,
+          65.5
+        ],
+        "occurrence": "main-row",
+        "fillRule": "evenodd",
+        "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+        "sourceAdvance": 46
+      },
+      {
+        "character": "۰",
+        "path": "M5.635 35.285Q9.43 38.8684 11.5 40Q8.05 43.1119 5.52 44.715Q1.725 41.4145 0 40Q1.84 37.2653 5.635 35.285Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-previous-diplomatic-numerals/manual-smooth-diagram/main/inferred-0",
+        "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+        },
+        "sourceAdvance": 26.5
+      },
+      {
+        "character": "۱",
+        "path": "M7.2 15C13.65 21.5 15 35.5 11.85 47.5C11.4 57 9 62.5 6 65L4.95 64C7.95 50.5 5.7 38 0 24.5Q1.5 19.5 7.2 15Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-previous-diplomatic-numerals/manual-smooth-diagram/main/inferred-1",
+        "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+        },
+        "sourceAdvance": 28.4789
+      },
+      {
+        "character": "۲",
+        "path": "M6 15C12.6 21.5 22.2 23.5 27.3 18L30 15C30.6 24.5 24 31 17.1 32C14.825 38 19.89 53.5 12.6 63L11.1 65L9.9 63.5C11.34 52 6.5 36 0.9 28L0 23.5L6 15Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-previous-diplomatic-numerals/manual-smooth-diagram/main/inferred-2",
+        "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+        },
+        "sourceAdvance": 45.038
+      },
+      {
+        "character": "۶",
+        "path": "M23.085 15 25.08 20C16.815 20 6.84 26.5 7.98 32.5C13.395 38 23.085 32.5 28.5 29L27.36 37.5C15.39 46.5 7.98 56 4.275 65H2.565C2.565 57.5 9.69 47 15.39 41C4.845 42 0.57 37 4.275 30C9.12 21.5 17.1 16.5 23.085 15Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-previous-diplomatic-numerals/manual-smooth-diagram/main/inferred-6",
+        "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+        },
+        "sourceAdvance": 40.935
+      },
+      {
+        "character": "۷",
+        "path": "M3 15C7.8 22 8.7 30.5 13.2 38Q15 42 16.5 37C21 28 22.5 19 27 15L30 22C27 30 19.8 37.5 18 48L16.2 63L14.7 65H13.5C13.2 53.5 10.8 44.5 6.6 35L0.6 28Q-0.6 21.5 3 15Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-previous-diplomatic-numerals/manual-smooth-diagram/main/inferred-7",
+        "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+        },
+        "sourceAdvance": 44.7
+      },
+      {
+        "character": "۸",
+        "path": "M15.045 15 16.52 15.5C15.635 27 21.535 39 27.73 50L29.5 57.5L27.14 64.5C20.99 57 18.68 46 15.34 38.1H14.16C9.935 47.5 7.625 58 2.655 65L0 57.5C0.59 52 8.26 38 10.915 28.5L15.045 15Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-previous-diplomatic-numerals/manual-smooth-diagram/main/inferred-8",
+        "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+        },
+        "sourceAdvance": 44.5
+      },
+      {
+        "character": "۹",
+        "path": "M15.81 15C23.97 14 24.48 22.5 20.655 33C16.065 43.5 15.555 50 20.655 57.5L16.83 63L13.26 65.5C8.415 61 7.65 54.5 9.435 48Q12.24 39.5 14.28 33.5C6.12 36 0 31.5 0.765 27C1.02 21 7.65 15 15.81 15ZM13.005 21C7.905 21.5 5.61 26.5 7.65 28Q12.24 30.5 17.085 27.5Q20.4 21 13.005 21Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-previous-diplomatic-numerals/manual-smooth-diagram/main/inferred-9",
+        "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+        },
+        "sourceAdvance": 37.2556
+      }
+    ],
+    "sourceRoleBoxes": {
+      "main": [
+        64,
+        15,
+        189,
+        66
+      ],
+      "prefix": [
+        37,
+        84,
+        71,
+        110
+      ]
+    },
+    "sourceSha256": "7b7c436dd7c7afe3fe922b97cdcbfcce2b342c23bba7ebdc5259fe2987ac6896",
+    "numericCompletion": {
+      "coverage": "۰۱۲۳۴۵۶۷۸۹",
+      "observed": "۳۴۵",
+      "inferred": "۰۱۲۶۷۸۹",
+      "sourceFile": "role-reference/wiki-diplomatic-previous.png",
+      "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+      "confidence": "provisional",
+      "advanceMethod": "Observed next-origin distances where available; inferred widths plus role-specific measured inter-ink gap of 15 source pixels. No individual fitting."
+    },
+    "roles": {
+      "prefix": {
+        "label": "prefix",
+        "capHeight": 25,
+        "baseline": 109,
+        "glyphs": [
+          {
+            "character": "۱",
+            "path": "M39 84 C43 87 45 101 44 108 L42 109 C41 98 40 94 37 90 Z",
+            "provenance": "observed",
+            "sourceBox": [
+              37.0,
+              84.0,
+              44.254833995939045,
+              109.0
+            ],
+            "occurrence": "prefix",
+            "fillRule": "evenodd",
+            "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+            "sourceAdvance": 19
+          },
+          {
+            "character": "۲",
+            "path": "M59 85 Q64 90 68 87 L70 84 Q72 86 69 91 Q67 94 63 94 C64 101 64 105 62 109 L61 109 C61 102 59 95 56 90 Z",
+            "provenance": "observed",
+            "sourceBox": [
+              56.0,
+              84.0,
+              70.8,
+              109.0
+            ],
+            "occurrence": "prefix",
+            "fillRule": "evenodd",
+            "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+            "sourceAdvance": 25
+          },
+          {
+            "character": "۰",
+            "path": "M2.8175 94.1425Q4.715 95.9342 5.75 96.5Q4.025 98.0559 2.76 98.8575Q0.8625 97.2073 0 96.5Q0.92 95.1326 2.8175 94.1425Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-diplomatic-numerals/manual-smooth-diagram/prefix/inferred-0",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 15.75
+          },
+          {
+            "character": "۳",
+            "path": "M2.1655 84C4.5476 87.25 8.0123 88.25 9.853 85.5Q10.7192 84.75 10.8275 84.25Q14.91 87.25 17.2175 84.25L17.75 84C17.75 87.75 16.1525 89.75 14.3775 89.75Q12.425 89.75 10.5027 89.25C11.0441 88.75 8.662 92 6.1717 92.5C5.368 95.5 7.1912 103.25 4.5476 108L4.0062 109L3.5731 108.25C4.0845 102.5 2.3321 94.5 0.3248 90.5L0 88.25L2.1655 84Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-diplomatic-numerals/manual-smooth-diagram/prefix/inferred-3",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 27.75
+          },
+          {
+            "character": "۴",
+            "path": "M11.0625 84 11.21 86.25C8.4075 88 4.5725 89.75 4.72 92C7.965 93.25 11.3575 94.5 8.9975 97.25C6.3425 101 2.95 103.75 4.5725 105.75C6.9325 107.5 11.3575 105 14.75 104.5L13.4225 107.5C10.4725 109.75 3.245 110.5 1.18 107.5C-0.4425 105.25 2.95 100.25 6.3425 97C2.065 96.25 0.1475 95 1.77 92.25C4.13 88 7.5225 85.75 11.0625 84Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-diplomatic-numerals/manual-smooth-diagram/prefix/inferred-4",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 23.988
+          },
+          {
+            "character": "۵",
+            "path": "M7.625 84C10.2175 88 13.42 93.5 14.7925 100.5C16.47 106.75 14.03 109.75 10.8275 109.5Q8.9975 109.5 7.625 107.5Q4.1175 111.25 1.3725 108.5C-1.6775 105.25 1.3725 97.75 3.8125 92.5Q5.9475 87.75 7.625 84ZM7.625 88.25C5.3375 93.5 2.625 100 2.625 104.25Q2.625 107.5 5.6425 106Q7.1675 104.25 7.7775 104.25Q8.6925 106.5 11.4375 106.5C12.625 107 14.0687 103.75 12.625 100.5C11.7425 95.75 9.455 91 7.625 88.25Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-diplomatic-numerals/manual-smooth-diagram/prefix/inferred-5",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 25.2444
+          },
+          {
+            "character": "۶",
+            "path": "M11.5425 84 12.54 86.5C8.4075 86.5 3.42 89.75 3.99 92.75C6.6975 95.5 11.5425 92.75 14.25 91L13.68 95.25C7.695 99.75 3.99 104.5 2.1375 109H1.2825C1.2825 105.25 4.845 100 7.695 97C2.4225 97.5 0.285 95 2.1375 91.5C4.56 87.25 8.55 84.75 11.5425 84Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-diplomatic-numerals/manual-smooth-diagram/prefix/inferred-6",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 22.9675
+          },
+          {
+            "character": "۷",
+            "path": "M1.5 84C3.9 87.5 4.35 91.75 6.6 95.5Q7.5 97.5 8.25 95C10.5 90.5 11.25 86 13.5 84L15 87.5C13.5 91.5 9.9 95.25 9 100.5L8.1 108L7.35 109H6.75C6.6 103.25 5.4 98.75 3.3 94L0.3 90.5Q-0.3 87.25 1.5 84Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-diplomatic-numerals/manual-smooth-diagram/prefix/inferred-7",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 24.85
+          },
+          {
+            "character": "۸",
+            "path": "M7.5225 84 8.26 84.25C7.8175 90 10.7675 96 13.865 101.5L14.75 105.25L13.57 108.75C10.495 105 9.34 99.5 7.67 95.55H7.08C4.9675 100.25 3.8125 105.5 1.3275 109L0 105.25C0.295 102.5 4.13 95.5 5.4575 90.75L7.5225 84Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-diplomatic-numerals/manual-smooth-diagram/prefix/inferred-8",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 24.75
+          },
+          {
+            "character": "۹",
+            "path": "M7.905 84C11.985 83.5 12.24 87.75 10.3275 93C8.0325 98.25 7.7775 101.5 10.3275 105.25L8.415 108L6.63 109.25C4.2075 107 3.825 103.75 4.7175 100.5Q6.12 96.25 7.14 93.25C3.06 94.5 0 92.25 0.3825 90C0.51 87 3.825 84 7.905 84ZM6.5025 87C3.9525 87.25 2.805 89.75 3.825 90.5Q6.12 91.75 8.5425 90.25Q10.2 87 6.5025 87Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-diplomatic-numerals/manual-smooth-diagram/prefix/inferred-9",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 21.1278
+          }
+        ],
+        "numericCompletion": {
+          "coverage": "۰۱۲۳۴۵۶۷۸۹",
+          "observed": "۱۲",
+          "inferred": "۰۳۴۵۶۷۸۹",
+          "sourceFile": "role-reference/wiki-diplomatic-previous.png",
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+          "confidence": "low",
+          "advanceMethod": "Observed next-origin distances where available; inferred widths plus role-specific measured inter-ink gap of 10 source pixels. No individual fitting."
+        }
+      }
+    }
+  },
+  {
+    "id": "source-previous-service-numerals",
+    "label": "Earlier service numeric diagram · complete inferred repertoire",
+    "sourceId": "source-previous-service-numerals/manual-smooth-diagram",
+    "sourceFile": "role-reference/wiki-service-previous.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelak_servis.png",
+    "script": "persian",
+    "license": "CC BY-SA 3.0",
+    "credit": "Haghal Jagul; original illustrative diagram; smooth outline adaptation. https://creativecommons.org/licenses/by-sa/3.0/",
+    "rights": "Haghal Jagul; original illustrative diagram; smooth outline adaptation. https://creativecommons.org/licenses/by-sa/3.0/ Smooth outline adaptation is shared under CC BY-SA 3.0. Diagram evidence is not manufacturing certification.",
+    "capHeight": 50,
+    "baseline": 65,
+    "observedSerial": "۳۴۵",
+    "note": "Source-specific numeric study of the inspected illustrative diagram. Observed contours and independently inferred additions are marked per glyph. This is not an authenticated plate-manufacturing typeface.",
+    "glyphs": [
+      {
+        "character": "۳",
+        "path": "M68 15 C72 24 78 25 82 20 L84 15 C87 24 94 26 97 15 L99 15 Q100 33 92 33 Q88 33 85 30 Q82 34 78 34 C80 45 80 57 76 65 L75 65 C74 48 70 35 64 26 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          64.0,
+          15.0,
+          99.11111111111111,
+          65.0
+        ],
+        "occurrence": "main-row",
+        "fillRule": "evenodd",
+        "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+        "sourceAdvance": 51
+      },
+      {
+        "character": "۴",
+        "path": "M120 16 L116 22 L115 27 C121 39 124 50 124 65 L126 65 C130 55 129 42 129 36 C138 38 143 34 144 25 L143 24 C139 26 135 29 131 27 C132 23 136 19 143 21 L141 17 C135 14 129 18 127 24 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          115.0,
+          15.979810846020783,
+          144.0,
+          65.0
+        ],
+        "occurrence": "main-row",
+        "fillRule": "evenodd",
+        "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+        "sourceAdvance": 42
+      },
+      {
+        "character": "۵",
+        "path": "M169 15 C183 24 188 39 188 50 C188 65 180 67 173 63 Q166 68 160 63 C153 57 159 38 166 25 L164 25 Z M169 29 C165 38 161 48 163 52 Q166 58 173 52 Q179 59 182 52 C184 44 176 33 169 29 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          156.87970446014035,
+          15.0,
+          188.0,
+          65.5
+        ],
+        "occurrence": "main-row",
+        "fillRule": "evenodd",
+        "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+        "sourceAdvance": 46
+      },
+      {
+        "character": "۰",
+        "path": "M5.635 35.285Q9.43 38.8684 11.5 40Q8.05 43.1119 5.52 44.715Q1.725 41.4145 0 40Q1.84 37.2653 5.635 35.285Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-previous-service-numerals/manual-smooth-diagram/main/inferred-0",
+        "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+        },
+        "sourceAdvance": 26.5
+      },
+      {
+        "character": "۱",
+        "path": "M7.2 15C13.65 21.5 15 35.5 11.85 47.5C11.4 57 9 62.5 6 65L4.95 64C7.95 50.5 5.7 38 0 24.5Q1.5 19.5 7.2 15Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-previous-service-numerals/manual-smooth-diagram/main/inferred-1",
+        "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+        },
+        "sourceAdvance": 28.4789
+      },
+      {
+        "character": "۲",
+        "path": "M6 15C12.6 21.5 22.2 23.5 27.3 18L30 15C30.6 24.5 24 31 17.1 32C14.825 38 19.89 53.5 12.6 63L11.1 65L9.9 63.5C11.34 52 6.5 36 0.9 28L0 23.5L6 15Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-previous-service-numerals/manual-smooth-diagram/main/inferred-2",
+        "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+        },
+        "sourceAdvance": 45.038
+      },
+      {
+        "character": "۶",
+        "path": "M23.085 15 25.08 20C16.815 20 6.84 26.5 7.98 32.5C13.395 38 23.085 32.5 28.5 29L27.36 37.5C15.39 46.5 7.98 56 4.275 65H2.565C2.565 57.5 9.69 47 15.39 41C4.845 42 0.57 37 4.275 30C9.12 21.5 17.1 16.5 23.085 15Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-previous-service-numerals/manual-smooth-diagram/main/inferred-6",
+        "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+        },
+        "sourceAdvance": 40.935
+      },
+      {
+        "character": "۷",
+        "path": "M3 15C7.8 22 8.7 30.5 13.2 38Q15 42 16.5 37C21 28 22.5 19 27 15L30 22C27 30 19.8 37.5 18 48L16.2 63L14.7 65H13.5C13.2 53.5 10.8 44.5 6.6 35L0.6 28Q-0.6 21.5 3 15Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-previous-service-numerals/manual-smooth-diagram/main/inferred-7",
+        "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+        },
+        "sourceAdvance": 44.7
+      },
+      {
+        "character": "۸",
+        "path": "M15.045 15 16.52 15.5C15.635 27 21.535 39 27.73 50L29.5 57.5L27.14 64.5C20.99 57 18.68 46 15.34 38.1H14.16C9.935 47.5 7.625 58 2.655 65L0 57.5C0.59 52 8.26 38 10.915 28.5L15.045 15Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-previous-service-numerals/manual-smooth-diagram/main/inferred-8",
+        "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+        },
+        "sourceAdvance": 44.5
+      },
+      {
+        "character": "۹",
+        "path": "M15.81 15C23.97 14 24.48 22.5 20.655 33C16.065 43.5 15.555 50 20.655 57.5L16.83 63L13.26 65.5C8.415 61 7.65 54.5 9.435 48Q12.24 39.5 14.28 33.5C6.12 36 0 31.5 0.765 27C1.02 21 7.65 15 15.81 15ZM13.005 21C7.905 21.5 5.61 26.5 7.65 28Q12.24 30.5 17.085 27.5Q20.4 21 13.005 21Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-previous-service-numerals/manual-smooth-diagram/main/inferred-9",
+        "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+        },
+        "sourceAdvance": 37.2556
+      }
+    ],
+    "sourceRoleBoxes": {
+      "main": [
+        64,
+        15,
+        189,
+        66
+      ],
+      "prefix": [
+        37,
+        84,
+        71,
+        110
+      ]
+    },
+    "sourceSha256": "7a3366031e662af4c10effe822e37c412a0dae938cf7e554fcdbf48202fca6a2",
+    "numericCompletion": {
+      "coverage": "۰۱۲۳۴۵۶۷۸۹",
+      "observed": "۳۴۵",
+      "inferred": "۰۱۲۶۷۸۹",
+      "sourceFile": "role-reference/wiki-service-previous.png",
+      "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+      "confidence": "provisional",
+      "advanceMethod": "Observed next-origin distances where available; inferred widths plus role-specific measured inter-ink gap of 15 source pixels. No individual fitting."
+    },
+    "roles": {
+      "prefix": {
+        "label": "prefix",
+        "capHeight": 25,
+        "baseline": 109,
+        "glyphs": [
+          {
+            "character": "۱",
+            "path": "M39 84 C43 87 45 101 44 108 L42 109 C41 98 40 94 37 90 Z",
+            "provenance": "observed",
+            "sourceBox": [
+              37.0,
+              84.0,
+              44.254833995939045,
+              109.0
+            ],
+            "occurrence": "prefix",
+            "fillRule": "evenodd",
+            "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+            "sourceAdvance": 19
+          },
+          {
+            "character": "۲",
+            "path": "M59 85 Q64 90 68 87 L70 84 Q72 86 69 91 Q67 94 63 94 C64 101 64 105 62 109 L61 109 C61 102 59 95 56 90 Z",
+            "provenance": "observed",
+            "sourceBox": [
+              56.0,
+              84.0,
+              70.8,
+              109.0
+            ],
+            "occurrence": "prefix",
+            "fillRule": "evenodd",
+            "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+            "sourceAdvance": 25
+          },
+          {
+            "character": "۰",
+            "path": "M2.8175 94.1425Q4.715 95.9342 5.75 96.5Q4.025 98.0559 2.76 98.8575Q0.8625 97.2073 0 96.5Q0.92 95.1326 2.8175 94.1425Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-service-numerals/manual-smooth-diagram/prefix/inferred-0",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 15.75
+          },
+          {
+            "character": "۳",
+            "path": "M2.1655 84C4.5476 87.25 8.0123 88.25 9.853 85.5Q10.7192 84.75 10.8275 84.25Q14.91 87.25 17.2175 84.25L17.75 84C17.75 87.75 16.1525 89.75 14.3775 89.75Q12.425 89.75 10.5027 89.25C11.0441 88.75 8.662 92 6.1717 92.5C5.368 95.5 7.1912 103.25 4.5476 108L4.0062 109L3.5731 108.25C4.0845 102.5 2.3321 94.5 0.3248 90.5L0 88.25L2.1655 84Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-service-numerals/manual-smooth-diagram/prefix/inferred-3",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 27.75
+          },
+          {
+            "character": "۴",
+            "path": "M11.0625 84 11.21 86.25C8.4075 88 4.5725 89.75 4.72 92C7.965 93.25 11.3575 94.5 8.9975 97.25C6.3425 101 2.95 103.75 4.5725 105.75C6.9325 107.5 11.3575 105 14.75 104.5L13.4225 107.5C10.4725 109.75 3.245 110.5 1.18 107.5C-0.4425 105.25 2.95 100.25 6.3425 97C2.065 96.25 0.1475 95 1.77 92.25C4.13 88 7.5225 85.75 11.0625 84Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-service-numerals/manual-smooth-diagram/prefix/inferred-4",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 23.988
+          },
+          {
+            "character": "۵",
+            "path": "M7.625 84C10.2175 88 13.42 93.5 14.7925 100.5C16.47 106.75 14.03 109.75 10.8275 109.5Q8.9975 109.5 7.625 107.5Q4.1175 111.25 1.3725 108.5C-1.6775 105.25 1.3725 97.75 3.8125 92.5Q5.9475 87.75 7.625 84ZM7.625 88.25C5.3375 93.5 2.625 100 2.625 104.25Q2.625 107.5 5.6425 106Q7.1675 104.25 7.7775 104.25Q8.6925 106.5 11.4375 106.5C12.625 107 14.0687 103.75 12.625 100.5C11.7425 95.75 9.455 91 7.625 88.25Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-service-numerals/manual-smooth-diagram/prefix/inferred-5",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 25.2444
+          },
+          {
+            "character": "۶",
+            "path": "M11.5425 84 12.54 86.5C8.4075 86.5 3.42 89.75 3.99 92.75C6.6975 95.5 11.5425 92.75 14.25 91L13.68 95.25C7.695 99.75 3.99 104.5 2.1375 109H1.2825C1.2825 105.25 4.845 100 7.695 97C2.4225 97.5 0.285 95 2.1375 91.5C4.56 87.25 8.55 84.75 11.5425 84Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-service-numerals/manual-smooth-diagram/prefix/inferred-6",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 22.9675
+          },
+          {
+            "character": "۷",
+            "path": "M1.5 84C3.9 87.5 4.35 91.75 6.6 95.5Q7.5 97.5 8.25 95C10.5 90.5 11.25 86 13.5 84L15 87.5C13.5 91.5 9.9 95.25 9 100.5L8.1 108L7.35 109H6.75C6.6 103.25 5.4 98.75 3.3 94L0.3 90.5Q-0.3 87.25 1.5 84Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-service-numerals/manual-smooth-diagram/prefix/inferred-7",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 24.85
+          },
+          {
+            "character": "۸",
+            "path": "M7.5225 84 8.26 84.25C7.8175 90 10.7675 96 13.865 101.5L14.75 105.25L13.57 108.75C10.495 105 9.34 99.5 7.67 95.55H7.08C4.9675 100.25 3.8125 105.5 1.3275 109L0 105.25C0.295 102.5 4.13 95.5 5.4575 90.75L7.5225 84Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-service-numerals/manual-smooth-diagram/prefix/inferred-8",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 24.75
+          },
+          {
+            "character": "۹",
+            "path": "M7.905 84C11.985 83.5 12.24 87.75 10.3275 93C8.0325 98.25 7.7775 101.5 10.3275 105.25L8.415 108L6.63 109.25C4.2075 107 3.825 103.75 4.7175 100.5Q6.12 96.25 7.14 93.25C3.06 94.5 0 92.25 0.3825 90C0.51 87 3.825 84 7.905 84ZM6.5025 87C3.9525 87.25 2.805 89.75 3.825 90.5Q6.12 91.75 8.5425 90.25Q10.2 87 6.5025 87Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-service-numerals/manual-smooth-diagram/prefix/inferred-9",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 21.1278
+          }
+        ],
+        "numericCompletion": {
+          "coverage": "۰۱۲۳۴۵۶۷۸۹",
+          "observed": "۱۲",
+          "inferred": "۰۳۴۵۶۷۸۹",
+          "sourceFile": "role-reference/wiki-service-previous.png",
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+          "confidence": "low",
+          "advanceMethod": "Observed next-origin distances where available; inferred widths plus role-specific measured inter-ink gap of 10 source pixels. No individual fitting."
+        }
+      }
+    }
+  },
+  {
+    "id": "source-previous-temporary-numerals",
+    "label": "Earlier temporary numeric diagram · independent small boxes",
+    "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram",
+    "sourceFile": "role-reference/wiki-temporary-previous.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelak_gozar_movaqat.png",
+    "script": "persian",
+    "license": "CC BY-SA 3.0",
+    "credit": "Haghal Jagul; original illustrative diagram; smooth outline adaptation. https://creativecommons.org/licenses/by-sa/3.0/",
+    "rights": "Haghal Jagul; original illustrative diagram; smooth outline adaptation. https://creativecommons.org/licenses/by-sa/3.0/ Smooth outline adaptation is shared under CC BY-SA 3.0. Diagram evidence is not manufacturing certification.",
+    "capHeight": 50,
+    "baseline": 105,
+    "observedSerial": "۱۲۳۴",
+    "note": "Source-specific numeric study of the inspected illustrative diagram. Observed contours and independently inferred additions are marked per glyph. This is not an authenticated plate-manufacturing typeface.",
+    "glyphs": [
+      {
+        "character": "۱",
+        "path": "M81 54 C87 61 90 76 91 99 L89 104 L86 104 C85 80 79 67 75 64 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          75.0,
+          54.0,
+          91.0,
+          104.0
+        ],
+        "occurrence": "main-row",
+        "fillRule": "evenodd",
+        "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+        "sourceAdvance": 41
+      },
+      {
+        "character": "۲",
+        "path": "M121 55 C127 63 135 66 140 60 L142 55 Q145 55 144 62 C142 73 137 78 131 75 C133 86 133 98 129 105 L127 105 C126 87 122 74 116 65 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          116.0,
+          55.0,
+          144.25,
+          105.0
+        ],
+        "occurrence": "main-row",
+        "fillRule": "evenodd",
+        "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+        "sourceAdvance": 39
+      },
+      {
+        "character": "۳",
+        "path": "M161 55 C165 63 172 65 177 57 L178 54 Q183 65 187 60 L189 54 Q192 57 189 65 C186 73 182 73 178 70 Q174 74 169 73 C172 87 170 101 167 105 L166 103 C166 84 161 73 155 65 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          155.0,
+          54.0,
+          190.5,
+          105.0
+        ],
+        "occurrence": "main-row",
+        "fillRule": "evenodd",
+        "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+        "sourceAdvance": 51
+      },
+      {
+        "character": "۴",
+        "path": "M212 55 L207 62 L206 67 C212 78 215 91 215 104 L217 104 C221 94 220 80 220 74 C229 75 235 70 236 64 L234 64 Q227 71 222 67 C222 62 228 59 234 61 L232 57 C226 53 220 59 219 63 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          206.0,
+          55.0,
+          236.0,
+          104.0
+        ],
+        "occurrence": "main-row",
+        "fillRule": "evenodd",
+        "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+        "sourceAdvance": 43
+      },
+      {
+        "character": "۰",
+        "path": "M5.635 75.285Q9.43 78.8684 11.5 80Q8.05 83.1119 5.52 84.715Q1.725 81.4145 0 80Q1.84 77.2653 5.635 75.285Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram/main/inferred-0",
+        "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۴"
+          ],
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+        },
+        "sourceAdvance": 23.5
+      },
+      {
+        "character": "۵",
+        "path": "M15.25 55C20.435 63 26.84 74 29.585 88C32.94 100.5 28.06 106.5 21.655 106Q17.995 106 15.25 102Q8.235 109.5 2.745 104C-3.355 97.5 2.745 82.5 7.625 72Q11.895 62.5 15.25 55ZM15.25 63.5C10.675 74 5.25 87 5.25 95.5Q5.25 102 11.285 99Q14.335 95.5 15.555 95.5Q17.385 100 22.875 100C25.25 101 28.1375 94.5 25.25 88C23.485 78.5 18.91 69 15.25 63.5Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram/main/inferred-5",
+        "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۴"
+          ],
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+        },
+        "sourceAdvance": 42.4887
+      },
+      {
+        "character": "۶",
+        "path": "M23.085 55 25.08 60C16.815 60 6.84 66.5 7.98 72.5C13.395 78 23.085 72.5 28.5 69L27.36 77.5C15.39 86.5 7.98 96 4.275 105H2.565C2.565 97.5 9.69 87 15.39 81C4.845 82 0.57 77 4.275 70C9.12 61.5 17.1 56.5 23.085 55Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram/main/inferred-6",
+        "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۴"
+          ],
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+        },
+        "sourceAdvance": 37.935
+      },
+      {
+        "character": "۷",
+        "path": "M3 55C7.8 62 8.7 70.5 13.2 78Q15 82 16.5 77C21 68 22.5 59 27 55L30 62C27 70 19.8 77.5 18 88L16.2 103L14.7 105H13.5C13.2 93.5 10.8 84.5 6.6 75L0.6 68Q-0.6 61.5 3 55Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram/main/inferred-7",
+        "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۴"
+          ],
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+        },
+        "sourceAdvance": 41.7
+      },
+      {
+        "character": "۸",
+        "path": "M15.045 55 16.52 55.5C15.635 67 21.535 79 27.73 90L29.5 97.5L27.14 104.5C20.99 97 18.68 86 15.34 78.1H14.16C9.935 87.5 7.625 98 2.655 105L0 97.5C0.59 92 8.26 78 10.915 68.5L15.045 55Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram/main/inferred-8",
+        "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۴"
+          ],
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+        },
+        "sourceAdvance": 41.5
+      },
+      {
+        "character": "۹",
+        "path": "M15.81 55C23.97 54 24.48 62.5 20.655 73C16.065 83.5 15.555 90 20.655 97.5L16.83 103L13.26 105.5C8.415 101 7.65 94.5 9.435 88Q12.24 79.5 14.28 73.5C6.12 76 0 71.5 0.765 67C1.02 61 7.65 55 15.81 55ZM13.005 61C7.905 61.5 5.61 66.5 7.65 68Q12.24 70.5 17.085 67.5Q20.4 61 13.005 61Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram/main/inferred-9",
+        "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۴"
+          ],
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+        },
+        "sourceAdvance": 34.2556
+      }
+    ],
+    "sourceRoleBoxes": {
+      "main": [
+        75,
+        54,
+        237,
+        105
+      ],
+      "category": [
+        26,
+        19,
+        43,
+        44
+      ],
+      "prefix": [
+        18,
+        77,
+        59,
+        103
+      ]
+    },
+    "sourceSha256": "47fd7f05af9578e8d2c4f0d81a3b78aa1b89c2e2568570d63bad622f9b347ccc",
+    "numericCompletion": {
+      "coverage": "۰۱۲۳۴۵۶۷۸۹",
+      "observed": "۱۲۳۴",
+      "inferred": "۰۵۶۷۸۹",
+      "sourceFile": "role-reference/wiki-temporary-previous.png",
+      "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+      "confidence": "provisional",
+      "advanceMethod": "Observed next-origin distances where available; inferred widths plus role-specific measured inter-ink gap of 12 source pixels. No individual fitting."
+    },
+    "roles": {
+      "category": {
+        "label": "category",
+        "capHeight": 25,
+        "baseline": 44,
+        "glyphs": [
+          {
+            "character": "۵",
+            "path": "M33 19 C40 24 42 31 42 37 Q42 45 36 43 Q32 45 28 42 C24 40 27 32 31 24 L30 24 Z M33 27 Q27 38 30 39 L33 36 Q37 41 39 37 Q39 32 33 27 Z",
+            "provenance": "observed",
+            "sourceBox": [
+              26.11111111111111,
+              19.0,
+              42.0,
+              43.8
+            ],
+            "occurrence": "category",
+            "fillRule": "evenodd",
+            "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+            "sourceAdvance": 24
+          },
+          {
+            "character": "۰",
+            "path": "M2.8175 29.1425Q4.715 30.9342 5.75 31.5Q4.025 33.0559 2.76 33.8575Q0.8625 32.2073 0 31.5Q0.92 30.1326 2.8175 29.1425Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram/category/inferred-0",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۵"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 13.75
+          },
+          {
+            "character": "۱",
+            "path": "M3.6 19C6.825 22.25 7.5 29.25 5.925 35.25C5.7 40 4.5 42.75 3 44L2.475 43.5C3.975 36.75 2.85 30.5 0 23.75Q0.75 21.25 3.6 19Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram/category/inferred-1",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۵"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 14.7394
+          },
+          {
+            "character": "۲",
+            "path": "M3 19C6.3 22.25 11.1 23.25 13.65 20.5L15 19C15.3 23.75 12 27 8.55 27.5C7.4125 30.5 9.945 38.25 6.3 43L5.55 44L4.95 43.25C5.67 37.5 3.25 29.5 0.45 25.5L0 23.25L3 19Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram/category/inferred-2",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۵"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 23.019
+          },
+          {
+            "character": "۳",
+            "path": "M2.1655 19C4.5476 22.25 8.0123 23.25 9.853 20.5Q10.7192 19.75 10.8275 19.25Q14.91 22.25 17.2175 19.25L17.75 19C17.75 22.75 16.1525 24.75 14.3775 24.75Q12.425 24.75 10.5027 24.25C11.0441 23.75 8.662 27 6.1717 27.5C5.368 30.5 7.1912 38.25 4.5476 43L4.0062 44L3.5731 43.25C4.0845 37.5 2.3321 29.5 0.3248 25.5L0 23.25L2.1655 19Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram/category/inferred-3",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۵"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 25.75
+          },
+          {
+            "character": "۴",
+            "path": "M11.0625 19 11.21 21.25C8.4075 23 4.5725 24.75 4.72 27C7.965 28.25 11.3575 29.5 8.9975 32.25C6.3425 36 2.95 38.75 4.5725 40.75C6.9325 42.5 11.3575 40 14.75 39.5L13.4225 42.5C10.4725 44.75 3.245 45.5 1.18 42.5C-0.4425 40.25 2.95 35.25 6.3425 32C2.065 31.25 0.1475 30 1.77 27.25C4.13 23 7.5225 20.75 11.0625 19Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram/category/inferred-4",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۵"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 21.988
+          },
+          {
+            "character": "۶",
+            "path": "M11.5425 19 12.54 21.5C8.4075 21.5 3.42 24.75 3.99 27.75C6.6975 30.5 11.5425 27.75 14.25 26L13.68 30.25C7.695 34.75 3.99 39.5 2.1375 44H1.2825C1.2825 40.25 4.845 35 7.695 32C2.4225 32.5 0.285 30 2.1375 26.5C4.56 22.25 8.55 19.75 11.5425 19Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram/category/inferred-6",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۵"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 20.9675
+          },
+          {
+            "character": "۷",
+            "path": "M1.5 19C3.9 22.5 4.35 26.75 6.6 30.5Q7.5 32.5 8.25 30C10.5 25.5 11.25 21 13.5 19L15 22.5C13.5 26.5 9.9 30.25 9 35.5L8.1 43L7.35 44H6.75C6.6 38.25 5.4 33.75 3.3 29L0.3 25.5Q-0.3 22.25 1.5 19Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram/category/inferred-7",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۵"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 22.85
+          },
+          {
+            "character": "۸",
+            "path": "M7.5225 19 8.26 19.25C7.8175 25 10.7675 31 13.865 36.5L14.75 40.25L13.57 43.75C10.495 40 9.34 34.5 7.67 30.55H7.08C4.9675 35.25 3.8125 40.5 1.3275 44L0 40.25C0.295 37.5 4.13 30.5 5.4575 25.75L7.5225 19Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram/category/inferred-8",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۵"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 22.75
+          },
+          {
+            "character": "۹",
+            "path": "M7.905 19C11.985 18.5 12.24 22.75 10.3275 28C8.0325 33.25 7.7775 36.5 10.3275 40.25L8.415 43L6.63 44.25C4.2075 42 3.825 38.75 4.7175 35.5Q6.12 31.25 7.14 28.25C3.06 29.5 0 27.25 0.3825 25C0.51 22 3.825 19 7.905 19ZM6.5025 22C3.9525 22.25 2.805 24.75 3.825 25.5Q6.12 26.75 8.5425 25.25Q10.2 22 6.5025 22Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram/category/inferred-9",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۵"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 19.1278
+          }
+        ],
+        "numericCompletion": {
+          "coverage": "۰۱۲۳۴۵۶۷۸۹",
+          "observed": "۵",
+          "inferred": "۰۱۲۳۴۶۷۸۹",
+          "sourceFile": "role-reference/wiki-temporary-previous.png",
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+          "confidence": "low",
+          "advanceMethod": "Observed next-origin distances where available; inferred widths plus role-specific measured inter-ink gap of 8 source pixels. No individual fitting."
+        }
+      },
+      "prefix": {
+        "label": "prefix",
+        "capHeight": 25,
+        "baseline": 102,
+        "glyphs": [
+          {
+            "character": "۹",
+            "path": "M23 77 C28 76 29 82 29 89 C29 95 31 98 33 99 L32 102 C26 103 25 95 25 91 C20 92 17 89 18 85 C18 81 20 78 23 77 Z M23 82 Q19 83 20 85 L25 86 Q26 82 23 82 Z",
+            "provenance": "observed",
+            "sourceBox": [
+              17.80839829258241,
+              76.89056352527855,
+              33.0,
+              102.08570846253257
+            ],
+            "occurrence": "prefix",
+            "fillRule": "evenodd",
+            "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+            "sourceAdvance": 26
+          },
+          {
+            "character": "۲",
+            "path": "M47 78 Q51 83 56 80 L58 77 Q60 80 57 84 Q55 87 52 86 C53 94 53 99 51 102 L49 102 C50 95 47 88 44 84 Z",
+            "provenance": "observed",
+            "sourceBox": [
+              44.0,
+              77.0,
+              58.8,
+              102.0
+            ],
+            "occurrence": "prefix",
+            "fillRule": "evenodd",
+            "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+            "sourceAdvance": 25
+          },
+          {
+            "character": "۰",
+            "path": "M2.8175 87.1425Q4.715 88.9342 5.75 89.5Q4.025 91.0559 2.76 91.8575Q0.8625 90.2073 0 89.5Q0.92 88.1326 2.8175 87.1425Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram/prefix/inferred-0",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۹",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 15.75
+          },
+          {
+            "character": "۱",
+            "path": "M3.6 77C6.825 80.25 7.5 87.25 5.925 93.25C5.7 98 4.5 100.75 3 102L2.475 101.5C3.975 94.75 2.85 88.5 0 81.75Q0.75 79.25 3.6 77Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram/prefix/inferred-1",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۹",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 16.7394
+          },
+          {
+            "character": "۳",
+            "path": "M2.1655 77C4.5476 80.25 8.0123 81.25 9.853 78.5Q10.7192 77.75 10.8275 77.25Q14.91 80.25 17.2175 77.25L17.75 77C17.75 80.75 16.1525 82.75 14.3775 82.75Q12.425 82.75 10.5027 82.25C11.0441 81.75 8.662 85 6.1717 85.5C5.368 88.5 7.1912 96.25 4.5476 101L4.0062 102L3.5731 101.25C4.0845 95.5 2.3321 87.5 0.3248 83.5L0 81.25L2.1655 77Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram/prefix/inferred-3",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۹",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 27.75
+          },
+          {
+            "character": "۴",
+            "path": "M11.0625 77 11.21 79.25C8.4075 81 4.5725 82.75 4.72 85C7.965 86.25 11.3575 87.5 8.9975 90.25C6.3425 94 2.95 96.75 4.5725 98.75C6.9325 100.5 11.3575 98 14.75 97.5L13.4225 100.5C10.4725 102.75 3.245 103.5 1.18 100.5C-0.4425 98.25 2.95 93.25 6.3425 90C2.065 89.25 0.1475 88 1.77 85.25C4.13 81 7.5225 78.75 11.0625 77Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram/prefix/inferred-4",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۹",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 23.988
+          },
+          {
+            "character": "۵",
+            "path": "M7.625 77C10.2175 81 13.42 86.5 14.7925 93.5C16.47 99.75 14.03 102.75 10.8275 102.5Q8.9975 102.5 7.625 100.5Q4.1175 104.25 1.3725 101.5C-1.6775 98.25 1.3725 90.75 3.8125 85.5Q5.9475 80.75 7.625 77ZM7.625 81.25C5.3375 86.5 2.625 93 2.625 97.25Q2.625 100.5 5.6425 99Q7.1675 97.25 7.7775 97.25Q8.6925 99.5 11.4375 99.5C12.625 100 14.0687 96.75 12.625 93.5C11.7425 88.75 9.455 84 7.625 81.25Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram/prefix/inferred-5",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۹",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 25.2444
+          },
+          {
+            "character": "۶",
+            "path": "M11.5425 77 12.54 79.5C8.4075 79.5 3.42 82.75 3.99 85.75C6.6975 88.5 11.5425 85.75 14.25 84L13.68 88.25C7.695 92.75 3.99 97.5 2.1375 102H1.2825C1.2825 98.25 4.845 93 7.695 90C2.4225 90.5 0.285 88 2.1375 84.5C4.56 80.25 8.55 77.75 11.5425 77Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram/prefix/inferred-6",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۹",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 22.9675
+          },
+          {
+            "character": "۷",
+            "path": "M1.5 77C3.9 80.5 4.35 84.75 6.6 88.5Q7.5 90.5 8.25 88C10.5 83.5 11.25 79 13.5 77L15 80.5C13.5 84.5 9.9 88.25 9 93.5L8.1 101L7.35 102H6.75C6.6 96.25 5.4 91.75 3.3 87L0.3 83.5Q-0.3 80.25 1.5 77Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram/prefix/inferred-7",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۹",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 24.85
+          },
+          {
+            "character": "۸",
+            "path": "M7.5225 77 8.26 77.25C7.8175 83 10.7675 89 13.865 94.5L14.75 98.25L13.57 101.75C10.495 98 9.34 92.5 7.67 88.55H7.08C4.9675 93.25 3.8125 98.5 1.3275 102L0 98.25C0.295 95.5 4.13 88.5 5.4575 83.75L7.5225 77Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-previous-temporary-numerals/manual-smooth-diagram/prefix/inferred-8",
+            "note": "Inferred numeral absent from this role in the diagram. Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۹",
+                "۲"
+              ],
+              "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics."
+            },
+            "sourceAdvance": 24.75
+          }
+        ],
+        "numericCompletion": {
+          "coverage": "۰۱۲۳۴۵۶۷۸۹",
+          "observed": "۲۹",
+          "inferred": "۰۱۳۴۵۶۷۸",
+          "sourceFile": "role-reference/wiki-temporary-previous.png",
+          "designNotes": "Traditional illustrated numerals: tapered blade stem, separately articulated rounded crown lobes, pointed downstrokes and asymmetrical heart five. Added shapes are source-style hypotheses at this role’s own metrics.",
+          "confidence": "low",
+          "advanceMethod": "Observed next-origin distances where available; inferred widths plus role-specific measured inter-ink gap of 10 source pixels. No individual fitting."
+        }
+      }
+    }
+  },
+  {
+    "id": "source-historic-numerals",
+    "label": "Historic vehicle geometric diagram numerals",
+    "sourceId": "source-historic-numerals/manual-smooth-diagram",
+    "sourceFile": "role-reference/wiki-historic.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelak_melie_tarikhi.png",
+    "script": "persian",
+    "license": "CC BY-SA 3.0",
+    "credit": "Haghal Jagul; original illustrative diagram; smooth outline adaptation. https://creativecommons.org/licenses/by-sa/3.0/",
+    "rights": "Haghal Jagul; original illustrative diagram; smooth outline adaptation. https://creativecommons.org/licenses/by-sa/3.0/ Smooth outline adaptation is shared under CC BY-SA 3.0. Diagram evidence is not manufacturing certification.",
+    "capHeight": 38,
+    "baseline": 110,
+    "observedSerial": "۱۲۳۶۵",
+    "note": "Source-specific numeric study of the inspected illustrative diagram. Observed contours and independently inferred additions are marked per glyph. This is not an authenticated plate-manufacturing typeface.",
+    "glyphs": [
+      {
+        "character": "۱",
+        "path": "M102 72 C108 78 112 91 112 109 L106 109 C106 93 102 82 98 78 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          98.0,
+          72.0,
+          112.0,
+          109.0
+        ],
+        "occurrence": "main-row",
+        "fillRule": "evenodd",
+        "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+        "sourceAdvance": 25
+      },
+      {
+        "character": "۲",
+        "path": "M128 72 C132 80 138 85 141 81 L141 74 L145 72 Q149 84 144 88 Q139 91 134 88 C137 96 137 103 137 110 L130 110 C130 94 128 84 123 78 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          123.0,
+          72.0,
+          146.77777777777777,
+          110.0
+        ],
+        "occurrence": "main-row",
+        "fillRule": "evenodd",
+        "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+        "sourceAdvance": 28
+      },
+      {
+        "character": "۳",
+        "path": "M156 72 Q160 82 164 82 L164 74 L169 74 L169 81 Q173 86 174 82 L174 75 L177 73 Q181 86 176 88 Q172 92 168 87 L164 89 Q168 100 167 110 L160 110 C160 96 156 86 151 78 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          151.0,
+          72.0,
+          178.77777777777777,
+          110.0
+        ],
+        "occurrence": "main-row",
+        "fillRule": "evenodd",
+        "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+        "sourceAdvance": 30
+      },
+      {
+        "character": "۶",
+        "path": "M198 72 L201 74 L198 78 C194 76 189 80 187 83 Q184 87 190 86 L205 82 L207 88 Q193 96 185 110 L181 106 Q185 96 191 90 C183 92 180 88 182 82 Q187 72 198 72 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          181.0,
+          72.0,
+          207.0,
+          110.0
+        ],
+        "occurrence": "main-row",
+        "fillRule": "evenodd",
+        "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+        "sourceAdvance": 30
+      },
+      {
+        "character": "۵",
+        "path": "M218 73 C229 80 237 89 237 101 Q238 110 227 110 L219 110 Q208 109 211 99 L217 83 L215 80 Z M222 86 Q214 100 217 103 Q225 107 231 103 Q233 99 222 86 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          210.35714285714286,
+          73.0,
+          237.08333333333334,
+          110.0
+        ],
+        "occurrence": "main-row",
+        "fillRule": "evenodd",
+        "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+        "sourceAdvance": 32
+      },
+      {
+        "character": "۰",
+        "path": "M4.37 85.68 8.74 91 4.37 96.32 0 91 4.37 85.68Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-historic-numerals/manual-smooth-diagram/main/inferred-0",
+        "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۶",
+            "۵"
+          ],
+          "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+        },
+        "sourceAdvance": 13.74
+      },
+      {
+        "character": "۴",
+        "path": "M3.648 72 11.1872 80.36Q12.4032 72 19.6992 72Q24.0768 72 24.32 77.32Q16.5376 75.04 15.0784 81.88Q18.9696 85.68 23.8336 80.74Q24.32 89.48 13.376 89.48Q14.8352 97.84 14.592 110H7.7824Q7.296 91.76 0 79.22L3.648 72Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-historic-numerals/manual-smooth-diagram/main/inferred-4",
+        "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۶",
+            "۵"
+          ],
+          "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+        },
+        "sourceAdvance": 29.32
+      },
+      {
+        "character": "۷",
+        "path": "M2.546 72Q8.6564 76.18 12.73 92.9Q14.7668 79.6 22.6594 72L25.46 77.32Q16.0398 90.62 16.0398 110H8.4018Q7.8926 89.48 0 77.7L2.546 72Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-historic-numerals/manual-smooth-diagram/main/inferred-7",
+        "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۶",
+            "۵"
+          ],
+          "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+        },
+        "sourceAdvance": 30.46
+      },
+      {
+        "character": "۸",
+        "path": "M9.1656 72H15.7852Q16.0398 94.42 25.46 104.3L22.6594 110Q15.276 102.4 12.4754 90.62Q9.9294 103.92 3.0552 110L0 104.3Q8.6564 92.52 9.1656 72Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-historic-numerals/manual-smooth-diagram/main/inferred-8",
+        "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۶",
+            "۵"
+          ],
+          "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+        },
+        "sourceAdvance": 30.46
+      },
+      {
+        "character": "۹",
+        "path": "M11.4608 72Q19.836 70.86 19.836 83.02Q19.3952 97.46 22.04 104.68L17.632 110.38Q12.3424 103.92 11.6812 92.52Q-0.8816 94.04 0 84.54Q0 73.52 11.4608 72ZM9.2568 78.46Q4.408 78.84 4.408 84.54Q5.7304 87.96 12.5628 86.82Q13.0036 78.46 9.2568 78.46Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-historic-numerals/manual-smooth-diagram/main/inferred-9",
+        "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۲",
+            "۳",
+            "۶",
+            "۵"
+          ],
+          "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+        },
+        "sourceAdvance": 27.0978
+      }
+    ],
+    "sourceRoleBoxes": {
+      "main": [
+        98,
+        72,
+        238,
+        110
+      ]
+    },
+    "sourceSha256": "978ee0bdf261bcea68824373229ca6cd9d1e51e7c36f56a7f27c42bf55f64e33",
+    "numericCompletion": {
+      "coverage": "۰۱۲۳۴۵۶۷۸۹",
+      "observed": "۱۲۳۵۶",
+      "inferred": "۰۴۷۸۹",
+      "sourceFile": "role-reference/wiki-historic.png",
+      "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+      "confidence": "provisional",
+      "advanceMethod": "Observed next-origin distances where available; inferred widths plus role-specific measured inter-ink gap of 5 source pixels. No individual fitting."
+    }
+  },
+  {
+    "id": "source-protocol-numerals",
+    "label": "Protocol geometric diagram numerals",
+    "sourceId": "source-protocol-numerals/manual-smooth-diagram",
+    "sourceFile": "role-reference/wiki-protocol.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelak_melie_tashrifat.png",
+    "script": "persian",
+    "license": "CC BY-SA 3.0",
+    "credit": "Haghal Jagul; original illustrative diagram; smooth outline adaptation. https://creativecommons.org/licenses/by-sa/3.0/",
+    "rights": "Haghal Jagul; original illustrative diagram; smooth outline adaptation. https://creativecommons.org/licenses/by-sa/3.0/ Smooth outline adaptation is shared under CC BY-SA 3.0. Diagram evidence is not manufacturing certification.",
+    "capHeight": 68,
+    "baseline": 88,
+    "observedSerial": "۱۳۹۱",
+    "note": "Source-specific numeric study of the inspected illustrative diagram. Observed contours and independently inferred additions are marked per glyph. This is not an authenticated plate-manufacturing typeface.",
+    "glyphs": [
+      {
+        "character": "۱",
+        "path": "M294 20 Q304 27 309 57 Q312 70 311 88 L299 88 Q299 54 287 29 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          287.0,
+          20.0,
+          311.25,
+          88.0
+        ],
+        "occurrence": "main-row",
+        "fillRule": "evenodd",
+        "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+        "sourceAdvance": 44
+      },
+      {
+        "character": "۳",
+        "path": "M337 20 Q344 34 348 37 Q354 40 354 22 L363 22 L363 33 Q363 40 368 36 L368 24 L376 20 Q381 37 377 43 Q373 50 360 47 Q355 50 350 48 Q355 67 355 88 L344 88 Q344 52 331 30 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          331.0,
+          20.0,
+          378.77777777777777,
+          88.0
+        ],
+        "occurrence": "main-row",
+        "fillRule": "evenodd",
+        "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+        "sourceAdvance": 58
+      },
+      {
+        "character": "۹",
+        "path": "M405 18 Q419 16 420 33 L422 58 Q423 69 430 79 L422 89 Q411 80 411 56 C391 58 386 51 389 35 Q391 21 405 18 Z M404 29 Q397 30 397 40 Q398 46 411 44 Q412 29 404 29 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          388.19749882163694,
+          17.789473684210527,
+          430.0,
+          89.0
+        ],
+        "occurrence": "main-row",
+        "fillRule": "evenodd",
+        "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+        "sourceAdvance": 62
+      },
+      {
+        "character": "۰",
+        "path": "M7.82 44.48 15.64 54 7.82 63.52 0 54 7.82 44.48Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-protocol-numerals/manual-smooth-diagram/main/inferred-0",
+        "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۳",
+            "۹"
+          ],
+          "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+        },
+        "sourceAdvance": 30.64
+      },
+      {
+        "character": "۲",
+        "path": "M5.8344 20Q13.464 34.28 25.1328 34.96Q36.3528 38.36 34.1088 23.4L42.1872 20Q47.5728 34.96 42.636 44.48Q38.148 51.96 26.0304 51.28Q31.416 68.96 30.5184 88H19.2984Q17.952 54.68 0 30.2L5.8344 20Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-protocol-numerals/manual-smooth-diagram/main/inferred-2",
+        "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۳",
+            "۹"
+          ],
+          "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+        },
+        "sourceAdvance": 59.9971
+      },
+      {
+        "character": "۴",
+        "path": "M6.528 20 20.0192 34.96Q22.1952 20 35.2512 20Q43.0848 20 43.52 29.52Q29.5936 25.44 26.9824 37.68Q33.9456 44.48 42.6496 35.64Q43.52 51.28 23.936 51.28Q26.5472 66.24 26.112 88H13.9264Q13.056 55.36 0 32.92L6.528 20Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-protocol-numerals/manual-smooth-diagram/main/inferred-4",
+        "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۳",
+            "۹"
+          ],
+          "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+        },
+        "sourceAdvance": 58.52
+      },
+      {
+        "character": "۵",
+        "path": "M7.1808 20Q32.3136 39.72 43.0848 62.16Q49.8168 81.88 39.0456 86.64Q22.44 91.4 7.6296 86.64Q-4.488 81.2 1.7952 60.8L13.0152 32.24L3.1416 28.16L7.1808 20ZM17.952 43.12Q6.2832 70.32 12.5664 75.08Q24.684 80.52 33.2112 74.4Q39.4944 68.28 17.952 43.12Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-protocol-numerals/manual-smooth-diagram/main/inferred-5",
+        "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۳",
+            "۹"
+          ],
+          "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+        },
+        "sourceAdvance": 61.0243
+      },
+      {
+        "character": "۶",
+        "path": "M37.3592 20.68 35.0812 29.52Q24.6024 24.76 11.39 41.76Q5.4672 51.96 17.3128 49.24L43.282 38.36L45.56 49.24Q26.4248 58.76 9.112 88.68L0 81.88Q7.7452 63.52 16.8572 54.68Q-4.556 58.08 2.7336 39.04Q19.5908 15.92 37.3592 20.68Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-protocol-numerals/manual-smooth-diagram/main/inferred-6",
+        "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۳",
+            "۹"
+          ],
+          "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+        },
+        "sourceAdvance": 60.56
+      },
+      {
+        "character": "۷",
+        "path": "M4.556 20Q15.4904 27.48 22.78 57.4Q26.4248 33.6 40.5484 20L45.56 29.52Q28.7028 53.32 28.7028 88H15.0348Q14.1236 51.28 0 30.2L4.556 20Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-protocol-numerals/manual-smooth-diagram/main/inferred-7",
+        "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۳",
+            "۹"
+          ],
+          "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+        },
+        "sourceAdvance": 60.56
+      },
+      {
+        "character": "۸",
+        "path": "M16.4016 20H28.2472Q28.7028 60.12 45.56 77.8L40.5484 88Q27.336 74.4 22.3244 53.32Q17.7684 77.12 5.4672 88L0 77.8Q15.4904 56.72 16.4016 20Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-protocol-numerals/manual-smooth-diagram/main/inferred-8",
+        "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۳",
+            "۹"
+          ],
+          "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+        },
+        "sourceAdvance": 60.56
+      }
+    ],
+    "sourceRoleBoxes": {
+      "main": [
+        287,
+        18,
+        474,
+        89
+      ]
+    },
+    "sourceSha256": "d204020d0596a28bdf1952c1e5a9ad97e9a90a37f1e4d82208eb15cb642c452c",
+    "numericCompletion": {
+      "coverage": "۰۱۲۳۴۵۶۷۸۹",
+      "observed": "۱۳۹",
+      "inferred": "۰۲۴۵۶۷۸",
+      "sourceFile": "role-reference/wiki-protocol.png",
+      "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+      "confidence": "provisional",
+      "advanceMethod": "Observed next-origin distances where available; inferred widths plus role-specific measured inter-ink gap of 15 source pixels. No individual fitting."
+    }
+  },
+  {
+    "id": "source-motorcycle-numerals",
+    "label": "Motorcycle geometric diagram · independent allocation and main rows",
+    "sourceId": "source-motorcycle-numerals/manual-smooth-diagram",
+    "sourceFile": "role-reference/wiki-motorcycle.png",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelak_melie_motor.png",
+    "script": "persian",
+    "license": "CC BY-SA 3.0",
+    "credit": "Haghal Jagul; original illustrative diagram; smooth outline adaptation. https://creativecommons.org/licenses/by-sa/3.0/",
+    "rights": "Haghal Jagul; original illustrative diagram; smooth outline adaptation. https://creativecommons.org/licenses/by-sa/3.0/ Smooth outline adaptation is shared under CC BY-SA 3.0. Diagram evidence is not manufacturing certification.",
+    "capHeight": 54,
+    "baseline": 142,
+    "observedSerial": "۵۶۷۸۹",
+    "note": "Source-specific numeric study of the inspected illustrative diagram. Observed contours and independently inferred additions are marked per glyph. This is not an authenticated plate-manufacturing typeface.",
+    "glyphs": [
+      {
+        "character": "۵",
+        "path": "M30 89 C46 100 56 116 56 130 Q57 142 43 142 L33 142 Q17 142 20 125 Q21 114 30 99 L26 96 Z M35 106 Q24 125 29 131 Q41 136 47 130 Q51 124 35 106 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          19.526315789473685,
+          89.0,
+          56.06666666666667,
+          142.0
+        ],
+        "occurrence": "main-row",
+        "fillRule": "evenodd",
+        "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+        "sourceAdvance": 42
+      },
+      {
+        "character": "۶",
+        "path": "M85 88 L90 90 L88 97 C82 94 74 98 71 104 Q68 108 75 107 L97 101 L99 109 Q82 115 67 143 L62 138 Q65 125 76 115 C64 117 61 111 63 103 Q69 91 79 89 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          62.0,
+          88.0,
+          99.0,
+          143.0
+        ],
+        "occurrence": "main-row",
+        "fillRule": "evenodd",
+        "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+        "sourceAdvance": 41
+      },
+      {
+        "character": "۷",
+        "path": "M108 88 Q118 96 123 117 Q127 97 137 87 L141 96 Q128 111 128 142 L118 142 Q118 111 103 97 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          103.0,
+          87.0,
+          141.0,
+          142.0
+        ],
+        "occurrence": "main-row",
+        "fillRule": "evenodd",
+        "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+        "sourceAdvance": 42
+      },
+      {
+        "character": "۸",
+        "path": "M159 88 L168 88 C168 111 173 124 183 134 L179 142 Q165 133 164 113 Q161 132 149 142 L145 134 C155 123 159 108 159 88 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          145.0,
+          88.0,
+          183.0,
+          142.0
+        ],
+        "occurrence": "main-row",
+        "fillRule": "evenodd",
+        "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+        "sourceAdvance": 44
+      },
+      {
+        "character": "۹",
+        "path": "M204 87 C213 87 214 95 214 109 C214 121 217 130 222 135 L217 143 C210 137 208 128 207 117 C193 118 187 113 189 104 Q190 90 204 87 Z M201 97 Q196 99 197 105 Q197 109 207 108 Q207 96 201 97 Z",
+        "provenance": "observed",
+        "sourceBox": [
+          188.625,
+          87.0,
+          222.0,
+          143.0
+        ],
+        "occurrence": "main-row",
+        "fillRule": "evenodd",
+        "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+        "sourceAdvance": 38
+      },
+      {
+        "character": "۰",
+        "path": "M6.21 107.44 12.42 115 6.21 122.56 0 115 6.21 107.44Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-motorcycle-numerals/manual-smooth-diagram/main/inferred-0",
+        "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۵",
+            "۶",
+            "۷",
+            "۸",
+            "۹"
+          ],
+          "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+        },
+        "sourceAdvance": 17.42
+      },
+      {
+        "character": "۱",
+        "path": "M5.103 88Q10.962 92.86 13.608 106.36Q18.711 121.48 18.9 142H9.45Q9.45 115.54 0 95.02L5.103 88Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-motorcycle-numerals/manual-smooth-diagram/main/inferred-1",
+        "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۵",
+            "۶",
+            "۷",
+            "۸",
+            "۹"
+          ],
+          "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+        },
+        "sourceAdvance": 23.9
+      },
+      {
+        "character": "۲",
+        "path": "M4.6332 88Q10.692 99.34 19.9584 99.88Q28.8684 102.58 27.0864 90.7L33.5016 88Q37.7784 99.88 33.858 107.44Q30.294 113.38 20.6712 112.84Q24.948 126.88 24.2352 142H15.3252Q14.256 115.54 0 96.1L4.6332 88Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-motorcycle-numerals/manual-smooth-diagram/main/inferred-2",
+        "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۵",
+            "۶",
+            "۷",
+            "۸",
+            "۹"
+          ],
+          "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+        },
+        "sourceAdvance": 40.733
+      },
+      {
+        "character": "۳",
+        "path": "M4.86 88Q9.315 96.1 14.175 99.34Q19.845 103.66 19.44 90.7H25.11V98.26Q25.515 104.74 29.97 99.88V91.24L36.855 88Q42.12 104.2 36.45 109.6Q30.375 113.92 24.705 109.6Q20.655 113.92 17.82 112.3Q21.87 127.42 21.06 142H11.745Q11.745 118.24 0 96.1L4.86 88Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-motorcycle-numerals/manual-smooth-diagram/main/inferred-3",
+        "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۵",
+            "۶",
+            "۷",
+            "۸",
+            "۹"
+          ],
+          "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+        },
+        "sourceAdvance": 44.39
+      },
+      {
+        "character": "۴",
+        "path": "M5.184 88 15.8976 99.88Q17.6256 88 27.9936 88Q34.2144 88 34.56 95.56Q23.5008 92.32 21.4272 102.04Q26.9568 107.44 33.8688 100.42Q34.56 112.84 19.008 112.84Q21.0816 124.72 20.736 142H11.0592Q10.368 116.08 0 98.26L5.184 88Z",
+        "provenance": "inferred",
+        "fillRule": "evenodd",
+        "sourceId": "source-motorcycle-numerals/manual-smooth-diagram/main/inferred-4",
+        "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۵",
+            "۶",
+            "۷",
+            "۸",
+            "۹"
+          ],
+          "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+        },
+        "sourceAdvance": 39.56
+      }
+    ],
+    "sourceRoleBoxes": {
+      "main": [
+        20,
+        87,
+        222,
+        143
+      ],
+      "allocation": [
+        91,
+        14,
+        204,
+        68
+      ]
+    },
+    "sourceSha256": "9e592edba99d4554a90db724cbdac4b9e547acdbafb085f2a08e16ab4e0704e2",
+    "numericCompletion": {
+      "coverage": "۰۱۲۳۴۵۶۷۸۹",
+      "observed": "۵۶۷۸۹",
+      "inferred": "۰۱۲۳۴",
+      "sourceFile": "role-reference/wiki-motorcycle.png",
+      "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+      "confidence": "provisional",
+      "advanceMethod": "Observed next-origin distances where available; inferred widths plus role-specific measured inter-ink gap of 5 source pixels. No individual fitting."
+    },
+    "roles": {
+      "allocation": {
+        "label": "allocation",
+        "capHeight": 53,
+        "baseline": 68,
+        "glyphs": [
+          {
+            "character": "۱",
+            "path": "M96 15 C105 24 109 44 110 68 L100 68 Q100 37 91 22 Z",
+            "provenance": "observed",
+            "sourceBox": [
+              91.0,
+              15.0,
+              110.0,
+              68.0
+            ],
+            "occurrence": "allocation",
+            "fillRule": "evenodd",
+            "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+            "sourceAdvance": 35
+          },
+          {
+            "character": "۲",
+            "path": "M132 15 Q138 28 146 29 Q152 30 151 18 L156 14 Q161 31 155 36 Q150 40 141 37 Q145 53 145 68 L136 68 Q136 41 126 23 Z",
+            "provenance": "observed",
+            "sourceBox": [
+              126.0,
+              14.0,
+              158.27272727272728,
+              68.0
+            ],
+            "occurrence": "allocation",
+            "fillRule": "evenodd",
+            "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+            "sourceAdvance": 39
+          },
+          {
+            "character": "۳",
+            "path": "M171 15 Q179 31 183 27 L183 17 L190 17 L190 25 Q191 31 196 27 L196 18 L202 15 Q206 32 200 35 Q194 38 188 34 Q185 39 180 37 Q185 53 185 68 L176 68 Q176 40 165 23 Z",
+            "provenance": "observed",
+            "sourceBox": [
+              165.0,
+              15.0,
+              203.6,
+              68.0
+            ],
+            "occurrence": "allocation",
+            "fillRule": "evenodd",
+            "note": "Observed numeral in the named source diagram, reconstructed with sparse smooth Bezier anchors. No raster trace; source-role baseline and relative outline dimensions preserved.",
+            "sourceAdvance": 46
+          },
+          {
+            "character": "۰",
+            "path": "M6.095 34.08 12.19 41.5 6.095 48.92 0 41.5 6.095 34.08Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-motorcycle-numerals/manual-smooth-diagram/allocation/inferred-0",
+            "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳"
+              ],
+              "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+            },
+            "sourceAdvance": 20.19
+          },
+          {
+            "character": "۴",
+            "path": "M5.088 15 15.6032 26.66Q17.2992 15 27.4752 15Q33.5808 15 33.92 22.42Q23.0656 19.24 21.0304 28.78Q26.4576 34.08 33.2416 27.19Q33.92 39.38 18.656 39.38Q20.6912 51.04 20.352 68H10.8544Q10.176 42.56 0 25.07L5.088 15Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-motorcycle-numerals/manual-smooth-diagram/allocation/inferred-4",
+            "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳"
+              ],
+              "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+            },
+            "sourceAdvance": 41.92
+          },
+          {
+            "character": "۵",
+            "path": "M5.5968 15Q25.1856 30.37 33.5808 47.86Q38.8278 63.23 30.4326 66.94Q17.49 70.65 5.9466 66.94Q-3.498 62.7 1.3992 46.8L10.1442 24.54L2.4486 21.36L5.5968 15ZM13.992 33.02Q4.8972 54.22 9.7944 57.93Q19.239 62.17 25.8852 57.4Q30.7824 52.63 13.992 33.02Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-motorcycle-numerals/manual-smooth-diagram/allocation/inferred-5",
+            "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳"
+              ],
+              "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+            },
+            "sourceAdvance": 43.8719
+          },
+          {
+            "character": "۶",
+            "path": "M29.1182 15.53 27.3427 22.42Q19.1754 18.71 8.8775 31.96Q4.2612 39.91 13.4938 37.79L33.7345 29.31L35.51 37.79Q20.5958 45.21 7.102 68.53L0 63.23Q6.0367 48.92 13.1387 42.03Q-3.551 44.68 2.1306 29.84Q15.2693 11.82 29.1182 15.53Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-motorcycle-numerals/manual-smooth-diagram/allocation/inferred-6",
+            "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳"
+              ],
+              "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+            },
+            "sourceAdvance": 43.51
+          },
+          {
+            "character": "۷",
+            "path": "M3.551 15Q12.0734 20.83 17.755 44.15Q20.5958 25.6 31.6039 15L35.51 22.42Q22.3713 40.97 22.3713 68H11.7183Q11.0081 39.38 0 22.95L3.551 15Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-motorcycle-numerals/manual-smooth-diagram/allocation/inferred-7",
+            "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳"
+              ],
+              "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+            },
+            "sourceAdvance": 43.51
+          },
+          {
+            "character": "۸",
+            "path": "M12.7836 15H22.0162Q22.3713 46.27 35.51 60.05L31.6039 68Q21.306 57.4 17.3999 40.97Q13.8489 59.52 4.2612 68L0 60.05Q12.0734 43.62 12.7836 15Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-motorcycle-numerals/manual-smooth-diagram/allocation/inferred-8",
+            "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳"
+              ],
+              "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+            },
+            "sourceAdvance": 43.51
+          },
+          {
+            "character": "۹",
+            "path": "M15.9848 15Q27.666 13.41 27.666 30.37Q27.0512 50.51 30.74 60.58L24.592 68.53Q17.2144 59.52 16.2922 43.62Q-1.2296 45.74 0 32.49Q0 17.12 15.9848 15ZM12.9108 24.01Q6.148 24.54 6.148 32.49Q7.9924 37.26 17.5218 35.67Q18.1366 24.01 12.9108 24.01Z",
+            "provenance": "inferred",
+            "fillRule": "evenodd",
+            "sourceId": "source-motorcycle-numerals/manual-smooth-diagram/allocation/inferred-9",
+            "note": "Inferred numeral absent from this role in the diagram. Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۱",
+                "۲",
+                "۳"
+              ],
+              "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions."
+            },
+            "sourceAdvance": 38.8206
+          }
+        ],
+        "numericCompletion": {
+          "coverage": "۰۱۲۳۴۵۶۷۸۹",
+          "observed": "۱۲۳",
+          "inferred": "۰۴۵۶۷۸۹",
+          "sourceFile": "role-reference/wiki-motorcycle.png",
+          "designNotes": "Geometric illustrated numerals: broad almost uniform stroke, blunt flat stem feet, upright bowl terminals, open teardrop five, flat-headed eight and broad hooked six. Added shapes retain the independent role dimensions.",
+          "confidence": "provisional",
+          "advanceMethod": "Observed next-origin distances where available; inferred widths plus role-specific measured inter-ink gap of 8 source pixels. No individual fitting."
+        }
+      }
+    }
+  }
+]

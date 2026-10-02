@@ -1,0 +1,2840 @@
+[
+  {
+    "id": "historic-1947-study",
+    "label": "1947 · observed serial, ط and year roles",
+    "sourceId": "iran47trucku/manual-smooth-subset",
+    "sourceUrl": "https://dna.nl/mideast/iran47trucku.jpg",
+    "sourceFile": "historical-reference/iran47trucku-reference.jpg",
+    "credit": "DNA archive / NPCC",
+    "capHeight": 80,
+    "baseline": 99,
+    "observedSerial": "۷۳۷۶",
+    "note": "Clean source-guided reconstruction from the inspected DNA archive / NPCC photograph; provisional contours, not an authenticated die. All glyphs retain one source-plane scale and baseline. Wear, glare and pixel stair-steps are excluded; low resolution and residual photographic perspective limit precision. The city initial and year figures are separately traced role alphabets with their own shared source metrics, never reduced copies of the main serial font. Numeric repertoires now include explicitly labelled inferred source-style outlines for absent digits; the original observed contours are unchanged and remain individually distinguishable.",
+    "glyphs": [
+      {
+        "character": "۳",
+        "sourceBox": [
+          104,
+          17,
+          157,
+          103
+        ],
+        "path": "M114 24 Q123 35 137 26 Q141 25 144 26 Q148 25 153 20 C153 30 148 36 140 38 C134 39 131 44 126 45 C124 56 129 74 125 86 Q123 94 120 99 L118 99 C119 80 114 59 108 43 L106 36 Q110 29 114 24 Z",
+        "occurrence": "second-digit",
+        "sourceId": "iran47trucku/۳-second-digit"
+      },
+      {
+        "character": "۶",
+        "sourceBox": [
+          195,
+          11,
+          240,
+          91
+        ],
+        "path": "M229 14 L233 20 C223 20 216 25 217 31 C220 38 229 35 233 29 C233 43 228 49 220 56 C211 63 204 71 199 83 C198 74 204 60 214 46 C207 45 207 40 211 32 C215 24 222 17 229 14 Z",
+        "occurrence": "fourth-digit",
+        "sourceId": "iran47trucku/۶-fourth-digit"
+      },
+      {
+        "character": "۷",
+        "sourceBox": [
+          45,
+          15,
+          103,
+          103
+        ],
+        "path": "M53 25 C61 30 68 48 76 61 C81 47 87 31 94 20 L99 34 C98 41 94 48 90 57 C85 69 81 83 80 98 L77 98 C75 88 75 79 71 69 C67 56 58 47 50 37 C49 34 51 28 53 25 Z",
+        "occurrence": "first-digit",
+        "sourceId": "iran47trucku/۷-first-digit"
+      },
+      {
+        "character": "۰",
+        "path": "M8.624 51.784Q14.432 57.2682 17.6 59Q12.32 63.7626 8.448 66.216Q2.64 61.1648 0 59Q2.816 54.8147 8.624 51.784Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran47trucku/manual-smooth-subset/main/inferred-0",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۶",
+            "۷"
+          ],
+          "designNotes": "Tall 1947 white brushlike figures: generous angular crowns, long pinched descending stems, open hooked six, compact diamond zero. Broad V branches follow the observed seven; the unseen looped figures remain low-confidence."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. Tall 1947 white brushlike figures: generous angular crowns, long pinched descending stems, open hooked six, compact diamond zero. Broad V branches follow the observed seven; the unseen looped figures remain low-confidence."
+      },
+      {
+        "character": "۱",
+        "path": "M6.528 19C12.376 29.4 13.36 51.8 10.408 71C9.88 86.2 7.44 95 4.528 99L3.576 97.4C6.68 75.8 4.928 55.8 0 34.2Q1.36 26.2 6.528 19Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran47trucku/manual-smooth-subset/main/inferred-1",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۶",
+            "۷"
+          ],
+          "designNotes": "Tall 1947 white brushlike figures: generous angular crowns, long pinched descending stems, open hooked six, compact diamond zero. Broad V branches follow the observed seven; the unseen looped figures remain low-confidence."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. Tall 1947 white brushlike figures: generous angular crowns, long pinched descending stems, open hooked six, compact diamond zero. Broad V branches follow the observed seven; the unseen looped figures remain low-confidence."
+      },
+      {
+        "character": "۲",
+        "path": "M6.88 19C14.448 29.4 25.456 32.6 31.304 23.8L34.4 19C35.088 34.2 27.52 43.8 19.608 45.4C16.784 55.8 22.464 80.6 14.136 95.8L12.416 99L11.04 96.6C12.832 78.2 7.568 52.6 1.032 39.8L0 32.6L6.88 19Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran47trucku/manual-smooth-subset/main/inferred-2",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۶",
+            "۷"
+          ],
+          "designNotes": "Tall 1947 white brushlike figures: generous angular crowns, long pinched descending stems, open hooked six, compact diamond zero. Broad V branches follow the observed seven; the unseen looped figures remain low-confidence."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. Tall 1947 white brushlike figures: generous angular crowns, long pinched descending stems, open hooked six, compact diamond zero. Broad V branches follow the observed seven; the unseen looped figures remain low-confidence."
+      },
+      {
+        "character": "۴",
+        "path": "M28.8 19 29.184 26.2C21.888 31.8 11.904 37.4 12.288 44.6C20.736 48.6 29.568 52.6 23.424 61.4C16.512 73.4 7.68 82.2 11.904 88.6C18.048 94.2 29.568 86.2 38.4 84.6L34.944 94.2C27.264 101.4 8.448 103.8 3.072 94.2C-1.152 87 7.68 71 16.512 60.6C5.376 58.2 0.384 54.2 4.608 45.4C10.752 31.8 19.584 24.6 28.8 19Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran47trucku/manual-smooth-subset/main/inferred-4",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۶",
+            "۷"
+          ],
+          "designNotes": "Tall 1947 white brushlike figures: generous angular crowns, long pinched descending stems, open hooked six, compact diamond zero. Broad V branches follow the observed seven; the unseen looped figures remain low-confidence."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. Tall 1947 white brushlike figures: generous angular crowns, long pinched descending stems, open hooked six, compact diamond zero. Broad V branches follow the observed seven; the unseen looped figures remain low-confidence."
+      },
+      {
+        "character": "۵",
+        "path": "M24.4 19C32.696 31.8 42.944 49.4 47.336 71.8C52.704 91.8 44.896 101.4 34.648 100.6Q28.792 100.6 24.4 94.2Q13.176 106.2 4.392 97.4C-5.368 87 4.392 63 12.2 46.2Q19.032 31 24.4 19ZM24.4 32.6C17.08 49.4 7.8 70.2 7.8 83.8Q7.8 94.2 18.056 89.4Q22.936 83.8 24.888 83.8Q27.816 91 36.6 91C41 92.6 45.29 82.2 41 71.8C37.576 56.6 30.256 41.4 24.4 32.6Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran47trucku/manual-smooth-subset/main/inferred-5",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۶",
+            "۷"
+          ],
+          "designNotes": "Tall 1947 white brushlike figures: generous angular crowns, long pinched descending stems, open hooked six, compact diamond zero. Broad V branches follow the observed seven; the unseen looped figures remain low-confidence."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. Tall 1947 white brushlike figures: generous angular crowns, long pinched descending stems, open hooked six, compact diamond zero. Broad V branches follow the observed seven; the unseen looped figures remain low-confidence."
+      },
+      {
+        "character": "۸",
+        "path": "M22.44 19 24.64 19.8C23.32 38.2 32.12 57.4 41.36 75L44 87L40.48 98.2C31.68 86.2 28.16 68.6 22.88 56.6H21.12C14.52 71 11 87.8 3.96 99L0 87C0.88 78.2 12.32 55.8 16.28 40.6L22.44 19Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran47trucku/manual-smooth-subset/main/inferred-8",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۶",
+            "۷"
+          ],
+          "designNotes": "Tall 1947 white brushlike figures: generous angular crowns, long pinched descending stems, open hooked six, compact diamond zero. Broad V branches follow the observed seven; the unseen looped figures remain low-confidence."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. Tall 1947 white brushlike figures: generous angular crowns, long pinched descending stems, open hooked six, compact diamond zero. Broad V branches follow the observed seven; the unseen looped figures remain low-confidence."
+      },
+      {
+        "character": "۹",
+        "path": "M20.832 19C31.584 17.4 32.256 31 27.216 47.8C21.168 64.6 20.496 75 26.688 87L21.696 95.8L16.992 99.8C11.088 92.6 10.08 82.2 12.432 71.8Q16.128 58.2 18.816 48.6C8.064 52.6 0 45.4 1.008 38.2C1.344 28.6 10.08 19 20.832 19ZM17.136 28.6C10.416 29.4 7.392 37.4 10.08 39.8Q16.128 43.8 22.512 39Q26.88 28.6 17.136 28.6Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran47trucku/manual-smooth-subset/main/inferred-9",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۶",
+            "۷"
+          ],
+          "designNotes": "Tall 1947 white brushlike figures: generous angular crowns, long pinched descending stems, open hooked six, compact diamond zero. Broad V branches follow the observed seven; the unseen looped figures remain low-confidence."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. Tall 1947 white brushlike figures: generous angular crowns, long pinched descending stems, open hooked six, compact diamond zero. Broad V branches follow the observed seven; the unseen looped figures remain low-confidence."
+      }
+    ],
+    "roles": {
+      "city-initial": {
+        "label": "Source-specific city initial",
+        "capHeight": 40,
+        "baseline": 56,
+        "observedText": "ط",
+        "glyphs": [
+          {
+            "character": "ط",
+            "sourceBox": [
+              10,
+              14,
+              45,
+              59
+            ],
+            "path": "M25 17 L25 40 Q34 29 39 33 C45 37 37 54 24 56 Q17 57 13 52 L14 48 Q24 53 33 46 Q39 41 35 38 Q31 38 25 45 L21 48 L21 29 Q22 21 25 17 Z",
+            "occurrence": "city-initial",
+            "sourceId": "iran47trucku/city-initial/ط"
+          }
+        ]
+      },
+      "year": {
+        "label": "Source-specific year-tab figures",
+        "capHeight": 22,
+        "baseline": 94,
+        "observedText": "۲۶",
+        "glyphs": [
+          {
+            "character": "۲",
+            "sourceBox": [
+              12,
+              69,
+              27,
+              97
+            ],
+            "path": "M17 73 Q21 75 24 74 L24 78 L19 79 L18 91 L16 94 L16 84 L15 77 Z",
+            "occurrence": "year-tab",
+            "sourceId": "iran47trucku/year-tab/۲"
+          },
+          {
+            "character": "۶",
+            "sourceBox": [
+              24,
+              71,
+              41,
+              96
+            ],
+            "path": "M34 74 L37 76 Q30 75 30 79 Q32 82 36 79 L36 83 Q31 86 28 91 L26 93 Q26 88 31 82 Q27 82 28 78 Q30 75 34 74 Z",
+            "occurrence": "year-tab",
+            "sourceId": "iran47trucku/year-tab/۶"
+          },
+          {
+            "character": "۰",
+            "path": "M2.9106 80.5646Q4.8708 82.4155 5.94 83Q4.158 84.6074 2.8512 85.4354Q0.891 83.7306 0 83Q0.9504 81.5875 2.9106 80.5646Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran47trucku/manual-smooth-subset/year/inferred-0",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۲",
+                "۶"
+              ],
+              "designNotes": "Independent small 1947 year: flat shallow two crown, short squared stem and compact open six; thicker joins reflect the small role rather than downscaled main figures."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1947 year: flat shallow two crown, short squared stem and compact open six; thicker joins reflect the small role rather than downscaled main figures."
+          },
+          {
+            "character": "۱",
+            "path": "M1.54 72 3.608 73.98Q4.312 78.38 3.74 84.1L3.124 92.02L1.54 94L1.408 83.44L0 75.08L1.54 72Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran47trucku/manual-smooth-subset/year/inferred-1",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۲",
+                "۶"
+              ],
+              "designNotes": "Independent small 1947 year: flat shallow two crown, short squared stem and compact open six; thicker joins reflect the small role rather than downscaled main figures."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1947 year: flat shallow two crown, short squared stem and compact open six; thicker joins reflect the small role rather than downscaled main figures."
+          },
+          {
+            "character": "۳",
+            "path": "M0 73.1Q1.914 75.08 3.5983 74.64Q5.742 74.86 7.4263 72.88Q9.6976 75.08 12.5048 73.1L12.76 75.3Q11.1012 77.06 8.1664 77.06Q7.018 77.94 5.6144 77.28L3.6353 77.5L3.5033 89.38L2.5793 94L0.7643 91.8V81.46L0 76.62V73.1Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran47trucku/manual-smooth-subset/year/inferred-3",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۲",
+                "۶"
+              ],
+              "designNotes": "Independent small 1947 year: flat shallow two crown, short squared stem and compact open six; thicker joins reflect the small role rather than downscaled main figures."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1947 year: flat shallow two crown, short squared stem and compact open six; thicker joins reflect the small role rather than downscaled main figures."
+          },
+          {
+            "character": "۴",
+            "path": "M7.392 72 8.1312 74.42 3.5904 78.38 3.3792 79.48 7.8144 81.46 6.864 84.32 3.3792 88.94Q2.2176 91.36 4.6464 90.7L10.56 88.72L9.0816 93.34Q3.3792 96.2 0.6336 92.68Q-0.2112 89.82 1.7952 85.64L3.696 83.22L0.6336 81.24L1.056 78.16L7.392 72Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran47trucku/manual-smooth-subset/year/inferred-4",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۲",
+                "۶"
+              ],
+              "designNotes": "Independent small 1947 year: flat shallow two crown, short squared stem and compact open six; thicker joins reflect the small role rather than downscaled main figures."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1947 year: flat shallow two crown, short squared stem and compact open six; thicker joins reflect the small role rather than downscaled main figures."
+          },
+          {
+            "character": "۵",
+            "path": "M6.8992 72 13.5168 86.3Q15.488 94 10.7008 94Q8.0256 94.44 6.7584 92.46Q3.0976 95.1 0.5632 92.46Q-0.8448 89.38 1.408 84.1L6.8992 72ZM7.04 76.18 2.475 87.84Q1.7325 91.14 4.224 90.7L6.7584 89.16L8.7296 90.92Q13.2137 91.58 11.605 87.18L7.04 76.18Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran47trucku/manual-smooth-subset/year/inferred-5",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۲",
+                "۶"
+              ],
+              "designNotes": "Independent small 1947 year: flat shallow two crown, short squared stem and compact open six; thicker joins reflect the small role rather than downscaled main figures."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1947 year: flat shallow two crown, short squared stem and compact open six; thicker joins reflect the small role rather than downscaled main figures."
+          },
+          {
+            "character": "۷",
+            "path": "M0.9856 72 6.16 83.22 11.088 72 12.32 75.74 7.6384 87.84 7.0224 94H4.8048L4.312 88.06L0 75.74L0.9856 72Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran47trucku/manual-smooth-subset/year/inferred-7",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۲",
+                "۶"
+              ],
+              "designNotes": "Independent small 1947 year: flat shallow two crown, short squared stem and compact open six; thicker joins reflect the small role rather than downscaled main figures."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1947 year: flat shallow two crown, short squared stem and compact open six; thicker joins reflect the small role rather than downscaled main figures."
+          },
+          {
+            "character": "۸",
+            "path": "M5.8212 72 11.88 90.04 10.4544 94 6.4152 83.22H5.1084L1.4256 94L0 90.48L5.8212 72Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran47trucku/manual-smooth-subset/year/inferred-8",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۲",
+                "۶"
+              ],
+              "designNotes": "Independent small 1947 year: flat shallow two crown, short squared stem and compact open six; thicker joins reflect the small role rather than downscaled main figures."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1947 year: flat shallow two crown, short squared stem and compact open six; thicker joins reflect the small role rather than downscaled main figures."
+          },
+          {
+            "character": "۹",
+            "path": "M5.2976 72Q9.3654 71.56 9.1762 78.16L7.2842 85.64L8.8924 90.04L6.622 94H4.8246Q2.9326 89.82 3.784 85.64L4.73 82.34Q0.7568 83.88 0 79.26Q0 73.98 5.2976 72ZM4.73 75.74Q2.365 75.74 2.2704 78.38Q2.2704 80.36 5.9598 79.26Q7.8518 75.3 4.73 75.74Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran47trucku/manual-smooth-subset/year/inferred-9",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۲",
+                "۶"
+              ],
+              "designNotes": "Independent small 1947 year: flat shallow two crown, short squared stem and compact open six; thicker joins reflect the small role rather than downscaled main figures."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1947 year: flat shallow two crown, short squared stem and compact open six; thicker joins reflect the small role rather than downscaled main figures."
+          }
+        ],
+        "numericCompletion": {
+          "coverage": "۰۱۲۳۴۵۶۷۸۹",
+          "observed": "۲۶",
+          "inferred": "۰۱۳۴۵۷۸۹",
+          "method": "Original smooth outline construction using source-specific crown, stem, terminal and counter observations; no licensed candidate glyph substitution.",
+          "design": {
+            "widths": [
+              27,
+              20,
+              42,
+              58,
+              48,
+              64,
+              50,
+              56,
+              54,
+              43
+            ],
+            "stroke": 15,
+            "six": "hook",
+            "lean": -2,
+            "note": "Independent small 1947 year: flat shallow two crown, short squared stem and compact open six; thicker joins reflect the small role rather than downscaled main figures.",
+            "structure": "tab-flat",
+            "one": "tab"
+          },
+          "confidence": "low",
+          "sourceFile": "historical-reference/iran47trucku-reference.jpg"
+        }
+      }
+    },
+    "numericCompletion": {
+      "coverage": "۰۱۲۳۴۵۶۷۸۹",
+      "observed": "۳۶۷",
+      "inferred": "۰۱۲۴۵۸۹",
+      "method": "Original smooth outline construction using source-specific crown, stem, terminal and counter observations; no licensed candidate glyph substitution.",
+      "design": {
+        "widths": [
+          22,
+          17,
+          43,
+          60,
+          48,
+          61,
+          47,
+          61,
+          55,
+          42
+        ],
+        "stroke": 13,
+        "six": "hook",
+        "lean": -3,
+        "note": "Tall 1947 white brushlike figures: generous angular crowns, long pinched descending stems, open hooked six, compact diamond zero. Broad V branches follow the observed seven; the unseen looped figures remain low-confidence."
+      },
+      "confidence": "provisional",
+      "sourceFile": "historical-reference/iran47trucku-reference.jpg"
+    }
+  },
+  {
+    "id": "historic-1949-study",
+    "label": "1949 · observed serial, ط and year roles",
+    "sourceId": "ir-wlp-1949-private/source-guided",
+    "sourceUrl": "http://www.worldlicenseplates.com/jpglps/AS_IRAN_GI.jpg",
+    "sourceFile": "historical-reference/ir-wlp-1949-private.jpg",
+    "credit": "WorldLicensePlates / original contributor",
+    "capHeight": 43,
+    "baseline": 55,
+    "observedSerial": "۳۴۳۵",
+    "note": "Clean sparse-anchor reconstruction of the inspected source photograph. No cross-specimen glyph borrowing or automatic bitmap tracing; residual photographic perspective and low pixel resolution limit precision. The city initial and year figures are separately traced role alphabets with their own shared source metrics, never reduced copies of the main serial font. Numeric repertoires now include explicitly labelled inferred source-style outlines for absent digits; the original observed contours are unchanged and remain individually distinguishable.",
+    "glyphs": [
+      {
+        "character": "۳",
+        "sourceBox": [
+          49,
+          9,
+          77,
+          58
+        ],
+        "path": "M56 12 Q62 20 67 12 Q71 17 75 12 C75 19 72.4 20.7 69 19.8 C66.1 22.5 63.3 24.2 60.2 23.4 C60.1 31.9 60.4 42.5 59.5 49.9 Q58.9 53.2 57.6 55 L57.1 54.6 C57.5 43 56.5 34.4 55.7 28 Q55.2 23.8 53.4 21 L51.6 18.4 Z",
+        "occurrence": "first-digit",
+        "sourceId": "ir-wlp-1949-private/first-digit/۳",
+        "note": "Clean sparse-anchor reconstruction of the inspected source photograph. No cross-specimen glyph borrowing, automatic bitmap tracing or unobserved forms; residual photographic perspective and low pixel resolution limit precision. The city initial and year figures are separately traced role alphabets with their own shared source metrics, never reduced copies of the main serial font. Final contour-weight review: the lower stem is near-vertical and narrow; the wider crown remains native to this photographed ۳."
+      },
+      {
+        "character": "۴",
+        "sourceBox": [
+          81,
+          9,
+          102,
+          58
+        ],
+        "path": "M97 12 L97 16 L90 20 L88 23 L97 26 L98 30 L90 41 C86 47 88 50 92 50 L100 48 L98 53 C92 57 84 55 83 51 C81 47 87 38 93 31 L86 29 L86 24 C86 20 91 15 97 12 Z",
+        "occurrence": "second-digit",
+        "sourceId": "ir-wlp-1949-private/second-digit/۴"
+      },
+      {
+        "character": "۵",
+        "sourceBox": [
+          130,
+          13,
+          165,
+          61
+        ],
+        "path": "M149 16 C154 25 163 38 162 47 C162 55 157 59 152 57 L147 53 C142 58 136 57 134 52 C131 46 137 36 142 28 Z M149 25 C145 32 140 40 139 45 C138 50 142 50 145 49 L149 45 L152 50 C158 53 160 47 158 41 C156 36 152 29 149 25 Z",
+        "occurrence": "fourth-digit",
+        "sourceId": "ir-wlp-1949-private/fourth-digit/۵"
+      },
+      {
+        "character": "۰",
+        "path": "M5.2675 29.0925Q8.815 32.4422 10.75 33.5Q7.525 36.409 5.16 37.9075Q1.6125 34.8222 0 33.5Q1.72 30.9436 5.2675 29.0925Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "ir-wlp-1949-private/source-guided/main/inferred-0",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "1949 narrow tapering stems, stepped crowns, angular open four and deep hollow heart five. Inferred figures keep the light internal stems and pointed terminals visible in the photographed three/four/five."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1949 narrow tapering stems, stepped crowns, angular open four and deep hollow heart five. Inferred figures keep the light internal stems and pointed terminals visible in the photographed three/four/five."
+      },
+      {
+        "character": "۱",
+        "path": "M5.418 12 8.6 18.88 7.568 39.09Q7.138 49.84 3.01 55L2.15 54.57L4.128 31.78L0 19.74L5.418 12Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "ir-wlp-1949-private/source-guided/main/inferred-1",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "1949 narrow tapering stems, stepped crowns, angular open four and deep hollow heart five. Inferred figures keep the light internal stems and pointed terminals visible in the photographed three/four/five."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1949 narrow tapering stems, stepped crowns, angular open four and deep hollow heart five. Inferred figures keep the light internal stems and pointed terminals visible in the photographed three/four/five."
+      },
+      {
+        "character": "۲",
+        "path": "M3.698 12C7.7658 17.59 13.6826 19.31 16.8259 14.58L18.49 12C18.8598 20.17 14.792 24.9 10.5393 25.76C8.9268 31.78 12.04 45.11 7.654 53.28L6.7295 55L5.9899 53.71C6.9918 43.82 4.1538 30.06 0.5547 23.18L0 19.31L3.698 12Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "ir-wlp-1949-private/source-guided/main/inferred-2",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "1949 narrow tapering stems, stepped crowns, angular open four and deep hollow heart five. Inferred figures keep the light internal stems and pointed terminals visible in the photographed three/four/five."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1949 narrow tapering stems, stepped crowns, angular open four and deep hollow heart five. Inferred figures keep the light internal stems and pointed terminals visible in the photographed three/four/five."
+      },
+      {
+        "character": "۶",
+        "path": "M17.0108 12V16.3L6.923 24.47L5.934 27.91L18.5932 26.62L19.78 30.92L11.2746 39.52L4.3516 55H1.5824L4.5494 45.11L11.6702 34.79L3.5604 33.93L1.5824 30.49L3.956 23.18L17.0108 12Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "ir-wlp-1949-private/source-guided/main/inferred-6",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "1949 narrow tapering stems, stepped crowns, angular open four and deep hollow heart five. Inferred figures keep the light internal stems and pointed terminals visible in the photographed three/four/five."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1949 narrow tapering stems, stepped crowns, angular open four and deep hollow heart five. Inferred figures keep the light internal stems and pointed terminals visible in the photographed three/four/five."
+      },
+      {
+        "character": "۷",
+        "path": "M2.451 12C6.3726 18.02 7.1079 25.33 10.7844 31.78Q12.255 35.22 13.4805 30.92C17.157 23.18 18.3825 15.44 22.059 12L24.51 18.02C22.059 24.9 16.1766 31.35 14.706 40.38L13.1838 53.28L11.9583 55H10.9779C10.7844 45.11 8.8236 37.37 5.3922 29.2L0.4902 22.32Q-0.4902 17.59 2.451 12Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "ir-wlp-1949-private/source-guided/main/inferred-7",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "1949 narrow tapering stems, stepped crowns, angular open four and deep hollow heart five. Inferred figures keep the light internal stems and pointed terminals visible in the photographed three/four/five."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1949 narrow tapering stems, stepped crowns, angular open four and deep hollow heart five. Inferred figures keep the light internal stems and pointed terminals visible in the photographed three/four/five."
+      },
+      {
+        "character": "۸",
+        "path": "M11.8422 12 13.0032 12.43C12.3066 22.32 16.9506 32.64 21.8268 42.1L23.22 48.55L21.3624 54.57C16.9334 48.12 15.0328 38.66 12.0744 32.554H11.1456C7.4906 39.95 5.59 48.98 2.0898 55L0 48.55C0.4644 43.82 6.5016 31.78 8.5914 23.61L11.8422 12Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "ir-wlp-1949-private/source-guided/main/inferred-8",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "1949 narrow tapering stems, stepped crowns, angular open four and deep hollow heart five. Inferred figures keep the light internal stems and pointed terminals visible in the photographed three/four/five."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1949 narrow tapering stems, stepped crowns, angular open four and deep hollow heart five. Inferred figures keep the light internal stems and pointed terminals visible in the photographed three/four/five."
+      },
+      {
+        "character": "۹",
+        "path": "M11.997 12C18.189 11.14 18.576 18.45 15.6735 27.48C12.1905 36.51 11.8035 42.1 15.4843 48.55L12.599 53.28L9.89 55.43C6.3855 51.56 5.805 45.97 7.1595 40.38Q9.288 33.07 10.836 27.91C4.644 30.06 0 26.19 0.5805 22.32C0.774 17.16 5.805 12 11.997 12ZM9.8685 17.16C5.9985 17.59 4.257 21.89 5.805 23.18Q9.288 25.33 12.9645 22.75Q15.48 17.16 9.8685 17.16Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "ir-wlp-1949-private/source-guided/main/inferred-9",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۳",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "1949 narrow tapering stems, stepped crowns, angular open four and deep hollow heart five. Inferred figures keep the light internal stems and pointed terminals visible in the photographed three/four/five."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1949 narrow tapering stems, stepped crowns, angular open four and deep hollow heart five. Inferred figures keep the light internal stems and pointed terminals visible in the photographed three/four/five."
+      }
+    ],
+    "roles": {
+      "city-initial": {
+        "label": "Source-specific city initial",
+        "capHeight": 22,
+        "baseline": 26,
+        "observedText": "ط",
+        "glyphs": [
+          {
+            "character": "ط",
+            "sourceBox": [
+              7,
+              2,
+              33,
+              29
+            ],
+            "path": "M19 4 L20 14 C25 11 30 13 30 17 C30 23 24 26 16 25 Q10 25 10 20 L12 20 Q15 23 20 22 L18 18 L18 6 Z M20 17 C24 14 28 15 27 18 Q25 21 21 22 L18 22 Q20 20 20 17 Z",
+            "occurrence": "city-initial",
+            "sourceId": "ir-wlp-1949-private/city-initial/ط"
+          }
+        ]
+      },
+      "year": {
+        "label": "Source-specific year-tab figures",
+        "capHeight": 13,
+        "baseline": 55,
+        "observedText": "۲۸",
+        "glyphs": [
+          {
+            "character": "۲",
+            "sourceBox": [
+              7,
+              40,
+              20,
+              58
+            ],
+            "path": "M10 43 Q14 46 18 43 L18 47 Q16 50 12 49 L12 55 L10 55 Z",
+            "occurrence": "year-tab",
+            "sourceId": "ir-wlp-1949-private/year-tab/۲"
+          },
+          {
+            "character": "۸",
+            "sourceBox": [
+              18,
+              39,
+              33,
+              58
+            ],
+            "path": "M24 42 L30 52 L29 55 L25 49 L23 49 L21 55 L19 53 Z",
+            "occurrence": "year-tab",
+            "sourceId": "ir-wlp-1949-private/year-tab/۸"
+          },
+          {
+            "character": "۰",
+            "path": "M1.7836 47.0076Q2.9848 48.1418 3.64 48.5Q2.548 49.485 1.7472 49.9924Q0.546 48.9477 0 48.5Q0.5824 47.6344 1.7836 47.0076Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "ir-wlp-1949-private/source-guided/year/inferred-0",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۲",
+                "۸"
+              ],
+              "designNotes": "Independent small 1949 year: broad block two with nearly vertical stem and sharply triangular eight. Added figures keep the large apertures and blunt compact terminal construction."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1949 year: broad block two with nearly vertical stem and sharply triangular eight. Added figures keep the large apertures and blunt compact terminal construction."
+          },
+          {
+            "character": "۱",
+            "path": "M1.0465 42 2.4518 43.17Q2.9302 45.77 2.5415 49.15L2.1229 53.83L1.0465 55L0.9568 48.76L0 43.82L1.0465 42Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "ir-wlp-1949-private/source-guided/year/inferred-1",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۲",
+                "۸"
+              ],
+              "designNotes": "Independent small 1949 year: broad block two with nearly vertical stem and sharply triangular eight. Added figures keep the large apertures and blunt compact terminal construction."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1949 year: broad block two with nearly vertical stem and sharply triangular eight. Added figures keep the large apertures and blunt compact terminal construction."
+          },
+          {
+            "character": "۳",
+            "path": "M0 42.65Q1.4235 43.82 2.6762 43.56Q4.2705 43.69 5.5232 42.52Q7.2124 43.82 9.3002 42.65L9.49 46.225Q8.2563 47.265 6.0736 47.265Q5.2195 47.785 4.1756 47.395L3.0932 47.525L2.9242 52.27L1.7412 55H-0.5825V47.59L0 47.005V42.65Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "ir-wlp-1949-private/source-guided/year/inferred-3",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۲",
+                "۸"
+              ],
+              "designNotes": "Independent small 1949 year: broad block two with nearly vertical stem and sharply triangular eight. Added figures keep the large apertures and blunt compact terminal construction."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1949 year: broad block two with nearly vertical stem and sharply triangular eight. Added figures keep the large apertures and blunt compact terminal construction."
+          },
+          {
+            "character": "۴",
+            "path": "M4.732 42 5.408 44.08 2.9068 46.29 5.07 47.72 4.1912 50.19 2.2308 52.53Q4.394 52.79 6.6924 51.23L6.2192 54.22Q2.2984 56.56 0.2704 54.48Q-0.4056 52.92 0.9464 50.58L2.2308 48.76L0.2704 47.07L1.014 44.86L4.732 42Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "ir-wlp-1949-private/source-guided/year/inferred-4",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۲",
+                "۸"
+              ],
+              "designNotes": "Independent small 1949 year: broad block two with nearly vertical stem and sharply triangular eight. Added figures keep the large apertures and blunt compact terminal construction."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1949 year: broad block two with nearly vertical stem and sharply triangular eight. Added figures keep the large apertures and blunt compact terminal construction."
+          },
+          {
+            "character": "۵",
+            "path": "M4.2679 42 8.3616 50.45Q9.581 55 6.6196 55Q4.9647 55.26 4.1808 54.09Q1.9162 55.65 0.3484 54.09Q-0.5226 52.27 0.871 49.15L4.2679 42ZM4.355 45.25 2.4375 51.36Q1.7063 53.31 2.613 53.05L4.1808 52.14L5.4002 53.18Q7.8569 53.57 6.2725 50.97L4.355 45.25Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "ir-wlp-1949-private/source-guided/year/inferred-5",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۲",
+                "۸"
+              ],
+              "designNotes": "Independent small 1949 year: broad block two with nearly vertical stem and sharply triangular eight. Added figures keep the large apertures and blunt compact terminal construction."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1949 year: broad block two with nearly vertical stem and sharply triangular eight. Added figures keep the large apertures and blunt compact terminal construction."
+          },
+          {
+            "character": "۶",
+            "path": "M5.096 42 6.37 43.69Q2.8665 44.08 2.1658 46.03Q3.5672 46.55 6.37 44.86L6.2426 48.5Q3.8857 50.45 1.6562 55H0Q0.7644 51.88 2.548 49.8Q-0.2548 50.06 0.1911 45.9Q1.1466 43.17 5.096 42Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "ir-wlp-1949-private/source-guided/year/inferred-6",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۲",
+                "۸"
+              ],
+              "designNotes": "Independent small 1949 year: broad block two with nearly vertical stem and sharply triangular eight. Added figures keep the large apertures and blunt compact terminal construction."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1949 year: broad block two with nearly vertical stem and sharply triangular eight. Added figures keep the large apertures and blunt compact terminal construction."
+          },
+          {
+            "character": "۷",
+            "path": "M0.7592 42 4.745 47.07 8.541 42 9.49 44.21 6.5481 51.36 5.4093 55H3.7011L2.847 51.49L0 44.21L0.7592 42Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "ir-wlp-1949-private/source-guided/year/inferred-7",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۲",
+                "۸"
+              ],
+              "designNotes": "Independent small 1949 year: broad block two with nearly vertical stem and sharply triangular eight. Added figures keep the large apertures and blunt compact terminal construction."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1949 year: broad block two with nearly vertical stem and sharply triangular eight. Added figures keep the large apertures and blunt compact terminal construction."
+          },
+          {
+            "character": "۹",
+            "path": "M3.4216 42Q6.0489 41.74 5.9267 45.64L4.7047 50.06L5.7434 52.66L4.277 55H3.1161Q1.8941 52.53 2.444 50.06L3.055 48.11Q0.4888 49.02 0 46.29Q0 43.17 3.4216 42ZM3.055 44.21Q1.5275 44.21 1.4664 45.77Q1.4664 46.94 3.8493 46.29Q5.0713 43.95 3.055 44.21Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "ir-wlp-1949-private/source-guided/year/inferred-9",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۲",
+                "۸"
+              ],
+              "designNotes": "Independent small 1949 year: broad block two with nearly vertical stem and sharply triangular eight. Added figures keep the large apertures and blunt compact terminal construction."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1949 year: broad block two with nearly vertical stem and sharply triangular eight. Added figures keep the large apertures and blunt compact terminal construction."
+          }
+        ],
+        "numericCompletion": {
+          "coverage": "۰۱۲۳۴۵۶۷۸۹",
+          "observed": "۲۸",
+          "inferred": "۰۱۳۴۵۶۷۹",
+          "method": "Original smooth outline construction using source-specific crown, stem, terminal and counter observations; no licensed candidate glyph substitution.",
+          "design": {
+            "widths": [
+              28,
+              23,
+              63,
+              73,
+              52,
+              67,
+              49,
+              73,
+              85,
+              47
+            ],
+            "stroke": 25,
+            "six": "hook",
+            "lean": 0,
+            "note": "Independent small 1949 year: broad block two with nearly vertical stem and sharply triangular eight. Added figures keep the large apertures and blunt compact terminal construction.",
+            "structure": "tab-block",
+            "one": "tab"
+          },
+          "confidence": "low",
+          "sourceFile": "historical-reference/ir-wlp-1949-private.jpg"
+        }
+      }
+    },
+    "numericCompletion": {
+      "coverage": "۰۱۲۳۴۵۶۷۸۹",
+      "observed": "۳۴۵",
+      "inferred": "۰۱۲۶۷۸۹",
+      "method": "Original smooth outline construction using source-specific crown, stem, terminal and counter observations; no licensed candidate glyph substitution.",
+      "design": {
+        "widths": [
+          25,
+          20,
+          43,
+          55,
+          43,
+          69,
+          46,
+          57,
+          54,
+          45
+        ],
+        "stroke": 12,
+        "six": "hook",
+        "lean": -2,
+        "note": "1949 narrow tapering stems, stepped crowns, angular open four and deep hollow heart five. Inferred figures keep the light internal stems and pointed terminals visible in the photographed three/four/five.",
+        "structure": "angular",
+        "one": "chisel"
+      },
+      "confidence": "provisional",
+      "sourceFile": "historical-reference/ir-wlp-1949-private.jpg"
+    }
+  },
+  {
+    "id": "historic-1954-study",
+    "label": "1954 · observed serial, ط and year roles",
+    "sourceId": "ir-wlp-1954-commercial/source-guided",
+    "sourceUrl": "http://www.worldlicenseplates.com/jpglps/AS_IRAN_OT1.jpg",
+    "sourceFile": "historical-reference/ir-wlp-1954-commercial.jpg",
+    "credit": "WorldLicensePlates / original contributor",
+    "capHeight": 49,
+    "baseline": 66,
+    "observedSerial": "۲۰۰",
+    "note": "Clean sparse-anchor reconstruction of the inspected source photograph. No cross-specimen glyph borrowing or automatic bitmap tracing; residual photographic perspective and low pixel resolution limit precision. The city initial and year figures are separately traced role alphabets with their own shared source metrics, never reduced copies of the main serial font. Numeric repertoires now include explicitly labelled inferred source-style outlines for absent digits; the original observed contours are unchanged and remain individually distinguishable.",
+    "glyphs": [
+      {
+        "character": "۲",
+        "sourceBox": [
+          59,
+          14,
+          87,
+          69
+        ],
+        "path": "M68 18 Q75 26 82 18 L84 17 Q85 26 79 30 L73 30 L73 51 Q73 61 68 66 L67 62 C68 49 65 36 63 30 L62 25 Z",
+        "occurrence": "first-digit",
+        "sourceId": "ir-wlp-1954-commercial/first-digit/۲"
+      },
+      {
+        "character": "۰",
+        "sourceBox": [
+          108,
+          31,
+          129,
+          51
+        ],
+        "path": "M118 34 Q123 37 126 41 L119 48 L111 42 Q110 41 111 39 Z",
+        "occurrence": "second-digit",
+        "sourceId": "ir-wlp-1954-commercial/second-digit/۰"
+      },
+      {
+        "character": "۱",
+        "path": "M5.8653 17 9.31 24.84 8.1928 47.87Q7.7273 60.12 3.2585 66L2.3275 65.51L4.4688 39.54L0 25.82L5.8653 17Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "ir-wlp-1954-commercial/source-guided/main/inferred-1",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۲",
+            "۰"
+          ],
+          "designNotes": "1954 broad shouldered two with a vertical pinched foot; zero remains a small central lozenge. Missing figures carry the same open crown and taper, without asserting their historical die form."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1954 broad shouldered two with a vertical pinched foot; zero remains a small central lozenge. Missing figures carry the same open crown and taper, without asserting their historical die form."
+      },
+      {
+        "character": "۳",
+        "path": "M3.7661 17C7.9089 23.37 13.9347 25.33 17.1359 19.94Q18.6424 18.47 18.8307 17.49Q25.9308 23.37 29.9439 17.49L30.87 17C30.87 24.35 28.0917 28.27 25.0047 28.27Q21.609 28.27 18.2658 27.29C19.2073 26.31 15.0646 32.19 10.7335 33.17C9.1829 39.54 12.2813 54.73 7.7178 64.04L6.7763 66L6.023 64.53C7.0087 53.26 4.1428 37.58 0.5649 29.74L0 25.33L3.7661 17Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "ir-wlp-1954-commercial/source-guided/main/inferred-3",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۲",
+            "۰"
+          ],
+          "designNotes": "1954 broad shouldered two with a vertical pinched foot; zero remains a small central lozenge. Missing figures carry the same open crown and taper, without asserting their historical die form."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1954 broad shouldered two with a vertical pinched foot; zero remains a small central lozenge. Missing figures carry the same open crown and taper, without asserting their historical die form."
+      },
+      {
+        "character": "۴",
+        "path": "M17.64 17 17.8752 21.41C13.4064 24.84 7.2912 28.27 7.5264 32.68C12.7008 35.13 18.1104 37.58 14.3472 42.97C10.1136 50.32 4.704 55.71 7.2912 59.63C11.0544 63.06 18.1104 58.16 23.52 57.18L21.4032 63.06C16.6992 67.47 5.1744 68.94 1.8816 63.06C-0.7056 58.65 4.704 48.85 10.1136 42.48C3.2928 41.01 0.2352 38.56 2.8224 33.17C6.5856 24.84 11.9952 20.43 17.64 17Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "ir-wlp-1954-commercial/source-guided/main/inferred-4",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۲",
+            "۰"
+          ],
+          "designNotes": "1954 broad shouldered two with a vertical pinched foot; zero remains a small central lozenge. Missing figures carry the same open crown and taper, without asserting their historical die form."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1954 broad shouldered two with a vertical pinched foot; zero remains a small central lozenge. Missing figures carry the same open crown and taper, without asserting their historical die form."
+      },
+      {
+        "character": "۵",
+        "path": "M14.945 17C20.0263 24.84 26.3032 35.62 28.9933 49.34C32.2812 61.59 27.4988 67.47 21.2219 66.98Q17.6351 66.98 14.945 63.06Q8.0703 70.41 2.6901 65.02C-3.2879 58.65 2.6901 43.95 7.4725 33.66Q11.6571 24.35 14.945 17ZM14.945 25.33C10.4615 35.62 4.7775 48.36 4.7775 56.69Q4.7775 63.06 11.0593 60.12Q14.0483 56.69 15.2439 56.69Q17.0373 61.1 22.4175 61.1C25.1125 62.08 27.7401 55.71 25.1125 49.34C23.0153 40.03 18.5318 30.72 14.945 25.33Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "ir-wlp-1954-commercial/source-guided/main/inferred-5",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۲",
+            "۰"
+          ],
+          "designNotes": "1954 broad shouldered two with a vertical pinched foot; zero remains a small central lozenge. Missing figures carry the same open crown and taper, without asserting their historical die form."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1954 broad shouldered two with a vertical pinched foot; zero remains a small central lozenge. Missing figures carry the same open crown and taper, without asserting their historical die form."
+      },
+      {
+        "character": "۶",
+        "path": "M19.0512 17 20.6976 21.9C13.8768 21.9 5.6448 28.27 6.5856 34.15C11.0544 39.54 19.0512 34.15 23.52 30.72L22.5792 39.05C12.7008 47.87 6.5856 57.18 3.528 66H2.1168C2.1168 58.65 7.9968 48.36 12.7008 42.48C3.9984 43.46 0.4704 38.56 3.528 31.7C7.5264 23.37 14.112 18.47 19.0512 17Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "ir-wlp-1954-commercial/source-guided/main/inferred-6",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۲",
+            "۰"
+          ],
+          "designNotes": "1954 broad shouldered two with a vertical pinched foot; zero remains a small central lozenge. Missing figures carry the same open crown and taper, without asserting their historical die form."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1954 broad shouldered two with a vertical pinched foot; zero remains a small central lozenge. Missing figures carry the same open crown and taper, without asserting their historical die form."
+      },
+      {
+        "character": "۷",
+        "path": "M2.891 17C7.5166 23.86 8.3839 32.19 12.7204 39.54Q14.455 43.46 15.9005 38.56C20.237 29.74 21.6825 20.92 26.019 17L28.91 23.86C26.019 31.7 19.0806 39.05 17.346 49.34L15.5232 64.04L14.0777 66H12.9213C12.7204 54.73 10.4076 45.91 6.3602 36.6L0.5782 29.25Q-0.5782 23.37 2.891 17Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "ir-wlp-1954-commercial/source-guided/main/inferred-7",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۲",
+            "۰"
+          ],
+          "designNotes": "1954 broad shouldered two with a vertical pinched foot; zero remains a small central lozenge. Missing figures carry the same open crown and taper, without asserting their historical die form."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1954 broad shouldered two with a vertical pinched foot; zero remains a small central lozenge. Missing figures carry the same open crown and taper, without asserting their historical die form."
+      },
+      {
+        "character": "۸",
+        "path": "M13.7445 17 15.092 17.49C14.2835 28.76 19.6735 40.52 25.333 51.3L26.95 58.65L24.794 65.51C19.404 58.16 17.248 47.38 14.014 40.03H12.936C8.8935 48.85 6.7375 59.14 2.4255 66L0 58.65C0.539 53.26 7.546 39.54 9.9715 30.23L13.7445 17Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "ir-wlp-1954-commercial/source-guided/main/inferred-8",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۲",
+            "۰"
+          ],
+          "designNotes": "1954 broad shouldered two with a vertical pinched foot; zero remains a small central lozenge. Missing figures carry the same open crown and taper, without asserting their historical die form."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1954 broad shouldered two with a vertical pinched foot; zero remains a small central lozenge. Missing figures carry the same open crown and taper, without asserting their historical die form."
+      },
+      {
+        "character": "۹",
+        "path": "M13.0634 17C19.8058 16.02 20.2272 24.35 17.0667 34.64C13.2741 44.93 12.8527 51.3 16.7433 58.65L13.6122 64.04L10.6624 66.49C6.9531 62.08 6.321 55.71 7.7959 49.34Q10.1136 41.01 11.7992 35.13C5.0568 37.58 0 33.17 0.6321 28.76C0.8428 22.88 6.321 17 13.0634 17ZM10.7457 22.88C6.5317 23.37 4.6354 28.27 6.321 29.74Q10.1136 32.19 14.1169 29.25Q16.856 22.88 10.7457 22.88Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "ir-wlp-1954-commercial/source-guided/main/inferred-9",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۲",
+            "۰"
+          ],
+          "designNotes": "1954 broad shouldered two with a vertical pinched foot; zero remains a small central lozenge. Missing figures carry the same open crown and taper, without asserting their historical die form."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1954 broad shouldered two with a vertical pinched foot; zero remains a small central lozenge. Missing figures carry the same open crown and taper, without asserting their historical die form."
+      }
+    ],
+    "roles": {
+      "city-initial": {
+        "label": "Source-specific city initial",
+        "capHeight": 30,
+        "baseline": 43,
+        "observedText": "ط",
+        "glyphs": [
+          {
+            "character": "ط",
+            "sourceBox": [
+              14,
+              10,
+              44,
+              46
+            ],
+            "path": "M28 13 L27 28 Q36 24 40 28 C44 34 37 42 27 43 Q20 43 17 38 L18 35 Q25 41 34 36 Q38 32 34 31 Q30 31 24 35 L23 32 L23 21 Q24 15 28 13 Z",
+            "occurrence": "city-initial",
+            "sourceId": "ir-wlp-1954-commercial/city-initial/ط"
+          }
+        ]
+      },
+      "year": {
+        "label": "Source-specific year-tab figures",
+        "capHeight": 15,
+        "baseline": 70,
+        "observedText": "۳۳",
+        "glyphs": [
+          {
+            "character": "۳",
+            "sourceBox": [
+              11,
+              51,
+              31,
+              73
+            ],
+            "path": "M18 55 Q21 58 24 55 Q26 57 28 55 Q29 60 23 61 L20 61 Q20 67 17 70 L15 70 Q17 62 14 59 Z",
+            "occurrence": "year-tab",
+            "sourceId": "ir-wlp-1954-commercial/year-tab/۳"
+          },
+          {
+            "character": "۰",
+            "path": "M2.1315 60.7165Q3.567 62.072 4.35 62.5Q3.045 63.6771 2.088 64.2835Q0.6525 63.035 0 62.5Q0.696 61.4656 2.1315 60.7165Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "ir-wlp-1954-commercial/source-guided/year/inferred-0",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳"
+              ],
+              "designNotes": "Independent small 1954 year: only broad three is observed. Shallow large crown, left-tapering base and strong weight are preserved; every other year figure is expressly low confidence."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1954 year: only broad three is observed. Shallow large crown, left-tapering base and strong weight are preserved; every other year figure is expressly low confidence."
+          },
+          {
+            "character": "۱",
+            "path": "M1.2075 55 2.829 56.35Q3.381 59.35 2.9325 63.25L2.4495 68.65L1.2075 70L1.104 62.8L0 57.1L1.2075 55Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "ir-wlp-1954-commercial/source-guided/year/inferred-1",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳"
+              ],
+              "designNotes": "Independent small 1954 year: only broad three is observed. Shallow large crown, left-tapering base and strong weight are preserved; every other year figure is expressly low confidence."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1954 year: only broad three is observed. Shallow large crown, left-tapering base and strong weight are preserved; every other year figure is expressly low confidence."
+          },
+          {
+            "character": "۲",
+            "path": "M0 55.75Q2.4 57.1 4.512 56.8Q7.2 56.95 9.312 55.6L9.6 59.485Q8.352 60.685 6.144 60.685L4.6347 60.985L4.4553 66.85L3.1995 70H0.7327V61.45L0 60.385V55.75Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "ir-wlp-1954-commercial/source-guided/year/inferred-2",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳"
+              ],
+              "designNotes": "Independent small 1954 year: only broad three is observed. Shallow large crown, left-tapering base and strong weight are preserved; every other year figure is expressly low confidence."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1954 year: only broad three is observed. Shallow large crown, left-tapering base and strong weight are preserved; every other year figure is expressly low confidence."
+          },
+          {
+            "character": "۴",
+            "path": "M6.3 55 7.2 57.4 3.87 59.95 6.75 61.6 5.58 64.45 2.97 67.15Q5.85 67.45 8.91 65.65L8.28 69.1Q3.06 71.8 0.36 69.4Q-0.54 67.6 1.26 64.9L2.97 62.8L0.36 60.85L1.35 58.3L6.3 55Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "ir-wlp-1954-commercial/source-guided/year/inferred-4",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳"
+              ],
+              "designNotes": "Independent small 1954 year: only broad three is observed. Shallow large crown, left-tapering base and strong weight are preserved; every other year figure is expressly low confidence."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1954 year: only broad three is observed. Shallow large crown, left-tapering base and strong weight are preserved; every other year figure is expressly low confidence."
+          },
+          {
+            "character": "۵",
+            "path": "M5.145 55 10.08 64.75Q11.55 70 7.98 70Q5.985 70.3 5.04 68.95Q2.31 70.75 0.42 68.95Q-0.63 66.85 1.05 63.25L5.145 55ZM5.25 58.75 2.5875 65.8Q1.8112 68.05 3.15 67.75L5.04 66.7L6.51 67.9Q9.5944 68.35 7.9125 65.35L5.25 58.75Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "ir-wlp-1954-commercial/source-guided/year/inferred-5",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳"
+              ],
+              "designNotes": "Independent small 1954 year: only broad three is observed. Shallow large crown, left-tapering base and strong weight are preserved; every other year figure is expressly low confidence."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1954 year: only broad three is observed. Shallow large crown, left-tapering base and strong weight are preserved; every other year figure is expressly low confidence."
+          },
+          {
+            "character": "۶",
+            "path": "M6.96 55 8.7 56.95Q3.915 57.4 2.958 59.65Q4.872 60.25 8.7 58.3L8.526 62.5Q5.307 64.75 2.262 70H0Q1.044 66.4 3.48 64Q-0.348 64.3 0.261 59.5Q1.566 56.35 6.96 55Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "ir-wlp-1954-commercial/source-guided/year/inferred-6",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳"
+              ],
+              "designNotes": "Independent small 1954 year: only broad three is observed. Shallow large crown, left-tapering base and strong weight are preserved; every other year figure is expressly low confidence."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1954 year: only broad three is observed. Shallow large crown, left-tapering base and strong weight are preserved; every other year figure is expressly low confidence."
+          },
+          {
+            "character": "۷",
+            "path": "M0.876 55 5.475 60.85 9.855 55 10.95 57.55 7.5555 65.8 6.2415 70H4.2705L3.285 65.95L0 57.55L0.876 55Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "ir-wlp-1954-commercial/source-guided/year/inferred-7",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳"
+              ],
+              "designNotes": "Independent small 1954 year: only broad three is observed. Shallow large crown, left-tapering base and strong weight are preserved; every other year figure is expressly low confidence."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1954 year: only broad three is observed. Shallow large crown, left-tapering base and strong weight are preserved; every other year figure is expressly low confidence."
+          },
+          {
+            "character": "۸",
+            "path": "M5.0715 55 10.35 67.3 9.108 70 5.589 62.2H4.4505L1.242 70L0 67.6L5.0715 55Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "ir-wlp-1954-commercial/source-guided/year/inferred-8",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳"
+              ],
+              "designNotes": "Independent small 1954 year: only broad three is observed. Shallow large crown, left-tapering base and strong weight are preserved; every other year figure is expressly low confidence."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1954 year: only broad three is observed. Shallow large crown, left-tapering base and strong weight are preserved; every other year figure is expressly low confidence."
+          },
+          {
+            "character": "۹",
+            "path": "M4.368 55Q7.722 54.7 7.566 59.2L6.006 64.3L7.332 67.3L5.46 70H3.978Q2.418 67.15 3.12 64.3L3.9 62.05Q0.624 63.1 0 59.95Q0 56.35 4.368 55ZM3.9 57.55Q1.95 57.55 1.872 59.35Q1.872 60.7 4.914 59.95Q6.474 57.25 3.9 57.55Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "ir-wlp-1954-commercial/source-guided/year/inferred-9",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳"
+              ],
+              "designNotes": "Independent small 1954 year: only broad three is observed. Shallow large crown, left-tapering base and strong weight are preserved; every other year figure is expressly low confidence."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1954 year: only broad three is observed. Shallow large crown, left-tapering base and strong weight are preserved; every other year figure is expressly low confidence."
+          }
+        ],
+        "numericCompletion": {
+          "coverage": "۰۱۲۳۴۵۶۷۸۹",
+          "observed": "۳",
+          "inferred": "۰۱۲۴۵۶۷۸۹",
+          "method": "Original smooth outline construction using source-specific crown, stem, terminal and counter observations; no licensed candidate glyph substitution.",
+          "design": {
+            "widths": [
+              29,
+              23,
+              64,
+              90,
+              60,
+              70,
+              58,
+              73,
+              69,
+              52
+            ],
+            "stroke": 23,
+            "six": "hook",
+            "lean": -5,
+            "note": "Independent small 1954 year: only broad three is observed. Shallow large crown, left-tapering base and strong weight are preserved; every other year figure is expressly low confidence.",
+            "structure": "tab-block",
+            "one": "tab"
+          },
+          "confidence": "low",
+          "sourceFile": "historical-reference/ir-wlp-1954-commercial.jpg"
+        }
+      }
+    },
+    "numericCompletion": {
+      "coverage": "۰۱۲۳۴۵۶۷۸۹",
+      "observed": "۰۲",
+      "inferred": "۱۳۴۵۶۷۸۹",
+      "method": "Original smooth outline construction using source-specific crown, stem, terminal and counter observations; no licensed candidate glyph substitution.",
+      "design": {
+        "widths": [
+          31,
+          19,
+          47,
+          63,
+          48,
+          61,
+          48,
+          59,
+          55,
+          43
+        ],
+        "stroke": 13,
+        "six": "hook",
+        "lean": -3,
+        "note": "1954 broad shouldered two with a vertical pinched foot; zero remains a small central lozenge. Missing figures carry the same open crown and taper, without asserting their historical die form.",
+        "one": "chisel"
+      },
+      "confidence": "low",
+      "sourceFile": "historical-reference/ir-wlp-1954-commercial.jpg"
+    }
+  },
+  {
+    "id": "historic-1956-study",
+    "label": "1956 · observed serial, ط and year roles",
+    "sourceId": "iran56caru/manual-smooth-subset",
+    "sourceUrl": "https://dna.nl/mideast/iran56caru.jpg",
+    "sourceFile": "historical-reference/iran56caru-reference.jpg",
+    "credit": "DNA archive / Fox",
+    "capHeight": 52,
+    "baseline": 85,
+    "observedSerial": "۴۲۵۵",
+    "note": "Clean source-guided reconstruction from the inspected DNA archive / Fox photograph; provisional contours, not an authenticated die. All glyphs retain one source-plane scale and baseline. Wear, glare and pixel stair-steps are excluded; low resolution and residual photographic perspective limit precision. The city initial and year figures are separately traced role alphabets with their own shared source metrics, never reduced copies of the main serial font. Numeric repertoires now include explicitly labelled inferred source-style outlines for absent digits; the original observed contours are unchanged and remain individually distinguishable.",
+    "glyphs": [
+      {
+        "character": "۲",
+        "sourceBox": [
+          117,
+          29,
+          145,
+          88
+        ],
+        "path": "M125 33 Q130 39 139 37 L142 32 Q142 42 138 47 L129 47 C129 62 129 76 127 85 L124 85 L123 63 Q121 50 120 39 Z",
+        "occurrence": "second-digit",
+        "sourceId": "iran56caru/۲-second-digit"
+      },
+      {
+        "character": "۴",
+        "sourceBox": [
+          81,
+          29,
+          109,
+          89
+        ],
+        "path": "M99 32 L99 37 C94 37 89 40 90 47 C95 47 100 48 100 53 C101 59 96 64 93 69 C90 73 89 77 91 79 C94 81 100 81 105 77 L102 84 C99 86 89 87 86 82 C82 76 86 68 92 59 L94 56 C87 57 85 54 86 48 C87 41 92 35 99 32 Z",
+        "occurrence": "first-digit",
+        "sourceId": "iran56caru/۴-first-digit"
+      },
+      {
+        "character": "۵",
+        "sourceBox": [
+          138,
+          31,
+          182,
+          90
+        ],
+        "path": "M158 35 C162 42 168 51 173 58 C180 69 179 79 173 84 C168 88 162 86 158 82 C153 87 145 88 142 81 C139 75 142 67 148 57 C153 49 156 42 158 35 Z M158 46 C155 53 150 62 147 69 C145 74 147 76 151 76 L157 75 Q161 69 163 76 L170 76 C175 75 175 69 172 64 C167 55 162 50 158 46 Z",
+        "occurrence": "third-digit",
+        "sourceId": "iran56caru/۵-third-digit"
+      },
+      {
+        "character": "۰",
+        "path": "M6.6248 53.4568Q11.0864 57.6696 13.52 59Q9.464 62.6585 6.4896 64.5432Q2.028 60.663 0 59Q2.1632 55.7849 6.6248 53.4568Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran56caru/manual-smooth-subset/main/inferred-0",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۲",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "1956 strong horizontal crowns and very narrow straight lower stems. Broad hollow two-lobed five sets the loop contrast; curled four supports a hooked rather than squared-six inference."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1956 strong horizontal crowns and very narrow straight lower stems. Broad hollow two-lobed five sets the loop contrast; curled four supports a hooked rather than squared-six inference."
+      },
+      {
+        "character": "۱",
+        "path": "M6.2244 33 9.88 41.32 8.6944 65.76Q8.2004 78.76 3.458 85L2.47 84.48L4.7424 56.92L0 42.36L6.2244 33Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran56caru/manual-smooth-subset/main/inferred-1",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۲",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "1956 strong horizontal crowns and very narrow straight lower stems. Broad hollow two-lobed five sets the loop contrast; curled four supports a hooked rather than squared-six inference."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1956 strong horizontal crowns and very narrow straight lower stems. Broad hollow two-lobed five sets the loop contrast; curled four supports a hooked rather than squared-six inference."
+      },
+      {
+        "character": "۳",
+        "path": "M3.8064 33C7.9934 39.76 14.0837 41.84 17.3191 36.12Q18.8417 34.56 19.032 33.52Q26.208 39.76 30.264 33.52L31.2 33C31.2 40.8 28.392 44.96 25.272 44.96Q21.84 44.96 18.461 43.92C19.4126 42.88 15.2256 48.6 10.8482 49.64C9.1801 56.92 12.4155 73.04 7.9258 82.92L6.9742 85L6.213 83.44C7.2426 71.48 4.291 54.84 0.571 46.52L0 41.84L3.8064 33Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran56caru/manual-smooth-subset/main/inferred-3",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۲",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "1956 strong horizontal crowns and very narrow straight lower stems. Broad hollow two-lobed five sets the loop contrast; curled four supports a hooked rather than squared-six inference."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1956 strong horizontal crowns and very narrow straight lower stems. Broad hollow two-lobed five sets the loop contrast; curled four supports a hooked rather than squared-six inference."
+      },
+      {
+        "character": "۶",
+        "path": "M20.2176 33 21.9648 38.2C14.7264 38.2 5.9904 44.96 6.9888 51.2C11.7312 56.92 20.2176 51.2 24.96 47.56L23.9616 56.4C13.4784 65.76 6.9888 75.64 3.744 85H2.2464C2.2464 77.2 8.4864 66.28 13.4784 60.04C4.2432 61.08 0.4992 55.88 3.744 48.6C7.9872 39.76 14.976 34.56 20.2176 33Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran56caru/manual-smooth-subset/main/inferred-6",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۲",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "1956 strong horizontal crowns and very narrow straight lower stems. Broad hollow two-lobed five sets the loop contrast; curled four supports a hooked rather than squared-six inference."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1956 strong horizontal crowns and very narrow straight lower stems. Broad hollow two-lobed five sets the loop contrast; curled four supports a hooked rather than squared-six inference."
+      },
+      {
+        "character": "۷",
+        "path": "M3.016 33C7.8416 40.28 8.7464 49.12 13.2704 56.92Q15.08 61.08 16.588 55.88C21.112 46.52 22.62 37.16 27.144 33L30.16 40.28C27.144 48.6 19.9056 56.4 18.096 67.32L16.2552 82.92L14.7472 85H13.5408C13.2704 73.04 10.8576 63.68 6.6352 53.8L0.6032 45.48Q-0.6032 39.76 3.016 33Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran56caru/manual-smooth-subset/main/inferred-7",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۲",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "1956 strong horizontal crowns and very narrow straight lower stems. Broad hollow two-lobed five sets the loop contrast; curled four supports a hooked rather than squared-six inference."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1956 strong horizontal crowns and very narrow straight lower stems. Broad hollow two-lobed five sets the loop contrast; curled four supports a hooked rather than squared-six inference."
+      },
+      {
+        "character": "۸",
+        "path": "M14.586 33 16.016 33.52C15.158 45.48 20.878 57.96 26.884 69.4L28.6 77.2L26.312 84.48C20.852 76.68 18.512 65.24 14.872 57.856H13.728C9.23 66.8 6.89 77.72 2.574 85L0 77.2C0.572 71.48 8.008 56.92 10.582 47.04L14.586 33Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran56caru/manual-smooth-subset/main/inferred-8",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۲",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "1956 strong horizontal crowns and very narrow straight lower stems. Broad hollow two-lobed five sets the loop contrast; curled four supports a hooked rather than squared-six inference."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1956 strong horizontal crowns and very narrow straight lower stems. Broad hollow two-lobed five sets the loop contrast; curled four supports a hooked rather than squared-six inference."
+      },
+      {
+        "character": "۹",
+        "path": "M14.1856 33C21.5072 31.96 21.9648 40.8 18.5328 51.72C14.4144 62.64 13.9568 69.4 18.4184 77.2L14.9968 82.92L11.7936 85.52C7.5504 80.84 6.864 74.08 8.4656 67.32Q10.9824 58.48 12.8128 52.24C5.4912 54.84 0 50.16 0.6864 45.48C0.9152 39.24 6.864 33 14.1856 33ZM11.6688 39.24C7.0928 39.76 5.0336 44.96 6.864 46.52Q10.9824 49.12 15.3296 46Q18.304 39.24 11.6688 39.24Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran56caru/manual-smooth-subset/main/inferred-9",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۲",
+            "۴",
+            "۵"
+          ],
+          "designNotes": "1956 strong horizontal crowns and very narrow straight lower stems. Broad hollow two-lobed five sets the loop contrast; curled four supports a hooked rather than squared-six inference."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1956 strong horizontal crowns and very narrow straight lower stems. Broad hollow two-lobed five sets the loop contrast; curled four supports a hooked rather than squared-six inference."
+      }
+    ],
+    "roles": {
+      "city-initial": {
+        "label": "Source-specific city initial",
+        "capHeight": 31,
+        "baseline": 49,
+        "observedText": "ط",
+        "glyphs": [
+          {
+            "character": "ط",
+            "sourceBox": [
+              28,
+              15,
+              59,
+              53
+            ],
+            "path": "M45 18 L43 33 Q49 30 53 33 C59 39 50 48 42 49 Q34 50 31 44 L32 41 Q39 46 48 41 Q54 36 48 35 Q44 35 39 40 L36 40 L39 23 Z",
+            "occurrence": "city-initial",
+            "sourceId": "iran56caru/city-initial/ط"
+          }
+        ]
+      },
+      "year": {
+        "label": "Source-specific year-tab figures",
+        "capHeight": 19,
+        "baseline": 91,
+        "observedText": "۳۵",
+        "glyphs": [
+          {
+            "character": "۳",
+            "sourceBox": [
+              25,
+              69,
+              41,
+              94
+            ],
+            "path": "M30 72 Q34 75 38 72 L38 77 L33 78 L32 88 L30 91 L29 85 L29 78 L28 75 Z",
+            "occurrence": "year-tab",
+            "sourceId": "iran56caru/year-tab/۳"
+          },
+          {
+            "character": "۵",
+            "sourceBox": [
+              41,
+              70,
+              57,
+              93
+            ],
+            "path": "M46 73 L52 78 Q57 86 50 88 L44 88 L43 86 L46 82 L46 78 Z M48 78 L48 83 L46 86 L50 86 Q53 85 51 82 Z",
+            "occurrence": "year-tab",
+            "sourceId": "iran56caru/year-tab/۵"
+          },
+          {
+            "character": "۰",
+            "path": "M2.5137 79.3967Q4.2066 80.9952 5.13 81.5Q3.591 82.8882 2.4624 83.6033Q0.7695 82.131 0 81.5Q0.8208 80.2801 2.5137 79.3967Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran56caru/manual-smooth-subset/year/inferred-0",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳",
+                "۵"
+              ],
+              "designNotes": "Independent small 1956 year: compact upright crown-three and unusual small closed five establish thicker, shorter joins than the main row."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1956 year: compact upright crown-three and unusual small closed five establish thicker, shorter joins than the main row."
+          },
+          {
+            "character": "۱",
+            "path": "M1.33 72 3.116 73.71Q3.724 77.51 3.23 82.45L2.698 89.29L1.33 91L1.216 81.88L0 74.66L1.33 72Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran56caru/manual-smooth-subset/year/inferred-1",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳",
+                "۵"
+              ],
+              "designNotes": "Independent small 1956 year: compact upright crown-three and unusual small closed five establish thicker, shorter joins than the main row."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1956 year: compact upright crown-three and unusual small closed five establish thicker, shorter joins than the main row."
+          },
+          {
+            "character": "۲",
+            "path": "M0 72.95Q2.1375 74.66 4.0185 74.28Q6.4125 74.47 8.2935 72.76L8.55 75.04Q7.4385 76.56 5.472 76.56L3.9178 76.94L3.7962 87.01L2.945 91L1.273 89.1V80.17L0 76.18V72.95Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran56caru/manual-smooth-subset/year/inferred-2",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳",
+                "۵"
+              ],
+              "designNotes": "Independent small 1956 year: compact upright crown-three and unusual small closed five establish thicker, shorter joins than the main row."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1956 year: compact upright crown-three and unusual small closed five establish thicker, shorter joins than the main row."
+          },
+          {
+            "character": "۴",
+            "path": "M6.118 72 6.7298 74.09 2.9716 77.51 2.7968 78.46 6.4676 80.17 5.681 82.64 2.7968 86.63Q1.8354 88.72 3.8456 88.15L8.74 86.44L7.5164 90.43Q2.7968 92.9 0.5244 89.86Q-0.1748 87.39 1.4858 83.78L3.059 81.69L0.5244 79.98L0.874 77.32L6.118 72Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran56caru/manual-smooth-subset/year/inferred-4",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳",
+                "۵"
+              ],
+              "designNotes": "Independent small 1956 year: compact upright crown-three and unusual small closed five establish thicker, shorter joins than the main row."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1956 year: compact upright crown-three and unusual small closed five establish thicker, shorter joins than the main row."
+          },
+          {
+            "character": "۶",
+            "path": "M6.992 72 8.0408 74.28Q3.6708 74.09 2.622 78.46Q4.37 79.79 8.74 77.51L8.3904 81.31Q3.8456 84.92 1.2236 91L0.3496 90.43Q1.311 86.25 4.0204 82.64Q0.1748 83.4 0.6118 78.46Q1.4858 74.28 6.992 72Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran56caru/manual-smooth-subset/year/inferred-6",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳",
+                "۵"
+              ],
+              "designNotes": "Independent small 1956 year: compact upright crown-three and unusual small closed five establish thicker, shorter joins than the main row."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1956 year: compact upright crown-three and unusual small closed five establish thicker, shorter joins than the main row."
+          },
+          {
+            "character": "۷",
+            "path": "M0.912 72 5.7 81.69 10.26 72 11.4 75.23 7.068 85.68 6.498 91H4.446L3.99 85.87L0 75.23L0.912 72Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran56caru/manual-smooth-subset/year/inferred-7",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳",
+                "۵"
+              ],
+              "designNotes": "Independent small 1956 year: compact upright crown-three and unusual small closed five establish thicker, shorter joins than the main row."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1956 year: compact upright crown-three and unusual small closed five establish thicker, shorter joins than the main row."
+          },
+          {
+            "character": "۸",
+            "path": "M5.3067 72 10.83 87.58 9.5304 91 5.8482 81.69H4.6569L1.2996 91L0 87.96L5.3067 72Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran56caru/manual-smooth-subset/year/inferred-8",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳",
+                "۵"
+              ],
+              "designNotes": "Independent small 1956 year: compact upright crown-three and unusual small closed five establish thicker, shorter joins than the main row."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1956 year: compact upright crown-three and unusual small closed five establish thicker, shorter joins than the main row."
+          },
+          {
+            "character": "۹",
+            "path": "M4.5752 72Q8.0883 71.62 7.9249 77.32L6.2909 83.78L7.6798 87.58L5.719 91H4.1667Q2.5327 87.39 3.268 83.78L4.085 80.93Q0.6536 82.26 0 78.27Q0 73.71 4.5752 72ZM4.085 75.23Q2.0425 75.23 1.9608 77.51Q1.9608 79.22 5.1471 78.27Q6.7811 74.85 4.085 75.23Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran56caru/manual-smooth-subset/year/inferred-9",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳",
+                "۵"
+              ],
+              "designNotes": "Independent small 1956 year: compact upright crown-three and unusual small closed five establish thicker, shorter joins than the main row."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1956 year: compact upright crown-three and unusual small closed five establish thicker, shorter joins than the main row."
+          }
+        ],
+        "numericCompletion": {
+          "coverage": "۰۱۲۳۴۵۶۷۸۹",
+          "observed": "۳۵",
+          "inferred": "۰۱۲۴۶۷۸۹",
+          "method": "Original smooth outline construction using source-specific crown, stem, terminal and counter observations; no licensed candidate glyph substitution.",
+          "design": {
+            "widths": [
+              27,
+              20,
+              45,
+              60,
+              46,
+              70,
+              46,
+              60,
+              57,
+              43
+            ],
+            "stroke": 16,
+            "six": "hook",
+            "lean": 0,
+            "note": "Independent small 1956 year: compact upright crown-three and unusual small closed five establish thicker, shorter joins than the main row.",
+            "structure": "tab-flat",
+            "one": "tab"
+          },
+          "confidence": "low",
+          "sourceFile": "historical-reference/iran56caru-reference.jpg"
+        }
+      }
+    },
+    "numericCompletion": {
+      "coverage": "۰۱۲۳۴۵۶۷۸۹",
+      "observed": "۲۴۵",
+      "inferred": "۰۱۳۶۷۸۹",
+      "method": "Original smooth outline construction using source-specific crown, stem, terminal and counter observations; no licensed candidate glyph substitution.",
+      "design": {
+        "widths": [
+          26,
+          19,
+          42,
+          60,
+          45,
+          70,
+          48,
+          58,
+          55,
+          44
+        ],
+        "stroke": 12,
+        "six": "hook",
+        "lean": -1,
+        "note": "1956 strong horizontal crowns and very narrow straight lower stems. Broad hollow two-lobed five sets the loop contrast; curled four supports a hooked rather than squared-six inference.",
+        "one": "straight-blade"
+      },
+      "confidence": "provisional",
+      "sourceFile": "historical-reference/iran56caru-reference.jpg"
+    }
+  },
+  {
+    "id": "historic-1960-study",
+    "label": "1960 · observed serial, ط and year roles",
+    "sourceId": "iran60caru-reference/source-guided",
+    "sourceUrl": "https://dna.nl/mideast/iran60caru.jpg",
+    "sourceFile": "historical-reference/iran60caru-reference.jpg",
+    "credit": "DNA archive / PP",
+    "capHeight": 47,
+    "baseline": 69,
+    "observedSerial": "۱۸۲۷",
+    "note": "Clean sparse-anchor reconstruction of the inspected source photograph. No cross-specimen glyph borrowing or automatic bitmap tracing; residual photographic perspective and low pixel resolution limit precision. The city initial and year figures are separately traced role alphabets with their own shared source metrics, never reduced copies of the main serial font. Numeric repertoires now include explicitly labelled inferred source-style outlines for absent digits; the original observed contours are unchanged and remain individually distinguishable.",
+    "glyphs": [
+      {
+        "character": "۱",
+        "sourceBox": [
+          100,
+          19,
+          114,
+          72
+        ],
+        "path": "M108.8 22.8 C109.9 34 109.7 44.5 108.6 55 C107.8 61 106 66 104 68.4 L104.7 63 C105.9 50 105.7 42 104.6 34.5 L103.8 30.5 Q105.3 26.8 108.8 22.8 Z",
+        "occurrence": "first-digit",
+        "sourceId": "iran60caru-reference/first-digit/۱",
+        "note": "Clean sparse-anchor reconstruction of the inspected source photograph. No cross-specimen glyph borrowing, automatic bitmap tracing or unobserved forms; residual photographic perspective and low pixel resolution limit precision. The city initial and year figures are separately traced role alphabets with their own shared source metrics, never reduced copies of the main serial font. Final contour-weight review: the light stem/branch silhouette follows the dark source core rather than the surrounding photographic blur. No horizontal compression is applied."
+      },
+      {
+        "character": "۸",
+        "sourceBox": [
+          128,
+          21,
+          156,
+          71
+        ],
+        "path": "M142 25 L144 25 C143 37 147 47 152 55 L153 63 L151 68 C147 64 146 55 142 46 L140 46 C137 53 135 65 132 68 L130 61 C130 56 137 46 139 38 Z",
+        "occurrence": "second-digit",
+        "sourceId": "iran60caru-reference/second-digit/۸"
+      },
+      {
+        "character": "۲",
+        "sourceBox": [
+          166,
+          22,
+          190,
+          73
+        ],
+        "path": "M173 25 Q179 33 185 28 L187 25 Q187 34 178 38 L177 62 Q176 67 173 70 L172 67 L172 43 Q168 34 169 30 Z",
+        "occurrence": "third-digit",
+        "sourceId": "iran60caru-reference/third-digit/۲"
+      },
+      {
+        "character": "۷",
+        "sourceBox": [
+          203,
+          20,
+          232,
+          72
+        ],
+        "path": "M208.1 25.4 C209.5 31.8 212.1 39.1 216 45.9 Q217.3 48.3 218.7 44.5 C220.4 37.7 222.5 30.5 225.3 24.5 L227.4 30.7 C226.3 36.7 222.7 41.4 220.2 48.8 C218.4 54.4 218.2 61.9 217.2 67 L216.2 67 C215.4 58.6 214.3 50.9 211.1 44 C208.5 38.9 206.5 35.8 206.5 32.7 Z",
+        "occurrence": "fourth-digit",
+        "sourceId": "iran60caru-reference/fourth-digit/۷",
+        "note": "Clean sparse-anchor reconstruction of the inspected source photograph. No cross-specimen glyph borrowing, automatic bitmap tracing or unobserved forms; residual photographic perspective and low pixel resolution limit precision. The city initial and year figures are separately traced role alphabets with their own shared source metrics, never reduced copies of the main serial font. Final contour-weight review: the light stem/branch silhouette follows the dark source core rather than the surrounding photographic blur. No horizontal compression is applied."
+      },
+      {
+        "character": "۰",
+        "path": "M5.5272 40.8752Q9.2496 44.39 11.28 45.5Q7.896 48.5524 5.4144 50.1248Q1.692 46.8874 0 45.5Q1.8048 42.8176 5.5272 40.8752Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran60caru-reference/source-guided/main/inferred-0",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۸",
+            "۲",
+            "۷"
+          ],
+          "designNotes": "1960 unusually narrow numeral system: thin blade one, high pinched crowns, slim V and upright split eight. Curved strokes and counters retain light weight; no wide modern-font forms are imported."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1960 unusually narrow numeral system: thin blade one, high pinched crowns, slim V and upright split eight. Curved strokes and counters retain light weight; no wide modern-font forms are imported."
+      },
+      {
+        "character": "۳",
+        "path": "M3.0964 22C6.5024 28.11 11.4565 29.99 14.0884 24.82Q15.327 23.41 15.4818 22.47Q21.3192 28.11 24.6186 22.47L25.38 22C25.38 29.05 23.0958 32.81 20.5578 32.81Q17.766 32.81 15.0173 31.87C15.7914 30.93 12.3854 35.16 8.8246 36.1C7.2054 43.62 9.8702 58.19 6.3802 67.12L5.6061 69L4.9868 67.59C5.9583 56.78 3.688 41.74 0.4645 34.22L0 29.99L3.0964 22Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran60caru-reference/source-guided/main/inferred-3",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۸",
+            "۲",
+            "۷"
+          ],
+          "designNotes": "1960 unusually narrow numeral system: thin blade one, high pinched crowns, slim V and upright split eight. Curved strokes and counters retain light weight; no wide modern-font forms are imported."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1960 unusually narrow numeral system: thin blade one, high pinched crowns, slim V and upright split eight. Curved strokes and counters retain light weight; no wide modern-font forms are imported."
+      },
+      {
+        "character": "۴",
+        "path": "M14.4525 22 14.6452 26.23C10.9839 29.52 5.9737 32.81 6.1664 37.04C10.4058 39.39 14.8379 41.74 11.7547 46.91C8.2861 53.96 3.854 59.13 5.9737 62.89C9.0569 66.18 14.8379 61.48 19.27 60.54L17.5357 66.18C13.6817 70.41 4.2394 71.82 1.5416 66.18C-0.5781 61.95 3.854 52.55 8.2861 46.44C2.6978 45.03 0.1927 42.68 2.3124 37.51C5.3956 29.52 9.8277 25.29 14.4525 22Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran60caru-reference/source-guided/main/inferred-4",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۸",
+            "۲",
+            "۷"
+          ],
+          "designNotes": "1960 unusually narrow numeral system: thin blade one, high pinched crowns, slim V and upright split eight. Curved strokes and counters retain light weight; no wide modern-font forms are imported."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1960 unusually narrow numeral system: thin blade one, high pinched crowns, slim V and upright split eight. Curved strokes and counters retain light weight; no wide modern-font forms are imported."
+      },
+      {
+        "character": "۵",
+        "path": "M13.395 22C17.9493 29.52 23.5752 39.86 25.9863 53.02C28.9332 64.77 24.6468 70.41 19.0209 69.94Q15.8061 69.94 13.395 66.18Q7.2333 73.23 2.4111 68.06C-2.9469 61.95 2.4111 47.85 6.6975 37.98Q10.4481 29.05 13.395 22ZM13.395 29.99C9.3765 39.86 3.525 52.08 3.525 60.07Q3.525 66.18 9.9123 63.36Q12.5913 60.07 13.6629 60.07Q15.2703 64.3 20.0925 64.3C23.265 65.24 25.2037 59.13 23.265 53.02C20.6283 44.09 16.6098 35.16 13.395 29.99Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran60caru-reference/source-guided/main/inferred-5",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۸",
+            "۲",
+            "۷"
+          ],
+          "designNotes": "1960 unusually narrow numeral system: thin blade one, high pinched crowns, slim V and upright split eight. Curved strokes and counters retain light weight; no wide modern-font forms are imported."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1960 unusually narrow numeral system: thin blade one, high pinched crowns, slim V and upright split eight. Curved strokes and counters retain light weight; no wide modern-font forms are imported."
+      },
+      {
+        "character": "۶",
+        "path": "M15.228 22 16.544 26.7C11.092 26.7 4.512 32.81 5.264 38.45C8.836 43.62 15.228 38.45 18.8 35.16L18.048 43.15C10.152 51.61 5.264 60.54 2.82 69H1.692C1.692 61.95 6.392 52.08 10.152 46.44C3.196 47.38 0.376 42.68 2.82 36.1C6.016 28.11 11.28 23.41 15.228 22Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran60caru-reference/source-guided/main/inferred-6",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۸",
+            "۲",
+            "۷"
+          ],
+          "designNotes": "1960 unusually narrow numeral system: thin blade one, high pinched crowns, slim V and upright split eight. Curved strokes and counters retain light weight; no wide modern-font forms are imported."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1960 unusually narrow numeral system: thin blade one, high pinched crowns, slim V and upright split eight. Curved strokes and counters retain light weight; no wide modern-font forms are imported."
+      },
+      {
+        "character": "۹",
+        "path": "M10.199 22C15.463 21.06 15.792 29.05 13.3245 38.92C10.3635 48.79 10.0345 54.9 13.1177 61.95L10.669 67.12L8.366 69.47C5.4285 65.24 4.935 59.13 6.0865 53.02Q7.896 45.03 9.212 39.39C3.948 41.74 0 37.51 0.4935 33.28C0.658 27.64 4.935 22 10.199 22ZM8.3895 27.64C5.0995 28.11 3.619 32.81 4.935 34.22Q7.896 36.57 11.0215 33.75Q13.16 27.64 8.3895 27.64Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran60caru-reference/source-guided/main/inferred-9",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۱",
+            "۸",
+            "۲",
+            "۷"
+          ],
+          "designNotes": "1960 unusually narrow numeral system: thin blade one, high pinched crowns, slim V and upright split eight. Curved strokes and counters retain light weight; no wide modern-font forms are imported."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1960 unusually narrow numeral system: thin blade one, high pinched crowns, slim V and upright split eight. Curved strokes and counters retain light weight; no wide modern-font forms are imported."
+      }
+    ],
+    "roles": {
+      "city-initial": {
+        "label": "Source-specific city initial",
+        "capHeight": 30,
+        "baseline": 45,
+        "observedText": "ط",
+        "glyphs": [
+          {
+            "character": "ط",
+            "sourceBox": [
+              42,
+              11,
+              66,
+              49
+            ],
+            "path": "M55 15 L55 28 Q60 24 62 29 C64 36 57 42 47 45 L45 44 C52 40 53 35 52 29 L53 18 Z M56 32 Q60 28 60 33 Q59 38 51 41 C53 38 55 35 56 32 Z",
+            "occurrence": "city-initial",
+            "sourceId": "iran60caru-reference/city-initial/ط"
+          }
+        ]
+      },
+      "year": {
+        "label": "Source-specific year-tab figures",
+        "capHeight": 21,
+        "baseline": 73,
+        "observedText": "۳۹",
+        "glyphs": [
+          {
+            "character": "۳",
+            "sourceBox": [
+              35,
+              48,
+              57,
+              77
+            ],
+            "path": "M41 53 Q45 57 49 53 Q52 57 54 52 L54 57 Q50 61 45 60 L43 70 L40 73 L40 66 L39 56 Z",
+            "occurrence": "year-tab",
+            "sourceId": "iran60caru-reference/year-tab/۳"
+          },
+          {
+            "character": "۹",
+            "sourceBox": [
+              54,
+              49,
+              68,
+              77
+            ],
+            "path": "M62 52 C66 52 65 58 64 64 L64 71 L61 73 L58 71 L59 63 C55 63 55 59 57 55 Z M61 56 Q59 56 59 59 Q62 61 62 58 Z",
+            "occurrence": "year-tab",
+            "sourceId": "iran60caru-reference/year-tab/۹"
+          },
+          {
+            "character": "۰",
+            "path": "M2.4696 60.4336Q4.1328 62.0041 5.04 62.5Q3.528 63.8638 2.4192 64.5664Q0.756 63.1199 0 62.5Q0.8064 61.3015 2.4696 60.4336Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran60caru-reference/source-guided/year/inferred-0",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳",
+                "۹"
+              ],
+              "designNotes": "Independent small 1960 year: broad three and small closed-loop nine have near-block shoulders and short tapered terminals. Added digits retain that high weight at small size."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1960 year: broad three and small closed-loop nine have near-block shoulders and short tapered terminals. Added digits retain that high weight at small size."
+          },
+          {
+            "character": "۱",
+            "path": "M1.3965 52 3.2718 53.89Q3.9102 58.09 3.3915 63.55L2.8329 71.11L1.3965 73L1.2768 62.92L0 54.94L1.3965 52Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran60caru-reference/source-guided/year/inferred-1",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳",
+                "۹"
+              ],
+              "designNotes": "Independent small 1960 year: broad three and small closed-loop nine have near-block shoulders and short tapered terminals. Added digits retain that high weight at small size."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1960 year: broad three and small closed-loop nine have near-block shoulders and short tapered terminals. Added digits retain that high weight at small size."
+          },
+          {
+            "character": "۲",
+            "path": "M0 53.05Q2.5725 54.94 4.8363 54.52Q7.7175 54.73 9.9813 52.84L10.29 57.46Q8.9523 59.14 6.5856 59.14L5.1114 59.56L4.893 68.59L3.3642 73H0.3612V61.03L0 58.72V53.05Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran60caru-reference/source-guided/year/inferred-2",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳",
+                "۹"
+              ],
+              "designNotes": "Independent small 1960 year: broad three and small closed-loop nine have near-block shoulders and short tapered terminals. Added digits retain that high weight at small size."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1960 year: broad three and small closed-loop nine have near-block shoulders and short tapered terminals. Added digits retain that high weight at small size."
+          },
+          {
+            "character": "۴",
+            "path": "M7.056 52 8.064 55.36 4.3344 58.93 7.56 61.24 6.2496 65.23 3.3264 69.01Q6.552 69.43 9.9792 66.91L9.2736 71.74Q3.4272 75.52 0.4032 72.16Q-0.6048 69.64 1.4112 65.86L3.3264 62.92L0.4032 60.19L1.512 56.62L7.056 52Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran60caru-reference/source-guided/year/inferred-4",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳",
+                "۹"
+              ],
+              "designNotes": "Independent small 1960 year: broad three and small closed-loop nine have near-block shoulders and short tapered terminals. Added digits retain that high weight at small size."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1960 year: broad three and small closed-loop nine have near-block shoulders and short tapered terminals. Added digits retain that high weight at small size."
+          },
+          {
+            "character": "۵",
+            "path": "M6.0711 52 11.8944 65.65Q13.629 73 9.4164 73Q7.0623 73.42 5.9472 71.53Q2.7258 74.05 0.4956 71.53Q-0.7434 68.59 1.239 63.55L6.0711 52ZM6.195 57.25 3.15 67.12Q2.205 70.27 3.717 69.85L5.9472 68.38L7.6818 70.06Q11.2875 70.69 9.24 66.49L6.195 57.25Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran60caru-reference/source-guided/year/inferred-5",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳",
+                "۹"
+              ],
+              "designNotes": "Independent small 1960 year: broad three and small closed-loop nine have near-block shoulders and short tapered terminals. Added digits retain that high weight at small size."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1960 year: broad three and small closed-loop nine have near-block shoulders and short tapered terminals. Added digits retain that high weight at small size."
+          },
+          {
+            "character": "۶",
+            "path": "M7.392 52 9.24 54.73Q4.158 55.36 3.1416 58.51Q5.1744 59.35 9.24 56.62L9.0552 62.5Q5.6364 65.65 2.4024 73H0Q1.1088 67.96 3.696 64.6Q-0.3696 65.02 0.2772 58.3Q1.6632 53.89 7.392 52Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran60caru-reference/source-guided/year/inferred-6",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳",
+                "۹"
+              ],
+              "designNotes": "Independent small 1960 year: broad three and small closed-loop nine have near-block shoulders and short tapered terminals. Added digits retain that high weight at small size."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1960 year: broad three and small closed-loop nine have near-block shoulders and short tapered terminals. Added digits retain that high weight at small size."
+          },
+          {
+            "character": "۷",
+            "path": "M0.9576 52 5.985 60.19 10.773 52 11.97 55.57 8.2593 67.12 6.8229 73H4.6683L3.591 67.33L0 55.57L0.9576 52Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran60caru-reference/source-guided/year/inferred-7",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳",
+                "۹"
+              ],
+              "designNotes": "Independent small 1960 year: broad three and small closed-loop nine have near-block shoulders and short tapered terminals. Added digits retain that high weight at small size."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1960 year: broad three and small closed-loop nine have near-block shoulders and short tapered terminals. Added digits retain that high weight at small size."
+          },
+          {
+            "character": "۸",
+            "path": "M5.5566 52 11.34 69.22 9.9792 73 6.1236 62.08H4.8762L1.3608 73L0 69.64L5.5566 52Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran60caru-reference/source-guided/year/inferred-8",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۳",
+                "۹"
+              ],
+              "designNotes": "Independent small 1960 year: broad three and small closed-loop nine have near-block shoulders and short tapered terminals. Added digits retain that high weight at small size."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1960 year: broad three and small closed-loop nine have near-block shoulders and short tapered terminals. Added digits retain that high weight at small size."
+          }
+        ],
+        "numericCompletion": {
+          "coverage": "۰۱۲۳۴۵۶۷۸۹",
+          "observed": "۳۹",
+          "inferred": "۰۱۲۴۵۶۷۸",
+          "method": "Original smooth outline construction using source-specific crown, stem, terminal and counter observations; no licensed candidate glyph substitution.",
+          "design": {
+            "widths": [
+              24,
+              19,
+              49,
+              73,
+              48,
+              59,
+              44,
+              57,
+              54,
+              44
+            ],
+            "stroke": 20,
+            "six": "hook",
+            "lean": -2,
+            "note": "Independent small 1960 year: broad three and small closed-loop nine have near-block shoulders and short tapered terminals. Added digits retain that high weight at small size.",
+            "structure": "tab-block",
+            "one": "tab"
+          },
+          "confidence": "low",
+          "sourceFile": "historical-reference/iran60caru-reference.jpg"
+        }
+      }
+    },
+    "numericCompletion": {
+      "coverage": "۰۱۲۳۴۵۶۷۸۹",
+      "observed": "۱۲۷۸",
+      "inferred": "۰۳۴۵۶۹",
+      "method": "Original smooth outline construction using source-specific crown, stem, terminal and counter observations; no licensed candidate glyph substitution.",
+      "design": {
+        "widths": [
+          24,
+          12,
+          39,
+          54,
+          41,
+          57,
+          40,
+          46,
+          49,
+          35
+        ],
+        "stroke": 10,
+        "six": "hook",
+        "lean": -2,
+        "note": "1960 unusually narrow numeral system: thin blade one, high pinched crowns, slim V and upright split eight. Curved strokes and counters retain light weight; no wide modern-font forms are imported.",
+        "one": "fine-curved"
+      },
+      "confidence": "provisional",
+      "sourceFile": "historical-reference/iran60caru-reference.jpg"
+    }
+  },
+  {
+    "id": "historic-1961-study",
+    "label": "1961 · observed serial, ط and year roles",
+    "sourceId": "iran61caru/manual-smooth-subset",
+    "sourceUrl": "https://dna.nl/mideast/iran61caru.jpg",
+    "sourceFile": "historical-reference/iran61caru-reference.jpg",
+    "credit": "DNA archive / Gordon",
+    "capHeight": 48,
+    "baseline": 72,
+    "observedSerial": "۲۲۸۷۵",
+    "note": "Clean source-guided reconstruction from the inspected DNA archive / Gordon photograph; provisional contours, not an authenticated die. All glyphs retain one source-plane scale and baseline. Wear, glare and pixel stair-steps are excluded; low resolution and residual photographic perspective limit precision. The city initial and year figures are separately traced role alphabets with their own shared source metrics, never reduced copies of the main serial font. Numeric repertoires now include explicitly labelled inferred source-style outlines for absent digits; the original observed contours are unchanged and remain individually distinguishable.",
+    "glyphs": [
+      {
+        "character": "۲",
+        "sourceBox": [
+          118,
+          21,
+          144,
+          77
+        ],
+        "path": "M125 25 Q132 31 138 28 L140 24 C141 30 138 35 130 38 C128 42 131 52 130 61 Q129 69 127 73 C126 62 125 50 123 43 L120 32 Z",
+        "occurrence": "second-digit",
+        "sourceId": "iran61caru/۲-second-digit"
+      },
+      {
+        "character": "۵",
+        "sourceBox": [
+          222,
+          21,
+          257,
+          77
+        ],
+        "path": "M238 24 C244 31 249 37 251 46 C255 55 252 65 247 69 Q242 73 237 69 Q232 73 227 69 C222 67 223 59 226 52 C230 41 235 31 238 24 Z M238 35 C234 43 230 51 228 58 C226 63 228 65 232 65 Q235 65 237 62 Q241 66 247 63 C250 58 248 51 245 45 Z",
+        "occurrence": "fifth-digit",
+        "sourceId": "iran61caru/۵-fifth-digit"
+      },
+      {
+        "character": "۷",
+        "sourceBox": [
+          188,
+          20,
+          224,
+          76
+        ],
+        "path": "M198 24 C202 29 203 37 206 43 Q208 47 210 43 C213 36 215 26 218 23 L220 31 C217 39 213 43 211 52 L209 68 L206 68 C206 57 204 49 201 43 L195 33 Z",
+        "occurrence": "fourth-digit",
+        "sourceId": "iran61caru/۷-fourth-digit"
+      },
+      {
+        "character": "۸",
+        "sourceBox": [
+          149,
+          20,
+          183,
+          77
+        ],
+        "path": "M165 24 C167 34 165 42 172 53 L177 59 Q177 64 175 68 C171 62 169 54 166 47 L164 47 C161 54 159 62 156 69 L153 62 C151 58 156 52 159 46 C162 39 163 32 165 24 Z",
+        "occurrence": "third-digit",
+        "sourceId": "iran61caru/۸-third-digit"
+      },
+      {
+        "character": "۰",
+        "path": "M5.6448 43.2768Q9.4464 46.8664 11.52 48Q8.064 51.1173 5.5296 52.7232Q1.728 49.417 0 48Q1.8432 45.2605 5.6448 43.2768Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran61caru/manual-smooth-subset/main/inferred-0",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۲",
+            "۵",
+            "۷",
+            "۸"
+          ],
+          "designNotes": "1961 tapered two, tall rounded heart five and long narrow V/caret stems. The heavier crown transitions to a fine lower stem, retaining this specimen’s narrow-foot contrast."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1961 tapered two, tall rounded heart five and long narrow V/caret stems. The heavier crown transitions to a fine lower stem, retaining this specimen’s narrow-foot contrast."
+      },
+      {
+        "character": "۱",
+        "path": "M3.9168 24C7.4256 30.24 8.064 43.68 6.312 55.2C6.0192 64.32 4.608 69.6 2.8992 72L2.328 71.04C4.1136 58.08 3.0048 46.08 0 33.12Q0.816 28.32 3.9168 24Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran61caru/manual-smooth-subset/main/inferred-1",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۲",
+            "۵",
+            "۷",
+            "۸"
+          ],
+          "designNotes": "1961 tapered two, tall rounded heart five and long narrow V/caret stems. The heavier crown transitions to a fine lower stem, retaining this specimen’s narrow-foot contrast."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1961 tapered two, tall rounded heart five and long narrow V/caret stems. The heavier crown transitions to a fine lower stem, retaining this specimen’s narrow-foot contrast."
+      },
+      {
+        "character": "۳",
+        "path": "M3.5722 24C7.5015 30.24 13.217 32.16 16.2533 26.88Q17.6822 25.44 17.8608 24.48Q24.5952 30.24 28.4016 24.48L29.28 24C29.28 31.2 26.6448 35.04 23.7168 35.04Q20.496 35.04 17.325 34.08C18.218 33.12 14.2886 37.92 10.1807 38.88C8.483 46.08 11.5193 60.96 7.3767 70.08L6.4837 72L5.7693 70.56C6.8063 59.52 4.1214 44.16 0.5358 36.48L0 32.16L3.5722 24Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran61caru/manual-smooth-subset/main/inferred-3",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۲",
+            "۵",
+            "۷",
+            "۸"
+          ],
+          "designNotes": "1961 tapered two, tall rounded heart five and long narrow V/caret stems. The heavier crown transitions to a fine lower stem, retaining this specimen’s narrow-foot contrast."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1961 tapered two, tall rounded heart five and long narrow V/caret stems. The heavier crown transitions to a fine lower stem, retaining this specimen’s narrow-foot contrast."
+      },
+      {
+        "character": "۴",
+        "path": "M15.48 24 15.6864 28.32C11.7648 31.68 6.3984 35.04 6.6048 39.36C11.1456 41.76 15.8928 44.16 12.5904 49.44C8.8752 56.64 4.128 61.92 6.3984 65.76C9.7008 69.12 15.8928 64.32 20.64 63.36L18.7824 69.12C14.6544 73.44 4.5408 74.88 1.6512 69.12C-0.6192 64.8 4.128 55.2 8.8752 48.96C2.8896 47.52 0.2064 45.12 2.4768 39.84C5.7792 31.68 10.5264 27.36 15.48 24Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran61caru/manual-smooth-subset/main/inferred-4",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۲",
+            "۵",
+            "۷",
+            "۸"
+          ],
+          "designNotes": "1961 tapered two, tall rounded heart five and long narrow V/caret stems. The heavier crown transitions to a fine lower stem, retaining this specimen’s narrow-foot contrast."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1961 tapered two, tall rounded heart five and long narrow V/caret stems. The heavier crown transitions to a fine lower stem, retaining this specimen’s narrow-foot contrast."
+      },
+      {
+        "character": "۶",
+        "path": "M16.7184 24 18.1632 28.8C12.1776 28.8 4.9536 35.04 5.7792 40.8C9.7008 46.08 16.7184 40.8 20.64 37.44L19.8144 45.6C11.1456 54.24 5.7792 63.36 3.096 72H1.8576C1.8576 64.8 7.0176 54.72 11.1456 48.96C3.5088 49.92 0.4128 45.12 3.096 38.4C6.6048 30.24 12.384 25.44 16.7184 24Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran61caru/manual-smooth-subset/main/inferred-6",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۲",
+            "۵",
+            "۷",
+            "۸"
+          ],
+          "designNotes": "1961 tapered two, tall rounded heart five and long narrow V/caret stems. The heavier crown transitions to a fine lower stem, retaining this specimen’s narrow-foot contrast."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1961 tapered two, tall rounded heart five and long narrow V/caret stems. The heavier crown transitions to a fine lower stem, retaining this specimen’s narrow-foot contrast."
+      },
+      {
+        "character": "۹",
+        "path": "M11.3088 24C17.1456 23.04 17.5104 31.2 14.7744 41.28C11.4912 51.36 11.1264 57.6 14.5632 64.8L11.8464 70.08L9.2928 72.48C6.0192 68.16 5.472 61.92 6.7488 55.68Q8.7552 47.52 10.2144 41.76C4.3776 44.16 0 39.84 0.5472 35.52C0.7296 29.76 5.472 24 11.3088 24ZM9.3024 29.76C5.6544 30.24 4.0128 35.04 5.472 36.48Q8.7552 38.88 12.2208 36Q14.592 29.76 9.3024 29.76Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran61caru/manual-smooth-subset/main/inferred-9",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۲",
+            "۵",
+            "۷",
+            "۸"
+          ],
+          "designNotes": "1961 tapered two, tall rounded heart five and long narrow V/caret stems. The heavier crown transitions to a fine lower stem, retaining this specimen’s narrow-foot contrast."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1961 tapered two, tall rounded heart five and long narrow V/caret stems. The heavier crown transitions to a fine lower stem, retaining this specimen’s narrow-foot contrast."
+      }
+    ],
+    "roles": {
+      "city-initial": {
+        "label": "Source-specific city initial",
+        "capHeight": 30,
+        "baseline": 44,
+        "observedText": "ط",
+        "glyphs": [
+          {
+            "character": "ط",
+            "sourceBox": [
+              36,
+              11,
+              59,
+              48
+            ],
+            "path": "M47 14 L47 29 Q52 24 54 28 C57 34 49 43 40 44 L39 43 Q45 37 45 30 L44 20 Z M48 31 Q54 26 52 32 Q49 38 43 41 Q46 36 48 31 Z",
+            "occurrence": "city-initial",
+            "sourceId": "iran61caru/city-initial/ط"
+          }
+        ]
+      },
+      "year": {
+        "label": "Source-specific year-tab figures",
+        "capHeight": 23,
+        "baseline": 74,
+        "observedText": "۴۰",
+        "glyphs": [
+          {
+            "character": "۴",
+            "sourceBox": [
+              34,
+              48,
+              50,
+              77
+            ],
+            "path": "M43 51 L43 54 L39 58 L43 62 L40 66 Q38 70 43 70 L47 68 L45 72 Q38 75 37 70 Q36 66 40 62 Q36 60 38 56 Z",
+            "occurrence": "year-tab",
+            "sourceId": "iran61caru/year-tab/۴"
+          },
+          {
+            "character": "۰",
+            "sourceBox": [
+              50,
+              58,
+              62,
+              69
+            ],
+            "path": "M56 61 C59 61 59 66 56 66 C52 66 52 61 56 61 Z",
+            "occurrence": "year-tab",
+            "sourceId": "iran61caru/year-tab/۰"
+          },
+          {
+            "character": "۱",
+            "path": "M1.6905 51 3.9606 53.07Q4.7334 57.67 4.1055 63.65L3.4293 71.93L1.6905 74L1.5456 62.96L0 54.22L1.6905 51Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran61caru/manual-smooth-subset/year/inferred-1",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۴",
+                "۰"
+              ],
+              "designNotes": "Independent small 1961 year: open curled four and a tiny oval zero, with rounder compact strokes. The main-row diamond is not substituted for this role’s oval."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1961 year: open curled four and a tiny oval zero, with rounder compact strokes. The main-row diamond is not substituted for this role’s oval."
+          },
+          {
+            "character": "۲",
+            "path": "M0 52.15Q2.76 54.22 5.1888 53.76Q8.28 53.99 10.7088 51.92L11.04 54.22Q9.6048 56.06 7.0656 56.06L4.9036 56.52L4.7748 69.17L3.8732 74L2.1022 71.7V60.89L0 55.6V52.15Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran61caru/manual-smooth-subset/year/inferred-2",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۴",
+                "۰"
+              ],
+              "designNotes": "Independent small 1961 year: open curled four and a tiny oval zero, with rounder compact strokes. The main-row diamond is not substituted for this role’s oval."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1961 year: open curled four and a tiny oval zero, with rounder compact strokes. The main-row diamond is not substituted for this role’s oval."
+          },
+          {
+            "character": "۳",
+            "path": "M0 52.15Q2.1045 54.22 3.9565 53.76Q6.3135 53.99 8.1655 51.92Q10.6628 54.22 13.7494 52.15L14.03 54.22Q12.2061 56.06 8.9792 56.06Q7.7165 56.98 6.1732 56.29L3.9072 56.52L3.7784 69.17L2.8768 74L1.1058 71.7V60.89L0 55.6V52.15Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran61caru/manual-smooth-subset/year/inferred-3",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۴",
+                "۰"
+              ],
+              "designNotes": "Independent small 1961 year: open curled four and a tiny oval zero, with rounder compact strokes. The main-row diamond is not substituted for this role’s oval."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1961 year: open curled four and a tiny oval zero, with rounder compact strokes. The main-row diamond is not substituted for this role’s oval."
+          },
+          {
+            "character": "۵",
+            "path": "M7.2128 51 14.1312 65.95Q16.192 74 11.1872 74Q8.3904 74.46 7.0656 72.39Q3.2384 75.15 0.5888 72.39Q-0.8832 69.17 1.472 63.65L7.2128 51ZM7.36 55.37 2.415 67.56Q1.6905 71.01 4.416 70.55L7.0656 68.94L9.1264 70.78Q13.8748 71.47 12.305 66.87L7.36 55.37Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran61caru/manual-smooth-subset/year/inferred-5",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۴",
+                "۰"
+              ],
+              "designNotes": "Independent small 1961 year: open curled four and a tiny oval zero, with rounder compact strokes. The main-row diamond is not substituted for this role’s oval."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1961 year: open curled four and a tiny oval zero, with rounder compact strokes. The main-row diamond is not substituted for this role’s oval."
+          },
+          {
+            "character": "۶",
+            "path": "M8.464 51 9.7336 53.76Q4.4436 53.53 3.174 58.82Q5.29 60.43 10.58 57.67L10.1568 62.27Q4.6552 66.64 1.4812 74L0.4232 73.31Q1.587 68.25 4.8668 63.88Q0.2116 64.8 0.7406 58.82Q1.7986 53.76 8.464 51Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran61caru/manual-smooth-subset/year/inferred-6",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۴",
+                "۰"
+              ],
+              "designNotes": "Independent small 1961 year: open curled four and a tiny oval zero, with rounder compact strokes. The main-row diamond is not substituted for this role’s oval."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1961 year: open curled four and a tiny oval zero, with rounder compact strokes. The main-row diamond is not substituted for this role’s oval."
+          },
+          {
+            "character": "۷",
+            "path": "M1.0488 51 6.555 62.73 11.799 51 13.11 54.91 8.1282 67.56 7.4727 74H5.1129L4.5885 67.79L0 54.91L1.0488 51Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran61caru/manual-smooth-subset/year/inferred-7",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۴",
+                "۰"
+              ],
+              "designNotes": "Independent small 1961 year: open curled four and a tiny oval zero, with rounder compact strokes. The main-row diamond is not substituted for this role’s oval."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1961 year: open curled four and a tiny oval zero, with rounder compact strokes. The main-row diamond is not substituted for this role’s oval."
+          },
+          {
+            "character": "۸",
+            "path": "M6.1985 51 12.65 69.86 11.132 74 6.831 62.73H5.4395L1.518 74L0 70.32L6.1985 51Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran61caru/manual-smooth-subset/year/inferred-8",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۴",
+                "۰"
+              ],
+              "designNotes": "Independent small 1961 year: open curled four and a tiny oval zero, with rounder compact strokes. The main-row diamond is not substituted for this role’s oval."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1961 year: open curled four and a tiny oval zero, with rounder compact strokes. The main-row diamond is not substituted for this role’s oval."
+          },
+          {
+            "character": "۹",
+            "path": "M5.5384 51Q9.7911 50.54 9.5933 57.44L7.6153 65.26L9.2966 69.86L6.923 74H5.0439Q3.0659 69.63 3.956 65.26L4.945 61.81Q0.7912 63.42 0 58.59Q0 53.07 5.5384 51ZM4.945 54.91Q2.4725 54.91 2.3736 57.67Q2.3736 59.74 6.2307 58.59Q8.2087 54.45 4.945 54.91Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran61caru/manual-smooth-subset/year/inferred-9",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۴",
+                "۰"
+              ],
+              "designNotes": "Independent small 1961 year: open curled four and a tiny oval zero, with rounder compact strokes. The main-row diamond is not substituted for this role’s oval."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1961 year: open curled four and a tiny oval zero, with rounder compact strokes. The main-row diamond is not substituted for this role’s oval."
+          }
+        ],
+        "numericCompletion": {
+          "coverage": "۰۱۲۳۴۵۶۷۸۹",
+          "observed": "۰۴",
+          "inferred": "۱۲۳۵۶۷۸۹",
+          "method": "Original smooth outline construction using source-specific crown, stem, terminal and counter observations; no licensed candidate glyph substitution.",
+          "design": {
+            "widths": [
+              25,
+              21,
+              48,
+              61,
+              49,
+              64,
+              46,
+              57,
+              55,
+              43
+            ],
+            "stroke": 14,
+            "six": "hook",
+            "lean": 0,
+            "zero": "oval",
+            "note": "Independent small 1961 year: open curled four and a tiny oval zero, with rounder compact strokes. The main-row diamond is not substituted for this role’s oval.",
+            "structure": "tab-flat",
+            "one": "tab"
+          },
+          "confidence": "low",
+          "sourceFile": "historical-reference/iran61caru-reference.jpg"
+        }
+      }
+    },
+    "numericCompletion": {
+      "coverage": "۰۱۲۳۴۵۶۷۸۹",
+      "observed": "۲۵۷۸",
+      "inferred": "۰۱۳۴۶۹",
+      "method": "Original smooth outline construction using source-specific crown, stem, terminal and counter observations; no licensed candidate glyph substitution.",
+      "design": {
+        "widths": [
+          24,
+          17,
+          44,
+          61,
+          43,
+          65,
+          43,
+          52,
+          50,
+          38
+        ],
+        "stroke": 11,
+        "six": "hook",
+        "lean": -2,
+        "note": "1961 tapered two, tall rounded heart five and long narrow V/caret stems. The heavier crown transitions to a fine lower stem, retaining this specimen’s narrow-foot contrast."
+      },
+      "confidence": "provisional",
+      "sourceFile": "historical-reference/iran61caru-reference.jpg"
+    }
+  },
+  {
+    "id": "historic-1963-study",
+    "label": "1963 · observed serial, ط and year roles",
+    "sourceId": "iran63caru/manual-smooth-subset",
+    "sourceUrl": "https://dna.nl/mideast/iran63caru.jpg",
+    "sourceFile": "historical-reference/iran63caru-reference.jpg",
+    "credit": "DNA archive / Klotz",
+    "capHeight": 59,
+    "baseline": 73,
+    "observedSerial": "۶۲۰۱۹",
+    "note": "Clean source-guided reconstruction from the inspected DNA archive / Klotz photograph; provisional contours, not an authenticated die. All glyphs retain one source-plane scale and baseline. Wear, glare and pixel stair-steps are excluded; low resolution and residual photographic perspective limit precision. The city initial and year figures are separately traced role alphabets with their own shared source metrics, never reduced copies of the main serial font. Numeric repertoires now include explicitly labelled inferred source-style outlines for absent digits; the original observed contours are unchanged and remain individually distinguishable.",
+    "glyphs": [
+      {
+        "character": "۰",
+        "sourceBox": [
+          134,
+          32,
+          157,
+          53
+        ],
+        "path": "M145 35 Q150 37 153 42 Q153 46 146 50 Q142 49 138 44 Q138 40 145 35 Z",
+        "occurrence": "third-digit",
+        "sourceId": "iran63caru/۰-third-digit"
+      },
+      {
+        "character": "۱",
+        "sourceBox": [
+          170,
+          10,
+          188,
+          77
+        ],
+        "path": "M179 13 C182 18 184 30 184 43 C184 56 182 66 178 73 L177 72 C179 54 178 39 175 30 L173 25 Q175 17 179 13 Z",
+        "occurrence": "fourth-digit",
+        "sourceId": "iran63caru/۱-fourth-digit"
+      },
+      {
+        "character": "۲",
+        "sourceBox": [
+          98,
+          10,
+          129,
+          77
+        ],
+        "path": "M105 15 C109 23 118 23 123 17 L125 14 C126 24 120 30 114 32 C112 39 116 53 114 63 Q113 70 111 73 L109 73 C110 53 106 38 103 30 L100 26 Q102 19 105 15 Z",
+        "occurrence": "second-digit",
+        "sourceId": "iran63caru/۲-second-digit"
+      },
+      {
+        "character": "۶",
+        "sourceBox": [
+          62,
+          12,
+          92,
+          77
+        ],
+        "path": "M66 15 Q76 19 85 17 L88 16 C86 25 83 32 82 42 C82 49 85 55 87 59 L85 70 L83 73 C77 66 75 57 75 48 C75 40 78 35 79 29 Q72 28 65 28 Z",
+        "occurrence": "first-digit",
+        "sourceId": "iran63caru/۶-first-digit"
+      },
+      {
+        "character": "۹",
+        "sourceBox": [
+          207,
+          9,
+          233,
+          77
+        ],
+        "path": "M225 13 C232 14 229 26 226 36 C222 46 222 53 225 62 Q224 69 219 73 C215 69 214 62 215 55 C216 48 220 40 221 33 C215 35 210 34 210 29 C209 21 216 13 225 13 Z M221 21 C217 22 215 24 216 27 Q220 30 224 26 Q226 22 221 21 Z",
+        "occurrence": "fifth-digit",
+        "sourceId": "iran63caru/۹-fifth-digit"
+      },
+      {
+        "character": "۳",
+        "path": "M4.1748 14C8.7672 21.67 15.4469 24.03 18.9955 17.54Q20.6655 15.77 20.8742 14.59Q28.7448 21.67 33.1934 14.59L34.22 14C34.22 22.85 31.1402 27.57 27.7182 27.57Q23.954 27.57 20.248 26.39C21.2917 25.21 16.6994 32.29 11.8983 33.47C10.193 41.14 13.659 59.43 8.6138 70.64L7.5701 73L6.7351 71.23C7.8142 57.66 4.5923 38.78 0.6262 29.34L0 24.03L4.1748 14Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran63caru/manual-smooth-subset/main/inferred-3",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۰",
+            "۱",
+            "۲",
+            "۶",
+            "۹"
+          ],
+          "designNotes": "1963 bold crown, blade one and squared open six with a down-curved right foot. Small zero stays a lozenge near mid-cap; looped nine supplies the counter thickness."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1963 bold crown, blade one and squared open six with a down-curved right foot. Small zero stays a lozenge near mid-cap; looped nine supplies the counter thickness."
+      },
+      {
+        "character": "۴",
+        "path": "M20.355 14 20.6264 19.31C15.4698 23.44 8.4134 27.57 8.6848 32.88C14.6556 35.83 20.8978 38.78 16.5554 45.27C11.6702 54.12 5.428 60.61 8.4134 65.33C12.7558 69.46 20.8978 63.56 27.14 62.38L24.6974 69.46C19.2694 74.77 5.9708 76.54 2.1712 69.46C-0.8142 64.15 5.428 52.35 11.6702 44.68C3.7996 42.91 0.2714 39.96 3.2568 33.47C7.5992 23.44 13.8414 18.13 20.355 14Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran63caru/manual-smooth-subset/main/inferred-4",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۰",
+            "۱",
+            "۲",
+            "۶",
+            "۹"
+          ],
+          "designNotes": "1963 bold crown, blade one and squared open six with a down-curved right foot. Small zero stays a lozenge near mid-cap; looped nine supplies the counter thickness."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1963 bold crown, blade one and squared open six with a down-curved right foot. Small zero stays a lozenge near mid-cap; looped nine supplies the counter thickness."
+      },
+      {
+        "character": "۵",
+        "path": "M18.29 14C24.5086 23.44 32.1904 36.42 35.4826 52.94C39.5064 67.69 33.6536 74.77 25.9718 74.18Q21.5822 74.18 18.29 69.46Q9.8766 78.31 3.2922 71.82C-4.0238 64.15 3.2922 46.45 9.145 34.06Q14.2662 22.85 18.29 14ZM18.29 24.03C12.803 36.42 5.7525 51.76 5.7525 61.79Q5.7525 69.46 13.5346 65.92Q17.1926 61.79 18.6558 61.79Q20.8506 67.1 27.435 67.1C30.8275 68.28 33.9914 60.61 30.8275 52.94C28.1666 41.73 22.6796 30.52 18.29 24.03Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran63caru/manual-smooth-subset/main/inferred-5",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۰",
+            "۱",
+            "۲",
+            "۶",
+            "۹"
+          ],
+          "designNotes": "1963 bold crown, blade one and squared open six with a down-curved right foot. Small zero stays a lozenge near mid-cap; looped nine supplies the counter thickness."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1963 bold crown, blade one and squared open six with a down-curved right foot. Small zero stays a lozenge near mid-cap; looped nine supplies the counter thickness."
+      },
+      {
+        "character": "۷",
+        "path": "M3.186 14C8.2836 22.26 9.2394 32.29 14.0184 41.14Q15.93 45.86 17.523 39.96C22.302 29.34 23.895 18.72 28.674 14L31.86 22.26C28.674 31.7 21.0276 40.55 19.116 52.94L17.1336 70.64L15.5406 73H14.2662C14.0184 59.43 11.4696 48.81 7.0092 37.6L0.6372 28.75Q-0.6372 21.67 3.186 14Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran63caru/manual-smooth-subset/main/inferred-7",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۰",
+            "۱",
+            "۲",
+            "۶",
+            "۹"
+          ],
+          "designNotes": "1963 bold crown, blade one and squared open six with a down-curved right foot. Small zero stays a lozenge near mid-cap; looped nine supplies the counter thickness."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1963 bold crown, blade one and squared open six with a down-curved right foot. Small zero stays a lozenge near mid-cap; looped nine supplies the counter thickness."
+      },
+      {
+        "character": "۸",
+        "path": "M15.3459 14 16.8504 14.59C15.9477 28.16 21.9657 42.32 28.2846 55.3L30.09 64.15L27.6828 72.41C21.6648 63.56 19.2576 50.58 15.6468 41.73H14.4432C9.9297 52.35 7.5225 64.74 2.7081 73L0 64.15C0.6018 57.66 8.4252 41.14 11.1333 29.93L15.3459 14Z",
+        "fillRule": "evenodd",
+        "provenance": "inferred",
+        "sourceId": "iran63caru/manual-smooth-subset/main/inferred-8",
+        "inference": {
+          "method": "source-style-reconstruction",
+          "basisCharacters": [
+            "۰",
+            "۱",
+            "۲",
+            "۶",
+            "۹"
+          ],
+          "designNotes": "1963 bold crown, blade one and squared open six with a down-curved right foot. Small zero stays a lozenge near mid-cap; looped nine supplies the counter thickness."
+        },
+        "note": "Inferred numeral, absent from this photographed alphabet. 1963 bold crown, blade one and squared open six with a down-curved right foot. Small zero stays a lozenge near mid-cap; looped nine supplies the counter thickness."
+      }
+    ],
+    "roles": {
+      "city-initial": {
+        "label": "Source-specific city initial",
+        "capHeight": 32,
+        "baseline": 76,
+        "observedText": "ط",
+        "glyphs": [
+          {
+            "character": "ط",
+            "sourceBox": [
+              21,
+              40,
+              46,
+              79
+            ],
+            "path": "M35 44 L35 59 C39 55 42 58 42 62 C42 68 32 74 25 76 L24 74 Q31 69 31 61 L32 50 Z M35 62 Q42 57 40 63 Q37 68 29 71 Q32 67 35 62 Z",
+            "occurrence": "city-initial",
+            "sourceId": "iran63caru/city-initial/ط"
+          }
+        ]
+      },
+      "year": {
+        "label": "Source-specific year-tab figures",
+        "capHeight": 22,
+        "baseline": 38,
+        "observedText": "۴۲",
+        "glyphs": [
+          {
+            "character": "۴",
+            "sourceBox": [
+              17,
+              12,
+              34,
+              41
+            ],
+            "path": "M27 16 L28 18 Q22 21 24 24 L27 28 Q22 32 24 34 Q27 35 31 32 L30 36 Q23 39 21 35 Q20 32 23 27 Q20 25 21 22 Q23 18 27 16 Z",
+            "occurrence": "year-tab",
+            "sourceId": "iran63caru/year-tab/۴"
+          },
+          {
+            "character": "۲",
+            "sourceBox": [
+              35,
+              12,
+              52,
+              40
+            ],
+            "path": "M40 16 Q43 18 47 16 L49 15 Q49 21 44 23 L43 31 L41 36 L40 35 Q41 27 38 21 L38 18 Z",
+            "occurrence": "year-tab",
+            "sourceId": "iran63caru/year-tab/۲"
+          },
+          {
+            "character": "۰",
+            "path": "M2.8028 24.6548Q4.6904 26.4372 5.72 27Q4.004 28.5478 2.7456 29.3452Q0.858 27.7036 0 27Q0.9152 25.6398 2.8028 24.6548Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran63caru/manual-smooth-subset/year/inferred-0",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۴",
+                "۲"
+              ],
+              "designNotes": "Independent small 1963 year: short right-curled four and angled crown-two. The role keeps stronger blunt joins, tighter counters and shorter foot treatment than the main row."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1963 year: short right-curled four and angled crown-two. The role keeps stronger blunt joins, tighter counters and shorter foot treatment than the main row."
+          },
+          {
+            "character": "۱",
+            "path": "M1.694 16 3.9688 17.98Q4.7432 22.38 4.114 28.1L3.4364 36.02L1.694 38L1.5488 27.44L0 19.08L1.694 16Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran63caru/manual-smooth-subset/year/inferred-1",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۴",
+                "۲"
+              ],
+              "designNotes": "Independent small 1963 year: short right-curled four and angled crown-two. The role keeps stronger blunt joins, tighter counters and shorter foot treatment than the main row."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1963 year: short right-curled four and angled crown-two. The role keeps stronger blunt joins, tighter counters and shorter foot treatment than the main row."
+          },
+          {
+            "character": "۳",
+            "path": "M0 17.1Q2.244 19.08 4.2187 18.64Q6.732 18.86 8.7067 16.88Q11.3696 19.08 14.6608 17.1L14.96 19.74Q13.0152 21.5 9.5744 21.5Q8.228 22.38 6.5824 21.72L4.2337 21.94L4.0841 33.38L3.0369 38L0.9799 35.8V25.46L0 21.06V17.1Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran63caru/manual-smooth-subset/year/inferred-3",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۴",
+                "۲"
+              ],
+              "designNotes": "Independent small 1963 year: short right-curled four and angled crown-two. The role keeps stronger blunt joins, tighter counters and shorter foot treatment than the main row."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1963 year: short right-curled four and angled crown-two. The role keeps stronger blunt joins, tighter counters and shorter foot treatment than the main row."
+          },
+          {
+            "character": "۵",
+            "path": "M7.007 16 13.728 30.3Q15.73 38 10.868 38Q8.151 38.44 6.864 36.46Q3.146 39.1 0.572 36.46Q-0.858 33.38 1.43 28.1L7.007 16ZM7.15 20.18 2.805 31.84Q1.9635 35.14 4.29 34.7L6.864 33.16L8.866 34.92Q13.3183 35.58 11.495 31.18L7.15 20.18Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran63caru/manual-smooth-subset/year/inferred-5",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۴",
+                "۲"
+              ],
+              "designNotes": "Independent small 1963 year: short right-curled four and angled crown-two. The role keeps stronger blunt joins, tighter counters and shorter foot treatment than the main row."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1963 year: short right-curled four and angled crown-two. The role keeps stronger blunt joins, tighter counters and shorter foot treatment than the main row."
+          },
+          {
+            "character": "۶",
+            "path": "M8.624 16 9.9176 18.64Q4.5276 18.42 3.234 23.48Q5.39 25.02 10.78 22.38L10.3488 26.78Q4.7432 30.96 1.5092 38L0.4312 37.34Q1.617 32.5 4.9588 28.32Q0.2156 29.2 0.7546 23.48Q1.8326 18.64 8.624 16Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran63caru/manual-smooth-subset/year/inferred-6",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۴",
+                "۲"
+              ],
+              "designNotes": "Independent small 1963 year: short right-curled four and angled crown-two. The role keeps stronger blunt joins, tighter counters and shorter foot treatment than the main row."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1963 year: short right-curled four and angled crown-two. The role keeps stronger blunt joins, tighter counters and shorter foot treatment than the main row."
+          },
+          {
+            "character": "۷",
+            "path": "M1.0736 16 6.71 27.22 12.078 16 13.42 19.74 8.3204 31.84 7.6494 38H5.2338L4.697 32.06L0 19.74L1.0736 16Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran63caru/manual-smooth-subset/year/inferred-7",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۴",
+                "۲"
+              ],
+              "designNotes": "Independent small 1963 year: short right-curled four and angled crown-two. The role keeps stronger blunt joins, tighter counters and shorter foot treatment than the main row."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1963 year: short right-curled four and angled crown-two. The role keeps stronger blunt joins, tighter counters and shorter foot treatment than the main row."
+          },
+          {
+            "character": "۸",
+            "path": "M6.2524 16 12.76 34.04 11.2288 38 6.8904 27.22H5.4868L1.5312 38L0 34.48L6.2524 16Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran63caru/manual-smooth-subset/year/inferred-8",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۴",
+                "۲"
+              ],
+              "designNotes": "Independent small 1963 year: short right-curled four and angled crown-two. The role keeps stronger blunt joins, tighter counters and shorter foot treatment than the main row."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1963 year: short right-curled four and angled crown-two. The role keeps stronger blunt joins, tighter counters and shorter foot treatment than the main row."
+          },
+          {
+            "character": "۹",
+            "path": "M5.4208 16Q9.5832 15.56 9.3896 22.16L7.4536 29.64L9.0992 34.04L6.776 38H4.9368Q3.0008 33.82 3.872 29.64L4.84 26.34Q0.7744 27.88 0 23.26Q0 17.98 5.4208 16ZM4.84 19.74Q2.42 19.74 2.3232 22.38Q2.3232 24.36 6.0984 23.26Q8.0344 19.3 4.84 19.74Z",
+            "fillRule": "evenodd",
+            "provenance": "inferred",
+            "sourceId": "iran63caru/manual-smooth-subset/year/inferred-9",
+            "inference": {
+              "method": "source-style-reconstruction",
+              "basisCharacters": [
+                "۴",
+                "۲"
+              ],
+              "designNotes": "Independent small 1963 year: short right-curled four and angled crown-two. The role keeps stronger blunt joins, tighter counters and shorter foot treatment than the main row."
+            },
+            "note": "Inferred numeral, absent from this photographed alphabet. Independent small 1963 year: short right-curled four and angled crown-two. The role keeps stronger blunt joins, tighter counters and shorter foot treatment than the main row."
+          }
+        ],
+        "numericCompletion": {
+          "coverage": "۰۱۲۳۴۵۶۷۸۹",
+          "observed": "۲۴",
+          "inferred": "۰۱۳۵۶۷۸۹",
+          "method": "Original smooth outline construction using source-specific crown, stem, terminal and counter observations; no licensed candidate glyph substitution.",
+          "design": {
+            "widths": [
+              26,
+              22,
+              53,
+              68,
+              50,
+              65,
+              49,
+              61,
+              58,
+              44
+            ],
+            "stroke": 17,
+            "six": "hook",
+            "lean": -2,
+            "note": "Independent small 1963 year: short right-curled four and angled crown-two. The role keeps stronger blunt joins, tighter counters and shorter foot treatment than the main row.",
+            "structure": "tab-flat",
+            "one": "tab"
+          },
+          "confidence": "low",
+          "sourceFile": "historical-reference/iran63caru-reference.jpg"
+        }
+      }
+    },
+    "numericCompletion": {
+      "coverage": "۰۱۲۳۴۵۶۷۸۹",
+      "observed": "۰۱۲۶۹",
+      "inferred": "۳۴۵۷۸",
+      "method": "Original smooth outline construction using source-specific crown, stem, terminal and counter observations; no licensed candidate glyph substitution.",
+      "design": {
+        "widths": [
+          25,
+          19,
+          44,
+          58,
+          46,
+          62,
+          42,
+          54,
+          51,
+          36
+        ],
+        "stroke": 13,
+        "six": "bar",
+        "lean": -2,
+        "note": "1963 bold crown, blade one and squared open six with a down-curved right foot. Small zero stays a lozenge near mid-cap; looped nine supplies the counter thickness."
+      },
+      "confidence": "provisional",
+      "sourceFile": "historical-reference/iran63caru-reference.jpg"
+    }
+  }
+]

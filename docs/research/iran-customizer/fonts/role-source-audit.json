@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "verifiedAt": "2026-10-02",
+  "profileCount": 13,
+  "wordmarkCount": 10,
+  "seriesGlyphCount": 6,
+  "files": [
+    {
+      "file": "role-reference/diplomatic-source.png",
+      "sha256": "2e1509d26aba1a1fcbb93c6e021de99c1f0d4148f5988adcc25a1233b36d7d62",
+      "bytes": 17788,
+      "pixelSize": [
+        1000,
+        221
+      ]
+    },
+    {
+      "file": "role-reference/national-flat-source.png",
+      "sha256": "5c617b1437fc0346b4664c589ed633ba17fd677b9b1b27234d26588422b3ce9d",
+      "bytes": 336192,
+      "pixelSize": [
+        1040,
+        220
+      ]
+    },
+    {
+      "file": "role-reference/national-heh-source.png",
+      "sha256": "3b4418d9eee823e99dd5240b4b931d4a8a0065ce7e264b04bcc7f9acc6843e05",
+      "bytes": 238117,
+      "pixelSize": [
+        1040,
+        220
+      ]
+    },
+    {
+      "file": "role-reference/police-source.png",
+      "sha256": "7542ef83575a0005439209feef2428987e9c25615b64b39f22eaaa8fcd4b4987",
+      "bytes": 16757,
+      "pixelSize": [
+        1000,
+        221
+      ]
+    },
+    {
+      "file": "role-reference/service-source.png",
+      "sha256": "77ec070ea312248e5c679d0316219ccfd7c184f6ca93e9b23a8485948c0e50df",
+      "bytes": 18148,
+      "pixelSize": [
+        1000,
+        221
+      ]
+    },
+    {
+      "file": "role-reference/wiki-diplomatic-previous.png",
+      "sha256": "7b7c436dd7c7afe3fe922b97cdcbfcce2b342c23bba7ebdc5259fe2987ac6896",
+      "bytes": 12424,
+      "pixelSize": [
+        250,
+        125
+      ]
+    },
+    {
+      "file": "role-reference/wiki-historic.png",
+      "sha256": "978ee0bdf261bcea68824373229ca6cd9d1e51e7c36f56a7f27c42bf55f64e33",
+      "bytes": 25848,
+      "pixelSize": [
+        250,
+        125
+      ]
+    },
+    {
+      "file": "role-reference/wiki-protocol.png",
+      "sha256": "d204020d0596a28bdf1952c1e5a9ad97e9a90a37f1e4d82208eb15cb642c452c",
+      "bytes": 27751,
+      "pixelSize": [
+        500,
+        110
+      ]
+    },
+    {
+      "file": "role-reference/wiki-service-previous.png",
+      "sha256": "7a3366031e662af4c10effe822e37c412a0dae938cf7e554fcdbf48202fca6a2",
+      "bytes": 10590,
+      "pixelSize": [
+        250,
+        125
+      ]
+    },
+    {
+      "file": "role-reference/wiki-temporary-previous.png",
+      "sha256": "47fd7f05af9578e8d2c4f0d81a3b78aa1b89c2e2568570d63bad622f9b347ccc",
+      "bytes": 12571,
+      "pixelSize": [
+        250,
+        125
+      ]
+    },
+    {
+      "file": "source/LiberationSans-Regular.ttf",
+      "sha256": "bade59d822652f76e6941aa87b40a87c13d1cc70db98ededb5011127efafd1d3",
+      "bytes": 410820
+    },
+    {
+      "file": "source/LiberationSans-Bold.ttf",
+      "sha256": "1b5f2da6f4cadce4c05b9ecebe3a6fcd374eb95ae443605e799f4c3287978939",
+      "bytes": 414568
+    },
+    {
+      "file": "source/Liberation-COPYRIGHT.txt",
+      "sha256": "f32df582a2aab128c07b2f7e36e7b928dc5f6bd82657b905c04f91459f9e5cf9",
+      "bytes": 5756
+    },
+    {
+      "file": "source/NotoSans-Regular.ttf",
+      "sha256": "89c3c497f618fdaa0b2d1e98fef93582f28c71debd2c4a8cdf41f190ced2909d",
+      "bytes": 512672
+    },
+    {
+      "file": "source/NotoSans-COPYRIGHT.txt",
+      "sha256": "075f91382875da1c4b491f1facf2586f55448705133264d98ce15cab6211b125",
+      "bytes": 5208
+    },
+    {
+      "file": "role-reference/wiki-taxi.png",
+      "sha256": "b0cfeedd43f3f7bcdfe3aaf25550763e589983f569f4194a22265a2650b0caaf",
+      "bytes": 10800,
+      "pixelSize": [
+        500,
+        113
+      ]
+    },
+    {
+      "file": "role-reference/wiki-agricultural.png",
+      "sha256": "0cd87d61cb52d9c98d0218b72427aa838d6cbb97b39f5aa3dcd704b929421c45",
+      "bytes": 10134,
+      "pixelSize": [
+        500,
+        113
+      ]
+    },
+    {
+      "file": "role-reference/wiki-government.png",
+      "sha256": "01c3ec7c9f5e57bb58142d99eb6e6edaa062011fe67e498e43488850b540a6fe",
+      "bytes": 9614,
+      "pixelSize": [
+        500,
+        113
+      ]
+    }
+  ]
+}

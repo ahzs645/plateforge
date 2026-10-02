@@ -2,7 +2,7 @@
 import { IRAQ_CUSTOM_PRESETS, IRAQ_CUSTOM_CLASSES, IRAQ_CUSTOM_PROVINCES } from './iraq-custom-data';
 import { renderGlyphRun, renderWordmark, IRAQ_FONT_PROFILES } from './iraq-custom-fonts';
 import { IRAQ_LETTERS } from '../regions/asia/iraq-data';
-import type { IraqCustomState, IraqCustomResult, IraqCustomKind } from './iraq-custom-types';
+import type { IraqCustomState, IraqCustomResult, IraqCustomKind, IraqCustomPreset } from './iraq-custom-types';
 export { IRAQ_CUSTOM_PRESETS, IRAQ_CUSTOM_CLASSES, IRAQ_CUSTOM_PROVINCES, IRAQ_CUSTOM_SOURCE_COVERAGE } from './iraq-custom-data';
 export type { IraqCustomState, IraqCustomResult, IraqCustomPreset, IraqCustomSourceCoverage } from './iraq-custom-types';
 const xml = (s: string) => s.replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&apos;' }[c]!));
@@ -148,6 +148,40 @@ export function renderIraqCustom(input: IraqCustomState): IraqCustomResult {
   const uniqueWarnings=[...new Set(warnings)],uniqueErrors=[...new Set(errors)];
   const fontMetadata=Object.values(IRAQ_FONT_PROFILES).find(x=>x.id===profile)!;
   const desc=`Canonical flat configurable template. ${p.evidence} Font: ${profile}; policy: ${s.missingPolicy}. Font source: ${fontMetadata.sourceUrl}. Rights: ${fontMetadata.rights}. ${uniqueWarnings.join(' ')} ${uniqueErrors.join(' ')}`;
-  const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" data-canonical="true" data-preset="${xml(p.id)}" data-layout="${xml(s.layout)}"><title>${xml(p.label+' · '+serial)}</title><desc>${xml(desc)}</desc><metadata id="plateforge-iraq-settings">${xml(JSON.stringify({version:1,state:{...s,serial,governorate:gov,year,letter,tracking,mainScale:scale}}))}</metadata>${parts.join('')}</svg>`;
-  return {svg,width:w,height:h,warnings:uniqueWarnings,errors:uniqueErrors};
+  const head=`<title>${xml(p.label+' · '+serial)}</title><desc>${xml(desc)}</desc>`,settings=xml(JSON.stringify({version:1,state:{...s,serial,governorate:gov,year,letter,tracking,mainScale:scale}}));
+  const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" role="img" data-canonical="true" data-preset="${xml(p.id)}" data-layout="${xml(s.layout)}">${head}<metadata id="plateforge-iraq-settings">${settings}</metadata>${parts.join('')}</svg>`;
+  // Inner markup for pages showing many plates at once (timeline thumbnails), so the metadata carries no id.
+  const body=`${head}<metadata data-role="plateforge-iraq-settings">${settings}</metadata>${parts.join('')}`;
+  return {svg,body,width:w,height:h,warnings:uniqueWarnings,errors:uniqueErrors};
+}
+
+/** Editable fields for a preset's fixed class; the main app and the standalone editor share these rules. */
+export function iraqActiveFields(preset: IraqCustomPreset, vehicleClass = preset.defaults.vehicleClass): Set<keyof IraqCustomState> {
+  const active = new Set(preset.fields);
+  if (['modern', 'modern-temporary'].includes(preset.kind)) { if (vehicleClass === 'temporary') active.delete('letter'); else active.add('letter'); }
+  if (['divided', 'police', 'legacy-temporary'].includes(preset.kind)) { if (vehicleClass === 'temporary') active.add('year'); else active.delete('year'); }
+  if (['modern', 'modern-temporary', 'international', 'icts', 'inspection-temporary'].includes(preset.kind)) active.delete('province');
+  if (['side', 'short-bilingual', 'inspection-temporary', 'police'].includes(preset.kind)) active.delete('strip');
+  if (['divided', 'legacy-temporary'].includes(preset.kind) && vehicleClass !== 'temporary') active.delete('strip');
+  if (preset.kind === 'bilingual') { if (['government', 'customs'].includes(vehicleClass)) active.delete('province'); else active.add('province'); }
+  return active;
+}
+/** Plate parts are strings; numbers and the border flag round-trip through their string forms. */
+export function iraqCustomParts(state: IraqCustomState): Record<string, string> {
+  const { presetId: _preset, tracking, mainScale, border, ...text } = state;
+  return { ...text, tracking: String(tracking), mainScale: String(mainScale), border: border ? 'on' : 'off' };
+}
+export function iraqCustomStateFromParts(presetId: string, parts: Record<string, string | undefined>): IraqCustomState {
+  const state = customizerState(presetId);
+  const value = (key: keyof IraqCustomState) => parts[key] ?? undefined;
+  const number = (key: 'tracking' | 'mainScale') => { const n = Number(value(key)); return value(key) !== undefined && value(key) !== '' && Number.isFinite(n) ? n : state[key]; };
+  return {
+    ...state,
+    ...Object.fromEntries((['serial', 'province', 'letter', 'governorate', 'year', 'vehicleClass', 'fontProfile', 'bg', 'ink', 'strip'] as const)
+      .filter((key) => value(key) !== undefined).map((key) => [key, value(key)!])),
+    layout: value('layout') === 'compact' || value('layout') === 'long' ? value('layout') as IraqCustomState['layout'] : state.layout,
+    missingPolicy: value('missingPolicy') === 'strict' || value('missingPolicy') === 'fallback' ? value('missingPolicy') as IraqCustomState['missingPolicy'] : state.missingPolicy,
+    tracking: number('tracking'), mainScale: number('mainScale'),
+    border: value('border') === undefined ? state.border : value('border') !== 'off',
+  };
 }

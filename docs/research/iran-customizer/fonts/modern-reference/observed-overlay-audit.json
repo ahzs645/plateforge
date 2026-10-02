@@ -1,0 +1,274 @@
+[
+  {
+    "profile": "source-national-numerals",
+    "role": "main",
+    "character": "۱",
+    "sourceFile": "modern-reference/wiki-diplomatic.png",
+    "iou": 0.9463,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-numerals",
+    "role": "main",
+    "character": "۲",
+    "sourceFile": "modern-reference/wiki-diplomatic.png",
+    "iou": 0.9356,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-numerals",
+    "role": "main",
+    "character": "۳",
+    "sourceFile": "modern-reference/wiki-diplomatic.png",
+    "iou": 0.9167,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-numerals",
+    "role": "main",
+    "character": "۵",
+    "sourceFile": "modern-reference/wiki-diplomatic.png",
+    "iou": 0.9526,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-numerals",
+    "role": "main",
+    "character": "۶",
+    "sourceFile": "modern-reference/wiki-diplomatic.png",
+    "iou": 0.9174,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-numerals",
+    "role": "region",
+    "character": "۱",
+    "sourceFile": "modern-reference/wiki-diplomatic.png",
+    "iou": 0.9676,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-numerals",
+    "role": "series",
+    "character": "ب",
+    "sourceFile": "modern-reference/wiki-private.png",
+    "iou": 0.8721,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-numerals",
+    "role": "series",
+    "character": "پ",
+    "sourceFile": "modern-reference/wiki-police.png",
+    "iou": 0.8587,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-numerals",
+    "role": "series",
+    "character": "ث",
+    "sourceFile": "modern-reference/wiki-irgc.png",
+    "iou": 0.8288,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-numerals",
+    "role": "series",
+    "character": "ش",
+    "sourceFile": "modern-reference/wiki-army.png",
+    "iou": 0.7982,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-numerals",
+    "role": "series",
+    "character": "ز",
+    "sourceFile": "modern-reference/wiki-defence.png",
+    "iou": 0.8726,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-numerals",
+    "role": "series",
+    "character": "ف",
+    "sourceFile": "modern-reference/wiki-staff.png",
+    "iou": 0.9003,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-private-numerals",
+    "role": "main",
+    "character": "۱",
+    "sourceFile": "modern-reference/wiki-private.png",
+    "iou": 0.9607,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-private-numerals",
+    "role": "main",
+    "character": "۲",
+    "sourceFile": "modern-reference/wiki-private.png",
+    "iou": 0.9582,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-private-numerals",
+    "role": "main",
+    "character": "۳",
+    "sourceFile": "modern-reference/wiki-private.png",
+    "iou": 0.9449,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-private-numerals",
+    "role": "main",
+    "character": "۴",
+    "sourceFile": "modern-reference/wiki-private.png",
+    "iou": 0.937,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-private-numerals",
+    "role": "main",
+    "character": "۵",
+    "sourceFile": "modern-reference/wiki-private.png",
+    "iou": 0.9359,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-private-numerals",
+    "role": "region",
+    "character": "۱",
+    "sourceFile": "modern-reference/wiki-private.png",
+    "iou": 0.9493,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-temporary-numerals",
+    "role": "main",
+    "character": "۱",
+    "sourceFile": "modern-reference/wiki-temporary.png",
+    "iou": 0.9302,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-temporary-numerals",
+    "role": "main",
+    "character": "۲",
+    "sourceFile": "modern-reference/wiki-temporary.png",
+    "iou": 0.9198,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-temporary-numerals",
+    "role": "main",
+    "character": "۳",
+    "sourceFile": "modern-reference/wiki-temporary.png",
+    "iou": 0.9184,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-temporary-numerals",
+    "role": "main",
+    "character": "۴",
+    "sourceFile": "modern-reference/wiki-temporary.png",
+    "iou": 0.9064,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-temporary-numerals",
+    "role": "main",
+    "character": "۵",
+    "sourceFile": "modern-reference/wiki-temporary.png",
+    "iou": 0.9299,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-temporary-numerals",
+    "role": "series",
+    "character": "گ",
+    "sourceFile": "modern-reference/wiki-temporary.png",
+    "iou": 0.9322,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-temporary-numerals",
+    "role": "region",
+    "character": "۱",
+    "sourceFile": "modern-reference/wiki-temporary.png",
+    "iou": 0.733,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-temporary-numerals",
+    "role": "expiry",
+    "character": "۴",
+    "sourceFile": "modern-reference/wiki-temporary.png",
+    "iou": 0.5745,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-temporary-numerals",
+    "role": "expiry",
+    "character": "۶",
+    "sourceFile": "modern-reference/wiki-temporary.png",
+    "iou": 0.481,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-temporary-numerals",
+    "role": "expiry",
+    "character": "۹",
+    "sourceFile": "modern-reference/wiki-temporary.png",
+    "iou": 0.6408,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-national-temporary-numerals",
+    "role": "expiry",
+    "character": "/",
+    "sourceFile": "modern-reference/wiki-temporary.png",
+    "iou": 0.5109,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-freezone-persian-numerals",
+    "role": "main",
+    "character": "۱",
+    "sourceFile": "modern-reference/wiki-freezone-Qeshm.png",
+    "iou": 0.8627,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-freezone-persian-numerals",
+    "role": "main",
+    "character": "۲",
+    "sourceFile": "modern-reference/wiki-freezone-Qeshm.png",
+    "iou": 0.8433,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-freezone-persian-numerals",
+    "role": "main",
+    "character": "۳",
+    "sourceFile": "modern-reference/wiki-freezone-Qeshm.png",
+    "iou": 0.6927,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-freezone-persian-numerals",
+    "role": "main",
+    "character": "۵",
+    "sourceFile": "modern-reference/wiki-freezone-Qeshm.png",
+    "iou": 0.8792,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  },
+  {
+    "profile": "source-freezone-persian-numerals",
+    "role": "main",
+    "character": "۶",
+    "sourceFile": "modern-reference/wiki-freezone-Qeshm.png",
+    "iou": 0.8391,
+    "comparison": "Native fixed source plane; thresholded illustration. Nearby marks/antialiasing and contour simplification remain residuals. No registration fit."
+  }
+]

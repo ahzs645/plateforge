@@ -1,0 +1,252 @@
+[
+  {
+    "profile": "source-freezone-latin-wide",
+    "serial": "0123456789",
+    "minimumSourcePixelGap": 3.5,
+    "inkWidth": 287.0,
+    "unscaledCapHeight": 25,
+    "inferredCharacters": [
+      "0",
+      "4",
+      "7",
+      "8",
+      "9"
+    ],
+    "overlap": false
+  },
+  {
+    "profile": "source-freezone-latin-wide",
+    "serial": "12356",
+    "minimumSourcePixelGap": 3.5,
+    "inkWidth": 139.5,
+    "unscaledCapHeight": 25,
+    "inferredCharacters": [],
+    "overlap": false
+  },
+  {
+    "profile": "source-freezone-latin-wide",
+    "serial": "12365",
+    "minimumSourcePixelGap": 3.5,
+    "inkWidth": 139.5,
+    "unscaledCapHeight": 25,
+    "inferredCharacters": [],
+    "overlap": false
+  },
+  {
+    "profile": "source-freezone-latin-wide",
+    "serial": "11111",
+    "minimumSourcePixelGap": 11.0,
+    "inkWidth": 114.0,
+    "unscaledCapHeight": 25,
+    "inferredCharacters": [],
+    "overlap": false
+  },
+  {
+    "profile": "source-freezone-latin-wide",
+    "serial": "88888",
+    "minimumSourcePixelGap": 3.5,
+    "inkWidth": 144.0,
+    "unscaledCapHeight": 25,
+    "inferredCharacters": [
+      "8",
+      "8",
+      "8",
+      "8",
+      "8"
+    ],
+    "overlap": false
+  },
+  {
+    "profile": "source-freezone-latin-wide",
+    "serial": "90478",
+    "minimumSourcePixelGap": 3.5,
+    "inkWidth": 144.0,
+    "unscaledCapHeight": 25,
+    "inferredCharacters": [
+      "9",
+      "0",
+      "4",
+      "7",
+      "8"
+    ],
+    "overlap": false
+  },
+  {
+    "profile": "source-freezone-latin-wide",
+    "serial": "70649",
+    "minimumSourcePixelGap": 3.5,
+    "inkWidth": 144.0,
+    "unscaledCapHeight": 25,
+    "inferredCharacters": [
+      "7",
+      "0",
+      "4",
+      "9"
+    ],
+    "overlap": false
+  },
+  {
+    "profile": "source-freezone-latin-wide",
+    "serial": "55555",
+    "minimumSourcePixelGap": 3.5,
+    "inkWidth": 144.0,
+    "unscaledCapHeight": 25,
+    "inferredCharacters": [],
+    "overlap": false
+  },
+  {
+    "profile": "source-freezone-latin-wide",
+    "serial": "00000",
+    "minimumSourcePixelGap": 3.5,
+    "inkWidth": 144.0,
+    "unscaledCapHeight": 25,
+    "inferredCharacters": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "overlap": false
+  },
+  {
+    "profile": "source-freezone-latin-wide",
+    "serial": "99999",
+    "minimumSourcePixelGap": 3.5,
+    "inkWidth": 144.0,
+    "unscaledCapHeight": 25,
+    "inferredCharacters": [
+      "9",
+      "9",
+      "9",
+      "9",
+      "9"
+    ],
+    "overlap": false
+  },
+  {
+    "profile": "source-freezone-latin-tall",
+    "serial": "0123456789",
+    "minimumSourcePixelGap": 3.5,
+    "inkWidth": 287.0,
+    "unscaledCapHeight": 37,
+    "inferredCharacters": [
+      "0",
+      "4",
+      "7",
+      "8",
+      "9"
+    ],
+    "overlap": false
+  },
+  {
+    "profile": "source-freezone-latin-tall",
+    "serial": "12356",
+    "minimumSourcePixelGap": 3.5,
+    "inkWidth": 139.5,
+    "unscaledCapHeight": 37,
+    "inferredCharacters": [],
+    "overlap": false
+  },
+  {
+    "profile": "source-freezone-latin-tall",
+    "serial": "12365",
+    "minimumSourcePixelGap": 3.5,
+    "inkWidth": 139.5,
+    "unscaledCapHeight": 37,
+    "inferredCharacters": [],
+    "overlap": false
+  },
+  {
+    "profile": "source-freezone-latin-tall",
+    "serial": "11111",
+    "minimumSourcePixelGap": 11.0,
+    "inkWidth": 114.0,
+    "unscaledCapHeight": 37,
+    "inferredCharacters": [],
+    "overlap": false
+  },
+  {
+    "profile": "source-freezone-latin-tall",
+    "serial": "88888",
+    "minimumSourcePixelGap": 3.5,
+    "inkWidth": 144.0,
+    "unscaledCapHeight": 37,
+    "inferredCharacters": [
+      "8",
+      "8",
+      "8",
+      "8",
+      "8"
+    ],
+    "overlap": false
+  },
+  {
+    "profile": "source-freezone-latin-tall",
+    "serial": "90478",
+    "minimumSourcePixelGap": 3.5,
+    "inkWidth": 144.0,
+    "unscaledCapHeight": 37,
+    "inferredCharacters": [
+      "9",
+      "0",
+      "4",
+      "7",
+      "8"
+    ],
+    "overlap": false
+  },
+  {
+    "profile": "source-freezone-latin-tall",
+    "serial": "70649",
+    "minimumSourcePixelGap": 3.5,
+    "inkWidth": 144.0,
+    "unscaledCapHeight": 37,
+    "inferredCharacters": [
+      "7",
+      "0",
+      "4",
+      "9"
+    ],
+    "overlap": false
+  },
+  {
+    "profile": "source-freezone-latin-tall",
+    "serial": "55555",
+    "minimumSourcePixelGap": 3.5,
+    "inkWidth": 144.0,
+    "unscaledCapHeight": 37,
+    "inferredCharacters": [],
+    "overlap": false
+  },
+  {
+    "profile": "source-freezone-latin-tall",
+    "serial": "00000",
+    "minimumSourcePixelGap": 3.5,
+    "inkWidth": 144.0,
+    "unscaledCapHeight": 37,
+    "inferredCharacters": [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "overlap": false
+  },
+  {
+    "profile": "source-freezone-latin-tall",
+    "serial": "99999",
+    "minimumSourcePixelGap": 3.5,
+    "inkWidth": 144.0,
+    "unscaledCapHeight": 37,
+    "inferredCharacters": [
+      "9",
+      "9",
+      "9",
+      "9",
+      "9"
+    ],
+    "overlap": false
+  }
+]

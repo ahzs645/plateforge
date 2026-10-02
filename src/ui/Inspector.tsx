@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from 'react';
 import { LetteringPicker } from './LetteringPicker';
-import { TypefaceReview } from './TypefaceReview';
+import { IranCoverage, IraqCoverage } from './FontCoverage';
 import { ResearchDiesToggle } from './ResearchDiesToggle';
 import type { FieldDef, Parts, PlateFormat, Region } from '../core/types';
 import { statusBadge } from '../core/timeline';
@@ -35,8 +35,8 @@ export function Inspector({ region, format, parts, onChange, onExport, onCopyLin
   const [expanded, setExpanded] = useState(false);
   const ref = useRef<HTMLElement>(null);
   const drag = useRef<{ y: number; moved: boolean } | null>(null);
-  const typed = format.fields.filter((f) => !f.options && f.key !== 'lettering');
-  const choices = format.fields.filter((f) => f.options || f.key === 'lettering');
+  const typed = format.fields.filter((f) => !f.options && !f.input && f.key !== 'lettering');
+  const choices = format.fields.filter((f) => f.options || f.input || f.key === 'lettering');
   const badge = statusBadge(format);
 
   // Tell the page how much of the screen the collapsed sheet covers, so the plate can scroll clear of it.
@@ -97,6 +97,22 @@ export function Inspector({ region, format, parts, onChange, onExport, onCopyLin
         onChange={(lettering) => onChange({ ...parts, lettering })} />
     );
     const id = `field-${field.key}`;
+    if (field.input === 'color') return (
+      <div key={field.key} className="field">
+        <label htmlFor={id}>{field.label}</label>
+        <div className="color-field">
+          <input id={id} type="color" value={parts[field.key] ?? '#000000'} onChange={(e) => onChange({ ...parts, [field.key]: e.target.value })} />
+          <span className="mono">{parts[field.key]}</span>
+        </div>
+      </div>
+    );
+    if (field.input === 'range') return (
+      <div key={field.key} className="field wide">
+        <label htmlFor={id}>{field.label} <output className="mono muted" htmlFor={id}>{parts[field.key]}</output></label>
+        <input id={id} className="range-field" type="range" min={field.min} max={field.max} step={field.step} value={parts[field.key] ?? ''}
+          onChange={(e) => onChange({ ...parts, [field.key]: e.target.value })} />
+      </div>
+    );
     return (
       <div key={field.key} className="field wide">
         <label htmlFor={id}>{field.label}</label>
@@ -181,7 +197,8 @@ export function Inspector({ region, format, parts, onChange, onExport, onCopyLin
               )}
             </section>
 
-            {(region.id === 'iraq' || region.id === 'iran') && <TypefaceReview key={region.id} country={region.id} />}
+            {region.id === 'iraq' && <IraqCoverage format={format} parts={parts} />}
+            {region.id === 'iran' && <IranCoverage format={format} parts={parts} />}
 
             <section className="insp-section export-section">
               <header className="insp-head"><h2>Export</h2></header>

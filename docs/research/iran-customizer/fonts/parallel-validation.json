@@ -1,0 +1,937 @@
+{
+  "validation": "Every path parsed; bounds checked; all seven rendered source overlays inspected manually. No numeric similarity/authenticity score is claimed.",
+  "profiles": [
+    {
+      "id": "wlp-teh-black-study",
+      "sourceFile": "parallel-reference/ir-wlp-teh-black.jpg",
+      "sourceImageSize": [
+        257,
+        65
+      ],
+      "sourceSHA256": "d1f9f50f17df3c0a1b372ff4d9c4ee170003988bc342a6cd4d79bd8eec942cd3",
+      "script": "latin",
+      "mainCoverage": "TEH-470",
+      "roles": {},
+      "wordmarks": [],
+      "contours": [
+        {
+          "role": "main",
+          "character": "T",
+          "wordmark": null,
+          "sourceBounds": [
+            14.0,
+            12.0,
+            37.0,
+            52.0
+          ],
+          "sourceBox": [
+            13,
+            11,
+            38,
+            54
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 10
+        },
+        {
+          "role": "main",
+          "character": "E",
+          "wordmark": null,
+          "sourceBounds": [
+            46.0,
+            12.0,
+            63.0,
+            52.0
+          ],
+          "sourceBox": [
+            45,
+            11,
+            65,
+            54
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 13
+        },
+        {
+          "role": "main",
+          "character": "H",
+          "wordmark": null,
+          "sourceBounds": [
+            74.0,
+            12.0,
+            91.0,
+            53.0
+          ],
+          "sourceBox": [
+            73,
+            11,
+            92,
+            54
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 13
+        },
+        {
+          "role": "main",
+          "character": "-",
+          "wordmark": null,
+          "sourceBounds": [
+            100.0,
+            31.0,
+            113.0,
+            36.0
+          ],
+          "sourceBox": [
+            99,
+            30,
+            114,
+            37
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 7
+        },
+        {
+          "role": "main",
+          "character": "4",
+          "wordmark": null,
+          "sourceBounds": [
+            121.0,
+            12.0,
+            146.0,
+            53.0
+          ],
+          "sourceBox": [
+            120,
+            11,
+            148,
+            54
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 17
+        },
+        {
+          "role": "main",
+          "character": "7",
+          "wordmark": null,
+          "sourceBounds": [
+            186.0,
+            12.0,
+            210.0,
+            53.0
+          ],
+          "sourceBox": [
+            185,
+            11,
+            212,
+            55
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 11
+        },
+        {
+          "role": "main",
+          "character": "0",
+          "wordmark": null,
+          "sourceBounds": [
+            218.0,
+            14.0,
+            241.0,
+            54.0
+          ],
+          "sourceBox": [
+            217,
+            12,
+            242,
+            56
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 16
+        }
+      ]
+    },
+    {
+      "id": "wlp-teh-green-study",
+      "sourceFile": "parallel-reference/ir-wlp-teh-green.jpg",
+      "sourceImageSize": [
+        253,
+        64
+      ],
+      "sourceSHA256": "baa88c0563e5691cdf96034eebd5af9f4ec3a5b1bc50e13bcdfc41bd1c9a127d",
+      "script": "latin",
+      "mainCoverage": "TEH-321",
+      "roles": {},
+      "wordmarks": [],
+      "contours": [
+        {
+          "role": "main",
+          "character": "T",
+          "wordmark": null,
+          "sourceBounds": [
+            9.0,
+            13.0,
+            32.0,
+            54.0
+          ],
+          "sourceBox": [
+            8,
+            11,
+            34,
+            55
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 9
+        },
+        {
+          "role": "main",
+          "character": "E",
+          "wordmark": null,
+          "sourceBounds": [
+            38.0,
+            12.0,
+            55.0,
+            54.0
+          ],
+          "sourceBox": [
+            37,
+            11,
+            57,
+            55
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 13
+        },
+        {
+          "role": "main",
+          "character": "H",
+          "wordmark": null,
+          "sourceBounds": [
+            64.0,
+            12.0,
+            81.0,
+            54.0
+          ],
+          "sourceBox": [
+            63,
+            11,
+            82,
+            55
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 13
+        },
+        {
+          "role": "main",
+          "character": "-",
+          "wordmark": null,
+          "sourceBounds": [
+            87.0,
+            30.0,
+            101.0,
+            35.0
+          ],
+          "sourceBox": [
+            86,
+            29,
+            103,
+            37
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 5
+        },
+        {
+          "role": "main",
+          "character": "3",
+          "wordmark": null,
+          "sourceBounds": [
+            98.0,
+            11.278640450004206,
+            122.32414683923415,
+            54.93971308997206
+          ],
+          "sourceBox": [
+            97,
+            10,
+            123,
+            56
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 14
+        },
+        {
+          "role": "main",
+          "character": "2",
+          "wordmark": null,
+          "sourceBounds": [
+            130.0,
+            10.890563525278553,
+            154.109038524102,
+            53.0
+          ],
+          "sourceBox": [
+            128,
+            10,
+            155,
+            55
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 13
+        },
+        {
+          "role": "main",
+          "character": "1",
+          "wordmark": null,
+          "sourceBounds": [
+            188.0,
+            11.0,
+            200.0,
+            54.0
+          ],
+          "sourceBox": [
+            187,
+            10,
+            201,
+            55
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 9
+        }
+      ]
+    },
+    {
+      "id": "wlp-thr-travel-study",
+      "sourceFile": "parallel-reference/ir-wlp-thr-travel.jpg",
+      "sourceImageSize": [
+        264,
+        73
+      ],
+      "sourceSHA256": "0fd6b2aaa94867954753b1b927a88ee89e60f74a0f9aa8bb3c7305ad32435eb3",
+      "script": "latin",
+      "mainCoverage": "THR-706",
+      "roles": {},
+      "wordmarks": [],
+      "contours": [
+        {
+          "role": "main",
+          "character": "T",
+          "wordmark": null,
+          "sourceBounds": [
+            16.0,
+            12.0,
+            35.0,
+            54.0
+          ],
+          "sourceBox": [
+            15,
+            11,
+            36,
+            55
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 9
+        },
+        {
+          "role": "main",
+          "character": "H",
+          "wordmark": null,
+          "sourceBounds": [
+            41.0,
+            12.0,
+            60.0,
+            54.0
+          ],
+          "sourceBox": [
+            40,
+            11,
+            60,
+            55
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 13
+        },
+        {
+          "role": "main",
+          "character": "R",
+          "wordmark": null,
+          "sourceBounds": [
+            66.0,
+            12.0,
+            90.0,
+            54.0
+          ],
+          "sourceBox": [
+            65,
+            11,
+            91,
+            56
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 16
+        },
+        {
+          "role": "main",
+          "character": "-",
+          "wordmark": null,
+          "sourceBounds": [
+            96.0,
+            33.0,
+            109.0,
+            37.0
+          ],
+          "sourceBox": [
+            95,
+            32,
+            110,
+            38
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 6
+        },
+        {
+          "role": "main",
+          "character": "7",
+          "wordmark": null,
+          "sourceBounds": [
+            115.0,
+            12.0,
+            136.0,
+            54.0
+          ],
+          "sourceBox": [
+            115,
+            10,
+            137,
+            56
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 10
+        },
+        {
+          "role": "main",
+          "character": "0",
+          "wordmark": null,
+          "sourceBounds": [
+            194.0,
+            12.0,
+            220.0,
+            54.0
+          ],
+          "sourceBox": [
+            194,
+            10,
+            220,
+            55
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 12
+        },
+        {
+          "role": "main",
+          "character": "6",
+          "wordmark": null,
+          "sourceBounds": [
+            223.91896329019147,
+            11.832429648695909,
+            248.08103670980853,
+            54.63265306122449
+          ],
+          "sourceBox": [
+            223,
+            10,
+            249,
+            56
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 16
+        }
+      ]
+    },
+    {
+      "id": "wlp-touring-2010-study",
+      "sourceFile": "parallel-reference/ir-wlp-travel-circa2010.jpg",
+      "sourceImageSize": [
+        260,
+        58
+      ],
+      "sourceSHA256": "b7c1de517fd88b9a8be0e4fdfa397c32771e3b659b092288318d409becea8594",
+      "script": "latin",
+      "mainCoverage": "347",
+      "roles": {
+        "letter": "E",
+        "code": "10",
+        "country": "IRAN"
+      },
+      "wordmarks": [
+        "iran-latin"
+      ],
+      "contours": [
+        {
+          "role": "main",
+          "character": "3",
+          "wordmark": null,
+          "sourceBounds": [
+            31.0,
+            9.651530771650465,
+            51.0,
+            35.0
+          ],
+          "sourceBox": [
+            31,
+            9,
+            51,
+            36
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 15
+        },
+        {
+          "role": "main",
+          "character": "4",
+          "wordmark": null,
+          "sourceBounds": [
+            57.0,
+            10.0,
+            79.0,
+            35.0
+          ],
+          "sourceBox": [
+            56,
+            9,
+            80,
+            36
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 17
+        },
+        {
+          "role": "main",
+          "character": "7",
+          "wordmark": null,
+          "sourceBounds": [
+            124.0,
+            10.0,
+            145.0,
+            35.0
+          ],
+          "sourceBox": [
+            123,
+            9,
+            146,
+            36
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 9
+        },
+        {
+          "role": "letter",
+          "character": "E",
+          "wordmark": null,
+          "sourceBounds": [
+            92.0,
+            10.0,
+            113.0,
+            35.0
+          ],
+          "sourceBox": [
+            90,
+            9,
+            114,
+            36
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 13
+        },
+        {
+          "role": "code",
+          "character": "1",
+          "wordmark": null,
+          "sourceBounds": [
+            210.0,
+            9.0,
+            222.0,
+            35.0
+          ],
+          "sourceBox": [
+            208,
+            8,
+            224,
+            36
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 9
+        },
+        {
+          "role": "code",
+          "character": "0",
+          "wordmark": null,
+          "sourceBounds": [
+            231.0,
+            9.0,
+            250.0,
+            35.0
+          ],
+          "sourceBox": [
+            230,
+            8,
+            251,
+            36
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 12
+        },
+        {
+          "role": "country",
+          "character": "I",
+          "wordmark": null,
+          "sourceBounds": [
+            4.3,
+            8.8,
+            5.6,
+            14.0
+          ],
+          "sourceBox": [
+            4,
+            8,
+            6,
+            15
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 5
+        },
+        {
+          "role": "country",
+          "character": "R",
+          "wordmark": null,
+          "sourceBounds": [
+            7.0,
+            8.8,
+            13.0,
+            14.0
+          ],
+          "sourceBox": [
+            6,
+            8,
+            13,
+            15
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 16
+        },
+        {
+          "role": "country",
+          "character": "A",
+          "wordmark": null,
+          "sourceBounds": [
+            12.6,
+            8.8,
+            19.1,
+            14.0
+          ],
+          "sourceBox": [
+            12,
+            8,
+            20,
+            15
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 13
+        },
+        {
+          "role": "country",
+          "character": "N",
+          "wordmark": null,
+          "sourceBounds": [
+            19.8,
+            8.8,
+            25.5,
+            14.0
+          ],
+          "sourceBox": [
+            19,
+            8,
+            26,
+            15
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 11
+        },
+        {
+          "role": "wordmark",
+          "character": null,
+          "wordmark": "iran-latin",
+          "sourceBounds": [
+            4.3,
+            8.8,
+            25.5,
+            14.0
+          ],
+          "sourceBox": [
+            4,
+            8,
+            26,
+            15
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 45
+        }
+      ]
+    },
+    {
+      "id": "wlp-uniimog-study",
+      "sourceFile": "parallel-reference/ir-wlp-uniimog.jpg",
+      "sourceImageSize": [
+        173,
+        108
+      ],
+      "sourceSHA256": "72c0c7fbfd55e20f46fabb510b12774f7a937c1825132f2fca9facce0617d3c8",
+      "script": "latin",
+      "mainCoverage": "5",
+      "roles": {},
+      "wordmarks": [
+        "uniimog"
+      ],
+      "contours": [
+        {
+          "role": "main",
+          "character": "5",
+          "wordmark": null,
+          "sourceBounds": [
+            60.0,
+            49.0,
+            83.0,
+            87.1510153071851
+          ],
+          "sourceBox": [
+            59,
+            48,
+            84,
+            88
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 14
+        },
+        {
+          "role": "wordmark",
+          "character": null,
+          "wordmark": "uniimog",
+          "sourceBounds": [
+            16.0,
+            19.0,
+            156.1,
+            39.0
+          ],
+          "sourceBox": [
+            15,
+            17,
+            158,
+            41
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 125
+        }
+      ]
+    },
+    {
+      "id": "wlp-us-military-study",
+      "sourceFile": "parallel-reference/ir-wlp-us-military.jpg",
+      "sourceImageSize": [
+        178,
+        78
+      ],
+      "sourceSHA256": "5a4a6b6ed5c215e32ebf787240c3798f9c87cd442994cff219c45df54644196f",
+      "script": "persian",
+      "mainCoverage": "۸۰۶",
+      "roles": {},
+      "wordmarks": [],
+      "contours": [
+        {
+          "role": "main",
+          "character": "۸",
+          "wordmark": null,
+          "sourceBounds": [
+            31.0,
+            16.0,
+            54.5,
+            61.2
+          ],
+          "sourceBox": [
+            30,
+            15,
+            56,
+            63
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 8
+        },
+        {
+          "role": "main",
+          "character": "۰",
+          "wordmark": null,
+          "sourceBounds": [
+            68.8,
+            34.5,
+            83.5,
+            51.0
+          ],
+          "sourceBox": [
+            68,
+            34,
+            84,
+            52
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 5
+        },
+        {
+          "role": "main",
+          "character": "۶",
+          "wordmark": null,
+          "sourceBounds": [
+            102.6333045990412,
+            15.4,
+            124.6,
+            63.6
+          ],
+          "sourceBox": [
+            102,
+            14,
+            126,
+            65
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 10
+        }
+      ]
+    },
+    {
+      "id": "wlp-us-topographical-study",
+      "sourceFile": "parallel-reference/ir-wlp-us-topographical.jpg",
+      "sourceImageSize": [
+        170,
+        71
+      ],
+      "sourceSHA256": "9d046c475239621893cf009e913553213ef7cf9c733b544398975965bb7c9ad2",
+      "script": "persian",
+      "mainCoverage": "۳۰۷۸۴",
+      "roles": {},
+      "wordmarks": [
+        "us-topographical"
+      ],
+      "contours": [
+        {
+          "role": "main",
+          "character": "۳",
+          "wordmark": null,
+          "sourceBounds": [
+            53.57203305785124,
+            17.7,
+            73.73270661192262,
+            53.0
+          ],
+          "sourceBox": [
+            53,
+            16,
+            75,
+            55
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 12
+        },
+        {
+          "role": "main",
+          "character": "۰",
+          "wordmark": null,
+          "sourceBounds": [
+            71.0,
+            31.0,
+            79.5,
+            39.0
+          ],
+          "sourceBox": [
+            70,
+            30,
+            81,
+            40
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 5
+        },
+        {
+          "role": "main",
+          "character": "۷",
+          "wordmark": null,
+          "sourceBounds": [
+            84.1,
+            18.7,
+            104.8,
+            50.9
+          ],
+          "sourceBox": [
+            83,
+            18,
+            106,
+            53
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 8
+        },
+        {
+          "role": "main",
+          "character": "۸",
+          "wordmark": null,
+          "sourceBounds": [
+            109.2,
+            19.5,
+            130.7,
+            52.1
+          ],
+          "sourceBox": [
+            108,
+            18,
+            132,
+            54
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 8
+        },
+        {
+          "role": "main",
+          "character": "۴",
+          "wordmark": null,
+          "sourceBounds": [
+            135.26788299156203,
+            18.2,
+            154.4,
+            50.6
+          ],
+          "sourceBox": [
+            134,
+            17,
+            155,
+            52
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 13
+        },
+        {
+          "role": "wordmark",
+          "character": null,
+          "wordmark": "us-topographical",
+          "sourceBounds": [
+            12.727161457522415,
+            18.6,
+            50.0,
+            44.5
+          ],
+          "sourceBox": [
+            12,
+            17,
+            52,
+            46
+          ],
+          "sourceBoxContainsPath": true,
+          "pathCommands": 97
+        }
+      ]
+    }
+  ]
+}

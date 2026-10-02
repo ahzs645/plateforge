@@ -1,7 +1,7 @@
 import { useMemo, useReducer, useRef, useState } from 'react';
 import { IRAQ_GOVERNORATES } from '../regions/asia/iraq-data';
 import { IRAQ_FONT_PROFILES, IRAQ_WORDMARKS } from '../templates/iraq-custom-fonts';
-import { IRAQ_CUSTOM_PRESETS, IRAQ_CUSTOM_PROVINCES, IRAQ_CUSTOM_CLASSES, IRAQ_CUSTOM_SOURCE_COVERAGE, applyIraqClass, customizerState, renderIraqCustom, type IraqCustomState } from '../templates/iraq-custom-scene';
+import { IRAQ_CUSTOM_PRESETS, IRAQ_CUSTOM_PROVINCES, IRAQ_CUSTOM_CLASSES, IRAQ_CUSTOM_SOURCE_COVERAGE, applyIraqClass, customizerState, iraqActiveFields, renderIraqCustom, type IraqCustomState } from '../templates/iraq-custom-scene';
 import { download, fileSafe, svgToPngBlob } from './exporting';
 import './iraq-customizer.css';
 
@@ -44,13 +44,7 @@ export function IraqCustomizer({ initialState }: { initialState?: IraqCustomStat
   const preset = IRAQ_CUSTOM_PRESETS.find((item) => item.id === state.presetId) ?? IRAQ_CUSTOM_PRESETS[0];
   const scene = useMemo(() => renderIraqCustom(state), [state]);
   const profile = profiles.find((item) => item.id === state.fontProfile) ?? profiles[0];
-  const activeFields = new Set(preset.fields);
-  if (['modern', 'modern-temporary'].includes(preset.kind)) { if (state.vehicleClass === 'temporary') activeFields.delete('letter'); else activeFields.add('letter'); }
-  if (['divided', 'police', 'legacy-temporary'].includes(preset.kind)) { if (state.vehicleClass === 'temporary') activeFields.add('year'); else activeFields.delete('year'); }
-  if (['modern', 'modern-temporary', 'international', 'icts', 'inspection-temporary'].includes(preset.kind)) activeFields.delete('province');
-  if (['side', 'short-bilingual', 'inspection-temporary', 'police'].includes(preset.kind)) activeFields.delete('strip');
-  if (['divided', 'legacy-temporary'].includes(preset.kind) && state.vehicleClass !== 'temporary') activeFields.delete('strip');
-  if (preset.kind === 'bilingual') { if (['government', 'customs'].includes(state.vehicleClass)) activeFields.delete('province'); else activeFields.add('province'); }
+  const activeFields = iraqActiveFields(preset, state.vehicleClass);
   const hasField = (key: keyof IraqCustomState) => activeFields.has(key);
   const filteredPresets = useMemo(() => IRAQ_CUSTOM_PRESETS.filter((item) =>
     `${item.label} ${item.family} ${item.evidence}`.toLowerCase().includes(search.toLowerCase().trim())), [search]);

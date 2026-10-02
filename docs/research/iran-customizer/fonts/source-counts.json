@@ -1,0 +1,13 @@
+{
+  "profile_count": 62,
+  "source_specific_profiles": 55,
+  "licensed_full_candidate_profiles": 7,
+  "source_entry_counts": {
+    "main_glyphs": 413,
+    "whole_words": 25,
+    "contextual_role_glyphs": 251,
+    "total_entries": 689
+  },
+  "distinct_source_profile_and_path_pairs": 631,
+  "note": "Source profiles include separately labelled observed and inferred entries. Distinct profile/path pairs are not authenticated manufacturing dies."
+}

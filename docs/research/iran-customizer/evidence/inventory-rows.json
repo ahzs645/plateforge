@@ -1,0 +1,2091 @@
+[
+  {
+    "id": "ir-wlp-1949-private",
+    "title": "City initial / year-tab passenger",
+    "scope": "requested_source",
+    "source_url": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "image_url": "http://www.worldlicenseplates.com/jpglps/AS_IRAN_GI.jpg",
+    "local_file": "ir-wlp-1949-private.jpg",
+    "sheet_local_file": "AS_IRAN_GI.jpg",
+    "sheet_crop_xyxy": [
+      12,
+      20,
+      185,
+      92
+    ],
+    "image_type": "photograph within collector sheet",
+    "pixel_inspected": true,
+    "vehicle_class": "private",
+    "serial": "3435",
+    "legends": "ط; year 28",
+    "date": {
+      "gregorian_label": "1949 / SH1328",
+      "type": "collector series/period attribution, not photographic date",
+      "note": "Year tab 28 supports SH1328, 1949/50; earliest issue of this family not established. Sheet revision, if listed, is not specimen photograph or introduction date.",
+      "solar_hijri": "SH1328 (1949/50) specimen tab",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Narrow left compartment city initial above dark rectangular year tab; four tall serial figures on right.",
+      "observed_ratio": 2.403,
+      "physical_dimensions_mm": null
+    },
+    "colors": "black on pale field",
+    "notes": "",
+    "confidence": {
+      "appearance": "observed",
+      "chronology": "secondary collector attribution",
+      "authenticity": "not independently authenticated"
+    },
+    "rights": "WorldLicensePlates and original contributors; permission not established. Private research reference; do not publish photos as freely licensed assets.",
+    "source_sheet_revision": "2013-04"
+  },
+  {
+    "id": "ir-wlp-1963-private",
+    "title": "City initial / year above initial",
+    "scope": "requested_source",
+    "source_url": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "image_url": "http://www.worldlicenseplates.com/jpglps/AS_IRAN_GI.jpg",
+    "local_file": "ir-wlp-1963-private.jpg",
+    "sheet_local_file": "AS_IRAN_GI.jpg",
+    "sheet_crop_xyxy": [
+      203,
+      23,
+      405,
+      87
+    ],
+    "image_type": "photograph within collector sheet",
+    "pixel_inspected": true,
+    "vehicle_class": "private",
+    "serial": "62019",
+    "legends": "42 above ط",
+    "date": {
+      "gregorian_label": "1963 / SH1342",
+      "type": "collector series/period attribution, not photographic date",
+      "note": "SH1342 is 1963/64; date is on specimen, not proof of introduction. Sheet revision, if listed, is not specimen photograph or introduction date.",
+      "solar_hijri": "SH1342 (1963/64) specimen year",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Left ~16% has year above city initial, thin small separator; five figures including diamond zero at right.",
+      "observed_ratio": 3.156,
+      "physical_dimensions_mm": null
+    },
+    "colors": "black on pale cream",
+    "notes": "",
+    "confidence": {
+      "appearance": "observed",
+      "chronology": "secondary collector attribution",
+      "authenticity": "not independently authenticated"
+    },
+    "rights": "WorldLicensePlates and original contributors; permission not established. Private research reference; do not publish photos as freely licensed assets.",
+    "source_sheet_revision": "2013-04"
+  },
+  {
+    "id": "ir-wlp-1964-private",
+    "title": "Full-city side-panel passenger",
+    "scope": "requested_source",
+    "source_url": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "image_url": "http://www.worldlicenseplates.com/jpglps/AS_IRAN_GI.jpg",
+    "local_file": "ir-wlp-1964-private.jpg",
+    "sheet_local_file": "AS_IRAN_GI.jpg",
+    "sheet_crop_xyxy": [
+      418,
+      26,
+      595,
+      92
+    ],
+    "image_type": "photograph within collector sheet",
+    "pixel_inspected": true,
+    "vehicle_class": "private",
+    "serial": "1231",
+    "legends": "تهران above 13?",
+    "date": {
+      "gregorian_label": "1964 series",
+      "type": "collector series/period attribution, not photographic date",
+      "note": "No endpoint established by requested source. Sheet revision, if listed, is not specimen photograph or introduction date.",
+      "solar_hijri": "approximately SH1342/43; Gregorian series label only",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Full city at top left with extension below; left panel ~27%; four tall right-hand digits; no full-height divider.",
+      "observed_ratio": 2.682,
+      "physical_dimensions_mm": null
+    },
+    "colors": "black on pale cream",
+    "notes": "Small extension appears13 under enlarged pixel inspection, but recovered prior notes transcribed12. Small glyph remains uncertain; preserve image and do not silently propagate12.",
+    "confidence": {
+      "appearance": "observed",
+      "chronology": "secondary collector attribution",
+      "authenticity": "not independently authenticated"
+    },
+    "rights": "WorldLicensePlates and original contributors; permission not established. Private research reference; do not publish photos as freely licensed assets.",
+    "source_sheet_revision": "2013-04"
+  },
+  {
+    "id": "ir-wlp-1969-gilan",
+    "title": "Rasht full-city two-line",
+    "scope": "requested_source",
+    "source_url": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "image_url": "http://www.worldlicenseplates.com/jpglps/AS_IRAN_GI.jpg",
+    "local_file": "ir-wlp-1969-gilan.jpg",
+    "sheet_local_file": "AS_IRAN_GI.jpg",
+    "sheet_crop_xyxy": [
+      19,
+      139,
+      193,
+      228
+    ],
+    "image_type": "photograph within collector sheet",
+    "pixel_inspected": true,
+    "vehicle_class": "private",
+    "serial": "12273",
+    "legends": "رشت",
+    "date": {
+      "gregorian_label": "1969 series",
+      "type": "collector series/period attribution, not photographic date",
+      "note": "Series caption; photo date not given. Sheet revision, if listed, is not specimen photograph or introduction date.",
+      "solar_hijri": "approximately SH1347/48; UNIDO transition in SH1348 (1969/70)",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Five digits upper ~60%, centered sweeping connected city wordmark lower; compact.",
+      "observed_ratio": 1.955,
+      "physical_dimensions_mm": null
+    },
+    "colors": "black on cream",
+    "notes": "",
+    "confidence": {
+      "appearance": "observed",
+      "chronology": "secondary collector attribution",
+      "authenticity": "not independently authenticated"
+    },
+    "rights": "WorldLicensePlates and original contributors; permission not established. Private research reference; do not publish photos as freely licensed assets.",
+    "source_sheet_revision": "2013-04"
+  },
+  {
+    "id": "ir-wlp-1969-tehran",
+    "title": "Tehran city/numeric-extension",
+    "scope": "requested_source",
+    "source_url": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "image_url": "http://www.worldlicenseplates.com/jpglps/AS_IRAN_GI.jpg",
+    "local_file": "ir-wlp-1969-tehran.jpg",
+    "sheet_local_file": "AS_IRAN_GI.jpg",
+    "sheet_crop_xyxy": [
+      216,
+      144,
+      387,
+      232
+    ],
+    "image_type": "photograph within collector sheet",
+    "pixel_inspected": true,
+    "vehicle_class": "private (WLP location; contested)",
+    "serial": "41629",
+    "legends": "تهران - 91",
+    "date": {
+      "gregorian_label": "1969 series",
+      "type": "collector series/period attribution, not photographic date",
+      "note": "WLP places in passenger sheet; recovered DNA attributes identical specimen to diplomatic category. Preserve conflict. Sheet revision, if listed, is not specimen photograph or introduction date.",
+      "solar_hijri": "approximately SH1347/48; UNIDO transition in SH1348 (1969/70)",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Five digits upper row; city plus numeric extension lower row.",
+      "observed_ratio": 1.943,
+      "physical_dimensions_mm": null
+    },
+    "colors": "black on pale pink/cream",
+    "notes": "Do not silently resolve class conflict from tint; may be same image reused with different catalogue classification.",
+    "confidence": {
+      "appearance": "observed",
+      "chronology": "secondary collector attribution",
+      "authenticity": "not independently authenticated"
+    },
+    "rights": "WorldLicensePlates and original contributors; permission not established. Private research reference; do not publish photos as freely licensed assets.",
+    "source_sheet_revision": "2013-04"
+  },
+  {
+    "id": "ir-wlp-1993-private",
+    "title": "City-band passenger",
+    "scope": "requested_source",
+    "source_url": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "image_url": "http://www.worldlicenseplates.com/jpglps/AS_IRAN_GI.jpg",
+    "local_file": "ir-wlp-1993-private.jpg",
+    "sheet_local_file": "AS_IRAN_GI.jpg",
+    "sheet_crop_xyxy": [
+      413,
+      152,
+      590,
+      231
+    ],
+    "image_type": "photograph within collector sheet",
+    "pixel_inspected": true,
+    "vehicle_class": "private",
+    "serial": "14 ل 774",
+    "legends": "تهران - 14",
+    "date": {
+      "gregorian_label": "1993 series",
+      "type": "collector series/period attribution, not photographic date",
+      "note": "WLP attributes 1993; recovered collector dates include 1998. Keep earliest label as secondary, not statutory launch. Sheet revision, if listed, is not specimen photograph or introduction date.",
+      "solar_hijri": "approximately SH1371/72; Gregorian series label only",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Orange-yellow header roughly 36% height; white lower serial 2+letter+3; black perimeter and horizontal divider.",
+      "observed_ratio": 2.241,
+      "physical_dimensions_mm": null
+    },
+    "colors": "black on white; yellow-orange header",
+    "notes": "",
+    "confidence": {
+      "appearance": "observed",
+      "chronology": "secondary collector attribution",
+      "authenticity": "not independently authenticated"
+    },
+    "rights": "WorldLicensePlates and original contributors; permission not established. Private research reference; do not publish photos as freely licensed assets.",
+    "source_sheet_revision": "2013-04"
+  },
+  {
+    "id": "ir-wlp-2003-private",
+    "title": "National passenger",
+    "scope": "requested_source",
+    "source_url": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "image_url": "http://www.worldlicenseplates.com/jpglps/AS_IRAN_GI.jpg",
+    "local_file": "ir-wlp-2003-private.jpg",
+    "sheet_local_file": "AS_IRAN_GI.jpg",
+    "sheet_crop_xyxy": [
+      58,
+      281,
+      311,
+      340
+    ],
+    "image_type": "photograph within collector sheet",
+    "pixel_inspected": true,
+    "vehicle_class": "private",
+    "serial": "18 ج 399 | 94",
+    "legends": "ایران; I.R. IRAN",
+    "date": {
+      "gregorian_label": "2003 series",
+      "type": "collector series/period attribution, not photographic date",
+      "note": "Catalogue attribution; contemporary report documents rollout Esfand1382 (Feb–Mar2004), operation April2004. Sheet revision, if listed, is not specimen photograph or introduction date.",
+      "solar_hijri": "SH1381/82 collector-year attribution; rollout Esfand1382 (2004)",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Long national plate: left blue stripe, Persian serial, right code box headed ایران.",
+      "observed_ratio": 4.288,
+      "physical_dimensions_mm": null
+    },
+    "colors": "black on white; blue stripe",
+    "notes": "",
+    "confidence": {
+      "appearance": "observed",
+      "chronology": "secondary collector attribution",
+      "authenticity": "not independently authenticated"
+    },
+    "rights": "WorldLicensePlates and original contributors; permission not established. Private research reference; do not publish photos as freely licensed assets.",
+    "source_sheet_revision": "2013-04"
+  },
+  {
+    "id": "ir-wlp-1954-commercial",
+    "title": "City initial / abbreviated-year commercial",
+    "scope": "requested_source",
+    "source_url": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "image_url": "http://www.worldlicenseplates.com/jpglps/AS_IRAN_OT1.jpg",
+    "local_file": "ir-wlp-1954-commercial.jpg",
+    "sheet_local_file": "AS_IRAN_OT1.jpg",
+    "sheet_crop_xyxy": [
+      8,
+      12,
+      209,
+      94
+    ],
+    "image_type": "photograph within collector sheet",
+    "pixel_inspected": true,
+    "vehicle_class": "commercial",
+    "serial": "200",
+    "legends": "ط above 33",
+    "date": {
+      "gregorian_label": "1954 / SH1333",
+      "type": "collector series/period attribution, not photographic date",
+      "note": "Specimen-year attribution; SH1333 is 1954/55. Sheet revision, if listed, is not specimen photograph or introduction date.",
+      "solar_hijri": "SH1333 (1954/55) specimen year",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Long black panel; narrow city/year column at left; three serial digits incl two diamonds.",
+      "observed_ratio": 2.451,
+      "physical_dimensions_mm": null
+    },
+    "colors": "cream on black",
+    "notes": "",
+    "confidence": {
+      "appearance": "observed",
+      "chronology": "secondary collector attribution",
+      "authenticity": "not independently authenticated"
+    },
+    "rights": "WorldLicensePlates and original contributors; permission not established. Private research reference; do not publish photos as freely licensed assets.",
+    "source_sheet_revision": "2019-12"
+  },
+  {
+    "id": "ir-wlp-1960s-consular",
+    "title": "Legacy consular",
+    "scope": "requested_source",
+    "source_url": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "image_url": "http://www.worldlicenseplates.com/jpglps/AS_IRAN_OT1.jpg",
+    "local_file": "ir-wlp-1960s-consular.jpg",
+    "sheet_local_file": "AS_IRAN_OT1.jpg",
+    "sheet_crop_xyxy": [
+      216,
+      17,
+      416,
+      96
+    ],
+    "image_type": "photograph within collector sheet",
+    "pixel_inspected": true,
+    "vehicle_class": "consular",
+    "serial": "1",
+    "legends": "کنسولی",
+    "date": {
+      "gregorian_label": "1960s",
+      "type": "collector series/period attribution, not photographic date",
+      "note": "Decade only; no precise introduction/date visible. Sheet revision, if listed, is not specimen photograph or introduction date.",
+      "solar_hijri": "roughly SH1338–1348; decade attribution only",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Long shallow panel; connected consular legend left, one very large figure right.",
+      "observed_ratio": 2.532,
+      "physical_dimensions_mm": null
+    },
+    "colors": "black on cream",
+    "notes": "",
+    "confidence": {
+      "appearance": "observed",
+      "chronology": "secondary collector attribution",
+      "authenticity": "not independently authenticated"
+    },
+    "rights": "WorldLicensePlates and original contributors; permission not established. Private research reference; do not publish photos as freely licensed assets.",
+    "source_sheet_revision": "2019-12"
+  },
+  {
+    "id": "ir-wlp-circa1970-commercial",
+    "title": "City/numeric-extension commercial",
+    "scope": "requested_source",
+    "source_url": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "image_url": "http://www.worldlicenseplates.com/jpglps/AS_IRAN_OT1.jpg",
+    "local_file": "ir-wlp-circa1970-commercial.jpg",
+    "sheet_local_file": "AS_IRAN_OT1.jpg",
+    "sheet_crop_xyxy": [
+      424,
+      6,
+      594,
+      92
+    ],
+    "image_type": "photograph within collector sheet",
+    "pixel_inspected": true,
+    "vehicle_class": "commercial",
+    "serial": "18686",
+    "legends": "تهران - 12",
+    "date": {
+      "gregorian_label": "circa 1970",
+      "type": "collector series/period attribution, not photographic date",
+      "note": "Approximate collector date. Sheet revision, if listed, is not specimen photograph or introduction date.",
+      "solar_hijri": "approximately SH1348/49",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Five tall digits above city and 12 extension; no line separating rows.",
+      "observed_ratio": 1.977,
+      "physical_dimensions_mm": null
+    },
+    "colors": "black on orange",
+    "notes": "",
+    "confidence": {
+      "appearance": "observed",
+      "chronology": "secondary collector attribution",
+      "authenticity": "not independently authenticated"
+    },
+    "rights": "WorldLicensePlates and original contributors; permission not established. Private research reference; do not publish photos as freely licensed assets.",
+    "source_sheet_revision": "2019-12"
+  },
+  {
+    "id": "ir-wlp-teh-black",
+    "title": "Additional foreign-travel plate TEH",
+    "scope": "requested_source",
+    "source_url": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "image_url": "http://www.worldlicenseplates.com/jpglps/AS_IRAN_OT1.jpg",
+    "local_file": "ir-wlp-teh-black.jpg",
+    "sheet_local_file": "AS_IRAN_OT1.jpg",
+    "sheet_crop_xyxy": [
+      43,
+      139,
+      300,
+      204
+    ],
+    "image_type": "photograph within collector sheet",
+    "pixel_inspected": true,
+    "vehicle_class": "foreign travel",
+    "serial": "TEH-4470",
+    "legends": "TEH",
+    "date": {
+      "gregorian_label": "1969–1998",
+      "type": "collector series/period attribution, not photographic date",
+      "note": "Parallel supplementary foreign-travel plate; not domestic replacement. Sheet revision, if listed, is not specimen photograph or introduction date.",
+      "solar_hijri": "roughly SH1347/48–1376/77; no exact endpoints supplied",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Single Latin row, tall condensed block capitals, shallow long rectangle, rounded black rim.",
+      "observed_ratio": 3.954,
+      "physical_dimensions_mm": null
+    },
+    "colors": "black on white",
+    "notes": "",
+    "confidence": {
+      "appearance": "observed",
+      "chronology": "secondary collector attribution",
+      "authenticity": "not independently authenticated"
+    },
+    "rights": "WorldLicensePlates and original contributors; permission not established. Private research reference; do not publish photos as freely licensed assets.",
+    "source_sheet_revision": "2019-12"
+  },
+  {
+    "id": "ir-wlp-teh-green",
+    "title": "Additional foreign-travel plate TEH, green lettering",
+    "scope": "requested_source",
+    "source_url": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "image_url": "http://www.worldlicenseplates.com/jpglps/AS_IRAN_OT1.jpg",
+    "local_file": "ir-wlp-teh-green.jpg",
+    "sheet_local_file": "AS_IRAN_OT1.jpg",
+    "sheet_crop_xyxy": [
+      312,
+      138,
+      565,
+      202
+    ],
+    "image_type": "photograph within collector sheet",
+    "pixel_inspected": true,
+    "vehicle_class": "foreign travel",
+    "serial": "TEH-32312",
+    "legends": "TEH",
+    "date": {
+      "gregorian_label": "1969–1998",
+      "type": "collector series/period attribution, not photographic date",
+      "note": "Same period label as black example; not independent redesign. Sheet revision, if listed, is not specimen photograph or introduction date.",
+      "solar_hijri": "roughly SH1347/48–1376/77; no exact endpoints supplied",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Single Latin row with green border; five serial digits.",
+      "observed_ratio": 3.953,
+      "physical_dimensions_mm": null
+    },
+    "colors": "green on white",
+    "notes": "",
+    "confidence": {
+      "appearance": "observed",
+      "chronology": "secondary collector attribution",
+      "authenticity": "not independently authenticated"
+    },
+    "rights": "WorldLicensePlates and original contributors; permission not established. Private research reference; do not publish photos as freely licensed assets.",
+    "source_sheet_revision": "2019-12"
+  },
+  {
+    "id": "ir-wlp-1993-commercial",
+    "title": "City-band commercial/public/temporary",
+    "scope": "requested_source",
+    "source_url": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "image_url": "http://www.worldlicenseplates.com/jpglps/AS_IRAN_OT2.jpg",
+    "local_file": "ir-wlp-1993-commercial.jpg",
+    "sheet_local_file": "AS_IRAN_OT2.jpg",
+    "sheet_crop_xyxy": [
+      22,
+      18,
+      194,
+      91
+    ],
+    "image_type": "photograph within collector sheet",
+    "pixel_inspected": true,
+    "vehicle_class": "commercial / public / temporary",
+    "serial": "15 ط 161",
+    "legends": "تهران",
+    "date": {
+      "gregorian_label": "1993 series",
+      "type": "collector series/period attribution, not photographic date",
+      "note": "WLP groups multiple classes under same image; do not claim separate unseen layouts. Sheet revision, if listed, is not specimen photograph or introduction date.",
+      "solar_hijri": "approximately SH1371/72; Gregorian series label only",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Colored top city band, white lower row with 2+letter+3 serial.",
+      "observed_ratio": 2.356,
+      "physical_dimensions_mm": null
+    },
+    "colors": "black on white; orange header",
+    "notes": "",
+    "confidence": {
+      "appearance": "observed",
+      "chronology": "secondary collector attribution",
+      "authenticity": "not independently authenticated"
+    },
+    "rights": "WorldLicensePlates and original contributors; permission not established. Private research reference; do not publish photos as freely licensed assets.",
+    "source_sheet_revision": "2026-06"
+  },
+  {
+    "id": "ir-wlp-1993-government",
+    "title": "City-band government",
+    "scope": "requested_source",
+    "source_url": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "image_url": "http://www.worldlicenseplates.com/jpglps/AS_IRAN_OT2.jpg",
+    "local_file": "ir-wlp-1993-government.jpg",
+    "sheet_local_file": "AS_IRAN_OT2.jpg",
+    "sheet_crop_xyxy": [
+      211,
+      11,
+      386,
+      90
+    ],
+    "image_type": "photograph within collector sheet",
+    "pixel_inspected": true,
+    "vehicle_class": "government",
+    "serial": "16 ب 245",
+    "legends": "تهران",
+    "date": {
+      "gregorian_label": "1993 series",
+      "type": "collector series/period attribution, not photographic date",
+      "note": "Series attribution only; exact fleet rollout not established. Sheet revision, if listed, is not specimen photograph or introduction date.",
+      "solar_hijri": "approximately SH1371/72; Gregorian series label only",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Blue city header over white 2+letter+3 serial.",
+      "observed_ratio": 2.215,
+      "physical_dimensions_mm": null
+    },
+    "colors": "black on white; pale blue header",
+    "notes": "",
+    "confidence": {
+      "appearance": "observed",
+      "chronology": "secondary collector attribution",
+      "authenticity": "not independently authenticated"
+    },
+    "rights": "WorldLicensePlates and original contributors; permission not established. Private research reference; do not publish photos as freely licensed assets.",
+    "source_sheet_revision": "2026-06"
+  },
+  {
+    "id": "ir-wlp-thr-travel",
+    "title": "Additional foreign-travel plate THR",
+    "scope": "requested_source",
+    "source_url": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "image_url": "http://www.worldlicenseplates.com/jpglps/AS_IRAN_OT2.jpg",
+    "local_file": "ir-wlp-thr-travel.jpg",
+    "sheet_local_file": "AS_IRAN_OT2.jpg",
+    "sheet_crop_xyxy": [
+      29,
+      155,
+      293,
+      228
+    ],
+    "image_type": "photograph within collector sheet",
+    "pixel_inspected": true,
+    "vehicle_class": "foreign travel",
+    "serial": "THR-77706",
+    "legends": "THR",
+    "date": {
+      "gregorian_label": "1998–2005",
+      "type": "collector series/period attribution, not photographic date",
+      "note": "Parallel supplementary foreign-travel plate. Sheet revision, if listed, is not specimen photograph or introduction date.",
+      "solar_hijri": "roughly SH1376/77–1383/84; no exact endpoints supplied",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Single condensed Latin row across long yellow plate.",
+      "observed_ratio": 3.616,
+      "physical_dimensions_mm": null
+    },
+    "colors": "black on yellow",
+    "notes": "",
+    "confidence": {
+      "appearance": "observed",
+      "chronology": "secondary collector attribution",
+      "authenticity": "not independently authenticated"
+    },
+    "rights": "WorldLicensePlates and original contributors; permission not established. Private research reference; do not publish photos as freely licensed assets.",
+    "source_sheet_revision": "2026-06"
+  },
+  {
+    "id": "ir-wlp-aa-public-2002",
+    "title": "Short-lived bilingual public transport",
+    "scope": "requested_source",
+    "source_url": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "image_url": "http://www.worldlicenseplates.com/jpglps/AS_IRAN_OT2.jpg",
+    "local_file": "ir-wlp-aa-public-2002.jpg",
+    "sheet_local_file": "AS_IRAN_OT2.jpg",
+    "sheet_crop_xyxy": [
+      323,
+      141,
+      581,
+      242
+    ],
+    "image_type": "photograph within collector sheet",
+    "pixel_inspected": true,
+    "vehicle_class": "public transport",
+    "serial": "111 19916 / AA 19916",
+    "legends": "I.R. IRAN; AA",
+    "date": {
+      "gregorian_label": "2002–2003",
+      "type": "collector series/period attribution, not photographic date",
+      "note": "WLP class label public transport, not generic foreign travel. Sheet revision, if listed, is not specimen photograph or introduction date.",
+      "solar_hijri": "roughly SH1380/81–1381/82",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Compact ~2.55 ratio in source; narrow left blue stripe. Top yellow/orange row has Persian code111+five digits, bottom white row AA+Latin five digits; vertical separator between code and digits, horizontal center rule.",
+      "observed_ratio": 2.554,
+      "physical_dimensions_mm": null
+    },
+    "colors": "black on yellow upper / white lower",
+    "notes": "",
+    "confidence": {
+      "appearance": "observed",
+      "chronology": "secondary collector attribution",
+      "authenticity": "not independently authenticated"
+    },
+    "rights": "WorldLicensePlates and original contributors; permission not established. Private research reference; do not publish photos as freely licensed assets.",
+    "source_sheet_revision": "2026-06"
+  },
+  {
+    "id": "ir-wlp-2003-public",
+    "title": "National public transport",
+    "scope": "requested_source",
+    "source_url": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "image_url": "http://www.worldlicenseplates.com/jpglps/AS_IRAN_OT2.jpg",
+    "local_file": "ir-wlp-2003-public.jpg",
+    "sheet_local_file": "AS_IRAN_OT2.jpg",
+    "sheet_crop_xyxy": [
+      29,
+      280,
+      287,
+      342
+    ],
+    "image_type": "photograph within collector sheet",
+    "pixel_inspected": true,
+    "vehicle_class": "public transport",
+    "serial": "31 ع 957 | 32",
+    "legends": "ایران; I.R. IRAN",
+    "date": {
+      "gregorian_label": "2003 series",
+      "type": "collector series/period attribution, not photographic date",
+      "note": "National-family date dispute documented separately. Sheet revision, if listed, is not specimen photograph or introduction date.",
+      "solar_hijri": "SH1381/82 collector-year attribution; rollout Esfand1382 (2004)",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "National long with right code box and left stripe.",
+      "observed_ratio": 4.161,
+      "physical_dimensions_mm": null
+    },
+    "colors": "black on yellow",
+    "notes": "Final whole-plate pixel review 2026-10-02: right allocation reads 32; earlier transcription 33 corrected.",
+    "confidence": {
+      "appearance": "observed",
+      "chronology": "secondary collector attribution",
+      "authenticity": "not independently authenticated"
+    },
+    "rights": "WorldLicensePlates and original contributors; permission not established. Private research reference; do not publish photos as freely licensed assets.",
+    "source_sheet_revision": "2026-06"
+  },
+  {
+    "id": "ir-wlp-travel-circa2010",
+    "title": "Touring and Automobile Club foreign-travel",
+    "scope": "requested_source",
+    "source_url": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "image_url": "http://www.worldlicenseplates.com/jpglps/AS_IRAN_OT2.jpg",
+    "local_file": "ir-wlp-travel-circa2010.jpg",
+    "sheet_local_file": "AS_IRAN_OT2.jpg",
+    "sheet_crop_xyxy": [
+      322,
+      287,
+      582,
+      345
+    ],
+    "image_type": "photograph within collector sheet",
+    "pixel_inspected": true,
+    "vehicle_class": "foreign travel",
+    "serial": "34 E 743 | 10",
+    "legends": "IRAN; Touring & Automobile Club of the Islamic Republic of IRAN",
+    "date": {
+      "gregorian_label": "circa 2010",
+      "type": "collector series/period attribution, not photographic date",
+      "note": "Approximate collector date; no exact introduction day verified. Sheet revision, if listed, is not specimen photograph or introduction date.",
+      "solar_hijri": "approximately SH1388/89",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Blue exterior/frame/footer; narrow blue badge left; white main field with Latin digits; E white on red insert; right blue two-digit box.",
+      "observed_ratio": 4.483,
+      "physical_dimensions_mm": null
+    },
+    "colors": "black on white; blue and red accents",
+    "notes": "",
+    "confidence": {
+      "appearance": "observed",
+      "chronology": "secondary collector attribution",
+      "authenticity": "not independently authenticated"
+    },
+    "rights": "WorldLicensePlates and original contributors; permission not established. Private research reference; do not publish photos as freely licensed assets.",
+    "source_sheet_revision": "2026-06"
+  },
+  {
+    "id": "ir-wlp-fake-police",
+    "title": "Excluded fake police-looking specimen",
+    "scope": "requested_source",
+    "source_url": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "image_url": "http://www.worldlicenseplates.com/jpglps/AS_IRAN_OT2.jpg",
+    "local_file": "ir-wlp-fake-police.jpg",
+    "sheet_local_file": "AS_IRAN_OT2.jpg",
+    "sheet_crop_xyxy": [
+      23,
+      382,
+      291,
+      448
+    ],
+    "image_type": "photograph within collector sheet",
+    "pixel_inspected": true,
+    "vehicle_class": "excluded fake",
+    "serial": "11 پ 363 | 33",
+    "legends": "ایران; I.R. IRAN",
+    "date": {
+      "gregorian_label": "undated",
+      "type": "collector series/period attribution, not photographic date",
+      "note": "WLP sheet labels this image Fake! Sheet revision, if listed, is not specimen photograph or introduction date.",
+      "solar_hijri": "not established",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "National-looking green composition. Retain only as exclusion/evidence row.",
+      "observed_ratio": 4.061,
+      "physical_dimensions_mm": null
+    },
+    "colors": "white on green",
+    "notes": "Do not offer as authentic template or trace source.",
+    "confidence": {
+      "appearance": "observed",
+      "chronology": "secondary collector attribution",
+      "authenticity": "Explicitly marked fake by source"
+    },
+    "rights": "WorldLicensePlates and original contributors; permission not established. Private research reference; do not publish photos as freely licensed assets.",
+    "usable_for_reconstruction": false,
+    "source_sheet_revision": "2026-06"
+  },
+  {
+    "id": "ir-wlp-qeshm-circa2010",
+    "title": "Qeshm local free-zone",
+    "scope": "requested_source",
+    "source_url": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "image_url": "http://www.worldlicenseplates.com/jpglps/AS_IRAN_FZQ.jpg",
+    "local_file": "ir-wlp-qeshm-circa2010.jpg",
+    "sheet_local_file": "AS_IRAN_FZQ.jpg",
+    "sheet_crop_xyxy": [
+      203,
+      42,
+      377,
+      121
+    ],
+    "image_type": "photograph within collector sheet",
+    "pixel_inspected": true,
+    "vehicle_class": "free-zone private",
+    "serial": "12713 / 12713",
+    "legends": "قشم; zone emblem",
+    "date": {
+      "gregorian_label": "circa 2010",
+      "type": "collector series/period attribution, not photographic date",
+      "note": "Approximate collector date of local generation; distinct from 2017 national free-zone redesign. Sheet revision, if listed, is not specimen photograph or introduction date.",
+      "solar_hijri": "approximately SH1388/89",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Compact; white left logo/name column ~25%; right 5 Persian digits top and repeated Latin digits below; horizontal center rule and left vertical rule.",
+      "observed_ratio": 2.203,
+      "physical_dimensions_mm": null
+    },
+    "colors": "black on white",
+    "notes": "",
+    "confidence": {
+      "appearance": "observed",
+      "chronology": "secondary collector attribution",
+      "authenticity": "not independently authenticated"
+    },
+    "rights": "WorldLicensePlates and original contributors; permission not established. Private research reference; do not publish photos as freely licensed assets.",
+    "source_sheet_revision": "2019-12"
+  },
+  {
+    "id": "ir-wlp-us-military",
+    "title": "US forces",
+    "scope": "requested_source",
+    "source_url": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "image_url": "http://www.worldlicenseplates.com/jpglps/FO_IRAN_USAX.jpg",
+    "local_file": "ir-wlp-us-military.jpg",
+    "sheet_local_file": "FO_IRAN_USAX.jpg",
+    "sheet_crop_xyxy": [
+      20,
+      11,
+      198,
+      89
+    ],
+    "image_type": "photograph within collector sheet",
+    "pixel_inspected": true,
+    "vehicle_class": "United States military",
+    "serial": "806",
+    "legends": "",
+    "date": {
+      "gregorian_label": "1950s–1979",
+      "type": "collector series/period attribution, not photographic date",
+      "note": "Collector period range; not 1979 domestic redesign. Sheet revision, if listed, is not specimen photograph or introduction date.",
+      "solar_hijri": "roughly SH1328–1357/58",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Wide shallow panel, orange border field around central white serial inset; three black Persian digits.",
+      "observed_ratio": 2.282,
+      "physical_dimensions_mm": null
+    },
+    "colors": "black on white; orange perimeter",
+    "notes": "",
+    "confidence": {
+      "appearance": "observed",
+      "chronology": "secondary collector attribution",
+      "authenticity": "not independently authenticated"
+    },
+    "rights": "WorldLicensePlates and original contributors; permission not established. Private research reference; do not publish photos as freely licensed assets.",
+    "source_sheet_revision": null
+  },
+  {
+    "id": "ir-wlp-us-topographical",
+    "title": "US Topographical Training Team",
+    "scope": "requested_source",
+    "source_url": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "image_url": "http://www.worldlicenseplates.com/jpglps/FO_IRAN_USAX.jpg",
+    "local_file": "ir-wlp-us-topographical.jpg",
+    "sheet_local_file": "FO_IRAN_USAX.jpg",
+    "sheet_crop_xyxy": [
+      225,
+      16,
+      395,
+      87
+    ],
+    "image_type": "photograph within collector sheet",
+    "pixel_inspected": true,
+    "vehicle_class": "US Topographical Training Team",
+    "serial": "30784",
+    "legends": "جغرافیائی",
+    "date": {
+      "gregorian_label": "1963–1971",
+      "type": "collector series/period attribution, not photographic date",
+      "note": "Collector period range only. Sheet revision, if listed, is not specimen photograph or introduction date.",
+      "solar_hijri": "roughly SH1341/42–1349/50",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Persian legend at left; five figures right; black rim.",
+      "observed_ratio": 2.394,
+      "physical_dimensions_mm": null
+    },
+    "colors": "black on yellow",
+    "notes": "",
+    "confidence": {
+      "appearance": "observed",
+      "chronology": "secondary collector attribution",
+      "authenticity": "not independently authenticated"
+    },
+    "rights": "WorldLicensePlates and original contributors; permission not established. Private research reference; do not publish photos as freely licensed assets.",
+    "source_sheet_revision": null
+  },
+  {
+    "id": "ir-wlp-uniimog",
+    "title": "UN Iran–Iraq Military Observer Group",
+    "scope": "requested_source",
+    "source_url": "http://www.worldlicenseplates.com/world/AS_IRAN.html",
+    "image_url": "http://www.worldlicenseplates.com/jpglps/AS_IRAN_UN.jpg",
+    "local_file": "ir-wlp-uniimog.jpg",
+    "sheet_local_file": "AS_IRAN_UN.jpg",
+    "sheet_crop_xyxy": [
+      20,
+      13,
+      193,
+      121
+    ],
+    "image_type": "photograph within collector sheet",
+    "pixel_inspected": true,
+    "vehicle_class": "United Nations",
+    "serial": "55",
+    "legends": "UNIIMOG",
+    "date": {
+      "gregorian_label": "1988–1991",
+      "type": "collector series/period attribution, not photographic date",
+      "note": "Mission period, not individual photograph date. Sheet revision, if listed, is not specimen photograph or introduction date.",
+      "solar_hijri": "roughly SH1366/67–1369/70",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Compact near1.6:1; large serif Latin UNIIMOG top, two figures centered below.",
+      "observed_ratio": 1.602,
+      "physical_dimensions_mm": null
+    },
+    "colors": "black on white",
+    "notes": "",
+    "confidence": {
+      "appearance": "observed",
+      "chronology": "secondary collector attribution",
+      "authenticity": "not independently authenticated"
+    },
+    "rights": "WorldLicensePlates and original contributors; permission not established. Private research reference; do not publish photos as freely licensed assets.",
+    "source_sheet_revision": null
+  },
+  {
+    "id": "ir-wiki-private",
+    "local_file": "wiki-private.png",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3a/Iran_private_vehicle_number_plate.svg/500px-Iran_private_vehicle_number_plate.svg.png",
+    "width": 500,
+    "height": 112,
+    "title": "Iran private",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_type": "article-linked illustrative diagram (not presumed official specimen)",
+    "pixel_inspected": true,
+    "vehicle_class": "private",
+    "serial": "12 ب 345 | 11",
+    "legends": "ایران; flag; I.R. IRAN",
+    "date": {
+      "gregorian_label": "national era; subclass launch unverified",
+      "type": "family association, not independent introduction proof",
+      "note": "Do not date every subclass to national system rollout.",
+      "solar_hijri": "system rollout SH1382/83; subclass launch not established",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "National long: left blue band (~9% width), serial 2+class+3, right box (~21% width) with title above two figures.",
+      "observed_ratio": 4.464,
+      "physical_dimensions_mm": [
+        520,
+        110
+      ],
+      "dimension_status": "520×110mm-family convention corroborated as 52×11cm in2004 report; diagram itself is not a scaled technical drawing"
+    },
+    "colors": "black on white",
+    "confidence": {
+      "appearance": "diagram pixels inspected",
+      "chronology": "date-specific source attribution only",
+      "authenticity": "drawing not an authenticated manufactured plate"
+    },
+    "rights": "Wikimedia file-specific license not independently checked. Use original reconstruction, retain source link."
+  },
+  {
+    "id": "ir-wiki-accessible",
+    "local_file": "wiki-accessible.png",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Iran_disabled_vehicle_number_plate.svg/500px-Iran_disabled_vehicle_number_plate.svg.png",
+    "width": 500,
+    "height": 113,
+    "title": "Iran accessible",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_type": "article-linked illustrative diagram (not presumed official specimen)",
+    "pixel_inspected": true,
+    "vehicle_class": "accessible",
+    "serial": "12 wheelchair 345 | 11",
+    "legends": "ایران; flag; I.R. IRAN",
+    "date": {
+      "gregorian_label": "national era; subclass launch unverified",
+      "type": "family association, not independent introduction proof",
+      "note": "Do not date every subclass to national system rollout.",
+      "solar_hijri": "system rollout SH1382/83; subclass launch not established",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "National long: left blue band (~9% width), serial 2+class+3, right box (~21% width) with title above two figures.",
+      "observed_ratio": 4.425,
+      "physical_dimensions_mm": [
+        520,
+        110
+      ],
+      "dimension_status": "520×110mm-family convention corroborated as 52×11cm in2004 report; diagram itself is not a scaled technical drawing"
+    },
+    "colors": "black on white",
+    "confidence": {
+      "appearance": "diagram pixels inspected",
+      "chronology": "date-specific source attribution only",
+      "authenticity": "drawing not an authenticated manufactured plate"
+    },
+    "rights": "Wikimedia file-specific license not independently checked. Use original reconstruction, retain source link."
+  },
+  {
+    "id": "ir-wiki-taxi",
+    "local_file": "wiki-taxi.png",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5d/Iran_taxi_number_plate.svg/500px-Iran_taxi_number_plate.svg.png",
+    "width": 500,
+    "height": 113,
+    "title": "Iran taxi",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_type": "article-linked illustrative diagram (not presumed official specimen)",
+    "pixel_inspected": true,
+    "vehicle_class": "taxi",
+    "serial": "12 ت + TAXI 345 | 11",
+    "legends": "ایران; flag; I.R. IRAN",
+    "date": {
+      "gregorian_label": "national era; subclass launch unverified",
+      "type": "family association, not independent introduction proof",
+      "note": "Do not date every subclass to national system rollout.",
+      "solar_hijri": "system rollout SH1382/83; subclass launch not established",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "National long: left blue band (~9% width), serial 2+class+3, right box (~21% width) with title above two figures.",
+      "observed_ratio": 4.425,
+      "physical_dimensions_mm": [
+        520,
+        110
+      ],
+      "dimension_status": "520×110mm-family convention corroborated as 52×11cm in2004 report; diagram itself is not a scaled technical drawing"
+    },
+    "colors": "black on yellow",
+    "confidence": {
+      "appearance": "diagram pixels inspected",
+      "chronology": "date-specific source attribution only",
+      "authenticity": "drawing not an authenticated manufactured plate"
+    },
+    "rights": "Wikimedia file-specific license not independently checked. Use original reconstruction, retain source link."
+  },
+  {
+    "id": "ir-wiki-public",
+    "local_file": "wiki-public.png",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Iran_public_vehicles_number_plate.svg/500px-Iran_public_vehicles_number_plate.svg.png",
+    "width": 500,
+    "height": 113,
+    "title": "Iran public",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_type": "article-linked illustrative diagram (not presumed official specimen)",
+    "pixel_inspected": true,
+    "vehicle_class": "public",
+    "serial": "12 ع 345 | 11",
+    "legends": "ایران; flag; I.R. IRAN",
+    "date": {
+      "gregorian_label": "national era; subclass launch unverified",
+      "type": "family association, not independent introduction proof",
+      "note": "Do not date every subclass to national system rollout.",
+      "solar_hijri": "system rollout SH1382/83; subclass launch not established",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "National long: left blue band (~9% width), serial 2+class+3, right box (~21% width) with title above two figures.",
+      "observed_ratio": 4.425,
+      "physical_dimensions_mm": [
+        520,
+        110
+      ],
+      "dimension_status": "520×110mm-family convention corroborated as 52×11cm in2004 report; diagram itself is not a scaled technical drawing"
+    },
+    "colors": "black on yellow",
+    "confidence": {
+      "appearance": "diagram pixels inspected",
+      "chronology": "date-specific source attribution only",
+      "authenticity": "drawing not an authenticated manufactured plate"
+    },
+    "rights": "Wikimedia file-specific license not independently checked. Use original reconstruction, retain source link."
+  },
+  {
+    "id": "ir-wiki-agricultural",
+    "local_file": "wiki-agricultural.png",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Iran_agricultural_vehicle_number_plate.svg/500px-Iran_agricultural_vehicle_number_plate.svg.png",
+    "width": 500,
+    "height": 113,
+    "title": "Iran agricultural",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_type": "article-linked illustrative diagram (not presumed official specimen)",
+    "pixel_inspected": true,
+    "vehicle_class": "agricultural",
+    "serial": "12 ک 345 | 11",
+    "legends": "ایران; flag; I.R. IRAN",
+    "date": {
+      "gregorian_label": "national era; subclass launch unverified",
+      "type": "family association, not independent introduction proof",
+      "note": "Do not date every subclass to national system rollout.",
+      "solar_hijri": "system rollout SH1382/83; subclass launch not established",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "National long: left blue band (~9% width), serial 2+class+3, right box (~21% width) with title above two figures.",
+      "observed_ratio": 4.425,
+      "physical_dimensions_mm": [
+        520,
+        110
+      ],
+      "dimension_status": "520×110mm-family convention corroborated as 52×11cm in2004 report; diagram itself is not a scaled technical drawing"
+    },
+    "colors": "black on yellow",
+    "confidence": {
+      "appearance": "diagram pixels inspected",
+      "chronology": "date-specific source attribution only",
+      "authenticity": "drawing not an authenticated manufactured plate"
+    },
+    "rights": "Wikimedia file-specific license not independently checked. Use original reconstruction, retain source link."
+  },
+  {
+    "id": "ir-wiki-government",
+    "local_file": "wiki-government.png",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Iran_government_vehicle_number_plate.svg/500px-Iran_government_vehicle_number_plate.svg.png",
+    "width": 500,
+    "height": 113,
+    "title": "Iran government",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_type": "article-linked illustrative diagram (not presumed official specimen)",
+    "pixel_inspected": true,
+    "vehicle_class": "government",
+    "serial": "12 الف 345 | 11",
+    "legends": "ایران; flag; I.R. IRAN",
+    "date": {
+      "gregorian_label": "national era; subclass launch unverified",
+      "type": "family association, not independent introduction proof",
+      "note": "Do not date every subclass to national system rollout.",
+      "solar_hijri": "system rollout SH1382/83; subclass launch not established",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "National long: left blue band (~9% width), serial 2+class+3, right box (~21% width) with title above two figures.",
+      "observed_ratio": 4.425,
+      "physical_dimensions_mm": [
+        520,
+        110
+      ],
+      "dimension_status": "520×110mm-family convention corroborated as 52×11cm in2004 report; diagram itself is not a scaled technical drawing"
+    },
+    "colors": "white on red",
+    "confidence": {
+      "appearance": "diagram pixels inspected",
+      "chronology": "date-specific source attribution only",
+      "authenticity": "drawing not an authenticated manufactured plate"
+    },
+    "rights": "Wikimedia file-specific license not independently checked. Use original reconstruction, retain source link."
+  },
+  {
+    "id": "ir-wiki-protocol",
+    "local_file": "wiki-protocol.png",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Pelak_melie_tashrifat.png/500px-Pelak_melie_tashrifat.png",
+    "width": 500,
+    "height": 110,
+    "title": "Iran protocol",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_type": "article-linked illustrative diagram (not presumed official specimen)",
+    "pixel_inspected": true,
+    "vehicle_class": "protocol",
+    "serial": "1391",
+    "legends": "تشریفات / PROTOCOL",
+    "date": {
+      "gregorian_label": "national era; subclass launch unverified",
+      "type": "family association, not independent introduction proof",
+      "note": "Do not date every subclass to national system rollout.",
+      "solar_hijri": "system rollout SH1382/83; subclass launch not established",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Long; blueleft ~10%, joined تشریفات above Latin PROTOCOL in left-center, four Persian serial figures on right; no right region box.",
+      "observed_ratio": 4.545,
+      "physical_dimensions_mm": null,
+      "dimension_status": "article says American-standard for historic; exact measurement not proved"
+    },
+    "colors": "white on red",
+    "confidence": {
+      "appearance": "diagram pixels inspected",
+      "chronology": "date-specific source attribution only",
+      "authenticity": "drawing not an authenticated manufactured plate"
+    },
+    "rights": "Wikimedia file-specific license not independently checked. Use original reconstruction, retain source link."
+  },
+  {
+    "id": "ir-wiki-police",
+    "local_file": "wiki-police.png",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Pelak_melie_polis.png/500px-Pelak_melie_polis.png",
+    "width": 500,
+    "height": 110,
+    "title": "Iran police",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_type": "article-linked illustrative diagram (not presumed official specimen)",
+    "pixel_inspected": true,
+    "vehicle_class": "police",
+    "serial": "12 پ 365 | 11",
+    "legends": "ایران; flag; I.R. IRAN",
+    "date": {
+      "gregorian_label": "2012-09-30",
+      "solar_hijri": "1391-07-09",
+      "type": "secondary claimed introduction",
+      "note": "Wikipedia date not linked to primary announcement; applies to this modern police format.",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "National long: left blue band (~9% width), serial 2+class+3, right box (~21% width) with title above two figures.",
+      "observed_ratio": 4.545,
+      "physical_dimensions_mm": [
+        520,
+        110
+      ],
+      "dimension_status": "520×110mm-family convention corroborated as 52×11cm in2004 report; diagram itself is not a scaled technical drawing"
+    },
+    "colors": "white on dark green",
+    "confidence": {
+      "appearance": "diagram pixels inspected",
+      "chronology": "date-specific source attribution only",
+      "authenticity": "drawing not an authenticated manufactured plate"
+    },
+    "rights": "Wikimedia file-specific license not independently checked. Use original reconstruction, retain source link.",
+    "transcription_qa": "Re-inspected original downloaded diagram pixels on 2026-10-02; confirmed suffix365, not345."
+  },
+  {
+    "id": "ir-wiki-irgc",
+    "local_file": "wiki-irgc.png",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Pelak_melie_sepah.png/500px-Pelak_melie_sepah.png",
+    "width": 500,
+    "height": 110,
+    "title": "Iran irgc",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_type": "article-linked illustrative diagram (not presumed official specimen)",
+    "pixel_inspected": true,
+    "vehicle_class": "irgc",
+    "serial": "12 ث 365 | 11",
+    "legends": "ایران; flag; I.R. IRAN",
+    "date": {
+      "gregorian_label": "2016-05-30",
+      "solar_hijri": "1395-03-10",
+      "type": "secondary claimed introduction",
+      "note": "Wikipedia claims replacement planned by March2017; completion not verified.",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "National long: left blue band (~9% width), serial 2+class+3, right box (~21% width) with title above two figures.",
+      "observed_ratio": 4.545,
+      "physical_dimensions_mm": [
+        520,
+        110
+      ],
+      "dimension_status": "520×110mm-family convention corroborated as 52×11cm in2004 report; diagram itself is not a scaled technical drawing"
+    },
+    "colors": "white on dark green",
+    "confidence": {
+      "appearance": "diagram pixels inspected",
+      "chronology": "date-specific source attribution only",
+      "authenticity": "drawing not an authenticated manufactured plate"
+    },
+    "rights": "Wikimedia file-specific license not independently checked. Use original reconstruction, retain source link.",
+    "transcription_qa": "Re-inspected original downloaded diagram pixels on 2026-10-02; confirmed suffix365, not345."
+  },
+  {
+    "id": "ir-wiki-army",
+    "local_file": "wiki-army.png",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a6/Pelak_melie_artesh.png/500px-Pelak_melie_artesh.png",
+    "width": 500,
+    "height": 110,
+    "title": "Iran army",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_type": "article-linked illustrative diagram (not presumed official specimen)",
+    "pixel_inspected": true,
+    "vehicle_class": "army",
+    "serial": "12 ش 365 | 11",
+    "legends": "ایران; flag; I.R. IRAN",
+    "date": {
+      "gregorian_label": "2016-05-30",
+      "solar_hijri": "1395-03-10",
+      "type": "secondary claimed introduction",
+      "note": "Wikipedia claims replacement planned by March2017; completion not verified.",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "National long: left blue band (~9% width), serial 2+class+3, right box (~21% width) with title above two figures.",
+      "observed_ratio": 4.545,
+      "physical_dimensions_mm": [
+        520,
+        110
+      ],
+      "dimension_status": "520×110mm-family convention corroborated as 52×11cm in2004 report; diagram itself is not a scaled technical drawing"
+    },
+    "colors": "black on tan",
+    "confidence": {
+      "appearance": "diagram pixels inspected",
+      "chronology": "date-specific source attribution only",
+      "authenticity": "drawing not an authenticated manufactured plate"
+    },
+    "rights": "Wikimedia file-specific license not independently checked. Use original reconstruction, retain source link.",
+    "transcription_qa": "Re-inspected original downloaded diagram pixels on 2026-10-02; confirmed suffix365, not345."
+  },
+  {
+    "id": "ir-wiki-defence",
+    "local_file": "wiki-defence.png",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f8/Pelak_melie_vezarat_defa%27.png/500px-Pelak_melie_vezarat_defa%27.png",
+    "width": 500,
+    "height": 110,
+    "title": "Iran defence",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_type": "article-linked illustrative diagram (not presumed official specimen)",
+    "pixel_inspected": true,
+    "vehicle_class": "defence",
+    "serial": "12 ز 365 | 11",
+    "legends": "ایران; flag; I.R. IRAN",
+    "date": {
+      "gregorian_label": "2016-05-30",
+      "solar_hijri": "1395-03-10",
+      "type": "secondary claimed introduction",
+      "note": "Wikipedia claims replacement planned by March2017; completion not verified.",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "National long: left blue band (~9% width), serial 2+class+3, right box (~21% width) with title above two figures.",
+      "observed_ratio": 4.545,
+      "physical_dimensions_mm": [
+        520,
+        110
+      ],
+      "dimension_status": "520×110mm-family convention corroborated as 52×11cm in2004 report; diagram itself is not a scaled technical drawing"
+    },
+    "colors": "white on blue",
+    "confidence": {
+      "appearance": "diagram pixels inspected",
+      "chronology": "date-specific source attribution only",
+      "authenticity": "drawing not an authenticated manufactured plate"
+    },
+    "rights": "Wikimedia file-specific license not independently checked. Use original reconstruction, retain source link.",
+    "transcription_qa": "Re-inspected original downloaded diagram pixels on 2026-10-02; confirmed suffix365, not345."
+  },
+  {
+    "id": "ir-wiki-staff",
+    "local_file": "wiki-staff.png",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Pelak_melie_setad_kol.png/500px-Pelak_melie_setad_kol.png",
+    "width": 500,
+    "height": 110,
+    "title": "Iran staff",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_type": "article-linked illustrative diagram (not presumed official specimen)",
+    "pixel_inspected": true,
+    "vehicle_class": "staff",
+    "serial": "12 ف 365 | 11",
+    "legends": "ایران; flag; I.R. IRAN",
+    "date": {
+      "gregorian_label": "2016-05-30",
+      "solar_hijri": "1395-03-10",
+      "type": "secondary claimed introduction",
+      "note": "Wikipedia claims replacement planned by March2017; completion not verified.",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "National long: left blue band (~9% width), serial 2+class+3, right box (~21% width) with title above two figures.",
+      "observed_ratio": 4.545,
+      "physical_dimensions_mm": [
+        520,
+        110
+      ],
+      "dimension_status": "520×110mm-family convention corroborated as 52×11cm in2004 report; diagram itself is not a scaled technical drawing"
+    },
+    "colors": "white on blue",
+    "confidence": {
+      "appearance": "diagram pixels inspected",
+      "chronology": "date-specific source attribution only",
+      "authenticity": "drawing not an authenticated manufactured plate"
+    },
+    "rights": "Wikimedia file-specific license not independently checked. Use original reconstruction, retain source link.",
+    "transcription_qa": "Re-inspected original downloaded diagram pixels on 2026-10-02; confirmed suffix365, not345."
+  },
+  {
+    "id": "ir-wiki-historic",
+    "local_file": "wiki-historic.png",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/31/Pelak_melie_tarikhi.png/250px-Pelak_melie_tarikhi.png",
+    "width": 250,
+    "height": 125,
+    "title": "Iran historic",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_type": "article-linked illustrative diagram (not presumed official specimen)",
+    "pixel_inspected": true,
+    "vehicle_class": "historic",
+    "serial": "12365",
+    "legends": "تاریخی; flag; I.R. IRAN; Bagh-e Melli image",
+    "date": {
+      "gregorian_label": "modern historical-vehicle class; introduction unknown",
+      "type": "undated diagram",
+      "note": "This is a modern class for old cars, not historical-era registration.",
+      "solar_hijri": "not established",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Compact2:1; blue left35% includes flag at top and Bagh-e Melli picture at foot; brown right split horizontally, historical word above five-digit serial.",
+      "observed_ratio": 2.0,
+      "physical_dimensions_mm": null,
+      "dimension_status": "article says American-standard for historic; exact measurement not proved"
+    },
+    "colors": "white on brown / blue left",
+    "confidence": {
+      "appearance": "diagram pixels inspected",
+      "chronology": "date-specific source attribution only",
+      "authenticity": "drawing not an authenticated manufactured plate"
+    },
+    "rights": "Wikimedia file-specific license not independently checked. Use original reconstruction, retain source link."
+  },
+  {
+    "id": "ir-wiki-diplomatic",
+    "local_file": "wiki-diplomatic.png",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/81/Pelak_melie_siasi.png/500px-Pelak_melie_siasi.png",
+    "width": 500,
+    "height": 110,
+    "title": "Iran diplomatic",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_type": "article-linked illustrative diagram (not presumed official specimen)",
+    "pixel_inspected": true,
+    "vehicle_class": "diplomatic",
+    "serial": "12 D 365 | 11",
+    "legends": "سیاسی in right box; I.R. IRAN",
+    "date": {
+      "gregorian_label": "2016-03-06 unveiling; 2016-04/05 planned operation",
+      "solar_hijri": "1394-12-16 unveiling; Ordibehesht1395 planned operation",
+      "type": "contemporary official quotation in IRNA report republished by Fardanews",
+      "note": "Unveiling is not fleet replacement completion.",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "National long: left blue band (~9% width), serial 2+class+3, right box (~21% width) with title above two figures. Right-box heading is class word, not ایران.",
+      "observed_ratio": 4.545,
+      "physical_dimensions_mm": [
+        520,
+        110
+      ],
+      "dimension_status": "520×110mm-family convention corroborated as 52×11cm in2004 report; diagram itself is not a scaled technical drawing"
+    },
+    "colors": "black on sky blue",
+    "confidence": {
+      "appearance": "diagram pixels inspected",
+      "chronology": "date-specific source attribution only",
+      "authenticity": "drawing not an authenticated manufactured plate"
+    },
+    "rights": "Wikimedia file-specific license not independently checked. Use original reconstruction, retain source link."
+  },
+  {
+    "id": "ir-wiki-service",
+    "local_file": "wiki-service.png",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Pelak_melie_service.png/500px-Pelak_melie_service.png",
+    "width": 500,
+    "height": 110,
+    "title": "Iran service",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_type": "article-linked illustrative diagram (not presumed official specimen)",
+    "pixel_inspected": true,
+    "vehicle_class": "service",
+    "serial": "12 S 365 | 11",
+    "legends": "سرویس in right box; I.R. IRAN",
+    "date": {
+      "gregorian_label": "2016-03-06 unveiling; 2016-04/05 planned operation",
+      "solar_hijri": "1394-12-16 unveiling; Ordibehesht1395 planned operation",
+      "type": "contemporary official quotation in IRNA report republished by Fardanews",
+      "note": "Unveiling is not fleet replacement completion.",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "National long: left blue band (~9% width), serial 2+class+3, right box (~21% width) with title above two figures. Right-box heading is class word, not ایران.",
+      "observed_ratio": 4.545,
+      "physical_dimensions_mm": [
+        520,
+        110
+      ],
+      "dimension_status": "520×110mm-family convention corroborated as 52×11cm in2004 report; diagram itself is not a scaled technical drawing"
+    },
+    "colors": "black on sky blue",
+    "confidence": {
+      "appearance": "diagram pixels inspected",
+      "chronology": "date-specific source attribution only",
+      "authenticity": "drawing not an authenticated manufactured plate"
+    },
+    "rights": "Wikimedia file-specific license not independently checked. Use original reconstruction, retain source link."
+  },
+  {
+    "id": "ir-wiki-diplomatic-previous",
+    "local_file": "wiki-diplomatic-previous.png",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/Pelak_siasi.png/250px-Pelak_siasi.png",
+    "width": 250,
+    "height": 125,
+    "title": "Iran diplomatic previous",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_type": "article-linked illustrative diagram (not presumed official specimen)",
+    "pixel_inspected": true,
+    "vehicle_class": "diplomatic-previous",
+    "serial": "345 / 12",
+    "legends": "سیاسی",
+    "date": {
+      "gregorian_label": "before2016 replacement; start unknown",
+      "type": "relative previous format",
+      "note": "No precise start or all-vehicle withdrawal date in article.",
+      "solar_hijri": "before SH1394/95 redesign; original introduction unknown",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Compact2:1; large three-digit serial uppercenter, smaller two-digit code at lowerleft; connected class word lowerright; no stripe or internal border.",
+      "observed_ratio": 2.0,
+      "physical_dimensions_mm": null,
+      "dimension_status": "article says American-standard for historic; exact measurement not proved"
+    },
+    "colors": "black on white",
+    "confidence": {
+      "appearance": "diagram pixels inspected",
+      "chronology": "date-specific source attribution only",
+      "authenticity": "drawing not an authenticated manufactured plate"
+    },
+    "rights": "Wikimedia file-specific license not independently checked. Use original reconstruction, retain source link."
+  },
+  {
+    "id": "ir-wiki-service-previous",
+    "local_file": "wiki-service-previous.png",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/Pelak_servis.png/250px-Pelak_servis.png",
+    "width": 250,
+    "height": 125,
+    "title": "Iran service previous",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_type": "article-linked illustrative diagram (not presumed official specimen)",
+    "pixel_inspected": true,
+    "vehicle_class": "service-previous",
+    "serial": "345 / 12",
+    "legends": "سرویس",
+    "date": {
+      "gregorian_label": "before2016 replacement; start unknown",
+      "type": "relative previous format",
+      "note": "No precise start or all-vehicle withdrawal date in article.",
+      "solar_hijri": "before SH1394/95 redesign; original introduction unknown",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Compact2:1; large three-digit serial uppercenter, smaller two-digit code at lowerleft; connected class word lowerright; no stripe or internal border.",
+      "observed_ratio": 2.0,
+      "physical_dimensions_mm": null,
+      "dimension_status": "article says American-standard for historic; exact measurement not proved"
+    },
+    "colors": "black on white",
+    "confidence": {
+      "appearance": "diagram pixels inspected",
+      "chronology": "date-specific source attribution only",
+      "authenticity": "drawing not an authenticated manufactured plate"
+    },
+    "rights": "Wikimedia file-specific license not independently checked. Use original reconstruction, retain source link."
+  },
+  {
+    "id": "ir-wiki-temporary",
+    "local_file": "wiki-temporary.png",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/%D9%BE%D9%84%D8%A7%DA%A9_%D9%85%D9%88%D9%82%D8%AA.jpg/500px-%D9%BE%D9%84%D8%A7%DA%A9_%D9%85%D9%88%D9%82%D8%AA.jpg",
+    "width": 500,
+    "height": 111,
+    "title": "Iran temporary",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_type": "article-linked illustrative diagram (not presumed official specimen)",
+    "pixel_inspected": true,
+    "vehicle_class": "temporary",
+    "serial": "12 گ 345 | 11 | 96/4",
+    "legends": "ایران; flag; I.R. IRAN",
+    "date": {
+      "gregorian_label": "national era; subclass launch unverified",
+      "type": "family association, not independent introduction proof",
+      "note": "Do not date every subclass to national system rollout.",
+      "solar_hijri": "system rollout SH1382/83; subclass launch not established",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "National long: left blue band (~9% width), serial 2+class+3, right box (~21% width) with title above two figures. Right code panel split horizontally: ایران and small11 above; expiry96/4 below. Preserve expiry as distinct field.",
+      "observed_ratio": 4.505,
+      "physical_dimensions_mm": [
+        520,
+        110
+      ],
+      "dimension_status": "520×110mm-family convention corroborated as 52×11cm in2004 report; diagram itself is not a scaled technical drawing"
+    },
+    "colors": "black on white",
+    "confidence": {
+      "appearance": "diagram pixels inspected",
+      "chronology": "date-specific source attribution only",
+      "authenticity": "drawing not an authenticated manufactured plate"
+    },
+    "rights": "Wikimedia file-specific license not independently checked. Use original reconstruction, retain source link."
+  },
+  {
+    "id": "ir-wiki-temporary-previous",
+    "local_file": "wiki-temporary-previous.png",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Pelak_gozar_movaqat.png/250px-Pelak_gozar_movaqat.png",
+    "width": 250,
+    "height": 125,
+    "title": "Iran temporary previous",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_type": "article-linked illustrative diagram (not presumed official specimen)",
+    "pixel_inspected": true,
+    "vehicle_class": "temporary-previous",
+    "serial": "1234",
+    "legends": "گذر موقت; left5/92",
+    "date": {
+      "gregorian_label": "previous temporary generation, exact period unknown",
+      "type": "undated previous-format diagram",
+      "solar_hijri": "not established",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Compact2:1; narrowleft26% split in two by horizontal line (5 above92); larger right panel has گذر موقت header and four-digit serial underneath.",
+      "observed_ratio": 2.0,
+      "physical_dimensions_mm": null,
+      "dimension_status": "article says American-standard for historic; exact measurement not proved"
+    },
+    "colors": "black on white",
+    "confidence": {
+      "appearance": "diagram pixels inspected",
+      "chronology": "date-specific source attribution only",
+      "authenticity": "drawing not an authenticated manufactured plate"
+    },
+    "rights": "Wikimedia file-specific license not independently checked. Use original reconstruction, retain source link."
+  },
+  {
+    "id": "ir-wiki-motorcycle",
+    "local_file": "wiki-motorcycle.png",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a1/Pelak_melie_motor.png/250px-Pelak_melie_motor.png",
+    "width": 250,
+    "height": 155,
+    "title": "Iran motorcycle",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_type": "article-linked illustrative diagram (not presumed official specimen)",
+    "pixel_inspected": true,
+    "vehicle_class": "motorcycle",
+    "serial": "133 / 56789",
+    "legends": "ایران / I.R. IRAN",
+    "date": {
+      "gregorian_label": "national era; subclass launch unverified",
+      "type": "family association, not independent introduction proof",
+      "note": "Do not date every subclass to national system rollout.",
+      "solar_hijri": "system rollout SH1382/83; subclass launch not established",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Compact~1.67:1; three-digit province code centered top, five-digit serial bottom; blueflag strip occupies upper left only. No horizontal divider.",
+      "observed_ratio": 1.613,
+      "physical_dimensions_mm": null,
+      "dimension_status": "article says American-standard for historic; exact measurement not proved"
+    },
+    "colors": "black on white",
+    "confidence": {
+      "appearance": "diagram pixels inspected",
+      "chronology": "date-specific source attribution only",
+      "authenticity": "drawing not an authenticated manufactured plate"
+    },
+    "rights": "Wikimedia file-specific license not independently checked. Use original reconstruction, retain source link."
+  },
+  {
+    "id": "ir-wiki-freezone-anzali",
+    "title": "Anzali local free-zone design",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d5/Pelake_MAT_Anzali.png/250px-Pelake_MAT_Anzali.png",
+    "local_file": "wiki-freezone-Anzali.png",
+    "image_type": "article-linked illustrative diagram",
+    "pixel_inspected": true,
+    "vehicle_class": "free-zone private",
+    "region": "Anzali",
+    "serial": "12365",
+    "date": {
+      "gregorian_label": "local generation, before2017 common redesign",
+      "type": "generation inference",
+      "note": "Wikipedia gives no start date; do not treat logo or file upload date as issue date.",
+      "solar_hijri": "before SH1396 redesign; original introduction unknown",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Compact~2:1; blue leftcolumn35% with flag, zone emblem, Latin zone name; white right area divided horizontally with Persian five digits above same Latin digits below.",
+      "observed_ratio": 2.0,
+      "physical_dimensions_mm": null,
+      "dimension_status": "article says American-standard; no official dimensions measured"
+    },
+    "colors": "black on white; blue left column",
+    "notes": "Sample serial12365; diagram is an illustration, not an introduction-dated specimen.",
+    "confidence": {
+      "appearance": "diagram observed",
+      "chronology": "relative generation inference",
+      "authenticity": "illustration, not manufactured plate"
+    },
+    "rights": "Wikimedia individual file license not verified; source link retained"
+  },
+  {
+    "id": "ir-wiki-freezone-aras",
+    "title": "Aras local free-zone design",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cf/Pelake_MAT_Aras.png/250px-Pelake_MAT_Aras.png",
+    "local_file": "wiki-freezone-Aras.png",
+    "image_type": "article-linked illustrative diagram",
+    "pixel_inspected": true,
+    "vehicle_class": "free-zone private",
+    "region": "Aras",
+    "serial": "12365",
+    "date": {
+      "gregorian_label": "local generation, before2017 common redesign",
+      "type": "generation inference",
+      "note": "Wikipedia gives no start date; do not treat logo or file upload date as issue date.",
+      "solar_hijri": "before SH1396 redesign; original introduction unknown",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Compact~2:1; blue leftcolumn35% with flag, zone emblem, Latin zone name; white right area divided horizontally with Persian five digits above same Latin digits below.",
+      "observed_ratio": 2.0,
+      "physical_dimensions_mm": null,
+      "dimension_status": "article says American-standard; no official dimensions measured"
+    },
+    "colors": "black on white; blue left column",
+    "notes": "Sample serial12365; diagram is an illustration, not an introduction-dated specimen.",
+    "confidence": {
+      "appearance": "diagram observed",
+      "chronology": "relative generation inference",
+      "authenticity": "illustration, not manufactured plate"
+    },
+    "rights": "Wikimedia individual file license not verified; source link retained"
+  },
+  {
+    "id": "ir-wiki-freezone-arvand",
+    "title": "Arvand local free-zone design",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Pelake_MAT_Arvand.png/250px-Pelake_MAT_Arvand.png",
+    "local_file": "wiki-freezone-Arvand.png",
+    "image_type": "article-linked illustrative diagram",
+    "pixel_inspected": true,
+    "vehicle_class": "free-zone private",
+    "region": "Arvand",
+    "serial": "12365",
+    "date": {
+      "gregorian_label": "local generation, before2017 common redesign",
+      "type": "generation inference",
+      "note": "Wikipedia gives no start date; do not treat logo or file upload date as issue date.",
+      "solar_hijri": "before SH1396 redesign; original introduction unknown",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Compact~2:1; blue leftcolumn35% with flag, zone emblem, Latin zone name; white right area divided horizontally with Persian five digits above same Latin digits below.",
+      "observed_ratio": 2.0,
+      "physical_dimensions_mm": null,
+      "dimension_status": "article says American-standard; no official dimensions measured"
+    },
+    "colors": "black on white; blue left column",
+    "notes": "Sample serial12365; diagram is an illustration, not an introduction-dated specimen.",
+    "confidence": {
+      "appearance": "diagram observed",
+      "chronology": "relative generation inference",
+      "authenticity": "illustration, not manufactured plate"
+    },
+    "rights": "Wikimedia individual file license not verified; source link retained"
+  },
+  {
+    "id": "ir-wiki-freezone-kish",
+    "title": "Kish local free-zone design",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/66/Pelake_MAT_Kish.png/250px-Pelake_MAT_Kish.png",
+    "local_file": "wiki-freezone-Kish.png",
+    "image_type": "article-linked illustrative diagram",
+    "pixel_inspected": true,
+    "vehicle_class": "free-zone private",
+    "region": "Kish",
+    "serial": "12365",
+    "date": {
+      "gregorian_label": "local generation, before2017 common redesign",
+      "type": "generation inference",
+      "note": "Wikipedia gives no start date; do not treat logo or file upload date as issue date.",
+      "solar_hijri": "before SH1396 redesign; original introduction unknown",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Compact~2:1; blue leftcolumn35% with flag, zone emblem, Latin zone name; white right area divided horizontally with Persian five digits above same Latin digits below.",
+      "observed_ratio": 2.0,
+      "physical_dimensions_mm": null,
+      "dimension_status": "article says American-standard; no official dimensions measured"
+    },
+    "colors": "black on white; blue left column",
+    "notes": "Sample serial12365; diagram is an illustration, not an introduction-dated specimen.",
+    "confidence": {
+      "appearance": "diagram observed",
+      "chronology": "relative generation inference",
+      "authenticity": "illustration, not manufactured plate"
+    },
+    "rights": "Wikimedia individual file license not verified; source link retained"
+  },
+  {
+    "id": "ir-wiki-freezone-maku",
+    "title": "Maku local free-zone design",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2f/Pelake_MAT_MAKU.png/250px-Pelake_MAT_MAKU.png",
+    "local_file": "wiki-freezone-Maku.png",
+    "image_type": "article-linked illustrative diagram",
+    "pixel_inspected": true,
+    "vehicle_class": "free-zone private",
+    "region": "Maku",
+    "serial": "11111",
+    "date": {
+      "gregorian_label": "local generation, before2017 common redesign",
+      "type": "generation inference",
+      "note": "Wikipedia gives no start date; do not treat logo or file upload date as issue date.",
+      "solar_hijri": "before SH1396 redesign; original introduction unknown",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Compact~2:1; blue leftcolumn35% with flag, zone emblem, Latin zone name; white right area divided horizontally with Persian five digits above same Latin digits below.",
+      "observed_ratio": 2.0,
+      "physical_dimensions_mm": null,
+      "dimension_status": "article says American-standard; no official dimensions measured"
+    },
+    "colors": "black on white; blue left column",
+    "notes": "Sample11111; drawn emblem is yellow-orange oval with curved blue-and-white ribbon.",
+    "confidence": {
+      "appearance": "diagram observed",
+      "chronology": "relative generation inference",
+      "authenticity": "illustration, not manufactured plate"
+    },
+    "rights": "Wikimedia individual file license not verified; source link retained"
+  },
+  {
+    "id": "ir-wiki-freezone-chabahar",
+    "title": "Chabahar local free-zone design",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2c/Pelake_MAT_Chabahar.png/250px-Pelake_MAT_Chabahar.png",
+    "local_file": "wiki-freezone-Chabahar.png",
+    "image_type": "article-linked illustrative diagram",
+    "pixel_inspected": true,
+    "vehicle_class": "free-zone private",
+    "region": "Chabahar",
+    "serial": "12365",
+    "date": {
+      "gregorian_label": "local generation, before2017 common redesign",
+      "type": "generation inference",
+      "note": "Wikipedia gives no start date; do not treat logo or file upload date as issue date.",
+      "solar_hijri": "before SH1396 redesign; original introduction unknown",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Compact~2:1; narrowblueleft25% split horizontally: line-art emblemabove, چابهار below. Rightupperwhite Persianrow; rightlowerblue Latinrow in white.",
+      "observed_ratio": 2.0,
+      "physical_dimensions_mm": null,
+      "dimension_status": "article says American-standard; no official dimensions measured"
+    },
+    "colors": "black upper on white; white lower on blue",
+    "notes": "Diagram shows12365 Persian but12356 Latin. Preserve discrepancy in evidence; editor should keep repeated number consistent by default.",
+    "confidence": {
+      "appearance": "diagram observed",
+      "chronology": "relative generation inference",
+      "authenticity": "illustration, not manufactured plate"
+    },
+    "rights": "Wikimedia individual file license not verified; source link retained"
+  },
+  {
+    "id": "ir-wiki-freezone-qeshm",
+    "title": "Qeshm local free-zone design",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Pelake_MAT_Qeshm.png/250px-Pelake_MAT_Qeshm.png",
+    "local_file": "wiki-freezone-Qeshm.png",
+    "image_type": "article-linked illustrative diagram",
+    "pixel_inspected": true,
+    "vehicle_class": "free-zone private",
+    "region": "Qeshm",
+    "serial": "12365",
+    "date": {
+      "gregorian_label": "local generation, before2017 common redesign",
+      "type": "generation inference",
+      "note": "Wikipedia gives no start date; do not treat logo or file upload date as issue date.",
+      "solar_hijri": "before SH1396 redesign; original introduction unknown",
+      "photograph_date": null
+    },
+    "geometry": {
+      "description": "Compact~2:1; white leftcolumn25% with circular orange/blue wave emblem and قشم wordmark; right splitrows Persianabove/Latinbelow.",
+      "observed_ratio": 2.0,
+      "physical_dimensions_mm": null,
+      "dimension_status": "article says American-standard; no official dimensions measured"
+    },
+    "colors": "black on white",
+    "notes": "Diagram shows12365 Persian but12356 Latin. Treat mismatch as source-artwork error, not a rule; WLP actual photo12713 matches both rows.",
+    "confidence": {
+      "appearance": "diagram observed",
+      "chronology": "relative generation inference",
+      "authenticity": "illustration, not manufactured plate"
+    },
+    "rights": "Wikimedia individual file license not verified; source link retained"
+  },
+  {
+    "id": "ir-freezone-2017-private",
+    "title": "2017 unified free-zone private",
+    "scope": "date_resolution_supplement",
+    "source_url": "https://www.sarpoosh.com/car-news/automobile/automobile960502629.html",
+    "image_url": null,
+    "local_file": null,
+    "image_type": null,
+    "pixel_inspected": false,
+    "vehicle_class": "free-zone private",
+    "date": {
+      "gregorian_label": "2017-08-01",
+      "solar_hijri": "1396-05-10",
+      "type": "Qeshm pilot unveiling",
+      "note": "Report published11Mordad1396; not proof all seven zones replaced same day.",
+      "photograph_date": null
+    },
+    "geometry": {
+      "physical_dimensions_mm": [
+        360,
+        150
+      ],
+      "description": "Bilingual numbers and zone emblem reported; exact visual arrangement not authenticated in this pass."
+    },
+    "colors": "background white",
+    "confidence": {
+      "chronology": "contemporary report quoting police official, ISNA republished",
+      "appearance": "not verified"
+    },
+    "notes": "Retain a separate family. Pair-code assignments from generic secondary lists are not verified here; no invented zone codes. Report image was downloaded and pixel-inspected: generic Sarpoosh AUTO NEWS IMAGE placeholder, not a plate photograph.",
+    "report_illustration_url": "https://media.sarpoosh.com/images/9605/96-05-c21-986.jpg",
+    "report_illustration_local_file": "freezone-2017-news.jpg"
+  },
+  {
+    "id": "ir-freezone-2017-public",
+    "title": "2017 unified free-zone public",
+    "scope": "date_resolution_supplement",
+    "source_url": "https://www.sarpoosh.com/car-news/automobile/automobile960502629.html",
+    "image_url": null,
+    "local_file": null,
+    "image_type": null,
+    "pixel_inspected": false,
+    "vehicle_class": "free-zone public",
+    "date": {
+      "gregorian_label": "2017-08-01",
+      "solar_hijri": "1396-05-10",
+      "type": "Qeshm pilot unveiling",
+      "note": "Report published11Mordad1396; not proof all seven zones replaced same day.",
+      "photograph_date": null
+    },
+    "geometry": {
+      "physical_dimensions_mm": [
+        360,
+        150
+      ],
+      "description": "Bilingual numbers and zone emblem reported; exact visual arrangement not authenticated in this pass."
+    },
+    "colors": "background yellow",
+    "confidence": {
+      "chronology": "contemporary report quoting police official, ISNA republished",
+      "appearance": "not verified"
+    },
+    "notes": "Retain a separate family. Pair-code assignments from generic secondary lists are not verified here; no invented zone codes. Report image was downloaded and pixel-inspected: generic Sarpoosh AUTO NEWS IMAGE placeholder, not a plate photograph.",
+    "report_illustration_url": "https://media.sarpoosh.com/images/9605/96-05-c21-986.jpg",
+    "report_illustration_local_file": "freezone-2017-news.jpg"
+  },
+  {
+    "id": "ir-freezone-2017-government",
+    "title": "2017 unified free-zone government",
+    "scope": "date_resolution_supplement",
+    "source_url": "https://www.sarpoosh.com/car-news/automobile/automobile960502629.html",
+    "image_url": null,
+    "local_file": null,
+    "image_type": null,
+    "pixel_inspected": false,
+    "vehicle_class": "free-zone government",
+    "date": {
+      "gregorian_label": "2017-08-01",
+      "solar_hijri": "1396-05-10",
+      "type": "Qeshm pilot unveiling",
+      "note": "Report published11Mordad1396; not proof all seven zones replaced same day.",
+      "photograph_date": null
+    },
+    "geometry": {
+      "physical_dimensions_mm": [
+        360,
+        150
+      ],
+      "description": "Bilingual numbers and zone emblem reported; exact visual arrangement not authenticated in this pass."
+    },
+    "colors": "background red",
+    "confidence": {
+      "chronology": "contemporary report quoting police official, ISNA republished",
+      "appearance": "not verified"
+    },
+    "notes": "Retain a separate family. Pair-code assignments from generic secondary lists are not verified here; no invented zone codes. Report image was downloaded and pixel-inspected: generic Sarpoosh AUTO NEWS IMAGE placeholder, not a plate photograph.",
+    "report_illustration_url": "https://media.sarpoosh.com/images/9605/96-05-c21-986.jpg",
+    "report_illustration_local_file": "freezone-2017-news.jpg"
+  },
+  {
+    "id": "ir-wiki-photo-shiraz",
+    "title": "Photographed national private plate, Shiraz",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Iranian_plate.jpg",
+    "local_file": "wiki-photo-shiraz.jpg",
+    "image_type": "actual vehicle photograph",
+    "pixel_inspected": true,
+    "vehicle_class": "private",
+    "region": "Shiraz",
+    "serial": "29 د 728 | 63",
+    "date": {
+      "gregorian_label": "undated photograph",
+      "solar_hijri": "not established",
+      "type": "photographic date unverified",
+      "photograph_date": null,
+      "note": "Car model year in filename does not establish plate introduction or photograph date."
+    },
+    "geometry": {
+      "description": "National long family; left blue stripe and right codebox. Shiraz close-up is angled; Tehran full-vehicle image leaves very small plate. Do not trace exact die from the tiny Tehran photo.",
+      "physical_dimensions_mm": null
+    },
+    "colors": "black on white with blueleft stripe",
+    "confidence": {
+      "appearance": "photograph pixels inspected",
+      "chronology": "undated",
+      "authenticity": "real vehicle photograph but plate issuance not independently authenticated"
+    },
+    "rights": "Wikimedia file-specific license not independently checked; source link retained."
+  },
+  {
+    "id": "ir-wiki-photo-tehran",
+    "title": "Photographed national private plate, Tehran",
+    "scope": "requested_source",
+    "source_url": "https://en.wikipedia.org/wiki/Vehicle_registration_plates_of_Iran",
+    "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/2007_Mercedes-Benz_W209_CLK_350_Cabriolet_in_Iran.jpg/250px-2007_Mercedes-Benz_W209_CLK_350_Cabriolet_in_Iran.jpg",
+    "local_file": "wiki-photo-tehran.jpg",
+    "image_type": "actual vehicle photograph",
+    "pixel_inspected": true,
+    "vehicle_class": "private",
+    "region": "Tehran",
+    "serial": "66 ق 666 | 11",
+    "date": {
+      "gregorian_label": "undated photograph",
+      "solar_hijri": "not established",
+      "type": "photographic date unverified",
+      "photograph_date": null,
+      "note": "Car model year in filename does not establish plate introduction or photograph date."
+    },
+    "geometry": {
+      "description": "National long family; left blue stripe and right codebox. Shiraz close-up is angled; Tehran full-vehicle image leaves very small plate. Do not trace exact die from the tiny Tehran photo.",
+      "physical_dimensions_mm": null
+    },
+    "colors": "black on white with blueleft stripe",
+    "confidence": {
+      "appearance": "photograph pixels inspected",
+      "chronology": "undated",
+      "authenticity": "real vehicle photograph but plate issuance not independently authenticated"
+    },
+    "rights": "Wikimedia file-specific license not independently checked; source link retained."
+  }
+]

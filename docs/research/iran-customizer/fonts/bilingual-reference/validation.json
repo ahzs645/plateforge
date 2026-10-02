@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "sourceFile": "ir-wlp-aa-public-2002.jpg",
+  "sourceDimensions": [
+    258,
+    101
+  ],
+  "checks": [
+    "Every numeric role has 0–9",
+    "All source paths parse and have positive area bounds",
+    "One cap/baseline per role",
+    "Positive sourceAdvance on every glyph",
+    "Observed paths fit recorded sourceBox",
+    "Inferred glyphs carry construction rationale and no fake sourceBox/occurrence",
+    "Rasterized full-digit board and source overlay visually inspected"
+  ],
+  "roles": [
+    {
+      "profileId": "source-bilingual-2002-persian",
+      "role": "main",
+      "coverage": "۰۱۲۳۴۵۶۷۸۹",
+      "counts": {
+        "observed": 3,
+        "inferred": 7
+      },
+      "sourceCapHeight": 25.6,
+      "sourceBaseline": 40.3,
+      "numericComplete": true
+    },
+    {
+      "profileId": "source-bilingual-2002-persian",
+      "role": "allocation",
+      "coverage": "۰۱۲۳۴۵۶۷۸۹",
+      "counts": {
+        "observed": 1,
+        "inferred": 9
+      },
+      "sourceCapHeight": 28.3,
+      "sourceBaseline": 43,
+      "numericComplete": true
+    },
+    {
+      "profileId": "source-bilingual-2002-latin",
+      "role": "main",
+      "coverage": "0123456789",
+      "counts": {
+        "observed": 3,
+        "inferred": 7
+      },
+      "sourceCapHeight": 24.9,
+      "sourceBaseline": 85,
+      "numericComplete": true
+    },
+    {
+      "profileId": "source-bilingual-2002-code",
+      "role": "main",
+      "coverage": "A",
+      "counts": {
+        "observed": 1,
+        "inferred": 0
+      },
+      "sourceCapHeight": 23.7,
+      "sourceBaseline": 89.5,
+      "numericComplete": null
+    }
+  ]
+}

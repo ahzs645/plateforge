@@ -1,0 +1,18 @@
+[
+  {
+    "role": "wide",
+    "intersectionOverUnion": 0.7835958813693567,
+    "precision": 0.8740122699386503,
+    "recall": 0.8833771516444268,
+    "registration": "fixed source pixel plane, uniform 4x; no local registration or nonuniform stretching",
+    "sourceObserved": "12356"
+  },
+  {
+    "role": "tall",
+    "intersectionOverUnion": 0.7749412782791445,
+    "precision": 0.8634000206604455,
+    "recall": 0.8832294198457149,
+    "registration": "fixed source pixel plane, uniform 4x; no local registration or nonuniform stretching",
+    "sourceObserved": "12365"
+  }
+]

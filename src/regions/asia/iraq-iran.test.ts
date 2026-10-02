@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { createRng } from '../../core/random';
-import { iraq } from './iraq';
+import { iraqRecipes as iraq } from './iraq-recipes';
 import { iran } from './iran';
 import { IRAQ_GOVERNORATES, IRAQ_LETTERS } from './iraq-data';
 import { IRAN_CODES, IRAN_MOTORCYCLE_CODES, IRAN_PRIVATE_LETTERS } from './iran-data';
@@ -8,6 +8,7 @@ import { asciiDigits, displayDigits, isDigits, normalizeLetter } from './plate-s
 import { accessibility, glyph, glyphRun, hasPlateGlyph } from '../../templates/westasia-glyphs';
 import { NASKH_PLATE_GLYPHS } from '../../templates/westasia-arabic';
 import { iranScene, iranSize, iraqScene, iraqSize, sceneSvg } from '../../templates/westasia-scene';
+import { IRAN_CUSTOM_PRESETS } from '../../templates/iran-custom-data';
 
 const iq = (id: string) => iraq.formats.find((f) => f.id === id)!;
 const ir = (id: string) => iran.formats.find((f) => f.id === id)!;
@@ -31,15 +32,17 @@ describe('Iraq / Iran country contracts', () => {
           }
         }
       }
-    });
+    }, 30_000); // 500 seeded plates per recipe, each validated through its full scene.
   }
-  it('keeps documented classes distinct from the unfinished free-zone study', () => {
+  it('registers every source-guided Iran preset and preserves the legacy free-zone route', () => {
     expect(iraq.formats).toHaveLength(27);
-    expect(iran.formats).toHaveLength(16);
+    expect(iran.formats).toHaveLength(IRAN_CUSTOM_PRESETS.length + 1);
+    for (const preset of IRAN_CUSTOM_PRESETS) expect(ir(preset.id).design?.customPreset).toBe(preset.id);
     expect(ir('free-zone-study').status).toBe('reproduction');
     expect(ir('free-zone-study').fields[0].options).toHaveLength(7);
     expect(iraq.gaps?.length).toBeGreaterThan(0);
-    expect(iran.gaps?.some((g) => g.id === 'temporary')).toBe(true);
+    expect(iran.gaps?.some((g) => g.id === 'temporary')).toBe(false);
+    expect(iran.gaps?.map((g) => g.id)).toEqual(['earliest-registration', 'free-zone-2017']);
   });
 });
 

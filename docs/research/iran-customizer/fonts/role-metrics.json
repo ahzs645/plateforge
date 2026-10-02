@@ -1,0 +1,317 @@
+{
+  "version": 1,
+  "units": "source pixels and percentage of source plate width/height",
+  "classRoles": [
+    {
+      "id": "diagram-private",
+      "character": "ب",
+      "sourceFile": "/workspace/scratch/ec45c0c1359b/iran-evidence/wiki-private.png",
+      "sourceImageSize": [
+        500,
+        112
+      ],
+      "observedInkBox": [
+        134,
+        17,
+        213,
+        89
+      ],
+      "boxConvention": "x0,y0,x1,y1; includes diacritics",
+      "platePercent": {
+        "x": 26.8,
+        "y": 15.18,
+        "width": 15.8,
+        "height": 64.29
+      },
+      "measurement": "Manually bounded ROI; dark ink threshold checked against source pixels; no outline tracing"
+    },
+    {
+      "id": "diagram-taxi",
+      "character": "ت",
+      "sourceFile": "/workspace/scratch/ec45c0c1359b/iran-evidence/wiki-taxi.png",
+      "sourceImageSize": [
+        500,
+        113
+      ],
+      "observedInkBox": [
+        132,
+        50,
+        215,
+        94
+      ],
+      "boxConvention": "x0,y0,x1,y1; includes diacritics",
+      "platePercent": {
+        "x": 26.4,
+        "y": 44.25,
+        "width": 16.6,
+        "height": 38.94
+      },
+      "measurement": "Manually bounded ROI; dark ink threshold checked against source pixels; no outline tracing"
+    },
+    {
+      "id": "diagram-public",
+      "character": "ع",
+      "sourceFile": "/workspace/scratch/ec45c0c1359b/iran-evidence/wiki-public.png",
+      "sourceImageSize": [
+        500,
+        113
+      ],
+      "observedInkBox": [
+        142,
+        15,
+        200,
+        94
+      ],
+      "boxConvention": "x0,y0,x1,y1; includes diacritics",
+      "platePercent": {
+        "x": 28.4,
+        "y": 13.27,
+        "width": 11.6,
+        "height": 69.91
+      },
+      "measurement": "Manually bounded ROI; dark ink threshold checked against source pixels; no outline tracing"
+    },
+    {
+      "id": "diagram-agricultural",
+      "character": "ک",
+      "sourceFile": "/workspace/scratch/ec45c0c1359b/iran-evidence/wiki-agricultural.png",
+      "sourceImageSize": [
+        500,
+        113
+      ],
+      "observedInkBox": [
+        125,
+        15,
+        215,
+        91
+      ],
+      "boxConvention": "x0,y0,x1,y1; includes diacritics",
+      "platePercent": {
+        "x": 25.0,
+        "y": 13.27,
+        "width": 18.0,
+        "height": 67.26
+      },
+      "measurement": "Manually bounded ROI; dark ink threshold checked against source pixels; no outline tracing"
+    },
+    {
+      "id": "diagram-government",
+      "character": "الف",
+      "sourceFile": "/workspace/scratch/ec45c0c1359b/iran-evidence/wiki-government.png",
+      "sourceImageSize": [
+        500,
+        113
+      ],
+      "observedInkBox": [
+        130,
+        19,
+        210,
+        91
+      ],
+      "boxConvention": "x0,y0,x1,y1; includes diacritics",
+      "platePercent": {
+        "x": 26.0,
+        "y": 16.81,
+        "width": 16.0,
+        "height": 63.72
+      },
+      "measurement": "Manually bounded ROI; dark ink threshold checked against source pixels; no outline tracing"
+    },
+    {
+      "id": "photo-public",
+      "character": "ع",
+      "sourceFile": "role-reference/national-flat-source.png",
+      "sourceImageSize": [
+        1040,
+        220
+      ],
+      "observedInkBox": [
+        324,
+        25,
+        424,
+        198
+      ],
+      "boxConvention": "x0,y0,x1,y1; source-study tolerance approximately 2px",
+      "platePercent": {
+        "x": 31.15,
+        "y": 11.36,
+        "width": 9.62,
+        "height": 78.64
+      },
+      "measurement": "Observed rectified photograph; photometric noise and perspective prevent certification as manufacturing dimensions"
+    },
+    {
+      "id": "photo-connected-heh",
+      "character": "هـ",
+      "sourceFile": "role-reference/national-heh-source.png",
+      "sourceImageSize": [
+        1040,
+        220
+      ],
+      "observedInkBox": [
+        334,
+        40,
+        464,
+        180
+      ],
+      "boxConvention": "x0,y0,x1,y1; source-study tolerance approximately 2px",
+      "platePercent": {
+        "x": 32.12,
+        "y": 18.18,
+        "width": 12.5,
+        "height": 63.64
+      },
+      "measurement": "Observed rectified photograph; photometric noise and perspective prevent certification as manufacturing dimensions"
+    },
+    {
+      "id": "diagram-diplomatic",
+      "character": "D",
+      "sourceFile": "role-reference/diplomatic-source.png",
+      "sourceImageSize": [
+        1000,
+        221
+      ],
+      "observedInkBox": [
+        297,
+        46,
+        413,
+        171
+      ],
+      "boxConvention": "x0,y0,x1,y1",
+      "platePercent": {
+        "x": 29.7,
+        "y": 20.81,
+        "width": 11.6,
+        "height": 56.56
+      },
+      "measurement": "Manually bounded source glyph; threshold checked against original 1000x221 diagram"
+    },
+    {
+      "id": "diagram-service",
+      "character": "S",
+      "sourceFile": "role-reference/service-source.png",
+      "sourceImageSize": [
+        1000,
+        221
+      ],
+      "observedInkBox": [
+        315,
+        45,
+        385,
+        167
+      ],
+      "boxConvention": "x0,y0,x1,y1",
+      "platePercent": {
+        "x": 31.5,
+        "y": 20.36,
+        "width": 7.0,
+        "height": 55.2
+      },
+      "measurement": "Manually bounded source glyph; threshold checked against original 1000x221 diagram"
+    }
+  ],
+  "guardrails": [
+    "No per-glyph width stretch",
+    "No implicit mixing of observed and candidate glyphs",
+    "Taxi letter has a separate lower box",
+    "Do not use one class cap-height for every class"
+  ],
+  "serialRoles": [
+    {
+      "ids": [
+        "diagram-taxi",
+        "diagram-agricultural",
+        "diagram-government",
+        "diagram-public"
+      ],
+      "sourcePlateHeight": 113,
+      "sourceTop": 14,
+      "sourceBottom": 94,
+      "platePercent": {
+        "y": 12.39,
+        "height": 70.8
+      },
+      "note": "Main numeral band. Keep this cap independent from each class ink box."
+    },
+    {
+      "ids": [
+        "diagram-private"
+      ],
+      "sourcePlateHeight": 112,
+      "sourceTop": 14,
+      "sourceBottom": 94,
+      "platePercent": {
+        "y": 12.5,
+        "height": 71.43
+      },
+      "note": "Private diagram differs by one output pixel of image height."
+    },
+    {
+      "ids": [
+        "diagram-diplomatic",
+        "diagram-service"
+      ],
+      "sourcePlateHeight": 221,
+      "sourceTop": 36,
+      "sourceBottom": 176,
+      "platePercent": {
+        "y": 16.29,
+        "height": 63.35
+      },
+      "note": "Do not inherit the shorter D/S class cap as the main numeral cap."
+    },
+    {
+      "ids": [
+        "photo-public"
+      ],
+      "sourcePlateHeight": 220,
+      "sourceTop": 24,
+      "sourceBottom": 201,
+      "platePercent": {
+        "y": 10.91,
+        "height": 80.45
+      },
+      "note": "Photographic source differs from the diagrams; retain a separate geometry choice."
+    }
+  ],
+  "profileRoleMap": [
+    {
+      "profile": "source-taxi-lettering",
+      "api": "renderIranRoleGlyphRun",
+      "role": "series",
+      "text": "ت",
+      "nominalSourceCap": 80,
+      "nominalSourceBaseline": 94
+    },
+    {
+      "profile": "source-agricultural-lettering",
+      "api": "renderIranRoleGlyphRun",
+      "role": "series",
+      "text": "ک",
+      "nominalSourceCap": 80,
+      "nominalSourceBaseline": 94
+    },
+    {
+      "profile": "source-government-lettering",
+      "api": "renderIranWordmark",
+      "wordmark": "alef",
+      "text": "الف"
+    },
+    {
+      "profile": "source-diplomatic-lettering",
+      "api": "renderIranRoleGlyphRun",
+      "role": "series",
+      "text": "D",
+      "nominalSourceCap": 140,
+      "nominalSourceBaseline": 176
+    },
+    {
+      "profile": "source-service-lettering",
+      "api": "renderIranRoleGlyphRun",
+      "role": "series",
+      "text": "S",
+      "nominalSourceCap": 140,
+      "nominalSourceBaseline": 176
+    }
+  ]
+}

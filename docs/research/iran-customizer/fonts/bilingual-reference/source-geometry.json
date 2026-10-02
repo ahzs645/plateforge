@@ -1,0 +1,83 @@
+{
+  "sourceId": "ir-wlp-aa-public-2002",
+  "imageSize": [
+    258,
+    101
+  ],
+  "sourceSha256": "b136a5192c37ba11dec40fa6acaca20880620cab60cb2ee45dd554fcef6540c6",
+  "sourceCropXYXY": [
+    323,
+    141,
+    581,
+    242
+  ],
+  "plateOuterBox": [
+    0,
+    0,
+    258,
+    101
+  ],
+  "sourceSeparators": {
+    "stripeBoundaryX": 27,
+    "codeDividerX": 80,
+    "horizontalRuleY": 52
+  },
+  "roles": {
+    "allocation": {
+      "sourceInkBox": [
+        36.4,
+        14.7,
+        71.0,
+        43
+      ],
+      "rectFraction": {
+        "x": 0.141085,
+        "y": 0.145545,
+        "width": 0.134109,
+        "height": 0.280198
+      }
+    },
+    "persian-serial": {
+      "sourceInkBox": [
+        97,
+        14.7,
+        240.8,
+        40.3
+      ],
+      "rectFraction": {
+        "x": 0.375969,
+        "y": 0.145545,
+        "width": 0.557364,
+        "height": 0.253465
+      }
+    },
+    "latin-serial": {
+      "sourceInkBox": [
+        96.4,
+        60.1,
+        239.6,
+        85.3
+      ],
+      "rectFraction": {
+        "x": 0.373643,
+        "y": 0.59505,
+        "width": 0.555039,
+        "height": 0.249505
+      }
+    },
+    "latin-code": {
+      "sourceInkBox": [
+        37.2,
+        65.8,
+        68.5,
+        89.5
+      ],
+      "rectFraction": {
+        "x": 0.144186,
+        "y": 0.651485,
+        "width": 0.121318,
+        "height": 0.234653
+      }
+    }
+  }
+}

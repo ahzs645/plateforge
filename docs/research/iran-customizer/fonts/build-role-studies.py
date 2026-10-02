@@ -1,0 +1,128 @@
+#!/usr/bin/env python3
+"""Rebuild bounded role studies. Paths are manually authored, smooth outlines in source pixel coordinates.
+Does not trace raster boundaries, alter a font, or change any runtime source file.
+"""
+from pathlib import Path
+import json,base64,hashlib,html
+from fontTools.pens.boundsPen import BoundsPen
+from fontTools.svgLib.path import parse_path
+from fontTools.pens.svgPathPen import SVGPathPen
+from fontTools.pens.transformPen import TransformPen
+from fontTools.ttLib import TTFont
+from PIL import Image
+from io import BytesIO
+D=Path(__file__).resolve().parent
+P=D/'role-reference'
+
+def box(path):
+ p=BoundsPen(None);parse_path(path,p);return list(p.bounds)
+
+def item(id,text,path,kind='country',note=None):
+ return dict(id=id,text=text,path=path,sourceBox=[round(x,2) for x in box(path)],sourceId='',occurrence='Complete visible word in right-side header',kind=kind,note=note or 'Original smooth source-guided complete wordmark. Separate role; not a general Persian font or official die master.')
+
+# Iran in a photographed national plate. Shared x/y plane is the rectified 1040 x 220 photo.
+iran_photo='M816 42 H826 V51 Q826 60 846 60 H853 Q869 60 869 51 V35 H879 V52 Q879 66 853 66 H846 Q816 66 816 51 Z M840 32 C832 32 833 39 840 39 H845 C853 39 853 32 845 32 Z M895 19 H905 V53 H895 Z M920 61 H936 Q948 61 949 51 V36 H959 V44 Q959 48 972 48 H980 Q991 48 991 42 V35 H1001 V44 Q1001 55 981 56 H972 Q964 56 959 53 Q958 66 937 67 H922 Z M974 61 C966 61 966 67 974 67 H978 C985 67 985 61 978 61 Z M993 61 C985 61 985 67 993 67 H997 C1004 67 1004 61 997 61 Z M1017 18 H1027 V53 H1017 Z'
+ain='M395 35 Q384 22 371 26 C345 30 331 51 339 76 Q342 85 351 91 C331 108 321 128 325 152 C329 181 350 195 381 197 Q406 199 424 190 L418 169 C387 179 355 169 346 151 C335 129 355 106 408 89 L408 66 L379 73 C366 77 351 72 351 63 C352 49 373 43 390 50 Z'
+# Same phrase in the diagram's straight-stem rounded-corner grid.
+iran_diagram='M790 28 Q790 26 792 26 H795 Q797 26 797 28 V41 Q797 45 801 45 H822 Q827 45 827 41 V28 Q827 26 829 26 H832 Q834 26 834 28 V43 Q834 50 827 52 H799 Q790 50 790 43 Z M810 26 Q808 26 808 29 V30 Q808 32 811 32 H814 Q817 32 817 29 Q817 26 814 26 Z M847 27 Q847 25 850 25 H852 Q854 25 854 28 V52 Q854 54 851 54 H850 Q847 54 847 51 Z M868 47 H879 Q882 47 882 43 V28 Q882 25 885 25 H888 Q891 25 891 29 Q891 31 894 31 H918 Q921 31 921 28 V26 Q921 24 924 24 H926 Q928 24 928 27 V36 Q928 39 924 39 H894 Q890 39 890 43 V46 Q890 51 885 52 H868 Q865 52 865 50 Q865 47 868 47 Z M906 46 H910 Q912 46 912 49 Q912 52 909 52 H906 Q903 52 903 49 Q903 46 906 46 Z M919 46 H923 Q925 46 925 49 Q925 52 922 52 H919 Q916 52 916 49 Q916 46 919 46 Z M939 26 Q939 23 942 23 H944 Q946 23 946 26 V49 Q946 52 943 52 H942 Q939 52 939 49 Z'
+political='M792 33 Q792 31 794 31 H797 Q799 31 799 33 V40 Q799 43 802 43 H817 Q820 43 820 40 V32 Q820 30 823 30 H829 Q832 30 832 27 V24 Q832 22 835 22 H837 Q839 22 839 24 V27 Q839 30 842 30 H844 Q847 30 847 27 V24 Q847 22 850 22 H851 Q853 22 853 24 V27 Q853 30 856 30 H858 Q861 30 861 27 V24 Q861 22 864 22 H866 Q868 22 868 24 V33 Q868 36 865 36 H855 Q852 36 851 34 Q849 36 847 36 H841 Q838 36 837 34 Q835 36 832 36 H828 V42 Q827 47 822 50 H801 Q792 48 792 40 Z M878 24 Q878 22 881 22 H883 Q885 22 885 25 V43 H894 Q898 43 898 39 V38 Q898 36 901 36 H903 Q905 36 905 39 Q905 43 909 43 H913 Q917 43 917 39 V38 Q917 36 920 36 H922 Q924 36 924 39 Q924 43 928 43 Q931 43 931 39 V38 Q931 36 934 36 H936 Q938 36 938 39 Q938 43 942 43 Q945 43 945 39 V38 Q945 36 948 36 H950 Q952 36 952 39 V47 Q952 50 949 50 H940 Q937 50 935 48 Q933 50 930 50 H926 Q922 50 920 48 Q918 50 915 50 H906 Q903 50 901 48 Q899 50 896 50 H881 Q878 50 878 47 Z M881 55 H885 Q887 55 887 58 V60 H878 V58 Q878 55 881 55 Z M894 55 H898 Q900 55 900 58 V60 H891 V58 Q891 55 894 55 Z'
+service='M777 26 Q777 24 780 24 H782 Q784 24 784 27 V40 Q784 43 787 43 H804 Q807 43 807 39 V26 Q807 24 810 24 H812 Q814 24 814 27 Q814 30 817 30 H819 Q822 30 822 27 Q822 24 825 24 H827 Q829 24 829 27 Q829 30 832 30 H834 Q837 30 837 27 Q837 24 840 24 H842 V30 H851 Q856 30 856 26 Q856 24 859 24 H861 V35 Q861 38 858 38 H831 Q828 38 826 36 Q824 38 821 38 H814 V42 Q813 48 807 50 H784 Q777 47 777 41 Z M842 45 H847 Q849 45 849 48 V49 Q849 51 847 51 H842 Q840 51 840 48 Q840 45 842 45 Z M855 45 H860 Q862 45 862 48 V49 Q862 51 860 51 H855 Q853 51 853 48 Q853 45 855 45 Z M875 25 H888 Q891 25 891 28 L892 29 V47 Q892 50 888 51 H868 Q866 51 866 48 Q866 46 869 46 H881 Q885 46 885 41 V39 H876 Q871 39 871 34 V29 Q871 25 875 25 Z M877 29 Q875 29 875 31 V33 Q875 35 877 35 H883 Q886 35 886 33 V31 Q886 29 883 29 Z M899 46 H912 Q915 46 915 42 V27 Q915 25 918 25 H920 Q922 25 922 28 Q922 31 925 31 H930 Q934 31 934 27 Q934 24 937 24 H940 Q942 24 942 28 Q942 31 945 31 H947 Q951 31 951 27 Q951 24 954 24 H956 Q958 24 958 28 Q958 31 961 31 H963 Q966 31 966 27 Q966 24 969 24 H971 Q973 24 973 27 V35 Q973 38 970 38 H959 Q956 38 955 36 Q953 38 950 38 H941 Q938 38 937 36 Q935 38 932 38 H925 Q922 38 922 41 V47 Q922 51 918 51 H899 Q896 51 896 49 Q896 46 899 46 Z'
+heh='M383 40 Q407 59 427 82 C448 107 463 137 464 154 C465 173 456 181 442 180 C429 180 416 175 405 170 C388 176 370 178 351 176 L334 176 L334 145 H354 C345 127 348 109 361 98 L375 88 L369 78 Z M388 96 C376 94 372 103 373 113 C373 124 384 131 393 129 C400 128 403 119 401 110 C400 103 396 98 388 96 Z M428 121 C423 119 419 126 418 135 C417 142 428 148 435 146 C442 146 443 139 440 132 C437 126 433 123 428 121 Z'
+
+def prof(id,label,file,url,credit,license,cap=100,baseline=0,words=(),glyphs=(),note=''):
+ sid=id+':source-study-2026-10-02'
+ ws=[dict(w,sourceId=sid) for w in words]
+ gs=[dict(character=c,path=p,sourceBox=[round(x,2) for x in box(p)],occurrence=occ,sourceId=sid) for c,p,occ in glyphs]
+ return dict(id=id,label=label,sourceId=sid,sourceUrl=url,sourceFile='role-reference/'+file,credit=credit,license=license,rights=credit+' Smooth outline study is an adaptation under '+license+'. No official die certification or complete alphabet is claimed.',provenance='observed',capHeight=cap,baseline=baseline,note=note or 'Manually authored source-guided outline with a small number of smooth anchors; source wear and raster stair-steps omitted. Source dimensions and role remain distinct.',glyphs=gs,wordmarks=ws,roles={'series':dict(capHeight=cap,baseline=baseline,glyphs=gs)} if gs else {})
+
+profiles=[
+prof('source-national-lettering','National photographed lettering · bounded source study','national-flat-source.png','https://commons.wikimedia.org/wiki/File:Iran_licenceplate_02.JPG','Dickelbers, 24 March 2015; photograph cropped, rectified and resized; https://creativecommons.org/licenses/by-sa/4.0/','CC BY-SA 4.0',177,201,[item('iran','ایران',iran_photo)],[('ع',ain,'Single public-transport series glyph between ۲۴ and ۴۱۷')]),
+prof('source-national-diagram-lettering','National diagram header · geometric source study','police-source.png','https://commons.wikimedia.org/wiki/File:Pelak_melie_polis.png','Haghal Jagul; updated by BasilLeaf; https://creativecommons.org/licenses/by-sa/3.0/','CC BY-SA 3.0',words=[item('iran','ایران',iran_diagram)]),
+prof('source-diplomatic-lettering','Diplomatic diagram header · geometric source study','diplomatic-source.png','https://commons.wikimedia.org/wiki/File:Pelak_melie_siasi.png','Nima Farid / BasilLeaf, 2016; https://creativecommons.org/publicdomain/zero/1.0/','CC0 1.0',words=[item('political','سیاسی',political,'class')]),
+prof('source-service-lettering','Service diagram header · geometric source study','service-source.png','https://commons.wikimedia.org/wiki/File:Pelak_melie_service.png','Nima Farid / BasilLeaf, 2016; https://creativecommons.org/publicdomain/zero/1.0/','CC0 1.0',words=[item('service','سرویس',service,'class')]),
+prof('source-national-heh-lettering','National connected heh · bounded source study','national-heh-source.png','https://commons.wikimedia.org/wiki/File:Iranianplate.jpg','MohsenKalali, 29 March 2018; photograph cropped, rectified and enlarged; https://creativecommons.org/licenses/by-sa/4.0/','CC BY-SA 4.0',164,192,glyphs=[('هـ',heh,'Atomic connected heh series form, including both counters and left connector')])]
+# Previous-generation and special-class words. These retain the calligraphic source silhouettes
+# and are not aliases of the current geometric national headers.
+previous_political='M127 99 C124 106 127 110 136 110 H142 Q150 110 152 107 H143 Q138 108 138 105 C138 100 147 96 152 96 H154 L156 92 Q157 96 160 95 L162 92 Q164 96 168 95 L166 91 L168 88 Q173 93 170 99 Q168 102 163 100 Q160 102 157 100 Q154 102 151 101 Q143 101 140 104 H150 Q156 102 156 106 C156 113 146 114 137 114 C124 114 122 110 124 103 Z M174 82 L178 78 V94 Q178 97 181 96 H183 Q185 95 187 91 Q189 96 193 96 H196 Q198 96 199 93 Q201 97 204 95 L205 93 Q207 97 210 95 L207 91 L209 88 Q215 93 211 99 Q209 102 205 100 Q202 102 200 100 Q197 102 193 101 Q190 101 187 98 Q185 101 181 101 H178 Q173 101 173 95 Z M184 110 L186 108 L188 110 L186 112 Z M189 110 L191 108 L193 110 L191 112 Z'
+previous_service='M120 96 C117 104 122 107 130 106 Q138 106 141 103 Q144 100 140 96 L136 92 L139 88 Q143 94 147 92 L149 89 Q150 93 153 92 L155 89 Q155 93 161 92 L161 90 L157 87 L160 82 Q165 85 163 94 Q162 98 157 98 Q151 98 149 97 Q146 100 144 98 Q145 107 137 110 Q120 115 117 105 Q116 101 119 96 Z M168 88 C174 79 179 88 178 99 Q177 108 172 109 H161 C170 105 176 101 176 97 Q174 96 170 97 Q166 98 165 94 Q165 91 168 88 Z M170 89 Q168 91 169 92 H173 Q174 90 171 89 Z M154 108 L156 106 L158 108 L156 110 Z M158 108 L160 106 L162 108 L160 110 Z M186 91 L189 89 Q192 93 196 92 L198 89 Q199 93 202 92 L204 89 Q206 93 209 92 L208 90 L205 87 L208 83 Q212 86 211 92 Q212 97 206 99 Q201 100 199 97 Q197 99 192 98 L192 100 Q192 108 187 111 H176 C184 107 190 103 190 99 Z'
+previous_temporary='M90 21 Q87 24 90 29 C93 33 105 31 110 29 L113 27 Q115 30 119 29 H124 Q131 30 131 23 Q131 16 127 15 Q123 15 122 21 Q121 25 128 25 Q127 27 123 26 H117 Q113 26 111 23 Q106 27 99 27 H95 Q91 27 91 22 Z M126 19 Q124 19 124 21 H128 Q128 19 126 19 Z M97 15 L99 13 L101 15 L99 17 Z M101 15 L103 13 L105 15 L103 17 Z M123 12 L124 10 L126 12 L124 14 Z M126 12 L128 10 L129 12 L128 14 Z M134 23 C135 18 140 17 142 22 L143 25 H146 Q148 25 148 22 Q149 17 152 20 Q155 22 155 26 Q155 29 152 29 Q149 29 148 27 Q146 29 142 29 Q142 35 139 38 H130 C136 35 141 32 141 29 H136 Q132 29 134 23 Z M136 24 Q137 25 140 25 Q139 21 137 22 Z M151 21 C150 20 149 23 151 26 Q154 29 154 25 Q153 22 151 21 Z M169 23 L172 20 Q175 23 174 29 Q175 34 171 36 Q167 37 165 35 Q173 31 173 28 Q173 25 169 24 Z M177 21 Q175 25 178 28 Q180 30 185 26 L188 23 Q190 29 194 29 H208 Q212 29 212 24 Q212 21 210 17 L219 14 L220 11 L211 13 Q207 14 208 19 L210 24 Q210 26 207 26 H193 Q190 25 187 15 L185 17 L187 23 Q180 27 179 24 L179 21 Z M184 12 L186 10 L188 12 L186 14 Z M208 11 L209 9 L220 6 L220 8 Z'
+protocol='M60 32 H65 V34 Q65 36 68 36 H92 Q94 36 92 32 L91 29 L95 27 Q100 34 96 39 Q94 42 90 41 H67 Q60 41 60 35 Z M71 23 L74 20 L77 23 L74 26 Z M78 23 L81 20 L84 23 L81 26 Z M103 11 H108 V33 Q108 36 111 36 H119 Q116 30 120 26 Q124 22 129 25 Q135 28 131 36 H140 Q142 36 140 32 L138 29 L142 27 Q147 33 144 39 Q143 42 138 41 H131 Q127 41 124 39 Q121 41 116 41 H111 Q103 41 103 34 Z M123 30 Q121 33 124 35 Q127 34 127 31 Q125 28 123 30 Z M117 17 L120 14 L123 17 L120 20 Z M128 47 L131 44 L134 47 L131 50 Z M135 47 L138 44 L141 47 L138 50 Z M160 30 L157 27 L161 25 Q164 29 166 34 Q167 36 171 36 H230 Q233 36 233 33 V28 H237 V32 Q237 36 240 36 V28 H244 V32 Q244 36 247 36 V28 H251 V32 Q251 36 254 36 H265 Q267 36 265 32 L263 28 L267 25 Q273 33 270 38 Q269 41 265 41 H256 Q251 41 250 39 Q247 42 243 39 Q240 42 236 39 Q234 41 230 41 H171 Q166 41 165 39 C163 46 155 51 150 54 L148 50 Q162 41 161 36 Z M239 12 L242 9 L245 12 L242 15 Z M235 18 L238 15 L241 18 L238 21 Z M242 18 L245 15 L248 18 L245 21 Z M258 19 L261 16 L264 19 L261 22 Z M265 19 L268 16 L271 19 L268 22 Z'
+historic='M111 35 L114 36 C111 43 115 48 122 48 Q130 48 133 44 Q131 41 124 40 L125 36 H142 Q148 36 153 31 H148 Q144 31 143 32 L141 29 Q143 27 147 27 H163 V30 Q159 30 157 33 Q160 36 165 36 H170 Q173 36 170 32 L169 30 L172 28 Q177 35 173 39 Q172 41 169 41 H164 Q158 41 154 36 Q149 41 141 41 H137 Q139 47 130 51 C115 57 109 47 110 39 Z M147 20 L149 17 L152 20 L150 23 Z M161 45 L163 42 L166 44 L164 47 Z M167 45 L169 43 L172 45 L170 48 Z M181 29 L185 27 Q190 34 186 39 Q181 46 172 50 L170 46 C179 42 187 36 184 33 Z M195 16 H199 V33 Q199 36 202 36 H209 Q212 36 210 32 L209 30 L212 28 Q217 34 214 39 Q213 41 209 41 H201 Q195 41 195 34 Z M206 22 L208 19 L211 21 L209 24 Z M212 22 L214 20 L217 22 L215 25 Z'
+legacy_specs=[
+ ('source-previous-diplomatic-lettering','Previous diplomatic word · source study','wiki-diplomatic-previous.png','Pelak_siasi.png','political','سیاسی',previous_political),
+ ('source-previous-service-lettering','Previous service word · source study','wiki-service-previous.png','Pelak_servis.png','service','سرویس',previous_service),
+ ('source-previous-temporary-lettering','Previous temporary heading · source study','wiki-temporary-previous.png','Pelak_gozar_movaqat.png','temporary','گذر موقت',previous_temporary),
+ ('source-protocol-lettering','Protocol heading · source study','wiki-protocol.png','Pelak_melie_tashrifat.png','protocol','تشریفات',protocol),
+ ('source-historic-lettering','Historic vehicle heading · source study','wiki-historic.png','Pelak_melie_tarikhi.png','historic','تاریخی',historic),
+]
+for id,label,file,page,wid,text,path in legacy_specs:
+ p=prof(id,label,file,'https://commons.wikimedia.org/wiki/File:'+page,'Haghal Jagul; diagram crop, manual smooth outline adaptation; https://creativecommons.org/licenses/by-sa/3.0/','CC BY-SA 3.0',words=[item(wid,text,path,'class','Complete source-guided word for this generation and layout. Do not reuse it as a modern right-box header or split it into pseudo-glyphs.')])
+ p['wordmarks'][0]['occurrence']='Complete visible class word in source diagram; every joined stroke and diacritic retained as one atomic path'
+ profiles.append(p)
+
+# Final bounded class pass: three Persian classes and the diplomatic/service Latin letters.
+taxi_ta='M139 58 L148 61 C141 74 143 78 157 80 C173 83 194 81 204 77 Q211 74 205 65 L202 61 L209 50 C216 60 219 78 208 86 C198 97 151 97 140 89 C130 81 130 72 139 58 Z M155 58 L161 50 L170 56 L164 65 Z M169 55 L176 49 L183 55 L177 64 Z'
+agricultural_kaf='M209 15 L215 27 L180 36 Q173 38 176 43 L191 66 Q198 78 188 86 Q183 92 172 92 H148 Q125 92 125 77 V62 H141 V69 Q141 78 150 78 H170 Q179 78 180 74 Q181 72 176 64 L162 44 Q156 34 164 29 Q169 25 183 21 Z'
+government_alef='M130 77 L142 76 V65 C142 55 148 49 157 49 C168 49 173 57 172 67 L170 74 Q179 78 180 70 V37 Q180 33 185 29 L195 21 Q202 16 207 22 Q210 25 210 30 V79 L205 90 L194 85 Q197 76 197 68 V35 Q197 32 194 36 L192 39 V70 C193 82 181 91 167 91 Q154 91 149 86 Q141 90 130 91 Z M158 63 C154 63 153 69 156 71 C160 73 164 68 162 65 Q161 63 158 63 Z M146 34 L154 25 L166 34 L158 44 Z'
+diplomatic_d='M297 46 H351 C390 46 413 72 413 108 C413 146 391 171 351 171 H297 V164 H309 V53 H297 Z M328 54 V163 H347 C378 163 394 142 394 109 C394 76 377 54 347 54 Z'
+service_s='M377 50 V66 C363 60 354 55 341 59 C329 62 325 70 329 80 C332 90 346 96 358 104 C375 115 385 124 385 140 C385 160 368 168 348 168 Q328 168 315 160 V145 C331 154 342 158 355 153 C367 149 372 141 369 130 C366 120 353 113 341 105 C323 94 315 85 315 73 C315 55 332 45 348 45 Q363 44 377 50 Z'
+commons_pd='Commons PD-Iran declaration; expiration basis unverified'
+for id,label,file,page,c,path,word in [
+ ('source-taxi-lettering','Taxi class ta · source study','wiki-taxi.png','Iran_taxi_number_plate.svg','ت',taxi_ta,False),
+ ('source-agricultural-lettering','Agricultural class kaf · source study','wiki-agricultural.png','Iran_agricultural_vehicle_number_plate.svg','ک',agricultural_kaf,False),
+ ('source-government-lettering','Government alef class · source study','wiki-government.png','Iran_government_vehicle_number_plate.svg','الف',government_alef,True),
+]:
+ p=prof(id,label,file,'https://commons.wikimedia.org/wiki/File:'+page,'Isochrone, 2023; source diagram manually redrawn for bounded visual study',commons_pd,80,94,words=[item('alef',c,path,'class')] if word else [],glyphs=[] if word else [(c,path,'Single complete class form in the national main serial slot')])
+ p['rights']='Source diagram page declares PD-Iran, but the expiry basis for the 2023 own-work upload is not established. Private source-guided typography study; no claim of reusable underlying font licensing or official die certification.'
+ p['note']='Smooth manually authored class outline; source glyph proportions retained independently from the shared 80px main-numeral cap. Source-image license basis remains unverified.'
+ profiles.append(p)
+for id,c,path in [('source-diplomatic-lettering','D',diplomatic_d),('source-service-lettering','S',service_s)]:
+ p=next(p for p in profiles if p['id']==id)
+ g=dict(character=c,path=path,sourceBox=[round(x,2) for x in box(path)],occurrence='Single Latin class character in main registration band; serif D and normal-weight S are intentionally distinct',sourceId=p['sourceId'])
+ p['capHeight']=140;p['baseline']=176;p['glyphs']=[g];p['roles']={'series':dict(capHeight=140,baseline=176,glyphs=[g])}
+
+(D/'role-studies.json').write_text(json.dumps(profiles,ensure_ascii=False,indent=2)+'\n')
+
+# Review every outlined role next to the crop and in overlay. This is a proof, not a fake-font specimen.
+rows=[]
+for p in profiles:
+ for g in p['wordmarks']+p['glyphs']:
+  rows.append((p,g))
+W=1260;rh=196;H=95+len(rows)*rh
+out=[f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{W}" height="{H}" viewBox="0 0 {W} {H}"><rect width="100%" height="100%" fill="#f4f3ef"/><style>text{{font-family:sans-serif;fill:#152337}}.label{{font-size:15px;font-weight:bold}}.small{{font-size:12px}}</style><text x="20" y="27" font-size="22">Iran role masters: source, smooth study, and registered overlay</text><text x="20" y="48" class="small">Complete word paths; uniform scale only. Source photographs and diagrams remain distinct. Magenta overlay reveals fitting residuals.</text>']
+for i,(p,g) in enumerate(rows):
+ y=70+i*rh;b=box(g['path']);pad=5;x0,y0,x1,y1=[b[0]-pad,b[1]-pad,b[2]+pad,b[3]+pad];w=x1-x0;h=y1-y0
+ # retain original pixels in each proof crop, with a generous crop margin and fixed source alignment
+ im=Image.open(D/p['sourceFile']);crop=im.crop((int(x0),int(y0),int(x1+1),int(y1+1)));buf=BytesIO();crop.save(buf,format='PNG');data=base64.b64encode(buf.getvalue()).decode();s=min(365/w,125/h)
+ out.append(f'<text x="20" y="{y+17}" class="label">{html.escape(p["label"])} · {html.escape(g.get("id",g.get("character","")))}</text>')
+ for j in range(3):
+  xx=20+j*415;yy=y+34;dw=w*s;dh=h*s
+  out.append(f'<rect x="{xx}" y="{yy}" width="395" height="130" rx="5" fill="white"/>')
+  if j!=1: out.append(f'<image x="{xx}" y="{yy}" width="{dw}" height="{dh}" xlink:href="data:image/png;base64,{data}"/>')
+  if j>0:out.append(f'<path d="{g["path"]}" fill="{"#172433" if j==1 else "#f025b5"}" fill-rule="evenodd" opacity="{1 if j==1 else .55}" transform="translate({xx-x0*s},{yy-y0*s}) scale({s})"/>')
+  out.append(f'<text x="{xx}" y="{yy+149}" class="small">{["Source pixels", "Manual smooth master", "Registered overlay (no width fitting)"][j]}</text>')
+ out.append(f'<text x="20" y="{y+193}" class="small">{html.escape(p["license"])} · source box {str([round(v,1) for v in b])}</text>')
+out.append('</svg>');(D/'role-wordmark-overlay.svg').write_text(''.join(out))
+
+# Candidate font proof against actual wiki free-zone plain-sans role. Full font outlines, same fixed cap-height scaling.
+fontfiles=['NotoSans-Regular.ttf','LiberationSans-Regular.ttf','LiberationSans-Bold.ttf','GL-Nummernschild-Eng.ttf']
+def font_run(filename,text,ink_height):
+ font=TTFont(D/'source'/filename);gs=font.getGlyphSet();cm=font.getBestCmap();adv=font['hmtx'];pieces=[];x=0
+ for ch in text:
+  name=cm.get(ord(ch));
+  if not name:continue
+  pen=SVGPathPen(gs);gs[name].draw(TransformPen(pen,(1,0,0,-1,x,0)));pieces.append(pen.getCommands());x+=adv[name][0]
+ path=''.join(pieces);b=box(path);s=ink_height/(b[3]-b[1]);pen=SVGPathPen(None);parse_path(path,TransformPen(pen,(s,0,0,s,-b[0]*s,-b[1]*s)));return pen.getCommands(),(b[2]-b[0])*s
+specs=[('Anzali · digits','wiki-freezone-Anzali.png',(93,67,246,112),'12365',36),('Aras · digits','wiki-freezone-Aras.png',(93,67,245,112),'12365',36),('Maku · digits','wiki-freezone-Maku.png',(93,67,245,112),'11111',36),('Qeshm · wider low line','wiki-freezone-Qeshm.png',(65,76,248,113),'12356',28),('National strip','wiki-private.png',(6,76,40,103),'IRAN',12),('Taxi legend','wiki-taxi.png',(139,15,206,40),'TAXI',23)]
+W=1640;H=90+len(specs)*130
+out=[f'<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="{W}" height="{H}"><rect width="100%" height="100%" fill="#f4f3ef"/><style>text{{font-family:sans-serif;fill:#152337}}</style><text x="18" y="28" font-size="23">Latin role comparison: actual source crop and licensed candidates</text><text x="18" y="52" font-size="13">Approximate source cap height, no width stretch. Noto Sans retains the footless 1; FE-style remains a distinct travel candidate.</text>']
+E=Path('/workspace/scratch/ec45c0c1359b/iran-evidence')
+for i,(label,file,b,text,hh) in enumerate(specs):
+ y=80+i*130;out.append(f'<text x="18" y="{y}" font-size="15">{label}</text>')
+ im=Image.open(E/file).crop(b);buf=BytesIO();im.save(buf,format='PNG');data=base64.b64encode(buf.getvalue()).decode();s=min(270/im.width,78/im.height)
+ out.append(f'<image x="18" y="{y+10}" width="{im.width*s}" height="{im.height*s}" xlink:href="data:image/png;base64,{data}"/><text x="18" y="{y+109}" font-size="12">Source pixels</text>')
+ for j,f in enumerate(fontfiles):
+  path,width=font_run(f,text,hh*1.7);x=330+j*320
+  out.append(f'<path d="{path}" fill="#161e28" transform="translate({x},{y+13})"/><text x="{x}" y="{y+109}" font-size="12">{html.escape(f.removesuffix(".ttf"))} · {round(width,1)} px</text>')
+out.append('</svg>');(D/'role-latin-comparison.svg').write_text(''.join(out))
+print('Wrote',len(profiles),'role profiles and',len(rows),'source/master/overlay comparisons')

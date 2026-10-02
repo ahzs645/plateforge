@@ -18,7 +18,7 @@ Edits are retained while switching presets within the open session. Restore pres
 
 ### In PlateForge
 
-Run the existing development/build workflow and choose **Iraq history** (`#/iraq-timeline`) or **Iraq editor** (`#/iraq-customizer/<preset-id>`). The original Iraq page links directly to its matching editor preset and to the new history view. Timeline cards render using the actual editor engine and open that exact preset. History filters distinguish federal/Kurdistan, class, era and evidence. The same history/editor workspace is included in the offline HTML. Original recipe previews remain available; their timeline labels now flag uncertain indexing rather than assert unsupported exact issue dates. See `PATCH-HANDOFF.md` for the exact clean-baseline application procedure.
+Iraq is a normal region in the main editor: pick **Iraq** in the region picker (`#/iraq/<preset-id>`). All 38 presets are its formats, split into the Federal and Kurdistan Region families and dated on the standard timeline by the eras in `iraq-custom-timeline.ts`; **Gallery** (`#/gallery/iraq`) lays them out era by era with the unbuilt research gaps. The inspector edits the same fields as the standalone editor (the vehicle class is fixed by the format), shows each format's evidence and sources, and has a *Source & font coverage* section with the font profile, glyph coverage and live renderer notices. Old `#/iraq-customizer/<preset-id>` links open that format; `#/iraq-timeline` opens the gallery. The separate editor and history pages remain only in the offline HTML. See `PATCH-HANDOFF.md` for the exact clean-baseline application procedure.
 
 ## Implemented scope
 
@@ -41,8 +41,11 @@ Some class descriptions and unsourced combinations are clearly labelled candidat
 - `src/templates/iraq-custom-fonts.ts`: reusable outline font/wordmark API and evidence metadata
 - `src/templates/iraq-custom-scene.ts`: actual parametric layout/validation/export SVG renderer
 - `src/templates/iraq-custom-timeline.ts`: source-dated chronology covering all 38 presets
-- `src/ui/IraqTimeline.tsx`: filterable history with actual renderer previews and edit links
-- `src/ui/IraqWorkspace.tsx`: shared website/offline history and preset URL routing
+- `src/regions/asia/iraq.ts`: the app's Iraq region, one format per preset, dated by that chronology
+- `src/templates/iq-flat.ts`: the scene engine behind the app's template contract
+- `src/ui/IraqCoverage.tsx`: the inspector's source and font coverage section
+- `src/ui/IraqTimeline.tsx`: filterable history with actual renderer previews and edit links (offline app)
+- `src/ui/IraqWorkspace.tsx`: offline history/editor shell and preset URL routing
 - `src/ui/IraqCustomizer.tsx`: React controls, pure state reducer and export actions
 - `src/ui/iraq-customizer.css`: isolated UI styling
 - `src/ui/iraq-customizer-main.tsx`: standalone entry

@@ -1,6 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { renderToStaticMarkup } from 'react-dom/server';
-import { iraq } from '../regions/asia/iraq';
+import { iraqRecipes as iraq } from '../regions/asia/iraq-recipes';
 import { iran } from '../regions/asia/iran';
 import { createRng } from '../core/random';
 import { iqTemplate } from './iq';

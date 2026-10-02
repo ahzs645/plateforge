@@ -10,16 +10,3 @@ describe('Iraq website routes', () => {
     for (const hash of ['#/iraq-customizer/unknown', '#/%ZZ', '']) expect(readIraqRoute(hash).presetId).toBe(IRAQ_CUSTOM_PRESETS[0].id);
   });
 });
-
-// Integration wiring is checked independently of browser-only history and font loading.
-import { readFileSync } from 'node:fs';
-import { iraq } from '../regions/asia/iraq';
-it('keeps a matching editor destination for all original website recipes', () => {
-  expect(iraq.formats).toHaveLength(27);
-  for (const format of iraq.formats) expect(IRAQ_CUSTOM_PRESETS.some(preset => preset.id === format.id)).toBe(true);
-  const app = readFileSync('src/ui/App.tsx', 'utf8');
-  expect(app).toContain('href="#/iraq-timeline"');
-  expect(app).toContain('href={`#/iraq-customizer/${format.id}`}');
-  expect(app).toContain("import('./IraqWorkspace')");
-  expect(iraq.notes).toContain('not proven introduction/withdrawal');
-});

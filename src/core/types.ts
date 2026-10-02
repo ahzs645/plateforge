@@ -31,6 +31,12 @@ export interface FieldDef {
   placeholder?: string;
   /** Keep appearance controls when generating a new serial. */
   preserveOnGenerate?: boolean;
+  /** Draw a colour picker (`#rrggbb`) or a slider instead of a text box; both sit with the Style choices. */
+  input?: 'color' | 'range';
+  /** Slider bounds for `input: 'range'`. */
+  min?: number;
+  max?: number;
+  step?: number;
 }
 
 /** Design values are template-specific; each template exports its own type. */
