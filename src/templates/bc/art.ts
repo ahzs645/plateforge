@@ -73,8 +73,9 @@ function bcArms(): SvgNode[] {
 
 /** The 1917 Tacey coat of arms came in three qualities (BCpl8s, Passenger 1915–1917): a crude, blotted early
  * rendering (Type 1), the fine line drawing (Type 2, the shared master) and a heavier later one (Type 3). The
- * variants thicken the same master with a stroke of its own colour: 40 units (about 1.6 mm) merges the detail
- * into blobs, 14 units gives the bolder line. */
+ * variants thicken the same master with a stroke of its own colour, matched by eye to BCpl8s 1917-Type1/Type3,
+ * 1916 9316 and 1917 12123 at plate scale (1 unit ≈ 0.045 mm on a 51 mm crest): 7 units blots the hatching while
+ * the supporters, shield and motto stay legible; 3 units gives the heavier but crisp Type 3 line. */
 function bcArmsWeighted(weight: number): () => SvgNode[] {
   return () => [n('path', { d: CREST_PATH, fill: 'currentColor', fillRule: 'evenodd', stroke: 'currentColor', strokeWidth: weight, strokeLinejoin: 'round' })];
 }
@@ -89,8 +90,8 @@ const MASTERS: Record<string, ArtMaster> = {
   'bc-monogram': { viewBox: [MONOGRAM_1918.box[2], MONOGRAM_1918.box[3]], draw: bcMonogram },
   'bc-monogram-1914': { viewBox: [MONOGRAM_1914.box[2], MONOGRAM_1914.box[3]], draw: bcMonogram1914 },
   'bc-arms': { viewBox: [CREST_BOX[0], CREST_BOX[1]], draw: bcArms },
-  'bc-arms-crude': { viewBox: [CREST_BOX[0], CREST_BOX[1]], draw: bcArmsWeighted(40) },
-  'bc-arms-bold': { viewBox: [CREST_BOX[0], CREST_BOX[1]], draw: bcArmsWeighted(14) },
+  'bc-arms-crude': { viewBox: [CREST_BOX[0], CREST_BOX[1]], draw: bcArmsWeighted(7) },
+  'bc-arms-bold': { viewBox: [CREST_BOX[0], CREST_BOX[1]], draw: bcArmsWeighted(3) },
   'bc-spirit-flag': { viewBox: [SPIRIT_FLAG.box[2], SPIRIT_FLAG.box[3]], draw: spiritFlag },
   'bc-flag': { viewBox: [60, 36], draw: bcFlag },
   'bc-logo': { viewBox: [BC_LOGO.symbolBox[2], BC_LOGO.symbolBox[3]], draw: bcLogo(false) },

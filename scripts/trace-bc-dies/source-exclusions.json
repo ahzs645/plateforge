@@ -1,0 +1,42 @@
+{
+  "1915-116925(XL).jpg": {
+    "jurisdiction": "Saskatchewan",
+    "reason": "Photograph visibly reads SASK vertically; not a B.C. specimen. Isolated original tin.py probe accepted zero glyphs.",
+    "sourceUrl": "https://www.bcpl8s.ca/images/Passenger/1915-1917/1915-116925(XL).jpg"
+  },
+  "1920-92660(XL).jpg": {
+    "jurisdiction": "Washington",
+    "reason": "Jurisdiction explicitly visible in source photograph; exclude comparison plate from B.C. tracing.",
+    "sourceUrl": "https://www.bcpl8s.ca/images/Passenger/1918-1923/1920-92660(XL).jpg"
+  },
+  "1942-295518(XL).jpg": {
+    "jurisdiction": "Oregon",
+    "reason": "Jurisdiction explicitly visible in source photograph; exclude comparison plate from B.C. tracing.",
+    "sourceUrl": "https://www.bcpl8s.ca/images/Passenger/1940-1948/1942-295518(XL).jpg"
+  },
+  "1944-351857(XL).jpg": {
+    "jurisdiction": "Louisiana",
+    "reason": "Jurisdiction explicitly visible in source photograph; exclude comparison plate from B.C. tracing.",
+    "sourceUrl": "https://www.bcpl8s.ca/images/Passenger/1940-1948/1944-351857(XL).jpg"
+  },
+  "1953-54992(XL).jpg": {
+    "jurisdiction": "Missouri",
+    "reason": "Jurisdiction explicitly visible in source photograph; exclude comparison plate from B.C. tracing.",
+    "sourceUrl": "https://www.bcpl8s.ca/images/Passenger/1952-1954/1953-54992(XL).jpg"
+  },
+  "1915-3685(XL).jpg": {
+    "jurisdiction": "Manitoba",
+    "reason": "Province marking and emblem visibly identify a non-B.C. comparison plate. Isolated original tin extractor accepts zero glyphs; do not infer historical master contamination.",
+    "sourceUrl": "https://www.bcpl8s.ca/images/Passenger/1915-1917/1915-3685(XL).jpg"
+  },
+  "1916-9034(XL).jpg": {
+    "jurisdiction": "Saskatchewan",
+    "reason": "Province marking and emblem visibly identify a non-B.C. comparison plate. Isolated original tin extractor accepts zero glyphs; do not infer historical master contamination.",
+    "sourceUrl": "https://www.bcpl8s.ca/images/Passenger/1915-1917/1916-9034(XL).jpg"
+  },
+  "1919-9358(XL).jpg": {
+    "jurisdiction": "California",
+    "reason": "Original image visibly reads CAL below a 1919 star renewal tag. Foreign comparison plate; no claim about historical master inclusion.",
+    "sourceUrl": "https://www.bcpl8s.ca/images/Passenger/1918-1923/1919-9358(XL).jpg"
+  }
+}

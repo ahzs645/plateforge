@@ -58,7 +58,8 @@ export const britishColumbia = {
     ...BASE_FORMATS,
     ...bcSampleFormats((id) => BASE_FORMATS.find((f) => f.id === id)),
     ...BC_VEHICLE_FORMATS, ...BC_TRADE_FORMATS, ...BC_SPECIALTY_FORMATS, ...BC_OFFICIAL_FORMATS, ...BC_MUNICIPAL_FORMATS,
-  ],
+  // The renderer binds research dies by format id (src/templates/dies/research-dies.ts).
+  ].map((f) => ({ ...f, design: { ...f.design, formatId: f.id } })),
   families: [...BC_FAMILIES, ...BC_VEHICLE_FAMILIES, ...BC_TRADE_FAMILIES, ...BC_SPECIALTY_FAMILIES, ...BC_OFFICIAL_FAMILIES, ...BC_MUNICIPAL_FAMILIES, ...BC_SAMPLE_FAMILIES],
   eras: [...BC_ERAS, ...BC_VEHICLE_ERAS, ...BC_TRADE_ERAS, ...BC_SPECIALTY_ERAS, ...BC_OFFICIAL_ERAS, ...BC_MUNICIPAL_ERAS],
   gaps: BC_GAPS,

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from 'react';
 import { LetteringPicker } from './LetteringPicker';
 import { TypefaceReview } from './TypefaceReview';
+import { ResearchDiesToggle } from './ResearchDiesToggle';
 import type { FieldDef, Parts, PlateFormat, Region } from '../core/types';
 import { statusBadge } from '../core/timeline';
 import { AlertIcon, CheckIcon, ChevronDown, DownloadIcon } from './icons';
@@ -136,10 +137,10 @@ export function Inspector({ region, format, parts, onChange, onExport, onCopyLin
           </section>
 
           <div id="insp-more" className="insp-more">
-            {choices.length > 0 && (
+            {(choices.length > 0 || region.id === 'ca-bc') && (
               <section className="insp-section">
                 <header className="insp-head"><h2>Style</h2></header>
-                <div className="fields">{choices.map(choice)}</div>
+                <div className="fields">{choices.map(choice)}{region.id === 'ca-bc' && <ResearchDiesToggle />}</div>
               </section>
             )}
 

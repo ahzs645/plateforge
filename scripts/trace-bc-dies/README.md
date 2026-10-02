@@ -39,7 +39,7 @@ The config lists each photo, the text it shows and where it can be downloaded. I
 `gen_charts.py` writes chart-only configs (`"chartOnly": true`, no averages) for the 1915–16 MacDonald, 1916–17 Tacey
 and 1940–54 dies, whose averages come from `tin.py` and `extract.py`. A config can `pin` a digit to a named photo
 when the sharpest crop is a poor example.
-1930 has no photographed 8; `emit.py` builds one from the traced 3 and its mirror image and marks it as synthesised.
+The original 1930 corpus has no photographed 8; `emit.py` builds one from the traced 3 and its mirror image and marks it as synthesised. October 2026 research located a photograph of 1930 48·244 with an 8; its deliberately reconstructed candidate remains separate under `refinement-1930-eight` in the research archive (see `docs/bc-research-dies.md`), so this production emitter is unchanged.
 
 ## Annual plates, 1924–39
 

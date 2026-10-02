@@ -5,6 +5,7 @@
  * reconstructions for illustration, not recovered tooling.
  */
 import type { DieProfile } from './engine';
+import { researchVariant } from './research-dies';
 import { BC_DATES, BC_LEGEND_SLANT, BC_LEGEND_SLIM, BC_LEGEND_STRAIGHT, BC_SLANT_1924, BC_SLIM_1936, BC_STRAIGHT_1928, BC_LEGEND_1940, BC_SERIAL_1940, BC_STRIP_1951, BC_TAB_1953, BC_LEGEND_1930, BC_THOMPSON_1930, BC_TIN_MACDONALD, BC_TIN_TACEY, BC_YEAR_1940, BC_YEAR_1952 } from './traced-1940';
 
 const page = (period: string) => ({ title: `BCpl8s · Passenger ${period.replace('-', '–')}`, url: `https://www.bcpl8s.ca/Passenger-${period}.html` });
@@ -118,7 +119,7 @@ export const DIE_PROFILES: readonly DieProfile[] = [
     id: 'bc-thompson-1930', label: '1930 one-year dies (Thompson)', maker: 'Thompson Heating & Ventilating',
     params: { width: 49, stroke: 16, curve: 'stadium', tracking: 6, one: 'plain', two: 'curved', three: 'round', four: 'closed', six: 'curved', seven: 'straight', nine: 'curved', narrow: 0.4, wide: 1.2 },
     overrides: BC_THOMPSON_1930,
-    evidence: { status: 'photo-averaged', specimens: [page('1930')], notes: 'Dies used only in 1930 (BCpl8s: "one-and-done"), traced from averaged 1930 passenger and doctor plates (1–6 samples per digit). No 8 is photographed; it is built from the traced 3 and its mirror image.' },
+    evidence: { status: 'photo-averaged', specimens: [page('1930')], notes: 'Dies used only in 1930 (BCpl8s: "one-and-done"), traced from averaged 1930 passenger and doctor plates (1–6 samples per digit). The committed 8 is synthesized from the traced 3 and its mirror image. A newly located photograph of 1930 48·244 supports a separate source-led research candidate; production geometry is unchanged.' },
   },
   {
     id: 'bc-legend-1930', label: 'Legend · 1930 (Thompson)', maker: 'Thompson Heating & Ventilating',
@@ -232,9 +233,10 @@ export function registerDieProfile(...profiles: DieProfile[]): void {
   }
 }
 export const allDieProfiles = (): DieProfile[] => [...byId.values()];
+/** The die for `id`; inside a plate render with research dies on, its research variant for that format. */
 export function dieProfile(id: string): DieProfile {
   const profile = byId.get(id);
   if (!profile) throw new RangeError(`Unknown die profile: ${id}`);
-  return profile;
+  return researchVariant(profile);
 }
 export const hasDieProfile = (id: string): boolean => byId.has(id);

@@ -8,6 +8,10 @@ import './index.css';
 import './templates';
 import './regions';
 import { App } from './ui/App';
+import { loadResearchDies } from './templates/dies/research-dies';
+
+// B.C. research glyphs arrive as a separate asset; plates re-render when it loads.
+void loadResearchDies();
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>

@@ -1,6 +1,6 @@
 {
  "name": "early-1940",
- "title": "1940-54 British Columbia Die Types (0-9) · Oakalla rounded",
+ "title": "1940-54 British Columbia Die Types (0-9) \u00b7 Oakalla rounded",
  "band": [
   0.06,
   0.74,
@@ -93,11 +93,6 @@
    "label": "1942 1-381"
   },
   {
-   "file": ".cache/plates/1942-295518(XL).jpg",
-   "text": "295518",
-   "label": "1942 295-518"
-  },
-  {
    "file": ".cache/plates/1942-41.jpg",
    "text": "41",
    "label": "1942 41"
@@ -171,11 +166,6 @@
    "file": ".cache/plates/1944-3333(XL).jpg",
    "text": "3333",
    "label": "1944 3-333"
-  },
-  {
-   "file": ".cache/plates/1944-351857(XL).jpg",
-   "text": "351857",
-   "label": "1944 351-857"
   },
   {
    "file": ".cache/plates/1944-43298.jpg",
@@ -606,11 +596,6 @@
    "file": ".cache/plates/1953-349016.jpg",
    "text": "349016",
    "label": "1953 349-016"
-  },
-  {
-   "file": ".cache/plates/1953-54992(XL).jpg",
-   "text": "54992",
-   "label": "1953 54-992"
   },
   {
    "file": ".cache/plates/1954-306142(XL).jpg",

@@ -5,13 +5,14 @@
  */
 import { node as n, type SvgNode } from '../svg-scene';
 import { skeletonGlyph, type SkeletonGlyph, type SkeletonParams } from './skeleton';
+import { researchVariant } from './research-dies';
 
 export interface DieEvidence {
   /** `specimen-matched`: proportions and diagnostic shapes read from BCpl8s die comparisons.
    *  `photo-averaged`: glyph outlines traced from the average of many labelled photo samples.
    *  `legend-approximation`: small legends matched by eye from plate photos.
    *  `category`: a construction category only. */
-  status: 'specimen-matched' | 'photo-averaged' | 'legend-approximation' | 'category';
+  status: 'specimen-matched' | 'photo-averaged' | 'legend-approximation' | 'category' | 'research-candidate';
   specimens: readonly { title: string; url: string }[];
   notes: string;
 }
@@ -23,16 +24,25 @@ export interface DieProfile {
   params: SkeletonParams;
   /** Hand-drawn replacements for individual glyphs. */
   overrides?: Readonly<Record<string, SkeletonGlyph>>;
+  /** Research-only profiles may reject unobserved characters instead of inventing a fallback. */
+  allowConstructedFallback?: boolean;
   /** Forward slant in degrees (early italic dies). */
   slant?: number;
+  /** Research-merged dies: characters drawn from research outlines rather than the production die. */
+  researchChars?: ReadonlySet<string>;
+  /** Research-merged dies: slant for production fallback glyphs only (research outlines carry their own). */
+  fallbackSlant?: number;
   evidence: DieEvidence;
 }
 
-const cache = new Map<string, SkeletonGlyph | null>();
+// Identity matters: research comparisons can use different revisions of one named die.
+const cache = new WeakMap<DieProfile, Map<string, SkeletonGlyph | null>>();
 export function dieGlyph(profile: DieProfile, char: string): SkeletonGlyph | null {
-  const key = `${profile.id}:${char}`;
-  if (!cache.has(key)) cache.set(key, profile.overrides?.[char] ?? skeletonGlyph(char, profile.params));
-  return cache.get(key)!;
+  let glyphs = cache.get(profile);
+  if (!glyphs) { glyphs = new Map(); cache.set(profile, glyphs); }
+  if (!glyphs.has(char)) glyphs.set(char, profile.overrides?.[char]
+    ?? (profile.allowConstructedFallback === false ? null : skeletonGlyph(char, profile.params)));
+  return glyphs.get(char)!;
 }
 export const dieSupports = (profile: DieProfile, text: string): boolean => [...text].every((c) => dieGlyph(profile, c) !== null);
 
@@ -60,7 +70,9 @@ export interface DieTextProps {
 
 export interface DieRun { node: SvgNode; width: number; height: number; fit: 'natural' | 'reduced' }
 
-export function buildDieText(p: DieTextProps): DieRun {
+export function buildDieText(props: DieTextProps): DieRun {
+  // Inside a plate render, the role picks the matching research lettering for this format.
+  const p = { ...props, profile: researchVariant(props.profile, props.role, props.text) };
   if (!dieSupports(p.profile, p.text)) throw new RangeError(`Die ${p.profile.id} has no glyph for part of “${p.text}”.`);
   const spacing = p.profile.params.tracking + (p.letterSpacing ?? 0);
   const glyphs = [...p.text].map((c) => ({ char: c, glyph: dieGlyph(p.profile, c)! }));
@@ -72,7 +84,9 @@ export function buildDieText(p: DieTextProps): DieRun {
   const left = p.anchor === 'start' ? p.x : p.anchor === 'end' ? p.x - width : p.x - width / 2;
   let cursor = 0;
   const children = glyphs.map(({ char, glyph }) => {
-    const item = n('g', { transform: `translate(${round(cursor)} 0)`, 'data-character': char, ...(glyph.stroke ? { strokeWidth: glyph.stroke } : {}),
+    const skew = p.profile.fallbackSlant && !p.profile.researchChars?.has(char) ? ` skewX(${-p.profile.fallbackSlant})` : '';
+    const item = n('g', { transform: `translate(${round(cursor)} 0)${skew}`, 'data-character': char,
+      ...(p.profile.researchChars?.has(char) ? { 'data-source': 'research' } : {}), ...(glyph.stroke ? { strokeWidth: glyph.stroke } : {}),
       ...(glyph.cap ? { strokeLinecap: glyph.cap } : {}),
       // Traced outlines are filled shapes, not centrelines.
       ...(glyph.fill ? { fill: p.ink, stroke: 'none', fillRule: 'evenodd' } : {}) },

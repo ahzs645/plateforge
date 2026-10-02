@@ -4,15 +4,17 @@ import json
 exec(open('extract.py').read().split("acc = {}")[0].replace("SRC = sys.argv[1] if len(sys.argv) > 1 else '.cache/plates'", "pass"))
 def lab(year, serial): return f'{year} ' + (f'{serial[:-3]}-{serial[-3:]}' if len(serial) > 3 else serial)
 tin = {'macdonald': [], 'tacey': []}
+# A gallery also contains comparison plates from other jurisdictions.
+from source_review import is_excluded_source
 for year, serial, fn in best_photos('.cache/tin/191[567]-*.jpg'):
-    if not serial.isdigit(): continue
+    if not serial.isdigit() or is_excluded_source(fn): continue
     mk = 'macdonald' if year == 1915 or (year == 1916 and int(serial) <= 9000) else 'tacey'
     tin[mk].append({'file': fn, 'text': serial, 'label': lab(year, serial)})
 CONFIGS = {
   'tin-macdonald': ('1915-16 British Columbia Die Types (0-9) · MacDonald Manufacturing', tin['macdonald'], [0.03, 0.98, 0.22, 0.995], [0.5, 0.95]),
   'tin-tacey': ('1916-17 British Columbia Die Types (0-9) · J.R. Tacey & Sons', tin['tacey'], [0.03, 0.98, 0.22, 0.995], [0.5, 0.95]),
   'early-1940': ('1940-54 British Columbia Die Types (0-9) · Oakalla rounded',
-    [{'file': fn, 'text': s, 'label': lab(y, s)} for y, s, fn in best_photos('.cache/plates/19[45]?-*.jpg') if y <= 1954 and s.isdigit() and set(s) != {'0'}],
+    [{'file': fn, 'text': s, 'label': lab(y, s)} for y, s, fn in best_photos('.cache/plates/19[45]?-*.jpg') if y <= 1954 and s.isdigit() and set(s) != {'0'} and not is_excluded_source(fn)],
     [0.06, 0.74, 0.015, 0.905], [0.3, 0.75]),
 }
 for name, (title, photos, band, height) in CONFIGS.items():
