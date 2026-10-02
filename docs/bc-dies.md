@@ -23,7 +23,7 @@ Each profile records how it was derived (`evidence.status`):
 |---|---|---|
 | `specimen-matched` | Width, stroke and digit shapes read from BCpl8s straight-on 0–9 digit comparisons (measured ratios ±0.02). | ACME 1978 and 1979, Hi-Signs 1982, the four Astrographic forms (male/female, neoprene-top, non-passenger, Classic), Waldale |
 | `photo-averaged` | Filled outlines traced from the average of many labelled photo samples (see [scripts/trace-bc-dies](../scripts/trace-bc-dies/README.md)). | 1915–16 MacDonald and 1916–17 Tacey tin numerals; the 1924–39 slanted (1924–27, 1931–32), straight (1928–29, 1933–35) and slimline (1936–39) serial and legend dies; the 1930 Thompson serial and legend; each 1924–39 year's date stamp; the 1940–54 serial digits and A/B/F, BRITISH COLUMBIA legend, 1940–51 stacked year, 1952 52, 1951 strip and 1953/54 tab year |
-| `legend-approximation` | Read from gallery plate photographs; BCpl8s has no digit comparison for these years. | 1913–14 porcelain, 1918–23 block, Oakalla 1955–77, other legend dies, and constructed fallbacks for characters the photos don't cover (most prefix letters, and the 1930 8) |
+| `legend-approximation` | Read from gallery plate photographs; BCpl8s has no digit comparison for these years. | 1913–14 porcelain, 1918–23 block, Oakalla 1955–77, other legend dies, and constructed fallbacks for characters the photos don't cover (most prefix letters, and the committed, synthesized 1930 8) |
 
 Letters on every profile use the same construction as its digits. They were checked against plate photos only, so they are less certain than the digits.
 
@@ -74,7 +74,7 @@ The lettering control still offers editable font text and the four procedural co
   - the 1961 late date stamp
   - the 1964 long legend die
   - the Oakalla separator on the 1972 over-run and 1973 blocks
-- The 1940 and 1949 samples' pear-shaped zeros are not drawn.
+- The current `bc-early-1940` traced zero is already pear-shaped. The older claim that the 1940 and 1949 pear-shaped zeros were not drawn was stale; the October 2026 current-engine comparison confirms the shape. Individual-specimen differences remain unvalidated.
 - The flag base's slogan is a typeface stand-in (serif, mixed case). Dies here cover capitals, digits and separators only.
 
 ## 1940–54 bases and renewal pieces, measured from photos (September 2026)
@@ -125,8 +125,9 @@ The same photo averaging was run over the 1924–39 passenger pages. The results
   four-figure numbers from 1933.
 - **Slimline dies** (`bc-tacey-1936`, legend `bc-legend-1936`): 1936–39, with the date stacked at the right.
 - **1930 Thompson dies** (`bc-thompson-1930`, legend `bc-legend-1930`): made by Thompson Heating & Ventilating and
-  never used again. The average comes from seven plates. None of them shows an 8, so the 8 is built from the traced
-  3 and its mirror image.
+  never used again. The average comes from seven plates. None of the original seven shows an 8, so the committed 8 is built from the traced
+  3 and its mirror image. A new October 2026 photograph of 1930 48·244 now provides an observed 8;
+  its source-led research replacement is kept separate in the research archive (`docs/research/bc-lettering/refinement-1930-eight/` in `~/Desktop/research`; see [bc-research-dies.md](bc-research-dies.md)).
 - **Separators**: a raised dot on 1930 and 1936–39 plates; a dash on the other years.
 - **Date stamps** (`bc-date-<year>`): the small date was struck with its own dies, which changed from year to year,
   so each year has its own traced date die rather than a scaled-down serial die.

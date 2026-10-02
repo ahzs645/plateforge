@@ -65,7 +65,9 @@ def add(kind, era, ch, soft):
         if k not in acc: acc[k] = [np.zeros_like(canvas), 0, []]
         acc[k][0] += canvas; acc[k][1] += 1; acc[k][2].append(w / h)
 
+from source_review import is_excluded_source
 for year, serial, fn in best_photos(f'{SRC}/19[45]?-*.jpg'):
+    if is_excluded_source(fn): continue
     if year > 1954 or set(serial) == {'0'}: continue
     era = next(k for k, r in eras.items() if year in r)
     im = load(fn)

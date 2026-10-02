@@ -1,6 +1,6 @@
 {
  "name": "tin-tacey",
- "title": "1916-17 British Columbia Die Types (0-9) · J.R. Tacey & Sons",
+ "title": "1916-17 British Columbia Die Types (0-9) \u00b7 J.R. Tacey & Sons",
  "band": [
   0.03,
   0.98,
@@ -12,11 +12,6 @@
   0.95
  ],
  "photos": [
-  {
-   "file": ".cache/tin/1916-9034(XL).jpg",
-   "text": "9034",
-   "label": "1916 9-034"
-  },
   {
    "file": ".cache/tin/1916-9094.jpg",
    "text": "9094",

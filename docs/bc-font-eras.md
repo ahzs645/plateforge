@@ -20,7 +20,7 @@ averaged glyphs, photo overlays and the BCpl8s excerpts this survey is based on 
 | 1918–23 | Tacey | First embossed plates, made on equipment bought from Washington State; the dies closely match Washington's 1918–20 dies. Same dies in 1918, 1920 and 1923. | `bc-block-1918` |
 | 1924–27 | Tacey | New **slanted "oval or scroll" dies**, said to be inspired by Massachusetts; used through 1927. The 1926 "-26" resembles 1924's date. | `bc-tacey-1924` (traced) |
 | 1928–29 | Tacey | "New straighter dies". | `bc-straight-1928` (traced) |
-| 1930 | Thompson Heating & Ventilating | **One-and-done dies**, never used again (possibly sub-contracted); a small raised dot separates the groups. | `bc-thompson-1930`, `bc-legend-1930` (traced from seven plates; no 8 is photographed, so it is built from the traced 3) |
+| 1930 | Thompson Heating & Ventilating | **One-and-done dies**, never used again (possibly sub-contracted); a small raised dot separates the groups. | `bc-thompson-1930`, `bc-legend-1930` (committed master from seven plates; its 8 is synthesized from 3. New 48·244 source now supports a separate research 8) |
 | 1931–32 | Oakalla Prison (with Tacey's machinery) | Tacey's slanted dies reappear. | `bc-tacey-1924` (**1932 corrected** from the straight dies after checking photos) |
 | 1933–35 | Oakalla | Tacey's straight dies again; four-figure numbers carry a long leading bar. | `bc-straight-1928` (traced) |
 | 1936–39 | Oakalla | Slanted dies on the "slimline" plates, with the date stacked. 1937's date stamp was redesigned. New dies for 1938 copied the 1937 design so closely that they look identical. | `bc-tacey-1936` (traced); raised dot between groups |

@@ -1,6 +1,6 @@
 {
  "name": "tin-macdonald",
- "title": "1915-16 British Columbia Die Types (0-9) · MacDonald Manufacturing",
+ "title": "1915-16 British Columbia Die Types (0-9) \u00b7 MacDonald Manufacturing",
  "band": [
   0.03,
   0.98,
@@ -12,11 +12,6 @@
   0.95
  ],
  "photos": [
-  {
-   "file": ".cache/tin/1915-116925(XL).jpg",
-   "text": "116925",
-   "label": "1915 116-925"
-  },
   {
    "file": ".cache/tin/1915-142.jpg",
    "text": "142",
@@ -81,11 +76,6 @@
    "file": ".cache/tin/1915-3517.jpg",
    "text": "3517",
    "label": "1915 3-517"
-  },
-  {
-   "file": ".cache/tin/1915-3685(XL).jpg",
-   "text": "3685",
-   "label": "1915 3-685"
   },
   {
    "file": ".cache/tin/1915-4072(XL).jpg",

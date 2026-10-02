@@ -16,8 +16,10 @@ def add(kind, ch, soft):
     if nw > CAN * 2: return
     canvas[:, x0:x0 + nw] = g
     a = acc.setdefault((kind, ch), [0, 0]); a[0] = a[0] + canvas; a[1] += 1
+# A gallery also contains comparison plates from other jurisdictions.
+from source_review import is_excluded_source
 for year, serial, fn in best_photos(f'{SRC}/191[567]-*.jpg'):
-    if not serial.isdigit(): continue
+    if not serial.isdigit() or is_excluded_source(fn): continue
     im = load(fn)
     if im.shape[0] < 80 or im.shape[1] / im.shape[0] < 1.6: continue   # skip street photos
     im = trim(im); H, W, _ = im.shape

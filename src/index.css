@@ -603,6 +603,30 @@ kbd {
 .facts dd.mono {
   font-size: 12.5px;
 }
+.field .research-dies-check {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  color: var(--text);
+  cursor: pointer;
+}
+/* Not a text field: undo the .field input sizing. */
+.field .research-dies-check input {
+  flex: none;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  accent-color: var(--accent);
+  box-shadow: none;
+}
+.research-dies-note {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 12.5px;
+  line-height: 1.5;
+}
 .insp-note {
   margin-top: 12px;
   color: var(--muted);

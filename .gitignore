@@ -9,3 +9,15 @@ test-results/
 # Photo cache and intermediate bitmaps for scripts/trace-bc-dies
 scripts/trace-bc-dies/.cache/
 scripts/trace-bc-dies/out/
+
+# Intermediate Python bytecode from tracing tools
+scripts/trace-bc-dies/**/__pycache__/
+scripts/trace-bc-dies/__pycache__/
+
+# Lettering research history and review interface: archived outside the repo (see docs/bc-research-dies.md)
+docs/research/bc-lettering/review-package/
+docs/research/bc-lettering/continuation*/
+docs/research/bc-lettering/refinement-*/
+scripts/trace-bc-dies/review-package/
+scripts/trace-bc-dies/continuation*/
+scripts/trace-bc-dies/refinement-*/
