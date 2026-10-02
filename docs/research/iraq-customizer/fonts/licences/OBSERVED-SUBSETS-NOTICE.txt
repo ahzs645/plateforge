@@ -1,0 +1,20 @@
+legacy-sulaymaniyah
+Private critical study only; source photo reuse licence unverified. Do not publicly redistribute without rights review.
+Source: https://www.olavsplates.com/foto_i/irq_3296_front_close.jpg
+
+legacy-erbil
+Private critical study only; source photo reuse licence unverified. Do not publicly redistribute without rights review.
+Source: https://www.olavsplates.com/foto_i/irq_548306_close.jpg
+
+anbar-taxi
+CC BY-SA 3.0 derivative. Source photo: Dickelbers; smooth source-guided reconstruction and canonical normalization, modified 2026.
+Source: https://commons.wikimedia.org/wiki/File:Iraq_licenceplate.JPG
+
+utility-truck
+CC BY-SA 4.0 derivative. Source photo: Kurdistantolive; smooth source-guided reconstruction and canonical normalization, modified 2026.
+Source: https://commons.wikimedia.org/wiki/File:Erbil_Iraq_number_plate_truck_2015.jpg
+
+Anbar derived observed contours: CC BY-SA 3.0; https://creativecommons.org/licenses/by-sa/3.0/
+Truck derived observed contours: CC BY-SA 4.0; https://creativecommons.org/licenses/by-sa/4.0/
+Modifications: canonical normalization, damaged/occluded glyph exclusion, and font export.
+No source photographs are bundled here. No photographer endorsement is implied.

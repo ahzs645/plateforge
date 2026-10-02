@@ -21,3 +21,6 @@ docs/research/bc-lettering/refinement-*/
 scripts/trace-bc-dies/review-package/
 scripts/trace-bc-dies/continuation*/
 scripts/trace-bc-dies/refinement-*/
+
+# Preset renders from docs/research/iraq-customizer/render-presets.mjs
+docs/research/iraq-customizer/output/

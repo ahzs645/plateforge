@@ -1,0 +1,122 @@
+/** Paths use an upright, baseline-zero, 100-unit design space. Never width-fit individual glyphs. */
+export type IraqGlyphProvenance = 'observed' | 'candidate' | 'fallback' | 'unsupported';
+export type IraqMissingPolicy = 'strict' | 'fallback';
+export type IraqFontProfileId = 'legacy-erbil' | 'legacy-sulaymaniyah' | 'anbar-taxi' | 'utility-truck' | 'modern-eng' | 'modern-mtl' | 'naskh-candidate';
+export interface IraqInkBounds { x: number; y: number; width: number; height: number }
+export interface IraqGlyph {
+  character: string; path: string; advance: number; bounds: IraqInkBounds;
+  provenance: IraqGlyphProvenance; sourceId: string; note?: string; fillRule: 'evenodd' | 'nonzero';
+}
+export interface IraqWordmarkOutline extends IraqGlyph { wordmarkId: string; text: string }
+export interface IraqFontProfile {
+  id: IraqFontProfileId; label: string; coverage: string; provenance: IraqGlyphProvenance;
+  capHeight: number; baseline: number; glyphs: Record<string, IraqGlyph>;
+  wordmarks: Record<string, IraqWordmarkOutline>; notes: string[]; rights: string; sourceUrl: string;
+}
+export interface IraqWordmarkMetadata { id: string; label: string; text: string; kind: 'country' | 'governorate' | 'class'; note?: string }
+export interface IraqGlyphRun {
+  markup: string; warnings: string[]; bounds: IraqInkBounds; advance: number;
+  provenance: IraqGlyphProvenance[];
+}
+
+/* GENERATED_DATA */
+
+function escapeXml(value: string): string {
+  return value.replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[character]!));
+}
+function n(value: number): string { return String(Math.round(value * 10000) / 10000); }
+function assertCoordinates(x: number, baseline: number, capHeight: number, tracking = 0): void {
+  if (![x, baseline, capHeight, tracking].every(Number.isFinite) || capHeight <= 0) {
+    throw new RangeError('Glyph position, size and tracking must be finite; capHeight must be positive');
+  }
+}
+function canonicalCharacter(profile: IraqFontProfile, character: string): string {
+  const ascii = '0123456789'; const arabic = '٠١٢٣٤٥٦٧٨٩'; const persian = '۰۱۲۳۴۵۶۷۸۹';
+  let digit = ascii.indexOf(character);
+  if (digit < 0) digit = arabic.indexOf(character);
+  if (digit < 0) digit = persian.indexOf(character);
+  if (digit >= 0) return profile.id.startsWith('modern-') ? ascii[digit] : arabic[digit];
+  return profile.id.startsWith('modern-') ? character.toUpperCase() : character;
+}
+function union(bounds: IraqInkBounds | undefined, next: IraqInkBounds): IraqInkBounds {
+  if (!bounds) return { ...next };
+  const x = Math.min(bounds.x, next.x); const y = Math.min(bounds.y, next.y);
+  return { x, y, width: Math.max(bounds.x + bounds.width, next.x + next.width) - x, height: Math.max(bounds.y + bounds.height, next.y + next.height) - y };
+}
+function box(label: string, x: number, baseline: number, height: number, width = 62): { markup: string; bounds: IraqInkBounds; advance: number } {
+  const w = width * height / 100; const sw = Math.max(height * .016, .15);
+  const markup = `<g data-provenance="unsupported" aria-label="${escapeXml(label)}"><title>${escapeXml(label)}</title><rect x="${n(x + sw / 2)}" y="${n(baseline - height + sw / 2)}" width="${n(w - sw)}" height="${n(height - sw)}" fill="none" stroke="currentColor" stroke-width="${n(sw)}" stroke-dasharray="${n(height * .045)} ${n(height * .03)}"/><path d="M${n(x + w * .24)} ${n(baseline - height * .73)}L${n(x + w * .76)} ${n(baseline - height * .27)}M${n(x + w * .76)} ${n(baseline - height * .73)}L${n(x + w * .24)} ${n(baseline - height * .27)}" fill="none" stroke="currentColor" stroke-width="${n(sw)}"/></g>`;
+  return { markup, bounds: { x, y: baseline - height, width: w, height }, advance: w + height * .08 };
+}
+function paint(glyph: IraqGlyph, x: number, baseline: number, scale: number, provenance: IraqGlyphProvenance): { markup: string; bounds: IraqInkBounds } {
+  return {
+    markup: `<g transform="translate(${n(x)} ${n(baseline)}) scale(${n(scale)})" data-provenance="${provenance}" data-source="${escapeXml(glyph.sourceId)}"><title>${escapeXml(glyph.character)} · ${provenance}${glyph.note ? ` · ${escapeXml(glyph.note)}` : ''}</title><path fill-rule="${glyph.fillRule}" d="${glyph.path}"/></g>`,
+    bounds: { x: x + glyph.bounds.x * scale, y: baseline + glyph.bounds.y * scale, width: glyph.bounds.width * scale, height: glyph.bounds.height * scale },
+  };
+}
+function profileNotice(profile: IraqFontProfile): string[] {
+  if (profile.id.startsWith('modern-')) return [`${profile.label}: licensed FE-style candidate, not an authenticated Iraqi die font`];
+  if (profile.id === 'naskh-candidate') return ['Noto Naskh Arabic Bold is a labelled typography candidate, not an observed Iraqi plate die'];
+  if (profile.rights.startsWith('Private')) return ['Observed source subset: source-image redistribution rights are unverified; private study only'];
+  return [];
+}
+/**
+ * Set digits/isolated series letters left-to-right. This is not an Arabic paragraph shaper.
+ * Arabic/Persian/ASCII numeral input is mapped into the selected profile's script.
+ * Strict missing glyphs are visible crossed boxes; fallback uses only labelled OFL Naskh outlines.
+ * Tracking is in output SVG units. Parent may uniformly scale the whole run to fit a layout.
+ */
+export function renderGlyphRun(profileId: IraqFontProfileId | string, text: string, x: number, baseline: number, capHeight: number, tracking = 0, missingPolicy: IraqMissingPolicy = 'strict'): IraqGlyphRun {
+  assertCoordinates(x, baseline, capHeight, tracking);
+  const profile = IRAQ_FONT_PROFILES[profileId as IraqFontProfileId];
+  if (!profile) throw new RangeError(`Unknown Iraq font profile: ${profileId}`);
+  const scale = capHeight / profile.capHeight;
+  const warnings = profileNotice(profile); const provenance: IraqGlyphProvenance[] = [];
+  let markup = ''; let penX = x; let bounds: IraqInkBounds | undefined;
+  // Only the documented connected Heh class token is atomic; arbitrary Arabic words need renderWordmark.
+  const characters = text.match(/هـ|[^]/gu) ?? [];
+  characters.forEach((character, index) => {
+    if (/\s/u.test(character)) { penX += capHeight * .34; if (index < characters.length - 1) penX += tracking; return; }
+    const canonical = canonicalCharacter(profile, character);
+    let glyph = profile.glyphs[canonical]; let origin = glyph?.provenance;
+    if (!glyph && missingPolicy === 'fallback') {
+      const fallbackChar = canonicalCharacter(IRAQ_FONT_PROFILES['naskh-candidate'], character);
+      glyph = IRAQ_FONT_PROFILES['naskh-candidate'].glyphs[fallbackChar];
+      if (glyph) { origin = 'fallback'; warnings.push(`“${character}” is unsupported in ${profile.label}; using labelled Noto Naskh Arabic Bold fallback`); }
+    }
+    if (glyph && origin) {
+      const rendered = paint(glyph, penX, baseline, scale, origin);
+      markup += rendered.markup; bounds = union(bounds, rendered.bounds); penX += glyph.advance * scale; provenance.push(origin);
+    } else {
+      const rendered = box(`Unsupported “${character}” in ${profile.label}`, penX, baseline, capHeight);
+      markup += rendered.markup; bounds = union(bounds, rendered.bounds); penX += rendered.advance; provenance.push('unsupported');
+      warnings.push(`“${character}” is unsupported in ${profile.label}; shown as a crossed box`);
+    }
+    if (index < characters.length - 1) penX += tracking;
+  });
+  return { markup, warnings: [...new Set(warnings)], bounds: bounds ?? { x, y: baseline, width: 0, height: 0 }, advance: penX - x, provenance };
+}
+/**
+ * Render a complete joined word as one proportional path. capHeight is its total ink height
+ * and baseline is its bottom edge. It must never be split into PUA/general Arabic letters.
+ */
+export function renderWordmark(profileId: IraqFontProfileId | string, wordmarkId: string, x: number, baseline: number, capHeight: number, missingPolicy: IraqMissingPolicy = 'strict'): IraqGlyphRun {
+  assertCoordinates(x, baseline, capHeight);
+  const profile = IRAQ_FONT_PROFILES[profileId as IraqFontProfileId];
+  if (!profile) throw new RangeError(`Unknown Iraq font profile: ${profileId}`);
+  let wordmark = profile.wordmarks[wordmarkId]; let origin = wordmark?.provenance;
+  const metadata = IRAQ_WORDMARKS[wordmarkId]; const warnings: string[] = [];
+  if (!wordmark && missingPolicy === 'fallback' && metadata) {
+    wordmark = IRAQ_NASKH_WORDMARKS[wordmarkId]; origin = 'fallback';
+    warnings.push(`${metadata.label} wordmark is not observed in ${profile.label}; using labelled, pre-shaped Noto Naskh Arabic Bold fallback`);
+  }
+  if (!wordmark || !origin) {
+    const rendered = box(`Unsupported wordmark: ${metadata?.label ?? wordmarkId}`, x, baseline, capHeight, 140);
+    return { ...rendered, warnings: [`${metadata?.label ?? wordmarkId} wordmark is unsupported in ${profile.label}; shown as a crossed box`], provenance: ['unsupported'] };
+  }
+  if (origin === 'candidate') warnings.push(`${metadata?.label ?? wordmarkId} uses pre-shaped Noto Naskh Arabic Bold candidate lettering, not a source-observed wordmark`);
+  if (wordmark.note) warnings.push(wordmark.note);
+  if (origin === 'observed') warnings.push(...profileNotice(profile));
+  const scale = capHeight / 100; const rendered = paint(wordmark, x, baseline, scale, origin);
+  return { ...rendered, warnings: [...new Set(warnings)], advance: wordmark.advance * scale, provenance: [origin] };
+}

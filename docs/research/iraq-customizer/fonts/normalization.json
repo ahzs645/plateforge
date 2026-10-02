@@ -1,0 +1,393 @@
+[
+  {
+    "profile": "legacy-sulaymaniyah",
+    "character": "٣",
+    "source_id": "iq-legacy-sulaymaniyah-3296/serial-3",
+    "scale": 1.0431054402329507,
+    "matrix": [
+      1.0431054402329507,
+      0,
+      0,
+      1.0431054402329507,
+      -150.3796051544767,
+      -153.33649971424376
+    ],
+    "source_bounds": [
+      148.0,
+      50.90298881053766,
+      222.92782289339303,
+      147.0
+    ],
+    "shared_source_cap_height": 95.86758552200396,
+    "shared_source_baseline": 145.0,
+    "zero_vertical_position_preserved": false
+  },
+  {
+    "profile": "legacy-sulaymaniyah",
+    "character": "٢",
+    "source_id": "iq-legacy-sulaymaniyah-3296/serial-2",
+    "scale": 1.0431054402329507,
+    "matrix": [
+      1.0431054402329507,
+      0,
+      0,
+      1.0431054402329507,
+      -247.94656094857302,
+      -151.25028883377786
+    ],
+    "source_bounds": [
+      241.5350847871211,
+      49.36184014545441,
+      293.0,
+      145.0
+    ],
+    "shared_source_cap_height": 95.86758552200396,
+    "shared_source_baseline": 145.0,
+    "zero_vertical_position_preserved": false
+  },
+  {
+    "profile": "legacy-sulaymaniyah",
+    "character": "٩",
+    "source_id": "iq-legacy-sulaymaniyah-3296/serial-9",
+    "scale": 1.0431054402329507,
+    "matrix": [
+      1.0431054402329507,
+      0,
+      0,
+      1.0431054402329507,
+      -318.5528681766381,
+      -151.25028883377786
+    ],
+    "source_bounds": [
+      309.2236467529153,
+      48.797875968307615,
+      377.0,
+      145.0
+    ],
+    "shared_source_cap_height": 95.86758552200396,
+    "shared_source_baseline": 145.0,
+    "zero_vertical_position_preserved": false
+  },
+  {
+    "profile": "legacy-sulaymaniyah",
+    "character": "٦",
+    "source_id": "iq-legacy-sulaymaniyah-3296/serial-6",
+    "scale": 1.0431054402329507,
+    "matrix": [
+      1.0431054402329507,
+      0,
+      0,
+      1.0431054402329507,
+      -405.00745614272535,
+      -148.120972513079
+    ],
+    "source_bounds": [
+      392.1055728090001,
+      46.68553763596267,
+      469.0,
+      142.0
+    ],
+    "shared_source_cap_height": 95.86758552200396,
+    "shared_source_baseline": 145.0,
+    "zero_vertical_position_preserved": false
+  },
+  {
+    "profile": "legacy-erbil",
+    "character": "٥",
+    "source_id": "iq-legacy-erbil-548306/serial-5",
+    "scale": 1.0626772714371264,
+    "matrix": [
+      1.0626772714371264,
+      0,
+      0,
+      1.0626772714371264,
+      -68.65259825539668,
+      -150.74836150529524
+    ],
+    "source_bounds": [
+      68.36750931648696,
+      46.95784936574878,
+      126.88,
+      141.85714285714286
+    ],
+    "shared_source_cap_height": 94.10194674133155,
+    "shared_source_baseline": 141.85714285714286,
+    "zero_vertical_position_preserved": false
+  },
+  {
+    "profile": "legacy-erbil",
+    "character": "٤",
+    "source_id": "iq-legacy-erbil-548306/serial-4",
+    "scale": 1.0626772714371264,
+    "matrix": [
+      1.0626772714371264,
+      0,
+      0,
+      1.0626772714371264,
+      -153.7336381856506,
+      -150.99236545774434
+    ],
+    "source_bounds": [
+      148.43042419862553,
+      46.71751101702469,
+      205.15541752799933,
+      142.08675532652327
+    ],
+    "shared_source_cap_height": 94.10194674133155,
+    "shared_source_baseline": 141.85714285714286,
+    "zero_vertical_position_preserved": false
+  },
+  {
+    "profile": "legacy-erbil",
+    "character": "٨",
+    "source_id": "iq-legacy-erbil-548306/serial-8",
+    "scale": 1.0626772714371264,
+    "matrix": [
+      1.0626772714371264,
+      0,
+      0,
+      1.0626772714371264,
+      -238.24735995283203,
+      -150.27791840486904
+    ],
+    "source_bounds": [
+      227.95948164509574,
+      47.3125,
+      283.94210825976677,
+      141.41444674133155
+    ],
+    "shared_source_cap_height": 94.10194674133155,
+    "shared_source_baseline": 141.85714285714286,
+    "zero_vertical_position_preserved": false
+  },
+  {
+    "profile": "legacy-erbil",
+    "character": "٣",
+    "source_id": "iq-legacy-erbil-548306/serial-3",
+    "scale": 1.0626772714371264,
+    "matrix": [
+      1.0626772714371264,
+      0,
+      0,
+      1.0626772714371264,
+      -320.3431498631245,
+      -150.805233443863
+    ],
+    "source_bounds": [
+      305.2132181433546,
+      48.0,
+      363.26012958872604,
+      141.91066045848467
+    ],
+    "shared_source_cap_height": 94.10194674133155,
+    "shared_source_baseline": 141.85714285714286,
+    "zero_vertical_position_preserved": false
+  },
+  {
+    "profile": "legacy-erbil",
+    "character": "٠",
+    "source_id": "iq-legacy-erbil-548306/serial-0",
+    "scale": 1.0626772714371264,
+    "matrix": [
+      1.0626772714371264,
+      0,
+      0,
+      1.0626772714371264,
+      -414.4291756283685,
+      -150.74836150529524
+    ],
+    "source_bounds": [
+      393.75,
+      71.60612308660187,
+      432.25,
+      110.25
+    ],
+    "shared_source_cap_height": 94.10194674133155,
+    "shared_source_baseline": 141.85714285714286,
+    "zero_vertical_position_preserved": true
+  },
+  {
+    "profile": "legacy-erbil",
+    "character": "٦",
+    "source_id": "iq-legacy-erbil-548306/serial-6",
+    "scale": 1.0626772714371264,
+    "matrix": [
+      1.0626772714371264,
+      0,
+      0,
+      1.0626772714371264,
+      -485.696253664212,
+      -150.70636938855466
+    ],
+    "source_bounds": [
+      460.81370781739264,
+      48.48516283298893,
+      518.0833130378007,
+      141.8176274578121
+    ],
+    "shared_source_cap_height": 94.10194674133155,
+    "shared_source_baseline": 141.85714285714286,
+    "zero_vertical_position_preserved": false
+  },
+  {
+    "profile": "anbar-taxi",
+    "character": "٥",
+    "source_id": "iq-2001-anbar-taxi/digit-5",
+    "scale": 0.3277044589794177,
+    "matrix": [
+      0.3277044589794177,
+      0,
+      0,
+      0.3277044589794177,
+      -308.3535532291006,
+      -134.00369259302855
+    ],
+    "source_bounds": [
+      953.15625,
+      103.78231596507439,
+      1059.6552484626063,
+      408.91629308420545
+    ],
+    "shared_source_cap_height": 305.15300375049446,
+    "shared_source_baseline": 409.26012361360597,
+    "zero_vertical_position_preserved": false
+  },
+  {
+    "profile": "anbar-taxi",
+    "character": "٢",
+    "source_id": "iq-2001-anbar-taxi/digit-2",
+    "scale": 0.3277044589794177,
+    "matrix": [
+      0.3277044589794177,
+      0,
+      0,
+      0.3277044589794177,
+      -346.0144223306477,
+      -134.0728788409662
+    ],
+    "source_bounds": [
+      1068.0795233019128,
+      103.95538661611165,
+      1174.0,
+      409.12741699796953
+    ],
+    "shared_source_cap_height": 305.15300375049446,
+    "shared_source_baseline": 409.26012361360597,
+    "zero_vertical_position_preserved": false
+  },
+  {
+    "profile": "anbar-taxi",
+    "character": "١",
+    "source_id": "iq-2001-anbar-taxi/digit-1",
+    "scale": 0.3277044589794177,
+    "matrix": [
+      0.3277044589794177,
+      0,
+      0,
+      0.3277044589794177,
+      -387.60682848040415,
+      -134.15985594032645
+    ],
+    "source_bounds": [
+      1195.0,
+      104.0,
+      1271.0298455529557,
+      409.39283022924235
+    ],
+    "shared_source_cap_height": 305.15300375049446,
+    "shared_source_baseline": 409.26012361360597,
+    "zero_vertical_position_preserved": false
+  },
+  {
+    "profile": "anbar-taxi",
+    "character": "٩",
+    "source_id": "iq-2001-anbar-taxi/digit-9",
+    "scale": 0.3277044589794177,
+    "matrix": [
+      0.3277044589794177,
+      0,
+      0,
+      0.3277044589794177,
+      -420.46540957882917,
+      -134.68653264054066
+    ],
+    "source_bounds": [
+      1295.2689472116363,
+      112.51189827585156,
+      1399.0,
+      411.0
+    ],
+    "shared_source_cap_height": 305.15300375049446,
+    "shared_source_baseline": 409.26012361360597,
+    "zero_vertical_position_preserved": false
+  },
+  {
+    "profile": "utility-truck",
+    "character": "١",
+    "source_id": "truck-131098/digit-1-third",
+    "scale": 0.35501120504115913,
+    "matrix": [
+      0.35501120504115913,
+      0,
+      0,
+      0.35501120504115913,
+      -224.76922052852294,
+      -142.64350218553776
+    ],
+    "source_bounds": [
+      644.4,
+      119.0,
+      723.1662786552928,
+      401.8
+    ],
+    "shared_source_cap_height": 281.68125,
+    "shared_source_baseline": 401.18125,
+    "zero_vertical_position_preserved": false
+  },
+  {
+    "profile": "utility-truck",
+    "character": "٣",
+    "source_id": "truck-131098/digit-3",
+    "scale": 0.35501120504115913,
+    "matrix": [
+      0.35501120504115913,
+      0,
+      0,
+      0.35501120504115913,
+      -133.997926988142,
+      -142.2041758192993
+    ],
+    "source_bounds": [
+      388.7142857142857,
+      120.0,
+      569.5714285714286,
+      400.5625
+    ],
+    "shared_source_cap_height": 281.68125,
+    "shared_source_baseline": 401.18125,
+    "zero_vertical_position_preserved": false
+  },
+  {
+    "profile": "utility-truck",
+    "character": "٠",
+    "source_id": "truck-131098/digit-0",
+    "scale": 0.35501120504115913,
+    "matrix": [
+      0.35501120504115913,
+      0,
+      0,
+      0.35501120504115913,
+      -300.50279268757606,
+      -142.4238390024185
+    ],
+    "source_bounds": [
+      857.7272727272727,
+      221.71428571428572,
+      948.2727272727273,
+      308.5
+    ],
+    "shared_source_cap_height": 281.68125,
+    "shared_source_baseline": 401.18125,
+    "zero_vertical_position_preserved": true
+  }
+]
