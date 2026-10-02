@@ -45,7 +45,7 @@ try {
   assert(await page.locator('.timeline-node').count() >= 42);
   const metadata = await page.locator('.plate-preview metadata').evaluate((e) => JSON.parse(e.textContent));
   assert.equal(metadata.baseYear, 1968);
-  assert(['legend-approximation', 'specimen-matched'].includes(metadata.accuracy.dies), 'default B.C. lettering uses a source die');
+  assert(['legend-approximation', 'specimen-matched', 'research-candidate'].includes(metadata.accuracy.dies), 'default B.C. lettering uses a source die');
   await page.screenshot({ path: 'test-results/reference-library/bc-1968-editor.png', fullPage: false });
   await page.locator('.timeline-node[title="1979 base · AAA block"]').click();
   await page.locator('#field-serial').fill('ABC-123');

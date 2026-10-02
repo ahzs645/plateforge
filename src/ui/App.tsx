@@ -12,7 +12,6 @@ import { ChevronDown, CopyIcon, DownloadIcon, Logo, MonitorIcon, MoonIcon, Refre
 import { Inspector } from './Inspector';
 import { PlateView } from './PlateView';
 import { RegionPicker } from './RegionPicker';
-import { useResearchDiesVersion } from './ResearchDiesToggle';
 import { useTheme } from './useTheme';
 
 const ReferenceLibrary = lazy(() => import('./ReferenceLibrary').then((module) => ({ default: module.ReferenceLibrary })));
@@ -53,7 +52,6 @@ export function App() {
   const previewRef = useRef<HTMLDivElement>(null);
   const toastTimer = useRef<number>(undefined);
   const fontsVersion = useFontsVersion();
-  const researchVersion = useResearchDiesVersion();
   const { theme, cycle } = useTheme();
   const plate: Plate = makePlate(region, format, parts);
   const family = familyOf(region, format);
@@ -148,7 +146,7 @@ export function App() {
       </div>
     </header>
     <div className="mobile-tabs tabs" role="tablist" aria-label="Mode">{VIEWS.map((v) => <button key={v} role="tab" aria-selected={view === v} onClick={() => setView(v)}>{v === 'single' ? 'Plate' : VIEW_LABELS[v]}</button>)}</div>
-    <main className="workspace" key={`${fontsVersion}:${researchVersion}`}>
+    <main className="workspace" key={fontsVersion}>
       {view === 'library' ? <Suspense fallback={<p role="status">Loading reference library…</p>}><ReferenceLibrary regions={regions} onOpenFormat={openEditor} /></Suspense>
         : view === 'gallery' ? <GalleryView regions={regions} region={region} format={format} onOpen={openEditor} onSelectRegion={(id) => select(id)} />
         : view === 'single' ? <>
