@@ -1,0 +1,1506 @@
+{
+  "title": "Iraq frozen 27-recipe evidence coverage",
+  "frozenAt": "2026-10-02T15:03:17Z",
+  "auditCompletedAt": "2026-10-02",
+  "scope": "Exactly 27 existing Iraqi recipe snapshots; seven already-inspected photographic specimens; finite additional classes already named in the supplied catalogue or supplied Wikipedia page. No new-era or new-photo search.",
+  "recipeSnapshotSHA256": "2ec4e0d851eeee884c20066fa2f275ff104f6e22fb9fcb074c232d992fc024b9",
+  "counts": {
+    "recipes": 27,
+    "knownAdditionalCategories": 14,
+    "photographs": 7,
+    "recipeEvidenceTiers": {
+      "diagram_only": 22,
+      "unsupported": 1,
+      "matching_class_photograph": 3,
+      "text_only": 1
+    },
+    "verifiedFullPhysicalDieAlphabets": 0
+  },
+  "sourceWarnings": [
+    "WorldLicensePlates requested source could not be inspected: browser HTTP redirected HTTPS and returned 502 Certificate verify failed: self-signed certificate; no bypass attempted.",
+    "Wikipedia schematics are layout illustrations, not manufacturing die masters.",
+    "1982 versus 1988 legacy introduction conflict: Olav/Matriculasdelmundo versus Wikipedia.",
+    "2008 versus 2010 bilingual rollout conflict: Wikipedia versus Matriculasdelmundo; keep both until primary evidence.",
+    "Rudaw dated 25 April 2022 quotes first new KRG plates issued that day; general private conversions after Eid. Wikipedia transition formula incorrectly differs from Rudaw in digit position."
+  ],
+  "dispositionDefinitions": {
+    "matching_class_photograph": "At least one of the frozen seven physical photos matches the class and broad layout family; it does not validate every recipe character, province, or default.",
+    "diagram_only": "A user-created source diagram supports the category or family, sometimes contradicting current rendering; its lettering is illustration evidence only.",
+    "text_only": "The category/color is named in text, without an inspected matching diagram/photo in the frozen scope.",
+    "unsupported": "The exact current recipe arrangement is not supported by a matching photograph or source diagram."
+  },
+  "recipes": [
+    {
+      "id": "federal-modern-private",
+      "label": "Federal · 2024 · Private",
+      "renderingVariants": [
+        {
+          "id": "long",
+          "drawingUnits": [
+            520,
+            110
+          ],
+          "dimensionEvidence": "Wikipedia text states this nominal size; no measurement of the photographed plate.",
+          "matchingPhotoIDs": [],
+          "sourceDiagramIDs": [
+            "wiki-diagram-4"
+          ]
+        },
+        {
+          "id": "compact",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "dimensionEvidence": "Wikipedia text names a small size. Photograph is a specimen-pixel reference, not a millimetre calibration.",
+          "matchingPhotoIDs": [],
+          "sourceDiagramIDs": [],
+          "disposition": "No matching-class compact photo in the frozen seven; no compact die validation. Do not imply that a long diagram proves compact spacing."
+        }
+      ],
+      "evidenceTier": "diagram_only",
+      "currentRecipeAssessment": "Evidence supports class/layout family, not current glyphs or arbitrary sample registration.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [
+        "iq-modern-krg-long",
+        "iq-modern-krg-compact"
+      ],
+      "diagramIDs": [
+        "wiki-diagram-4"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_Private.png"
+      ],
+      "corrections": [],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence.",
+        "Both actual modern photos are KRG private. They do not establish federal or other-class die identity."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "15",
+        "letter": "N",
+        "serial": "18733",
+        "layout": "long"
+      }
+    },
+    {
+      "id": "federal-modern-hire",
+      "label": "Federal · 2024 · Taxi / bus / for hire",
+      "renderingVariants": [
+        {
+          "id": "long",
+          "drawingUnits": [
+            520,
+            110
+          ],
+          "dimensionEvidence": "Wikipedia text states this nominal size; no measurement of the photographed plate.",
+          "matchingPhotoIDs": [],
+          "sourceDiagramIDs": [
+            "wiki-diagram-8"
+          ]
+        },
+        {
+          "id": "compact",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "dimensionEvidence": "Wikipedia text names a small size. Photograph is a specimen-pixel reference, not a millimetre calibration.",
+          "matchingPhotoIDs": [],
+          "sourceDiagramIDs": [],
+          "disposition": "No matching-class compact photo in the frozen seven; no compact die validation. Do not imply that a long diagram proves compact spacing."
+        }
+      ],
+      "evidenceTier": "diagram_only",
+      "currentRecipeAssessment": "Evidence supports class/layout family, not current glyphs or arbitrary sample registration.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [
+        "iq-modern-krg-long",
+        "iq-modern-krg-compact"
+      ],
+      "diagramIDs": [
+        "wiki-diagram-8"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_Bus_and_Taxi.png"
+      ],
+      "corrections": [
+        "Cited modern illustration has black IRQ/KR strip lettering; current white stripInk is inconsistent. Class strip hue in the diagram is illustrative, not measured paint."
+      ],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence.",
+        "Both actual modern photos are KRG private. They do not establish federal or other-class die identity."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "28",
+        "letter": "Q",
+        "serial": "17539",
+        "layout": "long"
+      }
+    },
+    {
+      "id": "federal-modern-government",
+      "label": "Federal · 2024 · Government",
+      "renderingVariants": [
+        {
+          "id": "long",
+          "drawingUnits": [
+            520,
+            110
+          ],
+          "dimensionEvidence": "Wikipedia text states this nominal size; no measurement of the photographed plate.",
+          "matchingPhotoIDs": [],
+          "sourceDiagramIDs": [
+            "wiki-diagram-12"
+          ]
+        },
+        {
+          "id": "compact",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "dimensionEvidence": "Wikipedia text names a small size. Photograph is a specimen-pixel reference, not a millimetre calibration.",
+          "matchingPhotoIDs": [],
+          "sourceDiagramIDs": [],
+          "disposition": "No matching-class compact photo in the frozen seven; no compact die validation. Do not imply that a long diagram proves compact spacing."
+        }
+      ],
+      "evidenceTier": "diagram_only",
+      "currentRecipeAssessment": "Evidence supports class/layout family, not current glyphs or arbitrary sample registration.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [
+        "iq-modern-krg-long",
+        "iq-modern-krg-compact"
+      ],
+      "diagramIDs": [
+        "wiki-diagram-12"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_Governmental.png"
+      ],
+      "corrections": [
+        "Cited modern illustration has black IRQ/KR strip lettering; current white stripInk is inconsistent. Class strip hue in the diagram is illustrative, not measured paint."
+      ],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence.",
+        "Both actual modern photos are KRG private. They do not establish federal or other-class die identity."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "15",
+        "letter": "Z",
+        "serial": "41083",
+        "layout": "long"
+      }
+    },
+    {
+      "id": "federal-modern-commercial",
+      "label": "Federal · 2024 · Commercial / goods",
+      "renderingVariants": [
+        {
+          "id": "long",
+          "drawingUnits": [
+            520,
+            110
+          ],
+          "dimensionEvidence": "Wikipedia text states this nominal size; no measurement of the photographed plate.",
+          "matchingPhotoIDs": [],
+          "sourceDiagramIDs": [
+            "wiki-diagram-16"
+          ]
+        },
+        {
+          "id": "compact",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "dimensionEvidence": "Wikipedia text names a small size. Photograph is a specimen-pixel reference, not a millimetre calibration.",
+          "matchingPhotoIDs": [],
+          "sourceDiagramIDs": [],
+          "disposition": "No matching-class compact photo in the frozen seven; no compact die validation. Do not imply that a long diagram proves compact spacing."
+        }
+      ],
+      "evidenceTier": "diagram_only",
+      "currentRecipeAssessment": "Evidence supports class/layout family, not current glyphs or arbitrary sample registration.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [
+        "iq-modern-krg-long",
+        "iq-modern-krg-compact"
+      ],
+      "diagramIDs": [
+        "wiki-diagram-16"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_Truck.png"
+      ],
+      "corrections": [],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence.",
+        "Both actual modern photos are KRG private. They do not establish federal or other-class die identity."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "25",
+        "letter": "R",
+        "serial": "15272",
+        "layout": "long"
+      }
+    },
+    {
+      "id": "federal-modern-agricultural",
+      "label": "Federal · 2024 · Agricultural",
+      "renderingVariants": [
+        {
+          "id": "long",
+          "drawingUnits": [
+            520,
+            110
+          ],
+          "dimensionEvidence": "Wikipedia text states this nominal size; no measurement of the photographed plate.",
+          "matchingPhotoIDs": [],
+          "sourceDiagramIDs": [
+            "wiki-diagram-20"
+          ]
+        },
+        {
+          "id": "compact",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "dimensionEvidence": "Wikipedia text names a small size. Photograph is a specimen-pixel reference, not a millimetre calibration.",
+          "matchingPhotoIDs": [],
+          "sourceDiagramIDs": [],
+          "disposition": "No matching-class compact photo in the frozen seven; no compact die validation. Do not imply that a long diagram proves compact spacing."
+        }
+      ],
+      "evidenceTier": "diagram_only",
+      "currentRecipeAssessment": "Evidence supports class/layout family, not current glyphs or arbitrary sample registration.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [
+        "iq-modern-krg-long",
+        "iq-modern-krg-compact"
+      ],
+      "diagramIDs": [
+        "wiki-diagram-20"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_Agricultural.png"
+      ],
+      "corrections": [
+        "Cited modern illustration has black IRQ/KR strip lettering; current white stripInk is inconsistent. Class strip hue in the diagram is illustrative, not measured paint."
+      ],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence.",
+        "Both actual modern photos are KRG private. They do not establish federal or other-class die identity."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "29",
+        "letter": "H",
+        "serial": "45841",
+        "layout": "long"
+      }
+    },
+    {
+      "id": "federal-modern-temporary",
+      "label": "Federal · 2024 · Temporary",
+      "renderingVariants": [
+        {
+          "id": "long",
+          "drawingUnits": [
+            520,
+            110
+          ],
+          "dimensionEvidence": "Wikipedia text states this nominal size; no measurement of the photographed plate.",
+          "matchingPhotoIDs": [],
+          "sourceDiagramIDs": []
+        },
+        {
+          "id": "compact",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "dimensionEvidence": "Wikipedia text names a small size. Photograph is a specimen-pixel reference, not a millimetre calibration.",
+          "matchingPhotoIDs": [],
+          "sourceDiagramIDs": [],
+          "disposition": "No matching-class compact photo in the frozen seven; no compact die validation. Do not imply that a long diagram proves compact spacing."
+        }
+      ],
+      "evidenceTier": "unsupported",
+      "currentRecipeAssessment": "Unsupported recolor of the ordinary modern pattern; no matching frozen photograph.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [
+        "iq-modern-krg-long",
+        "iq-modern-krg-compact"
+      ],
+      "diagramIDs": [],
+      "diagramURLs": [],
+      "corrections": [
+        "Do not present GG + letter + serial recolored red as source-verified temporary. The KRG diagram shows 21-22 above a serial in a compact panel with IRQ/KR strip, not the ordinary modern pattern."
+      ],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence.",
+        "Both actual modern photos are KRG private. They do not establish federal or other-class die identity.",
+        "The modern table has no dedicated federal temporary illustration. The KRG diagram cannot establish a federal format."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "20",
+        "letter": "F",
+        "serial": "30066",
+        "layout": "long"
+      }
+    },
+    {
+      "id": "kr-modern-private",
+      "label": "Kurdistan · 2022 · Private",
+      "renderingVariants": [
+        {
+          "id": "long",
+          "drawingUnits": [
+            520,
+            110
+          ],
+          "dimensionEvidence": "Wikipedia text states this nominal size; no measurement of the photographed plate.",
+          "matchingPhotoIDs": [
+            "iq-modern-krg-long"
+          ],
+          "sourceDiagramIDs": [
+            "wiki-diagram-6"
+          ]
+        },
+        {
+          "id": "compact",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "dimensionEvidence": "Wikipedia text names a small size. Photograph is a specimen-pixel reference, not a millimetre calibration.",
+          "matchingPhotoIDs": [
+            "iq-modern-krg-compact"
+          ],
+          "sourceDiagramIDs": [],
+          "disposition": "Actual KRG private compact reconstructed in photographic collection."
+        }
+      ],
+      "evidenceTier": "matching_class_photograph",
+      "currentRecipeAssessment": "Evidence supports class/layout family, not current glyphs or arbitrary sample registration.",
+      "matchingClassPhotoIDs": [
+        "iq-modern-krg-long",
+        "iq-modern-krg-compact"
+      ],
+      "relatedNonMatchingPhotoIDs": [],
+      "diagramIDs": [
+        "wiki-diagram-6"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_Private.png"
+      ],
+      "corrections": [],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "24",
+        "letter": "C",
+        "serial": "82716",
+        "layout": "long"
+      }
+    },
+    {
+      "id": "kr-modern-hire",
+      "label": "Kurdistan · 2022 · Taxi / bus / for hire",
+      "renderingVariants": [
+        {
+          "id": "long",
+          "drawingUnits": [
+            520,
+            110
+          ],
+          "dimensionEvidence": "Wikipedia text states this nominal size; no measurement of the photographed plate.",
+          "matchingPhotoIDs": [],
+          "sourceDiagramIDs": [
+            "wiki-diagram-10"
+          ]
+        },
+        {
+          "id": "compact",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "dimensionEvidence": "Wikipedia text names a small size. Photograph is a specimen-pixel reference, not a millimetre calibration.",
+          "matchingPhotoIDs": [],
+          "sourceDiagramIDs": [],
+          "disposition": "No matching-class compact photo in the frozen seven; no compact die validation. Do not imply that a long diagram proves compact spacing."
+        }
+      ],
+      "evidenceTier": "diagram_only",
+      "currentRecipeAssessment": "Evidence supports class/layout family, not current glyphs or arbitrary sample registration.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [
+        "iq-modern-krg-long",
+        "iq-modern-krg-compact"
+      ],
+      "diagramIDs": [
+        "wiki-diagram-10"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_Bus_and_Taxi.png"
+      ],
+      "corrections": [
+        "Cited modern illustration has black IRQ/KR strip lettering; current white stripInk is inconsistent. Class strip hue in the diagram is illustrative, not measured paint."
+      ],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "22",
+        "letter": "H",
+        "serial": "26987",
+        "layout": "long"
+      }
+    },
+    {
+      "id": "kr-modern-government",
+      "label": "Kurdistan · 2022 · Government",
+      "renderingVariants": [
+        {
+          "id": "long",
+          "drawingUnits": [
+            520,
+            110
+          ],
+          "dimensionEvidence": "Wikipedia text states this nominal size; no measurement of the photographed plate.",
+          "matchingPhotoIDs": [],
+          "sourceDiagramIDs": [
+            "wiki-diagram-14"
+          ]
+        },
+        {
+          "id": "compact",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "dimensionEvidence": "Wikipedia text names a small size. Photograph is a specimen-pixel reference, not a millimetre calibration.",
+          "matchingPhotoIDs": [],
+          "sourceDiagramIDs": [],
+          "disposition": "No matching-class compact photo in the frozen seven; no compact die validation. Do not imply that a long diagram proves compact spacing."
+        }
+      ],
+      "evidenceTier": "diagram_only",
+      "currentRecipeAssessment": "Evidence supports class/layout family, not current glyphs or arbitrary sample registration.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [
+        "iq-modern-krg-long",
+        "iq-modern-krg-compact"
+      ],
+      "diagramIDs": [
+        "wiki-diagram-14"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_Governmental.png"
+      ],
+      "corrections": [
+        "Cited modern illustration has black IRQ/KR strip lettering; current white stripInk is inconsistent. Class strip hue in the diagram is illustrative, not measured paint."
+      ],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "23",
+        "letter": "M",
+        "serial": "73542",
+        "layout": "long"
+      }
+    },
+    {
+      "id": "kr-modern-commercial",
+      "label": "Kurdistan · 2022 · Commercial / goods",
+      "renderingVariants": [
+        {
+          "id": "long",
+          "drawingUnits": [
+            520,
+            110
+          ],
+          "dimensionEvidence": "Wikipedia text states this nominal size; no measurement of the photographed plate.",
+          "matchingPhotoIDs": [],
+          "sourceDiagramIDs": [
+            "wiki-diagram-18"
+          ]
+        },
+        {
+          "id": "compact",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "dimensionEvidence": "Wikipedia text names a small size. Photograph is a specimen-pixel reference, not a millimetre calibration.",
+          "matchingPhotoIDs": [],
+          "sourceDiagramIDs": [],
+          "disposition": "No matching-class compact photo in the frozen seven; no compact die validation. Do not imply that a long diagram proves compact spacing."
+        }
+      ],
+      "evidenceTier": "diagram_only",
+      "currentRecipeAssessment": "Evidence supports class/layout family, not current glyphs or arbitrary sample registration.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [
+        "iq-modern-krg-long",
+        "iq-modern-krg-compact"
+      ],
+      "diagramIDs": [
+        "wiki-diagram-18"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_Truck.png"
+      ],
+      "corrections": [],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "22",
+        "letter": "H",
+        "serial": "89643",
+        "layout": "long"
+      }
+    },
+    {
+      "id": "kr-modern-agricultural",
+      "label": "Kurdistan · 2022 · Agricultural",
+      "renderingVariants": [
+        {
+          "id": "long",
+          "drawingUnits": [
+            520,
+            110
+          ],
+          "dimensionEvidence": "Wikipedia text states this nominal size; no measurement of the photographed plate.",
+          "matchingPhotoIDs": [],
+          "sourceDiagramIDs": [
+            "wiki-diagram-22"
+          ]
+        },
+        {
+          "id": "compact",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "dimensionEvidence": "Wikipedia text names a small size. Photograph is a specimen-pixel reference, not a millimetre calibration.",
+          "matchingPhotoIDs": [],
+          "sourceDiagramIDs": [],
+          "disposition": "No matching-class compact photo in the frozen seven; no compact die validation. Do not imply that a long diagram proves compact spacing."
+        }
+      ],
+      "evidenceTier": "diagram_only",
+      "currentRecipeAssessment": "Evidence supports class/layout family, not current glyphs or arbitrary sample registration.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [
+        "iq-modern-krg-long",
+        "iq-modern-krg-compact"
+      ],
+      "diagramIDs": [
+        "wiki-diagram-22"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_Agricultural.png"
+      ],
+      "corrections": [
+        "Cited modern illustration has black IRQ/KR strip lettering; current white stripInk is inconsistent. Class strip hue in the diagram is illustrative, not measured paint."
+      ],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "22",
+        "letter": "K",
+        "serial": "73980",
+        "layout": "long"
+      }
+    },
+    {
+      "id": "kr-modern-temporary",
+      "label": "Kurdistan · 2022 · Temporary",
+      "renderingVariants": [
+        {
+          "id": "long",
+          "drawingUnits": [
+            520,
+            110
+          ],
+          "dimensionEvidence": "Wikipedia text states this nominal size; no measurement of the photographed plate.",
+          "matchingPhotoIDs": [],
+          "sourceDiagramIDs": []
+        },
+        {
+          "id": "compact",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "dimensionEvidence": "Wikipedia text names a small size. Photograph is a specimen-pixel reference, not a millimetre calibration.",
+          "matchingPhotoIDs": [],
+          "sourceDiagramIDs": [],
+          "disposition": "No matching-class compact photo in the frozen seven; no compact die validation. Do not imply that a long diagram proves compact spacing."
+        }
+      ],
+      "evidenceTier": "diagram_only",
+      "currentRecipeAssessment": "Unsupported recolor of the ordinary modern pattern; no matching frozen photograph.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [
+        "iq-modern-krg-long",
+        "iq-modern-krg-compact"
+      ],
+      "diagramIDs": [
+        "wiki-diagram-24"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_Temporary_-_Erbil_-_Sulimaniyah.png"
+      ],
+      "corrections": [
+        "Do not present GG + letter + serial recolored red as source-verified temporary. The KRG diagram shows 21-22 above a serial in a compact panel with IRQ/KR strip, not the ordinary modern pattern."
+      ],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "23",
+        "letter": "K",
+        "serial": "53135",
+        "layout": "long"
+      }
+    },
+    {
+      "id": "bilingual-2008-private",
+      "label": "2008 bilingual · Private",
+      "renderingVariants": [
+        {
+          "id": "snapshot",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "sourcePhysicalDimensionsVerified": false
+        }
+      ],
+      "evidenceTier": "diagram_only",
+      "currentRecipeAssessment": "Evidence supports class/layout family, not current glyphs or arbitrary sample registration.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [],
+      "diagramIDs": [
+        "wiki-diagram-28"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_2008-2024_Private.png"
+      ],
+      "corrections": [
+        "Keep black main lettering and black IRAQ strip lettering. Main face is white; class color belongs only to the left strip. Preserve joined source words as source outlines."
+      ],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence.",
+        "All seven class diagrams reuse one illustrative S 10346 example; they do not verify absent digits, series letters, other province word masters, or real manufacturing dies.",
+        "Original diagrams are 520 x 288 pixels; do not relabel those raster proportions as measured 335 x 155 mm geometry."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "14",
+        "letter": "Z",
+        "serial": "87479"
+      }
+    },
+    {
+      "id": "bilingual-2008-hire",
+      "label": "2008 bilingual · Taxi / bus / for hire",
+      "renderingVariants": [
+        {
+          "id": "snapshot",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "sourcePhysicalDimensionsVerified": false
+        }
+      ],
+      "evidenceTier": "diagram_only",
+      "currentRecipeAssessment": "Current whole-face recolor contradicts its cited class illustration.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [],
+      "diagramIDs": [
+        "wiki-diagram-31"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_2008-2024_Bus_and_Taxi.png"
+      ],
+      "corrections": [
+        "Keep black main lettering and black IRAQ strip lettering. Main face is white; class color belongs only to the left strip. Preserve joined source words as source outlines."
+      ],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence.",
+        "All seven class diagrams reuse one illustrative S 10346 example; they do not verify absent digits, series letters, other province word masters, or real manufacturing dies.",
+        "Original diagrams are 520 x 288 pixels; do not relabel those raster proportions as measured 335 x 155 mm geometry."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "26",
+        "letter": "R",
+        "serial": "35314"
+      }
+    },
+    {
+      "id": "bilingual-2008-government",
+      "label": "2008 bilingual · Government",
+      "renderingVariants": [
+        {
+          "id": "snapshot",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "sourcePhysicalDimensionsVerified": false
+        }
+      ],
+      "evidenceTier": "diagram_only",
+      "currentRecipeAssessment": "Current whole-face recolor contradicts its cited class illustration.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [],
+      "diagramIDs": [
+        "wiki-diagram-32"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_2008-2024_Governmental.png"
+      ],
+      "corrections": [
+        "Keep black main lettering and black IRAQ strip lettering. Main face is white; class color belongs only to the left strip. Preserve joined source words as source outlines.",
+        "Single national class footer, no province. Existing national=True agrees with this source."
+      ],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence.",
+        "All seven class diagrams reuse one illustrative S 10346 example; they do not verify absent digits, series letters, other province word masters, or real manufacturing dies.",
+        "Original diagrams are 520 x 288 pixels; do not relabel those raster proportions as measured 335 x 155 mm geometry."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "letter": "E",
+        "serial": "75029"
+      }
+    },
+    {
+      "id": "bilingual-2008-commercial",
+      "label": "2008 bilingual · Commercial / goods",
+      "renderingVariants": [
+        {
+          "id": "snapshot",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "sourcePhysicalDimensionsVerified": false
+        }
+      ],
+      "evidenceTier": "diagram_only",
+      "currentRecipeAssessment": "Current whole-face recolor contradicts its cited class illustration.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [],
+      "diagramIDs": [
+        "wiki-diagram-33"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_2008-2024_Truck.png"
+      ],
+      "corrections": [
+        "Keep black main lettering and black IRAQ strip lettering. Main face is white; class color belongs only to the left strip. Preserve joined source words as source outlines."
+      ],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence.",
+        "All seven class diagrams reuse one illustrative S 10346 example; they do not verify absent digits, series letters, other province word masters, or real manufacturing dies.",
+        "Original diagrams are 520 x 288 pixels; do not relabel those raster proportions as measured 335 x 155 mm geometry."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "12",
+        "letter": "J",
+        "serial": "23711"
+      }
+    },
+    {
+      "id": "bilingual-2008-agricultural",
+      "label": "2008 bilingual · Agricultural",
+      "renderingVariants": [
+        {
+          "id": "snapshot",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "sourcePhysicalDimensionsVerified": false
+        }
+      ],
+      "evidenceTier": "diagram_only",
+      "currentRecipeAssessment": "Current whole-face recolor contradicts its cited class illustration.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [],
+      "diagramIDs": [
+        "wiki-diagram-35"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_2008-2024_Agricultural.png"
+      ],
+      "corrections": [
+        "Keep black main lettering and black IRAQ strip lettering. Main face is white; class color belongs only to the left strip. Preserve joined source words as source outlines."
+      ],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence.",
+        "All seven class diagrams reuse one illustrative S 10346 example; they do not verify absent digits, series letters, other province word masters, or real manufacturing dies.",
+        "Original diagrams are 520 x 288 pixels; do not relabel those raster proportions as measured 335 x 155 mm geometry."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "28",
+        "letter": "M",
+        "serial": "80227"
+      }
+    },
+    {
+      "id": "bilingual-2008-construction",
+      "label": "2008 bilingual · Construction",
+      "renderingVariants": [
+        {
+          "id": "snapshot",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "sourcePhysicalDimensionsVerified": false
+        }
+      ],
+      "evidenceTier": "diagram_only",
+      "currentRecipeAssessment": "Current whole-face recolor contradicts its cited class illustration.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [],
+      "diagramIDs": [
+        "wiki-diagram-36"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_Construction.png"
+      ],
+      "corrections": [
+        "Keep black main lettering and black IRAQ strip lettering. Main face is white; class color belongs only to the left strip. Preserve joined source words as source outlines."
+      ],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence.",
+        "All seven class diagrams reuse one illustrative S 10346 example; they do not verify absent digits, series letters, other province word masters, or real manufacturing dies.",
+        "Original diagrams are 520 x 288 pixels; do not relabel those raster proportions as measured 335 x 155 mm geometry."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "29",
+        "letter": "L",
+        "serial": "33008"
+      }
+    },
+    {
+      "id": "bilingual-2008-customs",
+      "label": "2008 bilingual · Temporary customs clearance",
+      "renderingVariants": [
+        {
+          "id": "snapshot",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "sourcePhysicalDimensionsVerified": false
+        }
+      ],
+      "evidenceTier": "diagram_only",
+      "currentRecipeAssessment": "Current whole-face recolor contradicts its cited class illustration.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [],
+      "diagramIDs": [
+        "wiki-diagram-34"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_Temporary_Customs.png"
+      ],
+      "corrections": [
+        "Keep black main lettering and black IRAQ strip lettering. Main face is white; class color belongs only to the left strip. Preserve joined source words as source outlines.",
+        "Single national class footer, no province. Existing national=True agrees with this source."
+      ],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence.",
+        "All seven class diagrams reuse one illustrative S 10346 example; they do not verify absent digits, series letters, other province word masters, or real manufacturing dies.",
+        "Original diagrams are 520 x 288 pixels; do not relabel those raster proportions as measured 335 x 155 mm geometry."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "letter": "Q",
+        "serial": "01287"
+      }
+    },
+    {
+      "id": "private-1988",
+      "label": "1988–2001 · Private",
+      "renderingVariants": [
+        {
+          "id": "snapshot",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "sourcePhysicalDimensionsVerified": false
+        }
+      ],
+      "evidenceTier": "diagram_only",
+      "currentRecipeAssessment": "General divided-family layout supported, but no exact federal Maysan specimen or label master is in the seven photos.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [
+        "iq-legacy-sulaymaniyah-3296",
+        "iq-legacy-erbil-548306"
+      ],
+      "diagramIDs": [
+        "wiki-diagram-38",
+        "wiki-diagram-39",
+        "wiki-diagram-40"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_Dohuk.png",
+        "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_Erbil.png",
+        "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_Sulaymaniyah.png"
+      ],
+      "corrections": [],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence.",
+        "The three paired illustrations are KRG province examples; they do not authenticate this recipe’s federal era, Maysan word, sample number, or one uniform die. Adoption remains disputed: 1982/1988."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "13",
+        "serial": "253572"
+      }
+    },
+    {
+      "id": "private-2001",
+      "label": "2001–2008 · Private",
+      "renderingVariants": [
+        {
+          "id": "snapshot",
+          "drawingUnits": [
+            520,
+            110
+          ],
+          "sourcePhysicalDimensionsVerified": false
+        }
+      ],
+      "evidenceTier": "diagram_only",
+      "currentRecipeAssessment": "Private diagrams support a left-stacked country/province layout. Existing wide 520 x 110 canvas is not demonstrated by these source pixel proportions.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [
+        "iq-2001-anbar-taxi"
+      ],
+      "diagramIDs": [
+        "wiki-diagram-25",
+        "wiki-diagram-26"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_license_plate_2001_graphic.png",
+        "https://en.wikipedia.org/wiki/File:Iraq_license_plate_graphic.png"
+      ],
+      "corrections": [
+        "Private/source compact diagrams have no interior divider rules. Keep country and province stacked at left; serial occupies the right. Do not copy a taxi die and call it private-verified."
+      ],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence.",
+        "2001 private original is 350 x 157; second compact schematic is 350 x 175 and undated on its file page. Caption placement is not independent dating evidence; no measured millimetres established."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "25",
+        "serial": "128693"
+      }
+    },
+    {
+      "id": "kr-legacy-private",
+      "label": "KRG legacy · Private",
+      "renderingVariants": [
+        {
+          "id": "snapshot",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "sourcePhysicalDimensionsVerified": false
+        }
+      ],
+      "evidenceTier": "matching_class_photograph",
+      "currentRecipeAssessment": "Evidence supports class/layout family, not current glyphs or arbitrary sample registration.",
+      "matchingClassPhotoIDs": [
+        "iq-legacy-sulaymaniyah-3296",
+        "iq-legacy-erbil-548306"
+      ],
+      "relatedNonMatchingPhotoIDs": [],
+      "diagramIDs": [
+        "wiki-diagram-38",
+        "wiki-diagram-39",
+        "wiki-diagram-40"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_Dohuk.png",
+        "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_Erbil.png",
+        "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_Sulaymaniyah.png"
+      ],
+      "corrections": [],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence.",
+        "Sulaymaniyah angular and Erbil rounded private specimens are separate lettering masters; neither gives a complete family alphabet."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "21",
+        "serial": "205638"
+      }
+    },
+    {
+      "id": "kr-legacy-hire",
+      "label": "KRG legacy · For hire",
+      "renderingVariants": [
+        {
+          "id": "snapshot",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "sourcePhysicalDimensionsVerified": false
+        }
+      ],
+      "evidenceTier": "diagram_only",
+      "currentRecipeAssessment": "Evidence supports class/layout family, not current glyphs or arbitrary sample registration.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [
+        "iq-legacy-sulaymaniyah-3296",
+        "iq-legacy-erbil-548306",
+        "iq-legacy-erbil-truck"
+      ],
+      "diagramIDs": [
+        "wiki-diagram-43"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_1988-2022_Bus_and_Taxi.png"
+      ],
+      "corrections": [],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "24",
+        "serial": "189852"
+      }
+    },
+    {
+      "id": "kr-legacy-commercial",
+      "label": "KRG legacy · Commercial",
+      "renderingVariants": [
+        {
+          "id": "snapshot",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "sourcePhysicalDimensionsVerified": false
+        }
+      ],
+      "evidenceTier": "matching_class_photograph",
+      "currentRecipeAssessment": "Evidence supports class/layout family, not current glyphs or arbitrary sample registration.",
+      "matchingClassPhotoIDs": [
+        "iq-legacy-erbil-truck"
+      ],
+      "relatedNonMatchingPhotoIDs": [],
+      "diagramIDs": [
+        "wiki-diagram-44"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_1988-2022_Truck.png"
+      ],
+      "corrections": [],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence.",
+        "Matching photo is Erbil commercial, while the frozen seeded recipe uses Sulaymaniyah. The photo does not validate that province word or seeded serial."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "21",
+        "serial": "457498"
+      }
+    },
+    {
+      "id": "kr-legacy-police",
+      "label": "KRG legacy · Police",
+      "renderingVariants": [
+        {
+          "id": "snapshot",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "sourcePhysicalDimensionsVerified": false
+        }
+      ],
+      "evidenceTier": "diagram_only",
+      "currentRecipeAssessment": "Current recolored province/country template contradicts the police illustration.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [
+        "iq-legacy-sulaymaniyah-3296",
+        "iq-legacy-erbil-548306",
+        "iq-legacy-erbil-truck"
+      ],
+      "diagramIDs": [
+        "wiki-diagram-45"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_1988-2022_Police.png"
+      ],
+      "corrections": [
+        "Use the diagram’s full-width lower police legend and no lower vertical province/country divider. Do not add an unobserved province or country word."
+      ],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "22",
+        "serial": "465795"
+      }
+    },
+    {
+      "id": "kr-legacy-military",
+      "label": "KRG legacy · Military",
+      "renderingVariants": [
+        {
+          "id": "snapshot",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "sourcePhysicalDimensionsVerified": false
+        }
+      ],
+      "evidenceTier": "text_only",
+      "currentRecipeAssessment": "Golden-on-dark-green class is text-supported only; no diagram or matching photo appears in the frozen inventory.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [
+        "iq-legacy-sulaymaniyah-3296",
+        "iq-legacy-erbil-548306",
+        "iq-legacy-erbil-truck"
+      ],
+      "diagramIDs": [],
+      "diagramURLs": [],
+      "corrections": [],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence.",
+        "No glyph or composition reconstruction is justified from the color phrase alone; leave the military recipe unverified."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "21",
+        "serial": "894530"
+      }
+    },
+    {
+      "id": "kr-legacy-temporary",
+      "label": "KRG legacy · Temporary",
+      "renderingVariants": [
+        {
+          "id": "snapshot",
+          "drawingUnits": [
+            335,
+            155
+          ],
+          "sourcePhysicalDimensionsVerified": false
+        }
+      ],
+      "evidenceTier": "diagram_only",
+      "currentRecipeAssessment": "Current recolored ordinary legacy template contradicts the temporary illustration.",
+      "matchingClassPhotoIDs": [],
+      "relatedNonMatchingPhotoIDs": [
+        "iq-legacy-sulaymaniyah-3296",
+        "iq-legacy-erbil-548306",
+        "iq-legacy-erbil-truck"
+      ],
+      "diagramIDs": [
+        "wiki-diagram-46"
+      ],
+      "diagramURLs": [
+        "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_Temporary.png"
+      ],
+      "corrections": [
+        "Dohuk illustration has vertical 2021 year strip, upper serial, and lower temporary/Dohuk legend; not an ordinary country/province divided template."
+      ],
+      "limits": [
+        "No complete physical die alphabet is verified. Current recipe sample characters are not all demonstrated by the frozen evidence.",
+        "One Dohuk temporary illustration does not establish a region-wide template for all years/provinces."
+      ],
+      "physicalDieVerified": false,
+      "fullAlphabetVerified": false,
+      "currentSample": {
+        "governorate": "24",
+        "serial": "223901"
+      }
+    }
+  ],
+  "knownAdditionalCategories": [
+    {
+      "id": "iq-early",
+      "label": "1930s–1950s (provisional)",
+      "evidenceTier": "unverified_lead",
+      "evidence": "Alsumaria retrospective says early-1930s bilingual black plates with regional initials; exact plates/dies unverified.",
+      "disposition": "No inspected pixels; no reconstructed letters or plate. Keep unknown.",
+      "photoIDs": [],
+      "diagramIDs": [],
+      "reconstruction": null
+    },
+    {
+      "id": "iq-1940s",
+      "label": "1940s–1961 (archive label only)",
+      "evidenceTier": "unverified_lead",
+      "evidence": "GlobalLicensePlates inventory references red Arabic-script passenger specimen; WorldLicensePlates source inaccessible.",
+      "disposition": "No inspected pixels; no reconstructed letters or plate. Keep unknown.",
+      "photoIDs": [],
+      "diagramIDs": [],
+      "reconstruction": null
+    },
+    {
+      "id": "iq-1961",
+      "label": "1961 (specimen label)",
+      "evidenceTier": "unverified_lead",
+      "evidence": "Dark Baghdad plate with separate city panel in secondary archive.",
+      "disposition": "No inspected pixels; no reconstructed letters or plate. Keep unknown.",
+      "photoIDs": [],
+      "diagramIDs": [],
+      "reconstruction": null
+    },
+    {
+      "id": "iq-1970",
+      "label": "1970 regulation / 1973 specimen lead",
+      "evidenceTier": "text_only",
+      "evidence": "Indexed 1970 regulation transcription effective April 1 specifies embossed Arabic+English numerals, English country identification, Arabic province and year disc; IRQ upper-left, Arabic serial upper-right and Latin serial lower-left. Archived 1973 Baghdad example listed by secondary archive.",
+      "disposition": "No inspected pixels; no reconstructed letters or plate. Keep unknown.",
+      "photoIDs": [],
+      "diagramIDs": [],
+      "reconstruction": null
+    },
+    {
+      "id": "iq-1980",
+      "label": "1980 (specimen label)",
+      "evidenceTier": "unverified_lead",
+      "evidence": "Secondary archive lists bilingual Baghdad specimen.",
+      "disposition": "No inspected pixels; no reconstructed letters or plate. Keep unknown.",
+      "photoIDs": [],
+      "diagramIDs": [],
+      "reconstruction": null
+    },
+    {
+      "id": "iq-2001-hire",
+      "label": "2001-family Anbar taxi",
+      "evidenceTier": "matching_class_photograph",
+      "photoIDs": [
+        "iq-2001-anbar-taxi"
+      ],
+      "diagramIDs": [],
+      "reconstruction": null,
+      "disposition": "Source-specific only. Actual specimen reconstruction handled in the photographic collection."
+    },
+    {
+      "id": "iq-2001-compact-illustration",
+      "label": "Undated compact graphic placed in 2001 section",
+      "evidenceTier": "diagram_only",
+      "photoIDs": [],
+      "diagramIDs": [
+        "wiki-diagram-26"
+      ],
+      "reconstruction": "illustrations/wiki-diagram-26.svg",
+      "disposition": "Illustration-derived outlines supplied; not verified physical dies or an expanded alphabet."
+    },
+    {
+      "id": "iq-2001-commercial-illustration",
+      "label": "2001-section commercial graphic",
+      "evidenceTier": "diagram_only",
+      "photoIDs": [],
+      "diagramIDs": [
+        "wiki-diagram-27"
+      ],
+      "reconstruction": "illustrations/wiki-diagram-27.svg",
+      "disposition": "Illustration-derived outlines supplied; not verified physical dies or an expanded alphabet."
+    },
+    {
+      "id": "iq-bilingual-motorcycle",
+      "label": "Bilingual-era motorcycle illustration",
+      "evidenceTier": "diagram_only",
+      "photoIDs": [],
+      "diagramIDs": [
+        "wiki-diagram-29"
+      ],
+      "reconstruction": "illustrations/wiki-diagram-29.svg",
+      "disposition": "Illustration-derived outlines supplied; not verified physical dies or an expanded alphabet."
+    },
+    {
+      "id": "iq-bilingual-temporary",
+      "label": "Bilingual-era temporary illustration",
+      "evidenceTier": "diagram_only",
+      "photoIDs": [],
+      "diagramIDs": [
+        "wiki-diagram-30"
+      ],
+      "reconstruction": "illustrations/wiki-diagram-30.svg",
+      "disposition": "Illustration-derived outlines supplied; not verified physical dies or an expanded alphabet."
+    },
+    {
+      "id": "iq-bilingual-icts",
+      "label": "ICTS illustration",
+      "evidenceTier": "diagram_only",
+      "photoIDs": [],
+      "diagramIDs": [
+        "wiki-diagram-37"
+      ],
+      "reconstruction": "illustrations/wiki-diagram-37.svg",
+      "disposition": "Illustration-derived outlines supplied; not verified physical dies or an expanded alphabet."
+    },
+    {
+      "id": "iq-legacy-motorcycle",
+      "label": "Legacy Erbil motorcycle",
+      "evidenceTier": "matching_class_photograph",
+      "photoIDs": [
+        "iq-legacy-erbil-motorcycle"
+      ],
+      "diagramIDs": [],
+      "reconstruction": null,
+      "disposition": "Source-specific only. Actual specimen reconstruction handled in the photographic collection."
+    },
+    {
+      "id": "iq-legacy-international",
+      "label": "KRG international Erbil illustration",
+      "evidenceTier": "diagram_only",
+      "photoIDs": [],
+      "diagramIDs": [
+        "wiki-diagram-42"
+      ],
+      "reconstruction": "illustrations/wiki-diagram-42.svg",
+      "disposition": "Illustration-derived outlines supplied; not verified physical dies or an expanded alphabet."
+    },
+    {
+      "id": "iq-modern-compact",
+      "label": "Modern KRG compact private",
+      "evidenceTier": "matching_class_photograph",
+      "photoIDs": [
+        "iq-modern-krg-compact"
+      ],
+      "diagramIDs": [],
+      "reconstruction": null,
+      "disposition": "Source-specific only. Actual specimen reconstruction handled in the photographic collection."
+    }
+  ],
+  "photographs": [
+    {
+      "id": "iq-legacy-sulaymaniyah-3296",
+      "source": "https://www.olavsplates.com/foto_i/irq_3296_front_close.jpg",
+      "className": "private",
+      "serial": "٣٢٩٦",
+      "observedDigits": "٢٣٦٩",
+      "observedLetters": "",
+      "limits": "Sharp tapered stems and sharp joins; 9 small closed counter; joined legends also angular. Do not combine with rounded Erbil die as one master."
+    },
+    {
+      "id": "iq-legacy-erbil-548306",
+      "source": "https://www.olavsplates.com/foto_i/irq_548306_close.jpg",
+      "className": "private",
+      "serial": "٥٤٨٣٠٦",
+      "observedDigits": "٠٣٤٥٦٨",
+      "observedLetters": "",
+      "limits": "Diamond 0, teardrop-loop 5, broad two-bowl 4, pointed 8; smoothly rounded stroke ends on country/province words. Raised edges visible."
+    },
+    {
+      "id": "iq-2001-anbar-taxi",
+      "source": "https://commons.wikimedia.org/wiki/File:Iraq_licenceplate.JPG",
+      "className": "hire/taxi",
+      "serial": "٥٢١٩",
+      "observedDigits": "١٢٥٩",
+      "observedLetters": "",
+      "limits": "White on red; no inner divider rules; upper country and lower province left, emblem/IRAQ/hologram middle-left. 5 pointed teardrop loop; 2 wide angular cap, tapering curved stem; 1 pointed top and tapered bottom; 9 long tail. Image overall ratio 2.67:1, not proof of physical dimensions."
+    },
+    {
+      "id": "iq-legacy-erbil-truck",
+      "source": "https://commons.wikimedia.org/wiki/File:Erbil_Iraq_number_plate_truck_2015.jpg",
+      "className": "commercial truck",
+      "serial": "١٣١٠٩٨",
+      "observedDigits": "٠١٣٨٩",
+      "observedLetters": "",
+      "limits": "Black on yellow, three divided panels. Diamond 0, narrow bowed 1, broad pointed 8. Photograph angled; rectify before extracting widths. Some damage on 9."
+    },
+    {
+      "id": "iq-legacy-erbil-motorcycle",
+      "source": "https://commons.wikimedia.org/wiki/File:Erbil_Iraq_motorcycle_number_plate_2015.jpg",
+      "className": "motorcycle",
+      "serial": "٨٧٩٥",
+      "observedDigits": "٥٧٨٩",
+      "observedLetters": "",
+      "limits": "White background, compact three-panel layout; upper character tips hidden by rear lamp. Do not reconstruct full glyph outlines from this specimen alone."
+    },
+    {
+      "id": "iq-modern-krg-long",
+      "source": "https://www.olavsplates.com/foto_i/irq_22g99720_rear_close.jpg",
+      "className": "private",
+      "serial": "22 G 99720",
+      "observedDigits": "0279",
+      "observedLetters": "G",
+      "limits": "0 upper-right diagonal break; round-ended 2 with flat foot, narrow descending 9; tall G squared bowl. IRQ and KR are separate small legend masters. No official font identity established."
+    },
+    {
+      "id": "iq-modern-krg-compact",
+      "source": "https://en.wikipedia.org/wiki/File:Iraqi_Small_sized_registration_plate_Erbil.jpg",
+      "className": "private compact",
+      "serial": "22 L / 82310",
+      "observedDigits": "01238",
+      "observedLetters": "L",
+      "limits": "L upturned right terminal; 0 upper-right diagonal break; 1 broad foot; 3 angular upper portion and round lower bowl. Plate perimeter rounded, no horizontal divider across serial area. Use for clean glyph studies without importing security marks."
+    }
+  ]
+}

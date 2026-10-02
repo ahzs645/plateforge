@@ -1,0 +1,307 @@
+{
+  "validated_fonts": 7,
+  "raster_cases": 60,
+  "minimum_mask_iou": 0.991578,
+  "cases": [
+    {
+      "profile": "legacy-sulaymaniyah",
+      "glyph": "uni0669",
+      "canonical_svg_to_ttf_mask_iou": 0.998214
+    },
+    {
+      "profile": "legacy-sulaymaniyah",
+      "glyph": "word.sulaymaniyah",
+      "canonical_svg_to_ttf_mask_iou": 0.996963
+    },
+    {
+      "profile": "legacy-sulaymaniyah",
+      "glyph": "word.iraq",
+      "canonical_svg_to_ttf_mask_iou": 0.997445
+    },
+    {
+      "profile": "legacy-erbil",
+      "glyph": "uni0665",
+      "canonical_svg_to_ttf_mask_iou": 0.997709
+    },
+    {
+      "profile": "legacy-erbil",
+      "glyph": "uni0660",
+      "canonical_svg_to_ttf_mask_iou": 0.999331
+    },
+    {
+      "profile": "legacy-erbil",
+      "glyph": "word.erbil",
+      "canonical_svg_to_ttf_mask_iou": 0.997231
+    },
+    {
+      "profile": "legacy-erbil",
+      "glyph": "word.iraq",
+      "canonical_svg_to_ttf_mask_iou": 0.997024
+    },
+    {
+      "profile": "anbar-taxi",
+      "glyph": "uni0665",
+      "canonical_svg_to_ttf_mask_iou": 0.996148
+    },
+    {
+      "profile": "anbar-taxi",
+      "glyph": "uni0669",
+      "canonical_svg_to_ttf_mask_iou": 0.997164
+    },
+    {
+      "profile": "anbar-taxi",
+      "glyph": "word.iraq",
+      "canonical_svg_to_ttf_mask_iou": 0.997026
+    },
+    {
+      "profile": "anbar-taxi",
+      "glyph": "word.anbar",
+      "canonical_svg_to_ttf_mask_iou": 0.99606
+    },
+    {
+      "profile": "utility-truck",
+      "glyph": "uni0660",
+      "canonical_svg_to_ttf_mask_iou": 0.991578
+    },
+    {
+      "profile": "utility-truck",
+      "glyph": "word.iraq",
+      "canonical_svg_to_ttf_mask_iou": 0.997654
+    },
+    {
+      "profile": "utility-truck",
+      "glyph": "word.erbil",
+      "canonical_svg_to_ttf_mask_iou": 0.997152
+    },
+    {
+      "profile": "modern-eng",
+      "glyph": "uni0030",
+      "canonical_svg_to_ttf_mask_iou": 0.999017
+    },
+    {
+      "profile": "modern-eng",
+      "glyph": "uni0038",
+      "canonical_svg_to_ttf_mask_iou": 0.998042
+    },
+    {
+      "profile": "modern-eng",
+      "glyph": "uni0041",
+      "canonical_svg_to_ttf_mask_iou": 0.997493
+    },
+    {
+      "profile": "modern-eng",
+      "glyph": "uni0042",
+      "canonical_svg_to_ttf_mask_iou": 0.999145
+    },
+    {
+      "profile": "modern-mtl",
+      "glyph": "uni0030",
+      "canonical_svg_to_ttf_mask_iou": 0.999079
+    },
+    {
+      "profile": "modern-mtl",
+      "glyph": "uni0038",
+      "canonical_svg_to_ttf_mask_iou": 0.998444
+    },
+    {
+      "profile": "modern-mtl",
+      "glyph": "uni0041",
+      "canonical_svg_to_ttf_mask_iou": 0.99824
+    },
+    {
+      "profile": "modern-mtl",
+      "glyph": "uni0042",
+      "canonical_svg_to_ttf_mask_iou": 0.998548
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "uni0660",
+      "canonical_svg_to_ttf_mask_iou": 0.99605
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "uni0665",
+      "canonical_svg_to_ttf_mask_iou": 0.997608
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "uni0669",
+      "canonical_svg_to_ttf_mask_iou": 0.997363
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "uni0041",
+      "canonical_svg_to_ttf_mask_iou": 0.998389
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "uni0042",
+      "canonical_svg_to_ttf_mask_iou": 0.998482
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.iraq",
+      "canonical_svg_to_ttf_mask_iou": 0.99565
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.baghdad",
+      "canonical_svg_to_ttf_mask_iou": 0.996533
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.nineveh",
+      "canonical_svg_to_ttf_mask_iou": 0.996342
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.maysan",
+      "canonical_svg_to_ttf_mask_iou": 0.996434
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.basra",
+      "canonical_svg_to_ttf_mask_iou": 0.996465
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.anbar",
+      "canonical_svg_to_ttf_mask_iou": 0.996241
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.qadisiyyah",
+      "canonical_svg_to_ttf_mask_iou": 0.996145
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.muthanna",
+      "canonical_svg_to_ttf_mask_iou": 0.995981
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.babil",
+      "canonical_svg_to_ttf_mask_iou": 0.9966
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.karbala",
+      "canonical_svg_to_ttf_mask_iou": 0.995986
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.diyala",
+      "canonical_svg_to_ttf_mask_iou": 0.995962
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.sulaymaniyah",
+      "canonical_svg_to_ttf_mask_iou": 0.996082
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.erbil",
+      "canonical_svg_to_ttf_mask_iou": 0.995921
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.halabja",
+      "canonical_svg_to_ttf_mask_iou": 0.996118
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.dohuk",
+      "canonical_svg_to_ttf_mask_iou": 0.996552
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.kirkuk",
+      "canonical_svg_to_ttf_mask_iou": 0.996627
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.saladin",
+      "canonical_svg_to_ttf_mask_iou": 0.996351
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.dhi_qar",
+      "canonical_svg_to_ttf_mask_iou": 0.99463
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.najaf",
+      "canonical_svg_to_ttf_mask_iou": 0.996195
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.wasit",
+      "canonical_svg_to_ttf_mask_iou": 0.996259
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.private",
+      "canonical_svg_to_ttf_mask_iou": 0.996044
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.hire",
+      "canonical_svg_to_ttf_mask_iou": 0.996621
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.government",
+      "canonical_svg_to_ttf_mask_iou": 0.996155
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.commercial",
+      "canonical_svg_to_ttf_mask_iou": 0.997077
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.agricultural",
+      "canonical_svg_to_ttf_mask_iou": 0.995652
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.construction",
+      "canonical_svg_to_ttf_mask_iou": 0.99573
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.customs",
+      "canonical_svg_to_ttf_mask_iou": 0.9961
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.police",
+      "canonical_svg_to_ttf_mask_iou": 0.996177
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.military",
+      "canonical_svg_to_ttf_mask_iou": 0.995974
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.temporary",
+      "canonical_svg_to_ttf_mask_iou": 0.996297
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.motorcycle",
+      "canonical_svg_to_ttf_mask_iou": 0.996847
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.inspection_temporary",
+      "canonical_svg_to_ttf_mask_iou": 0.996176
+    },
+    {
+      "profile": "naskh-candidate",
+      "glyph": "word.counter_terrorism",
+      "canonical_svg_to_ttf_mask_iou": 0.99658
+    }
+  ]
+}

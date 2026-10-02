@@ -1,0 +1,2993 @@
+[
+  {
+    "id": "legacy-sulaymaniyah",
+    "file": "legacy-sulaymaniyah-canonical-subset.ttf",
+    "family": "PlateForge Iraq Legacy Sulaymaniyah Canonical",
+    "units_per_em": 1000,
+    "cap_height": 1000,
+    "baseline": 0,
+    "rights": "Private critical study only; source photo reuse licence unverified. Do not publicly redistribute without rights review.",
+    "source_url": "https://www.olavsplates.com/foto_i/irq_3296_front_close.jpg",
+    "sha256": "7a5b87b19c6b75fceb7e4cbad2660378519debdb84817ba161df3c07ea020468",
+    "mapping": [
+      {
+        "glyph": "uni0663",
+        "character": "٣",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0663",
+          "U+0033",
+          "U+06F3"
+        ],
+        "provenance": "observed",
+        "source_id": "iq-legacy-sulaymaniyah-3296/serial-3",
+        "advance": 862,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0662",
+        "character": "٢",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0662",
+          "U+0032",
+          "U+06F2"
+        ],
+        "provenance": "observed",
+        "source_id": "iq-legacy-sulaymaniyah-3296/serial-2",
+        "advance": 617,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0669",
+        "character": "٩",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0669",
+          "U+0039",
+          "U+06F9"
+        ],
+        "provenance": "observed",
+        "source_id": "iq-legacy-sulaymaniyah-3296/serial-9",
+        "advance": 787,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0666",
+        "character": "٦",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0666",
+          "U+0036",
+          "U+06F6"
+        ],
+        "provenance": "observed",
+        "source_id": "iq-legacy-sulaymaniyah-3296/serial-6",
+        "advance": 882,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "word.sulaymaniyah",
+        "character": null,
+        "wordmark_id": "sulaymaniyah",
+        "text": "السليمانية",
+        "codepoints": [
+          "U+E00B"
+        ],
+        "provenance": "observed",
+        "source_id": "iq-legacy-sulaymaniyah-3296/province-sulaymaniyah",
+        "advance": 3266,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.iraq",
+        "character": null,
+        "wordmark_id": "iraq",
+        "text": "العراق",
+        "codepoints": [
+          "U+E000"
+        ],
+        "provenance": "observed",
+        "source_id": "iq-legacy-sulaymaniyah-3296/country-iraq",
+        "advance": 3803,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      }
+    ],
+    "restrictions": [
+      "Not an official die font.",
+      "No Arabic GSUB/GPOS; use only isolated serial characters and listed complete PUA wordmarks.",
+      "Wordmark codepoints are token mappings, not an Arabic alphabet.",
+      "Legacy source-study fonts carry restricted embedding and unverified source rights."
+    ]
+  },
+  {
+    "id": "legacy-erbil",
+    "file": "legacy-erbil-canonical-subset.ttf",
+    "family": "PlateForge Iraq Legacy Erbil Canonical",
+    "units_per_em": 1000,
+    "cap_height": 1000,
+    "baseline": 0,
+    "rights": "Private critical study only; source photo reuse licence unverified. Do not publicly redistribute without rights review.",
+    "source_url": "https://www.olavsplates.com/foto_i/irq_548306_close.jpg",
+    "sha256": "5f5c0f6c4d1527863ae979d3718d3fe72d6f9e42bc006bc81c330d7f6620f535",
+    "mapping": [
+      {
+        "glyph": "uni0665",
+        "character": "٥",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0665",
+          "U+0035",
+          "U+06F5"
+        ],
+        "provenance": "observed",
+        "source_id": "iq-legacy-erbil-548306/serial-5",
+        "advance": 702,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0664",
+        "character": "٤",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0664",
+          "U+0034",
+          "U+06F4"
+        ],
+        "provenance": "observed",
+        "source_id": "iq-legacy-erbil-548306/serial-4",
+        "advance": 683,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0668",
+        "character": "٨",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0668",
+          "U+0038",
+          "U+06F8"
+        ],
+        "provenance": "observed",
+        "source_id": "iq-legacy-erbil-548306/serial-8",
+        "advance": 675,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0663",
+        "character": "٣",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0663",
+          "U+0033",
+          "U+06F3"
+        ],
+        "provenance": "observed",
+        "source_id": "iq-legacy-erbil-548306/serial-3",
+        "advance": 697,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0660",
+        "character": "٠",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0660",
+          "U+0030",
+          "U+06F0"
+        ],
+        "provenance": "observed",
+        "source_id": "iq-legacy-erbil-548306/serial-0",
+        "advance": 489,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0666",
+        "character": "٦",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0666",
+          "U+0036",
+          "U+06F6"
+        ],
+        "provenance": "observed",
+        "source_id": "iq-legacy-erbil-548306/serial-6",
+        "advance": 689,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "word.erbil",
+        "character": null,
+        "wordmark_id": "erbil",
+        "text": "اربيل",
+        "codepoints": [
+          "U+E00C"
+        ],
+        "provenance": "observed",
+        "source_id": "iq-legacy-erbil-548306/province-erbil",
+        "advance": 2389,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.iraq",
+        "character": null,
+        "wordmark_id": "iraq",
+        "text": "العراق",
+        "codepoints": [
+          "U+E000"
+        ],
+        "provenance": "observed",
+        "source_id": "iq-legacy-erbil-548306/country-iraq",
+        "advance": 1999,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      }
+    ],
+    "restrictions": [
+      "Not an official die font.",
+      "No Arabic GSUB/GPOS; use only isolated serial characters and listed complete PUA wordmarks.",
+      "Wordmark codepoints are token mappings, not an Arabic alphabet.",
+      "Legacy source-study fonts carry restricted embedding and unverified source rights."
+    ]
+  },
+  {
+    "id": "anbar-taxi",
+    "file": "anbar-taxi-canonical-subset.ttf",
+    "family": "PlateForge Iraq Anbar Taxi Canonical",
+    "units_per_em": 1000,
+    "cap_height": 1000,
+    "baseline": 0,
+    "rights": "CC BY-SA 3.0 derivative. Source photo: Dickelbers; smooth source-guided reconstruction and canonical normalization, modified 2026.",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Iraq_licenceplate.JPG",
+    "sha256": "622e4bf30e5912fdff45ee6e82148ca549eeabf874cc9bd1f5cd3f55d7d8f42b",
+    "mapping": [
+      {
+        "glyph": "uni0665",
+        "character": "٥",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0665",
+          "U+0035",
+          "U+06F5"
+        ],
+        "provenance": "observed",
+        "source_id": "iq-2001-anbar-taxi/digit-5",
+        "advance": 429,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0662",
+        "character": "٢",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0662",
+          "U+0032",
+          "U+06F2"
+        ],
+        "provenance": "observed",
+        "source_id": "iq-2001-anbar-taxi/digit-2",
+        "advance": 427,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0661",
+        "character": "١",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0661",
+          "U+0031",
+          "U+06F1"
+        ],
+        "provenance": "observed",
+        "source_id": "iq-2001-anbar-taxi/digit-1",
+        "advance": 329,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0669",
+        "character": "٩",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0669",
+          "U+0039",
+          "U+06F9"
+        ],
+        "provenance": "observed",
+        "source_id": "iq-2001-anbar-taxi/digit-9",
+        "advance": 420,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "word.iraq",
+        "character": null,
+        "wordmark_id": "iraq",
+        "text": "العراق",
+        "codepoints": [
+          "U+E000"
+        ],
+        "provenance": "observed",
+        "source_id": "iq-2001-anbar-taxi/country-iraq",
+        "advance": 3394,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.anbar",
+        "character": null,
+        "wordmark_id": "anbar",
+        "text": "الأنبار",
+        "codepoints": [
+          "U+E005"
+        ],
+        "provenance": "observed",
+        "source_id": "iq-2001-anbar-taxi/province-anbar",
+        "advance": 2122,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      }
+    ],
+    "restrictions": [
+      "Not an official die font.",
+      "No Arabic GSUB/GPOS; use only isolated serial characters and listed complete PUA wordmarks.",
+      "Wordmark codepoints are token mappings, not an Arabic alphabet."
+    ]
+  },
+  {
+    "id": "utility-truck",
+    "file": "utility-truck-canonical-subset.ttf",
+    "family": "PlateForge Iraq Utility Truck Canonical",
+    "units_per_em": 1000,
+    "cap_height": 1000,
+    "baseline": 0,
+    "rights": "CC BY-SA 4.0 derivative. Source photo: Kurdistantolive; smooth source-guided reconstruction and canonical normalization, modified 2026.",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Erbil_Iraq_number_plate_truck_2015.jpg",
+    "sha256": "01c6b732abd549e80026a1b183378f295d1f382a2e0678fcf459b61212741f2e",
+    "mapping": [
+      {
+        "glyph": "uni0661",
+        "character": "١",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0661",
+          "U+0031",
+          "U+06F1"
+        ],
+        "provenance": "observed",
+        "source_id": "truck-131098/digit-1-third",
+        "advance": 360,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0663",
+        "character": "٣",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0663",
+          "U+0033",
+          "U+06F3"
+        ],
+        "provenance": "observed",
+        "source_id": "truck-131098/digit-3",
+        "advance": 722,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0660",
+        "character": "٠",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0660",
+          "U+0030",
+          "U+06F0"
+        ],
+        "provenance": "observed",
+        "source_id": "truck-131098/digit-0",
+        "advance": 401,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "word.iraq",
+        "character": null,
+        "wordmark_id": "iraq",
+        "text": "العراق",
+        "codepoints": [
+          "U+E000"
+        ],
+        "provenance": "observed",
+        "source_id": "truck-131098/wordmark-iraq",
+        "advance": 2814,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.erbil",
+        "character": null,
+        "wordmark_id": "erbil",
+        "text": "اربيل",
+        "codepoints": [
+          "U+E00C"
+        ],
+        "provenance": "observed",
+        "source_id": "truck-131098/wordmark-erbil",
+        "advance": 2595,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      }
+    ],
+    "restrictions": [
+      "Not an official die font.",
+      "No Arabic GSUB/GPOS; use only isolated serial characters and listed complete PUA wordmarks.",
+      "Wordmark codepoints are token mappings, not an Arabic alphabet."
+    ]
+  },
+  {
+    "id": "modern-eng",
+    "file": "modern-eng-canonical-subset.ttf",
+    "family": "PlateForge Iraq Modern Eng Canonical",
+    "units_per_em": 1000,
+    "cap_height": 1000,
+    "baseline": 0,
+    "rights": "Gutenberg Labo permissive font licence: unlimited use, modification and redistribution, commercial or noncommercial; provided as is.",
+    "source_url": "https://github.com/Gutenberg-Labo/GL-Nummernschild/tree/c108a385ad67eab0e4e7cc9e1f5c3b9072bdbbd2",
+    "sha256": "e2a9f9b66c19180378a04cf857ac4a0af7e20ccf1f0879838305d52b735b3c37",
+    "mapping": [
+      {
+        "glyph": "uni0030",
+        "character": "0",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0030",
+          "U+0660",
+          "U+06F0"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 593,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0031",
+        "character": "1",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0031",
+          "U+0661",
+          "U+06F1"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 593,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0032",
+        "character": "2",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0032",
+          "U+0662",
+          "U+06F2"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 593,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0033",
+        "character": "3",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0033",
+          "U+0663",
+          "U+06F3"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 593,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0034",
+        "character": "4",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0034",
+          "U+0664",
+          "U+06F4"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 593,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0035",
+        "character": "5",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0035",
+          "U+0665",
+          "U+06F5"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 593,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0036",
+        "character": "6",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0036",
+          "U+0666",
+          "U+06F6"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 593,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0037",
+        "character": "7",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0037",
+          "U+0667",
+          "U+06F7"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 593,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0038",
+        "character": "8",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0038",
+          "U+0668",
+          "U+06F8"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 593,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0039",
+        "character": "9",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0039",
+          "U+0669",
+          "U+06F9"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 593,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0041",
+        "character": "A",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0041"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0042",
+        "character": "B",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0042"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0043",
+        "character": "C",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0043"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 622,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0044",
+        "character": "D",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0044"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0045",
+        "character": "E",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0045"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0046",
+        "character": "F",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0046"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0047",
+        "character": "G",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0047"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0048",
+        "character": "H",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0048"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0049",
+        "character": "I",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0049"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 553,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni004A",
+        "character": "J",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+004A"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni004B",
+        "character": "K",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+004B"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni004C",
+        "character": "L",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+004C"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni004D",
+        "character": "M",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+004D"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni004E",
+        "character": "N",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+004E"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni004F",
+        "character": "O",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+004F"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0050",
+        "character": "P",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0050"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0051",
+        "character": "Q",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0051"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0052",
+        "character": "R",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0052"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0053",
+        "character": "S",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0053"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0054",
+        "character": "T",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0054"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0055",
+        "character": "U",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0055"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0056",
+        "character": "V",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0056"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0057",
+        "character": "W",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0057"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0058",
+        "character": "X",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0058"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0059",
+        "character": "Y",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0059"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni005A",
+        "character": "Z",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+005A"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni002D",
+        "character": "-",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+002D"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Eng.ttf",
+        "advance": 620,
+        "role": "Single serial character; aliases share this exact master"
+      }
+    ],
+    "restrictions": [
+      "Not an official die font.",
+      "No Arabic GSUB/GPOS; use only isolated serial characters and listed complete PUA wordmarks.",
+      "Wordmark codepoints are token mappings, not an Arabic alphabet."
+    ]
+  },
+  {
+    "id": "modern-mtl",
+    "file": "modern-mtl-canonical-subset.ttf",
+    "family": "PlateForge Iraq Modern Mtl Canonical",
+    "units_per_em": 1000,
+    "cap_height": 1000,
+    "baseline": 0,
+    "rights": "Gutenberg Labo permissive font licence: unlimited use, modification and redistribution, commercial or noncommercial; provided as is.",
+    "source_url": "https://github.com/Gutenberg-Labo/GL-Nummernschild/tree/c108a385ad67eab0e4e7cc9e1f5c3b9072bdbbd2",
+    "sha256": "24e0ada3790d7272f3c7fb60837440cd6cccef26f2470f0bc1e8baf731d5d4d5",
+    "mapping": [
+      {
+        "glyph": "uni0030",
+        "character": "0",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0030",
+          "U+0660",
+          "U+06F0"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 673,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0031",
+        "character": "1",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0031",
+          "U+0661",
+          "U+06F1"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 673,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0032",
+        "character": "2",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0032",
+          "U+0662",
+          "U+06F2"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 673,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0033",
+        "character": "3",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0033",
+          "U+0663",
+          "U+06F3"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 673,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0034",
+        "character": "4",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0034",
+          "U+0664",
+          "U+06F4"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 673,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0035",
+        "character": "5",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0035",
+          "U+0665",
+          "U+06F5"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 673,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0036",
+        "character": "6",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0036",
+          "U+0666",
+          "U+06F6"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 673,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0037",
+        "character": "7",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0037",
+          "U+0667",
+          "U+06F7"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 673,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0038",
+        "character": "8",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0038",
+          "U+0668",
+          "U+06F8"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 673,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0039",
+        "character": "9",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0039",
+          "U+0669",
+          "U+06F9"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 673,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0041",
+        "character": "A",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0041"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0042",
+        "character": "B",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0042"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0043",
+        "character": "C",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0043"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0044",
+        "character": "D",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0044"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0045",
+        "character": "E",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0045"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0046",
+        "character": "F",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0046"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0047",
+        "character": "G",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0047"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0048",
+        "character": "H",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0048"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0049",
+        "character": "I",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0049"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 553,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni004A",
+        "character": "J",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+004A"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni004B",
+        "character": "K",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+004B"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni004C",
+        "character": "L",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+004C"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni004D",
+        "character": "M",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+004D"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni004E",
+        "character": "N",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+004E"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni004F",
+        "character": "O",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+004F"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0050",
+        "character": "P",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0050"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0051",
+        "character": "Q",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0051"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0052",
+        "character": "R",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0052"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0053",
+        "character": "S",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0053"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0054",
+        "character": "T",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0054"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0055",
+        "character": "U",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0055"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0056",
+        "character": "V",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0056"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0057",
+        "character": "W",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0057"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 714,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0058",
+        "character": "X",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0058"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0059",
+        "character": "Y",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0059"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni005A",
+        "character": "Z",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+005A"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni002D",
+        "character": "-",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+002D"
+        ],
+        "provenance": "candidate",
+        "source_id": "GL-Nummernschild-Mtl.ttf",
+        "advance": 713,
+        "role": "Single serial character; aliases share this exact master"
+      }
+    ],
+    "restrictions": [
+      "Not an official die font.",
+      "No Arabic GSUB/GPOS; use only isolated serial characters and listed complete PUA wordmarks.",
+      "Wordmark codepoints are token mappings, not an Arabic alphabet."
+    ]
+  },
+  {
+    "id": "naskh-candidate",
+    "file": "naskh-candidate-canonical-subset.ttf",
+    "family": "PlateForge Iraq Naskh Candidate Canonical",
+    "units_per_em": 1000,
+    "cap_height": 1000,
+    "baseline": 0,
+    "rights": "SIL Open Font License 1.1. Copyright 2022 The Noto Project Authors (https://github.com/notofonts/arabic).",
+    "source_url": "https://github.com/notofonts/arabic",
+    "sha256": "2193cdd2de8492d5969324d0eed954f1d5c08fffc135fe33c54f6fe3a650701c",
+    "mapping": [
+      {
+        "glyph": "uni0660",
+        "character": "٠",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0660",
+          "U+0030",
+          "U+06F0"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 402,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0661",
+        "character": "١",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0661",
+          "U+0031",
+          "U+06F1"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 377,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0662",
+        "character": "٢",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0662",
+          "U+0032",
+          "U+06F2"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 682,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0663",
+        "character": "٣",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0663",
+          "U+0033",
+          "U+06F3"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 712,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0664",
+        "character": "٤",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0664",
+          "U+0034",
+          "U+06F4"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 681,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0665",
+        "character": "٥",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0665",
+          "U+0035",
+          "U+06F5"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 562,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0666",
+        "character": "٦",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0666",
+          "U+0036",
+          "U+06F6"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 745,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0667",
+        "character": "٧",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0667",
+          "U+0037",
+          "U+06F7"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 812,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0668",
+        "character": "٨",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0668",
+          "U+0038",
+          "U+06F8"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 812,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0669",
+        "character": "٩",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0669",
+          "U+0039",
+          "U+06F9"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 640,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0627",
+        "character": "ا",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0627"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 312,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0628",
+        "character": "ب",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0628"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1118,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni062A",
+        "character": "ت",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+062A"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1118,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni062B",
+        "character": "ث",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+062B"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1118,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni062C",
+        "character": "ج",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+062C"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 960,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni062D",
+        "character": "ح",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+062D"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 960,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni062E",
+        "character": "خ",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+062E"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 960,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni062F",
+        "character": "د",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+062F"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 640,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0630",
+        "character": "ذ",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0630"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 640,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0631",
+        "character": "ر",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0631"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 657,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0632",
+        "character": "ز",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0632"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 657,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0633",
+        "character": "س",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0633"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1554,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0634",
+        "character": "ش",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0634"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1554,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0635",
+        "character": "ص",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0635"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1665,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0636",
+        "character": "ض",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0636"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1665,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0637",
+        "character": "ط",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0637"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1186,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0638",
+        "character": "ظ",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0638"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1186,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0639",
+        "character": "ع",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0639"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 909,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni063A",
+        "character": "غ",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+063A"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 909,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0641",
+        "character": "ف",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0641"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1243,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0642",
+        "character": "ق",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0642"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 914,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0643",
+        "character": "ك",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0643"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 902,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0644",
+        "character": "ل",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0644"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 834,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0645",
+        "character": "م",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0645"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 733,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0646",
+        "character": "ن",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0646"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 837,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0647",
+        "character": "ه",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0647"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 995,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0648",
+        "character": "و",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0648"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 697,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni064A",
+        "character": "ي",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+064A"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 916,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0649",
+        "character": "ى",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0649"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 916,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0629",
+        "character": "ة",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0629"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 571,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0623",
+        "character": "أ",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0623"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 329,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0625",
+        "character": "إ",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0625"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 322,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0622",
+        "character": "آ",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0622"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 535,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0624",
+        "character": "ؤ",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0624"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 697,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0626",
+        "character": "ئ",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0626"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 916,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0621",
+        "character": "ء",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0621"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 648,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni067E",
+        "character": "پ",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+067E"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1118,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0686",
+        "character": "چ",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0686"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 960,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0698",
+        "character": "ژ",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0698"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 657,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni06AF",
+        "character": "گ",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+06AF"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1107,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni06A9",
+        "character": "ک",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+06A9"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1107,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni06CC",
+        "character": "ی",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+06CC"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 916,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni06D5",
+        "character": "ە",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+06D5"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 559,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0041",
+        "character": "A",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0041"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1252,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0042",
+        "character": "B",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0042"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1052,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0043",
+        "character": "C",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0043"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 978,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0044",
+        "character": "D",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0044"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1150,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0045",
+        "character": "E",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0045"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1010,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0046",
+        "character": "F",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0046"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 956,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0047",
+        "character": "G",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0047"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1146,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0048",
+        "character": "H",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0048"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1276,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0049",
+        "character": "I",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0049"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 621,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni004A",
+        "character": "J",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+004A"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 700,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni004B",
+        "character": "K",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+004B"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1213,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni004C",
+        "character": "L",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+004C"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1010,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni004D",
+        "character": "M",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+004D"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1482,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni004E",
+        "character": "N",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+004E"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1244,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni004F",
+        "character": "O",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+004F"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1139,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0050",
+        "character": "P",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0050"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1006,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0051",
+        "character": "Q",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0051"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1139,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0052",
+        "character": "R",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0052"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1155,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0053",
+        "character": "S",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0053"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 873,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0054",
+        "character": "T",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0054"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1071,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0055",
+        "character": "U",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0055"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1200,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0056",
+        "character": "V",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0056"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1172,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0057",
+        "character": "W",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0057"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1751,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0058",
+        "character": "X",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0058"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1194,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni0059",
+        "character": "Y",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+0059"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 1166,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni005A",
+        "character": "Z",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+005A"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 989,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "uni002D",
+        "character": "-",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+002D"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700",
+        "advance": 487,
+        "role": "Single serial character; aliases share this exact master"
+      },
+      {
+        "glyph": "class.heh_connected",
+        "character": "هـ",
+        "wordmark_id": null,
+        "text": null,
+        "codepoints": [
+          "U+E100"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 1149,
+        "role": "Atomic pre-shaped class token"
+      },
+      {
+        "glyph": "word.iraq",
+        "character": null,
+        "wordmark_id": "iraq",
+        "text": "العراق",
+        "codepoints": [
+          "U+E000"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 2350,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.baghdad",
+        "character": null,
+        "wordmark_id": "baghdad",
+        "text": "بغداد",
+        "codepoints": [
+          "U+E001"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 2094,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.nineveh",
+        "character": null,
+        "wordmark_id": "nineveh",
+        "text": "نينوى",
+        "codepoints": [
+          "U+E002"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 2248,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.maysan",
+        "character": null,
+        "wordmark_id": "maysan",
+        "text": "ميسان",
+        "codepoints": [
+          "U+E003"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 2515,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.basra",
+        "character": null,
+        "wordmark_id": "basra",
+        "text": "البصرة",
+        "codepoints": [
+          "U+E004"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 2631,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.anbar",
+        "character": null,
+        "wordmark_id": "anbar",
+        "text": "الانبار",
+        "codepoints": [
+          "U+E005"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 2254,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.qadisiyyah",
+        "character": null,
+        "wordmark_id": "qadisiyyah",
+        "text": "القادسية",
+        "codepoints": [
+          "U+E006"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 3462,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.muthanna",
+        "character": null,
+        "wordmark_id": "muthanna",
+        "text": "المثنى",
+        "codepoints": [
+          "U+E007"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 2324,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.babil",
+        "character": null,
+        "wordmark_id": "babil",
+        "text": "بابل",
+        "codepoints": [
+          "U+E008"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 1488,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.karbala",
+        "character": null,
+        "wordmark_id": "karbala",
+        "text": "كربلاء",
+        "codepoints": [
+          "U+E009"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 2377,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.diyala",
+        "character": null,
+        "wordmark_id": "diyala",
+        "text": "ديالى",
+        "codepoints": [
+          "U+E00A"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 2038,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.sulaymaniyah",
+        "character": null,
+        "wordmark_id": "sulaymaniyah",
+        "text": "السليمانية",
+        "codepoints": [
+          "U+E00B"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 3961,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.erbil",
+        "character": null,
+        "wordmark_id": "erbil",
+        "text": "اربيل",
+        "codepoints": [
+          "U+E00C"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 1957,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.halabja",
+        "character": null,
+        "wordmark_id": "halabja",
+        "text": "حلبجة",
+        "codepoints": [
+          "U+E00D"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 2484,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.dohuk",
+        "character": null,
+        "wordmark_id": "dohuk",
+        "text": "دهوك",
+        "codepoints": [
+          "U+E00E"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 2303,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.kirkuk",
+        "character": null,
+        "wordmark_id": "kirkuk",
+        "text": "كركوك",
+        "codepoints": [
+          "U+E00F"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 2709,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.saladin",
+        "character": null,
+        "wordmark_id": "saladin",
+        "text": "صلاح الدين",
+        "codepoints": [
+          "U+E010"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 4287,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.dhi_qar",
+        "character": null,
+        "wordmark_id": "dhi-qar",
+        "text": "ذي قار",
+        "codepoints": [
+          "U+E011"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 2189,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.najaf",
+        "character": null,
+        "wordmark_id": "najaf",
+        "text": "النجف",
+        "codepoints": [
+          "U+E012"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 2572,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.wasit",
+        "character": null,
+        "wordmark_id": "wasit",
+        "text": "واسط",
+        "codepoints": [
+          "U+E013"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 2595,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.private",
+        "character": null,
+        "wordmark_id": "private",
+        "text": "خصوصي",
+        "codepoints": [
+          "U+E014"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 3321,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.hire",
+        "character": null,
+        "wordmark_id": "hire",
+        "text": "اجرة",
+        "codepoints": [
+          "U+E015"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 1907,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.government",
+        "character": null,
+        "wordmark_id": "government",
+        "text": "حكومية",
+        "codepoints": [
+          "U+E016"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 3198,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.commercial",
+        "character": null,
+        "wordmark_id": "commercial",
+        "text": "حمل",
+        "codepoints": [
+          "U+E017"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 1733,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.agricultural",
+        "character": null,
+        "wordmark_id": "agricultural",
+        "text": "زراعي",
+        "codepoints": [
+          "U+E018"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 1972,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.construction",
+        "character": null,
+        "wordmark_id": "construction",
+        "text": "إنشائية",
+        "codepoints": [
+          "U+E019"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 2658,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.customs",
+        "character": null,
+        "wordmark_id": "customs",
+        "text": "كمركية",
+        "codepoints": [
+          "U+E01A"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 2784,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.police",
+        "character": null,
+        "wordmark_id": "police",
+        "text": "شرطة",
+        "codepoints": [
+          "U+E01B"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 2480,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.military",
+        "character": null,
+        "wordmark_id": "military",
+        "text": "عسكرية",
+        "codepoints": [
+          "U+E01C"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 3187,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.temporary",
+        "character": null,
+        "wordmark_id": "temporary",
+        "text": "مؤقتة",
+        "codepoints": [
+          "U+E01D"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 2509,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.motorcycle",
+        "character": null,
+        "wordmark_id": "motorcycle",
+        "text": "دراجة",
+        "codepoints": [
+          "U+E01E"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 2440,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.inspection_temporary",
+        "character": null,
+        "wordmark_id": "inspection-temporary",
+        "text": "فحص مؤقت",
+        "codepoints": [
+          "U+E01F"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 4992,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      },
+      {
+        "glyph": "word.counter_terrorism",
+        "character": null,
+        "wordmark_id": "counter-terrorism",
+        "text": "جهاز مكافحة الارهاب",
+        "codepoints": [
+          "U+E020"
+        ],
+        "provenance": "candidate",
+        "source_id": "NotoNaskhArabic[wght].ttf:wght=700:HB-shaped",
+        "advance": 8349,
+        "role": "Complete whole-word PUA token; never a general Arabic letter"
+      }
+    ],
+    "restrictions": [
+      "Not an official die font.",
+      "No Arabic GSUB/GPOS; use only isolated serial characters and listed complete PUA wordmarks.",
+      "Wordmark codepoints are token mappings, not an Arabic alphabet."
+    ]
+  }
+]

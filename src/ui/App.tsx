@@ -15,14 +15,16 @@ import { RegionPicker } from './RegionPicker';
 import { useTheme } from './useTheme';
 
 const ReferenceLibrary = lazy(() => import('./ReferenceLibrary').then((module) => ({ default: module.ReferenceLibrary })));
+const IraqCustomizer = lazy(() => import('./IraqCustomizer').then((module) => ({ default: module.IraqCustomizer })));
 const DEFAULT_REGION = 'us-ca';
-type View = 'single' | 'gallery' | 'batch' | 'library';
-const VIEWS: View[] = ['single', 'gallery', 'batch', 'library'];
-const VIEW_LABELS: Record<View, string> = { single: 'Single', gallery: 'Gallery', batch: 'Batch', library: 'Library' };
+type View = 'single' | 'gallery' | 'batch' | 'library' | 'iraq-customizer';
+const VIEWS: View[] = ['single', 'gallery', 'batch', 'library', 'iraq-customizer'];
+const VIEW_LABELS: Record<View, string> = { single: 'Single', gallery: 'Gallery', batch: 'Batch', library: 'Library', 'iraq-customizer': 'Iraq editor' };
 function readHash(): { region: string; format?: string; view: View } {
   let hash = '';
   try { hash = decodeURIComponent(location.hash.replace(/^#\/?/, '')); } catch { /* malformed shared URL */ }
   const [region, format] = hash.split('/');
+  if (region === 'iraq-customizer') return { region: 'iraq', view: 'iraq-customizer' };
   if (region === 'library') return { region: DEFAULT_REGION, view: 'library' };
   if (region === 'gallery') return { region: getRegion(format) ? format : DEFAULT_REGION, view: 'gallery' };
   return getRegion(region) ? { region, format, view: 'single' } : { region: DEFAULT_REGION, view: 'single' };
@@ -77,6 +79,7 @@ export function App() {
     if (next) select(region.id, next.id);
   }, [timeline, format.id, region.id, select]);
   useEffect(() => {
+    if (view === 'iraq-customizer') { if (location.hash !== '#/iraq-customizer') history.replaceState(null, '', '#/iraq-customizer'); return; }
     // The library owns its sub-route (#/library/coverage etc.).
     if (view === 'library') { if (!location.hash.startsWith('#/library')) history.replaceState(null, '', '#/library'); return; }
     history.replaceState(null, '', view === 'gallery' ? `#/gallery/${region.id}` : `#/${region.id}/${format.id}`);
@@ -84,7 +87,7 @@ export function App() {
   useEffect(() => {
     const onHash = () => {
       const next = readHash();
-      if (next.view !== 'library') select(next.region, next.format);
+      if (next.view !== 'library' && next.view !== 'iraq-customizer') select(next.region, next.format);
       setView(next.view);
     };
     window.addEventListener('hashchange', onHash);
@@ -136,8 +139,8 @@ export function App() {
     <header className="topbar">
       <a className="brand" href="#/" onClick={(e) => e.preventDefault()} aria-label="PlateForge"><Logo /><span>PlateForge</span></a>
       <button className="region-trigger" onClick={() => setPickerOpen(true)} aria-haspopup="dialog">
-        <span className="flag" aria-hidden="true">{region.flag}</span>
-        <span className="region-trigger-text"><span className="region-trigger-name">{region.name}</span><span className="region-trigger-group">{country === region.name ? region.group : country}</span></span>
+        <span className="flag" aria-hidden="true">{view === 'iraq-customizer' ? '🇮🇶' : region.flag}</span>
+        <span className="region-trigger-text"><span className="region-trigger-name">{view === 'iraq-customizer' ? 'Iraq' : region.name}</span><span className="region-trigger-group">{view === 'iraq-customizer' ? 'Flat plate editor' : country === region.name ? region.group : country}</span></span>
         <ChevronDown /><kbd className="hide-mobile">{isMac ? '⌘' : 'Ctrl'} K</kbd>
       </button>
       <div className="topbar-end">
@@ -146,8 +149,9 @@ export function App() {
       </div>
     </header>
     <div className="mobile-tabs tabs" role="tablist" aria-label="Mode">{VIEWS.map((v) => <button key={v} role="tab" aria-selected={view === v} onClick={() => setView(v)}>{v === 'single' ? 'Plate' : VIEW_LABELS[v]}</button>)}</div>
-    <main className="workspace" key={fontsVersion}>
-      {view === 'library' ? <Suspense fallback={<p role="status">Loading reference library…</p>}><ReferenceLibrary regions={regions} onOpenFormat={openEditor} /></Suspense>
+    <main className="workspace" key={view === 'iraq-customizer' ? 'iraq-editor' : fontsVersion}>
+      {view === 'iraq-customizer' ? <Suspense fallback={<p role="status">Loading Iraq customizer…</p>}><IraqCustomizer /></Suspense>
+        : view === 'library' ? <Suspense fallback={<p role="status">Loading reference library…</p>}><ReferenceLibrary regions={regions} onOpenFormat={openEditor} /></Suspense>
         : view === 'gallery' ? <GalleryView regions={regions} region={region} format={format} onOpen={openEditor} onSelectRegion={(id) => select(id)} />
         : view === 'single' ? <>
           <section className="stage-col">

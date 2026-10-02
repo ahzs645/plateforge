@@ -1,0 +1,541 @@
+[
+  {
+    "id": "iraq",
+    "text": "العراق",
+    "direction": "rtl",
+    "glyph_ids": [
+      294,
+      52,
+      8,
+      29,
+      46,
+      70,
+      8
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "baghdad",
+    "text": "بغداد",
+    "direction": "rtl",
+    "glyph_ids": [
+      26,
+      8,
+      27,
+      288,
+      46,
+      323,
+      19
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "nineveh",
+    "text": "نينوى",
+    "direction": "rtl",
+    "glyph_ids": [
+      99,
+      96,
+      288,
+      16,
+      325,
+      18,
+      288,
+      19
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "maysan",
+    "text": "ميسان",
+    "direction": "rtl",
+    "glyph_ids": [
+      288,
+      78,
+      9,
+      34,
+      325,
+      18,
+      77
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "basra",
+    "text": "البصرة",
+    "direction": "rtl",
+    "glyph_ids": [
+      294,
+      88,
+      29,
+      38,
+      323,
+      16,
+      70,
+      8
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "anbar",
+    "text": "الانبار",
+    "direction": "rtl",
+    "glyph_ids": [
+      28,
+      9,
+      323,
+      16,
+      288,
+      19,
+      10,
+      71,
+      8
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "qadisiyyah",
+    "text": "القادسية",
+    "direction": "rtl",
+    "glyph_ids": [
+      294,
+      81,
+      325,
+      18,
+      35,
+      26,
+      9,
+      294,
+      50,
+      70,
+      8
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "muthanna",
+    "text": "المثنى",
+    "direction": "rtl",
+    "glyph_ids": [
+      100,
+      288,
+      16,
+      299,
+      18,
+      76,
+      70,
+      8
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "babil",
+    "text": "بابل",
+    "direction": "rtl",
+    "glyph_ids": [
+      67,
+      323,
+      19,
+      9,
+      323,
+      19
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "karbala",
+    "text": "كربلاء",
+    "direction": "rtl",
+    "glyph_ids": [
+      4,
+      11,
+      69,
+      323,
+      19,
+      29,
+      59
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "diyala",
+    "text": "ديالى",
+    "direction": "rtl",
+    "glyph_ids": [
+      100,
+      70,
+      9,
+      325,
+      21,
+      26
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "sulaymaniyah",
+    "text": "السليمانية",
+    "direction": "rtl",
+    "glyph_ids": [
+      294,
+      81,
+      325,
+      18,
+      288,
+      19,
+      9,
+      76,
+      325,
+      18,
+      68,
+      34,
+      70,
+      8
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "erbil",
+    "text": "اربيل",
+    "direction": "rtl",
+    "glyph_ids": [
+      67,
+      325,
+      18,
+      323,
+      19,
+      28,
+      8
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "halabja",
+    "text": "حلبجة",
+    "direction": "rtl",
+    "glyph_ids": [
+      294,
+      81,
+      323,
+      24,
+      323,
+      16,
+      68,
+      25
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "dohuk",
+    "text": "دهوك",
+    "direction": "rtl",
+    "glyph_ids": [
+      364,
+      56,
+      96,
+      83,
+      26
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "kirkuk",
+    "text": "كركوك",
+    "direction": "rtl",
+    "glyph_ids": [
+      364,
+      56,
+      96,
+      59,
+      29,
+      59
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "saladin",
+    "text": "صلاح الدين",
+    "direction": "rtl",
+    "glyph_ids": [
+      288,
+      79,
+      325,
+      21,
+      27,
+      70,
+      8,
+      3,
+      22,
+      11,
+      69,
+      39
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "dhi-qar",
+    "text": "ذي قار",
+    "direction": "rtl",
+    "glyph_ids": [
+      28,
+      9,
+      294,
+      51,
+      3,
+      325,
+      99,
+      288,
+      26
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "najaf",
+    "text": "النجف",
+    "direction": "rtl",
+    "glyph_ids": [
+      288,
+      49,
+      323,
+      24,
+      288,
+      16,
+      70,
+      8
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "wasit",
+    "text": "واسط",
+    "direction": "rtl",
+    "glyph_ids": [
+      41,
+      35,
+      8,
+      94
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "private",
+    "text": "خصوصي",
+    "direction": "rtl",
+    "glyph_ids": [
+      325,
+      100,
+      39,
+      96,
+      38,
+      288,
+      25
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "hire",
+    "text": "اجرة",
+    "direction": "rtl",
+    "glyph_ids": [
+      294,
+      88,
+      29,
+      323,
+      25,
+      8
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "government",
+    "text": "حكومية",
+    "direction": "rtl",
+    "glyph_ids": [
+      294,
+      81,
+      325,
+      18,
+      77,
+      96,
+      58,
+      25
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "commercial",
+    "text": "حمل",
+    "direction": "rtl",
+    "glyph_ids": [
+      67,
+      76,
+      25
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "agricultural",
+    "text": "زراعي",
+    "direction": "rtl",
+    "glyph_ids": [
+      325,
+      100,
+      47,
+      8,
+      28,
+      288,
+      28
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "construction",
+    "text": "إنشائية",
+    "direction": "rtl",
+    "glyph_ids": [
+      294,
+      81,
+      325,
+      18,
+      305,
+      19,
+      9,
+      299,
+      34,
+      288,
+      19,
+      333,
+      8
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "customs",
+    "text": "كمركية",
+    "direction": "rtl",
+    "glyph_ids": [
+      294,
+      81,
+      325,
+      18,
+      59,
+      29,
+      76,
+      59
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "police",
+    "text": "شرطة",
+    "direction": "rtl",
+    "glyph_ids": [
+      294,
+      81,
+      43,
+      29,
+      299,
+      35
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "military",
+    "text": "عسكرية",
+    "direction": "rtl",
+    "glyph_ids": [
+      294,
+      81,
+      325,
+      21,
+      29,
+      58,
+      34,
+      47
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "temporary",
+    "text": "مؤقتة",
+    "direction": "rtl",
+    "glyph_ids": [
+      294,
+      81,
+      294,
+      18,
+      294,
+      51,
+      305,
+      96,
+      77
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "motorcycle",
+    "text": "دراجة",
+    "direction": "rtl",
+    "glyph_ids": [
+      294,
+      81,
+      323,
+      25,
+      8,
+      28,
+      26
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "inspection-temporary",
+    "text": "فحص مؤقت",
+    "direction": "rtl",
+    "glyph_ids": [
+      294,
+      15,
+      294,
+      51,
+      305,
+      96,
+      77,
+      3,
+      37,
+      24,
+      288,
+      51
+    ],
+    "missing_glyphs": 0
+  },
+  {
+    "id": "counter-terrorism",
+    "text": "جهاز مكافحة الارهاب",
+    "direction": "rtl",
+    "glyph_ids": [
+      323,
+      14,
+      9,
+      83,
+      28,
+      10,
+      71,
+      8,
+      3,
+      294,
+      81,
+      24,
+      288,
+      51,
+      9,
+      58,
+      77,
+      3,
+      288,
+      28,
+      9,
+      82,
+      323,
+      25
+    ],
+    "missing_glyphs": 0
+  }
+]

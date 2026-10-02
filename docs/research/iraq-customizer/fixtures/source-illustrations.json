@@ -1,0 +1,1422 @@
+[
+  {
+    "id": "wiki-diagram-28",
+    "sourceID": "wiki-diagram-28",
+    "svg": "illustrations/wiki-diagram-28.svg",
+    "png": "illustrations/wiki-diagram-28.png",
+    "comparison": "qa/wiki-diagram-28-comparison.png",
+    "sourceSize": [
+      520,
+      288
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#000000"
+    ],
+    "vectorSubpaths": 40,
+    "nonBackgroundMatch": 0.9629,
+    "layerIoUs": [
+      0.9629
+    ],
+    "label": "2008 bilingual · private",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_2008-2024_Private.png",
+    "sourceAuthor": "BasilLeaf",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        24,
+        237,
+        53,
+        265
+      ],
+      [
+        76,
+        121,
+        103,
+        148
+      ],
+      [
+        473,
+        116,
+        498,
+        141
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-31",
+    "sourceID": "wiki-diagram-31",
+    "svg": "illustrations/wiki-diagram-31.svg",
+    "png": "illustrations/wiki-diagram-31.png",
+    "comparison": "qa/wiki-diagram-31-comparison.png",
+    "sourceSize": [
+      520,
+      288
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#ed1c24",
+      "#000000"
+    ],
+    "vectorSubpaths": 47,
+    "nonBackgroundMatch": 0.9625,
+    "layerIoUs": [
+      0.93675,
+      0.94874
+    ],
+    "label": "2008 bilingual · hire",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_2008-2024_Bus_and_Taxi.png",
+    "sourceAuthor": "BasilLeaf",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        24,
+        237,
+        53,
+        265
+      ],
+      [
+        76,
+        121,
+        103,
+        148
+      ],
+      [
+        473,
+        116,
+        498,
+        141
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-32",
+    "sourceID": "wiki-diagram-32",
+    "svg": "illustrations/wiki-diagram-32.svg",
+    "png": "illustrations/wiki-diagram-32.png",
+    "comparison": "qa/wiki-diagram-32-comparison.png",
+    "sourceSize": [
+      520,
+      288
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#0079c1",
+      "#000000"
+    ],
+    "vectorSubpaths": 41,
+    "nonBackgroundMatch": 0.95555,
+    "layerIoUs": [
+      0.91409,
+      0.94264
+    ],
+    "label": "2008 bilingual · government",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_2008-2024_Governmental.png",
+    "sourceAuthor": "BasilLeaf",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        24,
+        237,
+        53,
+        265
+      ],
+      [
+        76,
+        121,
+        103,
+        148
+      ],
+      [
+        473,
+        116,
+        498,
+        141
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-33",
+    "sourceID": "wiki-diagram-33",
+    "svg": "illustrations/wiki-diagram-33.svg",
+    "png": "illustrations/wiki-diagram-33.png",
+    "comparison": "qa/wiki-diagram-33-comparison.png",
+    "sourceSize": [
+      520,
+      288
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#ffc913",
+      "#000000"
+    ],
+    "vectorSubpaths": 43,
+    "nonBackgroundMatch": 0.96724,
+    "layerIoUs": [
+      0.94821,
+      0.95669
+    ],
+    "label": "2008 bilingual · commercial",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_2008-2024_Truck.png",
+    "sourceAuthor": "BasilLeaf",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        24,
+        237,
+        53,
+        265
+      ],
+      [
+        76,
+        121,
+        103,
+        148
+      ],
+      [
+        473,
+        116,
+        498,
+        141
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-35",
+    "sourceID": "wiki-diagram-35",
+    "svg": "illustrations/wiki-diagram-35.svg",
+    "png": "illustrations/wiki-diagram-35.png",
+    "comparison": "qa/wiki-diagram-35-comparison.png",
+    "sourceSize": [
+      520,
+      288
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#01a06a",
+      "#000000"
+    ],
+    "vectorSubpaths": 47,
+    "nonBackgroundMatch": 0.94731,
+    "layerIoUs": [
+      0.89643,
+      0.93027
+    ],
+    "label": "2008 bilingual · agricultural",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_2008-2024_Agricultural.png",
+    "sourceAuthor": "BasilLeaf",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        24,
+        237,
+        53,
+        265
+      ],
+      [
+        76,
+        121,
+        103,
+        148
+      ],
+      [
+        473,
+        116,
+        498,
+        141
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-36",
+    "sourceID": "wiki-diagram-36",
+    "svg": "illustrations/wiki-diagram-36.svg",
+    "png": "illustrations/wiki-diagram-36.png",
+    "comparison": "qa/wiki-diagram-36-comparison.png",
+    "sourceSize": [
+      520,
+      288
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#01a06a",
+      "#000000"
+    ],
+    "vectorSubpaths": 52,
+    "nonBackgroundMatch": 0.94627,
+    "layerIoUs": [
+      0.89431,
+      0.92923
+    ],
+    "label": "2008 bilingual · construction",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_Construction.png",
+    "sourceAuthor": "BasilLeaf",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        24,
+        237,
+        53,
+        265
+      ],
+      [
+        76,
+        121,
+        103,
+        148
+      ],
+      [
+        473,
+        116,
+        498,
+        141
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-34",
+    "sourceID": "wiki-diagram-34",
+    "svg": "illustrations/wiki-diagram-34.svg",
+    "png": "illustrations/wiki-diagram-34.png",
+    "comparison": "qa/wiki-diagram-34-comparison.png",
+    "sourceSize": [
+      520,
+      288
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#ff6223",
+      "#000000"
+    ],
+    "vectorSubpaths": 51,
+    "nonBackgroundMatch": 0.95634,
+    "layerIoUs": [
+      0.91759,
+      0.94616
+    ],
+    "label": "2008 bilingual · temporary customs",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_Temporary_Customs.png",
+    "sourceAuthor": "BasilLeaf",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        24,
+        237,
+        53,
+        265
+      ],
+      [
+        76,
+        121,
+        103,
+        148
+      ],
+      [
+        473,
+        116,
+        498,
+        141
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-25",
+    "sourceID": "wiki-diagram-25",
+    "svg": "illustrations/wiki-diagram-25.svg",
+    "png": "illustrations/wiki-diagram-25.png",
+    "comparison": "qa/wiki-diagram-25-comparison.png",
+    "sourceSize": [
+      350,
+      157
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#000000"
+    ],
+    "vectorSubpaths": 20,
+    "nonBackgroundMatch": 0.92319,
+    "layerIoUs": [
+      0.92319
+    ],
+    "label": "2001 private illustration",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_license_plate_2001_graphic.png",
+    "sourceAuthor": "Kintetsubuffalo (uploader; summary has no author detail)",
+    "sourceLicense": "CC-BY-SA-4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        80,
+        58,
+        118,
+        96
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-26",
+    "sourceID": "wiki-diagram-26",
+    "svg": "illustrations/wiki-diagram-26.svg",
+    "png": "illustrations/wiki-diagram-26.png",
+    "comparison": "qa/wiki-diagram-26-comparison.png",
+    "sourceSize": [
+      350,
+      175
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#000000"
+    ],
+    "vectorSubpaths": 20,
+    "nonBackgroundMatch": 0.9274,
+    "layerIoUs": [
+      0.9274
+    ],
+    "label": "Undated/2001-section compact illustration",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_license_plate_graphic.png",
+    "sourceAuthor": "Kintetsubuffalo (uploader; summary has no author detail)",
+    "sourceLicense": "CC-BY-SA-4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        58,
+        65,
+        104,
+        110
+      ],
+      [
+        70,
+        13,
+        84,
+        27
+      ],
+      [
+        265,
+        13,
+        281,
+        29
+      ],
+      [
+        70,
+        148,
+        84,
+        163
+      ],
+      [
+        265,
+        148,
+        281,
+        163
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-27",
+    "sourceID": "wiki-diagram-27",
+    "svg": "illustrations/wiki-diagram-27.svg",
+    "png": "illustrations/wiki-diagram-27.png",
+    "comparison": "qa/wiki-diagram-27-comparison.png",
+    "sourceSize": [
+      350,
+      91
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#ffc600",
+      "#000000"
+    ],
+    "vectorSubpaths": 43,
+    "nonBackgroundMatch": 0.98658,
+    "layerIoUs": [
+      0.98526,
+      0.92635
+    ],
+    "label": "2001 commercial illustration",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_license_plate_commercial_graphic.png",
+    "sourceAuthor": "Kintetsubuffalo (uploader; summary has no author detail)",
+    "sourceLicense": "CC-BY-SA-4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        112,
+        8,
+        145,
+        79
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-38",
+    "sourceID": "wiki-diagram-38",
+    "svg": "illustrations/wiki-diagram-38.svg",
+    "png": "illustrations/wiki-diagram-38.png",
+    "comparison": "qa/wiki-diagram-38-comparison.png",
+    "sourceSize": [
+      520,
+      288
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#000000"
+    ],
+    "vectorSubpaths": 17,
+    "nonBackgroundMatch": 0.97451,
+    "layerIoUs": [
+      0.97451
+    ],
+    "label": "Legacy divided · Dohuk illustration",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_Dohuk.png",
+    "sourceAuthor": "Nima Farid",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-39",
+    "sourceID": "wiki-diagram-39",
+    "svg": "illustrations/wiki-diagram-39.svg",
+    "png": "illustrations/wiki-diagram-39.png",
+    "comparison": "qa/wiki-diagram-39-comparison.png",
+    "sourceSize": [
+      520,
+      288
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#000000"
+    ],
+    "vectorSubpaths": 20,
+    "nonBackgroundMatch": 0.97679,
+    "layerIoUs": [
+      0.97679
+    ],
+    "label": "Legacy divided · Erbil illustration",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_Erbil.png",
+    "sourceAuthor": "BasilLeaf",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-40",
+    "sourceID": "wiki-diagram-40",
+    "svg": "illustrations/wiki-diagram-40.svg",
+    "png": "illustrations/wiki-diagram-40.png",
+    "comparison": "qa/wiki-diagram-40-comparison.png",
+    "sourceSize": [
+      520,
+      288
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#000000"
+    ],
+    "vectorSubpaths": 21,
+    "nonBackgroundMatch": 0.97653,
+    "layerIoUs": [
+      0.97653
+    ],
+    "label": "Legacy divided · Sulaymaniyah illustration",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_Sulaymaniyah.png",
+    "sourceAuthor": "Nima Farid",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-43",
+    "sourceID": "wiki-diagram-43",
+    "svg": "illustrations/wiki-diagram-43.svg",
+    "png": "illustrations/wiki-diagram-43.png",
+    "comparison": "qa/wiki-diagram-43-comparison.png",
+    "sourceSize": [
+      520,
+      288
+    ],
+    "observedPalette": [
+      "#ed1c24",
+      "#ffffff"
+    ],
+    "vectorSubpaths": 20,
+    "nonBackgroundMatch": 0.97307,
+    "layerIoUs": [
+      0.97307
+    ],
+    "label": "Legacy divided · hire illustration",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_1988-2022_Bus_and_Taxi.png",
+    "sourceAuthor": "BasilLeaf",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-44",
+    "sourceID": "wiki-diagram-44",
+    "svg": "illustrations/wiki-diagram-44.svg",
+    "png": "illustrations/wiki-diagram-44.png",
+    "comparison": "qa/wiki-diagram-44-comparison.png",
+    "sourceSize": [
+      520,
+      288
+    ],
+    "observedPalette": [
+      "#ffc913",
+      "#000000"
+    ],
+    "vectorSubpaths": 20,
+    "nonBackgroundMatch": 0.97461,
+    "layerIoUs": [
+      0.97461
+    ],
+    "label": "Legacy divided · commercial illustration",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_1988-2022_Truck.png",
+    "sourceAuthor": "BasilLeaf",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-45",
+    "sourceID": "wiki-diagram-45",
+    "svg": "illustrations/wiki-diagram-45.svg",
+    "png": "illustrations/wiki-diagram-45.png",
+    "comparison": "qa/wiki-diagram-45-comparison.png",
+    "sourceSize": [
+      520,
+      288
+    ],
+    "observedPalette": [
+      "#3443dc",
+      "#ffffff"
+    ],
+    "vectorSubpaths": 15,
+    "nonBackgroundMatch": 0.96782,
+    "layerIoUs": [
+      0.96782
+    ],
+    "label": "Legacy police · full-width lower legend",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_1988-2022_Police.png",
+    "sourceAuthor": "Kingrhem",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-46",
+    "sourceID": "wiki-diagram-46",
+    "svg": "illustrations/wiki-diagram-46.svg",
+    "png": "illustrations/wiki-diagram-46.png",
+    "comparison": "qa/wiki-diagram-46-comparison.png",
+    "sourceSize": [
+      520,
+      288
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#d8272d"
+    ],
+    "vectorSubpaths": 26,
+    "nonBackgroundMatch": 0.93867,
+    "layerIoUs": [
+      0.93867
+    ],
+    "label": "Legacy temporary · Dohuk year strip",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_Temporary.png",
+    "sourceAuthor": "BasilLeaf",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        74,
+        11,
+        100,
+        34
+      ],
+      [
+        414,
+        11,
+        443,
+        35
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-24",
+    "sourceID": "wiki-diagram-24",
+    "svg": "illustrations/wiki-diagram-24.svg",
+    "png": "illustrations/wiki-diagram-24.png",
+    "comparison": "qa/wiki-diagram-24-comparison.png",
+    "sourceSize": [
+      731,
+      371
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#d8272d"
+    ],
+    "vectorSubpaths": 22,
+    "nonBackgroundMatch": 0.98295,
+    "layerIoUs": [
+      0.98295
+    ],
+    "label": "Modern temporary · Erbil/Sulaymaniyah",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_Temporary_-_Erbil_-_Sulimaniyah.png",
+    "sourceAuthor": "Kingrhem",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        648,
+        278,
+        703,
+        339
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-29",
+    "sourceID": "wiki-diagram-29",
+    "svg": "illustrations/wiki-diagram-29.svg",
+    "png": "illustrations/wiki-diagram-29.png",
+    "comparison": "qa/wiki-diagram-29-comparison.png",
+    "sourceSize": [
+      460,
+      260
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#000000"
+    ],
+    "vectorSubpaths": 24,
+    "nonBackgroundMatch": 0.96814,
+    "layerIoUs": [
+      0.96814
+    ],
+    "label": "Bilingual-period motorcycle illustration",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_Bike_-_Basrah.png",
+    "sourceAuthor": "Kingrhem",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        44,
+        80,
+        87,
+        128
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-30",
+    "sourceID": "wiki-diagram-30",
+    "svg": "illustrations/wiki-diagram-30.svg",
+    "png": "illustrations/wiki-diagram-30.png",
+    "comparison": "qa/wiki-diagram-30-comparison.png",
+    "sourceSize": [
+      460,
+      260
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#000000"
+    ],
+    "vectorSubpaths": 23,
+    "nonBackgroundMatch": 0.97037,
+    "layerIoUs": [
+      0.97037
+    ],
+    "label": "Bilingual-period temporary illustration",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_Temporary.png",
+    "sourceAuthor": "Kingrhem",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        44,
+        80,
+        87,
+        128
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-37",
+    "sourceID": "wiki-diagram-37",
+    "svg": "illustrations/wiki-diagram-37.svg",
+    "png": "illustrations/wiki-diagram-37.png",
+    "comparison": "qa/wiki-diagram-37-comparison.png",
+    "sourceSize": [
+      520,
+      288
+    ],
+    "observedPalette": [
+      "#000000",
+      "#ffc913"
+    ],
+    "vectorSubpaths": 42,
+    "nonBackgroundMatch": 0.92914,
+    "layerIoUs": [
+      0.92914
+    ],
+    "label": "ICTS illustration",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_ICTS.png",
+    "sourceAuthor": "Nima Farid",
+    "sourceLicense": "CC-BY-SA-4.0",
+    "licenseURL": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        24,
+        237,
+        53,
+        265
+      ],
+      [
+        76,
+        121,
+        103,
+        148
+      ],
+      [
+        473,
+        116,
+        498,
+        141
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-42",
+    "sourceID": "wiki-diagram-42",
+    "svg": "illustrations/wiki-diagram-42.svg",
+    "png": "illustrations/wiki-diagram-42.png",
+    "comparison": "qa/wiki-diagram-42-comparison.png",
+    "sourceSize": [
+      1000,
+      221
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#08277a",
+      "#000000"
+    ],
+    "vectorSubpaths": 22,
+    "nonBackgroundMatch": 0.93934,
+    "layerIoUs": [
+      0.79596,
+      0.93478
+    ],
+    "label": "International · Erbil illustration",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_International_-2021-2022_-_Erbil.png",
+    "sourceAuthor": "Kingrhem",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        902,
+        150,
+        952,
+        197
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-4",
+    "sourceID": "wiki-diagram-4",
+    "svg": "illustrations/wiki-diagram-4.svg",
+    "png": "illustrations/wiki-diagram-4.png",
+    "comparison": "qa/wiki-diagram-4-comparison.png",
+    "sourceSize": [
+      1000,
+      221
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#000000"
+    ],
+    "vectorSubpaths": 17,
+    "nonBackgroundMatch": 0.96805,
+    "layerIoUs": [
+      0.96805
+    ],
+    "label": "Modern Federal private illustration",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_Private.png",
+    "sourceAuthor": "BasilLeaf",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        300,
+        85,
+        347,
+        132
+      ],
+      [
+        193,
+        14,
+        220,
+        42
+      ],
+      [
+        788,
+        14,
+        815,
+        43
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-6",
+    "sourceID": "wiki-diagram-6",
+    "svg": "illustrations/wiki-diagram-6.svg",
+    "png": "illustrations/wiki-diagram-6.png",
+    "comparison": "qa/wiki-diagram-6-comparison.png",
+    "sourceSize": [
+      1000,
+      221
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#000000"
+    ],
+    "vectorSubpaths": 20,
+    "nonBackgroundMatch": 0.96822,
+    "layerIoUs": [
+      0.96822
+    ],
+    "label": "Modern KRG private illustration",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_Private.png",
+    "sourceAuthor": "Nima Farid",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        300,
+        85,
+        347,
+        132
+      ],
+      [
+        193,
+        14,
+        220,
+        42
+      ],
+      [
+        788,
+        14,
+        815,
+        43
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-8",
+    "sourceID": "wiki-diagram-8",
+    "svg": "illustrations/wiki-diagram-8.svg",
+    "png": "illustrations/wiki-diagram-8.png",
+    "comparison": "qa/wiki-diagram-8-comparison.png",
+    "sourceSize": [
+      1000,
+      221
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#ed1c24",
+      "#000000"
+    ],
+    "vectorSubpaths": 26,
+    "nonBackgroundMatch": 0.96028,
+    "layerIoUs": [
+      0.83725,
+      0.96202
+    ],
+    "label": "Modern Federal hire illustration",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_Bus_and_Taxi.png",
+    "sourceAuthor": "BasilLeaf",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        300,
+        85,
+        347,
+        132
+      ],
+      [
+        193,
+        14,
+        220,
+        42
+      ],
+      [
+        788,
+        14,
+        815,
+        43
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-10",
+    "sourceID": "wiki-diagram-10",
+    "svg": "illustrations/wiki-diagram-10.svg",
+    "png": "illustrations/wiki-diagram-10.png",
+    "comparison": "qa/wiki-diagram-10-comparison.png",
+    "sourceSize": [
+      1000,
+      221
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#ed1c24",
+      "#000000"
+    ],
+    "vectorSubpaths": 32,
+    "nonBackgroundMatch": 0.96034,
+    "layerIoUs": [
+      0.82739,
+      0.9626
+    ],
+    "label": "Modern KRG hire illustration",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_Bus_and_Taxi.png",
+    "sourceAuthor": "BasilLeaf",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        300,
+        85,
+        347,
+        132
+      ],
+      [
+        193,
+        14,
+        220,
+        42
+      ],
+      [
+        788,
+        14,
+        815,
+        43
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-12",
+    "sourceID": "wiki-diagram-12",
+    "svg": "illustrations/wiki-diagram-12.svg",
+    "png": "illustrations/wiki-diagram-12.png",
+    "comparison": "qa/wiki-diagram-12-comparison.png",
+    "sourceSize": [
+      1000,
+      221
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#0079c1",
+      "#000000"
+    ],
+    "vectorSubpaths": 28,
+    "nonBackgroundMatch": 0.94492,
+    "layerIoUs": [
+      0.77024,
+      0.94613
+    ],
+    "label": "Modern Federal government illustration",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_Governmental.png",
+    "sourceAuthor": "BasilLeaf",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        300,
+        85,
+        347,
+        132
+      ],
+      [
+        193,
+        14,
+        220,
+        42
+      ],
+      [
+        788,
+        14,
+        815,
+        43
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-14",
+    "sourceID": "wiki-diagram-14",
+    "svg": "illustrations/wiki-diagram-14.svg",
+    "png": "illustrations/wiki-diagram-14.png",
+    "comparison": "qa/wiki-diagram-14-comparison.png",
+    "sourceSize": [
+      1000,
+      221
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#0079c1",
+      "#000000"
+    ],
+    "vectorSubpaths": 34,
+    "nonBackgroundMatch": 0.94533,
+    "layerIoUs": [
+      0.75691,
+      0.94725
+    ],
+    "label": "Modern KRG government illustration",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_Governmental.png",
+    "sourceAuthor": "BasilLeaf",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        300,
+        85,
+        347,
+        132
+      ],
+      [
+        193,
+        14,
+        220,
+        42
+      ],
+      [
+        788,
+        14,
+        815,
+        43
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-16",
+    "sourceID": "wiki-diagram-16",
+    "svg": "illustrations/wiki-diagram-16.svg",
+    "png": "illustrations/wiki-diagram-16.png",
+    "comparison": "qa/wiki-diagram-16-comparison.png",
+    "sourceSize": [
+      1000,
+      221
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#ffc913",
+      "#000000"
+    ],
+    "vectorSubpaths": 25,
+    "nonBackgroundMatch": 0.96068,
+    "layerIoUs": [
+      0.84645,
+      0.96471
+    ],
+    "label": "Modern Federal commercial illustration",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_Truck.png",
+    "sourceAuthor": "BasilLeaf",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        300,
+        85,
+        347,
+        132
+      ],
+      [
+        193,
+        14,
+        220,
+        42
+      ],
+      [
+        788,
+        14,
+        815,
+        43
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-18",
+    "sourceID": "wiki-diagram-18",
+    "svg": "illustrations/wiki-diagram-18.svg",
+    "png": "illustrations/wiki-diagram-18.png",
+    "comparison": "qa/wiki-diagram-18-comparison.png",
+    "sourceSize": [
+      1000,
+      221
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#ffc913",
+      "#000000"
+    ],
+    "vectorSubpaths": 31,
+    "nonBackgroundMatch": 0.96066,
+    "layerIoUs": [
+      0.83606,
+      0.965
+    ],
+    "label": "Modern KRG commercial illustration",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_Truck.png",
+    "sourceAuthor": "BasilLeaf",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        300,
+        85,
+        347,
+        132
+      ],
+      [
+        193,
+        14,
+        220,
+        42
+      ],
+      [
+        788,
+        14,
+        815,
+        43
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-20",
+    "sourceID": "wiki-diagram-20",
+    "svg": "illustrations/wiki-diagram-20.svg",
+    "png": "illustrations/wiki-diagram-20.png",
+    "comparison": "qa/wiki-diagram-20-comparison.png",
+    "sourceSize": [
+      1000,
+      221
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#01a06a",
+      "#000000"
+    ],
+    "vectorSubpaths": 27,
+    "nonBackgroundMatch": 0.95187,
+    "layerIoUs": [
+      0.79179,
+      0.95596
+    ],
+    "label": "Modern Federal agricultural illustration",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_License_Plate_-_Agricultural.png",
+    "sourceAuthor": "BasilLeaf",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        300,
+        85,
+        347,
+        132
+      ],
+      [
+        193,
+        14,
+        220,
+        42
+      ],
+      [
+        788,
+        14,
+        815,
+        43
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  },
+  {
+    "id": "wiki-diagram-22",
+    "sourceID": "wiki-diagram-22",
+    "svg": "illustrations/wiki-diagram-22.svg",
+    "png": "illustrations/wiki-diagram-22.png",
+    "comparison": "qa/wiki-diagram-22-comparison.png",
+    "sourceSize": [
+      1000,
+      221
+    ],
+    "observedPalette": [
+      "#ffffff",
+      "#01a06a",
+      "#000000"
+    ],
+    "vectorSubpaths": 33,
+    "nonBackgroundMatch": 0.95228,
+    "layerIoUs": [
+      0.7794,
+      0.95703
+    ],
+    "label": "Modern KRG agricultural illustration",
+    "kind": "illustration-derived smooth outline adaptation",
+    "source": "https://en.wikipedia.org/wiki/File:Iraq_-_Kurdistan_-_License_Plate_-_Agricultural.png",
+    "sourceAuthor": "BasilLeaf",
+    "sourceLicense": "CC0-1.0",
+    "licenseURL": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "method": "Observed raster colors separated, normalized and smoothed to cubic/line outline paths using installed Potrace. Connected source word silhouettes preserved; no substitute font and no absent glyphs added.",
+    "changes": "Raster to vector; edge smoothing; source colors normalized; mounting artifacts and decorative/security logo proxies omitted as listed.",
+    "omittedSourcePixelBoxes": [
+      [
+        300,
+        85,
+        347,
+        132
+      ],
+      [
+        193,
+        14,
+        220,
+        42
+      ],
+      [
+        788,
+        14,
+        815,
+        43
+      ]
+    ],
+    "limits": "Source is a user-created illustration, not a photographed manufactured plate. This SVG cannot verify physical font dies, full alphabets, actual paint colors, dimensions, dates or issuance. Source pixel aspect ratio is retained."
+  }
+]
