@@ -56,7 +56,8 @@ export interface KitFormatSpec {
   id: string;
   label: string;
   family: string;
-  period: readonly [number, number];
+  /** Omit when the source does not date the design. Never invent an issue period. */
+  period?: readonly [number, number];
   era?: string;
   status?: PlateStatus;
   recipe: KitRecipe;
@@ -162,7 +163,7 @@ export function kitFormat(spec: KitFormatSpec): PlateFormat {
     description: spec.description,
     references: [spec.recipe.source, ...(spec.references ?? [])],
     fields,
-    design: { kit: spec.recipe.id, year: spec.period[0] },
+    design: { kit: spec.recipe.id, ...(spec.period ? {year: spec.period[0]} : {}) },
     generate: (rng): Parts => ({
       serial: generateSerial(rng),
       ...(paletteOptions.length > 1 ? { palette: paletteOptions[0].value } : {}),

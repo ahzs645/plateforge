@@ -110,33 +110,55 @@ const BLUE = '#1c3f94';
 // ── Alberta ──────────────────────────────────────────────────────────────
 const AB_LETTERS = without('AEIOQU');
 const AB_RED = '#ac2026';
-const AB_BLUE = '#2b5fb4';
+const AB_BLUE = '#1c3c85';
 const alberta = region({
   code: 'AB', name: 'Alberta',
   design: {
     header: 'Alberta', headerFace: 'sans', headerSize: 60, headerX: 262, headerY: 76, headerColor: AB_BLUE, headerSpacing: -1,
-    emblems: [{ kind: 'wild-rose', x: 404, y: 50, size: 70, color: AB_RED }],
-    text: AB_RED, serialY: 214, serialSpacing: 6,
+    albertaWordmark: {kind:'script',x:158,y:9,width:210,height:62},
+    emblems: [{ kind: 'alberta-wild-rose', x: 420, y: 46, size: 88, color: AB_RED }],
+    decalWells:[{x:28,y:12,width:63,height:44},{x:28,y:245,width:63,height:38}],
+    text: AB_RED, serialY: 225, serialSpacing: 6,
     slogan: 'Wild Rose Country', sloganFace: 'sans', sloganWeight: 500, sloganSize: 30, sloganColor: AB_BLUE, sloganY: 282, sloganSpacing: 0,
   },
-  notes: 'Alberta passenger plates: the 1983 “Wild Rose Country” base (seven-character serials since 2010) and the 2026 Moraine Lake “Strong and Free” base. Serials skip vowels and Q.',
+  notes: 'Alberta passenger plates: geometric and script Alberta wordmarks with the supplied red wild rose, including the source-captioned 1984 series and seven-character numbering since 2010. World License Plates labels its script example 2019; exact revision dates and serial dies are not certified by these artwork replacements. Serials skip vowels and Q.',
   formats: [
     plate({
       id: 'standard', label: 'Standard passenger · Wild Rose Country', pattern: 'AAA-9999', exclude: 'AEIOQU', hint: 'no vowels or Q', example: 'CKT-1800',
       generate: (rng) => `${series(AB_LETTERS, 'CKT', 'DBC')(rng)}-${numeric(rng, 0, 9999, 4)}`,
-      description: `Red serial on reflective white; blue “Alberta” wordmark with the wild rose and “Wild Rose Country” below. The ABC-1234 format began at BBB-0000 in June 2010 (A, E, I, O, Q and U skipped); reflective sheeting returned at CKT-1800 in October 2021, reaching about DBC in 2026. ${ART_NOTE}`,
-      references: [wiki('Alberta'), OVERVIEW], period: [2010, 2026],
+      description: 'Red serial on reflective white, supplied outlined script Alberta wordmark and red wild rose. The Government subline and teal block are excluded from the plate artwork. The ABC-1234 format began in June 2010; this numbering period is not a confirmed date span for the script revision. Reflective sheeting returned at CKT-1800 in October 2021. The fixed slogan and serial remain independent approximate lettering; the source photograph CKZ-3449 supports the layout.',
+      references: [wiki('Alberta'), OVERVIEW,{title:'World License Plates · Alberta (script example labelled 2019)',url:'http://www.worldlicenseplates.com/world/CN_ALBE.html'},{title:'Supplied Alberta artwork · provenance and comparison',url:'https://projects.ahmadjalil.com/plateforge/alberta-artwork-review/'}], period: [2019, 2026],
+    }),
+    plate({
+      id:'wild-rose-1984',label:'Wild Rose Country · geometric wordmark, six characters',
+      pattern:'AAA·999',display:'ABC-123',exclude:'AEIOQU',hint:'no vowels or Q; dash, space or dot accepted',example:'PWG·542',
+      description:'The source-captioned 1984 series, fitted to the supplied PWG-542 photograph: larger geometric Alberta wordmark, red outlined wild rose and a rounded square serial separator. Native wordmark and rose paths are supplied artwork; exact serial dies and slogan font are unconfirmed. Blank renewal wells locate the photographed stickers without assigning its 1995 renewal year to every plate. The period describes six-character numbering, not the last use of older plates.',
+      references:[wiki('Alberta'),OVERVIEW,{title:'World License Plates · Alberta (1984 series)',url:'http://www.worldlicenseplates.com/world/CN_ALBE.html'},{title:'PWG-542 and supplied Alberta artwork · comparison',url:'https://projects.ahmadjalil.com/plateforge/alberta-artwork-review/#geometric'}],period:[1984,2010],
+      design:{albertaWordmark:{kind:'geometric',x:139,y:26,width:183,height:60},
+        emblems:[{kind:'alberta-wild-rose',x:388,y:58,size:115,color:AB_RED}],
+        decalWells:[{x:36,y:23,width:67,height:47},{x:499,y:239,width:69,height:43}],
+        serialY:232,serialSize:180,serialWidth:530,separator:'square-dot',separatorColor:AB_RED,separatorSize:60,
+        sloganSize:30,sloganY:278,sloganSpacing:0},
+    }),
+    plate({
+      id:'wild-rose-geometric-2010',label:'Wild Rose Country · geometric wordmark, seven characters',
+      pattern:'AAA-9999',exclude:'AEIOQU',hint:'no vowels or Q',example:'BCJ-8178',
+      description:'World License Plates labels the photographed BCJ-8178 geometric-wordmark example “2010 Series”. The same outlined artwork appears with seven-character numbering before the script example captioned 2019. The period marks the source-labelled series, not an end date for the geometric wordmark. Serial and slogan fonts remain approximate.',
+      references:[{title:'World License Plates · Alberta 2010 series',url:'http://www.worldlicenseplates.com/world/CN_ALBE.html'},{title:'Alberta artwork comparison',url:'https://projects.ahmadjalil.com/plateforge/alberta-artwork-review/'}],period:[2010,2010],
+      design:{albertaWordmark:{kind:'geometric',x:158,y:15,width:198,height:64},
+        emblems:[{kind:'alberta-wild-rose',x:415,y:49,size:88,color:AB_RED}]},
     }),
     plate({
       id: 'moraine-lake-2026', label: 'Moraine Lake · Strong and Free (2026)', pattern: 'AAA·9999', display: 'AAA-9999', exclude: 'AEIOQU', hint: 'no vowels or Q', example: 'DBD·2026',
       generate: (rng) => `${series(AB_LETTERS, 'DBC', 'DDZ')(rng)}·${numeric(rng, 0, 9999, 4)}`,
-      description: `The design chosen by public vote in November 2025: Moraine Lake scene with the motto “Strong and Free”, issued from mid-2026 alongside the 1983 base. Reports expect the ABC-1234 sequence to continue; the wild-rose separator, lettering colour and serial range here are unverified. ${ART_NOTE}`,
+      description: `The design chosen by public vote in November 2025: Moraine Lake scene with the motto “Strong and Free”, issued from mid-2026 alongside the earlier Wild Rose Country base. Reports expect the ABC-1234 sequence to continue; the wild-rose separator, lettering colour and serial range here are unverified. ${ART_NOTE}`,
       references: [
         wiki('Alberta'),
         { title: 'Ponoka News · Government of Alberta reveals new licence plate (2025-11-21)', url: 'https://ponokanews.com/2025/11/21/government-of-alberta-reveals-new-licence-plate/' },
       ],
       period: [2026, 2026], status: 'uncertain',
       design: {
+        albertaWordmark:undefined,decalWells:[],
         scene: 'moraine-lake', header: 'Alberta', headerFace: 'script', headerSize: 70, headerX: 300, headerY: 66, headerColor: '#1a4b9f', headerHalo: '#ffffff',
         emblems: [], text: '#1a4b9f', serialHalo: '#ffffff', embossed: false, serialY: 204,
         separator: 'wild-rose', separatorColor: '#e0529c', separatorSize: 64,

@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-05",
+  "sources": [
+    {
+      "filename": "red-wild-rose-vector-package.zip",
+      "sha256": "af9d5e211b895711040381a7c0838a4140ca2829f0d96b9647995f513a8c3c3f",
+      "bytes": 1090298
+    },
+    {
+      "filename": "page-1-selection-1.svg.zip",
+      "sha256": "6b1834b01a98f388aedca3f4c13a7aa502777e6d2f959e5182dbc756a9147182",
+      "bytes": 19418
+    },
+    {
+      "filename": "Alberta-government-logo2.svg",
+      "sha256": "e8db54d87cd01f5c134e1031e1f4437560f8b600700b0f3e13b2b07375d3871d",
+      "bytes": 7299
+    },
+    {
+      "filename": "Alberta.eps",
+      "sha256": "519d14000ae03c850ae6ab3d4ede0f37fca5edd650debcfdc16761c0e6052a77",
+      "bytes": 32446
+    },
+    {
+      "filename": "Alberta (1).eps",
+      "sha256": "519d14000ae03c850ae6ab3d4ede0f37fca5edd650debcfdc16761c0e6052a77",
+      "bytes": 32446
+    }
+  ],
+  "derived": {
+    "geometric": "Two filled blue wordmark paths from page-1-selection-1.svg; excluded white page clipping/background and unrelated text. Tight path bounding box.",
+    "script": "Only Alberta wordmark compound path from Alberta-government-logo2.svg. Excluded Government line and teal rectangle; recoloured plate blue.",
+    "rose": "Native red-wild-rose.svg compound path, tight supplied viewBox. Recoloured plate serial red.",
+    "eps": "Both EPS uploads are byte-identical. Rendered to inspect the geometric wordmark and Government of Alberta lockup; SVG selection supplies the wordmark-only geometry."
+  },
+  "limits": "Supplied artwork paths, fitted to the user reference proportions. Historical version and exact manufacturing font remain unconfirmed. Slogan and editable serial remain independent font/candidate lettering, not supplied artwork.",
+  "gallerySource": "http://www.worldlicenseplates.com/world/CN_ALBE.html",
+  "dateEvidence": [
+    {
+      "serial": "GRS-152",
+      "caption": "1984 Series",
+      "use": "Six-character geometric-wordmark reference; renewal year is not a tooling lifetime."
+    },
+    {
+      "serial": "BCJ-8178",
+      "caption": "2010 Series",
+      "use": "Seven-character geometric-wordmark reference; no documented end date."
+    },
+    {
+      "serial": "CHS-6596",
+      "caption": "2019",
+      "use": "Script-wordmark photograph label; exact introduction date unconfirmed."
+    }
+  ]
+}

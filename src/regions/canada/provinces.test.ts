@@ -21,6 +21,25 @@ const render = (r: Region, f: PlateFormat, serial?: string) => {
 };
 
 describe('Canadian provinces and territories', () => {
+  it('uses portable supplied Alberta wordmarks and rose paths independently of serial lettering', () => {
+    const r=region('AB');
+    const current=render(r,format('AB','standard'),'CKZ-3449');
+    expect(current).toContain('data-artwork="alberta-script"');
+    expect(current).toContain('data-artwork="alberta-rose"');
+    expect(current).not.toContain('>Alberta</text>');
+    expect(current).not.toContain('Government');
+    expect(current).not.toContain('#00AAD2');
+    expect((current.match(/<svg\b/g)??[])).toHaveLength(1);
+    const older=format('AB','wild-rose-1984');
+    expect(check(older,'PWG-542')).toBeNull();
+    expect(check(older,'PWG-5421')).toMatch(/^Expected/);
+    const geometric=render(r,older,'PWG-542');
+    expect(geometric).toContain('data-artwork="alberta-geometric"');
+    expect(geometric).toContain('data-emblem="square-dot"');
+    expect(geometric).toContain('PWG·542');
+    expect(render(r,format('AB','wild-rose-geometric-2010'),'BCJ-8178')).toContain('data-artwork="alberta-geometric"');
+    expect(render(r,format('AB','moraine-lake-2026'),'DBD·2026')).not.toContain('data-artwork="alberta-');
+  });
   it('uses the Spectacular native paint masters with separate shoulders and keeps alternate styles selectable', () => {
     const r = region('NT'), f = format('NT', 'standard');
     const svg = render(r, f, '123123');

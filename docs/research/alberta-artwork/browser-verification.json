@@ -1,0 +1,44 @@
+{
+  "site": "http://127.0.0.1:5176/plateforge/",
+  "date": "2026-10-05",
+  "cases": [
+    {
+      "id": "standard",
+      "serial": "CKZ-3449",
+      "wordmark": "script",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "wild-rose-1984",
+      "serial": "PWG-542",
+      "wordmark": "geometric",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "wild-rose-geometric-2010",
+      "serial": "BCJ-8178",
+      "wordmark": "geometric",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "moraine-lake-2026",
+      "serial": "DBD-2026",
+      "wordmark": null,
+      "svg": true,
+      "png": true,
+      "mobile": true
+    }
+  ],
+  "allComparisonImagesLoaded": true,
+  "sourceComparisons": 3,
+  "userReferenceSerials": 2,
+  "mobile": true,
+  "errors": [],
+  "failedResources": []
+}

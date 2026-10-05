@@ -1,0 +1,1511 @@
+{
+  "reviewDate": "2026-10-05",
+  "scope": "All plate specimens in both requested galleries, plus their linked Canadian Forces sections for France and Germany.",
+  "sources": [
+    "http://www.worldlicenseplates.com/world/CN_CDNX.html",
+    "https://licenseplatemania.com/landenpaginas/canada_official.htm",
+    "http://www.worldlicenseplates.com/world/EU_FRAN.html#CN",
+    "http://www.worldlicenseplates.com/world/EU_GMIL.html#CN"
+  ],
+  "limits": "Photographs visually inventoried; layout reconstructions are approximate, not individual glyph traces or authenticated factory tooling. Source-caption dates are distinct from website update stamps. Undated examples remain undated. Source image boxes crop photographs, not perspective-rectified or paint-segmented outlines.",
+  "presets": [
+    {
+      "id": "fisheries-tabs",
+      "label": "Fisheries · side renewal tabs",
+      "family": "fisheries",
+      "example": "13",
+      "patterns": [
+        "9",
+        "99",
+        "999"
+      ],
+      "style": "fisheries",
+      "description": "Green Canada-Fisheries header and two side tabs. The source captions 1971–1972; faint tab markings are not reconstructed.",
+      "sideTabs": true,
+      "period": [
+        1971,
+        1972
+      ],
+      "referenceIds": [
+        "ref-01"
+      ]
+    },
+    {
+      "id": "fisheries-plain",
+      "label": "Fisheries · plain five-digit base",
+      "family": "fisheries",
+      "example": "10645",
+      "patterns": [
+        "99999"
+      ],
+      "style": "fisheries",
+      "description": "Undated five-digit example in the Fisheries gallery. Its adjacent tab plate does not establish this specimen’s issue period.",
+      "referenceIds": [
+        "ref-02"
+      ]
+    },
+    {
+      "id": "fisheries-bilingual",
+      "label": "Fisheries / Pêches · 1976–1978",
+      "family": "fisheries",
+      "example": "076775",
+      "patterns": [
+        "999999"
+      ],
+      "style": "bilingual",
+      "description": "Bilingual six-digit base. The photographed leading zero is retained; allocation limits are not documented.",
+      "ink": "#151515",
+      "period": [
+        1976,
+        1978
+      ],
+      "referenceIds": [
+        "ref-03"
+      ]
+    },
+    {
+      "id": "rcaf-sea-island",
+      "label": "R.C.A.F. · Sea Island 1957",
+      "family": "domestic",
+      "example": "R-763",
+      "patterns": [
+        "\\R-999"
+      ],
+      "style": "sea",
+      "description": "Stacked 1957 at left, two-line station legend and R-prefix number; source identifies Royal Canadian Air Base Sea Island.",
+      "period": [
+        1957,
+        1957
+      ],
+      "referenceIds": [
+        "ref-04"
+      ]
+    },
+    {
+      "id": "rcaf-ambulance",
+      "label": "Royal Canadian Air Force · ambulance",
+      "family": "domestic",
+      "example": "30 AMB",
+      "patterns": [
+        "99 \\A\\M\\B"
+      ],
+      "style": "ambulance",
+      "description": "Source captions the 1950s–1960s. Wide narrow plate with AMB suffix; precise manufacturing period and dimensions are unconfirmed.",
+      "period": [
+        1950,
+        1969
+      ],
+      "referenceIds": [
+        "ref-05"
+      ]
+    },
+    {
+      "id": "dnd-1968",
+      "label": "Department of National Defence · 1968",
+      "family": "domestic",
+      "example": "76385",
+      "patterns": [
+        "99999"
+      ],
+      "style": "dnd",
+      "description": "Cream plate with DND between small dark maple leaves. Source photograph is captioned 1968; no B.C. supplier attribution is inferred.",
+      "period": [
+        1968,
+        1968
+      ],
+      "referenceIds": [
+        "ref-06"
+      ]
+    },
+    {
+      "id": "ppcli-air-comdet",
+      "label": "PPCLI · Air Comdet reference",
+      "family": "attachments",
+      "example": "",
+      "patterns": [],
+      "style": "ppcli",
+      "description": "Source identifies PPCLI at Kapyong Barracks, Shilo, Manitoba. Faded AIR COMDET and faint 2PPCLI are context only; road-registration status and date are uncertain.",
+      "status": "uncertain",
+      "referenceIds": [
+        "ref-07"
+      ]
+    },
+    {
+      "id": "canada-red-leaves",
+      "label": "CANADA · red leaves, five digits",
+      "family": "domestic",
+      "example": "38587",
+      "patterns": [
+        "99999"
+      ],
+      "style": "red-leaves",
+      "description": "World License Plates captions its black-number examples 1970s–1980s. License Plate Mania shows a related dark-green-number example without a date. Both palettes are provided; identical tooling is not certified.",
+      "palettes": [
+        {
+          "id": "black",
+          "label": "Black serial · World License Plates",
+          "background": "#f3f1e8",
+          "ink": "#181c1b"
+        },
+        {
+          "id": "green",
+          "label": "Dark green serial · undated Mania example",
+          "background": "#f3f1e8",
+          "ink": "#385647"
+        }
+      ],
+      "period": [
+        1970,
+        1989
+      ],
+      "referenceIds": [
+        "ref-08",
+        "ref-09",
+        "ref-10"
+      ]
+    },
+    {
+      "id": "canada-green-leaves",
+      "label": "CANADA · green leaves, five digits",
+      "family": "domestic",
+      "example": "31980",
+      "patterns": [
+        "99999"
+      ],
+      "style": "green-leaves",
+      "description": "Green leaves and narrower, lighter green numerals; source captions military vehicles in Canada and overseas, 1970s–1980s. Kept separate from the heavier red-leaf examples.",
+      "period": [
+        1970,
+        1989
+      ],
+      "referenceIds": [
+        "ref-11",
+        "ref-12"
+      ]
+    },
+    {
+      "id": "military-flag-unknown",
+      "label": "Military gallery · flag plate (unattributed)",
+      "family": "domestic",
+      "example": "77-515",
+      "patterns": [
+        "99-999"
+      ],
+      "style": "flag",
+      "description": "The gallery explicitly captions this flag plate Unknown. Kept as an uncertain reference rather than assigning an issue year, maker or authenticated federal registration.",
+      "status": "uncertain",
+      "referenceIds": [
+        "ref-13"
+      ]
+    },
+    {
+      "id": "military-1950s-chamfered",
+      "label": "Military · 1950s chamfered base",
+      "family": "domestic",
+      "example": "538 A 5",
+      "patterns": [
+        "999 A 9"
+      ],
+      "style": "military-chamfer",
+      "description": "White characters on black with chamfered upper corners. Source captions Canada and Europe in the 1950s; separate from the rectangular base.",
+      "period": [
+        1950,
+        1959
+      ],
+      "referenceIds": [
+        "ref-14"
+      ]
+    },
+    {
+      "id": "military-1950s-rectangular",
+      "label": "Military · 1950s rectangular base",
+      "family": "domestic",
+      "example": "160 A 26",
+      "patterns": [
+        "999 A 99",
+        "9 A 999"
+      ],
+      "style": "military-rectangle",
+      "description": "Two rectangular black examples support different number/letter group lengths. Pattern validation does not establish exhaustive military allocations.",
+      "period": [
+        1950,
+        1959
+      ],
+      "referenceIds": [
+        "ref-15",
+        "ref-16"
+      ]
+    },
+    {
+      "id": "forces-europe-blue-canada",
+      "label": "Forces in Europe · blue CANADA base",
+      "family": "overseas",
+      "example": "WF85",
+      "patterns": [
+        "AA99"
+      ],
+      "style": "blue-bottom",
+      "description": "White WF85 above CANADA on blue. Source gives 1950s–1960s, not a precise introduction date.",
+      "period": [
+        1950,
+        1969
+      ],
+      "referenceIds": [
+        "ref-17"
+      ]
+    },
+    {
+      "id": "germany-blue-maple-1957",
+      "label": "Germany · blue maple separator",
+      "family": "overseas",
+      "example": "ZJ11-C",
+      "patterns": [
+        "AA99-A"
+      ],
+      "style": "blue-maple",
+      "description": "Source captions 1957–1960. White maple between the four-character run and final letter; no CANADA header.",
+      "period": [
+        1957,
+        1960
+      ],
+      "referenceIds": [
+        "ref-18"
+      ]
+    },
+    {
+      "id": "germany-army-1961",
+      "label": "Canadian Army · Germany",
+      "family": "overseas",
+      "example": "WE-72",
+      "patterns": [
+        "AA-99"
+      ],
+      "style": "army",
+      "description": "CANADIAN ARMY / GERMANY on blue with maple and round red seal. Seal detail is not resolved in the source and is represented only schematically.",
+      "period": [
+        1961,
+        1969
+      ],
+      "referenceIds": [
+        "ref-19"
+      ]
+    },
+    {
+      "id": "germany-blue-1968",
+      "label": "Germany · blue CANADA base",
+      "family": "overseas",
+      "example": "EF-13",
+      "patterns": [
+        "AA-99"
+      ],
+      "style": "blue-top",
+      "description": "Blue base, white CANADA, red maple and green validation panel. Validation-panel microtext is omitted rather than invented.",
+      "period": [
+        1968,
+        1971
+      ],
+      "referenceIds": [
+        "ref-20"
+      ]
+    },
+    {
+      "id": "germany-red-leaves",
+      "label": "Germany · red leaves base",
+      "family": "overseas",
+      "example": "5281",
+      "patterns": [
+        "9999",
+        "A999"
+      ],
+      "style": "german-red",
+      "description": "Four digits and G-prefix example share this observed red-letter red-leaf layout. Source identifies G with Gelsenkirchen; no full code dictionary or supplier is inferred.",
+      "period": [
+        1970,
+        1985
+      ],
+      "referenceIds": [
+        "ref-21",
+        "ref-22"
+      ]
+    },
+    {
+      "id": "germany-exchange",
+      "label": "Germany · Exchange",
+      "family": "overseas",
+      "example": "EX23",
+      "patterns": [
+        "\\E\\X99"
+      ],
+      "style": "german-red",
+      "description": "EX = Exchange in the source caption. Small left-side attachment is preserved as an unlettered dark box because its detail is unresolved.",
+      "exchange": true,
+      "period": [
+        1971,
+        1985
+      ],
+      "referenceIds": [
+        "ref-23"
+      ]
+    },
+    {
+      "id": "germany-trailer-red",
+      "label": "Germany · trailer red-leaf base",
+      "family": "overseas",
+      "example": "T1816",
+      "patterns": [
+        "\\T9999"
+      ],
+      "style": "german-red",
+      "description": "Trailer T-prefix uses the red-leaf layout. Its relation to the car base is visual support, not recovered die identity.",
+      "period": [
+        1971,
+        1985
+      ],
+      "referenceIds": [
+        "ref-24"
+      ]
+    },
+    {
+      "id": "germany-motorcycle-red",
+      "label": "Germany · motorcycle red-leaf base",
+      "family": "overseas",
+      "example": "M2578",
+      "patterns": [
+        "\\M9999"
+      ],
+      "style": "motorcycle",
+      "description": "Compact motorcycle shell and smaller condensed lettering are treated separately from the car and trailer stamp sizes.",
+      "period": [
+        1971,
+        1985
+      ],
+      "referenceIds": [
+        "ref-25"
+      ]
+    },
+    {
+      "id": "germany-trailer-blue",
+      "label": "Germany · blue trailer base",
+      "family": "overseas",
+      "example": "TH-171",
+      "patterns": [
+        "\\T\\H-999"
+      ],
+      "style": "blue-top",
+      "description": "TH trailer prefix on blue, central maple and red validation panel. Validation text is not legible and is omitted.",
+      "validationColor": "#cf352c",
+      "period": [
+        1968,
+        1971
+      ],
+      "referenceIds": [
+        "ref-26"
+      ]
+    },
+    {
+      "id": "europe-red-block",
+      "label": "Europe · red block letters, compact",
+      "family": "overseas",
+      "example": "RZ-964",
+      "patterns": [
+        "AA-999"
+      ],
+      "style": "red-sticker",
+      "description": "Source captions the block-letter compact example 1985–2016. Mania photographs SN475 with a pink annual sticker, including a compact shell. Sticker date is not the base manufacture date.",
+      "validationColor": "#e9bfd3",
+      "period": [
+        1985,
+        2016
+      ],
+      "referenceIds": [
+        "ref-27",
+        "ref-28"
+      ]
+    },
+    {
+      "id": "europe-red-block-long",
+      "label": "Europe · red block letters, long layout",
+      "family": "overseas",
+      "example": "SN-475",
+      "patterns": [
+        "AA-999"
+      ],
+      "style": "red-sticker-long",
+      "description": "Mania shows the same SN475 on a wider, shallower shell. This photographed layout is separate from the compact example; precise dimensions, front/rear designation and date are unconfirmed.",
+      "validationColor": "#e9bfd3",
+      "referenceIds": [
+        "ref-29"
+      ]
+    },
+    {
+      "id": "europe-red-narrow",
+      "label": "Europe · red narrow letters, compact",
+      "family": "overseas",
+      "example": "WD-568",
+      "patterns": [
+        "AA-999"
+      ],
+      "style": "red-sticker-narrow",
+      "description": "World License Plates captions the narrow-letter WD661 example 1990s–2016, overlapping the block-letter format. Mania adds WD568 and WD620; their photograph dates are unknown. Center annual sticker is schematic.",
+      "period": [
+        1990,
+        2016
+      ],
+      "referenceIds": [
+        "ref-30",
+        "ref-31",
+        "ref-32"
+      ]
+    },
+    {
+      "id": "germany-cdn-2016-long",
+      "label": "Germany · CDN 2016 series, long",
+      "family": "overseas",
+      "example": "WE 898",
+      "patterns": [
+        "AA 999"
+      ],
+      "style": "cdn-long",
+      "description": "Source labels 2016 Series, establishing an introduction/example year with no end date. Black angular lettering is an illustrative candidate, not authenticated FE-Schrift tooling.",
+      "period": [
+        2016,
+        2016
+      ],
+      "referenceIds": [
+        "ref-33"
+      ]
+    },
+    {
+      "id": "germany-cdn-2016-stacked",
+      "label": "Germany · CDN 2016 series, stacked",
+      "family": "overseas",
+      "example": "WE898",
+      "patterns": [
+        "AA999"
+      ],
+      "style": "cdn-stacked",
+      "description": "Stacked letters/digits and CDN at lower left. Source labels 2016 Series; the circular 17 mark is renewal evidence, not an end date. Angular die contours and seal detail remain approximate.",
+      "period": [
+        2016,
+        2016
+      ],
+      "referenceIds": [
+        "ref-34"
+      ]
+    },
+    {
+      "id": "rcaf-france-1963",
+      "label": "RCAF · 2nd Wing, France",
+      "family": "overseas",
+      "example": "AF 21872",
+      "patterns": [
+        "\\A\\F 99999"
+      ],
+      "style": "af-france",
+      "description": "Long green 2nd Wing plate at Grostenquin, France, with oval F country identifier. Tiny emblems inside the oval are unresolved and omitted.",
+      "period": [
+        1963,
+        1963
+      ],
+      "referenceIds": [
+        "ref-35"
+      ]
+    },
+    {
+      "id": "forces-france-1-wing-attachment",
+      "label": "Canadian Armed Forces · 1 Wing attachment",
+      "family": "attachments",
+      "example": "",
+      "patterns": [],
+      "style": "attachment",
+      "description": "Red attachment with CANADIAN ARMED FORCES / 1 WING. Source identifies Marville, France; no date or independent vehicle registration is supplied.",
+      "status": "uncertain",
+      "referenceIds": [
+        "ref-36"
+      ]
+    },
+    {
+      "id": "rcaf-germany-3-wing-long",
+      "label": "RCAF · 3rd Wing, long base",
+      "family": "overseas",
+      "example": "AF 33037",
+      "patterns": [
+        "\\A\\F 99999"
+      ],
+      "style": "af-long",
+      "description": "Black base at Third Wing Zweibrücken. Source caption spans 1952–1969; the photographed AF number does not certify a complete allocation.",
+      "period": [
+        1952,
+        1969
+      ],
+      "referenceIds": [
+        "ref-37"
+      ]
+    },
+    {
+      "id": "rcaf-germany-4-wing-long",
+      "label": "RCAF · 4th Wing, long base",
+      "family": "overseas",
+      "example": "AF 42828",
+      "patterns": [
+        "\\A\\F 99999"
+      ],
+      "style": "af-long",
+      "description": "Green base at Fourth Wing Baden-Söllingen, captioned 1952–1970. Separate station/date/palette provenance; shared construction remains an illustration.",
+      "background": "#263b22",
+      "period": [
+        1952,
+        1970
+      ],
+      "referenceIds": [
+        "ref-38"
+      ]
+    },
+    {
+      "id": "rcaf-germany-3-wing-compact",
+      "label": "RCAF · 3rd Wing, CANADA base",
+      "family": "overseas",
+      "example": "AF37546",
+      "patterns": [
+        "\\A\\F99999"
+      ],
+      "style": "af-compact",
+      "description": "Compact black CANADA-header base at Third Wing Zweibrücken, captioned 1963–1969. Tall light strokes differ from the long station plate.",
+      "period": [
+        1963,
+        1969
+      ],
+      "referenceIds": [
+        "ref-39"
+      ]
+    },
+    {
+      "id": "rcaf-germany-4-wing-compact",
+      "label": "RCAF · 4th Wing, CANADA base",
+      "family": "overseas",
+      "example": "AF47101",
+      "patterns": [
+        "\\A\\F99999"
+      ],
+      "style": "af-compact",
+      "description": "Compact black CANADA-header base at Fourth Wing Baden-Söllingen, captioned 1963–1970.",
+      "period": [
+        1963,
+        1970
+      ],
+      "referenceIds": [
+        "ref-40"
+      ]
+    },
+    {
+      "id": "rcaf-4-wing-booster",
+      "label": "Royal Canadian Air Force · 4(F) Wing booster",
+      "family": "attachments",
+      "example": "",
+      "patterns": [],
+      "style": "booster",
+      "description": "Source explicitly calls this a Fourth Wing booster plate. Undated souvenir with fixed words, no registration serial.",
+      "status": "souvenir",
+      "referenceIds": [
+        "ref-41"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "id": "ref-01",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_OT.jpg",
+      "imageSize": [
+        600,
+        160
+      ],
+      "box": [
+        15,
+        10,
+        197,
+        87
+      ],
+      "serial": "13",
+      "preset": "fisheries-tabs",
+      "caption": "1971–1972 Tab",
+      "page": "http://www.worldlicenseplates.com/world/CN_CDNX.html"
+    },
+    {
+      "id": "ref-02",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_OT.jpg",
+      "imageSize": [
+        600,
+        160
+      ],
+      "box": [
+        214,
+        10,
+        393,
+        85
+      ],
+      "serial": "10645",
+      "preset": "fisheries-plain",
+      "caption": "No date caption",
+      "page": "http://www.worldlicenseplates.com/world/CN_CDNX.html"
+    },
+    {
+      "id": "ref-03",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_OT.jpg",
+      "imageSize": [
+        600,
+        160
+      ],
+      "box": [
+        413,
+        7,
+        580,
+        90
+      ],
+      "serial": "076775",
+      "preset": "fisheries-bilingual",
+      "caption": "1976–1978",
+      "page": "http://www.worldlicenseplates.com/world/CN_CDNX.html"
+    },
+    {
+      "id": "ref-04",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_OTM1.jpg",
+      "imageSize": [
+        600,
+        375
+      ],
+      "box": [
+        23,
+        19,
+        163,
+        99
+      ],
+      "serial": "R-763",
+      "preset": "rcaf-sea-island",
+      "caption": "1957 · Royal Canadian Air Base Sea Island",
+      "page": "http://www.worldlicenseplates.com/world/CN_CDNX.html"
+    },
+    {
+      "id": "ref-05",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_OTM1.jpg",
+      "imageSize": [
+        600,
+        375
+      ],
+      "box": [
+        393,
+        17,
+        580,
+        63
+      ],
+      "serial": "30 AMB",
+      "preset": "rcaf-ambulance",
+      "caption": "1950s–1960s · RCAF Sea Island",
+      "page": "http://www.worldlicenseplates.com/world/CN_CDNX.html"
+    },
+    {
+      "id": "ref-06",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_OTM1.jpg",
+      "imageSize": [
+        600,
+        375
+      ],
+      "box": [
+        24,
+        156,
+        188,
+        240
+      ],
+      "serial": "76385",
+      "preset": "dnd-1968",
+      "caption": "1968 · DND",
+      "page": "http://www.worldlicenseplates.com/world/CN_CDNX.html"
+    },
+    {
+      "id": "ref-07",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_OTM1.jpg",
+      "imageSize": [
+        600,
+        375
+      ],
+      "box": [
+        212,
+        154,
+        383,
+        240
+      ],
+      "serial": "AIR COMDET",
+      "preset": "ppcli-air-comdet",
+      "caption": "PPCLI · Kapyong Barracks (no date)",
+      "page": "http://www.worldlicenseplates.com/world/CN_CDNX.html",
+      "caution": "Faded lettering; uncertain internal-use plate. Not a precise glyph reference."
+    },
+    {
+      "id": "ref-08",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_OTM1.jpg",
+      "imageSize": [
+        600,
+        375
+      ],
+      "box": [
+        411,
+        146,
+        580,
+        230
+      ],
+      "serial": "38587",
+      "preset": "canada-red-leaves",
+      "caption": "1970s–1980s",
+      "page": "http://www.worldlicenseplates.com/world/CN_CDNX.html"
+    },
+    {
+      "id": "ref-09",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_OTM1.jpg",
+      "imageSize": [
+        600,
+        375
+      ],
+      "box": [
+        411,
+        244,
+        580,
+        325
+      ],
+      "serial": "40810",
+      "preset": "canada-red-leaves",
+      "caption": "1970s–1980s",
+      "page": "http://www.worldlicenseplates.com/world/CN_CDNX.html"
+    },
+    {
+      "id": "ref-10",
+      "image": "https://licenseplatemania.com/fotos/canada/canada1.jpg",
+      "imageSize": [
+        600,
+        330
+      ],
+      "box": [
+        45,
+        55,
+        545,
+        282
+      ],
+      "serial": "34646",
+      "preset": "canada-red-leaves",
+      "caption": "Undated · dark green serial",
+      "page": "https://licenseplatemania.com/landenpaginas/canada_official.htm",
+      "palette": "green"
+    },
+    {
+      "id": "ref-11",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_OTM2.jpg",
+      "imageSize": [
+        600,
+        299
+      ],
+      "box": [
+        413,
+        15,
+        582,
+        99
+      ],
+      "serial": "31980",
+      "preset": "canada-green-leaves",
+      "caption": "1970s–1980s · Canada and overseas",
+      "page": "http://www.worldlicenseplates.com/world/CN_CDNX.html"
+    },
+    {
+      "id": "ref-12",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_OTM2.jpg",
+      "imageSize": [
+        600,
+        299
+      ],
+      "box": [
+        413,
+        111,
+        582,
+        196
+      ],
+      "serial": "64616",
+      "preset": "canada-green-leaves",
+      "caption": "1970s–1980s · Canada and overseas",
+      "page": "http://www.worldlicenseplates.com/world/CN_CDNX.html"
+    },
+    {
+      "id": "ref-13",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_OTM1.jpg",
+      "imageSize": [
+        600,
+        375
+      ],
+      "box": [
+        79,
+        282,
+        312,
+        339
+      ],
+      "serial": "77-515",
+      "preset": "military-flag-unknown",
+      "caption": "Unknown",
+      "page": "http://www.worldlicenseplates.com/world/CN_CDNX.html",
+      "caution": "Issuer and date unknown."
+    },
+    {
+      "id": "ref-14",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_OTM2.jpg",
+      "imageSize": [
+        600,
+        299
+      ],
+      "box": [
+        22,
+        9,
+        209,
+        71
+      ],
+      "serial": "538 A 5",
+      "preset": "military-1950s-chamfered",
+      "caption": "1950s · Canada and Europe",
+      "page": "http://www.worldlicenseplates.com/world/CN_CDNX.html"
+    },
+    {
+      "id": "ref-15",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_OTM2.jpg",
+      "imageSize": [
+        600,
+        299
+      ],
+      "box": [
+        21,
+        80,
+        212,
+        157
+      ],
+      "serial": "160 A 26",
+      "preset": "military-1950s-rectangular",
+      "caption": "1950s · Canada and Europe",
+      "page": "http://www.worldlicenseplates.com/world/CN_CDNX.html"
+    },
+    {
+      "id": "ref-16",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_OTM2.jpg",
+      "imageSize": [
+        600,
+        299
+      ],
+      "box": [
+        21,
+        167,
+        213,
+        245
+      ],
+      "serial": "1 K 111",
+      "preset": "military-1950s-rectangular",
+      "caption": "1950s · Canada and Europe",
+      "page": "http://www.worldlicenseplates.com/world/CN_CDNX.html"
+    },
+    {
+      "id": "ref-17",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_OTM2.jpg",
+      "imageSize": [
+        600,
+        299
+      ],
+      "box": [
+        226,
+        13,
+        395,
+        101
+      ],
+      "serial": "WF85",
+      "preset": "forces-europe-blue-canada",
+      "caption": "1950s–1960s · Forces in Europe",
+      "page": "http://www.worldlicenseplates.com/world/CN_CDNX.html"
+    },
+    {
+      "id": "ref-18",
+      "image": "http://www.worldlicenseplates.com/jpglps/FO_GERM_CDNX_GI.jpg",
+      "imageSize": [
+        600,
+        598
+      ],
+      "box": [
+        21,
+        15,
+        192,
+        99
+      ],
+      "serial": "ZJ11-C",
+      "preset": "germany-blue-maple-1957",
+      "caption": "1957–1960",
+      "page": "http://www.worldlicenseplates.com/world/EU_GMIL.html#CN"
+    },
+    {
+      "id": "ref-19",
+      "image": "http://www.worldlicenseplates.com/jpglps/FO_GERM_CDNX_GI.jpg",
+      "imageSize": [
+        600,
+        598
+      ],
+      "box": [
+        218,
+        15,
+        388,
+        99
+      ],
+      "serial": "WE-72",
+      "preset": "germany-army-1961",
+      "caption": "1961–1969",
+      "page": "http://www.worldlicenseplates.com/world/EU_GMIL.html#CN"
+    },
+    {
+      "id": "ref-20",
+      "image": "http://www.worldlicenseplates.com/jpglps/FO_GERM_CDNX_GI.jpg",
+      "imageSize": [
+        600,
+        598
+      ],
+      "box": [
+        411,
+        15,
+        581,
+        100
+      ],
+      "serial": "EF-13",
+      "preset": "germany-blue-1968",
+      "caption": "1968–1971",
+      "page": "http://www.worldlicenseplates.com/world/EU_GMIL.html#CN"
+    },
+    {
+      "id": "ref-21",
+      "image": "http://www.worldlicenseplates.com/jpglps/FO_GERM_CDNX_GI.jpg",
+      "imageSize": [
+        600,
+        598
+      ],
+      "box": [
+        21,
+        148,
+        192,
+        230
+      ],
+      "serial": "5281",
+      "preset": "germany-red-leaves",
+      "caption": "1970–1985",
+      "page": "http://www.worldlicenseplates.com/world/EU_GMIL.html#CN"
+    },
+    {
+      "id": "ref-22",
+      "image": "http://www.worldlicenseplates.com/jpglps/FO_GERM_CDNX_GI.jpg",
+      "imageSize": [
+        600,
+        598
+      ],
+      "box": [
+        218,
+        148,
+        387,
+        230
+      ],
+      "serial": "G396",
+      "preset": "germany-red-leaves",
+      "caption": "1970–1985 · G = Gelsenkirchen",
+      "page": "http://www.worldlicenseplates.com/world/EU_GMIL.html#CN"
+    },
+    {
+      "id": "ref-23",
+      "image": "http://www.worldlicenseplates.com/jpglps/FO_GERM_CDNX_GI.jpg",
+      "imageSize": [
+        600,
+        598
+      ],
+      "box": [
+        411,
+        147,
+        581,
+        230
+      ],
+      "serial": "EX23",
+      "preset": "germany-exchange",
+      "caption": "1971–1985 · EX = Exchange",
+      "page": "http://www.worldlicenseplates.com/world/EU_GMIL.html#CN"
+    },
+    {
+      "id": "ref-24",
+      "image": "http://www.worldlicenseplates.com/jpglps/FO_GERM_CDNX_OT.jpg",
+      "imageSize": [
+        600,
+        210
+      ],
+      "box": [
+        217,
+        17,
+        389,
+        100
+      ],
+      "serial": "T1816",
+      "preset": "germany-trailer-red",
+      "caption": "1971–1985 · Trailer",
+      "page": "http://www.worldlicenseplates.com/world/EU_GMIL.html#CN"
+    },
+    {
+      "id": "ref-25",
+      "image": "http://www.worldlicenseplates.com/jpglps/FO_GERM_CDNX_OT.jpg",
+      "imageSize": [
+        600,
+        210
+      ],
+      "box": [
+        426,
+        17,
+        565,
+        106
+      ],
+      "serial": "M2578",
+      "preset": "germany-motorcycle-red",
+      "caption": "1971–1985 · Motorcycle",
+      "page": "http://www.worldlicenseplates.com/world/EU_GMIL.html#CN"
+    },
+    {
+      "id": "ref-26",
+      "image": "http://www.worldlicenseplates.com/jpglps/FO_GERM_CDNX_OT.jpg",
+      "imageSize": [
+        600,
+        210
+      ],
+      "box": [
+        21,
+        16,
+        194,
+        98
+      ],
+      "serial": "TH-171",
+      "preset": "germany-trailer-blue",
+      "caption": "1968–1971 · Trailer",
+      "page": "http://www.worldlicenseplates.com/world/EU_GMIL.html#CN"
+    },
+    {
+      "id": "ref-27",
+      "image": "http://www.worldlicenseplates.com/jpglps/FO_GERM_CDNX_GI.jpg",
+      "imageSize": [
+        600,
+        598
+      ],
+      "box": [
+        21,
+        287,
+        192,
+        370
+      ],
+      "serial": "RZ-964",
+      "preset": "europe-red-block",
+      "caption": "1985–2016",
+      "page": "http://www.worldlicenseplates.com/world/EU_GMIL.html#CN",
+      "validationColor": "#dacc80"
+    },
+    {
+      "id": "ref-28",
+      "image": "https://licenseplatemania.com/fotos/canada/canada4.jpg",
+      "imageSize": [
+        600,
+        330
+      ],
+      "box": [
+        84,
+        60,
+        533,
+        280
+      ],
+      "serial": "SN-475",
+      "preset": "europe-red-block",
+      "caption": "Undated · compact SN475",
+      "page": "https://licenseplatemania.com/landenpaginas/canada_official.htm"
+    },
+    {
+      "id": "ref-29",
+      "image": "https://licenseplatemania.com/fotos/canada/canada5.jpg",
+      "imageSize": [
+        600,
+        330
+      ],
+      "box": [
+        75,
+        82,
+        566,
+        253
+      ],
+      "serial": "SN-475",
+      "preset": "europe-red-block-long",
+      "caption": "Undated · long SN475",
+      "page": "https://licenseplatemania.com/landenpaginas/canada_official.htm"
+    },
+    {
+      "id": "ref-30",
+      "image": "http://www.worldlicenseplates.com/jpglps/FO_GERM_CDNX_GI.jpg",
+      "imageSize": [
+        600,
+        598
+      ],
+      "box": [
+        218,
+        285,
+        388,
+        370
+      ],
+      "serial": "WD-661",
+      "preset": "europe-red-narrow",
+      "caption": "1990s–2016",
+      "page": "http://www.worldlicenseplates.com/world/EU_GMIL.html#CN"
+    },
+    {
+      "id": "ref-31",
+      "image": "https://licenseplatemania.com/fotos/canada/canada2.jpg",
+      "imageSize": [
+        600,
+        330
+      ],
+      "box": [
+        74,
+        58,
+        538,
+        266
+      ],
+      "serial": "WD-568",
+      "preset": "europe-red-narrow",
+      "caption": "Undated · WD568",
+      "page": "https://licenseplatemania.com/landenpaginas/canada_official.htm"
+    },
+    {
+      "id": "ref-32",
+      "image": "https://licenseplatemania.com/fotos/canada/canada3.jpg",
+      "imageSize": [
+        600,
+        330
+      ],
+      "box": [
+        174,
+        90,
+        455,
+        226
+      ],
+      "serial": "WD-620",
+      "preset": "europe-red-narrow",
+      "caption": "Undated · WD620",
+      "page": "https://licenseplatemania.com/landenpaginas/canada_official.htm",
+      "caution": "Small, soft photograph; precise contours unverified."
+    },
+    {
+      "id": "ref-33",
+      "image": "http://www.worldlicenseplates.com/jpglps/FO_GERM_CDNX_GI.jpg",
+      "imageSize": [
+        600,
+        598
+      ],
+      "box": [
+        19,
+        414,
+        275,
+        465
+      ],
+      "serial": "WE 898",
+      "preset": "germany-cdn-2016-long",
+      "caption": "2016 Series · end date unknown",
+      "page": "http://www.worldlicenseplates.com/world/EU_GMIL.html#CN"
+    },
+    {
+      "id": "ref-34",
+      "image": "http://www.worldlicenseplates.com/jpglps/FO_GERM_CDNX_GI.jpg",
+      "imageSize": [
+        600,
+        598
+      ],
+      "box": [
+        58,
+        473,
+        230,
+        558
+      ],
+      "serial": "WE898",
+      "preset": "germany-cdn-2016-stacked",
+      "caption": "2016 Series · end date unknown",
+      "page": "http://www.worldlicenseplates.com/world/EU_GMIL.html#CN"
+    },
+    {
+      "id": "ref-35",
+      "image": "http://www.worldlicenseplates.com/jpglps/FO_FRAN_CDNX.jpg",
+      "imageSize": [
+        586,
+        160
+      ],
+      "box": [
+        30,
+        36,
+        283,
+        88
+      ],
+      "serial": "AF 21872",
+      "preset": "rcaf-france-1963",
+      "caption": "1963 · 2nd Wing Grostenquin, France",
+      "page": "http://www.worldlicenseplates.com/world/EU_FRAN.html#CN"
+    },
+    {
+      "id": "ref-36",
+      "image": "http://www.worldlicenseplates.com/jpglps/FO_FRAN_CDNX.jpg",
+      "imageSize": [
+        586,
+        160
+      ],
+      "box": [
+        314,
+        15,
+        565,
+        88
+      ],
+      "serial": "1 WING",
+      "preset": "forces-france-1-wing-attachment",
+      "caption": "License plate attachment · 1st Wing Marville",
+      "page": "http://www.worldlicenseplates.com/world/EU_FRAN.html#CN"
+    },
+    {
+      "id": "ref-37",
+      "image": "http://www.worldlicenseplates.com/jpglps/FO_GERM_CDNX_AF.jpg",
+      "imageSize": [
+        600,
+        317
+      ],
+      "box": [
+        21,
+        14,
+        274,
+        73
+      ],
+      "serial": "AF 33037",
+      "preset": "rcaf-germany-3-wing-long",
+      "caption": "1952–1969 · Third Wing Zweibrücken",
+      "page": "http://www.worldlicenseplates.com/world/EU_GMIL.html#CN"
+    },
+    {
+      "id": "ref-38",
+      "image": "http://www.worldlicenseplates.com/jpglps/FO_GERM_CDNX_AF.jpg",
+      "imageSize": [
+        600,
+        317
+      ],
+      "box": [
+        326,
+        14,
+        579,
+        74
+      ],
+      "serial": "AF 42828",
+      "preset": "rcaf-germany-4-wing-long",
+      "caption": "1952–1970 · Fourth Wing Baden-Söllingen",
+      "page": "http://www.worldlicenseplates.com/world/EU_GMIL.html#CN"
+    },
+    {
+      "id": "ref-39",
+      "image": "http://www.worldlicenseplates.com/jpglps/FO_GERM_CDNX_AF.jpg",
+      "imageSize": [
+        600,
+        317
+      ],
+      "box": [
+        20,
+        132,
+        194,
+        220
+      ],
+      "serial": "AF37546",
+      "preset": "rcaf-germany-3-wing-compact",
+      "caption": "1963–1969 · Third Wing",
+      "page": "http://www.worldlicenseplates.com/world/EU_GMIL.html#CN"
+    },
+    {
+      "id": "ref-40",
+      "image": "http://www.worldlicenseplates.com/jpglps/FO_GERM_CDNX_AF.jpg",
+      "imageSize": [
+        600,
+        317
+      ],
+      "box": [
+        407,
+        131,
+        582,
+        220
+      ],
+      "serial": "AF47101",
+      "preset": "rcaf-germany-4-wing-compact",
+      "caption": "1963–1970 · Fourth Wing",
+      "page": "http://www.worldlicenseplates.com/world/EU_GMIL.html#CN"
+    },
+    {
+      "id": "ref-41",
+      "image": "http://www.worldlicenseplates.com/jpglps/FO_GERM_CDNX_AF.jpg",
+      "imageSize": [
+        600,
+        317
+      ],
+      "box": [
+        205,
+        131,
+        397,
+        208
+      ],
+      "serial": "4(F) WING",
+      "preset": "rcaf-4-wing-booster",
+      "caption": "4th Wing · Booster plate",
+      "page": "http://www.worldlicenseplates.com/world/EU_GMIL.html#CN"
+    }
+  ],
+  "excludedRegional": [
+    {
+      "region": "Alberta",
+      "serial": "CHS6596",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_GI1.jpg",
+      "disposition": "Keep under its province or territory; ordinary regional plate, not a federal issue."
+    },
+    {
+      "region": "British Columbia",
+      "serial": "BW2-38J",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_GI1.jpg",
+      "disposition": "Keep under its province or territory; ordinary regional plate, not a federal issue."
+    },
+    {
+      "region": "Manitoba",
+      "serial": "GHF645",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_GI1.jpg",
+      "disposition": "Keep under its province or territory; ordinary regional plate, not a federal issue."
+    },
+    {
+      "region": "New Brunswick",
+      "serial": "JDA992",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_GI1.jpg",
+      "disposition": "Keep under its province or territory; ordinary regional plate, not a federal issue."
+    },
+    {
+      "region": "Newfoundland and Labrador",
+      "serial": "JVR481",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_GI1.jpg",
+      "disposition": "Keep under its province or territory; ordinary regional plate, not a federal issue."
+    },
+    {
+      "region": "Nova Scotia",
+      "serial": "GYCD61",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_GI1.jpg",
+      "disposition": "Keep under its province or territory; ordinary regional plate, not a federal issue."
+    },
+    {
+      "region": "Ontario",
+      "serial": "CSMT376",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_GI1.jpg",
+      "disposition": "Keep under its province or territory; ordinary regional plate, not a federal issue."
+    },
+    {
+      "region": "Prince Edward Island",
+      "serial": "717AAJ",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_GI1.jpg",
+      "disposition": "Keep under its province or territory; ordinary regional plate, not a federal issue."
+    },
+    {
+      "region": "Quebec",
+      "serial": "AAR69L",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_GI1.jpg",
+      "disposition": "Keep under its province or territory; ordinary regional plate, not a federal issue."
+    },
+    {
+      "region": "Saskatchewan",
+      "serial": "777HEP",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_GI1.jpg",
+      "disposition": "Keep under its province or territory; ordinary regional plate, not a federal issue."
+    },
+    {
+      "region": "Nunavut",
+      "serial": "004241",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_GI2.jpg",
+      "disposition": "Keep under its province or territory; ordinary regional plate, not a federal issue."
+    },
+    {
+      "region": "Northwest Territories",
+      "serial": "304746",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_GI2.jpg",
+      "disposition": "Keep under its province or territory; ordinary regional plate, not a federal issue."
+    },
+    {
+      "region": "Yukon",
+      "serial": "JDM14",
+      "image": "http://www.worldlicenseplates.com/jpglps/CN_CDNX_GI2.jpg",
+      "disposition": "Keep under its province or territory; ordinary regional plate, not a federal issue."
+    }
+  ],
+  "sourceImageHashes": [
+    {
+      "image": "CN_CDNX_GI1.jpg",
+      "sha256": "fba1fcc407a297e660e83abb6087ef489445de1f798f371d0af109b3e6e91de0",
+      "bytes": 218117
+    },
+    {
+      "image": "CN_CDNX_GI2.jpg",
+      "sha256": "9bca0e19603f651c4989e008a81e5555d29a838872978c1803777ea23c21e038",
+      "bytes": 78153
+    },
+    {
+      "image": "CN_CDNX_OT.jpg",
+      "sha256": "10be5ffe627c2b3469cf2bb97f1764ca50088f3acda3c5e8b119b40db8e7c87f",
+      "bytes": 32109
+    },
+    {
+      "image": "CN_CDNX_OTM1.jpg",
+      "sha256": "7fbaf1e3ddb7e75f9fb74758cf408e311beb39561745c9b198e3644973029ff3",
+      "bytes": 165282
+    },
+    {
+      "image": "CN_CDNX_OTM2.jpg",
+      "sha256": "77713840c38c1531f9666a922531289649db22d5f45af633bd9077cc53fc69fc",
+      "bytes": 149246
+    },
+    {
+      "image": "FO_FRAN_CDNX.jpg",
+      "sha256": "3a9b70d57fa37136a90551951f3008e6edf718d981f92ba252ea77bee40159b3",
+      "bytes": 71389
+    },
+    {
+      "image": "FO_GERM_CDNX_AF.jpg",
+      "sha256": "846b0c475829d2db50e1d25ed1d888bc284987f04de1f3eb029c0d2243e54c1d",
+      "bytes": 150466
+    },
+    {
+      "image": "FO_GERM_CDNX_GI.jpg",
+      "sha256": "305ca478f1bce30665352cfbc192065296429928df30014efc93b5608a1b86d7",
+      "bytes": 256722
+    },
+    {
+      "image": "FO_GERM_CDNX_OT.jpg",
+      "sha256": "79cb399fd546c5bb46cf0b75a53b244c95b032c8b2ef5889ff8db594f5e810de",
+      "bytes": 95570
+    },
+    {
+      "image": "canada1.jpg",
+      "sha256": "82b201aeb6c0fb2a8a784ae1babb6813356223cddd2a944d7e94f9e6d13d0a4f",
+      "bytes": 23762
+    },
+    {
+      "image": "canada2.jpg",
+      "sha256": "55267c7c4e16d8481154091f251fb35b214267cde59d09540d80dfe7415b480c",
+      "bytes": 30919
+    },
+    {
+      "image": "canada3.jpg",
+      "sha256": "f3399555f8ede671c35eafd30dacfa8ce34e910503531c205ce885ee7f818158",
+      "bytes": 29369
+    },
+    {
+      "image": "canada4.jpg",
+      "sha256": "ae476f2b39fd87679e2730533e6e0f3d7cce4834faa1a78b49f4ea6a7e4d2bef",
+      "bytes": 33548
+    },
+    {
+      "image": "canada5.jpg",
+      "sha256": "c08e2ead2f5cafac2675c4866c28d5b91230b52960f5fde5b454aa579df890b0",
+      "bytes": 37140
+    }
+  ]
+}

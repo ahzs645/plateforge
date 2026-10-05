@@ -1,0 +1,603 @@
+[
+  {
+    "id": "fisheries-tabs",
+    "label": "Fisheries · side renewal tabs",
+    "family": "fisheries",
+    "example": "13",
+    "patterns": [
+      "9",
+      "99",
+      "999"
+    ],
+    "style": "fisheries",
+    "description": "Green Canada-Fisheries header and two side tabs. The source captions 1971–1972; faint tab markings are not reconstructed.",
+    "sideTabs": true,
+    "period": [
+      1971,
+      1972
+    ],
+    "referenceIds": [
+      "ref-01"
+    ]
+  },
+  {
+    "id": "fisheries-plain",
+    "label": "Fisheries · plain five-digit base",
+    "family": "fisheries",
+    "example": "10645",
+    "patterns": [
+      "99999"
+    ],
+    "style": "fisheries",
+    "description": "Undated five-digit example in the Fisheries gallery. Its adjacent tab plate does not establish this specimen’s issue period.",
+    "referenceIds": [
+      "ref-02"
+    ]
+  },
+  {
+    "id": "fisheries-bilingual",
+    "label": "Fisheries / Pêches · 1976–1978",
+    "family": "fisheries",
+    "example": "076775",
+    "patterns": [
+      "999999"
+    ],
+    "style": "bilingual",
+    "description": "Bilingual six-digit base. The photographed leading zero is retained; allocation limits are not documented.",
+    "ink": "#151515",
+    "period": [
+      1976,
+      1978
+    ],
+    "referenceIds": [
+      "ref-03"
+    ]
+  },
+  {
+    "id": "rcaf-sea-island",
+    "label": "R.C.A.F. · Sea Island 1957",
+    "family": "domestic",
+    "example": "R-763",
+    "patterns": [
+      "\\R-999"
+    ],
+    "style": "sea",
+    "description": "Stacked 1957 at left, two-line station legend and R-prefix number; source identifies Royal Canadian Air Base Sea Island.",
+    "period": [
+      1957,
+      1957
+    ],
+    "referenceIds": [
+      "ref-04"
+    ]
+  },
+  {
+    "id": "rcaf-ambulance",
+    "label": "Royal Canadian Air Force · ambulance",
+    "family": "domestic",
+    "example": "30 AMB",
+    "patterns": [
+      "99 \\A\\M\\B"
+    ],
+    "style": "ambulance",
+    "description": "Source captions the 1950s–1960s. Wide narrow plate with AMB suffix; precise manufacturing period and dimensions are unconfirmed.",
+    "period": [
+      1950,
+      1969
+    ],
+    "referenceIds": [
+      "ref-05"
+    ]
+  },
+  {
+    "id": "dnd-1968",
+    "label": "Department of National Defence · 1968",
+    "family": "domestic",
+    "example": "76385",
+    "patterns": [
+      "99999"
+    ],
+    "style": "dnd",
+    "description": "Cream plate with DND between small dark maple leaves. Source photograph is captioned 1968; no B.C. supplier attribution is inferred.",
+    "period": [
+      1968,
+      1968
+    ],
+    "referenceIds": [
+      "ref-06"
+    ]
+  },
+  {
+    "id": "ppcli-air-comdet",
+    "label": "PPCLI · Air Comdet reference",
+    "family": "attachments",
+    "example": "",
+    "patterns": [],
+    "style": "ppcli",
+    "description": "Source identifies PPCLI at Kapyong Barracks, Shilo, Manitoba. Faded AIR COMDET and faint 2PPCLI are context only; road-registration status and date are uncertain.",
+    "status": "uncertain",
+    "referenceIds": [
+      "ref-07"
+    ]
+  },
+  {
+    "id": "canada-red-leaves",
+    "label": "CANADA · red leaves, five digits",
+    "family": "domestic",
+    "example": "38587",
+    "patterns": [
+      "99999"
+    ],
+    "style": "red-leaves",
+    "description": "World License Plates captions its black-number examples 1970s–1980s. License Plate Mania shows a related dark-green-number example without a date. Both palettes are provided; identical tooling is not certified.",
+    "palettes": [
+      {
+        "id": "black",
+        "label": "Black serial · World License Plates",
+        "background": "#f3f1e8",
+        "ink": "#181c1b"
+      },
+      {
+        "id": "green",
+        "label": "Dark green serial · undated Mania example",
+        "background": "#f3f1e8",
+        "ink": "#385647"
+      }
+    ],
+    "period": [
+      1970,
+      1989
+    ],
+    "referenceIds": [
+      "ref-08",
+      "ref-09",
+      "ref-10"
+    ]
+  },
+  {
+    "id": "canada-green-leaves",
+    "label": "CANADA · green leaves, five digits",
+    "family": "domestic",
+    "example": "31980",
+    "patterns": [
+      "99999"
+    ],
+    "style": "green-leaves",
+    "description": "Green leaves and narrower, lighter green numerals; source captions military vehicles in Canada and overseas, 1970s–1980s. Kept separate from the heavier red-leaf examples.",
+    "period": [
+      1970,
+      1989
+    ],
+    "referenceIds": [
+      "ref-11",
+      "ref-12"
+    ]
+  },
+  {
+    "id": "military-flag-unknown",
+    "label": "Military gallery · flag plate (unattributed)",
+    "family": "domestic",
+    "example": "77-515",
+    "patterns": [
+      "99-999"
+    ],
+    "style": "flag",
+    "description": "The gallery explicitly captions this flag plate Unknown. Kept as an uncertain reference rather than assigning an issue year, maker or authenticated federal registration.",
+    "status": "uncertain",
+    "referenceIds": [
+      "ref-13"
+    ]
+  },
+  {
+    "id": "military-1950s-chamfered",
+    "label": "Military · 1950s chamfered base",
+    "family": "domestic",
+    "example": "538 A 5",
+    "patterns": [
+      "999 A 9"
+    ],
+    "style": "military-chamfer",
+    "description": "White characters on black with chamfered upper corners. Source captions Canada and Europe in the 1950s; separate from the rectangular base.",
+    "period": [
+      1950,
+      1959
+    ],
+    "referenceIds": [
+      "ref-14"
+    ]
+  },
+  {
+    "id": "military-1950s-rectangular",
+    "label": "Military · 1950s rectangular base",
+    "family": "domestic",
+    "example": "160 A 26",
+    "patterns": [
+      "999 A 99",
+      "9 A 999"
+    ],
+    "style": "military-rectangle",
+    "description": "Two rectangular black examples support different number/letter group lengths. Pattern validation does not establish exhaustive military allocations.",
+    "period": [
+      1950,
+      1959
+    ],
+    "referenceIds": [
+      "ref-15",
+      "ref-16"
+    ]
+  },
+  {
+    "id": "forces-europe-blue-canada",
+    "label": "Forces in Europe · blue CANADA base",
+    "family": "overseas",
+    "example": "WF85",
+    "patterns": [
+      "AA99"
+    ],
+    "style": "blue-bottom",
+    "description": "White WF85 above CANADA on blue. Source gives 1950s–1960s, not a precise introduction date.",
+    "period": [
+      1950,
+      1969
+    ],
+    "referenceIds": [
+      "ref-17"
+    ]
+  },
+  {
+    "id": "germany-blue-maple-1957",
+    "label": "Germany · blue maple separator",
+    "family": "overseas",
+    "example": "ZJ11-C",
+    "patterns": [
+      "AA99-A"
+    ],
+    "style": "blue-maple",
+    "description": "Source captions 1957–1960. White maple between the four-character run and final letter; no CANADA header.",
+    "period": [
+      1957,
+      1960
+    ],
+    "referenceIds": [
+      "ref-18"
+    ]
+  },
+  {
+    "id": "germany-army-1961",
+    "label": "Canadian Army · Germany",
+    "family": "overseas",
+    "example": "WE-72",
+    "patterns": [
+      "AA-99"
+    ],
+    "style": "army",
+    "description": "CANADIAN ARMY / GERMANY on blue with maple and round red seal. Seal detail is not resolved in the source and is represented only schematically.",
+    "period": [
+      1961,
+      1969
+    ],
+    "referenceIds": [
+      "ref-19"
+    ]
+  },
+  {
+    "id": "germany-blue-1968",
+    "label": "Germany · blue CANADA base",
+    "family": "overseas",
+    "example": "EF-13",
+    "patterns": [
+      "AA-99"
+    ],
+    "style": "blue-top",
+    "description": "Blue base, white CANADA, red maple and green validation panel. Validation-panel microtext is omitted rather than invented.",
+    "period": [
+      1968,
+      1971
+    ],
+    "referenceIds": [
+      "ref-20"
+    ]
+  },
+  {
+    "id": "germany-red-leaves",
+    "label": "Germany · red leaves base",
+    "family": "overseas",
+    "example": "5281",
+    "patterns": [
+      "9999",
+      "A999"
+    ],
+    "style": "german-red",
+    "description": "Four digits and G-prefix example share this observed red-letter red-leaf layout. Source identifies G with Gelsenkirchen; no full code dictionary or supplier is inferred.",
+    "period": [
+      1970,
+      1985
+    ],
+    "referenceIds": [
+      "ref-21",
+      "ref-22"
+    ]
+  },
+  {
+    "id": "germany-exchange",
+    "label": "Germany · Exchange",
+    "family": "overseas",
+    "example": "EX23",
+    "patterns": [
+      "\\E\\X99"
+    ],
+    "style": "german-red",
+    "description": "EX = Exchange in the source caption. Small left-side attachment is preserved as an unlettered dark box because its detail is unresolved.",
+    "exchange": true,
+    "period": [
+      1971,
+      1985
+    ],
+    "referenceIds": [
+      "ref-23"
+    ]
+  },
+  {
+    "id": "germany-trailer-red",
+    "label": "Germany · trailer red-leaf base",
+    "family": "overseas",
+    "example": "T1816",
+    "patterns": [
+      "\\T9999"
+    ],
+    "style": "german-red",
+    "description": "Trailer T-prefix uses the red-leaf layout. Its relation to the car base is visual support, not recovered die identity.",
+    "period": [
+      1971,
+      1985
+    ],
+    "referenceIds": [
+      "ref-24"
+    ]
+  },
+  {
+    "id": "germany-motorcycle-red",
+    "label": "Germany · motorcycle red-leaf base",
+    "family": "overseas",
+    "example": "M2578",
+    "patterns": [
+      "\\M9999"
+    ],
+    "style": "motorcycle",
+    "description": "Compact motorcycle shell and smaller condensed lettering are treated separately from the car and trailer stamp sizes.",
+    "period": [
+      1971,
+      1985
+    ],
+    "referenceIds": [
+      "ref-25"
+    ]
+  },
+  {
+    "id": "germany-trailer-blue",
+    "label": "Germany · blue trailer base",
+    "family": "overseas",
+    "example": "TH-171",
+    "patterns": [
+      "\\T\\H-999"
+    ],
+    "style": "blue-top",
+    "description": "TH trailer prefix on blue, central maple and red validation panel. Validation text is not legible and is omitted.",
+    "validationColor": "#cf352c",
+    "period": [
+      1968,
+      1971
+    ],
+    "referenceIds": [
+      "ref-26"
+    ]
+  },
+  {
+    "id": "europe-red-block",
+    "label": "Europe · red block letters, compact",
+    "family": "overseas",
+    "example": "RZ-964",
+    "patterns": [
+      "AA-999"
+    ],
+    "style": "red-sticker",
+    "description": "Source captions the block-letter compact example 1985–2016. Mania photographs SN475 with a pink annual sticker, including a compact shell. Sticker date is not the base manufacture date.",
+    "validationColor": "#e9bfd3",
+    "period": [
+      1985,
+      2016
+    ],
+    "referenceIds": [
+      "ref-27",
+      "ref-28"
+    ]
+  },
+  {
+    "id": "europe-red-block-long",
+    "label": "Europe · red block letters, long layout",
+    "family": "overseas",
+    "example": "SN-475",
+    "patterns": [
+      "AA-999"
+    ],
+    "style": "red-sticker-long",
+    "description": "Mania shows the same SN475 on a wider, shallower shell. This photographed layout is separate from the compact example; precise dimensions, front/rear designation and date are unconfirmed.",
+    "validationColor": "#e9bfd3",
+    "referenceIds": [
+      "ref-29"
+    ]
+  },
+  {
+    "id": "europe-red-narrow",
+    "label": "Europe · red narrow letters, compact",
+    "family": "overseas",
+    "example": "WD-568",
+    "patterns": [
+      "AA-999"
+    ],
+    "style": "red-sticker-narrow",
+    "description": "World License Plates captions the narrow-letter WD661 example 1990s–2016, overlapping the block-letter format. Mania adds WD568 and WD620; their photograph dates are unknown. Center annual sticker is schematic.",
+    "period": [
+      1990,
+      2016
+    ],
+    "referenceIds": [
+      "ref-30",
+      "ref-31",
+      "ref-32"
+    ]
+  },
+  {
+    "id": "germany-cdn-2016-long",
+    "label": "Germany · CDN 2016 series, long",
+    "family": "overseas",
+    "example": "WE 898",
+    "patterns": [
+      "AA 999"
+    ],
+    "style": "cdn-long",
+    "description": "Source labels 2016 Series, establishing an introduction/example year with no end date. Black angular lettering is an illustrative candidate, not authenticated FE-Schrift tooling.",
+    "period": [
+      2016,
+      2016
+    ],
+    "referenceIds": [
+      "ref-33"
+    ]
+  },
+  {
+    "id": "germany-cdn-2016-stacked",
+    "label": "Germany · CDN 2016 series, stacked",
+    "family": "overseas",
+    "example": "WE898",
+    "patterns": [
+      "AA999"
+    ],
+    "style": "cdn-stacked",
+    "description": "Stacked letters/digits and CDN at lower left. Source labels 2016 Series; the circular 17 mark is renewal evidence, not an end date. Angular die contours and seal detail remain approximate.",
+    "period": [
+      2016,
+      2016
+    ],
+    "referenceIds": [
+      "ref-34"
+    ]
+  },
+  {
+    "id": "rcaf-france-1963",
+    "label": "RCAF · 2nd Wing, France",
+    "family": "overseas",
+    "example": "AF 21872",
+    "patterns": [
+      "\\A\\F 99999"
+    ],
+    "style": "af-france",
+    "description": "Long green 2nd Wing plate at Grostenquin, France, with oval F country identifier. Tiny emblems inside the oval are unresolved and omitted.",
+    "period": [
+      1963,
+      1963
+    ],
+    "referenceIds": [
+      "ref-35"
+    ]
+  },
+  {
+    "id": "forces-france-1-wing-attachment",
+    "label": "Canadian Armed Forces · 1 Wing attachment",
+    "family": "attachments",
+    "example": "",
+    "patterns": [],
+    "style": "attachment",
+    "description": "Red attachment with CANADIAN ARMED FORCES / 1 WING. Source identifies Marville, France; no date or independent vehicle registration is supplied.",
+    "status": "uncertain",
+    "referenceIds": [
+      "ref-36"
+    ]
+  },
+  {
+    "id": "rcaf-germany-3-wing-long",
+    "label": "RCAF · 3rd Wing, long base",
+    "family": "overseas",
+    "example": "AF 33037",
+    "patterns": [
+      "\\A\\F 99999"
+    ],
+    "style": "af-long",
+    "description": "Black base at Third Wing Zweibrücken. Source caption spans 1952–1969; the photographed AF number does not certify a complete allocation.",
+    "period": [
+      1952,
+      1969
+    ],
+    "referenceIds": [
+      "ref-37"
+    ]
+  },
+  {
+    "id": "rcaf-germany-4-wing-long",
+    "label": "RCAF · 4th Wing, long base",
+    "family": "overseas",
+    "example": "AF 42828",
+    "patterns": [
+      "\\A\\F 99999"
+    ],
+    "style": "af-long",
+    "description": "Green base at Fourth Wing Baden-Söllingen, captioned 1952–1970. Separate station/date/palette provenance; shared construction remains an illustration.",
+    "background": "#263b22",
+    "period": [
+      1952,
+      1970
+    ],
+    "referenceIds": [
+      "ref-38"
+    ]
+  },
+  {
+    "id": "rcaf-germany-3-wing-compact",
+    "label": "RCAF · 3rd Wing, CANADA base",
+    "family": "overseas",
+    "example": "AF37546",
+    "patterns": [
+      "\\A\\F99999"
+    ],
+    "style": "af-compact",
+    "description": "Compact black CANADA-header base at Third Wing Zweibrücken, captioned 1963–1969. Tall light strokes differ from the long station plate.",
+    "period": [
+      1963,
+      1969
+    ],
+    "referenceIds": [
+      "ref-39"
+    ]
+  },
+  {
+    "id": "rcaf-germany-4-wing-compact",
+    "label": "RCAF · 4th Wing, CANADA base",
+    "family": "overseas",
+    "example": "AF47101",
+    "patterns": [
+      "\\A\\F99999"
+    ],
+    "style": "af-compact",
+    "description": "Compact black CANADA-header base at Fourth Wing Baden-Söllingen, captioned 1963–1970.",
+    "period": [
+      1963,
+      1970
+    ],
+    "referenceIds": [
+      "ref-40"
+    ]
+  },
+  {
+    "id": "rcaf-4-wing-booster",
+    "label": "Royal Canadian Air Force · 4(F) Wing booster",
+    "family": "attachments",
+    "example": "",
+    "patterns": [],
+    "style": "booster",
+    "description": "Source explicitly calls this a Fourth Wing booster plate. Undated souvenir with fixed words, no registration serial.",
+    "status": "souvenir",
+    "referenceIds": [
+      "ref-41"
+    ]
+  }
+]

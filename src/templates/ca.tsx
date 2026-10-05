@@ -12,6 +12,7 @@ import { SvgScene } from './SvgScene';
 import { NWT_SPECTACULAR_PROFILE, buildNwtSpectacularSerial } from './dies/nwt-spectacular';
 import ntAuroraUrl from '../assets/nt-aurora.png';
 import { CONDENSED, FONTS } from './fonts';
+import {AlbertaArtwork, type AlbertaWordmark} from './art/alberta';
 import { fit, measure, safeId } from './measure';
 import {
   NWT_POLAR_BEAR_PATH, NWT_POLAR_BEAR_BORDER_PATH, NWT_POLAR_BEAR_HOLES,
@@ -20,7 +21,7 @@ import {
 
 export type CaFace = 'block' | 'sans' | 'serif' | 'script' | 'syllabics';
 export type CaEmblem =
-  | 'wild-rose' | 'bison' | 'maple-leaf' | 'crown' | 'trillium' | 'fleur-de-lis' | 'qc-flag' | 'galley'
+  | 'wild-rose' | 'alberta-wild-rose' | 'square-dot' | 'bison' | 'maple-leaf' | 'crown' | 'trillium' | 'fleur-de-lis' | 'qc-flag' | 'galley'
   | 'pitcher-plant' | 'prospector' | 'inuksuk' | 'star' | 'canada-flag' | 'pei-crest' | 'ev' | 'wheat'
   | 'bluenose' | 'polar-bear' | 'diamond';
 export type CaScene = 'moraine-lake' | 'prairie-river' | 'nb-bands' | 'klondike' | 'arctic-night' | 'nt-spectacular';
@@ -58,6 +59,10 @@ export interface CaPlaced {
 export interface CaDesign {
   [key: string]: unknown;
   header?: string;
+  /** Fixed native paths placed independently of editable serial lettering. */
+  albertaWordmark?: {kind:AlbertaWordmark;x:number;y:number;width:number;height:number};
+  /** Plain blank renewal wells; dated sticker content is separate evidence. */
+  decalWells?: readonly {x:number;y:number;width:number;height:number}[];
   headerFace?: CaFace;
   headerSize?: number;
   headerY?: number;
@@ -150,6 +155,8 @@ const star = (cx: number, cy: number, r: number, inner = 0.42) =>
 /** Each emblem is drawn in a 100×100 box. */
 function emblemArt(kind: CaEmblem, color: string, accent: string): ReactElement {
   switch (kind) {
+    case 'alberta-wild-rose': return <AlbertaArtwork kind="rose" x={0} y={0} width={100} height={100} color={color} />;
+    case 'square-dot': return <rect x="30" y="30" width="40" height="40" rx="5" fill={color} />;
     case 'wild-rose': return (
       <g>
         <path d="M50 58 C46 74 40 86 26 94" fill="none" stroke="#3f7d3a" strokeWidth="3" />
@@ -472,7 +479,7 @@ function CaPlate({ design: d, text, parts }: { design: CaDesign; text: string; p
   const plain = fit(text, serialFont, serialWidth);
 
   const labels: CaLabel[] = [
-    ...(d.header ? [{ text: d.header, x: d.headerX, y: d.headerY ?? 58, size: d.headerSize ?? 46, face: d.headerFace, weight: d.headerWeight,
+    ...(d.header && !d.albertaWordmark ? [{ text: d.header, x: d.headerX, y: d.headerY ?? 58, size: d.headerSize ?? 46, face: d.headerFace, weight: d.headerWeight,
       italic: d.headerItalic, color: d.headerColor, spacing: d.headerSpacing ?? ((d.headerFace ?? 'block') === 'block' ? 4 : 0), halo: d.headerHalo, maxWidth: d.headerWidth } as CaLabel] : []),
     ...(d.slogan ? [{ text: d.slogan, x: d.sloganX, y: d.sloganY ?? 278, size: d.sloganSize ?? 26, face: d.sloganFace, weight: d.sloganWeight,
       italic: d.sloganItalic, color: d.sloganColor, spacing: d.sloganSpacing ?? 2, halo: d.sloganHalo, maxWidth: d.sloganWidth } as CaLabel] : []),
@@ -496,7 +503,7 @@ function CaPlate({ design: d, text, parts }: { design: CaDesign; text: string; p
       <metadata>{JSON.stringify({ serial: text, parts, lettering: {
         ...(spectacular ? {id: NWT_SPECTACULAR_PROFILE.id, evidence: NWT_SPECTACULAR_PROFILE.evidence} : letteringMetadata(vectorType ?? 'default')), requested: parts.lettering ?? 'default',
         fallback: isLetteringType(parts.lettering) && !vectorType,
-      }, ...(nwt ? { shape: { profile: 'nwt-reference', mounts: d.bearMounts ?? 'round', source: NWT_POLAR_BEAR_SOURCE } } : {}) })}</metadata>
+      }, ...(d.albertaWordmark ? {artwork:{wordmark:`alberta-${d.albertaWordmark.kind}`,source:'User-supplied native vector paths',fit:'Uniform aspect-ratio fit to photographed layout',serialAndSlogan:'Independent font/candidate lettering; not part of the supplied artwork'}} : {}), ...(nwt ? { shape: { profile: 'nwt-reference', mounts: d.bearMounts ?? 'round', source: NWT_POLAR_BEAR_SOURCE } } : {}) })}</metadata>
       <defs>
         <linearGradient id={`${id}bg`} x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stopColor={top} />
@@ -534,6 +541,8 @@ function CaPlate({ design: d, text, parts }: { design: CaDesign; text: string; p
         {!nwt && holeList.map(([cx, cy]) => <ellipse key={`${cx}-${cy}`} cx={cx} cy={cy} rx="14" ry="6.5" fill="#000" opacity="0.2" />)}
 
         {labels.map((l, i) => <Label key={i} l={l} ink={ink} />)}
+        {d.decalWells?.map((well,i)=><rect key={`well-${i}`} {...well} rx="4" fill="#f7f8f6" stroke="#d9dedb" strokeWidth="1" data-role="blank-renewal-well" />)}
+        {d.albertaWordmark && <AlbertaArtwork {...d.albertaWordmark} color={d.headerColor??ink} />}
         {nwt && d.scene === 'nt-spectacular' && <rect x="370" y="29" width="73" height="49" fill="none" stroke="#919898" strokeWidth="0.7" data-role="validation-decal-well" />}
         {emblems.filter((p) => !p.back).map((p, i) => <Emblem key={`f${i}`} p={p} />)}
 

@@ -1,0 +1,299 @@
+{
+  "site": "http://127.0.0.1:5176/plateforge/",
+  "reviewDate": "2026-10-05",
+  "presets": [
+    {
+      "id": "standard",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "apec-1997",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "fisheries-tabs",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "fisheries-plain",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "fisheries-bilingual",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "rcaf-sea-island",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "rcaf-ambulance",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "dnd-1968",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "ppcli-air-comdet",
+      "jurisdiction": "CA",
+      "status": "uncertain",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "canada-red-leaves",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "canada-green-leaves",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "military-flag-unknown",
+      "jurisdiction": "CA",
+      "status": "uncertain",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "military-1950s-chamfered",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "military-1950s-rectangular",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "forces-europe-blue-canada",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "germany-blue-maple-1957",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "germany-army-1961",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "germany-blue-1968",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "germany-red-leaves",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "germany-exchange",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "germany-trailer-red",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "germany-motorcycle-red",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "germany-trailer-blue",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "europe-red-block",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "europe-red-block-long",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "europe-red-narrow",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "germany-cdn-2016-long",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "germany-cdn-2016-stacked",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "rcaf-france-1963",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "forces-france-1-wing-attachment",
+      "jurisdiction": "CA",
+      "status": "uncertain",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "rcaf-germany-3-wing-long",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "rcaf-germany-4-wing-long",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "rcaf-germany-3-wing-compact",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "rcaf-germany-4-wing-compact",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "id": "rcaf-4-wing-booster",
+      "jurisdiction": "CA",
+      "status": "souvenir",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    }
+  ],
+  "photographicOccurrences": 41,
+  "allReferenceImagesLoaded": true,
+  "allOpacityControls": true,
+  "groups": {
+    "fisheries": 3,
+    "domestic": 12,
+    "overseas": 23,
+    "attachments": 3,
+    "all": 41
+  },
+  "mobile": true,
+  "errors": [],
+  "failedResources": []
+}
