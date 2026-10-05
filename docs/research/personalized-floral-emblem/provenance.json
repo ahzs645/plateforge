@@ -1,0 +1,21 @@
+{
+  "attachment": "bc-floral-emblem-vector-package.zip",
+  "selectedFile": "bc-floral-emblem-tight.svg",
+  "sha256": "4da41fbe145871059b5b10418a602c5dd3e781be5b5393024443a4b2f41d6eb4",
+  "sourceViewBox": "156 79 1032 1108",
+  "geometry": {
+    "paths": 8,
+    "circles": 8
+  },
+  "rendering": "Native vector geometry, uniformly fitted into the existing flower placement box. Supplied blue recoloured currentColor; personalized recipes print it white. Transparent openings retained.",
+  "formats": [
+    "personalized-1979",
+    "personalized-astro",
+    "personalized-reversed",
+    "personalized-waldale",
+    "personalized-sample",
+    "personalized-motorcycle",
+    "personalized-motorcycle-prototype"
+  ],
+  "accuracy": "User-supplied reconstructed vector; not recovered original printing masters. Package silhouette measurements are supplied evidence, not independently reproduced here."
+}

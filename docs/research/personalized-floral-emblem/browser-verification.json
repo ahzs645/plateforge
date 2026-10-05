@@ -1,0 +1,90 @@
+{
+  "site": "http://127.0.0.1:5176/plateforge/",
+  "formats": [
+    {
+      "format": "personalized-1979",
+      "suppliedPaths": 8,
+      "suppliedCircles": 8,
+      "uniformScale": true,
+      "printColour": "white",
+      "exports": [
+        "SVG",
+        "PNG"
+      ],
+      "mobileOverflow": false
+    },
+    {
+      "format": "personalized-astro",
+      "suppliedPaths": 8,
+      "suppliedCircles": 8,
+      "uniformScale": true,
+      "printColour": "white",
+      "exports": [
+        "SVG",
+        "PNG"
+      ],
+      "mobileOverflow": false
+    },
+    {
+      "format": "personalized-reversed",
+      "suppliedPaths": 8,
+      "suppliedCircles": 8,
+      "uniformScale": true,
+      "printColour": "white",
+      "exports": [
+        "SVG",
+        "PNG"
+      ],
+      "mobileOverflow": false
+    },
+    {
+      "format": "personalized-waldale",
+      "suppliedPaths": 8,
+      "suppliedCircles": 8,
+      "uniformScale": true,
+      "printColour": "white",
+      "exports": [
+        "SVG",
+        "PNG"
+      ],
+      "mobileOverflow": false
+    },
+    {
+      "format": "personalized-sample",
+      "suppliedPaths": 8,
+      "suppliedCircles": 8,
+      "uniformScale": true,
+      "printColour": "white",
+      "exports": [
+        "SVG",
+        "PNG"
+      ],
+      "mobileOverflow": false
+    },
+    {
+      "format": "personalized-motorcycle",
+      "suppliedPaths": 8,
+      "suppliedCircles": 8,
+      "uniformScale": true,
+      "printColour": "white",
+      "exports": [
+        "SVG",
+        "PNG"
+      ],
+      "mobileOverflow": false
+    },
+    {
+      "format": "personalized-motorcycle-prototype",
+      "suppliedPaths": 8,
+      "suppliedCircles": 8,
+      "uniformScale": true,
+      "printColour": "white",
+      "exports": [
+        "SVG",
+        "PNG"
+      ],
+      "mobileOverflow": false
+    }
+  ],
+  "errors": []
+}

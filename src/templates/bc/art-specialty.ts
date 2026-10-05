@@ -16,7 +16,8 @@ import memorialCrossUrl from '../../assets/bc-memorial/memorial-cross.webp';
 import { node as n, type SvgNode } from '../svg-scene';
 import { registerArtwork, type ArtMaster } from './art';
 import { OLYMPIC_2010_BOX, OLYMPIC_2010_PATHS } from './olympic-emblem';
-import { PERSONALIZED_BANNER, PERSONALIZED_BRITISH, PERSONALIZED_COLUMBIA, PERSONALIZED_DOGWOOD, PERSONALIZED_FRAME, PERSONALIZED_MOUNTAINS, PERSONALIZED_STRIPE } from './personalized-art';
+import { PERSONALIZED_BANNER, PERSONALIZED_BRITISH, PERSONALIZED_COLUMBIA, PERSONALIZED_FRAME, PERSONALIZED_MOUNTAINS, PERSONALIZED_STRIPE } from './personalized-art';
+import floralEmblem from './floral-emblem.json';
 import { PROTOTYPE_CAR, PROTOTYPE_CAR_BOX, VINTAGE_CAR, VINTAGE_CAR_BOX, type CarElement } from './vintage-cars';
 
 const rect = (x: number, y: number, width: number, height: number, fill: string, extra: Record<string, string | number> = {}) =>
@@ -104,7 +105,13 @@ registerArtwork('bc-collector-tilde', { viewBox: [20, 8], draw: tilde, aspect: '
 registerArtwork('bc-vintage-car-solid-hubs', { viewBox: [VINTAGE_CAR_BOX[2], VINTAGE_CAR_BOX[3]], draw: vintageCar('solidHubs') });
 registerArtwork('bc-vintage-car-open-hubs', { viewBox: [VINTAGE_CAR_BOX[2], VINTAGE_CAR_BOX[3]], draw: vintageCar('openHubs') });
 registerArtwork('bc-vintage-car-prototype', { viewBox: [PROTOTYPE_CAR_BOX[2], PROTOTYPE_CAR_BOX[3]], draw: prototypeCar });
-registerArtwork('bc-personalized-dogwood', personalizedPiece(PERSONALIZED_DOGWOOD));
+/** Supplied floral emblem; the recipes select its plate-print colour. Openings remain transparent. */
+registerArtwork('bc-personalized-dogwood', {
+  viewBox: [floralEmblem.box[2], floralEmblem.box[3]],
+  draw: () => [n('g', {transform: `translate(${-floralEmblem.box[0]} ${-floralEmblem.box[1]})`, fill: 'currentColor', 'data-part': 'supplied-floral-emblem'},
+    ...floralEmblem.paths.map(p => n('path', {d: p.d, ...('fillRule' in p ? {fillRule: p.fillRule} : {}), 'data-part': p.id})),
+    ...floralEmblem.circles.map(c => n('circle', {cx: c.cx, cy: c.cy, r: c.r, 'data-part': c.id})))],
+});
 registerArtwork('bc-personalized-british', personalizedPiece(PERSONALIZED_BRITISH));
 registerArtwork('bc-personalized-columbia', personalizedPiece(PERSONALIZED_COLUMBIA));
 /** Personalized graphic colourways, sampled from BCpl8s photos: the mountains stay 3M 708 teal-green throughout;

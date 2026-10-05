@@ -369,7 +369,7 @@ const antique: PlateFormat[] = [
 ];
 
 // ── Personalized (1979–): the mountain-ocean graphic base ──
-const PER_NOTE = `Personalized reconstruction: one shared vector of the mountain band, ocean banner, dogwood and outlined BRITISH / COLUMBIA (a Roboto stand-in for the unestablished face), recoloured for each maker's plates; BEAUTIFUL is a die stand-in. ${ART_NOTE}`;
+const PER_NOTE = `Personalized reconstruction: a shared mountain band and ocean banner with the supplied floral emblem vector printed white, and outlined BRITISH / COLUMBIA (a Roboto stand-in for the unestablished face), recoloured for each maker's plates; BEAUTIFUL is a die stand-in. ${ART_NOTE}`;
 const EXAMPLES = ['HEALEY', 'DAZZLE', 'IMAGE', 'OL-PAPA', '2GOOD', 'MURALS', 'BCPL8S', 'NUTBAR', 'CHRISG', 'ALL4ME'];
 const ALNUM = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
 const vanity: SerialGrammar = {
