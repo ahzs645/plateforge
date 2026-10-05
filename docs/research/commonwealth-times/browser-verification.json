@@ -1,0 +1,23 @@
+{
+  "site": "http://127.0.0.1:5176/plateforge/",
+  "results": [
+    {
+      "preset": "events-royal-1994",
+      "protectedSuppliedOutlines": true,
+      "protectedHelveticaCityOutlines": true,
+      "visibleWhiteDecalLettering": true,
+      "SVGPNGExports": true,
+      "mobileOverflow": false
+    },
+    {
+      "preset": "events-royal-1994-prototype",
+      "protectedSuppliedOutlines": true,
+      "protectedHelveticaCityOutlines": true,
+      "visibleWhiteDecalLettering": true,
+      "SVGPNGExports": true,
+      "mobileOverflow": false
+    }
+  ],
+  "errors": [],
+  "failedResources": []
+}

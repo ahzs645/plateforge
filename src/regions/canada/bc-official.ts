@@ -9,6 +9,7 @@ import type { PlateEra, PlateFamily, PlateFormat, PlateStatus } from '../../core
 import type { KitDecal, KitFontText, KitRecipe, KitSerial, KitText } from '../../templates/bc/kit';
 import { kitFormat, NO_SERIAL, numericGrammar, type KitPalette, type SerialGrammar } from './bc-kit';
 import '../../templates/bc/art-official';
+import '../../templates/dies/commonwealth-times';
 import {NWT_POLAR_BEAR_PATH, NWT_POLAR_BEAR_SLOTS} from '../../templates/shapes/nwt-polar-bear';
 
 const page = (slug: string, title: string) => ({ title: `BCpl8s · ${title}`, url: `https://www.bcpl8s.ca/${slug}` });
@@ -483,19 +484,21 @@ const eventSpecs: Spec[] = [
     description: 'For the 1987 Commonwealth Heads of Government visit, twenty pairs ROYAL 1–ROYAL 20 were made on the Ham Radio blank, with red serials in the colour of the 1986 prorated plates. The decal box stays empty.' },
   { id: 'events-royal-1994', label: '1994 Commonwealth Games visit', family: 'events', era: 'events-royal', period: [1994, 1994],
     recipe: flagBase('events-royal-1994', '1994 Royal Visit (Commonwealth Games)', SRC.royal, 'bc-astro-4', 'none', {
-      ink: '#1e4fb0', fontLegends: [serif('XV COMMONWEALTH GAMES', 150, 36, 18, '#3a64b8', 232, 700, true)],
+      ink: '#1e4fb0', fontLegends: [],
       art: [cornerFlag, { art: 'official-royal-visit-1994', x: 55, y: 42, width: 62, height: 62, role: 'visit-badge' }],
-      shapes: [{ kind: 'rect', x: 92, y: 117, width: 104, height: 23, fill: '#1e4fb0' }],
-      legends: [{ text: 'VICTORIA B.C.', x: 144, baseline: 134, cap: 13, maxWidth: 96, die: 'bc-legend-condensed', color: '#ffffff', role: 'city' }],
+      panels: [{ x: 92, y: 117, width: 104, height: 23, radius: 0, rim: false, background: '#1e4fb0', ink: '#ffffff', role: 'games-city-decal',
+        texts: [{ text: 'VICTORIA B.C.', x: 52, baseline: 17, cap: 13, maxWidth: 96, die: 'bc-commonwealth-helvetica-compressed', role: 'city', screened: true }] }],
+      legends: [{ text: 'XV COMMONWEALTH GAMES', x: 150, baseline: 36, cap: 11.5, maxWidth: 232, die: 'bc-commonwealth-times-bolditalic', color: '#3a64b8', role: 'slogan', screened: true }],
       serial: { x: 196, baseline: 104, cap: 62, maxWidth: 110, die: 'bc-astro-4', color: '#1e4fb0', separator: { kind: 'none' } } }),
     grammar: { blocks: [{ pattern: '[CFPRS][1-5]' }], hint: 'C, F, P, R or S + 1–5' },
     description: 'Plates for the royal party at the XV Commonwealth Games, Victoria: the Ham Radio blank with the Visit Badge (E II R, crown and maple leaf on gold), and VICTORIA B.C. in a blue panel over the decal area. Alphanumeric serials such as R1, C1, S3 (19 sets); 18 pairs were later sold by sealed bid.' },
   { id: 'events-royal-1994-prototype', label: '1994 Commonwealth Games prototype', family: 'events', era: 'events-royal', period: [1994, 1994], status: 'prototype',
     recipe: flagBase('events-royal-1994-proto', '1994 Commonwealth Games prototype', SRC.royal, 'bc-astro-4', 'none', {
-      ink: '#1e4fb0', fontLegends: [serif('XV COMMONWEALTH GAMES', 150, 36, 18, '#3a64b8', 232, 700, true)],
+      ink: '#1e4fb0', fontLegends: [],
       art: [cornerFlag, { art: 'official-royal-visit-1994', x: 55, y: 42, width: 62, height: 62, role: 'visit-badge' }],
-      shapes: [{ kind: 'rect', x: 92, y: 117, width: 104, height: 23, fill: '#1e4fb0' }],
-      legends: [{ text: 'VICTORIA B.C.', x: 144, baseline: 134, cap: 13, maxWidth: 96, die: 'bc-legend-condensed', color: '#ffffff', role: 'city' }],
+      panels: [{ x: 92, y: 117, width: 104, height: 23, radius: 0, rim: false, background: '#1e4fb0', ink: '#ffffff', role: 'games-city-decal',
+        texts: [{ text: 'VICTORIA B.C.', x: 52, baseline: 17, cap: 13, maxWidth: 96, die: 'bc-commonwealth-helvetica-compressed', role: 'city', screened: true }] }],
+      legends: [{ text: 'XV COMMONWEALTH GAMES', x: 150, baseline: 36, cap: 11.5, maxWidth: 232, die: 'bc-commonwealth-times-bolditalic', color: '#3a64b8', role: 'slogan', screened: true }],
       serial: { x: 196, baseline: 104, cap: 62, maxWidth: 110, die: 'bc-astro-4', color: '#1e4fb0', separator: { kind: 'none' } } }),
     grammar: { blocks: [{ pattern: '94' }, { pattern: '24' }], hint: '94 or 24' },
     description: 'Astrographic prototypes of the Games plate with a plain number and no letter prefix (Nos. 94 and 24).' },

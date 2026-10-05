@@ -53077,10 +53077,10 @@
       ],
       "components": [
         {
-          "text": "VICTORIA B.C.",
-          "die": "bc-legend-condensed",
-          "role": "city",
-          "capMm": 13
+          "text": "XV COMMONWEALTH GAMES",
+          "die": "bc-commonwealth-times-bolditalic",
+          "role": "slogan",
+          "capMm": 11.5
         }
       ],
       "letteringComponents": [
@@ -53116,32 +53116,16 @@
         },
         {
           "text": "XV COMMONWEALTH GAMES",
-          "die": "font:Georgia, \"Times New Roman\", serif",
-          "role": "legend",
-          "capMm": null,
-          "fontSizeMm": 18,
-          "kind": "screened typeface / proxy",
-          "origin": "declared text component",
-          "category": "descriptor",
-          "categories": [
-            "descriptor"
-          ],
-          "profileLabel": "font:Georgia, \"Times New Roman\", serif",
-          "profileMaker": null,
-          "toolingVariant": "full-size serial tooling"
-        },
-        {
-          "text": "VICTORIA B.C.",
-          "die": "bc-legend-condensed",
-          "role": "city",
-          "capMm": 13,
+          "die": "bc-commonwealth-times-bolditalic",
+          "role": "slogan",
+          "capMm": 10.954,
           "kind": "outline profile",
           "origin": "declared scene component",
-          "category": "province",
+          "category": "slogan",
           "categories": [
-            "province"
+            "slogan"
           ],
-          "profileLabel": "Legend \u00b7 condensed sans",
+          "profileLabel": "Times Bold Italic \u00b7 Commonwealth Games legend",
           "profileMaker": null,
           "toolingVariant": "full-size serial tooling"
         },
@@ -53158,6 +53142,21 @@
           ],
           "profileLabel": "Astrographic \u00b7 Classic dies",
           "profileMaker": "Astrographic",
+          "toolingVariant": "full-size serial tooling"
+        },
+        {
+          "text": "VICTORIA B.C.",
+          "die": "bc-commonwealth-helvetica-compressed",
+          "role": "city",
+          "capMm": 13,
+          "kind": "outline profile",
+          "origin": "declared scene component",
+          "category": "province",
+          "categories": [
+            "province"
+          ],
+          "profileLabel": "Helvetica Compressed Regular \u00b7 Victoria decal",
+          "profileMaker": null,
           "toolingVariant": "full-size serial tooling"
         }
       ],
@@ -53246,10 +53245,10 @@
       ],
       "components": [
         {
-          "text": "VICTORIA B.C.",
-          "die": "bc-legend-condensed",
-          "role": "city",
-          "capMm": 13
+          "text": "XV COMMONWEALTH GAMES",
+          "die": "bc-commonwealth-times-bolditalic",
+          "role": "slogan",
+          "capMm": 11.5
         }
       ],
       "letteringComponents": [
@@ -53285,32 +53284,16 @@
         },
         {
           "text": "XV COMMONWEALTH GAMES",
-          "die": "font:Georgia, \"Times New Roman\", serif",
-          "role": "legend",
-          "capMm": null,
-          "fontSizeMm": 18,
-          "kind": "screened typeface / proxy",
-          "origin": "declared text component",
-          "category": "descriptor",
-          "categories": [
-            "descriptor"
-          ],
-          "profileLabel": "font:Georgia, \"Times New Roman\", serif",
-          "profileMaker": null,
-          "toolingVariant": "full-size serial tooling"
-        },
-        {
-          "text": "VICTORIA B.C.",
-          "die": "bc-legend-condensed",
-          "role": "city",
-          "capMm": 13,
+          "die": "bc-commonwealth-times-bolditalic",
+          "role": "slogan",
+          "capMm": 10.954,
           "kind": "outline profile",
           "origin": "declared scene component",
-          "category": "province",
+          "category": "slogan",
           "categories": [
-            "province"
+            "slogan"
           ],
-          "profileLabel": "Legend \u00b7 condensed sans",
+          "profileLabel": "Times Bold Italic \u00b7 Commonwealth Games legend",
           "profileMaker": null,
           "toolingVariant": "full-size serial tooling"
         },
@@ -53327,6 +53310,21 @@
           ],
           "profileLabel": "Astrographic \u00b7 Classic dies",
           "profileMaker": "Astrographic",
+          "toolingVariant": "full-size serial tooling"
+        },
+        {
+          "text": "VICTORIA B.C.",
+          "die": "bc-commonwealth-helvetica-compressed",
+          "role": "city",
+          "capMm": 13,
+          "kind": "outline profile",
+          "origin": "declared scene component",
+          "category": "province",
+          "categories": [
+            "province"
+          ],
+          "profileLabel": "Helvetica Compressed Regular \u00b7 Victoria decal",
+          "profileMaker": null,
           "toolingVariant": "full-size serial tooling"
         }
       ],
@@ -66539,7 +66537,7 @@
         "width": 180,
         "height": 103
       },
-      "serialCapMm": 27.810000000000002,
+      "serialCapMm": 25.75,
       "sampleSerial": "3454",
       "sources": [
         {
@@ -66850,7 +66848,7 @@
           "text": "3454",
           "die": "municipal-vancouver-embossed",
           "role": "serial",
-          "capMm": 27.810000000000002,
+          "capMm": 25.75,
           "kind": "outline profile",
           "origin": "declared scene component",
           "category": "serial",
@@ -66968,7 +66966,7 @@
         "width": 180,
         "height": 103
       },
-      "serialCapMm": 27.810000000000002,
+      "serialCapMm": 25.75,
       "sampleSerial": "1741",
       "sources": [
         {
@@ -67278,7 +67276,7 @@
           "text": "1741",
           "die": "municipal-vancouver-embossed",
           "role": "serial",
-          "capMm": 27.810000000000002,
+          "capMm": 25.75,
           "kind": "outline profile",
           "origin": "declared scene component",
           "category": "serial",
@@ -68203,7 +68201,7 @@
         "width": 180,
         "height": 92
       },
-      "serialCapMm": 23.92,
+      "serialCapMm": 23,
       "sampleSerial": "1030",
       "sources": [
         {
@@ -68513,7 +68511,7 @@
           "text": "1030",
           "die": "municipal-vancouver-embossed",
           "role": "serial",
-          "capMm": 23.919999999999998,
+          "capMm": 23,
           "kind": "outline profile",
           "origin": "declared scene component",
           "category": "serial",

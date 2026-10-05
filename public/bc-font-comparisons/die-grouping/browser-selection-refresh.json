@@ -1,11 +1,45 @@
 {
   "method": "Selected each preset URL and rendered the declared default die/flat finish with research lettering enabled after the registry settled with deterministic generated parts. Preview captures and metadata are implementation checks; they do not certify source photograph accuracy, every glyph, or identical physical tooling.",
   "site": "http://127.0.0.1:5176/plateforge/",
-  "requested": 9,
-  "captured": 9,
+  "requested": 11,
+  "captured": 11,
   "errors": [],
-  "elapsedSeconds": 8,
+  "elapsedSeconds": 19,
   "formats": [
+    {
+      "id": "events-royal-1994",
+      "url": "http://127.0.0.1:5176/plateforge/#/ca-bc/events-royal-1994",
+      "selected": true,
+      "previewCaptured": true,
+      "serial": "P4",
+      "label": "British Columbia \u00b7 1994 Royal Visit (Commonwealth Games) \u00b7 P4",
+      "viewBox": "0 0 300 150",
+      "metadata": "{\"jurisdiction\":\"CA-BC\",\"recipe\":\"events-royal-1994\",\"status\":\"issued\",\"physicalMm\":{\"width\":300,\"height\":150},\"serial\":\"P4\",\"parts\":{\"serial\":\"P4\",\"finish\":\"flat\"},\"source\":{\"title\":\"BCpl8s \u00b7 Royal Visits\",\"url\":\"https://www.bcpl8s.ca/Royal.html\"},\"construction\":\"embossed\",\"dies\":{\"serial\":\"bc-astro-4\",\"evidence\":\"research-candidate\",\"fit\":\"natural\"},\"renewal\":null,\"accuracy\":{\"artwork\":\"approximate vector reconstruction\",\"dies\":\"research-candidate\",\"paint\":\"uncalibrated digital approximation\",\"allocations\":\"supported subset only\"},\"note\":\"Reconstruction from BCpl8s photographs: layout proportions, paint colours and dies are approximate; validation checks the documented serial format, not a real registration.\"}",
+      "paths": 63,
+      "profiles": [
+        "bc-commonwealth-times-bolditalic",
+        "bc-astro-4",
+        "bc-commonwealth-helvetica-compressed"
+      ],
+      "text": "British Columbia \u00b7 1994 Royal Visit (Commonwealth Games) \u00b7 P4Reconstruction from BCpl8s photographs: layout proportions, paint colours and dies are approximate; validation checks the documented serial format, not a real registration.{\"jurisdiction\":\"CA-BC\",\"recipe\":\"events-royal-1994\",\"status\":\"issued\",\"physicalMm\":{\"width\":300,\"height\":150},\"serial\":\"P4\",\"parts\":{\"serial\":\"P4\",\"finish\":\"flat\"},\"source\":{\"title\":\"BCpl8s \u00b7 Royal Visits\",\"url\":\"https://www.bcpl8s.ca/Royal.html\"},\"construction\":\"embossed\",\"dies\":{\"serial\":\"bc-astro-4\",\"evidence\":\"research-candidate\",\"fit\":\"natural\"},\"renewal\":null,\"accuracy\":{\"artwork\":\"approximate vector reconstruction\",\"dies\":\"research-candidate\",\"paint\":\"uncalibrated digital approximation\",\"allocations\":\"supported subset only\"},\"note\":\"Reconstruction from BCpl8s photographs: layout proportions, paint colours and dies are approximate; validation checks the documented serial format, not a real registration.\"}Crowned E II R maple emblem \u2014 vector reconstructionAn editable geometric reconstruction of the supplied royal emblem. True circular fields, a deliberately drawn maple leaf, a reconstructed crown and custom outlined E II R lettering. The crown was rebuilt from the clearer 490 by 488 pixel original 1994 Royal Tour artwork, with scalloped arches, curled fleur-de-lis, a central cross pattee and a separate lower bar. Fine source details are regularized. No embedded image, automatic tracing, live fonts or external assets.XV COMMONWEALTH GAMESP4VICTORIA B.C."
+    },
+    {
+      "id": "events-royal-1994-prototype",
+      "url": "http://127.0.0.1:5176/plateforge/#/ca-bc/events-royal-1994-prototype",
+      "selected": true,
+      "previewCaptured": true,
+      "serial": "54",
+      "label": "British Columbia \u00b7 1994 Commonwealth Games prototype \u00b7 54",
+      "viewBox": "0 0 300 150",
+      "metadata": "{\"jurisdiction\":\"CA-BC\",\"recipe\":\"events-royal-1994-proto\",\"status\":\"issued\",\"physicalMm\":{\"width\":300,\"height\":150},\"serial\":\"54\",\"parts\":{\"serial\":\"54\",\"finish\":\"flat\"},\"source\":{\"title\":\"BCpl8s \u00b7 Royal Visits\",\"url\":\"https://www.bcpl8s.ca/Royal.html\"},\"construction\":\"embossed\",\"dies\":{\"serial\":\"bc-astro-4\",\"evidence\":\"research-candidate\",\"fit\":\"natural\"},\"renewal\":null,\"accuracy\":{\"artwork\":\"approximate vector reconstruction\",\"dies\":\"research-candidate\",\"paint\":\"uncalibrated digital approximation\",\"allocations\":\"supported subset only\"},\"note\":\"Reconstruction from BCpl8s photographs: layout proportions, paint colours and dies are approximate; validation checks the documented serial format, not a real registration.\"}",
+      "paths": 62,
+      "profiles": [
+        "bc-commonwealth-times-bolditalic",
+        "bc-astro-4",
+        "bc-commonwealth-helvetica-compressed"
+      ],
+      "text": "British Columbia \u00b7 1994 Commonwealth Games prototype \u00b7 54Reconstruction from BCpl8s photographs: layout proportions, paint colours and dies are approximate; validation checks the documented serial format, not a real registration.{\"jurisdiction\":\"CA-BC\",\"recipe\":\"events-royal-1994-proto\",\"status\":\"issued\",\"physicalMm\":{\"width\":300,\"height\":150},\"serial\":\"54\",\"parts\":{\"serial\":\"54\",\"finish\":\"flat\"},\"source\":{\"title\":\"BCpl8s \u00b7 Royal Visits\",\"url\":\"https://www.bcpl8s.ca/Royal.html\"},\"construction\":\"embossed\",\"dies\":{\"serial\":\"bc-astro-4\",\"evidence\":\"research-candidate\",\"fit\":\"natural\"},\"renewal\":null,\"accuracy\":{\"artwork\":\"approximate vector reconstruction\",\"dies\":\"research-candidate\",\"paint\":\"uncalibrated digital approximation\",\"allocations\":\"supported subset only\"},\"note\":\"Reconstruction from BCpl8s photographs: layout proportions, paint colours and dies are approximate; validation checks the documented serial format, not a real registration.\"}Crowned E II R maple emblem \u2014 vector reconstructionAn editable geometric reconstruction of the supplied royal emblem. True circular fields, a deliberately drawn maple leaf, a reconstructed crown and custom outlined E II R lettering. The crown was rebuilt from the clearer 490 by 488 pixel original 1994 Royal Tour artwork, with scalloped arches, curled fleur-de-lis, a central cross pattee and a separate lower bar. Fine source details are regularized. No embedded image, automatic tracing, live fonts or external assets.XV COMMONWEALTH GAMES54VICTORIA B.C."
+    },
     {
       "id": "events-royal-crown",
       "url": "http://127.0.0.1:5176/plateforge/#/ca-bc/events-royal-crown",

@@ -27,6 +27,8 @@ Its 37 source contexts include five dated municipal specimen comparisons with no
 
 The timeline has sixteen type filters, eight component filters, family/maker search, adjustable year range, four zoom levels and horizontal panning on mobile. Clicking a band opens source qualifications, its covered presets, editor navigation and a related comparison. Source windows retain unknown calendar dates for class-specific serial handovers. The Lieutenant Governor source documents the crest replacement in 2008 while still showing older arms in a 2016-labelled photograph; the timeline keeps that overlap instead of assigning a universal withdrawal date.
 
+The two 1994 Commonwealth/Royal presets expose the protected uploaded Times Bold Italic header as an independent slogan component, alongside a protected uploaded Helvetica Compressed city legend. Its outlined wording retains native curves and advances; this identifies the current reconstruction, not an exact historical production font version or a serial-die assignment.
+
 `timeline-evidence.json` preserves the source windows, dated/undated serial exceptions and qualification text. `python scripts/verify-bc-die-timeline.py` runs the meaningful browser checks against the public directory served at port 8787; set `DIE_TIMELINE_URL` for a production preview or deployed URL and `CHROMIUM_EXECUTABLE` when needed. `timeline-browser-verification.json` records meaningful filter, zoom, selection, alternate-choice, source-overlap and mobile checks.
 
 ## Production exceptions retained

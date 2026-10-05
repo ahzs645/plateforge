@@ -84,6 +84,8 @@ export type KitShape =
 export interface KitPanel {
   x: number; y: number; width: number; height: number; radius?: number;
   background: string; ink: string;
+  /** Omit the inset rim on plain printed decals. Other panels keep their rim. */
+  rim?: boolean;
   /** Local cut and inset rim geometry for shaped renewal pieces. */
   bodyPath?: string;
   rimPath?: string;
@@ -236,8 +238,8 @@ function panel(p: KitPanel, serial: string, id: string, lift?: string): SvgNode 
     n('defs', {}, n('mask', {id: mask, maskUnits: 'userSpaceOnUse', x: 0, y: 0, width: p.width, height: p.height},
       body('white'), ...(p.holes ?? []).map(({cx, cy, r}) => n('circle', {cx, cy, r, fill: 'black', 'data-role': 'tab-hole'})))),
     n('g', {mask: `url(#${mask})`, color: p.ink}, body(p.background),
-      p.rimPath ? n('path', {d: p.rimPath, fill: 'none', stroke: p.ink, strokeWidth: 1.5, 'data-role': 'tab-rim'})
-        : n('rect', {x: 2, y: 2, width: p.width - 4, height: p.height - 4, rx: Math.max(1, (p.radius ?? 3) - 1), fill: 'none', stroke: p.ink, strokeWidth: 1}),
+      ...(p.rim === false ? [] : [p.rimPath ? n('path', {d: p.rimPath, fill: 'none', stroke: p.ink, strokeWidth: 1.5, 'data-role': 'tab-rim'})
+        : n('rect', {x: 2, y: 2, width: p.width - 4, height: p.height - 4, rx: Math.max(1, (p.radius ?? 3) - 1), fill: 'none', stroke: p.ink, strokeWidth: 1})]),
       ...(p.art ?? []).map((a) => artwork(a.art, {...a, color: a.color ?? p.ink}, a.role ?? 'tab-art')),
       ...(p.shapes ?? []).map((sh) => shape(sh, p.ink)),
       ...(p.texts ?? []).map((t) => text(t, p.ink)),

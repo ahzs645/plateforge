@@ -1,5 +1,5 @@
 {
-  "url": "http://127.0.0.1:5176/plateforge/bc-font-comparisons/die-grouping/?view=timeline",
+  "url": "http://127.0.0.1:8787/bc-font-comparisons/die-grouping/?view=timeline",
   "presets": 446,
   "components": 2402,
   "bounds": [
@@ -7,6 +7,8 @@
     2026
   ],
   "sourceContexts": 37,
+  "commonwealthHeadingsIndependent": true,
+  "commonwealthCityLegendsIndependent": true,
   "filters": [
     "passenger",
     "samples",
@@ -26,7 +28,7 @@
     "bicycle"
   ],
   "errors": [],
-  "overviewLanes": 323,
+  "overviewLanes": 325,
   "selectableAlternatives": 119,
   "optionToggleVerified": true,
   "optionPreviewQualificationVerified": true,

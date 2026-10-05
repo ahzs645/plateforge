@@ -1,0 +1,41 @@
+{
+  "scope": "Clearance checked on actual SVG renderer paint/stroke bounds; physical plate coordinates are estimated, not exact source registration.",
+  "before": [
+    {
+      "formatId": "municipal-vancouver-for-hire-1995",
+      "serial": "2571",
+      "gapMm": -2.0432
+    },
+    {
+      "formatId": "municipal-vancouver-taxi-1997",
+      "serial": "254",
+      "gapMm": 0.35
+    }
+  ],
+  "after": [
+    {
+      "serialPaintTopMm": 20.124999888241263,
+      "serialPaintBottomMm": 47.0350003764033,
+      "ruleBottomMm": 17.75,
+      "gapMm": 2.3749998882412626,
+      "formatId": "municipal-vancouver-for-hire-1995",
+      "serial": "2571"
+    },
+    {
+      "serialPaintTopMm": 24.71999931335452,
+      "serialPaintBottomMm": 50.46999884366992,
+      "ruleBottomMm": 20.25,
+      "gapMm": 4.469999313354521,
+      "formatId": "municipal-vancouver-taxi-1997",
+      "serial": "254"
+    },
+    {
+      "serialPaintTopMm": 22.53124937415126,
+      "serialPaintBottomMm": 52.65874853730205,
+      "ruleBottomMm": 20.25,
+      "gapMm": 2.2812493741512583,
+      "formatId": "municipal-vancouver-taxi-1997",
+      "serial": "1071"
+    }
+  ]
+}

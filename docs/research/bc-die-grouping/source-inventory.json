@@ -87931,10 +87931,10 @@
       "serialCapMm": 62,
       "legendDies": [
         {
-          "text": "VICTORIA B.C.",
-          "die": "bc-legend-condensed",
-          "role": "city",
-          "capMm": 13
+          "text": "XV COMMONWEALTH GAMES",
+          "die": "bc-commonwealth-times-bolditalic",
+          "role": "slogan",
+          "capMm": 11.5
         }
       ],
       "letteringComponents": [
@@ -87970,32 +87970,16 @@
         },
         {
           "text": "XV COMMONWEALTH GAMES",
-          "die": "font:Georgia, \"Times New Roman\", serif",
-          "role": "legend",
-          "capMm": null,
-          "fontSizeMm": 18,
-          "kind": "screened typeface / proxy",
-          "origin": "declared text component",
-          "category": "descriptor",
-          "categories": [
-            "descriptor"
-          ],
-          "profileLabel": "font:Georgia, \"Times New Roman\", serif",
-          "profileMaker": null,
-          "toolingVariant": "full-size serial tooling"
-        },
-        {
-          "text": "VICTORIA B.C.",
-          "die": "bc-legend-condensed",
-          "role": "city",
-          "capMm": 13,
+          "die": "bc-commonwealth-times-bolditalic",
+          "role": "slogan",
+          "capMm": 10.954,
           "kind": "outline profile",
           "origin": "declared scene component",
-          "category": "province",
+          "category": "slogan",
           "categories": [
-            "province"
+            "slogan"
           ],
-          "profileLabel": "Legend \u00b7 condensed sans",
+          "profileLabel": "Times Bold Italic \u00b7 Commonwealth Games legend",
           "profileMaker": null,
           "toolingVariant": "full-size serial tooling"
         },
@@ -88012,6 +87996,21 @@
           ],
           "profileLabel": "Astrographic \u00b7 Classic dies",
           "profileMaker": "Astrographic",
+          "toolingVariant": "full-size serial tooling"
+        },
+        {
+          "text": "VICTORIA B.C.",
+          "die": "bc-commonwealth-helvetica-compressed",
+          "role": "city",
+          "capMm": 13,
+          "kind": "outline profile",
+          "origin": "declared scene component",
+          "category": "province",
+          "categories": [
+            "province"
+          ],
+          "profileLabel": "Helvetica Compressed Regular \u00b7 Victoria decal",
+          "profileMaker": null,
           "toolingVariant": "full-size serial tooling"
         }
       ],
@@ -88103,10 +88102,10 @@
       "serialCapMm": 62,
       "legendDies": [
         {
-          "text": "VICTORIA B.C.",
-          "die": "bc-legend-condensed",
-          "role": "city",
-          "capMm": 13
+          "text": "XV COMMONWEALTH GAMES",
+          "die": "bc-commonwealth-times-bolditalic",
+          "role": "slogan",
+          "capMm": 11.5
         }
       ],
       "letteringComponents": [
@@ -88142,32 +88141,16 @@
         },
         {
           "text": "XV COMMONWEALTH GAMES",
-          "die": "font:Georgia, \"Times New Roman\", serif",
-          "role": "legend",
-          "capMm": null,
-          "fontSizeMm": 18,
-          "kind": "screened typeface / proxy",
-          "origin": "declared text component",
-          "category": "descriptor",
-          "categories": [
-            "descriptor"
-          ],
-          "profileLabel": "font:Georgia, \"Times New Roman\", serif",
-          "profileMaker": null,
-          "toolingVariant": "full-size serial tooling"
-        },
-        {
-          "text": "VICTORIA B.C.",
-          "die": "bc-legend-condensed",
-          "role": "city",
-          "capMm": 13,
+          "die": "bc-commonwealth-times-bolditalic",
+          "role": "slogan",
+          "capMm": 10.954,
           "kind": "outline profile",
           "origin": "declared scene component",
-          "category": "province",
+          "category": "slogan",
           "categories": [
-            "province"
+            "slogan"
           ],
-          "profileLabel": "Legend \u00b7 condensed sans",
+          "profileLabel": "Times Bold Italic \u00b7 Commonwealth Games legend",
           "profileMaker": null,
           "toolingVariant": "full-size serial tooling"
         },
@@ -88184,6 +88167,21 @@
           ],
           "profileLabel": "Astrographic \u00b7 Classic dies",
           "profileMaker": "Astrographic",
+          "toolingVariant": "full-size serial tooling"
+        },
+        {
+          "text": "VICTORIA B.C.",
+          "die": "bc-commonwealth-helvetica-compressed",
+          "role": "city",
+          "capMm": 13,
+          "kind": "outline profile",
+          "origin": "declared scene component",
+          "category": "province",
+          "categories": [
+            "province"
+          ],
+          "profileLabel": "Helvetica Compressed Regular \u00b7 Victoria decal",
+          "profileMaker": null,
           "toolingVariant": "full-size serial tooling"
         }
       ],
@@ -101597,7 +101595,7 @@
         "height": 103
       },
       "shape": "rectangular",
-      "serialCapMm": 27.810000000000002,
+      "serialCapMm": 25.75,
       "legendDies": [
         {
           "text": "TAXI CAB",
@@ -101896,7 +101894,7 @@
           "text": "3454",
           "die": "municipal-vancouver-embossed",
           "role": "serial",
-          "capMm": 27.810000000000002,
+          "capMm": 25.75,
           "kind": "outline profile",
           "origin": "declared scene component",
           "category": "serial",
@@ -102029,7 +102027,7 @@
         "height": 103
       },
       "shape": "rectangular",
-      "serialCapMm": 27.810000000000002,
+      "serialCapMm": 25.75,
       "legendDies": [
         {
           "text": "TAXI CAB",
@@ -102328,7 +102326,7 @@
           "text": "1741",
           "die": "municipal-vancouver-embossed",
           "role": "serial",
-          "capMm": 27.810000000000002,
+          "capMm": 25.75,
           "kind": "outline profile",
           "origin": "declared scene component",
           "category": "serial",
@@ -103278,7 +103276,7 @@
         "height": 92
       },
       "shape": "rectangular",
-      "serialCapMm": 23.92,
+      "serialCapMm": 23,
       "legendDies": [
         {
           "text": "Vehicle for Hire",
@@ -103577,7 +103575,7 @@
           "text": "1030",
           "die": "municipal-vancouver-embossed",
           "role": "serial",
-          "capMm": 23.919999999999998,
+          "capMm": 23,
           "kind": "outline profile",
           "origin": "declared scene component",
           "category": "serial",
@@ -114583,6 +114581,36 @@
           }
         ],
         "notes": "Upright narrow rounded trailer lettering checked across photographed 1923\u201348 plates. BC is a separate large abbreviation, not the small passenger province legend. T/TR use a separate smaller stamp. Smooth shared-stroke reconstruction excludes embossed shoulders, rust and paint spread. Similar visible construction supports comparison, not confirmed identical physical tooling or a complete measured alphabet."
+      }
+    },
+    {
+      "id": "bc-commonwealth-times-bolditalic",
+      "label": "Times Bold Italic \u00b7 Commonwealth Games legend",
+      "maker": null,
+      "evidence": {
+        "status": "legend-approximation",
+        "specimens": [
+          {
+            "title": "BCpl8s \u00b7 1994 Royal Visit",
+            "url": "https://www.bcpl8s.ca/Royal.html"
+          }
+        ],
+        "notes": "Fixed XV COMMONWEALTH GAMES wording outlined from the uploaded Times BoldItalic.ttf. Native curves, advances and italic angle retained; the entire inscription is fitted to the photographed header. Font software is not bundled. Historical production font version remains unconfirmed."
+      }
+    },
+    {
+      "id": "bc-commonwealth-helvetica-compressed",
+      "label": "Helvetica Compressed Regular \u00b7 Victoria decal",
+      "maker": null,
+      "evidence": {
+        "status": "legend-approximation",
+        "specimens": [
+          {
+            "title": "BCpl8s \u00b7 1994 Royal Visit",
+            "url": "https://www.bcpl8s.ca/Royal.html"
+          }
+        ],
+        "notes": "Fixed VICTORIA B.C. wording outlined from the uploaded Helvetica Compressed Regular.otf, with native curves and advances. Fitted as white screened lettering in the blue Games decal. Font software is not bundled. Historical production font version remains unconfirmed."
       }
     },
     {

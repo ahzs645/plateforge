@@ -11,3 +11,7 @@ The public `bc-font-comparisons/municipal/` page includes actual source photogra
 Source galleries: https://www.bcpl8s.ca/Municipal-Vancouver.html ; https://www.bcpl8s.ca/Municipal-City-Issues.htm ; https://www.bcpl8s.ca/Bicycle-PrinceGeorge.html . Additional exact source URLs are recorded in the cross-class historical evidence catalogue.
 
 The dedicated `municipal-vancouver-taxi-1996` preset and comparison reproduce the clear 1071 specimen with its red 1996 renewal decal, blue screened header and green band. The 1997 preset retains the separately photographed blue band and green 1997 decal.
+
+The 1996 taxi serial was lowered and its cap height reduced after checking the source photograph. Browser geometry confirms the blue serial paint begins 2.28 mm below the bottom of the thin header rule, including stroke extent; its contours no longer touch the rule. `taxi-1996-clearance.json` records the measured renderer bounds. This verifies clearance, not exact photographic outline registration.
+
+The other numbered centennial presets were checked for the same collision. The 1995 for-hire source serial 2571 overlapped its header rule by 2.04 mm; the 1997 taxi source serial 254 had only 0.35 mm clearance. Both serials now sit clearly below their rules. Paint/stroke bounds give 2.37 mm clearance for 2571 and 4.47 mm for 254; a broad-footed 1071 run on the 1997 preset also clears by 2.28 mm. The shorter 1995 plate uses a separately fitted header-rule position. `centennial-serial-clearances.json` records the measurements.
