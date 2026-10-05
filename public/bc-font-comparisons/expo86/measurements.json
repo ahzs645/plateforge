@@ -1,0 +1,716 @@
+{
+  "reference": "https://www.bcpl8s.ca/images/Expo-86/Expo86-Souvenir(mid).jpg",
+  "specimens": "User-supplied Frankfurter Std Regular OTF rendered directly in browser Canvas, and official MyFonts Frankfurter Std Medium live preview customized to EXPO86 and rendered to raster. Samples at 192px. No Medium font file is bundled or installed in PlateForge.",
+  "method": "Independently selected source-photo paint boxes. Source dark-blue threshold R<150 and B-R>30. Candidates uniformly normalized by ink height and centred. Diagnostic width sweep 0.80\u20131.20 tests horizontal scaling separately. Padded scoring canvas retains all candidate ink outside the source box. Approximate raster comparisons; no master outlines changed. P/O and 8/6 are joined.",
+  "characters": [
+    {
+      "character": "E",
+      "sourceBox": [
+        38,
+        69,
+        83,
+        137
+      ],
+      "sourceAspect": 0.6618,
+      "sourceCounters": [],
+      "limits": "Small scan; paint, embossing, wear and uncertain registration remain.",
+      "uploaded-regular": {
+        "aspect": 0.6719,
+        "equalHeightIoU": 0.79,
+        "bestWidthIoU": 0.8006,
+        "bestWidthFactor": 0.97,
+        "counters": [],
+        "inkHeight": 128,
+        "inkWidth": 86
+      },
+      "frankfurter-std-medium": {
+        "aspect": 0.6719,
+        "equalHeightIoU": 0.9511,
+        "bestWidthIoU": 0.9511,
+        "bestWidthFactor": 1.015,
+        "counters": [],
+        "inkHeight": 128,
+        "inkWidth": 86
+      },
+      "visualFinding": "Medium matches the arm thickness and openings; reducing Regular width leaves its arms too thick."
+    },
+    {
+      "character": "X",
+      "sourceBox": [
+        85,
+        69,
+        141,
+        137
+      ],
+      "sourceAspect": 0.8235,
+      "sourceCounters": [],
+      "limits": "Small scan; paint, embossing, wear and uncertain registration remain.",
+      "uploaded-regular": {
+        "aspect": 0.8538,
+        "equalHeightIoU": 0.7559,
+        "bestWidthIoU": 0.7688,
+        "bestWidthFactor": 0.9,
+        "counters": [],
+        "inkHeight": 130,
+        "inkWidth": 111
+      },
+      "frankfurter-std-medium": {
+        "aspect": 0.8308,
+        "equalHeightIoU": 0.9557,
+        "bestWidthIoU": 0.9557,
+        "bestWidthFactor": 1.0,
+        "counters": [],
+        "inkHeight": 130,
+        "inkWidth": 108
+      },
+      "visualFinding": "Medium matches the diagonal stroke weight and rounded ends. Regular stays heavy after a width reduction."
+    },
+    {
+      "character": "P",
+      "sourceBox": [
+        143,
+        68,
+        194,
+        137
+      ],
+      "sourceAspect": 0.7391,
+      "sourceCounters": [
+        {
+          "width": 19,
+          "height": 18,
+          "area": 303,
+          "bbox": [
+            16,
+            15,
+            35,
+            33
+          ]
+        }
+      ],
+      "limits": "P/O and 8/6 have joined painted edges; neighbouring paint limits outer-contour scores.",
+      "uploaded-regular": {
+        "aspect": 0.7597,
+        "equalHeightIoU": 0.7943,
+        "bestWidthIoU": 0.8043,
+        "bestWidthFactor": 0.96,
+        "counters": [
+          {
+            "width": 14,
+            "height": 14,
+            "area": 175,
+            "bbox": [
+              42,
+              39,
+              56,
+              53
+            ]
+          }
+        ],
+        "inkHeight": 129,
+        "inkWidth": 98
+      },
+      "frankfurter-std-medium": {
+        "aspect": 0.7287,
+        "equalHeightIoU": 0.9012,
+        "bestWidthIoU": 0.9012,
+        "bestWidthFactor": 1.0,
+        "counters": [
+          {
+            "width": 36,
+            "height": 38,
+            "area": 1197,
+            "bbox": [
+              30,
+              28,
+              66,
+              66
+            ]
+          }
+        ],
+        "inkHeight": 129,
+        "inkWidth": 94
+      },
+      "visualFinding": "Medium matches the larger counter. P touches O in the source, limiting outer-edge and placement precision."
+    },
+    {
+      "character": "O",
+      "sourceBox": [
+        188,
+        67,
+        260,
+        137
+      ],
+      "sourceAspect": 1.0286,
+      "sourceCounters": [
+        {
+          "width": 39,
+          "height": 38,
+          "area": 1169,
+          "bbox": [
+            16,
+            16,
+            55,
+            54
+          ]
+        }
+      ],
+      "limits": "P/O and 8/6 have joined painted edges; neighbouring paint limits outer-contour scores.",
+      "uploaded-regular": {
+        "aspect": 1.0075,
+        "equalHeightIoU": 0.7812,
+        "bestWidthIoU": 0.7899,
+        "bestWidthFactor": 1.025,
+        "counters": [
+          {
+            "width": 50,
+            "height": 49,
+            "area": 1952,
+            "bbox": [
+              43,
+              43,
+              93,
+              92
+            ]
+          }
+        ],
+        "inkHeight": 134,
+        "inkWidth": 135
+      },
+      "frankfurter-std-medium": {
+        "aspect": 1.0,
+        "equalHeightIoU": 0.945,
+        "bestWidthIoU": 0.945,
+        "bestWidthFactor": 1.005,
+        "counters": [
+          {
+            "width": 74,
+            "height": 74,
+            "area": 4256,
+            "bbox": [
+              29,
+              29,
+              103,
+              103
+            ]
+          }
+        ],
+        "inkHeight": 132,
+        "inkWidth": 132
+      },
+      "visualFinding": "Medium matches the broad circular opening. Approximate opening width / glyph height: source 0.56, Medium 0.56, supplied Regular 0.37."
+    },
+    {
+      "character": "8",
+      "sourceBox": [
+        269,
+        67,
+        317,
+        138
+      ],
+      "sourceAspect": 0.6761,
+      "sourceCounters": [
+        {
+          "width": 11,
+          "height": 11,
+          "area": 91,
+          "bbox": [
+            19,
+            15,
+            30,
+            26
+          ]
+        },
+        {
+          "width": 18,
+          "height": 18,
+          "area": 260,
+          "bbox": [
+            16,
+            37,
+            34,
+            55
+          ]
+        }
+      ],
+      "limits": "P/O and 8/6 have joined painted edges; neighbouring paint limits outer-contour scores.",
+      "uploaded-regular": {
+        "aspect": 0.709,
+        "equalHeightIoU": 0.8064,
+        "bestWidthIoU": 0.8151,
+        "bestWidthFactor": 0.96,
+        "counters": [
+          {
+            "width": 11,
+            "height": 11,
+            "area": 86,
+            "bbox": [
+              42,
+              41,
+              53,
+              52
+            ]
+          },
+          {
+            "width": 11,
+            "height": 11,
+            "area": 92,
+            "bbox": [
+              42,
+              81,
+              53,
+              92
+            ]
+          }
+        ],
+        "inkHeight": 134,
+        "inkWidth": 95
+      },
+      "frankfurter-std-medium": {
+        "aspect": 0.7045,
+        "equalHeightIoU": 0.932,
+        "bestWidthIoU": 0.9654,
+        "bestWidthFactor": 0.985,
+        "counters": [
+          {
+            "width": 20,
+            "height": 19,
+            "area": 300,
+            "bbox": [
+              37,
+              29,
+              57,
+              48
+            ]
+          },
+          {
+            "width": 34,
+            "height": 34,
+            "area": 909,
+            "bbox": [
+              30,
+              69,
+              64,
+              103
+            ]
+          }
+        ],
+        "inkHeight": 132,
+        "inkWidth": 93
+      },
+      "visualFinding": "Medium matches the unequal openings: the lower counter is substantially larger. Regular has two much smaller openings. The right edge joins 6."
+    },
+    {
+      "character": "6",
+      "sourceBox": [
+        311,
+        69,
+        364,
+        138
+      ],
+      "sourceAspect": 0.7681,
+      "sourceCounters": [
+        {
+          "width": 21,
+          "height": 21,
+          "area": 351,
+          "bbox": [
+            16,
+            32,
+            37,
+            53
+          ]
+        }
+      ],
+      "limits": "P/O and 8/6 have joined painted edges; neighbouring paint limits outer-contour scores.",
+      "uploaded-regular": {
+        "aspect": 0.7576,
+        "equalHeightIoU": 0.7476,
+        "bestWidthIoU": 0.7551,
+        "bestWidthFactor": 1.02,
+        "counters": [
+          {
+            "width": 15,
+            "height": 15,
+            "area": 173,
+            "bbox": [
+              43,
+              75,
+              58,
+              90
+            ]
+          }
+        ],
+        "inkHeight": 132,
+        "inkWidth": 100
+      },
+      "frankfurter-std-medium": {
+        "aspect": 0.7444,
+        "equalHeightIoU": 0.8906,
+        "bestWidthIoU": 0.896,
+        "bestWidthFactor": 1.04,
+        "counters": [
+          {
+            "width": 41,
+            "height": 41,
+            "area": 1296,
+            "bbox": [
+              29,
+              63,
+              70,
+              104
+            ]
+          }
+        ],
+        "inkHeight": 133,
+        "inkWidth": 99
+      },
+      "visualFinding": "Medium matches the counter and diagonal terminal more closely. The left edge joins 8; crop and placement remain approximate."
+    }
+  ],
+  "thresholdSensitivity": {
+    "trials": 54,
+    "mediumWins": 54,
+    "checks": [
+      {
+        "character": "E",
+        "redCutoff": 125,
+        "blueMinusRed": 20,
+        "mediumWins": true
+      },
+      {
+        "character": "E",
+        "redCutoff": 125,
+        "blueMinusRed": 30,
+        "mediumWins": true
+      },
+      {
+        "character": "E",
+        "redCutoff": 125,
+        "blueMinusRed": 40,
+        "mediumWins": true
+      },
+      {
+        "character": "E",
+        "redCutoff": 150,
+        "blueMinusRed": 20,
+        "mediumWins": true
+      },
+      {
+        "character": "E",
+        "redCutoff": 150,
+        "blueMinusRed": 30,
+        "mediumWins": true
+      },
+      {
+        "character": "E",
+        "redCutoff": 150,
+        "blueMinusRed": 40,
+        "mediumWins": true
+      },
+      {
+        "character": "E",
+        "redCutoff": 175,
+        "blueMinusRed": 20,
+        "mediumWins": true
+      },
+      {
+        "character": "E",
+        "redCutoff": 175,
+        "blueMinusRed": 30,
+        "mediumWins": true
+      },
+      {
+        "character": "E",
+        "redCutoff": 175,
+        "blueMinusRed": 40,
+        "mediumWins": true
+      },
+      {
+        "character": "X",
+        "redCutoff": 125,
+        "blueMinusRed": 20,
+        "mediumWins": true
+      },
+      {
+        "character": "X",
+        "redCutoff": 125,
+        "blueMinusRed": 30,
+        "mediumWins": true
+      },
+      {
+        "character": "X",
+        "redCutoff": 125,
+        "blueMinusRed": 40,
+        "mediumWins": true
+      },
+      {
+        "character": "X",
+        "redCutoff": 150,
+        "blueMinusRed": 20,
+        "mediumWins": true
+      },
+      {
+        "character": "X",
+        "redCutoff": 150,
+        "blueMinusRed": 30,
+        "mediumWins": true
+      },
+      {
+        "character": "X",
+        "redCutoff": 150,
+        "blueMinusRed": 40,
+        "mediumWins": true
+      },
+      {
+        "character": "X",
+        "redCutoff": 175,
+        "blueMinusRed": 20,
+        "mediumWins": true
+      },
+      {
+        "character": "X",
+        "redCutoff": 175,
+        "blueMinusRed": 30,
+        "mediumWins": true
+      },
+      {
+        "character": "X",
+        "redCutoff": 175,
+        "blueMinusRed": 40,
+        "mediumWins": true
+      },
+      {
+        "character": "P",
+        "redCutoff": 125,
+        "blueMinusRed": 20,
+        "mediumWins": true
+      },
+      {
+        "character": "P",
+        "redCutoff": 125,
+        "blueMinusRed": 30,
+        "mediumWins": true
+      },
+      {
+        "character": "P",
+        "redCutoff": 125,
+        "blueMinusRed": 40,
+        "mediumWins": true
+      },
+      {
+        "character": "P",
+        "redCutoff": 150,
+        "blueMinusRed": 20,
+        "mediumWins": true
+      },
+      {
+        "character": "P",
+        "redCutoff": 150,
+        "blueMinusRed": 30,
+        "mediumWins": true
+      },
+      {
+        "character": "P",
+        "redCutoff": 150,
+        "blueMinusRed": 40,
+        "mediumWins": true
+      },
+      {
+        "character": "P",
+        "redCutoff": 175,
+        "blueMinusRed": 20,
+        "mediumWins": true
+      },
+      {
+        "character": "P",
+        "redCutoff": 175,
+        "blueMinusRed": 30,
+        "mediumWins": true
+      },
+      {
+        "character": "P",
+        "redCutoff": 175,
+        "blueMinusRed": 40,
+        "mediumWins": true
+      },
+      {
+        "character": "O",
+        "redCutoff": 125,
+        "blueMinusRed": 20,
+        "mediumWins": true
+      },
+      {
+        "character": "O",
+        "redCutoff": 125,
+        "blueMinusRed": 30,
+        "mediumWins": true
+      },
+      {
+        "character": "O",
+        "redCutoff": 125,
+        "blueMinusRed": 40,
+        "mediumWins": true
+      },
+      {
+        "character": "O",
+        "redCutoff": 150,
+        "blueMinusRed": 20,
+        "mediumWins": true
+      },
+      {
+        "character": "O",
+        "redCutoff": 150,
+        "blueMinusRed": 30,
+        "mediumWins": true
+      },
+      {
+        "character": "O",
+        "redCutoff": 150,
+        "blueMinusRed": 40,
+        "mediumWins": true
+      },
+      {
+        "character": "O",
+        "redCutoff": 175,
+        "blueMinusRed": 20,
+        "mediumWins": true
+      },
+      {
+        "character": "O",
+        "redCutoff": 175,
+        "blueMinusRed": 30,
+        "mediumWins": true
+      },
+      {
+        "character": "O",
+        "redCutoff": 175,
+        "blueMinusRed": 40,
+        "mediumWins": true
+      },
+      {
+        "character": "8",
+        "redCutoff": 125,
+        "blueMinusRed": 20,
+        "mediumWins": true
+      },
+      {
+        "character": "8",
+        "redCutoff": 125,
+        "blueMinusRed": 30,
+        "mediumWins": true
+      },
+      {
+        "character": "8",
+        "redCutoff": 125,
+        "blueMinusRed": 40,
+        "mediumWins": true
+      },
+      {
+        "character": "8",
+        "redCutoff": 150,
+        "blueMinusRed": 20,
+        "mediumWins": true
+      },
+      {
+        "character": "8",
+        "redCutoff": 150,
+        "blueMinusRed": 30,
+        "mediumWins": true
+      },
+      {
+        "character": "8",
+        "redCutoff": 150,
+        "blueMinusRed": 40,
+        "mediumWins": true
+      },
+      {
+        "character": "8",
+        "redCutoff": 175,
+        "blueMinusRed": 20,
+        "mediumWins": true
+      },
+      {
+        "character": "8",
+        "redCutoff": 175,
+        "blueMinusRed": 30,
+        "mediumWins": true
+      },
+      {
+        "character": "8",
+        "redCutoff": 175,
+        "blueMinusRed": 40,
+        "mediumWins": true
+      },
+      {
+        "character": "6",
+        "redCutoff": 125,
+        "blueMinusRed": 20,
+        "mediumWins": true
+      },
+      {
+        "character": "6",
+        "redCutoff": 125,
+        "blueMinusRed": 30,
+        "mediumWins": true
+      },
+      {
+        "character": "6",
+        "redCutoff": 125,
+        "blueMinusRed": 40,
+        "mediumWins": true
+      },
+      {
+        "character": "6",
+        "redCutoff": 150,
+        "blueMinusRed": 20,
+        "mediumWins": true
+      },
+      {
+        "character": "6",
+        "redCutoff": 150,
+        "blueMinusRed": 30,
+        "mediumWins": true
+      },
+      {
+        "character": "6",
+        "redCutoff": 150,
+        "blueMinusRed": 40,
+        "mediumWins": true
+      },
+      {
+        "character": "6",
+        "redCutoff": 175,
+        "blueMinusRed": 20,
+        "mediumWins": true
+      },
+      {
+        "character": "6",
+        "redCutoff": 175,
+        "blueMinusRed": 30,
+        "mediumWins": true
+      },
+      {
+        "character": "6",
+        "redCutoff": 175,
+        "blueMinusRed": 40,
+        "mediumWins": true
+      }
+    ]
+  },
+  "finding": "Frankfurter Std Medium is the strongest tested visual match across E, X, P, O, 8 and 6. Changing the supplied Regular width does not correct its stroke/counter balance. This does not authenticate the original printing specification.",
+  "productionDecision": "The live souvenir retains the user-supplied Regular. Medium is an official raster specimen used for comparison, not installed font software.",
+  "sources": [
+    {
+      "title": "BCpl8s original photograph",
+      "url": "https://www.bcpl8s.ca/images/Expo-86/Expo86-Souvenir(mid).jpg"
+    },
+    {
+      "title": "MyFonts official Frankfurter family; live preview customized to EXPO86",
+      "url": "https://www.myfonts.com/collections/frankfurter-font-itc",
+      "mediumRenderId": "e094dede1f515189f4972f03427ad6eb",
+      "sampleSizePx": 192,
+      "capturedUtc": "2026-10-05"
+    }
+  ],
+  "sourceFontShapingCheck": "The supplied Regular has no standard ligature affecting EXPO86 and no GPOS kerning adjustment for E-X, X-P, P-O, O-8 or 8-6. The stroke/counter difference is not caused by omitted shaping."
+}
