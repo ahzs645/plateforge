@@ -1,0 +1,11 @@
+# APEC 1997 · national CANADA variants
+
+The user supplied the No. 134 photograph and asked for the maple-leaf variant to share the federal standard template. [BCpl8s APEC](https://www.bcpl8s.ca/APEC.htm) explicitly says maple leaves appear on No. 134 and are absent on the other illustrated examples. No. 180 and the high-resolution [149](https://www.bcpl8s.ca/images/APEC/Canada-149%28XL%29.jpg) support the leafless version. The photograph shows individual maple leaves, not rectangular flags. Three-digit numbering is supported; actual allocation is unknown.
+
+`src/regions/canada/federal-canada-layout.ts` is the shared national CANADA shell. It owns the plate size, corner radius, raised serial panel, country header, maple-leaf placement and existing serial candidate. Mount style, leaves, APEC sticker and serial position are explicit variant settings. The standard plate keeps its original geometry and full-width number; the APEC number sits to the right of the sticker.
+
+The maple-leaf preset is `ca-federal/apec-1997-maple-leaves`, also listed under `ca-bc/events-apec-1997-military-maple-leaves` for the historical B.C. event study. Both routes use one registered recipe. The national standard and both APEC versions export jurisdiction CA even from their B.C. source routes. Provincial National Defence N plates remain B.C. plates.
+
+The existing serial/country alphabets remain approximate candidates, with no certification of maker or identical historical physical tooling. The 150 × 75 No. 134 reference cannot support a precise contour trace. APEC artwork comes from the earlier supplied globe; sticker proportions and caption remain simplified.
+
+`node scripts/build-apec-military-review.mjs` rebuilds the [source/current comparison](https://projects.ahmadjalil.com/plateforge/apec-military-review/), two credited cropped photos and provenance hashes. Original full-resolution photographs are not bundled. `scripts/verify-apec-military-browser.py` checks both event variants, their federal aliases and the shared standard, including generated/typed serials, SVG/PNG, national metadata and mobile rendering. The 41-gallery-photo federal ledger is separate from this supplemental two-variant comparison.

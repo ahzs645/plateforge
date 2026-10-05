@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-05",
+  "sourcePage": "https://www.bcpl8s.ca/APEC.htm",
+  "attribution": "BCpl8s explicitly contrasts maple leaves on No. 134 with their absence on the other illustrated military plates. Rights remain with the original photographers and gallery.",
+  "sharedLayout": "src/regions/canada/federal-canada-layout.ts",
+  "shared": "300 × 150 shell, raised serial panel, CANADA legend and existing serial candidate; variant settings select mounts, leaves, sticker and number position.",
+  "limits": "No. 134 reference is 150 × 75 pixels: construction/placement support only, not precise font outlines. Three-digit number grammar, actual allocation unknown. These are maple leaves rather than rectangular flags. Serial and country dies and sticker caption remain approximate. No evidence of identical historical physical dies is implied.",
+  "records": [
+    {
+      "id": "maple-leaves",
+      "format": "apec-1997-maple-leaves",
+      "bcFormat": "events-apec-1997-military-maple-leaves",
+      "serial": "134",
+      "photo": "Canada-134.jpg",
+      "caption": "Red maple leaves beside CANADA",
+      "sourceUrl": "https://www.bcpl8s.ca/images/APEC/Canada-134.jpg",
+      "sourceSha256": "ff15155df141cf74c4ee96df3246863ed97dfde9a76753d4a54907915047660f",
+      "cropBox": [
+        2,
+        2,
+        148,
+        74
+      ]
+    },
+    {
+      "id": "plain",
+      "format": "apec-1997",
+      "bcFormat": "events-apec-1997-military",
+      "serial": "180",
+      "photo": "Canada-180.jpg",
+      "caption": "CANADA without maple leaves",
+      "sourceUrl": "https://www.bcpl8s.ca/images/APEC/Canada-180.jpg",
+      "sourceSha256": "3c7438103b15699c5715dbbdde58e3ee8f3e9b265d724b493cf8ec81d564d9ab",
+      "cropBox": [
+        2,
+        2,
+        148,
+        74
+      ]
+    }
+  ]
+}

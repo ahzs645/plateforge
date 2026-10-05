@@ -19,6 +19,14 @@
       "mobile": true
     },
     {
+      "id": "apec-1997-maple-leaves",
+      "jurisdiction": "CA",
+      "status": "issued",
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
       "id": "fisheries-tabs",
       "jurisdiction": "CA",
       "status": "issued",

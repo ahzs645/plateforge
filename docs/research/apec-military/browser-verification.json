@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-05",
+  "site": "http://127.0.0.1:5176/plateforge/",
+  "cases": [
+    {
+      "route": "ca-federal/standard",
+      "serial": "12 345",
+      "mapleLeaves": 2,
+      "apecSticker": false,
+      "nationalMetadata": true,
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "route": "ca-federal/apec-1997",
+      "serial": "180",
+      "mapleLeaves": 0,
+      "apecSticker": true,
+      "nationalMetadata": true,
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "route": "ca-federal/apec-1997-maple-leaves",
+      "serial": "134",
+      "mapleLeaves": 2,
+      "apecSticker": true,
+      "nationalMetadata": true,
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "route": "ca-bc/events-apec-1997-military",
+      "serial": "180",
+      "mapleLeaves": 0,
+      "apecSticker": true,
+      "nationalMetadata": true,
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "route": "ca-bc/events-apec-1997-military-maple-leaves",
+      "serial": "134",
+      "mapleLeaves": 2,
+      "apecSticker": true,
+      "nationalMetadata": true,
+      "svg": true,
+      "png": true,
+      "mobile": true
+    }
+  ],
+  "sourceComparisons": 2,
+  "sharedStandard": true,
+  "errors": [],
+  "failedResources": []
+}

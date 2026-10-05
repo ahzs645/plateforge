@@ -11,6 +11,7 @@ import { kitFormat, NO_SERIAL, numericGrammar, type KitPalette, type SerialGramm
 import '../../templates/bc/art-official';
 import '../../templates/dies/commonwealth-times';
 import {NWT_POLAR_BEAR_PATH, NWT_POLAR_BEAR_SLOTS} from '../../templates/shapes/nwt-polar-bear';
+import {federalCanadaLayout} from './federal-canada-layout';
 
 const page = (slug: string, title: string) => ({ title: `BCpl8s · ${title}`, url: `https://www.bcpl8s.ca/${slug}` });
 const SRC = {
@@ -375,12 +376,8 @@ const officialSpecs: Spec[] = [
     recipe: beautiful('official-nd-1968', '1968–69 National Defence', SRC.nd, 302, 'split', { kind: 'dot' }), palettes: years(P1964, [1968, 1969]),
     grammar: listed('N1 … N2-200', [1, 999, (n) => `N${n}`], [1000, 2200, (n) => `N${thousands(n)}`]), description: '19 and the year in the top corners (N1-325 in 1969); provincial N plates ended in 1969.' },
   { id: 'official-defence-canada', label: '1970– · federal CANADA', family: 'official', era: 'official-federal', period: [1970, 2026],
-    recipe: recipe('official-canada', 'Federal CANADA plate', { w: 300, h: 150 }, SRC.nd, {
-      radius: 7, background: '#e4ded0', ink: '#1e1e22', holes: 'round', holeAt: { x: [0.2, 0.78], y: [0.08, 0.93] }, rim: { inset: 3.5, width: 1.4 }, note: `${NOTE} Dimensions are not stated; the standard 300 × 150 mm is assumed.`,
-      art: [{ art: 'official-maple-leaf', x: 16, y: 12, width: 20, height: 20 }, { art: 'official-maple-leaf', x: 264, y: 12, width: 20, height: 20 }],
-      shapes: [{ kind: 'rect', x: 12, y: 47, width: 276, height: 88, rx: 5, strokeWidth: 1.2 }],
-      legends: [{ text: 'CANADA', x: 150, baseline: 38, cap: 21, maxWidth: 120, die: 'bc-legend-1964', color: '#2a3a33', role: 'country', spread: true }],
-      serial: { x: 150, baseline: 127, cap: 66, maxWidth: 262, die: 'bc-astro-4' } }),
+    recipe: federalCanadaLayout({id:'official-canada',label:'Federal CANADA plate',source:SRC.nd,
+      note:`${NOTE} Dimensions are not stated; the standard 300 × 150 mm is assumed. Shared national CANADA shell with the APEC military variants.`}),
     grammar: { blocks: [{ pattern: '99 999' }], hint: '99 999' },
     description: 'From 1970 the federal government used one standard plate for its vehicles across Canada: black number in a raised panel, CANADA between red maple leaves. Replaced the provincial N plates.' },
   { id: 'official-defence-pcmr', label: 'P.C.M.R. · militia rangers', family: 'official', era: 'official-prefix-1938', period: [1942, 1945], status: 'uncertain',
@@ -526,15 +523,21 @@ const eventSpecs: Spec[] = [
     references: [{title: 'Agriculture and Agri-Food Canada · Agriculture and agri-food moving forward (1997), p. 3', url: 'https://publications.gc.ca/collections/collection_2014/aac-aafc/agrhist/A22-165-1997-eng.pdf#page=3'}],
     description: 'ICBC made 250 pairs for the APEC leaders’ motorcade, thought to run from No. 100 to No. 350: teal embossed number, the APEC globe, the federal “Canada’s Year of Asia Pacific” mark (top left) and B.C.’s “Pacific Gateway” welcome symbol (top right). The Asia Pacific logo is a stylized crane whose wings evoke a Canadian maple leaf, designed by Amy Ho, then a first-year design student at Kwantlen University College in Richmond, B.C. Canada’s Year of Asia Pacific began in January 1997 to strengthen trade and cultural links with Asia. A contemporary Agriculture and Agri-Food Canada publication reported more than $4.4 billion in agri-food exports to the area in 1995–96.' },
   { id: 'events-apec-1997-military', label: 'APEC 1997 · CANADA military', family: 'events', era: 'events-apec-1997', period: [1997, 1997],
-    recipe: recipe('events-apec-military', 'APEC 1997 military CANADA plate', { w: 300, h: 150 }, SRC.apec, {
-      radius: 7, background: '#ebe0d6', ink: '#151515', holes: 'slots', holeAt: { x: [0.2, 0.78], y: [0.07, 0.93] }, rim: { inset: 3.5, width: 1.4, color: '#2c4a3c' },
-      note: `${NOTE} Size assumed 300 × 150 mm; the APEC sticker is simplified.`,
-      shapes: [{ kind: 'rect', x: 12, y: 47, width: 276, height: 88, rx: 5, strokeWidth: 1.2, stroke: '#2c4a3c' }],
-      art: [{ art: 'official-apec-sticker', x: 18, y: 55, width: 82, height: 70 }],
-      legends: [{ text: 'CANADA', x: 150, baseline: 38, cap: 21, maxWidth: 120, die: 'bc-legend-1964', color: '#2c4a3c', role: 'country', spread: true }],
-      serial: { x: 196, baseline: 127, cap: 66, maxWidth: 170, die: 'bc-astro-4' } }),
+    recipe: federalCanadaLayout({id:'events-apec-military',label:'APEC 1997 military CANADA plate',source:SRC.apec,
+      apec:true,mapleLeaves:false,holes:'slots',background:'#ebe0d6',ink:'#151515',frameColor:'#2c4a3c',countryColor:'#2c4a3c',
+      note:`${NOTE} Size assumed 300 × 150 mm; the APEC sticker is simplified. Shared national CANADA shell; this photographed variant omits maple leaves.`}),
     grammar: { blocks: [{ pattern: '[1-9]99' }], hint: '999 (range unknown)' },
-    description: 'Canadian Forces vehicles in the APEC motorcade used the federal CANADA plate with an APEC sticker at left. No. 134 also has red maple leaves beside CANADA (not drawn); the number range is unknown.' },
+    references:[SRC.apec,{title:'BCpl8s · APEC CANADA 180 without maple leaves',url:'https://www.bcpl8s.ca/images/APEC/Canada-180.jpg'}],
+    description: 'Canadian Forces vehicles in the APEC motorcade used the federal CANADA plate with an APEC sticker at left. This variant follows the photographs without maple leaves (180 and 149). It shares the national CANADA shell, header and serial candidate with the federal standard plate; mounts and sticker/number placement are variant settings. No. 134 is available as a separate maple-leaf variant. The number range and exact dies are unconfirmed.' },
+  {id:'events-apec-1997-military-maple-leaves',label:'APEC 1997 · CANADA military, red maple leaves',family:'events',era:'events-apec-1997',period:[1997,1997],
+    recipe:federalCanadaLayout({id:'events-apec-military-maple-leaves',label:'APEC 1997 military CANADA · red maple leaves',source:SRC.apec,
+      apec:true,mapleLeaves:true,holes:'slots',background:'#ebe0d6',ink:'#151515',frameColor:'#2c4a3c',countryColor:'#2c4a3c',
+      note:`${NOTE} Shared national CANADA shell, country legend and serial candidate with the federal standard and leafless APEC variants. Red maple leaves follow No. 134; exact sticker, paint and die contours remain approximate.`}),
+    grammar:{blocks:[{pattern:'[1-9]99'}],custom:{generate:()=> '134',test:serial=>/^[1-9]\d{2}$/.test(serial)},
+      hint:'999 (range unknown; generated example is photographed No. 134)'},
+    references:[SRC.apec,{title:'BCpl8s · APEC CANADA 134 with red maple leaves',url:'https://www.bcpl8s.ca/images/APEC/Canada-134.jpg'},
+      {title:'APEC military variant comparison',url:'https://projects.ahmadjalil.com/plateforge/apec-military-review/'}],
+    description:'Photographed APEC 1997 Canadian military plate No. 134: red maple leaves flank CANADA, an APEC CANADA 1997 sticker sits at left, and a black three-digit number sits at right. BCpl8s explicitly distinguishes its leaves from the leafless 180 and 149 plates. Uses the shared federal CANADA template; the photograph shows individual maple leaves rather than rectangular flags. The serial range and exact historical dies remain unconfirmed.'},
   { id: 'events-expo86-presentation', label: 'EXPO 86 presentation plate', family: 'events', era: 'events-expo-1985', period: [1985, 1986],
     recipe: { ...flagBase('events-expo86', 'EXPO 86 presentation plate', SRC.expo, 'bc-astro-4', 'single', { ink: '#193780', art: [] }),
       serial: { x: 150, baseline: 109.5, cap: 64, maxWidth: 268, die: 'bc-astro-4', color: '#193780', separator: { kind: 'art', gap: 2.5, art: { art: 'bc-spirit-flag', x: 0, y: 63, width: 42, height: 32 } } } },
@@ -606,9 +609,13 @@ const eventSpecs: Spec[] = [
     description: 'Vancouver Centennial souvenir: supplied outlined VANCOUVER and city of the century wordmarks, joined 100, mountain bands, skyline and water. The supplied artwork is a geometric reconstruction. Green 1886 and blue 1986 columns follow the photographed souvenir; original font attribution remains a visual identification.' },
 ];
 
-export const BC_OFFICIAL_FORMATS: PlateFormat[] = [...hamSpecs, ...officialSpecs, ...eventSpecs].map((s) => kitFormat({
+export const BC_OFFICIAL_FORMATS: PlateFormat[] = [...hamSpecs, ...officialSpecs, ...eventSpecs].map((s) => {
+  const format=kitFormat({
   id: s.id, label: s.label, family: s.family, era: s.era, period: s.period, ...(s.status ? { status: s.status } : {}),
   recipe: s.recipe, grammar: s.grammar, description: s.description,
   ...(s.references ? {references: s.references} : {}),
   ...(s.palettes ? { palettes: s.palettes } : {}), ...(s.dies ? { dies: s.dies } : {}), ...(s.decals ? { decals: s.decals } : {}),
-}));
+  });
+  return ['official-canada','events-apec-military','events-apec-military-maple-leaves'].includes(s.recipe.id)
+    ? {...format,design:{...format.design,jurisdiction:'CA'}} : format;
+});

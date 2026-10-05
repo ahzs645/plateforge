@@ -21,15 +21,37 @@ function render(format: PlateFormat, serial?: string) {
     text:format.text?.(parts)??parts.serial??''}));
 }
 describe('Canadian federal plates', () => {
+  it('uses one CANADA shell for the standard plate and both APEC variants',()=>{
+    const recipes=['standard','apec-1997','apec-1997-maple-leaves'].map(id=>
+      kitRecipe(String(canadaFederal.formats.find(f=>f.id===id)!.design!.kit)));
+    const [base,plain,leaves]=recipes;
+    for(const variant of [plain,leaves]) {
+      expect([variant.width,variant.height,variant.radius]).toEqual([base.width,base.height,base.radius]);
+      expect(variant.legends.map(({color,...legend})=>legend)).toEqual(base.legends.map(({color,...legend})=>legend));
+      expect(variant.serial.die).toBe(base.serial.die);
+      expect(variant.serial).toEqual({...base.serial,x:196,maxWidth:170});
+    }
+    expect(plain.art!.some(art=>art.art==='official-maple-leaf')).toBe(false);
+    expect(leaves.art!.filter(art=>art.art==='official-maple-leaf')).toEqual(base.art);
+    expect(leaves.art!.filter(art=>art.art==='official-apec-sticker')).toEqual(plain.art);
+    const f=canadaFederal.formats.find(f=>f.id==='apec-1997-maple-leaves')!;
+    const parts={...f.generate(createRng('apec')),serial:'134'};
+    expect(f.validate?.(parts)).toBeNull();
+    expect(f.validate?.({...parts,serial:'1134'})).not.toBeNull();
+    expect(render(f,'134')).toContain('data-art="official-maple-leaf"');
+    expect(f.references!.some(r=>r.url.endsWith('Canada-134.jpg'))).toBe(true);
+    const bc=britishColumbia.formats.find(f=>f.id==='events-apec-1997-military-maple-leaves')!;
+    expect(bc.design).toMatchObject({jurisdiction:'CA'});
+  });
   it('keeps national and provincial registrations in their respective jurisdictions', () => {
     const canada=groupByCountry(BUILT_IN_REGIONS).flatMap(c=>c.countries).find(c=>c.country==='Canada')!;
     expect(canada.regions).toContain(canadaFederal);expect(canada.regions).toHaveLength(14);
-    expect(canadaFederal.formats).toHaveLength(35);
+    expect(canadaFederal.formats).toHaveLength(36);
     expect(britishColumbia.formats.some(f=>f.id==='official-defence-1968')).toBe(true);
-    expect(britishColumbia.formats).toHaveLength(446);
+    expect(britishColumbia.formats).toHaveLength(447);
     expect(new Set(canadaFederal.formats.map(f=>f.id)).size).toBe(canadaFederal.formats.length);
   });
-  it.each(canadaFederal.formats.slice(0,2))('$id preserves its previously published source recipe', format => {
+  it.each(canadaFederal.formats.slice(0,3))('$id shares its national recipe with the historical B.C. source route', format => {
     const source: PlateFormat=britishColumbia.formats.find(f=>f.id===format.design!.formatId)!;
     expect(format.design!.kit).toBe(source.design!.kit);expect(format.references).toEqual(source.references);
   });

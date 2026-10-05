@@ -12,7 +12,7 @@ async def main():
   page=await browser.new_page(viewport={'width':1440,'height':1000},accept_downloads=True)
   page.on('pageerror',lambda error:errors.append(str(error)))
   page.on('response',lambda response:failed.append(response.url) if response.status>=400 else None)
-  specs=[dict(id='standard'),dict(id='apec-1997')]+ledger['presets']
+  specs=[dict(id='standard',recipe='official-canada'),dict(id='apec-1997',recipe='events-apec-military'),dict(id='apec-1997-maple-leaves',recipe='events-apec-military-maple-leaves')]+ledger['presets']
   for spec in specs:
    await page.set_viewport_size({'width':1440,'height':1000})
    await page.goto(base+'?federal-review=20261005#/ca-federal/'+spec['id']);svg=page.locator('.plate-preview svg');await svg.wait_for()
@@ -20,6 +20,7 @@ async def main():
     await page.locator('#field-serial').fill(spec['example']);await page.wait_for_timeout(100)
    meta=json.loads(await svg.locator('metadata').text_content())
    assert meta['jurisdiction']=='CA',(spec['id'],meta)
+   if spec.get('recipe'):assert meta['recipe']==spec['recipe'],(spec['id'],meta)
    assert (await svg.get_attribute('aria-label')).startswith('Canada ·')
    assert meta['status']==spec.get('status','issued'),(spec['id'],meta['status'])
    assert not await page.locator('#field-serial[aria-invalid=true]').count(),spec['id']

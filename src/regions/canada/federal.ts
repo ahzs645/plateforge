@@ -19,6 +19,7 @@ export const canadaFederal: Region = {
   formats: [
     federalFormat('official-defence-canada', 'standard', 'Federal CANADA · 1970 onward', 'federal'),
     federalFormat('events-apec-1997-military', 'apec-1997', 'APEC 1997 · Canadian Forces', 'events'),
+    federalFormat('events-apec-1997-military-maple-leaves', 'apec-1997-maple-leaves', 'APEC 1997 · Canadian Forces, red maple leaves', 'events'),
     ...federalGalleryFormats,
   ],
   families: [
@@ -34,5 +35,5 @@ export const canadaFederal: Region = {
     {id: 'events', family: 'events', label: 'APEC 1997', period: [1997, 1997]},
     ...federalGalleryEras,
   ],
-  notes: '35 federal-gallery designs, including the two earlier national/event reconstructions, with a 41-specimen source ledger. Dated entries retain source-caption spans; undated designs have no invented period. Provincial National Defence N plates stay with their province. Overseas, Fisheries, attachment and souvenir uses are distinguished. Geometry and lettering are illustrative photographic candidates, not authenticated tooling or a complete registration history.',
+  notes: '36 federal presets: 33 gallery layouts and the national CANADA plate plus two APEC military variants. The gallery has a 41-specimen source ledger; the supplemental APEC comparison distinguishes maple-leaf No. 134 from leafless 180 and 149. Dated entries retain source-caption spans; undated designs have no invented period. Provincial National Defence N plates stay with their province. Overseas, Fisheries, attachment and souvenir uses are distinguished. Geometry and lettering are illustrative photographic candidates, not authenticated tooling or a complete registration history.',
 };

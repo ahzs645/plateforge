@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-05",
+  "text": "Wild Rose Country",
+  "fileName": "ITC Avant Garde Gothic Std Medium.otf",
+  "sha256": "1b54b0169a046e8bbb17ae3fa73ad161d0107a3c292c7fc45885d5ad4590fcc2",
+  "family": "ITC Avant Garde Gothic Std",
+  "style": "Medium",
+  "postScriptName": "ITCAvantGardeStd-Md",
+  "version": "OTF 1.018;PS 001.001;Core 1.0.31;makeotf.lib1.4.1585",
+  "capHeightUnits": 740,
+  "unitsPerEm": 1000,
+  "features": [
+    "aalt",
+    "frac",
+    "liga",
+    "liga",
+    "ordn",
+    "sups"
+  ],
+  "requestedAlternatesPresent": false,
+  "reconstructed": {
+    "W": "Left-leaning diagonals and upright stems; polygon master.",
+    "e": "Supplied e rotated 45 degrees about its bowl centre.",
+    "t": "Supplied stem/bar dimensions; left crossbar removed, advance refitted.",
+    "y": "Upright left branch and continuous diagonal descender; polygon master."
+  },
+  "referenceSpecimen": "https://www.e-daylight.jp/fonts/type/a/agg/avant-garde-gothic.jpg",
+  "referencePhotos": [
+    "PWG-542 and CKZ-3449 supplied in conversation",
+    "http://www.worldlicenseplates.com/jpglps/CN_ALBE_GI3.jpg"
+  ],
+  "fit": "Native outlines/advances and native kerning for unchanged pairs; explicit advances for four reconstructed forms. Whole line uniformly scaled and centred; no independent width stretch.",
+  "limits": "Std Medium, not Pro. Four forms are reconstructions, not authentic alternate font outlines. Family identification and weight are visual candidates, not confirmed historical printing specifications. No Book font supplied for a weight comparison. Fixed-word outlines only; source font software not bundled.",
+  "upload": {
+    "fileName": "itc-avant-garde-gothic-std-medium.zip",
+    "sha256": "990e2b046e67f39bd368ab7cc2812729106036cdf96b86b0af27722b34f90a37"
+  }
+}

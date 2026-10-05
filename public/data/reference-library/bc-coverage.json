@@ -20,7 +20,7 @@
   "earlyPresets": 25,
   "laterPresets": 17,
   "countsUnit": "Inventory topics and presets, NOT distinct historical plate designs",
-  "registeredPresets": 446
+  "registeredPresets": 447
  },
  "registeredPresets": {
   "passenger": [
@@ -380,6 +380,7 @@
    "events-royal-crown",
    "events-apec-1997",
    "events-apec-1997-military",
+   "events-apec-1997-military-maple-leaves",
    "events-expo86-presentation",
    "events-expo86-booster",
    "events-expo86-booster-aamva",
@@ -879,7 +880,8 @@
    "additionalSources": [],
    "formats": [
     "events-apec-1997",
-    "events-apec-1997-military"
+    "events-apec-1997-military",
+    "events-apec-1997-military-maple-leaves"
    ]
   },
   {

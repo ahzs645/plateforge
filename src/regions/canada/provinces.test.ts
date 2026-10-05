@@ -40,6 +40,25 @@ describe('Canadian provinces and territories', () => {
     expect(render(r,format('AB','wild-rose-geometric-2010'),'BCJ-8178')).toContain('data-artwork="alberta-geometric"');
     expect(render(r,format('AB','moraine-lake-2026'),'DBD·2026')).not.toContain('data-artwork="alberta-');
   });
+  it('outlines the shared Alberta slogan in all Wild Rose Country variants and keeps it independent of serial style', () => {
+    const r=region('AB');
+    for(const id of ['standard','wild-rose-1984','wild-rose-geometric-2010']) {
+      const f=format('AB',id),parts=f.generate(createRng(id));
+      const design={...r.design,...f.design} as CaDesign;
+      for(const lettering of ['default','squarish']) {
+        const svg=renderToStaticMarkup(caTemplate.render({parts:{...parts,lettering},design,text:f.text!(parts)}));
+        expect(svg).toContain('data-die="ab-avant-garde-slogan"');
+        expect(svg).toContain('data-reconstructed-alternates="W e t y"');
+        expect(svg).not.toMatch(/<text[^>]*>Wild Rose Country<\/text>/);
+        expect(svg).toContain('not extracted Pro glyphs');
+        expect((svg.match(/data-role="alberta-slogan"/g)??[])).toHaveLength(1);
+      }
+    }
+    const moraine=render(r,format('AB','moraine-lake-2026'),'DBD·2026');
+    expect(moraine).toContain('Strong and Free');
+    expect(moraine).not.toContain('ab-avant-garde-slogan');
+    expect(render(region('SK'),format('SK','standard'),'123·ABC')).not.toContain('ab-avant-garde-slogan');
+  });
   it('uses the Spectacular native paint masters with separate shoulders and keeps alternate styles selectable', () => {
     const r = region('NT'), f = format('NT', 'standard');
     const svg = render(r, f, '123123');

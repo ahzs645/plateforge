@@ -33,7 +33,7 @@
     "rose": "Native red-wild-rose.svg compound path, tight supplied viewBox. Recoloured plate serial red.",
     "eps": "Both EPS uploads are byte-identical. Rendered to inspect the geometric wordmark and Government of Alberta lockup; SVG selection supplies the wordmark-only geometry."
   },
-  "limits": "Supplied artwork paths, fitted to the user reference proportions. Historical version and exact manufacturing font remain unconfirmed. Slogan and editable serial remain independent font/candidate lettering, not supplied artwork.",
+  "limits": "Supplied artwork paths fitted to user reference proportions. Historical manufacture and editable serial dies remain unconfirmed. The slogan uses supplied ITC Avant Garde Gothic Std Medium outlines plus reconstructed W/e/t/y; see slogan-provenance.json in the public review and ../alberta-slogan/provenance.json in research. Exact historical cut and weight remain unconfirmed.",
   "gallerySource": "http://www.worldlicenseplates.com/world/CN_ALBE.html",
   "dateEvidence": [
     {

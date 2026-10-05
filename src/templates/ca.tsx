@@ -13,6 +13,7 @@ import { NWT_SPECTACULAR_PROFILE, buildNwtSpectacularSerial } from './dies/nwt-s
 import ntAuroraUrl from '../assets/nt-aurora.png';
 import { CONDENSED, FONTS } from './fonts';
 import {AlbertaArtwork, type AlbertaWordmark} from './art/alberta';
+import {ALBERTA_AVANT_GARDE_PROFILE, buildAlbertaSlogan} from './dies/alberta-avant-garde';
 import { fit, measure, safeId } from './measure';
 import {
   NWT_POLAR_BEAR_PATH, NWT_POLAR_BEAR_BORDER_PATH, NWT_POLAR_BEAR_HOLES,
@@ -61,6 +62,8 @@ export interface CaDesign {
   header?: string;
   /** Fixed native paths placed independently of editable serial lettering. */
   albertaWordmark?: {kind:AlbertaWordmark;x:number;y:number;width:number;height:number};
+  /** Fixed outlined slogan; cap height is independent of CSS font sizing. */
+  albertaSlogan?: {capHeight:number;maxWidth:number};
   /** Plain blank renewal wells; dated sticker content is separate evidence. */
   decalWells?: readonly {x:number;y:number;width:number;height:number}[];
   headerFace?: CaFace;
@@ -481,7 +484,7 @@ function CaPlate({ design: d, text, parts }: { design: CaDesign; text: string; p
   const labels: CaLabel[] = [
     ...(d.header && !d.albertaWordmark ? [{ text: d.header, x: d.headerX, y: d.headerY ?? 58, size: d.headerSize ?? 46, face: d.headerFace, weight: d.headerWeight,
       italic: d.headerItalic, color: d.headerColor, spacing: d.headerSpacing ?? ((d.headerFace ?? 'block') === 'block' ? 4 : 0), halo: d.headerHalo, maxWidth: d.headerWidth } as CaLabel] : []),
-    ...(d.slogan ? [{ text: d.slogan, x: d.sloganX, y: d.sloganY ?? 278, size: d.sloganSize ?? 26, face: d.sloganFace, weight: d.sloganWeight,
+    ...(d.slogan && !d.albertaSlogan ? [{ text: d.slogan, x: d.sloganX, y: d.sloganY ?? 278, size: d.sloganSize ?? 26, face: d.sloganFace, weight: d.sloganWeight,
       italic: d.sloganItalic, color: d.sloganColor, spacing: d.sloganSpacing ?? 2, halo: d.sloganHalo, maxWidth: d.sloganWidth } as CaLabel] : []),
     ...(d.labels ?? []),
   ];
@@ -503,7 +506,9 @@ function CaPlate({ design: d, text, parts }: { design: CaDesign; text: string; p
       <metadata>{JSON.stringify({ serial: text, parts, lettering: {
         ...(spectacular ? {id: NWT_SPECTACULAR_PROFILE.id, evidence: NWT_SPECTACULAR_PROFILE.evidence} : letteringMetadata(vectorType ?? 'default')), requested: parts.lettering ?? 'default',
         fallback: isLetteringType(parts.lettering) && !vectorType,
-      }, ...(d.albertaWordmark ? {artwork:{wordmark:`alberta-${d.albertaWordmark.kind}`,source:'User-supplied native vector paths',fit:'Uniform aspect-ratio fit to photographed layout',serialAndSlogan:'Independent font/candidate lettering; not part of the supplied artwork'}} : {}), ...(nwt ? { shape: { profile: 'nwt-reference', mounts: d.bearMounts ?? 'round', source: NWT_POLAR_BEAR_SOURCE } } : {}) })}</metadata>
+      }, ...(d.albertaWordmark ? {artwork:{wordmark:`alberta-${d.albertaWordmark.kind}`,source:'User-supplied native vector paths',fit:'Uniform aspect-ratio fit to photographed layout',serial:'Independent approximate lettering; not part of the supplied artwork'}} : {}),
+        ...(d.albertaSlogan ? {slogan:{id:ALBERTA_AVANT_GARDE_PROFILE.id,evidence:ALBERTA_AVANT_GARDE_PROFILE.evidence,capHeight:d.albertaSlogan.capHeight,maxWidth:d.albertaSlogan.maxWidth,reconstructedAlternates:['W','e','t','y']}} : {}),
+        ...(nwt ? { shape: { profile: 'nwt-reference', mounts: d.bearMounts ?? 'round', source: NWT_POLAR_BEAR_SOURCE } } : {}) })}</metadata>
       <defs>
         <linearGradient id={`${id}bg`} x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stopColor={top} />
@@ -543,6 +548,10 @@ function CaPlate({ design: d, text, parts }: { design: CaDesign; text: string; p
         {labels.map((l, i) => <Label key={i} l={l} ink={ink} />)}
         {d.decalWells?.map((well,i)=><rect key={`well-${i}`} {...well} rx="4" fill="#f7f8f6" stroke="#d9dedb" strokeWidth="1" data-role="blank-renewal-well" />)}
         {d.albertaWordmark && <AlbertaArtwork {...d.albertaWordmark} color={d.headerColor??ink} />}
+        {d.albertaSlogan && <g data-artwork="alberta-slogan" data-font="ITCAvantGardeStd-Md" data-reconstructed-alternates="W e t y">
+          <SvgScene node={buildAlbertaSlogan({x:d.sloganX??W/2,baseline:d.sloganY??278,
+            ...d.albertaSlogan,ink:d.sloganColor??ink}).node} />
+        </g>}
         {nwt && d.scene === 'nt-spectacular' && <rect x="370" y="29" width="73" height="49" fill="none" stroke="#919898" strokeWidth="0.7" data-role="validation-decal-well" />}
         {emblems.filter((p) => !p.back).map((p, i) => <Emblem key={`f${i}`} p={p} />)}
 

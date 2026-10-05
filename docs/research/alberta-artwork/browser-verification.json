@@ -38,6 +38,8 @@
   "allComparisonImagesLoaded": true,
   "sourceComparisons": 3,
   "userReferenceSerials": 2,
+  "sloganDefaultAndReconstructedComparison": true,
+  "outlinedSloganExports": 3,
   "mobile": true,
   "errors": [],
   "failedResources": []
