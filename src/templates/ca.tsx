@@ -414,25 +414,12 @@ function Scene({ kind, id }: { kind: CaScene; id: string }) {
       return (
         <g data-scene={kind}>
           <defs>
-            <filter id={`${id}pale-sky`} colorInterpolationFilters="sRGB">
-              <feComponentTransfer>
-                <feFuncR type="gamma" amplitude="1" exponent="0.18" offset="0" />
-                <feFuncG type="gamma" amplitude="1" exponent="0.35" offset="0" />
-                <feFuncB type="gamma" amplitude="1" exponent="0.5" offset="0" />
-              </feComponentTransfer>
-            </filter>
-            <linearGradient id={`${id}sky-side`}><stop offset="0.68" stopColor="#fff" /><stop offset="1" stopColor="#000" /></linearGradient>
-            <linearGradient id={`${id}sky-height`} x1="0" y1="0" x2="0" y2="1"><stop offset="0.66" stopColor="#fff" /><stop offset="0.88" stopColor="#000" /></linearGradient>
-            <linearGradient id={`${id}white-top`} x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#fff" /><stop offset="0.15" stopColor="#fff" stopOpacity="0.9" /><stop offset="0.46" stopColor="#fff" stopOpacity="0" /></linearGradient>
-            <mask id={`${id}sky-horizontal`}><rect width={W} height={H} fill={`url(#${id}sky-side)`} /></mask>
-            <mask id={`${id}sky-vertical`}><rect width={W} height={H} fill={`url(#${id}sky-height)`} /></mask>
+            <image id={`${id}nt-aurora`} href={ntAuroraUrl} width={W} height={H} preserveAspectRatio="xMidYMid slice"
+              data-source="user-supplied-aurora-over-arctic-wilderness" />
           </defs>
-          <image href={ntAuroraUrl} y="22" width={W} height={H} preserveAspectRatio="xMidYMid slice"
-            data-source="user-supplied-aurora-over-arctic-wilderness" />
-          <g mask={`url(#${id}sky-horizontal)`}><g mask={`url(#${id}sky-vertical)`}>
-            <image href={ntAuroraUrl} y="22" width={W} height={H} preserveAspectRatio="xMidYMid slice" filter={`url(#${id}pale-sky)`} />
-          </g></g>
-          <rect width={W} height={H} fill={`url(#${id}white-top)`} />
+          {/* Reuse the original sky above the shifted scene; the bear clears the neck cutout. */}
+          <use href={`#${id}nt-aurora`} />
+          <use href={`#${id}nt-aurora`} y="22" />
         </g>
       );
   }
@@ -542,7 +529,7 @@ function CaPlate({ design: d, text, parts }: { design: CaDesign; text: string; p
           <rect width={W} height={H} fill={`url(#${id}bg)`} />
           {d.scene && <Scene kind={d.scene} id={id} />}
           {emblems.filter((p) => p.back).map((p, i) => <Emblem key={`b${i}`} p={p} />)}
-          <rect width={W} height={H} fill={`url(#${id}sheen)`} />
+          {d.scene !== 'nt-spectacular' && <rect width={W} height={H} fill={`url(#${id}sheen)`} />}
         </g>
         {d.frame && (bear
           ? <path d={bearBorderPath} transform={flipBear} fill="none" stroke={d.frame} strokeWidth={d.frameWidth ?? 6} strokeLinejoin="round" data-role={nwt ? 'inset-border' : undefined} />
