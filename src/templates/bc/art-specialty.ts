@@ -54,9 +54,10 @@ const memorialCrossImage: ArtMaster = { viewBox: [460, 445], draw: () => [n('ima
 
 // ── Collector, Antique, Personalized ───────────────────────────────────────
 
-/** Collector plates' wavy separator, 20 × 8, drawn in currentColor. */
+/** Collector plates' filled wave, 20 × 8, with the sheared ends visible on B00~000. */
 function tilde(): SvgNode[] {
-  return [n('path', { d: 'M1.5 5.2 C4 1.4 7.5 1.6 10 4 S16 6.6 18.5 2.8', fill: 'none', stroke: 'currentColor', strokeWidth: 1.9, strokeLinecap: 'round' })];
+  return [n('path', { d: 'M0 3 C4 -.3 7 -.2 10 1.3 C14 3.3 17 3.5 20 .8 V5.3 C17 7.7 14 7.6 10 5.8 C6 4.1 3 4 0 7 Z',
+    fill: 'currentColor', 'data-part': 'collector-wave' })];
 }
 /** VINTAGE plate touring car (flat silhouette, facing right) in currentColor; the hub style changed between 1961 and 2500. */
 function vintageCar(hubs: keyof typeof VINTAGE_CAR): () => SvgNode[] {

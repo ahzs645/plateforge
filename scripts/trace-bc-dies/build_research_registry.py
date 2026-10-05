@@ -106,6 +106,15 @@ out = {
     'bindings': {fid: {k: [uid for _, _, uid in sorted(v, key=lambda t: (-t[0], -t[1], t[2]))] for k, v in sorted(keys.items())}
                  for fid, keys in sorted(bindings.items())},
 }
+# Shared passenger/collector masters must not borrow another manufacturer's
+# alphabet merely because it happens to include a missing letter or digit.
+shared_masters = {
+    ('1985-flag', 'bc-astro-4'): ['research-bc-astro-4-smooth-complete', 'research-bc-astro-4-chart-smooth-complete'],
+    ('2001-flag', 'bc-waldale'): ['research-bc-waldale-passenger-refinement-v2', 'research-bc-waldale-passenger-serial'],
+}
+for (fid, die), preferred in shared_masters.items():
+    if fid in out['bindings']:
+        out['bindings'][fid][die] = [uid for uid in preferred if uid in out_units]
 OUT.write_text(json.dumps(out, separators=(',', ':')) + '\n')
 pairs = sum(len(v) for v in out['bindings'].values())
 print(f'{len(out_units)} of {len(units)} active units bound across {len(out["bindings"])} formats ({pairs} format/die pairs); '

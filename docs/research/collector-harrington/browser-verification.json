@@ -1,0 +1,71 @@
+{
+  "site": "http://127.0.0.1:5176/plateforge/",
+  "formats": [
+    {
+      "format": "collector-passenger",
+      "serial": "B00-000",
+      "legendProfile": "bc-harrington-collector",
+      "serialProfile": "bc-astro-4",
+      "sharedPassengerFormat": "1985-flag",
+      "exports": [
+        "SVG",
+        "PNG"
+      ],
+      "researchTogglePreservesInscriptions": true,
+      "mobileOverflow": false
+    },
+    {
+      "format": "collector-passenger-dual",
+      "serial": "B31-865",
+      "legendProfile": "bc-harrington-collector",
+      "serialProfile": "bc-waldale",
+      "sharedPassengerFormat": "2001-flag",
+      "exports": [
+        "SVG",
+        "PNG"
+      ],
+      "researchTogglePreservesInscriptions": true,
+      "mobileOverflow": false
+    },
+    {
+      "format": "collector-multi",
+      "serial": "B6-0565",
+      "legendProfile": "bc-harrington-collector",
+      "serialProfile": "bc-astro-4",
+      "sharedPassengerFormat": "1985-flag",
+      "exports": [
+        "SVG",
+        "PNG"
+      ],
+      "researchTogglePreservesInscriptions": true,
+      "mobileOverflow": false
+    },
+    {
+      "format": "collector-motorcycle",
+      "serial": "B8-0764",
+      "legendProfile": "bc-harrington-collector",
+      "serialProfile": "bc-astro-4",
+      "sharedPassengerFormat": "1985-flag",
+      "exports": [
+        "SVG",
+        "PNG"
+      ],
+      "researchTogglePreservesInscriptions": true,
+      "mobileOverflow": false
+    },
+    {
+      "format": "collector-motorcycle-multi",
+      "serial": "B7-5024",
+      "legendProfile": "bc-harrington-collector",
+      "serialProfile": "bc-astro-4",
+      "sharedPassengerFormat": "1985-flag",
+      "exports": [
+        "SVG",
+        "PNG"
+      ],
+      "researchTogglePreservesInscriptions": true,
+      "mobileOverflow": false
+    }
+  ],
+  "errors": []
+}

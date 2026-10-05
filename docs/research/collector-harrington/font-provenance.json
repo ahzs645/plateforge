@@ -1,0 +1,21 @@
+{
+  "selected": {
+    "attachment": "harrington (1).zip",
+    "file": "HARNGTON.TTF",
+    "family": "Harrington",
+    "style": "Regular, normal upright",
+    "version": "1.10",
+    "maker": "The Font Bureau, Inc.",
+    "sha256": "e446df6ed77f361aee1ffd33fb30052b4de842f935e6bae316fd32ea11ce6f50"
+  },
+  "alternate": {
+    "attachment": "harrington.zip",
+    "file": "HARRINGT.TTF",
+    "family": "Harrington",
+    "style": "(Plain)",
+    "sha256": "577c660ab6b013a8ab730dfeb0908db6dfd10187b804fabbdfafabfcc1e663e5"
+  },
+  "output": "Only fixed Collector / British / Columbia outline glyphs; native advances and one H-cap scale. No individual glyph stretching or source font software bundled.",
+  "copyright": "1992 The Font Bureau, Inc. Portions 1992 Microsoft Corp.",
+  "historicalVersion": "Unconfirmed; digital file date does not date the underlying typeface."
+}

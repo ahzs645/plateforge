@@ -103,6 +103,36 @@ describe('research dies in the B.C. renderer', () => {
     } finally { setResearchDiesEnabled(true); }
   });
 
+  it('uses shared passenger alphabets for collector numbering while preserving its Harrington inscriptions', () => {
+    const ids = ['collector-passenger', 'collector-passenger-dual', 'collector-multi',
+      'collector-motorcycle', 'collector-motorcycle-multi'];
+    const all = (node: SvgNode): SvgNode[] => [node, ...node.children.flatMap(c => typeof c === 'string' ? [] : all(c))];
+    for (const id of ids) {
+      const {format, design} = designOf(id);
+      const recipe = kitRecipe(String(design.kit));
+      for (const die of ['bc-astro-4', 'bc-waldale']) {
+        const parts = {...format.generate(createRng(id)), die};
+        const selected = {...recipe, serial: {...recipe.serial, die}};
+        const root = withResearchContext(id, () => applyResearchTypefaces(buildKitScene(selected, parts, {scope: 'collector-test'})));
+        const passenger = withResearchContext(die === 'bc-astro-4' ? '1985-flag' : '2001-flag', () => dieProfile(die));
+        for (const role of ['legend-top', 'legend-left', 'legend-right']) {
+          const legend = byRole(root, role)!;
+          expect(legend.attrs['data-die']).toBe('bc-harrington-collector');
+          expect(all(legend).some(n => n.attrs['data-source'] === 'research')).toBe(false);
+        }
+        const serial = byRole(root, 'serial')!;
+        for (const glyph of all(serial).filter(n => n.attrs['data-character'])) {
+          const char = String(glyph.attrs['data-character']);
+          const paths = glyph.children.filter((n): n is SvgNode => typeof n !== 'string' && n.tag === 'path').map(n => n.attrs.d);
+          expect(paths, `${id} ${die} ${char}`).toEqual(dieGlyph(passenger, char)!.paths);
+        }
+        const separator = byRole(root, 'serial-separator');
+        if (id.includes('motorcycle')) expect(separator).toBeUndefined();
+        else expect(all(separator!).some(n => n.attrs['data-part'] === 'collector-wave' && n.attrs.fill === 'currentColor')).toBe(true);
+      }
+    }
+  });
+
   it('skews only production fallbacks on slanted dies', () => {
     const id = Object.keys(registry.bindings).find((fid) => Object.keys(registry.bindings[fid]).some((k) => dieProfileSafe(k)?.slant))!;
     const key = Object.keys(registry.bindings[id]).find((k) => dieProfileSafe(k)?.slant)!;

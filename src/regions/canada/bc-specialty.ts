@@ -244,24 +244,30 @@ const memorial: PlateFormat[] = [
 ];
 
 // ── Collector (1990–): black on white, ornamental serif legends, wavy separator ──
-const COL_NOTE = `Collector reconstruction: the ornamental legends use a serif stand-in and the wavy separator is drawn as artwork. ${ART_NOTE}`;
+const COL_NOTE = 'Collector reconstruction: Collector, British and Columbia use the supplied Harrington Regular outlines. Serial alphabets share the corresponding Astrographic/Waldale passenger masters; the filled wavy separator is source-guided artwork. Glyph contours, paint and positions remain approximate. Validation checks the documented block pattern, not a real registration.';
 const COL_INK = '#111111';
+const COL_SHARED_DIES = { 'bc-astro-4': '1985-flag', 'bc-waldale': '2001-flag' };
+const harrington = (text: string, x: number, baseline: number, cap: number, role: string) =>
+  die(text, x, baseline, cap, 'bc-harrington-collector', role, {color: COL_INK, screened: true});
 function collectorFull(id: string, label: string, multi: boolean, wells: 'single' | 'dual', dieId: string): KitRecipe {
+  const baseline = wells === 'single' ? 106 : 111;
   return plate(id, label, FULL, SRC.collector, COL_NOTE, {
     background: '#e3deda', ink: COL_INK, rim: { inset: 1.6, width: 1, color: '#c4c0bc' },
-    fontLegends: [serif('Collector', 150, 27, 18, COL_INK, 'legend-top'), serif('British', 48, 128, 16, COL_INK, 'legend-left'), serif('Columbia', 249, 128, 16, COL_INK, 'legend-right'),
-      ...(multi ? [serif('MULTI-VEHICLE', 150, 38, 6.5, COL_INK, 'legend-multi', { weight: 700, width: 62 })] : [])],
-    serial: { x: 150, baseline: 111, cap: 66, maxWidth: 266, die: dieId, color: COL_INK,
-      separator: { kind: 'art', gap: 4, art: { art: 'bc-collector-tilde', x: 0, y: 74, width: 16, height: 7 } } },
+    legends: [harrington('Collector', 150, multi ? 22 : 33, multi ? 12 : 17.8, 'legend-top'),
+      harrington('British', 49, 124, 12, 'legend-left'), harrington('Columbia', 252, 124, 12, 'legend-right')],
+    fontLegends: multi ? [serif('MULTI-VEHICLE', 150, 29.5, 5.5, COL_INK, 'legend-multi', {font: 'sans', weight: 400, width: 53})] : [],
+    serial: { x: 150, baseline, cap: 66, maxWidth: 266, die: dieId, researchFormats: COL_SHARED_DIES, color: COL_INK,
+      separator: { kind: 'art', gap: 12.5, art: { art: 'bc-collector-tilde', x: 0, y: baseline - 36.25, width: 19, height: 6.5 } } },
     ...(wells === 'dual' ? dual(well(99, 113, 36, 30), well(137, 113, 70, 30)) : { decal: well(100, 113, 104, 30) }),
   });
 }
 function collectorSmall(id: string, label: string, multi: boolean): KitRecipe {
   return plate(id, label, SMALL, SRC.collector, COL_NOTE, {
     background: '#e8e8e4', ink: COL_INK, rim: { inset: 1.4, width: 0.9, color: '#c4c4c0' },
-    fontLegends: [serif('Collector', 101.5, 26, 16, COL_INK, 'legend-top'), serif('British', 30, 110, 9, COL_INK, 'legend-left'), serif('Columbia', 172, 110, 9, COL_INK, 'legend-right'),
-      ...(multi ? [serif('MULTI-VEHICLE', 101.5, 34, 4.5, COL_INK, 'legend-multi', { weight: 700, width: 42 })] : [])],
-    serial: { x: 101.5, baseline: 86, cap: 48, maxWidth: 185, die: 'bc-astro-4', color: COL_INK },
+    legends: [harrington('Collector', 101.5, multi ? 21 : 26, multi ? 11 : 14.5, 'legend-top'),
+      harrington('British', 30, 110, 7, 'legend-left'), harrington('Columbia', 172, 110, 7, 'legend-right')],
+    fontLegends: multi ? [serif('MULTI-VEHICLE', 101.5, 28, 4.5, COL_INK, 'legend-multi', {font: 'sans', weight: 400, width: 42})] : [],
+    serial: { x: 101.5, baseline: 86, cap: 48, maxWidth: 185, die: 'bc-astro-4', researchFormats: COL_SHARED_DIES, color: COL_INK },
     decal: well(71, 91, 75, 27),
   });
 }
@@ -284,9 +290,9 @@ const collector: PlateFormat[] = [
   }),
   kitFormat({
     id: 'collector-multi', label: 'Collector · multi-vehicle', family: 'specialty', period: [1990, 2026], era: 'specialty-collector',
-    recipe: collectorFull('collector-multi', 'Collector · multi-vehicle', true, 'dual', 'bc-astro-4'),
+    recipe: collectorFull('collector-multi', 'Collector · multi-vehicle', true, 'dual', 'bc-waldale'),
     grammar: { hint: 'B6-0000 to B6-1000', blocks: blocks('B6-0999', 'B6-1000') }, dies: COL_DIES, decals: [1990, 2023],
-    description: `${COL_DESC} One “floater” plate shared by several collector vehicles, with MULTI-VEHICLE under the title and the wavy separator (B6~0565). Drawn with the two wells of the Waldale-era photos; the Waldale specimen reads A0~0000.`,
+    description: `${COL_DESC} One “floater” plate shared by several collector vehicles, with MULTI-VEHICLE under the title and the wavy separator (B6~0565). The photographed two-well version defaults to Waldale dies; Astrographic remains selectable for earlier examples. The Waldale manufacturer specimen reads A0~0000.`,
   }),
   kitFormat({
     id: 'collector-motorcycle', label: 'Collector · motorcycle', family: 'specialty', period: [1990, 2026], era: 'specialty-collector',

@@ -24,6 +24,7 @@ function flagRecipe(id: string, label: string, die: string, period: string, dual
     legends: [],
     fontLegends: [{ text: 'Beautiful British Columbia', x: 150, baseline: 39, size: 19.5, width: 237, font: 'serif', color: LEGEND_BLUE, role: 'slogan' }],
     serial: { x: 150, baseline: 109.5, cap: 64, maxWidth: 268, die, color: SERIAL_BLUE,
+      researchFormats: { 'bc-astro-4': '1985-flag', 'bc-waldale': '2001-flag' },
       separator: { kind: 'art', gap: 2.5, art: { art: 'bc-spirit-flag', x: 0, y: 63, width: 42, height: 32 } } },
     decal: dualWells ? monthWell : singleWell,
     extraWells: dualWells ? [dayWell] : [],

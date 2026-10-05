@@ -10,6 +10,7 @@ import { buildLeatherScene } from './leather-scene';
 import { leatherGeometry } from './leather-specimens';
 import { buildDieText, dieRunWidth, dieSupports, type DieRun } from '../dies/engine';
 import { dieProfile } from '../dies/profiles';
+import { withResearchContext } from '../dies/research-dies';
 import { artwork } from './art';
 import { buildDaySticker, buildDecal, decalBox, type DecalArt } from './decal';
 
@@ -42,6 +43,8 @@ export interface KitText {
   color?: string;
   anchor?: 'start' | 'middle' | 'end';
   role: string;
+  /** Flat printed outline lettering, outside the serial's optional embossed relief. */
+  screened?: boolean;
   /** Extra spacing between characters, in cap-height units (100 = one cap height). */
   spacing?: number;
   /** Adjust the gap for a named adjacent pair without changing either glyph. */
@@ -56,6 +59,8 @@ export interface KitSerial {
   cap: number;
   maxWidth: number;
   die: string;
+  /** Use the corresponding passenger master for a shared manufactured serial alphabet. */
+  researchFormats?: Readonly<Record<string, string>>;
   color?: string;
   /** Pair spacing for a documented fixed serial wordmark. */
   kerning?: Readonly<Record<string, number>>;
@@ -158,7 +163,16 @@ function text(t: KitText, ink: string): SvgNode {
 const FONTS = { serif: 'Georgia, "Times New Roman", serif', sans: '"Barlow Condensed", "Arial Narrow", sans-serif' };
 
 function serialNodes(recipe: KitRecipe, serial: string, ink: string): { nodes: SvgNode[]; fit: DieRun['fit'] } {
-  const s = recipe.serial, profile = dieProfile(s.die), color = s.color ?? ink;
+  return withSerialContext(recipe, () => serialNodesInContext(recipe, serial, ink));
+}
+
+function withSerialContext<T>(recipe: KitRecipe, build: () => T): T {
+  const format = recipe.serial.researchFormats?.[recipe.serial.die];
+  return format ? withResearchContext(format, build) : build();
+}
+
+function serialNodesInContext(recipe: KitRecipe, serial: string, ink: string): { nodes: SvgNode[]; fit: DieRun['fit'] } {
+  const s = recipe.serial, profile = serialProfile(recipe), color = s.color ?? ink;
   if (s.font) {
     // Typeface serials: sized by cap height (0.72 em) and never stretched.
     return { nodes: [n('text', { x: s.x, y: s.baseline, fill: color, fontFamily: FONTS[s.font.family], fontSize: s.cap / 0.72, fontWeight: s.font.weight ?? 700,
@@ -183,6 +197,13 @@ function serialNodes(recipe: KitRecipe, serial: string, ink: string): { nodes: S
   const shown = sep.kind === 'dot' ? serial.replace('-', '·') : sep.kind === 'gap' ? serial.replace('-', ' ') : sep.kind === 'none' || sep.kind === 'art' ? serial.replace('-', '') : serial;
   const run = buildDieText({ text: shown, profile, x: s.x, baseline: s.baseline, capHeight: s.cap, maxWidth: s.maxWidth, ink: color, role: 'serial', kerning: s.kerning });
   return { nodes: [run.node], fit: run.fit };
+}
+
+/** Shared manufactured alphabets keep the same glyph when a different number is typed. */
+function serialProfile(recipe: KitRecipe) {
+  const profile = dieProfile(recipe.serial.die);
+  return recipe.serial.researchFormats?.[recipe.serial.die]
+    ? {...profile, allowResearchReplacement: false} : profile;
 }
 
 function shape(sh: KitShape, ink: string): SvgNode {
@@ -237,9 +258,9 @@ export function buildKitScene(recipe: KitRecipe, parts: Parts, options: KitScene
   }
   const ink = options.ink ?? recipe.ink, bg = options.background ?? recipe.background;
   const serial = parts.serial ?? '';
-  const serialProfile = dieProfile(recipe.serial.die);
+  const profile = withSerialContext(recipe, () => serialProfile(recipe));
   const printable = serial.replace('-', '');
-  if (serial && !recipe.serial.font && !dieSupports(serialProfile, printable)) throw new RangeError(`Serial “${serial}” has characters the ${serialProfile.label} die does not include.`);
+  if (serial && !recipe.serial.font && !dieSupports(profile, printable)) throw new RangeError(`Serial “${serial}” has characters the ${profile.label} die does not include.`);
   const { nodes: serialNode, fit } = serial ? serialNodes(recipe, serial, ink) : { nodes: [], fit: 'natural' as const };
   const holes = recipe.holes ?? 'slots';
   const hx = recipe.holeAt?.x.map((v) => v * w) ?? [w * 0.2, w * 0.8];
@@ -268,17 +289,19 @@ export function buildKitScene(recipe: KitRecipe, parts: Parts, options: KitScene
     ...(t.shadow ? [fontLegend(t, t.x + t.shadow.dx, t.baseline + t.shadow.dy, t.shadow.color, `${t.role}-shadow`)] : []),
     fontLegend(t, t.x, t.baseline, t.color ?? ink, t.role)]);
   const fill = (value: string) => value.replace(/\{(\w+)\}/g, (m, k: string) => options.tokens?.[k] ?? m);
-  const inscriptions = [...(recipe.shapes ?? []).map((sh) => shape(sh, ink)), ...recipe.legends.map((t) => text({ ...t, text: fill(t.text) }, ink)), ...serialNode];
+  const screenedLegends = recipe.legends.filter(t => t.screened).map(t => text({...t, text: fill(t.text)}, ink));
+  const inscriptions = [...(recipe.shapes ?? []).map((sh) => shape(sh, ink)), ...recipe.legends.filter(t => !t.screened).map((t) => text({ ...t, text: fill(t.text) }, ink)), ...serialNode];
   const panels = [...(recipe.panels ?? []), ...(recipe.renewalPanel && parts.renewal !== 'base-only' ? [recipe.renewalPanel] : [])]
     .map((p, i) => panel(p, serial, `${id}-panel${i}`, `${id}-lift`));
   const meta = {
     jurisdiction: 'CA-BC', recipe: recipe.id, status: recipe.status ?? 'issued', physicalMm: { width: w, height: h },
     serial, parts, source: recipe.source, construction: recipe.embossed ? 'embossed' : 'flat',
-    dies: { serial: serialProfile.id, evidence: serialProfile.evidence.status, fit },
+    dies: { serial: profile.id, evidence: profile.evidence.status, fit,
+      ...(recipe.serial.researchFormats?.[recipe.serial.die] ? {sharedPassengerFormat: recipe.serial.researchFormats[recipe.serial.die]} : {}) },
     renewal: recipe.renewalPanel ? {rendering: parts.renewal === 'base-only' ? 'base only' : 'separately mounted tab',
       physicalMm: {width: recipe.renewalPanel.width, height: recipe.renewalPanel.height}, independentSerial: 'not supplied'}
       : decal ? (options.decal ? { rendering: 'dated decal', year: options.decal.year, month: options.decal.month ?? null, style: options.decal.style } : { rendering: 'empty placement box only' }) : null,
-    accuracy: { artwork: recipe.artworkAccuracy ?? 'approximate vector reconstruction', dies: serialProfile.evidence.status, paint: 'uncalibrated digital approximation', allocations: 'supported subset only' },
+    accuracy: { artwork: recipe.artworkAccuracy ?? 'approximate vector reconstruction', dies: profile.evidence.status, paint: 'uncalibrated digital approximation', allocations: 'supported subset only' },
     note: recipe.note, ...options.metadata,
   };
   const label = options.title ?? `British Columbia · ${recipe.label} · ${serial}`;
@@ -293,7 +316,7 @@ export function buildKitScene(recipe: KitRecipe, parts: Parts, options: KitScene
       n('rect', { width: w, height: h, rx: recipe.radius, fill: bg, 'data-role': 'base' }),
       n('g', { clipPath: `url(#${id}-shell)`, color: ink, 'data-role': 'artwork' }, ...(recipe.art ?? []).map((a) => artwork(a.art, a, a.role ?? 'artwork'))),
       ...(rim ? [n('rect', { x: rim.inset, y: rim.inset, width: w - 2 * rim.inset, height: h - 2 * rim.inset, rx: Math.max(1, recipe.radius - rim.inset), fill: 'none', stroke: rim.color ?? ink, strokeWidth: rim.width })] : []),
-      ...wells, ...decalNodes, ...fontLegends,
+      ...wells, ...decalNodes, ...fontLegends, ...screenedLegends,
       n('g', recipe.embossed && parts.finish === 'embossed' ? { filter: `url(#${id}-relief)` } : {}, ...inscriptions)),
     ...panels);
 }

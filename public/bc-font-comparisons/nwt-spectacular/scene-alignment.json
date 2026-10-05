@@ -1,0 +1,51 @@
+{
+  "canvas": [
+    600,
+    300
+  ],
+  "imageDimensions": [
+    1770,
+    889
+  ],
+  "sourceImage": "official-source-plate.png",
+  "imagePlacement": {
+    "x": -7,
+    "y": 0,
+    "width": 618,
+    "height": 310.403,
+    "preserveAspectRatio": "xMinYMin meet"
+  },
+  "method": "Approximate opaque dark silhouette top points (all RGB channels below 80, alpha above 200), checked in the official illustration and exported PNG. Uniform image scale only; original pixels preserved. Points describe placement, not exact silhouette or artwork identity.",
+  "anchors": [
+    {
+      "landmark": "tall-left-tree-tip",
+      "source": [
+        41.0,
+        220.0
+      ],
+      "reproduction": [
+        40.375,
+        219.75
+      ],
+      "delta": [
+        -0.625,
+        -0.25
+      ]
+    },
+    {
+      "landmark": "right-bear-snout",
+      "source": [
+        494.5,
+        239.0
+      ],
+      "reproduction": [
+        493.75,
+        239.25
+      ],
+      "delta": [
+        -0.75,
+        0.25
+      ]
+    }
+  ]
+}

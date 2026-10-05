@@ -466,7 +466,7 @@ const northwestTerritories = region({
     plate({
       id: 'standard', label: 'Polar bear · Spectacular (2010)', pattern: '999999', display: '123456', example: '331758',
       generate: (rng) => String(rng.int(300000, 379999)),
-      description: `Aluminum bear-shaped plate with the slogan “Spectacular”, rolled out July 1, 2010 (300000 to about 378949 by November 2024). This rendition uses the supplied Aurora Over Arctic Wilderness background; it is not a verified original plate-printing master. Colours and layout remain approximate. ${ART_NOTE}`,
+      description: `Aluminum bear-shaped plate with the slogan “Spectacular”, rolled out July 1, 2010 (300000 to about 378949 by November 2024). The supplied Pale aurora over a rocky ridge artwork is positioned to align the left trees and right bear with the official design illustration. Colours and artwork remain approximate. ${ART_NOTE}`,
       references: ntRefs, period: [2010, 2026], status: 'uncertain',
     }),
     plate({

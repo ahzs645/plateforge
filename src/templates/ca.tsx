@@ -413,13 +413,10 @@ function Scene({ kind, id }: { kind: CaScene; id: string }) {
     case 'nt-spectacular':
       return (
         <g data-scene={kind}>
-          <defs>
-            <image id={`${id}nt-aurora`} href={ntAuroraUrl} width={W} height={H} preserveAspectRatio="xMidYMid slice"
-              data-source="user-supplied-aurora-over-arctic-wilderness" />
-          </defs>
-          {/* Reuse the original sky above the shifted scene; the bear clears the neck cutout. */}
-          <use href={`#${id}nt-aurora`} />
-          <use href={`#${id}nt-aurora`} y="22" />
+          {/* One uniform placement aligns the uploaded tree tip and bear snout with
+              the Gazette plane. Preserve the full image ratio; the body mask crops it. */}
+          <image href={ntAuroraUrl} x="-7" y="0" width="618" height="310.403" preserveAspectRatio="xMinYMin meet"
+            data-source="user-supplied-pale-aurora-rocky-ridge" data-role="nwt-background" />
         </g>
       );
   }

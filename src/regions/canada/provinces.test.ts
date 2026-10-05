@@ -164,8 +164,9 @@ describe('Canadian provinces and territories', () => {
       expect(svg).toContain(`<path d="${NWT_POLAR_BEAR_BORDER_PATH}" fill="none"`);
       expect(svg).toContain('data-role="inset-border"');
       if (id === 'standard') {
-        expect(svg).toContain('data-source="user-supplied-aurora-over-arctic-wilderness"');
-        expect(svg).toContain('preserveAspectRatio="xMidYMid slice"');
+        expect(svg).toContain('data-source="user-supplied-pale-aurora-rocky-ridge"');
+        expect(svg).toContain('preserveAspectRatio="xMinYMin meet"');
+        expect(svg.match(/<image\b/g)).toHaveLength(1);
       } else expect(svg).not.toMatch(/<image\b/);
     }
   });

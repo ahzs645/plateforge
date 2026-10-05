@@ -11,6 +11,7 @@ import { ROYAL_1987_PROFILE } from './royal-1987';
 import { ROYAL_1951_PROFILE } from './royal-1951';
 import { APEC_SCREENED_LEGENDS_PROFILE } from './apec-screened-legends';
 import { ROYAL_SCREENED_SLOGAN_PROFILE } from './royal-screened-slogan';
+import { COLLECTOR_HARRINGTON_PROFILE } from './collector-harrington';
 import { COMMERCIAL_1952_LEGEND, COMMERCIAL_1952_SERIAL, COMMERCIAL_1952_YEAR } from './commercial-1952';
 import { PCMR_PROFILE, PCMR_COMPANY_PROFILE } from './pcmr';
 import { researchVariant } from './research-dies';
@@ -26,6 +27,7 @@ export const DIE_PROFILES: readonly DieProfile[] = [
   ROYAL_1951_PROFILE,
   APEC_SCREENED_LEGENDS_PROFILE,
   ROYAL_SCREENED_SLOGAN_PROFILE,
+  COLLECTOR_HARRINGTON_PROFILE,
   COMMERCIAL_1952_LEGEND,
   COMMERCIAL_1952_SERIAL,
   COMMERCIAL_1952_YEAR,

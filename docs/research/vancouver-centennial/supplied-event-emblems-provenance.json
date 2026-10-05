@@ -39,9 +39,9 @@
     "method": "Preserve supplied path geometry, transforms, colours and clipping; namespace IDs. Reconstructed vectors, not authenticated historical masters."
   },
   {
-    "attachment": "Aurora Over Arctic Wilderness.png.zip",
-    "master": "Aurora Over Arctic Wilderness.png",
-    "sha256": "3bebaa2a2bcd915032d763b2d4ad695a2c4c95ea447f958644426fefe241c900",
-    "method": "Original PNG bytes preserved; uniform centre-fill over 600\u00d7300 plate plane, clipped to NWT cut silhouette and mounting holes. User-supplied artwork for the current preset, not an authenticated original plate background."
+    "attachment": "Pale aurora over a rocky ridge.png.zip",
+    "master": "Pale aurora over a rocky ridge.png",
+    "sha256": "a636d68a980a8b7326b63a34816d0396e9b951a601143cd62f71f29f1389b358",
+    "method": "Original 1770 \u00d7 889 PNG bytes preserved. One uniform image placement, x \u22127 / y 0 / width 618 / height 310.403 in the 600 \u00d7 300 plate plane, aligns the tall left tree and right bear with the official Gazette illustration. Clipped to the NWT silhouette and genuine mounting holes; no colour filter or repeated sky band. User-supplied rendition, not an authenticated plate-printing master."
   }
 ]

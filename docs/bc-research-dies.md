@@ -34,6 +34,15 @@ alphabet and apply the year lift twice. This exception preserves the dedicated
 source reconstruction; it does not certify exact tooling. Photograph comparisons
 are published at `public/bc-font-comparisons/renewal1951/index.html`.
 
+Collector serials and the corresponding flag-base passenger recipes use shared
+Astrographic Classic (`1985-flag`) and Waldale (`2001-flag`) masters. These
+canonical bindings contain only their named family's source units; unobserved
+characters use that production profile's constructed fallback. A shared serial
+freezes the merged alphabet before measuring and splitting the run, preventing
+different digit groups from switching to another unit. Other selectable
+Astrographic variants retain their separate profiles. Collector inscriptions
+use fixed Harrington Regular outlines, independently of these serial masters.
+
 Research glyphs are tagged `data-source="research"` in the SVG. The **Research
 lettering** checkbox in the B.C. inspector switches back to the production dies
 (remembered per browser).

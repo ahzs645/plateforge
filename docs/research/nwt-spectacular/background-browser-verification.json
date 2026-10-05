@@ -1,0 +1,22 @@
+{
+  "site": "http://127.0.0.1:5176/plateforge/",
+  "sourcePngSha256": "a636d68a980a8b7326b63a34816d0396e9b951a601143cd62f71f29f1389b358",
+  "embeddedImageCount": 1,
+  "exportPngDimensions": [
+    2400,
+    1200
+  ],
+  "cutoutsAlpha": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "mobileOverflow": false,
+  "errors": [],
+  "failedResources": []
+}
