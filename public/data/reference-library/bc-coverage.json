@@ -20,7 +20,7 @@
   "earlyPresets": 25,
   "laterPresets": 17,
   "countsUnit": "Inventory topics and presets, NOT distinct historical plate designs",
-  "registeredPresets": 443
+  "registeredPresets": 446
  },
  "registeredPresets": {
   "passenger": [
@@ -424,6 +424,7 @@
    "municipal-city-port-moody",
    "municipal-city-powell-river",
    "municipal-city-prince-george",
+   "municipal-city-prince-george-1962",
    "municipal-city-richmond",
    "municipal-city-saanich",
    "municipal-city-sumas",
@@ -443,9 +444,11 @@
    "municipal-vancouver-express-dray-1934",
    "municipal-vancouver-auto-taxi-1923",
    "municipal-vancouver-taxi-1956",
+   "municipal-vancouver-taxi-1996",
    "municipal-vancouver-taxi-1997",
    "municipal-vancouver-for-hire-1949",
    "municipal-vancouver-for-hire-1970",
+   "municipal-vancouver-for-hire-1986",
    "municipal-vancouver-for-hire-1995",
    "municipal-vancouver-commercial-1972",
    "municipal-vancouver-commercial-1982",
@@ -1562,6 +1565,7 @@
     "municipal-city-port-moody",
     "municipal-city-powell-river",
     "municipal-city-prince-george",
+    "municipal-city-prince-george-1962",
     "municipal-city-richmond",
     "municipal-city-saanich",
     "municipal-city-sumas",
@@ -1581,9 +1585,11 @@
     "municipal-vancouver-express-dray-1934",
     "municipal-vancouver-auto-taxi-1923",
     "municipal-vancouver-taxi-1956",
+    "municipal-vancouver-taxi-1996",
     "municipal-vancouver-taxi-1997",
     "municipal-vancouver-for-hire-1949",
     "municipal-vancouver-for-hire-1970",
+    "municipal-vancouver-for-hire-1986",
     "municipal-vancouver-for-hire-1995",
     "municipal-vancouver-commercial-1972",
     "municipal-vancouver-commercial-1982",

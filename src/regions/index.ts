@@ -10,11 +10,12 @@ import { japan } from './asia/japan';
 import { korea } from './asia/korea';
 import { vietnam } from './asia/vietnam';
 import { britishColumbia } from './canada';
+import { canadaFederal } from './canada/federal';
 import { canadianProvinces } from './canada/provinces';
 import { europeRegions } from './europe';
 import { usRegions } from './us';
 
-export const BUILT_IN_REGIONS = [...usRegions.map((region) => ({ ...region, formats: region.formats.map(withLettering) })), ...europeRegions, china, japan, britishColumbia, ...canadianProvinces, iraq, iran, korea, vietnam, costaRica, ...mercosurRegions];
+export const BUILT_IN_REGIONS = [...usRegions.map((region) => ({ ...region, formats: region.formats.map(withLettering) })), ...europeRegions, china, japan, canadaFederal, britishColumbia, ...canadianProvinces, iraq, iran, korea, vietnam, costaRica, ...mercosurRegions];
 
 /** Built-in regions plus stand-in artwork formats (and the themed-plates region) from `src/stand-ins`. */
 export const REGIONS = withStandIns(BUILT_IN_REGIONS);

@@ -109,7 +109,7 @@ export function RegionPicker({ open, regions, selected, selectedFormat, onSelect
   useEffect(() => {
     if (!open) return;
     setQuery('');
-    setCountry('');
+    setCountry(regions.find(r => r.id === selected)?.country === 'Canada' ? 'Canada' : '');
     setExpanded(null);
     // Focus after the sheet is painted so mobile keyboards open reliably.
     requestAnimationFrame(() => inputRef.current?.focus());
@@ -263,6 +263,7 @@ export function RegionPicker({ open, regions, selected, selectedFormat, onSelect
                       <span aria-hidden="true">{g.flag}</span> {g.country}
                       <span>{g.regions.length} {g.regions.length === 1 ? 'region' : 'regions'}</span>
                     </h4>
+                    {g.country === 'Canada' && <p className="picker-country-context">Provinces, territories and federal plates</p>}
                     {g.regions.map((r) => item(r, true))}
                   </div>
                 );

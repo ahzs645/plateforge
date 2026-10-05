@@ -419,16 +419,16 @@ const officialSpecs: Spec[] = [
     recipe: base1936('official-parks-1936', '1936 red-bordered', { w: 292, h: 142 }, SRC.parks, { kind: 'dash' }, { rim: RED_RIM }),
     palettes: years(P1924, [1936]), grammar: listed('CF-451 … CF-575', [451, 575, (n) => `CF-${n}`]),
     description: 'In 1936 the Golden plates were CF451–CF575 (CF-472 pictured), cream on green with the red rim and stacked year.' },
-  { id: 'official-lt-governor-arms', label: 'Lieutenant Governor · coat of arms', family: 'official', era: 'official-federal', period: [1998, 2008],
+  { id: 'official-lt-governor-arms', label: 'Lieutenant Governor · coat of arms', family: 'official', era: 'official-federal', period: [1998, 2016],
     recipe: recipe('official-lg-arms', 'Lieutenant Governor coat of arms', { w: 300, h: 150 }, SRC.lg, {
-      embossed: false, radius: 6, background: '#101010', ink: '#b08a3a', holes: 'round', holeAt: { x: [0.2, 0.8], y: [0.08] }, rim: null, note: `${NOTE} Size assumed 300 × 150 mm; the die-struck arms are drawn as flat gold ink.`,
-      art: [{ art: 'bc-arms', x: 90, y: 12, width: 120, height: 126, color: '#c49a3e' }], legends: [], serial: NO_NUMBER }),
+      embossed: false, radius: 6, background: '#080a0d', ink: '#b08a3a', holes: 'round', holeAt: { x: [0.2, 0.8], y: [0.08] }, rim: null, note: `${NOTE} Size assumed 300 × 150 mm. A filled gold relief reconstruction replaces the fine-line tin-plate arms; its contour and metallic relief remain approximate. The late-1990s start is uncertain; source photos show the arms in 2003 and 2016.`,
+      art: [{ art: 'official-lg-arms-solid', x: 84, y: 13, width: 132, height: 124 }], legends: [], serial: NO_NUMBER }),
     grammar: noNumber,
-    description: 'The Lieutenant Governor’s car carried a large die-struck British Columbia coat of arms on a black plate until 2008; when it started is not known (possibly the late 1990s).' },
+    description: 'A solid die-struck British Columbia coat of arms on black. The source describes replacement by the crest in 2008 but also photographs the older arms in 2016, so both designs overlap in the catalogue. The start date is not known (possibly the late 1990s); the 1998 period anchor is approximate.' },
   { id: 'official-lt-governor-crest', label: 'Lieutenant Governor · crest', family: 'official', era: 'official-federal', period: [2008, 2026],
     recipe: recipe('official-lg-crest', 'Lieutenant Governor crest', { w: 300, h: 150 }, SRC.lg, {
-      embossed: false, radius: 6, background: '#101010', ink: '#b5aa8f', holes: 'round', holeAt: { x: [0.2, 0.8], y: [0.88] }, rim: null, note: `${NOTE} Size assumed 300 × 150 mm; the enamel crest is simplified.`,
-      art: [{ art: 'official-lg-crest', x: 86, y: 11, width: 128, height: 128 }], legends: [], serial: NO_NUMBER }),
+      embossed: false, radius: 6, background: '#080a0d', ink: '#c5a34a', holes: 'round', holeAt: { x: [0.2, 0.8], y: [0.88] }, rim: null, note: `${NOTE} Size assumed 300 × 150 mm. The supplied crest vector retains its red, white and blue details with yellow changed to gold, inside a full-height blue plaque with a gold trim. Plaque placement and enamel colours are approximate source readings.`,
+      art: [{ art: 'official-lg-crest-supplied', x: 75, y: 0, width: 150, height: 150 }], legends: [], serial: NO_NUMBER }),
     grammar: noNumber,
     description: 'Since 2008: the Lieutenant Governor’s crest (the B.C. shield in a circlet of ten gold maple leaves under the crown, on royal blue) as a plaque on a black blank.' },
 ];
@@ -502,8 +502,8 @@ const eventSpecs: Spec[] = [
   { id: 'events-royal-crown', label: 'Royal car · gold crown on red', family: 'events', era: 'events-royal', period: [1987, 2016],
     recipe: recipe('events-royal-crown', 'Royal vehicle crown plate', { w: 300, h: 150 }, SRC.royal, {
       embossed: false, radius: 10, background: '#c8282a', ink: '#d4b04a', holes: 'round', holeAt: { x: [0.2, 0.78], y: [0.08] }, rim: null,
-      note: `${NOTE} Size unknown (300 × 150 mm assumed); the text describes a coat of arms but the 2002 and 2009 photos show a crown, which is drawn.`,
-      art: [{ art: 'official-crown', x: 96, y: 34, width: 108, height: 90 }], legends: [], serial: NO_NUMBER }),
+      note: `${NOTE} Size unknown (300 × 150 mm assumed); the 2002 and 2009 photos show a crown. The supplied St Edward’s crown vector replaces the simplified crown construction. Placement and metallic finish remain approximate.`,
+      art: [{ art: 'official-edward-crown-supplied', x: 96, y: 29, width: 108, height: 96 }], legends: [], serial: NO_NUMBER }),
     grammar: noNumber,
     description: 'The Sovereign’s limousine on visits carried a red plate with a gold emblem instead of a number (seen in 2002 and 2009).' },
   { id: 'events-apec-1997', label: 'APEC 1997 motorcade (ICBC)', family: 'events', era: 'events-apec-1997', period: [1997, 1997],

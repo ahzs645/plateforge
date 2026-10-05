@@ -986,6 +986,11 @@ kbd {
   font-size: 12px;
   font-weight: 500;
 }
+.picker-country-context {
+  margin: -2px 18px 8px;
+  color: var(--muted);
+  font-size: 12px;
+}
 .picker-item.nested {
   padding-left: 38px;
 }

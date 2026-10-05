@@ -1,0 +1,87 @@
+{
+  "site": "http://127.0.0.1:5176/plateforge/",
+  "results": [
+    {
+      "format": "municipal-vancouver-for-hire-1986",
+      "serial": "",
+      "export": [
+        "SVG",
+        "PNG"
+      ],
+      "mobileOverflow": false
+    },
+    {
+      "format": "municipal-vancouver-for-hire-1995",
+      "serial": "2571",
+      "export": [
+        "SVG",
+        "PNG"
+      ],
+      "mobileOverflow": false
+    },
+    {
+      "format": "municipal-vancouver-taxi-1997",
+      "serial": "254",
+      "export": [
+        "SVG",
+        "PNG"
+      ],
+      "mobileOverflow": false
+    },
+    {
+      "format": "municipal-vancouver-taxi-1996",
+      "serial": "1071",
+      "export": [
+        "SVG",
+        "PNG"
+      ],
+      "mobileOverflow": false
+    },
+    {
+      "format": "municipal-city-prince-george",
+      "serial": "15",
+      "export": [
+        "SVG",
+        "PNG"
+      ],
+      "mobileOverflow": false
+    },
+    {
+      "format": "municipal-city-prince-george-1962",
+      "serial": "91",
+      "export": [
+        "SVG",
+        "PNG"
+      ],
+      "mobileOverflow": false
+    },
+    {
+      "format": "bicycle-prince-george-1953",
+      "serial": "580",
+      "export": [
+        "SVG",
+        "PNG"
+      ],
+      "mobileOverflow": false
+    },
+    {
+      "format": "bicycle-prince-george-1958",
+      "serial": "333",
+      "export": [
+        "SVG",
+        "PNG"
+      ],
+      "mobileOverflow": false
+    },
+    {
+      "format": "bicycle-prince-george-1959",
+      "serial": "36",
+      "export": [
+        "SVG",
+        "PNG"
+      ],
+      "mobileOverflow": false
+    }
+  ],
+  "errors": []
+}

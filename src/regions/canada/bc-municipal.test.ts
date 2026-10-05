@@ -27,3 +27,33 @@ describe('B.C. municipal and bicycle grammars', () => {
     expect(BC_MUNICIPAL_FORMATS.every((f) => f.family === 'municipal' || f.family === 'bicycle')).toBe(true);
   });
 });
+
+import {kitRecipe,kitPalette} from './bc-kit';
+import {buildKitScene} from '../../templates/bc/kit';
+import {serializeSvgNode} from '../../templates/svg-scene';
+import {dieGlyph,dieSupports} from '../../templates/dies/engine';
+import {dieProfile} from '../../templates/dies/profiles';
+import {FRANKFURTER_EXPO_PROFILE} from '../../templates/dies/frankfurter-expo';
+describe('source-specific municipal components',()=>{
+ it('separates fixed screened Frankfurter words from embossed serial tooling',()=>{
+  for(const id of ['municipal-vancouver-for-hire-1986','municipal-vancouver-for-hire-1995','municipal-vancouver-taxi-1996','municipal-vancouver-taxi-1997']){
+   const recipe=kitRecipe(id);expect(recipe.fontLegends).toEqual([]);
+   expect(recipe.legends.every(t=>t.die==='municipal-vancouver-frankfurter'&&t.screened)).toBe(true);
+   expect(recipe.serial.die).toBe('municipal-vancouver-embossed');
+   const svg=serializeSvgNode(buildKitScene(recipe,{serial:id.endsWith('1986')?'':'1071'}));
+   expect(svg).toContain('underlying-centennial-emblem');expect(svg).toContain('1886');expect(svg).toContain('1986');
+   if(!id.endsWith('1986'))expect(svg.indexOf('underlying-centennial-emblem')).toBeLessThan(svg.indexOf('data-role="city-decal"'));
+   expect(kitPalette(id,'green').ink).not.toBe(kitPalette(id,'blue').ink);
+  }
+  const p=dieProfile('municipal-vancouver-frankfurter');expect(p.allowResearchReplacement).toBe(false);
+  expect(dieSupports(p,'Vehicle for Hire VANCOUVER TAXI CAB')).toBe(true);
+  expect(dieGlyph(p,'E')!.advance).toBeCloseTo(dieGlyph(FRANKFURTER_EXPO_PROFILE,'E')!.advance,2);
+  expect(dieSupports(p,'1071')).toBe(false);
+ });
+ it('uses separate Prince George upper/lower/date components and permits the source15',()=>{
+  ok('municipal-city-prince-george','15');const r=kitRecipe('municipal-city-prince-george');
+  expect(r.legends.map(t=>t.die)).toEqual(['municipal-prince-george-wide','municipal-prince-george-wide','municipal-prince-george-tall']);
+  expect(r.serial.die).toBe('municipal-prince-george-digits');
+  expect(dieProfile(r.serial.die).overrides?.['1']).toBeDefined();
+ });
+});

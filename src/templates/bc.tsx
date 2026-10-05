@@ -14,6 +14,8 @@ function kitScene(design: BcDesign, parts: Parameters<typeof buildKitScene>[1], 
   const withDie = typeof parts.die === 'string' ? { ...recipe, serial: { ...recipe.serial, die: parts.die } } : recipe;
   const palette = kitPalette(recipe.id, parts.palette);
   return buildKitScene(withDie, parts, { scope, decal: kitDecal(recipe.id, parts), ...palette,
+    ...(typeof design.jurisdiction === 'string' ? {metadata: {jurisdiction: design.jurisdiction},
+      title: `Canada · ${recipe.label} · ${parts.serial ?? ''}`} : {}),
     ...(typeof design.background === 'string' ? { background: design.background } : {}), ...(typeof design.ink === 'string' ? { ink: design.ink } : {}) });
 }
 

@@ -1,0 +1,56 @@
+{
+  "url": "http://127.0.0.1:5176/plateforge/bc-font-comparisons/die-grouping/?view=timeline",
+  "presets": 446,
+  "components": 2402,
+  "bounds": [
+    1901,
+    2026
+  ],
+  "sourceContexts": 37,
+  "filters": [
+    "passenger",
+    "samples",
+    "commercial",
+    "farm",
+    "trailer",
+    "motorcycle",
+    "trade",
+    "industrial",
+    "carrier",
+    "specialty",
+    "consular",
+    "ham-radio",
+    "official",
+    "events",
+    "municipal",
+    "bicycle"
+  ],
+  "errors": [],
+  "overviewLanes": 323,
+  "selectableAlternatives": 119,
+  "optionToggleVerified": true,
+  "optionPreviewQualificationVerified": true,
+  "zoomWidthRatio": 4,
+  "componentCategories": [
+    "serial",
+    "prefix",
+    "province",
+    "slogan",
+    "date",
+    "descriptor",
+    "renewal",
+    "artwork"
+  ],
+  "prefixSelection": "trailer-1936",
+  "waldaleEvidenceSelected": true,
+  "undatedSerialTransitionPreserved": true,
+  "municipal1996And1997SourceSelectionVerified": true,
+  "lieutenantGovernorOverlapQualified": true,
+  "rangeFilterVerified": [
+    1920,
+    1940
+  ],
+  "fontSearchVerified": "Harrington",
+  "mobileNoPageOverflow": true,
+  "mobileHorizontalPan": true
+}

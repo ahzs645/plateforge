@@ -1,111 +1,14 @@
 {
-  "catalogue": "http://127.0.0.1:8787/bc-font-comparisons/die-grouping/",
-  "coverage": {
-    "presets": 443,
-    "types": 16,
-    "browserSelected": 443,
-    "previews": 443,
-    "byType": {
-      "passenger": 87,
-      "samples": 18,
-      "commercial": 20,
-      "farm": 15,
-      "trailer": 23,
-      "motorcycle": 12,
-      "trade": 19,
-      "industrial": 21,
-      "carrier": 29,
-      "specialty": 34,
-      "consular": 5,
-      "ham-radio": 13,
-      "official": 27,
-      "events": 16,
-      "municipal": 64,
-      "bicycle": 40
-    },
-    "comparisonGroups": 50,
-    "representativePhotographs": 25
-  },
-  "typeFilters": [
-    {
-      "type": "passenger",
-      "count": 87
-    },
-    {
-      "type": "samples",
-      "count": 18
-    },
-    {
-      "type": "commercial",
-      "count": 20
-    },
-    {
-      "type": "farm",
-      "count": 15
-    },
-    {
-      "type": "trailer",
-      "count": 23
-    },
-    {
-      "type": "motorcycle",
-      "count": 12
-    },
-    {
-      "type": "trade",
-      "count": 19
-    },
-    {
-      "type": "industrial",
-      "count": 21
-    },
-    {
-      "type": "carrier",
-      "count": 29
-    },
-    {
-      "type": "specialty",
-      "count": 34
-    },
-    {
-      "type": "consular",
-      "count": 5
-    },
-    {
-      "type": "ham-radio",
-      "count": 13
-    },
-    {
-      "type": "official",
-      "count": 27
-    },
-    {
-      "type": "events",
-      "count": 16
-    },
-    {
-      "type": "municipal",
-      "count": 64
-    },
-    {
-      "type": "bicycle",
-      "count": 40
-    }
-  ],
-  "sourcePhotos": 25,
+  "site": "http://127.0.0.1:5176/plateforge/",
+  "presets": 446,
+  "types": 16,
+  "allPreviewFilesExist": true,
+  "allTypeFiltersWorked": true,
+  "searchWorked": true,
+  "comparisonSelectorWorked": true,
+  "photographsLoaded": 35,
+  "editorNavigationWorked": true,
+  "mobileOverflow": false,
   "errors": [],
-  "crossClassPair": [
-    "commercial-flag-2008",
-    "2001-flag"
-  ],
-  "sameClassYearPair": [
-    "trailer-1936",
-    "trailer-1931"
-  ],
-  "relativeNavigationVerified": true,
-  "mobileViewsNoOverflow": [
-    "catalogue",
-    "compare",
-    "sources"
-  ]
+  "failedResources": []
 }

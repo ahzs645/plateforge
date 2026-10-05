@@ -1,0 +1,10 @@
+{
+  "site": "http://127.0.0.1:5176/plateforge/",
+  "CanadaJurisdictions": 14,
+  "federalDesigns": 2,
+  "nationalSvgMetadata": true,
+  "mobileFederalSelection": true,
+  "territorySelection": true,
+  "errors": [],
+  "failedResources": []
+}

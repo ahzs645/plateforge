@@ -12,10 +12,11 @@
  * are read from the photographs.
  */
 import '../../templates/bc/art-municipal';
+import '../../templates/bc/art-vancouver-municipal';
 import { textOverlay, type OverlayItem } from '../../templates/bc/art-municipal';
 import type { PlateEra, PlateFamily, PlateFormat, PlateStatus } from '../../core/types';
 import type { KitArt, KitFontText, KitPanel, KitRecipe, KitShape, KitText } from '../../templates/bc/kit';
-import { kitFormat, numericGrammar, type KitPalette, type SerialGrammar } from './bc-kit';
+import { kitFormat, numericGrammar, NO_SERIAL, type KitPalette, type SerialGrammar } from './bc-kit';
 
 export const BC_MUNICIPAL_FAMILIES: PlateFamily[] = [
   { id: 'municipal', label: 'Municipal & exempt', summary: 'Commercial-vehicle licence plates: issued by individual municipalities (often by half-year) until 1962, by the City of Vancouver into the 2000s, and by the province as a single MUNICIPAL plate (with EXEMPT) from 1963 to 1986.' },
@@ -38,7 +39,7 @@ const VAN = page('Municipal-Vancouver.html', 'City of Vancouver');
 const bike = (town: string, name: string) => page(`Bicycle-${town}.html`, `Bicycle · ${name}`);
 
 const LEG = 'municipal-legend', SER = 'municipal-serial', OLD = 'bc-legend-1940', OLDSER = 'bc-early-1940';
-type Opt = { mw?: number; die?: string; spread?: boolean; anchor?: 'start' | 'middle' | 'end'; color?: string };
+type Opt = { mw?: number; die?: string; spread?: boolean; anchor?: 'start' | 'middle' | 'end'; color?: string; screened?: boolean };
 /** Die legend: text, x (fraction of width), baseline and cap height (fractions of height). */
 type T = readonly [string, number, number, number, Opt?];
 /** Typeface legend (for '&', ',', '$' and lower case): text, x, baseline, size (fraction of height). */
@@ -66,7 +67,7 @@ interface Spec {
   rim?: number | null;
   holes?: 'slots' | 'round' | 'none';
   hx?: readonly number[]; hy?: readonly number[];
-  die?: string; sdie?: string;
+  die?: string; sdie?: string; serialColor?: string; rimColor?: string;
   t?: readonly T[]; f?: readonly F[]; stack?: readonly Stack[]; rot?: readonly Rot[]; arc?: readonly Arc[];
   /** Vertical rules: x, top, bottom (fractions). */
   rules?: readonly (readonly [number, number, number])[];
@@ -88,7 +89,7 @@ const NOTE = 'Reconstruction from BCpl8s photographs: layout proportions, colour
 function build(s: Spec): PlateFormat {
   const { w, h } = s;
   const text = ([value, x, y, cap, o = {}]: T, i: number): KitText => ({ text: value, x: x * w, baseline: y * h, cap: cap * h, die: o.die ?? s.die ?? LEG,
-    role: `legend-${i}`, ...(o.mw ? { maxWidth: o.mw * w } : {}), ...(o.spread ? { spread: true } : {}), ...(o.anchor ? { anchor: o.anchor } : {}), ...(o.color ? { color: o.color } : {}) });
+    role: `legend-${i}`, ...(o.mw ? { maxWidth: o.mw * w } : {}), ...(o.spread ? { spread: true } : {}), ...(o.anchor ? { anchor: o.anchor } : {}), ...(o.color ? { color: o.color } : {}), ...(o.screened ? {screened: true} : {}) });
   const stacked = (s.stack ?? []).flatMap(([value, x, from, step, cap], j) => [...value].map((c, i): KitText =>
     ({ text: c, x: x * w, baseline: (from + i * step) * h, cap: cap * h, die: s.die ?? LEG, role: `stack-${j}-${i}` })));
   const items: OverlayItem[] = [
@@ -98,7 +99,7 @@ function build(s: Spec): PlateFormat {
   const cut = s.shell && s.shell !== 'oval';
   const art: KitArt[] = [
     ...(cut ? [{ art: `municipal-shell-${s.shell}`, x: 0, y: 0, width: w, height: h, color: s.bg, role: 'die-cut-shell' }] : []),
-    ...(s.extraArt ?? []),
+    ...(s.extraArt ?? []).map(a => a.art === 'municipal-vancouver-centennial-base' ? {...a,height:h} : a),
     ...(items.length ? [{ art: textOverlay(`municipal-text-${s.id}`, w, h, items), x: 0, y: 0, width: w, height: h, color: s.ink, role: 'turned-legends' }] : []),
   ];
   const [sx, sy, scap, smw, font] = s.serial;
@@ -106,14 +107,14 @@ function build(s: Spec): PlateFormat {
     id: `${s.family}-${s.id}`, label: s.label, width: w, height: h,
     radius: s.shell === 'oval' ? w / 2 : cut ? 0 : s.radius ?? 5,
     background: cut ? 'none' : s.bg, ink: s.ink,
-    rim: s.rim === null || cut ? null : { inset: s.rim ?? 2.5, width: 1.3 },
+    rim: s.rim === null || cut ? null : { inset: s.rim ?? 2.5, width: 1.3, ...(s.rimColor ? {color: s.rimColor} : {}) },
     holes: s.holes ?? 'round', holeAt: { x: s.hx ?? [0.06, 0.94], y: s.hy ?? [0.13, 0.87] },
     art, legends: [...(s.t ?? []).map(text), ...stacked],
     fontLegends: (s.f ?? []).map(([value, x, y, size, o = {}], i) => ({ text: value, x: x * w, baseline: y * h, size: size * h, font: o.font ?? 'sans', weight: o.weight ?? 700,
       ...(o.italic ? { italic: true } : {}), ...(o.color ? { color: o.color } : {}), ...(o.width ? { width: o.width * w } : {}), role: `font-legend-${i}` })),
     shapes: [...(s.rules ?? []).map(([x, y1, y2]): KitShape => ({ kind: 'line', x1: x * w, y1: y1 * h, x2: x * w, y2: y2 * h, strokeWidth: 1.2 })), ...(s.shapes ?? [])],
     ...(s.panels ? { panels: s.panels } : {}),
-    serial: { x: sx * w, baseline: sy * h, cap: scap * h, maxWidth: smw * w, die: s.sdie ?? SER, ...(font ? { font: { family: font } } : {}) },
+    serial: { x: sx * w, baseline: sy * h, cap: scap * h, maxWidth: smw * w, die: s.sdie ?? SER, ...(s.serialColor ? {color: s.serialColor} : {}), ...(font ? { font: { family: font } } : {}) },
     decal: s.decal ?? null, ...(s.extraWells ? { extraWells: s.extraWells } : {}),
     embossed: !s.flat, ...(s.status ? { status: s.status } : {}), source: s.source, note: s.note ?? NOTE,
   };
@@ -250,9 +251,12 @@ const cities: Spec[] = [
   city('powell-river', 'Powell River', 'District of Powell River', 1961, 1.6, 'white on black', '1961 turned down the left side behind a rule, POWELL RIVER, the number and 1ST HALF. The photographed plate is the 000 specimen.',
     { holes: 'slots', hx: [0.5, 0.74], hy: [0.07], bg: '#151515', ink: '#efefe8', rules: [[0.16, 0.1, 0.9]], rot: [['1961', 0.09, 0.5, 0.15, 1]],
       t: [['POWELL RIVER', 0.58, 0.27, 0.15, { mw: 0.72 }], ['1ST HALF', 0.58, 0.9, 0.17, { mw: 0.56 }]], serial: [0.58, 0.67, 0.31, 0.5], grammar: half(1, 999, ['000']) }),
-  city('prince-george', 'Prince George', 'City of Prince George', 1959, 1.6, 'pale blue on maroon', '1959 turned up the left side, PRINCE GEORGE, the number and VEHICLE.',
-    { ...cornerHoles, hx: [0.04, 0.96], hy: [0.08, 0.92], bg: '#7a1c1e', ink: '#a9d6d6', rot: [['1959', 0.09, 0.5, 0.15, -1]],
-      t: [['PRINCE', 0.62, 0.23, 0.14, { mw: 0.4 }], ['GEORGE', 0.6, 0.42, 0.15, { mw: 0.6 }], ['VEHICLE', 0.6, 0.92, 0.22, { mw: 0.68 }]], serial: [0.6, 0.64, 0.17, 0.3], grammar: half() }),
+  city('prince-george', 'Prince George', 'City of Prince George', 1959, 1.6, 'pale blue on maroon', '1959 turned up the left side, broad rounded PRINCE / GEORGE above a small serif number, and taller VEHICLE below. Source-specific component constructions; manufacturer and other years remain unconfirmed.',
+    { ...cornerHoles, hx: [0.065, 0.94], hy: [0.105, 0.895], bg: '#7a2529', ink: '#9acdcc', die: 'municipal-prince-george-digits', sdie: 'municipal-prince-george-digits', rot: [['1959', 0.14, 0.51, 0.2, -1]],
+      t: [['PRINCE', 0.60, 0.20, 0.115, { die: 'municipal-prince-george-wide', mw: 0.56 }], ['GEORGE', 0.60, 0.37, 0.13, { die: 'municipal-prince-george-wide', mw: 0.67 }], ['VEHICLE', 0.60, 0.86, 0.19, { die: 'municipal-prince-george-tall', mw: 0.67 }]], serial: [0.60, 0.60, 0.16, 0.3], grammar: half(1,999,['000']) }),
+  city('prince-george-1962', 'Prince George', 'City of Prince George', 1962, 1.7, 'pale lettering on green', '1962 across the top, a single narrower PRINCE GEORGE line, small serif number and spaced VEHICLE. The photographed plate is damaged; its broken lower-left edge is not reproduced. This is a distinct layout and component-size comparison, not proof of a maker or tooling transition.',
+    { ...cornerHoles, hx:[0.085,0.915],hy:[0.15,0.84],bg:'#247e65',ink:'#d6dfd5',sdie:'municipal-prince-george-digits',
+      t:[['1962',0.5,0.25,0.145,{die:'municipal-prince-george-digits',mw:0.48,spread:true}],['PRINCE GEORGE',0.5,0.52,0.145,{die:'municipal-prince-george-tall',mw:0.89}],['VEHICLE',0.5,0.92,0.16,{die:'municipal-prince-george-tall',mw:0.72,spread:true}]],serial:[0.5,0.71,0.15,0.3],grammar:half() }),
   city('richmond', 'Richmond', 'Township of Richmond', 1959, 1.7, 'white on dark blue', '1959, RICHMOND, the number and 2ND.HALF.',
     { ...cornerHoles, bg: '#1e3a5c', ink: '#e8e4d8', t: [['1959', 0.5, 0.25, 0.17, { mw: 0.52, spread: true }], ['RICHMOND', 0.5, 0.49, 0.17, { mw: 0.78 }], ['2ND.HALF', 0.5, 0.93, 0.17, { mw: 0.8 }]],
       serial: [0.5, 0.71, 0.16, 0.3], grammar: half() }),
@@ -293,6 +297,14 @@ function vanSide(id: string, label: string, year: number, aspect: number, bg: st
     holes: 'slots', hx: [0.14, 0.86], hy: [0.06, 0.94], bg, ink, stack: [[String(year), 0.055, 0.26, 0.21, 0.15]], rules: [[0.105, 0.12, 0.88]],
     t: [[category, 0.56, 0.28, 0.15, { mw: 0.78 }], ['VANCOUVER', 0.56, 0.89, 0.16, { mw: 0.68, spread: true }]], serial: [0.56, 0.64, 0.28, 0.5], grammar: nums(9999), ...extra });
 }
+const centennialMunicipalBase = {holes: 'slots' as const,hx:[0.11,0.89],hy:[0.10,0.88],bg:'#f2f3ec',sdie:'municipal-vancouver-embossed',serialColor:'#165fa8',rimColor:'#2483b0',rim:2,
+  extraArt:[{art:'municipal-vancouver-centennial-base',x:0,y:0,width:180,height:105,role:'screened-centennial-base'}],
+  shapes:[{kind:'line' as const,x1:5,y1:20,x2:175,y2:20,stroke:'#2483b0',strokeWidth:.5}],};
+function centennialBandPalettes(first:'blue'|'green'):KitPalette[]{const p=[{id:'green',label:'Green band · photographed 1986/1995/1996',background:'#f2f3ec',ink:'#45b52b'},{id:'blue',label:'Blue band · photographed 1997 taxi',background:'#f2f3ec',ink:'#3a8ad8'}];return first==='green'?p:p.reverse();}
+function cityRenewalPanel(category:string,year:string,color:string,h:number):KitPanel{return {x:180*.27,y:h*.75,width:180*.46,height:h*.21,background:color,ink:'#fff9e9',radius:.6,role:'city-decal',texts:[
+ {text:'CITY OF VANCOUVER',x:180*.23,baseline:h*.058,cap:h*.037,die:LEG,role:'city-decal-title'},
+ {text:category,x:180*.23,baseline:h*.107,cap:h*.037,die:LEG,role:'city-decal-category'},
+ {text:year,x:180*.13,baseline:h*.183,cap:h*.058,die:LEG,role:'decal-year'}]};}
 const vancouver: Spec[] = [
   van('disc-1919', 'Vehicle License disc · 1919', 1919, 1, 'A round aluminium disc: VEHICLE arched over LICENSE, the number, VANCOUVER and 1919.',
     { w: 110, shell: 'oval', rim: null, holes: 'round', hx: [0.07, 0.93], hy: [0.5], bg: '#bdbdb7', ink: '#2a2a2a', die: OLD, sdie: OLDSER, arc: [['VEHICLE', 0.5, 0.5, 0.33, 0.12, 'top']],
@@ -322,25 +334,27 @@ const vancouver: Spec[] = [
     { holes: 'none', bg: '#e3e3dc', ink: '#1a1a1a', stack: [['1956', 0.055, 0.28, 0.19, 0.14], ['1956', 0.945, 0.28, 0.19, 0.14]], rules: [[0.11, 0.12, 0.88], [0.89, 0.12, 0.88]],
       t: [['TAXI CAB', 0.5, 0.27, 0.15, { mw: 0.46 }], ['VANCOUVER-B.C.', 0.5, 0.86, 0.14, { mw: 0.66 }]], serial: [0.5, 0.62, 0.27, 0.56],
       grammar: { blocks: [{ pattern: 'D 9' }, { pattern: 'D 99' }, { pattern: 'D 999' }], hint: 'D 1–999 (D prefix as photographed)' } }),
-  van('taxi-1997', 'Taxi Cab · 1997 flat', 1997, 1.75, 'Flat reflective plate: TAXI CAB in green over an embossed blue number, a large VANCOUVER on a blue band of stripes, and the city’s taxicab decal. The photographed plate is badly worn; the decal is drawn as a plain panel.',
-    { holes: 'slots', hx: [0.14, 0.86], hy: [0.06, 0.94], bg: '#eef0ee', ink: '#1f4ab0', rim: 2,
-      shapes: [{ kind: 'rect', x: 0, y: 103 * 0.55, width: 180, height: 103 * 0.25, fill: '#3a8ad8' }, ...[0.84, 0.88].map((y): KitShape => ({ kind: 'line', x1: 8, y1: 103 * y, x2: 172, y2: 103 * y, stroke: '#3a8ad8', strokeWidth: 1.6 }))],
-      t: [['TAXI CAB', 0.5, 0.16, 0.11, { mw: 0.4, color: '#2a9a4a' }], ['VANCOUVER', 0.5, 0.77, 0.2, { mw: 0.88, color: '#f4f6f8' }]],
-      panels: [{ x: 180 * 0.33, y: 103 * 0.8, width: 180 * 0.34, height: 103 * 0.16, background: '#1f7a3a', ink: '#eef0ee', radius: 1, role: 'city-decal',
-        texts: [{ text: '1997', x: 180 * 0.17, baseline: 103 * 0.12, cap: 103 * 0.07, die: LEG, role: 'decal-year' }] }],
-      serial: [0.35, 0.47, 0.27, 0.5], flat: false, grammar: nums(999) }),
+  van('taxi-1996', 'Taxi Cab · centennial base · 1996 decal', 1996, 1.75, 'The clear 1996 TAXI CAB specimen 1071 uses green centennial bands, a blue screened category heading and separate embossed blue serial tooling. A red 1996 renewal decal covers the underlying Vancouver 100 emblem. Blue and green bands are colour alternatives, not inferred manufacture years.',
+    { ...centennialMunicipalBase, w:180,ink:'#45b52b',
+      t:[['TAXI CAB',0.5,0.18,0.115,{die:'municipal-vancouver-frankfurter',mw:0.54,color:'#2483b0',screened:true}]],
+      palettes:centennialBandPalettes('green'),panels:[cityRenewalPanel('TAXICAB','1996','#c82224',103)],
+      serial:[0.5,0.47,0.27,0.55],grammar:nums(9999) }),
+  van('taxi-1997', 'Taxi Cab · centennial base · 1997 decal', 1997, 1.75, 'Frankfurter-style TAXI CAB and VANCOUVER are screened words; the separate embossed numeral tooling is not the Expo alphabet. Blue-band 1997 photograph and green-band 1996 photograph support selectable band colours, not a year-to-colour rule. Vancouver 100 remains on the base underneath the renewal decal.',
+    { ...centennialMunicipalBase, w: 180, ink: '#3a8ad8',
+      t: [['TAXI CAB', 0.5, 0.18, 0.115, {die: 'municipal-vancouver-frankfurter', mw: 0.54, color: '#2c9b89', screened: true}]],
+      palettes: centennialBandPalettes('blue'), panels: [cityRenewalPanel('TAXICAB','1997','#1f643b',103)],
+      serial: [0.43, 0.47, 0.27, 0.55], grammar: nums(9999) }),
   van('for-hire-1949', 'Vehicle for Hire · 1949', 1949, 2.35, 'White on brown: VEHICLE FOR HIRE, the number and VANCOUVER, with the year stacked at the right behind a rule.',
     { holes: 'slots', hx: [0.14, 0.86], hy: [0.06, 0.94], bg: '#3a2218', ink: '#efeae0', stack: [['1949', 0.945, 0.26, 0.21, 0.15]], rules: [[0.895, 0.12, 0.88]],
       t: [['VEHICLE FOR HIRE', 0.44, 0.28, 0.15, { mw: 0.76 }], ['VANCOUVER', 0.44, 0.89, 0.16, { mw: 0.66, spread: true }]], serial: [0.44, 0.64, 0.3, 0.5], grammar: nums(999) }),
   vanSide('for-hire-1970', 'Vehicle for Hire', 1970, 2.35, '#3dbb4a', '#1d4a2a', 'VEHICLE FOR HIRE', 'Dark green on green: the year stacked at the left, VEHICLE FOR HIRE, the number and VANCOUVER.'),
-  van('for-hire-1995', 'Vehicle for Hire · 1995 flat', 1995, 1.95, 'Flat white plate: “Vehicle for Hire” in blue script over an embossed blue number, VANCOUVER in white on green stripes and the city’s orange 1995 decal. The script uses a typeface stand-in; the pencilled owner’s plate number is not drawn.',
-    { holes: 'slots', hx: [0.14, 0.86], hy: [0.07, 0.93], bg: '#eef0ee', ink: '#1f4ab0', rim: 2,
-      shapes: [{ kind: 'rect', x: 0, y: 92 * 0.52, width: 180, height: 92 * 0.22, fill: '#3cc24a' }, ...[0.78, 0.83].map((y): KitShape => ({ kind: 'line', x1: 8, y1: 92 * y, x2: 172, y2: 92 * y, stroke: '#3cc24a', strokeWidth: 1.6 })),
-        { kind: 'line', x1: 30, y1: 92 * 0.2, x2: 172, y2: 92 * 0.2, stroke: '#2a6ad0', strokeWidth: 1 }],
-      f: [['Vehicle for Hire', 0.55, 0.17, 0.15, { color: '#2a6ad0', italic: true, width: 0.5 }]], t: [['VANCOUVER', 0.5, 0.72, 0.2, { mw: 0.8, color: '#f4f6f8' }]],
-      panels: [{ x: 180 * 0.32, y: 92 * 0.76, width: 180 * 0.36, height: 92 * 0.17, background: '#ef6a1e', ink: '#fff5ea', radius: 1, role: 'city-decal',
-        texts: [{ text: '1995', x: 180 * 0.1, baseline: 92 * 0.14, cap: 92 * 0.07, die: LEG, role: 'decal-year' }] }],
-      serial: [0.52, 0.48, 0.26, 0.4], grammar: nums(9999) }),
+  van('for-hire-1986', 'Vehicle for Hire · centennial blank base', 1986, 1.72, 'Blank centennial base photographed with rounded screened Vehicle for Hire and VANCOUVER words, enlarged V/R descenders, green striping and the Vancouver 100 emblem. Frankfurter Std Medium is a visual match; historical production typeface and full lifespan unconfirmed. The blank source has no embossed serial or renewal decal.',
+    { ...centennialMunicipalBase, ink: '#45b52b', t: [['Vehicle for Hire',0.5,0.18,0.118,{die:'municipal-vancouver-frankfurter',mw:0.60,color:'#2483b0',screened:true}]],palettes:centennialBandPalettes('green'),serial:[0.52,0.48,0.26,0.52],grammar:NO_SERIAL }),
+  van('for-hire-1995', 'Vehicle for Hire · centennial base · 1995 decal', 1995, 1.95, 'Rounded Vehicle for Hire and VANCOUVER inscriptions use outlined Frankfurter Std Medium; this is a visual font-family match, not documented original tooling. Separate blue embossed serials follow the municipal specimens. The orange 1995 renewal decal covers the Vancouver 100 emblem on the underlying base. Green and blue bands are selectable photographed alternatives, without inferred year rules. Pencilled owner notes are omitted.',
+    { ...centennialMunicipalBase, ink: '#45b52b',
+      t: [['Vehicle for Hire',0.5,0.18,0.118,{die:'municipal-vancouver-frankfurter',mw:0.60,color:'#2483b0',screened:true}]],
+      palettes:centennialBandPalettes('green'), panels:[cityRenewalPanel('VEHICLE FOR HIRE','1995','#e98b18',92)],
+      serial:[0.52,0.48,0.26,0.52],grammar:nums(9999) }),
   vanSide('commercial-1972', 'Commercial Permit', 1972, 1.95, '#f0c21e', '#2a2a1a', 'COMMERCIAL PERMIT', 'Black on yellow on a raised inner panel: the year stacked at the left, COMMERCIAL PERMIT, the number and VANCOUVER.',
     { shapes: [{ kind: 'rect', x: 180 * 0.04, y: 92 * 0.14, width: 180 * 0.92, height: 92 * 0.72, rx: 4, strokeWidth: 1.2 }] }),
   vanSide('commercial-1982', 'Commercial Permit', 1982, 1.9, '#2a4d9a', '#ee6a24', 'COMMERCIAL PERMIT', 'Orange on blue: the year stacked at the left behind a rule, COMMERCIAL PERMIT, the number and VANCOUVER. Vancouver’s commercial permits were kept after the 1987 provincial CVLD decal (By-Law No. 4021).',

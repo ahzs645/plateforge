@@ -1,0 +1,699 @@
+{
+  "method": "Source-attributed windows and dated specimens, drawn at calendar-year resolution. These bands are not proof of exact physical die introduction/withdrawal. Some are manufacturer eras, others are photographed/gallery coverage or separate renewal pieces. Serial transitions, older stock and class-specific overlap remain independent of calendar bands.",
+  "windows": [
+    {
+      "id": "porcelain-mcclary",
+      "label": "McClary \u00b7 porcelain issue",
+      "profile": "bc-porcelain-1913 / 1914",
+      "category": "serial",
+      "types": [
+        "passenger"
+      ],
+      "start": 1913,
+      "end": 1914,
+      "basis": "source-attributed manufacturer era",
+      "precision": "annual issue context",
+      "source": "https://www.bcpl8s.ca/Passenger-1913-1914.html",
+      "note": "1913 and 1914 numeral variants remain separate in the model; the manufacturer does not certify identical physical dies."
+    },
+    {
+      "id": "tin-macdonald",
+      "label": "MacDonald \u00b7 lithographed tin",
+      "profile": "bc-tin-macdonald",
+      "category": "serial",
+      "types": [
+        "passenger"
+      ],
+      "start": 1915,
+      "end": 1916,
+      "basis": "source-attributed manufacturer / serial run",
+      "precision": "1916 overlap within the year",
+      "source": "https://www.bcpl8s.ca/Passenger-1915-1917.html",
+      "note": "1916 through 9000; Tacey overrun 9001\u20139342 occupies the same calendar year. This is printed lettering, not an embossed die era."
+    },
+    {
+      "id": "tin-tacey",
+      "label": "Tacey \u00b7 tin overrun / 1917",
+      "profile": "bc-tin-tacey",
+      "category": "serial",
+      "types": [
+        "passenger"
+      ],
+      "start": 1916,
+      "end": 1917,
+      "basis": "source-attributed manufacturer / serial run",
+      "precision": "late 1916; not all of 1916",
+      "source": "https://www.bcpl8s.ca/Passenger-1915-1917.html",
+      "note": "9001\u20139342 overrun, then 1917. Coat-of-arms variants do not independently prove a different numeral alphabet."
+    },
+    {
+      "id": "tacey-steel",
+      "label": "Tacey \u00b7 first embossed steel",
+      "profile": "bc-block-1918",
+      "category": "serial",
+      "types": [
+        "passenger"
+      ],
+      "start": 1918,
+      "end": 1923,
+      "basis": "source-attributed manufacturer and die context",
+      "precision": "base / renewal era",
+      "source": "https://www.bcpl8s.ca/Passenger-1918-1923.html",
+      "note": "Source relates the dies to Washington 1918\u201320 tooling. Renewal tabs and smaller legends have independent lettering."
+    },
+    {
+      "id": "tacey-slanted",
+      "label": "Tacey \u00b7 slanted oval / scroll",
+      "profile": "bc-tacey-1924",
+      "category": "serial",
+      "types": [
+        "passenger"
+      ],
+      "start": 1924,
+      "end": 1927,
+      "basis": "source-attributed die-family era",
+      "precision": "annual issue context",
+      "source": "https://www.bcpl8s.ca/Passenger-1924-1929.html",
+      "note": "Reappears under Oakalla in 1931\u201332; separate dates are not necessarily cut from this serial alphabet."
+    },
+    {
+      "id": "tacey-straight",
+      "label": "Tacey \u00b7 straighter dies",
+      "profile": "bc-straight-1928",
+      "category": "serial",
+      "types": [
+        "passenger"
+      ],
+      "start": 1928,
+      "end": 1929,
+      "basis": "source-attributed die-family era",
+      "precision": "annual issue context",
+      "source": "https://www.bcpl8s.ca/Passenger-1924-1929.html",
+      "note": "1930 is a separate one-year Thompson issue; it is not included merely because a model profile label once spanned 1928\u201330."
+    },
+    {
+      "id": "thompson-1930",
+      "label": "Thompson \u00b7 one-year issue",
+      "profile": "bc-thompson-1930",
+      "category": "serial",
+      "types": [
+        "passenger"
+      ],
+      "start": 1930,
+      "end": 1930,
+      "basis": "source-attributed manufacturer era",
+      "precision": "annual issue context",
+      "source": "https://www.bcpl8s.ca/Passenger-1930.html",
+      "note": "Separate serial and province-lettering components; no same-year non-passenger identity is inferred."
+    },
+    {
+      "id": "oakalla-slanted",
+      "label": "Oakalla \u00b7 reused slanted family",
+      "profile": "bc-tacey-1924",
+      "category": "serial",
+      "types": [
+        "passenger"
+      ],
+      "start": 1931,
+      "end": 1932,
+      "basis": "source-attributed die-family reuse",
+      "precision": "annual issue context",
+      "source": "https://www.bcpl8s.ca/Passenger-1931-1935.html",
+      "note": "Same broad slanted family comparison, not certification of every physical tool. Early trailers retain their independent upright small-format letters."
+    },
+    {
+      "id": "oakalla-straight",
+      "label": "Oakalla \u00b7 straighter family",
+      "profile": "bc-straight-1928",
+      "category": "serial",
+      "types": [
+        "passenger"
+      ],
+      "start": 1933,
+      "end": 1935,
+      "basis": "source-attributed die-family era",
+      "precision": "annual issue context",
+      "source": "https://www.bcpl8s.ca/Passenger-1931-1935.html",
+      "note": "The leading bar on four-digit numbers is a layout/punctuation feature. Province and date stamps stay independent."
+    },
+    {
+      "id": "oakalla-slimline",
+      "label": "Oakalla \u00b7 slimline slanted family",
+      "profile": "bc-tacey-1936",
+      "category": "serial",
+      "types": [
+        "passenger"
+      ],
+      "start": 1936,
+      "end": 1939,
+      "basis": "source-attributed die/design era",
+      "precision": "annual issue context",
+      "source": "https://www.bcpl8s.ca/Passenger-1936-1939.html",
+      "note": "The source describes 1938 tooling copied closely from 1937. Similar contours need not be the identical physical tools."
+    },
+    {
+      "id": "oakalla-rounded",
+      "label": "Oakalla \u00b7 rounded passenger family",
+      "profile": "bc-early-1940",
+      "category": "serial",
+      "types": [
+        "passenger"
+      ],
+      "start": 1940,
+      "end": 1954,
+      "basis": "source survey and photographed era",
+      "precision": "base / renewal context",
+      "source": "https://www.bcpl8s.ca/Passenger-1940-1948.html",
+      "note": "1951 strip and 1953/54 tabs belong to independent small lettering lanes; cross-class serial comparisons need their own support."
+    },
+    {
+      "id": "oakalla-machinery",
+      "label": "Oakalla \u00b7 new machinery / block family",
+      "profile": "bc-oakalla-1955",
+      "category": "serial",
+      "types": [
+        "passenger"
+      ],
+      "start": 1955,
+      "end": 1969,
+      "basis": "source-attributed production machinery / die context",
+      "precision": "annual issue context",
+      "source": "https://www.bcpl8s.ca/Passenger-1955-1963.html",
+      "note": "Province lettering changes in 1964 with older long dies recurring. A shared manufacturer is not sufficient to merge compact motorcycle tooling."
+    },
+    {
+      "id": "oakalla-1970",
+      "label": "Oakalla \u00b7 1970 passenger base",
+      "profile": "bc-oakalla-1970",
+      "category": "serial",
+      "types": [
+        "passenger"
+      ],
+      "start": 1970,
+      "end": 1972,
+      "basis": "source-attributed manufacturer/base",
+      "precision": "base context; decals not manufacture dates",
+      "source": "https://www.bcpl8s.ca/Passenger-1970-1972.html",
+      "note": "Old plates may survive into later renewal dates; this band is the documented base-production context."
+    },
+    {
+      "id": "oakalla-1973",
+      "label": "Oakalla \u00b7 1973 passenger base",
+      "profile": "bc-oakalla-1973",
+      "category": "serial",
+      "types": [
+        "passenger"
+      ],
+      "start": 1973,
+      "end": 1977,
+      "basis": "source-attributed manufacturer/base",
+      "precision": "base context",
+      "source": "https://www.bcpl8s.ca/Passenger-1973-1978.html",
+      "note": "Ham-radio and commercial classes retain their own overlap and legend/date reuse exceptions."
+    },
+    {
+      "id": "acme-quebec",
+      "label": "ACME \u00b7 Quebec-style passenger family",
+      "profile": "bc-acme-1978 / 1979",
+      "category": "serial",
+      "types": [
+        "passenger"
+      ],
+      "start": 1978,
+      "end": 1982,
+      "basis": "source-attributed manufacturer / estimated serial handover",
+      "precision": "ARX transition is approximate within 1982",
+      "source": "https://www.bcpl8s.ca/Passenger-1979-1985.html",
+      "note": "1979 base continues the 1978-style family. Crisper/sloppier paint blocks alone do not define a new alphabet."
+    },
+    {
+      "id": "hisigns-ns",
+      "label": "Hi-Signs \u00b7 Nova Scotia-style passenger family",
+      "profile": "bc-hisigns-1982",
+      "category": "serial",
+      "types": [
+        "passenger"
+      ],
+      "start": 1982,
+      "end": 1985,
+      "basis": "source-attributed manufacturer / estimated serial handover",
+      "precision": "around ARX-999; same base overlaps ACME",
+      "source": "https://www.bcpl8s.ca/Passenger-1979-1985.html",
+      "note": "This does not transfer the passenger serial transition to industrial, logging or other classes."
+    },
+    {
+      "id": "astro-main",
+      "label": "Astrographic \u00b7 flag-base production context",
+      "profile": "bc-astro-1 / 2 / 3 / 4",
+      "category": "serial",
+      "types": [
+        "passenger"
+      ],
+      "start": 1985,
+      "end": 2002,
+      "basis": "source-attributed manufacturer context",
+      "precision": "subtypes coexist; later exceptions not bounded by this band",
+      "source": "https://www.bcpl8s.ca/Passenger-1985-2001.html",
+      "note": "Male/female, neoprene-top, non-passenger and Classic observations cannot all receive exact start/end dates from this broad band. Neoprene production reportedly retained the same male dies."
+    },
+    {
+      "id": "waldale-trial",
+      "label": "Waldale \u00b7 short passenger trial",
+      "profile": "bc-waldale",
+      "category": "serial",
+      "types": [
+        "passenger"
+      ],
+      "start": 1998,
+      "end": 1999,
+      "basis": "source-attributed short production run",
+      "precision": "documented run; not the main contract start",
+      "source": "https://www.bcpl8s.ca/Passenger-1985-2001.html",
+      "note": "Trial appears alongside Astrographic production; date labels alone do not settle a specimen\u2019s die."
+    },
+    {
+      "id": "waldale-main",
+      "label": "Waldale \u00b7 principal passenger contract",
+      "profile": "bc-waldale",
+      "category": "serial",
+      "types": [
+        "passenger"
+      ],
+      "start": 2002,
+      "end": 2026,
+      "basis": "source-attributed manufacturer and serial transition",
+      "precision": "November 2002; ongoing end is current catalogue coverage",
+      "source": "https://www.bcpl8s.ca/Passenger-2001-2014.html",
+      "note": "Principal transition 999-HFK / 000-HGA, with early HFE and late Astrographic JFG\u2013JFK exceptions. End 2026 means ongoing catalogue coverage, not factory withdrawal.",
+      "ongoing": true
+    },
+    {
+      "id": "mc-astro",
+      "label": "Motorcycle \u00b7 compact Astrographic context",
+      "profile": "small Astrographic",
+      "category": "serial",
+      "types": [
+        "motorcycle"
+      ],
+      "start": 1986,
+      "end": 2003,
+      "basis": "source-attributed compact manufacturer era",
+      "precision": "class-specific overlap",
+      "source": "https://www.bcpl8s.ca/Motorcycle.htm",
+      "note": "Compact tooling is kept separate from full-size passenger profiles; exact subtype transitions remain unconfirmed."
+    },
+    {
+      "id": "mc-waldale",
+      "label": "Motorcycle \u00b7 compact Waldale context",
+      "profile": "small Waldale",
+      "category": "serial",
+      "types": [
+        "motorcycle"
+      ],
+      "start": 2003,
+      "end": 2026,
+      "basis": "source-attributed compact manufacturer era",
+      "precision": "ongoing; 2011 enlargement is separate",
+      "source": "https://www.bcpl8s.ca/Motorcycle.htm",
+      "note": "The 2011 redesign increased lettering 3/8 inch at S59-000. End 2026 is catalogue coverage, not tooling withdrawal.",
+      "ongoing": true
+    },
+    {
+      "id": "utility-astro",
+      "label": "Utility trailer \u00b7 Astrographic specimens",
+      "profile": "compact Astrographic",
+      "category": "serial",
+      "types": [
+        "trailer"
+      ],
+      "start": 2000,
+      "end": 2004,
+      "basis": "source gallery / specimen coverage",
+      "precision": "not a complete production lifetime",
+      "source": "https://www.bcpl8s.ca/Trailer-Utility.htm",
+      "note": "Overlaps the source\u2019s 2002\u201316 Waldale gallery; exact serial handover is unresolved.",
+      "recordIds": [
+        "trailer-utility-flag-2000",
+        "trailer-utility-2016"
+      ]
+    },
+    {
+      "id": "utility-waldale",
+      "label": "Utility trailer \u00b7 Waldale specimens",
+      "profile": "compact Waldale",
+      "category": "serial",
+      "types": [
+        "trailer"
+      ],
+      "start": 2002,
+      "end": 2016,
+      "basis": "source gallery / specimen coverage",
+      "precision": "not a complete production lifetime",
+      "source": "https://www.bcpl8s.ca/Trailer-Utility.htm",
+      "note": "A model preset labelled 2000\u20132016 cannot make the entire period Waldale manufacture.",
+      "recordIds": [
+        "trailer-utility-flag-2000",
+        "trailer-utility-2016"
+      ]
+    },
+    {
+      "id": "collector-mc-waldale",
+      "label": "Collector motorcycle \u00b7 first Waldale observation onward",
+      "profile": "small Waldale",
+      "category": "serial",
+      "types": [
+        "specialty"
+      ],
+      "start": 2007,
+      "end": 2026,
+      "basis": "source observation / class-specific manufacturer",
+      "precision": "first observation; ongoing catalogue coverage",
+      "source": "https://www.bcpl8s.ca/Collector.htm",
+      "note": "Earlier first batch B8-0001\u2013B8-5000 is Astrographic. The passenger Collector mid-B54 transition has no forced calendar date.",
+      "ongoing": true,
+      "recordIds": [
+        "collector-motorcycle",
+        "collector-motorcycle-multi"
+      ]
+    },
+    {
+      "id": "province-long",
+      "label": "Long province legend \u00b7 documented passenger use",
+      "profile": "bc-legend-1955",
+      "category": "province",
+      "types": [
+        "passenger"
+      ],
+      "start": 1955,
+      "end": 1963,
+      "basis": "source-attributed province-lettering context",
+      "precision": "documented use; possible earlier use is not plotted",
+      "source": "https://www.bcpl8s.ca/Passenger-1955-1963.html",
+      "note": "Older long province dies recur unpredictably in 1964 and on late 1973 commercial plates. This band does not assert introduction in 1955 or withdrawal in 1963."
+    },
+    {
+      "id": "province-long-1964",
+      "label": "Long province legend \u00b7 1964 coexistence",
+      "profile": "bc-legend-1955",
+      "category": "province",
+      "types": [
+        "passenger"
+      ],
+      "start": 1964,
+      "end": 1964,
+      "basis": "source-explicit component coexistence",
+      "precision": "random specimens, no serial cutoff",
+      "source": "https://www.bcpl8s.ca/Passenger-1964-1969.html",
+      "note": "Long and short legends appear even on the same registration number. Serial alphabet and province legend are independent."
+    },
+    {
+      "id": "commercial-passenger-legend",
+      "label": "Passenger province die on late commercial base",
+      "profile": "passenger province legend",
+      "category": "province",
+      "types": [
+        "commercial"
+      ],
+      "start": 1973,
+      "end": 1975,
+      "basis": "source-explicit component reuse within a base",
+      "precision": "base period, not exact stamping date",
+      "source": "https://www.bcpl8s.ca/CommercialTruck1972-1975.html",
+      "note": "970000 and 30000\u201339999 overrun; 1968/69 passenger 19 date tool also appears in 980000/990000. These serial windows are more precise than calendar inference."
+    },
+    {
+      "id": "strip-1951",
+      "label": "1951 \u00b7 separately issued renewal strip",
+      "profile": "bc-strip-1951",
+      "category": "renewal",
+      "types": [
+        "passenger",
+        "commercial",
+        "samples"
+      ],
+      "start": 1951,
+      "end": 1951,
+      "basis": "source-dated independent renewal component",
+      "precision": "renewal year, not base manufacture",
+      "source": "https://www.bcpl8s.ca/Passenger-1949-1951.html",
+      "note": "Strip lettering is independent of the 1950 base serial and base date.",
+      "componentCategory": "renewal"
+    },
+    {
+      "id": "tabs-1953-54",
+      "label": "1953/54 \u00b7 separately issued side tabs",
+      "profile": "bc-tab-1953",
+      "category": "renewal",
+      "types": [
+        "passenger",
+        "commercial",
+        "official",
+        "samples"
+      ],
+      "start": 1953,
+      "end": 1954,
+      "basis": "source-dated independent renewal component",
+      "precision": "renewal years, not base manufacture",
+      "source": "https://www.bcpl8s.ca/Passenger-1952-1954.html",
+      "note": "Small tab dates and retained 1952 base date are independent components.",
+      "componentCategory": "renewal"
+    },
+    {
+      "id": "lg-arms-2003",
+      "label": "Lieutenant Governor arms \u00b7 2003 photograph label",
+      "profile": "supplied solid gold artwork",
+      "category": "artwork",
+      "types": [
+        "official"
+      ],
+      "start": 2003,
+      "end": 2003,
+      "basis": "dated source photograph / caption",
+      "precision": "photograph label, not plate manufacture",
+      "source": "https://www.bcpl8s.ca/LGpl8.htm",
+      "note": "An older arms specimen is labelled 2003. Its introduction date is not established by this photograph; the model\u2019s 1998 start is approximate.",
+      "recordIds": [
+        "official-lt-governor-arms"
+      ]
+    },
+    {
+      "id": "lg-crest-replacement",
+      "label": "Lieutenant Governor crest \u00b7 2008 design replacement",
+      "profile": "supplied crest artwork",
+      "category": "artwork",
+      "types": [
+        "official"
+      ],
+      "start": 2008,
+      "end": 2008,
+      "basis": "source-attributed design change",
+      "precision": "design announcement, not withdrawal of every older plate",
+      "source": "https://www.bcpl8s.ca/LGpl8.htm",
+      "note": "The crest replaces the arms design in 2008, but the source also labels an older arms photograph 2016. Both design histories can overlap in service.",
+      "recordIds": [
+        "official-lt-governor-crest"
+      ]
+    },
+    {
+      "id": "lg-arms-2016",
+      "label": "Lieutenant Governor arms \u00b7 2016 photograph label",
+      "profile": "supplied solid gold artwork",
+      "category": "artwork",
+      "types": [
+        "official"
+      ],
+      "start": 2016,
+      "end": 2016,
+      "basis": "dated source photograph / caption",
+      "precision": "photograph label, not plate manufacture",
+      "source": "https://www.bcpl8s.ca/LGpl8.htm",
+      "note": "Old arms are still shown by the source in a 2016-labelled photograph after the crest\u2019s 2008 replacement. This supports overlap and prevents an assumed universal 2008 withdrawal.",
+      "recordIds": [
+        "official-lt-governor-arms"
+      ]
+    },
+    {
+      "id": "municipal-vancouver-blank",
+      "label": "Vancouver \u00b7 blank centennial base \u00b7 1986 label",
+      "profile": "municipal-vancouver-frankfurter",
+      "category": "province",
+      "types": [
+        "municipal"
+      ],
+      "start": 1986,
+      "end": 1986,
+      "basis": "dated source specimen / visual component comparison",
+      "precision": "specimen/decal labels, not manufacture or tooling lifespan",
+      "source": "https://www.bcpl8s.ca/Municipal-Vancouver.html",
+      "note": "Screened words visually support Frankfurter Std Medium as the model match, with Vancouver 100 artwork on the blank base. Historical font identity and full lifespan are unconfirmed; the blank has no embossed number or decal.",
+      "recordIds": [
+        "municipal-vancouver-for-hire-1986"
+      ]
+    },
+    {
+      "id": "municipal-vancouver-hire",
+      "label": "Vancouver \u00b7 for-hire \u00b7 1995 decal label",
+      "profile": "municipal-vancouver-frankfurter",
+      "category": "province",
+      "types": [
+        "municipal"
+      ],
+      "start": 1995,
+      "end": 1995,
+      "basis": "dated source specimen / visual component comparison",
+      "precision": "specimen/decal labels, not manufacture or tooling lifespan",
+      "source": "https://www.bcpl8s.ca/Municipal-Vancouver.html",
+      "note": "Screened city/category words, embossed serial and renewal decal are independent components. The decal covers the underlying Vancouver 100 emblem. A 1995 decal does not establish manufacture or introduce the typeface.",
+      "recordIds": [
+        "municipal-vancouver-for-hire-1995"
+      ]
+    },
+    {
+      "id": "municipal-vancouver-taxi",
+      "label": "Vancouver \u00b7 taxi specimens \u00b7 1996/1997 labels",
+      "profile": "municipal-vancouver-embossed",
+      "category": "serial",
+      "types": [
+        "municipal"
+      ],
+      "start": 1996,
+      "end": 1997,
+      "basis": "dated source specimen / visual component comparison",
+      "precision": "specimen/decal labels, not manufacture or tooling lifespan",
+      "source": "https://www.bcpl8s.ca/Municipal-Vancouver.html",
+      "note": "Photographs label taxi 1071 in 1996 and 254 in 1997. Their embossed municipal serials are independent of the screened Frankfurter-style words. Green and blue bands are observed alternatives, without a year-to-colour rule or shared provincial tooling claim.",
+      "recordIds": [
+        "municipal-vancouver-taxi-1996",
+        "municipal-vancouver-taxi-1997"
+      ]
+    },
+    {
+      "id": "municipal-pg-1959",
+      "label": "Prince George \u00b7 city vehicle \u00b7 1959 label",
+      "profile": "municipal-prince-george-digits",
+      "category": "serial",
+      "types": [
+        "municipal"
+      ],
+      "start": 1959,
+      "end": 1959,
+      "basis": "dated source specimen / visual component comparison",
+      "precision": "specimen/decal labels, not manufacture or tooling lifespan",
+      "source": "https://www.bcpl8s.ca/Municipal-City-Issues.htm",
+      "note": "The specimen supports wide upper city words, taller narrower VEHICLE and rounded serif date/serial constructions. The date and serial share a model reconstruction; maker, complete numeral accuracy and physical tooling identity remain unconfirmed. Bicycle tags are a separate cohort.",
+      "recordIds": [
+        "municipal-city-prince-george"
+      ]
+    },
+    {
+      "id": "municipal-pg-1962",
+      "label": "Prince George \u00b7 city vehicle \u00b7 1962 label",
+      "profile": "municipal-prince-george-tall",
+      "category": "province",
+      "types": [
+        "municipal"
+      ],
+      "start": 1962,
+      "end": 1962,
+      "basis": "dated source specimen / visual component comparison",
+      "precision": "specimen/decal labels, not manufacture or tooling lifespan",
+      "source": "https://www.bcpl8s.ca/Municipal-City-Issues.htm",
+      "note": "A distinct photographed layout has date above, a single city line, small serif number and spaced VEHICLE. Its damaged edge is not reproduced. Model component reuse supports comparison, not proof of the same maker, physical tools or a 1962 transition.",
+      "recordIds": [
+        "municipal-city-prince-george-1962"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "label": "Passenger Waldale handover",
+      "types": [
+        "passenger"
+      ],
+      "year": 2002,
+      "serial": "999-HFK \u2192 000-HGA",
+      "source": "https://www.bcpl8s.ca/Passenger-2001-2014.html",
+      "note": "Main contract from November 2002; early HFE and later Astrographic JFG\u2013JFK exceptions."
+    },
+    {
+      "label": "Collector passenger handover",
+      "types": [
+        "specialty"
+      ],
+      "year": null,
+      "serial": "mid-B54",
+      "source": "https://www.bcpl8s.ca/Collector.htm",
+      "note": "No calendar date is forced onto this class-specific serial boundary."
+    },
+    {
+      "label": "Commercial flag-base handover",
+      "types": [
+        "commercial"
+      ],
+      "year": null,
+      "serial": "GD\u2013GF",
+      "source": "https://www.bcpl8s.ca/CommercialTruck1985-2009.html",
+      "note": "Astrographic and Waldale production coexist on the same design."
+    },
+    {
+      "label": "Farm truck handover",
+      "types": [
+        "farm"
+      ],
+      "year": null,
+      "serial": "around G1-9000",
+      "source": "https://www.bcpl8s.ca/Farm-Truck.html",
+      "note": "Class-specific estimate; not the passenger 2002 boundary."
+    },
+    {
+      "label": "Restricted vehicle handover",
+      "types": [
+        "industrial"
+      ],
+      "year": null,
+      "serial": "between 01500X and 03600X",
+      "source": "https://www.bcpl8s.ca/Restricted.html",
+      "note": "Transition bracket only; do not assign a manufacture year from a later decal."
+    },
+    {
+      "label": "Motorcycle lettering enlargement",
+      "types": [
+        "motorcycle"
+      ],
+      "year": 2011,
+      "serial": "S59-000",
+      "source": "https://www.bcpl8s.ca/Motorcycle.htm",
+      "note": "3/8 inch enlargement; compact alphabet identity still needs photographed comparison."
+    },
+    {
+      "label": "Reduced trailer prefix begins",
+      "types": [
+        "trailer"
+      ],
+      "year": 1927,
+      "serial": "T / later TR",
+      "source": "https://www.bcpl8s.ca/Trailer.htm",
+      "note": "Prefix lettering is smaller than the number and separate from BC/date stamps."
+    },
+    {
+      "label": "Mixed motorcycle dies",
+      "types": [
+        "motorcycle"
+      ],
+      "year": 1974,
+      "serial": "mixed 1 specimens",
+      "source": "https://www.bcpl8s.ca/Motorcycle.htm",
+      "note": "Different glyph types coexist on individual plates; the year does not determine a uniform alphabet."
+    },
+    {
+      "label": "Lieutenant Governor crest and older arms coexist",
+      "types": [
+        "official"
+      ],
+      "year": 2008,
+      "serial": "2008 replacement; older arms photograph labelled 2016",
+      "source": "https://www.bcpl8s.ca/LGpl8.htm",
+      "note": "The arms model begins approximately 1998 and covers the 2003/2016-labelled source examples. The crest model begins 2008. These are design/use and photograph labels; exact production and individual manufacture dates remain unconfirmed."
+    }
+  ]
+}

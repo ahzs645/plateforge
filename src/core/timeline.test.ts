@@ -13,7 +13,7 @@ describe('country grouping', () => {
   });
   it('groups U.S. states and Canadian provinces under their countries in North America', () => {
     expect(country('United States')?.regions).toHaveLength(52);
-    expect(country('Canada')?.regions.map((r) => r.id)).toEqual(['ca-bc', 'ca-ab', 'ca-sk', 'ca-mb', 'ca-on', 'ca-qc', 'ca-nb', 'ca-ns', 'ca-pe', 'ca-nl', 'ca-yt', 'ca-nt', 'ca-nu']);
+    expect(country('Canada')?.regions.map((r) => r.id)).toEqual(['ca-federal', 'ca-bc', 'ca-ab', 'ca-sk', 'ca-mb', 'ca-on', 'ca-qc', 'ca-nb', 'ca-ns', 'ca-pe', 'ca-nl', 'ca-yt', 'ca-nt', 'ca-nu']);
     expect(groups.find((c) => c.continent === 'North America')?.countries.map((g) => g.country)).toEqual(expect.arrayContaining(['Canada', 'United States']));
   });
   it('treats national regions as their own country', () => {

@@ -90,6 +90,7 @@ export function FormatTimeline({ region, timeline, format, onSelect, onOpenGalle
           </div>
         ) : renderEra(item.era))}
       </div>
+      {region.id === 'ca-bc' && <p className="timeline-caption"><a href={`${import.meta.env.BASE_URL}bc-font-comparisons/die-grouping/?view=timeline`}>Die and smaller-lettering timeline ↗</a></p>}
       {era && entry && <p className="timeline-caption">
         <strong>{era.label}</strong> <span className="mono">{formatPeriod(era.period)}</span>{era.summary ? ` — ${era.summary}` : ''}
       </p>}

@@ -1,0 +1,24 @@
+{
+  "site": "http://127.0.0.1:5176/plateforge/",
+  "cases": [
+    {
+      "format": "official-lt-governor-crest",
+      "artwork": "official-lg-crest-supplied",
+      "SVGPNGExports": true,
+      "mobileOverflow": false
+    },
+    {
+      "format": "official-lt-governor-arms",
+      "artwork": "official-lg-arms-solid",
+      "SVGPNGExports": true,
+      "mobileOverflow": false
+    },
+    {
+      "format": "events-royal-crown",
+      "artwork": "official-edward-crown-supplied",
+      "SVGPNGExports": true,
+      "mobileOverflow": false
+    }
+  ],
+  "errors": []
+}

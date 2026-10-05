@@ -58,12 +58,18 @@ for f in inventory['formats']:
   category='small / compact tooling' if small else 'full-size serial tooling';group=d+('-small' if small else '-full');label=p.get('label',d)+(' · small / compact' if small else ' · full-size');maker=p.get('maker') or maker_map.get(d) or 'Not established from profile alone'
   if f['status'] not in ('issued','official-sample'):notes.append('Non-issued example: design/date alone does not establish registration production tooling.')
   if f['type'] in ('samples','events'):assignment='Sample / special issue; provenance needs separate review'
+ if id in ('municipal-vancouver-for-hire-1986','municipal-vancouver-for-hire-1995','municipal-vancouver-taxi-1996','municipal-vancouver-taxi-1997'):
+  category='local / small tooling';group='local-vancouver-centennial';label='Vancouver centennial city base · screened words / separate serial';maker='Local city issue; manufacturer unconfirmed';assignment='Photographic component support; historical font/tooling unconfirmed';notes=[n for n in notes if not n.startswith('Generic model alphabet')]
+  notes.append('Screened Frankfurter Std Medium is the visual model match; its digital foundry is not the plate manufacturer. Embossed municipal serials remain separate. 1986 blank and later decal/photo labels do not establish a font lifetime or year-to-band-colour rule.')
+ elif id in ('municipal-city-prince-george','municipal-city-prince-george-1962'):
+  category='local / small tooling';group='local-prince-george-vehicle';label='Prince George vehicle plates · component comparison';maker='Local city issue; manufacturer unconfirmed';assignment='Photographic component support; exact tooling unconfirmed';notes=[n for n in notes if not n.startswith('Generic model alphabet')]
+  notes.append('1959 and 1962 are distinct photographed layouts with separate wide/narrow city legends, VEHICLE and rounded serif numeral constructions. Reused model components do not certify physical tooling identity. Prince George bicycle tags remain separate.')
  if id in ('commercial-flag-2008','farm-truck-2025','trailer-utility-flag-2000','trailer-utility-2016') and d=='bc-waldale':notes.append('Corrected declared single-option default: the registered recipe now uses Waldale instead of an inherited Astrographic default. Historical production still follows its class-specific run, not the base-design date.')
  if id=='trailer-utility-flag-2000':notes.append('The base spans overlapping Astrographic 2000–04 and Waldale 2002–16 manufacture. A declared Waldale model choice does not assign the entire base period to Waldale; exact serial transition is unresolved.')
  if id=='industrial-logging-1984':notes.append('Source proposes Hi-Signs from visual die evidence; ACME default remains a research assignment to review. This is an estimate, not an exact serial transition.')
  consistency=next((x for x in diagnostics.get('comparisons',[]) if x['format']==id and x['profile']==d),None)
  capture=capture_map.get(id,{})
- records.append({'id':id,'label':f['label'],'type':f['type'],'period':f['period'],'status':f['status'],'profile':d,'profileLabel':p.get('label',d),'maker':maker,'group':group,'groupLabel':label,'toolingVariant':category,'assignment':assignment,'physicalMm':physical,'serialCapMm':f['serialCapMm'],'sampleSerial':capture.get('serial',serial),'sources':f['sources'],'evidenceRules':findings,'notes':list(dict.fromkeys(n for n in notes if n)),'components':f['legendDies'],'sharedPassengerMasters':f['sharedPassengerMasters'],'productionDateInferred':False,'identicalPhysicalToolingConfirmed':False,'browserSelected':capture.get('selected',False),'previewCaptured':capture.get('previewCaptured',False),'consistency':({k:consistency[k] for k in ['passengerReference','effectiveResearchContext','explicitSharedMapping','matchingCharacters','differingCharacters'] if k in consistency} if consistency else None)})
+ records.append({'id':id,'label':f['label'],'type':f['type'],'period':f['period'],'status':f['status'],'profile':d,'profileLabel':p.get('label',d),'maker':maker,'group':group,'groupLabel':label,'toolingVariant':category,'assignment':assignment,'physicalMm':physical,'serialCapMm':f['serialCapMm'],'sampleSerial':capture.get('serial',serial),'sources':f['sources'],'evidenceRules':findings,'notes':list(dict.fromkeys(n for n in notes if n)),'components':f['legendDies'],'letteringComponents':f.get('letteringComponents',[]),'componentExtractionError':f.get('componentExtractionError'),'prefixDie':f.get('prefixDie'),'serialDieOptions':f.get('dieOptions',[]),'sharedPassengerMasters':f['sharedPassengerMasters'],'productionDateInferred':False,'identicalPhysicalToolingConfirmed':False,'browserSelected':capture.get('selected',False),'previewCaptured':capture.get('previewCaptured',False),'consistency':({k:consistency[k] for k in ['passengerReference','effectiveResearchContext','explicitSharedMapping','matchingCharacters','differingCharacters'] if k in consistency} if consistency else None)})
 for f in records:
  related=[x for x in records if x['id']!=f['id'] and x['type']!=f['type'] and x['group']==f['group']]
  related.sort(key=lambda x:(x['type']!='passenger',abs((x['period'] or [0])[0]-(f['period'] or [0])[0]),x['id']))
@@ -89,8 +95,12 @@ for f in records:
    if x and cid!=f['id'] and cid not in {r['id']for r in explicit}:
     explicit.append({'id':cid,'label':x['label'],'type':x['type'],'basis':'Source-directed design / manufacturer comparison. '+rule.get('limits','Exact alphabet and physical tool identity remain unconfirmed.')})
  if explicit:f['related']=(explicit+[r for r in f['related'] if r['id'] not in {x['id']for x in explicit}])[:4]
+for record in records:
+ if record['group']=='local-vancouver-centennial':
+  event=record_by_id.get('events-expo86-souvenir')
+  if event:record['related'].append({'id':event['id'],'label':event['label'],'type':event['type'],'basis':'Screened inscriptions visually use the same digital Frankfurter Std Medium reconstruction. This does not compare the embossed municipal numerals or establish the historical production typeface, plate manufacturer or shared physical tools.'})
 photos=[]
-raw_photos=[*hist.get('visualComparisons',[]),*special.get('representativePhotographs',[])]
+raw_photos=[*hist.get('visualComparisons',[]),*[{'title':x.get('specimenLabel',x.get('formatId','Municipal specimen')),'finding':'Source-specific municipal component comparison; factory, full alphabet and exact physical tooling remain unconfirmed.','method':'Original source photograph inspected separately; dated specimen/decal labels are not inferred manufacture dates.',**x}for x in hist.get('representativePhotographs',[])],*special.get('representativePhotographs',[])]
 for photo in modern.get('referencePhotographs',[]):
  observations=[x['observation'] for x in modern.get('visualComparisons',[]) if photo['id'] in x.get('photoIds',[])]
  raw_photos.append({'source':photo['sourceURL'],'localPath':photo['path'],'title':photo['title'],'finding':' '.join(observations),'method':'Original photograph visually inspected in a cross-class contact sheet; no perspective registration or all-glyph outline validation.'})
@@ -103,10 +113,49 @@ for x in raw_photos:
  found=next((p for p in possible if p.exists()),None);target=previous_photos.get(source,{}).get('localImage')
  if found:
   (OUT/'sources').mkdir(exist_ok=True);target='sources/'+found.stem+'.webp';im=Image.open(found).convert('RGB');im.thumbnail((800,450));im.save(OUT/target,'WEBP',quality=91)
+ if x.get('title'):x['title']=re.sub(r'(?<=\d)(?=[A-Za-z])|(?<=[A-Za-z])(?=\d)', ' ',x['title'])
  photos.append({**x,'source':source,'localImage':target})
+category_labels={'serial':'Main serial lettering','prefix':'Reduced / separate prefix','province':'Province / place legend','slogan':'Slogan / motto','date':'Base / event date','descriptor':'Plate class / descriptor','renewal':'Renewal strip / tab lettering','artwork':'Fixed artwork / attached-letter construction'}
+def category(component,record):
+ role=component.get('role','').lower();text=component.get('text','').strip();kind=component.get('kind','');die=component.get('die','')
+ if kind=='fixed artwork':return 'artwork'
+ if 'prefix' in role:return 'prefix'
+ if any(x in role for x in ['renewal','tab-','strip-']):return 'renewal'
+ if 'serial' in role:
+  return 'artwork' if record['group'].startswith(('event-nwt','event-stencil','local-military-')) else 'serial'
+ if any(x in role for x in ['year','date','century']) or re.match(r'^(from|to)-\d+$',role) or re.fullmatch(r'(?:19|20)\d{2}',text):return 'date'
+ if any(x in role for x in ['slogan','motto','tagline']) or 'beautiful' in text.lower():return 'slogan'
+ if any(x in role for x in ['province','country','city']) or role=='bc' or text.replace('.','').upper() in ['BC','BRITISH','COLUMBIA','BRITISH COLUMBIA','CANADA']:return 'province'
+ return 'descriptor'
+for record in records:
+ if record['sampleSerial'] and len(record['serialDieOptions'])>1:
+  observed={c.get('die') for c in record['letteringComponents'] if 'serial' in c.get('role','')}
+  for option in record['serialDieOptions']:
+   if option['value'] not in observed:
+    record['letteringComponents'].append({'text':record['sampleSerial'],'die':option['value'],'role':'serial-option','capMm':None,'kind':'selectable model option','origin':'serial selector availability; not rendered or historical lifespan','modelOption':True,'optionLabel':option.get('label',option['value'])})
+ for component in record['letteringComponents']:
+
+  component['category']=category(component,record)
+  tags=[component['category']];role=component.get('role','').lower();text=component.get('text','').strip();normalized=text.upper().replace('.','')
+  if component['category'] not in ['serial','prefix','artwork']:
+   if any(x in normalized for x in ['BRITISH COLUMBIA','COLUMBIA','CANADA']) or re.match(r'^B\s*C(?:\b|[- ])',normalized):tags.append('province')
+   if re.search(r'\b(?:19|20)\d{2}\b',text) or re.search(r'(?:BC|TRAILER|MOTORCYCLE|TRUCK|DEALER|MUNICIPAL)[ -]+\d{2}$',normalized):tags.append('date')
+  component['categories']=list(dict.fromkeys(tags))
+  profile=profiles.get(component['die'],{})
+  component['profileLabel']=profile.get('label',component['die'])
+  component['profileMaker']=profile.get('maker')
+  if record['group']=='owner-private-early' and profile:
+   component['profileLabel']='Model proxy · '+component['profileLabel']
+   component['profileMaker']=None
+   component['attributionNote']='The recipe proxy does not attribute this privately made plate to the factory that supplied the named profile.'
+  component['toolingVariant']=record['toolingVariant']
+ if not record['letteringComponents']:
+  record['letteringComponents']=[{'text':record['sampleSerial'],'die':'unresolved:'+record['id'],'role':'unresolved-lettering','category':'artwork','kind':'unresolved component','origin':'explicit fallback; no profile attribution','profileLabel':'Unresolved lettering / artwork','toolingVariant':record['toolingVariant'],'capMm':None}]
+timeline_evidence=read(DOC/'timeline-evidence.json',{'windows':[],'events':[]})
+timeline={'start':min(x['period'][0]for x in records if x['period']),'end':max(x['period'][1]for x in records if x['period']),'categoryLabels':category_labels,'componentCount':sum(len(x['letteringComponents'])for x in records),'selectableAlternativeCount':sum(bool(c.get('modelOption'))for r in records for c in r['letteringComponents']),'coveredPresets':len(records),'coverageBasis':'Preset design/use periods mapped to declared scene components. These ranges are neither inferred manufacture dates nor physical die introduction/withdrawal dates. Source-attributed production windows and serial exceptions are shown in a separate evidence layer.','componentMethod':'Declared default scenes are inspected before optional research-typeface replacements. Outline profiles, screened typeface/proxy text, artwork and attached owner-made letters are distinguished. Drawing cap sizes are model fits, not measured physical tools. A combined text run can appear in more than one functional lane; that does not create or certify separate tools. Selectable serial alternatives are model availability only, not observed glyphs or historical manufacturing intervals.','sourceEvidence':timeline_evidence}
 bytype=collections.Counter(x['type'] for x in records);groups=collections.defaultdict(list)
 for x in records:groups[x['group']].append(x)
-report={'title':'B.C. cross-class die and production catalogue','method':'Every current preset was selected in a browser; current reproduction captures are checked separately from representative photographed source comparisons. Grouping uses declared serial profiles and physical tooling buckets, then source rules and explicit exceptions. It does not infer manufacture from a photograph/decal year, certify every glyph, or prove identical physical tools.','coverage':{'presets':len(records),'types':len(bytype),'browserSelected':sum(x['browserSelected'] for x in records),'previews':sum(x['previewCaptured'] for x in records),'byType':dict(bytype),'comparisonGroups':len(groups),'representativePhotographs':len(photos)},'records':records,'groups':[{'id':k,'label':v[0]['groupLabel'],'count':len(v),'types':sorted(set(x['type'] for x in v))} for k,v in groups.items()],'evidenceRules':rules,'photographs':photos,'diagnosticMethod':diagnostics.get('method',''),'sourceLimitations':['Same factory can use multiple alphabets and sizes.','Serials, province legends, slogans, dates and renewal pieces are independent components.','Model outline equality or difference is an implementation diagnostic, not a historical accuracy score.','Source text and a representative photograph do not verify an entire alphabet.']}
+report={'title':'B.C. cross-class die and production catalogue','method':'Every current preset was selected in a browser; current reproduction captures are checked separately from representative photographed source comparisons. Grouping uses declared serial profiles and physical tooling buckets, then source rules and explicit exceptions. It does not infer manufacture from a photograph/decal year, certify every glyph, or prove identical physical tools.','coverage':{'presets':len(records),'types':len(bytype),'browserSelected':sum(x['browserSelected'] for x in records),'previews':sum(x['previewCaptured'] for x in records),'byType':dict(bytype),'comparisonGroups':len(groups),'representativePhotographs':len(photos)},'records':records,'groups':[{'id':k,'label':v[0]['groupLabel'],'count':len(v),'types':sorted(set(x['type'] for x in v))} for k,v in groups.items()],'evidenceRules':rules,'photographs':photos,'timeline':timeline,'diagnosticMethod':diagnostics.get('method',''),'sourceLimitations':['Same factory can use multiple alphabets and sizes.','Serials, province legends, slogans, dates and renewal pieces are independent components.','Model outline equality or difference is an implementation diagnostic, not a historical accuracy score.','Source text and a representative photograph do not verify an entire alphabet.']}
 (DOC/'source-inventory.json').write_text(json.dumps(inventory,indent=2)+'\n')
 (OUT/'catalogue.json').write_text(json.dumps(report,indent=2)+'\n');(DOC/'catalogue.json').write_text(json.dumps(report,indent=2)+'\n')
 for name,data in [('historical-evidence',hist),('modern-evidence',modern),('special-evidence',special),('implementation-consistency',diagnostics)]:

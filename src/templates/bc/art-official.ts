@@ -12,6 +12,8 @@ import { NWT_POLAR_BEAR_PATH, NWT_POLAR_BEAR_BORDER_PATH } from '../shapes/nwt-p
 import royalCanadaArmsUrl from './assets/royal-canada-arms.png';
 import {apecGlobeArtwork, APEC_GLOBE_VIEWBOX} from './apec-globe';
 import {asiaPacificArtwork, ASIA_PACIFIC_VIEWBOX, pacificGatewayArtwork, PACIFIC_GATEWAY_VIEWBOX, royal1994Artwork, ROYAL_1994_VIEWBOX} from './supplied-event-emblems';
+import {suppliedGovernorCrest, suppliedEdwardCrown, solidGovernorArms} from './supplied-governor-artwork';
+import {CREST_BOX} from './crest';
 
 const GOLD = '#c9a646', RED = '#c8202e', BLUE = '#1f3f8f', WHITE = '#ffffff';
 
@@ -159,6 +161,9 @@ registerArtwork('official-canada-arms', { viewBox: [100, 90], draw: canadaArms }
 registerArtwork('royal-canada-arms-supplied', { viewBox: [1096, 1435], accuracy: 'supplied-image',
   draw: () => [n('image', {href: royalCanadaArmsUrl, width: 1096, height: 1435, preserveAspectRatio: 'xMidYMid meet', 'data-source': 'user-supplied-isolated-canadian-coat-of-arms'})] });
 registerArtwork('official-lg-crest', { viewBox: [100, 100], draw: lgCrest });
+registerArtwork('official-lg-crest-supplied', {viewBox: [150, 150], draw: suppliedGovernorCrest});
+registerArtwork('official-lg-arms-solid', {viewBox: [CREST_BOX[0], CREST_BOX[1]], draw: solidGovernorArms, aspect: 'stretch'});
+registerArtwork('official-edward-crown-supplied', {viewBox: [170.69903, 150.46991], draw: suppliedEdwardCrown});
 registerArtwork('official-apec', { viewBox: APEC_GLOBE_VIEWBOX, draw: apecGlobe });
 registerArtwork('official-apec-sticker', { viewBox: [70, 60], draw: apecSticker });
 registerArtwork('official-asia-pacific', { viewBox: ASIA_PACIFIC_VIEWBOX, draw: asiaPacificArtwork });

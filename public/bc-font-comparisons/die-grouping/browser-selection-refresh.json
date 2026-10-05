@@ -1,0 +1,152 @@
+{
+  "method": "Selected each preset URL and rendered the declared default die/flat finish with research lettering enabled after the registry settled with deterministic generated parts. Preview captures and metadata are implementation checks; they do not certify source photograph accuracy, every glyph, or identical physical tooling.",
+  "site": "http://127.0.0.1:5176/plateforge/",
+  "requested": 9,
+  "captured": 9,
+  "errors": [],
+  "elapsedSeconds": 8,
+  "formats": [
+    {
+      "id": "events-royal-crown",
+      "url": "http://127.0.0.1:5176/plateforge/#/ca-bc/events-royal-crown",
+      "selected": true,
+      "previewCaptured": true,
+      "serial": "",
+      "label": "British Columbia \u00b7 Royal vehicle crown plate \u00b7 ",
+      "viewBox": "0 0 300 150",
+      "metadata": "{\"jurisdiction\":\"CA-BC\",\"recipe\":\"events-royal-crown\",\"status\":\"issued\",\"physicalMm\":{\"width\":300,\"height\":150},\"serial\":\"\",\"parts\":{\"serial\":\"\"},\"source\":{\"title\":\"BCpl8s \u00b7 Royal Visits\",\"url\":\"https://www.bcpl8s.ca/Royal.html\"},\"construction\":\"flat\",\"dies\":{\"serial\":\"bc-astro-4\",\"evidence\":\"specimen-matched\",\"fit\":\"natural\"},\"renewal\":null,\"accuracy\":{\"artwork\":\"approximate vector reconstruction\",\"dies\":\"specimen-matched\",\"paint\":\"uncalibrated digital approximation\",\"allocations\":\"supported subset only\"},\"note\":\"Reconstruction from BCpl8s photographs: layout proportions, paint colours and dies are approximate; validation checks the documented serial format, not a real registration. Size unknown (300 \u00d7 150 mm assumed); the 2002 and 2009 photos show a crown. The supplied St Edward\u2019s crown vector replaces the simplified crown construction. Placement and metallic finish remain approximate.\"}",
+      "paths": 45,
+      "profiles": [],
+      "text": "British Columbia \u00b7 Royal vehicle crown plate \u00b7 Reconstruction from BCpl8s photographs: layout proportions, paint colours and dies are approximate; validation checks the documented serial format, not a real registration. Size unknown (300 \u00d7 150 mm assumed); the 2002 and 2009 photos show a crown. The supplied St Edward\u2019s crown vector replaces the simplified crown construction. Placement and metallic finish remain approximate.{\"jurisdiction\":\"CA-BC\",\"recipe\":\"events-royal-crown\",\"status\":\"issued\",\"physicalMm\":{\"width\":300,\"height\":150},\"serial\":\"\",\"parts\":{\"serial\":\"\"},\"source\":{\"title\":\"BCpl8s \u00b7 Royal Visits\",\"url\":\"https://www.bcpl8s.ca/Royal.html\"},\"construction\":\"flat\",\"dies\":{\"serial\":\"bc-astro-4\",\"evidence\":\"specimen-matched\",\"fit\":\"natural\"},\"renewal\":null,\"accuracy\":{\"artwork\":\"approximate vector reconstruction\",\"dies\":\"specimen-matched\",\"paint\":\"uncalibrated digital approximation\",\"allocations\":\"supported subset only\"},\"note\":\"Reconstruction from BCpl8s photographs: layout proportions, paint colours and dies are approximate; validation checks the documented serial format, not a real registration. Size unknown (300 \u00d7 150 mm assumed); the 2002 and 2009 photos show a crown. The supplied St Edward\u2019s crown vector replaces the simplified crown construction. Placement and metallic finish remain approximate.\"}"
+    },
+    {
+      "id": "municipal-city-prince-george",
+      "url": "http://127.0.0.1:5176/plateforge/#/ca-bc/municipal-city-prince-george",
+      "selected": true,
+      "previewCaptured": true,
+      "serial": "871",
+      "label": "British Columbia \u00b7 Prince George \u00b7 1959 \u00b7 pale blue on maroon \u00b7 871",
+      "viewBox": "0 0 180 113",
+      "metadata": "{\"jurisdiction\":\"CA-BC\",\"recipe\":\"municipal-city-prince-george\",\"status\":\"issued\",\"physicalMm\":{\"width\":180,\"height\":113},\"serial\":\"871\",\"parts\":{\"serial\":\"871\",\"finish\":\"flat\"},\"source\":{\"title\":\"BCpl8s \u00b7 Municipal city issues\",\"url\":\"https://www.bcpl8s.ca/Municipal-City-Issues.htm\"},\"construction\":\"embossed\",\"dies\":{\"serial\":\"municipal-prince-george-digits\",\"evidence\":\"legend-approximation\",\"fit\":\"natural\"},\"renewal\":null,\"accuracy\":{\"artwork\":\"approximate vector reconstruction\",\"dies\":\"legend-approximation\",\"paint\":\"uncalibrated digital approximation\",\"allocations\":\"supported subset only\"},\"note\":\"Reconstruction from BCpl8s photographs: layout proportions, colours (read from aged paint) and dies are approximate.\"}",
+      "paths": 36,
+      "profiles": [
+        "municipal-prince-george-digits",
+        "municipal-prince-george-wide",
+        "municipal-prince-george-tall"
+      ],
+      "text": "British Columbia \u00b7 Prince George \u00b7 1959 \u00b7 pale blue on maroon \u00b7 871Reconstruction from BCpl8s photographs: layout proportions, colours (read from aged paint) and dies are approximate.{\"jurisdiction\":\"CA-BC\",\"recipe\":\"municipal-city-prince-george\",\"status\":\"issued\",\"physicalMm\":{\"width\":180,\"height\":113},\"serial\":\"871\",\"parts\":{\"serial\":\"871\",\"finish\":\"flat\"},\"source\":{\"title\":\"BCpl8s \u00b7 Municipal city issues\",\"url\":\"https://www.bcpl8s.ca/Municipal-City-Issues.htm\"},\"construction\":\"embossed\",\"dies\":{\"serial\":\"municipal-prince-george-digits\",\"evidence\":\"legend-approximation\",\"fit\":\"natural\"},\"renewal\":null,\"accuracy\":{\"artwork\":\"approximate vector reconstruction\",\"dies\":\"legend-approximation\",\"paint\":\"uncalibrated digital approximation\",\"allocations\":\"supported subset only\"},\"note\":\"Reconstruction from BCpl8s photographs: layout proportions, colours (read from aged paint) and dies are approximate.\"}1959PRINCEGEORGEVEHICLE871"
+    },
+    {
+      "id": "municipal-city-prince-george-1962",
+      "url": "http://127.0.0.1:5176/plateforge/#/ca-bc/municipal-city-prince-george-1962",
+      "selected": true,
+      "previewCaptured": true,
+      "serial": "299",
+      "label": "British Columbia \u00b7 Prince George \u00b7 1962 \u00b7 pale lettering on green \u00b7 299",
+      "viewBox": "0 0 180 106",
+      "metadata": "{\"jurisdiction\":\"CA-BC\",\"recipe\":\"municipal-city-prince-george-1962\",\"status\":\"issued\",\"physicalMm\":{\"width\":180,\"height\":106},\"serial\":\"299\",\"parts\":{\"serial\":\"299\",\"finish\":\"flat\"},\"source\":{\"title\":\"BCpl8s \u00b7 Municipal city issues\",\"url\":\"https://www.bcpl8s.ca/Municipal-City-Issues.htm\"},\"construction\":\"embossed\",\"dies\":{\"serial\":\"municipal-prince-george-digits\",\"evidence\":\"legend-approximation\",\"fit\":\"natural\"},\"renewal\":null,\"accuracy\":{\"artwork\":\"approximate vector reconstruction\",\"dies\":\"legend-approximation\",\"paint\":\"uncalibrated digital approximation\",\"allocations\":\"supported subset only\"},\"note\":\"Reconstruction from BCpl8s photographs: layout proportions, colours (read from aged paint) and dies are approximate.\"}",
+      "paths": 36,
+      "profiles": [
+        "municipal-prince-george-digits",
+        "municipal-prince-george-tall"
+      ],
+      "text": "British Columbia \u00b7 Prince George \u00b7 1962 \u00b7 pale lettering on green \u00b7 299Reconstruction from BCpl8s photographs: layout proportions, colours (read from aged paint) and dies are approximate.{\"jurisdiction\":\"CA-BC\",\"recipe\":\"municipal-city-prince-george-1962\",\"status\":\"issued\",\"physicalMm\":{\"width\":180,\"height\":106},\"serial\":\"299\",\"parts\":{\"serial\":\"299\",\"finish\":\"flat\"},\"source\":{\"title\":\"BCpl8s \u00b7 Municipal city issues\",\"url\":\"https://www.bcpl8s.ca/Municipal-City-Issues.htm\"},\"construction\":\"embossed\",\"dies\":{\"serial\":\"municipal-prince-george-digits\",\"evidence\":\"legend-approximation\",\"fit\":\"natural\"},\"renewal\":null,\"accuracy\":{\"artwork\":\"approximate vector reconstruction\",\"dies\":\"legend-approximation\",\"paint\":\"uncalibrated digital approximation\",\"allocations\":\"supported subset only\"},\"note\":\"Reconstruction from BCpl8s photographs: layout proportions, colours (read from aged paint) and dies are approximate.\"}1962PRINCE GEORGEVEHICLE299"
+    },
+    {
+      "id": "municipal-vancouver-for-hire-1986",
+      "url": "http://127.0.0.1:5176/plateforge/#/ca-bc/municipal-vancouver-for-hire-1986",
+      "selected": true,
+      "previewCaptured": true,
+      "serial": "",
+      "label": "British Columbia \u00b7 Vancouver \u00b7 Vehicle for Hire \u00b7 centennial blank base \u00b7 ",
+      "viewBox": "0 0 180 105",
+      "metadata": "{\"jurisdiction\":\"CA-BC\",\"recipe\":\"municipal-vancouver-for-hire-1986\",\"status\":\"issued\",\"physicalMm\":{\"width\":180,\"height\":105},\"serial\":\"\",\"parts\":{\"serial\":\"\",\"palette\":\"green\",\"finish\":\"flat\"},\"source\":{\"title\":\"BCpl8s \u00b7 City of Vancouver\",\"url\":\"https://www.bcpl8s.ca/Municipal-Vancouver.html\"},\"construction\":\"embossed\",\"dies\":{\"serial\":\"municipal-vancouver-embossed\",\"evidence\":\"legend-approximation\",\"fit\":\"natural\"},\"renewal\":null,\"accuracy\":{\"artwork\":\"approximate vector reconstruction\",\"dies\":\"legend-approximation\",\"paint\":\"uncalibrated digital approximation\",\"allocations\":\"supported subset only\"},\"note\":\"Reconstruction from BCpl8s photographs: layout proportions, colours (read from aged paint) and dies are approximate.\"}",
+      "paths": 91,
+      "profiles": [
+        "municipal-vancouver-frankfurter",
+        "bc-frankfurter-centennial-years"
+      ],
+      "text": "British Columbia \u00b7 Vancouver \u00b7 Vehicle for Hire \u00b7 centennial blank base \u00b7 Reconstruction from BCpl8s photographs: layout proportions, colours (read from aged paint) and dies are approximate.{\"jurisdiction\":\"CA-BC\",\"recipe\":\"municipal-vancouver-for-hire-1986\",\"status\":\"issued\",\"physicalMm\":{\"width\":180,\"height\":105},\"serial\":\"\",\"parts\":{\"serial\":\"\",\"palette\":\"green\",\"finish\":\"flat\"},\"source\":{\"title\":\"BCpl8s \u00b7 City of Vancouver\",\"url\":\"https://www.bcpl8s.ca/Municipal-Vancouver.html\"},\"construction\":\"embossed\",\"dies\":{\"serial\":\"municipal-vancouver-embossed\",\"evidence\":\"legend-approximation\",\"fit\":\"natural\"},\"renewal\":null,\"accuracy\":{\"artwork\":\"approximate vector reconstruction\",\"dies\":\"legend-approximation\",\"paint\":\"uncalibrated digital approximation\",\"allocations\":\"supported subset only\"},\"note\":\"Reconstruction from BCpl8s photographs: layout proportions, colours (read from aged paint) and dies are approximate.\"}VANCOUVERVancouver Centennial 100 - city of the centuryA constructed vector reconstruction of the supplied Vancouver Centennial PNG. Smooth analytic ovals, designed mountain ridges, editable horizontal bands, and separate building silhouettes. Both wordmarks use manually authored glyph geometry. No bitmap tracing, embedded raster, font file, or live text. Frankfurter Normal is a strong visual candidate for the upper wordmark; the lower font is unconfirmed. Exterior is transparent; white inside the 100 is intentional. RGB colour approximations sampled from the supplied reference. This is a new reconstruction, not an authenticated historical vector master.Continuous foreground foundationLow western waterfrontLow pavilion, with a raised flat central roofWestern building with three orthogonal roof tiersTwo ascending roofs beside the first tall office blockFirst tall office block, with an inset crownLow central roof with a small flat summit and angled shouldersSmall central block with a narrow raised capSecond tall office block and its right-hand terraceHighest central tower, with a stepped crown and sloping eastern shoulderLow pointed roof in the centre-right skylineLong low hall and sunken connecting roofLow eastern block with a raised rectangular roofStepped low-rise beside the observation tower baseTall broad base of the observation towerObservation deck with its central mast, curved rim, tapered bowl, and neck18861986Vehicle for Hire"
+    },
+    {
+      "id": "municipal-vancouver-for-hire-1995",
+      "url": "http://127.0.0.1:5176/plateforge/#/ca-bc/municipal-vancouver-for-hire-1995",
+      "selected": true,
+      "previewCaptured": true,
+      "serial": "1030",
+      "label": "British Columbia \u00b7 Vancouver \u00b7 Vehicle for Hire \u00b7 centennial base \u00b7 1995 decal \u00b7 1030",
+      "viewBox": "0 0 180 92",
+      "metadata": "{\"jurisdiction\":\"CA-BC\",\"recipe\":\"municipal-vancouver-for-hire-1995\",\"status\":\"issued\",\"physicalMm\":{\"width\":180,\"height\":92},\"serial\":\"1030\",\"parts\":{\"serial\":\"1030\",\"palette\":\"green\",\"finish\":\"flat\"},\"source\":{\"title\":\"BCpl8s \u00b7 City of Vancouver\",\"url\":\"https://www.bcpl8s.ca/Municipal-Vancouver.html\"},\"construction\":\"embossed\",\"dies\":{\"serial\":\"municipal-vancouver-embossed\",\"evidence\":\"legend-approximation\",\"fit\":\"natural\"},\"renewal\":null,\"accuracy\":{\"artwork\":\"approximate vector reconstruction\",\"dies\":\"legend-approximation\",\"paint\":\"uncalibrated digital approximation\",\"allocations\":\"supported subset only\"},\"note\":\"Reconstruction from BCpl8s photographs: layout proportions, colours (read from aged paint) and dies are approximate.\"}",
+      "paths": 145,
+      "profiles": [
+        "municipal-vancouver-frankfurter",
+        "bc-frankfurter-centennial-years",
+        "municipal-vancouver-embossed",
+        "municipal-legend"
+      ],
+      "text": "British Columbia \u00b7 Vancouver \u00b7 Vehicle for Hire \u00b7 centennial base \u00b7 1995 decal \u00b7 1030Reconstruction from BCpl8s photographs: layout proportions, colours (read from aged paint) and dies are approximate.{\"jurisdiction\":\"CA-BC\",\"recipe\":\"municipal-vancouver-for-hire-1995\",\"status\":\"issued\",\"physicalMm\":{\"width\":180,\"height\":92},\"serial\":\"1030\",\"parts\":{\"serial\":\"1030\",\"palette\":\"green\",\"finish\":\"flat\"},\"source\":{\"title\":\"BCpl8s \u00b7 City of Vancouver\",\"url\":\"https://www.bcpl8s.ca/Municipal-Vancouver.html\"},\"construction\":\"embossed\",\"dies\":{\"serial\":\"municipal-vancouver-embossed\",\"evidence\":\"legend-approximation\",\"fit\":\"natural\"},\"renewal\":null,\"accuracy\":{\"artwork\":\"approximate vector reconstruction\",\"dies\":\"legend-approximation\",\"paint\":\"uncalibrated digital approximation\",\"allocations\":\"supported subset only\"},\"note\":\"Reconstruction from BCpl8s photographs: layout proportions, colours (read from aged paint) and dies are approximate.\"}VANCOUVERVancouver Centennial 100 - city of the centuryA constructed vector reconstruction of the supplied Vancouver Centennial PNG. Smooth analytic ovals, designed mountain ridges, editable horizontal bands, and separate building silhouettes. Both wordmarks use manually authored glyph geometry. No bitmap tracing, embedded raster, font file, or live text. Frankfurter Normal is a strong visual candidate for the upper wordmark; the lower font is unconfirmed. Exterior is transparent; white inside the 100 is intentional. RGB colour approximations sampled from the supplied reference. This is a new reconstruction, not an authenticated historical vector master.Continuous foreground foundationLow western waterfrontLow pavilion, with a raised flat central roofWestern building with three orthogonal roof tiersTwo ascending roofs beside the first tall office blockFirst tall office block, with an inset crownLow central roof with a small flat summit and angled shouldersSmall central block with a narrow raised capSecond tall office block and its right-hand terraceHighest central tower, with a stepped crown and sloping eastern shoulderLow pointed roof in the centre-right skylineLong low hall and sunken connecting roofLow eastern block with a raised rectangular roofStepped low-rise beside the observation tower baseTall broad base of the observation towerObservation deck with its central mast, curved rim, tapered bowl, and neck18861986Vehicle for Hire1030CITY OF VANCOUVERVEHICLE FOR HIRE1995"
+    },
+    {
+      "id": "municipal-vancouver-taxi-1996",
+      "url": "http://127.0.0.1:5176/plateforge/#/ca-bc/municipal-vancouver-taxi-1996",
+      "selected": true,
+      "previewCaptured": true,
+      "serial": "3454",
+      "label": "British Columbia \u00b7 Vancouver \u00b7 Taxi Cab \u00b7 centennial base \u00b7 1996 decal \u00b7 3454",
+      "viewBox": "0 0 180 103",
+      "metadata": "{\"jurisdiction\":\"CA-BC\",\"recipe\":\"municipal-vancouver-taxi-1996\",\"status\":\"issued\",\"physicalMm\":{\"width\":180,\"height\":103},\"serial\":\"3454\",\"parts\":{\"serial\":\"3454\",\"palette\":\"green\",\"finish\":\"flat\"},\"source\":{\"title\":\"BCpl8s \u00b7 City of Vancouver\",\"url\":\"https://www.bcpl8s.ca/Municipal-Vancouver.html\"},\"construction\":\"embossed\",\"dies\":{\"serial\":\"municipal-vancouver-embossed\",\"evidence\":\"legend-approximation\",\"fit\":\"natural\"},\"renewal\":null,\"accuracy\":{\"artwork\":\"approximate vector reconstruction\",\"dies\":\"legend-approximation\",\"paint\":\"uncalibrated digital approximation\",\"allocations\":\"supported subset only\"},\"note\":\"Reconstruction from BCpl8s photographs: layout proportions, colours (read from aged paint) and dies are approximate.\"}",
+      "paths": 130,
+      "profiles": [
+        "municipal-vancouver-frankfurter",
+        "bc-frankfurter-centennial-years",
+        "municipal-vancouver-embossed",
+        "municipal-legend"
+      ],
+      "text": "British Columbia \u00b7 Vancouver \u00b7 Taxi Cab \u00b7 centennial base \u00b7 1996 decal \u00b7 3454Reconstruction from BCpl8s photographs: layout proportions, colours (read from aged paint) and dies are approximate.{\"jurisdiction\":\"CA-BC\",\"recipe\":\"municipal-vancouver-taxi-1996\",\"status\":\"issued\",\"physicalMm\":{\"width\":180,\"height\":103},\"serial\":\"3454\",\"parts\":{\"serial\":\"3454\",\"palette\":\"green\",\"finish\":\"flat\"},\"source\":{\"title\":\"BCpl8s \u00b7 City of Vancouver\",\"url\":\"https://www.bcpl8s.ca/Municipal-Vancouver.html\"},\"construction\":\"embossed\",\"dies\":{\"serial\":\"municipal-vancouver-embossed\",\"evidence\":\"legend-approximation\",\"fit\":\"natural\"},\"renewal\":null,\"accuracy\":{\"artwork\":\"approximate vector reconstruction\",\"dies\":\"legend-approximation\",\"paint\":\"uncalibrated digital approximation\",\"allocations\":\"supported subset only\"},\"note\":\"Reconstruction from BCpl8s photographs: layout proportions, colours (read from aged paint) and dies are approximate.\"}VANCOUVERVancouver Centennial 100 - city of the centuryA constructed vector reconstruction of the supplied Vancouver Centennial PNG. Smooth analytic ovals, designed mountain ridges, editable horizontal bands, and separate building silhouettes. Both wordmarks use manually authored glyph geometry. No bitmap tracing, embedded raster, font file, or live text. Frankfurter Normal is a strong visual candidate for the upper wordmark; the lower font is unconfirmed. Exterior is transparent; white inside the 100 is intentional. RGB colour approximations sampled from the supplied reference. This is a new reconstruction, not an authenticated historical vector master.Continuous foreground foundationLow western waterfrontLow pavilion, with a raised flat central roofWestern building with three orthogonal roof tiersTwo ascending roofs beside the first tall office blockFirst tall office block, with an inset crownLow central roof with a small flat summit and angled shouldersSmall central block with a narrow raised capSecond tall office block and its right-hand terraceHighest central tower, with a stepped crown and sloping eastern shoulderLow pointed roof in the centre-right skylineLong low hall and sunken connecting roofLow eastern block with a raised rectangular roofStepped low-rise beside the observation tower baseTall broad base of the observation towerObservation deck with its central mast, curved rim, tapered bowl, and neck18861986TAXI CAB3454CITY OF VANCOUVERTAXICAB1996"
+    },
+    {
+      "id": "municipal-vancouver-taxi-1997",
+      "url": "http://127.0.0.1:5176/plateforge/#/ca-bc/municipal-vancouver-taxi-1997",
+      "selected": true,
+      "previewCaptured": true,
+      "serial": "1741",
+      "label": "British Columbia \u00b7 Vancouver \u00b7 Taxi Cab \u00b7 centennial base \u00b7 1997 decal \u00b7 1741",
+      "viewBox": "0 0 180 103",
+      "metadata": "{\"jurisdiction\":\"CA-BC\",\"recipe\":\"municipal-vancouver-taxi-1997\",\"status\":\"issued\",\"physicalMm\":{\"width\":180,\"height\":103},\"serial\":\"1741\",\"parts\":{\"serial\":\"1741\",\"palette\":\"blue\",\"finish\":\"flat\"},\"source\":{\"title\":\"BCpl8s \u00b7 City of Vancouver\",\"url\":\"https://www.bcpl8s.ca/Municipal-Vancouver.html\"},\"construction\":\"embossed\",\"dies\":{\"serial\":\"municipal-vancouver-embossed\",\"evidence\":\"legend-approximation\",\"fit\":\"natural\"},\"renewal\":null,\"accuracy\":{\"artwork\":\"approximate vector reconstruction\",\"dies\":\"legend-approximation\",\"paint\":\"uncalibrated digital approximation\",\"allocations\":\"supported subset only\"},\"note\":\"Reconstruction from BCpl8s photographs: layout proportions, colours (read from aged paint) and dies are approximate.\"}",
+      "paths": 124,
+      "profiles": [
+        "municipal-vancouver-frankfurter",
+        "bc-frankfurter-centennial-years",
+        "municipal-vancouver-embossed",
+        "municipal-legend"
+      ],
+      "text": "British Columbia \u00b7 Vancouver \u00b7 Taxi Cab \u00b7 centennial base \u00b7 1997 decal \u00b7 1741Reconstruction from BCpl8s photographs: layout proportions, colours (read from aged paint) and dies are approximate.{\"jurisdiction\":\"CA-BC\",\"recipe\":\"municipal-vancouver-taxi-1997\",\"status\":\"issued\",\"physicalMm\":{\"width\":180,\"height\":103},\"serial\":\"1741\",\"parts\":{\"serial\":\"1741\",\"palette\":\"blue\",\"finish\":\"flat\"},\"source\":{\"title\":\"BCpl8s \u00b7 City of Vancouver\",\"url\":\"https://www.bcpl8s.ca/Municipal-Vancouver.html\"},\"construction\":\"embossed\",\"dies\":{\"serial\":\"municipal-vancouver-embossed\",\"evidence\":\"legend-approximation\",\"fit\":\"natural\"},\"renewal\":null,\"accuracy\":{\"artwork\":\"approximate vector reconstruction\",\"dies\":\"legend-approximation\",\"paint\":\"uncalibrated digital approximation\",\"allocations\":\"supported subset only\"},\"note\":\"Reconstruction from BCpl8s photographs: layout proportions, colours (read from aged paint) and dies are approximate.\"}VANCOUVERVancouver Centennial 100 - city of the centuryA constructed vector reconstruction of the supplied Vancouver Centennial PNG. Smooth analytic ovals, designed mountain ridges, editable horizontal bands, and separate building silhouettes. Both wordmarks use manually authored glyph geometry. No bitmap tracing, embedded raster, font file, or live text. Frankfurter Normal is a strong visual candidate for the upper wordmark; the lower font is unconfirmed. Exterior is transparent; white inside the 100 is intentional. RGB colour approximations sampled from the supplied reference. This is a new reconstruction, not an authenticated historical vector master.Continuous foreground foundationLow western waterfrontLow pavilion, with a raised flat central roofWestern building with three orthogonal roof tiersTwo ascending roofs beside the first tall office blockFirst tall office block, with an inset crownLow central roof with a small flat summit and angled shouldersSmall central block with a narrow raised capSecond tall office block and its right-hand terraceHighest central tower, with a stepped crown and sloping eastern shoulderLow pointed roof in the centre-right skylineLong low hall and sunken connecting roofLow eastern block with a raised rectangular roofStepped low-rise beside the observation tower baseTall broad base of the observation towerObservation deck with its central mast, curved rim, tapered bowl, and neck18861986TAXI CAB1741CITY OF VANCOUVERTAXICAB1997"
+    },
+    {
+      "id": "official-lt-governor-arms",
+      "url": "http://127.0.0.1:5176/plateforge/#/ca-bc/official-lt-governor-arms",
+      "selected": true,
+      "previewCaptured": true,
+      "serial": "",
+      "label": "British Columbia \u00b7 Lieutenant Governor coat of arms \u00b7 ",
+      "viewBox": "0 0 300 150",
+      "metadata": "{\"jurisdiction\":\"CA-BC\",\"recipe\":\"official-lg-arms\",\"status\":\"issued\",\"physicalMm\":{\"width\":300,\"height\":150},\"serial\":\"\",\"parts\":{\"serial\":\"\"},\"source\":{\"title\":\"BCpl8s \u00b7 Lieutenant Governor\",\"url\":\"https://www.bcpl8s.ca/LGpl8.htm\"},\"construction\":\"flat\",\"dies\":{\"serial\":\"bc-astro-4\",\"evidence\":\"specimen-matched\",\"fit\":\"natural\"},\"renewal\":null,\"accuracy\":{\"artwork\":\"approximate vector reconstruction\",\"dies\":\"specimen-matched\",\"paint\":\"uncalibrated digital approximation\",\"allocations\":\"supported subset only\"},\"note\":\"Reconstruction from BCpl8s photographs: layout proportions, paint colours and dies are approximate; validation checks the documented serial format, not a real registration. Size assumed 300 \u00d7 150 mm. A filled gold relief reconstruction replaces the fine-line tin-plate arms; its contour and metallic relief remain approximate. The late-1990s start is uncertain; source photos show the arms in 2003 and 2016.\"}",
+      "paths": 2,
+      "profiles": [],
+      "text": "British Columbia \u00b7 Lieutenant Governor coat of arms \u00b7 Reconstruction from BCpl8s photographs: layout proportions, paint colours and dies are approximate; validation checks the documented serial format, not a real registration. Size assumed 300 \u00d7 150 mm. A filled gold relief reconstruction replaces the fine-line tin-plate arms; its contour and metallic relief remain approximate. The late-1990s start is uncertain; source photos show the arms in 2003 and 2016.{\"jurisdiction\":\"CA-BC\",\"recipe\":\"official-lg-arms\",\"status\":\"issued\",\"physicalMm\":{\"width\":300,\"height\":150},\"serial\":\"\",\"parts\":{\"serial\":\"\"},\"source\":{\"title\":\"BCpl8s \u00b7 Lieutenant Governor\",\"url\":\"https://www.bcpl8s.ca/LGpl8.htm\"},\"construction\":\"flat\",\"dies\":{\"serial\":\"bc-astro-4\",\"evidence\":\"specimen-matched\",\"fit\":\"natural\"},\"renewal\":null,\"accuracy\":{\"artwork\":\"approximate vector reconstruction\",\"dies\":\"specimen-matched\",\"paint\":\"uncalibrated digital approximation\",\"allocations\":\"supported subset only\"},\"note\":\"Reconstruction from BCpl8s photographs: layout proportions, paint colours and dies are approximate; validation checks the documented serial format, not a real registration. Size assumed 300 \u00d7 150 mm. A filled gold relief reconstruction replaces the fine-line tin-plate arms; its contour and metallic relief remain approximate. The late-1990s start is uncertain; source photos show the arms in 2003 and 2016.\"}"
+    },
+    {
+      "id": "official-lt-governor-crest",
+      "url": "http://127.0.0.1:5176/plateforge/#/ca-bc/official-lt-governor-crest",
+      "selected": true,
+      "previewCaptured": true,
+      "serial": "",
+      "label": "British Columbia \u00b7 Lieutenant Governor crest \u00b7 ",
+      "viewBox": "0 0 300 150",
+      "metadata": "{\"jurisdiction\":\"CA-BC\",\"recipe\":\"official-lg-crest\",\"status\":\"issued\",\"physicalMm\":{\"width\":300,\"height\":150},\"serial\":\"\",\"parts\":{\"serial\":\"\"},\"source\":{\"title\":\"BCpl8s \u00b7 Lieutenant Governor\",\"url\":\"https://www.bcpl8s.ca/LGpl8.htm\"},\"construction\":\"flat\",\"dies\":{\"serial\":\"bc-astro-4\",\"evidence\":\"specimen-matched\",\"fit\":\"natural\"},\"renewal\":null,\"accuracy\":{\"artwork\":\"approximate vector reconstruction\",\"dies\":\"specimen-matched\",\"paint\":\"uncalibrated digital approximation\",\"allocations\":\"supported subset only\"},\"note\":\"Reconstruction from BCpl8s photographs: layout proportions, paint colours and dies are approximate; validation checks the documented serial format, not a real registration. Size assumed 300 \u00d7 150 mm. The supplied crest vector retains its red, white and blue details with yellow changed to gold, inside a full-height blue plaque with a gold trim. Plaque placement and enamel colours are approximate source readings.\"}",
+      "paths": 69,
+      "profiles": [],
+      "text": "British Columbia \u00b7 Lieutenant Governor crest \u00b7 Reconstruction from BCpl8s photographs: layout proportions, paint colours and dies are approximate; validation checks the documented serial format, not a real registration. Size assumed 300 \u00d7 150 mm. The supplied crest vector retains its red, white and blue details with yellow changed to gold, inside a full-height blue plaque with a gold trim. Plaque placement and enamel colours are approximate source readings.{\"jurisdiction\":\"CA-BC\",\"recipe\":\"official-lg-crest\",\"status\":\"issued\",\"physicalMm\":{\"width\":300,\"height\":150},\"serial\":\"\",\"parts\":{\"serial\":\"\"},\"source\":{\"title\":\"BCpl8s \u00b7 Lieutenant Governor\",\"url\":\"https://www.bcpl8s.ca/LGpl8.htm\"},\"construction\":\"flat\",\"dies\":{\"serial\":\"bc-astro-4\",\"evidence\":\"specimen-matched\",\"fit\":\"natural\"},\"renewal\":null,\"accuracy\":{\"artwork\":\"approximate vector reconstruction\",\"dies\":\"specimen-matched\",\"paint\":\"uncalibrated digital approximation\",\"allocations\":\"supported subset only\"},\"note\":\"Reconstruction from BCpl8s photographs: layout proportions, paint colours and dies are approximate; validation checks the documented serial format, not a real registration. Size assumed 300 \u00d7 150 mm. The supplied crest vector retains its red, white and blue details with yellow changed to gold, inside a full-height blue plaque with a gold trim. Plaque placement and enamel colours are approximate source readings.\"}"
+    }
+  ]
+}

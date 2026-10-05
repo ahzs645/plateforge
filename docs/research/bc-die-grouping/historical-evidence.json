@@ -4139,6 +4139,63 @@
       ],
       "productionDateInferred": false,
       "identicalPhysicalToolingConfirmed": false
+    },
+    {
+      "formatId": "municipal-vancouver-for-hire-1986",
+      "family": "municipal",
+      "period": [
+        1986,
+        1986
+      ],
+      "currentSerialDie": "municipal-vancouver-embossed",
+      "candidateComparisonCohort": "municipal-independent",
+      "certainty": "source-specific reconstruction; manufacturer/tooling unconfirmed",
+      "evidenceRules": [
+        "municipal-separate-issuers"
+      ],
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/Municipal-Vancouver.html"
+      ],
+      "productionDateInferred": false,
+      "identicalPhysicalToolingConfirmed": false
+    },
+    {
+      "formatId": "municipal-city-prince-george-1962",
+      "family": "municipal",
+      "period": [
+        1962,
+        1962
+      ],
+      "currentSerialDie": "municipal-prince-george-digits",
+      "candidateComparisonCohort": "municipal-independent",
+      "certainty": "source-specific reconstruction; manufacturer/tooling unconfirmed",
+      "evidenceRules": [
+        "municipal-separate-issuers"
+      ],
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/Municipal-City-Issues.htm"
+      ],
+      "productionDateInferred": false,
+      "identicalPhysicalToolingConfirmed": false
+    },
+    {
+      "formatId": "municipal-vancouver-taxi-1996",
+      "family": "municipal",
+      "period": [
+        1996,
+        1996
+      ],
+      "currentSerialDie": "municipal-vancouver-embossed",
+      "candidateComparisonCohort": "municipal-independent",
+      "certainty": "source-specific reconstruction; manufacturer/tooling unconfirmed",
+      "evidenceRules": [
+        "municipal-separate-issuers"
+      ],
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/Municipal-Vancouver.html"
+      ],
+      "productionDateInferred": false,
+      "identicalPhysicalToolingConfirmed": false
     }
   ],
   "sourceExcerpts": [
@@ -5059,5 +5116,67 @@
     "Existing die profile name records current renderer choice, not certified historical grouping.",
     "No source image contour tracing or full alphabet overlay performed in this focused source review.",
     "Dates on a photograph, renewal decal or prolonged base are not assumed manufacture dates."
+  ],
+  "representativePhotographs": [
+    {
+      "source": "https://www.bcpl8s.ca/images/Municipal/Vancouver/1986-BLANK(XL).jpg",
+      "localPath": "/tmp/vancouver1986.jpg",
+      "formatId": "municipal-vancouver-for-hire-1986",
+      "specimenLabel": "1986 blank municipal centennial base"
+    },
+    {
+      "source": "https://www.bcpl8s.ca/images/Municipal/Vancouver/1995-2571(XL).jpg",
+      "localPath": "/tmp/vancouver-1995-2571.jpg",
+      "formatId": "municipal-vancouver-for-hire-1995",
+      "specimenLabel": "1995renewal Vehicle for Hire2571"
+    },
+    {
+      "source": "https://www.bcpl8s.ca/images/Municipal/Vancouver/1996-1071(XL).jpg",
+      "localPath": "/tmp/vancouver1996.jpg",
+      "formatId": "municipal-vancouver-taxi-1996",
+      "specimenLabel": "1996renewal TAXICAB1071 green-band"
+    },
+    {
+      "source": "https://www.bcpl8s.ca/images/Municipal/Vancouver/1997-254(XL).jpg",
+      "localPath": "/tmp/vancouver-1997-254.jpg",
+      "formatId": "municipal-vancouver-taxi-1997",
+      "specimenLabel": "1997renewal TAXICAB254 blue-band"
+    },
+    {
+      "source": "https://www.bcpl8s.ca/images/Municipal/Prince%20George/1959-15(XL).jpg",
+      "localPath": "/tmp/princegeorge1959.jpg",
+      "formatId": "municipal-city-prince-george",
+      "specimenLabel": "1959vehicle15"
+    },
+    {
+      "source": "https://www.bcpl8s.ca/images/Municipal/Prince%20George/1959-PG-000(XL).jpg",
+      "localPath": "/tmp/princegeorge-1959-PG-000.jpg",
+      "formatId": "municipal-city-prince-george",
+      "specimenLabel": "1959vehicle000sample"
+    },
+    {
+      "source": "https://www.bcpl8s.ca/images/Municipal/Prince%20George/1962-91(XL).jpg",
+      "localPath": "/tmp/princegeorge-1962-91.jpg",
+      "formatId": "municipal-city-prince-george-1962",
+      "specimenLabel": "1962vehicle91"
+    },
+    {
+      "source": "https://www.bcpl8s.ca/images/Bicycle/PrinceGeorge/1953-580.jpg",
+      "localPath": "/tmp/princegeorge-bike-1953-580.jpg",
+      "formatId": "bicycle-prince-george-1953",
+      "specimenLabel": "1953-580 (1959filename86 reads36 on specimen)"
+    },
+    {
+      "source": "https://www.bcpl8s.ca/images/Bicycle/PrinceGeorge/1958-333.jpg",
+      "localPath": "/tmp/princegeorge-bike-1958-333.jpg",
+      "formatId": "bicycle-prince-george-1958",
+      "specimenLabel": "1958-333 (1959filename86 reads36 on specimen)"
+    },
+    {
+      "source": "https://www.bcpl8s.ca/images/Bicycle/PrinceGeorge/1959-86.jpg",
+      "localPath": "/tmp/princegeorge-bike-1959-86.jpg",
+      "formatId": "bicycle-prince-george-1959",
+      "specimenLabel": "1959-86 (1959filename86 reads36 on specimen)"
+    }
   ]
 }

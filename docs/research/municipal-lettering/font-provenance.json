@@ -1,0 +1,13 @@
+{
+  "fontFamily": "Frankfurter Std Medium",
+  "characters": "Vehicle for Hire VANCOUVER TAXI CAB",
+  "source": "https://www.myfonts.com/collections/frankfurter-font-itc",
+  "previewIdentifier": "e094dede1f515189f4972f03427ad6eb",
+  "capHeight": 676,
+  "unitsPerEm": 1000,
+  "capturedSubsetSHA256": "6233650f9aa3cc0ef05da6936ac91de6acb471980578cc4c55dbc620cd85b9fd",
+  "fontSoftwareBundled": false,
+  "method": "Only fixed inscription glyph outlines are retained, normalized to cap100; native advances retained. E advance agrees with existing EXPO86 Medium master within0.001 units. The VANCOUVER display word uses larger V/R cap heights from source, with each glyph retaining native proportions.",
+  "historicalIdentification": "Visual match; actual original manufacturer/typeface version not documented",
+  "PrinceGeorgeMethod": "Independent rounded geometric centreline constructions. Upper glyphs and separate narrow lower construction retain consistent stroke weights; these are not recovered physical tools or exact photo traces."
+}
