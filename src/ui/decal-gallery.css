@@ -1,0 +1,31 @@
+.decal-gallery-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 24px; margin-bottom: 24px; }
+.decal-gallery-head h1 { font-size: 28px; margin: 6px 0 12px; }
+.decal-gallery-head p { color: var(--muted); max-width: 720px; }
+.decal-gallery-head > .btn { flex: none; }
+.decal-gallery-layout { display: grid; grid-template-columns: minmax(240px, 330px) minmax(0, 1fr); gap: 24px; align-items: start; }
+.decal-current { position: sticky; top: calc(var(--topbar) + 24px); padding: 20px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); min-width: 0; }
+.decal-current h2 { font-size: 18px; margin-top: 0; }
+.decal-current p { margin: 12px 0; overflow-wrap: anywhere; }
+.decal-current-plate svg { display: block; width: 100%; height: auto; }
+.decal-current .field { margin-bottom: 12px; }
+.decal-gallery-filters { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
+.decal-gallery-filters .field { flex: 1; min-width: 180px; }
+.decal-gallery-checkbox { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+.decal-gallery-checkbox input { width: auto; }
+.decal-gallery-note { color: var(--muted); font-size: 13px; line-height: 1.6; }
+.decal-gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+.decal-card { display: flex; flex-direction: column; min-width: 0; padding: 16px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); }
+.decal-card[data-selected="true"] { border-color: var(--accent); }
+.decal-card-art { display: flex; align-items: center; height: 100px; padding: 12px; background: var(--surface-2); border-radius: var(--radius-sm); }
+.decal-card-art svg { display: block; width: 100%; max-height: 76px; }
+.decal-card h2 { font-size: 19px; margin: 16px 0 8px; }
+.decal-card h2 span { font-weight: 400; }
+.decal-card p { overflow-wrap: anywhere; margin: 4px 0 8px; }
+.decal-card a { margin-top: auto; font-size: 13px; }
+.decal-card .btn { margin-top: 14px; white-space: normal; min-height: 36px; height: auto; }
+@media (max-width: 800px) {
+  .decal-gallery-head { flex-direction: column; gap: 12px; }
+  .decal-gallery-layout { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+  .decal-current { position: static; }
+  .decal-current-plate { max-width: 430px; margin: 0 auto; }
+}

@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-05",
+  "site": "http://127.0.0.1:5176/plateforge/",
+  "cases": [
+    {
+      "serial": "810-301",
+      "nativePaths": 15,
+      "clipping": true,
+      "svg": true,
+      "png": true,
+      "mobile": true
+    },
+    {
+      "serial": "814-298",
+      "nativePaths": 15,
+      "clipping": true,
+      "svg": true,
+      "png": true,
+      "mobile": true
+    }
+  ],
+  "temporaryUnchanged": true,
+  "sourceComparisons": 2,
+  "errors": [],
+  "failedResources": []
+}

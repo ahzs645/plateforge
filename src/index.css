@@ -389,6 +389,7 @@ kbd {
   padding: 24px;
 }
 .view-batch .workspace,
+.view-decals .workspace,
 .view-gallery .workspace {
   display: block;
 }

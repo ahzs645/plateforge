@@ -4,6 +4,7 @@ import { createRng } from '../core/random';
 import { regenerateParts } from '../core/lettering';
 import { buildTimeline, countryOf, familyOf, regionFamilies, stepTimeline } from '../core/timeline';
 import type { Parts, Plate } from '../core/types';
+import { provinceDecals } from '../library/province-decals';
 import { BatchView } from './BatchView';
 import { download, fileSafe, serializeSvg, svgToPngBlob, svgToTeslaPngBlob, TESLA_HINT, type ExportKind } from './exporting';
 import { FormatTimeline } from './FormatTimeline';
@@ -15,18 +16,20 @@ import { RegionPicker } from './RegionPicker';
 import { useTheme } from './useTheme';
 
 const ReferenceLibrary = lazy(() => import('./ReferenceLibrary').then((module) => ({ default: module.ReferenceLibrary })));
+const DecalGallery = lazy(() => import('./DecalGallery').then(module => ({ default: module.DecalGallery })));
 const DEFAULT_REGION = 'ca-bc';
-type View = 'single' | 'gallery' | 'batch' | 'library';
+type View = 'single' | 'gallery' | 'decals' | 'batch' | 'library';
 const VIEWS: View[] = ['single', 'gallery', 'batch', 'library'];
-const VIEW_LABELS: Record<View, string> = { single: 'Single', gallery: 'Gallery', batch: 'Batch', library: 'Library' };
+const VIEW_LABELS: Record<View, string> = { single: 'Single', gallery: 'Gallery', decals: 'Decals', batch: 'Batch', library: 'Library' };
 export function readAppRoute(hashInput: string): { region: string; format?: string; view: View } {
   let hash = '';
   try { hash = decodeURIComponent(hashInput.replace(/^#\/?/, '')); } catch { /* malformed shared URL */ }
-  const [region, format] = hash.split('/');
+  const [region, format, decalFormat] = hash.split('/');
   // The Iraq and Iran editor/history pages became each region's editor and gallery; keep their old links working.
   if (region === 'iraq-customizer' || region === 'iran-customizer') return { region: region.slice(0, 4), format, view: 'single' };
   if (region === 'iraq-timeline' || region === 'iran-timeline') return { region: region.slice(0, 4), view: 'gallery' };
   if (region === 'library') return { region: DEFAULT_REGION, view: 'library' };
+  if (region === 'decals' && getRegion(format)) return { region: format, format: decalFormat, view: provinceDecals(format).length ? 'decals' : 'gallery' };
   if (region === 'gallery') return { region: getRegion(format) ? format : DEFAULT_REGION, view: 'gallery' };
   return getRegion(region) ? { region, format, view: 'single' } : { region: DEFAULT_REGION, view: 'single' };
 }
@@ -63,6 +66,7 @@ export function App() {
   const timeline = useMemo(() => buildTimeline(region, family), [region, family]);
   const familyFormats = families.find((f) => f.id === family)?.formats ?? region.formats;
   const country = countryOf(region);
+  const views: View[] = provinceDecals(region.id).length ? ['single', 'gallery', 'decals', 'batch', 'library'] : VIEWS;
   const select = useCallback((nextRegion: string, nextFormat?: string, nextParts?: Parts) => {
     const r = getRegion(nextRegion);
     if (!r) return;
@@ -83,7 +87,7 @@ export function App() {
   useEffect(() => {
     // The library owns its sub-route (#/library/coverage etc.).
     if (view === 'library') { if (!location.hash.startsWith('#/library')) history.replaceState(null, '', '#/library'); return; }
-    history.replaceState(null, '', view === 'gallery' ? `#/gallery/${region.id}` : `#/${region.id}/${format.id}`);
+    history.replaceState(null, '', view === 'gallery' ? `#/gallery/${region.id}` : view === 'decals' ? `#/decals/${region.id}/${format.id}` : `#/${region.id}/${format.id}`);
   }, [region.id, format.id, view]);
   useEffect(() => {
     const onHash = () => {
@@ -145,13 +149,14 @@ export function App() {
         <ChevronDown /><kbd className="hide-mobile">{isMac ? '⌘' : 'Ctrl'} K</kbd>
       </button>
       <div className="topbar-end">
-        <div className="tabs hide-mobile" role="tablist" aria-label="Mode">{VIEWS.map((v) => <button key={v} role="tab" aria-selected={view === v} onClick={() => setView(v)}>{VIEW_LABELS[v]}</button>)}</div>
+        <div className="tabs hide-mobile" role="tablist" aria-label="Mode">{views.map((v) => <button key={v} role="tab" aria-selected={view === v} onClick={() => setView(v)}>{VIEW_LABELS[v]}</button>)}</div>
         <button className="icon-btn" onClick={cycle} aria-label={`Theme: ${theme}`} title={`Theme: ${theme}`}><ThemeIcon /></button>
       </div>
     </header>
-    <div className="mobile-tabs tabs" role="tablist" aria-label="Mode">{VIEWS.map((v) => <button key={v} role="tab" aria-selected={view === v} onClick={() => setView(v)}>{v === 'single' ? 'Plate' : VIEW_LABELS[v]}</button>)}</div>
+    <div className="mobile-tabs tabs" role="tablist" aria-label="Mode">{views.map((v) => <button key={v} role="tab" aria-selected={view === v} onClick={() => setView(v)}>{v === 'single' ? 'Plate' : VIEW_LABELS[v]}</button>)}</div>
     <main className="workspace" key={fontsVersion}>
       {view === 'library' ? <Suspense fallback={<p role="status">Loading reference library…</p>}><ReferenceLibrary regions={regions} onOpenFormat={openEditor} /></Suspense>
+        : view === 'decals' ? <Suspense fallback={<p role="status">Loading decal gallery…</p>}><DecalGallery plate={plate} onChange={setParts} onBack={() => setView('single')} /></Suspense>
         : view === 'gallery' ? <GalleryView regions={regions} region={region} format={format} onOpen={openEditor} onSelectRegion={(id) => select(id)} />
         : view === 'single' ? <>
           <section className="stage-col">
@@ -176,7 +181,7 @@ export function App() {
         {saveOpen && <div className="save-menu" role="menu"><button role="menuitem" onClick={() => exportAs('png')}>Save PNG</button><button role="menuitem" onClick={() => exportAs('svg')}>Save SVG</button><button role="menuitem" onClick={() => exportAs('tesla')} title={TESLA_HINT}>Save for Tesla</button><button role="menuitem" onClick={copyLink}>Copy link</button></div>}
       </div>
     </div>}
-    <RegionPicker open={pickerOpen} regions={regions} selected={region.id} selectedFormat={format.id} onSelect={(id, f) => { select(id, f); setView((v) => v === 'gallery' ? 'gallery' : 'single'); }} onClose={() => setPickerOpen(false)} />
+    <RegionPicker open={pickerOpen} regions={regions} selected={region.id} selectedFormat={format.id} onSelect={(id, f) => { select(id, f); setView((v) => v === 'gallery' ? 'gallery' : v === 'decals' && provinceDecals(id).length ? 'decals' : 'single'); }} onClose={() => setPickerOpen(false)} />
     <div className={`toast ${toast ? 'show' : ''}`} role="status" aria-live="polite">{toast}</div>
   </div>;
 }

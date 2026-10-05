@@ -12,6 +12,23 @@ function render(format: (typeof BC_TRADE_FORMATS)[number], parts: Record<string,
 }
 
 describe('B.C. dealer, industrial and carrier plates', () => {
+  it('uses the supplied flag paths under the Passenger Carrier lettering with portable clipping',()=>{
+    const format=BC_TRADE_FORMATS.find(f=>f.id==='carrier-passenger-2005')!;
+    const parts={...format.generate(createRng('carrier-flag')),serial:'810-301'};
+    const svg=render(format,parts);
+    expect(svg).toContain('data-source="user-supplied-bc-flag-svg"');
+    expect(svg).toContain('clip-path="url(#carrier-flag-a)"');
+    expect(svg).toContain('id="carrier-flag-a"');
+    expect(svg).toContain('fill="#0047bb"');
+    expect(svg).toContain('data-role="flag-print-wash"');
+    expect(svg).toContain('fill="#eef0ee"');
+    expect(svg).not.toContain('data-art="bc-flag"');
+    expect(svg).not.toContain('<image');
+    expect((svg.match(/<svg\b/g)??[])).toHaveLength(1);
+    expect(svg.indexOf('data-source="user-supplied-bc-flag-svg"')).toBeLessThan(svg.indexOf('data-role="serial"'));
+    const temporary=BC_TRADE_FORMATS.find(f=>f.id==='carrier-passenger-2010')!;
+    expect(render(temporary,temporary.generate(createRng('temporary')) as Record<string,string>)).not.toContain('user-supplied-bc-flag-svg');
+  });
   it('declares its own families and eras only', () => {
     const families = new Set(BC_TRADE_FAMILIES.map((f) => f.id));
     expect([...families].sort()).toEqual(['carrier', 'industrial', 'trade']);

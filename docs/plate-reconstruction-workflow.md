@@ -29,6 +29,7 @@ Placement overlays retain position and reveal spacing/run offsets. Shape overlay
 - Place portable artwork with uniformly transformed groups when possible. Nested SVGs can inherit global preview sizing rules or exporter assumptions; compare the actual exported PNG with the browser and standalone SVG, including artwork bounds.
 - Preserve supplied compound-path fill rules and negative spaces. A successful path import does not establish that holes and inner contours render correctly; test the rebuild script against the actual uploaded archive.
 - Artwork, serial tooling, screened text, decal system and palette are independent. A colour variant should not acquire a new alphabet by accident. Keep uncertain alternate assignments visible.
+- The province decal gallery declares imported catalogue availability separately from plate eligibility. Apply only a choice already offered by the current format, preserving serial/month/style. ICBC passenger renewals must not be substituted for Passenger Carrier or municipal decals. Source photographs and the renderer's approximate decal previews remain separately labelled.
 - Validation checks a supported pattern, not an actual registration or exhaustive allocation. Preserve leading zeroes where photographed. An uncertain attachment or souvenir should not appear as an authenticated issued registration.
 
 ## Verification and publication

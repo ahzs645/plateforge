@@ -74,7 +74,7 @@ export interface KitSerial {
   /** How the stored dash is shown: a dash, a centre dot, a gap, or an artwork (e.g. the flag). */
   separator?: { kind: 'dash' | 'dot' | 'gap' | 'none' } | { kind: 'art'; art: KitArt; gap: number };
 }
-export interface KitDecal { x: number; y: number; width: number; height: number; rx?: number }
+export interface KitDecal { x: number; y: number; width: number; height: number; rx?: number; /** Unprinted colour of a blank well over a graphic background. */ background?: string }
 /** Plain drawn elements: frames, rules, stitching, grommets. */
 export type KitShape =
   | { kind: 'rect'; x: number; y: number; width: number; height: number; rx?: number; stroke?: string; fill?: string; strokeWidth?: number; dash?: string }
@@ -297,7 +297,7 @@ export function buildKitScene(recipe: KitRecipe, parts: Parts, options: KitScene
   const decalNodes = !decal ? [] : options.decal
     ? [buildDecal(options.decal, decalBox(options.decal, decal)),
       ...(options.decal.day && recipe.extraWells?.[0] ? [buildDaySticker(options.decal.day, { x: recipe.extraWells[0].x + 3, y: recipe.extraWells[0].y + 2.5, width: recipe.extraWells[0].width - 6, height: recipe.extraWells[0].height - 5 })] : [])]
-    : [n('rect', { x: decal.x, y: decal.y, width: decal.width, height: decal.height, rx: decal.rx ?? 2, fill: 'none', stroke: recipe.rim?.color ?? ink, strokeWidth: 0.8, 'data-role': 'blank-renewal-box' })];
+    : [n('rect', { x: decal.x, y: decal.y, width: decal.width, height: decal.height, rx: decal.rx ?? 2, fill: decal.background ?? 'none', stroke: recipe.rim?.color ?? ink, strokeWidth: 0.8, 'data-role': 'blank-renewal-box' })];
   const wells = (recipe.extraWells ?? []).map((well) => n('rect', { x: well.x, y: well.y, width: well.width, height: well.height, rx: well.rx ?? 2, fill: 'none', stroke: recipe.rim?.color ?? ink, strokeWidth: 0.8, 'data-role': 'renewal-well' }));
   const rim = recipe.rim === undefined ? { inset: 4, width: 1.5 } : recipe.rim;
   const fonts = FONTS;

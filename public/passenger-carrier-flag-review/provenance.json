@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-05",
+  "fileName": "Flag_of_British_Columbia.svg",
+  "sha256": "ae1a4bd122dbc2585b717ae3ce7c3d810e63bbcba8944d512f26aec8b33e57ab",
+  "viewBox": [
+    0,
+    0,
+    264.58333131,
+    158.74999879
+  ],
+  "paths": 15,
+  "sourcePage": "https://www.bcpl8s.ca/PassengerCarrier.html",
+  "photographs": [
+    {
+      "id": "2005",
+      "serial": "810-301",
+      "source": "https://www.bcpl8s.ca/images/MotorCarrier/2005-810301(XL).jpg",
+      "file": "2005-810301(XL).jpg",
+      "box": [
+        37,
+        17,
+        1480,
+        846
+      ],
+      "sha256": "8768edeaeb304f97c55e93e90c521236bb5e7e8f1ef99dbc00543f31b2c43bfd"
+    },
+    {
+      "id": "2024",
+      "serial": "814-298",
+      "source": "https://www.bcpl8s.ca/images/PassengerCarrier/2024-814298(XL).jpg",
+      "file": "2024-814298(XL).jpg",
+      "box": [
+        5,
+        5,
+        1110,
+        630
+      ],
+      "sha256": "ca4be150a125d7f839e413b0738cf2fd24602090d34ef476756b583acf71aaa2"
+    }
+  ],
+  "use": "carrier-passenger-2005 pale full-face background; source paths, fills, transforms and clipping retained. Artwork fitted inside the plate rim, with a 50% white wash to approximate screened printing.",
+  "limits": "Plate fitting and average print colour are approximate. The halftone dots, sheeting, wear and embossing are not reproduced. This change does not certify the serial or legend font."
+}

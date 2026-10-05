@@ -6,7 +6,8 @@
  * All approximate vector reconstructions from BCpl8s photographs.
  */
 import { node as n } from '../svg-scene';
-import { artwork, registerArtwork } from './art';
+import { registerArtwork } from './art';
+import {passengerCarrierFlag} from './passenger-carrier-flag';
 
 /** A solid band in currentColor (expiry strips, RESTRICTED / OFF ROAD VEHICLE bars). */
 registerArtwork('trade-solid', { viewBox: [10, 10], aspect: 'stretch', draw: () => [n('rect', { width: 10, height: 10, fill: 'currentColor' })] });
@@ -28,11 +29,8 @@ export function registerLetterBox(id: string, color: string, o: { letter: number
   ] });
 }
 
-/** The provincial flag printed faintly across a Passenger Carrier plate (2005–), 60 × 36. */
-registerArtwork('trade-flag-wash', { viewBox: [60, 36], aspect: 'stretch', draw: () => [
-  artwork('bc-flag', { x: 0, y: 0, width: 60, height: 36 }, 'flag-background'),
-  n('rect', { width: 60, height: 36, fill: '#ffffff', opacity: 0.62 }),
-] });
+/** Supplied provincial flag, with pale print treatment independent of the geometry. */
+registerArtwork('trade-flag-wash', {viewBox:[60,36],aspect:'meet',draw:passengerCarrierFlag});
 
 /** The 1934 "P.C. LICENCE" plate: a downward-pointing navy triangle with a cream border, 100 × 64. */
 registerArtwork('trade-pc-triangle', { viewBox: [100, 64], aspect: 'stretch', draw: () => [

@@ -205,7 +205,7 @@ const transporterFlag = flagBase('trade-transporter-flag', 'Flag Transporter · 
 const ANNUAL_DIES_70 = [{ id: 'bc-oakalla-1970', label: 'Oakalla (1970–72)' }, { id: 'bc-oakalla-1955', label: 'Oakalla (1955–69)' }, { id: 'bc-oakalla-1973', label: 'Oakalla (1973–77)' }];
 const ANNUAL_DIES_73 = [{ id: 'bc-oakalla-1973', label: 'Oakalla (1973–77)' }, { id: 'bc-acme-1978', label: 'ACME (1978)' }];
 
-interface Spec { id: string; label: string; family: string; era: string; period: [number, number]; recipe: KitRecipe; grammar: SerialGrammar; description: string;
+interface Spec { id: string; label: string; family: string; era: string; period: [number, number]; recipe: KitRecipe; grammar: SerialGrammar; description: string; references?: PlateFormat['references'];
   palettes?: KitPalette[]; dies?: { id: string; label?: string }[]; decals?: [number, number]; status?: PlateStatus }
 const fmt = (s: Spec): PlateFormat => kitFormat({ ...s, ...(s.status ? { recipe: { ...s.recipe, status: s.status } } : {}) });
 
@@ -514,13 +514,14 @@ const mcBlue = mc1988('carrier-mc-1995', '1995–2005 Motor Carrier · blue numb
 const mcTaxi = mc1988('carrier-mc-taxi', '1994–2001 Motor Carrier · Taxi', '#2a6ac0', '#d84830', ['MOTOR CARRIER', 'TAXI']);
 const passengerCarrier = small('carrier-passenger-2005', 'Passenger Carrier · flag background', SMALL('#f4f4f4', '#101010'), SRC.passengerCarrier, {
   rim: { inset: 2.5, width: 1, color: '#9aa4b4' }, holes: 'round', holeAt: { x: [0.05, 0.95], y: [0.08, 0.92] },
-  art: [{ art: 'trade-flag-wash', x: 0, y: 0, width: 203, height: 127, role: 'flag-background' }],
+  art: [{ art: 'trade-flag-wash', x: 4, y: 4, width: 195, height: 119, role: 'flag-background' }],
+  artworkAccuracy:'Supplied BC flag SVG; plate fitting and pale screened colour are approximate.',
   legends: [],
   fontLegends: [serif('BRITISH COLUMBIA', 101.5, 20, 14, '#1c2d6b', { weight: 700, width: 160, role: 'province' }),
     { text: 'PASSENGER', x: 34, baseline: 114, size: 10, font: 'sans', weight: 700, color: '#101010', role: 'class-left' },
     { text: 'CARRIER', x: 170, baseline: 114, size: 10, font: 'sans', weight: 700, color: '#101010', role: 'class-right' }],
   serial: { x: 101.5, baseline: 82, cap: 44, maxWidth: 180, die: 'bc-waldale', separator: GAP },
-  decal: { x: 68, y: 91, width: 67, height: 29 },
+  decal: { x: 68, y: 91, width: 67, height: 29, background: '#eef0ee' },
 });
 const passengerCarrier2010 = small('carrier-passenger-2010', '2010 Games Passenger Transportation (temporary)', SMALL('#ecd13c', '#101010'), SRC.passengerCarrier, {
   rim: null, holes: 'slots', holeAt: { x: [0.18, 0.82], y: [0.07, 0.93] },
@@ -629,7 +630,8 @@ const carrierSpecs: Spec[] = [
     description: 'Taxi version: MOTOR CARRIER over TAXI in red serif, blue figures spaced in two groups of three, British / Columbia beside the decal.' },
   { id: 'carrier-passenger-2005', label: 'Passenger Carrier', family: 'carrier', era: 'carrier-1988', period: [2005, 2026], recipe: passengerCarrier, dies: [{ id: 'bc-waldale' }],
     grammar: runs('800 000 onward (from 800-000 in 2005)', { from: 800000, to: 899999, fmt: fixed(6, 3) }),
-    description: 'Passenger Transportation Board plates, similar in size to the former Motor Carrier plates, printed over the provincial flag as a faded background: BRITISH COLUMBIA in serif above, black figures starting with 8, PASSENGER and CARRIER either side of the decal.' },
+    description: 'Passenger Transportation Board plates, similar in size to the former Motor Carrier plates. The supplied British Columbia flag SVG forms the pale printed background inside the rim, with its crown, waves and sun retained. BRITISH COLUMBIA in serif above, black figures starting with 8, PASSENGER and CARRIER either side of the decal. Flag placement and print colour remain approximate; lettering is independently reconstructed.',
+    references:[{title:'BCpl8s · Passenger Carrier 810-301, flag background',url:'https://www.bcpl8s.ca/images/MotorCarrier/2005-810301(XL).jpg'}]},
   { id: 'carrier-passenger-2010', label: '2010 Games Passenger Transportation', family: 'carrier', era: 'carrier-1988', period: [2010, 2010], recipe: passengerCarrier2010, dies: [{ id: 'bc-waldale' }],
     grammar: runs('S10-000–S10-999 (S10-010 photographed)', { prefix: 'S10-', from: 0, to: 999, fmt: fixed(3) }),
     description: 'Temporary plates for the 2010 Winter Games, “a bright yellow background” to set them apart: BRITISH COLUMBIA above an S-prefix number, the BC logo at centre, PASSENGER and TRANSPORTATION either side of the decal. The yellow gradient and small day box are simplified.' },

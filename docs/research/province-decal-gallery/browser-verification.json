@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-05",
+  "site": "http://127.0.0.1:5176/plateforge/",
+  "references": 54,
+  "supportedOn1985Base": 19,
+  "sameYearVariantApplied": true,
+  "serialMonthStylePreserved": true,
+  "clearDecal": true,
+  "svg": true,
+  "png": true,
+  "mobile": true,
+  "carrierExcludedFromPassengerDecals": true,
+  "unavailableProvinceHasNoDecalTab": true,
+  "errors": [],
+  "failedResources": []
+}
