@@ -44,6 +44,8 @@ export interface KitText {
   role: string;
   /** Extra spacing between characters, in cap-height units (100 = one cap height). */
   spacing?: number;
+  /** Adjust the gap for a named adjacent pair without changing either glyph. */
+  kerning?: Readonly<Record<string, number>>;
   /** Space the letters out to fill `maxWidth` (legends stamped across the plate); glyphs keep their shape. */
   spread?: boolean;
 }
@@ -55,6 +57,8 @@ export interface KitSerial {
   maxWidth: number;
   die: string;
   color?: string;
+  /** Pair spacing for a documented fixed serial wordmark. */
+  kerning?: Readonly<Record<string, number>>;
   /** Typeface instead of a die (owner-made plates with house numerals). */
   font?: { family: 'serif' | 'sans'; weight?: number };
   /** Four-digit numbers carry a long leading bar (1933–39 dies). */
@@ -95,6 +99,10 @@ export interface KitRecipe {
   holes?: 'slots' | 'round' | 'none';
   /** Hole centres as fractions of width/height (default x 0.2/0.8, 9 mm from top and bottom). */
   holeAt?: { x: readonly number[]; y: readonly number[] };
+  /** Explicit physical mounting holes for nonrectangular plates. */
+  holeGeometry?: readonly ({ cx: number; cy: number; r: number } | { cx: number; cy: number; width: number; height: number; rx: number })[];
+  /** Die-cut body outline, shared by the artwork clip and complete-content mask. */
+  cutOutline?: { path: string; viewBox: readonly [number, number] };
   /** Artwork beneath the inscriptions (backgrounds, graphics). */
   art?: readonly KitArt[];
   legends: readonly KitText[];
@@ -108,6 +116,7 @@ export interface KitRecipe {
   /** Stamped relief vs. flat screened/printed characters. */
   embossed: boolean;
   status?: string;
+  artworkAccuracy?: string;
   source: { title: string; url: string };
   note: string;
 }
@@ -126,7 +135,7 @@ function text(t: KitText, ink: string): SvgNode {
     if (gaps > 0 && natural < t.maxWidth) spacing = ((t.maxWidth - natural) / gaps) * (100 / t.cap);
   }
   return buildDieText({ text: t.text, profile, x: t.x, baseline: t.baseline, capHeight: t.cap, maxWidth: t.maxWidth,
-    anchor: t.anchor ?? 'middle', ink: t.color ?? ink, role: t.role, letterSpacing: spacing }).node;
+    anchor: t.anchor ?? 'middle', ink: t.color ?? ink, role: t.role, letterSpacing: spacing, kerning: t.kerning }).node;
 }
 
 /** Serial, split around an artwork separator when the recipe asks for one. */
@@ -143,20 +152,20 @@ function serialNodes(recipe: KitRecipe, serial: string, ink: string): { nodes: S
   const sep = s.separator ?? { kind: 'dash' };
   if (sep.kind === 'art' && serial.includes('-')) {
     const [left, right] = serial.split('-', 2);
-    const measure = (value: string) => buildDieText({ text: value, profile, x: 0, baseline: s.baseline, capHeight: s.cap, ink: color, role: 'x' }).width;
+    const measure = (value: string) => buildDieText({ text: value, profile, x: 0, baseline: s.baseline, capHeight: s.cap, ink: color, role: 'x', kerning: s.kerning }).width;
     const natural = measure(left) + measure(right) + sep.art.width + 2 * sep.gap;
     const k = Math.min(1, s.maxWidth / natural);
     const cap = s.cap * k, total = natural * k;
     let x = s.x - total / 2;
-    const l = buildDieText({ text: left, profile, x, baseline: s.baseline, capHeight: cap, anchor: 'start', ink: color, role: 'serial-left' });
+    const l = buildDieText({ text: left, profile, x, baseline: s.baseline, capHeight: cap, anchor: 'start', ink: color, role: 'serial-left', kerning: s.kerning });
     x += l.width + sep.gap * k;
     const artNode = artwork(sep.art.art, { x, y: sep.art.y + (sep.art.height * (1 - k)) / 2, width: sep.art.width * k, height: sep.art.height * k, color: sep.art.color ?? color }, 'serial-separator');
     x += sep.art.width * k + sep.gap * k;
-    const r = buildDieText({ text: right, profile, x, baseline: s.baseline, capHeight: cap, anchor: 'start', ink: color, role: 'serial-right' });
+    const r = buildDieText({ text: right, profile, x, baseline: s.baseline, capHeight: cap, anchor: 'start', ink: color, role: 'serial-right', kerning: s.kerning });
     return { nodes: [n('g', { 'data-role': 'serial', 'aria-label': serial }, l.node, artNode, r.node)], fit: k < 1 ? 'reduced' : 'natural' };
   }
   const shown = sep.kind === 'dot' ? serial.replace('-', '·') : sep.kind === 'gap' ? serial.replace('-', ' ') : sep.kind === 'none' || sep.kind === 'art' ? serial.replace('-', '') : serial;
-  const run = buildDieText({ text: shown, profile, x: s.x, baseline: s.baseline, capHeight: s.cap, maxWidth: s.maxWidth, ink: color, role: 'serial' });
+  const run = buildDieText({ text: shown, profile, x: s.x, baseline: s.baseline, capHeight: s.cap, maxWidth: s.maxWidth, ink: color, role: 'serial', kerning: s.kerning });
   return { nodes: [run.node], fit: run.fit };
 }
 
@@ -206,9 +215,15 @@ export function buildKitScene(recipe: KitRecipe, parts: Parts, options: KitScene
   const holes = recipe.holes ?? 'slots';
   const hx = recipe.holeAt?.x.map((v) => v * w) ?? [w * 0.2, w * 0.8];
   const hy = recipe.holeAt?.y.map((v) => v * h) ?? [9, h - 9];
-  const holeNodes = holes === 'none' ? [] : hx.flatMap((x) => hy.map((y) => holes === 'round'
+  const holeNodes = holes === 'none' ? [] : recipe.holeGeometry ? recipe.holeGeometry.map((hole) => 'r' in hole
+    ? n('circle', { cx: hole.cx, cy: hole.cy, r: hole.r, fill: 'black', 'data-role': 'mounting-hole' })
+    : n('rect', { x: hole.cx - hole.width / 2, y: hole.cy - hole.height / 2, width: hole.width, height: hole.height, rx: hole.rx, fill: 'black', 'data-role': 'mounting-hole' }))
+    : hx.flatMap((x) => hy.map((y) => holes === 'round'
     ? n('circle', { cx: x, cy: y, r: 3.2, fill: 'black' })
     : n('rect', { x: x - 10, y: y - 2.6, width: 20, height: 5.2, rx: 2.6, fill: 'black' })));
+  const body = (fill?: string) => recipe.cutOutline
+    ? n('path', { d: recipe.cutOutline.path, transform: `scale(${w / recipe.cutOutline.viewBox[0]} ${h / recipe.cutOutline.viewBox[1]})`, ...(fill ? { fill } : {}) })
+    : n('rect', { width: w, height: h, rx: recipe.radius, ...(fill ? { fill } : {}) });
   const decal = recipe.decal;
   const decalNodes = !decal ? [] : options.decal
     ? [buildDecal(options.decal, decalBox(options.decal, decal)),
@@ -231,20 +246,20 @@ export function buildKitScene(recipe: KitRecipe, parts: Parts, options: KitScene
     serial, parts, source: recipe.source, construction: recipe.embossed ? 'embossed' : 'flat',
     dies: { serial: serialProfile.id, evidence: serialProfile.evidence.status, fit },
     renewal: decal ? (options.decal ? { rendering: 'dated decal', year: options.decal.year, month: options.decal.month ?? null, style: options.decal.style } : { rendering: 'empty placement box only' }) : null,
-    accuracy: { artwork: 'approximate vector reconstruction', dies: serialProfile.evidence.status, paint: 'uncalibrated digital approximation', allocations: 'supported subset only' },
+    accuracy: { artwork: recipe.artworkAccuracy ?? 'approximate vector reconstruction', dies: serialProfile.evidence.status, paint: 'uncalibrated digital approximation', allocations: 'supported subset only' },
     note: recipe.note, ...options.metadata,
   };
   const label = options.title ?? `British Columbia · ${recipe.label} · ${serial}`;
   return n('svg', { xmlns: 'http://www.w3.org/2000/svg', viewBox: `0 0 ${w} ${h}`, width: w, height: h, role: 'img', 'aria-label': label },
     n('title', {}, label), n('desc', {}, recipe.note), n('metadata', {}, JSON.stringify(meta)),
     n('defs', {},
-      n('mask', { id: `${id}-holes`, maskUnits: 'userSpaceOnUse', x: 0, y: 0, width: w, height: h }, n('rect', { width: w, height: h, fill: 'white' }), ...holeNodes),
-      n('clipPath', { id: `${id}-shell` }, n('rect', { width: w, height: h, rx: recipe.radius })),
+      n('mask', { id: `${id}-holes`, maskUnits: 'userSpaceOnUse', x: 0, y: 0, width: w, height: h }, recipe.cutOutline ? body('white') : n('rect', {width: w, height: h, fill: 'white'}), ...holeNodes),
+      n('clipPath', { id: `${id}-shell` }, body()),
       n('filter', { id: `${id}-lift`, x: '-10%', y: '-10%', width: '125%', height: '130%' }, n('feDropShadow', { dx: 0.8, dy: 1.1, stdDeviation: 0.8, floodColor: '#000', floodOpacity: 0.4 })),
       n('filter', { id: `${id}-relief`, x: '-5%', y: '-10%', width: '110%', height: '125%' }, n('feDropShadow', { dx: 0.6, dy: 0.7, stdDeviation: 0.25, floodColor: '#000', floodOpacity: 0.3 }))),
     n('g', { mask: `url(#${id}-holes)` },
       n('rect', { width: w, height: h, rx: recipe.radius, fill: bg, 'data-role': 'base' }),
-      n('g', { clipPath: `url(#${id}-shell)`, 'data-role': 'artwork' }, ...(recipe.art ?? []).map((a) => artwork(a.art, a, a.role ?? 'artwork'))),
+      n('g', { clipPath: `url(#${id}-shell)`, color: ink, 'data-role': 'artwork' }, ...(recipe.art ?? []).map((a) => artwork(a.art, a, a.role ?? 'artwork'))),
       ...(rim ? [n('rect', { x: rim.inset, y: rim.inset, width: w - 2 * rim.inset, height: h - 2 * rim.inset, rx: Math.max(1, recipe.radius - rim.inset), fill: 'none', stroke: rim.color ?? ink, strokeWidth: rim.width })] : []),
       ...wells, ...decalNodes, ...fontLegends,
       n('g', recipe.embossed && parts.finish === 'embossed' ? { filter: `url(#${id}-relief)` } : {}, ...inscriptions)),

@@ -6,6 +6,9 @@
  */
 import type { DieProfile } from './engine';
 import { FRANKFURTER_EXPO_PROFILE } from './frankfurter-expo';
+import { FRANKFURTER_CENTENNIAL_YEARS_PROFILE } from './frankfurter-centennial-years';
+import { ROYAL_1987_PROFILE } from './royal-1987';
+import { PCMR_PROFILE, PCMR_COMPANY_PROFILE } from './pcmr';
 import { researchVariant } from './research-dies';
 import { BC_DATES, BC_LEGEND_SLANT, BC_LEGEND_SLIM, BC_LEGEND_STRAIGHT, BC_SLANT_1924, BC_SLIM_1936, BC_STRAIGHT_1928, BC_LEGEND_1940, BC_SERIAL_1940, BC_STRIP_1951, BC_TAB_1953, BC_LEGEND_1930, BC_THOMPSON_1930, BC_TIN_MACDONALD, BC_TIN_TACEY, BC_YEAR_1940, BC_YEAR_1952 } from './traced-1940';
 
@@ -14,6 +17,10 @@ const lettersNote = 'Letters follow the same construction and were checked again
 
 export const DIE_PROFILES: readonly DieProfile[] = [
   FRANKFURTER_EXPO_PROFILE,
+  FRANKFURTER_CENTENNIAL_YEARS_PROFILE,
+  ROYAL_1987_PROFILE,
+  PCMR_PROFILE,
+  PCMR_COMPANY_PROFILE,
   // ── Legends (province names, slogans, years) ──────────────────────────
   {
     id: 'bc-legend-condensed', label: 'Legend · condensed sans',

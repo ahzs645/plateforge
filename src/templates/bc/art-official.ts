@@ -8,6 +8,9 @@ import { node as n, type SvgNode } from '../svg-scene';
 import { registerArtwork } from './art';
 import {vancouverCentennialArtwork, VANCOUVER_CENTENNIAL_VIEWBOX} from './vancouver-centennial';
 import { totemEmblemSymbol } from './totem-emblem';
+import { NWT_POLAR_BEAR_PATH, NWT_POLAR_BEAR_BORDER_PATH } from '../shapes/nwt-polar-bear';
+import royalCanadaArmsUrl from './assets/royal-canada-arms.png';
+import {apecGlobeArtwork, APEC_GLOBE_VIEWBOX} from './apec-globe';
 
 const GOLD = '#c9a646', RED = '#c8202e', BLUE = '#1f3f8f', WHITE = '#ffffff';
 
@@ -99,24 +102,13 @@ function canadaArms(): SvgNode[] {
 
 /** APEC 1997 globe, 120 × 70: blue oval with green continents, white grid and lettering, pinstripe wings. */
 function apecGlobe(): SvgNode[] {
-  const stripes = Array.from({ length: 9 }, (_, i) => n('rect', { x: 0, y: 17 + i * 4.2, width: 120, height: 1.6, fill: '#8fb3dc' }));
-  return [
-    ...stripes,
-    n('ellipse', { cx: 60, cy: 35, rx: 46, ry: 33, fill: '#1a64b0', stroke: WHITE, strokeWidth: 1 }),
-    n('path', { d: 'M22 20 C30 10 44 8 50 16 C46 22 40 22 36 30 C30 34 24 30 22 20 Z', fill: '#6cbf3c' }),
-    n('path', { d: 'M30 44 C36 40 44 42 44 50 C40 56 32 54 30 44 Z', fill: '#6cbf3c' }),
-    n('path', { d: 'M70 8 C84 6 98 14 100 24 C92 28 86 26 84 34 C88 44 84 56 78 62 C74 54 76 44 72 38 C74 30 66 24 70 8 Z', fill: '#6cbf3c' }),
-    ...[-30, -15, 0, 15, 30].map((dx) => n('ellipse', { cx: 60, cy: 35, rx: Math.abs(dx) * 1.5 || 0.1, ry: 33, fill: 'none', stroke: WHITE, strokeWidth: 0.6 })),
-    ...[15, 25, 45, 55].map((y) => n('path', { d: `M${60 - 46 * Math.sqrt(1 - ((y - 35) / 33) ** 2)} ${y} H${60 + 46 * Math.sqrt(1 - ((y - 35) / 33) ** 2)}`, stroke: WHITE, strokeWidth: 0.6 })),
-    n('path', { d: 'M14 35 H106', stroke: WHITE, strokeWidth: 0.6 }),
-    n('text', { x: 60, y: 40.5, fill: WHITE, fontFamily: 'Arial, Helvetica, sans-serif', fontWeight: 700, fontSize: 14, textAnchor: 'middle', letterSpacing: 1 }, 'APEC'),
-  ];
+  return apecGlobeArtwork();
 }
 /** The APEC sticker on the 1997 military CANADA plates, 70 × 60. */
 function apecSticker(): SvgNode[] {
   return [
     n('rect', { width: 70, height: 60, fill: '#fbfbf8' }),
-    place(4, 8, 62 / 120, ...apecGlobe()),
+    place(4, 8, 62 / APEC_GLOBE_VIEWBOX[0], ...apecGlobe()),
     n('text', { x: 35, y: 54, fill: '#333', fontFamily: 'Arial, Helvetica, sans-serif', fontSize: 7, textAnchor: 'middle' }, 'CANADA 1997'),
   ];
 }
@@ -178,10 +170,10 @@ function victoriaSeal(): SvgNode[] {
   ];
 }
 
-/** Die-cut polar-bear outline (NWT pavilion plates), 300 × 150: white field, blue embossed border. */
+/** Shared NWT reconstruction: independent cut silhouette and inset border. */
 function polarBear(): SvgNode[] {
-  const d = 'M14 58 C12 32 40 16 80 18 C120 14 170 10 214 18 C230 20 238 14 252 18 L262 26 C276 26 284 34 288 44 C294 52 290 60 278 58 L270 62 C262 72 250 72 246 80 C248 100 250 120 246 134 C244 142 236 144 226 144 L212 144 L208 124 L194 122 L192 140 C190 146 182 147 170 147 L160 147 L158 128 L108 130 L104 142 C100 147 92 148 80 148 L68 148 L70 128 L52 124 L46 142 C42 148 34 148 24 148 L14 148 C10 120 18 90 14 58 Z';
-  return [n('path', { d, fill: '#fdfbf5' }), n('path', { d, fill: 'none', stroke: '#3262bc', strokeWidth: 3.5, transform: 'translate(150 83) scale(0.965) translate(-150 -83)' })];
+  return [n('path', { d: NWT_POLAR_BEAR_PATH, fill: '#fdfbf5', 'data-role': 'cut-silhouette' }),
+    n('path', { d: NWT_POLAR_BEAR_BORDER_PATH, fill: 'none', stroke: '#3262bc', strokeWidth: 3, 'data-role': 'inset-border' })];
 }
 
 /** Vancouver centennial "100" mark, 180 × 90: outline 1 and 00 with a green skyline and blue water lines. */
@@ -194,14 +186,16 @@ function totem(): SvgNode[] {
 registerArtwork('official-maple-leaf', { viewBox: [40, 40], draw: () => [leaf(0, 0, 40, '#d52b1e')] });
 registerArtwork('official-crown', { viewBox: [60, 50], draw: () => crown('#d4b04a', '#9a1b20') });
 registerArtwork('official-canada-arms', { viewBox: [100, 90], draw: canadaArms });
+registerArtwork('royal-canada-arms-supplied', { viewBox: [1096, 1435], accuracy: 'supplied-image',
+  draw: () => [n('image', {href: royalCanadaArmsUrl, width: 1096, height: 1435, preserveAspectRatio: 'xMidYMid meet', 'data-source': 'user-supplied-isolated-canadian-coat-of-arms'})] });
 registerArtwork('official-lg-crest', { viewBox: [100, 100], draw: lgCrest });
-registerArtwork('official-apec', { viewBox: [120, 70], draw: apecGlobe });
+registerArtwork('official-apec', { viewBox: APEC_GLOBE_VIEWBOX, draw: apecGlobe });
 registerArtwork('official-apec-sticker', { viewBox: [70, 60], draw: apecSticker });
 registerArtwork('official-asia-pacific', { viewBox: [40, 36], draw: yearOfAsiaPacific });
 registerArtwork('official-pacific-gateway', { viewBox: [36, 44], draw: pacificGateway });
 registerArtwork('official-expo86', { viewBox: [225, 70], draw: expo86 });
 registerArtwork('official-royal-visit-1994', { viewBox: [100, 100], draw: royalVisit1994 });
 registerArtwork('official-victoria-seal', { viewBox: [40, 40], draw: victoriaSeal });
-registerArtwork('official-polar-bear', { viewBox: [300, 150], draw: polarBear, aspect: 'stretch' });
+registerArtwork('official-polar-bear', { viewBox: [600, 300], draw: polarBear });
 registerArtwork('official-vancouver-100', { viewBox: VANCOUVER_CENTENNIAL_VIEWBOX, draw: vancouverCentennialArtwork });
 registerArtwork('official-totem', { viewBox: [960, 925], draw: totem });

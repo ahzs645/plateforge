@@ -9,7 +9,7 @@ import { BC_LOGO, MONOGRAM_1914, MONOGRAM_1918, SPIRIT_FLAG } from './emblems';
 
 export interface ArtBox { x: number; y: number; width: number; height: number }
 /** A vector master drawn in its own viewBox units; `aspect: 'stretch'` fills the box, otherwise it is fitted. */
-export interface ArtMaster { viewBox: [number, number]; draw(): SvgNode[]; aspect?: 'stretch' | 'meet' }
+export interface ArtMaster { viewBox: [number, number]; draw(): SvgNode[]; aspect?: 'stretch' | 'meet'; accuracy?: 'approximate' | 'supplied-image' }
 
 const FLAG_BLUE = '#1f3f8f', FLAG_RED = '#c8203a', FLAG_GOLD = '#f2b632';
 
@@ -110,5 +110,5 @@ export function artwork(id: string, box: ArtBox & { color?: string }, role = 'ar
   const sx = box.width / vw, sy = box.height / vh;
   const [kx, ky] = master.aspect === 'stretch' ? [sx, sy] : [Math.min(sx, sy), Math.min(sx, sy)];
   const dx = box.x + (box.width - vw * kx) / 2, dy = box.y + (box.height - vh * ky) / 2;
-  return n('g', { 'data-role': role, 'data-art': id, 'data-accuracy': 'approximate', ...(box.color ? { color: box.color } : {}), transform: `translate(${dx.toFixed(3)} ${dy.toFixed(3)}) scale(${kx.toFixed(5)} ${ky.toFixed(5)})` }, ...master.draw());
+  return n('g', { 'data-role': role, 'data-art': id, 'data-accuracy': master.accuracy ?? 'approximate', ...(box.color ? { color: box.color } : {}), transform: `translate(${dx.toFixed(3)} ${dy.toFixed(3)}) scale(${kx.toFixed(5)} ${ky.toFixed(5)})` }, ...master.draw());
 }

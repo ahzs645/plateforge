@@ -9,6 +9,7 @@ import type { PlateEra, PlateFamily, PlateFormat, PlateStatus } from '../../core
 import type { KitDecal, KitFontText, KitRecipe, KitSerial, KitText } from '../../templates/bc/kit';
 import { kitFormat, NO_SERIAL, numericGrammar, type KitPalette, type SerialGrammar } from './bc-kit';
 import '../../templates/bc/art-official';
+import {NWT_POLAR_BEAR_PATH, NWT_POLAR_BEAR_SLOTS} from '../../templates/shapes/nwt-polar-bear';
 
 const page = (slug: string, title: string) => ({ title: `BCpl8s · ${title}`, url: `https://www.bcpl8s.ca/${slug}` });
 const SRC = {
@@ -382,9 +383,9 @@ const officialSpecs: Spec[] = [
     description: 'From 1970 the federal government used one standard plate for its vehicles across Canada: black number in a raised panel, CANADA between red maple leaves. Replaced the provincial N plates.' },
   { id: 'official-defence-pcmr', label: 'P.C.M.R. · militia rangers', family: 'official', era: 'official-prefix-1938', period: [1942, 1945], status: 'uncertain',
     recipe: recipe('official-pcmr', 'Pacific Coast Militia Rangers', { w: 300, h: 150 }, SRC.nd, {
-      embossed: false, radius: 3, background: '#f6efd1', ink: '#23242b', holes: 'none', rim: { inset: 9, width: 2 }, note: `${NOTE} Size unknown; hand-painted, and each company’s plates differ.`,
-      legends: column(['C', 'O', '7', '1'], 278, 42, 30, 24, 'bc-legend-condensed', 'company'),
-      serial: { x: 132, baseline: 112, cap: 70, maxWidth: 230, die: 'bc-legend-1940', separator: { kind: 'none' } } }),
+      embossed: false, radius: 3, background: '#f6efd1', ink: '#23242b', holes: 'none', rim: { inset: 9, width: 2.6 }, note: `${NOTE} Size unknown; smooth reconstruction of the painted Company 71 specimen. Other companies used different designs.`,
+      legends: column(['C', 'O', '7', '1'], 267, 42, 30, 24, 'bc-pcmr-71-company', 'company'),
+      serial: { x: 132, baseline: 111.5, cap: 76, maxWidth: 232, die: 'bc-pcmr-71', separator: { kind: 'none' }, kerning: {'P.': -7, '.C': 22, 'C.': -7, '.M': 7, 'M.': -5, '.R': 9, 'R.': -5} } }),
     grammar: { blocks: [{ pattern: 'P.C.M.R.' }], hint: 'P.C.M.R.' },
     description: 'Painted plates of the wartime Pacific Coast Militia Rangers; this is company 71 (Penticton). Their legal status is not recorded and designs vary by company.' },
   { id: 'official-defence-esquimalt', label: 'Esquimalt Garrison · D.N.D.', family: 'official', era: 'official-prefix-1938', period: [1956, 1957], status: 'uncertain',
@@ -433,7 +434,10 @@ const officialSpecs: Spec[] = [
 
 // ── Events & ceremonial ──────────────────────────────────────────────────────
 const EXPO_BLUE = '#3d7fd0';
-const expoLogo = (x: number, y: number, width: number) => ({ art: 'official-expo86', x, y, width, height: (width * 70) / 225, color: EXPO_BLUE, role: 'expo-logo' });
+/** Photo-calibrated wordmark spacing; the shared Medium glyphs retain their native shapes. */
+const EXPO_KERNING = {EX: -4, XP: -10.1, PO: -11.7, O8: 6.5, '86': -17.6};
+const expoWordmark = (x: number, baseline: number, cap: number, maxWidth: number, color = EXPO_BLUE): KitText =>
+  ({text: 'EXPO86', x, baseline, cap, maxWidth, color, die: 'bc-frankfurter-expo', role: 'expo-wordmark', kerning: EXPO_KERNING});
 const serif = (text: string, x: number, baseline: number, size: number, color: string, width?: number, weight = 400, italic = false): KitFontText =>
   ({ text, x, baseline, size, font: 'serif', color, weight, italic, role: 'legend', ...(width ? { width } : {}) });
 const sans = (text: string, x: number, baseline: number, size: number, color: string, width?: number, weight = 500): KitFontText =>
@@ -444,12 +448,12 @@ function expoBooster(id: string, aamva: boolean): KitRecipe {
   return recipe(id, `Expo 86 motorcycle-base booster${aamva ? ' (AAMVA)' : ''}`, { w, h }, SRC.expo, {
     embossed: false, radius: 6, background: '#e6e7e3', ink: '#1f3a8a', holes: 'slots', holeAt: { x: [0.2, 0.8], y: [0.08, 0.9] }, rim: { inset: 3, width: 1, color: '#c5cfda' },
     note: `${NOTE} Motorcycle-base size is not stated; estimated from photo proportions.`,
-    art: [expoLogo(22, 26, 136), { ...cornerFlag, x: 8, y: 83, width: 26, height: 20 }],
+    art: [{ ...cornerFlag, x: 8, y: 83, width: 26, height: 20 }],
     shapes: [{ kind: 'rect', x: 58, y: 84, width: 72, height: 22, rx: 2, stroke: '#c9ccd2', strokeWidth: 0.8 }],
     fontLegends: [serif('Beautiful British Columbia', 90, 19, 13, '#1f3a8a', 150, 700), serif('What the World is Coming to!', 90, 79, 10, '#111', 130, 700),
       ...COURTESY.map((t, i) => sans(t, 94, 90 + i * 3.7, 3, '#222')),
       ...(aamva ? [sans('A.A.M.V.A.', 156, 93, 5.5, '#1f3a8a'), serif('Edmonton ’85', 156, 99, 5.5, '#1f3a8a')] : [])],
-    legends: [], serial: NO_NUMBER,
+    legends: [expoWordmark(90, 66, 28.5, 155)], serial: NO_NUMBER,
   });
 }
 
@@ -458,12 +462,17 @@ const eventSpecs: Spec[] = [
     recipe: recipe('events-royal-1951', '1951 Royal Tour', { w: 305, h: 165 }, SRC.royal, {
       embossed: false, radius: 5, background: '#800217', ink: '#c8b070', holes: 'round', holeAt: { x: [0.2, 0.8], y: [0.08, 0.92] }, rim: null,
       shapes: [{ kind: 'rect', x: 6, y: 6, width: 293, height: 153, rx: 3, stroke: '#c8b070', strokeWidth: 0.8 }],
-      art: [{ art: 'official-canada-arms', x: 100, y: 10, width: 105, height: 145 }],
+      note: `${NOTE} The central arms use the exact user-supplied transparent PNG, scaled uniformly; placement remains approximate.`,
+      artworkAccuracy: 'exact user-supplied raster image; approximate placement',
+      art: [{ art: 'royal-canada-arms-supplied', x: 100, y: 10, width: 105, height: 145 }],
       fontLegends: [serif('19', 67, 101, 46, '#c8b070'), serif('51', 238, 101, 46, '#c8b070')], legends: [], serial: NO_NUMBER }),
     grammar: noNumber,
     description: 'Princess Elizabeth’s 1951 tour plate: the Royal Arms of Canada in colour between a gold 19 and 51 on crimson, 12 × 6.5 in rather than the new 12 × 6 in standard. It was used across Canada, not only in B.C.' },
   { id: 'events-royal-1987', label: '1987 ROYAL 1–20', family: 'events', era: 'events-royal', period: [1987, 1987],
-    recipe: flagBase('events-royal-1987', '1987 ROYAL (ham base)', SRC.royal, 'bc-astro-4', 'single', { ink: '#d8342c' }),
+    recipe: flagBase('events-royal-1987', '1987 ROYAL (ham base)', SRC.royal, 'bc-royal-1987', 'single', {
+      ink: '#d8342c', serial: {x: 150, baseline: 109.5, cap: 65.5, maxWidth: 268, die: 'bc-royal-1987', color: '#d8342c', separator: {kind: 'none'}},
+      note: `${BASE_NOTE} One coherent lettering construction checked against ROYAL 1 and ROYAL 18; physical die identity and unobserved digit contours remain unconfirmed.`,
+    }),
     grammar: { blocks: [{ pattern: 'ROY\\AL[1-9]' }, { pattern: 'ROY\\AL1[0-9]' }, { pattern: 'ROY\\AL20' }], hint: 'ROYAL1 … ROYAL20' },
     description: 'For the 1987 Commonwealth Heads of Government visit, twenty pairs ROYAL 1–ROYAL 20 were made on the Ham Radio blank, with red serials in the colour of the 1986 prorated plates. The decal box stays empty.' },
   { id: 'events-royal-1994', label: '1994 Commonwealth Games visit', family: 'events', era: 'events-royal', period: [1994, 1994],
@@ -525,16 +534,16 @@ const eventSpecs: Spec[] = [
   { id: 'events-expo86-prototype', label: 'Expo 86 promotional prototype', family: 'events', era: 'events-expo-1985', period: [1985, 1985], status: 'prototype',
     recipe: recipe('events-expo86-prototype', 'Expo 86 promotional prototype', { w: 300, h: 150 }, SRC.expo, {
       radius: 7, background: '#e6e7e3', ink: '#1a2a5a', holes: 'round', holeAt: { x: [0.25, 0.75], y: [0.07, 0.93] }, rim: { inset: 4.5, width: 1.2, color: '#c5cfda' },
-      art: [expoLogo(45, 38, 210), { ...cornerFlag, x: 12, y: 118, width: 30, height: 24 }, { ...cornerFlag, x: 258, y: 118, width: 30, height: 24 }],
-      fontLegends: [serif('Beautiful British Columbia', 150, 30, 19.5, '#1f3a8a', 237), serif('What the World is Coming to!', 150, 124, 13, '#111', 180, 700)],
-      legends: [], serial: { x: 150, baseline: 146, cap: 18, maxWidth: 110, die: 'bc-astro-4', separator: { kind: 'none' } } }),
+      art: [{ ...cornerFlag, x: 12, y: 118, width: 30, height: 24 }, { ...cornerFlag, x: 258, y: 118, width: 30, height: 24 }],
+      fontLegends: [serif('Beautiful British Columbia', 150, 30, 19.5, '#1f3a8a', 237), serif('What the World is Coming to!', 150, 112, 13, '#111', 210, 700)],
+      legends: [expoWordmark(150, 95, 52, 264)], serial: { x: 150, baseline: 146, cap: 18, maxWidth: 110, die: 'bc-astro-4', separator: { kind: 'none' } } }),
     grammar: { blocks: [{ pattern: '999 999' }], hint: '999 999 (stamped in the decal area)' },
     description: 'Prototype of the promotional plate on the full-size passenger base, with a number stamped in the decal area (201 307); the plate was eventually produced on the motorcycle base.' },
   { id: 'events-expo86-souvenir', label: 'Expo 86 souvenir (Universal Exchange)', family: 'events', era: 'events-expo-1985', period: [1986, 1986], status: 'souvenir',
     recipe: recipe('events-expo86-souvenir', 'Expo 86 souvenir plate', { w: 300, h: 150 }, SRC.expo, {
       embossed: false, radius: 16, background: '#eff1f0', ink: '#2b67aa', holes: 'slots', holeAt: { x: [0.22, 0.78], y: [0.12, 0.88] }, rim: { inset: 9.5, width: 1.4 },
       art: [],
-      legends: [{ text: 'EXPO86', x: 150, baseline: 100, cap: 49.5, maxWidth: 280, die: 'bc-frankfurter-expo', role: 'expo-wordmark' },
+      legends: [expoWordmark(150, 102, 51.4, 280, '#2b67aa'),
         { text: 'VANCOUVER', x: 150, baseline: 32, cap: 12, maxWidth: 110, die: 'bc-legend-1973', role: 'city', spread: true },
         { text: 'BRITISH COLUMBIA', x: 150, baseline: 128, cap: 12, maxWidth: 226, die: 'bc-legend-1973', role: 'province', spread: true }],
       serial: NO_NUMBER }),
@@ -560,11 +569,13 @@ const eventSpecs: Spec[] = [
     description: 'Plates for the Vintage International antique auto show at BC Place during Expo 86: EXPO [flag] 86 with the car’s stall number (1–500) stamped in the decal box. Late registrants got un-numbered plates; a few higher numbers (1931, 1957 …) were probably special orders.' },
   { id: 'events-expo86-nwt', label: 'Expo 86 · NWT pavilion polar bear', family: 'events', era: 'events-expo-1985', period: [1986, 1986], status: 'uncertain',
     recipe: recipe('events-expo86-nwt', 'NWT pavilion polar-bear plate', { w: 300, h: 150 }, SRC.expo, {
-      radius: 0, background: 'none', ink: '#3262bc', holes: 'round', holeAt: { x: [0.24, 0.66], y: [0.2, 0.78] }, rim: null,
-      note: `${NOTE} Overall size estimated; the die-cut outline is simplified.`,
+      radius: 0, background: 'none', ink: '#3262bc', holes: 'slots', rim: null,
+      cutOutline: {path: NWT_POLAR_BEAR_PATH, viewBox: [600, 300]},
+      holeGeometry: NWT_POLAR_BEAR_SLOTS.map(({cx, cy, width, height, rx}) => ({cx: cx / 2, cy: cy / 2, width: width / 2, height: height / 2, rx: rx / 2})),
+      note: `${NOTE} Uses the shared NWT reference reconstruction and independent inset border, with transparent cut edges and slotted mounts. Exact Expo-era tooling and overall size remain unverified.`,
       art: [{ art: 'official-polar-bear', x: 0, y: 0, width: 300, height: 150, role: 'bear-shape' }],
-      fontLegends: [sans('EXPLORE CANADA’S ARCTIC', 138, 42, 14, '#3262bc', 168, 600), sans('NORTHWEST TERRITORIES', 136, 117, 14, '#3262bc', 172, 600)],
-      legends: [], serial: { x: 132, baseline: 97, cap: 46, maxWidth: 170, die: 'bc-astro-3', separator: { kind: 'none' } } }),
+      fontLegends: [sans('EXPLORE CANADA’S ARCTIC', 136, 39, 17, '#3262bc', 220, 600), sans('NORTHWEST TERRITORIES', 127, 118, 17, '#3262bc', 198, 600)],
+      legends: [], serial: { x: 130, baseline: 100, cap: 57, maxWidth: 204, die: 'bc-astro-3', separator: { kind: 'none' } } }),
     grammar: { blocks: [{ pattern: 'EXPO [1-9]' }, { pattern: 'EXPO 86' }], hint: 'EXPO 9 (pavilion vehicles) or EXPO 86 (samples/souvenirs)' },
     description: 'Northwest Territories plates in the polar-bear shape for its Expo 86 pavilion: single-digit EXPO plates were used on pavilion vehicles; the commoner EXPO 86 plates were samples or souvenirs.' },
   { id: 'events-vancouver-100', label: 'Vancouver 100 souvenir', family: 'events', era: 'events-expo-1985', period: [1986, 1986], status: 'souvenir',
@@ -573,8 +584,8 @@ const eventSpecs: Spec[] = [
       note: `${NOTE} User-supplied geometric Centennial reconstruction; colours and physical placement are approximate.`,
       art: [{ art: 'official-vancouver-100', x: 76, y: 15, width: 148, height: 113 }],
       shapes: [{ kind: 'line', x1: 8, y1: 136, x2: 292, y2: 136, stroke: '#38B114', strokeWidth: 3.4 }, { kind: 'line', x1: 8, y1: 143, x2: 292, y2: 143, stroke: '#0047BA', strokeWidth: 3.4 }],
-      legends: [...column([...'1886'], 53, 37, 19, 14, 'bc-legend-1973', 'from').map((t) => ({ ...t, color: '#38B114' })),
-        ...column([...'1986'], 247, 37, 19, 14, 'bc-legend-1973', 'to').map((t) => ({ ...t, color: '#0047BA' }))],
+      legends: [...column([...'1886'], 53, 50, 19, 14, 'bc-frankfurter-centennial-years', 'from').map((t) => ({ ...t, color: '#38B114' })),
+        ...column([...'1986'], 247, 50, 19, 14, 'bc-frankfurter-centennial-years', 'to').map((t) => ({ ...t, color: '#0047BA' }))],
       fontLegends: [], serial: NO_NUMBER }),
     grammar: noNumber,
     description: 'Vancouver Centennial souvenir: supplied outlined VANCOUVER and city of the century wordmarks, joined 100, mountain bands, skyline and water. The supplied artwork is a geometric reconstruction. Green 1886 and blue 1986 columns follow the photographed souvenir; original font attribution remains a visual identification.' },

@@ -1,0 +1,11 @@
+{
+  "attachment": "Isolated Canadian coat of arms.png.zip",
+  "asset": "src/templates/bc/assets/royal-canada-arms.png",
+  "sha256": "86fbf48838cb4fce06cbfa027bb5800d5e6d876ae83bbda5457f26ad88316c79",
+  "imageSize": [
+    1096,
+    1435
+  ],
+  "method": "Original uploaded RGBA PNG preserved byte for byte; scaled uniformly in the 1951 Royal Tour artwork box. No redrawing, tracing or background editing.",
+  "use": "events-royal-1951"
+}

@@ -1,0 +1,22 @@
+{
+  "source": "https://www.bcpl8s.ca/images/Expo-86/Expo86-Souvenir(mid).jpg",
+  "method": "Approximate full-wordmark paint overlap, six horizontal origins with one shared cap height and baseline. The font outlines and widths are unchanged; a single coherent run receives pair spacing corrections. Near-frontal image; no exact physical dimensions or perspective claimed.",
+  "capPixels": 68.507,
+  "baselinePixels": 136.105,
+  "originsPixels": [
+    30.677,
+    82.242,
+    135.726,
+    186.086,
+    266.47,
+    309.112
+  ],
+  "pairAdjustmentsInCap100": {
+    "EX": -4.0,
+    "XP": -10.1,
+    "PO": -11.7,
+    "O8": 6.5,
+    "86": -17.6
+  },
+  "approximateWordmarkIoU": 0.9479
+}

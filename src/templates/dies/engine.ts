@@ -66,6 +66,8 @@ export interface DieTextProps {
   role: string;
   /** Extra space between glyphs, in cap-height units, e.g. for spaced legends. */
   letterSpacing?: number;
+  /** Pair placement adjustments in cap-height units; glyph outlines and advances stay unchanged. */
+  kerning?: Readonly<Record<string, number>>;
 }
 
 export interface DieRun { node: SvgNode; width: number; height: number; fit: 'natural' | 'reduced' }
@@ -76,14 +78,16 @@ export function buildDieText(props: DieTextProps): DieRun {
   if (!dieSupports(p.profile, p.text)) throw new RangeError(`Die ${p.profile.id} has no glyph for part of “${p.text}”.`);
   const spacing = p.profile.params.tracking + (p.letterSpacing ?? 0);
   const glyphs = [...p.text].map((c) => ({ char: c, glyph: dieGlyph(p.profile, c)! }));
-  const natural = glyphs.reduce((sum, g) => sum + g.glyph.advance, 0) + Math.max(0, glyphs.length - 1) * spacing;
+  const pairAdjustments = glyphs.slice(0, -1).map((g, i) => p.kerning?.[g.char + glyphs[i + 1].char] ?? 0);
+  const natural = glyphs.reduce((sum, g) => sum + g.glyph.advance, 0) + Math.max(0, glyphs.length - 1) * spacing
+    + pairAdjustments.reduce((sum, value) => sum + value, 0);
   let scale = p.capHeight / 100;
   const fit = p.maxWidth !== undefined && natural * scale > p.maxWidth ? 'reduced' : 'natural';
   if (fit === 'reduced') scale = p.maxWidth! / natural;
   const width = natural * scale, height = 100 * scale;
   const left = p.anchor === 'start' ? p.x : p.anchor === 'end' ? p.x - width : p.x - width / 2;
   let cursor = 0;
-  const children = glyphs.map(({ char, glyph }) => {
+  const children = glyphs.map(({ char, glyph }, i) => {
     const skew = p.profile.fallbackSlant && !p.profile.researchChars?.has(char) ? ` skewX(${-p.profile.fallbackSlant})` : '';
     const item = n('g', { transform: `translate(${round(cursor)} 0)${skew}`, 'data-character': char,
       ...(p.profile.researchChars?.has(char) ? { 'data-source': 'research' } : {}), ...(glyph.stroke ? { strokeWidth: glyph.stroke } : {}),
@@ -91,7 +95,7 @@ export function buildDieText(props: DieTextProps): DieRun {
       // Traced outlines are filled shapes, not centrelines.
       ...(glyph.fill ? { fill: p.ink, stroke: 'none', fillRule: 'evenodd' } : {}) },
       ...glyph.paths.map((d) => n('path', { d })));
-    cursor += glyph.advance + spacing;
+    cursor += glyph.advance + spacing + (pairAdjustments[i] ?? 0);
     return item;
   });
   const slant = p.profile.slant ? ` skewX(${-p.profile.slant})` : '';

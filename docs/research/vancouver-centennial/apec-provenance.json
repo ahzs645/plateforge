@@ -1,0 +1,57 @@
+{
+  "attachment": "APEC-vector-kit.zip",
+  "master": "APEC-globe-expanded.svg",
+  "sha256": "5f874b03cbd6b22f69e44e10ab34b6b7536eb2b8dad17faf72243e2db8bfd652",
+  "originalViewBox": [
+    32.0,
+    40.0,
+    260.0,
+    136.0
+  ],
+  "method": "Safe SVG scene import of supplied expanded paths; original path geometry, six editable layer groups, white details, palette and clipping preserved. No bitmap tracing or font substitution.",
+  "providedSourceRecord": {
+    "title": "APEC at a Glance, December 2006",
+    "publisher": "APEC Secretariat",
+    "source_page": "https://www.apec.org/Publications/2006/12/APEC-at-a-Glance-December-2006",
+    "download_url": "https://www.apec.org/apecapi/publication/getfile?publicationId=5f22821d-0f87-4681-9951-9593d26166f8",
+    "downloaded_file": "apec-glance-2006.pdf",
+    "source_sha256": "1cf07ecbecf3ecab2dd51ffff47d45d1de3f34e0f929c4862a3bbeaa23baa565",
+    "page_index": 0,
+    "native_vector": true,
+    "reconstruction_method": "Extract original vector paths, preserving their curves, fill, stroke and halo clip. No image tracing.",
+    "extracted_file": "apec-2006-native-extracted.svg",
+    "visible_path_count": 81,
+    "clip_path_count": 1,
+    "embedded_image_count": 0,
+    "live_text_count": 0,
+    "font_dependency_count": 0,
+    "source_svg_rgb": {
+      "blue": "#0066b3",
+      "green": "#71bf44",
+      "white": "#ffffff"
+    },
+    "path_identification": {
+      "halo-white-base": "White outer oval background; used in official cover to support striped halo on dark page.",
+      "halo-blue-stripes": "31 rectangles in clip_18, source blue.",
+      "native-path-00": "Globe ocean blue",
+      "native-path-01": "Globe white outline, stroke width 0.284 source units",
+      "native-path-02": "White graticule grid, stroke width 0.213 source units",
+      "native-path-03": "A outer white outline",
+      "native-path-04": "E white outline",
+      "native-path-05": "C white outline",
+      "native-path-06": "A counter in blue",
+      "native-path-07": "P white outline",
+      "native-path-08": "P counter in blue",
+      "native-path-09 through native-path-48": "40 green continent and island paths, original z-order after letterforms",
+      "native-path-42": "Antarctica",
+      "native-path-43": "Main continental silhouette (Asia and Americas, connected across far-north edge)",
+      "native-path-48": "Australia"
+    },
+    "geometry_note": "Original PDF global transform retained in each path: matrix(1,0,0,-1,-235.47202,1443.2001). The raw extracted SVG viewBox is 76 91.8 88 45. Inkscape export-area-drawing PNG made for visual review. Exact overall artwork bounds are approximately x 76.60798, y 91.83754, width 86.584, height 44.574 in extracted source units.",
+    "reference_comparison": "This is the historical globe design including Antarctica, white grid, compressed APEC letters and striped halo. Uploaded raster reference has denser finer halo lines and darker/smaller-color-palette rendering. Preserve native map/glyph geometry while treating any palette/halo adjustment as a reference-matched derivative, rather than calling it an unmodified official original."
+  },
+  "uses": [
+    "events-apec-1997",
+    "events-apec-1997-military sticker"
+  ]
+}
