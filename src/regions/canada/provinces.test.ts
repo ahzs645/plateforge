@@ -3,7 +3,8 @@ import { renderToStaticMarkup } from 'react-dom/server';
 import { createRng } from '../../core/random';
 import { getRegion, getTemplate } from '../../core/registry';
 import type { PlateFormat, Region } from '../../core/types';
-import { caTemplate, type CaDesign } from '../../templates/ca';
+import { caTemplate, POLAR_BEAR_PATH, type CaDesign } from '../../templates/ca';
+import { NWT_POLAR_BEAR_PATH, NWT_POLAR_BEAR_BORDER_PATH } from '../../templates/shapes/nwt-polar-bear';
 import '../../templates';
 import { REGIONS } from '../index';
 import { canadianProvinces, series } from './provinces';
@@ -115,7 +116,7 @@ describe('Canadian provinces and territories', () => {
     expect(svg).toContain('data-emblem="crown"');
   });
 
-  it('cuts NWT and 2025 Nunavut plates to the polar-bear outline in a 12×6 box', () => {
+  it('uses the NWT reconstruction without changing the Nunavut silhouette in the 600×300 canvas', () => {
     for (const [code, facing] of [['NT', undefined], ['NU', 'left']] as const) {
       const r = region(code);
       const design = { ...r.design, ...r.formats[0].design } as CaDesign;
@@ -123,9 +124,41 @@ describe('Canadian provinces and territories', () => {
       expect(design.facing).toBe(facing);
       const svg = render(r, r.formats[0]);
       expect(svg).toContain('data-shape="polar-bear"');
-      expect(svg).toMatch(/<clipPath id="[^"]+"><path d="M30 150/);
+      const expectedPath = code === 'NT' ? NWT_POLAR_BEAR_PATH : POLAR_BEAR_PATH;
+      expect(svg).toContain(`<path d="${expectedPath}"`);
+      if (code === 'NT') {
+        expect(svg).toContain('data-shape-profile="nwt-reference"');
+        expect(svg).not.toContain(`d="${POLAR_BEAR_PATH}"`);
+      } else {
+        expect(svg).toContain('transform="translate(600 0) scale(-1 1)"');
+        expect(svg).not.toContain('data-shape-profile="nwt-reference"');
+        expect(svg).not.toContain(`d="${NWT_POLAR_BEAR_PATH}"`);
+      }
     }
     expect(render(region('NU'), format('NU', 'night-scene-2012'))).toContain('data-shape="rect"');
+  });
+
+  it('exports a separate NWT inset border and four transparent holes matching each reference style', () => {
+    expect(NWT_POLAR_BEAR_BORDER_PATH).not.toBe(NWT_POLAR_BEAR_PATH);
+    for (const [id, kind] of [['standard', 'circle'], ['explore-1986', 'rect']] as const) {
+      const svg = render(region('NT'), format('NT', id));
+      const mask = svg.match(/<mask\b[^>]*id="([^"]+)"[^>]*>([\s\S]*?)<\/mask>/);
+      expect(mask, id).not.toBeNull();
+      expect(mask![2]).toContain(`d="${NWT_POLAR_BEAR_PATH}"`);
+      expect(mask![2].match(new RegExp(`<${kind}\\b[^>]*data-role="mounting-hole"`, 'g'))).toHaveLength(4);
+      expect(mask![2].match(/data-role="mounting-hole"/g)).toHaveLength(4);
+      expect(svg).toContain(`<g mask="url(#${mask![1]})">`);
+      expect(svg).toContain(`<path d="${NWT_POLAR_BEAR_BORDER_PATH}" fill="none"`);
+      expect(svg).toContain('data-role="inset-border"');
+      expect(svg).not.toMatch(/<image\b/);
+    }
+  });
+
+  it('can omit NWT mounting holes without losing the cut silhouette', () => {
+    const design = { ...region('NT').design, holes: 'none' } as CaDesign;
+    const svg = renderToStaticMarkup(caTemplate.render({ parts: { serial: '331758' }, design, text: '331758' }));
+    expect(svg).toContain(`d="${NWT_POLAR_BEAR_PATH}"`);
+    expect(svg).not.toContain('data-role="mounting-hole"');
   });
 
   it('renders every format without broken markup', () => {

@@ -447,10 +447,18 @@ const bear: Partial<CaDesign> = {
   headerFace: 'block', headerSize: 38, headerX: 280, headerY: 88, headerSpacing: 4, headerColor: BLUE, headerWidth: 400,
   slogan: 'NORTHWEST TERRITORIES', sloganFace: 'block', sloganSize: 32, sloganX: 280, sloganY: 226, sloganSpacing: 4, sloganColor: BLUE, sloganWidth: 420,
 };
-const ntRefs = [wiki('the Northwest Territories'), OVERVIEW, { title: 'Spectacular NWT · The story behind our iconic polar bear plates', url: 'https://spectacularnwt.com/story/the-story-behind-our-beloved-iconic-polar-bear-plates/' }];
+const ntRefs = [
+  wiki('the Northwest Territories'), OVERVIEW,
+  { title: 'GNWT Gazette · May 2013, plate specimen p. 173 (PDF p. 47)', url: 'https://www.justice.gov.nt.ca/fr/fichiers/gazette-des-tno/2013/05_2.pdf#page=47' },
+  { title: 'Spectacular NWT · The story behind our iconic polar bear plates', url: 'https://spectacularnwt.com/story/the-story-behind-our-beloved-iconic-polar-bear-plates/' },
+];
 const northwestTerritories = region({
   code: 'NT', name: 'Northwest Territories',
-  design: { ...bear, header: 'SPECTACULAR', scene: 'nt-spectacular' },
+  design: {
+    ...bear, bearProfile: 'nwt-reference', bearMounts: 'round', frameWidth: 2.4,
+    serialX: 260, sloganX: 260,
+    header: 'SPECTACULAR', headerX: 220, headerY: 78, headerWidth: 280, scene: 'nt-spectacular',
+  },
   notes: 'The polar-bear-shaped plate (1970–, a registered trademark of the GNWT): the 1986 “Explore Canada’s Arctic” blue-on-white bear and the 2010 “Spectacular” update. Only rear plates since 1993.',
   formats: [
     plate({
@@ -463,7 +471,10 @@ const northwestTerritories = region({
       id: 'explore-1986', label: 'Polar bear · Explore Canada’s Arctic (1986–2010)', pattern: '999999', display: '1–999999, no leading zero', example: '125419',
       check: /^[1-9]\d{0,5}$/, generate: (rng) => String(rng.int(1, 126000)),
       description: `Steel bear-shaped plate, blue on white, “EXPLORE CANADA’S ARCTIC” above the serial and “NORTHWEST TERRITORIES” below (1 to about 126000). ${ART_NOTE}`,
-      references: ntRefs, period: [1986, 2010], design: { header: 'EXPLORE CANADA’S ARCTIC', headerSize: 38, headerSpacing: 3, scene: undefined, bg: ['#ffffff', '#f4f6f9'] },
+      references: ntRefs, period: [1986, 2010], design: {
+        header: 'EXPLORE CANADA’S ARCTIC', headerSize: 38, headerSpacing: 3, headerX: 260, headerY: 74, headerWidth: 450,
+        scene: undefined, bg: ['#ffffff', '#f4f6f9'], bearMounts: 'slotted', frameWidth: 3,
+      },
     }),
   ],
 });
