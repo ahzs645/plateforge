@@ -9,6 +9,7 @@ import type { Parts, PlateTemplate } from '../core/types';
 import { isLetteringType, letteringMetadata } from '../core/lettering';
 import { buildLettering, letteringLayout, supportsLettering } from './lettering';
 import { SvgScene } from './SvgScene';
+import { NWT_SPECTACULAR_PROFILE, buildNwtSpectacularSerial } from './dies/nwt-spectacular';
 import ntAuroraUrl from '../assets/nt-aurora.png';
 import { CONDENSED, FONTS } from './fonts';
 import { fit, measure, safeId } from './measure';
@@ -412,8 +413,26 @@ function Scene({ kind, id }: { kind: CaScene; id: string }) {
     case 'nt-spectacular':
       return (
         <g data-scene={kind}>
-          <image href={ntAuroraUrl} width={W} height={H} preserveAspectRatio="xMidYMid slice"
+          <defs>
+            <filter id={`${id}pale-sky`} colorInterpolationFilters="sRGB">
+              <feComponentTransfer>
+                <feFuncR type="gamma" amplitude="1" exponent="0.18" offset="0" />
+                <feFuncG type="gamma" amplitude="1" exponent="0.35" offset="0" />
+                <feFuncB type="gamma" amplitude="1" exponent="0.5" offset="0" />
+              </feComponentTransfer>
+            </filter>
+            <linearGradient id={`${id}sky-side`}><stop offset="0.68" stopColor="#fff" /><stop offset="1" stopColor="#000" /></linearGradient>
+            <linearGradient id={`${id}sky-height`} x1="0" y1="0" x2="0" y2="1"><stop offset="0.66" stopColor="#fff" /><stop offset="0.88" stopColor="#000" /></linearGradient>
+            <linearGradient id={`${id}white-top`} x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#fff" /><stop offset="0.15" stopColor="#fff" stopOpacity="0.9" /><stop offset="0.46" stopColor="#fff" stopOpacity="0" /></linearGradient>
+            <mask id={`${id}sky-horizontal`}><rect width={W} height={H} fill={`url(#${id}sky-side)`} /></mask>
+            <mask id={`${id}sky-vertical`}><rect width={W} height={H} fill={`url(#${id}sky-height)`} /></mask>
+          </defs>
+          <image href={ntAuroraUrl} y="22" width={W} height={H} preserveAspectRatio="xMidYMid slice"
             data-source="user-supplied-aurora-over-arctic-wilderness" />
+          <g mask={`url(#${id}sky-horizontal)`}><g mask={`url(#${id}sky-vertical)`}>
+            <image href={ntAuroraUrl} y="22" width={W} height={H} preserveAspectRatio="xMidYMid slice" filter={`url(#${id}pale-sky)`} />
+          </g></g>
+          <rect width={W} height={H} fill={`url(#${id}white-top)`} />
         </g>
       );
   }
@@ -448,6 +467,7 @@ function CaPlate({ design: d, text, parts }: { design: CaDesign; text: string; p
   const bearBorderPath = nwt ? NWT_POLAR_BEAR_BORDER_PATH : POLAR_BEAR_PATH;
   const flipBear = bear && d.facing === 'left' ? `translate(${W} 0) scale(-1 1)` : undefined;
   const vectorType = isLetteringType(parts.lettering) && supportsLettering(text) ? parts.lettering : null;
+  const spectacular = nwt && d.scene === 'nt-spectacular' && !vectorType;
   const embossed = d.embossed ?? true;
 
   const serialSize = d.serialSize ?? 150;
@@ -490,7 +510,7 @@ function CaPlate({ design: d, text, parts }: { design: CaDesign; text: string; p
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={text} data-shape={bear ? 'polar-bear' : 'rect'} data-shape-profile={nwt ? 'nwt-reference' : undefined}>
       <metadata>{JSON.stringify({ serial: text, parts, lettering: {
-        ...letteringMetadata(vectorType ?? 'default'), requested: parts.lettering ?? 'default',
+        ...(spectacular ? {id: NWT_SPECTACULAR_PROFILE.id, evidence: NWT_SPECTACULAR_PROFILE.evidence} : letteringMetadata(vectorType ?? 'default')), requested: parts.lettering ?? 'default',
         fallback: isLetteringType(parts.lettering) && !vectorType,
       }, ...(nwt ? { shape: { profile: 'nwt-reference', mounts: d.bearMounts ?? 'round', source: NWT_POLAR_BEAR_SOURCE } } : {}) })}</metadata>
       <defs>
@@ -530,10 +550,13 @@ function CaPlate({ design: d, text, parts }: { design: CaDesign; text: string; p
         {!nwt && holeList.map(([cx, cy]) => <ellipse key={`${cx}-${cy}`} cx={cx} cy={cy} rx="14" ry="6.5" fill="#000" opacity="0.2" />)}
 
         {labels.map((l, i) => <Label key={i} l={l} ink={ink} />)}
+        {nwt && d.scene === 'nt-spectacular' && <rect x="370" y="29" width="73" height="49" fill="none" stroke="#919898" strokeWidth="0.7" data-role="validation-decal-well" />}
         {emblems.filter((p) => !p.back).map((p, i) => <Emblem key={`f${i}`} p={p} />)}
 
         <g data-role="serial-group">
-          {serialLayers.map((layer, i) => {
+          {spectacular ? <>
+            <SvgScene node={buildNwtSpectacularSerial({text, x: serialX, baseline: serialY, capHeight: vectorHeight, maxWidth: serialWidth, ink, role: 'serial'}).node} />
+          </> : serialLayers.map((layer, i) => {
             const role = i === serialLayers.length - 1 ? 'serial' : 'serial-shadow';
             if (layout) {
               return (

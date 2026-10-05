@@ -90,8 +90,8 @@ describe('Vancouver souvenirs', () => {
     expect(kitRecipe('events-royal-1987').serial.die).toBe('bc-royal-1987');
     const profile = dieProfile('bc-royal-1987');
     for (let n = 1; n <= 20; n++) expect(dieSupports(profile, `ROYAL${n}`)).toBe(true);
-    expect(dieGlyph(profile, 'O')?.fill).toBeUndefined();
-    expect(dieGlyph(profile, 'L')?.paths[0]).toContain('V85.5');
+    expect(dieGlyph(profile, 'O')?.fill).toBe(true);
+    expect(dieGlyph(profile, 'L')?.paths[0]).toContain('V80');
   });
   it('renders both Centennial years with rounded source-font numerals at the same row positions', () => {
     const years = kitRecipe('events-vancouver-100').legends;

@@ -76,6 +76,10 @@ export type KitShape =
 export interface KitPanel {
   x: number; y: number; width: number; height: number; radius?: number;
   background: string; ink: string;
+  /** Local cut and inset rim geometry for shaped renewal pieces. */
+  bodyPath?: string;
+  rimPath?: string;
+  holes?: readonly {cx: number; cy: number; r: number}[];
   texts?: readonly KitText[]; art?: readonly KitArt[]; shapes?: readonly KitShape[];
   /** Serial repeated in miniature on the tab. */
   serial?: { x: number; baseline: number; cap: number; maxWidth: number; die: string };
@@ -113,6 +117,8 @@ export interface KitRecipe {
   extraWells?: readonly KitDecal[];
   shapes?: readonly KitShape[];
   panels?: readonly KitPanel[];
+  /** A removable renewal piece, fitted over the base by default. */
+  renewalPanel?: KitPanel;
   /** Stamped relief vs. flat screened/printed characters. */
   embossed: boolean;
   status?: string;
@@ -122,9 +128,19 @@ export interface KitRecipe {
 }
 
 
-export function kitGeometry(recipe: KitRecipe) {
+function kitCanvas(recipe: KitRecipe, parts: Parts = {}) {
+  const p = recipe.renewalPanel;
+  if (p && parts.renewal === 'loose') return {x: 0, y: 0, width: p.width, height: p.height};
+  const fitted = p && parts.renewal !== 'base-only';
+  const x = fitted ? Math.min(0, p.x) : 0, y = fitted ? Math.min(0, p.y) : 0;
+  return {x, y, width: (fitted ? Math.max(recipe.width, p.x + p.width) : recipe.width) - x,
+    height: (fitted ? Math.max(recipe.height, p.y + p.height) : recipe.height) - y};
+}
+
+export function kitGeometry(recipe: KitRecipe, parts: Parts = {}) {
   if (recipe.leatherSpecimen || recipe.id === 'early-1904') return leatherGeometry(recipe.leatherSpecimen ?? '1143');
-  return { width: recipe.width, height: recipe.height };
+  const {width, height} = kitCanvas(recipe, parts);
+  return {width, height};
 }
 
 function text(t: KitText, ink: string): SvgNode {
@@ -176,16 +192,21 @@ function shape(sh: KitShape, ink: string): SvgNode {
   return n('circle', { cx: sh.cx, cy: sh.cy, r: sh.r, fill: sh.fill ?? ink, ...(sh.stroke ? { stroke: sh.stroke, strokeWidth: sh.strokeWidth ?? 1 } : {}) });
 }
 
-function panel(p: KitPanel, serial: string, id: string): SvgNode {
-  const local = (t: KitText): KitText => ({ ...t, x: p.x + t.x, baseline: p.y + t.baseline });
-  return n('g', { 'data-role': p.role, filter: `url(#${id}-lift)` },
-    n('rect', { x: p.x, y: p.y, width: p.width, height: p.height, rx: p.radius ?? 3, fill: p.background }),
-    n('rect', { x: p.x + 2, y: p.y + 2, width: p.width - 4, height: p.height - 4, rx: Math.max(1, (p.radius ?? 3) - 1), fill: 'none', stroke: p.ink, strokeWidth: 1 }),
-    ...(p.art ?? []).map((a) => artwork(a.art, { ...a, x: p.x + a.x, y: p.y + a.y }, a.role ?? 'tab-art')),
-    ...(p.shapes ?? []).map((sh) => shape(sh, p.ink)),
-    ...(p.texts ?? []).map((t) => text(local(t), p.ink)),
-    ...(p.serial && serial ? [text({ text: serial.replace('-', ''), x: p.x + p.serial.x, baseline: p.y + p.serial.baseline, cap: p.serial.cap, maxWidth: p.serial.maxWidth, die: p.serial.die, role: 'tab-serial' }, p.ink)] : []),
-    ...(p.rivets ?? []).map(([cx, cy]) => n('circle', { cx: p.x + cx, cy: p.y + cy, r: 2.2, fill: '#8a8a80', stroke: '#3a3a36', strokeWidth: 0.6, 'data-role': 'rivet' })));
+function panel(p: KitPanel, serial: string, id: string, lift?: string): SvgNode {
+  const mask = `${id}-${p.role}-body`;
+  const body = (fill: string) => p.bodyPath ? n('path', {d: p.bodyPath, fill})
+    : n('rect', {width: p.width, height: p.height, rx: p.radius ?? 3, fill});
+  return n('g', { 'data-role': p.role, transform: `translate(${p.x} ${p.y})`, ...(lift ? {filter: `url(#${lift})`} : {}) },
+    n('defs', {}, n('mask', {id: mask, maskUnits: 'userSpaceOnUse', x: 0, y: 0, width: p.width, height: p.height},
+      body('white'), ...(p.holes ?? []).map(({cx, cy, r}) => n('circle', {cx, cy, r, fill: 'black', 'data-role': 'tab-hole'})))),
+    n('g', {mask: `url(#${mask})`, color: p.ink}, body(p.background),
+      p.rimPath ? n('path', {d: p.rimPath, fill: 'none', stroke: p.ink, strokeWidth: 1.5, 'data-role': 'tab-rim'})
+        : n('rect', {x: 2, y: 2, width: p.width - 4, height: p.height - 4, rx: Math.max(1, (p.radius ?? 3) - 1), fill: 'none', stroke: p.ink, strokeWidth: 1}),
+      ...(p.art ?? []).map((a) => artwork(a.art, {...a, color: a.color ?? p.ink}, a.role ?? 'tab-art')),
+      ...(p.shapes ?? []).map((sh) => shape(sh, p.ink)),
+      ...(p.texts ?? []).map((t) => text(t, p.ink)),
+      ...(p.serial && serial ? [text({text: serial.replace('-', ''), ...p.serial, role: 'tab-serial'}, p.ink)] : []),
+      ...(p.rivets ?? []).map(([cx, cy]) => n('circle', {cx, cy, r: 2.2, fill: '#8a8a80', stroke: '#3a3a36', strokeWidth: 0.6, 'data-role': 'rivet'}))));
 }
 
 export interface KitSceneOptions {
@@ -206,6 +227,14 @@ export function buildKitScene(recipe: KitRecipe, parts: Parts, options: KitScene
   });
   const w = recipe.width, h = recipe.height;
   const id = (options.scope ?? `kit-${recipe.id}`).replace(/[^a-zA-Z0-9_-]/g, '') || 'kit';
+  const canvas = kitCanvas(recipe, parts);
+  if (recipe.renewalPanel && parts.renewal === 'loose') {
+    const p = recipe.renewalPanel;
+    return n('svg', {xmlns: 'http://www.w3.org/2000/svg', viewBox: `0 0 ${p.width} ${p.height}`, width: p.width, height: p.height, role: 'img', 'aria-label': `${recipe.label} · loose renewal tab`},
+      n('title', {}, `${recipe.label} · loose renewal tab`), n('desc', {}, recipe.note),
+      n('metadata', {}, JSON.stringify({jurisdiction: 'CA-BC', source: recipe.source, renewal: 'loose', baseSerial: null})),
+      panel({...p, x: 0, y: 0}, '', id));
+  }
   const ink = options.ink ?? recipe.ink, bg = options.background ?? recipe.background;
   const serial = parts.serial ?? '';
   const serialProfile = dieProfile(recipe.serial.die);
@@ -240,17 +269,20 @@ export function buildKitScene(recipe: KitRecipe, parts: Parts, options: KitScene
     fontLegend(t, t.x, t.baseline, t.color ?? ink, t.role)]);
   const fill = (value: string) => value.replace(/\{(\w+)\}/g, (m, k: string) => options.tokens?.[k] ?? m);
   const inscriptions = [...(recipe.shapes ?? []).map((sh) => shape(sh, ink)), ...recipe.legends.map((t) => text({ ...t, text: fill(t.text) }, ink)), ...serialNode];
-  const panels = (recipe.panels ?? []).map((p) => panel(p, serial, id));
+  const panels = [...(recipe.panels ?? []), ...(recipe.renewalPanel && parts.renewal !== 'base-only' ? [recipe.renewalPanel] : [])]
+    .map((p, i) => panel(p, serial, `${id}-panel${i}`, `${id}-lift`));
   const meta = {
     jurisdiction: 'CA-BC', recipe: recipe.id, status: recipe.status ?? 'issued', physicalMm: { width: w, height: h },
     serial, parts, source: recipe.source, construction: recipe.embossed ? 'embossed' : 'flat',
     dies: { serial: serialProfile.id, evidence: serialProfile.evidence.status, fit },
-    renewal: decal ? (options.decal ? { rendering: 'dated decal', year: options.decal.year, month: options.decal.month ?? null, style: options.decal.style } : { rendering: 'empty placement box only' }) : null,
+    renewal: recipe.renewalPanel ? {rendering: parts.renewal === 'base-only' ? 'base only' : 'separately mounted tab',
+      physicalMm: {width: recipe.renewalPanel.width, height: recipe.renewalPanel.height}, independentSerial: 'not supplied'}
+      : decal ? (options.decal ? { rendering: 'dated decal', year: options.decal.year, month: options.decal.month ?? null, style: options.decal.style } : { rendering: 'empty placement box only' }) : null,
     accuracy: { artwork: recipe.artworkAccuracy ?? 'approximate vector reconstruction', dies: serialProfile.evidence.status, paint: 'uncalibrated digital approximation', allocations: 'supported subset only' },
     note: recipe.note, ...options.metadata,
   };
   const label = options.title ?? `British Columbia · ${recipe.label} · ${serial}`;
-  return n('svg', { xmlns: 'http://www.w3.org/2000/svg', viewBox: `0 0 ${w} ${h}`, width: w, height: h, role: 'img', 'aria-label': label },
+  return n('svg', { xmlns: 'http://www.w3.org/2000/svg', viewBox: `${canvas.x} ${canvas.y} ${canvas.width} ${canvas.height}`, width: canvas.width, height: canvas.height, role: 'img', 'aria-label': label },
     n('title', {}, label), n('desc', {}, recipe.note), n('metadata', {}, JSON.stringify(meta)),
     n('defs', {},
       n('mask', { id: `${id}-holes`, maskUnits: 'userSpaceOnUse', x: 0, y: 0, width: w, height: h }, recipe.cutOutline ? body('white') : n('rect', {width: w, height: h, fill: 'white'}), ...holeNodes),

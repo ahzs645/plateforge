@@ -21,6 +21,19 @@ const render = (r: Region, f: PlateFormat, serial?: string) => {
 };
 
 describe('Canadian provinces and territories', () => {
+  it('uses the Spectacular native paint masters with separate shoulders and keeps alternate styles selectable', () => {
+    const r = region('NT'), f = format('NT', 'standard');
+    const svg = render(r, f, '123123');
+    expect(svg).toContain('data-die="nwt-spectacular"');
+    expect(svg).toContain('data-layer="pale-shoulder"');
+    expect(svg).toContain('data-role="validation-decal-well"');
+    expect(svg).not.toContain('APPOSER'); // Gazette annotation is not permanent plate text.
+    const alternate = renderToStaticMarkup(caTemplate.render({parts: {serial: '123123', lettering: 'squarish'},
+      design: {...r.design, ...f.design} as CaDesign, text: '123123'}));
+    expect(alternate).toContain('data-lettering="squarish"');
+    expect(alternate).not.toContain('data-die="nwt-spectacular"');
+    expect(render(r, format('NT', 'explore-1986'), '123123')).not.toContain('data-die="nwt-spectacular"');
+  });
   it('registers every jurisdiction besides B.C. under Canada with the ca template', () => {
     expect(canadianProvinces.map((r) => r.code)).toEqual(CODES);
     for (const code of CODES) {

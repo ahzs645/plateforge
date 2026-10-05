@@ -457,8 +457,9 @@ const northwestTerritories = region({
   code: 'NT', name: 'Northwest Territories',
   design: {
     ...bear, bearProfile: 'nwt-reference', bearMounts: 'round', frameWidth: 2.4,
-    serialX: 260, sloganX: 260,
-    header: 'SPECTACULAR', headerX: 220, headerY: 78, headerWidth: 280, scene: 'nt-spectacular',
+    text: '#174f6b', frame: '#174f6b', serialX: 257, serialY: 195.5, serialSize: 145.2, serialWidth: 410,
+    sloganX: 258, sloganY: 230, sloganSize: 36, sloganWidth: 371, sloganSpacing: 2.8, sloganColor: '#174f6b',
+    header: 'SPECTACULAR', headerX: 220.5, headerY: 78, headerSize: 46, headerWidth: 252, headerSpacing: 1.2, headerColor: '#174f6b', scene: 'nt-spectacular',
   },
   notes: 'The polar-bear-shaped plate (1970–, a registered trademark of the GNWT): the 1986 “Explore Canada’s Arctic” blue-on-white bear and the 2010 “Spectacular” update. Only rear plates since 1993.',
   formats: [

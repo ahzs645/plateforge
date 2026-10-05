@@ -1,0 +1,266 @@
+[
+  {
+    "role": "serial",
+    "occurrence": 1,
+    "character": "C",
+    "sourcePaintBoxMm": [
+      11.33,
+      20,
+      46.33,
+      90
+    ]
+  },
+  {
+    "role": "serial",
+    "occurrence": 2,
+    "character": "2",
+    "sourcePaintBoxMm": [
+      53.33,
+      19.33,
+      89,
+      90.33
+    ]
+  },
+  {
+    "role": "serial",
+    "occurrence": 3,
+    "character": "9",
+    "sourcePaintBoxMm": [
+      96.33,
+      19,
+      132.67,
+      89.33
+    ]
+  },
+  {
+    "role": "serial",
+    "occurrence": 4,
+    "character": "\u00b7",
+    "sourcePaintBoxMm": [
+      138.66,
+      48.66,
+      145.33,
+      59.33
+    ]
+  },
+  {
+    "role": "serial",
+    "occurrence": 5,
+    "character": "4",
+    "sourcePaintBoxMm": [
+      151,
+      18.33,
+      187,
+      90
+    ]
+  },
+  {
+    "role": "serial",
+    "occurrence": 6,
+    "character": "1",
+    "sourcePaintBoxMm": [
+      200.33,
+      18.67,
+      225,
+      89.33
+    ]
+  },
+  {
+    "role": "serial",
+    "occurrence": 7,
+    "character": "9",
+    "sourcePaintBoxMm": [
+      239,
+      18.67,
+      276.33,
+      89
+    ]
+  },
+  {
+    "role": "year",
+    "occurrence": 1,
+    "character": "5",
+    "sourcePaintBoxMm": [
+      284,
+      15.66,
+      300.33,
+      47.66
+    ]
+  },
+  {
+    "role": "year",
+    "occurrence": 2,
+    "character": "2",
+    "sourcePaintBoxMm": [
+      307.33,
+      16,
+      324.33,
+      48
+    ]
+  },
+  {
+    "role": "province",
+    "occurrence": 1,
+    "character": "B",
+    "sourcePaintBoxMm": [
+      8.33,
+      99.66,
+      21.66,
+      118.33
+    ]
+  },
+  {
+    "role": "province",
+    "occurrence": 2,
+    "character": "R",
+    "sourcePaintBoxMm": [
+      27.66,
+      99.66,
+      41.33,
+      119.66
+    ]
+  },
+  {
+    "role": "province",
+    "occurrence": 3,
+    "character": "I",
+    "sourcePaintBoxMm": [
+      47,
+      99.33,
+      51.33,
+      119.66
+    ]
+  },
+  {
+    "role": "province",
+    "occurrence": 4,
+    "character": "T",
+    "sourcePaintBoxMm": [
+      55.33,
+      99.66,
+      69.33,
+      119.33
+    ]
+  },
+  {
+    "role": "province",
+    "occurrence": 5,
+    "character": "I",
+    "sourcePaintBoxMm": [
+      73.33,
+      100,
+      78,
+      119.66
+    ]
+  },
+  {
+    "role": "province",
+    "occurrence": 6,
+    "character": "S",
+    "sourcePaintBoxMm": [
+      83.33,
+      100,
+      96.66,
+      118.33
+    ]
+  },
+  {
+    "role": "province",
+    "occurrence": 7,
+    "character": "H",
+    "sourcePaintBoxMm": [
+      102.33,
+      100,
+      116.33,
+      120
+    ]
+  },
+  {
+    "role": "province",
+    "occurrence": 8,
+    "character": "C",
+    "sourcePaintBoxMm": [
+      133.66,
+      99.66,
+      147,
+      120.33
+    ]
+  },
+  {
+    "role": "province",
+    "occurrence": 9,
+    "character": "O",
+    "sourcePaintBoxMm": [
+      153,
+      100,
+      166.33,
+      120.33
+    ]
+  },
+  {
+    "role": "province",
+    "occurrence": 10,
+    "character": "L",
+    "sourcePaintBoxMm": [
+      172.66,
+      100.33,
+      185.33,
+      120.33
+    ]
+  },
+  {
+    "role": "province",
+    "occurrence": 11,
+    "character": "U",
+    "sourcePaintBoxMm": [
+      190.33,
+      100.33,
+      204.33,
+      120.33
+    ]
+  },
+  {
+    "role": "province",
+    "occurrence": 12,
+    "character": "M",
+    "sourcePaintBoxMm": [
+      210.33,
+      100.33,
+      229,
+      120.66
+    ]
+  },
+  {
+    "role": "province",
+    "occurrence": 13,
+    "character": "B",
+    "sourcePaintBoxMm": [
+      235,
+      100.33,
+      248.66,
+      120.66
+    ]
+  },
+  {
+    "role": "province",
+    "occurrence": 14,
+    "character": "I",
+    "sourcePaintBoxMm": [
+      255,
+      100.66,
+      258.66,
+      120.33
+    ]
+  },
+  {
+    "role": "province",
+    "occurrence": 15,
+    "character": "A",
+    "sourcePaintBoxMm": [
+      264.33,
+      100.33,
+      281.66,
+      120.66
+    ]
+  }
+]

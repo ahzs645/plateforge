@@ -1,0 +1,42 @@
+{
+  "royal1951": {
+    "cap": 33,
+    "baseline": 95,
+    "19": {
+      "x": 66.8,
+      "kerning": {
+        "19": 29
+      }
+    },
+    "51": {
+      "x": 240.7,
+      "kerning": {
+        "51": 33
+      }
+    }
+  },
+  "apec": {
+    "Vancouver": {
+      "x": 152,
+      "baseline": 21.2,
+      "cap": 11.2,
+      "letterSpacing": -3
+    },
+    "British Columbia": {
+      "x": 152,
+      "baseline": 38.1,
+      "cap": 11.8,
+      "letterSpacing": -3
+    },
+    "Canada": {
+      "x": 94,
+      "baseline": 125,
+      "cap": 7.2
+    },
+    "Nov. 19 - 25 1997": {
+      "x": 94,
+      "baseline": 131,
+      "cap": 4.2
+    }
+  }
+}

@@ -26,7 +26,7 @@ function BcPlate({ design, parts }: TemplateProps<BcDesign>): ReactElement {
 }
 export const bcTemplate: PlateTemplate<BcDesign> = {
   id: 'bc-historical', name: 'British Columbia · historical passenger systems',
-  size: (design, parts) => withResearchContext(design.formatId, () => design.kit ? kitGeometry(kitRecipe(String(design.kit))) : design.year >= 1964 ? bcLaterGeometry(design) : bcGeometry(design, parts)),
+  size: (design, parts) => withResearchContext(design.formatId, () => design.kit ? kitGeometry(kitRecipe(String(design.kit)), parts) : design.year >= 1964 ? bcLaterGeometry(design) : bcGeometry(design, parts)),
   render: BcPlate,
   fonts: [FONTS.barlow600, FONTS.barlow700],
 };

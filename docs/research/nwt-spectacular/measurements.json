@@ -1,0 +1,127 @@
+{
+  "warning": "Threshold paint masks are diagnostics, not outline ground truth. Shape comparison matches height and center only; width remains natural. Wear and embossed shoulders are not part of the intended construction.",
+  "observations": [
+    {
+      "source": "nwt123",
+      "character": "N",
+      "sourceBox": [
+        120,
+        182,
+        245,
+        425
+      ],
+      "paintBodyBoxInCrop": [
+        9,
+        8,
+        112,
+        233
+      ],
+      "sourceWidthHeight": 0.457,
+      "reproductionWidthHeight": 0.46,
+      "advanceCapRatio": 0.48,
+      "approximatePaintThresholdIoU": 0.9471
+    },
+    {
+      "source": "nwt123",
+      "character": "W",
+      "sourceBox": [
+        266,
+        182,
+        396,
+        425
+      ],
+      "paintBodyBoxInCrop": [
+        14,
+        8,
+        115,
+        233
+      ],
+      "sourceWidthHeight": 0.45,
+      "reproductionWidthHeight": 0.45,
+      "advanceCapRatio": 0.48,
+      "approximatePaintThresholdIoU": 0.9327
+    },
+    {
+      "source": "nwt123",
+      "character": "T",
+      "sourceBox": [
+        417,
+        182,
+        542,
+        425
+      ],
+      "paintBodyBoxInCrop": [
+        12,
+        8,
+        114,
+        232
+      ],
+      "sourceWidthHeight": 0.457,
+      "reproductionWidthHeight": 0.46,
+      "advanceCapRatio": 0.48,
+      "approximatePaintThresholdIoU": 0.933
+    },
+    {
+      "source": "nwt123",
+      "character": "1",
+      "sourceBox": [
+        589,
+        182,
+        664,
+        425
+      ],
+      "paintBodyBoxInCrop": [
+        13,
+        8,
+        53,
+        233
+      ],
+      "sourceWidthHeight": 0.177,
+      "reproductionWidthHeight": 0.18,
+      "advanceCapRatio": 0.48,
+      "approximatePaintThresholdIoU": 0.9237
+    },
+    {
+      "source": "nwt123",
+      "character": "2",
+      "sourceBox": [
+        712,
+        180,
+        843,
+        425
+      ],
+      "paintBodyBoxInCrop": [
+        16,
+        11,
+        118,
+        235
+      ],
+      "sourceWidthHeight": 0.457,
+      "reproductionWidthHeight": 0.46,
+      "advanceCapRatio": 0.48,
+      "approximatePaintThresholdIoU": 0.8917
+    },
+    {
+      "source": "nwt123",
+      "character": "3",
+      "sourceBox": [
+        866,
+        180,
+        994,
+        427
+      ],
+      "paintBodyBoxInCrop": [
+        12,
+        11,
+        113,
+        234
+      ],
+      "sourceWidthHeight": 0.453,
+      "reproductionWidthHeight": 0.45,
+      "advanceCapRatio": 0.48,
+      "approximatePaintThresholdIoU": 0.8726
+    }
+  ],
+  "normalization": "Actual source and reproduction painted extent matched in height and center. Master body width stays natural; advanceCapRatio is the fixed layout cell rather than paint-body W/H.",
+  "source": "Official Gazette specimen illustration, not a physical plate photograph."
+}

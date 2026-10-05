@@ -15,7 +15,7 @@ import { RegionPicker } from './RegionPicker';
 import { useTheme } from './useTheme';
 
 const ReferenceLibrary = lazy(() => import('./ReferenceLibrary').then((module) => ({ default: module.ReferenceLibrary })));
-const DEFAULT_REGION = 'us-ca';
+const DEFAULT_REGION = 'ca-bc';
 type View = 'single' | 'gallery' | 'batch' | 'library';
 const VIEWS: View[] = ['single', 'gallery', 'batch', 'library'];
 const VIEW_LABELS: Record<View, string> = { single: 'Single', gallery: 'Gallery', batch: 'Batch', library: 'Library' };

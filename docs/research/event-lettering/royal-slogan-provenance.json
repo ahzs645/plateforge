@@ -1,0 +1,35 @@
+{
+  "sourceFont": "TeX Gyre Termes Regular",
+  "url": "https://ctan.math.illinois.edu/fonts/tex-gyre/opentype/texgyretermes-regular.otf",
+  "sha256": "cc3fe7c707b81428d23d54df3eadd9228a2bf6a4d43125d94df56f5f63134659",
+  "license": "GUST Font License",
+  "copyright": "Copyright 2007-2018 for TeX Gyre extensions by B. Jackowski, J.M. Nowacki et al. (on behalf of TeX USERS GROUPS).",
+  "capHeight": 662,
+  "unitsPerEm": 1000,
+  "characters": [
+    " ",
+    "B",
+    "C",
+    "a",
+    "b",
+    "e",
+    "f",
+    "h",
+    "i",
+    "l",
+    "m",
+    "o",
+    "r",
+    "s",
+    "t",
+    "u"
+  ],
+  "historicalIdentity": "Unconfirmed; Times-compatible visual substitute checked against Royal motorcade plate photos.",
+  "layout": {
+    "x": 153,
+    "baseline": 37,
+    "cap": 16.5,
+    "spacing": -4,
+    "text": "Beautiful British Columbia"
+  }
+}

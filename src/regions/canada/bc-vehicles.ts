@@ -103,11 +103,13 @@ function layoutStacked(id: string, label: string, b: Look, source: Source, die: 
 /** 1952 totem base: 52 top right over the totem (maple leaf dropped), serial left, BRITISH COLUMBIA below (C29-419). */
 function layoutTotem(id: string, label: string, b: Look, source: Source, date: boolean, extra: Partial<KitRecipe> = {}): KitRecipe {
   return recipe(id, label, b, source, {
-    holeAt: { x: [0.21, 0.77], y: [0.06, 0.94] },
-    art: [{ art: 'vehicles-totem', x: b.w * 0.87, y: b.h * 0.32, width: b.w * 0.1, height: b.h * 0.44, role: 'totem' }],
-    legends: [...(date ? [T(b, '{yy}', 0.925, 0.27, 0.17, 'bc-early-1940', 'year', 0.1)] : []),
-      T(b, 'BRITISH COLUMBIA', 0.45, 0.89, 0.13, 'bc-legend-1940', 'province', 0.8, { spread: true })],
-    serial: SER(b, 0.44, 0.66, 0.46, 0.8, 'bc-early-1940', { separator: { kind: 'dot' } }),
+    // C29·419 exposes four paired fixing positions, a large serial and a 20 mm legend.
+    holes: 'round', holeAt: { x: [0.28, 0.69, 0.725, 0.902], y: [0.105, 0.89] },
+    art: [{ art: 'vehicles-totem', x: 280, y: 56, width: 43, height: 56, role: 'totem' }],
+    legends: [...(date ? [{text: '{yy}', x: 304, baseline: 49, cap: 32, maxWidth: 46, die: 'bc-commercial-1952-year', role: 'year'}] : []),
+      {text: 'BRITISH COLUMBIA', x: 145.3, baseline: 119.5, cap: 20, maxWidth: 274, die: 'bc-commercial-1952-legend', role: 'province', spread: true}],
+    serial: {x: 144.3, baseline: 90, cap: 66, maxWidth: 264, die: 'bc-commercial-1952-serial',
+      kerning: {'C2': -4, '29': -1, '9·': -3, '·4': -3, '41': 9, '19': 15}, separator: {kind: 'dot'}},
     ...extra,
   });
 }
@@ -207,7 +209,7 @@ const C1936: KitPalette[] = [
   pal(1948, '#17451f', '#c8c5b8', 'white on dark green'),
 ];
 const C1949: KitPalette[] = [pal(1949, '#d0a62e', '#2e2a22', 'black on yellow'), pal(1950, '#2a2b26', '#c8a544', 'yellow on black'), pal(1951, '#dcd6d0', '#0f3f6b', 'blue on white')];
-const C1952: KitPalette[] = [pal(1952, '#c7c9ca', '#1f2127', 'black on aluminium'), pal(1954, '#141414', '#c2a551', 'yellow on black (steel re-issue)')];
+const C1952: KitPalette[] = [pal(1952, '#e1e0d9', '#1f2127', 'black on aluminium'), pal(1954, '#141414', '#c2a551', 'yellow on black (steel re-issue)')];
 const C1955: KitPalette[] = [
   pal(1955, '#d6a543', '#241f1a', 'black on yellow'), pal(1956, '#212529', '#c6934c', 'gold on black'), pal(1957, '#deddd9', '#092058', 'dark blue on white'),
   pal(1959, '#511a20', '#34e4e1', 'turquoise on maroon'), pal(1960, '#23cfc6', '#190708', 'black on turquoise'), pal(1961, '#e8d2db', '#5b2c34', 'maroon on pink'),
@@ -248,12 +250,22 @@ const commercial: Spec[] = [
     description: 'Aluminium 335 × 137 mm base with the 52 date and the thunderbird totem at right; the maple leaf of the passenger base was dropped to make room for the number. In 1954 the series was re-made in steel, yellow on black with a 54 date (second palette). Totem artwork reuses the passenger totem geometry.' },
   { id: 'commercial-1953-tab', label: 'Commercial 1953 · tab', family: 'commercial', era: 'commercial-annual', period: [1953, 1953],
     recipe: layoutTotem('commercial-1953-tab', 'Commercial truck 1952 base with 1953 tab', lookOf(335, 137, C1952[0]), SRC.c1952, true, {
-      legends: [T({ w: 335, h: 137, bg: '', ink: '' }, 'BRITISH COLUMBIA', 0.45, 0.89, 0.13, 'bc-legend-1940', 'province', 0.8, { spread: true })],
-      panels: [{ x: 335 * 0.855, y: 137 * 0.05, width: 335 * 0.13, height: 137 * 0.9, radius: 3, background: '#2a78a8', ink: '#e8eef2', role: 'renewal-tab',
-        texts: [{ text: '53', x: 335 * 0.065, baseline: 137 * 0.24, cap: 137 * 0.15, maxWidth: 335 * 0.1, die: 'bc-early-1940', role: 'tab-year' }],
-        art: [{ art: 'vehicles-totem', x: 335 * 0.015, y: 137 * 0.3, width: 335 * 0.1, height: 137 * 0.52, color: '#e8eef2' }] }] }),
+      // The renewal is a separate piece over the intact 1952 base, not a replacement date panel.
+      legends: [{text: '52', x: 304, baseline: 49, cap: 32, maxWidth: 46, die: 'bc-commercial-1952-year', role: 'year'},
+        {text: 'BRITISH COLUMBIA', x: 145.3, baseline: 119.5, cap: 20, maxWidth: 274, die: 'bc-commercial-1952-legend', role: 'province', spread: true}],
+      renewalPanel: {
+        x: 272, y: -1.5, width: 63, height: 140, radius: 10, background: '#244f72', ink: '#eee8da', role: 'renewal-tab',
+        // Sheared left edge and lower-left notch allow the base's final A to remain visible.
+        bodyPath: 'M0 0 H53 Q63 0 63 10 V130 Q63 140 53 140 H0 V127 H12 Q17 127 15 121 L0 98 Z',
+        rimPath: 'M0 4 H51 Q59 4 59 12 V128 Q59 136 51 136 H0',
+        holes: [{cx: 29, cy: 14.5, r: 3}, {cx: 29, cy: 127, r: 3}],
+        texts: [{text: '53', x: 29, baseline: 50, cap: 32.5, maxWidth: 53, die: 'bc-tab-1953', role: 'tab-year'}],
+        art: [{art: 'vehicles-totem', x: 5, y: 58, width: 46, height: 61, color: '#eee8da', role: 'tab-totem'}],
+      },
+      note: `${NOTE} Renewed 1952 commercial base with a separate notched white-on-blue 1953 tab. Tab size is estimated as 63 × 140 mm from several photographs; exact dimensions, paint and mounting are unconfirmed. The commercial tab has the thunderbird without the passenger maple leaf. Its independent stamped number is omitted rather than replaced with the plate serial.`,
+    }),
     grammar: g('C1 to CA3-000 (renewals and 1953 new issues)', ['C[1-9]9-999', 'C[1-9]-999', 'C\\A[0-2]-999']),
-    description: 'Both renewals and 1953 new registrations got a white-on-blue aluminium tab stamped 53 with the thunderbird, fixed over the date and totem (tabs numbered 400,001–485,000). The commercial tab was narrower than the passenger one, with no maple leaf and a notch for the A of COLUMBIA; the notch is not drawn and the tab colour is read loosely from one photo.' },
+    description: 'A separate white-on-blue aluminium tab stamped 53 is mounted over the intact 1952 commercial base. The commercial tab is narrower than the passenger one, with the thunderbird, no maple leaf, and a lower-left notch that exposes the final A of COLUMBIA. Tab numbers ran 400,001–485,000; the independent stamped number is not inferred from the plate serial. The 63 × 140 mm tab size is a photographic estimate. New 1953 registrations also received tabs, on bases with a blank date panel; this view represents renewal of an existing 1952 plate.' },
   { id: 'commercial-1955', label: 'Commercial 1955–63', family: 'commercial', era: 'commercial-annual', period: [1955, 1963],
     recipe: layout1955('commercial-1955', 'Commercial truck 1955–63', lookOf(cStd.w, cStd.h, C1955[0]), SRC.c1957),
     palettes: C1955, grammar: g('C9-999, C99-999, CA9-999 / CE / CH / CJ', ['C[1-9]-999', 'C[1-9]9-999', 'C[AEHJ][1-9]-999']),

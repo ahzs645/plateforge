@@ -1,0 +1,266 @@
+{
+  "warning": "Threshold paint masks are diagnostics, not outline ground truth. Shape comparison matches height and center only; width remains natural. Wear and embossed shoulders are not part of the intended construction.",
+  "observations": [
+    {
+      "source": "royal18",
+      "character": "R",
+      "sourceBox": [
+        65,
+        108,
+        156,
+        292
+      ],
+      "paintBodyBoxInCrop": [
+        6,
+        9,
+        86,
+        180
+      ],
+      "sourceWidthHeight": 0.467,
+      "reproductionWidthHeight": 0.47,
+      "advanceCapRatio": 0.47,
+      "approximatePaintThresholdIoU": 0.8143
+    },
+    {
+      "source": "royal18",
+      "character": "O",
+      "sourceBox": [
+        166,
+        108,
+        255,
+        292
+      ],
+      "paintBodyBoxInCrop": [
+        7,
+        5,
+        84,
+        178
+      ],
+      "sourceWidthHeight": 0.447,
+      "reproductionWidthHeight": 0.44,
+      "advanceCapRatio": 0.44,
+      "approximatePaintThresholdIoU": 0.9005
+    },
+    {
+      "source": "royal18",
+      "character": "Y",
+      "sourceBox": [
+        265,
+        106,
+        360,
+        292
+      ],
+      "paintBodyBoxInCrop": [
+        9,
+        7,
+        89,
+        180
+      ],
+      "sourceWidthHeight": 0.463,
+      "reproductionWidthHeight": 0.47,
+      "advanceCapRatio": 0.47,
+      "approximatePaintThresholdIoU": 0.8539
+    },
+    {
+      "source": "royal18",
+      "character": "A",
+      "sourceBox": [
+        367,
+        106,
+        468,
+        291
+      ],
+      "paintBodyBoxInCrop": [
+        5,
+        5,
+        94,
+        179
+      ],
+      "sourceWidthHeight": 0.51,
+      "reproductionWidthHeight": 0.52,
+      "advanceCapRatio": 0.52,
+      "approximatePaintThresholdIoU": 0.8734
+    },
+    {
+      "source": "royal18",
+      "character": "L",
+      "sourceBox": [
+        476,
+        105,
+        571,
+        291
+      ],
+      "paintBodyBoxInCrop": [
+        7,
+        4,
+        85,
+        177
+      ],
+      "sourceWidthHeight": 0.45,
+      "reproductionWidthHeight": 0.46,
+      "advanceCapRatio": 0.46,
+      "approximatePaintThresholdIoU": 0.7879
+    },
+    {
+      "source": "royal18",
+      "character": "1",
+      "sourceBox": [
+        580,
+        106,
+        642,
+        290
+      ],
+      "paintBodyBoxInCrop": [
+        5,
+        5,
+        51,
+        175
+      ],
+      "sourceWidthHeight": 0.27,
+      "reproductionWidthHeight": 0.27,
+      "advanceCapRatio": 0.28,
+      "approximatePaintThresholdIoU": 0.8867
+    },
+    {
+      "source": "royal18",
+      "character": "8",
+      "sourceBox": [
+        653,
+        106,
+        746,
+        290
+      ],
+      "paintBodyBoxInCrop": [
+        6,
+        5,
+        86,
+        172
+      ],
+      "sourceWidthHeight": 0.48,
+      "reproductionWidthHeight": 0.485,
+      "advanceCapRatio": 0.47,
+      "approximatePaintThresholdIoU": 0.8629
+    },
+    {
+      "source": "royal1",
+      "character": "R",
+      "sourceBox": [
+        125,
+        121,
+        218,
+        309
+      ],
+      "paintBodyBoxInCrop": [
+        4,
+        6,
+        89,
+        185
+      ],
+      "sourceWidthHeight": 0.473,
+      "reproductionWidthHeight": 0.47,
+      "advanceCapRatio": 0.47,
+      "approximatePaintThresholdIoU": 0.8747
+    },
+    {
+      "source": "royal1",
+      "character": "O",
+      "sourceBox": [
+        230,
+        118,
+        322,
+        310
+      ],
+      "paintBodyBoxInCrop": [
+        4,
+        5,
+        89,
+        188
+      ],
+      "sourceWidthHeight": 0.463,
+      "reproductionWidthHeight": 0.44,
+      "advanceCapRatio": 0.44,
+      "approximatePaintThresholdIoU": 0.8978
+    },
+    {
+      "source": "royal1",
+      "character": "Y",
+      "sourceBox": [
+        335,
+        119,
+        431,
+        310
+      ],
+      "paintBodyBoxInCrop": [
+        5,
+        4,
+        92,
+        188
+      ],
+      "sourceWidthHeight": 0.473,
+      "reproductionWidthHeight": 0.47,
+      "advanceCapRatio": 0.47,
+      "approximatePaintThresholdIoU": 0.8314
+    },
+    {
+      "source": "royal1",
+      "character": "A",
+      "sourceBox": [
+        443,
+        119,
+        547,
+        310
+      ],
+      "paintBodyBoxInCrop": [
+        6,
+        4,
+        99,
+        188
+      ],
+      "sourceWidthHeight": 0.507,
+      "reproductionWidthHeight": 0.52,
+      "advanceCapRatio": 0.52,
+      "approximatePaintThresholdIoU": 0.9018
+    },
+    {
+      "source": "royal1",
+      "character": "L",
+      "sourceBox": [
+        556,
+        118,
+        651,
+        310
+      ],
+      "paintBodyBoxInCrop": [
+        5,
+        4,
+        91,
+        187
+      ],
+      "sourceWidthHeight": 0.47,
+      "reproductionWidthHeight": 0.46,
+      "advanceCapRatio": 0.46,
+      "approximatePaintThresholdIoU": 0.7957
+    },
+    {
+      "source": "royal1",
+      "character": "1",
+      "sourceBox": [
+        665,
+        117,
+        728,
+        310
+      ],
+      "paintBodyBoxInCrop": [
+        5,
+        6,
+        56,
+        187
+      ],
+      "sourceWidthHeight": 0.283,
+      "reproductionWidthHeight": 0.27,
+      "advanceCapRatio": 0.28,
+      "approximatePaintThresholdIoU": 0.9194
+    }
+  ],
+  "normalization": "Source and reproduction actual paint-body bounding boxes are matched in height and center. Reproduction width is not independently fitted. advanceCapRatio is a separate layout advance and must not be read as actual paint-body width/height."
+}

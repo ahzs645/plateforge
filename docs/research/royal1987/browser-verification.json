@@ -1,0 +1,60 @@
+{
+  "observedGlyphs": "ROYAL18",
+  "isolatedPhotographOccurrences": 13,
+  "wholePlatePhotographs": 2,
+  "mobileOverflow": false,
+  "allPhotoAndSvgAssetsLoaded": true,
+  "slidersVerifiedAtZeroAndOne": true,
+  "pageErrors": [],
+  "httpFailures": [],
+  "proposal": {
+    "x": 153,
+    "baseline": 109.5,
+    "capHeight": 66.5,
+    "tracking": 12,
+    "maxWidth": 268
+  },
+  "rectification": {
+    "royal18": [
+      [
+        5,
+        2
+      ],
+      [
+        790,
+        2
+      ],
+      [
+        790,
+        388
+      ],
+      [
+        5,
+        388
+      ]
+    ],
+    "royal1": [
+      [
+        7,
+        14
+      ],
+      [
+        838,
+        8
+      ],
+      [
+        837,
+        421
+      ],
+      [
+        8,
+        422
+      ]
+    ],
+    "outputPx": [
+      800,
+      400
+    ],
+    "note": "Outer-edge estimates only. Plate bend and lens distortion remain."
+  }
+}

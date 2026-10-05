@@ -133,6 +133,9 @@ export function kitFormat(spec: KitFormatSpec): PlateFormat {
     ...(dieOptions.length > 1 ? [{ key: 'die', label: 'Serial die', options: dieOptions, preserveOnGenerate: true }] : []),
     ...(decalOptions.length ? [{ key: 'decal', label: 'Renewal decal', options: decalOptions, preserveOnGenerate: true }] : []),
     ...(monthField ? [{ key: 'decalMonth', label: 'Decal month', options: MONTHS.map((m) => ({ value: m, label: m })), preserveOnGenerate: true }] : []),
+    ...(spec.recipe.renewalPanel ? [{key: 'renewal', label: 'Renewal tab', preserveOnGenerate: true, options: [
+      {value: 'on-plate', label: 'Mounted over the 1952 base'}, {value: 'base-only', label: 'Show 1952 base only'}, {value: 'loose', label: 'Tab on its own'},
+    ]}] : []),
     ...(spec.recipe.embossed ? [{ key: 'finish', label: 'Rendering', preserveOnGenerate: true, options: [{ value: 'flat', label: 'Flat / editable SVG' }, { value: 'embossed', label: 'Subtle embossed preview' }] }] : []),
   ];
   const generateSerial = (rng: Rng): string => {
@@ -161,6 +164,7 @@ export function kitFormat(spec: KitFormatSpec): PlateFormat {
       ...(dieOptions.length > 1 ? { die: dieOptions[0].value } : {}),
       ...(decalOptions.length ? { decal: 'blank' } : {}),
       ...(monthField ? { decalMonth: 'JAN' } : {}),
+      ...(spec.recipe.renewalPanel ? {renewal: 'on-plate'} : {}),
       ...(spec.recipe.embossed ? { finish: 'flat' } : {}),
     }),
     validate: (parts) => {
@@ -173,6 +177,7 @@ export function kitFormat(spec: KitFormatSpec): PlateFormat {
       if (parts.decal !== undefined && !decalOptions.some((o) => o.value === parts.decal)) return 'Choose a listed renewal decal.';
       if (parts.decalMonth !== undefined && !(MONTHS as readonly string[]).includes(parts.decalMonth)) return 'Choose a decal month.';
       if (parts.finish !== undefined && !['flat', 'embossed'].includes(parts.finish)) return 'Choose flat or embossed rendering.';
+      if (spec.recipe.renewalPanel && parts.renewal !== undefined && !['on-plate', 'base-only', 'loose'].includes(parts.renewal)) return 'Choose how the renewal tab is shown.';
       return null;
     },
     text: (parts) => (numbered ? parts.serial ?? '' : spec.label),

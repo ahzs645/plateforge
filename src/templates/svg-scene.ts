@@ -9,7 +9,7 @@ const attrNames: Record<string, string> = {
   stopColor: 'stop-color', stopOpacity: 'stop-opacity',
   fontFamily: 'font-family', fontSize: 'font-size', fontWeight: 'font-weight', fontStyle: 'font-style', fontVariant: 'font-variant',
   textAnchor: 'text-anchor', strokeWidth: 'stroke-width', strokeLinejoin: 'stroke-linejoin',
-  strokeLinecap: 'stroke-linecap', strokeDasharray: 'stroke-dasharray', fillRule: 'fill-rule', clipRule: 'clip-rule', clipPath: 'clip-path', floodColor: 'flood-color', floodOpacity: 'flood-opacity',
+  strokeLinecap: 'stroke-linecap', strokeDasharray: 'stroke-dasharray', strokeMiterlimit: 'stroke-miterlimit', fillRule: 'fill-rule', clipRule: 'clip-rule', clipPath: 'clip-path', floodColor: 'flood-color', floodOpacity: 'flood-opacity',
 };
 export const escapeXml = (value: string): string => value.replace(/[&<>"']/g, (ch) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&apos;' }[ch]!));
 export function serializeSvgNode(item: SvgNode | string): string {

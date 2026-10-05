@@ -1,0 +1,16 @@
+{
+  "source": "Official Gazette design illustration",
+  "observedCharacters": "NWT123",
+  "originalCropsAndOverlays": 6,
+  "wholeRunOverlay": true,
+  "nativeFixedAdvance": 48,
+  "nativeTracking": 19,
+  "proposedCenter": 257,
+  "proposedBaseline": 195.5,
+  "proposedCapHeight": 106,
+  "mobileOverflow": false,
+  "opacityZeroAndOneVerified": true,
+  "allAssetsLoaded": true,
+  "pageErrors": [],
+  "httpFailures": []
+}
