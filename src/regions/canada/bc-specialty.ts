@@ -291,7 +291,7 @@ const collector: PlateFormat[] = [
   kitFormat({
     id: 'collector-multi', label: 'Collector · multi-vehicle', family: 'specialty', period: [1990, 2026], era: 'specialty-collector',
     recipe: collectorFull('collector-multi', 'Collector · multi-vehicle', true, 'dual', 'bc-waldale'),
-    grammar: { hint: 'B6-0000 to B6-1000', blocks: blocks('B6-0999', 'B6-1000') }, dies: COL_DIES, decals: [1990, 2023],
+    grammar: { hint: 'B6-0000 to B6-1000', blocks: blocks('B6-0999', 'B6-1000') }, dies: [COL_DIES[1], COL_DIES[0]], decals: [1990, 2023],
     description: `${COL_DESC} One “floater” plate shared by several collector vehicles, with MULTI-VEHICLE under the title and the wavy separator (B6~0565). The photographed two-well version defaults to Waldale dies; Astrographic remains selectable for earlier examples. The Waldale manufacturer specimen reads A0~0000.`,
   }),
   kitFormat({

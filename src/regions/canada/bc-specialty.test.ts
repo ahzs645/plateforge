@@ -7,6 +7,12 @@ const byId = (id: string) => BC_SPECIALTY_FORMATS.find((f) => f.id === id)!;
 const check = (id: string, serial: string) => { const f = byId(id); return f.validate?.({ ...f.generate(createRng(id)), serial }) ?? null; };
 
 describe('B.C. specialty and consular plates', () => {
+  it('opens the photographed two-well multi-vehicle collector with Waldale while offering Astrographic', () => {
+    const format = byId('collector-multi');
+    expect(format.generate(createRng('collector-multi')).die).toBe('bc-waldale');
+    expect(format.fields.find(f => f.key === 'die')?.options?.map(o => o.value)).toEqual(['bc-waldale', 'bc-astro-4']);
+  });
+
   it('uses only its own families and eras, with region-unique ids', () => {
     const families = new Set(BC_SPECIALTY_FAMILIES.map((f) => f.id));
     expect([...families]).toEqual(['specialty', 'consular']);

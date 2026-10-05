@@ -1,5 +1,5 @@
 {
-  "site": "http://127.0.0.1:5176/plateforge/",
+  "site": "https://projects.ahmadjalil.com/plateforge/",
   "formats": [
     {
       "format": "collector-passenger",
@@ -31,8 +31,8 @@
       "format": "collector-multi",
       "serial": "B6-0565",
       "legendProfile": "bc-harrington-collector",
-      "serialProfile": "bc-astro-4",
-      "sharedPassengerFormat": "1985-flag",
+      "serialProfile": "bc-waldale",
+      "sharedPassengerFormat": "2001-flag",
       "exports": [
         "SVG",
         "PNG"
