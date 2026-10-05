@@ -113,6 +113,7 @@ export function ReferenceLibrary({ regions, onOpenFormat }: Props) {
       <button className="btn" aria-pressed={mode === 'sources'} onClick={() => setMode('sources')}>Source collections</button>
       <button className="btn" aria-pressed={mode === 'lettering'} onClick={() => setMode('lettering')}>Lettering catalogue ({LEEWARD_JURISDICTIONS.length})</button>
       <button className="btn" aria-pressed={mode === 'coverage'} onClick={() => setMode('coverage')}>B.C. coverage &amp; gaps</button>
+      <a className="btn" href={`${import.meta.env.BASE_URL}bc-font-comparisons/die-grouping/`}>B.C. die families across plate types ↗</a>
     </nav>
     {mode === 'coverage' ? <BcCoverage builtPresets={regions.find((r) => r.id === 'ca-bc')?.formats.length ?? 0} />
     : mode === 'lettering' ? <>

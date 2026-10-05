@@ -1,0 +1,1601 @@
+{
+  "scope": "Specialty, small-format, event, provincial/federal defence and renewal-component source grouping. No renderer edits. Factory association is not physical die identity.",
+  "method": "Read 16 BCpl8s articles and inspected 10 representative original photographs manually. This subtask did not rectify corners or certify every glyph by overlap. Parent captures every site preset separately.",
+  "findings": [
+    {
+      "id": "mc-oakalla-small",
+      "formatIds": [
+        "motorcycle-1949",
+        "motorcycle-dealer-1968"
+      ],
+      "proposedProductionGroup": "oakalla-small-motorcycle",
+      "claim": "Motorcycle plates from 1949\u201372 use small rounded block tooling. Compare their own 1949, 1952 and 1955 specimens. Shared factory era does not prove identical passenger tooling; the current recipe uses a 1955-named profile throughout 1949\u201372.",
+      "confidence": "source-maker-and-representative-visual",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/Motorcycle.htm"
+      ],
+      "sourceExcerpt": "Manufacturer: Oakalla Prison",
+      "similarityCandidates": [],
+      "limits": "The 1949-324 and 1952-359 photographs were reviewed. Compact rounded figures support a small tooling comparison; no complete alphabet or exact passenger match was established.",
+      "priority": "review"
+    },
+    {
+      "id": "mc-1973",
+      "formatIds": [
+        "motorcycle-1973",
+        "motorcycle-dealer-1973"
+      ],
+      "proposedProductionGroup": "oakalla-small-motorcycle-1973",
+      "claim": "Compare 1973 motorcycle and dealer sources as small-format Oakalla candidates, separate from full-size passenger tooling.",
+      "confidence": "source-context-candidate",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/Motorcycle.htm",
+        "https://www.bcpl8s.ca/Dealer-Motorcycle.htm"
+      ],
+      "similarityCandidates": [],
+      "limits": "Manufacturer context supports comparison; a precise shared alphabet is not stated.",
+      "priority": "normal"
+    },
+    {
+      "id": "mc-mixed-1974",
+      "formatIds": [
+        "motorcycle-1974",
+        "motorcycle-1974-prototype",
+        "motorcycle-dealer-1976"
+      ],
+      "proposedProductionGroup": "oakalla-motorcycle-mixed-1974",
+      "claim": "The 1974 motorcycle base explicitly mixes die types on one plate. Preserve the specimen and individual character variants rather than assigning one year-wide alphabet. The 1978 overrun uses the 1979 layout with 1974 colours.",
+      "confidence": "source-explicit-die-variation",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/Motorcycle.htm"
+      ],
+      "sourceExcerpt": "The 1974 base is notorious for using mismatched die types on the same plate.",
+      "similarityCandidates": [],
+      "limits": "Mixed tooling is not automatically proved for every dealer or prototype specimen. Verify those references separately.",
+      "priority": "review"
+    },
+    {
+      "id": "mc-acme",
+      "formatIds": [
+        "motorcycle-1979",
+        "motorcycle-dealer-1979"
+      ],
+      "proposedProductionGroup": "acme-small-motorcycle-candidate",
+      "claim": "The 1979 small motorcycle series is a separate comparison family; the 1978 overrun precedes its ordinary issue. ACME association is a candidate from contemporary production context, not an explicit all-glyph identity in the motorcycle article.",
+      "confidence": "source-context-candidate",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/Motorcycle.htm",
+        "https://www.bcpl8s.ca/Dealer-Motorcycle.htm"
+      ],
+      "similarityCandidates": [],
+      "limits": "The inspected article does not prove an ACME to Hi-Signs transition for this motorcycle run. Do not copy the passenger ARX rule automatically.",
+      "priority": "normal"
+    },
+    {
+      "id": "mc-astro-waldale",
+      "formatIds": [
+        "motorcycle-flag",
+        "motorcycle-dealer-flag"
+      ],
+      "proposedProductionGroup": "astrographic-and-waldale-small-motorcycle",
+      "claim": "The flag base spans Astrographic dies in 1986\u20132003 and Waldale dies from 2003. The manufacturer transition occurs during the E-prefix series. Dealer flag plates require their own serial evidence.",
+      "confidence": "source-explicit-manufacturer-die-era",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/Motorcycle.htm",
+        "https://www.bcpl8s.ca/Dealer-Motorcycle.htm"
+      ],
+      "similarityCandidates": [
+        "1985-flag",
+        "2001-flag"
+      ],
+      "limits": "Small dies are not certified as scaled passenger dies. The dealer transition is a comparison candidate. Photograph and decal dates are not manufacture dates.",
+      "priority": "review"
+    },
+    {
+      "id": "mc-2011-enlargement",
+      "formatIds": [
+        "motorcycle-2011"
+      ],
+      "proposedProductionGroup": "waldale-large-motorcycle-2011",
+      "claim": "The 2011 motorcycle redesign increased character size by 3/8 inch at S59-000. Distinguish this tooling size from older Waldale motorcycle and ordinary passenger plates.",
+      "confidence": "source-explicit-size-and-serial-rule",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/Motorcycle.htm"
+      ],
+      "similarityCandidates": [
+        "motorcycle-flag",
+        "personalized-motorcycle"
+      ],
+      "limits": "The source proves the size and run change, not exact contour identity to either comparison target.",
+      "priority": "normal"
+    },
+    {
+      "id": "collector-passenger-overlap",
+      "formatIds": [
+        "collector-passenger",
+        "collector-passenger-dual",
+        "collector-multi"
+      ],
+      "proposedProductionGroup": "astrographic-and-waldale-collector-passenger",
+      "claim": "The B00 sample is explicitly Astrographic; Waldale dies begin in the mid-B54 block. Dual wells and multi-vehicle layouts are not sufficient manufacture-date rules. Compare numbers with the corresponding main passenger family and record specimen evidence.",
+      "confidence": "source-explicit-die-and-serial-rule",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/Collector.htm"
+      ],
+      "sourceExcerpt": "A sample Collector plate (Astrographic dies) ... Plates from the mid-B54-000 bloc display Waldale dies.",
+      "similarityCandidates": [
+        "1985-flag",
+        "2001-flag"
+      ],
+      "limits": "The B54 transition is separate from the passenger HFK/HGA transition. B60-565 visually shows Waldale open 6 and counter construction, unlike B00-000. Harrington words and the wave separator are independent artwork.",
+      "priority": "review"
+    },
+    {
+      "id": "collector-motorcycle-overlap",
+      "formatIds": [
+        "collector-motorcycle",
+        "collector-motorcycle-multi"
+      ],
+      "proposedProductionGroup": "astrographic-and-waldale-collector-motorcycle",
+      "claim": "The first motorcycle collector batch, B8-0001 through B8-5000, used Astrographic dies. Waldale first appeared in 2007. A 1990\u20132026 base label or Astrographic default must not certify all production.",
+      "confidence": "source-explicit-die-and-serial-rule",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/Collector.htm"
+      ],
+      "sourceExcerpt": "first batch ... B8-0001 to B8-5000 utilising Astrographics dies. The first Waldale dies did not begin appearing until 2007.",
+      "similarityCandidates": [
+        "motorcycle-flag",
+        "motorcycle-2011"
+      ],
+      "limits": "The multi-vehicle B7 series needs independent transition evidence; do not apply the B8 range mechanically.",
+      "priority": "review"
+    },
+    {
+      "id": "collector-decorative-layer",
+      "formatIds": [
+        "collector-passenger",
+        "collector-passenger-dual",
+        "collector-multi",
+        "collector-motorcycle",
+        "collector-motorcycle-multi"
+      ],
+      "proposedProductionGroup": "collector-harrington-screened-art",
+      "claim": "Collector, British and Columbia are outlined Harrington words, independent of the embossed serial family. MULTI-VEHICLE and the wave separator require separate components.",
+      "confidence": "user-identified-font-and-visual",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/Collector.htm"
+      ],
+      "similarityCandidates": [
+        "collector-passenger",
+        "collector-passenger-dual"
+      ],
+      "limits": "The user identified the Font Bureau / David Berlow version. BCpl8s does not name Harrington. B00-000 and B60-565 were inspected; fixed decorative lettering persists across different serial dies.",
+      "priority": "normal"
+    },
+    {
+      "id": "memorial-mississippi",
+      "formatIds": [
+        "memorial-passenger",
+        "memorial-truck",
+        "memorial-keepsake"
+      ],
+      "proposedProductionGroup": "waldale-mississippi-specialty",
+      "claim": "Compare all Memorial Cross variants within the Mississippi tooling family, separately from ordinary Waldale passenger dies. The source explicitly identifies Mississippi dies and the passenger and truck serial formats.",
+      "confidence": "source-explicit-die-family",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/MemorialCross.html"
+      ],
+      "sourceExcerpt": "Memorial Cross base is using the \"Mississippi Dies\" that Waldale has used on other plate types ...",
+      "similarityCandidates": [
+        "memorial-passenger",
+        "memorial-truck"
+      ],
+      "limits": "MC127R was inspected: narrow straight-sided M/C/R and narrow numerals. Its holder hides the footer and some edges; it is not an ideal exact geometric reference.",
+      "priority": "normal"
+    },
+    {
+      "id": "antique-size-variant",
+      "formatIds": [
+        "antique-1966",
+        "antique-1975",
+        "antique-1975-open-hubs",
+        "antique-prototype-91"
+      ],
+      "proposedProductionGroup": "antique-large-three-digit-and-small-four-digit",
+      "claim": "Antique three-digit dies are explicitly larger than four-digit dies. Possible early single and double digit issues also use larger dies. Serial length and the photographed specimen matter more than a presumed year.",
+      "confidence": "source-explicit-size-variant",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/Antique.htm"
+      ],
+      "sourceExcerpt": "The die type for all three-digit plates is noticeably larger than for the four-digit plates.",
+      "similarityCandidates": [
+        "antique-1966",
+        "antique-1975"
+      ],
+      "limits": "The article does not certify the ordinary 1955 or 1973 passenger profile as exact tooling. Retain these as resemblance candidates.",
+      "priority": "review"
+    },
+    {
+      "id": "antique-motorcycle",
+      "formatIds": [
+        "antique-motorcycle"
+      ],
+      "proposedProductionGroup": "antique-small-motorcycle-with-waldale-overlap",
+      "claim": "The source shows redesigned Antique motorcycle and Waldale-die versions. One Oakalla-named profile spanning 1966\u20132026 cannot represent all manufacturing.",
+      "confidence": "source-explicit-die-heading",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/Antique.htm"
+      ],
+      "sourceExcerpt": "Antique Motorcycle License Plates: Waldale Dies",
+      "similarityCandidates": [
+        "motorcycle-flag",
+        "motorcycle-2011"
+      ],
+      "limits": "The heading does not establish the exact transition range or earlier manufacturer.",
+      "priority": "review"
+    },
+    {
+      "id": "personalized-era",
+      "formatIds": [
+        "personalized-1979",
+        "personalized-astro",
+        "personalized-reversed",
+        "personalized-waldale",
+        "personalized-sample"
+      ],
+      "proposedProductionGroup": "acme-astrographic-waldale-personalized",
+      "claim": "The personalized graphic base spans ACME production from 1979, Astrographic from the mid-1980s and Waldale from late 2002. Manufacturer changes visibly alter dies and paint. The reversed mountain graphic is not itself evidence of a new serial alphabet.",
+      "confidence": "source-explicit-manufacturer-era",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/Personalized.htm"
+      ],
+      "similarityCandidates": [
+        "1979-aaa",
+        "1985-flag",
+        "2001-flag"
+      ],
+      "limits": "Manufacturer alignment supports cross-class comparison, but does not prove every glyph or the precise Astrographic subtype.",
+      "priority": "normal"
+    },
+    {
+      "id": "personalized-small",
+      "formatIds": [
+        "personalized-motorcycle",
+        "personalized-motorcycle-prototype"
+      ],
+      "proposedProductionGroup": "astrographic-and-waldale-small-personalized",
+      "claim": "Personalized motorcycle plates started in 2000 when alphanumeric utility-trailer production made all letters available in small dies. The source identifies an Astrographic prototype around 2001. A Waldale default spanning 2000\u20132026 must not imply Waldale production before late 2002.",
+      "confidence": "source-explicit-small-alphabet-context",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/Personalized.htm"
+      ],
+      "similarityCandidates": [
+        "motorcycle-flag",
+        "motorcycle-2011",
+        "utility-flag"
+      ],
+      "limits": "The exact Waldale personalized motorcycle transition remains uncertain. Separate the prototype and early issues from the modern default.",
+      "priority": "review"
+    },
+    {
+      "id": "defence-rounded",
+      "formatIds": [
+        "official-defence-1941",
+        "official-defence-1949",
+        "official-defence-1952"
+      ],
+      "proposedProductionGroup": "oakalla-rounded-provincial-defence",
+      "claim": "Provincial N plates from the 1940s through 1954 are rounded Oakalla comparison candidates alongside passenger and commercial plates. The 1952 N24 photograph visually shares slanted rounded 2/4 construction with totem-era commercial plates. Prefix, province legend, date and totem are independent components.",
+      "confidence": "source-context-and-representative-visual",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/NationalDefence.html",
+        "https://www.bcpl8s.ca/Passenger-1952-1954.html"
+      ],
+      "similarityCandidates": [
+        "1952",
+        "commercial-1952"
+      ],
+      "limits": "N24 was manually inspected. The existing bc-early-1940 assignment is a provisional family; a complete alphabet and perspective alignment were not certified.",
+      "priority": "normal"
+    },
+    {
+      "id": "defence-small",
+      "formatIds": [
+        "official-defence-motorcycle"
+      ],
+      "proposedProductionGroup": "oakalla-small-defence-motorcycle",
+      "claim": "The source lists wartime N motorcycle plates, including N1\u2013N250 in 1942 and 1944/1945 specimens. Compare small motorcycle tooling rather than assuming full-size passenger tooling.",
+      "confidence": "source-context-candidate",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/NationalDefence.html"
+      ],
+      "similarityCandidates": [
+        "motorcycle-1949"
+      ],
+      "limits": "Shared manufacturer and exact small alphabet are not explicitly confirmed. Avoid year-only inheritance.",
+      "priority": "normal"
+    },
+    {
+      "id": "defence-oakalla-post55",
+      "formatIds": [
+        "official-defence-1955",
+        "official-defence-1964",
+        "official-defence-1965",
+        "official-defence-1968"
+      ],
+      "proposedProductionGroup": "oakalla-provincial-defence-post1955",
+      "claim": "Provincial N plates resemble contemporary Oakalla regular plates, but prefixes and layouts need independent comparison. Long and short province legends and date stamps require separate assignments.",
+      "confidence": "source-gallery-context-candidate",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/NationalDefence.html"
+      ],
+      "similarityCandidates": [
+        "1955",
+        "1964",
+        "1965",
+        "1968"
+      ],
+      "limits": "This subtask did not rectify every N plate. A common family name is not complete glyph certification.",
+      "priority": "normal"
+    },
+    {
+      "id": "defence-federal",
+      "formatIds": [
+        "official-defence-canada",
+        "events-apec-1997-military"
+      ],
+      "proposedProductionGroup": "federal-canada-military-not-bc-passenger",
+      "claim": "From 1970, CANADA military plates are a standardized federal design across the country. Exclude them from the BC passenger Astrographic group even though the renderer currently uses bc-astro-4. APEC military decoration retains the federal serial context.",
+      "confidence": "source-explicit-jurisdiction-and-representative-visual",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/NationalDefence.html",
+        "https://www.bcpl8s.ca/APEC.htm"
+      ],
+      "similarityCandidates": [
+        "official-defence-canada",
+        "events-apec-1997-military"
+      ],
+      "limits": "79122 was manually inspected: broad figures and the CANADA legend differ visibly from ordinary condensed BC lettering. Actual maker and die identity are not established.",
+      "priority": "review"
+    },
+    {
+      "id": "defence-pcmr-and-local",
+      "formatIds": [
+        "official-defence-pcmr",
+        "official-defence-esquimalt",
+        "official-defence-comox"
+      ],
+      "proposedProductionGroup": "independent-local-military-tooling",
+      "claim": "PCMR heavy block markings and local garrison/RCAF plates should remain independent comparison candidates. The source describes scant history and manufacturer samples for local base plates.",
+      "confidence": "source-uncertain-context-and-visual",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/NationalDefence.html"
+      ],
+      "similarityCandidates": [
+        "official-defence-pcmr"
+      ],
+      "limits": "PCMR117 was inspected. It differs from the PCMR71 layout. No evidence supports imposing a full passenger alphabet on these designs.",
+      "priority": "review"
+    },
+    {
+      "id": "royal1951-and-crown",
+      "formatIds": [
+        "events-royal-1951",
+        "events-royal-crown"
+      ],
+      "proposedProductionGroup": "royal-fixed-art-not-passenger-serial",
+      "claim": "Royal 1951 year figures are tailored serif artwork; the crown plate has no serial. A dummy bc-astro-4 profile in a NO_NUMBER recipe must not place these designs in the 1985 passenger die era.",
+      "confidence": "source-photograph-and-implementation",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/Royal.html"
+      ],
+      "similarityCandidates": [],
+      "limits": "The tour-plate history connects Toronto and BC; its inclusion in the BC catalogue does not prove local BC manufacture. Year figures use bc-royal-1951. Exact digital font identity remains approximate.",
+      "priority": "review"
+    },
+    {
+      "id": "royal1987",
+      "formatIds": [
+        "events-royal-1987"
+      ],
+      "proposedProductionGroup": "astrographic-nonpassenger-ham-base-candidate",
+      "claim": "ROYAL 1\u201320 were explicitly made by Astrographic on the Ham Radio base. Red paint matches prorated plate colour, but colour does not establish dies. Compare ham and non-passenger lettering rather than assuming Classic passenger tooling.",
+      "confidence": "source-explicit-manufacturer-and-base",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/Royal.html"
+      ],
+      "similarityCandidates": [
+        "ham-flag",
+        "prorated-flag"
+      ],
+      "limits": "ROYAL18 was inspected: condensed embossed serial and a separate screened serif Beautiful British Columbia line. Its dedicated profile can retain reference geometry without claiming exact physical die identity.",
+      "priority": "normal"
+    },
+    {
+      "id": "royal1994",
+      "formatIds": [
+        "events-royal-1994",
+        "events-royal-1994-prototype"
+      ],
+      "proposedProductionGroup": "astrographic-ham-base-event-candidate",
+      "claim": "The 1994 Royal/Commonwealth Games plate uses a Ham Radio blank; the source identifies an Astrographic prototype. Compare its alphanumeric serial with ham and non-passenger Astrographic dies. Printed event and location text, badge and flag are separate components.",
+      "confidence": "source-context-and-representative-visual",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/Royal.html"
+      ],
+      "similarityCandidates": [
+        "events-royal-1987",
+        "ham-flag"
+      ],
+      "limits": "R1 was inspected and appears narrow. Prototype and issued serial prefixes differ. R1 alone does not validate every Classic glyph.",
+      "priority": "normal"
+    },
+    {
+      "id": "apec1997",
+      "formatIds": [
+        "events-apec-1997"
+      ],
+      "proposedProductionGroup": "astrographic-era-apec-motorcade-candidate",
+      "claim": "Compare the APEC ICBC motorcade serial with Astrographic-era ordinary numerals, but the inspected source does not identify an exact maker or die set. Screened location/date words and logos are separate artwork.",
+      "confidence": "source-event-context-candidate",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/APEC.htm"
+      ],
+      "similarityCandidates": [
+        "1985-flag",
+        "ham-flag"
+      ],
+      "limits": "The contemporary year and current bc-astro-4 profile are not proof. Distinguish ICBC motorcade from federal military APEC plates.",
+      "priority": "normal"
+    },
+    {
+      "id": "expo-serial-art-separation",
+      "formatIds": [
+        "events-expo86-presentation",
+        "events-expo86-booster",
+        "events-expo86-booster-aamva",
+        "events-expo86-prototype",
+        "events-expo86-souvenir",
+        "events-expo86-concours",
+        "events-vancouver-100"
+      ],
+      "proposedProductionGroup": "expo-astrographic-production-with-independent-logo-art",
+      "claim": "The Universal Exchange plate was made by Astrographic. The EXPO86 Frankfurter wordmark and Vancouver centennial graphics are fixed artwork. A prototype has small serial 201 307 in the decal area; the Concours plate has a separate embossed EXPO 86 serial. Group actual components separately.",
+      "confidence": "source-explicit-manufacturer-and-component-context",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/Expo-86.htm",
+        "https://www.bcpl8s.ca/Expo86-Concours.html"
+      ],
+      "similarityCandidates": [
+        "1985-flag",
+        "motorcycle-flag"
+      ],
+      "limits": "Not every Expo design uses Frankfurter. A wordmark reconstruction does not establish serial dies. A NO_NUMBER dummy profile cannot determine the production grouping.",
+      "priority": "review"
+    },
+    {
+      "id": "expo-nwt-and-stencil",
+      "formatIds": [
+        "events-expo86-nwt",
+        "events-expo86-stencil"
+      ],
+      "proposedProductionGroup": "independent-nwt-tooling-and-stencil-art",
+      "claim": "NWT Expo specimens include official single-digit EXPO 8 and EXPO 86 souvenirs using smaller stacked figures or ordinary figures. The stencil booster is flat and of unknown origin. Neither belongs to BC passenger dies solely because it dates to 1986.",
+      "confidence": "source-explicit-tooling-variant-and-uncertainty",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/Expo-86.htm"
+      ],
+      "similarityCandidates": [
+        "ca-nt/explore-1986"
+      ],
+      "limits": "NWT maker and exact cross-jurisdiction die identity are unconfirmed. Matching the cut shape does not identify the font.",
+      "priority": "review"
+    },
+    {
+      "id": "renewal-independent",
+      "formatIds": [
+        "1951",
+        "sample-1951-strip",
+        "commercial-1953-tab",
+        "1919-tab",
+        "1921-tab",
+        "1922-tab"
+      ],
+      "proposedProductionGroup": "independent-renewal-piece-lettering-over-base",
+      "claim": "Renewal strips and tabs retain the underlying base plate serial era while the renewal piece uses its own lettering. The 1951 strip has bc-strip-1951; the commercial 1953 tab has small date and totem components. Earlier 1919, 1921 and 1922 pieces also need separate component assignments.",
+      "confidence": "source-production-context-and-implementation",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/Passenger-1949-1951.html",
+        "https://www.bcpl8s.ca/Passenger-1952-1954.html",
+        "https://www.bcpl8s.ca/CommercialTruck1952-1954.html",
+        "https://www.bcpl8s.ca/Passenger-1918-1923.html"
+      ],
+      "similarityCandidates": [
+        "1950",
+        "1952",
+        "commercial-1952"
+      ],
+      "limits": "A 1951 renewal label does not establish a new passenger serial font.",
+      "priority": "normal"
+    },
+    {
+      "id": "waldale-specialty-context",
+      "formatIds": [
+        "parks-kermode",
+        "parks-purcell",
+        "parks-porteau",
+        "parks-prototype",
+        "olympic-passenger",
+        "olympic-truck",
+        "olympic-farm",
+        "olympic-trailer",
+        "olympic-motorcycle",
+        "olympic-utility",
+        "veteran-passenger",
+        "veteran-passenger-dual",
+        "veteran-truck",
+        "veteran-motorcycle"
+      ],
+      "proposedProductionGroup": "waldale-specialty-large-and-small-candidates",
+      "claim": "Parks, Olympic and Veteran profiles are modern Waldale comparison candidates across classes. Motorcycle and utility versions require small tooling groups. Graphics and contrasting paint do not create a new serial font by themselves.",
+      "confidence": "source-program-context-candidate",
+      "sourceUrls": [
+        "https://www.bcpl8s.ca/BCParks.html",
+        "https://www.bcpl8s.ca/Olympics.htm",
+        "https://www.bcpl8s.ca/Veteran.html",
+        "https://www.bcpl8s.ca/Motorcycle.htm"
+      ],
+      "similarityCandidates": [
+        "2001-flag",
+        "motorcycle-flag",
+        "motorcycle-2011"
+      ],
+      "limits": "The inspected program articles do not explicitly certify every serial glyph matches ordinary Waldale. Memorial Cross proves contemporary Waldale also uses Mississippi tooling. Character overlays across multiple specimens are needed before claiming a shared master.",
+      "priority": "normal"
+    }
+  ],
+  "assignments": [
+    {
+      "formatId": "motorcycle-1949",
+      "currentSerialDie": "bc-oakalla-1955",
+      "catalogPeriod": [
+        1949,
+        1972
+      ],
+      "evidenceId": "mc-oakalla-small",
+      "componentGroup": "oakalla-small-motorcycle",
+      "confidence": "source-maker-and-representative-visual"
+    },
+    {
+      "formatId": "motorcycle-dealer-1968",
+      "currentSerialDie": "bc-oakalla-1955",
+      "catalogPeriod": [
+        1964,
+        1972
+      ],
+      "evidenceId": "mc-oakalla-small",
+      "componentGroup": "oakalla-small-motorcycle",
+      "confidence": "source-maker-and-representative-visual"
+    },
+    {
+      "formatId": "motorcycle-1973",
+      "currentSerialDie": "bc-oakalla-1973",
+      "catalogPeriod": [
+        1973,
+        1973
+      ],
+      "evidenceId": "mc-1973",
+      "componentGroup": "oakalla-small-motorcycle-1973",
+      "confidence": "source-context-candidate"
+    },
+    {
+      "formatId": "motorcycle-dealer-1973",
+      "currentSerialDie": "bc-oakalla-1973",
+      "catalogPeriod": [
+        1973,
+        1973
+      ],
+      "evidenceId": "mc-1973",
+      "componentGroup": "oakalla-small-motorcycle-1973",
+      "confidence": "source-context-candidate"
+    },
+    {
+      "formatId": "motorcycle-1974",
+      "currentSerialDie": "bc-oakalla-1973",
+      "catalogPeriod": [
+        1974,
+        1978
+      ],
+      "evidenceId": "mc-mixed-1974",
+      "componentGroup": "oakalla-motorcycle-mixed-1974",
+      "confidence": "source-explicit-die-variation"
+    },
+    {
+      "formatId": "motorcycle-1974-prototype",
+      "currentSerialDie": "bc-oakalla-1973",
+      "catalogPeriod": [
+        1976,
+        1976
+      ],
+      "evidenceId": "mc-mixed-1974",
+      "componentGroup": "oakalla-motorcycle-mixed-1974",
+      "confidence": "source-explicit-die-variation"
+    },
+    {
+      "formatId": "motorcycle-dealer-1976",
+      "currentSerialDie": "bc-oakalla-1973",
+      "catalogPeriod": [
+        1976,
+        1978
+      ],
+      "evidenceId": "mc-mixed-1974",
+      "componentGroup": "oakalla-motorcycle-mixed-1974",
+      "confidence": "source-explicit-die-variation"
+    },
+    {
+      "formatId": "motorcycle-1979",
+      "currentSerialDie": "bc-acme-1979",
+      "catalogPeriod": [
+        1978,
+        1986
+      ],
+      "evidenceId": "mc-acme",
+      "componentGroup": "acme-small-motorcycle-candidate",
+      "confidence": "source-context-candidate"
+    },
+    {
+      "formatId": "motorcycle-dealer-1979",
+      "currentSerialDie": "bc-acme-1979",
+      "catalogPeriod": [
+        1979,
+        1986
+      ],
+      "evidenceId": "mc-acme",
+      "componentGroup": "acme-small-motorcycle-candidate",
+      "confidence": "source-context-candidate"
+    },
+    {
+      "formatId": "motorcycle-flag",
+      "currentSerialDie": "bc-astro-3",
+      "catalogPeriod": [
+        1985,
+        2011
+      ],
+      "evidenceId": "mc-astro-waldale",
+      "componentGroup": "astrographic-and-waldale-small-motorcycle",
+      "confidence": "source-explicit-manufacturer-die-era"
+    },
+    {
+      "formatId": "motorcycle-dealer-flag",
+      "currentSerialDie": "bc-astro-3",
+      "catalogPeriod": [
+        1985,
+        2025
+      ],
+      "evidenceId": "mc-astro-waldale",
+      "componentGroup": "astrographic-and-waldale-small-motorcycle",
+      "confidence": "source-explicit-manufacturer-die-era"
+    },
+    {
+      "formatId": "motorcycle-2011",
+      "currentSerialDie": "bc-waldale",
+      "catalogPeriod": [
+        2011,
+        2025
+      ],
+      "evidenceId": "mc-2011-enlargement",
+      "componentGroup": "waldale-large-motorcycle-2011",
+      "confidence": "source-explicit-size-and-serial-rule"
+    },
+    {
+      "formatId": "collector-passenger",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        1990,
+        2013
+      ],
+      "evidenceId": "collector-passenger-overlap",
+      "componentGroup": "astrographic-and-waldale-collector-passenger",
+      "confidence": "source-explicit-die-and-serial-rule"
+    },
+    {
+      "formatId": "collector-passenger-dual",
+      "currentSerialDie": "bc-waldale",
+      "catalogPeriod": [
+        2013,
+        2026
+      ],
+      "evidenceId": "collector-passenger-overlap",
+      "componentGroup": "astrographic-and-waldale-collector-passenger",
+      "confidence": "source-explicit-die-and-serial-rule"
+    },
+    {
+      "formatId": "collector-multi",
+      "currentSerialDie": "bc-waldale",
+      "catalogPeriod": [
+        1990,
+        2026
+      ],
+      "evidenceId": "collector-passenger-overlap",
+      "componentGroup": "astrographic-and-waldale-collector-passenger",
+      "confidence": "source-explicit-die-and-serial-rule"
+    },
+    {
+      "formatId": "collector-motorcycle",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        1990,
+        2026
+      ],
+      "evidenceId": "collector-motorcycle-overlap",
+      "componentGroup": "astrographic-and-waldale-collector-motorcycle",
+      "confidence": "source-explicit-die-and-serial-rule"
+    },
+    {
+      "formatId": "collector-motorcycle-multi",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        1990,
+        2013
+      ],
+      "evidenceId": "collector-motorcycle-overlap",
+      "componentGroup": "astrographic-and-waldale-collector-motorcycle",
+      "confidence": "source-explicit-die-and-serial-rule"
+    },
+    {
+      "formatId": "collector-passenger",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        1990,
+        2013
+      ],
+      "evidenceId": "collector-decorative-layer",
+      "componentGroup": "collector-harrington-screened-art",
+      "confidence": "user-identified-font-and-visual"
+    },
+    {
+      "formatId": "collector-passenger-dual",
+      "currentSerialDie": "bc-waldale",
+      "catalogPeriod": [
+        2013,
+        2026
+      ],
+      "evidenceId": "collector-decorative-layer",
+      "componentGroup": "collector-harrington-screened-art",
+      "confidence": "user-identified-font-and-visual"
+    },
+    {
+      "formatId": "collector-multi",
+      "currentSerialDie": "bc-waldale",
+      "catalogPeriod": [
+        1990,
+        2026
+      ],
+      "evidenceId": "collector-decorative-layer",
+      "componentGroup": "collector-harrington-screened-art",
+      "confidence": "user-identified-font-and-visual"
+    },
+    {
+      "formatId": "collector-motorcycle",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        1990,
+        2026
+      ],
+      "evidenceId": "collector-decorative-layer",
+      "componentGroup": "collector-harrington-screened-art",
+      "confidence": "user-identified-font-and-visual"
+    },
+    {
+      "formatId": "collector-motorcycle-multi",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        1990,
+        2013
+      ],
+      "evidenceId": "collector-decorative-layer",
+      "componentGroup": "collector-harrington-screened-art",
+      "confidence": "user-identified-font-and-visual"
+    },
+    {
+      "formatId": "memorial-passenger",
+      "currentSerialDie": "bc-mississippi",
+      "catalogPeriod": [
+        2016,
+        2026
+      ],
+      "evidenceId": "memorial-mississippi",
+      "componentGroup": "waldale-mississippi-specialty",
+      "confidence": "source-explicit-die-family"
+    },
+    {
+      "formatId": "memorial-truck",
+      "currentSerialDie": "bc-mississippi",
+      "catalogPeriod": [
+        2016,
+        2026
+      ],
+      "evidenceId": "memorial-mississippi",
+      "componentGroup": "waldale-mississippi-specialty",
+      "confidence": "source-explicit-die-family"
+    },
+    {
+      "formatId": "memorial-keepsake",
+      "currentSerialDie": "bc-mississippi",
+      "catalogPeriod": [
+        2016,
+        2026
+      ],
+      "evidenceId": "memorial-mississippi",
+      "componentGroup": "waldale-mississippi-specialty",
+      "confidence": "source-explicit-die-family"
+    },
+    {
+      "formatId": "antique-1966",
+      "currentSerialDie": "bc-oakalla-1955",
+      "catalogPeriod": [
+        1966,
+        1974
+      ],
+      "evidenceId": "antique-size-variant",
+      "componentGroup": "antique-large-three-digit-and-small-four-digit",
+      "confidence": "source-explicit-size-variant"
+    },
+    {
+      "formatId": "antique-1975",
+      "currentSerialDie": "bc-oakalla-1973",
+      "catalogPeriod": [
+        1975,
+        1980
+      ],
+      "evidenceId": "antique-size-variant",
+      "componentGroup": "antique-large-three-digit-and-small-four-digit",
+      "confidence": "source-explicit-size-variant"
+    },
+    {
+      "formatId": "antique-1975-open-hubs",
+      "currentSerialDie": "bc-oakalla-1973",
+      "catalogPeriod": [
+        1980,
+        2026
+      ],
+      "evidenceId": "antique-size-variant",
+      "componentGroup": "antique-large-three-digit-and-small-four-digit",
+      "confidence": "source-explicit-size-variant"
+    },
+    {
+      "formatId": "antique-prototype-91",
+      "currentSerialDie": "bc-oakalla-1955",
+      "catalogPeriod": [
+        1966,
+        1966
+      ],
+      "evidenceId": "antique-size-variant",
+      "componentGroup": "antique-large-three-digit-and-small-four-digit",
+      "confidence": "source-explicit-size-variant"
+    },
+    {
+      "formatId": "antique-motorcycle",
+      "currentSerialDie": "bc-oakalla-1973",
+      "catalogPeriod": [
+        1966,
+        2026
+      ],
+      "evidenceId": "antique-motorcycle",
+      "componentGroup": "antique-small-motorcycle-with-waldale-overlap",
+      "confidence": "source-explicit-die-heading"
+    },
+    {
+      "formatId": "personalized-1979",
+      "currentSerialDie": "bc-acme-1979",
+      "catalogPeriod": [
+        1979,
+        1984
+      ],
+      "evidenceId": "personalized-era",
+      "componentGroup": "acme-astrographic-waldale-personalized",
+      "confidence": "source-explicit-manufacturer-era"
+    },
+    {
+      "formatId": "personalized-astro",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        1984,
+        2002
+      ],
+      "evidenceId": "personalized-era",
+      "componentGroup": "acme-astrographic-waldale-personalized",
+      "confidence": "source-explicit-manufacturer-era"
+    },
+    {
+      "formatId": "personalized-reversed",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        1984,
+        1986
+      ],
+      "evidenceId": "personalized-era",
+      "componentGroup": "acme-astrographic-waldale-personalized",
+      "confidence": "source-explicit-manufacturer-era"
+    },
+    {
+      "formatId": "personalized-waldale",
+      "currentSerialDie": "bc-waldale",
+      "catalogPeriod": [
+        2002,
+        2026
+      ],
+      "evidenceId": "personalized-era",
+      "componentGroup": "acme-astrographic-waldale-personalized",
+      "confidence": "source-explicit-manufacturer-era"
+    },
+    {
+      "formatId": "personalized-sample",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        1985,
+        2002
+      ],
+      "evidenceId": "personalized-era",
+      "componentGroup": "acme-astrographic-waldale-personalized",
+      "confidence": "source-explicit-manufacturer-era"
+    },
+    {
+      "formatId": "personalized-motorcycle",
+      "currentSerialDie": "bc-waldale",
+      "catalogPeriod": [
+        2000,
+        2026
+      ],
+      "evidenceId": "personalized-small",
+      "componentGroup": "astrographic-and-waldale-small-personalized",
+      "confidence": "source-explicit-small-alphabet-context"
+    },
+    {
+      "formatId": "personalized-motorcycle-prototype",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        2001,
+        2001
+      ],
+      "evidenceId": "personalized-small",
+      "componentGroup": "astrographic-and-waldale-small-personalized",
+      "confidence": "source-explicit-small-alphabet-context"
+    },
+    {
+      "formatId": "official-defence-1941",
+      "currentSerialDie": "bc-early-1940",
+      "catalogPeriod": [
+        1941,
+        1948
+      ],
+      "evidenceId": "defence-rounded",
+      "componentGroup": "oakalla-rounded-provincial-defence",
+      "confidence": "source-context-and-representative-visual"
+    },
+    {
+      "formatId": "official-defence-1949",
+      "currentSerialDie": "bc-early-1940",
+      "catalogPeriod": [
+        1949,
+        1954
+      ],
+      "evidenceId": "defence-rounded",
+      "componentGroup": "oakalla-rounded-provincial-defence",
+      "confidence": "source-context-and-representative-visual"
+    },
+    {
+      "formatId": "official-defence-1952",
+      "currentSerialDie": "bc-early-1940",
+      "catalogPeriod": [
+        1952,
+        1952
+      ],
+      "evidenceId": "defence-rounded",
+      "componentGroup": "oakalla-rounded-provincial-defence",
+      "confidence": "source-context-and-representative-visual"
+    },
+    {
+      "formatId": "official-defence-motorcycle",
+      "currentSerialDie": "bc-early-1940",
+      "catalogPeriod": [
+        1942,
+        1945
+      ],
+      "evidenceId": "defence-small",
+      "componentGroup": "oakalla-small-defence-motorcycle",
+      "confidence": "source-context-candidate"
+    },
+    {
+      "formatId": "official-defence-1955",
+      "currentSerialDie": "bc-oakalla-1955",
+      "catalogPeriod": [
+        1955,
+        1963
+      ],
+      "evidenceId": "defence-oakalla-post55",
+      "componentGroup": "oakalla-provincial-defence-post1955",
+      "confidence": "source-gallery-context-candidate"
+    },
+    {
+      "formatId": "official-defence-1964",
+      "currentSerialDie": "bc-oakalla-1955",
+      "catalogPeriod": [
+        1964,
+        1964
+      ],
+      "evidenceId": "defence-oakalla-post55",
+      "componentGroup": "oakalla-provincial-defence-post1955",
+      "confidence": "source-gallery-context-candidate"
+    },
+    {
+      "formatId": "official-defence-1965",
+      "currentSerialDie": "bc-oakalla-1955",
+      "catalogPeriod": [
+        1965,
+        1967
+      ],
+      "evidenceId": "defence-oakalla-post55",
+      "componentGroup": "oakalla-provincial-defence-post1955",
+      "confidence": "source-gallery-context-candidate"
+    },
+    {
+      "formatId": "official-defence-1968",
+      "currentSerialDie": "bc-oakalla-1955",
+      "catalogPeriod": [
+        1968,
+        1969
+      ],
+      "evidenceId": "defence-oakalla-post55",
+      "componentGroup": "oakalla-provincial-defence-post1955",
+      "confidence": "source-gallery-context-candidate"
+    },
+    {
+      "formatId": "official-defence-canada",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        1970,
+        2026
+      ],
+      "evidenceId": "defence-federal",
+      "componentGroup": "federal-canada-military-not-bc-passenger",
+      "confidence": "source-explicit-jurisdiction-and-representative-visual"
+    },
+    {
+      "formatId": "events-apec-1997-military",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        1997,
+        1997
+      ],
+      "evidenceId": "defence-federal",
+      "componentGroup": "federal-canada-military-not-bc-passenger",
+      "confidence": "source-explicit-jurisdiction-and-representative-visual"
+    },
+    {
+      "formatId": "official-defence-pcmr",
+      "currentSerialDie": "bc-pcmr-71",
+      "catalogPeriod": [
+        1942,
+        1945
+      ],
+      "evidenceId": "defence-pcmr-and-local",
+      "componentGroup": "independent-local-military-tooling",
+      "confidence": "source-uncertain-context-and-visual"
+    },
+    {
+      "formatId": "official-defence-esquimalt",
+      "currentSerialDie": "bc-early-1940",
+      "catalogPeriod": [
+        1956,
+        1957
+      ],
+      "evidenceId": "defence-pcmr-and-local",
+      "componentGroup": "independent-local-military-tooling",
+      "confidence": "source-uncertain-context-and-visual"
+    },
+    {
+      "formatId": "official-defence-comox",
+      "currentSerialDie": "bc-oakalla-1955",
+      "catalogPeriod": [
+        1956,
+        1957
+      ],
+      "evidenceId": "defence-pcmr-and-local",
+      "componentGroup": "independent-local-military-tooling",
+      "confidence": "source-uncertain-context-and-visual"
+    },
+    {
+      "formatId": "events-royal-1951",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        1951,
+        1951
+      ],
+      "evidenceId": "royal1951-and-crown",
+      "componentGroup": "royal-fixed-art-not-passenger-serial",
+      "confidence": "source-photograph-and-implementation"
+    },
+    {
+      "formatId": "events-royal-crown",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        1987,
+        2016
+      ],
+      "evidenceId": "royal1951-and-crown",
+      "componentGroup": "royal-fixed-art-not-passenger-serial",
+      "confidence": "source-photograph-and-implementation"
+    },
+    {
+      "formatId": "events-royal-1987",
+      "currentSerialDie": "bc-royal-1987",
+      "catalogPeriod": [
+        1987,
+        1987
+      ],
+      "evidenceId": "royal1987",
+      "componentGroup": "astrographic-nonpassenger-ham-base-candidate",
+      "confidence": "source-explicit-manufacturer-and-base"
+    },
+    {
+      "formatId": "events-royal-1994",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        1994,
+        1994
+      ],
+      "evidenceId": "royal1994",
+      "componentGroup": "astrographic-ham-base-event-candidate",
+      "confidence": "source-context-and-representative-visual"
+    },
+    {
+      "formatId": "events-royal-1994-prototype",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        1994,
+        1994
+      ],
+      "evidenceId": "royal1994",
+      "componentGroup": "astrographic-ham-base-event-candidate",
+      "confidence": "source-context-and-representative-visual"
+    },
+    {
+      "formatId": "events-apec-1997",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        1997,
+        1997
+      ],
+      "evidenceId": "apec1997",
+      "componentGroup": "astrographic-era-apec-motorcade-candidate",
+      "confidence": "source-event-context-candidate"
+    },
+    {
+      "formatId": "events-expo86-presentation",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        1985,
+        1986
+      ],
+      "evidenceId": "expo-serial-art-separation",
+      "componentGroup": "expo-astrographic-production-with-independent-logo-art",
+      "confidence": "source-explicit-manufacturer-and-component-context"
+    },
+    {
+      "formatId": "events-expo86-booster",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        1985,
+        1986
+      ],
+      "evidenceId": "expo-serial-art-separation",
+      "componentGroup": "expo-astrographic-production-with-independent-logo-art",
+      "confidence": "source-explicit-manufacturer-and-component-context"
+    },
+    {
+      "formatId": "events-expo86-booster-aamva",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        1985,
+        1985
+      ],
+      "evidenceId": "expo-serial-art-separation",
+      "componentGroup": "expo-astrographic-production-with-independent-logo-art",
+      "confidence": "source-explicit-manufacturer-and-component-context"
+    },
+    {
+      "formatId": "events-expo86-prototype",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        1985,
+        1985
+      ],
+      "evidenceId": "expo-serial-art-separation",
+      "componentGroup": "expo-astrographic-production-with-independent-logo-art",
+      "confidence": "source-explicit-manufacturer-and-component-context"
+    },
+    {
+      "formatId": "events-expo86-souvenir",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        1986,
+        1986
+      ],
+      "evidenceId": "expo-serial-art-separation",
+      "componentGroup": "expo-astrographic-production-with-independent-logo-art",
+      "confidence": "source-explicit-manufacturer-and-component-context"
+    },
+    {
+      "formatId": "events-expo86-concours",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        1986,
+        1986
+      ],
+      "evidenceId": "expo-serial-art-separation",
+      "componentGroup": "expo-astrographic-production-with-independent-logo-art",
+      "confidence": "source-explicit-manufacturer-and-component-context"
+    },
+    {
+      "formatId": "events-vancouver-100",
+      "currentSerialDie": "bc-astro-4",
+      "catalogPeriod": [
+        1986,
+        1986
+      ],
+      "evidenceId": "expo-serial-art-separation",
+      "componentGroup": "expo-astrographic-production-with-independent-logo-art",
+      "confidence": "source-explicit-manufacturer-and-component-context"
+    },
+    {
+      "formatId": "events-expo86-nwt",
+      "currentSerialDie": "bc-astro-3",
+      "catalogPeriod": [
+        1986,
+        1986
+      ],
+      "evidenceId": "expo-nwt-and-stencil",
+      "componentGroup": "independent-nwt-tooling-and-stencil-art",
+      "confidence": "source-explicit-tooling-variant-and-uncertainty"
+    },
+    {
+      "formatId": "events-expo86-stencil",
+      "currentSerialDie": "bc-oakalla-1970",
+      "catalogPeriod": [
+        1986,
+        1986
+      ],
+      "evidenceId": "expo-nwt-and-stencil",
+      "componentGroup": "independent-nwt-tooling-and-stencil-art",
+      "confidence": "source-explicit-tooling-variant-and-uncertainty"
+    },
+    {
+      "formatId": "1951",
+      "currentSerialDie": "bc-early-1940",
+      "catalogPeriod": [
+        1951,
+        1951
+      ],
+      "evidenceId": "renewal-independent",
+      "componentGroup": "independent-renewal-piece-lettering-over-base",
+      "confidence": "source-production-context-and-implementation"
+    },
+    {
+      "formatId": "sample-1951-strip",
+      "currentSerialDie": "bc-early-1940",
+      "catalogPeriod": [
+        1951,
+        1951
+      ],
+      "evidenceId": "renewal-independent",
+      "componentGroup": "independent-renewal-piece-lettering-over-base",
+      "confidence": "source-production-context-and-implementation"
+    },
+    {
+      "formatId": "commercial-1953-tab",
+      "currentSerialDie": "bc-commercial-1952-serial",
+      "catalogPeriod": [
+        1953,
+        1953
+      ],
+      "evidenceId": "renewal-independent",
+      "componentGroup": "independent-renewal-piece-lettering-over-base",
+      "confidence": "source-production-context-and-implementation"
+    },
+    {
+      "formatId": "1919-tab",
+      "currentSerialDie": "bc-block-1918",
+      "catalogPeriod": [
+        1919,
+        1919
+      ],
+      "evidenceId": "renewal-independent",
+      "componentGroup": "independent-renewal-piece-lettering-over-base",
+      "confidence": "source-production-context-and-implementation"
+    },
+    {
+      "formatId": "1921-tab",
+      "currentSerialDie": "bc-block-1918",
+      "catalogPeriod": [
+        1921,
+        1921
+      ],
+      "evidenceId": "renewal-independent",
+      "componentGroup": "independent-renewal-piece-lettering-over-base",
+      "confidence": "source-production-context-and-implementation"
+    },
+    {
+      "formatId": "1922-tab",
+      "currentSerialDie": "bc-block-1918",
+      "catalogPeriod": [
+        1922,
+        1922
+      ],
+      "evidenceId": "renewal-independent",
+      "componentGroup": "independent-renewal-piece-lettering-over-base",
+      "confidence": "source-production-context-and-implementation"
+    },
+    {
+      "formatId": "parks-kermode",
+      "currentSerialDie": "bc-waldale",
+      "catalogPeriod": [
+        2017,
+        2026
+      ],
+      "evidenceId": "waldale-specialty-context",
+      "componentGroup": "waldale-specialty-large-and-small-candidates",
+      "confidence": "source-program-context-candidate"
+    },
+    {
+      "formatId": "parks-purcell",
+      "currentSerialDie": "bc-waldale",
+      "catalogPeriod": [
+        2017,
+        2026
+      ],
+      "evidenceId": "waldale-specialty-context",
+      "componentGroup": "waldale-specialty-large-and-small-candidates",
+      "confidence": "source-program-context-candidate"
+    },
+    {
+      "formatId": "parks-porteau",
+      "currentSerialDie": "bc-waldale",
+      "catalogPeriod": [
+        2017,
+        2026
+      ],
+      "evidenceId": "waldale-specialty-context",
+      "componentGroup": "waldale-specialty-large-and-small-candidates",
+      "confidence": "source-program-context-candidate"
+    },
+    {
+      "formatId": "parks-prototype",
+      "currentSerialDie": "bc-waldale",
+      "catalogPeriod": [
+        2016,
+        2016
+      ],
+      "evidenceId": "waldale-specialty-context",
+      "componentGroup": "waldale-specialty-large-and-small-candidates",
+      "confidence": "source-program-context-candidate"
+    },
+    {
+      "formatId": "olympic-passenger",
+      "currentSerialDie": "bc-waldale",
+      "catalogPeriod": [
+        2007,
+        2010
+      ],
+      "evidenceId": "waldale-specialty-context",
+      "componentGroup": "waldale-specialty-large-and-small-candidates",
+      "confidence": "source-program-context-candidate"
+    },
+    {
+      "formatId": "olympic-truck",
+      "currentSerialDie": "bc-waldale",
+      "catalogPeriod": [
+        2007,
+        2010
+      ],
+      "evidenceId": "waldale-specialty-context",
+      "componentGroup": "waldale-specialty-large-and-small-candidates",
+      "confidence": "source-program-context-candidate"
+    },
+    {
+      "formatId": "olympic-farm",
+      "currentSerialDie": "bc-waldale",
+      "catalogPeriod": [
+        2007,
+        2010
+      ],
+      "evidenceId": "waldale-specialty-context",
+      "componentGroup": "waldale-specialty-large-and-small-candidates",
+      "confidence": "source-program-context-candidate"
+    },
+    {
+      "formatId": "olympic-trailer",
+      "currentSerialDie": "bc-waldale",
+      "catalogPeriod": [
+        2007,
+        2010
+      ],
+      "evidenceId": "waldale-specialty-context",
+      "componentGroup": "waldale-specialty-large-and-small-candidates",
+      "confidence": "source-program-context-candidate"
+    },
+    {
+      "formatId": "olympic-motorcycle",
+      "currentSerialDie": "bc-waldale",
+      "catalogPeriod": [
+        2007,
+        2010
+      ],
+      "evidenceId": "waldale-specialty-context",
+      "componentGroup": "waldale-specialty-large-and-small-candidates",
+      "confidence": "source-program-context-candidate"
+    },
+    {
+      "formatId": "olympic-utility",
+      "currentSerialDie": "bc-waldale",
+      "catalogPeriod": [
+        2007,
+        2010
+      ],
+      "evidenceId": "waldale-specialty-context",
+      "componentGroup": "waldale-specialty-large-and-small-candidates",
+      "confidence": "source-program-context-candidate"
+    },
+    {
+      "formatId": "veteran-passenger",
+      "currentSerialDie": "bc-waldale",
+      "catalogPeriod": [
+        2004,
+        2014
+      ],
+      "evidenceId": "waldale-specialty-context",
+      "componentGroup": "waldale-specialty-large-and-small-candidates",
+      "confidence": "source-program-context-candidate"
+    },
+    {
+      "formatId": "veteran-passenger-dual",
+      "currentSerialDie": "bc-waldale",
+      "catalogPeriod": [
+        2014,
+        2026
+      ],
+      "evidenceId": "waldale-specialty-context",
+      "componentGroup": "waldale-specialty-large-and-small-candidates",
+      "confidence": "source-program-context-candidate"
+    },
+    {
+      "formatId": "veteran-truck",
+      "currentSerialDie": "bc-waldale",
+      "catalogPeriod": [
+        2004,
+        2026
+      ],
+      "evidenceId": "waldale-specialty-context",
+      "componentGroup": "waldale-specialty-large-and-small-candidates",
+      "confidence": "source-program-context-candidate"
+    },
+    {
+      "formatId": "veteran-motorcycle",
+      "currentSerialDie": "bc-waldale",
+      "catalogPeriod": [
+        2004,
+        2026
+      ],
+      "evidenceId": "waldale-specialty-context",
+      "componentGroup": "waldale-specialty-large-and-small-candidates",
+      "confidence": "source-program-context-candidate"
+    }
+  ],
+  "representativePhotographs": [
+    {
+      "name": "Collector1990-B00000",
+      "localPath": "/tmp/bc-group-special-photos/Collector1990-B00000.jpg",
+      "sourceImageUrl": "https://www.bcpl8s.ca/images/Collector/1990-B00000(XL).jpg",
+      "observation": "Tall narrow B/0 serial with rounded rectangular counters and a filled wave separator. Collector, British and Columbia are decorative lettering independent of the embossed serial.",
+      "attribution": "BCpl8s original reference photograph",
+      "reviewMethod": "Manual visual inspection of original photograph; no rectified contour or complete alphabet certification."
+    },
+    {
+      "name": "Collector2017-B60565",
+      "localPath": "/tmp/bc-group-special-photos/Collector2017-B60565.jpg",
+      "sourceImageUrl": "https://www.bcpl8s.ca/images/Collector/2017-B60565(XL).jpg",
+      "observation": "Open-ended Waldale 6 and broader rounded counters distinguish this serial from the older B00-000 sample. Decorative Collector words persist; the small MULTI-VEHICLE subtitle is a separate component.",
+      "attribution": "BCpl8s original reference photograph",
+      "reviewMethod": "Manual visual inspection of original photograph; no rectified contour or complete alphabet certification."
+    },
+    {
+      "name": "Motorcycle1949-324",
+      "localPath": "/tmp/bc-group-special-photos/Motorcycle1949-324.jpg",
+      "sourceImageUrl": "https://www.bcpl8s.ca/images/Motorcycle/1949-324(XL).jpg",
+      "observation": "Compact rounded 3/2 and slanted open 4, with stacked B/C at left. The arrangement and figure proportions provide an earlier comparison for the 1952 motorcycle specimen.",
+      "attribution": "BCpl8s original reference photograph",
+      "reviewMethod": "Manual visual inspection of original photograph; no rectified contour or complete alphabet certification."
+    },
+    {
+      "name": "DefenceCanada79122",
+      "localPath": "/tmp/bc-group-special-photos/DefenceCanada79122.jpg",
+      "sourceImageUrl": "https://www.bcpl8s.ca/images/Military/79122(XL).jpg",
+      "observation": "Broad federal figures beneath a CANADA legend and two maple leaves. Their proportions differ visibly from the condensed BC passenger alphabet.",
+      "attribution": "BCpl8s original reference photograph",
+      "reviewMethod": "Manual visual inspection of original photograph; no rectified contour or complete alphabet certification."
+    },
+    {
+      "name": "Motorcycle1952-359",
+      "localPath": "/tmp/bc-group-special-photos/Motorcycle1952-359.jpg",
+      "sourceImageUrl": "https://www.bcpl8s.ca/images/Motorcycle/1952-359(XL).jpg",
+      "observation": "Compact rounded-block 359, with a stacked B/C at left and small MOTORCYCLE52 lettering above. This supports comparison with the earlier small motorcycle tooling rather than full-size passenger figures.",
+      "attribution": "BCpl8s original reference photograph",
+      "reviewMethod": "Manual visual inspection of original photograph; no rectified contour or complete alphabet certification."
+    },
+    {
+      "name": "MemorialCross-MC127R",
+      "localPath": "/tmp/bc-group-special-photos/MemorialCross-MC127R.jpg",
+      "sourceImageUrl": "https://www.bcpl8s.ca/images/MemorialCross/2020-MC127R(XL).jpg",
+      "observation": "Narrow upright serial with straight-sided M/C/R and compact numerals. The holder covers parts of the footer and plate edges, limiting alignment measurements.",
+      "attribution": "BCpl8s original reference photograph",
+      "reviewMethod": "Manual visual inspection of original photograph; no rectified contour or complete alphabet certification."
+    },
+    {
+      "name": "DefencePCMR117",
+      "localPath": "/tmp/bc-group-special-photos/DefencePCMR117.jpg",
+      "sourceImageUrl": "https://www.bcpl8s.ca/images/Military/PCMR-117(XL).jpg",
+      "observation": "Heavy upright PCMR block letters with a smaller 117 below, on a red ground. This layout differs from the PCMR71 specimen and is not ordinary passenger serial construction.",
+      "attribution": "BCpl8s original reference photograph",
+      "reviewMethod": "Manual visual inspection of original photograph; no rectified contour or complete alphabet certification."
+    },
+    {
+      "name": "Royal1994-R1",
+      "localPath": "/tmp/bc-group-special-photos/Royal1994-R1.jpg",
+      "sourceImageUrl": "https://www.bcpl8s.ca/images/LiuetenantGovenor/1994-R1(XL).jpg",
+      "observation": "Narrow embossed R1 occupies the right half. Italic event lettering, the visit badge and the lower location panel are independent printed components.",
+      "attribution": "BCpl8s original reference photograph",
+      "reviewMethod": "Manual visual inspection of original photograph; no rectified contour or complete alphabet certification."
+    },
+    {
+      "name": "Royal1987-ROYAL18",
+      "localPath": "/tmp/bc-group-special-photos/Royal1987-ROYAL18.jpg",
+      "sourceImageUrl": "https://www.bcpl8s.ca/images/LiuetenantGovenor/ROYAL18(XL).jpg",
+      "observation": "Red condensed embossed ROYAL18 serial, with a separate blue serif Beautiful British Columbia line and flag at lower left. Red paint does not establish a different die family.",
+      "attribution": "BCpl8s original reference photograph",
+      "reviewMethod": "Manual visual inspection of original photograph; no rectified contour or complete alphabet certification."
+    },
+    {
+      "name": "Defence1952-N24",
+      "localPath": "/tmp/bc-group-special-photos/Defence1952-N24.jpg",
+      "sourceImageUrl": "https://www.bcpl8s.ca/images/Military/1952-N24(XL).jpg",
+      "observation": "Rounded slanted 2 and open 4 resemble the contemporary totem-era construction. The N prefix, small 52 date, province legend and totem use separate positions and sizes.",
+      "attribution": "BCpl8s original reference photograph",
+      "reviewMethod": "Manual visual inspection of original photograph; no rectified contour or complete alphabet certification."
+    }
+  ],
+  "sourceTextFiles": [
+    "/tmp/bc-special-Dealer-Motorcycle.htm.txt",
+    "/tmp/bc-special-Expo86-Concours.html.txt",
+    "/tmp/bc-special-BCParks.html.txt",
+    "/tmp/bc-special-Olympics.htm.txt",
+    "/tmp/bc-special-Antique.htm.txt",
+    "/tmp/bc-special-Veteran.html.txt",
+    "/tmp/bc-special-Passenger-1952-1954.html.txt",
+    "/tmp/bc-special-Personalized.htm.txt",
+    "/tmp/bc-special-NationalDefence.html.txt",
+    "/tmp/bc-special-Passenger-1949-1951.html.txt",
+    "/tmp/bc-special-Motorcycle.htm.txt",
+    "/tmp/bc-special-APEC.htm.txt",
+    "/tmp/bc-special-Expo-86.htm.txt",
+    "/tmp/bc-special-MemorialCross.html.txt",
+    "/tmp/bc-special-Collector.htm.txt",
+    "/tmp/bc-special-Royal.html.txt"
+  ],
+  "componentRules": [
+    "Record serial family only when a serial actually renders; a NO_NUMBER dummy profile carries no serial evidence.",
+    "Record manufacturer, physical tooling size/subtype, production run/serial range and confidence separately.",
+    "Artwork wordmarks, slogans, dates and province legends are separate from the serial alphabet.",
+    "Base validity, photograph year and decal year are not manufacture year.",
+    "A shared factory or profile ID supports comparison; it does not certify every glyph."
+  ]
+}

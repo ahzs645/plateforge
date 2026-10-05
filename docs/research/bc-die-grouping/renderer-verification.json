@@ -1,0 +1,30 @@
+{
+  "site": "http://127.0.0.1:5176/plateforge/",
+  "formats": [
+    {
+      "format": "commercial-flag-2008",
+      "renderedDie": "bc-waldale",
+      "soleDeclaredDieApplied": true,
+      "svgExport": true
+    },
+    {
+      "format": "farm-truck-2025",
+      "renderedDie": "bc-waldale",
+      "soleDeclaredDieApplied": true,
+      "svgExport": true
+    },
+    {
+      "format": "trailer-utility-flag-2000",
+      "renderedDie": "bc-waldale",
+      "soleDeclaredDieApplied": true,
+      "svgExport": true
+    },
+    {
+      "format": "trailer-utility-2016",
+      "renderedDie": "bc-waldale",
+      "soleDeclaredDieApplied": true,
+      "svgExport": true
+    }
+  ],
+  "errors": []
+}

@@ -10,6 +10,7 @@
  * years (later-scene.ts geometry, scaled from photos).
  */
 import '../../templates/bc/art-vehicles';
+import '../../templates/dies/early-trailer';
 import './bc-flag'; // registers the passenger flag recipes reused below
 import type { PlateEra, PlateFamily, PlateFormat, PlateStatus } from '../../core/types';
 import type { KitDecal, KitFontText, KitRecipe, KitSerial, KitShape, KitText } from '../../templates/bc/kit';
@@ -448,33 +449,52 @@ const small1979 = (id: string, label: string, b: Look, source: Source, bottom: s
   small1974(id, label, b, source, bottom, '', { decal: box(b, 0.25, 0.045, 0.73, 0.28), serial: SER(b, 0.5, 0.72, 0.36, 0.9, 'bc-acme-1979'), ...extra });
 
 const floaterLook: Look = { ...cStd, bg: '#f4f4f4', ink: '#202020' };
+/** Early small trailer stamps: BC/date and T/TR are independent of the number. */
+function earlyTrailer(id: string, label: string, w: number, h: number, prefix: boolean): KitRecipe {
+  const b = {w, h, bg: prefix ? '#265b43' : '#dfaa24', ink: prefix ? '#e4e0d2' : '#202019'};
+  return recipe(id, label, b, SRC.trailer, {
+    holeGeometry: [
+      {cx: w * 0.5, cy: h * 0.115, width: 20, height: 5.2, rx: 2.6},
+      {cx: w * 0.5, cy: h * 0.925, width: 20, height: 5.2, rx: 2.6},
+      ...(prefix ? [{cx: w * 0.17, cy: h * 0.075, r: 2.1}, {cx: w * 0.825, cy: h * 0.075, r: 2.1}]
+        : [{cx: w * 0.935, cy: h * 0.11, r: 1.8}]),
+    ],
+    legends: [T(b, 'BC', 0.154, 0.558, 0.405, 'bc-trailer-early-bc', 'bc', 0.247),
+      T(b, '{yyyy}', 0.166, 0.865, 0.185, 'bc-trailer-early-date', 'year', 0.258)],
+    serial: SER(b, prefix ? 0.711 : 0.555, 0.819, 0.636, prefix ? 0.49 : 0.56, 'bc-trailer-early-serial',
+      prefix ? {prefix: {x: w * 0.377, baseline: h * 0.706, cap: h * 0.388, maxWidth: w * 0.23, die: 'bc-trailer-early-prefix'}} : {}),
+    note: 'Source-led upright early trailer construction with separate BC/date and smaller T/TR stamps. Shared visible forms do not establish identical physical dies. Smooth contours, dimensions and aged paint colours remain approximate.',
+  });
+}
 const trailers: Spec[] = [
-  { id: 'trailer-1921', label: 'Trailer 1921–26', family: 'trailer', era: 'trailer-early', period: [1921, 1926],
-    recipe: recipe('trailer-1921', 'Trailer 1921–26', { w: 180, h: 104, bg: '#e0b52c', ink: '#3a3a20' }, SRC.trailer, {
+  { id: 'trailer-1921', label: 'Trailer 1921–22 · monogram', family: 'trailer', era: 'trailer-early', period: [1921, 1922],
+    recipe: recipe('trailer-1921', 'Trailer 1921–22', { w: 180, h: 104, bg: '#e0b52c', ink: '#3a3a20' }, SRC.trailer, {
       holeAt: { x: [0.25, 0.8], y: [0.07] },
       art: [{ art: 'bc-monogram', x: 180 * 0.03, y: 104 * 0.1, width: 180 * 0.24, height: 104 * 0.5, color: '#3a3a20' }],
       legends: [T({ w: 180, h: 104, bg: '', ink: '' }, '1921', 0.15, 0.93, 0.17, 'bc-block-1918', 'year', 0.24)],
       serial: SER({ w: 180, h: 104, bg: '', ink: '' }, 0.64, 0.86, 0.66, 0.62, 'bc-block-1918') }),
     palettes: [pal(1921, '#e0b52c', '#3a3a20', 'green on yellow')], grammar: numericGrammar([[1, 1000]], false),
-    description: 'Motorcycle-style trailer plates without a prefix: the interlaced BC monogram above the year at left (1921: green on yellow, a reverse of the passenger colours). No size is stated; the documented 1927 size (180 × 104 mm, approximate) is used. Later years to 1926 are not photographed; the year legend is fixed at 1921.' },
-  { id: 'trailer-1927', label: 'Trailer 1927–35 · T', family: 'trailer', era: 'trailer-early', period: [1927, 1935],
-    recipe: recipe('trailer-1927', 'Trailer 1927–35', { w: 180, h: 104, bg: '#d26a36', ink: '#3a2a22' }, SRC.trailer, {
-      holeAt: { x: [0.25, 0.8], y: [0.07, 0.93] },
-      legends: [T({ w: 180, h: 104, bg: '', ink: '' }, 'BC', 0.15, 0.52, 0.36, 'bc-legend-1924', 'bc', 0.23),
-        T({ w: 180, h: 104, bg: '', ink: '' }, '{yyyy}', 0.17, 0.9, 0.15, 'bc-legend-1924', 'year', 0.26)],
-      serial: SER({ w: 180, h: 104, bg: '', ink: '' }, 0.66, 0.82, 0.62, 0.58, 'bc-tacey-1924') }),
-    palettes: [pal(1927, '#d26a36', '#3a2a22', 'dark on orange (read from a rusted plate)')],
+    description: 'Motorcycle-style trailer plates without a prefix: the interlaced BC monogram above the year at left (1921: green on yellow, a reverse of the passenger colours). No size is stated; the documented 1927 size (180 × 104 mm, approximate) is used. The interlaced monogram is retained only for 1921–22; from 1923 use the separate upright-BC preset. This reconstruction is fixed at the photographed 1921 year.' },
+  { id: 'trailer-1923', label: 'Trailer 1923–26 · BC', family: 'trailer', era: 'trailer-early', period: [1923, 1926],
+    recipe: earlyTrailer('trailer-1923', 'Trailer 1923–26', 180, 104, false),
+    palettes: [pal(1925, '#dfaa24', '#202019', 'black on yellow'), pal(1923, '#d6ae28', '#264326', 'green on yellow'), pal(1924, '#e0dccb', '#292820', 'dark on light'), pal(1926, '#252d30', '#d7c39a', 'light on dark')],
+    grammar: numericGrammar([[1, 1000]], false),
+    description: 'From 1923 the interlaced monogram was replaced by upright BC above the four-digit date at left. The same narrow rounded BC reconstruction is used on later prefixed trailers; its physical tooling identity is unconfirmed. 1925 BC323 provides the principal reference. Colours and the 180 × 104 mm size remain approximate.' },
+  { id: 'trailer-1927', label: 'Trailer 1927–30 · small T', family: 'trailer', era: 'trailer-early', period: [1927, 1930],
+    recipe: earlyTrailer('trailer-1927', 'Trailer 1927–30', 180, 104, true),
+    palettes: [pal(1927, '#c36937', '#2b2823', 'dark on orange (rusted reference)'), pal(1928, '#282824', '#d8b243', 'yellow on dark')],
     grammar: g('T999, T9999', ['T[1-9]', 'T[1-9]9', 'T[1-9]99', 'T[1-9]999']),
-    description: 'From 1927 a T prefix was added; BC in large letters above the year at left, 180 × 104 mm (approximate, documented). On the plate the T is smaller than the figures; here it is stamped at serial size. Only the 1927 plate is photographed and it is badly rusted, so its colours are rough.' },
-  { id: 'trailer-1936', label: 'Trailer 1936–48 · T', family: 'trailer', era: 'trailer-early', period: [1936, 1948],
-    recipe: recipe('trailer-1936', 'Trailer 1936–48', { w: 205, h: 104, bg: '#2a2020', ink: '#d0b060' }, SRC.trailer, {
-      holeAt: { x: [0.25, 0.75], y: [0.07, 0.93] },
-      legends: [T({ w: 205, h: 104, bg: '', ink: '' }, 'BC', 0.14, 0.55, 0.38, 'bc-legend-1940', 'bc', 0.21),
-        T({ w: 205, h: 104, bg: '', ink: '' }, '{yyyy}', 0.15, 0.9, 0.16, 'bc-legend-1940', 'year', 0.24)],
-      serial: SER({ w: 205, h: 104, bg: '', ink: '' }, 0.64, 0.82, 0.62, 0.62, 'bc-early-1940') }),
-    palettes: [pal(1940, '#2a2020', '#d0b060', 'yellow on black')],
+    description: 'From 1927 a smaller T stamp precedes full-height figures. BC and the date remain separate at left. 1927 T439 and 1928 T118 support the upright small-format construction; this is not an automatic assignment to the slanted passenger alphabet. 180 × 104 mm is approximate and documented. Unlisted years are not inferred from colour or photograph dates.' },
+  { id: 'trailer-1931', label: 'Trailer 1931–35 · longer small-T plate', family: 'trailer', era: 'trailer-early', period: [1931, 1935],
+    recipe: earlyTrailer('trailer-1931', 'Trailer 1931–35', 205, 104, true),
+    palettes: [pal(1931, '#edece5', '#242725', 'black on white'), pal(1935, '#b37642', '#27261e', 'dark on orange (aged reference)')],
+    grammar: g('T999, T9999', ['T[1-9]', 'T[1-9]9', 'T[1-9]99', 'T[1-9]999']),
+    description: '1931 T1159, 1933 T164 and 1935 T263 show a longer approximately 2:1 body than the documented 1927 180 × 104 mm plate. This separate reconstruction estimates 205 × 104 mm from that photographed aspect; the first longer issue year and physical tooling identity are unconfirmed. Upright BC/date and the smaller T are independent of full-height numerals.' },
+  { id: 'trailer-1936', label: 'Trailer 1936–48 · small T/TR', family: 'trailer', era: 'trailer-early', period: [1936, 1948],
+    recipe: earlyTrailer('trailer-1936', 'Trailer 1936–48', 205, 104, true),
+    palettes: [pal(1936, '#265b43', '#e4e0d2', 'white on green'), pal(1937, '#e5e0c9', '#22251c', 'black on light'), pal(1939, '#c3a341', '#2d291c', 'black on yellow'), pal(1940, '#29251f', '#ccb158', 'yellow on black'), pal(1948, '#174d36', '#e5e5d2', 'white on green')],
     grammar: g('T999, T9999; TR999 in 1948', ['T[1-9]', 'T[1-9]9', 'T[1-9]99', 'T[1-9]999', 'TR[1-9]99']),
-    description: 'The longer 205 × 104 mm (approximate, documented) trailer plate: BC above the year at left, then the T serial (T772, 1940). A small run of TR plates was issued in 1948. The T is drawn at serial size although it is smaller on the plate.' },
+    description: 'Longer 205 × 104 mm trailer base with the same upright BC construction at left and a separately sized T before the figures. Both T and R are smaller on the documented 1948 TR510. 1936 T1941, 1937 T2458, 1939 T242, 1940 T772 and 1948 TR510 were cross-checked; exact common physical tooling is unconfirmed. TR was a small 1948 run; validation checks format, not the issue year.' },
   { id: 'trailer-1949', label: 'Trailer 1949–71 · TRAILER', family: 'trailer', era: 'trailer-annual', period: [1949, 1971],
     recipe: trailer1949(trailerSmall(205, 130, T1949[0])), palettes: T1949, grammar: numericGrammar([[1, 99999]], false),
     description: 'The full word TRAILER across the top with the year, and B over C at left; numbers without prefix. 205 × 130 mm (approximate, documented). Aluminium in 1952. Commercial trailers kept this plate to 1971; palettes are the photographed years (1949, 1952, 1960, 1971).' },

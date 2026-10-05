@@ -1,0 +1,99 @@
+{
+  "site": "http://127.0.0.1:5177/",
+  "cases": [
+    {
+      "format": "trailer-1923",
+      "year": "1925",
+      "serial": "323",
+      "researchStable": true,
+      "exports": [
+        "svg",
+        "png"
+      ],
+      "mobileOverflow": false
+    },
+    {
+      "format": "trailer-1931",
+      "year": "1931",
+      "serial": "T1159",
+      "researchStable": true,
+      "exports": [
+        "svg",
+        "png"
+      ],
+      "mobileOverflow": false
+    },
+    {
+      "format": "trailer-1936",
+      "year": "1936",
+      "serial": "T1941",
+      "researchStable": true,
+      "exports": [
+        "svg",
+        "png"
+      ],
+      "mobileOverflow": false
+    },
+    {
+      "format": "trailer-1936",
+      "year": "1937",
+      "serial": "T2458",
+      "researchStable": true,
+      "exports": [
+        "svg",
+        "png"
+      ],
+      "mobileOverflow": false
+    },
+    {
+      "format": "trailer-1936",
+      "year": "1940",
+      "serial": "T772",
+      "researchStable": true,
+      "exports": [
+        "svg",
+        "png"
+      ],
+      "mobileOverflow": false
+    },
+    {
+      "format": "trailer-1936",
+      "year": "1948",
+      "serial": "TR510",
+      "researchStable": true,
+      "exports": [
+        "svg",
+        "png"
+      ],
+      "mobileOverflow": false
+    }
+  ],
+  "errors": [],
+  "observed": {
+    "prefixToNumericCapRatio": 0.610062893081761,
+    "allSixSpecimensFitWithoutReduction": true,
+    "dimensions": "estimated physical mm, source-dependent",
+    "paletteReferences": [
+      "1923-BC797",
+      "1924-438",
+      "1925-BC323",
+      "1926-BC377",
+      "1927-T439",
+      "1928-T118",
+      "1931-T1159",
+      "1935-T263",
+      "1936-T1941",
+      "1937-T2458",
+      "1939-T242",
+      "1940-T772",
+      "1948-TR510"
+    ]
+  },
+  "comparisonPage": {
+    "articles": 6,
+    "sliders": 6,
+    "allVisibleImagesLoad": true,
+    "mobileOverflow": false,
+    "errors": []
+  }
+}

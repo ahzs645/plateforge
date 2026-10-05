@@ -1,0 +1,613 @@
+{
+  "scope": "B.C. modern source, manufacturer and run review 1978 onward; companion site agent checks every rendered format",
+  "method": "BCpl8s source text fetched live; source attribution is not exact contour certification. Same factory can use multiple dies andsmall toolsets. Photo/decal date retained apart from production. This file does not claim full alphabetoverlap validation.",
+  "items": [
+    {
+      "family": "bc-acme-1978/bc-acme-1979",
+      "plateClasses": [
+        "passenger",
+        "ham-radio"
+      ],
+      "source": "https://www.bcpl8s.ca/Passenger-1979-1985.html",
+      "claim": "Passenger 1978 ACME numerals continue on 1979 base and explicitly compare to 1977 Quebec. Clean/sloppy paint alone does not establish separate alphabets. First AAA\u2013KKJ and later EAX\u2013FKS (possibly GDN) have crisper production.",
+      "confidence": "source-attributed",
+      "production": "1978 to early third 1982 block",
+      "relatedSource": "https://www.bcpl8s.ca/HamRadio.htm"
+    },
+    {
+      "family": "bc-acme-1979 \u2192 bc-hisigns-1982",
+      "plateClasses": [
+        "passenger"
+      ],
+      "source": "https://www.bcpl8s.ca/Passenger-1979-1985.html",
+      "claim": "Approximate ACME end ARX-999; Hi-Signs Nova Scotia-type dies then continue on same 1979 base. Serial ranges override a simple 1982 year switch.",
+      "confidence": "source-estimate",
+      "serialTransition": "around ARX-999"
+    },
+    {
+      "family": "bc-acme-1979 / bc-hisigns-1982",
+      "plateClasses": [
+        "industrial"
+      ],
+      "source": "https://www.bcpl8s.ca/IndustrialVehicle.htm",
+      "claim": "1979 X50-000\u2013X69-999 original20,000 block is ACME; 1983 X70-000\u2013X73-999 extra4,000 block is Hi-Signs. Both belong to 1979 base.",
+      "confidence": "source-attributed",
+      "serialRanges": {
+        "bc-acme-1979": "X50-000\u2013X69-999",
+        "bc-hisigns-1982": "X70-000\u2013X73-999"
+      }
+    },
+    {
+      "family": "bc-acme-1979",
+      "plateClasses": [
+        "industrial"
+      ],
+      "source": "https://www.bcpl8s.ca/Logging.htm",
+      "claim": "Logging 1978\u201379 gallery explicitly labels Quebec dies/ACME; calendar-quarter organisation is separate from tooling.",
+      "confidence": "source-attributed",
+      "formatIds": [
+        "industrial-logging-1980"
+      ]
+    },
+    {
+      "family": "bc-hisigns-1982",
+      "plateClasses": [
+        "industrial"
+      ],
+      "source": "https://www.bcpl8s.ca/Logging.htm",
+      "claim": "1984 logging plates are thought to be Hi-Signs on die evidence. Current 1984 profile defaults ACME though Hi-Signs is selectable.",
+      "confidence": "source-estimate",
+      "formatIds": [
+        "industrial-logging-1984"
+      ],
+      "currentConflict": "default named profile bc-acme-1979; source supports bc-hisigns-1982"
+    },
+    {
+      "family": "bc-oakalla-1973 / bc-acme-1978",
+      "plateClasses": [
+        "ham-radio"
+      ],
+      "source": "https://www.bcpl8s.ca/HamRadio.htm",
+      "claim": "1973 base shows Oakalla and later 1977\u201378 ACME simultaneously. Later manufacture on an old base is documented.",
+      "confidence": "source-attributed",
+      "formatIds": [
+        "ham-radio-1973",
+        "ham-radio-1977-acme"
+      ]
+    },
+    {
+      "family": "bc-astro-1",
+      "plateClasses": [
+        "passenger"
+      ],
+      "source": "https://www.bcpl8s.ca/Passenger-1985-2001.html",
+      "claim": "Initial public 1985 issue uses male/female production. LAA-050 and LAA-067 exemplify this; early LAA-015 Classic is an exception.",
+      "confidence": "source-attributed",
+      "production": "early 1985 flag run",
+      "exceptions": [
+        "LAA-015 Classic"
+      ]
+    },
+    {
+      "family": "bc-astro-2",
+      "plateClasses": [
+        "passenger"
+      ],
+      "source": "https://www.bcpl8s.ca/Passenger-1985-2001.html",
+      "claim": "Neoprene-top process uses same male dies as initialmale/female process. Paint spread/crispness can change without a different male alphabet.",
+      "confidence": "source-attributed",
+      "toolingRelationship": "same male dies as type1; different top plate and process"
+    },
+    {
+      "family": "bc-astro-3",
+      "plateClasses": [
+        "passenger",
+        "commercial",
+        "trade"
+      ],
+      "source": "https://www.bcpl8s.ca/Passenger-1985-2001.html",
+      "claim": "1984 MVD-580 reveal and 1985 EXPO-86 presentation used non-passenger tooling intended for Dealer/Commercial Truck. Narrow dies recur interspersed with other dies in N/P passenger blocks.",
+      "confidence": "source-attributed",
+      "production": "coexists on 1985 flag base; selected N/P blocks",
+      "similarityScope": "Source explicitly connects tooling across these classes; not every non-passenger plate is proven type3."
+    },
+    {
+      "family": "bc-astro-4",
+      "plateClasses": [
+        "passenger"
+      ],
+      "source": "https://www.bcpl8s.ca/Passenger-1985-2001.html",
+      "claim": "Classic means male die/neoprene top with tighter paint registration. All four source chart categories must remain distinguishable; named profiles do not prove different physical tooling for every glyph.",
+      "confidence": "source-attributed",
+      "production": "principal later Astrographic era through 2002 with exceptions"
+    },
+    {
+      "family": "bc-waldale",
+      "plateClasses": [
+        "passenger"
+      ],
+      "source": "https://www.bcpl8s.ca/Passenger-1985-2001.html",
+      "claim": "Short Waldale supply run KRL\u2013ARC in 1998\u201399 predates contract takeover, with renewals expiring second half 1999.",
+      "confidence": "source-attributed",
+      "production": "short 1998\u201399 run",
+      "serialRanges": [
+        "KRL\u2013ARC"
+      ]
+    },
+    {
+      "family": "bc-astro-4 \u2192 bc-waldale",
+      "plateClasses": [
+        "passenger"
+      ],
+      "source": "https://www.bcpl8s.ca/Passenger-2001-2014.html",
+      "claim": "Main transition999-HFK/000-HGA, December 2002. Early Waldale HFE and late Astrographic000-JFG\u2013500-JFK reported. Manufacture cannot be inferred from photograph/decal year.",
+      "confidence": "source-attributed",
+      "serialTransition": "999-HFK \u2192000-HGA",
+      "exceptions": [
+        "Waldale in000-HFE",
+        "Astrographic000-JFG to500-JFK"
+      ]
+    },
+    {
+      "family": "Astrographic family",
+      "plateClasses": [
+        "commercial"
+      ],
+      "source": "https://www.bcpl8s.ca/CommercialTruck1985-2009.html",
+      "claim": "Early commercial flag production shows different Astrographic dies and processes, explicitly referring to passenger period history. Requires per-specimen type attribution rather than all commercial = Classic or non-passenger.",
+      "confidence": "source-attributed"
+    },
+    {
+      "family": "Astrographic \u2192 Waldale",
+      "plateClasses": [
+        "commercial"
+      ],
+      "source": "https://www.bcpl8s.ca/CommercialTruck1985-2009.html",
+      "claim": "Commercial suffix change between GD and GF, distinct from passenger HFK/HGA change.",
+      "confidence": "source-bracket",
+      "serialTransition": "betweenGD andGF"
+    },
+    {
+      "family": "bc-waldale",
+      "plateClasses": [
+        "commercial"
+      ],
+      "source": "https://www.bcpl8s.ca/CommercialTruck2008-2025.html",
+      "claim": "2008 letter-first commercial base is Waldale. Single/decal-well variations include AL-7324\u2013AL-8433 and reused old stock; well changes do not imply a new alphabet.",
+      "confidence": "source-attributed",
+      "formatIds": [
+        "commercial-flag-2008",
+        "commercial-flag-2008-dual"
+      ],
+      "currentConflict": "single-well commercial-flag-2008 only offersnamed Astro4, while dual defaults Waldale"
+    },
+    {
+      "family": "Astrographic \u2192 Waldale",
+      "plateClasses": [
+        "farm"
+      ],
+      "source": "https://www.bcpl8s.ca/Farm-Truck.html",
+      "claim": "Farm truck switch thought to occur around G1-9000, rather than a generic 2002 boundary. Early G prefix manufacture dates inferred 1998 while early decals often 2001.",
+      "confidence": "source-estimate",
+      "serialTransition": "aroundG1-9000",
+      "formatIds": [
+        "farm-truck-flag",
+        "farm-truck-flag-dual",
+        "farm-truck-2025"
+      ],
+      "currentConflict": "farm-truck-2025 Astro4-only named default conflicts with much earlier transition; exact 2025 alphabet requires source photo check"
+    },
+    {
+      "family": "Astrographic \u2192 Waldale",
+      "plateClasses": [
+        "farm"
+      ],
+      "source": "https://www.bcpl8s.ca/Farm.html",
+      "claim": "A 2020 sighting beyond F7-0999 demonstrates Waldale after exhaustion/discard of 1985 Astrographic stock. Old stock can be issued many years after its manufacture.",
+      "confidence": "source-attributed",
+      "serialTransition": "beyondF7-0999",
+      "production": "legacy 1985 stock lasted to 2020 observation"
+    },
+    {
+      "family": "Astrographic \u2192 Waldale",
+      "plateClasses": [
+        "specialty"
+      ],
+      "source": "https://www.bcpl8s.ca/Collector.htm",
+      "claim": "Passenger collector changes to Waldale in mid-B54-000 block (2002\u201307 issue bloc), separate transition from passenger flag.",
+      "confidence": "source-attributed",
+      "serialTransition": "mid-B54",
+      "formatIds": [
+        "collector-passenger",
+        "collector-passenger-dual",
+        "collector-multi"
+      ]
+    },
+    {
+      "family": "small Astrographic \u2192 small Waldale",
+      "plateClasses": [
+        "specialty",
+        "motorcycle"
+      ],
+      "source": "https://www.bcpl8s.ca/Collector.htm",
+      "claim": "Initial collector motorcycle batch thought to be B8-0001\u2013B8-5000 Astrographic. First Waldale appeared 2007; motorcycle-specific smaller dies need separate size/tooling assignment.",
+      "confidence": "source-estimate",
+      "serialRanges": [
+        "B8-0001\u2013B8-5000 Astrographic"
+      ],
+      "production": "first Waldale 2007"
+    },
+    {
+      "family": "small Astrographic \u2192 small Waldale",
+      "plateClasses": [
+        "motorcycle"
+      ],
+      "source": "https://www.bcpl8s.ca/Motorcycle.htm",
+      "claim": "Source groups 1986\u20132003 Astrographic and 2003\u20132013 Waldale. The 2011 redesign increases serial size3/8 inch and moves the B.C. mark; larger scale does not automatically equal passenger tooling.",
+      "confidence": "source-attributed",
+      "production": "Astrographic 1986\u20132003;Waldale 2003+",
+      "layoutChange": "2011 serial size+3/8 inch"
+    },
+    {
+      "family": "small Astrographic / small Waldale",
+      "plateClasses": [
+        "trailer"
+      ],
+      "source": "https://www.bcpl8s.ca/Trailer-Utility.htm",
+      "claim": "2000\u20132004 letters Astrographic overlaps 2002\u20132016 letters Waldale. Source warns against decal-based issue dating.2016 redesign retains small format instead of larger motorcycle dies.",
+      "confidence": "source-attributed",
+      "production": "Astrographic 2000\u201304;Waldale 2002\u201316 overlaps",
+      "formatIds": [
+        "trailer-utility-flag-2000",
+        "trailer-utility-2016"
+      ],
+      "currentConflict": "2016 only offers named Astro3; modern Waldale transition absentfromprofileoptions"
+    },
+    {
+      "family": "Astrographic \u2192 Waldale",
+      "plateClasses": [
+        "industrial"
+      ],
+      "source": "https://www.bcpl8s.ca/Restricted.html",
+      "claim": "Low-volume restricted stock with Astrographic persists7\u20138 years after end of contract. Transition is bracketed01500X\u201303600X;spacing Astro00-000X versus Waldale00000-X.",
+      "confidence": "source-bracket",
+      "serialTransition": "between01500X and03600X",
+      "formatIds": [
+        "industrial-restricted"
+      ]
+    },
+    {
+      "family": "Astrographic family",
+      "plateClasses": [
+        "industrial"
+      ],
+      "source": "https://www.bcpl8s.ca/SpecialAgreement.htm",
+      "claim": "Astrographic Special Agreement plates still issued15 years after the supplier ceased B.C. production. A late photo/renewal year does not make these Waldale.",
+      "confidence": "source-attributed",
+      "formatIds": [
+        "industrial-sa-flag"
+      ]
+    },
+    {
+      "family": "Astrographic family \u2192 bc-waldale",
+      "plateClasses": [
+        "ham-radio"
+      ],
+      "source": "https://www.bcpl8s.ca/HamRadio.htm",
+      "claim": "On-demand ham plates explicitly documented Astrographic 1986\u20132002 and Waldale 2002\u2013present. Letter-rich call signs provide useful alphabet cross-checks with passenger/vanity plates. Actualsource classification must remain separate from renderer profile merging.",
+      "confidence": "source-attributed",
+      "formatIds": [
+        "ham-radio-1986-flag",
+        "ham-radio-2002-flag",
+        "ham-radio-2014-flag"
+      ]
+    },
+    {
+      "family": "Astrographic family \u2192 bc-waldale",
+      "plateClasses": [
+        "specialty"
+      ],
+      "source": "https://www.bcpl8s.ca/Personalized.htm",
+      "claim": "Personalized switches maker in mid-1980s to Astrographic andfall 2002 to Waldale. Dies andslogan position visibly change. No explicit source certification that every Astrographic vanity letter equals the Classic passenger die.",
+      "confidence": "source-attributed",
+      "formatIds": [
+        "personalized-1979",
+        "personalized-astro",
+        "personalized-waldale"
+      ],
+      "similarityScope": "same production manufacturer; exactfull alphabetidentity notprovenbythispage alone"
+    },
+    {
+      "family": "Astrographic family",
+      "plateClasses": [
+        "trade"
+      ],
+      "source": "https://www.bcpl8s.ca/Dealer.htm",
+      "claim": "D0-0000 early dealer source explicitlyidentified Astrographicearly issue. An unissued duplicate exists; do not date tooling from the same serial only.",
+      "confidence": "source-attributed",
+      "formatIds": [
+        "trade-dealer-flag"
+      ]
+    },
+    {
+      "family": "bc-mississippi",
+      "plateClasses": [
+        "specialty",
+        "commercial"
+      ],
+      "source": "https://www.bcpl8s.ca/MemorialCross.html",
+      "claim": "Memorial Cross passenger andcommercial use Waldale Mississippi dies. They differ from regular Waldale despite samefactory.",
+      "confidence": "source-attributed",
+      "formatIds": [
+        "memorial-passenger",
+        "memorial-truck"
+      ]
+    },
+    {
+      "family": "bc-waldale",
+      "plateClasses": [
+        "specialty"
+      ],
+      "source": "https://www.bcpl8s.ca/BCParks-Gallery.html",
+      "claim": "BCParks page explicitlystates serial die is standardregularpassenger type, contrasting Memorial Cross Mississippi.",
+      "confidence": "source-attributed",
+      "formatIds": [
+        "parks-kermode",
+        "parks-purcell",
+        "parks-porteau"
+      ]
+    },
+    {
+      "family": "Astrographic early / Classic / Waldale",
+      "plateClasses": [
+        "samples"
+      ],
+      "source": "https://www.bcpl8s.ca/Sample.htm",
+      "claim": "Sampletypes I/II/III explicitlydocument early Astrographic, Classic and Waldale. BC-0000 souvenir is truckbase. Do not confuse souvenirpurposewithuniquealphabet.",
+      "confidence": "source-attributed",
+      "formatIds": [
+        "sample-flag",
+        "souvenir-bc0000"
+      ]
+    },
+    {
+      "family": "small tooling variant",
+      "plateClasses": [
+        "events"
+      ],
+      "source": "https://www.bcpl8s.ca/Expo-86.htm",
+      "claim": "Expo86 souvenir has smallerstackednumberdies andknownvariant using normalnumberdies. Eventart/logowords needseparatefontrole;EXPOlogo Frankfurter isnot serial die.",
+      "confidence": "source-attributed",
+      "formatIds": [
+        "events-expo86-souvenir",
+        "events-expo86-booster",
+        "events-expo86-booster-aamva"
+      ]
+    },
+    {
+      "family": "unconfirmed",
+      "plateClasses": [
+        "carrier",
+        "consular",
+        "official",
+        "municipal",
+        "bicycle",
+        "events"
+      ],
+      "source": "https://www.bcpl8s.ca/Manufacturer.htm",
+      "claim": "Provincewide makercontracts are useful context but do not aloneidentify tooling for allcarrier/prorate/consular/municipal/bicycle/eventplates. These classes require ownphotographictooling checks; external municipalissuers shouldnot inheritprovincepassenger grouping.",
+      "confidence": "unconfirmed-context"
+    }
+  ],
+  "actionableConflicts": [
+    "industrial-logging-1984 ACMEdefault insteadsource Hi-Signs estimate",
+    "commercial-flag-2008 Astro4-only named profile for Waldale era",
+    "farm-truck-2025 Astro4-only named profile long after G1-9000 transition",
+    "trailer-utility-2016 Astro3-onlynamedprofile after Waldale transition"
+  ],
+  "warnings": [
+    "Research bindings sometimes render a different manufacturer under the named profile;current named default mismatch must bechecked in SVG paths, not only label.",
+    "Source Astro1 male/female and Astro2 neoprene top share male dies;different paint pattern is not a new alphabet.",
+    "Same profile reuse is a renderer implementation relation, not historical physical die proof."
+  ],
+  "contactSheet": "/tmp/modern-grouping-contact.jpg",
+  "referencePhotographs": [
+    {
+      "id": "astro-nonpassenger-passenger",
+      "path": "/tmp/bc-modern-grouping-photos/astro-nonpassenger-passenger.jpg",
+      "sourceURL": "https://www.bcpl8s.ca/images/Passenger/1985-2001/1988-NJB300(XL).jpg",
+      "title": "Astro non-passenger tooling | NJB-300 passenger",
+      "size": [
+        1750,
+        886
+      ]
+    },
+    {
+      "id": "astro-classic-passenger",
+      "path": "/tmp/bc-modern-grouping-photos/astro-classic-passenger.jpg",
+      "sourceURL": "https://www.bcpl8s.ca/images/Passenger/1985-2001/1989-NPN030(XL).jpg",
+      "title": "Astro Classic | NPN-030 passenger",
+      "size": [
+        1750,
+        887
+      ]
+    },
+    {
+      "id": "astro-dealer",
+      "path": "/tmp/bc-modern-grouping-photos/astro-dealer.jpg",
+      "sourceURL": "https://www.bcpl8s.ca/images/Dealer/1988-D00909(XL).jpg",
+      "title": "Astrographic | D0-0909 dealer",
+      "size": [
+        1000,
+        507
+      ]
+    },
+    {
+      "id": "astro-commercial",
+      "path": "/tmp/bc-modern-grouping-photos/astro-commercial.jpg",
+      "sourceURL": "https://www.bcpl8s.ca/images/Commercial/1985/2003-7520GD(XL).jpg",
+      "title": "Astrographic | 7520-GD commercial",
+      "size": [
+        1500,
+        764
+      ]
+    },
+    {
+      "id": "waldale-commercial",
+      "path": "/tmp/bc-modern-grouping-photos/waldale-commercial.jpg",
+      "sourceURL": "https://www.bcpl8s.ca/images/Commercial/1985/2005-9955GF(XL).jpg",
+      "title": "Waldale | 9955-GF commercial",
+      "size": [
+        1500,
+        771
+      ]
+    },
+    {
+      "id": "waldale-passenger",
+      "path": "/tmp/bc-modern-grouping-photos/waldale-passenger.jpg",
+      "sourceURL": "https://www.bcpl8s.ca/images/Passenger/2001-2014/2004-836DKW(XL).jpg",
+      "title": "Waldale | 836-DKW passenger",
+      "size": [
+        945,
+        467
+      ]
+    },
+    {
+      "id": "astro-collector",
+      "path": "/tmp/bc-modern-grouping-photos/astro-collector.jpg",
+      "sourceURL": "https://www.bcpl8s.ca/images/Collector/1990-B00000(XL).jpg",
+      "title": "Astrographic | B00-000 collector sample",
+      "size": [
+        1400,
+        696
+      ]
+    },
+    {
+      "id": "waldale-collector",
+      "path": "/tmp/bc-modern-grouping-photos/waldale-collector.jpg",
+      "sourceURL": "https://www.bcpl8s.ca/images/Collector/2015-B31865(XL).jpg",
+      "title": "Waldale | B31-865 collector dual well",
+      "size": [
+        1400,
+        710
+      ]
+    }
+  ],
+  "visualComparisons": [
+    {
+      "photoIds": [
+        "astro-nonpassenger-passenger",
+        "astro-classic-passenger"
+      ],
+      "imagePaths": [
+        "/tmp/bc-modern-grouping-photos/astro-nonpassenger-passenger.jpg",
+        "/tmp/bc-modern-grouping-photos/astro-classic-passenger.jpg"
+      ],
+      "sourceURLs": [
+        "https://www.bcpl8s.ca/images/Passenger/1985-2001/1988-NJB300(XL).jpg",
+        "https://www.bcpl8s.ca/images/Passenger/1985-2001/1989-NPN030(XL).jpg"
+      ],
+      "observation": "NJB-300 has visibly heavier strokes than NPN-030, narrower 0 counters and a comparatively tighter, heavier 3. NPN-030 has lighter strokes, larger 0 openings and a more open rounded 3. Both share the flag base, but their serial alphabets must not be collapsed solely by base or year. The source explicitly assigns NJB to non-passenger tooling and NPN to Classic.",
+      "confidence": "source-attributed + photographically supported",
+      "method": "Visual inspection of original photographs in contact sheet; no outline trace, perspective normalization or numerical contour certification."
+    },
+    {
+      "photoIds": [
+        "astro-nonpassenger-passenger",
+        "astro-dealer"
+      ],
+      "imagePaths": [
+        "/tmp/bc-modern-grouping-photos/astro-nonpassenger-passenger.jpg",
+        "/tmp/bc-modern-grouping-photos/astro-dealer.jpg"
+      ],
+      "sourceURLs": [
+        "https://www.bcpl8s.ca/images/Passenger/1985-2001/1988-NJB300(XL).jpg",
+        "https://www.bcpl8s.ca/images/Dealer/1988-D00909(XL).jpg"
+      ],
+      "observation": "The D0-0909 dealer photograph has tall narrow rounded-rectangular 0 bowls with long straight sides and heavier paint shoulders, visually closer to NJB-300 than the lighter NPN-030 Classic example. This supports a non-passenger tooling comparison across passenger and dealer classes. Wear, cropping and paint spread differ; dealer subtype and complete alphabet identity remain provisional.",
+      "confidence": "visual-support; precise dealer subtype unconfirmed",
+      "method": "Visual inspection of original photographs in contact sheet; no outline trace, perspective normalization or numerical contour certification."
+    },
+    {
+      "photoIds": [
+        "astro-classic-passenger",
+        "astro-commercial"
+      ],
+      "imagePaths": [
+        "/tmp/bc-modern-grouping-photos/astro-classic-passenger.jpg",
+        "/tmp/bc-modern-grouping-photos/astro-commercial.jpg"
+      ],
+      "sourceURLs": [
+        "https://www.bcpl8s.ca/images/Passenger/1985-2001/1989-NPN030(XL).jpg",
+        "https://www.bcpl8s.ca/images/Commercial/1985/2003-7520GD(XL).jpg"
+      ],
+      "observation": "The 0 on 7520-GD has a tall straight-sided bowl and rounded ends; its relatively light strokes resemble the NPN-030 Classic 0 more closely than the heavy NJB-300/dealer examples. The rounded open 5 and narrow strokes on GD also show that commercial class alone does not imply one heavy narrow non-passenger alphabet. Source identifies this side of the GD/GF bracket as Astrographic; assigning every glyph specifically to Classic requires more matched specimens.",
+      "confidence": "maker source-attributed; Classic resemblance provisional",
+      "method": "Visual inspection of original photographs in contact sheet; no outline trace, perspective normalization or numerical contour certification."
+    },
+    {
+      "photoIds": [
+        "astro-commercial",
+        "waldale-commercial"
+      ],
+      "imagePaths": [
+        "/tmp/bc-modern-grouping-photos/astro-commercial.jpg",
+        "/tmp/bc-modern-grouping-photos/waldale-commercial.jpg"
+      ],
+      "sourceURLs": [
+        "https://www.bcpl8s.ca/images/Commercial/1985/2003-7520GD(XL).jpg",
+        "https://www.bcpl8s.ca/images/Commercial/1985/2005-9955GF(XL).jpg"
+      ],
+      "observation": "9955-GF visibly differs from 7520-GD: the repeated 9 has round open bowls and long sweeping diagonal tails, and the 5 has a broad rounded lower bowl. These are coherent repeated shapes within GF. Their broader open construction contrasts with the more condensed GD alphabet. The source independently brackets the maker transition between GD and GF; decal labels 2003/2005 are not used as proof of manufacture date.",
+      "confidence": "source-attributed + photographically supported",
+      "method": "Visual inspection of original photographs in contact sheet; no outline trace, perspective normalization or numerical contour certification."
+    },
+    {
+      "photoIds": [
+        "waldale-commercial",
+        "waldale-passenger",
+        "waldale-collector"
+      ],
+      "imagePaths": [
+        "/tmp/bc-modern-grouping-photos/waldale-commercial.jpg",
+        "/tmp/bc-modern-grouping-photos/waldale-passenger.jpg",
+        "/tmp/bc-modern-grouping-photos/waldale-collector.jpg"
+      ],
+      "sourceURLs": [
+        "https://www.bcpl8s.ca/images/Commercial/1985/2005-9955GF(XL).jpg",
+        "https://www.bcpl8s.ca/images/Passenger/2001-2014/2004-836DKW(XL).jpg",
+        "https://www.bcpl8s.ca/images/Collector/2015-B31865(XL).jpg"
+      ],
+      "observation": "836-DKW and B31-865 both display round open 8 counters with a continuous narrowed waist and a sweeping 6 diagonal into a large lower bowl. The 5 on B31-865 and 9955-GF has a similar broad lower bowl and flat top stroke. Their photographed forms support a Waldale family comparison across passenger, collector and commercial plates. Layout, size and black/blue paint differ; no claim that the whole alphabet or physical tool size is identical.",
+      "confidence": "manufacturer-family similarity supported; full alphabet/tool identity unconfirmed",
+      "method": "Visual inspection of original photographs in contact sheet; no outline trace, perspective normalization or numerical contour certification."
+    },
+    {
+      "photoIds": [
+        "astro-classic-passenger",
+        "astro-collector"
+      ],
+      "imagePaths": [
+        "/tmp/bc-modern-grouping-photos/astro-classic-passenger.jpg",
+        "/tmp/bc-modern-grouping-photos/astro-collector.jpg"
+      ],
+      "sourceURLs": [
+        "https://www.bcpl8s.ca/images/Passenger/1985-2001/1989-NPN030(XL).jpg",
+        "https://www.bcpl8s.ca/images/Collector/1990-B00000(XL).jpg"
+      ],
+      "observation": "The B00-000 collector sample has tall narrow rounded-rectangular 0 bowls, matching the general Astrographic construction seen in NPN-030; thicker black paint and embossing shoulders make its strokes appear heavier. Compare serial outlines separately from the Harrington Collector/British/Columbia labels and the wavy separator. Source explicitly identifies this collector sample as Astrographic.",
+      "confidence": "source-attributed + photographed construction resemblance",
+      "method": "Visual inspection of original photographs in contact sheet; no outline trace, perspective normalization or numerical contour certification."
+    }
+  ],
+  "implementationUpdate": {
+    "status": "Parent reports correcting four definite single-option production defaults; rendered verification handled by parent.",
+    "formats": [
+      "commercial-flag-2008",
+      "farm-truck-2025",
+      "trailer-utility-2016"
+    ],
+    "logging1984": "Hi-Signs selectable but source attribution remains an estimate; no forced change requested here.",
+    "note": "This evidence file does not independently certify the parent code changes or deployment."
+  }
+}

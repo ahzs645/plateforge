@@ -1,0 +1,14 @@
+{
+  "site": "http://127.0.0.1:5176/plateforge/",
+  "presets": 443,
+  "types": 16,
+  "allPreviewFilesExist": true,
+  "allTypeFiltersWorked": true,
+  "searchWorked": true,
+  "comparisonSelectorWorked": true,
+  "photographsLoaded": 25,
+  "editorNavigationWorked": true,
+  "mobileOverflow": false,
+  "errors": [],
+  "failedResources": []
+}

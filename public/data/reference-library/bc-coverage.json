@@ -20,7 +20,7 @@
   "earlyPresets": 25,
   "laterPresets": 17,
   "countsUnit": "Inventory topics and presets, NOT distinct historical plate designs",
-  "registeredPresets": 441
+  "registeredPresets": 443
  },
  "registeredPresets": {
   "passenger": [
@@ -173,7 +173,9 @@
   ],
   "trailer": [
    "trailer-1921",
+   "trailer-1923",
    "trailer-1927",
+   "trailer-1931",
    "trailer-1936",
    "trailer-1949",
    "trailer-comm-1972",
@@ -1993,7 +1995,9 @@
    ],
    "formats": [
     "trailer-1921",
+    "trailer-1923",
     "trailer-1927",
+    "trailer-1931",
     "trailer-1936",
     "trailer-1949",
     "trailer-comm-1972",

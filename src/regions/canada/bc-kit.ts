@@ -117,7 +117,12 @@ function compile(grammar: SerialGrammar): CompiledPattern[] {
 
 export function kitFormat(spec: KitFormatSpec): PlateFormat {
   if (recipes.has(spec.recipe.id) && recipes.get(spec.recipe.id)!.recipe !== spec.recipe) throw new Error(`Duplicate kit recipe id ${spec.recipe.id}`);
-  recipes.set(spec.recipe.id, { recipe: spec.recipe, palettes: spec.palettes ?? [] });
+  // A single declared choice has no selector/parts.die. Apply it to the stored
+  // recipe too, rather than silently rendering an inherited maker's alphabet.
+  const recipe = spec.dies?.length === 1
+    ? {...spec.recipe, serial: {...spec.recipe.serial, die: spec.dies[0].id}}
+    : spec.recipe;
+  recipes.set(recipe.id, { recipe, palettes: spec.palettes ?? [] });
   const paletteOptions: FieldOption[] = (spec.palettes ?? []).map((p) => ({ value: p.id, label: p.label }));
   const blocks = compile(spec.grammar);
   const dies = spec.dies ?? [{ id: spec.recipe.serial.die }];

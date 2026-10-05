@@ -36,4 +36,37 @@ describe('B.C. vehicle-class plates', () => {
     const svg = serializeSvgNode(buildKitScene(recipe, { serial: 'C7-609' }, { ...kitPalette(recipe.id, '1937') }));
     ok(svg.includes('data-role="year-decade"') && svg.includes('data-role="year-unit"'));
   });
+  it('uses independent smaller trailer prefixes and one upright BC master', () => {
+    const renders = ['trailer-1923', 'trailer-1931', 'trailer-1936'].map(id => {
+      const recipe = kitRecipe(id);
+      const serial = id === 'trailer-1923' ? '323' : id === 'trailer-1931' ? 'T1159' : 'TR510';
+      const svg = serializeSvgNode(buildKitScene(recipe, {serial}, kitPalette(id, undefined)));
+      equal(recipe.legends.find(t => t.role === 'bc')?.die, 'bc-trailer-early-bc');
+      ok(svg.includes('data-die="bc-trailer-early-bc"'));
+      if (id === 'trailer-1923') ok(!svg.includes('data-role="serial-prefix"'));
+      else {
+        ok(recipe.serial.prefix!.cap < recipe.serial.cap * 0.65);
+        ok(svg.includes('data-role="serial-prefix"') && svg.includes('data-role="serial-number"'));
+        ok(svg.includes(`aria-label="${serial}"`));
+        ok(svg.includes(`aria-label="${serial.replace(/^TR?/, '')}"`));
+      }
+      return recipe;
+    });
+    equal(renders[1].serial.cap, renders[2].serial.cap);
+    equal(BC_VEHICLE_FORMATS.find(f => f.id === 'trailer-1921')!.period![1], 1922);
+    const unprefixed = BC_VEHICLE_FORMATS.find(f => f.id === 'trailer-1923')!;
+    equal(unprefixed.validate?.({serial: '323', palette: '1925'}), null);
+    ok(unprefixed.validate?.({serial: 'T323', palette: '1925'}));
+  });
+
+  it('keeps full-height numerals for four-wide-digit and mixed-width trailer runs', () => {
+    const recipe = kitRecipe('trailer-1936');
+    for (const serial of ['T1941', 'T2458', 'TR510']) {
+      const svg = serializeSvgNode(buildKitScene(recipe, {serial}, kitPalette(recipe.id, '1936')));
+      ok(!svg.includes('data-fit="reduced"'), serial);
+      ok(svg.includes('scale(0.66144)'), `${serial} keeps the 66.144 mm numeric cap`);
+      ok(svg.includes('scale(0.40352)'), `${serial} keeps the 40.352 mm prefix cap`);
+    }
+  });
+
 });

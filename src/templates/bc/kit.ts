@@ -64,6 +64,9 @@ export interface KitSerial {
   color?: string;
   /** Pair spacing for a documented fixed serial wordmark. */
   kerning?: Readonly<Record<string, number>>;
+  /** A separately sized letter stamp before the number, as on early trailers.
+   * The stored serial keeps its prefix; numeric position/size are independent. */
+  prefix?: { x: number; baseline: number; cap: number; maxWidth: number; die: string };
   /** Typeface instead of a die (owner-made plates with house numerals). */
   font?: { family: 'serif' | 'sans'; weight?: number };
   /** Four-digit numbers carry a long leading bar (1933–39 dies). */
@@ -178,6 +181,18 @@ function serialNodesInContext(recipe: KitRecipe, serial: string, ink: string): {
     return { nodes: [n('text', { x: s.x, y: s.baseline, fill: color, fontFamily: FONTS[s.font.family], fontSize: s.cap / 0.72, fontWeight: s.font.weight ?? 700,
       textAnchor: 'middle', 'data-role': 'serial', 'data-lettering': 'typeface-proxy' }, serial.replace('-', ''))], fit: 'natural' };
   }
+  if (s.prefix) {
+    const match = /^([A-Z]+)(\d+)$/.exec(serial);
+    if (match) {
+      const prefix = buildDieText({text: match[1], profile: dieProfile(s.prefix.die),
+        x: s.prefix.x, baseline: s.prefix.baseline, capHeight: s.prefix.cap,
+        maxWidth: s.prefix.maxWidth, ink: color, role: 'serial-prefix'});
+      const digits = buildDieText({text: match[2], profile, x: s.x, baseline: s.baseline,
+        capHeight: s.cap, maxWidth: s.maxWidth, ink: color, role: 'serial-number', kerning: s.kerning});
+      return {nodes: [n('g', {'data-role': 'serial', 'aria-label': serial}, prefix.node, digits.node)],
+        fit: prefix.fit === 'reduced' || digits.fit === 'reduced' ? 'reduced' : 'natural'};
+    }
+  }
   if (s.leadingBar && /^\d-\d{3}$/.test(serial)) serial = `‒${serial}`;
   const sep = s.separator ?? { kind: 'dash' };
   if (sep.kind === 'art' && serial.includes('-')) {
@@ -260,7 +275,9 @@ export function buildKitScene(recipe: KitRecipe, parts: Parts, options: KitScene
   const serial = parts.serial ?? '';
   const profile = withSerialContext(recipe, () => serialProfile(recipe));
   const printable = serial.replace('-', '');
-  if (serial && !recipe.serial.font && !dieSupports(profile, printable)) throw new RangeError(`Serial “${serial}” has characters the ${profile.label} die does not include.`);
+  const prefixed = recipe.serial.prefix ? /^([A-Z]+)(\d+)$/.exec(printable) : null;
+  const supported = prefixed ? dieSupports(dieProfile(recipe.serial.prefix!.die), prefixed[1]) && dieSupports(profile, prefixed[2]) : dieSupports(profile, printable);
+  if (serial && !recipe.serial.font && !supported) throw new RangeError(`Serial “${serial}” has characters the ${profile.label} die does not include.`);
   const { nodes: serialNode, fit } = serial ? serialNodes(recipe, serial, ink) : { nodes: [], fit: 'natural' as const };
   const holes = recipe.holes ?? 'slots';
   const hx = recipe.holeAt?.x.map((v) => v * w) ?? [w * 0.2, w * 0.8];
@@ -297,6 +314,7 @@ export function buildKitScene(recipe: KitRecipe, parts: Parts, options: KitScene
     jurisdiction: 'CA-BC', recipe: recipe.id, status: recipe.status ?? 'issued', physicalMm: { width: w, height: h },
     serial, parts, source: recipe.source, construction: recipe.embossed ? 'embossed' : 'flat',
     dies: { serial: profile.id, evidence: profile.evidence.status, fit,
+      ...(prefixed ? {prefix: {die: recipe.serial.prefix!.die, capMm: recipe.serial.prefix!.cap, numericCapMm: recipe.serial.cap}} : {}),
       ...(recipe.serial.researchFormats?.[recipe.serial.die] ? {sharedPassengerFormat: recipe.serial.researchFormats[recipe.serial.die]} : {}) },
     renewal: recipe.renewalPanel ? {rendering: parts.renewal === 'base-only' ? 'base only' : 'separately mounted tab',
       physicalMm: {width: recipe.renewalPanel.width, height: recipe.renewalPanel.height}, independentSerial: 'not supplied'}
