@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>1951 B.C. renewal strip · photograph comparison</title>
+<style>
+body{font:16px/1.5 system-ui,sans-serif;color:#202633;background:#f5f6f8;margin:0 auto;padding:24px;max-width:1100px}h1{font-size:26px}h2{margin-top:36px}a{color:#174d97}figure{margin:18px 0}figcaption{margin:6px 0}img{display:block;width:100%;background:#f5f6f8}.overlay{position:relative}.overlay img+img{position:absolute;inset:0;height:100%;opacity:.5}input{width:240px;vertical-align:middle}small{display:block;margin-top:10px}
+</style></head><body>
+<h1>1951 British Columbia renewal-strip lettering</h1>
+<p>The strip now uses its dedicated reconstruction from the two original strip photographs, independently of the base plate’s serial-font setting and research toggle. Its rounded block letters, wider “1” and raised “51” are retained in mounted, loose and top-mounted views.</p>
+<p><a href="../../#/ca-bc/1951">Open the current plate</a> · <a href="https://www.bcpl8s.ca/Passenger-1949-1951.html">BCpl8s source article</a></p>
+<p>These comparisons preserve the original photographs, including paint wear and embossed shoulders. They show an approximate whole-strip alignment using the photograph edges as the frame. The short photograph is tightly cropped; this overlay does not establish precise physical spacing or certify identical tooling.</p>
+<label>Magenta reproduction opacity <input id="opacity" type="range" min="0" max="100" value="50"><output id="value">50%</output></label>
+<h2>Long strip · 318 × 36 mm reconstruction</h2>
+<figure><figcaption>Original photograph</figcaption><img src="long-original.jpg" alt="Original long 1951 renewal strip"><small><a href="https://www.bcpl8s.ca/images/Passenger/1949-1951/1951-Tab(long).jpg">Full source photograph</a></small></figure>
+<figure><figcaption>Current reproduction</figcaption><img src="long-current.svg" alt="Current long strip reproduction"></figure>
+<figure><figcaption>Photograph with reconstructed lettering in magenta</figcaption><div class="overlay"><img src="long-original.jpg" alt="Long-strip original photograph"><img src="long-overlay.svg" alt="Reproduction overlay"></div></figure>
+<h2>Short strip · 270 × 36 mm reconstruction</h2>
+<figure><figcaption>Original photograph</figcaption><img src="short-original.jpg" alt="Original short 1951 renewal strip"><small><a href="https://www.bcpl8s.ca/images/Passenger/1949-1951/1951-Tab(short).jpg">Full source photograph</a></small></figure>
+<figure><figcaption>Current reproduction</figcaption><img src="short-current.svg" alt="Current short strip reproduction"></figure>
+<figure><figcaption>Photograph with reconstructed lettering in magenta</figcaption><div class="overlay"><img src="short-original.jpg" alt="Short-strip original photograph"><img src="short-overlay.svg" alt="Reproduction overlay"></div></figure>
+<p>Remaining approximation: the shared outlines are smoothed photo averages. The short-strip layout reduces the complete run uniformly to fit the available width; this page exposes that size and spacing difference. The small stamped strip number uses a serif substitute.</p>
+<small>Checked 2026-10-05. All 19 character occurrences remain identical across six serial-font settings, three mounting views and both research settings, on both widths. The raised year stays inside the 36 mm strip.</small>
+<script>const slider=document.querySelector('#opacity');slider.addEventListener('input',()=>{document.querySelectorAll('.overlay img+img').forEach(n=>n.style.opacity=slider.value/100);document.querySelector('#value').value=slider.value+'%';});</script>
+</body></html>

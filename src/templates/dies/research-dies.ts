@@ -117,6 +117,7 @@ function researchGlyphs(units: readonly string[]): Record<string, SkeletonGlyph>
  */
 export function researchVariant(profile: DieProfile, role?: string, text?: string): DieProfile {
   const base = bases.get(profile) ?? profile;
+  if (base.allowResearchReplacement === false) return base;
   const units = activeUnits(base.id);
   if (!units?.length) return profile;
   const ranked = unitsFor(units, role);

@@ -83,7 +83,7 @@ describe('British Columbia passenger system', () => {
     const scene = buildBcScene({ year: 1951 }, { serial: '79-583', tabSerial: '250001', finish: 'flat' });
     equal(nodes(scene, 'base-year-tens')[0].children[0], '5');
     equal(nodes(scene, 'base-year-ones')[0].children[0], '0');
-    equal(nodes(scene, 'renewal-legend')[0].children[0], 'BRITISH·51·COLUMBIA');
+    equal(nodes(scene, 'renewal-legend')[0].attrs['aria-label'], 'BRITISH·51·COLUMBIA');
     equal(nodes(scene, 'tab-serial')[0].children[0], '250001');
     equal(metadata(1951, '79-583').baseYear, 1950);
     equal(metadata(1951, '79-583').renewal.widthMm, 270);

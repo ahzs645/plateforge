@@ -25,6 +25,15 @@ While a plate renders (`withResearchContext` in `src/templates/bc.tsx`):
 - Research outlines carry their own source slant; on slanted dies only the
   production fallbacks are skewed.
 
+The 1951 renewal strip is an independent manufactured piece and always uses
+`bc-strip-1951`, regardless of the base serial's font setting. Its profile sets
+`allowResearchReplacement: false`: the dedicated two-photo reconstruction is
+normalized to a 100-unit cap, while registry candidates include raised-year
+placement inside their paths. Replacing the strip master would change its
+alphabet and apply the year lift twice. This exception preserves the dedicated
+source reconstruction; it does not certify exact tooling. Photograph comparisons
+are published at `public/bc-font-comparisons/renewal1951/index.html`.
+
 Research glyphs are tagged `data-source="research"` in the SVG. The **Research
 lettering** checkbox in the B.C. inspector switches back to the production dies
 (remembered per browser).

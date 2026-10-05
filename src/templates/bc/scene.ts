@@ -116,15 +116,14 @@ function stripLegendDies(width: number, ink: string): SvgNode {
  *  plain raised edge (no painted border), a heavy blue legend filling about 60% of the height, round raised dots, and a
  *  small unpainted number stamped under the 51 between the bolts. */
 const STRIP = { face: '#e9ebe3', edge: '#b7bbb4', ink: '#3a6ea6', number: '#a2a79f' };
-function renewalStrip(width: number, holeXs: number[], parts: Parts, withHoles: boolean, lab: Labeler = label, die = false): SvgNode[] {
-  const legend = 'BRITISH·51·COLUMBIA';
-  const baseline = 25.7, size = 21 / 0.7, span = width - 19;
+function renewalStrip(width: number, holeXs: number[], parts: Parts, withHoles: boolean): SvgNode[] {
   return [
     n('rect', { width, height: STRIP_HEIGHT, rx: 2.5, fill: STRIP.face, stroke: STRIP.edge, strokeWidth: 0.8, 'data-role': 'strip-face' }),
     // Pressed edge: a light highlight with a soft shadow just inside it.
     n('rect', { x: 1.8, y: 1.8, width: width - 3.6, height: STRIP_HEIGHT - 3.6, rx: 1.8, fill: 'none', stroke: '#ffffff', strokeWidth: 1.1, opacity: 0.85 }),
     n('rect', { x: 2.7, y: 2.7, width: width - 5.4, height: STRIP_HEIGHT - 5.4, rx: 1.4, fill: 'none', stroke: STRIP.edge, strokeWidth: 0.45, opacity: 0.7 }),
-    (die && stripLegendDies(width, STRIP.ink)) || lab(legend, width / 2, baseline, size, span, STRIP.ink, 'renewal-legend', {}, true),
+    // A separately manufactured strip keeps its lettering when the base serial font changes.
+    stripLegendDies(width, STRIP.ink),
     ...(parts.tabSerial ? [label(parts.tabSerial, width / 2, 34, 6.2, 22, STRIP.number, 'tab-serial', STAMP)] : []),
     ...(withHoles ? holeXs.map((cx) => n('circle', { cx, cy: STRIP_HOLE_Y, r: 3.2, fill: 'black', 'data-role': 'strip-hole' })) : []),
   ];
@@ -166,7 +165,8 @@ const bolt = (cx: number, cy: number): SvgNode => n('g', { 'data-role': 'fastene
 
 function renewalMetadata(year: number, long: boolean, mount: BcRenewalMount | null) {
   if (!mount) return null;
-  return year === 1951 ? { kind: 'bottom-strip', widthMm: long ? 318 : 270, heightMm: STRIP_HEIGHT, mount }
+  return year === 1951 ? { kind: 'bottom-strip', widthMm: long ? 318 : 270, heightMm: STRIP_HEIGHT, mount,
+    lettering: { die: 'bc-strip-1951', evidence: 'photo-averaged', independentOfSerial: true } }
     : { kind: 'side-tab', widthMm: TAB.width, heightMm: TAB.height, mount };
 }
 
@@ -178,13 +178,13 @@ function buildLooseRenewal(design: BcDesign, parts: Parts, id: string): SvgNode 
   const strip = r.year === 1951;
   const holeXs = slotXs(plate).map((x) => x - (plate - w) / 2);
   const lab = labeler(parts.lettering === 'die' ? bcDieSet(design) : null);
-  const piece = strip ? renewalStrip(w, holeXs, parts, true, lab, parts.lettering === 'die') : renewalTab(r.year, `${id}-totem`, parts, true, lab, parts.lettering === 'die');
+  const piece = strip ? renewalStrip(w, holeXs, parts, true) : renewalTab(r.year, `${id}-totem`, parts, true, lab, parts.lettering === 'die');
   const holes = [...piece].filter((item) => ['strip-hole', 'tab-hole'].includes(String(item.attrs['data-role'])));
   const metadata = {
     jurisdiction: 'CA-BC', vehicleClass: 'passenger', year: r.year, baseYear: r.baseYear, serial: null, parts,
     physicalMm: { width: w, height: h }, renewal: renewalMetadata(r.year, long, 'loose'),
     material: 'metal', source: BC_SOURCES[r.source],
-    reconstruction: { colours: 'approximate', typography: 'proxy; not original dies', geometry: 'source dimensions; estimated detail positions', emblem: strip ? 'not applicable' : 'approximate' },
+    reconstruction: { colours: 'approximate', typography: strip ? 'photo-averaged renewal-strip outlines; small stamped number uses a proxy' : 'proxy; not original dies', geometry: 'source dimensions; estimated detail positions', emblem: strip ? 'not applicable' : 'approximate' },
   };
   const label1 = strip ? `British Columbia ${r.year} renewal strip` : `British Columbia ${r.year} renewal tab`;
   return n('svg', { xmlns: 'http://www.w3.org/2000/svg', viewBox: `0 0 ${w} ${h}`, width: w, height: h, role: 'img', 'aria-label': label1 },
@@ -305,7 +305,7 @@ export function buildBcScene(design: BcDesign, parts: Parts, scope = 'bc-plate')
     const slotY = mount === 'top' ? slotInset(h) : h - slotInset(h);
     const holeXs = slotXs(w);
     overlays.push(n('g', { 'data-role': 'renewal-strip', 'data-year': 1951, 'data-mount': mount, transform: `translate(${x} ${slotY - STRIP_HOLE_Y})`, filter: `url(#${id}-lift)` },
-      ...renewalStrip(stripWidth, holeXs.map((cx) => cx - x), parts, false, L, !!dies)));
+      ...renewalStrip(stripWidth, holeXs.map((cx) => cx - x), parts, false)));
     overlays.push(...holeXs.map((cx) => bolt(cx, slotY)));
   }
   if (fitted && renewed) {

@@ -56,6 +56,9 @@ export const DIE_PROFILES: readonly DieProfile[] = [
   {
     id: 'bc-strip-1951', label: 'Legend · 1951 renewal strip', params: { width: 65, stroke: 17, curve: 'stadium', tracking: 21, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.32, wide: 1.25, dot: 'round' },
     overrides: BC_STRIP_1951,
+    // The strip has its own alphabet. Registry candidates carry placement offsets
+    // inside their glyphs; the strip layout already applies the raised year.
+    allowResearchReplacement: false,
     evidence: { status: 'photo-averaged', specimens: [page('1949-1951')], notes: 'Letters and 51 traced from two high-resolution strip photos (smoothed); dots constructed. BRITISH·51·COLUMBIA on the blue-on-white strip, measured from 1951 217·639 and loose long/short strips: 21 mm caps (about 58% of the 36 mm strip), W/H about 0.65, stroke about 0.17, 4.5 mm letter gaps, round raised dots; the 51 is a slightly smaller die set about 4 mm higher.' },
   },
   {

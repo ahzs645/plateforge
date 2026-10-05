@@ -23,6 +23,14 @@ function scene(design: BcDesign, parts: Parts): SvgNode {
   const selected = typeof parts.die === 'string' ? { ...recipe, serial: { ...recipe.serial, die: parts.die } } : recipe;
   return buildKitScene(selected, parts, { scope: 't', decal: kitDecal(recipe.id, parts), ...kitPalette(recipe.id, parts.palette) });
 }
+function byRole(root: SvgNode, role: string): SvgNode | undefined {
+  if (root.attrs['data-role'] === role) return root;
+  for (const child of root.children) {
+    if (typeof child === 'string') continue;
+    const found = byRole(child, role);
+    if (found) return found;
+  }
+}
 const render = (design: BcDesign, parts: Parts) => serializeSvgNode(withResearchContext(design.formatId, () => applyResearchTypefaces(scene(design, parts))));
 const designOf = (id: string) => {
   const format = britishColumbia.formats.find((f) => f.id === id)!;
@@ -67,6 +75,32 @@ describe('research dies in the B.C. renderer', () => {
     expect(off).toBe(serializeSvgNode(scene(design, parts)));
     setResearchDiesEnabled(true);
     expect(on).not.toBe(off);
+  });
+
+  it('keeps the 1951 strip alphabet independent of serial fonts and research candidates in every mounting view', () => {
+    const { design } = designOf('1951');
+    // Exercise the real registry binding that previously replaced the strip alphabet.
+    expect(registry.bindings['1951']['bc-strip-1951'].length).toBeGreaterThan(0);
+    try {
+      for (const serial of ['79-583', '217-639']) {
+        setResearchDiesEnabled(false);
+        const reference = byRole(scene(design, { serial, lettering: 'die', renewal: 'loose' }), 'renewal-legend')!;
+        const expected = serializeSvgNode(reference);
+        for (const research of [false, true]) {
+          setResearchDiesEnabled(research);
+          for (const lettering of ['die', 'default', 'semicircular', 'squarish', 'oval', 'hybrid']) {
+            for (const renewal of ['on-plate', 'loose', 'top']) {
+              const root = withResearchContext(design.formatId, () => applyResearchTypefaces(scene(design,
+                { serial, lettering, renewal, tabSerial: '250001' })));
+              const legend = byRole(root, 'renewal-legend')!;
+              expect(legend.tag).toBe('g');
+              expect(serializeSvgNode(legend)).toBe(expected);
+              expect(byRole(root, 'tab-serial')!.children[0]).toBe('250001');
+            }
+          }
+        }
+      }
+    } finally { setResearchDiesEnabled(true); }
   });
 
   it('skews only production fallbacks on slanted dies', () => {

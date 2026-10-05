@@ -26,6 +26,8 @@ export interface DieProfile {
   overrides?: Readonly<Record<string, SkeletonGlyph>>;
   /** Research-only profiles may reject unobserved characters instead of inventing a fallback. */
   allowConstructedFallback?: boolean;
+  /** Keep a dedicated source reconstruction when research candidates use incompatible geometry. */
+  allowResearchReplacement?: boolean;
   /** Forward slant in degrees (early italic dies). */
   slant?: number;
   /** Research-merged dies: characters drawn from research outlines rather than the production die. */
