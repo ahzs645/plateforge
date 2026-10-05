@@ -1,0 +1,16 @@
+{
+  "font": "Frankfurter Std Medium",
+  "source": "https://www.myfonts.com/collections/frankfurter-font-itc",
+  "previewIdentifier": "e094dede1f515189f4972f03427ad6eb",
+  "previewSubsetSha256": [
+    "4567e483cbda6714ae20fcff0383b72ba3c997f5af9300e0e8e0be88815008d0",
+    "6233650f9aa3cc0ef05da6936ac91de6acb471980578cc4c55dbc620cd85b9fd"
+  ],
+  "capHeight": 676,
+  "unitsPerEm": 1000,
+  "identification": "Captured from the browser FontFace named Frankfurter Std Medium; all six advances match the independently recorded Medium specimen",
+  "copyright": "International Typeface Corporation. All rights reserved.",
+  "bundledFontSoftware": false,
+  "characters": "EXPO86",
+  "method": "Six fixed-wordmark outlines from the official browser preview subsets, normalized to cap height 100; no photographic tracing or glyph width distortion."
+}

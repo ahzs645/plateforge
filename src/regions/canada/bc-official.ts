@@ -534,12 +534,12 @@ const eventSpecs: Spec[] = [
     recipe: recipe('events-expo86-souvenir', 'Expo 86 souvenir plate', { w: 300, h: 150 }, SRC.expo, {
       embossed: false, radius: 16, background: '#eff1f0', ink: '#2b67aa', holes: 'slots', holeAt: { x: [0.22, 0.78], y: [0.12, 0.88] }, rim: { inset: 9.5, width: 1.4 },
       art: [],
-      legends: [{ text: 'EXPO86', x: 150, baseline: 101, cap: 48, maxWidth: 280, die: 'bc-frankfurter-expo', role: 'expo-wordmark' },
+      legends: [{ text: 'EXPO86', x: 150, baseline: 100, cap: 49.5, maxWidth: 280, die: 'bc-frankfurter-expo', role: 'expo-wordmark' },
         { text: 'VANCOUVER', x: 150, baseline: 32, cap: 12, maxWidth: 110, die: 'bc-legend-1973', role: 'city', spread: true },
         { text: 'BRITISH COLUMBIA', x: 150, baseline: 128, cap: 12, maxWidth: 226, die: 'bc-legend-1973', role: 'province', spread: true }],
       serial: NO_NUMBER }),
     grammar: noNumber,
-    description: 'Retail souvenir plate by Universal Exchange with Astrographic (about 10,000 made by February 1986, $6.98). The rounded EXPO86 wordmark uses the supplied Frankfurter Std Regular outlines as a visual match; it is separate from the linked official event symbol.' },
+    description: 'Retail souvenir plate by Universal Exchange with Astrographic (about 10,000 made by February 1986, $6.98). The rounded EXPO86 wordmark uses Frankfurter Std Medium fixed outlines, selected by comparing all six characters with the photograph. Original typeface attribution remains a visual match; the linked official event symbol is a separate design.' },
   { id: 'events-expo86-stencil', label: 'EXPO-86 stencilled booster', family: 'events', era: 'events-expo-1985', period: [1986, 1986], status: 'souvenir',
     recipe: recipe('events-expo86-stencil', 'EXPO-86 stencilled booster', { w: 300, h: 150 }, SRC.expo, {
       embossed: false, radius: 6, background: '#2c5da8', ink: '#ddaf24', holes: 'slots', holeAt: { x: [0.25, 0.75], y: [0.06, 0.94] }, rim: { inset: 3, width: 1 },

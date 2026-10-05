@@ -23,7 +23,7 @@ describe('Vancouver souvenirs', () => {
     expect(new Set(legends.filter(t => t.role.startsWith('from-')).map(t => t.color))).toEqual(new Set(['#38B114']));
     expect(new Set(legends.filter(t => t.role.startsWith('to-')).map(t => t.color))).toEqual(new Set(['#0047BA']));
   });
-  it('uses the supplied filled souvenir letters instead of the linked event logo', () => {
+  it('uses the tested Medium souvenir letters instead of the linked event logo', () => {
     const svg = render('events-expo86-souvenir');
     expect(svg).toContain('data-die="bc-frankfurter-expo"');
     expect(svg).toContain('aria-label="EXPO86"');
@@ -33,10 +33,12 @@ describe('Vancouver souvenirs', () => {
     expect(dieSupports(FRANKFURTER_EXPO_PROFILE, 'A')).toBe(false);
   });
   it('retains source font sidebearings and round-letter overshoots', () => {
-    expect(dieGlyph(FRANKFURTER_EXPO_PROFILE, 'E')?.advance).toBeCloseTo(526 / 672 * 100, 3);
+    expect(FRANKFURTER_EXPO_PROFILE.label).toContain('Std Medium');
+    expect(dieGlyph(FRANKFURTER_EXPO_PROFILE, 'E')?.advance).toBeCloseTo(536 / 676 * 100, 3);
     const roundO = dieGlyph(FRANKFURTER_EXPO_PROFILE, 'O')!;
-    expect(roundO.paths[0]).toContain('-1.6369');
-    expect(roundO.advance).toBeCloseTo(769 / 672 * 100, 3);
+    expect(roundO.paths[0]).toContain('-0.1479');
+    expect(roundO.advance).toBeCloseTo(749 / 676 * 100, 3);
+    expect(render('events-expo86-souvenir')).toContain('data-fit="natural"');
   });
   it('keeps souvenir grammars unnumbered and other Expo designs separate', () => {
     for (const id of ['events-vancouver-100','events-expo86-souvenir']) {

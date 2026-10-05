@@ -1,7 +1,7 @@
 {
   "reference": "https://www.bcpl8s.ca/images/Expo-86/Expo86-Souvenir(mid).jpg",
   "specimens": "User-supplied Frankfurter Std Regular OTF rendered directly in browser Canvas, and official MyFonts Frankfurter Std Medium live preview customized to EXPO86 and rendered to raster. Samples at 192px. No Medium font file is bundled or installed in PlateForge.",
-  "method": "Independently selected source-photo paint boxes. Source dark-blue threshold R<150 and B-R>30. Candidates uniformly normalized by ink height and centred. Diagnostic width sweep 0.80\u20131.20 tests horizontal scaling separately. Padded scoring canvas retains all candidate ink outside the source box. Approximate raster comparisons; no master outlines changed. P/O and 8/6 are joined.",
+  "method": "Independently selected source-photo paint boxes. Source dark-blue threshold R<150 and B-R>30. Candidates uniformly normalized by ink height and centred. Diagnostic width sweep 0.80\u20131.20 tests horizontal scaling separately. Padded scoring canvas retains all candidate ink outside the source box. Approximate raster comparisons; The production fixed wordmark now uses the tested Medium outlines. P/O and 8/6 are joined.",
   "characters": [
     {
       "character": "E",
@@ -32,7 +32,13 @@
         "inkHeight": 128,
         "inkWidth": 86
       },
-      "visualFinding": "Medium matches the arm thickness and openings; reducing Regular width leaves its arms too thick."
+      "visualFinding": "Medium matches the arm thickness and openings; reducing Regular width leaves its arms too thick.",
+      "current-outline": {
+        "inkWidth": 66.56810000000007,
+        "inkHeight": 98.6686,
+        "advance": 79.2899,
+        "outlineSource": "src/templates/dies/frankfurter-expo.json"
+      }
     },
     {
       "character": "X",
@@ -63,7 +69,13 @@
         "inkHeight": 130,
         "inkWidth": 108
       },
-      "visualFinding": "Medium matches the diagonal stroke weight and rounded ends. Regular stays heavy after a width reduction."
+      "visualFinding": "Medium matches the diagonal stroke weight and rounded ends. Regular stays heavy after a width reduction.",
+      "current-outline": {
+        "inkWidth": 83.4319,
+        "inkHeight": 100.73960000000001,
+        "advance": 88.1657,
+        "outlineSource": "src/templates/dies/frankfurter-expo.json"
+      }
     },
     {
       "character": "P",
@@ -130,7 +142,13 @@
         "inkHeight": 129,
         "inkWidth": 94
       },
-      "visualFinding": "Medium matches the larger counter. P touches O in the source, limiting outer-edge and placement precision."
+      "visualFinding": "Medium matches the larger counter. P touches O in the source, limiting outer-edge and placement precision.",
+      "current-outline": {
+        "inkWidth": 72.33730000000004,
+        "inkHeight": 99.7041,
+        "advance": 85.2071,
+        "outlineSource": "src/templates/dies/frankfurter-expo.json"
+      }
     },
     {
       "character": "O",
@@ -197,7 +215,13 @@
         "inkHeight": 132,
         "inkWidth": 132
       },
-      "visualFinding": "Medium matches the broad circular opening. Approximate opening width / glyph height: source 0.56, Medium 0.56, supplied Regular 0.37."
+      "visualFinding": "Medium matches the broad circular opening. Approximate opening width / glyph height: source 0.56, Medium 0.56, supplied Regular 0.37.",
+      "current-outline": {
+        "inkWidth": 101.923,
+        "inkHeight": 101.62720000000004,
+        "advance": 110.7988,
+        "outlineSource": "src/templates/dies/frankfurter-expo.json"
+      }
     },
     {
       "character": "8",
@@ -297,7 +321,13 @@
         "inkHeight": 132,
         "inkWidth": 93
       },
-      "visualFinding": "Medium matches the unequal openings: the lower counter is substantially larger. Regular has two much smaller openings. The right edge joins 6."
+      "visualFinding": "Medium matches the unequal openings: the lower counter is substantially larger. Regular has two much smaller openings. The right edge joins 6.",
+      "current-outline": {
+        "inkWidth": 72.04140000000005,
+        "inkHeight": 101.6272,
+        "advance": 79.8817,
+        "outlineSource": "src/templates/dies/frankfurter-expo.json"
+      }
     },
     {
       "character": "6",
@@ -364,7 +394,13 @@
         "inkHeight": 133,
         "inkWidth": 99
       },
-      "visualFinding": "Medium matches the counter and diagonal terminal more closely. The left edge joins 8; crop and placement remain approximate."
+      "visualFinding": "Medium matches the counter and diagonal terminal more closely. The left edge joins 8; crop and placement remain approximate.",
+      "current-outline": {
+        "inkWidth": 76.6272,
+        "inkHeight": 102.3669,
+        "advance": 85.503,
+        "outlineSource": "src/templates/dies/frankfurter-expo.json"
+      }
     }
   ],
   "thresholdSensitivity": {
@@ -712,5 +748,21 @@
       "capturedUtc": "2026-10-05"
     }
   ],
-  "sourceFontShapingCheck": "The supplied Regular has no standard ligature affecting EXPO86 and no GPOS kerning adjustment for E-X, X-P, P-O, O-8 or 8-6. The stroke/counter difference is not caused by omitted shaping."
+  "sourceFontShapingCheck": "The supplied Regular has no standard ligature affecting EXPO86 and no GPOS kerning adjustment for E-X, X-P, P-O, O-8 or 8-6. The stroke/counter difference is not caused by omitted shaping.",
+  "implementation": {
+    "font": "Frankfurter Std Medium",
+    "source": "https://www.myfonts.com/collections/frankfurter-font-itc",
+    "previewIdentifier": "e094dede1f515189f4972f03427ad6eb",
+    "previewSubsetSha256": [
+      "4567e483cbda6714ae20fcff0383b72ba3c997f5af9300e0e8e0be88815008d0",
+      "6233650f9aa3cc0ef05da6936ac91de6acb471980578cc4c55dbc620cd85b9fd"
+    ],
+    "capHeight": 676,
+    "unitsPerEm": 1000,
+    "identification": "Captured from the browser FontFace named Frankfurter Std Medium; all six advances match the independently recorded Medium specimen",
+    "copyright": "International Typeface Corporation. All rights reserved.",
+    "bundledFontSoftware": false,
+    "characters": "EXPO86",
+    "method": "Six fixed-wordmark outlines from the official browser preview subsets, normalized to cap height 100; no photographic tracing or glyph width distortion."
+  }
 }

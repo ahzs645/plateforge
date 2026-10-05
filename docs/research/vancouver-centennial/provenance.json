@@ -1,17 +1,26 @@
 {
   "vectorKit": "vancouver-centennial-vector-kit.zip",
   "svgSha256": "ae096228d0be42f501b847b07402954f05cdb56e362de16129f5291a1cddb8e1",
-  "fontAttachment": "frankfurter-std-regular.zip",
-  "fontSha256": "5c4ccd34f623b2db369a5a47663c41d84b9287bf22c00245e49681ea587d0ddc",
-  "font": "Frankfurter Std Regular",
-  "copyright": "Copyright 1997 International Typeface Corporation. All rights reserved.",
   "fontUnitsPerEm": 1000,
-  "capHeight": 672,
+  "capHeight": 676,
   "bundledFontSoftware": false,
   "sourceUrls": [
     "https://www.bcpl8s.ca/Expo-86.htm",
     "https://www.bcpl8s.ca/images/Expo-86/City-Souvenir.jpg",
     "https://www.bcpl8s.ca/images/Expo-86/Expo86-Souvenir(mid).jpg"
   ],
-  "limits": "User-requested fixed wordmark/year outlines. Font identity is a visual match; original physical dimensions, inks and printing specification remain unverified. Supplied vector reconstruction is not an authenticated historical master."
+  "limits": "User-requested fixed wordmark/year outlines. Font identity is a visual match; original physical dimensions, inks and printing specification remain unverified. Supplied vector reconstruction is not an authenticated historical master.",
+  "font": "Frankfurter Std Medium",
+  "wordmarkProvenance": "medium-wordmark-provenance.json",
+  "previousSuppliedFont": {
+    "font": "Frankfurter Std Regular",
+    "sha256": "5c4ccd34f623b2db369a5a47663c41d84b9287bf22c00245e49681ea587d0ddc",
+    "attachment": "frankfurter-std-regular.zip",
+    "copyright": "Copyright 1997 International Typeface Corporation. All rights reserved.",
+    "unitsPerEm": 1000,
+    "capHeight": 672,
+    "use": "Earlier comparison candidate; no longer the retail EXPO86 wordmark"
+  },
+  "copyright": "International Typeface Corporation. All rights reserved.",
+  "wordmarkOutlineSha256": "f81139be057e3ae086f9b99e41029974e43dee3bd63ff8191a0dcfecadbd31f9"
 }
