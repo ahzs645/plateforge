@@ -11,6 +11,10 @@ import { buildLettering, letteringLayout, supportsLettering } from './lettering'
 import { SvgScene } from './SvgScene';
 import { CONDENSED, FONTS } from './fonts';
 import { fit, measure, safeId } from './measure';
+import {
+  NWT_POLAR_BEAR_PATH, NWT_POLAR_BEAR_BORDER_PATH, NWT_POLAR_BEAR_HOLES,
+  NWT_POLAR_BEAR_SLOTS, NWT_POLAR_BEAR_SOURCE,
+} from './shapes/nwt-polar-bear';
 
 export type CaFace = 'block' | 'sans' | 'serif' | 'script' | 'syllabics';
 export type CaEmblem =
@@ -96,6 +100,9 @@ export interface CaDesign {
   separatorAccent?: string;
   separatorSize?: number;
   shape?: 'rect' | 'polar-bear';
+  /** Select the supplied-reference NWT reconstruction independently of other bear artwork. */
+  bearProfile?: 'legacy' | 'nwt-reference';
+  bearMounts?: 'round' | 'slotted';
   facing?: 'left' | 'right';
   holes?: 'four' | 'two' | 'none';
 }
@@ -409,7 +416,7 @@ function Scene({ kind, id }: { kind: CaScene; id: string }) {
           </defs>
           <rect width={W} height={H} fill={`url(#${id}ntsky)`} />
           <path d="M60 104 C160 70 260 110 360 84 C440 62 500 80 560 64" fill="none" stroke="#5ed69b" strokeWidth="14" strokeOpacity="0.35" strokeLinecap="round" />
-          <path d="M20 236 L90 214 L150 226 L230 206 L320 222 L400 208 L480 222 L560 212 V300 H20 Z" fill="#9ec3de" opacity="0.7" />
+          <path d="M0 236 L90 214 L150 226 L230 206 L320 222 L400 208 L480 222 L560 212 L600 220 V300 H0 Z" fill="#9ec3de" opacity="0.7" />
         </g>
       );
   }
@@ -439,6 +446,9 @@ function CaPlate({ design: d, text, parts }: { design: CaDesign; text: string; p
   const ink = d.text ?? '#1c3f94';
   const [top, bottom] = d.bg ?? ['#ffffff', '#f2f4f7'];
   const bear = d.shape === 'polar-bear';
+  const nwt = bear && d.bearProfile === 'nwt-reference';
+  const bearPath = nwt ? NWT_POLAR_BEAR_PATH : POLAR_BEAR_PATH;
+  const bearBorderPath = nwt ? NWT_POLAR_BEAR_BORDER_PATH : POLAR_BEAR_PATH;
   const flipBear = bear && d.facing === 'left' ? `translate(${W} 0) scale(-1 1)` : undefined;
   const vectorType = isLetteringType(parts.lettering) && supportsLettering(text) ? parts.lettering : null;
   const embossed = d.embossed ?? true;
@@ -468,10 +478,11 @@ function CaPlate({ design: d, text, parts }: { design: CaDesign; text: string; p
     ...(d.labels ?? []),
   ];
   const emblems = d.emblems ?? [];
-  const holes = d.holes ?? (bear ? 'two' : 'four');
+  const holes = d.holes ?? (nwt ? 'four' : bear ? 'two' : 'four');
   const holeList = holes === 'none' ? [] : holes === 'two' ? (bear ? [[135, 54], [445, 54]] : [[125, 30], [475, 30]]) : [[125, 30], [475, 30], [125, 270], [475, 270]];
+  const includeMount = (cy: number) => holes !== 'none' && (holes !== 'two' || cy < H / 2);
   const outline = bear
-    ? <path d={POLAR_BEAR_PATH} transform={flipBear} />
+    ? <path d={bearPath} transform={flipBear} />
     : <rect width={W} height={H} rx="22" />;
 
   const serialLayers = [
@@ -480,11 +491,11 @@ function CaPlate({ design: d, text, parts }: { design: CaDesign; text: string; p
   ];
 
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={text} data-shape={bear ? 'polar-bear' : 'rect'}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={text} data-shape={bear ? 'polar-bear' : 'rect'} data-shape-profile={nwt ? 'nwt-reference' : undefined}>
       <metadata>{JSON.stringify({ serial: text, parts, lettering: {
         ...letteringMetadata(vectorType ?? 'default'), requested: parts.lettering ?? 'default',
         fallback: isLetteringType(parts.lettering) && !vectorType,
-      } })}</metadata>
+      }, ...(nwt ? { shape: { profile: 'nwt-reference', mounts: d.bearMounts ?? 'round', source: NWT_POLAR_BEAR_SOURCE } } : {}) })}</metadata>
       <defs>
         <linearGradient id={`${id}bg`} x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stopColor={top} />
@@ -496,60 +507,74 @@ function CaPlate({ design: d, text, parts }: { design: CaDesign; text: string; p
           <stop offset="1" stopColor="#000" stopOpacity="0.06" />
         </linearGradient>
         <clipPath id={`${id}clip`}>{outline}</clipPath>
-      </defs>
-      <g clipPath={`url(#${id}clip)`}>
-        <rect width={W} height={H} fill={`url(#${id}bg)`} />
-        {d.scene && <Scene kind={d.scene} id={id} />}
-        {emblems.filter((p) => p.back).map((p, i) => <Emblem key={`b${i}`} p={p} />)}
-        <rect width={W} height={H} fill={`url(#${id}sheen)`} />
-      </g>
-      {d.frame && (bear
-        ? <path d={POLAR_BEAR_PATH} transform={flipBear} fill="none" stroke={d.frame} strokeWidth={d.frameWidth ?? 6} strokeLinejoin="round" />
-        : <rect x="7" y="7" width={W - 14} height={H - 14} rx="17" fill="none" stroke={d.frame} strokeWidth={d.frameWidth ?? 5} />)}
-      {holeList.map(([cx, cy]) => <ellipse key={`${cx}-${cy}`} cx={cx} cy={cy} rx="14" ry="6.5" fill="#000" opacity="0.2" />)}
-
-      {labels.map((l, i) => <Label key={i} l={l} ink={ink} />)}
-      {emblems.filter((p) => !p.back).map((p, i) => <Emblem key={`f${i}`} p={p} />)}
-
-      <g data-role="serial-group">
-        {serialLayers.map((layer, i) => {
-          const role = i === serialLayers.length - 1 ? 'serial' : 'serial-shadow';
-          if (layout) {
-            return (
-              <g key={i} opacity={layer.opacity}>
-                {layout.segments.map((seg, j) => vectorType ? (
-                  seg.text ? <SvgScene key={j} node={buildLettering({ text: seg.text, type: vectorType, centerX: seg.x + seg.width / 2 + layer.dx,
-                    baseline: serialY + layer.dy, height: vectorHeight * layout.scale, maxWidth: 1e6, ink: layer.fill, role })} /> : null
-                ) : (
-                  <text key={j} x={seg.x + layer.dx} y={serialY + layer.dy} textAnchor="start" fontFamily={serialFont.family}
-                    fontSize={serialFont.size} fontWeight={serialFont.weight} letterSpacing={serialFont.letterSpacing} fill={layer.fill}
-                    stroke={layer.halo} strokeWidth={layer.halo ? 6 : undefined} paintOrder={layer.halo ? 'stroke' : undefined}
-                    {...(layout.squeezed && seg.text ? { textLength: seg.width, lengthAdjust: 'spacingAndGlyphs' as const } : {})}>
-                    {seg.text}
-                  </text>
-                ))}
-              </g>
-            );
-          }
-          return vectorType ? (
-            <g key={i} opacity={layer.opacity}>
-              <SvgScene node={buildLettering({ text, type: vectorType, centerX: serialX + layer.dx, baseline: serialY + layer.dy,
-                height: vectorHeight, maxWidth: serialWidth, ink: layer.fill, role })} />
-            </g>
-          ) : (
-            <text key={i} x={serialX + layer.dx} y={serialY + layer.dy} textAnchor="middle" fontFamily={serialFont.family}
-              fontSize={serialFont.size} fontWeight={serialFont.weight} letterSpacing={serialFont.letterSpacing} fill={layer.fill}
-              opacity={layer.opacity} stroke={layer.halo} strokeWidth={layer.halo ? 6 : undefined} paintOrder={layer.halo ? 'stroke' : undefined}
-              {...plain.attrs}>
-              {text}
-            </text>
-          );
-        })}
-        {layout?.separators.map((x, i) => (
-          <g key={`sep${i}`} data-role="serial-separator">
-            <Emblem p={{ kind: d.separator!, x, y: serialY - serialSize * 0.36, size: sepSize * layout.scale, color: d.separatorColor ?? ink, accent: d.separatorAccent }} />
+        {nwt && <mask id={`${id}body`} maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="0" y="0" width={W} height={H} style={{ maskType: 'luminance' }} data-role="plate-cutouts">
+          <g transform={flipBear}>
+            <path d={NWT_POLAR_BEAR_PATH} fill="#fff" />
+            {d.bearMounts === 'slotted'
+              ? NWT_POLAR_BEAR_SLOTS.filter(({ cy }) => includeMount(cy)).map(({ cx, cy, width, height, rx }) => (
+                <rect key={`${cx}-${cy}`} x={cx - width / 2} y={cy - height / 2} width={width} height={height} rx={rx} fill="#000" data-role="mounting-hole" />
+              ))
+              : NWT_POLAR_BEAR_HOLES.filter(({ cy }) => includeMount(cy)).map(({ cx, cy, r }) => (
+                <circle key={`${cx}-${cy}`} cx={cx} cy={cy} r={r} fill="#000" data-role="mounting-hole" />
+              ))}
           </g>
-        ))}
+        </mask>}
+      </defs>
+      <g mask={nwt ? `url(#${id}body)` : undefined}>
+        <g clipPath={`url(#${id}clip)`}>
+          <rect width={W} height={H} fill={`url(#${id}bg)`} />
+          {d.scene && <Scene kind={d.scene} id={id} />}
+          {emblems.filter((p) => p.back).map((p, i) => <Emblem key={`b${i}`} p={p} />)}
+          <rect width={W} height={H} fill={`url(#${id}sheen)`} />
+        </g>
+        {d.frame && (bear
+          ? <path d={bearBorderPath} transform={flipBear} fill="none" stroke={d.frame} strokeWidth={d.frameWidth ?? 6} strokeLinejoin="round" data-role={nwt ? 'inset-border' : undefined} />
+          : <rect x="7" y="7" width={W - 14} height={H - 14} rx="17" fill="none" stroke={d.frame} strokeWidth={d.frameWidth ?? 5} />)}
+        {!nwt && holeList.map(([cx, cy]) => <ellipse key={`${cx}-${cy}`} cx={cx} cy={cy} rx="14" ry="6.5" fill="#000" opacity="0.2" />)}
+
+        {labels.map((l, i) => <Label key={i} l={l} ink={ink} />)}
+        {emblems.filter((p) => !p.back).map((p, i) => <Emblem key={`f${i}`} p={p} />)}
+
+        <g data-role="serial-group">
+          {serialLayers.map((layer, i) => {
+            const role = i === serialLayers.length - 1 ? 'serial' : 'serial-shadow';
+            if (layout) {
+              return (
+                <g key={i} opacity={layer.opacity}>
+                  {layout.segments.map((seg, j) => vectorType ? (
+                    seg.text ? <SvgScene key={j} node={buildLettering({ text: seg.text, type: vectorType, centerX: seg.x + seg.width / 2 + layer.dx,
+                      baseline: serialY + layer.dy, height: vectorHeight * layout.scale, maxWidth: 1e6, ink: layer.fill, role })} /> : null
+                  ) : (
+                    <text key={j} x={seg.x + layer.dx} y={serialY + layer.dy} textAnchor="start" fontFamily={serialFont.family}
+                      fontSize={serialFont.size} fontWeight={serialFont.weight} letterSpacing={serialFont.letterSpacing} fill={layer.fill}
+                      stroke={layer.halo} strokeWidth={layer.halo ? 6 : undefined} paintOrder={layer.halo ? 'stroke' : undefined}
+                      {...(layout.squeezed && seg.text ? { textLength: seg.width, lengthAdjust: 'spacingAndGlyphs' as const } : {})}>
+                      {seg.text}
+                    </text>
+                  ))}
+                </g>
+              );
+            }
+            return vectorType ? (
+              <g key={i} opacity={layer.opacity}>
+                <SvgScene node={buildLettering({ text, type: vectorType, centerX: serialX + layer.dx, baseline: serialY + layer.dy,
+                  height: vectorHeight, maxWidth: serialWidth, ink: layer.fill, role })} />
+              </g>
+            ) : (
+              <text key={i} x={serialX + layer.dx} y={serialY + layer.dy} textAnchor="middle" fontFamily={serialFont.family}
+                fontSize={serialFont.size} fontWeight={serialFont.weight} letterSpacing={serialFont.letterSpacing} fill={layer.fill}
+                opacity={layer.opacity} stroke={layer.halo} strokeWidth={layer.halo ? 6 : undefined} paintOrder={layer.halo ? 'stroke' : undefined}
+                {...plain.attrs}>
+                {text}
+              </text>
+            );
+          })}
+          {layout?.separators.map((x, i) => (
+            <g key={`sep${i}`} data-role="serial-separator">
+              <Emblem p={{ kind: d.separator!, x, y: serialY - serialSize * 0.36, size: sepSize * layout.scale, color: d.separatorColor ?? ink, accent: d.separatorAccent }} />
+            </g>
+          ))}
+        </g>
       </g>
     </svg>
   );
