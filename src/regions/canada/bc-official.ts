@@ -532,13 +532,14 @@ const eventSpecs: Spec[] = [
     description: 'Prototype of the promotional plate on the full-size passenger base, with a number stamped in the decal area (201 307); the plate was eventually produced on the motorcycle base.' },
   { id: 'events-expo86-souvenir', label: 'Expo 86 souvenir (Universal Exchange)', family: 'events', era: 'events-expo-1985', period: [1986, 1986], status: 'souvenir',
     recipe: recipe('events-expo86-souvenir', 'Expo 86 souvenir plate', { w: 300, h: 150 }, SRC.expo, {
-      embossed: false, radius: 7, background: '#eff1f0', ink: '#2b67aa', holes: 'slots', holeAt: { x: [0.21, 0.79], y: [0.08] }, rim: { inset: 6, width: 1.4 },
-      art: [expoLogo(40, 46, 220)],
-      legends: [{ text: 'VANCOUVER', x: 150, baseline: 32, cap: 14, maxWidth: 140, die: 'bc-legend-1973', role: 'city', spread: true },
-        { text: 'BRITISH COLUMBIA', x: 150, baseline: 136, cap: 14, maxWidth: 196, die: 'bc-legend-1973', role: 'province', spread: true }],
+      embossed: false, radius: 16, background: '#eff1f0', ink: '#2b67aa', holes: 'slots', holeAt: { x: [0.22, 0.78], y: [0.12, 0.88] }, rim: { inset: 9.5, width: 1.4 },
+      art: [],
+      legends: [{ text: 'EXPO86', x: 150, baseline: 101, cap: 48, maxWidth: 280, die: 'bc-frankfurter-expo', role: 'expo-wordmark' },
+        { text: 'VANCOUVER', x: 150, baseline: 32, cap: 12, maxWidth: 110, die: 'bc-legend-1973', role: 'city', spread: true },
+        { text: 'BRITISH COLUMBIA', x: 150, baseline: 128, cap: 12, maxWidth: 226, die: 'bc-legend-1973', role: 'province', spread: true }],
       serial: NO_NUMBER }),
     grammar: noNumber,
-    description: 'Retail souvenir plate by Universal Exchange with Astrographic (about 10,000 made by February 1986, $6.98).' },
+    description: 'Retail souvenir plate by Universal Exchange with Astrographic (about 10,000 made by February 1986, $6.98). The rounded EXPO86 wordmark uses the supplied Frankfurter Std Regular outlines as a visual match; it is separate from the linked official event symbol.' },
   { id: 'events-expo86-stencil', label: 'EXPO-86 stencilled booster', family: 'events', era: 'events-expo-1985', period: [1986, 1986], status: 'souvenir',
     recipe: recipe('events-expo86-stencil', 'EXPO-86 stencilled booster', { w: 300, h: 150 }, SRC.expo, {
       embossed: false, radius: 6, background: '#2c5da8', ink: '#ddaf24', holes: 'slots', holeAt: { x: [0.25, 0.75], y: [0.06, 0.94] }, rim: { inset: 3, width: 1 },
@@ -568,15 +569,15 @@ const eventSpecs: Spec[] = [
     description: 'Northwest Territories plates in the polar-bear shape for its Expo 86 pavilion: single-digit EXPO plates were used on pavilion vehicles; the commoner EXPO 86 plates were samples or souvenirs.' },
   { id: 'events-vancouver-100', label: 'Vancouver 100 souvenir', family: 'events', era: 'events-expo-1985', period: [1986, 1986], status: 'souvenir',
     recipe: recipe('events-vancouver-100', 'Vancouver centennial souvenir', { w: 300, h: 150 }, SRC.expo, {
-      embossed: false, radius: 7, background: '#f3f5f2', ink: '#2b62b0', holes: 'slots', holeAt: { x: [0.24, 0.76], y: [0.08, 0.93] }, rim: null,
-      art: [{ art: 'official-vancouver-100', x: 62, y: 40, width: 176, height: 80 }],
-      shapes: [{ kind: 'line', x1: 20, y1: 139, x2: 280, y2: 139, stroke: '#58c247', strokeWidth: 2.4 }, { kind: 'line', x1: 20, y1: 143, x2: 280, y2: 143, stroke: '#2b62b0', strokeWidth: 2.4 }],
-      legends: [{ text: 'VANCOUVER', x: 150, baseline: 32, cap: 17, maxWidth: 130, die: 'bc-legend-1940', role: 'city' },
-        ...column([...'1886'], 30, 46, 22, 17, 'bc-legend-condensed', 'from').map((t) => ({ ...t, color: '#3aa53a' })),
-        ...column([...'1986'], 270, 46, 22, 17, 'bc-legend-condensed', 'to').map((t) => ({ ...t, color: '#3aa53a' }))],
-      fontLegends: [sans('city of the century', 150, 131, 13, '#2b62b0', undefined, 700)], serial: NO_NUMBER }),
+      embossed: false, radius: 7, background: '#f3f5f2', ink: '#0047BA', holes: 'slots', holeAt: { x: [0.22, 0.79], y: [0.10, 0.90] }, rim: null,
+      note: `${NOTE} User-supplied geometric Centennial reconstruction; colours and physical placement are approximate.`,
+      art: [{ art: 'official-vancouver-100', x: 76, y: 15, width: 148, height: 113 }],
+      shapes: [{ kind: 'line', x1: 8, y1: 136, x2: 292, y2: 136, stroke: '#38B114', strokeWidth: 3.4 }, { kind: 'line', x1: 8, y1: 143, x2: 292, y2: 143, stroke: '#0047BA', strokeWidth: 3.4 }],
+      legends: [...column([...'1886'], 53, 37, 19, 14, 'bc-legend-1973', 'from').map((t) => ({ ...t, color: '#38B114' })),
+        ...column([...'1986'], 247, 37, 19, 14, 'bc-legend-1973', 'to').map((t) => ({ ...t, color: '#0047BA' }))],
+      fontLegends: [], serial: NO_NUMBER }),
     grammar: noNumber,
-    description: 'Souvenir for Vancouver’s centennial, sold alongside the Expo 86 items: VANCOUVER, the 100 logo with the city skyline, and 1886 / 1986 at the sides.' },
+    description: 'Vancouver Centennial souvenir: supplied outlined VANCOUVER and city of the century wordmarks, joined 100, mountain bands, skyline and water. The supplied artwork is a geometric reconstruction. Green 1886 and blue 1986 columns follow the photographed souvenir; original font attribution remains a visual identification.' },
 ];
 
 export const BC_OFFICIAL_FORMATS: PlateFormat[] = [...hamSpecs, ...officialSpecs, ...eventSpecs].map((s) => kitFormat({

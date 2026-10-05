@@ -6,6 +6,7 @@
  */
 import { node as n, type SvgNode } from '../svg-scene';
 import { registerArtwork } from './art';
+import {vancouverCentennialArtwork, VANCOUVER_CENTENNIAL_VIEWBOX} from './vancouver-centennial';
 import { totemEmblemSymbol } from './totem-emblem';
 
 const GOLD = '#c9a646', RED = '#c8202e', BLUE = '#1f3f8f', WHITE = '#ffffff';
@@ -184,18 +185,6 @@ function polarBear(): SvgNode[] {
 }
 
 /** Vancouver centennial "100" mark, 180 × 90: outline 1 and 00 with a green skyline and blue water lines. */
-function vancouver100(): SvgNode[] {
-  const blue = '#2b62b0', green = '#58c247';
-  const skyline = 'M40 52 V40 H46 V30 H52 V44 H58 V24 H64 V38 H72 V20 H78 V36 H86 V28 H92 V42 H100 V26 H108 V40 H116 V30 H124 V44 H132 V34 H140 V46 H150 V38 H160 V52 Z';
-  return [
-    n('path', { d: 'M8 20 L24 8 H34 V82 H22 V26 L10 32 Z', fill: 'none', stroke: blue, strokeWidth: 2.5 }),
-    n('ellipse', { cx: 76, cy: 45, rx: 36, ry: 38, fill: 'none', stroke: blue, strokeWidth: 2.5 }),
-    n('ellipse', { cx: 140, cy: 45, rx: 36, ry: 38, fill: 'none', stroke: blue, strokeWidth: 2.5 }),
-    n('path', { d: skyline, fill: green }),
-    ...[58, 64, 70, 76].map((y) => n('path', { d: `M40 ${y} H170`, stroke: blue, strokeWidth: 2 })),
-  ];
-}
-
 /** Totem-and-leaf emblem of the 1952 base (the shared passenger master, wrapped as artwork). */
 function totem(): SvgNode[] {
   const symbol = totemEmblemSymbol('official-totem-art');
@@ -214,5 +203,5 @@ registerArtwork('official-expo86', { viewBox: [225, 70], draw: expo86 });
 registerArtwork('official-royal-visit-1994', { viewBox: [100, 100], draw: royalVisit1994 });
 registerArtwork('official-victoria-seal', { viewBox: [40, 40], draw: victoriaSeal });
 registerArtwork('official-polar-bear', { viewBox: [300, 150], draw: polarBear, aspect: 'stretch' });
-registerArtwork('official-vancouver-100', { viewBox: [180, 90], draw: vancouver100 });
+registerArtwork('official-vancouver-100', { viewBox: VANCOUVER_CENTENNIAL_VIEWBOX, draw: vancouverCentennialArtwork });
 registerArtwork('official-totem', { viewBox: [960, 925], draw: totem });
