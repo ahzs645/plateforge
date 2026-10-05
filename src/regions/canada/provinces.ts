@@ -3,7 +3,8 @@
  * general-issue passenger plate of each, plus documented variants (Alberta's
  * 2026 Moraine Lake base, Ontario green-vehicle and 2020 blue plates, Québec
  * electric plates, NWT/Nunavut polar-bear plates). Serial rules and colours
- * follow the Wikipedia plate articles; artwork is our own simplified vector.
+ * follow the Wikipedia plate articles; artwork includes simplified vectors and
+ * the user-supplied background for the current NWT rendition.
  */
 import { withLettering } from '../../core/lettering';
 import { compilePattern } from '../../core/pattern';
@@ -464,7 +465,7 @@ const northwestTerritories = region({
     plate({
       id: 'standard', label: 'Polar bear · Spectacular (2010)', pattern: '999999', display: '123456', example: '331758',
       generate: (rng) => String(rng.int(300000, 379999)),
-      description: `Aluminum bear-shaped plate with a screened nature scene and the slogan “Spectacular”, rolled out July 1, 2010 (300000 to about 378949 by November 2024). The scene, colours and layout here are an unverified approximation. ${ART_NOTE}`,
+      description: `Aluminum bear-shaped plate with the slogan “Spectacular”, rolled out July 1, 2010 (300000 to about 378949 by November 2024). This rendition uses the supplied Aurora Over Arctic Wilderness background; it is not a verified original plate-printing master. Colours and layout remain approximate. ${ART_NOTE}`,
       references: ntRefs, period: [2010, 2026], status: 'uncertain',
     }),
     plate({

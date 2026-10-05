@@ -1,8 +1,8 @@
 /**
  * Artwork for the B.C. official, amateur-radio and ceremonial plates: maple
  * leaves, crowns, arms and crests, and the event logos (APEC 1997, Expo 86,
- * the 1994 Royal Visit badge). All are simplified flat vectors drawn from the
- * BCpl8s photographs: recognisable at plate size, not official artwork.
+ * the 1994 Royal Visit badge). Supplied vector reconstructions are used where
+ * available; other marks are simplified geometry based on BCpl8s photographs.
  */
 import { node as n, type SvgNode } from '../svg-scene';
 import { registerArtwork } from './art';
@@ -11,6 +11,7 @@ import { totemEmblemSymbol } from './totem-emblem';
 import { NWT_POLAR_BEAR_PATH, NWT_POLAR_BEAR_BORDER_PATH } from '../shapes/nwt-polar-bear';
 import royalCanadaArmsUrl from './assets/royal-canada-arms.png';
 import {apecGlobeArtwork, APEC_GLOBE_VIEWBOX} from './apec-globe';
+import {asiaPacificArtwork, ASIA_PACIFIC_VIEWBOX, pacificGatewayArtwork, PACIFIC_GATEWAY_VIEWBOX, royal1994Artwork, ROYAL_1994_VIEWBOX} from './supplied-event-emblems';
 
 const GOLD = '#c9a646', RED = '#c8202e', BLUE = '#1f3f8f', WHITE = '#ffffff';
 
@@ -112,25 +113,6 @@ function apecSticker(): SvgNode[] {
     n('text', { x: 35, y: 54, fill: '#333', fontFamily: 'Arial, Helvetica, sans-serif', fontSize: 7, textAnchor: 'middle' }, 'CANADA 1997'),
   ];
 }
-/** Federal "Canada's Year of Asia Pacific" mark, 40 × 36: jagged red leaf edge over teal swooshes. */
-function yearOfAsiaPacific(): SvgNode[] {
-  return [
-    n('path', { d: 'M14 20 L18 10 L21 14 L24 4 L27 12 L31 8 L30 16 L37 14 L32 22', fill: 'none', stroke: '#d0202e', strokeWidth: 2.2, strokeLinejoin: 'miter' }),
-    ...[0, 1, 2].map((i) => n('path', { d: `M3 ${24 + i * 4} Q14 ${16 + i * 4} 30 ${24 + i * 4}`, fill: 'none', stroke: '#2a8fa5', strokeWidth: 1.8 })),
-  ];
-}
-/** B.C. "Pacific Gateway" welcome symbol, 36 × 44: a blue gate framing six coloured tiles. */
-function pacificGateway(): SvgNode[] {
-  const tiles: Array<[number, number, string]> = [[9, 10, '#f2c230'], [19, 10, '#3a73c0'], [9, 19, '#3f9a45'], [19, 19, '#4fa0d8'], [9, 28, '#1f8a8a'], [19, 28, '#d12f2f']];
-  return [
-    n('path', { d: 'M1 3 Q18 0 35 3 L34 8 H2 Z', fill: '#1d3f8f' }),
-    n('rect', { x: 4, y: 8, width: 4, height: 36, fill: '#1d3f8f' }),
-    n('rect', { x: 28, y: 8, width: 4, height: 36, fill: '#1d3f8f' }),
-    ...tiles.map(([x, y, fill]) => n('rect', { x, y, width: 8.5, height: 8, fill })),
-    leaf(21, 29.5, 5, WHITE),
-  ];
-}
-
 /** Expo 86 wordmark, 225 × 70, heavy geometric letters in currentColor. */
 function expo86(): SvgNode[] {
   const s = { fill: 'none', stroke: 'currentColor', strokeWidth: 14, strokeLinejoin: 'round' as const };
@@ -143,18 +125,6 @@ function expo86(): SvgNode[] {
     n('circle', { cx: 181, cy: 48, r: 14, ...s, strokeWidth: 12 }),
     n('circle', { cx: 207, cy: 48, r: 14, ...s, strokeWidth: 12 }),
     n('path', { d: 'M193 46 C193 22 205 8 222 8', ...s, strokeWidth: 12 }),
-  ];
-}
-
-/** 1994 Royal Visit badge, 100 × 100: yellow disc, red leaf points, crown and E II R cypher. */
-function royalVisit1994(): SvgNode[] {
-  return [
-    leaf(-2, -2, 104, '#e2402e'),
-    n('circle', { cx: 50, cy: 52, r: 38, fill: '#f6c21c' }),
-    n('path', { d: 'M50 16 L56 34 L70 26 L64 44 L84 44 L64 58 L50 52 L36 58 L16 44 L36 44 L30 26 L44 34 Z', fill: '#ec8a2a', opacity: 0.65 }),
-    place(38, 22, 0.4, ...crown('#d9302a', '#f6c21c')),
-    n('text', { x: 50, y: 78, fill: '#d9302a', fontFamily: 'Georgia, "Times New Roman", serif', fontSize: 32, textAnchor: 'middle' }, 'E  R'),
-    n('text', { x: 50, y: 70, fill: '#d9302a', fontFamily: 'Georgia, "Times New Roman", serif', fontSize: 11, textAnchor: 'middle' }, 'II'),
   ];
 }
 
@@ -191,10 +161,10 @@ registerArtwork('royal-canada-arms-supplied', { viewBox: [1096, 1435], accuracy:
 registerArtwork('official-lg-crest', { viewBox: [100, 100], draw: lgCrest });
 registerArtwork('official-apec', { viewBox: APEC_GLOBE_VIEWBOX, draw: apecGlobe });
 registerArtwork('official-apec-sticker', { viewBox: [70, 60], draw: apecSticker });
-registerArtwork('official-asia-pacific', { viewBox: [40, 36], draw: yearOfAsiaPacific });
-registerArtwork('official-pacific-gateway', { viewBox: [36, 44], draw: pacificGateway });
+registerArtwork('official-asia-pacific', { viewBox: ASIA_PACIFIC_VIEWBOX, draw: asiaPacificArtwork });
+registerArtwork('official-pacific-gateway', { viewBox: PACIFIC_GATEWAY_VIEWBOX, draw: pacificGatewayArtwork });
 registerArtwork('official-expo86', { viewBox: [225, 70], draw: expo86 });
-registerArtwork('official-royal-visit-1994', { viewBox: [100, 100], draw: royalVisit1994 });
+registerArtwork('official-royal-visit-1994', { viewBox: ROYAL_1994_VIEWBOX, draw: royal1994Artwork });
 registerArtwork('official-victoria-seal', { viewBox: [40, 40], draw: victoriaSeal });
 registerArtwork('official-polar-bear', { viewBox: [600, 300], draw: polarBear });
 registerArtwork('official-vancouver-100', { viewBox: VANCOUVER_CENTENNIAL_VIEWBOX, draw: vancouverCentennialArtwork });

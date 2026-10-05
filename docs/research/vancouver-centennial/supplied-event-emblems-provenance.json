@@ -1,0 +1,47 @@
+[
+  {
+    "attachment": "canada-asia-pacific-1997-vector-package.zip",
+    "master": "canada-asia-pacific-1997-emblem.svg",
+    "sha256": "d0bf36c7e8cd76914e12a76b1a02c435d8e62d677b283d5e87a0c36ba1b87a03",
+    "viewBox": [
+      2.0,
+      2.0,
+      86.0,
+      84.0
+    ],
+    "paths": 4,
+    "method": "Preserve supplied path geometry, transforms, colours and clipping; namespace IDs. Reconstructed vectors, not authenticated historical masters."
+  },
+  {
+    "attachment": "maple-leaf-emblem-vector-package.zip",
+    "master": "maple-leaf-emblem.svg",
+    "sha256": "e7d15856e89e0ef1a8809376ddfd08cc7c16dfe64047a7c9109d0357150580b8",
+    "viewBox": [
+      0.0,
+      0.0,
+      1254.0,
+      1254.0
+    ],
+    "paths": 30,
+    "method": "Preserve supplied path geometry, transforms, colours and clipping; namespace IDs. Reconstructed vectors, not authenticated historical masters."
+  },
+  {
+    "attachment": "crowned-eiir-maple-emblem.svg",
+    "master": "crowned-eiir-maple-emblem.svg",
+    "sha256": "57c04da3360f60a6b8249fe582a43b2ab7dc0e8fa72c6ca3464d17c183d562d0",
+    "viewBox": [
+      0.0,
+      0.0,
+      250.0,
+      250.0
+    ],
+    "paths": 14,
+    "method": "Preserve supplied path geometry, transforms, colours and clipping; namespace IDs. Reconstructed vectors, not authenticated historical masters."
+  },
+  {
+    "attachment": "Aurora Over Arctic Wilderness.png.zip",
+    "master": "Aurora Over Arctic Wilderness.png",
+    "sha256": "3bebaa2a2bcd915032d763b2d4ad695a2c4c95ea447f958644426fefe241c900",
+    "method": "Original PNG bytes preserved; uniform centre-fill over 600\u00d7300 plate plane, clipped to NWT cut silhouette and mounting holes. User-supplied artwork for the current preset, not an authenticated original plate background."
+  }
+]

@@ -150,7 +150,10 @@ describe('Canadian provinces and territories', () => {
       expect(svg).toContain(`<g mask="url(#${mask![1]})">`);
       expect(svg).toContain(`<path d="${NWT_POLAR_BEAR_BORDER_PATH}" fill="none"`);
       expect(svg).toContain('data-role="inset-border"');
-      expect(svg).not.toMatch(/<image\b/);
+      if (id === 'standard') {
+        expect(svg).toContain('data-source="user-supplied-aurora-over-arctic-wilderness"');
+        expect(svg).toContain('preserveAspectRatio="xMidYMid slice"');
+      } else expect(svg).not.toMatch(/<image\b/);
     }
   });
 

@@ -2,13 +2,14 @@
  * Canadian provincial / territorial 12×6″ plates. A richer sibling of the US
  * template: header + slogan labels, illustrated backgrounds, placed emblems,
  * an emblem drawn in place of the serial's `·`, and the polar-bear outline.
- * All artwork is simple original geometry, not traced from plate photos.
+ * Artwork combines constructed geometry with supplied background imagery.
  */
 import { useId, type ReactElement } from 'react';
 import type { Parts, PlateTemplate } from '../core/types';
 import { isLetteringType, letteringMetadata } from '../core/lettering';
 import { buildLettering, letteringLayout, supportsLettering } from './lettering';
 import { SvgScene } from './SvgScene';
+import ntAuroraUrl from '../assets/nt-aurora.png';
 import { CONDENSED, FONTS } from './fonts';
 import { fit, measure, safeId } from './measure';
 import {
@@ -411,12 +412,8 @@ function Scene({ kind, id }: { kind: CaScene; id: string }) {
     case 'nt-spectacular':
       return (
         <g data-scene={kind}>
-          <defs>
-            <linearGradient id={`${id}ntsky`} x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="#bfe3f5" /><stop offset="0.6" stopColor="#ffffff" /></linearGradient>
-          </defs>
-          <rect width={W} height={H} fill={`url(#${id}ntsky)`} />
-          <path d="M60 104 C160 70 260 110 360 84 C440 62 500 80 560 64" fill="none" stroke="#5ed69b" strokeWidth="14" strokeOpacity="0.35" strokeLinecap="round" />
-          <path d="M0 236 L90 214 L150 226 L230 206 L320 222 L400 208 L480 222 L560 212 L600 220 V300 H0 Z" fill="#9ec3de" opacity="0.7" />
+          <image href={ntAuroraUrl} width={W} height={H} preserveAspectRatio="xMidYMid slice"
+            data-source="user-supplied-aurora-over-arctic-wilderness" />
         </g>
       );
   }

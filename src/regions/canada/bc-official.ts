@@ -207,6 +207,7 @@ export const BC_OFFICIAL_ERAS: PlateEra[] = [
 interface Spec {
   id: string; label: string; family: 'ham-radio' | 'official' | 'events'; era: string; period: [number, number];
   recipe: KitRecipe; grammar: SerialGrammar; description: string; status?: PlateStatus;
+  references?: readonly {title: string; url: string}[];
   palettes?: KitPalette[]; dies?: { id: string; label?: string }[]; decals?: [number, number];
 }
 
@@ -503,13 +504,14 @@ const eventSpecs: Spec[] = [
   { id: 'events-apec-1997', label: 'APEC 1997 motorcade (ICBC)', family: 'events', era: 'events-apec-1997', period: [1997, 1997],
     recipe: recipe('events-apec-1997', 'APEC 1997 motorcade', { w: 300, h: 150 }, SRC.apec, {
       radius: 7, background: '#ece6e0', ink: '#1f8aa0', holes: 'slots', holeAt: { x: [0.21, 0.79], y: [0.113, 0.88] }, rim: { inset: 4.5, width: 1.2, color: '#c5cfda' },
-      note: `${NOTE} Size assumed from the contemporary 300 × 150 mm base; logos are simplified.`,
+      note: `${NOTE} Size assumed from the contemporary 300 × 150 mm base; the three logos use supplied vector reconstructions; historical colours and placement remain approximate.`,
       art: [{ art: 'official-asia-pacific', x: 8, y: 9, width: 34, height: 30 }, { art: 'official-pacific-gateway', x: 257, y: 7, width: 30, height: 37 },
         { art: 'official-apec', x: 12, y: 47, width: 134, height: 68 }],
       fontLegends: [sans('Vancouver', 150, 27, 16, '#222'), sans('British Columbia', 150, 45, 16, '#222'), sans('Canada', 80, 132, 10, '#222'), sans('Nov. 19 - 25 1997', 80, 140, 6, '#222')],
       legends: [], serial: { x: 226, baseline: 124, cap: 66, maxWidth: 130, die: 'bc-astro-4', separator: { kind: 'none' } } }),
     grammar: numericGrammar([[100, 350]], false),
-    description: 'ICBC made 250 pairs for the APEC leaders’ motorcade, thought to run from No. 100 to No. 350: teal embossed number, the APEC globe, the federal “Canada’s Year of Asia Pacific” mark (top left) and B.C.’s “Pacific Gateway” welcome symbol (top right).' },
+    references: [{title: 'Agriculture and Agri-Food Canada · Agriculture and agri-food moving forward (1997), p. 3', url: 'https://publications.gc.ca/collections/collection_2014/aac-aafc/agrhist/A22-165-1997-eng.pdf#page=3'}],
+    description: 'ICBC made 250 pairs for the APEC leaders’ motorcade, thought to run from No. 100 to No. 350: teal embossed number, the APEC globe, the federal “Canada’s Year of Asia Pacific” mark (top left) and B.C.’s “Pacific Gateway” welcome symbol (top right). The Asia Pacific logo is a stylized crane whose wings evoke a Canadian maple leaf, designed by Amy Ho, then a first-year design student at Kwantlen University College in Richmond, B.C. Canada’s Year of Asia Pacific began in January 1997 to strengthen trade and cultural links with Asia. A contemporary Agriculture and Agri-Food Canada publication reported more than $4.4 billion in agri-food exports to the area in 1995–96.' },
   { id: 'events-apec-1997-military', label: 'APEC 1997 · CANADA military', family: 'events', era: 'events-apec-1997', period: [1997, 1997],
     recipe: recipe('events-apec-military', 'APEC 1997 military CANADA plate', { w: 300, h: 150 }, SRC.apec, {
       radius: 7, background: '#ebe0d6', ink: '#151515', holes: 'slots', holeAt: { x: [0.2, 0.78], y: [0.07, 0.93] }, rim: { inset: 3.5, width: 1.4, color: '#2c4a3c' },
@@ -594,5 +596,6 @@ const eventSpecs: Spec[] = [
 export const BC_OFFICIAL_FORMATS: PlateFormat[] = [...hamSpecs, ...officialSpecs, ...eventSpecs].map((s) => kitFormat({
   id: s.id, label: s.label, family: s.family, era: s.era, period: s.period, ...(s.status ? { status: s.status } : {}),
   recipe: s.recipe, grammar: s.grammar, description: s.description,
+  ...(s.references ? {references: s.references} : {}),
   ...(s.palettes ? { palettes: s.palettes } : {}), ...(s.dies ? { dies: s.dies } : {}), ...(s.decals ? { decals: s.decals } : {}),
 }));
