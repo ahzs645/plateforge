@@ -1,8 +1,8 @@
 {
-  "date": "2026-10-05",
-  "site": "http://127.0.0.1:5176/plateforge/",
-  "references": 54,
-  "supportedOn1985Base": 19,
+  "date": "2026-10-06",
+  "site": "http://127.0.0.1:5177/plateforge/",
+  "references": 55,
+  "supportedOn1985Base": 20,
   "sameYearVariantApplied": true,
   "serialMonthStylePreserved": true,
   "clearDecal": true,

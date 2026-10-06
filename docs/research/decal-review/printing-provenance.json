@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-06",
+  "sources": [
+    {
+      "profile": "heavy-month",
+      "postscriptName": "Helvetica-Compressed",
+      "sha256": "527a04336e66738691d16f740863fe853ff5fff022bce5b1270c8039b6b61a39",
+      "horizontalConstruction": 0.72,
+      "capUnits": 712,
+      "notes": "Width reconstruction on supplied curves; no historical font attribution."
+    },
+    {
+      "profile": "heavy-year",
+      "postscriptName": "Helvetica-Compressed",
+      "sha256": "527a04336e66738691d16f740863fe853ff5fff022bce5b1270c8039b6b61a39",
+      "horizontalConstruction": 0.72,
+      "capUnits": 712,
+      "notes": "Width reconstruction on supplied curves; no historical font attribution."
+    },
+    {
+      "profile": "heavy-month-wide",
+      "postscriptName": "Helvetica-Compressed",
+      "sha256": "527a04336e66738691d16f740863fe853ff5fff022bce5b1270c8039b6b61a39",
+      "horizontalConstruction": 1.0,
+      "capUnits": 712,
+      "notes": "Native supplied-font curves; candidate printing, not recovered historical font."
+    },
+    {
+      "profile": "heavy-year-wide",
+      "postscriptName": "Helvetica-Compressed",
+      "sha256": "527a04336e66738691d16f740863fe853ff5fff022bce5b1270c8039b6b61a39",
+      "horizontalConstruction": 0.9,
+      "capUnits": 712,
+      "notes": "Width reconstruction on supplied curves; no historical font attribution."
+    },
+    {
+      "profile": "normal",
+      "postscriptName": "NimbusSans-Bold",
+      "sha256": "7f33328e6b4d4cd21b45fa625791928c9407dc702db6780e56b09ca9a3ecaa67",
+      "horizontalConstruction": 1,
+      "capUnits": 729,
+      "notes": "Native open-font outlines; candidate printing, not recovered historical font."
+    },
+    {
+      "profile": "regular",
+      "postscriptName": "NimbusSans-Regular",
+      "sha256": "7c25be4d78155523080ab85b10277150657ff7dabbcad7037bdd536c9b6d0d08",
+      "horizontalConstruction": 1,
+      "capUnits": 729,
+      "notes": "Native open-font outlines; candidate printing, not recovered historical font."
+    },
+    {
+      "profile": "control",
+      "postscriptName": "NimbusSansNarrow-Regular",
+      "sha256": "0111cf7c05377c4f1685d37bfa8b3edd2033278122f69e0a9803a8514e352b99",
+      "horizontalConstruction": 1,
+      "capUnits": 718,
+      "notes": "Native open-font outlines; candidate printing, not recovered historical font."
+    },
+    {
+      "profile": "control-bold",
+      "postscriptName": "NimbusSansNarrow-Bold",
+      "sha256": "6d7cec07f5a9035e208532dab35a51312aef4a7f26eb524dd614c9fcd97c3264",
+      "horizontalConstruction": 1,
+      "capUnits": 718,
+      "notes": "Native open-font outlines; candidate printing, not recovered historical font."
+    },
+    {
+      "profile": "vertical-province",
+      "postscriptName": "NimbusRoman-Bold",
+      "sha256": "e0ad81923bc6d85d5426f796217c87963ca1ae3c65e22c87a25b6c6353de299e",
+      "horizontalConstruction": 1,
+      "capUnits": 676,
+      "notes": "Native open-font outlines; candidate printing, not recovered historical font."
+    }
+  ],
+  "fontSoftwareBundled": false
+}

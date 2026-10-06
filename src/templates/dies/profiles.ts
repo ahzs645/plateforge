@@ -5,6 +5,7 @@
  * reconstructions for illustration, not recovered tooling.
  */
 import type { DieProfile } from './engine';
+import { DECAL_PRINTING_PROFILES } from './decal-printing';
 import { FRANKFURTER_EXPO_PROFILE } from './frankfurter-expo';
 import { FRANKFURTER_CENTENNIAL_YEARS_PROFILE } from './frankfurter-centennial-years';
 import { ROYAL_1987_PROFILE } from './royal-1987';
@@ -21,6 +22,7 @@ const page = (period: string) => ({ title: `BCpl8s · Passenger ${period.replace
 const lettersNote = 'Letters follow the same construction and were checked against plate photos only.';
 
 export const DIE_PROFILES: readonly DieProfile[] = [
+  ...DECAL_PRINTING_PROFILES,
   FRANKFURTER_EXPO_PROFILE,
   FRANKFURTER_CENTENNIAL_YEARS_PROFILE,
   ROYAL_1987_PROFILE,

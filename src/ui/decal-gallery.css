@@ -13,11 +13,15 @@
 .decal-gallery-checkbox { display: flex; align-items: center; gap: 8px; font-size: 13px; }
 .decal-gallery-checkbox input { width: auto; }
 .decal-gallery-note { color: var(--muted); font-size: 13px; line-height: 1.6; }
-.decal-gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 16px; }
+.decal-gallery-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 360px), 1fr)); gap: 16px; }
 .decal-card { display: flex; flex-direction: column; min-width: 0; padding: 16px; border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--surface); }
 .decal-card[data-selected="true"] { border-color: var(--accent); }
 .decal-card-art { display: flex; align-items: center; height: 100px; padding: 12px; background: var(--surface-2); border-radius: var(--radius-sm); }
 .decal-card-art svg { display: block; width: 100%; max-height: 76px; }
+.decal-card-art img { display: block; width: 100%; max-height: 76px; object-fit: contain; }
+.decal-card-comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+.decal-card-comparison figure { margin: 0; min-width: 0; }
+.decal-card-comparison figcaption { color: var(--muted); font-size: 11px; margin-top: 6px; }
 .decal-card h2 { font-size: 19px; margin: 16px 0 8px; }
 .decal-card h2 span { font-weight: 400; }
 .decal-card p { overflow-wrap: anywhere; margin: 4px 0 8px; }
@@ -28,4 +32,5 @@
   .decal-gallery-layout { grid-template-columns: minmax(0, 1fr); gap: 16px; }
   .decal-current { position: static; }
   .decal-current-plate { max-width: 430px; margin: 0 auto; }
+  .decal-card-art { padding: 6px; height: 78px; }
 }

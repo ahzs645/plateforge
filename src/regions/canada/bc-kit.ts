@@ -99,11 +99,19 @@ function derived(seed: string, digits: number): string {
 export function decalArt(decal: BcDecal, parts: Record<string, string | undefined>): DecalArt {
   const month = MONTHS.includes(parts.decalMonth as typeof MONTHS[number]) ? parts.decalMonth : 'JAN';
   const seed = parts.serial ?? '';
+  const enteredControl = parts.decalSerial && new RegExp(`^\\d{${decal.digits}}$`).test(parts.decalSerial) ? parts.decalSerial : undefined;
   return {
     style: decal.style, background: decal.background, ink: decal.ink, serialInk: decal.serialInk,
-    aspect: decal.style === 'annual' ? 1.9 : decal.style === 'solid' && decal.year >= 2005 ? 2.3 : 3.3,
-    ...(decal.year >= 1980 ? { month } : {}), year: String(decal.year).slice(2),
-    ...(decal.digits ? { serial: derived(`${seed}/${decal.year}`, decal.digits) } : {}),
+    system: decal.specimen?.system,
+    ...(decal.variant==='type-ii'?{controlRegular:true}:{}),
+    aspect: decal.specimen?.aspect ?? (decal.style === 'annual' ? 1.9 : decal.style === 'solid' && decal.year >= 2005 ? 2.3 : 3.3),
+    ...(decal.year === 1980 ? { fullProvincePanel: true } : {}),
+    ...(decal.year === 1984 ? {panelLayout:'vertical-sides' as const} : decal.year===1985 ? {panelLayout:'province-bottom' as const} : {}),
+    ...(decal.year === 1986 ? {expo86: true} : {}),
+    ...(decal.style === 'panel' ? {panelCentre: {background:[1981,1982].includes(decal.year)?decal.background:'#eef0e4', ink:decal.year===1983?'#111111':[1981,1982].includes(decal.year)?decal.ink:decal.background, serialInk:decal.year===1987?decal.background:'#171717', ...([1981,1982].includes(decal.year)?{controlBackground:'#f4f1e7'}:{})}} : {}),
+    ...(decal.year===1999 && decal.variant==='white' || decal.year>=2000 && decal.year<=2003 ? {borderRatio:.025,doubleBorder:true}:{}),
+    ...(decal.year >= 1980 ? { month } : {}), year: decal.year >= 2014 ? String(decal.year) : String(decal.year).slice(2),
+    ...(decal.digits ? { serial: enteredControl || derived(`${seed}/${decal.year}`, decal.digits) } : {}),
     ...(decal.year >= 1993 ? { day: String(1 + (Number(derived(seed, 2)) % 28)) } : {}),
   };
 }
@@ -138,6 +146,7 @@ export function kitFormat(spec: KitFormatSpec): PlateFormat {
     ...(paletteOptions.length > 1 ? [{ key: 'palette', label: 'Year / colours', options: paletteOptions, preserveOnGenerate: true }] : []),
     ...(dieOptions.length > 1 ? [{ key: 'die', label: 'Serial die', options: dieOptions, preserveOnGenerate: true }] : []),
     ...(decalOptions.length ? [{ key: 'decal', label: 'Renewal decal', options: decalOptions, preserveOnGenerate: true }] : []),
+    ...(decalOptions.length ? [{key:'decalSerial',label:'Decal control (optional)',maxLength:8,preserveOnGenerate:true}] : []),
     ...(monthField ? [{ key: 'decalMonth', label: 'Decal month', options: MONTHS.map((m) => ({ value: m, label: m })), preserveOnGenerate: true }] : []),
     ...(spec.recipe.renewalPanel ? [{key: 'renewal', label: 'Renewal tab', preserveOnGenerate: true, options: [
       {value: 'on-plate', label: 'Mounted over the 1952 base'}, {value: 'base-only', label: 'Show 1952 base only'}, {value: 'loose', label: 'Tab on its own'},
@@ -168,7 +177,7 @@ export function kitFormat(spec: KitFormatSpec): PlateFormat {
       serial: generateSerial(rng),
       ...(paletteOptions.length > 1 ? { palette: paletteOptions[0].value } : {}),
       ...(dieOptions.length > 1 ? { die: dieOptions[0].value } : {}),
-      ...(decalOptions.length ? { decal: 'blank' } : {}),
+      ...(decalOptions.length ? { decal: 'blank', decalSerial: '' } : {}),
       ...(monthField ? { decalMonth: 'JAN' } : {}),
       ...(spec.recipe.renewalPanel ? {renewal: 'on-plate'} : {}),
       ...(spec.recipe.embossed ? { finish: 'flat' } : {}),
@@ -181,6 +190,8 @@ export function kitFormat(spec: KitFormatSpec): PlateFormat {
       if (!spec.recipe.serial.font && !dieSupports(dieProfile(die), serial.replace('-', ''))) return 'This die has no glyph for one of these characters.';
       if (parts.palette !== undefined && paletteOptions.length && !paletteOptions.some((o) => o.value === parts.palette)) return 'Choose a listed year.';
       if (parts.decal !== undefined && !decalOptions.some((o) => o.value === parts.decal)) return 'Choose a listed renewal decal.';
+      const chosen = decals.find(decal => decalId(decal) === parts.decal);
+      if (parts.decalSerial && chosen && !new RegExp(`^\\d{${chosen.digits}}$`).test(parts.decalSerial)) return 'Enter the selected decal’s control digits, or leave blank.';
       if (parts.decalMonth !== undefined && !(MONTHS as readonly string[]).includes(parts.decalMonth)) return 'Choose a decal month.';
       if (parts.finish !== undefined && !['flat', 'embossed'].includes(parts.finish)) return 'Choose flat or embossed rendering.';
       if (spec.recipe.renewalPanel && parts.renewal !== undefined && !['on-plate', 'base-only', 'loose'].includes(parts.renewal)) return 'Choose how the renewal tab is shown.';

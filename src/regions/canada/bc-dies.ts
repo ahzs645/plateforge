@@ -30,14 +30,17 @@ export function withBcDecals(format: PlateFormat, years: readonly [number, numbe
   const months = decals.some((d) => d.year >= 1980);
   const options = [{ value: 'blank', label: 'Empty box' }, ...decals.map((d) => ({ value: decalId(d), label: `${d.year}${d.variant ? ` (${d.variant})` : ''} · ${d.colours}` }))];
   const fields: FieldDef[] = [{ key: 'decal', label: 'Renewal decal', options, preserveOnGenerate: true },
+    {key:'decalSerial',label:'Decal control (optional)',maxLength:8,preserveOnGenerate:true},
     ...(months ? [{ key: 'decalMonth', label: 'Decal month', options: MONTHS.map((m) => ({ value: m, label: m })), preserveOnGenerate: true }] : [])];
   const at = format.fields.findIndex((f) => f.key === 'finish');
   return {
     ...format,
     fields: [...format.fields.slice(0, at), ...fields, ...format.fields.slice(at)],
-    generate: (rng) => ({ ...format.generate(rng), decal: 'blank', ...(months ? { decalMonth: 'JAN' } : {}) }),
+    generate: (rng) => ({ ...format.generate(rng), decal: 'blank', decalSerial: '', ...(months ? { decalMonth: 'JAN' } : {}) }),
     validate: (parts) => {
       if (parts.decal !== undefined && !options.some((o) => o.value === parts.decal)) return 'Choose a listed renewal decal.';
+      const chosen = decals.find(decal => decalId(decal) === parts.decal);
+      if (parts.decalSerial && chosen && !new RegExp(`^\\d{${chosen.digits}}$`).test(parts.decalSerial)) return 'Enter the selected decal’s control digits, or leave blank.';
       if (parts.decalMonth !== undefined && !(MONTHS as readonly string[]).includes(parts.decalMonth)) return 'Choose a decal month.';
       return format.validate?.(parts) ?? null;
     },

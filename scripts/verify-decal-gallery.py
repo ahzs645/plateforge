@@ -23,14 +23,16 @@ async def main():
   assert page.url.endswith('#/decals/ca-bc/1985-flag')
   count=await page.locator('.decal-card').count();assert count>=50
   assert not await page.locator('[data-decal-id="1973"], [data-decal-id="1979"]').count()
-  assert not await page.locator('img').count()
-  assert await page.locator('[data-decal-id="2023"] button').is_disabled()
+  assert await page.locator('.decal-card img').count()==count
+  assert count==55
+  assert await page.get_by_role('link',name='Full photograph / previous / current review ↗').count()==1
+  assert await page.locator('[data-decal-id="2023"] button:first-of-type').is_disabled()
   await page.get_by_label('Choices for this plate',exact=True).check()
   supported=await page.locator('.decal-card').count();assert supported<count
   assert not await page.locator('[data-decal-id="2023"]').count()
   await page.get_by_label('Find a decal',exact=True).fill('1996')
   assert await page.locator('.decal-card').count()==2
-  await page.locator('[data-decal-id="1996-pink"] button').click()
+  await page.locator('[data-decal-id="1996-pink"] button:first-of-type').click()
   assert await page.locator('[data-decal-id="1996-pink"]').get_attribute('data-selected')=='true'
   assert await page.locator('.decal-current').get_by_role('status').text_content()=='Renewal decal: 1996 · pink'
   assert await page.get_by_label('Gallery decal month',exact=True).input_value()=='APR'
@@ -58,7 +60,7 @@ async def main():
   assert not await page.locator('.decal-current-plate [data-role="renewal-decal"]').count()
   await page.set_viewport_size({'width':390,'height':844})
   await page.get_by_label('Find a decal',exact=True).fill('1986')
-  await page.locator('[data-decal-id="1986"] button').click()
+  await page.locator('[data-decal-id="1986"] button:first-of-type').click()
   assert await page.locator('.decal-current-plate [data-role="renewal-decal"]').count()==1
   assert await page.evaluate('document.documentElement.scrollWidth<=innerWidth+1')
   await page.screenshot(path=str(out/'gallery-mobile.png'),full_page=True)
@@ -74,7 +76,7 @@ async def main():
   await page.locator('.plate-preview svg').wait_for()
   assert not await page.get_by_role('tab',name='Decals',exact=True).count()
   assert not errors and not failed,(errors,failed)
-  result={'date':'2026-10-05','site':base,'references':count,'supportedOn1985Base':supported,'sameYearVariantApplied':True,'serialMonthStylePreserved':True,'clearDecal':True,'svg':True,'png':True,'mobile':True,'carrierExcludedFromPassengerDecals':True,'unavailableProvinceHasNoDecalTab':True,'errors':errors,'failedResources':failed}
+  result={'date':'2026-10-06','site':base,'references':count,'supportedOn1985Base':supported,'sameYearVariantApplied':True,'serialMonthStylePreserved':True,'clearDecal':True,'svg':True,'png':True,'mobile':True,'carrierExcludedFromPassengerDecals':True,'unavailableProvinceHasNoDecalTab':True,'errors':errors,'failedResources':failed}
   report=Path(os.environ.get('DECAL_REPORT',root/'docs/research/province-decal-gallery/browser-verification.json'));report.parent.mkdir(parents=True,exist_ok=True);report.write_text(json.dumps(result,indent=2)+'\n')
   print(json.dumps(result));await browser.close()
 asyncio.run(main())

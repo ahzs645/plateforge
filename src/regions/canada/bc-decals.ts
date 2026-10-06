@@ -1,3 +1,5 @@
+import specimens from './bc-decal-specimens.json';
+
 /**
  * Passenger renewal decals, 1970–2023: colours read from BCpl8s decal photos
  * (aged scans, so approximate), serial length by period, and the layout style of
@@ -16,8 +18,10 @@ export interface BcDecal {
   digits: number;
   colours: string;
   image: string;
+  /** Individually inspected source/layout record, independent of palette. */
+  specimen?: DecalSpecimen;
 }
-export const BC_DECALS: readonly BcDecal[] = [
+const BASE_DECALS: readonly BcDecal[] = [
   { year: 1970, style: 'annual', background: '#2671a0', ink: '#e8ebef', serialInk: '#e8ebef', digits: 0, colours: "blue / white", image: 'https://www.bcpl8s.ca/images/Decals/Passenger/1970.jpg' },
   { year: 1971, style: 'annual', background: '#9d1a0f', ink: '#c98e12', serialInk: '#c98e12', digits: 6, colours: "red / yellow/gold", image: 'https://www.bcpl8s.ca/images/Decals/Passenger/1971.jpg' },
   { year: 1972, style: 'annual', background: '#d89d09', ink: '#425611', serialInk: '#425611', digits: 6, colours: "yellow/gold / dark green", image: 'https://www.bcpl8s.ca/images/Decals/Passenger/1972.jpg' },
@@ -48,15 +52,16 @@ export const BC_DECALS: readonly BcDecal[] = [
   { year: 1999, style: 'bordered', background: '#f4f5ef', ink: '#084da7', serialInk: '#111111', digits: 8, colours: "white/pale centre inside a thick blue border / blue", image: 'https://www.bcpl8s.ca/images/Decals/Passenger/1999-thick.jpg' },
   { year: 1996, variant: 'pink', style: 'bordered', background: '#f4f5ef', ink: '#c62f76', serialInk: '#111111', digits: 8, colours: "white centre, thick pink/magenta border / pink/magenta", image: 'https://www.bcpl8s.ca/images/Decals/Passenger/1996-pink.jpg' },
   { year: 1998, variant: 'type-ii', style: 'bordered', background: '#f4f5ef', ink: '#a6220a', serialInk: '#111111', digits: 8, colours: "white centre, red border / red", image: 'https://www.bcpl8s.ca/images/Decals/Passenger/1998/1998-May-34838894.jpg' },
-  { year: 1999, variant: 'white', style: 'solid', background: '#e1e2dc', ink: '#074cb9', serialInk: '#111111', digits: 8, colours: "white / blue", image: 'https://www.bcpl8s.ca/images/Decals/Passenger/1999-61152006.jpg' },
+  { year: 1999, variant: 'white', style: 'solid', background: '#e1e2dc', ink: '#074cb9', serialInk: '#074cb9', digits: 8, colours: "white / blue", image: 'https://www.bcpl8s.ca/images/Decals/Passenger/1999-61152006.jpg' },
   { year: 2000, style: 'solid', background: '#f4c81c', ink: '#1a0d05', serialInk: '#111111', digits: 8, colours: "yellow / black", image: 'https://www.bcpl8s.ca/images/Decals/Passenger/2000-50803178.jpg' },
+  { year: 2001, style: 'solid', background: '#ed8c29', ink: '#111111', serialInk: '#111111', digits: 8, colours: 'orange / black', image: 'https://www.bcpl8s.ca/images/Decals/2001-76052343.jpg' },
   { year: 2002, style: 'solid', background: '#03b990', ink: '#0c1b1d', serialInk: '#111111', digits: 8, colours: "green (mint) / black", image: 'https://www.bcpl8s.ca/images/Decals/Passenger/2002.jpg' },
   { year: 2003, style: 'solid', background: '#da1d37', ink: '#0e0a0a', serialInk: '#111111', digits: 8, colours: "red (pinkish-red) / black", image: 'https://www.bcpl8s.ca/images/Decals/Passenger/2003-86273079.jpg' },
   { year: 2004, style: 'solid', background: '#e9cc12', ink: '#20160b', serialInk: '#111111', digits: 8, colours: "yellow / black", image: 'https://www.bcpl8s.ca/images/Decals/Passenger/2004.jpg' },
   { year: 2005, style: 'solid', background: '#207ae4', ink: '#0c1128', serialInk: '#111111', digits: 8, colours: "blue / black", image: 'https://www.bcpl8s.ca/images/Decals/Passenger/2005.jpg' },
   { year: 2006, style: 'solid', background: '#d62c2d', ink: '#110e11', serialInk: '#111111', digits: 8, colours: "red / black", image: 'https://www.bcpl8s.ca/images/Decals/Passenger/2006-21258417.jpg' },
   { year: 2007, style: 'solid', background: '#02b57e', ink: '#111d1b', serialInk: '#111111', digits: 8, colours: "green / black", image: 'https://www.bcpl8s.ca/images/Decals/Passenger/2007.jpg' },
-  { year: 2008, style: 'solid', background: '#0561b2', ink: '#7fafe4', serialInk: '#111111', digits: 8, colours: "blue / white/light blue", image: 'https://www.bcpl8s.ca/images/Decals/Passenger/2008.jpg' },
+  { year: 2008, style: 'solid', background: '#0561b2', ink: '#7fafe4', serialInk: '#7fafe4', digits: 8, colours: "blue / white/light blue", image: 'https://www.bcpl8s.ca/images/Decals/Passenger/2008.jpg' },
   { year: 2009, style: 'solid', background: '#e6682e', ink: '#1d1816', serialInk: '#111111', digits: 8, colours: "orange / black", image: 'https://www.bcpl8s.ca/images/Decals/Passenger/2009.jpg' },
   { year: 2010, style: 'solid', background: '#478605', ink: '#151513', serialInk: '#111111', digits: 8, colours: "green (lime) / black", image: 'https://www.bcpl8s.ca/images/Decals/Passenger/2010.jpg' },
   { year: 2011, style: 'solid', background: '#e0a319', ink: '#39260e', serialInk: '#111111', digits: 8, colours: "yellow/gold / black", image: 'https://www.bcpl8s.ca/images/Decals/Passenger/2011.jpg' },
@@ -73,6 +78,13 @@ export const BC_DECALS: readonly BcDecal[] = [
   { year: 2022, style: 'solid', background: '#20eae8', ink: '#1a1e21', serialInk: '#111111', digits: 8, colours: "cyan/aqua / black", image: 'https://www.bcpl8s.ca/images/Decals/Passenger/2022-72919128.jpg' },
   { year: 2023, style: 'solid', background: '#f57c26', ink: '#1a1e21', serialInk: '#111111', digits: 8, colours: "orange / black", image: 'https://www.bcpl8s.ca/images/Decals/Passenger/2023-52843353.jpg' },
 ];
+
+export interface DecalSpecimen {
+  system: string; aspect: number; crop: number[]; month: string | null; control: string | null; reviewNote: string;
+  photoInspected: boolean; reviewedOn: string; sourceSha256: string; sourcePixels: number[]; barcodeDecoded: boolean; thumbnail: string;
+}
+const reviews = specimens as Record<string, DecalSpecimen>;
+export const BC_DECALS: readonly BcDecal[] = BASE_DECALS.map(decal => ({...decal, specimen: reviews[`${decal.year}${decal.variant ? `-${decal.variant}` : ''}`]}));
 
 export const decalId = (d: BcDecal): string => `${d.year}${d.variant ? `-${d.variant}` : ''}`;
 export const decalsBetween = (from: number, to: number): BcDecal[] => BC_DECALS.filter((d) => d.year >= from && d.year <= to);

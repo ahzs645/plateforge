@@ -1,0 +1,1440 @@
+{
+  "reviewedOn": "2026-10-06",
+  "records": [
+    {
+      "id": "1970",
+      "year": 1970,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1970.jpg",
+      "system": "annual-outline",
+      "aspect": 1.9,
+      "crop": [
+        1,
+        1,
+        192,
+        99
+      ],
+      "month": null,
+      "control": null,
+      "reviewNote": "Outlined 70 above two province lines.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "365c0fd8f4978c6b650d056c11b127bfbc923b8732e936900908cc9edc63c6f1",
+      "sourcePixels": [
+        193,
+        100
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1970.webp"
+    },
+    {
+      "id": "1971",
+      "year": 1971,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1971.jpg",
+      "system": "annual-sun",
+      "aspect": 1.9,
+      "crop": [
+        1,
+        1,
+        189,
+        99
+      ],
+      "month": null,
+      "control": "553645",
+      "reviewNote": "Province above boxed control; 71 at lower right; simplified sun.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "8ba2bc1e206af4d44cbea46b85b96ddbc8a28665049b70c9b9be1863d9759fa7",
+      "sourcePixels": [
+        190,
+        100
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1971.webp"
+    },
+    {
+      "id": "1972",
+      "year": 1972,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1972.jpg",
+      "system": "annual-tall",
+      "aspect": 1.9,
+      "crop": [
+        1,
+        1,
+        179,
+        99
+      ],
+      "month": null,
+      "control": "910938",
+      "reviewNote": "Tall left 72; boxed control at upper right.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "be7b7d4855c27602cb1fe33b61b9356d143b3aaa89546817cbff1cc99fb7839e",
+      "sourcePixels": [
+        180,
+        100
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1972.webp"
+    },
+    {
+      "id": "1974",
+      "year": 1974,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1974.jpg",
+      "system": "annual-stacked",
+      "aspect": 1.9,
+      "crop": [
+        1,
+        1,
+        178,
+        99
+      ],
+      "month": null,
+      "control": "512986",
+      "reviewNote": "Stacked 7/4 right, class word below control.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "66d51fcae1e6d3e9b08414b29bba23461b56f2130652fc54469c54e3f7ef1752",
+      "sourcePixels": [
+        179,
+        100
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1974.webp"
+    },
+    {
+      "id": "1975",
+      "year": 1975,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1975.jpg",
+      "system": "annual-class",
+      "aspect": 1.49,
+      "crop": [
+        1,
+        1,
+        148,
+        99
+      ],
+      "month": null,
+      "control": "6029768",
+      "reviewNote": "Upper-left province, 75 right, class words and boxed control.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "ce5c39c5772b75a87ddedad1d46e2ecadd9f34ad2013ac4b33ab7a88a421bf5e",
+      "sourcePixels": [
+        149,
+        100
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1975.webp"
+    },
+    {
+      "id": "1976",
+      "year": 1976,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1976.jpg",
+      "system": "annual-small-year",
+      "aspect": 1.6,
+      "crop": [
+        1,
+        1,
+        159,
+        99
+      ],
+      "month": null,
+      "control": "1007289",
+      "reviewNote": "Small 76 shares the class line; simplified floral symbol.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "264c2405c740ac20838f5318ba1e4930b66b476ade29d7da87170afccc25bd15",
+      "sourcePixels": [
+        160,
+        100
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1976.webp"
+    },
+    {
+      "id": "1977",
+      "year": 1977,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1977.jpg",
+      "system": "annual-bc",
+      "aspect": 1.46,
+      "crop": [
+        1,
+        1,
+        145,
+        99
+      ],
+      "month": null,
+      "control": "7006989",
+      "reviewNote": "Stacked B/C beside 77; class line and boxed control.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "c17d88371b80477a4a6cf7a92007f29cdfa7a3360f6625a54a8dc98ddff28632",
+      "sourcePixels": [
+        146,
+        100
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1977.webp"
+    },
+    {
+      "id": "1978",
+      "year": 1978,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1978.jpg",
+      "system": "annual-combined",
+      "aspect": 1.86,
+      "crop": [
+        1,
+        1,
+        189,
+        101
+      ],
+      "month": null,
+      "control": "0718662",
+      "reviewNote": "Stacked PASS/COMM, BC and large 78 above control.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "3607b0af9652d9ab644e365cebfff8159eb9378ec2c17c9d1fba10743d4734bb",
+      "sourcePixels": [
+        190,
+        102
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1978.webp"
+    },
+    {
+      "id": "1980",
+      "year": 1980,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1980.jpg",
+      "system": "wide-province",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        252,
+        74
+      ],
+      "month": "APR",
+      "control": "44081403",
+      "reviewNote": "Full province line above wide month/control/year.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "e2935a1f5b541b7c10f98e05c6541f56897be6be94833aeb335ce13937ffea42",
+      "sourcePixels": [
+        253,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1980.webp"
+    },
+    {
+      "id": "1981",
+      "year": 1981,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1981.jpg",
+      "system": "panel-control-below",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        248,
+        74
+      ],
+      "month": "SEP",
+      "control": "62077821",
+      "reviewNote": "Continuous coloured panel, pale control box below province.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "b91943b002b8a3f5afe316853333cba66aedf05ef59a531afc3e5d8799f35fa3",
+      "sourcePixels": [
+        249,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1981.webp"
+    },
+    {
+      "id": "1982",
+      "year": 1982,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1982.jpg",
+      "system": "panel-control-above",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        250,
+        74
+      ],
+      "month": "JUN",
+      "control": "72026627",
+      "reviewNote": "Continuous green panel, control above small province.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "485d5b666e44013a8ee9761e97ea463a2e2315c2d08423eed9978e6ea6c56e8f",
+      "sourcePixels": [
+        251,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1982.webp"
+    },
+    {
+      "id": "1983",
+      "year": 1983,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1983.jpg",
+      "system": "split-panel",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        246,
+        74
+      ],
+      "month": "FEB",
+      "control": null,
+      "reviewNote": "Pale centre between dark month/year panels; source control is unreadable.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "e1561e179e749ea86f5999e6f16c54579d1d651e2e5072beaa564d50176c3881",
+      "sourcePixels": [
+        247,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1983.webp"
+    },
+    {
+      "id": "1984",
+      "year": 1984,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1984.jpg",
+      "system": "vertical-sides",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        254,
+        74
+      ],
+      "month": "JUN",
+      "control": "43118297",
+      "reviewNote": "Vertical province and control at the pale side strips.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "3d3772625d7ef5b968bacee947b86496aef16d5c53d7f8d110d8b030a8fc2fd9",
+      "sourcePixels": [
+        255,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1984.webp"
+    },
+    {
+      "id": "1985",
+      "year": 1985,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1985.jpg",
+      "system": "province-bottom",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        243,
+        74
+      ],
+      "month": "NOV",
+      "control": "66221199",
+      "reviewNote": "Month and year flank control; province along lower centre.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "46031d555c5cf1043df5f059a87995dbfdfe6454e27cc5bc2824cc22c4548ec6",
+      "sourcePixels": [
+        244,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1985.webp"
+    },
+    {
+      "id": "1986",
+      "year": 1986,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986.jpg",
+      "system": "expo-linked",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        242,
+        74
+      ],
+      "month": "JUL",
+      "control": "16126202",
+      "reviewNote": "Red month/province, blue linked Expo logo, vertical black control.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "9645aff724be8aaa482404d503a397f33381b3050df75c334a8b4aee167f3596",
+      "sourcePixels": [
+        243,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1986.webp"
+    },
+    {
+      "id": "1987",
+      "year": 1987,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1987.jpg",
+      "system": "split-panel",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        238,
+        74
+      ],
+      "month": "JAN",
+      "control": "10323662",
+      "reviewNote": "Pale centre with coloured province/control between red ends.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "75391f7e79e0c9f49ddc96662a6a64557006ab0e9cae9eec3f19376668a07428",
+      "sourcePixels": [
+        239,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1987.webp"
+    },
+    {
+      "id": "1988",
+      "year": 1988,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1988.jpg",
+      "system": "split-panel",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        246,
+        74
+      ],
+      "month": "FEB",
+      "control": "23633016",
+      "reviewNote": "Pale centre with coloured province/control between blue ends.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "56c6bfd475c01f8cb66f525ee7818b7ca188e4e6d78dd3b23358f38a6b419aeb",
+      "sourcePixels": [
+        247,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1988.webp"
+    },
+    {
+      "id": "1989",
+      "year": 1989,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1989.jpg",
+      "system": "bordered",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        244,
+        74
+      ],
+      "month": "JAN",
+      "control": "30196968",
+      "reviewNote": "Thin outer colour frame; large month/year flank small province and control.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "d2fff2fa2dcbc59f043e5ce24a7fd550b57cd0eaebc83c06bd6b1f8d043eec33",
+      "sourcePixels": [
+        245,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1989.webp"
+    },
+    {
+      "id": "1990",
+      "year": 1990,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1990.jpg",
+      "system": "bordered",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        244,
+        74
+      ],
+      "month": "SEP",
+      "control": "38688662",
+      "reviewNote": "Thin outer colour frame; large month/year flank small province and control.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "75996bbaadef068fde88da3124fb6c49265db345f6dd535a5d307209221875f8",
+      "sourcePixels": [
+        245,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1990.webp"
+    },
+    {
+      "id": "1991",
+      "year": 1991,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1991.jpg",
+      "system": "bordered",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        248,
+        74
+      ],
+      "month": "AUG",
+      "control": "57085696",
+      "reviewNote": "Thin outer colour frame; large month/year flank small province and control.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "1460bf9808f552bbf2d988d3b24d5c63cc0286abd197b67134fa267f339bfdb5",
+      "sourcePixels": [
+        249,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1991.webp"
+    },
+    {
+      "id": "1992",
+      "year": 1992,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1992.jpg",
+      "system": "bordered",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        244,
+        74
+      ],
+      "month": "JUN",
+      "control": "55518579",
+      "reviewNote": "Thin outer colour frame; large month/year flank small province and control.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "6a07043027116daabd1fe2818975ecda80121d3eab43542c607fc023a1b13063",
+      "sourcePixels": [
+        245,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1992.webp"
+    },
+    {
+      "id": "1993",
+      "year": 1993,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1993.jpg",
+      "system": "bordered",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        246,
+        74
+      ],
+      "month": "NOV",
+      "control": "80299678",
+      "reviewNote": "Thin outer colour frame; large month/year flank small province and control.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "a2d0dbd7b986dcdc25ebc674e247d65e6b983b33432dc556754eb95189001d98",
+      "sourcePixels": [
+        247,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1993.webp"
+    },
+    {
+      "id": "1994",
+      "year": 1994,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1994.jpg",
+      "system": "bordered",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        243,
+        74
+      ],
+      "month": "JUL",
+      "control": "76868639",
+      "reviewNote": "Thin outer colour frame; large month/year flank small province and control.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "131910192f4141d6081cb1c4c39ae17377431af7ec213e2199025f2dcc44c7c6",
+      "sourcePixels": [
+        244,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1994.webp"
+    },
+    {
+      "id": "1995",
+      "year": 1995,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1995.jpg",
+      "system": "bordered",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        245,
+        74
+      ],
+      "month": "AUG",
+      "control": "27278280",
+      "reviewNote": "Thin outer colour frame; large month/year flank small province and control.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "cdde826384ea0544dacfa18c877dab88bca1714a79880f7a6cb7d7d5b6e4511b",
+      "sourcePixels": [
+        246,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1995.webp"
+    },
+    {
+      "id": "1996",
+      "year": 1996,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1996-black.jpg",
+      "system": "bordered",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        241,
+        74
+      ],
+      "month": "MAY",
+      "control": "24518207",
+      "reviewNote": "Thin outer colour frame; large month/year flank small province and control.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "1a531b92c49eb9575667f9078ac3c60799fe4a3bbbdce9c67205ac3a57ebed33",
+      "sourcePixels": [
+        242,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1996.webp"
+    },
+    {
+      "id": "1997",
+      "year": 1997,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1997.jpg",
+      "system": "bordered",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        247,
+        74
+      ],
+      "month": "JAN",
+      "control": "30034563",
+      "reviewNote": "Thin outer colour frame; large month/year flank small province and control.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "d79234cb6b7c2cc8236cb3f170eeb29a86afca3ef11f715ddc722d8c53231fcb",
+      "sourcePixels": [
+        248,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1997.webp"
+    },
+    {
+      "id": "1998",
+      "year": 1998,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1998.jpg",
+      "system": "bordered",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        243,
+        74
+      ],
+      "month": "MAR",
+      "control": "32526044",
+      "reviewNote": "Thin outer colour frame; large month/year flank small province and control.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "3da93c37b1f61ccb1bbbd2a8f38219aca48e890ca5880b0097b7ea8dbe648d57",
+      "sourcePixels": [
+        244,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1998.webp"
+    },
+    {
+      "id": "1999",
+      "year": 1999,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1999-thick.jpg",
+      "system": "bordered",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        243,
+        74
+      ],
+      "month": "MAY",
+      "control": "54174570",
+      "reviewNote": "Thin outer colour frame; large month/year flank small province and control.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "614acea5c9bad07a30bedba69026b4a7856b8fb1ca15092c1c1f4111e34f413b",
+      "sourcePixels": [
+        244,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1999.webp"
+    },
+    {
+      "id": "1996-pink",
+      "year": 1996,
+      "variant": "pink",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1996-pink.jpg",
+      "system": "bordered",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        244,
+        74
+      ],
+      "month": "NOV",
+      "control": "82903198",
+      "reviewNote": "Thin outer colour frame; large month/year flank small province and control.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "7af3adbfaff4f8170d470b34103357d7fba2a8e40eb7a4974fad2be0c191db41",
+      "sourcePixels": [
+        245,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1996-pink.webp"
+    },
+    {
+      "id": "1998-type-ii",
+      "year": 1998,
+      "variant": "type-ii",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1998/1998-May-34838894.jpg",
+      "system": "bordered",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        374,
+        115
+      ],
+      "month": "MAY",
+      "control": "34838894",
+      "reviewNote": "Thin outer colour frame; large month/year flank small province and control.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "432fd7f851c03d00dde60da02f0d9aa310d4e0ead108cd8f5ada068f6d18d2fc",
+      "sourcePixels": [
+        375,
+        116
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1998-type-ii.webp"
+    },
+    {
+      "id": "1999-white",
+      "year": 1999,
+      "variant": "white",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1999-61152006.jpg",
+      "system": "double-outline",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        253,
+        74
+      ],
+      "month": "DEC",
+      "control": "61152006",
+      "reviewNote": "Thin double outline and large month/year; separate control printing.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "90ffd6abc1d0040ad53d63a2067c35fbd9ca3ce046ccdc9eca6c7450ad5016c3",
+      "sourcePixels": [
+        254,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/1999-white.webp"
+    },
+    {
+      "id": "2000",
+      "year": 2000,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2000-50803178.jpg",
+      "system": "double-outline",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        259,
+        74
+      ],
+      "month": "JAN",
+      "control": "50803178",
+      "reviewNote": "Thin double outline and large month/year; separate control printing.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "7aa98d7c02414f59772be19fd3260e5efec7ad1120843d2b4642341d860722bb",
+      "sourcePixels": [
+        260,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/2000.webp"
+    },
+    {
+      "id": "2001",
+      "year": 2001,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/2001-76052343.jpg",
+      "system": "double-outline",
+      "aspect": 3.3,
+      "crop": [
+        7,
+        3,
+        463,
+        132
+      ],
+      "month": "JUL",
+      "control": "76052343",
+      "reviewNote": "Thin double outline and large month/year; separate control printing.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "bcbe2038e63830323c34cf33187f57774c4b905094a7c6d3a90897031a382c94",
+      "sourcePixels": [
+        469,
+        150
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/2001.webp"
+    },
+    {
+      "id": "2002",
+      "year": 2002,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2002.jpg",
+      "system": "double-outline",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        254,
+        74
+      ],
+      "month": "NOV",
+      "control": "88707872",
+      "reviewNote": "Thin double outline and large month/year; separate control printing.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "bba59bab19f61c6e02fb20e480c6c1ddbb7947ea3c58ecac209211fa38a5e96c",
+      "sourcePixels": [
+        255,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/2002.webp"
+    },
+    {
+      "id": "2003",
+      "year": 2003,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2003-86273079.jpg",
+      "system": "double-outline",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        252,
+        74
+      ],
+      "month": "SEP",
+      "control": "86273079",
+      "reviewNote": "Thin double outline and large month/year; separate control printing.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "6fbc70a3d98ba8cd70649e24c544c1cc2f783fae01258d188d2e128da04c928b",
+      "sourcePixels": [
+        253,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/2003.webp"
+    },
+    {
+      "id": "2004",
+      "year": 2004,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2004.jpg",
+      "system": "long-solid",
+      "aspect": 3.3,
+      "crop": [
+        1,
+        1,
+        254,
+        74
+      ],
+      "month": "SEP",
+      "control": "62275743",
+      "reviewNote": "Wide borderless panel with compact right year/province/control.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "f8213b9bc6d73ed905dc47c88a56a4418885933aaa056425e53442ae3a500671",
+      "sourcePixels": [
+        255,
+        75
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/2004.webp"
+    },
+    {
+      "id": "2005",
+      "year": 2005,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2005.jpg",
+      "system": "short-solid",
+      "aspect": 2.3,
+      "crop": [
+        1,
+        1,
+        231,
+        99
+      ],
+      "month": "JAN",
+      "control": "10167427",
+      "reviewNote": "Short coloured panel; province between month/year, control below year.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "2e1bdc39fcd8b47e50bf2ee293d7ed9f185ab3c81d85cf50d19ad92256a69ac1",
+      "sourcePixels": [
+        232,
+        100
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/2005.webp"
+    },
+    {
+      "id": "2006",
+      "year": 2006,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2006-21258417.jpg",
+      "system": "short-solid",
+      "aspect": 2.3,
+      "crop": [
+        1,
+        1,
+        227,
+        99
+      ],
+      "month": "FEB",
+      "control": "21258417",
+      "reviewNote": "Short coloured panel; province between month/year, control below year.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "b96b1329de57b6f4cc0d1997dd684adc568de6819a20911334cab7aac3999938",
+      "sourcePixels": [
+        228,
+        100
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/2006.webp"
+    },
+    {
+      "id": "2007",
+      "year": 2007,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2007.jpg",
+      "system": "short-solid",
+      "aspect": 2.3,
+      "crop": [
+        1,
+        1,
+        225,
+        99
+      ],
+      "month": "JUN",
+      "control": "35214318",
+      "reviewNote": "Short coloured panel; province between month/year, control below year.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "bff0359d81710286b6375456ab2a2c29a7b6e4ca9debde5fa268a448818f5125",
+      "sourcePixels": [
+        226,
+        100
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/2007.webp"
+    },
+    {
+      "id": "2008",
+      "year": 2008,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2008.jpg",
+      "system": "short-solid",
+      "aspect": 2.3,
+      "crop": [
+        1,
+        1,
+        234,
+        99
+      ],
+      "month": "JAN",
+      "control": "40206577",
+      "reviewNote": "Short coloured panel; province between month/year, control below year.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "555d1958bc9022d6db6762ee6c55b76076d31a850ab9af5f4b14df56cd894c2e",
+      "sourcePixels": [
+        235,
+        100
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/2008.webp"
+    },
+    {
+      "id": "2009",
+      "year": 2009,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2009.jpg",
+      "system": "barcode-two-digit",
+      "aspect": 2.3,
+      "crop": [
+        1,
+        1,
+        229,
+        99
+      ],
+      "month": "JAN",
+      "control": "50214717",
+      "reviewNote": "Two-digit year; small horizontal province; Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "3df0b2dce7202ff77d8bc4d25c87a8162c58784ad620c8431103b4b0e038a68f",
+      "sourcePixels": [
+        230,
+        100
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/2009.webp"
+    },
+    {
+      "id": "2010",
+      "year": 2010,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2010.jpg",
+      "system": "barcode-two-digit",
+      "aspect": 2.3,
+      "crop": [
+        1,
+        1,
+        236,
+        99
+      ],
+      "month": "JAN",
+      "control": "10717219",
+      "reviewNote": "Two-digit year; small horizontal province; Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "4bd838377cf0ed363381212b629a7024fe8d86fe54398dbb97119d18ab2cf274",
+      "sourcePixels": [
+        237,
+        100
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/2010.webp"
+    },
+    {
+      "id": "2011",
+      "year": 2011,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2011.jpg",
+      "system": "barcode-two-digit",
+      "aspect": 2.3,
+      "crop": [
+        1,
+        1,
+        231,
+        99
+      ],
+      "month": "JAN",
+      "control": "20715766",
+      "reviewNote": "Two-digit year; small horizontal province; Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "3b4542d054dcc48bbbc7838700b373bd7e3058bca833904868156ce3dd40b5fe",
+      "sourcePixels": [
+        232,
+        100
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/2011.webp"
+    },
+    {
+      "id": "2012",
+      "year": 2012,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2012.jpg",
+      "system": "barcode-two-digit",
+      "aspect": 2.3,
+      "crop": [
+        1,
+        1,
+        233,
+        99
+      ],
+      "month": "JAN",
+      "control": "30988971",
+      "reviewNote": "Two-digit year; small horizontal province; Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "7df31b3a658762eeb866626fb0cb599db4f9ee1f4929ee12499c236dfc4a04c1",
+      "sourcePixels": [
+        234,
+        100
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/2012.webp"
+    },
+    {
+      "id": "2013",
+      "year": 2013,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2013.jpg",
+      "system": "barcode-two-digit",
+      "aspect": 2.3,
+      "crop": [
+        1,
+        1,
+        238,
+        99
+      ],
+      "month": "JAN",
+      "control": "70724687",
+      "reviewNote": "Two-digit year; small horizontal province; Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "d9cef88231fed17650b41cc2d35350100cbe20802ec4e9833fcbc1cccf575ba6",
+      "sourcePixels": [
+        239,
+        100
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/2013.webp"
+    },
+    {
+      "id": "2014",
+      "year": 2014,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2014-99103688.jpg",
+      "system": "barcode-full-year",
+      "aspect": 2.3,
+      "crop": [
+        1,
+        1,
+        228,
+        99
+      ],
+      "month": "NOV",
+      "control": "99103688",
+      "reviewNote": "Full four-digit year, vertical serif province, Code 128/control footer. Source Code 128 decoded to the printed control.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "045c9df726d2321fd606b1397c63f9eb35a65595ae08492f61ce54b83a96ed88",
+      "sourcePixels": [
+        229,
+        100
+      ],
+      "barcodeDecoded": true,
+      "thumbnail": "data/decal-review/sources/2014.webp"
+    },
+    {
+      "id": "2015",
+      "year": 2015,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2015-70118033.jpg",
+      "system": "barcode-full-year",
+      "aspect": 2.3,
+      "crop": [
+        1,
+        1,
+        245,
+        99
+      ],
+      "month": "JAN",
+      "control": "70118033",
+      "reviewNote": "Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "f1643f30dabf56094e60834342c9a90d2203dd6f5beb80a0a1f131ce211d7bfa",
+      "sourcePixels": [
+        246,
+        100
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/2015.webp"
+    },
+    {
+      "id": "2016",
+      "year": 2016,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2016-10076867.jpg",
+      "system": "barcode-full-year",
+      "aspect": 2.3,
+      "crop": [
+        1,
+        1,
+        238,
+        99
+      ],
+      "month": "JAN",
+      "control": "10076867",
+      "reviewNote": "Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "e0dccce99d0d8a263b819bf0fb9a982ce41c8f69f5523fe7687c54d46b2132c8",
+      "sourcePixels": [
+        239,
+        100
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/2016.webp"
+    },
+    {
+      "id": "2017",
+      "year": 2017,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2017-20093481.jpg",
+      "system": "barcode-full-year",
+      "aspect": 2.3,
+      "crop": [
+        1,
+        1,
+        234,
+        99
+      ],
+      "month": "JAN",
+      "control": "20993481",
+      "reviewNote": "Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "415812d53297bedef10a087bd3dadd2485a4ca78fc66fd3eead81c5b46034571",
+      "sourcePixels": [
+        235,
+        100
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/2017.webp"
+    },
+    {
+      "id": "2018",
+      "year": 2018,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2018-50278580.jpg",
+      "system": "barcode-full-year",
+      "aspect": 2.3,
+      "crop": [
+        3,
+        2,
+        228,
+        98
+      ],
+      "month": "JAN",
+      "control": "50278580",
+      "reviewNote": "Full four-digit year, vertical serif province, Code 128/control footer. Source Code 128 decoded to the printed control.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "ef1407945ec73e9fcc16fab308a9e0d6ba45725e5f5a3b175c942976c062aa49",
+      "sourcePixels": [
+        231,
+        100
+      ],
+      "barcodeDecoded": true,
+      "thumbnail": "data/decal-review/sources/2018.webp"
+    },
+    {
+      "id": "2019",
+      "year": 2019,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2019-10727925.jpg",
+      "system": "barcode-full-year",
+      "aspect": 2.3,
+      "crop": [
+        3,
+        2,
+        236,
+        98
+      ],
+      "month": "JAN",
+      "control": "10727925",
+      "reviewNote": "Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "6f1d3638b36fa43b6c9a47b5ce05a45d2c1ed89877bec44c2372dbaff152d118",
+      "sourcePixels": [
+        239,
+        100
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/2019.webp"
+    },
+    {
+      "id": "2020",
+      "year": 2020,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2020-0000000.jpg",
+      "system": "barcode-full-year",
+      "aspect": 2.3,
+      "crop": [
+        3,
+        2,
+        226,
+        98
+      ],
+      "month": "JAN",
+      "control": "00000000",
+      "reviewNote": "Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "a44fbe891e6d638011691b67fb83c82bbd784d0c1a0f002af3705b92ccdbca9a",
+      "sourcePixels": [
+        229,
+        100
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/2020.webp"
+    },
+    {
+      "id": "2021",
+      "year": 2021,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2021-36946964.jpg",
+      "system": "barcode-full-year",
+      "aspect": 2.3,
+      "crop": [
+        1,
+        1,
+        229,
+        99
+      ],
+      "month": "JUL",
+      "control": "36946964",
+      "reviewNote": "Full four-digit year, vertical serif province, Code 128/control footer. Source Code 128 decoded to the printed control.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "e8b849bad4eba73ef0373fbb772a9bd017d135230161fd9a00ef3730669b1c74",
+      "sourcePixels": [
+        230,
+        100
+      ],
+      "barcodeDecoded": true,
+      "thumbnail": "data/decal-review/sources/2021.webp"
+    },
+    {
+      "id": "2022",
+      "year": 2022,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2022-72919128.jpg",
+      "system": "barcode-full-year",
+      "aspect": 2.3,
+      "crop": [
+        1,
+        1,
+        237,
+        99
+      ],
+      "month": "MAR",
+      "control": "72919128",
+      "reviewNote": "Full four-digit year, vertical serif province, Code 128/control footer. Source Code 128 decoded to the printed control.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "8a5d4db2c66d5beb742dbb8e5f80737559c3136e306985495576fa8b5928fa64",
+      "sourcePixels": [
+        238,
+        100
+      ],
+      "barcodeDecoded": true,
+      "thumbnail": "data/decal-review/sources/2022.webp"
+    },
+    {
+      "id": "2023",
+      "year": 2023,
+      "variant": null,
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2023-52843353.jpg",
+      "system": "barcode-full-year",
+      "aspect": 2.3,
+      "crop": [
+        1,
+        1,
+        233,
+        99
+      ],
+      "month": "MAR",
+      "control": "52843353",
+      "reviewNote": "Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode.",
+      "photoInspected": true,
+      "reviewedOn": "2026-10-06",
+      "sourceSha256": "e53879fc4a5e160fcfb76135db66af71b95302799b31ed16e0da39cc4e85b62d",
+      "sourcePixels": [
+        234,
+        100
+      ],
+      "barcodeDecoded": false,
+      "thumbnail": "data/decal-review/sources/2023.webp"
+    }
+  ],
+  "unissuedYears": [
+    1973,
+    1979
+  ],
+  "limits": "Catalogue specimens inspected individually. Candidate printing fonts, colours, emblems and security scoring remain approximate. Only four source barcodes decoded; encoding for related years is reconstructed."
+}

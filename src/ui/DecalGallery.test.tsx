@@ -39,9 +39,11 @@ describe('Province decal gallery', () => {
     expect(html).toContain('British Columbia decal gallery');
     expect(html).toContain('Back to current plate');
     expect(html).toContain('Original decal photograph');
-    expect(html).toContain('control numbers are illustrative');
+    expect(html).toContain('blank controls are illustrative');
     expect(html).toContain('data-decal-id="1996-pink"');
     expect(html).toContain('data-role="renewal-decal"');
-    expect(html).not.toContain('<img');
+    expect((html.match(/<img /g) ?? [])).toHaveLength(provinceDecals('ca-bc').length);
+    expect(html).toContain('Original photographed 2023 decal');
+    expect(html).toContain('Use photographed text on plate');
   });
 });
