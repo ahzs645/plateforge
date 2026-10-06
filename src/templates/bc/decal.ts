@@ -9,6 +9,7 @@ import { dieProfile } from '../dies/profiles';
 import { buildExpo86Logo } from './expo86-logo';
 import { buildCode128 } from './decal-barcode';
 import { buildDecalFlower } from './decal-flower';
+import { buildDecalSun } from './decal-sun';
 
 export interface DecalArt {
   style: 'annual' | 'panel' | 'bordered' | 'solid';
@@ -93,7 +94,7 @@ export function buildDecal(art: DecalArt, b: Box): SvgNode {
     if (art.year === '71') {
       parts.push(...province(.30,.08,.52),
         t('71',x+w*.79,y+h*.84,h*.40,w*.38,art.ink,'decal-year','middle','bc-decal-wide'),
-        ...control(.07,.51,.49,.31), n('g', {'data-role':'decal-emblem','data-accuracy':'simplified sun'}, n('circle',{cx:x+w*.79,cy:y+h*.22,r:h*.047,fill:'none',stroke:art.ink,strokeWidth:h*.023}), ...Array.from({length:5},(_,i)=>{const a=i*Math.PI*2/5;return n('path',{d:`M${x+w*.79+Math.sin(a)*h*.08} ${y+h*.22-Math.cos(a)*h*.08} Q${x+w*.79+Math.sin(a+.25)*h*.13} ${y+h*.22-Math.cos(a+.25)*h*.13} ${x+w*.79+Math.sin(a)*h*.19} ${y+h*.22-Math.cos(a)*h*.19}`,fill:'none',stroke:art.ink,strokeWidth:h*.02});})));
+        ...control(.07,.51,.49,.31), buildDecalSun(x+w*.79, y+h*.22, h*.40, art.ink));
     } else if (art.year === '74') {
       parts.push(...province(.39,.08,.57,.11),
         t('7',x+w*.85,y+h*.42,h*.34,w*.18,art.ink,'decal-year','middle','bc-decal-wide'),

@@ -1,0 +1,16 @@
+{
+  "uploads": [
+    "svgviewer-output.svg.zip",
+    "Golden_Emblem_Vector_Rebuild_UPDATED.zip"
+  ],
+  "selected": "svgviewer-output.svg",
+  "matchingVariant": "emblem_rebuild_updated/emblem-flower-silhouette-cutout.svg",
+  "sha256": "84fc27b03a6c13b813dce0296e0fa420c1bf004c999cafe35635df088d995e6c",
+  "matchingVariantSha256": "33b11f60ccbb88e46b3baebfbaa4a34852d08e36118f35db378831fb78bcec05",
+  "geometryMatches": true,
+  "usedFor": [
+    1971
+  ],
+  "changes": "Exact compound path with evenodd fill. Original 1360 x 1157 canvas uniformly fitted to 40% of decal height at the existing emblem center. Use decal ink.",
+  "limitations": "Supplied geometric reconstruction; decal dimensions, lettering and colors remain approximate."
+}
