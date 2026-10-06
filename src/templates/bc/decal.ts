@@ -8,6 +8,7 @@ import { buildDieText } from '../dies/engine';
 import { dieProfile } from '../dies/profiles';
 import { buildExpo86Logo } from './expo86-logo';
 import { buildCode128 } from './decal-barcode';
+import { buildDecalFlower } from './decal-flower';
 
 export interface DecalArt {
   style: 'annual' | 'panel' | 'bordered' | 'solid';
@@ -88,11 +89,7 @@ export function buildDecal(art: DecalArt, b: Box): SvgNode {
       t(art.serial, x+w*(left+width/2), y+h*(top+height*.78), h*height*.50,
         w*width*.88, '#171717', 'decal-serial', 'middle', 'bc-decal-control'),
     ] : [];
-    // Small provincial flower/sun marks are deliberately simplified. They are
-    // separate artwork, not a letter or a traced security-printing glyph.
-    const flower = (cx: number, cy: number) => n('g', { 'data-role':'decal-emblem', 'data-accuracy':'simplified' },
-      ...Array.from({length:5},(_,i)=>n('circle',{cx:x+w*cx+Math.sin(i*Math.PI*2/5)*h*.075,
-        cy:y+h*cy-Math.cos(i*Math.PI*2/5)*h*.075,r:h*.045,fill:art.ink})));
+    const flower = (cx: number, cy: number) => buildDecalFlower(x+w*cx, y+h*cy, h*.30, art.ink);
     if (art.year === '71') {
       parts.push(...province(.30,.08,.52),
         t('71',x+w*.79,y+h*.84,h*.40,w*.38,art.ink,'decal-year','middle','bc-decal-wide'),
