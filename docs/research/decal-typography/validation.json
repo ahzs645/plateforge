@@ -1,0 +1,43 @@
+{
+  "reviewedOn": "2026-10-06",
+  "scope": "All 55 imported B.C. passenger renewal specimens, individually compared; does not certify historical font identity.",
+  "visualComparisons": 55,
+  "selectableMonthRenderingsChecked": 572,
+  "printedRunBoundsFailures": 0,
+  "printedRunCollisionFailures": 0,
+  "testsPassed": 1862,
+  "testFilesPassed": 59,
+  "productionBuild": "passed with BASE_PATH=/plateforge/",
+  "comparisonImagesLoaded": 165,
+  "desktopAndMobileComparisonOverflow": false,
+  "gallery": {
+    "date": "2026-10-06",
+    "site": "http://127.0.0.1:5176/plateforge/",
+    "references": 55,
+    "supportedOn1985Base": 20,
+    "sameYearVariantApplied": true,
+    "serialMonthStylePreserved": true,
+    "clearDecal": true,
+    "svg": true,
+    "png": true,
+    "mobile": true,
+    "carrierExcludedFromPassengerDecals": true,
+    "unavailableProvinceHasNoDecalTab": true,
+    "errors": [],
+    "failedResources": []
+  },
+  "exports": {
+    "date": "2026-10-06",
+    "site": "http://127.0.0.1:5176/plateforge/",
+    "individualComparisons": 55,
+    "loadedComparisonImages": 165,
+    "mobileSourceImages": 55,
+    "photographedTextApplied": true,
+    "plateSerialPreserved": true,
+    "svgExport": true,
+    "pngExportDecodedControl": "12345678",
+    "errors": [],
+    "failedResources": []
+  },
+  "deployed": false
+}

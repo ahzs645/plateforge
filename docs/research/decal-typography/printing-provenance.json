@@ -1,0 +1,19 @@
+{
+  "sources": [
+    {
+      "profile": "condensed-medium",
+      "postscriptName": "BarlowCondensed-SemiBold",
+      "sha256": "02e9d2ca2e9af5d8dbdfd30c4a5aa59632205901e9045140b559a44d361d8a46",
+      "horizontalConstruction": 1,
+      "notes": "Native open-font outlines; visual candidate, historical font identity unconfirmed."
+    },
+    {
+      "profile": "condensed-bold",
+      "postscriptName": "BarlowCondensed-Bold",
+      "sha256": "bd414ee6698edb13ec58b3084b68c1804eeb55acb6b65f628822320dcd1e5431",
+      "horizontalConstruction": 1,
+      "notes": "Native open-font outlines; visual candidate, historical font identity unconfirmed."
+    }
+  ],
+  "fontSoftwareBundled": false
+}

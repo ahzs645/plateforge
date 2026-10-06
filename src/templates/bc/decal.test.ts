@@ -4,6 +4,7 @@ import {decalArt} from '../../regions/canada/bc-kit';
 import {serializeSvgNode, type SvgNode} from '../svg-scene';
 import {buildDecal, decalBox} from './decal';
 import {code128Codes} from './decal-barcode';
+import {DECAL_TYPOGRAPHY} from './decal-typography';
 
 const box = {x:0,y:0,width:230,height:100};
 const get = (id:string) => BC_DECALS.find(d=>decalId(d)===id)!;
@@ -49,6 +50,32 @@ describe('Photographed B.C. decal printing systems',()=>{
     expect(serializeSvgNode(render('1986'))).toContain('user-supplied-Expo86logo.svg');
     expect(find(render('1999-white'),'decal-inner-border')).toHaveLength(1);
     expect(get('2008').serialInk).toBe(get('2008').ink);
+  });
+  it('covers every catalogue variant with its own source-linked typography review',()=>{
+    expect(Object.keys(DECAL_TYPOGRAPHY).sort()).toEqual(BC_DECALS.map(decalId).sort());
+    for (const decal of BC_DECALS) {
+      const audit=DECAL_TYPOGRAPHY[decalId(decal)];
+      expect(audit.source).toBe(decal.image);
+      expect(audit.sourceSha256).toBe(decal.specimen!.sourceSha256);
+      const scene=render(decalId(decal));
+      for (const [role, runs] of Object.entries(audit.runs)) {
+        expect(find(scene,role), `${decalId(decal)} ${role} line count`).toHaveLength(runs.length);
+      }
+    }
+  });
+  it('keeps both 1984 vertical province lines distinct and separates the modern columns',()=>{
+    const vertical=find(render('1984'),'decal-legend');
+    expect(vertical.map(run=>run.attrs['aria-label'])).toEqual(['BRITISH','COLUMBIA']);
+    expect(serializeSvgNode(render('1984'))).toContain('rotate(-90)');
+    expect(find(render('1974'),'decal-year').map(run=>run.attrs['aria-label'])).toEqual(['7','4']);
+    expect(find(render('1985'),'decal-legend').map(run=>run.attrs['aria-label'])).toEqual(['BRITISH COLUMBIA']);
+  });
+  it.each(BC_DECALS.filter(d=>d.year>=1980))('retains $year $variant month text for every selectable month',decal=>{
+    for (const month of ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC']) {
+      const scene=buildDecal(decalArt(decal,{decalMonth:month}),box);
+      expect(find(scene,'decal-month').map(run=>run.attrs['aria-label'])).toEqual([month]);
+      expect(serializeSvgNode(scene)).not.toMatch(/NaN|Infinity/);
+    }
   });
   it.each(BC_DECALS)('renders the individually recorded $year $variant specimen with portable outlines',decal=>{
     const r=decal.specimen!;
