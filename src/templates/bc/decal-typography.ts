@@ -8,6 +8,8 @@ export interface TypographyRun {
   width: number;
   profile: string;
   tracking: number;
+  /** Source-supported pair spacing; native glyph outlines stay unchanged. */
+  kerning?: Record<string, number>;
   anchor?: 'start' | 'middle' | 'end';
   local?: boolean;
 }

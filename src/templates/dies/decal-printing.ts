@@ -1,14 +1,15 @@
 import type { DieProfile } from './engine';
 import outlines from './decal-printing.json';
 import auditOutlines from './decal-audit-printing.json';
+import glyphOutlines from './decal-glyph-printing.json';
 
 /** Filled printed candidates, separate from every stamped serial/legend die. */
-export const DECAL_PRINTING_PROFILES: DieProfile[] = Object.entries({...outlines, ...auditOutlines}).map(([name, glyphs]) => ({
+export const DECAL_PRINTING_PROFILES: DieProfile[] = Object.entries({...outlines, ...auditOutlines, ...glyphOutlines}).map(([name, glyphs]) => ({
   id: `bc-decal-print-${name}`, label: `Decal printing · ${name}`,
   params: { width: 60, stroke: 0, curve: 'oval', tracking: 0 },
   overrides: glyphs, allowConstructedFallback: false, allowResearchReplacement: false,
   evidence: { status: 'legend-approximation', specimens: [{ title: 'BCpl8s · Passenger renewal decals', url: 'https://www.bcpl8s.ca/Decals.htm' }],
-    notes: 'Printed font candidates from supplied Helvetica Compressed and open URW Nimbus outlines. Month/year profiles deliberately narrow the supplied curves to photographed proportions; province/control use separate native outlines. These are visual reconstructions, not confirmed historical typeface or printing tooling. Source hashes and transforms are recorded in docs/research/decal-review/printing-provenance.json. Additional native Barlow Condensed candidates and their hashes are recorded in docs/research/decal-typography/printing-provenance.json. No font software is bundled.' },
+    notes: 'Printed font candidates from supplied Helvetica Compressed and open URW Nimbus outlines. Month/year profiles deliberately narrow the supplied curves to photographed proportions; province/control use separate native outlines. These are visual reconstructions, not confirmed historical typeface or printing tooling. Source hashes and transforms are recorded in docs/research/decal-review/printing-provenance.json. Additional native Barlow Condensed candidates and their hashes are recorded in docs/research/decal-typography/printing-provenance.json. Native Oswald, Anton, Roboto Condensed and Archivo Narrow candidates selected by occurrence overlays are documented in docs/research/decal-glyph-analysis/candidate-provenance.json. No font software is bundled.' },
 }));
 
 DECAL_PRINTING_PROFILES.push({

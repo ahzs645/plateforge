@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-06",
+  "tests": {
+    "files": 59,
+    "passed": 1862
+  },
+  "productionBuild": {
+    "passed": true,
+    "base": "/plateforge/"
+  },
+  "geometry": {
+    "renderings": 572,
+    "variants": 55,
+    "failures": 0
+  },
+  "audit": {
+    "specimens": 55,
+    "textRuns": 275,
+    "occurrenceRecords": 1525,
+    "independentlySegmentedOccurrences": 497,
+    "scoredOccurrences": 486,
+    "runsWithRelativeFontScores": 110,
+    "unresolvedRuns": 164
+  },
+  "browserExports": {
+    "date": "2026-10-06",
+    "site": "http://127.0.0.1:5176/plateforge/",
+    "individualComparisons": 55,
+    "loadedComparisonImages": 165,
+    "mobileSourceImages": 55,
+    "photographedTextApplied": true,
+    "plateSerialPreserved": true,
+    "svgExport": true,
+    "pngExportDecodedControl": "12345678",
+    "errors": [],
+    "failedResources": []
+  },
+  "reportBrowser": {
+    "specimens": 55,
+    "uniqueOccurrenceRecords": 1525,
+    "independentlySegmentedOccurrences": 497,
+    "loadedImages": 879,
+    "mobileWidth": 390,
+    "mobileOverflow": false,
+    "portableEmbeddedImages": 879,
+    "errors": [],
+    "failedResources": []
+  }
+}

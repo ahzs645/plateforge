@@ -60,8 +60,8 @@ function defaultPrinting(role: string): string {
   if (role === 'day-number') return 'bc-decal-print-normal';
   return 'bc-decal-print-normal';
 }
-function drawText(text: string, x: number, baseline: number, cap: number, maxWidth: number, ink: string, role: string, anchor: 'start' | 'middle' | 'end' = 'middle', profileId?: string, letterSpacing = 0): SvgNode {
-  return buildDieText({ text, profile: dieProfile(profileId?.startsWith('bc-decal-print-') || profileId === 'bc-decal-1970' ? profileId : profileId === 'bc-decal-panel' ? (role === 'decal-month' ? 'bc-decal-print-heavy-month-wide' : 'bc-decal-print-heavy-year-wide') : profileId === 'bc-decal-annual' && role === 'decal-year' ? 'bc-decal-print-heavy-year' : profileId === 'bc-decal-wide' || profileId === 'bc-decal-annual' ? 'bc-decal-print-normal' : profileId === 'bc-decal-control' ? 'bc-decal-print-control' : profileId === 'bc-decal-control-bold' ? 'bc-decal-print-control-bold' : defaultPrinting(role)), x, baseline, capHeight: cap, maxWidth, anchor, ink, role, letterSpacing }).node;
+function drawText(text: string, x: number, baseline: number, cap: number, maxWidth: number, ink: string, role: string, anchor: 'start' | 'middle' | 'end' = 'middle', profileId?: string, letterSpacing = 0, kerning?: Readonly<Record<string, number>>): SvgNode {
+  return buildDieText({ text, profile: dieProfile(profileId?.startsWith('bc-decal-print-') || profileId === 'bc-decal-1970' ? profileId : profileId === 'bc-decal-panel' ? (role === 'decal-month' ? 'bc-decal-print-heavy-month-wide' : 'bc-decal-print-heavy-year-wide') : profileId === 'bc-decal-annual' && role === 'decal-year' ? 'bc-decal-print-heavy-year' : profileId === 'bc-decal-wide' || profileId === 'bc-decal-annual' ? 'bc-decal-print-normal' : profileId === 'bc-decal-control' ? 'bc-decal-print-control' : profileId === 'bc-decal-control-bold' ? 'bc-decal-print-control-bold' : defaultPrinting(role)), x, baseline, capHeight: cap, maxWidth, anchor, ink, role, letterSpacing, kerning }).node;
 }
 
 export function buildDecal(art: DecalArt, b: Box): SvgNode {
@@ -79,7 +79,7 @@ export function buildDecal(art: DecalArt, b: Box): SvgNode {
     return drawText(args[0], run.local ? args[1] : x+w*run.x,
       run.local ? args[2] : y+h*run.baseline, h*run.cap,
       (run.local ? h : w)*run.width, args[5], role, run.anchor ?? args[7],
-      run.profile === 'outline-1970' ? 'bc-decal-1970' : `bc-decal-print-${run.profile}`, run.tracking);
+      run.profile === 'outline-1970' ? 'bc-decal-1970' : `bc-decal-print-${run.profile}`, run.tracking, run.kerning);
   };
 
   if (art.style === 'annual' && art.year === '78') {

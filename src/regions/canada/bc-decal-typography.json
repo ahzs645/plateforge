@@ -284,7 +284,7 @@
   "1976": {
     "lineBreaks": "BRITISH / COLUMBIA; 76 PASS. COMM. on one line.",
     "finding": "Province should align on the left. The small year and class were too bold and short; the control needs spaced, heavier digits.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "fontEvidence": "Occurrence-level photographic overlays support normal for decal-year. Visual reconstruction candidate; historical typeface unconfirmed. Native proportions retained; no per-character horizontal scaling.",
     "runs": {
       "decal-legend": [
         {
@@ -309,10 +309,10 @@
       "decal-year": [
         {
           "x": 0.085,
-          "baseline": 0.575,
-          "cap": 0.14,
+          "baseline": 0.556,
+          "cap": 0.117,
           "width": 0.15,
-          "profile": "regular",
+          "profile": "normal",
           "tracking": 1,
           "anchor": "start"
         }
@@ -410,16 +410,16 @@
   "1978": {
     "lineBreaks": "PASS and COMM as vertical letters; B / C beside 78.",
     "finding": "B/C was much too small and light. Retain vertical class lettering and increase the open, spaced control digits.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "fontEvidence": "Occurrence-level photographic overlays support archivonarrow-700 for decal-year. Visual reconstruction candidate; historical typeface unconfirmed. Native proportions retained; no per-character horizontal scaling.",
     "runs": {
       "decal-year": [
         {
-          "x": 0.37,
-          "baseline": 0.66,
-          "cap": 0.57,
+          "x": 0.388,
+          "baseline": 0.61,
+          "cap": 0.52,
           "width": 0.44,
-          "profile": "normal",
-          "tracking": 0
+          "profile": "archivonarrow-700",
+          "tracking": 2
         }
       ],
       "decal-serial": [
@@ -706,16 +706,20 @@
   "1983": {
     "lineBreaks": "BRITISH / COLUMBIA above central control; month and year on opposite sides.",
     "finding": "Widen the province stack and keep month/year proportions within their individual panels. Counter contours remain approximate. The photographed control is unreadable and remains explicitly illustrative.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "fontEvidence": "Occurrence-level photographic overlays support oswald-600 for decal-month. Visual reconstruction candidate; historical typeface unconfirmed. Native proportions retained; no per-character horizontal scaling.",
     "runs": {
       "decal-month": [
         {
-          "x": 0.2,
-          "baseline": 0.8,
+          "x": 0.18,
+          "baseline": 0.795,
           "cap": 0.65,
           "width": 0.36,
-          "profile": "heavy-month-wide",
-          "tracking": 2
+          "profile": "oswald-600",
+          "tracking": 2,
+          "kerning": {
+            "FE": -3.8,
+            "EB": -3.8
+          }
         }
       ],
       "decal-year": [
@@ -768,16 +772,20 @@
   "1987": {
     "lineBreaks": "BRITISH / COLUMBIA above central control; month and year on opposite sides.",
     "finding": "JAN and 87 were too heavy and JAN too short. Retain the supplied narrow printing candidate, wider province spacing and black control ink. Exact stroke weight and counter contours remain uncertain at source resolution; the supplied narrow printing candidate is retained.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "fontEvidence": "Occurrence-level photographic overlays support oswald-600 for decal-month. Visual reconstruction candidate; historical typeface unconfirmed. Native proportions retained; no per-character horizontal scaling.",
     "runs": {
       "decal-month": [
         {
           "x": 0.2,
-          "baseline": 0.8,
+          "baseline": 0.78,
           "cap": 0.69,
           "width": 0.34,
-          "profile": "heavy-year-wide",
-          "tracking": 2
+          "profile": "oswald-600",
+          "tracking": 2,
+          "kerning": {
+            "JA": -3.2,
+            "AN": -1
+          }
         }
       ],
       "decal-year": [
@@ -957,15 +965,15 @@
   "1985": {
     "lineBreaks": "BRITISH COLUMBIA as one lower line below centered control.",
     "finding": "Bottom province was too large; reduce its cap height. Move the control down between the date groups and use lighter narrow digits.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "fontEvidence": "Occurrence-level photographic overlays support anton-400 for decal-month. Visual reconstruction candidate; historical typeface unconfirmed. Native proportions retained; no per-character horizontal scaling.",
     "runs": {
       "decal-month": [
         {
           "x": 0.19,
-          "baseline": 0.82,
+          "baseline": 0.835,
           "cap": 0.64,
           "width": 0.37,
-          "profile": "heavy-month",
+          "profile": "anton-400",
           "tracking": 2
         }
       ],
@@ -1011,7 +1019,7 @@
   "1986": {
     "lineBreaks": "One BRITISH COLUMBIA line over JUL; linked EXPO 86 at right.",
     "finding": "Province was too broad and too close to JUL. Reduce its height and move JUL lower; use a stronger native condensed month candidate. Preserve supplied EXPO paths.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "fontEvidence": "Mixed native reconstruction: observed J from Oswald Semibold, U from Archivo Narrow Semibold, L from Barlow Condensed Semibold; other months use Roboto Condensed Semibold candidates. No exact historic font attribution or horizontal scaling.",
     "runs": {
       "decal-legend": [
         {
@@ -1029,8 +1037,12 @@
           "baseline": 0.93,
           "cap": 0.61,
           "width": 0.45,
-          "profile": "condensed-medium",
-          "tracking": 1
+          "profile": "1986-month-reconstruction",
+          "tracking": 1,
+          "kerning": {
+            "JU": -8.8,
+            "UL": -8.9
+          }
         }
       ],
       "decal-serial": [
@@ -1248,7 +1260,7 @@
   "1992": {
     "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
     "finding": "JUN was slightly short; raise its cap height. Widen the province and control without changing their line breaks.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "fontEvidence": "Occurrence-level photographic overlays support anton-400 for decal-month. Visual reconstruction candidate; historical typeface unconfirmed. Native proportions retained; no per-character horizontal scaling.",
     "runs": {
       "decal-month": [
         {
@@ -1256,9 +1268,13 @@
           "baseline": 0.835,
           "cap": 0.67,
           "width": 0.385,
-          "profile": "heavy-month-wide",
+          "profile": "anton-400",
           "tracking": 0,
-          "anchor": "start"
+          "anchor": "start",
+          "kerning": {
+            "JU": 1.7,
+            "UN": -3.6
+          }
         }
       ],
       "decal-year": [
