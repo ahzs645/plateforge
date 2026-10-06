@@ -67,7 +67,7 @@ function drawText(text: string, x: number, baseline: number, cap: number, maxWid
 export function buildDecal(art: DecalArt, b: Box): SvgNode {
   const { x, y, width: w, height: h } = b;
   const parts: SvgNode[] = [];
-  const audit = decalTypography(art.typographyId);
+  const audit = decalTypography(art.typographyId, art.month);
   const occurrences: Record<string, number> = {};
   // Each role follows its explicit source line order. No browser word wrapping
   // or per-glyph horizontal scaling is used; alternate months retain native advances.
@@ -123,7 +123,7 @@ export function buildDecal(art: DecalArt, b: Box): SvgNode {
       parts.push(...province(.30,.09,.52),
         t('75',x+w*.77,y+h*.36,h*.30,w*.42,art.ink,'decal-year','middle','bc-decal-wide'),
         ...control(.075,.42,.85,.30),
-        t('PASS COMM',x+w*.5,y+h*.9,h*.12,w*.86,art.ink,'decal-class'));
+        t('PASS. COMM.',x+w*.5,y+h*.9,h*.12,w*.86,art.ink,'decal-class'));
     } else if (art.year === '76') {
       parts.push(...province(.35,.07,.59), flower(.82,.23),
         t('76',x+w*.125,y+h*.52,h*.12,w*.16,art.ink,'decal-year'),
@@ -133,7 +133,7 @@ export function buildDecal(art: DecalArt, b: Box): SvgNode {
       parts.push(t('B',x+w*.1,y+h*.21,h*.13,w*.12,art.ink,'decal-class'),
         t('C',x+w*.1,y+h*.39,h*.13,w*.12,art.ink,'decal-class'),
         t('77',x+w*.44,y+h*.4,h*.29,w*.46,art.ink,'decal-year','middle','bc-decal-wide'),
-        flower(.82,.22),t('PASS COMM',x+w*.50,y+h*.55,h*.12,w*.83,art.ink,'decal-class'),
+        flower(.82,.22),t('PASS. COMM.',x+w*.50,y+h*.55,h*.12,w*.83,art.ink,'decal-class'),
         ...control(.09,.62,.84,.29));
     }
   } else if (art.style === 'annual') {
@@ -187,15 +187,18 @@ export function buildDecal(art: DecalArt, b: Box): SvgNode {
       ...(art.serial ? [t(art.serial, x+left+middle/2, y+h*(controlAbove ? .41 : .81), h*.14, middle-h*.1, centre.serialInk, 'decal-serial', 'middle', 'bc-decal-control')] : []));
   } else if (art.year.length === 4) {
     const cap=Number(art.year)>=2018?.47:.59;
-    parts.push(n('rect', {x, y, width:w, height:h, rx:h*(Number(art.year)>=2018?.10:.035), fill:art.background}),
+    parts.push(n('rect', {x, y, width:w, height:h, rx:h*(audit?.layout?.cornerRadius ?? (Number(art.year)>=2018?.10:.035)), fill:art.background}),
       t(art.month ?? '', x+w*.04, y+h*.65, h*cap, w*.34, art.ink, 'decal-month', 'start'),
       t(art.year, x+w*.96, y+h*.65, h*cap, w*.46, art.ink, 'decal-year', 'end'),
-      n('g', {transform:`translate(${x+w*.445} ${y+h*.36}) rotate(-90)`},
+      n('g', {transform:`translate(${x+w*(audit?.layout?.provinceColumns?.[0] ?? .445)} ${y+h*(audit?.layout?.provinceCentre ?? .36)}) rotate(-90)`},
         t('BRITISH', 0, 0, h*.065, h*.45, art.ink, 'decal-legend', 'middle', 'bc-decal-print-vertical-province')),
-      n('g', {transform:`translate(${x+w*.485} ${y+h*.36}) rotate(-90)`},
+      n('g', {transform:`translate(${x+w*(audit?.layout?.provinceColumns?.[1] ?? .485)} ${y+h*(audit?.layout?.provinceCentre ?? .36)}) rotate(-90)`},
         t('COLUMBIA', 0, 0, h*.065, h*.45, art.ink, 'decal-legend', 'middle', 'bc-decal-print-vertical-province')),
       ...(art.serial ? [t(art.serial, x+w*.765, y+h*.89, h*.16, w*.43, art.serialInk, 'decal-serial')] : []));
-    if (art.serial) parts.push(buildCode128(art.serial, {x:x-w*.015,y:y+h*.75,width:w*.59,height:h*.16},art.ink));
+    if (art.serial) {
+      const barcode = audit?.layout?.barcode;
+      parts.push(buildCode128(art.serial, barcode ? { x:x+w*barcode.x, y:y+h*barcode.y, width:w*barcode.width, height:h*barcode.height } : {x:x-w*.015,y:y+h*.75,width:w*.59,height:h*.16},art.ink));
+    }
   } else if (art.year === '04') {
     parts.push(n('rect', {x,y,width:w,height:h,fill:art.background}),
       t(art.month ?? '', x+w*.025, y+h*.80, h*.73, w*.37, art.ink, 'decal-month', 'start'),

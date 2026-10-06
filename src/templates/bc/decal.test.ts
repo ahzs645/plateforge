@@ -4,7 +4,7 @@ import {decalArt} from '../../regions/canada/bc-kit';
 import {serializeSvgNode, type SvgNode} from '../svg-scene';
 import {buildDecal, decalBox} from './decal';
 import {code128Codes} from './decal-barcode';
-import {DECAL_TYPOGRAPHY} from './decal-typography';
+import {DECAL_TYPOGRAPHY, decalTypography} from './decal-typography';
 
 const box = {x:0,y:0,width:230,height:100};
 const get = (id:string) => BC_DECALS.find(d=>decalId(d)===id)!;
@@ -23,6 +23,24 @@ describe('Photographed B.C. decal printing systems',()=>{
     expect(find(modern,'decal-legend').every(n=>n.attrs['data-die']==='bc-decal-print-vertical-province')).toBe(true);
     expect(serializeSvgNode(modern)).toContain('rotate(-90)');
     expect(find(render('2013'),'decal-year')[0].attrs['aria-label']).toBe('13');
+  });
+  it('applies the ICBC July 2017 design boundary to the selected expiry month',()=>{
+    const early=decalTypography('2017','JUN')!;
+    const late=decalTypography('2017','JUL')!;
+    expect(early.layout?.cornerRadius).toBe(0);
+    expect(late.layout?.cornerRadius).toBe(.10);
+    expect(late.runs['decal-month'][0].cap).toBeLessThan(early.runs['decal-month'][0].cap);
+    const d=get('2017');
+    const june=buildDecal(decalArt(d,{decalMonth:'JUN'}),box);
+    const july=buildDecal(decalArt(d,{decalMonth:'JUL'}),box);
+    expect((june.children[0] as SvgNode).attrs.rx).toBe(0);
+    expect((july.children[0] as SvgNode).attrs.rx).toBe(10);
+    expect(find(june,'decal-month')[0].attrs['aria-label']).toBe('JUN');
+    expect(find(july,'decal-month')[0].attrs['aria-label']).toBe('JUL');
+  });
+  it('retains photographed punctuation in the 1975 and 1977 class lines',()=>{
+    expect(find(render('1975'),'decal-class').map(n=>n.attrs['aria-label'])).toContain('PASS. COMM.');
+    expect(find(render('1977'),'decal-class').map(n=>n.attrs['aria-label'])).toContain('PASS. COMM.');
   });
   it('encodes the actual printed control with the independently checked Code 128 C checksum',()=>{
     expect(code128Codes('99103688')).toEqual([105,99,10,36,88,66,106]);

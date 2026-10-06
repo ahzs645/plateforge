@@ -1,0 +1,1602 @@
+[
+  {
+    "id": "1970",
+    "catalogueId": "1970",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1970.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals.htm",
+    "sourceSha256": "365c0fd8f4978c6b650d056c11b127bfbc923b8732e936900908cc9edc63c6f1",
+    "photoFile": "1970.jpg",
+    "crop": [
+      1,
+      1,
+      192,
+      99
+    ],
+    "month": null,
+    "control": null,
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1970.jpg",
+    "originalSha256": "365c0fd8f4978c6b650d056c11b127bfbc923b8732e936900908cc9edc63c6f1",
+    "originalCrop": [
+      1,
+      1,
+      192,
+      99
+    ]
+  },
+  {
+    "id": "1971",
+    "catalogueId": "1971",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1971.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals.htm",
+    "sourceSha256": "8ba2bc1e206af4d44cbea46b85b96ddbc8a28665049b70c9b9be1863d9759fa7",
+    "photoFile": "1971.jpg",
+    "crop": [
+      1,
+      1,
+      189,
+      99
+    ],
+    "month": null,
+    "control": "553645",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1971.jpg",
+    "originalSha256": "8ba2bc1e206af4d44cbea46b85b96ddbc8a28665049b70c9b9be1863d9759fa7",
+    "originalCrop": [
+      1,
+      1,
+      189,
+      99
+    ]
+  },
+  {
+    "id": "1972",
+    "catalogueId": "1972",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1972-926403.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "77267f4f105e15c3bdf1c9c33249500b63a14a2de6e9c169cd30d20a87d0d0c4",
+    "photoFile": "1972-926403.jpg",
+    "crop": [
+      0,
+      0,
+      190,
+      100
+    ],
+    "month": null,
+    "control": "926403",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1972.jpg",
+    "originalSha256": "be7b7d4855c27602cb1fe33b61b9356d143b3aaa89546817cbff1cc99fb7839e",
+    "originalCrop": [
+      1,
+      1,
+      179,
+      99
+    ]
+  },
+  {
+    "id": "1974",
+    "catalogueId": "1974",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1974-769712.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "2966d150e6e115530ae31a9ecf56e2dbbc102fc42566945fa8294cd15d29de56",
+    "photoFile": "1974-769712.jpg",
+    "crop": [
+      0,
+      0,
+      181,
+      100
+    ],
+    "month": null,
+    "control": "769712",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1974.jpg",
+    "originalSha256": "66d51fcae1e6d3e9b08414b29bba23461b56f2130652fc54469c54e3f7ef1752",
+    "originalCrop": [
+      1,
+      1,
+      178,
+      99
+    ]
+  },
+  {
+    "id": "1975",
+    "catalogueId": "1975",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1975-4469530.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "431d3e8fb25c5ceb49cb1695a52a60575eeffba43b79b0abed0bb7beca147b12",
+    "photoFile": "1975-4469530.jpg",
+    "crop": [
+      0,
+      0,
+      153,
+      100
+    ],
+    "month": null,
+    "control": "4469530",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1975.jpg",
+    "originalSha256": "ce5c39c5772b75a87ddedad1d46e2ecadd9f34ad2013ac4b33ab7a88a421bf5e",
+    "originalCrop": [
+      1,
+      1,
+      148,
+      99
+    ]
+  },
+  {
+    "id": "1976",
+    "catalogueId": "1976",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1976.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals.htm",
+    "sourceSha256": "264c2405c740ac20838f5318ba1e4930b66b476ade29d7da87170afccc25bd15",
+    "photoFile": "1976.jpg",
+    "crop": [
+      1,
+      1,
+      159,
+      99
+    ],
+    "month": null,
+    "control": "1007289",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1976.jpg",
+    "originalSha256": "264c2405c740ac20838f5318ba1e4930b66b476ade29d7da87170afccc25bd15",
+    "originalCrop": [
+      1,
+      1,
+      159,
+      99
+    ]
+  },
+  {
+    "id": "1977",
+    "catalogueId": "1977",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1977.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "c17d88371b80477a4a6cf7a92007f29cdfa7a3360f6625a54a8dc98ddff28632",
+    "photoFile": "1977.jpg",
+    "crop": [
+      1,
+      1,
+      145,
+      99
+    ],
+    "month": null,
+    "control": "70069890",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1977.jpg",
+    "originalSha256": "c17d88371b80477a4a6cf7a92007f29cdfa7a3360f6625a54a8dc98ddff28632",
+    "originalCrop": [
+      1,
+      1,
+      145,
+      99
+    ],
+    "supplementalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1977-7995546.jpg"
+  },
+  {
+    "id": "1978",
+    "catalogueId": "1978",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1978.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "3607b0af9652d9ab644e365cebfff8159eb9378ec2c17c9d1fba10743d4734bb",
+    "photoFile": "1978.jpg",
+    "crop": [
+      1,
+      1,
+      189,
+      101
+    ],
+    "month": null,
+    "control": "0718662",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1978.jpg",
+    "originalSha256": "3607b0af9652d9ab644e365cebfff8159eb9378ec2c17c9d1fba10743d4734bb",
+    "originalCrop": [
+      1,
+      1,
+      189,
+      101
+    ],
+    "referenceNote": "Other issued 1978 examples have different spacing; their forms support glyph shape, not one universal layout."
+  },
+  {
+    "id": "1980",
+    "catalogueId": "1980",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1980-43052284.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "4aec1ef6a9c46cfc8982cb11ab75b64f9bf87a2c1c71cff747791eb9afc30f72",
+    "photoFile": "1980-43052284.jpg",
+    "crop": [
+      0,
+      0,
+      255,
+      75
+    ],
+    "month": "MAR",
+    "control": "43052284",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1980.jpg",
+    "originalSha256": "e2935a1f5b541b7c10f98e05c6541f56897be6be94833aeb335ce13937ffea42",
+    "originalCrop": [
+      1,
+      1,
+      252,
+      74
+    ]
+  },
+  {
+    "id": "1981",
+    "catalogueId": "1981",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1981-59031991.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "e9f6809d8a5e2ab222652a39c0c134ae940b7e9bd3500716a5f65917a1114301",
+    "photoFile": "1981-59031991.jpg",
+    "crop": [
+      0,
+      0,
+      256,
+      75
+    ],
+    "month": "JUN",
+    "control": "59031991",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1981.jpg",
+    "originalSha256": "b91943b002b8a3f5afe316853333cba66aedf05ef59a531afc3e5d8799f35fa3",
+    "originalCrop": [
+      1,
+      1,
+      248,
+      74
+    ]
+  },
+  {
+    "id": "1982",
+    "catalogueId": "1982",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1982-66134375.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "a6fc137b91355d675999f354f73ed9dadeb643d12b623873efb27548f8473abc",
+    "photoFile": "1982-66134375.jpg",
+    "crop": [
+      0,
+      0,
+      258,
+      75
+    ],
+    "month": "JAN",
+    "control": "66134375",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1982.jpg",
+    "originalSha256": "485d5b666e44013a8ee9761e97ea463a2e2315c2d08423eed9978e6ea6c56e8f",
+    "originalCrop": [
+      1,
+      1,
+      250,
+      74
+    ]
+  },
+  {
+    "id": "1983",
+    "catalogueId": "1983",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1983-85138416.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "2d8ca52802f994bfb9e632f47962f2a69027ed29553bb657b782c1d3027f389a",
+    "photoFile": "1983-85138416.jpg",
+    "crop": [
+      0,
+      0,
+      254,
+      75
+    ],
+    "month": "JUN",
+    "control": "85138416",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1983.jpg",
+    "originalSha256": "e1561e179e749ea86f5999e6f16c54579d1d651e2e5072beaa564d50176c3881",
+    "originalCrop": [
+      1,
+      1,
+      246,
+      74
+    ]
+  },
+  {
+    "id": "1984",
+    "catalogueId": "1984",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1984-42144483.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "2fcf48f5c7554a9c9cb57de02fbbf1b51f96cccc1e19d01ed2ebc7ddf64434a9",
+    "photoFile": "1984-42144483.jpg",
+    "crop": [
+      0,
+      0,
+      255,
+      75
+    ],
+    "month": "MAY",
+    "control": "42144483",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1984.jpg",
+    "originalSha256": "3d3772625d7ef5b968bacee947b86496aef16d5c53d7f8d110d8b030a8fc2fd9",
+    "originalCrop": [
+      1,
+      1,
+      254,
+      74
+    ]
+  },
+  {
+    "id": "1985",
+    "catalogueId": "1985",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1985-62333627.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "fb316e4932f314f1599b375a3d961b316f0c91558b675d6b0898ab22da89e4ce",
+    "photoFile": "1985-62333627.jpg",
+    "crop": [
+      0,
+      0,
+      255,
+      75
+    ],
+    "month": "JUL",
+    "control": "62333627",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1985.jpg",
+    "originalSha256": "46031d555c5cf1043df5f059a87995dbfdfe6454e27cc5bc2824cc22c4548ec6",
+    "originalCrop": [
+      1,
+      1,
+      243,
+      74
+    ]
+  },
+  {
+    "id": "1986",
+    "catalogueId": "1986",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-12137790.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "3b5a701dca266008aa866ae51efe3087672878a101a3a144d8d25bee437706f5",
+    "photoFile": "1986-12137790.jpg",
+    "crop": [
+      0,
+      0,
+      258,
+      75
+    ],
+    "month": "MAR",
+    "control": "12137790",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1986.jpg",
+    "originalSha256": "9645aff724be8aaa482404d503a397f33381b3050df75c334a8b4aee167f3596",
+    "originalCrop": [
+      1,
+      1,
+      242,
+      74
+    ]
+  },
+  {
+    "id": "1987",
+    "catalogueId": "1987",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1987-22687871.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "9323fd4707a7352b6109bb21467313738f18b46241ebefe1d139490504bf479f",
+    "photoFile": "1987-22687871.jpg",
+    "crop": [
+      0,
+      0,
+      260,
+      75
+    ],
+    "month": "FEB",
+    "control": "22687871",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1987.jpg",
+    "originalSha256": "75391f7e79e0c9f49ddc96662a6a64557006ab0e9cae9eec3f19376668a07428",
+    "originalCrop": [
+      1,
+      1,
+      238,
+      74
+    ]
+  },
+  {
+    "id": "1988",
+    "catalogueId": "1988",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1988-21533872.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "c82fae217ec7edeb39abac963cf0d99eaffac4263e8f6e3b195b510417161711",
+    "photoFile": "1988-21533872.jpg",
+    "crop": [
+      0,
+      0,
+      254,
+      75
+    ],
+    "month": "DEC",
+    "control": "21533872",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1988.jpg",
+    "originalSha256": "56c6bfd475c01f8cb66f525ee7818b7ca188e4e6d78dd3b23358f38a6b419aeb",
+    "originalCrop": [
+      1,
+      1,
+      246,
+      74
+    ]
+  },
+  {
+    "id": "1989",
+    "catalogueId": "1989",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1989-33187934.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "c31b8e58dfc3bbdd94b61c4db7a7baab5869eec20c06909b1a7debca87972cdb",
+    "photoFile": "1989-33187934.jpg",
+    "crop": [
+      0,
+      0,
+      249,
+      75
+    ],
+    "month": "APR",
+    "control": "33187934",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1989.jpg",
+    "originalSha256": "d2fff2fa2dcbc59f043e5ce24a7fd550b57cd0eaebc83c06bd6b1f8d043eec33",
+    "originalCrop": [
+      1,
+      1,
+      244,
+      74
+    ]
+  },
+  {
+    "id": "1990",
+    "catalogueId": "1990",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1990-30863010.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "ce2a731bd4cfb9b9f8aaaf9a90b1688d11ce67cc813cff83d0c0179806e198ba",
+    "photoFile": "1990-30863010.jpg",
+    "crop": [
+      0,
+      0,
+      254,
+      75
+    ],
+    "month": "JAN",
+    "control": "30863010",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1990.jpg",
+    "originalSha256": "75996bbaadef068fde88da3124fb6c49265db345f6dd535a5d307209221875f8",
+    "originalCrop": [
+      1,
+      1,
+      244,
+      74
+    ]
+  },
+  {
+    "id": "1991",
+    "catalogueId": "1991",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1991-55232623.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "eac1429999333059ff23e9d0974b5f5b61e3058924a23940a76b36e1c1f92e18",
+    "photoFile": "1991-55232623.jpg",
+    "crop": [
+      0,
+      0,
+      246,
+      75
+    ],
+    "month": "JUN",
+    "control": "55232623",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1991.jpg",
+    "originalSha256": "1460bf9808f552bbf2d988d3b24d5c63cc0286abd197b67134fa267f339bfdb5",
+    "originalCrop": [
+      1,
+      1,
+      248,
+      74
+    ]
+  },
+  {
+    "id": "1992",
+    "catalogueId": "1992",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1992-59693121.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "3fcc9731660652ba010de377f610663a7f8432921da9aa9ee3014eccdfd9ffdc",
+    "photoFile": "1992-59693121.jpg",
+    "crop": [
+      0,
+      0,
+      250,
+      75
+    ],
+    "month": "OCT",
+    "control": "59693121",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1992.jpg",
+    "originalSha256": "6a07043027116daabd1fe2818975ecda80121d3eab43542c607fc023a1b13063",
+    "originalCrop": [
+      1,
+      1,
+      244,
+      74
+    ]
+  },
+  {
+    "id": "1993",
+    "catalogueId": "1993",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1993-79096980.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "dd1db23deb518804d6c5a3248e90cf0dcf3cb1b7317d82d3b5e2462685a41dfc",
+    "photoFile": "1993-79096980.jpg",
+    "crop": [
+      0,
+      0,
+      251,
+      75
+    ],
+    "month": "OCT",
+    "control": "79096980",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1993.jpg",
+    "originalSha256": "a2d0dbd7b986dcdc25ebc674e247d65e6b983b33432dc556754eb95189001d98",
+    "originalCrop": [
+      1,
+      1,
+      246,
+      74
+    ]
+  },
+  {
+    "id": "1994",
+    "catalogueId": "1994",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1994-79533496.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "58f3d02f385569622e09e1f37b2f97dee10b2da539abd685df6d5805e7d5d1c6",
+    "photoFile": "1994-79533496.jpg",
+    "crop": [
+      0,
+      0,
+      249,
+      75
+    ],
+    "month": "OCT",
+    "control": "79533496",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1994.jpg",
+    "originalSha256": "131910192f4141d6081cb1c4c39ae17377431af7ec213e2199025f2dcc44c7c6",
+    "originalCrop": [
+      1,
+      1,
+      243,
+      74
+    ]
+  },
+  {
+    "id": "1995",
+    "catalogueId": "1995",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1995-82287425.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "57e093658b7b48eb5cb5ca62747b959cebab4cfa369d192a477a0f9c7039d8c7",
+    "photoFile": "1995-82287425.jpg",
+    "crop": [
+      0,
+      0,
+      251,
+      75
+    ],
+    "month": "NOV",
+    "control": "82287425",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1995.jpg",
+    "originalSha256": "cdde826384ea0544dacfa18c877dab88bca1714a79880f7a6cb7d7d5b6e4511b",
+    "originalCrop": [
+      1,
+      1,
+      245,
+      74
+    ]
+  },
+  {
+    "id": "1996",
+    "catalogueId": "1996",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1996-22710492.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "3ce6a9302396f0ae45d9abeca5abe2234d3ab3b0ead4abc65b20ee4197ce45a9",
+    "photoFile": "1996-22710492.jpg",
+    "crop": [
+      0,
+      0,
+      247,
+      75
+    ],
+    "month": "MAR",
+    "control": "22710492",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1996-black.jpg",
+    "originalSha256": "1a531b92c49eb9575667f9078ac3c60799fe4a3bbbdce9c67205ac3a57ebed33",
+    "originalCrop": [
+      1,
+      1,
+      241,
+      74
+    ]
+  },
+  {
+    "id": "1996-pink",
+    "catalogueId": "1996-pink",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1996-pink.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "7af3adbfaff4f8170d470b34103357d7fba2a8e40eb7a4974fad2be0c191db41",
+    "photoFile": "1996-pink.jpg",
+    "crop": [
+      1,
+      1,
+      244,
+      74
+    ],
+    "month": "NOV",
+    "control": "82903198",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1996-pink.jpg",
+    "originalSha256": "7af3adbfaff4f8170d470b34103357d7fba2a8e40eb7a4974fad2be0c191db41",
+    "originalCrop": [
+      1,
+      1,
+      244,
+      74
+    ]
+  },
+  {
+    "id": "1997",
+    "catalogueId": "1997",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1997-84261541.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "057d4919237a53981168769beff6193ae572b82f935e8ed69d4ca655ad382d5c",
+    "photoFile": "1997-84261541.jpg",
+    "crop": [
+      0,
+      0,
+      250,
+      75
+    ],
+    "month": "NOV",
+    "control": "84261541",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1997.jpg",
+    "originalSha256": "d79234cb6b7c2cc8236cb3f170eeb29a86afca3ef11f715ddc722d8c53231fcb",
+    "originalCrop": [
+      1,
+      1,
+      247,
+      74
+    ]
+  },
+  {
+    "id": "1998",
+    "catalogueId": "1998",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1998-37685128.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "61783f37ff3584c7d06d039a41871f53eb3d020647b152ff29958b58d002e188",
+    "photoFile": "1998-37685128.jpg",
+    "crop": [
+      0,
+      0,
+      251,
+      75
+    ],
+    "month": "AUG",
+    "control": "37685128",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1998.jpg",
+    "originalSha256": "3da93c37b1f61ccb1bbbd2a8f38219aca48e890ca5880b0097b7ea8dbe648d57",
+    "originalCrop": [
+      1,
+      1,
+      243,
+      74
+    ]
+  },
+  {
+    "id": "1998-type-ii",
+    "catalogueId": "1998-type-ii",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1998/1998-May-34838894.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals.htm",
+    "sourceSha256": "432fd7f851c03d00dde60da02f0d9aa310d4e0ead108cd8f5ada068f6d18d2fc",
+    "photoFile": "1998-May-34838894.jpg",
+    "crop": [
+      1,
+      1,
+      374,
+      115
+    ],
+    "month": "MAY",
+    "control": "34838894",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1998/1998-May-34838894.jpg",
+    "originalSha256": "432fd7f851c03d00dde60da02f0d9aa310d4e0ead108cd8f5ada068f6d18d2fc",
+    "originalCrop": [
+      1,
+      1,
+      374,
+      115
+    ]
+  },
+  {
+    "id": "1999",
+    "catalogueId": "1999",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1999-60204824.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "dccb07b9aa6712a12c3ef2fe9cef5833fb67ac9973c7693dcbab8a3182716814",
+    "photoFile": "1999-60204824.jpg",
+    "crop": [
+      0,
+      0,
+      256,
+      75
+    ],
+    "month": "NOV",
+    "control": "60204824",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1999-thick.jpg",
+    "originalSha256": "614acea5c9bad07a30bedba69026b4a7856b8fb1ca15092c1c1f4111e34f413b",
+    "originalCrop": [
+      1,
+      1,
+      243,
+      74
+    ]
+  },
+  {
+    "id": "1999-white",
+    "catalogueId": "1999-white",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1999-thin.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "46da3069c19f0303e185737422a37fb7c8ea020ff1f962997b6bafbdad51b196",
+    "photoFile": "1999-thin.jpg",
+    "crop": [
+      0,
+      0,
+      257,
+      75
+    ],
+    "month": "OCT",
+    "control": "59145746",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1999-61152006.jpg",
+    "originalSha256": "90ffd6abc1d0040ad53d63a2067c35fbd9ca3ce046ccdc9eca6c7450ad5016c3",
+    "originalCrop": [
+      1,
+      1,
+      253,
+      74
+    ]
+  },
+  {
+    "id": "2000",
+    "catalogueId": "2000",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2000-53583708.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "7b5614d67a88d907eb9ff385e86f6faf1badee6bddf2530931104b6b13afe3c6",
+    "photoFile": "2000-53583708.jpg",
+    "crop": [
+      0,
+      0,
+      263,
+      75
+    ],
+    "month": "APR",
+    "control": "53583708",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2000-50803178.jpg",
+    "originalSha256": "7aa98d7c02414f59772be19fd3260e5efec7ad1120843d2b4642341d860722bb",
+    "originalCrop": [
+      1,
+      1,
+      259,
+      74
+    ]
+  },
+  {
+    "id": "2001",
+    "catalogueId": "2001",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2001-770364670.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "25174885c3d7037289935e22a31b3b6615c954ae0d4e5aed441d3eaca30bfe1c",
+    "photoFile": "2001-770364670.jpg",
+    "crop": [
+      0,
+      0,
+      264,
+      75
+    ],
+    "month": "AUG",
+    "control": "77036470",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/2001-76052343.jpg",
+    "originalSha256": "bcbe2038e63830323c34cf33187f57774c4b905094a7c6d3a90897031a382c94",
+    "originalCrop": [
+      7,
+      3,
+      463,
+      132
+    ],
+    "transcriptionNote": "Filename contains nine digits; photographed control reads 77036470."
+  },
+  {
+    "id": "2002",
+    "catalogueId": "2002",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2002-86673867.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "2da8bf1857b9bd88f3ac3d9073936b889503ce11f6cb8a48034d0699f12fd016",
+    "photoFile": "2002-86673867.jpg",
+    "crop": [
+      0,
+      0,
+      260,
+      75
+    ],
+    "month": "SEP",
+    "control": "86673867",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2002.jpg",
+    "originalSha256": "bba59bab19f61c6e02fb20e480c6c1ddbb7947ea3c58ecac209211fa38a5e96c",
+    "originalCrop": [
+      1,
+      1,
+      254,
+      74
+    ]
+  },
+  {
+    "id": "2003",
+    "catalogueId": "2003",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2003-65718201.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "a0a0877295d0898975cdd930c68b5254c1f7fd5cc39b5cf98a7fa88043f1fbc4",
+    "photoFile": "2003-65718201.jpg",
+    "crop": [
+      0,
+      0,
+      264,
+      75
+    ],
+    "month": "APR",
+    "control": "65718201",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2003-86273079.jpg",
+    "originalSha256": "6fbc70a3d98ba8cd70649e24c544c1cc2f783fae01258d188d2e128da04c928b",
+    "originalCrop": [
+      1,
+      1,
+      252,
+      74
+    ]
+  },
+  {
+    "id": "2004",
+    "catalogueId": "2004",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2004-42591320.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "a3c96c191af4dbac41dfa222074b0b9076fbab04611083cb93727bd4d1c4d7c9",
+    "photoFile": "2004-42591320.jpg",
+    "crop": [
+      0,
+      0,
+      259,
+      75
+    ],
+    "month": "MAR",
+    "control": "42591320",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2004.jpg",
+    "originalSha256": "f8213b9bc6d73ed905dc47c88a56a4418885933aaa056425e53442ae3a500671",
+    "originalCrop": [
+      1,
+      1,
+      254,
+      74
+    ]
+  },
+  {
+    "id": "2005",
+    "catalogueId": "2005",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2005.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "2e1bdc39fcd8b47e50bf2ee293d7ed9f185ab3c81d85cf50d19ad92256a69ac1",
+    "photoFile": "2005.jpg",
+    "crop": [
+      1,
+      1,
+      231,
+      99
+    ],
+    "month": "JAN",
+    "control": "10167427",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2005.jpg",
+    "originalSha256": "2e1bdc39fcd8b47e50bf2ee293d7ed9f185ab3c81d85cf50d19ad92256a69ac1",
+    "originalCrop": [
+      1,
+      1,
+      231,
+      99
+    ]
+  },
+  {
+    "id": "2006",
+    "catalogueId": "2006",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2006-24286311.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "a6dcfe59a935c99dedf13f619467e73835a77bad5244bfa1036a3b47aaccd580",
+    "photoFile": "2006-24286311.jpg",
+    "crop": [
+      0,
+      0,
+      234,
+      100
+    ],
+    "month": "MAY",
+    "control": "24286311",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2006-21258417.jpg",
+    "originalSha256": "b96b1329de57b6f4cc0d1997dd684adc568de6819a20911334cab7aac3999938",
+    "originalCrop": [
+      1,
+      1,
+      227,
+      99
+    ]
+  },
+  {
+    "id": "2007",
+    "catalogueId": "2007",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2007-30289413.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "1c1ce5e06208aec2d4d3785c08ca7bed1f64db76eb8e176cd87e7630ecee30d7",
+    "photoFile": "2007-30289413.jpg",
+    "crop": [
+      0,
+      0,
+      233,
+      100
+    ],
+    "month": "JAN",
+    "control": "30289413",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2007.jpg",
+    "originalSha256": "bff0359d81710286b6375456ab2a2c29a7b6e4ca9debde5fa268a448818f5125",
+    "originalCrop": [
+      1,
+      1,
+      225,
+      99
+    ]
+  },
+  {
+    "id": "2008",
+    "catalogueId": "2008",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2008-47144166.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "7a42d4f4e1f013488a65f68fef89a8c31870cdbd826c60ceb9b4582e1cde9ee4",
+    "photoFile": "2008-47144166.jpg",
+    "crop": [
+      0,
+      0,
+      238,
+      100
+    ],
+    "month": "AUG",
+    "control": "47144166",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2008.jpg",
+    "originalSha256": "555d1958bc9022d6db6762ee6c55b76076d31a850ab9af5f4b14df56cd894c2e",
+    "originalCrop": [
+      1,
+      1,
+      234,
+      99
+    ]
+  },
+  {
+    "id": "2009",
+    "catalogueId": "2009",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2009-53054167.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "e5e313c6c568ef43e47735afe293b202e0dae0d7565cce721c3ee576be8547f3",
+    "photoFile": "2009-53054167.jpg",
+    "crop": [
+      0,
+      0,
+      237,
+      100
+    ],
+    "month": "APR",
+    "control": "53054167",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2009.jpg",
+    "originalSha256": "3df0b2dce7202ff77d8bc4d25c87a8162c58784ad620c8431103b4b0e038a68f",
+    "originalCrop": [
+      1,
+      1,
+      229,
+      99
+    ]
+  },
+  {
+    "id": "2010",
+    "catalogueId": "2010",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2010.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "4bd838377cf0ed363381212b629a7024fe8d86fe54398dbb97119d18ab2cf274",
+    "photoFile": "2010.jpg",
+    "crop": [
+      1,
+      1,
+      236,
+      99
+    ],
+    "month": "JAN",
+    "control": "10717219",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2010.jpg",
+    "originalSha256": "4bd838377cf0ed363381212b629a7024fe8d86fe54398dbb97119d18ab2cf274",
+    "originalCrop": [
+      1,
+      1,
+      236,
+      99
+    ]
+  },
+  {
+    "id": "2011",
+    "catalogueId": "2011",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2011-24516329.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "c168f8aab671d03dfa0630e5df38f868c67ad0ee322dccf3198e209cba428d39",
+    "photoFile": "2011-24516329.jpg",
+    "crop": [
+      0,
+      0,
+      239,
+      100
+    ],
+    "month": "MAY",
+    "control": "24516329",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2011.jpg",
+    "originalSha256": "3b4542d054dcc48bbbc7838700b373bd7e3058bca833904868156ce3dd40b5fe",
+    "originalCrop": [
+      1,
+      1,
+      231,
+      99
+    ]
+  },
+  {
+    "id": "2012",
+    "catalogueId": "2012",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2012-97303194.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "9d18050af384b2962a72700575af0d2a073d6ae644e58f0341d8fd848cdc6259",
+    "photoFile": "2012-97303194.jpg",
+    "crop": [
+      0,
+      0,
+      240,
+      100
+    ],
+    "month": "NOV",
+    "control": "97303194",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2012.jpg",
+    "originalSha256": "7df31b3a658762eeb866626fb0cb599db4f9ee1f4929ee12499c236dfc4a04c1",
+    "originalCrop": [
+      1,
+      1,
+      233,
+      99
+    ]
+  },
+  {
+    "id": "2013",
+    "catalogueId": "2013",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2013-79670318.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "a5a2ea16c33849bafa94c299e8cf043a01f37babe96f19b1ae9da3956ce69b78",
+    "photoFile": "2013-79670318.jpg",
+    "crop": [
+      0,
+      0,
+      238,
+      100
+    ],
+    "month": "OCT",
+    "control": "79670318",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2013.jpg",
+    "originalSha256": "d9cef88231fed17650b41cc2d35350100cbe20802ec4e9833fcbc1cccf575ba6",
+    "originalCrop": [
+      1,
+      1,
+      238,
+      99
+    ]
+  },
+  {
+    "id": "2014",
+    "catalogueId": "2014",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2014-53695502.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "d1b1153b37711692c5ddbfd32d79f8d57545aedde5ea5bd45b3f3eb9d0e63481",
+    "photoFile": "2014-53695502.jpg",
+    "crop": [
+      0,
+      0,
+      240,
+      100
+    ],
+    "month": "APR",
+    "control": "53695502",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2014-99103688.jpg",
+    "originalSha256": "045c9df726d2321fd606b1397c63f9eb35a65595ae08492f61ce54b83a96ed88",
+    "originalCrop": [
+      1,
+      1,
+      228,
+      99
+    ]
+  },
+  {
+    "id": "2015",
+    "catalogueId": "2015",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2015-70118033(XL).jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals.htm",
+    "sourceSha256": "c6641422c2bd11792a36b19bda7b00d39b4b0afffb353fcfc4d80d6fa577706c",
+    "photoFile": "2015-70118033(XL).jpg",
+    "crop": [
+      0,
+      0,
+      816,
+      332
+    ],
+    "month": "JAN",
+    "control": "70118033",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2015-70118033.jpg",
+    "originalSha256": "f1643f30dabf56094e60834342c9a90d2203dd6f5beb80a0a1f131ce211d7bfa",
+    "originalCrop": [
+      1,
+      1,
+      245,
+      99
+    ]
+  },
+  {
+    "id": "2016",
+    "catalogueId": "2016",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2016-11203175.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "75b51d88043d4c504fcdac9b213cf7af3a6d4d99f13f3c566936f2fd12ce07ab",
+    "photoFile": "2016-11203175.jpg",
+    "crop": [
+      0,
+      0,
+      245,
+      100
+    ],
+    "month": "FEB",
+    "control": "11203175",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2016-10076867.jpg",
+    "originalSha256": "e0dccce99d0d8a263b819bf0fb9a982ce41c8f69f5523fe7687c54d46b2132c8",
+    "originalCrop": [
+      1,
+      1,
+      238,
+      99
+    ]
+  },
+  {
+    "id": "2017",
+    "catalogueId": "2017",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2017-20093481.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "415812d53297bedef10a087bd3dadd2485a4ca78fc66fd3eead81c5b46034571",
+    "photoFile": "2017-20093481.jpg",
+    "crop": [
+      1,
+      1,
+      234,
+      99
+    ],
+    "month": "JAN",
+    "control": "20093481",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2017-20093481.jpg",
+    "originalSha256": "415812d53297bedef10a087bd3dadd2485a4ca78fc66fd3eead81c5b46034571",
+    "originalCrop": [
+      1,
+      1,
+      234,
+      99
+    ]
+  },
+  {
+    "id": "2018",
+    "catalogueId": "2018",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2018-50278580.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "ef1407945ec73e9fcc16fab308a9e0d6ba45725e5f5a3b175c942976c062aa49",
+    "photoFile": "2018-50278580.jpg",
+    "crop": [
+      3,
+      2,
+      228,
+      98
+    ],
+    "month": "JAN",
+    "control": "50278580",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2018-50278580.jpg",
+    "originalSha256": "ef1407945ec73e9fcc16fab308a9e0d6ba45725e5f5a3b175c942976c062aa49",
+    "originalCrop": [
+      3,
+      2,
+      228,
+      98
+    ]
+  },
+  {
+    "id": "2019",
+    "catalogueId": "2019",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2019-10727925.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "6f1d3638b36fa43b6c9a47b5ce05a45d2c1ed89877bec44c2372dbaff152d118",
+    "photoFile": "2019-10727925.jpg",
+    "crop": [
+      3,
+      2,
+      236,
+      98
+    ],
+    "month": "JAN",
+    "control": "10727925",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2019-10727925.jpg",
+    "originalSha256": "6f1d3638b36fa43b6c9a47b5ce05a45d2c1ed89877bec44c2372dbaff152d118",
+    "originalCrop": [
+      3,
+      2,
+      236,
+      98
+    ]
+  },
+  {
+    "id": "2020",
+    "catalogueId": "2020",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2020-0000000.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals.htm",
+    "sourceSha256": "a44fbe891e6d638011691b67fb83c82bbd784d0c1a0f002af3705b92ccdbca9a",
+    "photoFile": "2020-0000000.jpg",
+    "crop": [
+      3,
+      2,
+      226,
+      98
+    ],
+    "month": "JAN",
+    "control": "00000000",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2020-0000000.jpg",
+    "originalSha256": "a44fbe891e6d638011691b67fb83c82bbd784d0c1a0f002af3705b92ccdbca9a",
+    "originalCrop": [
+      3,
+      2,
+      226,
+      98
+    ]
+  },
+  {
+    "id": "2021",
+    "catalogueId": "2021",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2021-36946964.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "e8b849bad4eba73ef0373fbb772a9bd017d135230161fd9a00ef3730669b1c74",
+    "photoFile": "2021-36946964.jpg",
+    "crop": [
+      1,
+      1,
+      229,
+      99
+    ],
+    "month": "JUL",
+    "control": "36946964",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2021-36946964.jpg",
+    "originalSha256": "e8b849bad4eba73ef0373fbb772a9bd017d135230161fd9a00ef3730669b1c74",
+    "originalCrop": [
+      1,
+      1,
+      229,
+      99
+    ]
+  },
+  {
+    "id": "2022",
+    "catalogueId": "2022",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2022-72919128.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "8a5d4db2c66d5beb742dbb8e5f80737559c3136e306985495576fa8b5928fa64",
+    "photoFile": "2022-72919128.jpg",
+    "crop": [
+      1,
+      1,
+      237,
+      99
+    ],
+    "month": "MAR",
+    "control": "72919128",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2022-72919128.jpg",
+    "originalSha256": "8a5d4db2c66d5beb742dbb8e5f80737559c3136e306985495576fa8b5928fa64",
+    "originalCrop": [
+      1,
+      1,
+      237,
+      99
+    ]
+  },
+  {
+    "id": "2023",
+    "catalogueId": "2023",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2023-52843353.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "e53879fc4a5e160fcfb76135db66af71b95302799b31ed16e0da39cc4e85b62d",
+    "photoFile": "2023-52843353.jpg",
+    "crop": [
+      1,
+      1,
+      233,
+      99
+    ],
+    "month": "MAR",
+    "control": "52843353",
+    "sourceStatus": "issued photographic specimen",
+    "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2023-52843353.jpg",
+    "originalSha256": "e53879fc4a5e160fcfb76135db66af71b95302799b31ed16e0da39cc4e85b62d",
+    "originalCrop": [
+      1,
+      1,
+      233,
+      99
+    ]
+  },
+  {
+    "id": "1986-jan",
+    "catalogueId": "1986",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-10033703.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "4a6546670e6eef9b254c75975b1b42071870f4c670032323ecf65ec4d392fa30",
+    "photoFile": "1986-10033703.jpg",
+    "crop": [
+      0,
+      0,
+      245,
+      75
+    ],
+    "month": "JAN",
+    "control": "10033703",
+    "sourceStatus": "issued photographic specimen; additional month"
+  },
+  {
+    "id": "1986-feb",
+    "catalogueId": "1986",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-11834084.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "ab1f33cefb4124e8efc8bdbac184868c2daa199c0bc2564673c4d7dc96cb674b",
+    "photoFile": "1986-11834084.jpg",
+    "crop": [
+      0,
+      0,
+      252,
+      75
+    ],
+    "month": "FEB",
+    "control": "11834084",
+    "sourceStatus": "issued photographic specimen; additional month"
+  },
+  {
+    "id": "1986-apr",
+    "catalogueId": "1986",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-13185411.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "1f88f4dafa04acc419b7e186d310097351e69212a65f1fc0ae4b8a0296c1395a",
+    "photoFile": "1986-13185411.jpg",
+    "crop": [
+      0,
+      0,
+      240,
+      75
+    ],
+    "month": "APR",
+    "control": "13185411",
+    "sourceStatus": "issued photographic specimen; additional month"
+  },
+  {
+    "id": "1986-may",
+    "catalogueId": "1986",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-14071545.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "d6ddd0c22d5aeb2c87b6006c1ed671461a3eab7473cb17f3eb32d9b7117a7057",
+    "photoFile": "1986-14071545.jpg",
+    "crop": [
+      0,
+      0,
+      245,
+      75
+    ],
+    "month": "MAY",
+    "control": "14071545",
+    "sourceStatus": "issued photographic specimen; additional month"
+  },
+  {
+    "id": "1986-jun",
+    "catalogueId": "1986",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-15140523.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "60c6dd43ff347dd9b8b11cc495321961b0112bc13610d746c824b272faf3a7ee",
+    "photoFile": "1986-15140523.jpg",
+    "crop": [
+      0,
+      0,
+      243,
+      75
+    ],
+    "month": "JUN",
+    "control": "15140523",
+    "sourceStatus": "issued photographic specimen; additional month"
+  },
+  {
+    "id": "1986-jul",
+    "catalogueId": "1986",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "9645aff724be8aaa482404d503a397f33381b3050df75c334a8b4aee167f3596",
+    "photoFile": "1986.jpg",
+    "crop": [
+      0,
+      0,
+      243,
+      75
+    ],
+    "month": "JUL",
+    "control": "16126202",
+    "sourceStatus": "issued photographic specimen; additional month"
+  },
+  {
+    "id": "1986-aug",
+    "catalogueId": "1986",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-17062991.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "6438fd60e5ad611004b232744e81d0d8131ae7eb959a2ab1c1bd77aaa8a861d1",
+    "photoFile": "1986-17062991.jpg",
+    "crop": [
+      0,
+      0,
+      240,
+      75
+    ],
+    "month": "AUG",
+    "control": "17062991",
+    "sourceStatus": "issued photographic specimen; additional month"
+  },
+  {
+    "id": "1986-sep",
+    "catalogueId": "1986",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-18021283.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "6da65487d2383717e859125b871d458bfc63479cb3c335daca4cad0a6123ef60",
+    "photoFile": "1986-18021283.jpg",
+    "crop": [
+      0,
+      0,
+      244,
+      75
+    ],
+    "month": "SEP",
+    "control": "18021283",
+    "sourceStatus": "issued photographic specimen; additional month"
+  },
+  {
+    "id": "1986-oct",
+    "catalogueId": "1986",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-19062205.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "45abe52ce0f32e310d15d11568772c555ce393db360fb6a0dac8ff1bd007622e",
+    "photoFile": "1986-19062205.jpg",
+    "crop": [
+      0,
+      0,
+      236,
+      75
+    ],
+    "month": "OCT",
+    "control": "19062205",
+    "sourceStatus": "issued photographic specimen; additional month"
+  },
+  {
+    "id": "1986-nov",
+    "catalogueId": "1986",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-20072840.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "0514c021c5cc44273c59d36a679d469040c276b7e22ed95942dec24c12ce1a08",
+    "photoFile": "1986-20072840.jpg",
+    "crop": [
+      0,
+      0,
+      241,
+      75
+    ],
+    "month": "NOV",
+    "control": "20072840",
+    "sourceStatus": "issued photographic specimen; additional month"
+  },
+  {
+    "id": "1986-dec",
+    "catalogueId": "1986",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-21129670.jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+    "sourceSha256": "74ddc7fc8e32bdc1b346bba685dbbfeaf9d283af0959cc44d4d15bf80914d8d5",
+    "photoFile": "1986-21129670.jpg",
+    "crop": [
+      0,
+      0,
+      237,
+      75
+    ],
+    "month": "DEC",
+    "control": "21129670",
+    "sourceStatus": "issued photographic specimen; additional month"
+  },
+  {
+    "id": "2017-nov",
+    "catalogueId": "2017",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2017-91115136(XL).jpg",
+    "sourcePage": "https://www.bcpl8s.ca/Decals.htm",
+    "sourceSha256": "c137d2661e32a0d0d99e254454e068306b635b76549dc0d69e15781c5221b128",
+    "photoFile": "2017-91115136(XL).jpg",
+    "crop": [
+      8,
+      16,
+      991,
+      430
+    ],
+    "month": "NOV",
+    "control": "91115136",
+    "sourceStatus": "issued photographic specimen; post-July design"
+  },
+  {
+    "id": "2017-jul",
+    "catalogueId": "2017",
+    "source": "https://www.bcpl8s.ca/PDFs/ICBCBulletin14.pdf",
+    "sourcePage": "https://www.bcpl8s.ca/PDFs/ICBCBulletin14.pdf",
+    "sourceSha256": "495be3ed4c8d25eb0f62916175a8fd4dd33d5f611988ce76f970de0830408f3d",
+    "documentSha256": "a01a0b4339fe0dab9f6278a7e5ba9010697a01ce5f96313842fc378f541e76fe",
+    "photoFile": "docs/research/decal-online-analysis/sources/icbc-bulletin14-jul2017.jpg",
+    "crop": [
+      15,
+      13,
+      406,
+      189
+    ],
+    "month": "JUL",
+    "control": "00000001",
+    "sourceStatus": "Official design illustration: ICBC Bulletin 14, page 1 embedded JPEG; not proof of an issued control number"
+  }
+]

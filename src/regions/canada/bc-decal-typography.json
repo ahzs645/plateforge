@@ -2,7 +2,7 @@
   "1970": {
     "lineBreaks": "BRITISH / COLUMBIA under outlined 70.",
     "finding": "Province was too narrow and too tall; add photographed tracking and lower cap height. Circular outline-zero proportions corrected.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "fontEvidence": "Wide squared capitals compared to period Microgramma/Eurostile specimens. Orbitron Black is a native open-font reconstruction candidate, not historical attribution.",
     "runs": {
       "decal-year": [
         {
@@ -17,19 +17,19 @@
       "decal-legend": [
         {
           "x": 0.5,
-          "baseline": 0.66,
-          "cap": 0.105,
+          "baseline": 0.694,
+          "cap": 0.123,
           "width": 0.65,
-          "profile": "normal",
-          "tracking": 30
+          "profile": "orbitron-900",
+          "tracking": 10
         },
         {
           "x": 0.5,
-          "baseline": 0.815,
-          "cap": 0.105,
+          "baseline": 0.85,
+          "cap": 0.123,
           "width": 0.8,
-          "profile": "normal",
-          "tracking": 30
+          "profile": "orbitron-900",
+          "tracking": 10
         }
       ]
     },
@@ -44,7 +44,7 @@
   "1971": {
     "lineBreaks": "BRITISH / COLUMBIA; boxed control; 71 at right.",
     "finding": "Province needs wider tracking; control digits were too light and tightly spaced. Keep supplied emblem separate from the printing.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
     "runs": {
       "decal-legend": [
         {
@@ -66,12 +66,15 @@
       ],
       "decal-year": [
         {
-          "x": 0.79,
+          "x": 0.8,
           "baseline": 0.865,
-          "cap": 0.43,
+          "cap": 0.408,
           "width": 0.38,
-          "profile": "normal",
-          "tracking": 0
+          "profile": "russoone-400",
+          "tracking": 0,
+          "kerning": {
+            "71": 13.8
+          }
         }
       ],
       "decal-serial": [
@@ -150,7 +153,7 @@
   "1974": {
     "lineBreaks": "BRITISH / COLUMBIA, control, PASSENGER; 7 / 4 at right.",
     "finding": "Province and class label need wider spacing. Preserve two separately stacked year digits; make the boxed control bolder and spaced.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
     "runs": {
       "decal-legend": [
         {
@@ -158,7 +161,7 @@
           "baseline": 0.195,
           "cap": 0.11,
           "width": 0.59,
-          "profile": "normal",
+          "profile": "archivo-900-wdth100",
           "tracking": 19
         },
         {
@@ -166,7 +169,7 @@
           "baseline": 0.36,
           "cap": 0.11,
           "width": 0.62,
-          "profile": "normal",
+          "profile": "archivo-900-wdth100",
           "tracking": 19
         }
       ],
@@ -176,7 +179,7 @@
           "baseline": 0.43,
           "cap": 0.35,
           "width": 0.2,
-          "profile": "normal",
+          "profile": "archivo-900-wdth75",
           "tracking": 0
         },
         {
@@ -204,7 +207,7 @@
           "baseline": 0.905,
           "cap": 0.11,
           "width": 0.66,
-          "profile": "normal",
+          "profile": "archivo-900-wdth100",
           "tracking": 23
         }
       ]
@@ -218,9 +221,9 @@
     "reviewedOn": "2026-10-06"
   },
   "1975": {
-    "lineBreaks": "BRITISH / COLUMBIA beside 75; PASS COMM beneath control.",
+    "lineBreaks": "BRITISH / COLUMBIA; separate 75; boxed control; PASS. COMM.",
     "finding": "Year was too small and control too thin. Increase their height; use lighter province and class printing and preserve the single class line.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
     "runs": {
       "decal-legend": [
         {
@@ -228,7 +231,7 @@
           "baseline": 0.24,
           "cap": 0.125,
           "width": 0.56,
-          "profile": "regular",
+          "profile": "normal",
           "tracking": 4,
           "anchor": "start"
         },
@@ -237,7 +240,7 @@
           "baseline": 0.41,
           "cap": 0.125,
           "width": 0.56,
-          "profile": "regular",
+          "profile": "normal",
           "tracking": 4,
           "anchor": "start"
         }
@@ -248,7 +251,7 @@
           "baseline": 0.4,
           "cap": 0.34,
           "width": 0.35,
-          "profile": "normal",
+          "profile": "archivo-900-wdth75",
           "tracking": 0
         }
       ],
@@ -268,7 +271,7 @@
           "baseline": 0.955,
           "cap": 0.13,
           "width": 0.89,
-          "profile": "regular",
+          "profile": "normal",
           "tracking": 2
         }
       ]
@@ -284,7 +287,7 @@
   "1976": {
     "lineBreaks": "BRITISH / COLUMBIA; 76 PASS. COMM. on one line.",
     "finding": "Province should align on the left. The small year and class were too bold and short; the control needs spaced, heavier digits.",
-    "fontEvidence": "Occurrence-level photographic overlays support normal for decal-year. Visual reconstruction candidate; historical typeface unconfirmed. Native proportions retained; no per-character horizontal scaling.",
+    "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
     "runs": {
       "decal-legend": [
         {
@@ -292,7 +295,7 @@
           "baseline": 0.255,
           "cap": 0.13,
           "width": 0.58,
-          "profile": "regular",
+          "profile": "normal",
           "tracking": 1,
           "anchor": "start"
         },
@@ -348,17 +351,17 @@
     "reviewedOn": "2026-10-06"
   },
   "1977": {
-    "lineBreaks": "B / C at left; 77 beside them; PASS COMM on one line.",
+    "lineBreaks": "Stacked B / C beside 77; PASS. COMM. above boxed control.",
     "finding": "77 was too light and small; class line too bold. Use heavier year and spaced control digits without joining the B/C stack.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
     "runs": {
       "decal-year": [
         {
           "x": 0.43,
-          "baseline": 0.41,
+          "baseline": 0.44,
           "cap": 0.31,
           "width": 0.47,
-          "profile": "normal",
+          "profile": "archivo-900-wdth100",
           "tracking": 0
         }
       ],
@@ -410,7 +413,7 @@
   "1978": {
     "lineBreaks": "PASS and COMM as vertical letters; B / C beside 78.",
     "finding": "B/C was much too small and light. Retain vertical class lettering and increase the open, spaced control digits.",
-    "fontEvidence": "Occurrence-level photographic overlays support archivonarrow-700 for decal-year. Visual reconstruction candidate; historical typeface unconfirmed. Native proportions retained; no per-character horizontal scaling.",
+    "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
     "runs": {
       "decal-year": [
         {
@@ -438,7 +441,7 @@
           "baseline": 0.31,
           "cap": 0.23,
           "width": 0.22,
-          "profile": "normal",
+          "profile": "orbitron-900",
           "tracking": 0
         },
         {
@@ -446,7 +449,7 @@
           "baseline": 0.6,
           "cap": 0.23,
           "width": 0.22,
-          "profile": "normal",
+          "profile": "orbitron-900",
           "tracking": 0
         },
         {
@@ -526,7 +529,7 @@
   "1980": {
     "lineBreaks": "BRITISH COLUMBIA on one top line; month / control / 80 below.",
     "finding": "Top legend is a lighter native sans candidate. Month and year need native bold width; control is smaller, bolder and spaced within its existing box.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
     "runs": {
       "decal-legend": [
         {
@@ -544,7 +547,7 @@
           "baseline": 0.86,
           "cap": 0.42,
           "width": 0.36,
-          "profile": "normal",
+          "profile": "archivo-900-wdth100",
           "tracking": 1,
           "anchor": "start"
         }
@@ -706,7 +709,7 @@
   "1983": {
     "lineBreaks": "BRITISH / COLUMBIA above central control; month and year on opposite sides.",
     "finding": "Widen the province stack and keep month/year proportions within their individual panels. Counter contours remain approximate. The photographed control is unreadable and remains explicitly illustrative.",
-    "fontEvidence": "Occurrence-level photographic overlays support oswald-600 for decal-month. Visual reconstruction candidate; historical typeface unconfirmed. Native proportions retained; no per-character horizontal scaling.",
+    "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
     "runs": {
       "decal-month": [
         {
@@ -738,7 +741,7 @@
           "baseline": 0.235,
           "cap": 0.11,
           "width": 0.3,
-          "profile": "normal",
+          "profile": "archivo-900-wdth100",
           "tracking": 12
         },
         {
@@ -746,7 +749,7 @@
           "baseline": 0.415,
           "cap": 0.11,
           "width": 0.33,
-          "profile": "normal",
+          "profile": "archivo-900-wdth100",
           "tracking": 12
         }
       ],
@@ -1019,7 +1022,7 @@
   "1986": {
     "lineBreaks": "One BRITISH COLUMBIA line over JUL; linked EXPO 86 at right.",
     "finding": "Province was too broad and too close to JUL. Reduce its height and move JUL lower; use a stronger native condensed month candidate. Preserve supplied EXPO paths.",
-    "fontEvidence": "Mixed native reconstruction: observed J from Oswald Semibold, U from Archivo Narrow Semibold, L from Barlow Condensed Semibold; other months use Roboto Condensed Semibold candidates. No exact historic font attribution or horizontal scaling.",
+    "fontEvidence": "Every available month examined. Reconstructed rounded M/A from repeated photographs; other observed letters use separately documented native candidates. Mixed reconstruction, no identified historical typeface.",
     "runs": {
       "decal-legend": [
         {
@@ -1034,15 +1037,19 @@
       "decal-month": [
         {
           "x": 0.295,
-          "baseline": 0.93,
-          "cap": 0.61,
-          "width": 0.45,
-          "profile": "1986-month-reconstruction",
+          "baseline": 0.91,
+          "cap": 0.63,
+          "width": 0.53,
+          "profile": "1986-rounded-reconstruction",
           "tracking": 1,
           "kerning": {
-            "JU": -8.8,
-            "UL": -8.9
-          }
+            "MA": 2.9,
+            "AR": -7.2,
+            "JA": -2.2,
+            "AN": -10.7,
+            "AY": -7.8
+          },
+          "anchor": "middle"
         }
       ],
       "decal-serial": [
@@ -1196,7 +1203,7 @@
   "1991": {
     "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
     "finding": "The wrapping is correct. Increase province size slightly and widen the control using native bold sans outlines.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
     "runs": {
       "decal-month": [
         {
@@ -1204,7 +1211,7 @@
           "baseline": 0.835,
           "cap": 0.66,
           "width": 0.385,
-          "profile": "heavy-month-wide",
+          "profile": "heavy-year-wide",
           "tracking": 0,
           "anchor": "start"
         }
@@ -1520,7 +1527,7 @@
   "1996": {
     "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
     "finding": "MAY was visibly short because width fitting reduced the entire run. Give the month more horizontal room and a taller cap.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
     "runs": {
       "decal-month": [
         {
@@ -1528,7 +1535,7 @@
           "baseline": 0.835,
           "cap": 0.68,
           "width": 0.385,
-          "profile": "heavy-month-wide",
+          "profile": "anton-400",
           "tracking": 0,
           "anchor": "start"
         }
@@ -1584,7 +1591,7 @@
   "1997": {
     "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
     "finding": "JAN needs a taller cap; province/control require wider native glyphs. Retain two province lines.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
     "runs": {
       "decal-month": [
         {
@@ -1592,7 +1599,7 @@
           "baseline": 0.835,
           "cap": 0.66,
           "width": 0.385,
-          "profile": "heavy-month-wide",
+          "profile": "heavy-year-wide",
           "tracking": 0,
           "anchor": "start"
         }
@@ -3060,7 +3067,7 @@
   },
   "2017": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Vertical province columns touched JAN. Separate their origins and reduce their cap; preserve full-year printing.",
+    "finding": "JAN\u2013JUN retain the earlier large square-corner design. JUL\u2013DEC use the documented smaller lettering and rounded-corner design.",
     "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
     "runs": {
       "decal-month": [
@@ -3122,7 +3129,89 @@
       235,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-10-06",
+    "layout": {
+      "cornerRadius": 0
+    },
+    "monthVariants": [
+      {
+        "fromMonth": 7,
+        "evidence": "ICBC Bulletin 14, February 3 2016: design changes commence with July 2017 expiry. Corroborated by issued NOV 2017 enlarged photograph.",
+        "runs": {
+          "decal-month": [
+            {
+              "x": 0.11,
+              "baseline": 0.6,
+              "cap": 0.47,
+              "width": 0.335,
+              "profile": "heavy-month",
+              "tracking": 0,
+              "anchor": "start"
+            }
+          ],
+          "decal-year": [
+            {
+              "x": 0.91,
+              "baseline": 0.6,
+              "cap": 0.47,
+              "width": 0.445,
+              "profile": "heavy-year",
+              "tracking": 0,
+              "anchor": "end",
+              "kerning": {
+                "20": -2.34,
+                "01": -1.84,
+                "17": -6.3
+              }
+            }
+          ],
+          "decal-legend": [
+            {
+              "x": 0,
+              "baseline": 0,
+              "cap": 0.052,
+              "width": 0.4,
+              "profile": "vertical-province",
+              "tracking": 0,
+              "local": true
+            },
+            {
+              "x": 0,
+              "baseline": 0,
+              "cap": 0.052,
+              "width": 0.46,
+              "profile": "vertical-province",
+              "tracking": 0,
+              "local": true
+            }
+          ],
+          "decal-serial": [
+            {
+              "x": 0.79,
+              "baseline": 0.92,
+              "cap": 0.165,
+              "width": 0.39,
+              "profile": "control-bold",
+              "tracking": 0
+            }
+          ]
+        },
+        "layout": {
+          "cornerRadius": 0.1,
+          "provinceCentre": 0.43,
+          "provinceColumns": [
+            0.455,
+            0.495
+          ],
+          "barcode": {
+            "x": 0.015,
+            "y": 0.74,
+            "width": 0.565,
+            "height": 0.17
+          }
+        }
+      }
+    ]
   },
   "2018": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",

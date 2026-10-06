@@ -1,0 +1,396 @@
+[
+  {
+    "name": "Orbitron",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/orbitron/Orbitron%5Bwght%5D.ttf",
+    "sha256": "f42db2dd16e642258e35782916eceb1dcdbea06fb958d77ad71dc5963587e8fd",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/orbitron/OFL.txt",
+    "profile": "orbitron-400",
+    "axes": {
+      "wght": 400
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Orbitron",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/orbitron/Orbitron%5Bwght%5D.ttf",
+    "sha256": "f42db2dd16e642258e35782916eceb1dcdbea06fb958d77ad71dc5963587e8fd",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/orbitron/OFL.txt",
+    "profile": "orbitron-600",
+    "axes": {
+      "wght": 600
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Orbitron",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/orbitron/Orbitron%5Bwght%5D.ttf",
+    "sha256": "f42db2dd16e642258e35782916eceb1dcdbea06fb958d77ad71dc5963587e8fd",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/orbitron/OFL.txt",
+    "profile": "orbitron-700",
+    "axes": {
+      "wght": 700
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Orbitron",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/orbitron/Orbitron%5Bwght%5D.ttf",
+    "sha256": "f42db2dd16e642258e35782916eceb1dcdbea06fb958d77ad71dc5963587e8fd",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/orbitron/OFL.txt",
+    "profile": "orbitron-800",
+    "axes": {
+      "wght": 800
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Orbitron",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/orbitron/Orbitron%5Bwght%5D.ttf",
+    "sha256": "f42db2dd16e642258e35782916eceb1dcdbea06fb958d77ad71dc5963587e8fd",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/orbitron/OFL.txt",
+    "profile": "orbitron-900",
+    "axes": {
+      "wght": 900
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Michroma",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/michroma/Michroma-Regular.ttf",
+    "sha256": "b62301163788bc5b7f8fcac0b74b184e34e1827e577b499ecb724da065098f87",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/michroma/OFL.txt",
+    "profile": "michroma-400",
+    "axes": {},
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "RussoOne",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/russoone/RussoOne-Regular.ttf",
+    "sha256": "bc0abcc660bd8b7ad3000ecb2898a27c58a29a50f7ec81652fa12e75148d09df",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/russoone/OFL.txt",
+    "profile": "russoone-400",
+    "axes": {},
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Audiowide",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/audiowide/Audiowide-Regular.ttf",
+    "sha256": "c7c0f2b0f6fad8c623e31772ce79f94a4edb9321ffce9fce978ea892d20ae730",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/audiowide/OFL.txt",
+    "profile": "audiowide-400",
+    "axes": {},
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Righteous",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/righteous/Righteous-Regular.ttf",
+    "sha256": "2ffb3fe5c27d7e6571210b800448c4e234e651b46c6b4426c1bb567e5341348a",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/righteous/OFL.txt",
+    "profile": "righteous-400",
+    "axes": {},
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Baumans",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/baumans/Baumans-Regular.ttf",
+    "sha256": "fc224bf301c1c9204ab89fff5a8962472aea25af01a20223d8fe2aa69d06d6b9",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/baumans/OFL.txt",
+    "profile": "baumans-400",
+    "axes": {},
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Comfortaa",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/comfortaa/Comfortaa%5Bwght%5D.ttf",
+    "sha256": "0fc3f45dc48b614db9c39181502544b37217ecbf8bee2fb35886992bc96c5bd3",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/comfortaa/OFL.txt",
+    "profile": "comfortaa-400",
+    "axes": {
+      "wght": 400
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Comfortaa",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/comfortaa/Comfortaa%5Bwght%5D.ttf",
+    "sha256": "0fc3f45dc48b614db9c39181502544b37217ecbf8bee2fb35886992bc96c5bd3",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/comfortaa/OFL.txt",
+    "profile": "comfortaa-700",
+    "axes": {
+      "wght": 700
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Archivo",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/Archivo%5Bwdth%2Cwght%5D.ttf",
+    "sha256": "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/OFL.txt",
+    "profile": "archivo-400-wdth62",
+    "axes": {
+      "wght": 400,
+      "wdth": 62
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Archivo",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/Archivo%5Bwdth%2Cwght%5D.ttf",
+    "sha256": "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/OFL.txt",
+    "profile": "archivo-400-wdth75",
+    "axes": {
+      "wght": 400,
+      "wdth": 75
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Archivo",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/Archivo%5Bwdth%2Cwght%5D.ttf",
+    "sha256": "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/OFL.txt",
+    "profile": "archivo-400-wdth100",
+    "axes": {
+      "wght": 400,
+      "wdth": 100
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Archivo",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/Archivo%5Bwdth%2Cwght%5D.ttf",
+    "sha256": "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/OFL.txt",
+    "profile": "archivo-500-wdth62",
+    "axes": {
+      "wght": 500,
+      "wdth": 62
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Archivo",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/Archivo%5Bwdth%2Cwght%5D.ttf",
+    "sha256": "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/OFL.txt",
+    "profile": "archivo-500-wdth75",
+    "axes": {
+      "wght": 500,
+      "wdth": 75
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Archivo",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/Archivo%5Bwdth%2Cwght%5D.ttf",
+    "sha256": "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/OFL.txt",
+    "profile": "archivo-500-wdth100",
+    "axes": {
+      "wght": 500,
+      "wdth": 100
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Archivo",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/Archivo%5Bwdth%2Cwght%5D.ttf",
+    "sha256": "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/OFL.txt",
+    "profile": "archivo-700-wdth62",
+    "axes": {
+      "wght": 700,
+      "wdth": 62
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Archivo",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/Archivo%5Bwdth%2Cwght%5D.ttf",
+    "sha256": "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/OFL.txt",
+    "profile": "archivo-700-wdth75",
+    "axes": {
+      "wght": 700,
+      "wdth": 75
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Archivo",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/Archivo%5Bwdth%2Cwght%5D.ttf",
+    "sha256": "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/OFL.txt",
+    "profile": "archivo-700-wdth100",
+    "axes": {
+      "wght": 700,
+      "wdth": 100
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Archivo",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/Archivo%5Bwdth%2Cwght%5D.ttf",
+    "sha256": "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/OFL.txt",
+    "profile": "archivo-900-wdth62",
+    "axes": {
+      "wght": 900,
+      "wdth": 62
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Archivo",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/Archivo%5Bwdth%2Cwght%5D.ttf",
+    "sha256": "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/OFL.txt",
+    "profile": "archivo-900-wdth75",
+    "axes": {
+      "wght": 900,
+      "wdth": 75
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Archivo",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/Archivo%5Bwdth%2Cwght%5D.ttf",
+    "sha256": "0e094a7d3c7c4c25cf1310c4b30014f1dae9332220b1c2c88f4fa996f0b05053",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/archivo/OFL.txt",
+    "profile": "archivo-900-wdth100",
+    "axes": {
+      "wght": 900,
+      "wdth": 100
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Roboto",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/Roboto%5Bwdth%2Cwght%5D.ttf",
+    "sha256": "d7598e12c5dbef095ff8272cfc55da0250bd07fbdecbac8a530b9b277872a134",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/OFL.txt",
+    "profile": "roboto-400-wdth75",
+    "axes": {
+      "wght": 400,
+      "wdth": 75
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Roboto",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/Roboto%5Bwdth%2Cwght%5D.ttf",
+    "sha256": "d7598e12c5dbef095ff8272cfc55da0250bd07fbdecbac8a530b9b277872a134",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/OFL.txt",
+    "profile": "roboto-400-wdth100",
+    "axes": {
+      "wght": 400,
+      "wdth": 100
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Roboto",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/Roboto%5Bwdth%2Cwght%5D.ttf",
+    "sha256": "d7598e12c5dbef095ff8272cfc55da0250bd07fbdecbac8a530b9b277872a134",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/OFL.txt",
+    "profile": "roboto-500-wdth75",
+    "axes": {
+      "wght": 500,
+      "wdth": 75
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Roboto",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/Roboto%5Bwdth%2Cwght%5D.ttf",
+    "sha256": "d7598e12c5dbef095ff8272cfc55da0250bd07fbdecbac8a530b9b277872a134",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/OFL.txt",
+    "profile": "roboto-500-wdth100",
+    "axes": {
+      "wght": 500,
+      "wdth": 100
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Roboto",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/Roboto%5Bwdth%2Cwght%5D.ttf",
+    "sha256": "d7598e12c5dbef095ff8272cfc55da0250bd07fbdecbac8a530b9b277872a134",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/OFL.txt",
+    "profile": "roboto-700-wdth75",
+    "axes": {
+      "wght": 700,
+      "wdth": 75
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Roboto",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/Roboto%5Bwdth%2Cwght%5D.ttf",
+    "sha256": "d7598e12c5dbef095ff8272cfc55da0250bd07fbdecbac8a530b9b277872a134",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/OFL.txt",
+    "profile": "roboto-700-wdth100",
+    "axes": {
+      "wght": 700,
+      "wdth": 100
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Roboto",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/Roboto%5Bwdth%2Cwght%5D.ttf",
+    "sha256": "d7598e12c5dbef095ff8272cfc55da0250bd07fbdecbac8a530b9b277872a134",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/OFL.txt",
+    "profile": "roboto-900-wdth75",
+    "axes": {
+      "wght": 900,
+      "wdth": 75
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  },
+  {
+    "name": "Roboto",
+    "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/Roboto%5Bwdth%2Cwght%5D.ttf",
+    "sha256": "d7598e12c5dbef095ff8272cfc55da0250bd07fbdecbac8a530b9b277872a134",
+    "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/roboto/OFL.txt",
+    "profile": "roboto-900-wdth100",
+    "axes": {
+      "wght": 900,
+      "wdth": 100
+    },
+    "horizontalScale": 1,
+    "usage": "native comparison candidate; no historical font identity asserted"
+  }
+]

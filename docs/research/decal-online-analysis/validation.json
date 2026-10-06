@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-06",
+  "tests": {
+    "files": 59,
+    "passed": 1864
+  },
+  "geometry": {
+    "catalogueVariants": 55,
+    "selectableRenderings": 572,
+    "clippingOrCollisions": 0
+  },
+  "productionBase": "/plateforge/",
+  "productionBuild": "passed",
+  "galleryAndExports": "passed; barcode decoded to 12345678",
+  "newComparison": {
+    "specimens": 68,
+    "uniqueOccurrenceRecords": 1875,
+    "independentlySegmentedOccurrences": 765,
+    "loadedImages": 1157,
+    "mobileWidth": 390,
+    "mobileOverflow": false,
+    "portableEmbeddedImages": 1157,
+    "errors": [],
+    "failedResources": []
+  }
+}
