@@ -1,0 +1,51 @@
+{
+  "profile": "1986-rounded-reconstruction",
+  "status": "explicit mixed reconstruction, not an identified historical font",
+  "constructed": {
+    "M": {
+      "sourceWords": [
+        "MAR",
+        "MAY"
+      ],
+      "centerlines": [
+        "M7 100 V28 C7 16.402 16.626 7 28.5 7 C40.374 7 50 16.402 50 28 V100 M50 28 C50 16.402 59.626 7 71.5 7 C83.374 7 93 16.402 93 28 V100"
+      ],
+      "stroke": 14,
+      "advance": 107
+    },
+    "A": {
+      "sourceWords": [
+        "MAR",
+        "MAY",
+        "JAN",
+        "APR",
+        "AUG"
+      ],
+      "centerlines": [
+        "M7 100 V34.5 C7 19.312 19.312 7 34.5 7 C49.688 7 62 19.312 62 34.5 V100",
+        "M7 60 H62"
+      ],
+      "stroke": 14,
+      "advance": 77
+    }
+  },
+  "nativeOverrides": {
+    "J": "oswald-600",
+    "U": "archivonarrow-600",
+    "L": "condensed-medium",
+    "N": "roboto-500-wdth100",
+    "F": "condensed-medium",
+    "E": "condensed-medium",
+    "B": "archivo-700-wdth62",
+    "P": "normal",
+    "Y": "archivo-700-wdth75",
+    "G": "righteous-400",
+    "D": "baumans-400",
+    "C": "baumans-400",
+    "O": "archivo-500-wdth100",
+    "V": "roboto-500-wdth75"
+  },
+  "otherLetters": "Roboto Condensed Semibold candidates; T is observed but merged with adjacent source paint",
+  "horizontalScale": 1,
+  "limits": "Photographic scan contours and small changes in ink weight remain approximate. No synthetic enlargement creates source evidence."
+}

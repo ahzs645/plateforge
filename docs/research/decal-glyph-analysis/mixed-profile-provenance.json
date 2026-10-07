@@ -1,0 +1,15 @@
+{
+  "profile": "1986-month-reconstruction",
+  "basis": "Per-occurrence shape inspection; explicitly mixed reconstruction, not an identified historical font",
+  "default": "robotocondensed-600",
+  "observedOverrides": {
+    "J": "oswald-600",
+    "U": "archivonarrow-600",
+    "L": "condensed-medium"
+  },
+  "horizontalScale": 1,
+  "sources": [
+    "candidate-provenance.json",
+    "../decal-typography/printing-provenance.json"
+  ]
+}

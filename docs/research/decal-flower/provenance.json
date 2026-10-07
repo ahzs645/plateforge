@@ -1,0 +1,11 @@
+{
+  "upload": "Flower_Vector_Package.zip",
+  "selected": "svg/flower-compound.svg",
+  "sha256": "12f673d6e0491bc89bb4ae405e67bf385bf800356c37b744e27dd202d13fdf2e",
+  "usedFor": [
+    1976,
+    1977
+  ],
+  "changes": "Exact supplied compound path, evenodd fill; uniformly scale the original 1254-square canvas to 30% of decal height at the existing emblem centers; inherit each decal ink.",
+  "limitations": "Supplied cleaned reconstruction, not a recovered historical master. Decal dimensions, lettering and colors remain approximate."
+}

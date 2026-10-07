@@ -8,6 +8,9 @@ import { buildDieText } from '../dies/engine';
 import { dieProfile } from '../dies/profiles';
 import { buildExpo86Logo } from './expo86-logo';
 import { buildCode128 } from './decal-barcode';
+import { buildDecalFlower } from './decal-flower';
+import { buildDecalSun } from './decal-sun';
+import { decalTypography, type TypographyRun } from './decal-typography';
 
 export interface DecalArt {
   style: 'annual' | 'panel' | 'bordered' | 'solid';
@@ -32,6 +35,8 @@ export interface DecalArt {
   borderRatio?: number;
   doubleBorder?: boolean;
   system?: string;
+  /** Individually reviewed catalogue variant for typography fitting. */
+  typographyId?: string;
   controlRegular?: boolean;
   expiryYear?: number;
   issuedOn?: string;
@@ -55,13 +60,28 @@ function defaultPrinting(role: string): string {
   if (role === 'day-number') return 'bc-decal-print-normal';
   return 'bc-decal-print-normal';
 }
-function t(text: string, x: number, baseline: number, cap: number, maxWidth: number, ink: string, role: string, anchor: 'start' | 'middle' | 'end' = 'middle', profileId?: string): SvgNode {
-  return buildDieText({ text, profile: dieProfile(profileId?.startsWith('bc-decal-print-') || profileId === 'bc-decal-1970' ? profileId : profileId === 'bc-decal-panel' ? (role === 'decal-month' ? 'bc-decal-print-heavy-month-wide' : 'bc-decal-print-heavy-year-wide') : profileId === 'bc-decal-annual' && role === 'decal-year' ? 'bc-decal-print-heavy-year' : profileId === 'bc-decal-wide' || profileId === 'bc-decal-annual' ? 'bc-decal-print-normal' : profileId === 'bc-decal-control' ? 'bc-decal-print-control' : profileId === 'bc-decal-control-bold' ? 'bc-decal-print-control-bold' : defaultPrinting(role)), x, baseline, capHeight: cap, maxWidth, anchor, ink, role }).node;
+function drawText(text: string, x: number, baseline: number, cap: number, maxWidth: number, ink: string, role: string, anchor: 'start' | 'middle' | 'end' = 'middle', profileId?: string, letterSpacing = 0, kerning?: Readonly<Record<string, number>>): SvgNode {
+  return buildDieText({ text, profile: dieProfile(profileId?.startsWith('bc-decal-print-') || profileId === 'bc-decal-1970' ? profileId : profileId === 'bc-decal-panel' ? (role === 'decal-month' ? 'bc-decal-print-heavy-month-wide' : 'bc-decal-print-heavy-year-wide') : profileId === 'bc-decal-annual' && role === 'decal-year' ? 'bc-decal-print-heavy-year' : profileId === 'bc-decal-wide' || profileId === 'bc-decal-annual' ? 'bc-decal-print-normal' : profileId === 'bc-decal-control' ? 'bc-decal-print-control' : profileId === 'bc-decal-control-bold' ? 'bc-decal-print-control-bold' : defaultPrinting(role)), x, baseline, capHeight: cap, maxWidth, anchor, ink, role, letterSpacing, kerning }).node;
 }
 
 export function buildDecal(art: DecalArt, b: Box): SvgNode {
   const { x, y, width: w, height: h } = b;
   const parts: SvgNode[] = [];
+  const audit = decalTypography(art.typographyId, art.month);
+  const occurrences: Record<string, number> = {};
+  // Each role follows its explicit source line order. No browser word wrapping
+  // or per-glyph horizontal scaling is used; alternate months retain native advances.
+  const t = (...args: Parameters<typeof drawText>): SvgNode => {
+    const role = args[6], index = occurrences[role] ?? 0;
+    occurrences[role] = index + 1;
+    const run: TypographyRun | undefined = audit?.runs[role]?.[index];
+    if (!run) return drawText(...args);
+    return drawText(args[0], run.local ? args[1] : x+w*run.x,
+      run.local ? args[2] : y+h*run.baseline, h*run.cap,
+      (run.local ? h : w)*run.width, args[5], role, run.anchor ?? args[7],
+      run.profile === 'outline-1970' ? 'bc-decal-1970' : `bc-decal-print-${run.profile}`, run.tracking, run.kerning);
+  };
+
   if (art.style === 'annual' && art.year === '78') {
     parts.push(n('rect', { x, y, width: w, height: h, fill: art.background }),
       t('78', x+w*.35, y+h*.71, h*.55, w*.43, art.ink, 'decal-year', 'middle', 'bc-decal-print-normal'),
@@ -88,15 +108,11 @@ export function buildDecal(art: DecalArt, b: Box): SvgNode {
       t(art.serial, x+w*(left+width/2), y+h*(top+height*.78), h*height*.50,
         w*width*.88, '#171717', 'decal-serial', 'middle', 'bc-decal-control'),
     ] : [];
-    // Small provincial flower/sun marks are deliberately simplified. They are
-    // separate artwork, not a letter or a traced security-printing glyph.
-    const flower = (cx: number, cy: number) => n('g', { 'data-role':'decal-emblem', 'data-accuracy':'simplified' },
-      ...Array.from({length:5},(_,i)=>n('circle',{cx:x+w*cx+Math.sin(i*Math.PI*2/5)*h*.075,
-        cy:y+h*cy-Math.cos(i*Math.PI*2/5)*h*.075,r:h*.045,fill:art.ink})));
+    const flower = (cx: number, cy: number) => buildDecalFlower(x+w*cx, y+h*cy, h*.30, art.ink);
     if (art.year === '71') {
       parts.push(...province(.30,.08,.52),
         t('71',x+w*.79,y+h*.84,h*.40,w*.38,art.ink,'decal-year','middle','bc-decal-wide'),
-        ...control(.07,.51,.49,.31), n('g', {'data-role':'decal-emblem','data-accuracy':'simplified sun'}, n('circle',{cx:x+w*.79,cy:y+h*.22,r:h*.047,fill:'none',stroke:art.ink,strokeWidth:h*.023}), ...Array.from({length:5},(_,i)=>{const a=i*Math.PI*2/5;return n('path',{d:`M${x+w*.79+Math.sin(a)*h*.08} ${y+h*.22-Math.cos(a)*h*.08} Q${x+w*.79+Math.sin(a+.25)*h*.13} ${y+h*.22-Math.cos(a+.25)*h*.13} ${x+w*.79+Math.sin(a)*h*.19} ${y+h*.22-Math.cos(a)*h*.19}`,fill:'none',stroke:art.ink,strokeWidth:h*.02});})));
+        ...control(.07,.51,.49,.31), buildDecalSun(x+w*.79, y+h*.22, h*.40, art.ink));
     } else if (art.year === '74') {
       parts.push(...province(.39,.08,.57,.11),
         t('7',x+w*.85,y+h*.42,h*.34,w*.18,art.ink,'decal-year','middle','bc-decal-wide'),
@@ -107,7 +123,7 @@ export function buildDecal(art: DecalArt, b: Box): SvgNode {
       parts.push(...province(.30,.09,.52),
         t('75',x+w*.77,y+h*.36,h*.30,w*.42,art.ink,'decal-year','middle','bc-decal-wide'),
         ...control(.075,.42,.85,.30),
-        t('PASS COMM',x+w*.5,y+h*.9,h*.12,w*.86,art.ink,'decal-class'));
+        t('PASS. COMM.',x+w*.5,y+h*.9,h*.12,w*.86,art.ink,'decal-class'));
     } else if (art.year === '76') {
       parts.push(...province(.35,.07,.59), flower(.82,.23),
         t('76',x+w*.125,y+h*.52,h*.12,w*.16,art.ink,'decal-year'),
@@ -117,7 +133,7 @@ export function buildDecal(art: DecalArt, b: Box): SvgNode {
       parts.push(t('B',x+w*.1,y+h*.21,h*.13,w*.12,art.ink,'decal-class'),
         t('C',x+w*.1,y+h*.39,h*.13,w*.12,art.ink,'decal-class'),
         t('77',x+w*.44,y+h*.4,h*.29,w*.46,art.ink,'decal-year','middle','bc-decal-wide'),
-        flower(.82,.22),t('PASS COMM',x+w*.50,y+h*.55,h*.12,w*.83,art.ink,'decal-class'),
+        flower(.82,.22),t('PASS. COMM.',x+w*.50,y+h*.55,h*.12,w*.83,art.ink,'decal-class'),
         ...control(.09,.62,.84,.29));
     }
   } else if (art.style === 'annual') {
@@ -125,7 +141,7 @@ export function buildDecal(art: DecalArt, b: Box): SvgNode {
       t(art.year, x + w * 0.23, y + h * 0.86, h * 0.72, w * 0.38, art.ink, 'decal-year', 'middle', 'bc-decal-annual'),
       t('BRITISH', x + w * 0.71, y + h * 0.64, h * 0.14, w * 0.49, art.ink, 'decal-legend'),
       t('COLUMBIA', x + w * 0.71, y + h * 0.84, h * 0.14, w * 0.49, art.ink, 'decal-legend'),
-      ...(art.serial ? [n('rect',{x:x+w*.44,y:y+h*.12,width:w*.5,height:h*.28,fill:'none',stroke:art.ink,strokeWidth:h*.015}),
+      ...(art.serial ? [n('rect',{x:x+w*.40,y:y+h*.14,width:w*.54,height:h*.33,fill:'none',stroke:art.ink,strokeWidth:h*.015}),
         t(art.serial, x+w*.69, y+h*.34, h*.17, w*.44, art.serialInk, 'decal-serial','middle','bc-decal-control-bold')] : []));
   } else if (art.fullProvincePanel) {
     parts.push(n('rect', {x,y,width:w,height:h,fill:art.background}),
@@ -137,7 +153,8 @@ export function buildDecal(art: DecalArt, b: Box): SvgNode {
     parts.push(n('rect',{x,y,width:w,height:h,fill:art.background}),
       n('rect',{x,y,width:w*.09,height:h,fill:'#f4f1e7'}),
       n('rect',{x:x+w*.9,y,width:w*.1,height:h,fill:'#f4f1e7'}),
-      n('g',{transform:`translate(${x+w*.058} ${y+h*.5}) rotate(-90)`},t('BRITISH COLUMBIA',0,0,h*.11,h*.88,art.background,'decal-legend')),
+      n('g',{transform:`translate(${x+w*.045} ${y+h*.5}) rotate(-90)`},t('BRITISH',0,0,h*.065,h*.78,art.background,'decal-legend')),
+      n('g',{transform:`translate(${x+w*.078} ${y+h*.5}) rotate(-90)`},t('COLUMBIA',0,0,h*.065,h*.78,art.background,'decal-legend')),
       t(art.month??'',x+w*.36,y+h*.81,h*.7,w*.49,art.ink,'decal-month','middle','bc-decal-panel'),
       t(art.year,x+w*.76,y+h*.81,h*.7,w*.23,art.ink,'decal-year','middle','bc-decal-panel'),
       ...(art.serial?[n('g',{transform:`translate(${x+w*.943} ${y+h*.5}) rotate(90)`},t(art.serial,0,0,h*.13,h*.91,art.serialInk,'decal-serial','middle','bc-decal-control'))]:[]));
@@ -155,11 +172,14 @@ export function buildDecal(art: DecalArt, b: Box): SvgNode {
       ...(art.serial ? [n('g',{transform:`translate(${x+w*.95} ${y+h*.5}) rotate(90)`},
         t(art.serial,0,0,h*.12,h*.84,'#171717','decal-serial','middle','bc-decal-control'))] : []));
   } else if (art.style === 'panel' && art.panelCentre) {
-    const centre = art.panelCentre, left = w * .38, middle = w * .35, right = w - left - middle;
+    const centre = art.panelCentre;
+    const left = w * (art.year === '88' ? .46 : art.year === '83' ? .405 : .38);
+    const middle = w * (art.year === '88' ? .26 : art.year === '83' ? .335 : .35);
+    const right = w - left - middle;
     const controlAbove = art.year === '82';
     parts.push(n('rect', { x, y, width: w, height: h, fill: art.background }),
       n('rect', { x: x+left, y, width: middle, height: h, fill: centre.background, 'data-role': 'decal-centre' }),
-      ...(centre.controlBackground ? [n('rect', { x: x+left+middle*.04, y: y+h*(controlAbove ? .17 : .58), width: middle*.92, height: h*.3, fill: centre.controlBackground, 'data-role': 'decal-control-panel' })] : []),
+      ...(centre.controlBackground ? [n('rect', { x: x+w*.38, y: y+h*(controlAbove ? .20 : .47), width: w*.38, height: h*(controlAbove ? .32 : .31), fill: centre.controlBackground, 'data-role': 'decal-control-panel' })] : []),
       t(art.month ?? '', x+left/2, y+h*.82, h*.64, left-h*.13, art.ink, 'decal-month', 'middle', 'bc-decal-panel'),
       t(art.year, x+left+middle+right/2, y+h*.82, h*.64, right-h*.1, art.ink, 'decal-year', 'middle', 'bc-decal-panel'),
       t('BRITISH', x+left+middle/2, y+h*(controlAbove ? .72 : .26), h*.10, middle-h*.08, centre.ink, 'decal-legend', 'middle', 'bc-decal-province'),
@@ -167,15 +187,18 @@ export function buildDecal(art: DecalArt, b: Box): SvgNode {
       ...(art.serial ? [t(art.serial, x+left+middle/2, y+h*(controlAbove ? .41 : .81), h*.14, middle-h*.1, centre.serialInk, 'decal-serial', 'middle', 'bc-decal-control')] : []));
   } else if (art.year.length === 4) {
     const cap=Number(art.year)>=2018?.47:.59;
-    parts.push(n('rect', {x, y, width:w, height:h, rx:h*(Number(art.year)>=2018?.10:.035), fill:art.background}),
+    parts.push(n('rect', {x, y, width:w, height:h, rx:h*(audit?.layout?.cornerRadius ?? (Number(art.year)>=2018?.10:.035)), fill:art.background}),
       t(art.month ?? '', x+w*.04, y+h*.65, h*cap, w*.34, art.ink, 'decal-month', 'start'),
       t(art.year, x+w*.96, y+h*.65, h*cap, w*.46, art.ink, 'decal-year', 'end'),
-      n('g', {transform:`translate(${x+w*.405} ${y+h*.35}) rotate(-90)`},
+      n('g', {transform:`translate(${x+w*(audit?.layout?.provinceColumns?.[0] ?? .445)} ${y+h*(audit?.layout?.provinceCentre ?? .36)}) rotate(-90)`},
         t('BRITISH', 0, 0, h*.065, h*.45, art.ink, 'decal-legend', 'middle', 'bc-decal-print-vertical-province')),
-      n('g', {transform:`translate(${x+w*.462} ${y+h*.35}) rotate(-90)`},
+      n('g', {transform:`translate(${x+w*(audit?.layout?.provinceColumns?.[1] ?? .485)} ${y+h*(audit?.layout?.provinceCentre ?? .36)}) rotate(-90)`},
         t('COLUMBIA', 0, 0, h*.065, h*.45, art.ink, 'decal-legend', 'middle', 'bc-decal-print-vertical-province')),
       ...(art.serial ? [t(art.serial, x+w*.765, y+h*.89, h*.16, w*.43, art.serialInk, 'decal-serial')] : []));
-    if (art.serial) parts.push(buildCode128(art.serial, {x:x-w*.015,y:y+h*.75,width:w*.59,height:h*.16},art.ink));
+    if (art.serial) {
+      const barcode = audit?.layout?.barcode;
+      parts.push(buildCode128(art.serial, barcode ? { x:x+w*barcode.x, y:y+h*barcode.y, width:w*barcode.width, height:h*barcode.height } : {x:x-w*.015,y:y+h*.75,width:w*.59,height:h*.16},art.ink));
+    }
   } else if (art.year === '04') {
     parts.push(n('rect', {x,y,width:w,height:h,fill:art.background}),
       t(art.month ?? '', x+w*.025, y+h*.80, h*.73, w*.37, art.ink, 'decal-month', 'start'),
@@ -209,6 +232,7 @@ export function buildDecal(art: DecalArt, b: Box): SvgNode {
   }
   return n('g', { 'data-role': 'renewal-decal', 'data-accuracy': 'photograph-reviewed reconstruction; font and colour approximate',
     ...(art.system ? {'data-printing-system':art.system}:{}),
+    ...(audit ? {'data-typography-review': art.typographyId!, 'data-font-evidence': 'visual candidates; historical font identity unconfirmed'} : {}),
     ...(art.expiryYear ? { 'data-expiry-year': art.expiryYear } : {}),
     ...(art.issuedOn ? { 'data-issued-on': art.issuedOn } : {}),
     ...(art.colourEvidence ? { 'data-colour-evidence': art.colourEvidence } : {}),
@@ -221,5 +245,5 @@ export function buildDecal(art: DecalArt, b: Box): SvgNode {
 export function buildDaySticker(day: string, b: Box): SvgNode {
   return n('g', { 'data-role': 'day-decal' },
     n('rect', { x: b.x, y: b.y, width: b.width, height: b.height, rx: 1.5, fill: '#eef3f5', stroke: '#c9cfd4', strokeWidth: 0.4 }),
-    t(day, b.x + b.width / 2, b.y + b.height * 0.74, b.height * 0.46, b.width * 0.7, '#111111', 'day-number'));
+    drawText(day, b.x + b.width / 2, b.y + b.height * 0.74, b.height * 0.46, b.width * 0.7, '#111111', 'day-number'));
 }

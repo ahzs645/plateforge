@@ -102,13 +102,13 @@ export function decalArt(decal: BcDecal, parts: Record<string, string | undefine
   const enteredControl = parts.decalSerial && new RegExp(`^\\d{${decal.digits}}$`).test(parts.decalSerial) ? parts.decalSerial : undefined;
   return {
     style: decal.style, background: decal.background, ink: decal.ink, serialInk: decal.serialInk,
-    system: decal.specimen?.system,
+    system: decal.specimen?.system, typographyId: decalId(decal),
     ...(decal.variant==='type-ii'?{controlRegular:true}:{}),
     aspect: decal.specimen?.aspect ?? (decal.style === 'annual' ? 1.9 : decal.style === 'solid' && decal.year >= 2005 ? 2.3 : 3.3),
     ...(decal.year === 1980 ? { fullProvincePanel: true } : {}),
     ...(decal.year === 1984 ? {panelLayout:'vertical-sides' as const} : decal.year===1985 ? {panelLayout:'province-bottom' as const} : {}),
     ...(decal.year === 1986 ? {expo86: true} : {}),
-    ...(decal.style === 'panel' ? {panelCentre: {background:[1981,1982].includes(decal.year)?decal.background:'#eef0e4', ink:decal.year===1983?'#111111':[1981,1982].includes(decal.year)?decal.ink:decal.background, serialInk:decal.year===1987?decal.background:'#171717', ...([1981,1982].includes(decal.year)?{controlBackground:'#f4f1e7'}:{})}} : {}),
+    ...(decal.style === 'panel' ? {panelCentre: {background:[1981,1982].includes(decal.year)?decal.background:'#eef0e4', ink:decal.year===1983?'#111111':[1981,1982].includes(decal.year)?decal.ink:decal.background, serialInk:'#171717', ...([1981,1982].includes(decal.year)?{controlBackground:'#f4f1e7'}:{})}} : {}),
     ...(decal.year===1999 && decal.variant==='white' || decal.year>=2000 && decal.year<=2003 ? {borderRatio:.025,doubleBorder:true}:{}),
     ...(decal.year >= 1980 ? { month } : {}), year: decal.year >= 2014 ? String(decal.year) : String(decal.year).slice(2),
     ...(decal.digits ? { serial: enteredControl || derived(`${seed}/${decal.year}`, decal.digits) } : {}),

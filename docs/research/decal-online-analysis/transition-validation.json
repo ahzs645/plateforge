@@ -1,0 +1,15 @@
+{
+  "productionApp": true,
+  "juneJulyExports": [
+    {
+      "month": "JUN",
+      "cornerRadius": 0
+    },
+    {
+      "month": "JUL",
+      "cornerRadius": 2.6
+    }
+  ],
+  "plateSerialPreserved": true,
+  "controlPreserved": true
+}

@@ -1,0 +1,3612 @@
+{
+  "1970": {
+    "lineBreaks": "BRITISH / COLUMBIA under outlined 70.",
+    "finding": "Province was too narrow and too tall; add photographed tracking and lower cap height. Circular outline-zero proportions corrected.",
+    "fontEvidence": "Wide squared capitals compared to period Microgramma/Eurostile specimens. Orbitron Black is a native open-font reconstruction candidate, not historical attribution.",
+    "runs": {
+      "decal-year": [
+        {
+          "x": 0.5,
+          "baseline": 0.48,
+          "cap": 0.43,
+          "width": 0.61,
+          "profile": "outline-1970",
+          "tracking": 0
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.5,
+          "baseline": 0.694,
+          "cap": 0.123,
+          "width": 0.65,
+          "profile": "orbitron-900",
+          "tracking": 10
+        },
+        {
+          "x": 0.5,
+          "baseline": 0.85,
+          "cap": 0.123,
+          "width": 0.8,
+          "profile": "orbitron-900",
+          "tracking": 10
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1970.jpg",
+    "sourceSha256": "365c0fd8f4978c6b650d056c11b127bfbc923b8732e936900908cc9edc63c6f1",
+    "sourcePixels": [
+      193,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1971": {
+    "lineBreaks": "BRITISH / COLUMBIA; boxed control; 71 at right.",
+    "finding": "Province needs wider tracking; control digits were too light and tightly spaced. Keep supplied emblem separate from the printing.",
+    "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
+    "runs": {
+      "decal-legend": [
+        {
+          "x": 0.285,
+          "baseline": 0.205,
+          "cap": 0.12,
+          "width": 0.55,
+          "profile": "normal",
+          "tracking": 20
+        },
+        {
+          "x": 0.285,
+          "baseline": 0.39,
+          "cap": 0.12,
+          "width": 0.57,
+          "profile": "normal",
+          "tracking": 20
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.8,
+          "baseline": 0.865,
+          "cap": 0.408,
+          "width": 0.38,
+          "profile": "russoone-400",
+          "tracking": 0,
+          "kerning": {
+            "71": 13.8
+          }
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.305,
+          "baseline": 0.77,
+          "cap": 0.185,
+          "width": 0.45,
+          "profile": "control-bold",
+          "tracking": 18
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1971.jpg",
+    "sourceSha256": "8ba2bc1e206af4d44cbea46b85b96ddbc8a28665049b70c9b9be1863d9759fa7",
+    "sourcePixels": [
+      190,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1972": {
+    "lineBreaks": "Tall 72 at left; BRITISH / COLUMBIA below control at right.",
+    "finding": "Control was incorrectly heavy compressed; use spaced medium digits. Province should be left aligned, narrower and slightly lower.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-year": [
+        {
+          "x": 0.205,
+          "baseline": 0.83,
+          "cap": 0.68,
+          "width": 0.33,
+          "profile": "heavy-year",
+          "tracking": 7
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.375,
+          "baseline": 0.665,
+          "cap": 0.12,
+          "width": 0.57,
+          "profile": "normal",
+          "tracking": 3,
+          "anchor": "start"
+        },
+        {
+          "x": 0.375,
+          "baseline": 0.83,
+          "cap": 0.12,
+          "width": 0.57,
+          "profile": "normal",
+          "tracking": 3,
+          "anchor": "start"
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.69,
+          "baseline": 0.425,
+          "cap": 0.16,
+          "width": 0.45,
+          "profile": "control-bold",
+          "tracking": 18
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1972.jpg",
+    "sourceSha256": "be7b7d4855c27602cb1fe33b61b9356d143b3aaa89546817cbff1cc99fb7839e",
+    "sourcePixels": [
+      180,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1974": {
+    "lineBreaks": "BRITISH / COLUMBIA, control, PASSENGER; 7 / 4 at right.",
+    "finding": "Province and class label need wider spacing. Preserve two separately stacked year digits; make the boxed control bolder and spaced.",
+    "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
+    "runs": {
+      "decal-legend": [
+        {
+          "x": 0.4,
+          "baseline": 0.195,
+          "cap": 0.11,
+          "width": 0.59,
+          "profile": "archivo-900-wdth100",
+          "tracking": 19
+        },
+        {
+          "x": 0.4,
+          "baseline": 0.36,
+          "cap": 0.11,
+          "width": 0.62,
+          "profile": "archivo-900-wdth100",
+          "tracking": 19
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.86,
+          "baseline": 0.43,
+          "cap": 0.35,
+          "width": 0.2,
+          "profile": "archivo-900-wdth75",
+          "tracking": 0
+        },
+        {
+          "x": 0.86,
+          "baseline": 0.88,
+          "cap": 0.35,
+          "width": 0.2,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.4,
+          "baseline": 0.685,
+          "cap": 0.18,
+          "width": 0.57,
+          "profile": "control-bold",
+          "tracking": 18
+        }
+      ],
+      "decal-class": [
+        {
+          "x": 0.39,
+          "baseline": 0.905,
+          "cap": 0.11,
+          "width": 0.66,
+          "profile": "archivo-900-wdth100",
+          "tracking": 23
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1974.jpg",
+    "sourceSha256": "66d51fcae1e6d3e9b08414b29bba23461b56f2130652fc54469c54e3f7ef1752",
+    "sourcePixels": [
+      179,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1975": {
+    "lineBreaks": "BRITISH / COLUMBIA; separate 75; boxed control; PASS. COMM.",
+    "finding": "Year was too small and control too thin. Increase their height; use lighter province and class printing and preserve the single class line.",
+    "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
+    "runs": {
+      "decal-legend": [
+        {
+          "x": 0.025,
+          "baseline": 0.24,
+          "cap": 0.125,
+          "width": 0.56,
+          "profile": "normal",
+          "tracking": 4,
+          "anchor": "start"
+        },
+        {
+          "x": 0.025,
+          "baseline": 0.41,
+          "cap": 0.125,
+          "width": 0.56,
+          "profile": "normal",
+          "tracking": 4,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.79,
+          "baseline": 0.4,
+          "cap": 0.34,
+          "width": 0.35,
+          "profile": "archivo-900-wdth75",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.51,
+          "baseline": 0.67,
+          "cap": 0.18,
+          "width": 0.76,
+          "profile": "control-bold",
+          "tracking": 18
+        }
+      ],
+      "decal-class": [
+        {
+          "x": 0.5,
+          "baseline": 0.955,
+          "cap": 0.13,
+          "width": 0.89,
+          "profile": "normal",
+          "tracking": 2
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1975.jpg",
+    "sourceSha256": "ce5c39c5772b75a87ddedad1d46e2ecadd9f34ad2013ac4b33ab7a88a421bf5e",
+    "sourcePixels": [
+      149,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1976": {
+    "lineBreaks": "BRITISH / COLUMBIA; 76 PASS. COMM. on one line.",
+    "finding": "Province should align on the left. The small year and class were too bold and short; the control needs spaced, heavier digits.",
+    "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
+    "runs": {
+      "decal-legend": [
+        {
+          "x": 0.085,
+          "baseline": 0.255,
+          "cap": 0.13,
+          "width": 0.58,
+          "profile": "normal",
+          "tracking": 1,
+          "anchor": "start"
+        },
+        {
+          "x": 0.085,
+          "baseline": 0.42,
+          "cap": 0.13,
+          "width": 0.59,
+          "profile": "regular",
+          "tracking": 1,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.085,
+          "baseline": 0.556,
+          "cap": 0.117,
+          "width": 0.15,
+          "profile": "normal",
+          "tracking": 1,
+          "anchor": "start"
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.5,
+          "baseline": 0.865,
+          "cap": 0.2,
+          "width": 0.78,
+          "profile": "control-bold",
+          "tracking": 18
+        }
+      ],
+      "decal-class": [
+        {
+          "x": 0.25,
+          "baseline": 0.575,
+          "cap": 0.14,
+          "width": 0.69,
+          "profile": "regular",
+          "tracking": 1,
+          "anchor": "start"
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1976.jpg",
+    "sourceSha256": "264c2405c740ac20838f5318ba1e4930b66b476ade29d7da87170afccc25bd15",
+    "sourcePixels": [
+      160,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1977": {
+    "lineBreaks": "Stacked B / C beside 77; PASS. COMM. above boxed control.",
+    "finding": "77 was too light and small; class line too bold. Use heavier year and spaced control digits without joining the B/C stack.",
+    "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
+    "runs": {
+      "decal-year": [
+        {
+          "x": 0.43,
+          "baseline": 0.44,
+          "cap": 0.31,
+          "width": 0.47,
+          "profile": "archivo-900-wdth100",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.51,
+          "baseline": 0.87,
+          "cap": 0.2,
+          "width": 0.75,
+          "profile": "control-bold",
+          "tracking": 18
+        }
+      ],
+      "decal-class": [
+        {
+          "x": 0.095,
+          "baseline": 0.22,
+          "cap": 0.12,
+          "width": 0.13,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.095,
+          "baseline": 0.39,
+          "cap": 0.12,
+          "width": 0.13,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.5,
+          "baseline": 0.57,
+          "cap": 0.12,
+          "width": 0.82,
+          "profile": "regular",
+          "tracking": 3
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1977.jpg",
+    "sourceSha256": "c17d88371b80477a4a6cf7a92007f29cdfa7a3360f6625a54a8dc98ddff28632",
+    "sourcePixels": [
+      146,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1978": {
+    "lineBreaks": "PASS and COMM as vertical letters; B / C beside 78.",
+    "finding": "B/C was much too small and light. Retain vertical class lettering and increase the open, spaced control digits.",
+    "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
+    "runs": {
+      "decal-year": [
+        {
+          "x": 0.388,
+          "baseline": 0.61,
+          "cap": 0.52,
+          "width": 0.44,
+          "profile": "archivonarrow-700",
+          "tracking": 2
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.5,
+          "baseline": 0.88,
+          "cap": 0.17,
+          "width": 0.77,
+          "profile": "control",
+          "tracking": 25
+        }
+      ],
+      "decal-class": [
+        {
+          "x": 0.73,
+          "baseline": 0.31,
+          "cap": 0.23,
+          "width": 0.22,
+          "profile": "orbitron-900",
+          "tracking": 0
+        },
+        {
+          "x": 0.73,
+          "baseline": 0.6,
+          "cap": 0.23,
+          "width": 0.22,
+          "profile": "orbitron-900",
+          "tracking": 0
+        },
+        {
+          "x": 0.095,
+          "baseline": 0.25,
+          "cap": 0.11,
+          "width": 0.09,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.095,
+          "baseline": 0.37,
+          "cap": 0.11,
+          "width": 0.09,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.095,
+          "baseline": 0.49,
+          "cap": 0.11,
+          "width": 0.09,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.095,
+          "baseline": 0.61,
+          "cap": 0.11,
+          "width": 0.09,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.935,
+          "baseline": 0.27,
+          "cap": 0.11,
+          "width": 0.1,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.935,
+          "baseline": 0.39,
+          "cap": 0.11,
+          "width": 0.1,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.935,
+          "baseline": 0.51,
+          "cap": 0.11,
+          "width": 0.1,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.935,
+          "baseline": 0.63,
+          "cap": 0.11,
+          "width": 0.1,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1978.jpg",
+    "sourceSha256": "3607b0af9652d9ab644e365cebfff8159eb9378ec2c17c9d1fba10743d4734bb",
+    "sourcePixels": [
+      190,
+      102
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1980": {
+    "lineBreaks": "BRITISH COLUMBIA on one top line; month / control / 80 below.",
+    "finding": "Top legend is a lighter native sans candidate. Month and year need native bold width; control is smaller, bolder and spaced within its existing box.",
+    "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
+    "runs": {
+      "decal-legend": [
+        {
+          "x": 0.5,
+          "baseline": 0.315,
+          "cap": 0.22,
+          "width": 0.95,
+          "profile": "regular",
+          "tracking": 1
+        }
+      ],
+      "decal-month": [
+        {
+          "x": 0.045,
+          "baseline": 0.86,
+          "cap": 0.42,
+          "width": 0.36,
+          "profile": "archivo-900-wdth100",
+          "tracking": 1,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.975,
+          "baseline": 0.86,
+          "cap": 0.42,
+          "width": 0.25,
+          "profile": "normal",
+          "tracking": 1,
+          "anchor": "end"
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.59,
+          "baseline": 0.78,
+          "cap": 0.125,
+          "width": 0.27,
+          "profile": "control-bold",
+          "tracking": 12
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1980.jpg",
+    "sourceSha256": "e2935a1f5b541b7c10f98e05c6541f56897be6be94833aeb335ce13937ffea42",
+    "sourcePixels": [
+      253,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1981": {
+    "lineBreaks": "BRITISH / COLUMBIA above central control; month and year on opposite sides.",
+    "finding": "SEP and 81 were too broad. Use a narrower printing candidate, widen province tracking and space the control digits. Exact stroke weight and counter shapes remain unresolved at this resolution.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.2,
+          "baseline": 0.8,
+          "cap": 0.69,
+          "width": 0.34,
+          "profile": "heavy-month",
+          "tracking": 2
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.86,
+          "baseline": 0.8,
+          "cap": 0.66,
+          "width": 0.23,
+          "profile": "heavy-year",
+          "tracking": 3
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.57,
+          "baseline": 0.235,
+          "cap": 0.11,
+          "width": 0.3,
+          "profile": "normal",
+          "tracking": 12
+        },
+        {
+          "x": 0.57,
+          "baseline": 0.415,
+          "cap": 0.11,
+          "width": 0.33,
+          "profile": "normal",
+          "tracking": 12
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.57,
+          "baseline": 0.73,
+          "cap": 0.14,
+          "width": 0.31,
+          "profile": "control-bold",
+          "tracking": 8
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1981.jpg",
+    "sourceSha256": "b91943b002b8a3f5afe316853333cba66aedf05ef59a531afc3e5d8799f35fa3",
+    "sourcePixels": [
+      249,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1982": {
+    "lineBreaks": "BRITISH / COLUMBIA below central control; month and year on opposite sides.",
+    "finding": "Give JUN and 82 narrower printing candidates; retain the small tracked province stack beneath the boxed control. Exact font weight remains unresolved.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.2,
+          "baseline": 0.8,
+          "cap": 0.69,
+          "width": 0.34,
+          "profile": "heavy-month",
+          "tracking": 2
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.86,
+          "baseline": 0.8,
+          "cap": 0.66,
+          "width": 0.23,
+          "profile": "heavy-year",
+          "tracking": 3
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.57,
+          "baseline": 0.7,
+          "cap": 0.085,
+          "width": 0.3,
+          "profile": "normal",
+          "tracking": 12
+        },
+        {
+          "x": 0.57,
+          "baseline": 0.83,
+          "cap": 0.085,
+          "width": 0.33,
+          "profile": "normal",
+          "tracking": 12
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.57,
+          "baseline": 0.45,
+          "cap": 0.15,
+          "width": 0.31,
+          "profile": "control",
+          "tracking": 10
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1982.jpg",
+    "sourceSha256": "485d5b666e44013a8ee9761e97ea463a2e2315c2d08423eed9978e6ea6c56e8f",
+    "sourcePixels": [
+      251,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1983": {
+    "lineBreaks": "BRITISH / COLUMBIA above central control; month and year on opposite sides.",
+    "finding": "Widen the province stack and keep month/year proportions within their individual panels. Counter contours remain approximate. The photographed control is unreadable and remains explicitly illustrative.",
+    "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.18,
+          "baseline": 0.795,
+          "cap": 0.65,
+          "width": 0.36,
+          "profile": "oswald-600",
+          "tracking": 2,
+          "kerning": {
+            "FE": -3.8,
+            "EB": -3.8
+          }
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.86,
+          "baseline": 0.8,
+          "cap": 0.66,
+          "width": 0.23,
+          "profile": "heavy-year-wide",
+          "tracking": 3
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.57,
+          "baseline": 0.235,
+          "cap": 0.11,
+          "width": 0.3,
+          "profile": "archivo-900-wdth100",
+          "tracking": 12
+        },
+        {
+          "x": 0.57,
+          "baseline": 0.415,
+          "cap": 0.11,
+          "width": 0.33,
+          "profile": "archivo-900-wdth100",
+          "tracking": 12
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.57,
+          "baseline": 0.78,
+          "cap": 0.15,
+          "width": 0.31,
+          "profile": "control",
+          "tracking": 10
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1983.jpg",
+    "sourceSha256": "e1561e179e749ea86f5999e6f16c54579d1d651e2e5072beaa564d50176c3881",
+    "sourcePixels": [
+      247,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1987": {
+    "lineBreaks": "BRITISH / COLUMBIA above central control; month and year on opposite sides.",
+    "finding": "JAN and 87 were too heavy and JAN too short. Retain the supplied narrow printing candidate, wider province spacing and black control ink. Exact stroke weight and counter contours remain uncertain at source resolution; the supplied narrow printing candidate is retained.",
+    "fontEvidence": "Occurrence-level photographic overlays support oswald-600 for decal-month. Visual reconstruction candidate; historical typeface unconfirmed. Native proportions retained; no per-character horizontal scaling.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.2,
+          "baseline": 0.78,
+          "cap": 0.69,
+          "width": 0.34,
+          "profile": "oswald-600",
+          "tracking": 2,
+          "kerning": {
+            "JA": -3.2,
+            "AN": -1
+          }
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.86,
+          "baseline": 0.8,
+          "cap": 0.66,
+          "width": 0.23,
+          "profile": "heavy-year",
+          "tracking": 3
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.57,
+          "baseline": 0.235,
+          "cap": 0.11,
+          "width": 0.3,
+          "profile": "normal",
+          "tracking": 12
+        },
+        {
+          "x": 0.57,
+          "baseline": 0.415,
+          "cap": 0.11,
+          "width": 0.33,
+          "profile": "normal",
+          "tracking": 12
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.57,
+          "baseline": 0.78,
+          "cap": 0.15,
+          "width": 0.31,
+          "profile": "control",
+          "tracking": 10
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1987.jpg",
+    "sourceSha256": "75391f7e79e0c9f49ddc96662a6a64557006ab0e9cae9eec3f19376668a07428",
+    "sourcePixels": [
+      239,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1988": {
+    "lineBreaks": "BRITISH / COLUMBIA above central control; month and year on opposite sides.",
+    "finding": "FEB proportions are broadly supported; enlarge its cap height. Province is too large; use a smaller, narrower stack and a wider, lighter control.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.225,
+          "baseline": 0.8,
+          "cap": 0.62,
+          "width": 0.42,
+          "profile": "heavy-month-wide",
+          "tracking": 2
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.86,
+          "baseline": 0.8,
+          "cap": 0.62,
+          "width": 0.25,
+          "profile": "heavy-year-wide",
+          "tracking": 3
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.59,
+          "baseline": 0.235,
+          "cap": 0.085,
+          "width": 0.24,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.59,
+          "baseline": 0.415,
+          "cap": 0.085,
+          "width": 0.24,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.59,
+          "baseline": 0.78,
+          "cap": 0.15,
+          "width": 0.24,
+          "profile": "control",
+          "tracking": 4
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1988.jpg",
+    "sourceSha256": "56c6bfd475c01f8cb66f525ee7818b7ca188e4e6d78dd3b23358f38a6b419aeb",
+    "sourcePixels": [
+      247,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1984": {
+    "lineBreaks": "Two vertical province lines at left; vertical control at right.",
+    "finding": "The province was incorrectly one long rotated line. Restore two parallel BRITISH/COLUMBIA columns. Fit month/year independently within the orange panel and keep the control vertical. Weight and counter contours remain approximate.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.355,
+          "baseline": 0.81,
+          "cap": 0.66,
+          "width": 0.47,
+          "profile": "heavy-month-wide",
+          "tracking": 3
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.79,
+          "baseline": 0.81,
+          "cap": 0.62,
+          "width": 0.24,
+          "profile": "heavy-year-wide",
+          "tracking": 2
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.1,
+          "width": 0.78,
+          "profile": "normal",
+          "tracking": 12,
+          "local": true
+        },
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.1,
+          "width": 0.78,
+          "profile": "normal",
+          "tracking": 12,
+          "local": true
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.13,
+          "width": 0.87,
+          "profile": "control",
+          "tracking": 10,
+          "local": true
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1984.jpg",
+    "sourceSha256": "3d3772625d7ef5b968bacee947b86496aef16d5c53d7f8d110d8b030a8fc2fd9",
+    "sourcePixels": [
+      255,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1985": {
+    "lineBreaks": "BRITISH COLUMBIA as one lower line below centered control.",
+    "finding": "Bottom province was too large; reduce its cap height. Move the control down between the date groups and use lighter narrow digits.",
+    "fontEvidence": "Occurrence-level photographic overlays support anton-400 for decal-month. Visual reconstruction candidate; historical typeface unconfirmed. Native proportions retained; no per-character horizontal scaling.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.19,
+          "baseline": 0.835,
+          "cap": 0.64,
+          "width": 0.37,
+          "profile": "anton-400",
+          "tracking": 2
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.86,
+          "baseline": 0.82,
+          "cap": 0.64,
+          "width": 0.23,
+          "profile": "heavy-year",
+          "tracking": 2
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.54,
+          "baseline": 0.83,
+          "cap": 0.075,
+          "width": 0.49,
+          "profile": "normal",
+          "tracking": 2
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.52,
+          "baseline": 0.6,
+          "cap": 0.145,
+          "width": 0.25,
+          "profile": "control",
+          "tracking": 9
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1985.jpg",
+    "sourceSha256": "46031d555c5cf1043df5f059a87995dbfdfe6454e27cc5bc2824cc22c4548ec6",
+    "sourcePixels": [
+      244,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1986": {
+    "lineBreaks": "One BRITISH COLUMBIA line over JUL; linked EXPO 86 at right.",
+    "finding": "Province was too broad and too close to JUL. Reduce its height and move JUL lower; use a stronger native condensed month candidate. Preserve supplied EXPO paths.",
+    "fontEvidence": "Every available month examined. Reconstructed rounded M/A from repeated photographs; other observed letters use separately documented native candidates. Mixed reconstruction, no identified historical typeface.",
+    "runs": {
+      "decal-legend": [
+        {
+          "x": 0.295,
+          "baseline": 0.225,
+          "cap": 0.095,
+          "width": 0.5,
+          "profile": "normal",
+          "tracking": 1
+        }
+      ],
+      "decal-month": [
+        {
+          "x": 0.295,
+          "baseline": 0.91,
+          "cap": 0.63,
+          "width": 0.53,
+          "profile": "1986-rounded-reconstruction",
+          "tracking": 1,
+          "kerning": {
+            "MA": 2.9,
+            "AR": -7.2,
+            "JA": -2.2,
+            "AN": -10.7,
+            "AY": -7.8
+          },
+          "anchor": "middle"
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.115,
+          "width": 0.84,
+          "profile": "control",
+          "tracking": 12,
+          "local": true
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986.jpg",
+    "sourceSha256": "9645aff724be8aaa482404d503a397f33381b3050df75c334a8b4aee167f3596",
+    "sourcePixels": [
+      243,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1989": {
+    "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
+    "finding": "Province was slightly undersized; control was too narrow. Use native bold sans control and lift its baseline.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.035,
+          "baseline": 0.835,
+          "cap": 0.66,
+          "width": 0.385,
+          "profile": "heavy-month-wide",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.965,
+          "baseline": 0.835,
+          "cap": 0.65,
+          "width": 0.245,
+          "profile": "heavy-year-wide",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.57,
+          "baseline": 0.275,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.57,
+          "baseline": 0.43,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.57,
+          "baseline": 0.71,
+          "cap": 0.125,
+          "width": 0.275,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1989.jpg",
+    "sourceSha256": "d2fff2fa2dcbc59f043e5ce24a7fd550b57cd0eaebc83c06bd6b1f8d043eec33",
+    "sourcePixels": [
+      245,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1990": {
+    "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
+    "finding": "Province/control stack was too low and compressed. Raise the control and restore its native bold width.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.035,
+          "baseline": 0.835,
+          "cap": 0.66,
+          "width": 0.385,
+          "profile": "heavy-month-wide",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.965,
+          "baseline": 0.835,
+          "cap": 0.65,
+          "width": 0.245,
+          "profile": "heavy-year-wide",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.57,
+          "baseline": 0.275,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.57,
+          "baseline": 0.43,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.57,
+          "baseline": 0.71,
+          "cap": 0.125,
+          "width": 0.275,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1990.jpg",
+    "sourceSha256": "75996bbaadef068fde88da3124fb6c49265db345f6dd535a5d307209221875f8",
+    "sourcePixels": [
+      245,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1991": {
+    "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
+    "finding": "The wrapping is correct. Increase province size slightly and widen the control using native bold sans outlines.",
+    "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.035,
+          "baseline": 0.835,
+          "cap": 0.66,
+          "width": 0.385,
+          "profile": "heavy-year-wide",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.965,
+          "baseline": 0.835,
+          "cap": 0.65,
+          "width": 0.245,
+          "profile": "heavy-year-wide",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.57,
+          "baseline": 0.275,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.57,
+          "baseline": 0.43,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.57,
+          "baseline": 0.71,
+          "cap": 0.125,
+          "width": 0.275,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1991.jpg",
+    "sourceSha256": "1460bf9808f552bbf2d988d3b24d5c63cc0286abd197b67134fa267f339bfdb5",
+    "sourcePixels": [
+      249,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1992": {
+    "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
+    "finding": "JUN was slightly short; raise its cap height. Widen the province and control without changing their line breaks.",
+    "fontEvidence": "Occurrence-level photographic overlays support anton-400 for decal-month. Visual reconstruction candidate; historical typeface unconfirmed. Native proportions retained; no per-character horizontal scaling.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.035,
+          "baseline": 0.835,
+          "cap": 0.67,
+          "width": 0.385,
+          "profile": "anton-400",
+          "tracking": 0,
+          "anchor": "start",
+          "kerning": {
+            "JU": 1.7,
+            "UN": -3.6
+          }
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.965,
+          "baseline": 0.835,
+          "cap": 0.65,
+          "width": 0.245,
+          "profile": "heavy-year-wide",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.57,
+          "baseline": 0.275,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.57,
+          "baseline": 0.43,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.57,
+          "baseline": 0.71,
+          "cap": 0.125,
+          "width": 0.275,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1992.jpg",
+    "sourceSha256": "6a07043027116daabd1fe2818975ecda80121d3eab43542c607fc023a1b13063",
+    "sourcePixels": [
+      245,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1993": {
+    "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
+    "finding": "NOV and 93 are supported condensed candidates. Raise and widen the control; reduce the gap between province lines.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.035,
+          "baseline": 0.835,
+          "cap": 0.66,
+          "width": 0.385,
+          "profile": "heavy-month-wide",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.965,
+          "baseline": 0.835,
+          "cap": 0.65,
+          "width": 0.245,
+          "profile": "heavy-year-wide",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.57,
+          "baseline": 0.275,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.57,
+          "baseline": 0.43,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.57,
+          "baseline": 0.71,
+          "cap": 0.125,
+          "width": 0.275,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1993.jpg",
+    "sourceSha256": "a2d0dbd7b986dcdc25ebc674e247d65e6b983b33432dc556754eb95189001d98",
+    "sourcePixels": [
+      247,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1994": {
+    "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
+    "finding": "JUL needs more height. Preserve its native narrow width; widen and raise the central control.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.035,
+          "baseline": 0.835,
+          "cap": 0.66,
+          "width": 0.385,
+          "profile": "heavy-month-wide",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.965,
+          "baseline": 0.835,
+          "cap": 0.65,
+          "width": 0.245,
+          "profile": "heavy-year-wide",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.57,
+          "baseline": 0.275,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.57,
+          "baseline": 0.43,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.57,
+          "baseline": 0.71,
+          "cap": 0.125,
+          "width": 0.275,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1994.jpg",
+    "sourceSha256": "131910192f4141d6081cb1c4c39ae17377431af7ec213e2199025f2dcc44c7c6",
+    "sourcePixels": [
+      244,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1995": {
+    "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
+    "finding": "Province/control are slightly narrow and low. Increase province cap and use native bold sans digits for the control.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.035,
+          "baseline": 0.835,
+          "cap": 0.66,
+          "width": 0.385,
+          "profile": "heavy-month-wide",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.965,
+          "baseline": 0.835,
+          "cap": 0.65,
+          "width": 0.245,
+          "profile": "heavy-year-wide",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.57,
+          "baseline": 0.275,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.57,
+          "baseline": 0.43,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.57,
+          "baseline": 0.71,
+          "cap": 0.125,
+          "width": 0.275,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1995.jpg",
+    "sourceSha256": "cdde826384ea0544dacfa18c877dab88bca1714a79880f7a6cb7d7d5b6e4511b",
+    "sourcePixels": [
+      246,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1996": {
+    "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
+    "finding": "MAY was visibly short because width fitting reduced the entire run. Give the month more horizontal room and a taller cap.",
+    "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.035,
+          "baseline": 0.835,
+          "cap": 0.68,
+          "width": 0.385,
+          "profile": "anton-400",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.965,
+          "baseline": 0.835,
+          "cap": 0.65,
+          "width": 0.245,
+          "profile": "heavy-year-wide",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.57,
+          "baseline": 0.275,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.57,
+          "baseline": 0.43,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.57,
+          "baseline": 0.71,
+          "cap": 0.125,
+          "width": 0.275,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1996-black.jpg",
+    "sourceSha256": "1a531b92c49eb9575667f9078ac3c60799fe4a3bbbdce9c67205ac3a57ebed33",
+    "sourcePixels": [
+      242,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1997": {
+    "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
+    "finding": "JAN needs a taller cap; province/control require wider native glyphs. Retain two province lines.",
+    "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.035,
+          "baseline": 0.835,
+          "cap": 0.66,
+          "width": 0.385,
+          "profile": "heavy-year-wide",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.965,
+          "baseline": 0.835,
+          "cap": 0.65,
+          "width": 0.245,
+          "profile": "heavy-year-wide",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.57,
+          "baseline": 0.275,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.57,
+          "baseline": 0.43,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.57,
+          "baseline": 0.71,
+          "cap": 0.125,
+          "width": 0.275,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1997.jpg",
+    "sourceSha256": "d79234cb6b7c2cc8236cb3f170eeb29a86afca3ef11f715ddc722d8c53231fcb",
+    "sourcePixels": [
+      248,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1998": {
+    "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
+    "finding": "MAR was short after width fitting. Widen its allowed run and restore the cap height; raise the central control.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.035,
+          "baseline": 0.835,
+          "cap": 0.66,
+          "width": 0.385,
+          "profile": "heavy-month-wide",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.965,
+          "baseline": 0.835,
+          "cap": 0.65,
+          "width": 0.245,
+          "profile": "heavy-year-wide",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.57,
+          "baseline": 0.275,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.57,
+          "baseline": 0.43,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.57,
+          "baseline": 0.71,
+          "cap": 0.125,
+          "width": 0.275,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1998.jpg",
+    "sourceSha256": "3da93c37b1f61ccb1bbbd2a8f38219aca48e890ca5880b0097b7ea8dbe648d57",
+    "sourcePixels": [
+      244,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1999": {
+    "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
+    "finding": "MAY was too short; give it more room. Keep the lighter control candidate on this specimen and expand its spacing.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.035,
+          "baseline": 0.835,
+          "cap": 0.68,
+          "width": 0.385,
+          "profile": "heavy-month-wide",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.965,
+          "baseline": 0.835,
+          "cap": 0.65,
+          "width": 0.245,
+          "profile": "heavy-year-wide",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.57,
+          "baseline": 0.275,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.57,
+          "baseline": 0.43,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.57,
+          "baseline": 0.71,
+          "cap": 0.125,
+          "width": 0.275,
+          "profile": "control",
+          "tracking": 10
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1999-thick.jpg",
+    "sourceSha256": "614acea5c9bad07a30bedba69026b4a7856b8fb1ca15092c1c1f4111e34f413b",
+    "sourcePixels": [
+      244,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1996-pink": {
+    "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
+    "finding": "Treat pink independently from the black specimen. Restore NOV height and widen its central control with native bold sans digits.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.035,
+          "baseline": 0.835,
+          "cap": 0.67,
+          "width": 0.385,
+          "profile": "heavy-month-wide",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.965,
+          "baseline": 0.835,
+          "cap": 0.65,
+          "width": 0.245,
+          "profile": "heavy-year-wide",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.57,
+          "baseline": 0.275,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.57,
+          "baseline": 0.43,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.57,
+          "baseline": 0.71,
+          "cap": 0.125,
+          "width": 0.275,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1996-pink.jpg",
+    "sourceSha256": "7af3adbfaff4f8170d470b34103357d7fba2a8e40eb7a4974fad2be0c191db41",
+    "sourcePixels": [
+      245,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1998-type-ii": {
+    "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
+    "finding": "Preserve the visibly lighter control printing of this variant. Restore MAY height; use medium condensed control with extra spacing.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.035,
+          "baseline": 0.835,
+          "cap": 0.63,
+          "width": 0.385,
+          "profile": "heavy-month-wide",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.965,
+          "baseline": 0.835,
+          "cap": 0.65,
+          "width": 0.245,
+          "profile": "heavy-year-wide",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.57,
+          "baseline": 0.275,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.57,
+          "baseline": 0.43,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.57,
+          "baseline": 0.71,
+          "cap": 0.14,
+          "width": 0.275,
+          "profile": "control",
+          "tracking": 10
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1998/1998-May-34838894.jpg",
+    "sourceSha256": "432fd7f851c03d00dde60da02f0d9aa310d4e0ead108cd8f5ada068f6d18d2fc",
+    "sourcePixels": [
+      375,
+      116
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "1999-white": {
+    "lineBreaks": "BRITISH / COLUMBIA above control, inside double outline.",
+    "finding": "DEC was too broad; use the narrower supplied candidate and preserve blue control printing.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.04,
+          "baseline": 0.85,
+          "cap": 0.69,
+          "width": 0.38,
+          "profile": "heavy-month",
+          "tracking": 8,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.965,
+          "baseline": 0.85,
+          "cap": 0.69,
+          "width": 0.25,
+          "profile": "heavy-year-wide",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.575,
+          "baseline": 0.26,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.575,
+          "baseline": 0.42,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.575,
+          "baseline": 0.755,
+          "cap": 0.15,
+          "width": 0.29,
+          "profile": "control-bold",
+          "tracking": 3
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1999-61152006.jpg",
+    "sourceSha256": "90ffd6abc1d0040ad53d63a2067c35fbd9ca3ce046ccdc9eca6c7450ad5016c3",
+    "sourcePixels": [
+      254,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "2000": {
+    "lineBreaks": "BRITISH / COLUMBIA above control, inside double outline.",
+    "finding": "Native outlines are supported, but control/province spacing is cramped. Reduce province cap and widen control tracking.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.04,
+          "baseline": 0.85,
+          "cap": 0.69,
+          "width": 0.38,
+          "profile": "heavy-month",
+          "tracking": 8,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.965,
+          "baseline": 0.85,
+          "cap": 0.69,
+          "width": 0.25,
+          "profile": "heavy-year-wide",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.575,
+          "baseline": 0.26,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.575,
+          "baseline": 0.42,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.575,
+          "baseline": 0.755,
+          "cap": 0.15,
+          "width": 0.29,
+          "profile": "control-bold",
+          "tracking": 3
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2000-50803178.jpg",
+    "sourceSha256": "7aa98d7c02414f59772be19fd3260e5efec7ad1120843d2b4642341d860722bb",
+    "sourcePixels": [
+      260,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "2001": {
+    "lineBreaks": "BRITISH / COLUMBIA above control, inside double outline.",
+    "finding": "Scoring obscures JUL but its tall arrangement remains visible. Increase cap height and preserve both province lines.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.04,
+          "baseline": 0.85,
+          "cap": 0.69,
+          "width": 0.38,
+          "profile": "heavy-month",
+          "tracking": 8,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.965,
+          "baseline": 0.85,
+          "cap": 0.69,
+          "width": 0.25,
+          "profile": "heavy-year-wide",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.575,
+          "baseline": 0.26,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.575,
+          "baseline": 0.42,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.575,
+          "baseline": 0.755,
+          "cap": 0.15,
+          "width": 0.29,
+          "profile": "control-bold",
+          "tracking": 3
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/2001-76052343.jpg",
+    "sourceSha256": "bcbe2038e63830323c34cf33187f57774c4b905094a7c6d3a90897031a382c94",
+    "sourcePixels": [
+      469,
+      150
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "2002": {
+    "lineBreaks": "BRITISH / COLUMBIA above control, inside double outline.",
+    "finding": "NOV was too short. Give the run more width; widen the lighter province and lower control spacing.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.04,
+          "baseline": 0.85,
+          "cap": 0.69,
+          "width": 0.38,
+          "profile": "heavy-month",
+          "tracking": 8,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.965,
+          "baseline": 0.85,
+          "cap": 0.69,
+          "width": 0.25,
+          "profile": "heavy-year-wide",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.575,
+          "baseline": 0.26,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.575,
+          "baseline": 0.42,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.575,
+          "baseline": 0.755,
+          "cap": 0.15,
+          "width": 0.29,
+          "profile": "control-bold",
+          "tracking": 3
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2002.jpg",
+    "sourceSha256": "bba59bab19f61c6e02fb20e480c6c1ddbb7947ea3c58ecac209211fa38a5e96c",
+    "sourcePixels": [
+      255,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "2003": {
+    "lineBreaks": "BRITISH / COLUMBIA above control, inside double outline.",
+    "finding": "SEP shape is supported; preserve its weight while adjusting province/control spacing.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.04,
+          "baseline": 0.85,
+          "cap": 0.69,
+          "width": 0.38,
+          "profile": "heavy-month",
+          "tracking": 8,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.965,
+          "baseline": 0.85,
+          "cap": 0.69,
+          "width": 0.25,
+          "profile": "heavy-year-wide",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.575,
+          "baseline": 0.26,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.575,
+          "baseline": 0.42,
+          "cap": 0.105,
+          "width": 0.27,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.575,
+          "baseline": 0.755,
+          "cap": 0.15,
+          "width": 0.29,
+          "profile": "control-bold",
+          "tracking": 3
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2003-86273079.jpg",
+    "sourceSha256": "6fbc70a3d98ba8cd70649e24c544c1cc2f783fae01258d188d2e128da04c928b",
+    "sourcePixels": [
+      253,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "2004": {
+    "lineBreaks": "Tiny BRITISH / COLUMBIA between month/year; control beneath right group.",
+    "finding": "The whole date group was placed too far left. Center the month/year group within the long decal, reduce the tiny province and align control below the year.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.185,
+          "baseline": 0.86,
+          "cap": 0.66,
+          "width": 0.34,
+          "profile": "heavy-month",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.73,
+          "baseline": 0.7,
+          "cap": 0.48,
+          "width": 0.2,
+          "profile": "heavy-year",
+          "tracking": 0
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.58,
+          "baseline": 0.505,
+          "cap": 0.045,
+          "width": 0.13,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.58,
+          "baseline": 0.57,
+          "cap": 0.045,
+          "width": 0.13,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.675,
+          "baseline": 0.91,
+          "cap": 0.15,
+          "width": 0.29,
+          "profile": "control-bold",
+          "tracking": 3
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2004.jpg",
+    "sourceSha256": "f8213b9bc6d73ed905dc47c88a56a4418885933aaa056425e53442ae3a500671",
+    "sourcePixels": [
+      255,
+      75
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "2005": {
+    "lineBreaks": "Tiny BRITISH / COLUMBIA between month/year; control underneath at right.",
+    "finding": "Lower JAN, shrink the province stack and move it down between date groups; preserve black control.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.045,
+          "baseline": 0.87,
+          "cap": 0.71,
+          "width": 0.49,
+          "profile": "heavy-month",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.955,
+          "baseline": 0.71,
+          "cap": 0.54,
+          "width": 0.245,
+          "profile": "heavy-year",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.625,
+          "baseline": 0.515,
+          "cap": 0.055,
+          "width": 0.16,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.625,
+          "baseline": 0.595,
+          "cap": 0.055,
+          "width": 0.16,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.775,
+          "baseline": 0.935,
+          "cap": 0.17,
+          "width": 0.39,
+          "profile": "control-bold",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2005.jpg",
+    "sourceSha256": "2e1bdc39fcd8b47e50bf2ee293d7ed9f185ab3c81d85cf50d19ad92256a69ac1",
+    "sourcePixels": [
+      232,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "2006": {
+    "lineBreaks": "Tiny BRITISH / COLUMBIA between month/year; control underneath at right.",
+    "finding": "Lower FEB and the tiny province; preserve the broad native month shapes supported by the photograph.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.045,
+          "baseline": 0.87,
+          "cap": 0.71,
+          "width": 0.49,
+          "profile": "heavy-month",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.955,
+          "baseline": 0.71,
+          "cap": 0.54,
+          "width": 0.245,
+          "profile": "heavy-year",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.625,
+          "baseline": 0.515,
+          "cap": 0.055,
+          "width": 0.16,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.625,
+          "baseline": 0.595,
+          "cap": 0.055,
+          "width": 0.16,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.775,
+          "baseline": 0.935,
+          "cap": 0.17,
+          "width": 0.39,
+          "profile": "control-bold",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2006-21258417.jpg",
+    "sourceSha256": "b96b1329de57b6f4cc0d1997dd684adc568de6819a20911334cab7aac3999938",
+    "sourcePixels": [
+      228,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "2007": {
+    "lineBreaks": "Tiny BRITISH / COLUMBIA between month/year; control underneath at right.",
+    "finding": "Lower JUN and make the tiny province more compact. Keep the control below the right group.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.045,
+          "baseline": 0.87,
+          "cap": 0.71,
+          "width": 0.49,
+          "profile": "heavy-month",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.955,
+          "baseline": 0.71,
+          "cap": 0.54,
+          "width": 0.245,
+          "profile": "heavy-year",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.625,
+          "baseline": 0.515,
+          "cap": 0.055,
+          "width": 0.16,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.625,
+          "baseline": 0.595,
+          "cap": 0.055,
+          "width": 0.16,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.775,
+          "baseline": 0.935,
+          "cap": 0.17,
+          "width": 0.39,
+          "profile": "control-bold",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2007.jpg",
+    "sourceSha256": "bff0359d81710286b6375456ab2a2c29a7b6e4ca9debde5fa268a448818f5125",
+    "sourcePixels": [
+      226,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "2008": {
+    "lineBreaks": "Tiny BRITISH / COLUMBIA between month/year; control underneath at right.",
+    "finding": "Lower JAN and reduce the tiny province stack. Preserve light ink for every text role. The source looks lighter than the supplied compressed candidate; exact stroke weight remains unresolved.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.045,
+          "baseline": 0.87,
+          "cap": 0.71,
+          "width": 0.49,
+          "profile": "heavy-month",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.955,
+          "baseline": 0.71,
+          "cap": 0.54,
+          "width": 0.245,
+          "profile": "heavy-year",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.625,
+          "baseline": 0.515,
+          "cap": 0.055,
+          "width": 0.16,
+          "profile": "normal",
+          "tracking": 0
+        },
+        {
+          "x": 0.625,
+          "baseline": 0.595,
+          "cap": 0.055,
+          "width": 0.16,
+          "profile": "normal",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.775,
+          "baseline": 0.935,
+          "cap": 0.17,
+          "width": 0.39,
+          "profile": "control-bold",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2008.jpg",
+    "sourceSha256": "555d1958bc9022d6db6762ee6c55b76076d31a850ab9af5f4b14df56cd894c2e",
+    "sourcePixels": [
+      235,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "2009": {
+    "lineBreaks": "BRITISH / COLUMBIA between month and two-digit year; barcode/control footer.",
+    "finding": "The province stack is tall and very condensed; replace the broad small bold sans with a native condensed candidate.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.045,
+          "baseline": 0.69,
+          "cap": 0.61,
+          "width": 0.42,
+          "profile": "heavy-month",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.965,
+          "baseline": 0.69,
+          "cap": 0.61,
+          "width": 0.27,
+          "profile": "heavy-year",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.57,
+          "baseline": 0.405,
+          "cap": 0.095,
+          "width": 0.18,
+          "profile": "condensed-medium",
+          "tracking": 0
+        },
+        {
+          "x": 0.57,
+          "baseline": 0.56,
+          "cap": 0.095,
+          "width": 0.18,
+          "profile": "condensed-medium",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.765,
+          "baseline": 0.905,
+          "cap": 0.18,
+          "width": 0.42,
+          "profile": "control-bold",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2009.jpg",
+    "sourceSha256": "3df0b2dce7202ff77d8bc4d25c87a8162c58784ad620c8431103b4b0e038a68f",
+    "sourcePixels": [
+      230,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "2010": {
+    "lineBreaks": "BRITISH / COLUMBIA between month and two-digit year; barcode/control footer.",
+    "finding": "Province was much too small and broad. Increase its height with medium condensed glyphs; align JAN and year higher.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.045,
+          "baseline": 0.69,
+          "cap": 0.61,
+          "width": 0.39,
+          "profile": "heavy-month",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.965,
+          "baseline": 0.69,
+          "cap": 0.61,
+          "width": 0.27,
+          "profile": "heavy-year",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.57,
+          "baseline": 0.405,
+          "cap": 0.12,
+          "width": 0.23,
+          "profile": "condensed-medium",
+          "tracking": 0
+        },
+        {
+          "x": 0.57,
+          "baseline": 0.56,
+          "cap": 0.12,
+          "width": 0.24,
+          "profile": "condensed-medium",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.765,
+          "baseline": 0.905,
+          "cap": 0.18,
+          "width": 0.42,
+          "profile": "control-bold",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2010.jpg",
+    "sourceSha256": "4bd838377cf0ed363381212b629a7024fe8d86fe54398dbb97119d18ab2cf274",
+    "sourcePixels": [
+      237,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "2011": {
+    "lineBreaks": "BRITISH / COLUMBIA between month and two-digit year; barcode/control footer.",
+    "finding": "Enlarge the two province lines and reduce their gap. Keep the barcoded footer clear of the control.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.045,
+          "baseline": 0.69,
+          "cap": 0.61,
+          "width": 0.39,
+          "profile": "heavy-month",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.965,
+          "baseline": 0.69,
+          "cap": 0.61,
+          "width": 0.27,
+          "profile": "heavy-year",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.57,
+          "baseline": 0.405,
+          "cap": 0.12,
+          "width": 0.23,
+          "profile": "condensed-bold",
+          "tracking": 0
+        },
+        {
+          "x": 0.57,
+          "baseline": 0.56,
+          "cap": 0.12,
+          "width": 0.24,
+          "profile": "condensed-bold",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.765,
+          "baseline": 0.905,
+          "cap": 0.18,
+          "width": 0.42,
+          "profile": "control-bold",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2011.jpg",
+    "sourceSha256": "3b4542d054dcc48bbbc7838700b373bd7e3058bca833904868156ce3dd40b5fe",
+    "sourcePixels": [
+      232,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "2012": {
+    "lineBreaks": "BRITISH / COLUMBIA between month and two-digit year; barcode/control footer.",
+    "finding": "Restore taller province letters and lower month/date caps slightly to the source extents.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.045,
+          "baseline": 0.69,
+          "cap": 0.61,
+          "width": 0.39,
+          "profile": "heavy-month",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.965,
+          "baseline": 0.69,
+          "cap": 0.61,
+          "width": 0.27,
+          "profile": "heavy-year",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.57,
+          "baseline": 0.405,
+          "cap": 0.12,
+          "width": 0.23,
+          "profile": "condensed-medium",
+          "tracking": 0
+        },
+        {
+          "x": 0.57,
+          "baseline": 0.56,
+          "cap": 0.12,
+          "width": 0.24,
+          "profile": "condensed-medium",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.765,
+          "baseline": 0.905,
+          "cap": 0.18,
+          "width": 0.42,
+          "profile": "control-bold",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2012.jpg",
+    "sourceSha256": "7df31b3a658762eeb866626fb0cb599db4f9ee1f4929ee12499c236dfc4a04c1",
+    "sourcePixels": [
+      234,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "2013": {
+    "lineBreaks": "BRITISH / COLUMBIA between month and two-digit year; barcode/control footer.",
+    "finding": "Province needs taller condensed letters. Preserve the photographed two-digit year and separate control footer.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.045,
+          "baseline": 0.69,
+          "cap": 0.61,
+          "width": 0.39,
+          "profile": "heavy-month",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.965,
+          "baseline": 0.69,
+          "cap": 0.61,
+          "width": 0.27,
+          "profile": "heavy-year",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0.57,
+          "baseline": 0.405,
+          "cap": 0.12,
+          "width": 0.23,
+          "profile": "condensed-medium",
+          "tracking": 0
+        },
+        {
+          "x": 0.57,
+          "baseline": 0.56,
+          "cap": 0.12,
+          "width": 0.24,
+          "profile": "condensed-medium",
+          "tracking": 0
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.765,
+          "baseline": 0.905,
+          "cap": 0.18,
+          "width": 0.42,
+          "profile": "control-bold",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2013.jpg",
+    "sourceSha256": "d9cef88231fed17650b41cc2d35350100cbe20802ec4e9833fcbc1cccf575ba6",
+    "sourcePixels": [
+      239,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "2014": {
+    "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
+    "finding": "NOV is too far left and the date group too high. Move month inward and put two serif province columns in the gap.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.09,
+          "baseline": 0.66,
+          "cap": 0.58,
+          "width": 0.32,
+          "profile": "heavy-month",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.95,
+          "baseline": 0.66,
+          "cap": 0.58,
+          "width": 0.45,
+          "profile": "heavy-year",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.06,
+          "width": 0.42,
+          "profile": "vertical-province",
+          "tracking": 0,
+          "local": true
+        },
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.06,
+          "width": 0.47,
+          "profile": "vertical-province",
+          "tracking": 0,
+          "local": true
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.755,
+          "baseline": 0.905,
+          "cap": 0.18,
+          "width": 0.44,
+          "profile": "control-bold",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2014-99103688.jpg",
+    "sourceSha256": "045c9df726d2321fd606b1397c63f9eb35a65595ae08492f61ce54b83a96ed88",
+    "sourcePixels": [
+      229,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "2015": {
+    "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
+    "finding": "JAN collided with the vertical province. Move the province columns right and lower the year cap slightly.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.09,
+          "baseline": 0.66,
+          "cap": 0.58,
+          "width": 0.32,
+          "profile": "heavy-month",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.95,
+          "baseline": 0.66,
+          "cap": 0.58,
+          "width": 0.45,
+          "profile": "heavy-year",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.06,
+          "width": 0.42,
+          "profile": "vertical-province",
+          "tracking": 0,
+          "local": true
+        },
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.06,
+          "width": 0.47,
+          "profile": "vertical-province",
+          "tracking": 0,
+          "local": true
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.755,
+          "baseline": 0.905,
+          "cap": 0.18,
+          "width": 0.44,
+          "profile": "control-bold",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2015-70118033.jpg",
+    "sourceSha256": "f1643f30dabf56094e60834342c9a90d2203dd6f5beb80a0a1f131ce211d7bfa",
+    "sourcePixels": [
+      246,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "2016": {
+    "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
+    "finding": "Keep the full 2016 date; move vertical province off the month and widen the footer control slightly.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.09,
+          "baseline": 0.66,
+          "cap": 0.58,
+          "width": 0.32,
+          "profile": "heavy-month",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.95,
+          "baseline": 0.66,
+          "cap": 0.58,
+          "width": 0.45,
+          "profile": "heavy-year",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.06,
+          "width": 0.42,
+          "profile": "vertical-province",
+          "tracking": 0,
+          "local": true
+        },
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.06,
+          "width": 0.47,
+          "profile": "vertical-province",
+          "tracking": 0,
+          "local": true
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.755,
+          "baseline": 0.905,
+          "cap": 0.18,
+          "width": 0.44,
+          "profile": "control-bold",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2016-10076867.jpg",
+    "sourceSha256": "e0dccce99d0d8a263b819bf0fb9a982ce41c8f69f5523fe7687c54d46b2132c8",
+    "sourcePixels": [
+      239,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "2017": {
+    "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
+    "finding": "JAN\u2013JUN retain the earlier large square-corner design. JUL\u2013DEC use the documented smaller lettering and rounded-corner design.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.09,
+          "baseline": 0.66,
+          "cap": 0.58,
+          "width": 0.32,
+          "profile": "heavy-month",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.95,
+          "baseline": 0.66,
+          "cap": 0.58,
+          "width": 0.45,
+          "profile": "heavy-year",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.06,
+          "width": 0.42,
+          "profile": "vertical-province",
+          "tracking": 0,
+          "local": true
+        },
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.06,
+          "width": 0.47,
+          "profile": "vertical-province",
+          "tracking": 0,
+          "local": true
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.755,
+          "baseline": 0.905,
+          "cap": 0.18,
+          "width": 0.44,
+          "profile": "control-bold",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2017-20093481.jpg",
+    "sourceSha256": "415812d53297bedef10a087bd3dadd2485a4ca78fc66fd3eead81c5b46034571",
+    "sourcePixels": [
+      235,
+      100
+    ],
+    "reviewedOn": "2026-10-06",
+    "layout": {
+      "cornerRadius": 0
+    },
+    "monthVariants": [
+      {
+        "fromMonth": 7,
+        "evidence": "ICBC Bulletin 14, February 3 2016: design changes commence with July 2017 expiry. Corroborated by issued NOV 2017 enlarged photograph.",
+        "runs": {
+          "decal-month": [
+            {
+              "x": 0.11,
+              "baseline": 0.6,
+              "cap": 0.47,
+              "width": 0.335,
+              "profile": "heavy-month",
+              "tracking": 0,
+              "anchor": "start"
+            }
+          ],
+          "decal-year": [
+            {
+              "x": 0.91,
+              "baseline": 0.6,
+              "cap": 0.47,
+              "width": 0.445,
+              "profile": "heavy-year",
+              "tracking": 0,
+              "anchor": "end",
+              "kerning": {
+                "20": -2.34,
+                "01": -1.84,
+                "17": -6.3
+              }
+            }
+          ],
+          "decal-legend": [
+            {
+              "x": 0,
+              "baseline": 0,
+              "cap": 0.052,
+              "width": 0.4,
+              "profile": "vertical-province",
+              "tracking": 0,
+              "local": true
+            },
+            {
+              "x": 0,
+              "baseline": 0,
+              "cap": 0.052,
+              "width": 0.46,
+              "profile": "vertical-province",
+              "tracking": 0,
+              "local": true
+            }
+          ],
+          "decal-serial": [
+            {
+              "x": 0.79,
+              "baseline": 0.92,
+              "cap": 0.165,
+              "width": 0.39,
+              "profile": "control-bold",
+              "tracking": 0
+            }
+          ]
+        },
+        "layout": {
+          "cornerRadius": 0.1,
+          "provinceCentre": 0.43,
+          "provinceColumns": [
+            0.455,
+            0.495
+          ],
+          "barcode": {
+            "x": 0.015,
+            "y": 0.74,
+            "width": 0.565,
+            "height": 0.17
+          }
+        }
+      }
+    ]
+  },
+  "2018": {
+    "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
+    "finding": "Late layout needs an inset month and narrower vertical province. Increase serif height slightly without changing its orientation.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.09,
+          "baseline": 0.64,
+          "cap": 0.46,
+          "width": 0.32,
+          "profile": "heavy-month",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.95,
+          "baseline": 0.64,
+          "cap": 0.46,
+          "width": 0.45,
+          "profile": "heavy-year",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.06,
+          "width": 0.42,
+          "profile": "vertical-province",
+          "tracking": 0,
+          "local": true
+        },
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.06,
+          "width": 0.47,
+          "profile": "vertical-province",
+          "tracking": 0,
+          "local": true
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.755,
+          "baseline": 0.905,
+          "cap": 0.18,
+          "width": 0.44,
+          "profile": "control-bold",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2018-50278580.jpg",
+    "sourceSha256": "ef1407945ec73e9fcc16fab308a9e0d6ba45725e5f5a3b175c942976c062aa49",
+    "sourcePixels": [
+      231,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "2019": {
+    "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
+    "finding": "JAN is too far left and province too tall. Reduce vertical serif size and lower its group to match this specimen.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.09,
+          "baseline": 0.64,
+          "cap": 0.46,
+          "width": 0.32,
+          "profile": "heavy-month",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.95,
+          "baseline": 0.64,
+          "cap": 0.46,
+          "width": 0.45,
+          "profile": "heavy-year",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.055,
+          "width": 0.42,
+          "profile": "vertical-province",
+          "tracking": 0,
+          "local": true
+        },
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.055,
+          "width": 0.47,
+          "profile": "vertical-province",
+          "tracking": 0,
+          "local": true
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.755,
+          "baseline": 0.905,
+          "cap": 0.18,
+          "width": 0.44,
+          "profile": "control-bold",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2019-10727925.jpg",
+    "sourceSha256": "6f1d3638b36fa43b6c9a47b5ce05a45d2c1ed89877bec44c2372dbaff152d118",
+    "sourcePixels": [
+      239,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "2020": {
+    "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
+    "finding": "Keep the photographed eight zeroes as sample control; move month inward and reduce the vertical province.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.09,
+          "baseline": 0.64,
+          "cap": 0.46,
+          "width": 0.32,
+          "profile": "heavy-month",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.95,
+          "baseline": 0.64,
+          "cap": 0.46,
+          "width": 0.45,
+          "profile": "heavy-year",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.055,
+          "width": 0.42,
+          "profile": "vertical-province",
+          "tracking": 0,
+          "local": true
+        },
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.055,
+          "width": 0.47,
+          "profile": "vertical-province",
+          "tracking": 0,
+          "local": true
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.755,
+          "baseline": 0.905,
+          "cap": 0.18,
+          "width": 0.44,
+          "profile": "control-bold",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2020-0000000.jpg",
+    "sourceSha256": "a44fbe891e6d638011691b67fb83c82bbd784d0c1a0f002af3705b92ccdbca9a",
+    "sourcePixels": [
+      229,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "2021": {
+    "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
+    "finding": "JUL was too far left. Move it inward and reduce the two serif columns; keep readable control 36946964.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.09,
+          "baseline": 0.64,
+          "cap": 0.46,
+          "width": 0.32,
+          "profile": "heavy-month",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.95,
+          "baseline": 0.64,
+          "cap": 0.46,
+          "width": 0.45,
+          "profile": "heavy-year",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.055,
+          "width": 0.42,
+          "profile": "vertical-province",
+          "tracking": 0,
+          "local": true
+        },
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.055,
+          "width": 0.47,
+          "profile": "vertical-province",
+          "tracking": 0,
+          "local": true
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.755,
+          "baseline": 0.905,
+          "cap": 0.18,
+          "width": 0.44,
+          "profile": "control-bold",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2021-36946964.jpg",
+    "sourceSha256": "e8b849bad4eba73ef0373fbb772a9bd017d135230161fd9a00ef3730669b1c74",
+    "sourcePixels": [
+      230,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "2022": {
+    "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
+    "finding": "MAR was too wide and touched the vertical province. Use a narrower whole-run limit and distinct serif columns.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.09,
+          "baseline": 0.64,
+          "cap": 0.46,
+          "width": 0.32,
+          "profile": "heavy-month",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.95,
+          "baseline": 0.64,
+          "cap": 0.46,
+          "width": 0.45,
+          "profile": "heavy-year",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.055,
+          "width": 0.42,
+          "profile": "vertical-province",
+          "tracking": 0,
+          "local": true
+        },
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.055,
+          "width": 0.47,
+          "profile": "vertical-province",
+          "tracking": 0,
+          "local": true
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.755,
+          "baseline": 0.905,
+          "cap": 0.18,
+          "width": 0.44,
+          "profile": "control-bold",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2022-72919128.jpg",
+    "sourceSha256": "8a5d4db2c66d5beb742dbb8e5f80737559c3136e306985495576fa8b5928fa64",
+    "sourcePixels": [
+      238,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  },
+  "2023": {
+    "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
+    "finding": "MAR and the province were cramped. Move month inward, narrow its whole-run limit and separate both serif columns.",
+    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "runs": {
+      "decal-month": [
+        {
+          "x": 0.09,
+          "baseline": 0.64,
+          "cap": 0.46,
+          "width": 0.32,
+          "profile": "heavy-month",
+          "tracking": 0,
+          "anchor": "start"
+        }
+      ],
+      "decal-year": [
+        {
+          "x": 0.95,
+          "baseline": 0.64,
+          "cap": 0.46,
+          "width": 0.45,
+          "profile": "heavy-year",
+          "tracking": 0,
+          "anchor": "end"
+        }
+      ],
+      "decal-legend": [
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.055,
+          "width": 0.42,
+          "profile": "vertical-province",
+          "tracking": 0,
+          "local": true
+        },
+        {
+          "x": 0,
+          "baseline": 0,
+          "cap": 0.055,
+          "width": 0.47,
+          "profile": "vertical-province",
+          "tracking": 0,
+          "local": true
+        }
+      ],
+      "decal-serial": [
+        {
+          "x": 0.755,
+          "baseline": 0.905,
+          "cap": 0.18,
+          "width": 0.44,
+          "profile": "control-bold",
+          "tracking": 0
+        }
+      ]
+    },
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2023-52843353.jpg",
+    "sourceSha256": "e53879fc4a5e160fcfb76135db66af71b95302799b31ed16e0da39cc4e85b62d",
+    "sourcePixels": [
+      234,
+      100
+    ],
+    "reviewedOn": "2026-10-06"
+  }
+}

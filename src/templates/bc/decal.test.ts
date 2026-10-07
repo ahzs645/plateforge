@@ -4,6 +4,7 @@ import {decalArt} from '../../regions/canada/bc-kit';
 import {serializeSvgNode, type SvgNode} from '../svg-scene';
 import {buildDecal, decalBox} from './decal';
 import {code128Codes} from './decal-barcode';
+import {DECAL_TYPOGRAPHY, decalTypography} from './decal-typography';
 
 const box = {x:0,y:0,width:230,height:100};
 const get = (id:string) => BC_DECALS.find(d=>decalId(d)===id)!;
@@ -22,6 +23,24 @@ describe('Photographed B.C. decal printing systems',()=>{
     expect(find(modern,'decal-legend').every(n=>n.attrs['data-die']==='bc-decal-print-vertical-province')).toBe(true);
     expect(serializeSvgNode(modern)).toContain('rotate(-90)');
     expect(find(render('2013'),'decal-year')[0].attrs['aria-label']).toBe('13');
+  });
+  it('applies the ICBC July 2017 design boundary to the selected expiry month',()=>{
+    const early=decalTypography('2017','JUN')!;
+    const late=decalTypography('2017','JUL')!;
+    expect(early.layout?.cornerRadius).toBe(0);
+    expect(late.layout?.cornerRadius).toBe(.10);
+    expect(late.runs['decal-month'][0].cap).toBeLessThan(early.runs['decal-month'][0].cap);
+    const d=get('2017');
+    const june=buildDecal(decalArt(d,{decalMonth:'JUN'}),box);
+    const july=buildDecal(decalArt(d,{decalMonth:'JUL'}),box);
+    expect((june.children[0] as SvgNode).attrs.rx).toBe(0);
+    expect((july.children[0] as SvgNode).attrs.rx).toBe(10);
+    expect(find(june,'decal-month')[0].attrs['aria-label']).toBe('JUN');
+    expect(find(july,'decal-month')[0].attrs['aria-label']).toBe('JUL');
+  });
+  it('retains photographed punctuation in the 1975 and 1977 class lines',()=>{
+    expect(find(render('1975'),'decal-class').map(n=>n.attrs['aria-label'])).toContain('PASS. COMM.');
+    expect(find(render('1977'),'decal-class').map(n=>n.attrs['aria-label'])).toContain('PASS. COMM.');
   });
   it('encodes the actual printed control with the independently checked Code 128 C checksum',()=>{
     expect(code128Codes('99103688')).toEqual([105,99,10,36,88,66,106]);
@@ -49,6 +68,32 @@ describe('Photographed B.C. decal printing systems',()=>{
     expect(serializeSvgNode(render('1986'))).toContain('user-supplied-Expo86logo.svg');
     expect(find(render('1999-white'),'decal-inner-border')).toHaveLength(1);
     expect(get('2008').serialInk).toBe(get('2008').ink);
+  });
+  it('covers every catalogue variant with its own source-linked typography review',()=>{
+    expect(Object.keys(DECAL_TYPOGRAPHY).sort()).toEqual(BC_DECALS.map(decalId).sort());
+    for (const decal of BC_DECALS) {
+      const audit=DECAL_TYPOGRAPHY[decalId(decal)];
+      expect(audit.source).toBe(decal.image);
+      expect(audit.sourceSha256).toBe(decal.specimen!.sourceSha256);
+      const scene=render(decalId(decal));
+      for (const [role, runs] of Object.entries(audit.runs)) {
+        expect(find(scene,role), `${decalId(decal)} ${role} line count`).toHaveLength(runs.length);
+      }
+    }
+  });
+  it('keeps both 1984 vertical province lines distinct and separates the modern columns',()=>{
+    const vertical=find(render('1984'),'decal-legend');
+    expect(vertical.map(run=>run.attrs['aria-label'])).toEqual(['BRITISH','COLUMBIA']);
+    expect(serializeSvgNode(render('1984'))).toContain('rotate(-90)');
+    expect(find(render('1974'),'decal-year').map(run=>run.attrs['aria-label'])).toEqual(['7','4']);
+    expect(find(render('1985'),'decal-legend').map(run=>run.attrs['aria-label'])).toEqual(['BRITISH COLUMBIA']);
+  });
+  it.each(BC_DECALS.filter(d=>d.year>=1980))('retains $year $variant month text for every selectable month',decal=>{
+    for (const month of ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC']) {
+      const scene=buildDecal(decalArt(decal,{decalMonth:month}),box);
+      expect(find(scene,'decal-month').map(run=>run.attrs['aria-label'])).toEqual([month]);
+      expect(serializeSvgNode(scene)).not.toMatch(/NaN|Infinity/);
+    }
   });
   it.each(BC_DECALS)('renders the individually recorded $year $variant specimen with portable outlines',decal=>{
     const r=decal.specimen!;
