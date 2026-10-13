@@ -1,0 +1,100 @@
+name: Typography integration and browser verification
+on:
+  push:
+    branches: ['work/typography-consistency-20261013']
+    paths: ['.github/workflows/typography-qa-bootstrap.yml']
+permissions:
+  contents: write
+jobs:
+  verify:
+    if: github.ref == 'refs/heads/work/typography-consistency-20261013'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Correct integration defects found by the first full run
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import json
+          def replace(path, old, new):
+              p=Path(path);text=p.read_text();assert text.count(old)==1,(path,old);p.write_text(text.replace(old,new))
+          replace('src/core/font-contract.ts',"const ends = token[1].split('-').map((v) => parseInt(v, 16)); [lo, hi = lo] = ends;","const ends = token[1].split('-').map((v) => parseInt(v, 16)); lo = ends[0]; hi = ends[1] ?? lo;")
+          replace('src/templates/us.tsx',"type Font = FontSpec & { style?: 'italic' };","type Font = FontSpec;")
+          replace('src/templates/typography-inventory.test.tsx',"import '../regions';","import {BUILT_IN_REGIONS} from '../regions';\nimport {STAND_INS} from '../stand-ins';")
+          replace('src/templates/typography-inventory.test.tsx',"expect(rows.filter(r=>!r.researchEnabled)).toHaveLength(785);","expect(BUILT_IN_REGIONS.flatMap(r=>r.formats)).toHaveLength(785);\n    expect(rows.filter(r=>!r.researchEnabled)).toHaveLength(785+STAND_INS.length);")
+          replace('src/ui/font-inspection.ts',"faces: [...selected]","faces: fonts.filter((font) => selected.has(font))")
+          replace('src/ui/TypographyCoverage.tsx',"Visible lettering uses outlines; no live-text font embedding is required.","No live-text runs: lettering is outlined or baked into artwork. No live-text font embedding is required.")
+          replace('src/ui/App.tsx',"const requested = previewRef.current?.dataset.plateKey;","const requested = previewRef.current?.dataset.plateKey;\n      const requestedResearch = researchDiesEnabled();")
+          replace('src/ui/App.tsx',"const text = await serializeSvg(svg, templateFor(region, format).fonts, {","const expectedResearchDigest = researchRegistryDigest();\n      const unchanged = () => {\n        if (requested !== previewRef.current?.dataset.plateKey || (region.id === 'ca-bc' && (requestedResearch !== researchDiesEnabled() || expectedResearchDigest !== researchRegistryDigest()))) throw new Error('The plate changed while preparing the export; try again');\n      };\n      unchanged();\n      const text = await serializeSvg(svg, templateFor(region, format).fonts, {")
+          replace('src/ui/App.tsx',"if (requested !== previewRef.current?.dataset.plateKey) throw new Error('The plate changed while preparing the export; try again');","unchanged();")
+          replace('src/ui/App.tsx',"if (kind === 'svg') download(new Blob([text], { type: 'image/svg+xml' }), `${name}.svg`);\n      else download(await (kind === 'tesla' ? svgToTeslaPngBlob(text, width, height) : svgToPngBlob(text, width, height, 4)), `${name}.png`);","const blob = kind === 'svg' ? new Blob([text], { type: 'image/svg+xml' }) : await (kind === 'tesla' ? svgToTeslaPngBlob(text, width, height) : svgToPngBlob(text, width, height, 4));\n      unchanged();\n      download(blob, `${name}.${kind === 'svg' ? 'svg' : 'png'}`);")
+          p=Path('package.json');data=json.loads(p.read_text());data.setdefault('overrides',{})['source-map-js']='1.2.2';p.write_text(json.dumps(data,indent=2)+'\n')
+          PY
+          npm install --package-lock-only --ignore-scripts --no-audit
+          npm ci
+          python3 -m pip install 'fonttools==4.61.1' brotli
+          python3 scripts/typography-build-manifest.py --check
+      - name: Save corrected implementation to the feature branch
+        run: |
+          test "$(git ls-remote origin refs/heads/work/typography-consistency-20261013 | cut -f1)" = "$GITHUB_SHA"
+          git add src/core/font-contract.ts src/templates/us.tsx src/templates/typography-inventory.test.tsx src/ui/font-inspection.ts src/ui/TypographyCoverage.tsx src/ui/App.tsx package.json package-lock.json
+          git config user.name 'PlateForge typography builder'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'fix: verify every registered format, preserve export identity and harden dependencies'
+          git push origin HEAD:refs/heads/work/typography-consistency-20261013
+          mkdir -p typography-evidence
+          git rev-parse HEAD > typography-evidence/commit.txt
+      - name: Typecheck
+        id: types
+        continue-on-error: true
+        run: npm run typecheck 2>&1 | tee typography-evidence/typecheck.log
+      - name: All tests and format inventories
+        id: tests
+        continue-on-error: true
+        run: TYPOGRAPHY_EVIDENCE=1 npm test -- --maxWorkers=2 2>&1 | tee typography-evidence/tests.log
+      - name: Production build
+        id: build
+        continue-on-error: true
+        run: BASE_PATH=/plateforge/ npm run build 2>&1 | tee typography-evidence/build.log
+      - name: Geometry, font hashes and dependency audit
+        id: integrity
+        continue-on-error: true
+        run: |
+          node scripts/typography-verify.mjs 2>&1 | tee typography-evidence/integrity.log
+          npm audit --json > typography-evidence/dependency-audit.json
+      - name: Install exact browser verification tools
+        run: |
+          npm install --prefix "$RUNNER_TEMP/typography-browser" --ignore-scripts --no-audit --save-exact playwright@1.56.1 pngjs@7.0.0
+          node "$RUNNER_TEMP/typography-browser/node_modules/playwright/cli.js" install --with-deps chromium
+      - name: Actual browser rendering and downloads
+        id: browser
+        continue-on-error: true
+        env:
+          TYPOGRAPHY_BROWSER_DEPS: ${{ runner.temp }}/typography-browser/package.json
+        run: node scripts/typography-browser.mjs 2>&1 | tee typography-evidence/browser.log
+      - name: Save reviewed source differences without fonts
+        if: always()
+        run: |
+          mkdir -p typography-evidence
+          git diff 5c8538a3d2abcd705de01b1ebe3383d8000df6e8 HEAD -- src/core src/ui src/templates/fonts.ts src/templates/measure.ts src/templates/portable-typefaces.ts src/templates/portable-typefaces.test.ts src/templates/ca.tsx src/templates/us.tsx src/templates/cn.tsx src/templates/jp.tsx src/templates/kr.tsx src/templates/standin.tsx src/templates/svg-scene.ts src/templates/dies/engine.ts src/templates/dies/research-dies.ts src/templates/dies/research-text.ts src/templates/dies/research-loading.test.ts src/main.tsx src/index.css package.json package-lock.json > typography-evidence/implementation.patch
+          cp src/templates/font-manifest.json typography-evidence/
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: typography-browser-evidence
+          path: typography-evidence/
+          retention-days: 7
+      - name: Require every check
+        if: always()
+        env:
+          TYPES: ${{ steps.types.outcome }}
+          TESTS: ${{ steps.tests.outcome }}
+          BUILD: ${{ steps.build.outcome }}
+          INTEGRITY: ${{ steps.integrity.outcome }}
+          BROWSER: ${{ steps.browser.outcome }}
+        run: test "$TYPES:$TESTS:$BUILD:$INTEGRITY:$BROWSER" = 'success:success:success:success:success'
