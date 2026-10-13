@@ -1,0 +1,54 @@
+name: Diagnose font image readiness
+on:
+  push:
+    branches: ['work/typography-consistency-20261013']
+    paths: ['.github/workflows/typography-diagnostic.yml','scripts/typography-font-diagnostics.ts']
+permissions:
+  contents: read
+defaults:
+  run:
+    shell: bash
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: |
+          npm ci
+          npm install --prefix "$RUNNER_TEMP/typography-browser" --ignore-scripts --no-audit --save-exact playwright@1.56.1 pngjs@7.0.0
+          node "$RUNNER_TEMP/typography-browser/node_modules/playwright/cli.js" install --with-deps chromium
+      - name: Controlled raster experiments
+        env:
+          TYPOGRAPHY_BROWSER_DEPS: ${{ runner.temp }}/typography-browser/package.json
+        run: |
+          set -euo pipefail
+          printf '\nimport "./typography-font-diagnostics";\n' >> scripts/typography-browser-harness.tsx
+          python3 - <<'PY'
+          from pathlib import Path
+          p=Path('scripts/typography-browser.mjs');s=p.read_text();start=s.index(' const formats=await page.evaluate');end=s.index(' await context.close();',start)
+          s=s[:start]+''' const samples=[['cn','Noto Sans SC','京粤警学港澳使领',700],['jp','Noto Sans JP','品川横浜なあ東京',600],['antonio','Antonio','ĀČŁŐŞȚŽ 0123',500],['uk','UKNumberPlate, "Barlow Condensed"','AB-123',400]];
+           for(const [name,family,text,weight] of samples){
+             await page.evaluate(a=>window.typographyQA.specimen(...a),[family,text,weight]);
+             const inline=await page.locator('#plate svg').screenshot();await writeFile(path.join(out,name+'-inline.png'),inline);
+             const data=await page.evaluate(()=>window.diagnoseFonts());
+             for(const [mode,uri] of Object.entries(data.results)){
+               const png=Buffer.from(uri.split(',')[1],'base64');const delta=pixels(inline,png);await writeFile(path.join(out,name+'-'+mode+'.png'),png);
+               results.checks.push({name,mode,delta});
+             }
+           }
+          '''+s[end:];p.write_text(s)
+          PY
+          node scripts/typography-browser.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: typography-diagnostic-evidence
+          path: typography-evidence/
+          retention-days: 7
