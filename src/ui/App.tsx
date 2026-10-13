@@ -120,6 +120,7 @@ export function App() {
     if (!svg) return;
     try {
       const requested = previewRef.current?.dataset.plateKey;
+      const requestedResearch = researchDiesEnabled();
       const review = reviewPlateExport(plate);
       if (review.errors.length) throw new Error(review.errors.join('; '));
       if (plate.region.id === 'ca-bc' && researchDiesEnabled() && !researchRegistryLoaded()) {
@@ -127,15 +128,21 @@ export function App() {
         if (!researchRegistryLoaded()) throw new Error('Requested research glyphs are unavailable. Retry, or explicitly turn off Research lettering.');
         await nextPaint(svg.ownerDocument);
       }
+      const expectedResearchDigest = researchRegistryDigest();
+      const unchanged = () => {
+        if (requested !== previewRef.current?.dataset.plateKey || (region.id === 'ca-bc' && (requestedResearch !== researchDiesEnabled() || expectedResearchDigest !== researchRegistryDigest()))) throw new Error('The plate changed while preparing the export; try again');
+      };
+      unchanged();
       const text = await serializeSvg(svg, templateFor(region, format).fonts, {
         currentSvg: () => previewRef.current?.querySelector('svg'),
         context: { region: region.id, format: format.id, profileRights: review.rights, profileNotices: review.notices, ...(plate.region.id === 'ca-bc' ? { researchRequested: researchDiesEnabled(), researchRegistrySha256: researchRegistryDigest() } : {}) },
       });
-      if (requested !== previewRef.current?.dataset.plateKey) throw new Error('The plate changed while preparing the export; try again');
+      unchanged();
       const name = `${region.code}-${fileSafe(plate.text)}`;
       const { width, height } = (previewRef.current?.querySelector('svg') ?? svg).viewBox.baseVal;
-      if (kind === 'svg') download(new Blob([text], { type: 'image/svg+xml' }), `${name}.svg`);
-      else download(await (kind === 'tesla' ? svgToTeslaPngBlob(text, width, height) : svgToPngBlob(text, width, height, 4)), `${name}.png`);
+      const blob = kind === 'svg' ? new Blob([text], { type: 'image/svg+xml' }) : await (kind === 'tesla' ? svgToTeslaPngBlob(text, width, height) : svgToPngBlob(text, width, height, 4));
+      unchanged();
+      download(blob, `${name}.${kind === 'svg' ? 'svg' : 'png'}`);
       flash(kind === 'tesla' ? `Saved ${name}.png for Tesla. ${TESLA_HINT}.` : `Saved ${name}.${kind}`);
     } catch (e) { flash(e instanceof Error ? `Export failed: ${e.message}` : 'Export failed.'); }
   };

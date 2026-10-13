@@ -4,7 +4,8 @@ import {readFileSync,mkdirSync,writeFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {afterAll,describe,expect,it} from 'vitest';
 import './index';
-import '../regions';
+import {BUILT_IN_REGIONS} from '../regions';
+import {STAND_INS} from '../stand-ins';
 import {getRegions,generatePlate,templateFor,resolveDesign} from '../core/registry';
 import {createRng} from '../core/random';
 import {allDieProfiles} from './dies/profiles';
@@ -43,7 +44,8 @@ describe('all registered typography paths',()=>{
           liveTextRuns:[...svg.matchAll(/<text(?:\s|>)/g)].length,families:values('font-family'),outlineProfiles:values('data-die'),researchUnits:values('data-research-unit'),provenance:values('data-provenance'),rights:review.rights,noticeCount:review.notices.length});
       }
     }
-    expect(templates.size).toBe(13);expect(rows.filter(r=>!r.researchEnabled)).toHaveLength(785);
+    expect(templates.size).toBe(13);expect(BUILT_IN_REGIONS.flatMap(r=>r.formats)).toHaveLength(785);
+    expect(rows.filter(r=>!r.researchEnabled)).toHaveLength(785+STAND_INS.length);
     if(process.env.TYPOGRAPHY_EVIDENCE){
       mkdirSync('typography-evidence',{recursive:true});
       writeFileSync('typography-evidence/format-coverage.json',JSON.stringify(rows,null,2)+'\n');

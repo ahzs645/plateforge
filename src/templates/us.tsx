@@ -72,7 +72,7 @@ const SERIAL_Y = 214;
 /** Barlow Condensed cap height as a share of the font size. */
 const CAP = 0.7;
 
-type Font = FontSpec & { style?: 'italic' };
+type Font = FontSpec;
 function fontFor(style: UsTextStyle, size: number): Font {
   switch (style) {
     case 'script': return { family: SCRIPT, size, weight: 400 };

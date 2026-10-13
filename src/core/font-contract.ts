@@ -30,7 +30,7 @@ export function parseUnicodeRange(range: string): readonly [number, number][] {
       if (token[1].length > 6) throw new RangeError('Invalid Unicode wildcard');
       lo = parseInt(token[1].replace(/\?/g, '0'), 16); hi = parseInt(token[1].replace(/\?/g, 'F'), 16);
     } else {
-      const ends = token[1].split('-').map((v) => parseInt(v, 16)); [lo, hi = lo] = ends;
+      const ends = token[1].split('-').map((v) => parseInt(v, 16)); lo = ends[0]; hi = ends[1] ?? lo;
     }
     if (lo > hi || hi > 0x10ffff) throw new RangeError(`Invalid Unicode bounds: ${part}`);
     return [lo, hi];

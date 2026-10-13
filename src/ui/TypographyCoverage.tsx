@@ -41,7 +41,7 @@ export function TypographyCoverage({ region, format, parts }: { region: Region; 
     <header className="insp-head"><h2>Typography identity</h2></header>
     <p className="insp-note small">{TYPOGRAPHY_NOTES[template.id] ?? 'This template has no typography classification. Inspect its sources before claiming fidelity.'}</p>
     {!inspection ? <p className="insp-note small">Inspecting rendered lettering…</p> : <>
-      <p className="insp-note small">{inspection.liveRuns ? `${inspection.liveRuns} live-text runs · ${inspection.faces.length} matched bundled subsets` : 'Visible lettering uses outlines; no live-text font embedding is required.'}</p>
+      <p className="insp-note small">{inspection.liveRuns ? `${inspection.liveRuns} live-text runs · ${inspection.faces.length} matched bundled subsets` : 'No live-text runs: lettering is outlined or baked into artwork. No live-text font embedding is required.'}</p>
       <details className="coverage-details">
         <summary>Versions, source profiles and substitutions</summary>
         {families.map((font) => <div className="typography-family" key={JSON.stringify([font.family, font.weight, font.style, font.sourceVersion])}>

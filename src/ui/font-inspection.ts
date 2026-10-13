@@ -57,7 +57,7 @@ export function inspectSvgTypography(svg: SVGSVGElement, fonts: readonly FontAss
   }
   const units = [...new Set([...svg.querySelectorAll('[data-research-unit]')].map((g) => g.getAttribute('data-research-unit')!))];
   const profileIds = [...new Set([...svg.querySelectorAll('[data-die]')].map((g) => g.getAttribute('data-die')!))];
-  return { profileIds, faces: [...selected], warnings: [...warnings], liveRuns: runs.length, systemFamilies: [...systems], glyphKinds: kinds, researchUnits: units };
+  return { profileIds, faces: fonts.filter((font) => selected.has(font)), warnings: [...warnings], liveRuns: runs.length, systemFamilies: [...systems], glyphKinds: kinds, researchUnits: units };
 }
 
 /** Preserve inherited host CSS typography in the standalone document without converting curves. */
