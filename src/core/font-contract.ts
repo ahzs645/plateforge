@@ -10,12 +10,13 @@ export const fontWeightRange = (weight: FontAsset['weight']): [number, number] =
 };
 
 /** The same descriptors must be emitted for the screen and an exported SVG. */
-export function fontFaceCss(font: FontAsset, url: string): string {
+export function fontFaceCss(font: FontAsset, url: string, display: 'swap' | 'block' | 'auto' = 'swap'): string {
+  if (!['swap', 'block', 'auto'].includes(display)) throw new RangeError('Invalid font display');
   fontWeightRange(font.weight);
   const style = font.style ?? 'normal';
   if (!['normal', 'italic', 'oblique'].includes(style)) throw new RangeError('Invalid font style');
   if (font.unicodeRange) parseUnicodeRange(font.unicodeRange);
-  return `@font-face{font-family:${quoted(font.family)};src:url(${quoted(url)}) format(${quoted(font.format ?? 'woff2')});font-weight:${font.weight ?? 400};font-style:${style};font-display:swap;${font.unicodeRange ? `unicode-range:${font.unicodeRange};` : ''}}`;
+  return `@font-face{font-family:${quoted(font.family)};src:url(${quoted(url)}) format(${quoted(font.format ?? 'woff2')});font-weight:${font.weight ?? 400};font-style:${style};font-display:${display};${font.unicodeRange ? `unicode-range:${font.unicodeRange};` : ''}}`;
 }
 
 const rangeCache = new Map<string, readonly [number, number][]>();

@@ -1,5 +1,6 @@
 import type { FontAsset, Plate } from '../core/types';
 
+import { exportFontAliases } from './font-aliases';
 import { fontFaceCss } from '../core/font-contract';
 import { availableFontAssets } from '../templates/fonts';
 import { embeddedAssets } from './embedded-assets';
@@ -7,6 +8,8 @@ import { freezeTextStyles, inspectSvgTypography, svgTextRuns } from './font-insp
 import { nextPaint, withFontTimeout } from './font-loading';
 
 export interface SvgExportOptions {
+  /** Explicitly permit nonportable OS fallback. Off by default; unsupported glyphs otherwise block export. */
+  allowSystemFonts?: boolean;
   /** Font arrival can redraw the SVG. Read the current element after readiness, not a detached old one. */
   currentSvg?: () => SVGSVGElement | null | undefined;
   context?: Record<string, unknown>;
@@ -28,10 +31,17 @@ export async function serializeSvg(svg: SVGSVGElement, fonts: FontAsset[] = [], 
   const current = options.currentSvg ? options.currentSvg() : svg;
   if (!current) throw new Error('The plate changed while preparing the export; try again');
   const inspection = inspectSvgTypography(current, available);
+  if (inspection.systemFamilies.length && !options.allowSystemFonts) throw new Error(`Portable export has unsupported or unbundled lettering: ${inspection.systemFamilies.join(', ')}`);
+  const aliased = exportFontAliases(inspection.faces, available);
   // Fetch all selected faces before cloning. A 404/invalid font is an export error, not a fallback.
-  const faces = await Promise.all(inspection.faces.map(async (font) => fontFaceCss(font, await embeddedAssets.get(font.url, 'font', font.sha256))));
+  const faces = await Promise.all(aliased.faces.map(async (font) => fontFaceCss(font, await embeddedAssets.get(font.url, 'font', font.sha256), 'block')));
   const clone = current.cloneNode(true) as SVGSVGElement;
   freezeTextStyles(current, clone);
+  const sourceRuns = [...current.querySelectorAll<SVGElement>('text,tspan,textPath')];
+  [...clone.querySelectorAll<SVGElement>('text,tspan,textPath')].forEach((run, i) => {
+    const style = doc.defaultView!.getComputedStyle(sourceRuns[i]);
+    run.style.fontFamily = aliased.familyFor(style.fontFamily, parseFloat(style.fontWeight) || 400, style.fontStyle);
+  });
   await Promise.all([...clone.querySelectorAll('image')].map(async (image) => {
     const href = image.getAttribute('href') ?? image.getAttributeNS('http://www.w3.org/1999/xlink', 'href');
     if (href && !href.startsWith('data:')) {
@@ -49,7 +59,7 @@ export async function serializeSvg(svg: SVGSVGElement, fonts: FontAsset[] = [], 
   metadata.textContent = JSON.stringify({ schema: 'plateforge.typography-export/v1',
     ...options.context,
     fonts: inspection.faces.map(({ id, family, weight, style, sourceVersion, sha256, license }) => ({ id, family, weight, style, sourceVersion, sha256, license })),
-    liveTextRuns: inspection.liveRuns, systemFamilies: inspection.systemFamilies,
+    fontAliases: aliased.metadata, liveTextRuns: inspection.liveRuns, systemFamilies: inspection.systemFamilies,
     outlineProfiles: inspection.profileIds, glyphKinds: inspection.glyphKinds, researchUnits: inspection.researchUnits, warnings: inspection.warnings,
     historicalAuthenticity: 'Not certified by export success; retain each profile’s source evidence and limitations.' });
   clone.appendChild(metadata);

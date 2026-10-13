@@ -41,7 +41,7 @@ try{
  page.on('pageerror',e=>results.errors.push({name:'pageerror',error:String(e)}));
  await page.goto('http://127.0.0.1:4173/qa/');await page.waitForFunction(()=>!!window.typographyQA);
  const formats=await page.evaluate(()=>window.typographyQA.formats);
- assert.ok(formats.length>=785);assert.equal(new Set(formats.map(f=>f.region+'/'+f.format)).size,formats.length);
+ assert.equal(formats.length,878);assert.equal(new Set(formats.map(f=>f.region+'/'+f.format)).size,formats.length);
  const representatives=[...new Map(formats.map(f=>[f.template,f])).values()];
  const extra=formats.filter(f=>['ca-bc','ca-nu','ca-ab','ca-nt','us-ca','eu-de','eu-gb','kr','jp','cn'].includes(f.region)&&!f.format.startsWith('stand-in-')).filter(f=>/^(standard|reflective|2020|electric|green|1951|1930|1964|1978|1979-first|1985|2001-flag|1985-flag|moraine-lake|spectacular)$/.test(f.format));
  const selected=[...new Map([...representatives,...extra].map(f=>[f.region+'/'+f.format,f])).values()];
@@ -60,7 +60,7 @@ try{
  });
  const specimens=[
  ['barlow600','Barlow Condensed','ABC 0123456789',600,'normal'],['barlow500','Barlow Condensed','EL 13579',500,'normal'],
- ['barlow700italic','Barlow Condensed','BEAUTIFUL 2026',700,'italic'],['antonio-ext','Antonio','ĀČŁŊŞȚŽ 0123',500,'normal'],
+ ['barlow700italic','Barlow Condensed','BEAUTIFUL 2026',700,'italic'],['antonio-ext','Antonio','ĀČŁŐŞȚŽ 0123',500,'normal'],
  ['cn','Noto Sans SC','京粤警学港澳使领',700,'normal'],['jp','Noto Sans JP','品川横浜なあ東京',600,'normal'],
  ['kr','Noto Sans KR','서울경기가허하호',700,'normal'],['syllabics','Noto Sans Canadian Aboriginal','ᓄᓇᕗᑦ',700,'normal'],
  ['sans-italic','Noto Sans','Wild Rose Country',700,'italic'],['serif-italic','Noto Serif','Beautiful British',400,'italic'],
@@ -80,6 +80,12 @@ try{
    catch(e){results.errors.push({name:'format '+f.region+'/'+f.format,error:String(e)});}
    if(i%100===0)console.log('Browser format coverage',i,'/',formats.length);
  }
+ await check('unsupported Antonio character blocks portable export',async()=>{
+   const info=await page.evaluate(()=>window.typographyQA.specimen('Antonio','Ŋ',500,'normal'));
+   assert.ok(info.systems.length>0);
+   const error=await page.evaluate(async()=>{try{await window.typographyQA.export();return null;}catch(e){return String(e);}});
+   assert.match(error,/unsupported or unbundled lettering/);return {error};
+ });
  const app=await context.newPage();app.setDefaultTimeout(20000);
  await check('production UI downloads and navigation',async()=>{
    const examples=representatives.filter(f=>!['bc-historical','standin'].includes(f.template));
@@ -103,7 +109,7 @@ try{
    const cold=await browser.newContext({viewport:{width:1400,height:1000}});const p=await cold.newPage();
    let release;const gate=new Promise(r=>release=r);await p.route(/\.(woff2?|ttf)(?:\?|$)/,async route=>{await gate;await route.continue();});
    await p.goto('http://127.0.0.1:4173/plateforge/#/eu-de/standard',{waitUntil:'domcontentloaded'});
-   const input=p.locator('.inspector input[type="text"]').first();await input.fill('GÖ');await input.focus();
+   const input=p.locator('.inspector input.mono').first();await input.fill('GÖ');await input.focus();
    const identity=await input.evaluate(el=>{el.dataset.focusProof='same-node';return el.value;});release();
    await p.evaluate(()=>document.fonts.ready);await p.waitForTimeout(150);
    assert.deepEqual(await input.evaluate(el=>({focused:document.activeElement===el,value:el.value,identity:el.dataset.focusProof})),{focused:true,value:identity,identity:'same-node'});

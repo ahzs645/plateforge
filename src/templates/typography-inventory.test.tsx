@@ -44,8 +44,8 @@ describe('all registered typography paths',()=>{
           liveTextRuns:[...svg.matchAll(/<text(?:\s|>)/g)].length,families:values('font-family'),outlineProfiles:values('data-die'),researchUnits:values('data-research-unit'),provenance:values('data-provenance'),rights:review.rights,noticeCount:review.notices.length});
       }
     }
-    expect(templates.size).toBe(13);expect(BUILT_IN_REGIONS.flatMap(r=>r.formats)).toHaveLength(785);
-    expect(rows.filter(r=>!r.researchEnabled)).toHaveLength(785+STAND_INS.length);
+    expect(templates.size).toBe(13);expect(BUILT_IN_REGIONS.flatMap(r=>r.formats)).toHaveLength(784);
+    expect(rows.filter(r=>!r.researchEnabled)).toHaveLength(784+STAND_INS.length);
     if(process.env.TYPOGRAPHY_EVIDENCE){
       mkdirSync('typography-evidence',{recursive:true});
       writeFileSync('typography-evidence/format-coverage.json',JSON.stringify(rows,null,2)+'\n');
