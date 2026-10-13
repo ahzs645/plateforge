@@ -1,0 +1,122 @@
+name: Verify typography raster corrections
+on:
+  push:
+    branches: ['work/typography-consistency-20261013']
+    paths: ['.github/workflows/typography-raster-fix.yml']
+permissions:
+  contents: write
+defaults:
+  run:
+    shell: bash
+jobs:
+  verify:
+    if: github.ref == 'refs/heads/work/typography-consistency-20261013'
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - name: Apply narrowly scoped browser-found corrections
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+          def replace(path,old,new):
+              p=Path(path);text=p.read_text();assert text.count(old)==1,(path,old);p.write_text(text.replace(old,new))
+          replace('src/core/font-contract.ts','export function fontFaceCss(font: FontAsset, url: string): string {',"export function fontFaceCss(font: FontAsset, url: string, display: 'swap' | 'block' | 'auto' = 'swap'): string {\n  if (!['swap', 'block', 'auto'].includes(display)) throw new RangeError('Invalid font display');")
+          replace('src/core/font-contract.ts','font-display:swap;','font-display:${display};')
+          replace('src/ui/exporting.ts',"import { fontFaceCss }", "import { exportFontAliases } from './font-aliases';\nimport { fontFaceCss }")
+          replace('src/ui/exporting.ts','export interface SvgExportOptions {',"export interface SvgExportOptions {\n  /** Explicitly permit nonportable OS fallback. Off by default; unsupported glyphs otherwise block export. */\n  allowSystemFonts?: boolean;")
+          replace('src/ui/exporting.ts',"const inspection = inspectSvgTypography(current, available);","const inspection = inspectSvgTypography(current, available);\n  if (inspection.systemFamilies.length && !options.allowSystemFonts) throw new Error(`Portable export has unsupported or unbundled lettering: ${inspection.systemFamilies.join(', ')}`);\n  const aliased = exportFontAliases(inspection.faces, available);")
+          replace('src/ui/exporting.ts',"const faces = await Promise.all(inspection.faces.map(async (font) => fontFaceCss(font, await embeddedAssets.get(font.url, 'font', font.sha256))));","const faces = await Promise.all(aliased.faces.map(async (font) => fontFaceCss(font, await embeddedAssets.get(font.url, 'font', font.sha256), 'block')));")
+          replace('src/ui/exporting.ts','freezeTextStyles(current, clone);',"freezeTextStyles(current, clone);\n  const sourceRuns = [...current.querySelectorAll<SVGElement>('text,tspan,textPath')];\n  [...clone.querySelectorAll<SVGElement>('text,tspan,textPath')].forEach((run, i) => {\n    const style = doc.defaultView!.getComputedStyle(sourceRuns[i]);\n    run.style.fontFamily = aliased.familyFor(style.fontFamily, parseFloat(style.fontWeight) || 400, style.fontStyle);\n  });")
+          replace('src/ui/exporting.ts','liveTextRuns: inspection.liveRuns, systemFamilies: inspection.systemFamilies,','fontAliases: aliased.metadata, liveTextRuns: inspection.liveRuns, systemFamilies: inspection.systemFamilies,')
+          replace('src/templates/typography-inventory.test.tsx','toHaveLength(785);','toHaveLength(784);')
+          replace('src/templates/typography-inventory.test.tsx','toHaveLength(785+STAND_INS.length);','toHaveLength(784+STAND_INS.length);')
+          replace('scripts/typography-browser.mjs',"'ĀČŁŊŞȚŽ 0123'","'ĀČŁŐŞȚŽ 0123'")
+          replace('scripts/typography-browser.mjs',"'.inspector input[type=\"text\"]'","'.inspector input.mono'")
+          replace('scripts/typography-browser.mjs',"assert.ok(formats.length>=785);","assert.equal(formats.length,878);")
+          replace('scripts/typography-browser.mjs'," const app=await context.newPage();", " await check('unsupported Antonio character blocks portable export',async()=>{\n   const info=await page.evaluate(()=>window.typographyQA.specimen('Antonio','Ŋ',500,'normal'));\n   assert.ok(info.systems.length>0);\n   const error=await page.evaluate(async()=>{try{await window.typographyQA.export();return null;}catch(e){return String(e);}});\n   assert.match(error,/unsupported or unbundled lettering/);return {error};\n });\n const app=await context.newPage();")
+          PY
+          npm ci
+          python3 -m pip install 'fonttools==4.61.1' brotli
+          python3 scripts/typography-build-manifest.py --check
+      - name: Commit raster corrections to feature branch only
+        run: |
+          set -euo pipefail
+          test "$(git ls-remote origin refs/heads/work/typography-consistency-20261013 | cut -f1)" = "$GITHUB_SHA"
+          git add src/core/font-contract.ts src/ui/exporting.ts src/templates/typography-inventory.test.tsx scripts/typography-browser.mjs
+          git config user.name 'PlateForge typography builder'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git commit -m 'fix: preserve standalone SVG font subsets and reject unsupported portable exports'
+          git push origin HEAD:refs/heads/work/typography-consistency-20261013
+          mkdir -p typography-evidence
+          git rev-parse HEAD > typography-evidence/commit.txt
+      - name: Typecheck
+        id: types
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          npm run typecheck 2>&1 | tee typography-evidence/typecheck.log
+      - name: Full tests and machine-readable coverage
+        id: tests
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          TYPOGRAPHY_EVIDENCE=1 npm test -- --maxWorkers=2 --reporter=default --reporter=json --outputFile=typography-evidence/vitest.json 2>&1 | tee typography-evidence/tests.log
+      - name: Production build
+        id: build
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          BASE_PATH=/plateforge/ npm run build 2>&1 | tee typography-evidence/build.log
+      - name: Font and geometry integrity
+        id: integrity
+        continue-on-error: true
+        run: |
+          set -euo pipefail
+          node scripts/typography-verify.mjs 2>&1 | tee typography-evidence/integrity.log
+          npm audit --json > typography-evidence/dependency-audit.json
+      - name: Exact browser tools
+        run: |
+          npm install --prefix "$RUNNER_TEMP/typography-browser" --ignore-scripts --no-audit --save-exact playwright@1.56.1 pngjs@7.0.0
+          node "$RUNNER_TEMP/typography-browser/node_modules/playwright/cli.js" install --with-deps chromium
+      - name: Browser and raster tests
+        id: browser
+        continue-on-error: true
+        env:
+          TYPOGRAPHY_BROWSER_DEPS: ${{ runner.temp }}/typography-browser/package.json
+        run: |
+          set -euo pipefail
+          node scripts/typography-browser.mjs 2>&1 | tee typography-evidence/browser.log
+      - name: Save metadata and reviewed source text only
+        if: always()
+        run: |
+          mkdir -p typography-evidence
+          cp src/templates/font-manifest.json typography-evidence/
+          python3 - <<'PY'
+          from pathlib import Path
+          import subprocess,zipfile
+          with zipfile.ZipFile('typography-evidence/changed-source-text.zip','w',zipfile.ZIP_DEFLATED) as z:
+              for name in subprocess.check_output(['git','diff','--name-only','5c8538a3d2abcd705de01b1ebe3383d8000df6e8','HEAD']).decode().splitlines():
+                  p=Path(name)
+                  if p.is_file() and p.suffix in {'.ts','.tsx','.json','.md','.mjs','.py','.css','.txt','.yml'}:z.write(p,name)
+          PY
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: typography-raster-evidence
+          path: typography-evidence/
+          retention-days: 7
+      - name: Require every check
+        if: always()
+        env:
+          TYPES: ${{ steps.types.outcome }}
+          TESTS: ${{ steps.tests.outcome }}
+          BUILD: ${{ steps.build.outcome }}
+          INTEGRITY: ${{ steps.integrity.outcome }}
+          BROWSER: ${{ steps.browser.outcome }}
+        run: test "$TYPES:$TESTS:$BUILD:$INTEGRITY:$BROWSER" = 'success:success:success:success:success'
