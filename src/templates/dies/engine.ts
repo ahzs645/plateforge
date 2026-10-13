@@ -32,6 +32,8 @@ export interface DieProfile {
   slant?: number;
   /** Research-merged dies: characters drawn from research outlines rather than the production die. */
   researchChars?: ReadonlySet<string>;
+  /** Exact winning registry unit for each research character. Never inferred from the family name. */
+  researchSourceUnits?: Readonly<Record<string, string>>;
   /** Research-merged dies: slant for production fallback glyphs only (research outlines carry their own). */
   fallbackSlant?: number;
   evidence: DieEvidence;
@@ -50,7 +52,7 @@ export const dieSupports = (profile: DieProfile, text: string): boolean => [...t
 
 /** Natural run width in cap-height units (100). */
 export function dieRunWidth(profile: DieProfile, text: string): number {
-  const glyphs = [...text].map((c) => dieGlyph(profile, c)!);
+  const glyphs = [...text].map((c) => { const glyph = dieGlyph(profile, c); if (!glyph) throw new RangeError(`Die ${profile.id} does not support ${c}`); return glyph; });
   return glyphs.reduce((sum, g) => sum + g.advance, 0) + Math.max(0, glyphs.length - 1) * profile.params.tracking;
 }
 
@@ -92,7 +94,7 @@ export function buildDieText(props: DieTextProps): DieRun {
   const children = glyphs.map(({ char, glyph }, i) => {
     const skew = p.profile.fallbackSlant && !p.profile.researchChars?.has(char) ? ` skewX(${-p.profile.fallbackSlant})` : '';
     const item = n('g', { transform: `translate(${round(cursor)} 0)${skew}`, 'data-character': char,
-      ...(p.profile.researchChars?.has(char) ? { 'data-source': 'research' } : {}), ...(glyph.stroke ? { strokeWidth: glyph.stroke } : {}),
+      ...(p.profile.researchChars?.has(char) ? { 'data-source': 'research', 'data-provenance': 'research-candidate', ...(p.profile.researchSourceUnits?.[char] ? { 'data-research-unit': p.profile.researchSourceUnits[char] } : {}) } : { 'data-provenance': p.profile.overrides?.[char] ? 'profile-override' : 'constructed' }), ...(glyph.stroke ? { strokeWidth: glyph.stroke } : {}),
       ...(glyph.cap ? { strokeLinecap: glyph.cap } : {}),
       // Traced outlines are filled shapes, not centrelines.
       ...(glyph.fill ? { fill: p.ink, stroke: 'none', fillRule: 'evenodd' } : {}) },

@@ -14,6 +14,9 @@ import { Inspector } from './Inspector';
 import { PlateView } from './PlateView';
 import { RegionPicker } from './RegionPicker';
 import { useTheme } from './useTheme';
+import { reviewPlateExport } from './export-policy';
+import { loadResearchDies, researchDiesEnabled, researchRegistryLoaded, researchRegistryDigest } from '../templates/dies/research-dies';
+import { nextPaint } from './font-loading';
 
 const ReferenceLibrary = lazy(() => import('./ReferenceLibrary').then((module) => ({ default: module.ReferenceLibrary })));
 const DecalGallery = lazy(() => import('./DecalGallery').then(module => ({ default: module.DecalGallery })));
@@ -34,14 +37,6 @@ export function readAppRoute(hashInput: string): { region: string; format?: stri
   return getRegion(region) ? { region, format, view: 'single' } : { region: DEFAULT_REGION, view: 'single' };
 }
 const readHash = () => readAppRoute(location.hash);
-function useFontsVersion(): number {
-  const [version, setVersion] = useState(0);
-  useEffect(() => {
-    const specs = ['86px EuroPlate', '84px UKNumberPlate', '600 100px "Barlow Condensed"', '700 46px "Barlow Condensed"', '400 100px Antonio', '500 100px Antonio', '700 100px Antonio'];
-    Promise.allSettled(specs.map((s) => document.fonts.load(s))).then(() => setVersion((v) => v + 1));
-  }, []);
-  return version;
-}
 const isMac = typeof navigator !== 'undefined' && /Mac|iPhone|iPad/.test(navigator.platform);
 export function App() {
   const regions = useMemo(() => getRegions(), []);
@@ -58,7 +53,6 @@ export function App() {
   const [spin, setSpin] = useState(0);
   const previewRef = useRef<HTMLDivElement>(null);
   const toastTimer = useRef<number>(undefined);
-  const fontsVersion = useFontsVersion();
   const { theme, cycle } = useTheme();
   const plate: Plate = makePlate(region, format, parts);
   const family = familyOf(region, format);
@@ -125,9 +119,21 @@ export function App() {
     const svg = previewRef.current?.querySelector('svg');
     if (!svg) return;
     try {
-      const text = await serializeSvg(svg, templateFor(region, format).fonts);
+      const requested = previewRef.current?.dataset.plateKey;
+      const review = reviewPlateExport(plate);
+      if (review.errors.length) throw new Error(review.errors.join('; '));
+      if (plate.region.id === 'ca-bc' && researchDiesEnabled() && !researchRegistryLoaded()) {
+        await loadResearchDies();
+        if (!researchRegistryLoaded()) throw new Error('Requested research glyphs are unavailable. Retry, or explicitly turn off Research lettering.');
+        await nextPaint(svg.ownerDocument);
+      }
+      const text = await serializeSvg(svg, templateFor(region, format).fonts, {
+        currentSvg: () => previewRef.current?.querySelector('svg'),
+        context: { region: region.id, format: format.id, profileRights: review.rights, profileNotices: review.notices, ...(plate.region.id === 'ca-bc' ? { researchRequested: researchDiesEnabled(), researchRegistrySha256: researchRegistryDigest() } : {}) },
+      });
+      if (requested !== previewRef.current?.dataset.plateKey) throw new Error('The plate changed while preparing the export; try again');
       const name = `${region.code}-${fileSafe(plate.text)}`;
-      const { width, height } = svg.viewBox.baseVal;
+      const { width, height } = (previewRef.current?.querySelector('svg') ?? svg).viewBox.baseVal;
       if (kind === 'svg') download(new Blob([text], { type: 'image/svg+xml' }), `${name}.svg`);
       else download(await (kind === 'tesla' ? svgToTeslaPngBlob(text, width, height) : svgToPngBlob(text, width, height, 4)), `${name}.png`);
       flash(kind === 'tesla' ? `Saved ${name}.png for Tesla. ${TESLA_HINT}.` : `Saved ${name}.${kind}`);
@@ -154,7 +160,7 @@ export function App() {
       </div>
     </header>
     <div className="mobile-tabs tabs" role="tablist" aria-label="Mode">{views.map((v) => <button key={v} role="tab" aria-selected={view === v} onClick={() => setView(v)}>{v === 'single' ? 'Plate' : VIEW_LABELS[v]}</button>)}</div>
-    <main className="workspace" key={fontsVersion}>
+    <main className="workspace">
       {view === 'library' ? <Suspense fallback={<p role="status">Loading reference library…</p>}><ReferenceLibrary regions={regions} onOpenFormat={openEditor} /></Suspense>
         : view === 'decals' ? <Suspense fallback={<p role="status">Loading decal gallery…</p>}><DecalGallery plate={plate} onChange={setParts} onBack={() => setView('single')} /></Suspense>
         : view === 'gallery' ? <GalleryView regions={regions} region={region} format={format} onOpen={openEditor} onSelectRegion={(id) => select(id)} />

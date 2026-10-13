@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, type PointerEvent as ReactPointerEvent } from 'react';
 import { LetteringPicker } from './LetteringPicker';
 import { IranCoverage, IraqCoverage } from './FontCoverage';
+import { TypographyCoverage } from './TypographyCoverage';
 import { ResearchDiesToggle } from './ResearchDiesToggle';
 import type { FieldDef, Parts, PlateFormat, Region } from '../core/types';
 import { statusBadge } from '../core/timeline';
@@ -197,6 +198,7 @@ export function Inspector({ region, format, parts, onChange, onExport, onCopyLin
               )}
             </section>
 
+            <TypographyCoverage region={region} format={format} parts={parts} />
             {region.id === 'iraq' && <IraqCoverage format={format} parts={parts} />}
             {region.id === 'iran' && <IranCoverage format={format} parts={parts} />}
 

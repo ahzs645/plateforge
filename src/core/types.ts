@@ -139,6 +139,13 @@ export interface FontAsset {
   /** A number, or a range such as `'400 700'` for variable fonts. */
   weight?: number | string;
   format?: 'woff2' | 'truetype';
+  /** Stable asset identity; font package version and font internal version are different. */
+  id?: string;
+  style?: 'normal' | 'italic' | 'oblique';
+  unicodeRange?: string;
+  sourceVersion?: string;
+  sha256?: string;
+  license?: { label: string; status: 'open' | 'unverified' | 'private-study'; sourceUrl: string };
 }
 
 export interface PlateTemplate<D extends Design = Design> {

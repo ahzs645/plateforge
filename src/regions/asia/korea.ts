@@ -24,7 +24,7 @@ const REFS = {
   ev: { title: '찾기쉬운 생활법령 — 전기자동차 등록번호판', url: 'https://easylaw.go.kr/CSP/CnpClsMain.laf?popMenu=ov&csmSeq=1404&ccfNo=2&cciNo=1&cnpClsNo=3' },
 } as const;
 
-const NOTE = 'Approximate reconstruction: character boxes follow published plate proportions; hangul uses a system gothic in place of the government plate typeface.';
+const NOTE = 'Approximate reconstruction: character boxes follow published plate proportions; hangul uses pinned Noto Sans KR as a portable substitute, not the government plate typeface.';
 const REVIEW_YEAR = 2026; // End of researched coverage, not a withdrawal date.
 
 /** Splits `123가 4567` (space optional) into class number, hangul and serial. */

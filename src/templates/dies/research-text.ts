@@ -13,7 +13,8 @@ export function applyResearchTypefaces(item: SvgNode): SvgNode {
 }
 
 function researchText(t: SvgNode): SvgNode | null {
-  const { fontFamily, fontSize, fill } = t.attrs;
+  const { fontSize, fill } = t.attrs;
+  const fontFamily = t.attrs['data-original-font-family'] ?? t.attrs.fontFamily;
   if (typeof fontFamily !== 'string' || typeof fontSize !== 'number' || !t.children.every((c) => typeof c === 'string')) return null;
   const text = (t.children as string[]).join('');
   const role = String(t.attrs['data-role'] ?? 'legend');

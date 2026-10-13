@@ -107,7 +107,7 @@ function KrPlate({ design, parts, text }: { design: KrDesign; parts: Parts; text
         : [[40, 30], [W - 40, 30]];
 
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={text}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={text} lang="ko">
       <defs>
         <linearGradient id={`${id}bg`} x1="0" y1="0" x2={design.variant === 'ev' ? 1 : 0} y2={design.variant === 'ev' ? 0 : 1}>
           <stop offset="0" stopColor={v.bg[0]} />
@@ -156,5 +156,5 @@ export const krTemplate: PlateTemplate<KrDesign> = {
     return { width, height };
   },
   render: ({ design, parts, text }) => <KrPlate design={design} parts={parts} text={text} />,
-  fonts: [FONTS.barlow600],
+  fonts: [FONTS.barlow600, FONTS.barlow700],
 };

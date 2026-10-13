@@ -1,7 +1,7 @@
 import { useId } from 'react';
 import type { PlateTemplate } from '../core/types';
 import { displayNumber } from '../regions/asia/japan';
-import { CJK_STACK, CONDENSED, FONTS } from './fonts';
+import { JP_STACK, CONDENSED, FONTS } from './fonts';
 import { fit, measure, safeId } from './measure';
 
 export interface JpDesign {
@@ -19,7 +19,7 @@ function JpPlate({ design, parts, text }: { design: JpDesign; parts: Record<stri
   const ink = design.text ?? '#0e5a2c';
 
   // Top row: office name + classification number, centered together.
-  const officeFont = { family: CJK_STACK, size: 34, weight: 600 };
+  const officeFont = { family: JP_STACK, size: 34, weight: 600 };
   const classFont = { family: CONDENSED, size: 40, weight: 600, letterSpacing: 2 };
   const office = fit(parts.office ?? '', officeFont, 120);
   const cls = parts.classNo ?? '';
@@ -33,7 +33,7 @@ function JpPlate({ design, parts, text }: { design: JpDesign; parts: Record<stri
   const baseline = 151;
 
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={text}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={text} lang="ja">
       <defs>
         <linearGradient id={`${id}sheen`} x1="0" y1="0" x2="1" y2="1">
           <stop offset="0" stopColor="#fff" stopOpacity="0.3" />
@@ -54,7 +54,7 @@ function JpPlate({ design, parts, text }: { design: JpDesign; parts: Record<stri
         {cls}
       </text>
 
-      <text x="46" y="134" textAnchor="middle" fontFamily={CJK_STACK} fontWeight="600" fontSize="40" fill={ink}>
+      <text x="46" y="134" textAnchor="middle" fontFamily={JP_STACK} fontWeight="600" fontSize="40" fill={ink}>
         {parts.kana}
       </text>
 

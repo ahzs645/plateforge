@@ -1,0 +1,21 @@
+{
+  "src/templates/dies/alberta-avant-garde.json": "41b81e6cfac83c90e28d63a74d166e4f1036bf80693acd0c212b8771ff61540b",
+  "src/templates/dies/apec-screened-legends.json": "4b12b29ecd68c2368bd5b1acbc77694b0528b7b638d5ce43f6adde8aa8a3b7b7",
+  "src/templates/dies/collector-harrington.json": "9b0083c8962e76397a9204b5f9396eadb67e8e670866d1a3da4ecbf33a3a4ea9",
+  "src/templates/dies/commonwealth-helvetica.json": "034a3666a2e599913ec0adfe81a9e91c2a44ab5261f87e50ec1bdcc45e46feae",
+  "src/templates/dies/commonwealth-times.json": "c5c4df8077a0c50cec6d2f4fe113e5f8e8f5e9466bb19fc910578eae3fa3f118",
+  "src/templates/dies/decal-audit-printing.json": "7c59e1a45f8af000e5d004ae3252393ed1222bb6554a02d2f27b75f40399c5d1",
+  "src/templates/dies/decal-glyph-printing.json": "c63d6066efe1f7b14c26b327021867770d230c5bf606afba7a9c247951863b8b",
+  "src/templates/dies/decal-printing.json": "a58f9a2f8661c7b80285f2794fa7844643cac370e3d2d4819973a8520a4acb1d",
+  "src/templates/dies/frankfurter-centennial-years.json": "3576fc9e3e0a5c3fae4656f9ca781f36c67e22f860192cb39542e47e6cf4e297",
+  "src/templates/dies/frankfurter-expo.json": "f81139be057e3ae086f9b99e41029974e43dee3bd63ff8191a0dcfecadbd31f9",
+  "src/templates/dies/municipal-frankfurter.json": "9d3cf827bf570af1cb08ae152ed2855ca82dc800b088e4560dc65c271d617e29",
+  "src/templates/dies/municipal-prince-george-glyphs.json": "8773c68841bb286bd12b251befb5a778660270e35c7fd9cb4cc3343eee08ced3",
+  "src/templates/dies/research-registry.json": "3929f31db1a126911f58e943960c36286935b0a5442f03142b140bf531793743",
+  "src/templates/dies/royal-screened-slogan.json": "c5a8c12c395b5686ca6df1210656993c3575aeb3172a0f57717205f80456577f",
+  "src/templates/dies/skeleton.ts": "143cb4ddda0478859cd48731774e1842025755280cdc3c70855425c029b85021",
+  "src/templates/dies/traced-1940.ts": "b44097d204e867a0e9f72a6c549dfdfd21bc4ff82ebbce2ba658c8a5bc4c7a12",
+  "src/templates/iran-custom-font-data.ts": "0760cb73b8c0b80e612eb9206b96242483c9e034ffe53d25ab208647776b855a",
+  "src/templates/iraq-custom-fonts.ts": "d988dc2d943771578ae3d9167b98dd90e63a4edce7907ed79f65594316749629",
+  "src/templates/westasia-arabic.ts": "76d12b6fbda2315b90e166fd08f7dc6af7af8ddaca2ba7ee5c0e07b7a8b5c579"
+}
