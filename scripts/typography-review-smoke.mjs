@@ -25,24 +25,33 @@ try {
   await page.goto('http://127.0.0.1:4175/');
   for (const country of ['Iraq', 'Iran']) {
     await page.locator('.region-trigger').click();
+    // The picker starts scoped to Canada when the selected plate is Canadian.
+    await page.getByRole('button', { name: 'All countries', exact: true }).click();
     await page.getByLabel('Search regions').fill(country);
     await page.locator('#picker-list').getByRole('option', { name: new RegExp(country) }).click();
-    const panel = page.getByRole('region', { name: 'Typography reference comparison' });
-    await panel.locator('summary').click();
-    assert.equal(await panel.locator('select').count(), 2);
-    for (const index of country === 'Iran' ? ['0', '1', '2'] : ['0']) {
-      await page.locator('#typeface-reference').selectOption(index);
-      const values = await page.locator('#typeface-candidate option').evaluateAll((xs) => xs.map((x) => x.value));
-      for (const value of values) {
-        await page.locator('#typeface-candidate').selectOption(value);
-        await panel.locator('img').first().scrollIntoViewIfNeeded();
-        await page.waitForFunction(() => [...document.querySelectorAll('[aria-label="Typography reference comparison"] img')].every((im) => im.complete && im.naturalWidth === 1040));
+    const [report] = await Promise.all([
+      context.waitForEvent('page'), page.getByRole('link', { name: 'Open reference-photo comparisons', exact: true }).click(),
+    ]);
+    report.on('pageerror', (e) => errors.push(e.message));
+    await report.waitForLoadState();
+    const sections = report.locator(`section[data-ref^="${country.toLowerCase()}-"]`);
+    assert.equal(await sections.count(), country === 'Iran' ? 3 : 1);
+    for (const section of await sections.all()) {
+      for (const value of await section.locator('option').evaluateAll((xs) => xs.map((x) => x.value))) {
+        await section.locator('select').selectOption(value);
+        for (const image of await section.locator('img').all()) {
+          await image.evaluate((im) => im.decode());
+          assert.equal(await image.evaluate((im) => im.naturalWidth), 1040);
+        }
       }
+      await section.locator('input[type="range"]').focus();
+      await section.locator('input[type="range"]').press('End');
+      assert.equal(await section.locator('input').inputValue(), '100');
+      assert.equal(await section.locator('.candidate').evaluate((im) => getComputedStyle(im).opacity), '1');
     }
-    await page.locator('#typeface-opacity').focus();
-    await page.locator('#typeface-opacity').press('End');
-    assert.equal(await page.locator('#typeface-opacity').inputValue(), '100');
     await page.screenshot({ path: `${out}/${country.toLowerCase()}-inspector.png`, fullPage: true });
+    await report.screenshot({ path: `${out}/${country.toLowerCase()}-report.png`, fullPage: true });
+    await report.close();
   }
   const [download] = await Promise.all([
     page.waitForEvent('download'), page.getByRole('link', { name: 'Save the standalone comparison report' }).click(),

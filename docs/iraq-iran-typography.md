@@ -6,7 +6,7 @@ This pass renders the actual candidate fonts against attributed photographs. It 
 
 ## Open the comparison
 
-In the Iraq or Iran editor, expand **Typography comparison → Compare shapes with a reference**. Select a specimen, select a candidate, and adjust opacity. The inspector also links the full-size report and a downloadable single-file offline report.
+In the Iraq or Iran editor, use **Typography identity → Open reference-photo comparisons**. The full-size report has specimen sections with candidate and opacity controls. The inspector also provides **Save the standalone comparison report** for offline use.
 
 - `public/typography-review/index.html`: side-by-side sheets, character close-ups, measured crop regions, overlay controls and sources.
 - `public/typography-review/offline.html`: the same report with raster images embedded; no font binaries.

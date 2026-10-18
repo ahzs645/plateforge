@@ -86,6 +86,12 @@ last green experiment did not assert image parity. The production exporter now
 references embedded subsets directly, and the browser assertions run in CI.
 Temporary branch-writing patch workflows and encoded payloads have been removed.
 
+The current Iraq/Iran inspectors link to the reference-photo comparisons and the
+offline report. Their smoke test follows those links, clears the picker's
+initial Canada filter before searching another country, and checks every
+candidate image and offline selection. It no longer targets the retired inline
+comparison panel.
+
 Before merging, require all CI jobs, including all three browser engines, and
 inspect the saved preview/export pairs. Main pushes automatically deploy the
 public site; merging and deployment remain a separate decision.

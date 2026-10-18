@@ -40,6 +40,10 @@ export function TypographyCoverage({ region, format, parts }: { region: Region; 
   return <section className="insp-section typography-coverage" aria-label="Typography identity and export">
     <header className="insp-head"><h2>Typography identity</h2></header>
     <p className="insp-note small">{TYPOGRAPHY_NOTES[template.id] ?? 'This template has no typography classification. Inspect its sources before claiming fidelity.'}</p>
+    {(region.id === 'iraq' || region.id === 'iran') && <p className="insp-note small">
+      <a href={`${import.meta.env.BASE_URL}typography-review/index.html`} target="_blank" rel="noreferrer">Open reference-photo comparisons</a>
+      {' · '}<a href={`${import.meta.env.BASE_URL}typography-review/offline.html`} download="plateforge-typography-comparison.html">Save the standalone comparison report</a>
+    </p>}
     {!inspection ? <p className="insp-note small">Inspecting rendered lettering…</p> : <>
       <p className="insp-note small">{inspection.liveRuns ? `${inspection.liveRuns} live-text runs · ${inspection.faces.length} matched bundled subsets` : 'No live-text runs: lettering is outlined or baked into artwork. No live-text font embedding is required.'}</p>
       <details className="coverage-details">
