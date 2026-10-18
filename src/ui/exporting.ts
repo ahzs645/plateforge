@@ -1,7 +1,7 @@
 import type { FontAsset, Plate } from '../core/types';
 
 import { exportFontAliases } from './font-aliases';
-import { fontFaceCss } from '../core/font-contract';
+import { fontFaceCss, fontHasCharacter, fontWeightRange } from '../core/font-contract';
 import { availableFontAssets } from '../templates/fonts';
 import { embeddedAssets } from './embedded-assets';
 import { freezeTextStyles, inspectSvgTypography, svgTextRuns } from './font-inspection';
@@ -53,6 +53,26 @@ export async function serializeSvg(svg: SVGSVGElement, fonts: FontAsset[] = [], 
   if (faces.length) {
     const style = doc.createElementNS('http://www.w3.org/2000/svg', 'style');
     style.textContent = faces.join(''); clone.insertBefore(style, clone.firstChild);
+    // SVG image decoders can finish before fonts reached only through a long
+    // fallback chain paint. Reference each embedded subset directly, before
+    // the visible lettering. Opacity keeps layout/font loading active without
+    // changing the artwork; display:none would skip that work.
+    const preload = doc.createElementNS('http://www.w3.org/2000/svg', 'g');
+    preload.setAttribute('data-role', 'font-preload');
+    preload.setAttribute('aria-hidden', 'true');
+    preload.setAttribute('pointer-events', 'none');
+    preload.setAttribute('opacity', '0');
+    const characters = [...new Set(svgTextRuns(current).flatMap((run) => [...run.text]))];
+    for (const font of aliased.faces) {
+      const sample = doc.createElementNS('http://www.w3.org/2000/svg', 'text');
+      sample.setAttribute('font-family', font.family);
+      sample.setAttribute('font-weight', String(fontWeightRange(font.weight)[0]));
+      sample.setAttribute('font-style', font.style ?? 'normal');
+      sample.setAttribute('font-size', '1');
+      sample.textContent = characters.filter((char) => fontHasCharacter(font, char)).join('');
+      preload.appendChild(sample);
+    }
+    style.after(preload);
   }
   const metadata = doc.createElementNS('http://www.w3.org/2000/svg', 'metadata');
   metadata.setAttribute('data-role', 'typography-export');

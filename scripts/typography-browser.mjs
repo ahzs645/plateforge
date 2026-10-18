@@ -10,6 +10,7 @@ import react from '@vitejs/plugin-react';
 const require=createRequire(path.resolve(process.env.TYPOGRAPHY_BROWSER_DEPS??'package.json'));
 const {chromium,firefox,webkit}=require('playwright');
 const {PNG}=require('pngjs');
+const {default:pixelmatch}=await import(require.resolve('pixelmatch'));
 const browserName=process.env.TYPOGRAPHY_BROWSER??'chromium';
 const out=path.resolve('typography-evidence/browser-'+browserName);await mkdir(out,{recursive:true});
 const html=path.resolve('typography-harness.html');
@@ -23,8 +24,8 @@ const server=createServer(async(req,res)=>{try{
   if(!file.startsWith(root+path.sep)){res.writeHead(403).end();return;}
   const bytes=await readFile(file);res.setHeader('Content-Type',types[path.extname(file)]??'application/octet-stream');res.end(bytes);
 }catch{res.writeHead(404).end('not found');}});
-await new Promise(r=>server.listen(4173,'127.0.0.1',r));
 const browser=await ({chromium,firefox,webkit}[browserName]).launch({headless:true});
+await new Promise((resolve,reject)=>{server.once('error',reject);server.listen(4173,'127.0.0.1',resolve);});
 const results={commit:execFileSync('git',['rev-parse','HEAD'],{encoding:'utf8'}).trim(),browser:browserName,browserVersion:browser.version(),checks:[],formats:[],errors:[]};
 function pixels(a,b){
  const x=PNG.sync.read(a),y=PNG.sync.read(b);assert.equal(x.width,y.width);assert.equal(x.height,y.height);
@@ -32,7 +33,8 @@ function pixels(a,b){
    const A=x.data[i+c]*x.data[i+3]/255+255-x.data[i+3],B=y.data[i+c]*y.data[i+3]/255+255-y.data[i+3];
    delta=Math.max(delta,Math.abs(A-B));total+=Math.abs(A-B);
  }if(delta>16)changed++;}
- return {pixels:x.width*x.height,changedFraction:changed/(x.width*x.height),meanAbsoluteChannelError:total/(x.width*x.height*3)};
+ return {pixels:x.width*x.height,changedFraction:changed/(x.width*x.height),meanAbsoluteChannelError:total/(x.width*x.height*3),
+   perceptualChangedFraction:pixelmatch(x.data,y.data,null,x.width,x.height,{threshold:0.1,includeAA:false})/(x.width*x.height)};
 }
 async function check(name,fn){try{const detail=await fn();results.checks.push({name,status:'passed',...detail});}catch(e){results.errors.push({name,error:String(e),stack:e.stack});results.checks.push({name,status:'failed'});console.error(name,e);}}
 try{
@@ -55,7 +57,9 @@ try{
    await writeFile(path.join(out,name+'-inline.png'),inline);await writeFile(path.join(out,name+'-export.png'),png);
    const tesla=PNG.sync.read(Buffer.from(data.tesla.split(',')[1],'base64'));assert.equal(tesla.width,400);assert.equal(tesla.height,info.width/info.height>=3?100:200);
    assert.equal(data.metadata.systemFamilies.length,0,'Unexpected unbundled system font');
-   assert.ok(delta.changedFraction<0.025,JSON.stringify(delta));
+   // Page and SVG-image engines rasterize outline edges differently (notably
+   // WebKit). Keep raw deltas as evidence and exclude antialias-only pixels.
+   assert.ok(delta.perceptualChangedFraction<0.025,JSON.stringify(delta));
    return {region:f.region,format:f.format,info,delta,metadata:data.metadata,svgBytes:data.svgBytes};
  });
  const specimens=[
@@ -67,6 +71,55 @@ try{
  ['script','Pinyon Script','California',400,'normal'],['euro-umlauts','EuroPlate','GÖ ÄÜ 1234',400,'normal'],
  ['uk-fallback','UKNumberPlate, "Barlow Condensed"','AB-123',400,'normal']
  ];
+ // Each sample gets a new document/cache, and each raster path is tested first.
+ // These assert real production output; no experimental warmup or timing sleep.
+ for(const firstRaster of ['png','tesla'])for(const [name,family,text,weight,style] of specimens)await check('cold '+firstRaster+' '+name,async()=>{
+   const fresh=await browser.newContext({viewport:{width:1500,height:1050},deviceScaleFactor:1});
+   try{
+     const cold=await fresh.newPage();
+     cold.on('pageerror',e=>results.errors.push({name:'cold pageerror',error:String(e)}));
+     await cold.goto('http://127.0.0.1:4173/qa/');await cold.waitForFunction(()=>!!window.typographyQA);
+     await cold.evaluate(a=>window.typographyQA.specimen(...a),[family,text,weight,style]);
+     const inline=await cold.locator('#plate svg').screenshot();
+     const data=await cold.evaluate(first=>window.typographyQA.export(first),firstRaster);
+     const delta=pixels(inline,Buffer.from(data.png.split(',')[1],'base64'));
+     assert.ok(delta.changedFraction<0.01,JSON.stringify(delta));
+     const standalone=await fresh.newPage();
+     await standalone.goto('data:image/svg+xml;base64,'+Buffer.from(data.svg).toString('base64'));
+     await standalone.evaluate(()=>document.fonts.ready);
+     const svgDelta=pixels(inline,await standalone.locator('svg').screenshot());
+     assert.ok(svgDelta.changedFraction<0.01,JSON.stringify(svgDelta));
+     // Use preview pixels at the encoder's working resolution, then downsample
+     // them. Comparing with a low-resolution screenshot would mistake different
+     // antialiasing for missing glyphs.
+     const tesla=PNG.sync.read(Buffer.from(data.tesla.split(',')[1],'base64'));
+     const target=await cold.evaluate(({width,height})=>{
+       const svg=document.querySelector('#plate svg');
+       const {width:w,height:h}=svg.viewBox.baseVal,scale=Math.min(width/w,height/h);
+       svg.style.cssText=`width:${Math.round(w*scale*4)}px;height:${Math.round(h*scale*4)}px`;
+       return {width,height,x:(width-w*scale)/2,y:(height-h*scale)/2,w:w*scale,h:h*scale};
+     },{width:tesla.width,height:tesla.height});
+     const preview=await cold.locator('#plate svg').screenshot();
+     const reference=await cold.evaluate(async({target,png})=>{
+       const image=new Image();image.src='data:image/png;base64,'+png;await image.decode();
+       const canvas=(w,h)=>{const c=document.createElement('canvas');c.width=Math.max(1,Math.round(w));c.height=Math.max(1,Math.round(h));return c;};
+       const draw=(c,image,...rect)=>{const ctx=c.getContext('2d');ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality='high';ctx.drawImage(image,...rect);};
+       let source=image;
+       while(source.width>target.w*2){const half=canvas(source.width/2,source.height/2);draw(half,source,0,0,half.width,half.height);source=half;}
+       const result=canvas(target.width,target.height);draw(result,source,target.x,target.y,target.w,target.h);return result.toDataURL();
+     },{target,png:preview.toString('base64')});
+     const referenceBytes=Buffer.from(reference.split(',')[1],'base64'),teslaBytes=Buffer.from(data.tesla.split(',')[1],'base64');
+     const teslaDelta=pixels(referenceBytes,teslaBytes);
+     // SVG-as-image and page screenshots can hint scaled text differently.
+     // Pixelmatch excludes antialias edges while retaining wrong/missing glyphs.
+     if(teslaDelta.perceptualChangedFraction>=0.01){
+       await writeFile(path.join(out,'cold-'+firstRaster+'-'+name+'-reference.png'),Buffer.from(reference.split(',')[1],'base64'));
+       await writeFile(path.join(out,'cold-'+firstRaster+'-'+name+'-export.png'),Buffer.from(data.tesla.split(',')[1],'base64'));
+     }
+     assert.ok(teslaDelta.perceptualChangedFraction<0.01,JSON.stringify(teslaDelta));
+     return {delta,svgDelta,teslaDelta};
+   }finally{await fresh.close();}
+ });
  for(const [name,family,text,weight,style] of specimens)await check('font specimen '+name,async()=>{
    const info=await page.evaluate(a=>window.typographyQA.specimen(...a),[family,text,weight,style]);
    const data=await page.evaluate(()=>window.typographyQA.export());const inline=await page.locator('#plate svg').screenshot();
@@ -87,6 +140,7 @@ try{
    assert.match(error,/unsupported or unbundled lettering/);return {error};
  });
  const app=await context.newPage();app.setDefaultTimeout(20000);
+ app.on('pageerror',e=>results.errors.push({name:'app pageerror',error:String(e)}));
  await check('production UI downloads and navigation',async()=>{
    const examples=representatives.filter(f=>!['bc-historical','standin'].includes(f.template));
    let downloads=0;const metadata=[];
@@ -111,9 +165,43 @@ try{
    await p.goto('http://127.0.0.1:4173/plateforge/#/eu-de/standard',{waitUntil:'domcontentloaded'});
    const input=p.locator('.inspector input.mono').first();await input.fill('GÖ');await input.focus();
    const identity=await input.evaluate(el=>{el.dataset.focusProof='same-node';return el.value;});release();
-   await p.evaluate(()=>document.fonts.ready);await p.waitForTimeout(150);
+   await p.evaluate(async()=>{await document.fonts.ready;await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));});
    assert.deepEqual(await input.evaluate(el=>({focused:document.activeElement===el,value:el.value,identity:el.dataset.focusProof})),{focused:true,value:identity,identity:'same-node'});
    await cold.close();return {inputPreserved:true};
+ });
+ await check('research failure blocks export and explicit retry recovers',async()=>{
+   const fresh=await browser.newContext({viewport:{width:1400,height:1000},acceptDownloads:true});
+   try{
+     const p=await fresh.newPage(),downloads=[];p.on('download',d=>downloads.push(d));
+     await p.route(/research-registry[^/]*\.json$/,route=>route.fulfill({status:503,body:'unavailable'}));
+     await p.goto('http://127.0.0.1:4173/plateforge/#/ca-bc/1940');
+     await p.getByRole('button',{name:'Retry research glyphs',exact:true}).waitFor();
+     await p.locator('.export-section').getByRole('button',{name:'SVG',exact:true}).click();
+     await p.locator('.toast').filter({hasText:'Requested research glyphs are unavailable'}).waitFor();
+     assert.equal(downloads.length,0);
+     await p.unroute(/research-registry[^/]*\.json$/);
+     await p.getByRole('button',{name:'Retry research glyphs',exact:true}).click();
+     await p.waitForFunction(()=>document.querySelector('.plate-preview [data-research-unit]'));
+     const dl=p.waitForEvent('download');await p.locator('.export-section').getByRole('button',{name:'SVG',exact:true}).click();
+     const d=await dl,source=await readFile(await d.path(),'utf8');
+     const metadata=await p.evaluate(source=>JSON.parse(new DOMParser().parseFromString(source,'image/svg+xml').querySelector('[data-role="typography-export"]').textContent),source);
+     assert.equal(metadata.researchRequested,true);assert.match(metadata.researchRegistrySha256,/^[a-f0-9]{64}$/);assert.ok(metadata.researchUnits.length>0);
+     await d.delete();return {blockedDownloads:0,recovered:true};
+   }finally{await fresh.close();}
+ });
+ await check('editing during font preparation cancels the old export',async()=>{
+   const fresh=await browser.newContext({viewport:{width:1400,height:1000},acceptDownloads:true});
+   let release;const gate=new Promise(r=>release=r);
+   try{
+     const p=await fresh.newPage(),downloads=[];p.on('download',d=>downloads.push(d));
+     await p.route(/\.(woff2?|ttf)(?:\?|$)/,async route=>{await gate;await route.continue();});
+     await p.goto('http://127.0.0.1:4173/plateforge/#/eu-de/standard',{waitUntil:'domcontentloaded'});
+     await p.locator('.plate-preview svg').waitFor();
+     await p.locator('.export-section').getByRole('button',{name:'SVG',exact:true}).click();
+     const input=p.locator('.inspector input.mono').first();await input.fill(await input.inputValue()==='B'?'M':'B');
+     release();await p.locator('.toast').filter({hasText:'The plate changed while preparing the export'}).waitFor();
+     assert.equal(downloads.length,0);return {staleDownloadBlocked:true};
+   }finally{release();await fresh.close();}
  });
  await check('mobile viewport, typography panel and SVG download',async()=>{
    await app.setViewportSize({width:390,height:844});await app.goto('http://127.0.0.1:4173/plateforge/#/jp/standard');await app.locator('.plate-preview svg').waitFor();

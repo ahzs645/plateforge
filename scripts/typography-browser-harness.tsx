@@ -53,12 +53,16 @@ function info(){
       createElement('rect',{width:1000,height:180,fill:'white'}),createElement('text',{x:12,y:135,fontSize:96,fontFamily:family,fontWeight:weight,fontStyle:style},text))));
     await ready();return info();
   },
-  async export(){
+  async export(firstRaster='png'){
     const svg=getSvg(),source=await serializeSvg(svg,[],{currentSvg:getSvg,context:{testOnly:true}});
     const parsed=new DOMParser().parseFromString(source,'image/svg+xml');if(parsed.querySelector('parsererror'))throw Error('Invalid exported XML');
     const metadata=JSON.parse(parsed.querySelector('[data-role="typography-export"]')!.textContent!);
     if([...parsed.querySelectorAll('image')].some(image=>!image.getAttribute('href')?.startsWith('data:')))throw Error('External exported image');
     const {width,height}=svg.viewBox.baseVal;
-    return {png:await blobUrl(await svgToPngBlob(source,width,height,1)),tesla:await blobUrl(await svgToTeslaPngBlob(source,width,height)),metadata,svgBytes:new TextEncoder().encode(source).length};
+    // Exercise either production raster path before an SVG image/font cache is warm.
+    const png=async()=>blobUrl(await svgToPngBlob(source,width,height,1));
+    const tesla=async()=>blobUrl(await svgToTeslaPngBlob(source,width,height));
+    const first=await (firstRaster==='tesla'?tesla():png());
+    return {png:firstRaster==='tesla'?await png():first,tesla:firstRaster==='tesla'?first:await tesla(),svg:source,metadata,svgBytes:new TextEncoder().encode(source).length};
   },
 };

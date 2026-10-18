@@ -2,15 +2,9 @@ name: Typography validation
 
 on:
   push:
-    branches: ['work/typography-consistency-20261013']
+    branches: [main, 'work/typography-consistency-20261013']
   pull_request:
-    paths:
-      - 'src/templates/**'
-      - 'src/ui/exporting*'
-      - 'src/ui/font*'
-      - 'src/core/typography*'
-      - 'scripts/typography-*'
-      - '.github/workflows/typography-validation.yml'
+    branches: [main]
   workflow_dispatch:
 
 permissions:
@@ -32,71 +26,58 @@ jobs:
         with:
           node-version: '24'
           cache: npm
-      - name: Install pinned dependencies
-        run: npm ci
-      - name: Typecheck
-        run: npm run typecheck
-      - name: Tests
-        run: npm test -- --maxWorkers=2
+      - run: npm ci
+      - run: npm run typecheck
+      - name: Unit tests and format coverage
+        run: TYPOGRAPHY_EVIDENCE=1 npm test -- --maxWorkers=2
+      - name: Reproduce the font manifest and notices
+        run: |
+          python3 -m venv "$RUNNER_TEMP/font-manifest"
+          "$RUNNER_TEMP/font-manifest/bin/pip" install fonttools==4.61.1 brotli==1.2.0
+          "$RUNNER_TEMP/font-manifest/bin/python" scripts/typography-build-manifest.py --check
+          node scripts/typography-verify.mjs
       - name: Production build
         run: BASE_PATH=/plateforge/ npm run build
-      - name: Typography-specific checks
-        run: |
-          if [ -f scripts/typography-verify.mjs ]; then node scripts/typography-verify.mjs; fi
-      - name: Evidence without font software
-        if: always()
-        run: |
-          mkdir -p typography-evidence
-          git rev-parse HEAD > typography-evidence/commit.txt
-          node --version > typography-evidence/node-version.txt
-          python3 - <<'PY'
-          import hashlib, json, pathlib, subprocess, zipfile
-          root = pathlib.Path('.')
-          names = subprocess.check_output(['git','ls-files','-z']).decode().split('\0')
-          extensions = {'.ts','.tsx','.js','.mjs','.cjs','.json','.md','.css','.html','.py','.yml','.yaml','.txt'}
-          hashes = {}
-          with zipfile.ZipFile('typography-evidence/source-text.zip','w',zipfile.ZIP_DEFLATED) as z:
-              for name in names:
-                  if not name: continue
-                  p = root / name
-                  if p.is_file() and p.suffix in extensions:
-                      data = p.read_bytes()
-                      try: data.decode('utf-8')
-                      except UnicodeDecodeError: continue
-                      z.writestr(name,data)
-                      hashes[name] = hashlib.sha256(data).hexdigest()
-          pathlib.Path('typography-evidence/source-sha256.json').write_text(json.dumps(hashes,indent=2)+'\n')
-          PY
-      - name: Font metadata only
-        if: always()
-        run: |
-          python3 -m pip install 'fonttools==4.61.1' brotli
-          python3 - <<'PY'
-          from pathlib import Path
-          import hashlib, json, subprocess
-          from fontTools.ttLib import TTFont
-          paths = [Path(p) for p in subprocess.check_output(['git','ls-files','-z']).decode().split('\0') if p]
-          paths += list(Path('node_modules/@fontsource/barlow-condensed/files').glob('*.woff2'))
-          paths += list(Path('node_modules/@fontsource-variable/inter/files').glob('*.woff2'))
-          result=[]
-          for p in paths:
-              if p.suffix.lower() not in {'.ttf','.otf','.woff','.woff2'} or not p.is_file(): continue
-              row={'path':str(p),'sha256':hashlib.sha256(p.read_bytes()).hexdigest(),'bytes':p.stat().st_size}
-              try:
-                  f=TTFont(p)
-                  names={str(i): sorted({n.toUnicode() for n in f['name'].names if n.nameID==i}) for i in (1,2,3,4,5,6,8,9,11,13,14,16,17)}
-                  row.update(names=names,unitsPerEm=f['head'].unitsPerEm,glyphCount=len(f.getGlyphOrder()),codepoints=sorted((f.getBestCmap() or {}).keys()))
-                  if 'OS/2' in f:
-                      o=f['OS/2'];row.update(fsType=o.fsType,weightClass=o.usWeightClass,widthClass=o.usWidthClass,capHeight=getattr(o,'sCapHeight',None))
-                  if 'fvar' in f: row['axes']=[{'tag':a.axisTag,'min':a.minValue,'default':a.defaultValue,'max':a.maxValue} for a in f['fvar'].axes]
-                  f.close()
-              except Exception as e: row['error']=str(e)
-              result.append(row)
-          Path('typography-evidence/font-metadata.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n')
-          PY
       - uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: typography-evidence
-          path: typography-evidence/
-          retention-days: 7
+          name: typography-metadata
+          path: typography-evidence/*.json
+          if-no-files-found: error
+          retention-days: 14
+
+  browser:
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox, webkit]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - name: Build the deployed application
+        run: BASE_PATH=/plateforge/ npm run build
+      - name: Install pinned browser tools separately from the app
+        run: |
+          npm install --prefix "$RUNNER_TEMP/typography-browser" --ignore-scripts --no-audit --save-exact playwright@1.56.1 pngjs@7.0.0 pixelmatch@7.1.0
+          node "$RUNNER_TEMP/typography-browser/node_modules/playwright/cli.js" install --with-deps ${{ matrix.browser }}
+      - name: Preview, standalone SVG, PNG, Tesla, and first-export comparisons
+        env:
+          TYPOGRAPHY_BROWSER: ${{ matrix.browser }}
+          TYPOGRAPHY_BROWSER_DEPS: ${{ runner.temp }}/typography-browser/package.json
+        run: node scripts/typography-browser.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: typography-browser-${{ matrix.browser }}
+          path: typography-evidence/browser-${{ matrix.browser }}/
+          if-no-files-found: error
+          retention-days: 14
