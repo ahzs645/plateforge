@@ -32,7 +32,10 @@ function pixels(a,b){
  let changed=0,total=0;for(let i=0;i<x.data.length;i+=4){let delta=0;for(let c=0;c<3;c++){
    const A=x.data[i+c]*x.data[i+3]/255+255-x.data[i+3],B=y.data[i+c]*y.data[i+3]/255+255-y.data[i+3];
    delta=Math.max(delta,Math.abs(A-B));total+=Math.abs(A-B);
- }if(delta>16)changed++;}
+   // The screenshot has a white page behind it; PNG cutouts are transparent.
+   // Compare both on white, rather than Pixelmatch's transparency backdrop.
+   x.data[i+c]=Math.round(A);y.data[i+c]=Math.round(B);
+ }x.data[i+3]=255;y.data[i+3]=255;if(delta>16)changed++;}
  return {pixels:x.width*x.height,changedFraction:changed/(x.width*x.height),meanAbsoluteChannelError:total/(x.width*x.height*3),
    perceptualChangedFraction:pixelmatch(x.data,y.data,null,x.width,x.height,{threshold:0.1,includeAA:false})/(x.width*x.height)};
 }
