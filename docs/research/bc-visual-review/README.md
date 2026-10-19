@@ -96,8 +96,10 @@ exceptions explicitly. It writes full captures into ignored
 `typography-evidence/bc-visual/`. Packaging checks the source hashes and specimen
 inputs, verifies logo bounds, and stores lossless WebP capture atlases. Existing
 reference crops are reused; a small number of missing credited specimens are
-stored as bounded WebP copies. Original URLs and original-byte hashes remain
-available; the stored-copy hash distinguishes a resized photograph.
+stored as bounded WebP copies. Original URLs remain available. For fresh downloads, the reference hash and
+pixels describe the downloaded original; for reused catalogue crops they identify
+the local crop, without asserting the remote original-byte hash. Each record
+labels this scope. The stored-copy hash always identifies the exact image shown.
 
 The report offers native main/branch placement, approximate source-frame
 placement, uniformly aligned logo shape, differences, opacity, blink, manual

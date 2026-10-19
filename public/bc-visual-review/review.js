@@ -87,7 +87,7 @@ async function show() {
   }
   const diff = record.difference;
   $('measurement').textContent = `Main → branch: ${(diff.changedFraction * 100).toFixed(3)}% of native pixels change by more than 16/255; ${(diff.perceptualChangedFraction * 100).toFixed(3)}% with antialiasing excluded. These measurements compare digital renders, not the photograph.`;
-  $('metadata').textContent = JSON.stringify({source: record.sourceUrl, sourcePixels: record.sourceOriginalPixels, sourceSha256: record.sourceSha256, storedPhotoSha256: record.sourceStoredSha256, renderSourceSha256: manifest.renderSourceSha256, inputs: record.parts, research: record.research, focus: record.focus, captured: record.states, limits: record.limits}, null, 2);
+  $('metadata').textContent = JSON.stringify({source: record.sourceUrl, referencePixels: record.referencePixels, referenceBytesSha256: record.referenceBytesSha256, referenceByteScope: record.referenceByteScope, storedPhotoSha256: record.sourceStoredSha256, renderSourceSha256: manifest.renderSourceSha256, inputs: record.parts, research: record.research, focus: record.focus, captured: record.states, limits: record.limits}, null, 2);
   history.replaceState(null, '', '#' + record.id); draw();
 }
 function populate(id) {

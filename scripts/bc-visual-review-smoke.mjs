@@ -31,6 +31,8 @@ try{
   for(const row of manifest.cases){
     await page.locator('#specimen').selectOption(row.id);await page.waitForFunction(title=>document.getElementById('title').textContent===title,row.title);
     await page.locator('#source').evaluate(im=>im.decode());
+    const metadata=JSON.parse(await page.locator('#metadata').textContent());
+    assert.match(metadata.referenceBytesSha256,/^[a-f0-9]{64}$/);assert(metadata.referenceByteScope);
     for(const mode of ['branch','source','difference',...(row.focus?['shape']:[])]){
       await page.locator('#mode').selectOption(mode);
       if(mode!=='difference'||row.difference.changedFraction>0.001)assert(await page.locator('#overlay').evaluate(el=>{const data=el.getContext('2d').getImageData(0,0,900,500).data;return data.some((v,i)=>i%4!==3&&v<240)}),row.id+' '+mode+' empty overlay');

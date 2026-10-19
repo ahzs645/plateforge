@@ -13,11 +13,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/Passenger/1913-1914/1914-4417.jpg",
-    "sourceOriginalPixels": [
-      250,
-      138
-    ],
-    "sourceSha256": "ba1a15093f7b63707b85b7864a9708dddac885345b809bfb255566f21977a445",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "e60603823a1151bad82060f0f6c207090bd38fad8794c067fede6e5da7b43763",
     "frame": [
@@ -38,7 +33,13 @@
     },
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "B/C interlock and negative spaces retained. The photograph has a narrower, more upright painted B; the supplied reconstruction is unchanged and needs a higher-resolution contour study."
+    "finding": "B/C interlock and negative spaces retained. The photograph has a narrower, more upright painted B; the supplied reconstruction is unchanged and needs a higher-resolution contour study.",
+    "referencePixels": [
+      250,
+      138
+    ],
+    "referenceBytesSha256": "ba1a15093f7b63707b85b7864a9708dddac885345b809bfb255566f21977a445",
+    "referenceByteScope": "Downloaded photograph before bounded WebP conversion"
   },
   {
     "id": "monogram1918",
@@ -54,11 +55,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/Passenger/1918-1923/1918-12741.jpg",
-    "sourceOriginalPixels": [
-      268,
-      100
-    ],
-    "sourceSha256": "d0fbb832bbcd1277c0fd222662cc93d2578c7ae2410fbaaed43e78d7133cd152",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "eb3e4082fa1da43f2da51b3f9fddac48275b0413b205c2222cb36eb665970a52",
     "frame": [
@@ -79,7 +75,13 @@
     },
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Outline construction retained. Equal-height comparison exposes a wider reconstruction and different diagonal/bowl proportions. Photograph wear and framing limit exact measurements; follow up before claiming a contour match."
+    "finding": "Outline construction retained. Equal-height comparison exposes a wider reconstruction and different diagonal/bowl proportions. Photograph wear and framing limit exact measurements; follow up before claiming a contour match.",
+    "referencePixels": [
+      268,
+      100
+    ],
+    "referenceBytesSha256": "d0fbb832bbcd1277c0fd222662cc93d2578c7ae2410fbaaed43e78d7133cd152",
+    "referenceByteScope": "Downloaded photograph before bounded WebP conversion"
   },
   {
     "id": "totem1952",
@@ -95,11 +97,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/Passenger/1952-1954/1952-00000.jpg",
-    "sourceOriginalPixels": [
-      600,
-      240
-    ],
-    "sourceSha256": "95ed20fd1d61cdf163e0c9d75aedf6f6fddfe0c343c2ac8ef72ee471b4d088f3",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "84340e8bc5847ff26c7ace8469c0a0e8c16986f96c8a5a88160aaaff2cb1ce3a",
     "frame": [
@@ -121,7 +118,13 @@
     },
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
     "finding": "Totem outline is unchanged. Existing bird/leaf proportions and line weight differ from the embossed specimen. The 00-000 promotional sample is rendered literally although the public generator rejects leading-zero registrations.",
-    "allowInvalidSerial": "Source promotional sample 00-000; generator deliberately permits only positive registration numbers."
+    "allowInvalidSerial": "Source promotional sample 00-000; generator deliberately permits only positive registration numbers.",
+    "referencePixels": [
+      600,
+      240
+    ],
+    "referenceBytesSha256": "95ed20fd1d61cdf163e0c9d75aedf6f6fddfe0c343c2ac8ef72ee471b4d088f3",
+    "referenceByteScope": "Downloaded photograph before bounded WebP conversion"
   },
   {
     "id": "defence1952",
@@ -137,11 +140,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/Military/1952-N24(XL).jpg",
-    "sourceOriginalPixels": [
-      800,
-      332
-    ],
-    "sourceSha256": "1ecd3473a599319ed1f263aaaa37b7b3fce610cec02c0ebce8730b654da8a7d3",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "1ecd3473a599319ed1f263aaaa37b7b3fce610cec02c0ebce8730b654da8a7d3",
     "frame": [
@@ -162,7 +160,13 @@
     },
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Totem source remains distinct from serial, date and province lettering. Its broad leaf/body construction remains approximate; source paint and embossing shoulders are not reproduced."
+    "finding": "Totem source remains distinct from serial, date and province lettering. Its broad leaf/body construction remains approximate; source paint and embossing shoulders are not reproduced.",
+    "referencePixels": [
+      800,
+      332
+    ],
+    "referenceBytesSha256": "1ecd3473a599319ed1f263aaaa37b7b3fce610cec02c0ebce8730b654da8a7d3",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "flag1989",
@@ -180,11 +184,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/Passenger/1985-2001/1989-NPN030(XL).jpg",
-    "sourceOriginalPixels": [
-      800,
-      405
-    ],
-    "sourceSha256": "8982add85836cdc826309e9e7d0b3e321b593dbc21a6479edfa8fb9d66d3d984",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "8982add85836cdc826309e9e7d0b3e321b593dbc21a6479edfa8fb9d66d3d984",
     "frame": [
@@ -205,7 +204,13 @@
     },
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Waving flag geometry is unchanged; its width, wave contours and colour differ slightly from this print. The province slogan changes to bundled Noto Serif and remains a proxy. No change to the source die outlines."
+    "finding": "Waving flag geometry is unchanged; its width, wave contours and colour differ slightly from this print. The province slogan changes to bundled Noto Serif and remains a proxy. No change to the source die outlines.",
+    "referencePixels": [
+      800,
+      405
+    ],
+    "referenceBytesSha256": "8982add85836cdc826309e9e7d0b3e321b593dbc21a6479edfa8fb9d66d3d984",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "carrier2005",
@@ -221,11 +226,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/MotorCarrier/2005-810301(XL).jpg",
-    "sourceOriginalPixels": [
-      700,
-      402
-    ],
-    "sourceSha256": "ee8551e36b207dfb6cd17513eb0c58a7074f9090c214a228f0614ed9ecb01c8b",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "ee8551e36b207dfb6cd17513eb0c58a7074f9090c214a228f0614ed9ecb01c8b",
     "frame": [
@@ -237,7 +237,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Full-face flag source geometry is retained. Flat flag fitting, sun scale, colour wash and carrier labels differ visibly from the screened plate. This predates the typography branch and needs its own placement/print study."
+    "finding": "Full-face flag source geometry is retained. Flat flag fitting, sun scale, colour wash and carrier labels differ visibly from the screened plate. This predates the typography branch and needs its own placement/print study.",
+    "referencePixels": [
+      700,
+      402
+    ],
+    "referenceBytesSha256": "ee8551e36b207dfb6cd17513eb0c58a7074f9090c214a228f0614ed9ecb01c8b",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "carrier2024",
@@ -253,11 +259,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/PassengerCarrier/2024-814298(XL).jpg",
-    "sourceOriginalPixels": [
-      700,
-      396
-    ],
-    "sourceSha256": "a012975a802172eb18265b9497499822c4509419be7cb125d15b0eca1db91048",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "a012975a802172eb18265b9497499822c4509419be7cb125d15b0eca1db91048",
     "frame": [
@@ -269,7 +270,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Later specimen corroborates the screened flag and passenger/carrier placement. The renewal sticker and day decal are absent in the reconstruction; screening, colour, sun placement and serial contours remain approximate."
+    "finding": "Later specimen corroborates the screened flag and passenger/carrier placement. The renewal sticker and day decal are absent in the reconstruction; screening, colour, sun placement and serial contours remain approximate.",
+    "referencePixels": [
+      700,
+      396
+    ],
+    "referenceBytesSha256": "a012975a802172eb18265b9497499822c4509419be7cb125d15b0eca1db91048",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "dogwood1979",
@@ -286,11 +293,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/Personalized/1979-A10IAM.jpg",
-    "sourceOriginalPixels": [
-      200,
-      101
-    ],
-    "sourceSha256": "c4af6d61f7f52275092da604f2fc4512c43f5a39df3ab4a805b70f72b6530dc5",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "cdbccb5d4227325ff2f4f291cb626d29ee00e7c57b58030ecaa9d501a32da62e",
     "frame": [
@@ -311,7 +313,13 @@
     },
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Eight-path floral master and transparent openings retained. The photo supports placement only: the emblem is roughly ten pixels wide and cannot validate petal contours. Supplied outlines remain the authority for this reconstruction."
+    "finding": "Eight-path floral master and transparent openings retained. The photo supports placement only: the emblem is roughly ten pixels wide and cannot validate petal contours. Supplied outlines remain the authority for this reconstruction.",
+    "referencePixels": [
+      200,
+      101
+    ],
+    "referenceBytesSha256": "c4af6d61f7f52275092da604f2fc4512c43f5a39df3ab4a805b70f72b6530dc5",
+    "referenceByteScope": "Downloaded photograph before bounded WebP conversion"
   },
   {
     "id": "olympic",
@@ -328,11 +336,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/Olympics/Gallery/MAA-005.jpg",
-    "sourceOriginalPixels": [
-      200,
-      101
-    ],
-    "sourceSha256": "c501caeea9d8af790b50679c34ef6674770ab6cc7156c5ddf82ec1560bdce7f7",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "85bcdd2fe20ed01cd3ed6f309539bb75573ca8fe8c2550cd484adf30d351e4b7",
     "frame": [
@@ -353,7 +356,13 @@
       ]
     },
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Mountain-sun and centre Vancouver 2010 emblem retained. The 200-pixel photograph supports the arrangement, not fine logo contours. The supplied Garibaldi background is a stand-in; gold legends use portable serif proxies."
+    "finding": "Mountain-sun and centre Vancouver 2010 emblem retained. The 200-pixel photograph supports the arrangement, not fine logo contours. The supplied Garibaldi background is a stand-in; gold legends use portable serif proxies.",
+    "referencePixels": [
+      200,
+      101
+    ],
+    "referenceBytesSha256": "c501caeea9d8af790b50679c34ef6674770ab6cc7156c5ddf82ec1560bdce7f7",
+    "referenceByteScope": "Downloaded photograph before bounded WebP conversion"
   },
   {
     "id": "centennial1986",
@@ -369,11 +378,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/Municipal/Vancouver/1986-BLANK(XL).jpg",
-    "sourceOriginalPixels": [
-      2300,
-      1350
-    ],
-    "sourceSha256": "18bb2a2d89405114fc44611e7de5dfd5417ab8ff00cde348d7c459f20faa3c43",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "18bb2a2d89405114fc44611e7de5dfd5417ab8ff00cde348d7c459f20faa3c43",
     "frame": [
@@ -394,7 +398,13 @@
     },
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Supplied centennial geometry and source-specific lettering retained. The printed photograph shows different apparent width/height and screening; preserve the master and study plate printing separately rather than stretching its contours."
+    "finding": "Supplied centennial geometry and source-specific lettering retained. The printed photograph shows different apparent width/height and screening; preserve the master and study plate printing separately rather than stretching its contours.",
+    "referencePixels": [
+      2300,
+      1350
+    ],
+    "referenceBytesSha256": "18bb2a2d89405114fc44611e7de5dfd5417ab8ff00cde348d7c459f20faa3c43",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "centennial1995",
@@ -410,11 +420,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/Municipal/Vancouver/1995-2571(XL).jpg",
-    "sourceOriginalPixels": [
-      2300,
-      1163
-    ],
-    "sourceSha256": "b6b3179c157757f39ee353c4f81297396f1c954d5ceb2dcc11be3d84d2999cfb",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "b6b3179c157757f39ee353c4f81297396f1c954d5ceb2dcc11be3d84d2999cfb",
     "frame": [
@@ -426,7 +431,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "The orange renewal panel covers the underlying Centennial emblem. Compare the visible city wordmark and panel placement; an isolated emblem comparison would be misleading on this specimen."
+    "finding": "The orange renewal panel covers the underlying Centennial emblem. Compare the visible city wordmark and panel placement; an isolated emblem comparison would be misleading on this specimen.",
+    "referencePixels": [
+      2300,
+      1163
+    ],
+    "referenceBytesSha256": "b6b3179c157757f39ee353c4f81297396f1c954d5ceb2dcc11be3d84d2999cfb",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "taxi1997",
@@ -442,11 +453,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/Municipal/Vancouver/1997-254(XL).jpg",
-    "sourceOriginalPixels": [
-      2000,
-      1151
-    ],
-    "sourceSha256": "868b78dd8950562087dadc31eb9956241a4b7e9e8511598c6ef9a5b862148a11",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "868b78dd8950562087dadc31eb9956241a4b7e9e8511598c6ef9a5b862148a11",
     "frame": [
@@ -458,7 +464,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Decorative Collector/British/Columbia outlines retained. Serial proportions and paint weight remain source-dependent; the separate multi-vehicle subtitle may change under portable font substitution."
+    "finding": "Decorative Collector/British/Columbia outlines retained. Serial proportions and paint weight remain source-dependent; the separate multi-vehicle subtitle may change under portable font substitution.",
+    "referencePixels": [
+      2000,
+      1151
+    ],
+    "referenceBytesSha256": "868b78dd8950562087dadc31eb9956241a4b7e9e8511598c6ef9a5b862148a11",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "royal1951",
@@ -473,11 +485,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/LiuetenantGovenor/1951-Royal-Plate.jpg",
-    "sourceOriginalPixels": [
-      500,
-      268
-    ],
-    "sourceSha256": "90b82f5bf801eff79c63b583e42e4084eab1a2ddef47880929c396506a6b6660",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "30b945c1cc7d94bb7a829fcd3c31553325fd3f27ab6e5c061c86818c0466ebb6",
     "frame": [
@@ -498,7 +505,13 @@
     },
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Supplied isolated arms image is retained, with the same detailed heraldic arrangement. Placement, background red and gold date colour remain approximate; the reference includes perspective and reflective printing."
+    "finding": "Supplied isolated arms image is retained, with the same detailed heraldic arrangement. Placement, background red and gold date colour remain approximate; the reference includes perspective and reflective printing.",
+    "referencePixels": [
+      500,
+      268
+    ],
+    "referenceBytesSha256": "90b82f5bf801eff79c63b583e42e4084eab1a2ddef47880929c396506a6b6660",
+    "referenceByteScope": "Downloaded photograph before bounded WebP conversion"
   },
   {
     "id": "royal1987",
@@ -514,11 +527,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/LiuetenantGovenor/ROYAL18(XL).jpg",
-    "sourceOriginalPixels": [
-      800,
-      392
-    ],
-    "sourceSha256": "1fae20cdce13e4b41d678ba569651dce19224fec1e93e79d2072a4abb97359a0",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "1fae20cdce13e4b41d678ba569651dce19224fec1e93e79d2072a4abb97359a0",
     "frame": [
@@ -539,7 +547,13 @@
     },
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Flag and source-specific slogan outlines retained. The photo has a narrower printed flag and different paint weight; complete serial contours and unobserved glyphs remain unconfirmed."
+    "finding": "Flag and source-specific slogan outlines retained. The photo has a narrower printed flag and different paint weight; complete serial contours and unobserved glyphs remain unconfirmed.",
+    "referencePixels": [
+      800,
+      392
+    ],
+    "referenceBytesSha256": "1fae20cdce13e4b41d678ba569651dce19224fec1e93e79d2072a4abb97359a0",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "royal1994",
@@ -555,11 +569,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/LiuetenantGovenor/1994-R1(XL).jpg",
-    "sourceOriginalPixels": [
-      800,
-      411
-    ],
-    "sourceSha256": "984be6cdeb6bd243113ef03a31ac99e65b0f79c1d82b4a60d2304d4af9a0b8d3",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "984be6cdeb6bd243113ef03a31ac99e65b0f79c1d82b4a60d2304d4af9a0b8d3",
     "frame": [
@@ -580,7 +589,13 @@
     },
     "status": "Corrected \u00b7 source-frame badge placement",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Corrected the issued plate badge from a 62 mm box at (55,42) to a 76 mm box at (54,35), using the photographed outer plate frame. Supplied badge paths are unchanged. The prototype retains its previous placement pending its own source calibration."
+    "finding": "Corrected the issued plate badge from a 62 mm box at (55,42) to a 76 mm box at (54,35), using the photographed outer plate frame. Supplied badge paths are unchanged. The prototype retains its previous placement pending its own source calibration.",
+    "referencePixels": [
+      800,
+      411
+    ],
+    "referenceBytesSha256": "984be6cdeb6bd243113ef03a31ac99e65b0f79c1d82b4a60d2304d4af9a0b8d3",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "apec1997",
@@ -596,11 +611,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/APEC/ICBC-121(XL).jpg",
-    "sourceOriginalPixels": [
-      480,
-      244
-    ],
-    "sourceSha256": "d8086153607566c4ebba9fe728426a5eb45713bfa99cb3d34662af238decd428",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "37f83f463084138fdfe8f1a57523c879a2c3db270c014620829cbdde28a4dc93",
     "frame": [
@@ -621,7 +631,13 @@
     },
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "All three supplied marks are retained. The globe continents, line work and caption are reconstructions; print aspect and colour vary from the source. Serial is the visible 121, not the ICBC prefix in the photo filename."
+    "finding": "All three supplied marks are retained. The globe continents, line work and caption are reconstructions; print aspect and colour vary from the source. Serial is the visible 121, not the ICBC prefix in the photo filename.",
+    "referencePixels": [
+      480,
+      244
+    ],
+    "referenceBytesSha256": "d8086153607566c4ebba9fe728426a5eb45713bfa99cb3d34662af238decd428",
+    "referenceByteScope": "Downloaded photograph before bounded WebP conversion"
   },
   {
     "id": "apec180",
@@ -637,11 +653,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/APEC/Canada-180.jpg",
-    "sourceOriginalPixels": [
-      146,
-      72
-    ],
-    "sourceSha256": "157c542bd1603cd4962fc5fc519a193a3fc3800f8c97f5914cc682d58f3bc90d",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "157c542bd1603cd4962fc5fc519a193a3fc3800f8c97f5914cc682d58f3bc90d",
     "frame": [
@@ -662,7 +673,13 @@
     },
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "APEC sticker retained. The 146\u00d772 crop supports presence and placement only; sticker caption, country lettering and number contours remain approximate."
+    "finding": "APEC sticker retained. The 146\u00d772 crop supports presence and placement only; sticker caption, country lettering and number contours remain approximate.",
+    "referencePixels": [
+      146,
+      72
+    ],
+    "referenceBytesSha256": "157c542bd1603cd4962fc5fc519a193a3fc3800f8c97f5914cc682d58f3bc90d",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "apec134",
@@ -678,11 +695,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/APEC/Canada-134.jpg",
-    "sourceOriginalPixels": [
-      146,
-      72
-    ],
-    "sourceSha256": "f7c030bec55c1abf1650745df5766c2c7dfee24b826abe99109273fc75f96062",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "f7c030bec55c1abf1650745df5766c2c7dfee24b826abe99109273fc75f96062",
     "frame": [
@@ -703,7 +715,13 @@
     },
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Maple leaves and APEC sticker retained. The 146\u00d772 crop supports the variant arrangement, not individual logo or type contours."
+    "finding": "Maple leaves and APEC sticker retained. The 146\u00d772 crop supports the variant arrangement, not individual logo or type contours.",
+    "referencePixels": [
+      146,
+      72
+    ],
+    "referenceBytesSha256": "f7c030bec55c1abf1650745df5766c2c7dfee24b826abe99109273fc75f96062",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "lg2003",
@@ -718,11 +736,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/LiuetenantGovenor/LG(2003).jpg",
-    "sourceOriginalPixels": [
-      388,
-      200
-    ],
-    "sourceSha256": "6434d5c9bb64116e3201ece4d0db674f8e158e28b5b82515ebdcb8a8cf18aad2",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "b6c86609cc762fb7cd91fa599ef37359b66d50e8deb71e46f810d77f1f6317d9",
     "frame": [
@@ -743,7 +756,13 @@
     },
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Existing filled gold relief reconstruction differs substantially from the metal arms silhouette, especially supporters and central shield. Preserve its approximation label; a source-specific redraw is a follow-up."
+    "finding": "Existing filled gold relief reconstruction differs substantially from the metal arms silhouette, especially supporters and central shield. Preserve its approximation label; a source-specific redraw is a follow-up.",
+    "referencePixels": [
+      388,
+      200
+    ],
+    "referenceBytesSha256": "6434d5c9bb64116e3201ece4d0db674f8e158e28b5b82515ebdcb8a8cf18aad2",
+    "referenceByteScope": "Downloaded photograph before bounded WebP conversion"
   },
   {
     "id": "lg2016",
@@ -758,11 +777,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/LiuetenantGovenor/LG(2016).jpg",
-    "sourceOriginalPixels": [
-      400,
-      191
-    ],
-    "sourceSha256": "d6b9013f83ce9d9aadd42502744d7b16467607abd475796da44a4490d7610aab",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "2e2f425e52b9a36c054215d0cf07f01087be237ec33071cb96b62c2647090ddf",
     "frame": [
@@ -783,7 +797,13 @@
     },
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "The photograph shows the older gold arms, despite its 2016 date. It corroborates overlapping use with the circular crest. Existing flat relief and contour differences remain."
+    "finding": "The photograph shows the older gold arms, despite its 2016 date. It corroborates overlapping use with the circular crest. Existing flat relief and contour differences remain.",
+    "referencePixels": [
+      400,
+      191
+    ],
+    "referenceBytesSha256": "d6b9013f83ce9d9aadd42502744d7b16467607abd475796da44a4490d7610aab",
+    "referenceByteScope": "Downloaded photograph before bounded WebP conversion"
   },
   {
     "id": "lgcrest",
@@ -793,12 +813,7 @@
     "category": "logos",
     "source": "bc-visual-review/sources/lgcrest.webp",
     "sourceUrl": "https://www.bcpl8s.ca/images/LiuetenantGovenor/LG(XL).jpg",
-    "sourceSha256": "910fd7631a6cca415d143eb65e92d09390ca2257b61418a77b3b108240e5e234",
     "sourceStoredSha256": "91852a5d686e9fdb614098f44c7da142078abf7e6695b4272c26d374a5ad1773",
-    "sourceOriginalPixels": [
-      1000,
-      500
-    ],
     "parts": {
       "finish": "flat"
     },
@@ -823,7 +838,13 @@
     "status": "Reviewed \u00b7 existing source limits",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Circular plaque, crown, shield and ten-leaf circlet retained. The supplied crest differs from this metal plaque in shield/sun details and lower stems; placement and enamel colours are approximate. The chrome holder is outside the model."
+    "finding": "Circular plaque, crown, shield and ten-leaf circlet retained. The supplied crest differs from this metal plaque in shield/sun details and lower stems; placement and enamel colours are approximate. The chrome holder is outside the model.",
+    "referencePixels": [
+      1000,
+      500
+    ],
+    "referenceBytesSha256": "910fd7631a6cca415d143eb65e92d09390ca2257b61418a77b3b108240e5e234",
+    "referenceByteScope": "Downloaded photograph before bounded WebP conversion"
   },
   {
     "id": "expo86",
@@ -838,11 +859,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/Expo-86/Expo86-Souvenir(mid).jpg",
-    "sourceOriginalPixels": [
-      400,
-      207
-    ],
-    "sourceSha256": "064563f20ec5e269d3727ca36697936427d74b81ceb85f50b3b9b346c9d48024",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "4ee811cf4173709a3dfb6f41a07e6989dc14079a891df05deb5e26daab8088f0",
     "frame": [
@@ -854,7 +870,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Source-specific Expo wordmark and outlined legend geometry retained. Photograph print weight, precise placement and the final 6 shape remain research limitations; this branch does not substitute the supplied wordmark."
+    "finding": "Source-specific Expo wordmark and outlined legend geometry retained. Photograph print weight, precise placement and the final 6 shape remain research limitations; this branch does not substitute the supplied wordmark.",
+    "referencePixels": [
+      400,
+      207
+    ],
+    "referenceBytesSha256": "064563f20ec5e269d3727ca36697936427d74b81ceb85f50b3b9b346c9d48024",
+    "referenceByteScope": "Downloaded photograph before bounded WebP conversion"
   },
   {
     "id": "bicycle-prince-george-1953",
@@ -870,11 +892,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/Bicycle/PrinceGeorge/1953-580.jpg",
-    "sourceOriginalPixels": [
-      250,
-      157
-    ],
-    "sourceSha256": "3ef9b67cc03d6ba10d0de5fdc55148d51e9b6f4d9a8198d51bda1b2477d7be6f",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "3ef9b67cc03d6ba10d0de5fdc55148d51e9b6f4d9a8198d51bda1b2477d7be6f",
     "frame": [
@@ -886,7 +903,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Existing oval layout and lettering are broad constructions. Source letters are smaller, irregular embossed forms; a complete source-specific alphabet remains follow-up work."
+    "finding": "Existing oval layout and lettering are broad constructions. Source letters are smaller, irregular embossed forms; a complete source-specific alphabet remains follow-up work.",
+    "referencePixels": [
+      250,
+      157
+    ],
+    "referenceBytesSha256": "3ef9b67cc03d6ba10d0de5fdc55148d51e9b6f4d9a8198d51bda1b2477d7be6f",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "bicycle-prince-george-1958",
@@ -902,11 +925,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/Bicycle/PrinceGeorge/1958-333.jpg",
-    "sourceOriginalPixels": [
-      250,
-      154
-    ],
-    "sourceSha256": "925f70a4b093cf397190436d8adf2c26764bb840dda63cd4fef256fe4b1b264f",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "925f70a4b093cf397190436d8adf2c26764bb840dda63cd4fef256fe4b1b264f",
     "frame": [
@@ -918,7 +936,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Existing oval layout and lettering are broad constructions. Source letters are smaller, irregular embossed forms; a complete source-specific alphabet remains follow-up work."
+    "finding": "Existing oval layout and lettering are broad constructions. Source letters are smaller, irregular embossed forms; a complete source-specific alphabet remains follow-up work.",
+    "referencePixels": [
+      250,
+      154
+    ],
+    "referenceBytesSha256": "925f70a4b093cf397190436d8adf2c26764bb840dda63cd4fef256fe4b1b264f",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "bicycle-prince-george-1959",
@@ -934,11 +958,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/Bicycle/PrinceGeorge/1959-86.jpg",
-    "sourceOriginalPixels": [
-      250,
-      153
-    ],
-    "sourceSha256": "71bb8a653793e997995dab8c6f5ea81edb173db230f12550ce893b9ef02d4035",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "71bb8a653793e997995dab8c6f5ea81edb173db230f12550ce893b9ef02d4035",
     "frame": [
@@ -950,7 +969,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Existing oval layout and lettering are broad constructions. Source letters are smaller, irregular embossed forms; a complete source-specific alphabet remains follow-up work."
+    "finding": "Existing oval layout and lettering are broad constructions. Source letters are smaller, irregular embossed forms; a complete source-specific alphabet remains follow-up work.",
+    "referencePixels": [
+      250,
+      153
+    ],
+    "referenceBytesSha256": "71bb8a653793e997995dab8c6f5ea81edb173db230f12550ce893b9ef02d4035",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "collector-passenger",
@@ -966,11 +991,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/Collector/1990-B00000(XL).jpg",
-    "sourceOriginalPixels": [
-      1400,
-      696
-    ],
-    "sourceSha256": "a876546f987ecebaa67d9505fadac856cc8a9e827b5e4079c5e4cbd1eb3a1e46",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "a876546f987ecebaa67d9505fadac856cc8a9e827b5e4079c5e4cbd1eb3a1e46",
     "frame": [
@@ -982,7 +1002,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Decorative Collector/British/Columbia outlines retained. Serial proportions and paint weight remain source-dependent; the separate multi-vehicle subtitle may change under portable font substitution."
+    "finding": "Decorative Collector/British/Columbia outlines retained. Serial proportions and paint weight remain source-dependent; the separate multi-vehicle subtitle may change under portable font substitution.",
+    "referencePixels": [
+      1400,
+      696
+    ],
+    "referenceBytesSha256": "a876546f987ecebaa67d9505fadac856cc8a9e827b5e4079c5e4cbd1eb3a1e46",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "collector-passenger-dual",
@@ -998,11 +1024,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/Collector/2015-B31865(XL).jpg",
-    "sourceOriginalPixels": [
-      1400,
-      710
-    ],
-    "sourceSha256": "1dec279770d88f7854e34bcd063fbb69ec9b94143be168c2802fd900dc45812c",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "1dec279770d88f7854e34bcd063fbb69ec9b94143be168c2802fd900dc45812c",
     "frame": [
@@ -1014,7 +1035,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Decorative Collector/British/Columbia outlines retained. Serial proportions and paint weight remain source-dependent; the separate multi-vehicle subtitle may change under portable font substitution."
+    "finding": "Decorative Collector/British/Columbia outlines retained. Serial proportions and paint weight remain source-dependent; the separate multi-vehicle subtitle may change under portable font substitution.",
+    "referencePixels": [
+      1400,
+      710
+    ],
+    "referenceBytesSha256": "1dec279770d88f7854e34bcd063fbb69ec9b94143be168c2802fd900dc45812c",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "collector-multi",
@@ -1030,11 +1057,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/Collector/2017-B60565(XL).jpg",
-    "sourceOriginalPixels": [
-      825,
-      409
-    ],
-    "sourceSha256": "c4b0439e090ee188a6a47822c9869c9d957edccb0bddcef58b99c800f9e915d7",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "c4b0439e090ee188a6a47822c9869c9d957edccb0bddcef58b99c800f9e915d7",
     "frame": [
@@ -1046,7 +1068,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Decorative Collector/British/Columbia outlines retained. Serial proportions and paint weight remain source-dependent; the separate multi-vehicle subtitle may change under portable font substitution."
+    "finding": "Decorative Collector/British/Columbia outlines retained. Serial proportions and paint weight remain source-dependent; the separate multi-vehicle subtitle may change under portable font substitution.",
+    "referencePixels": [
+      825,
+      409
+    ],
+    "referenceBytesSha256": "c4b0439e090ee188a6a47822c9869c9d957edccb0bddcef58b99c800f9e915d7",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "collector-motorcycle",
@@ -1062,11 +1090,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/Collector/1992-B80764(XL).jpg",
-    "sourceOriginalPixels": [
-      918,
-      576
-    ],
-    "sourceSha256": "e72a7677594f21002227576124f47da7c4baa14b8c1442c635f39342384af56e",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "e72a7677594f21002227576124f47da7c4baa14b8c1442c635f39342384af56e",
     "frame": [
@@ -1078,7 +1101,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Decorative Collector/British/Columbia outlines retained. Serial proportions and paint weight remain source-dependent; the separate multi-vehicle subtitle may change under portable font substitution."
+    "finding": "Decorative Collector/British/Columbia outlines retained. Serial proportions and paint weight remain source-dependent; the separate multi-vehicle subtitle may change under portable font substitution.",
+    "referencePixels": [
+      918,
+      576
+    ],
+    "referenceBytesSha256": "e72a7677594f21002227576124f47da7c4baa14b8c1442c635f39342384af56e",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "collector-motorcycle-multi",
@@ -1094,11 +1123,6 @@
     "research": true,
     "width": 900,
     "sourceUrl": "https://www.bcpl8s.ca/images/Collector/1994-B75024.jpg",
-    "sourceOriginalPixels": [
-      158,
-      100
-    ],
-    "sourceSha256": "a990128ed9d60ec8c7f3e20a4f77793806f3e88068e770fbd44272a22a36cf8e",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "a990128ed9d60ec8c7f3e20a4f77793806f3e88068e770fbd44272a22a36cf8e",
     "frame": [
@@ -1110,7 +1134,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Decorative Collector/British/Columbia outlines retained. Serial proportions and paint weight remain source-dependent; the separate multi-vehicle subtitle may change under portable font substitution."
+    "finding": "Decorative Collector/British/Columbia outlines retained. Serial proportions and paint weight remain source-dependent; the separate multi-vehicle subtitle may change under portable font substitution.",
+    "referencePixels": [
+      158,
+      100
+    ],
+    "referenceBytesSha256": "a990128ed9d60ec8c7f3e20a4f77793806f3e88068e770fbd44272a22a36cf8e",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1970",
@@ -1127,11 +1157,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Outlined 70 above two province lines.",
-    "sourceOriginalPixels": [
-      191,
-      98
-    ],
-    "sourceSha256": "88497d736f03814a586424fcbd8218d91816aa42c83041ef12fda4babca77f0f",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "88497d736f03814a586424fcbd8218d91816aa42c83041ef12fda4babca77f0f",
     "frame": [
@@ -1143,7 +1168,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Outlined 70 above two province lines. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Outlined 70 above two province lines. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      191,
+      98
+    ],
+    "referenceBytesSha256": "88497d736f03814a586424fcbd8218d91816aa42c83041ef12fda4babca77f0f",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1971",
@@ -1160,11 +1191,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Province above boxed control; 71 at lower right; user-supplied emblem with transparent flower cutout.",
-    "sourceOriginalPixels": [
-      188,
-      98
-    ],
-    "sourceSha256": "3038f7cbcdeb787739eb7d4ebf3128d3316b54bebb5d8d3d2a72409494adf476",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "3038f7cbcdeb787739eb7d4ebf3128d3316b54bebb5d8d3d2a72409494adf476",
     "frame": [
@@ -1176,7 +1202,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Province above boxed control; 71 at lower right; user-supplied emblem with transparent flower cutout. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Province above boxed control; 71 at lower right; user-supplied emblem with transparent flower cutout. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      188,
+      98
+    ],
+    "referenceBytesSha256": "3038f7cbcdeb787739eb7d4ebf3128d3316b54bebb5d8d3d2a72409494adf476",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1972",
@@ -1193,11 +1225,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Tall left 72; boxed control at upper right.",
-    "sourceOriginalPixels": [
-      178,
-      98
-    ],
-    "sourceSha256": "f09582908bc62b0fd39456a2b6ca78f3c38313a0ca1d2bc255de007f6bf23d99",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "f09582908bc62b0fd39456a2b6ca78f3c38313a0ca1d2bc255de007f6bf23d99",
     "frame": [
@@ -1209,7 +1236,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Tall left 72; boxed control at upper right. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Tall left 72; boxed control at upper right. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      178,
+      98
+    ],
+    "referenceBytesSha256": "f09582908bc62b0fd39456a2b6ca78f3c38313a0ca1d2bc255de007f6bf23d99",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1974",
@@ -1226,11 +1259,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Stacked 7/4 right, class word below control.",
-    "sourceOriginalPixels": [
-      177,
-      98
-    ],
-    "sourceSha256": "fffc70e7f9b6335024ac9a6fb1b0399ed689e57d98d9b812f740e9a37a60aa44",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "fffc70e7f9b6335024ac9a6fb1b0399ed689e57d98d9b812f740e9a37a60aa44",
     "frame": [
@@ -1242,7 +1270,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Stacked 7/4 right, class word below control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Stacked 7/4 right, class word below control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      177,
+      98
+    ],
+    "referenceBytesSha256": "fffc70e7f9b6335024ac9a6fb1b0399ed689e57d98d9b812f740e9a37a60aa44",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1975",
@@ -1259,11 +1293,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Upper-left province, 75 right, class words and boxed control.",
-    "sourceOriginalPixels": [
-      147,
-      98
-    ],
-    "sourceSha256": "4fd0c55dce568509373f82e6c89bc46d4072d27e6114b9f15e2bb2bf48699bac",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "4fd0c55dce568509373f82e6c89bc46d4072d27e6114b9f15e2bb2bf48699bac",
     "frame": [
@@ -1275,7 +1304,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Upper-left province, 75 right, class words and boxed control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Upper-left province, 75 right, class words and boxed control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      147,
+      98
+    ],
+    "referenceBytesSha256": "4fd0c55dce568509373f82e6c89bc46d4072d27e6114b9f15e2bb2bf48699bac",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1976",
@@ -1292,11 +1327,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Small 76 shares the class line; user-supplied five-petal flower vector.",
-    "sourceOriginalPixels": [
-      158,
-      98
-    ],
-    "sourceSha256": "665366be47da8ccad4f656b0d519d596b743bd5c127ccc65430f6f62d7d2ec3c",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "665366be47da8ccad4f656b0d519d596b743bd5c127ccc65430f6f62d7d2ec3c",
     "frame": [
@@ -1308,7 +1338,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Small 76 shares the class line; user-supplied five-petal flower vector. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Small 76 shares the class line; user-supplied five-petal flower vector. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      158,
+      98
+    ],
+    "referenceBytesSha256": "665366be47da8ccad4f656b0d519d596b743bd5c127ccc65430f6f62d7d2ec3c",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1977",
@@ -1325,11 +1361,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Stacked B/C beside 77; class line, boxed control and user-supplied five-petal flower vector.",
-    "sourceOriginalPixels": [
-      144,
-      98
-    ],
-    "sourceSha256": "3108f34d2b34c6aaffaa63f15b7673504e410c2c17057b599d6cdcdfabbb69da",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "3108f34d2b34c6aaffaa63f15b7673504e410c2c17057b599d6cdcdfabbb69da",
     "frame": [
@@ -1341,7 +1372,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Stacked B/C beside 77; class line, boxed control and user-supplied five-petal flower vector. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Stacked B/C beside 77; class line, boxed control and user-supplied five-petal flower vector. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      144,
+      98
+    ],
+    "referenceBytesSha256": "3108f34d2b34c6aaffaa63f15b7673504e410c2c17057b599d6cdcdfabbb69da",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1978",
@@ -1358,11 +1395,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Stacked PASS/COMM, BC and large 78 above control.",
-    "sourceOriginalPixels": [
-      188,
-      100
-    ],
-    "sourceSha256": "ee045804e2ee2724fa11cc9f0fb8f124f926808a22d23eb447cbf85bcefa7280",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "ee045804e2ee2724fa11cc9f0fb8f124f926808a22d23eb447cbf85bcefa7280",
     "frame": [
@@ -1374,7 +1406,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Stacked PASS/COMM, BC and large 78 above control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Stacked PASS/COMM, BC and large 78 above control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      188,
+      100
+    ],
+    "referenceBytesSha256": "ee045804e2ee2724fa11cc9f0fb8f124f926808a22d23eb447cbf85bcefa7280",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1980",
@@ -1391,11 +1429,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Full province line above wide month/control/year.",
-    "sourceOriginalPixels": [
-      251,
-      73
-    ],
-    "sourceSha256": "880dc8f2e3011dd6d45af271d8d3d9e81ae69b76a767a67f1a9d44687b9956ca",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "880dc8f2e3011dd6d45af271d8d3d9e81ae69b76a767a67f1a9d44687b9956ca",
     "frame": [
@@ -1407,7 +1440,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Full province line above wide month/control/year. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Full province line above wide month/control/year. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      251,
+      73
+    ],
+    "referenceBytesSha256": "880dc8f2e3011dd6d45af271d8d3d9e81ae69b76a767a67f1a9d44687b9956ca",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1981",
@@ -1424,11 +1463,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Continuous coloured panel, pale control box below province.",
-    "sourceOriginalPixels": [
-      247,
-      73
-    ],
-    "sourceSha256": "1e5a03b6536d6ff0f27845e45fa2e2a9bb026549691949475b3e01b580beb847",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "1e5a03b6536d6ff0f27845e45fa2e2a9bb026549691949475b3e01b580beb847",
     "frame": [
@@ -1440,7 +1474,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Continuous coloured panel, pale control box below province. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Continuous coloured panel, pale control box below province. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      247,
+      73
+    ],
+    "referenceBytesSha256": "1e5a03b6536d6ff0f27845e45fa2e2a9bb026549691949475b3e01b580beb847",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1982",
@@ -1457,11 +1497,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Continuous green panel, control above small province.",
-    "sourceOriginalPixels": [
-      249,
-      73
-    ],
-    "sourceSha256": "30dbefb487b4073fa3ef2aab0b8a2d99017de30b64ce29a490d31e4d1e8016a9",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "30dbefb487b4073fa3ef2aab0b8a2d99017de30b64ce29a490d31e4d1e8016a9",
     "frame": [
@@ -1473,7 +1508,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Continuous green panel, control above small province. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Continuous green panel, control above small province. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      249,
+      73
+    ],
+    "referenceBytesSha256": "30dbefb487b4073fa3ef2aab0b8a2d99017de30b64ce29a490d31e4d1e8016a9",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1983",
@@ -1490,11 +1531,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Pale centre between dark month/year panels; source control is unreadable.",
-    "sourceOriginalPixels": [
-      245,
-      73
-    ],
-    "sourceSha256": "65cada0a2a613bfb8c00a7babe2b0a6779e6634b6b8e580e1d8ac73c8f1bd891",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "65cada0a2a613bfb8c00a7babe2b0a6779e6634b6b8e580e1d8ac73c8f1bd891",
     "frame": [
@@ -1506,7 +1542,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Pale centre between dark month/year panels; source control is unreadable. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Pale centre between dark month/year panels; source control is unreadable. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      245,
+      73
+    ],
+    "referenceBytesSha256": "65cada0a2a613bfb8c00a7babe2b0a6779e6634b6b8e580e1d8ac73c8f1bd891",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1984",
@@ -1523,11 +1565,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Vertical province and control at the pale side strips.",
-    "sourceOriginalPixels": [
-      253,
-      73
-    ],
-    "sourceSha256": "bcf047366184222f84c944db3e2e4eaaa9f5319b178c9ff1949a9bfd55dbcc80",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "bcf047366184222f84c944db3e2e4eaaa9f5319b178c9ff1949a9bfd55dbcc80",
     "frame": [
@@ -1539,7 +1576,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Vertical province and control at the pale side strips. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Vertical province and control at the pale side strips. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      253,
+      73
+    ],
+    "referenceBytesSha256": "bcf047366184222f84c944db3e2e4eaaa9f5319b178c9ff1949a9bfd55dbcc80",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1985",
@@ -1556,11 +1599,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Month and year flank control; province along lower centre.",
-    "sourceOriginalPixels": [
-      242,
-      73
-    ],
-    "sourceSha256": "fbe9bad40aa81db3d21ee01f25233a90460c09a2fdc612fcf1f360a2605eec8a",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "fbe9bad40aa81db3d21ee01f25233a90460c09a2fdc612fcf1f360a2605eec8a",
     "frame": [
@@ -1572,7 +1610,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Month and year flank control; province along lower centre. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Month and year flank control; province along lower centre. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      242,
+      73
+    ],
+    "referenceBytesSha256": "fbe9bad40aa81db3d21ee01f25233a90460c09a2fdc612fcf1f360a2605eec8a",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1986",
@@ -1589,11 +1633,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Red month/province, blue linked Expo logo, vertical black control.",
-    "sourceOriginalPixels": [
-      241,
-      73
-    ],
-    "sourceSha256": "e57d80fc920922979d8267aa3f9d5e4a2b0019e7b718cb67ee5c87045eccee11",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "e57d80fc920922979d8267aa3f9d5e4a2b0019e7b718cb67ee5c87045eccee11",
     "frame": [
@@ -1605,7 +1644,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Red month/province, blue linked Expo logo, vertical black control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Red month/province, blue linked Expo logo, vertical black control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      241,
+      73
+    ],
+    "referenceBytesSha256": "e57d80fc920922979d8267aa3f9d5e4a2b0019e7b718cb67ee5c87045eccee11",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1987",
@@ -1622,11 +1667,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Pale centre with coloured province/control between red ends.",
-    "sourceOriginalPixels": [
-      237,
-      73
-    ],
-    "sourceSha256": "eb451573af00d183021d2fd278d5cc9699d53e84d1889bf8abca7c8334191259",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "eb451573af00d183021d2fd278d5cc9699d53e84d1889bf8abca7c8334191259",
     "frame": [
@@ -1638,7 +1678,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Pale centre with coloured province/control between red ends. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Pale centre with coloured province/control between red ends. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      237,
+      73
+    ],
+    "referenceBytesSha256": "eb451573af00d183021d2fd278d5cc9699d53e84d1889bf8abca7c8334191259",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1988",
@@ -1655,11 +1701,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Pale centre with coloured province/control between blue ends.",
-    "sourceOriginalPixels": [
-      245,
-      73
-    ],
-    "sourceSha256": "32392dd25fef7ec455aed280192c2bc4a5fb16f3790cbf522762c109b0e15cb2",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "32392dd25fef7ec455aed280192c2bc4a5fb16f3790cbf522762c109b0e15cb2",
     "frame": [
@@ -1671,7 +1712,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Pale centre with coloured province/control between blue ends. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Pale centre with coloured province/control between blue ends. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      245,
+      73
+    ],
+    "referenceBytesSha256": "32392dd25fef7ec455aed280192c2bc4a5fb16f3790cbf522762c109b0e15cb2",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1989",
@@ -1688,11 +1735,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Thin outer colour frame; large month/year flank small province and control.",
-    "sourceOriginalPixels": [
-      243,
-      73
-    ],
-    "sourceSha256": "491dc793dfd1b80cc28ec8162dac7edb5fba2e0fc5f4818784679a3aae5aa3ab",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "491dc793dfd1b80cc28ec8162dac7edb5fba2e0fc5f4818784679a3aae5aa3ab",
     "frame": [
@@ -1704,7 +1746,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      243,
+      73
+    ],
+    "referenceBytesSha256": "491dc793dfd1b80cc28ec8162dac7edb5fba2e0fc5f4818784679a3aae5aa3ab",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1990",
@@ -1721,11 +1769,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Thin outer colour frame; large month/year flank small province and control.",
-    "sourceOriginalPixels": [
-      243,
-      73
-    ],
-    "sourceSha256": "86229c3cb3c7ec2d9cc6e12a37afbfd7f2da7489a90f8ccc09714ee8f8d1e525",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "86229c3cb3c7ec2d9cc6e12a37afbfd7f2da7489a90f8ccc09714ee8f8d1e525",
     "frame": [
@@ -1737,7 +1780,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      243,
+      73
+    ],
+    "referenceBytesSha256": "86229c3cb3c7ec2d9cc6e12a37afbfd7f2da7489a90f8ccc09714ee8f8d1e525",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1991",
@@ -1754,11 +1803,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Thin outer colour frame; large month/year flank small province and control.",
-    "sourceOriginalPixels": [
-      247,
-      73
-    ],
-    "sourceSha256": "dfe75f9037d3172247ba2287caedbf1c5b9e60e0e5b876abfd07105220662b6e",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "dfe75f9037d3172247ba2287caedbf1c5b9e60e0e5b876abfd07105220662b6e",
     "frame": [
@@ -1770,7 +1814,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      247,
+      73
+    ],
+    "referenceBytesSha256": "dfe75f9037d3172247ba2287caedbf1c5b9e60e0e5b876abfd07105220662b6e",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1992",
@@ -1787,11 +1837,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Thin outer colour frame; large month/year flank small province and control.",
-    "sourceOriginalPixels": [
-      243,
-      73
-    ],
-    "sourceSha256": "1952dc53e421b6335abb8963ba9a7d0a431fed0c5508527361de9093c19b6eac",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "1952dc53e421b6335abb8963ba9a7d0a431fed0c5508527361de9093c19b6eac",
     "frame": [
@@ -1803,7 +1848,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      243,
+      73
+    ],
+    "referenceBytesSha256": "1952dc53e421b6335abb8963ba9a7d0a431fed0c5508527361de9093c19b6eac",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1993",
@@ -1820,11 +1871,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Thin outer colour frame; large month/year flank small province and control.",
-    "sourceOriginalPixels": [
-      245,
-      73
-    ],
-    "sourceSha256": "b9d9d9da9db8af37ef70731bfb55486c064f65c54c52b9ede06cd57e83a04160",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "b9d9d9da9db8af37ef70731bfb55486c064f65c54c52b9ede06cd57e83a04160",
     "frame": [
@@ -1836,7 +1882,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      245,
+      73
+    ],
+    "referenceBytesSha256": "b9d9d9da9db8af37ef70731bfb55486c064f65c54c52b9ede06cd57e83a04160",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1994",
@@ -1853,11 +1905,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Thin outer colour frame; large month/year flank small province and control.",
-    "sourceOriginalPixels": [
-      242,
-      73
-    ],
-    "sourceSha256": "03aac891c08ca45d4ed6e940c68ecf0c4507a342bb1d0b09eacbd3dfe564e1a0",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "03aac891c08ca45d4ed6e940c68ecf0c4507a342bb1d0b09eacbd3dfe564e1a0",
     "frame": [
@@ -1869,7 +1916,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      242,
+      73
+    ],
+    "referenceBytesSha256": "03aac891c08ca45d4ed6e940c68ecf0c4507a342bb1d0b09eacbd3dfe564e1a0",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1995",
@@ -1886,11 +1939,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Thin outer colour frame; large month/year flank small province and control.",
-    "sourceOriginalPixels": [
-      244,
-      73
-    ],
-    "sourceSha256": "60c72acb16b3f1c64c37300641fc8aae673b0d8ff985461398df6cfb6530d80c",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "60c72acb16b3f1c64c37300641fc8aae673b0d8ff985461398df6cfb6530d80c",
     "frame": [
@@ -1902,7 +1950,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      244,
+      73
+    ],
+    "referenceBytesSha256": "60c72acb16b3f1c64c37300641fc8aae673b0d8ff985461398df6cfb6530d80c",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1996",
@@ -1919,11 +1973,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Thin outer colour frame; large month/year flank small province and control.",
-    "sourceOriginalPixels": [
-      240,
-      73
-    ],
-    "sourceSha256": "77559b933e1e50243eb1d80f40333259bd1d5b0a2a12a72a8baa3c8433b0f37d",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "77559b933e1e50243eb1d80f40333259bd1d5b0a2a12a72a8baa3c8433b0f37d",
     "frame": [
@@ -1935,7 +1984,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      240,
+      73
+    ],
+    "referenceBytesSha256": "77559b933e1e50243eb1d80f40333259bd1d5b0a2a12a72a8baa3c8433b0f37d",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1997",
@@ -1952,11 +2007,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Thin outer colour frame; large month/year flank small province and control.",
-    "sourceOriginalPixels": [
-      246,
-      73
-    ],
-    "sourceSha256": "594de8c06842565fc862afc29bb9fc2b8089fb7e127ef53c848ff709e580cbde",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "594de8c06842565fc862afc29bb9fc2b8089fb7e127ef53c848ff709e580cbde",
     "frame": [
@@ -1968,7 +2018,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      246,
+      73
+    ],
+    "referenceBytesSha256": "594de8c06842565fc862afc29bb9fc2b8089fb7e127ef53c848ff709e580cbde",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1998",
@@ -1985,11 +2041,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Thin outer colour frame; large month/year flank small province and control.",
-    "sourceOriginalPixels": [
-      242,
-      73
-    ],
-    "sourceSha256": "d69e794c491b9cf4f666f531a127d67ed117a51300fd7b434506919fa91a0877",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "d69e794c491b9cf4f666f531a127d67ed117a51300fd7b434506919fa91a0877",
     "frame": [
@@ -2001,7 +2052,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      242,
+      73
+    ],
+    "referenceBytesSha256": "d69e794c491b9cf4f666f531a127d67ed117a51300fd7b434506919fa91a0877",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1999",
@@ -2018,11 +2075,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Thin outer colour frame; large month/year flank small province and control.",
-    "sourceOriginalPixels": [
-      242,
-      73
-    ],
-    "sourceSha256": "1fb49e789ea4b059d5b7d28f36174ffcab8d9b3f3e6a51b94f3c0d81e1817975",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "1fb49e789ea4b059d5b7d28f36174ffcab8d9b3f3e6a51b94f3c0d81e1817975",
     "frame": [
@@ -2034,7 +2086,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      242,
+      73
+    ],
+    "referenceBytesSha256": "1fb49e789ea4b059d5b7d28f36174ffcab8d9b3f3e6a51b94f3c0d81e1817975",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1996-pink",
@@ -2051,11 +2109,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Thin outer colour frame; large month/year flank small province and control.",
-    "sourceOriginalPixels": [
-      243,
-      73
-    ],
-    "sourceSha256": "ae89bb4f828d8a6dfd51538c79585dcb77c1dabd8247dcc5c8bf45891f1a05e3",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "ae89bb4f828d8a6dfd51538c79585dcb77c1dabd8247dcc5c8bf45891f1a05e3",
     "frame": [
@@ -2067,7 +2120,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      243,
+      73
+    ],
+    "referenceBytesSha256": "ae89bb4f828d8a6dfd51538c79585dcb77c1dabd8247dcc5c8bf45891f1a05e3",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1998-type-ii",
@@ -2084,11 +2143,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Thin outer colour frame; large month/year flank small province and control.",
-    "sourceOriginalPixels": [
-      320,
-      98
-    ],
-    "sourceSha256": "06dd689e014acfec422a1e0e1742353e2d7de722671fae8c6f0c611c7d885dfd",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "06dd689e014acfec422a1e0e1742353e2d7de722671fae8c6f0c611c7d885dfd",
     "frame": [
@@ -2100,7 +2154,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Thin outer colour frame; large month/year flank small province and control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      320,
+      98
+    ],
+    "referenceBytesSha256": "06dd689e014acfec422a1e0e1742353e2d7de722671fae8c6f0c611c7d885dfd",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-1999-white",
@@ -2117,11 +2177,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Thin double outline and large month/year; separate control printing.",
-    "sourceOriginalPixels": [
-      252,
-      73
-    ],
-    "sourceSha256": "a091a17015df79ed2f321fab1317585e706b0484c9c06238d254a1ba0ade617d",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "a091a17015df79ed2f321fab1317585e706b0484c9c06238d254a1ba0ade617d",
     "frame": [
@@ -2133,7 +2188,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Thin double outline and large month/year; separate control printing. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Thin double outline and large month/year; separate control printing. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      252,
+      73
+    ],
+    "referenceBytesSha256": "a091a17015df79ed2f321fab1317585e706b0484c9c06238d254a1ba0ade617d",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2000",
@@ -2150,11 +2211,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Thin double outline and large month/year; separate control printing.",
-    "sourceOriginalPixels": [
-      258,
-      73
-    ],
-    "sourceSha256": "47ebf6651291853c5b54bc28117ec867db0fd5dc9cddee420c733a8a5ced2a18",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "47ebf6651291853c5b54bc28117ec867db0fd5dc9cddee420c733a8a5ced2a18",
     "frame": [
@@ -2166,7 +2222,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Thin double outline and large month/year; separate control printing. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Thin double outline and large month/year; separate control printing. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      258,
+      73
+    ],
+    "referenceBytesSha256": "47ebf6651291853c5b54bc28117ec867db0fd5dc9cddee420c733a8a5ced2a18",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2001",
@@ -2183,11 +2245,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Thin double outline and large month/year; separate control printing.",
-    "sourceOriginalPixels": [
-      320,
-      91
-    ],
-    "sourceSha256": "a972a3b231f5eb3ff74bedba7bbbe2e76d896bcfe6bf50ae31447550850467a1",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "a972a3b231f5eb3ff74bedba7bbbe2e76d896bcfe6bf50ae31447550850467a1",
     "frame": [
@@ -2199,7 +2256,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Thin double outline and large month/year; separate control printing. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Thin double outline and large month/year; separate control printing. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      320,
+      91
+    ],
+    "referenceBytesSha256": "a972a3b231f5eb3ff74bedba7bbbe2e76d896bcfe6bf50ae31447550850467a1",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2002",
@@ -2216,11 +2279,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Thin double outline and large month/year; separate control printing.",
-    "sourceOriginalPixels": [
-      253,
-      73
-    ],
-    "sourceSha256": "e217abcb5200e61bc75f4f945f64edd112b519fdc5aa7ab0b36c635fc4805da4",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "e217abcb5200e61bc75f4f945f64edd112b519fdc5aa7ab0b36c635fc4805da4",
     "frame": [
@@ -2232,7 +2290,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Thin double outline and large month/year; separate control printing. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Thin double outline and large month/year; separate control printing. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      253,
+      73
+    ],
+    "referenceBytesSha256": "e217abcb5200e61bc75f4f945f64edd112b519fdc5aa7ab0b36c635fc4805da4",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2003",
@@ -2249,11 +2313,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Thin double outline and large month/year; separate control printing.",
-    "sourceOriginalPixels": [
-      251,
-      73
-    ],
-    "sourceSha256": "94f4048df2a9b5e65b53a89c069f933853cb2e9d2f912fd7014d1cfe2d4e7017",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "94f4048df2a9b5e65b53a89c069f933853cb2e9d2f912fd7014d1cfe2d4e7017",
     "frame": [
@@ -2265,7 +2324,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Thin double outline and large month/year; separate control printing. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Thin double outline and large month/year; separate control printing. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      251,
+      73
+    ],
+    "referenceBytesSha256": "94f4048df2a9b5e65b53a89c069f933853cb2e9d2f912fd7014d1cfe2d4e7017",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2004",
@@ -2282,11 +2347,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Wide borderless panel with compact right year/province/control.",
-    "sourceOriginalPixels": [
-      253,
-      73
-    ],
-    "sourceSha256": "694c87b17f8cf5a3858920d736cdaf9986698bede0b140051a8437756db142d3",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "694c87b17f8cf5a3858920d736cdaf9986698bede0b140051a8437756db142d3",
     "frame": [
@@ -2298,7 +2358,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Wide borderless panel with compact right year/province/control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Wide borderless panel with compact right year/province/control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      253,
+      73
+    ],
+    "referenceBytesSha256": "694c87b17f8cf5a3858920d736cdaf9986698bede0b140051a8437756db142d3",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2005",
@@ -2315,11 +2381,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Short coloured panel; province between month/year, control below year.",
-    "sourceOriginalPixels": [
-      230,
-      98
-    ],
-    "sourceSha256": "ba4bcb689546ab479d0d4b146840d1511deca4ad30609f90595a29b906df15df",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "ba4bcb689546ab479d0d4b146840d1511deca4ad30609f90595a29b906df15df",
     "frame": [
@@ -2331,7 +2392,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Short coloured panel; province between month/year, control below year. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Short coloured panel; province between month/year, control below year. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      230,
+      98
+    ],
+    "referenceBytesSha256": "ba4bcb689546ab479d0d4b146840d1511deca4ad30609f90595a29b906df15df",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2006",
@@ -2348,11 +2415,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Short coloured panel; province between month/year, control below year.",
-    "sourceOriginalPixels": [
-      226,
-      98
-    ],
-    "sourceSha256": "9d843cbee196693e7afc829e8de19d7bfd5c742432b5e9cb0b94ff012ec0ceeb",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "9d843cbee196693e7afc829e8de19d7bfd5c742432b5e9cb0b94ff012ec0ceeb",
     "frame": [
@@ -2364,7 +2426,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Short coloured panel; province between month/year, control below year. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Short coloured panel; province between month/year, control below year. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      226,
+      98
+    ],
+    "referenceBytesSha256": "9d843cbee196693e7afc829e8de19d7bfd5c742432b5e9cb0b94ff012ec0ceeb",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2007",
@@ -2381,11 +2449,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Short coloured panel; province between month/year, control below year.",
-    "sourceOriginalPixels": [
-      224,
-      98
-    ],
-    "sourceSha256": "c960c3c298310c71b32ea0e8e056f4f6e01934d558254d1b1f3e7896db646b9d",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "c960c3c298310c71b32ea0e8e056f4f6e01934d558254d1b1f3e7896db646b9d",
     "frame": [
@@ -2397,7 +2460,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Short coloured panel; province between month/year, control below year. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Short coloured panel; province between month/year, control below year. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      224,
+      98
+    ],
+    "referenceBytesSha256": "c960c3c298310c71b32ea0e8e056f4f6e01934d558254d1b1f3e7896db646b9d",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2008",
@@ -2414,11 +2483,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Short coloured panel; province between month/year, control below year.",
-    "sourceOriginalPixels": [
-      233,
-      98
-    ],
-    "sourceSha256": "efa6be5dd33e03803410ad84e1b32f63f5b0de595a72e4739ad1b07a849cbab3",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "efa6be5dd33e03803410ad84e1b32f63f5b0de595a72e4739ad1b07a849cbab3",
     "frame": [
@@ -2430,7 +2494,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Short coloured panel; province between month/year, control below year. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Short coloured panel; province between month/year, control below year. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      233,
+      98
+    ],
+    "referenceBytesSha256": "efa6be5dd33e03803410ad84e1b32f63f5b0de595a72e4739ad1b07a849cbab3",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2009",
@@ -2447,11 +2517,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Two-digit year; small horizontal province; Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode.",
-    "sourceOriginalPixels": [
-      228,
-      98
-    ],
-    "sourceSha256": "0545dbafd5f9e40472fea77883bc0ea0ac12cd7dddbe5163cf86e241712835aa",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "0545dbafd5f9e40472fea77883bc0ea0ac12cd7dddbe5163cf86e241712835aa",
     "frame": [
@@ -2463,7 +2528,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Two-digit year; small horizontal province; Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Two-digit year; small horizontal province; Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      228,
+      98
+    ],
+    "referenceBytesSha256": "0545dbafd5f9e40472fea77883bc0ea0ac12cd7dddbe5163cf86e241712835aa",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2010",
@@ -2480,11 +2551,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Two-digit year; small horizontal province; Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode.",
-    "sourceOriginalPixels": [
-      235,
-      98
-    ],
-    "sourceSha256": "ef8bcd1aff40cc4ea0a48b46a93d3b09b98b6f7fd3cfb3070e6531a70f69d68f",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "ef8bcd1aff40cc4ea0a48b46a93d3b09b98b6f7fd3cfb3070e6531a70f69d68f",
     "frame": [
@@ -2496,7 +2562,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Two-digit year; small horizontal province; Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Two-digit year; small horizontal province; Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      235,
+      98
+    ],
+    "referenceBytesSha256": "ef8bcd1aff40cc4ea0a48b46a93d3b09b98b6f7fd3cfb3070e6531a70f69d68f",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2011",
@@ -2513,11 +2585,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Two-digit year; small horizontal province; Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode.",
-    "sourceOriginalPixels": [
-      230,
-      98
-    ],
-    "sourceSha256": "28a80c5d30866e8989997e92596fcc19f4f0e3820dc1415506938cca085f7fbe",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "28a80c5d30866e8989997e92596fcc19f4f0e3820dc1415506938cca085f7fbe",
     "frame": [
@@ -2529,7 +2596,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Two-digit year; small horizontal province; Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Two-digit year; small horizontal province; Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      230,
+      98
+    ],
+    "referenceBytesSha256": "28a80c5d30866e8989997e92596fcc19f4f0e3820dc1415506938cca085f7fbe",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2012",
@@ -2546,11 +2619,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Two-digit year; small horizontal province; Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode.",
-    "sourceOriginalPixels": [
-      232,
-      98
-    ],
-    "sourceSha256": "ff878a68e781d021bbbcb4bb5aa00094e6af5277fcb8937a46e92f984359f869",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "ff878a68e781d021bbbcb4bb5aa00094e6af5277fcb8937a46e92f984359f869",
     "frame": [
@@ -2562,7 +2630,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Two-digit year; small horizontal province; Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Two-digit year; small horizontal province; Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      232,
+      98
+    ],
+    "referenceBytesSha256": "ff878a68e781d021bbbcb4bb5aa00094e6af5277fcb8937a46e92f984359f869",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2013",
@@ -2579,11 +2653,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Two-digit year; small horizontal province; Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode.",
-    "sourceOriginalPixels": [
-      237,
-      98
-    ],
-    "sourceSha256": "744baad6c99f15e8030171986f364b6cad270d52d3ffbe3953f9a6773b9268f2",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "744baad6c99f15e8030171986f364b6cad270d52d3ffbe3953f9a6773b9268f2",
     "frame": [
@@ -2595,7 +2664,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Two-digit year; small horizontal province; Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Two-digit year; small horizontal province; Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      237,
+      98
+    ],
+    "referenceBytesSha256": "744baad6c99f15e8030171986f364b6cad270d52d3ffbe3953f9a6773b9268f2",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2014",
@@ -2612,11 +2687,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Full four-digit year, vertical serif province, Code 128/control footer. Source Code 128 decoded to the printed control.",
-    "sourceOriginalPixels": [
-      227,
-      98
-    ],
-    "sourceSha256": "7d3c3cfd6c092c9ce72b23a1ea82d3b3c707c7c2dacf62ffee77c90b7d25923c",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "7d3c3cfd6c092c9ce72b23a1ea82d3b3c707c7c2dacf62ffee77c90b7d25923c",
     "frame": [
@@ -2628,7 +2698,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Full four-digit year, vertical serif province, Code 128/control footer. Source Code 128 decoded to the printed control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Full four-digit year, vertical serif province, Code 128/control footer. Source Code 128 decoded to the printed control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      227,
+      98
+    ],
+    "referenceBytesSha256": "7d3c3cfd6c092c9ce72b23a1ea82d3b3c707c7c2dacf62ffee77c90b7d25923c",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2015",
@@ -2645,11 +2721,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode.",
-    "sourceOriginalPixels": [
-      244,
-      98
-    ],
-    "sourceSha256": "bbd30fea43080160f7266d0ca560c5ada595f37a35f0cae165b9a7e810e3fb97",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "bbd30fea43080160f7266d0ca560c5ada595f37a35f0cae165b9a7e810e3fb97",
     "frame": [
@@ -2661,7 +2732,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      244,
+      98
+    ],
+    "referenceBytesSha256": "bbd30fea43080160f7266d0ca560c5ada595f37a35f0cae165b9a7e810e3fb97",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2016",
@@ -2678,11 +2755,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode.",
-    "sourceOriginalPixels": [
-      237,
-      98
-    ],
-    "sourceSha256": "70c381121a52402ca6acdb7ba2a14e3994025c71d4ea355a858e9ab0973df348",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "70c381121a52402ca6acdb7ba2a14e3994025c71d4ea355a858e9ab0973df348",
     "frame": [
@@ -2694,7 +2766,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      237,
+      98
+    ],
+    "referenceBytesSha256": "70c381121a52402ca6acdb7ba2a14e3994025c71d4ea355a858e9ab0973df348",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2017",
@@ -2711,11 +2789,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode.",
-    "sourceOriginalPixels": [
-      233,
-      98
-    ],
-    "sourceSha256": "d3a4cf0a2ef918a20774e84e9996c9d4c3bb17fb7711f79c179afea456166073",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "d3a4cf0a2ef918a20774e84e9996c9d4c3bb17fb7711f79c179afea456166073",
     "frame": [
@@ -2727,7 +2800,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      233,
+      98
+    ],
+    "referenceBytesSha256": "d3a4cf0a2ef918a20774e84e9996c9d4c3bb17fb7711f79c179afea456166073",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2018",
@@ -2744,11 +2823,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Full four-digit year, vertical serif province, Code 128/control footer. Source Code 128 decoded to the printed control.",
-    "sourceOriginalPixels": [
-      225,
-      96
-    ],
-    "sourceSha256": "cfaedbef52dfe99561d059aa01b2329d28fc5f1240f7b80f56b3876684c85637",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "cfaedbef52dfe99561d059aa01b2329d28fc5f1240f7b80f56b3876684c85637",
     "frame": [
@@ -2760,7 +2834,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Full four-digit year, vertical serif province, Code 128/control footer. Source Code 128 decoded to the printed control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Full four-digit year, vertical serif province, Code 128/control footer. Source Code 128 decoded to the printed control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      225,
+      96
+    ],
+    "referenceBytesSha256": "cfaedbef52dfe99561d059aa01b2329d28fc5f1240f7b80f56b3876684c85637",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2019",
@@ -2777,11 +2857,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode.",
-    "sourceOriginalPixels": [
-      233,
-      96
-    ],
-    "sourceSha256": "a4d105e0672ed9964de426c29069e32bc8a768f4b1861218ea8ecc0379a38375",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "a4d105e0672ed9964de426c29069e32bc8a768f4b1861218ea8ecc0379a38375",
     "frame": [
@@ -2793,7 +2868,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      233,
+      96
+    ],
+    "referenceBytesSha256": "a4d105e0672ed9964de426c29069e32bc8a768f4b1861218ea8ecc0379a38375",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2020",
@@ -2810,11 +2891,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode.",
-    "sourceOriginalPixels": [
-      223,
-      96
-    ],
-    "sourceSha256": "76be618651c3b80ef4d7210026807b1e975b137d1caacdd3be4502a8c3c5920e",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "76be618651c3b80ef4d7210026807b1e975b137d1caacdd3be4502a8c3c5920e",
     "frame": [
@@ -2826,7 +2902,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      223,
+      96
+    ],
+    "referenceBytesSha256": "76be618651c3b80ef4d7210026807b1e975b137d1caacdd3be4502a8c3c5920e",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2021",
@@ -2843,11 +2925,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Full four-digit year, vertical serif province, Code 128/control footer. Source Code 128 decoded to the printed control.",
-    "sourceOriginalPixels": [
-      228,
-      98
-    ],
-    "sourceSha256": "805e5f5b6e9af6246f94941fee71c66052474e6c3bb7b129596e72e4d3cd4516",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "805e5f5b6e9af6246f94941fee71c66052474e6c3bb7b129596e72e4d3cd4516",
     "frame": [
@@ -2859,7 +2936,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Full four-digit year, vertical serif province, Code 128/control footer. Source Code 128 decoded to the printed control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Full four-digit year, vertical serif province, Code 128/control footer. Source Code 128 decoded to the printed control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      228,
+      98
+    ],
+    "referenceBytesSha256": "805e5f5b6e9af6246f94941fee71c66052474e6c3bb7b129596e72e4d3cd4516",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2022",
@@ -2876,11 +2959,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Full four-digit year, vertical serif province, Code 128/control footer. Source Code 128 decoded to the printed control.",
-    "sourceOriginalPixels": [
-      236,
-      98
-    ],
-    "sourceSha256": "f4c646a2851f9b37e60b7751a79fa33c8e8e7c55aa2e6c5e7c1561a8336b5dcd",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "f4c646a2851f9b37e60b7751a79fa33c8e8e7c55aa2e6c5e7c1561a8336b5dcd",
     "frame": [
@@ -2892,7 +2970,13 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Full four-digit year, vertical serif province, Code 128/control footer. Source Code 128 decoded to the printed control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Full four-digit year, vertical serif province, Code 128/control footer. Source Code 128 decoded to the printed control. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      236,
+      98
+    ],
+    "referenceBytesSha256": "f4c646a2851f9b37e60b7751a79fa33c8e8e7c55aa2e6c5e7c1561a8336b5dcd",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   },
   {
     "id": "decal-2023",
@@ -2909,11 +2993,6 @@
     "research": true,
     "width": 600,
     "existingReview": "Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode.",
-    "sourceOriginalPixels": [
-      232,
-      98
-    ],
-    "sourceSha256": "59e85232eaa43b7b582f1b48fff5d45591b2e0aaf03563734bd028b49f17bd5e",
     "attribution": "BCpl8s reference photograph; rights remain with the photographer and gallery.",
     "sourceStoredSha256": "59e85232eaa43b7b582f1b48fff5d45591b2e0aaf03563734bd028b49f17bd5e",
     "frame": [
@@ -2925,6 +3004,12 @@
     "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
     "status": "Reviewed \u00b7 existing source limits",
     "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-    "finding": "Three-way layout and control-number comparison inspected. Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data."
+    "finding": "Three-way layout and control-number comparison inspected. Full four-digit year, vertical serif province, Code 128/control footer. Barcode family reconstructed from decoded related specimens; this scan did not decode. Source colours, paint weight, small-letter contours and synthetic barcode bars remain approximations; the bars are not decoded registration data.",
+    "referencePixels": [
+      232,
+      98
+    ],
+    "referenceBytesSha256": "59e85232eaa43b7b582f1b48fff5d45591b2e0aaf03563734bd028b49f17bd5e",
+    "referenceByteScope": "Existing local reference crop; remote original-byte hash is not asserted"
   }
 ]
