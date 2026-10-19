@@ -1,6 +1,8 @@
 import { describe, expect, it } from 'vitest';
 import { createRng } from '../../core/random';
 import { buildKitScene } from '../../templates/bc/kit';
+import flagMaster from '../../templates/bc/passenger-carrier-flag.json';
+import type {SvgNode} from '../../templates/svg-scene';
 import { serializeSvgNode } from '../../templates/svg-scene';
 import { kitDecal, kitPalette, kitRecipe } from './bc-kit';
 import { BC_TRADE_ERAS, BC_TRADE_FAMILIES, BC_TRADE_FORMATS } from './bc-trade';
@@ -19,7 +21,9 @@ describe('B.C. dealer, industrial and carrier plates', () => {
     expect(svg).toContain('data-source="user-supplied-bc-flag-svg"');
     expect(svg).toContain('clip-path="url(#carrier-flag-a)"');
     expect(svg).toContain('id="carrier-flag-a"');
-    expect(svg).toContain('fill="#0047bb"');
+    expect(svg).toContain('fill="#004c97"');
+    const flagGroup=(flagMaster.nodes as unknown as SvgNode[])[1].children[1] as SvgNode;
+    for(const path of flagGroup.children as SvgNode[]) if(path.attrs.d) expect(svg).toContain(`d="${path.attrs.d}"`);
     expect(svg).toContain('data-role="flag-print-wash"');
     expect(svg).toContain('fill="#eef0ee"');
     expect(svg).not.toContain('data-art="bc-flag"');

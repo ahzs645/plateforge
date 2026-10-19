@@ -12,7 +12,8 @@ const {chromium,firefox,webkit}=require('playwright');
 const {PNG}=require('pngjs');
 const {default:pixelmatch}=await import(require.resolve('pixelmatch'));
 const browserName=process.env.TYPOGRAPHY_BROWSER??'chromium';
-const out=path.resolve('typography-evidence/browser-'+browserName);await mkdir(out,{recursive:true});
+const requested=(process.env.TYPOGRAPHY_SPECIMENS??'').split(',').filter(Boolean);
+const out=path.resolve('typography-evidence/browser-'+browserName+(requested.length?'-targeted':''));await mkdir(out,{recursive:true});
 const html=path.resolve('typography-harness.html');
 await writeFile(html,'<!doctype html><html><head><meta charset="utf-8"><style>html,body{margin:0;padding:0;background:white}svg{display:block;max-width:none}</style></head><body><div id="plate"></div><script type="module" src="/scripts/typography-browser-harness.tsx"></script></body></html>');
 try{await build({configFile:false,plugins:[react()],base:'/qa/',publicDir:false,logLevel:'warn',build:{outDir:'qa-dist',emptyOutDir:true,rolldownOptions:{input:html}}});}finally{await rm(html,{force:true});}
@@ -49,12 +50,21 @@ try{
  assert.equal(formats.length,878);assert.equal(new Set(formats.map(f=>f.region+'/'+f.format)).size,formats.length);
  const representatives=[...new Map(formats.map(f=>[f.template,f])).values()];
  const extra=formats.filter(f=>['ca-bc','ca-nu','ca-ab','ca-nt','us-ca','eu-de','eu-gb','kr','jp','cn'].includes(f.region)&&!f.format.startsWith('stand-in-')).filter(f=>/^(standard|reflective|2020|electric|green|1951|1930|1964|1978|1979-first|1985|2001-flag|1985-flag|moraine-lake|spectacular)$/.test(f.format));
- const selected=[...new Map([...representatives,...extra].map(f=>[f.region+'/'+f.format,f])).values()];
- for(const f of selected)await check('raster parity '+f.region+'/'+f.format,async()=>{
-   const info=await page.evaluate(f=>window.typographyQA.render(f.region,f.format,{},f.region==='ca-bc'),f);
+ const corrections=JSON.parse(await readFile('docs/research/bc-visual-review/cases.json','utf8')).filter(row=>['apec1997','apec149','apec134','carrier2005','bicycle-prince-george-1953','bicycle-prince-george-1959','collector-passenger','collector-multi','collector-motorcycle'].includes(row.id)).map(row=>({region:'ca-bc',format:row.format,parts:row.parts,specimen:row.id}));
+ const dates=[['2014','NOV','99103688'],['2017','JUL','20093481'],['2023','MAY','12345678']].map(([decal,decalMonth,decalSerial])=>({region:'ca-bc',format:'2001-flag',parts:{decal,decalMonth,decalSerial},specimen:'renewal-'+decal}));
+ const selected=[...new Map([...representatives,...extra].map(f=>[f.region+'/'+f.format,f])).values(),...corrections,...dates];
+ const cases=requested.length?selected.filter(f=>requested.includes(f.specimen)):selected;
+ assert.ok(cases.length,'No selected export specimens');
+ for(const f of cases)await check('raster parity '+f.region+'/'+f.format+(f.specimen?' '+f.specimen:''),async()=>{
+   const info=await page.evaluate(f=>window.typographyQA.render(f.region,f.format,f.parts??{},f.region==='ca-bc'),f);
+   if(f.specimen==='carrier2005')assert(await page.evaluate(()=>{
+     const svg=document.querySelector('#plate svg'),well=svg.querySelector('rect[fill="#eef0ee"]').getBBox();
+     const left=svg.querySelector('[data-role="class-left"]').getBBox(),right=svg.querySelector('[data-role="class-right"]').getBBox();
+     return left.x+left.width<well.x-.5&&right.x>well.x+well.width+.5;
+   }),'Carrier labels collide with renewal panel');
    await page.locator('#plate svg').first().evaluate(el=>{const {width,height}=el.viewBox.baseVal;el.style.width=Math.round(width)+'px';el.style.height=Math.round(height)+'px';});
    const data=await page.evaluate(()=>window.typographyQA.export());
-   const name=(f.region+'-'+f.format).replace(/[^a-z0-9-]/gi,'_');
+   const name=(f.region+'-'+f.format+(f.specimen?'-'+f.specimen:'')).replace(/[^a-z0-9-]/gi,'_');
    const inline=await page.locator('#plate svg').first().screenshot();const png=Buffer.from(data.png.split(',')[1],'base64');
    const delta=pixels(inline,png);
    await writeFile(path.join(out,name+'-inline.png'),inline);await writeFile(path.join(out,name+'-export.png'),png);
@@ -65,6 +75,7 @@ try{
    assert.ok(delta.perceptualChangedFraction<0.025,JSON.stringify(delta));
    return {region:f.region,format:f.format,info,delta,metadata:data.metadata,svgBytes:data.svgBytes};
  });
+ if(!requested.length){
  const specimens=[
  ['barlow600','Barlow Condensed','ABC 0123456789',600,'normal'],['barlow500','Barlow Condensed','EL 13579',500,'normal'],
  ['barlow700italic','Barlow Condensed','BEAUTIFUL 2026',700,'italic'],['antonio-ext','Antonio','ĀČŁŐŞȚŽ 0123',500,'normal'],
@@ -213,6 +224,7 @@ try{
    await app.getByRole('button',{name:'Save',exact:true}).click();const dl=app.waitForEvent('download');await app.getByRole('menuitem',{name:'Save SVG',exact:true}).click();const d=await dl;await d.delete();
    return {width:390,overflow:false};
  });
+ }
  await context.close();
 }finally{
  await writeFile(path.join(out,'results.json'),JSON.stringify(results,null,2)+'\n');

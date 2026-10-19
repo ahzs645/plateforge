@@ -36,7 +36,8 @@ async function ready(){for(let i=0;i<2;i++){await Promise.all([...document.query
   const width=row.width??900;svg.style.cssText='display:block;width:'+width+'px;height:'+Math.round(width*v.height/v.width)+'px;max-width:none';
   const art=[...svg.querySelectorAll<SVGGraphicsElement>('[data-art],[data-role="base-emblem"],[data-role="tab-emblem"],[data-role="decal-emblem"],[data-role="underlying-centennial-emblem"]')].map(el=>({art:el.getAttribute('data-art'),role:el.getAttribute('data-role'),box:bbox(el)}));
   const texts=[...svg.querySelectorAll<SVGTextElement>('text')].filter(t=>t.textContent.trim()).map(t=>({text:t.textContent,family:getComputedStyle(t).fontFamily,weight:getComputedStyle(t).fontWeight,box:bbox(t)}));
-  return {parts,validation,viewBox:[v.x,v.y,v.width,v.height],art,texts};
+  const lettering=[...svg.querySelectorAll<SVGGraphicsElement>('[data-die]')].map(el=>({text:el.getAttribute('aria-label'),profile:el.getAttribute('data-die'),role:el.getAttribute('data-role'),box:bbox(el)}));
+  return {parts,validation,viewBox:[v.x,v.y,v.width,v.height],art,texts,lettering};
  }
 };`;
 function difference(a,b){const x=PNG.sync.read(a),y=PNG.sync.read(b);assert.equal(x.width,y.width);assert.equal(x.height,y.height);let changed=0,error=0;for(let i=0;i<x.data.length;i+=4){let d=0;for(let c=0;c<3;c++){const A=x.data[i+c]*x.data[i+3]/255+255-x.data[i+3],B=y.data[i+c]*y.data[i+3]/255+255-y.data[i+3];error+=Math.abs(A-B);d=Math.max(d,Math.abs(A-B));x.data[i+c]=Math.round(A);y.data[i+c]=Math.round(B);}x.data[i+3]=y.data[i+3]=255;if(d>16)changed++;}return {pixels:x.width*x.height,changedFraction:changed/(x.width*x.height),meanAbsoluteChannelError:error/(3*x.width*x.height),perceptualChangedFraction:pixelmatch(x.data,y.data,null,x.width,x.height,{threshold:0.1,includeAA:false})/(x.width*x.height)};}

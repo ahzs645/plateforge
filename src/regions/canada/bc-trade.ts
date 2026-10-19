@@ -516,12 +516,14 @@ const passengerCarrier = small('carrier-passenger-2005', 'Passenger Carrier · f
   rim: { inset: 2.5, width: 1, color: '#9aa4b4' }, holes: 'round', holeAt: { x: [0.05, 0.95], y: [0.08, 0.92] },
   art: [{ art: 'trade-flag-wash', x: 4, y: 4, width: 195, height: 119, role: 'flag-background' }],
   artworkAccuracy:'Supplied BC flag SVG; plate fitting and pale screened colour are approximate.',
-  legends: [],
-  fontLegends: [serif('BRITISH COLUMBIA', 101.5, 20, 14, '#1c2d6b', { weight: 700, width: 160, role: 'province' }),
-    { text: 'PASSENGER', x: 34, baseline: 114, size: 10, font: 'sans', weight: 700, color: '#101010', role: 'class-left' },
-    { text: 'CARRIER', x: 170, baseline: 114, size: 10, font: 'sans', weight: 700, color: '#101010', role: 'class-right' }],
-  serial: { x: 101.5, baseline: 82, cap: 44, maxWidth: 180, die: 'bc-waldale', separator: GAP },
-  decal: { x: 68, y: 91, width: 67, height: 29, background: '#eef0ee' },
+  legends: [
+    {text:'BRITISH COLUMBIA',x:101.5,baseline:18.8,cap:10.5,maxWidth:140,die:'bc-corrected-carrier-province',color:'#101417',role:'province',screened:true,spacing:2},
+    {text:'PASSENGER',x:31,baseline:106,cap:6.7,maxWidth:48,die:'bc-corrected-carrier-class',color:'#101010',role:'class-left',screened:true},
+    {text:'CARRIER',x:171,baseline:106,cap:6.7,maxWidth:39,die:'bc-corrected-carrier-class',color:'#101010',role:'class-right',screened:true},
+  ],fontLegends: [],
+  serial: { x: 101.5, baseline: 77, cap: 48, maxWidth: 180, die: 'bc-waldale', separator: GAP,
+    kerning:Object.fromEntries([...('0123456789 ')].flatMap(a=>[...('0123456789 ')].map(b=>[a+b,18]))) },
+  decal: { x: 60, y: 82, width: 82, height: 39, background: '#eef0ee' },
 });
 const passengerCarrier2010 = small('carrier-passenger-2010', '2010 Games Passenger Transportation (temporary)', SMALL('#ecd13c', '#101010'), SRC.passengerCarrier, {
   rim: null, holes: 'slots', holeAt: { x: [0.18, 0.82], y: [0.07, 0.93] },

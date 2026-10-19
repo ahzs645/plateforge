@@ -1,0 +1,55 @@
+{
+  "schema": "plateforge.bc-corrections-validation/v1",
+  "reviewedOn": "2026-10-19",
+  "captureSourceSha256": "612ae4a38fcf27159bf14164da3a77e16c30aed35a2d62012bdbc1e630205ca5",
+  "baseCommit": "5c8538a3d2abcd705de01b1ebe3383d8000df6e8",
+  "sourceSpecimens": 86,
+  "defaultFormats": 448,
+  "changedDefaults": 100,
+  "unitTests": {
+    "passed": 1946,
+    "files": 67
+  },
+  "catalogueMonthGeometry": {
+    "renderings": 572,
+    "failures": 0
+  },
+  "integrity": {
+    "fontFaces": 449,
+    "originalGeometryFiles": 19,
+    "passed": true
+  },
+  "build": "TypeScript and production build passed",
+  "browsers": {
+    "chromium": {
+      "version": "141.0.7390.37",
+      "fullTypographyChecks": 81,
+      "fullCoverageNote": "Full font/export suite before final carrier panel/label clearance adjustment. Final carrier geometry rechecked separately below.",
+      "finalCarrierExports": 1,
+      "carrierLabelPanelClearance": "passed in actual SVG; greater than 0.5 mm",
+      "reportSpecimens": 86,
+      "reportChecks": "All modes, sources, keyboard, blink, PNG download, 390px mobile, offline atlas; passed",
+      "allFormatRenders": 878
+    },
+    "firefox": {
+      "version": "142.0.1",
+      "fullTypographyChecks": 81,
+      "fullCoverageNote": "Full font/export suite before final carrier panel/label clearance adjustment. Final carrier geometry rechecked separately below.",
+      "finalCarrierExports": 1,
+      "carrierLabelPanelClearance": "passed in actual SVG; greater than 0.5 mm",
+      "reportSpecimens": 86,
+      "reportChecks": "All modes, sources, keyboard, blink, PNG download, 390px mobile, offline atlas; passed",
+      "allFormatRenders": 0
+    },
+    "webkit": {
+      "version": "26.0",
+      "fullTypographyChecks": 81,
+      "fullCoverageNote": "Full font/export suite before final carrier panel/label clearance adjustment. Final carrier geometry rechecked separately below.",
+      "finalCarrierExports": 1,
+      "carrierLabelPanelClearance": "passed in actual SVG; greater than 0.5 mm",
+      "reportSpecimens": 86,
+      "reportChecks": "All modes, sources, keyboard, blink, PNG download, 390px mobile, offline atlas; passed",
+      "allFormatRenders": 0
+    }
+  }
+}

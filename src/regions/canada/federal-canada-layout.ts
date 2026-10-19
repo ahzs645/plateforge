@@ -17,9 +17,9 @@ export function federalCanadaLayout({id,label,source,note,apec=false,mapleLeaves
     art:[...(mapleLeaves?[
       {art:'official-maple-leaf',x:16,y:12,width:20,height:20,role:'maple-left'},
       {art:'official-maple-leaf',x:264,y:12,width:20,height:20,role:'maple-right'},
-    ]:[]),...(apec?[{art:'official-apec-sticker',x:18,y:55,width:82,height:70,role:'apec-sticker'}]:[])],
-    legends:[{text:'CANADA',x:150,baseline:38,cap:21,maxWidth:120,die:'bc-legend-1964',
+    ]:[]),...(apec?[{art:'official-apec-sticker',x:19,y:47,width:108,height:71,role:'apec-sticker'}]:[])],
+    legends:[{text:'CANADA',x:150,baseline:38,cap:21,maxWidth:120,die:apec?'bc-corrected-federal-country':'bc-legend-1964',
       color:countryColor,role:'country',spread:true}],
-    serial:{x:apec?196:150,baseline:127,cap:66,maxWidth:apec?170:262,die:'bc-astro-4'},
+    serial:{x:apec?205:150,baseline:apec?118:127,cap:apec?71:66,maxWidth:apec?158:262,die:apec?'ca-apec-military-serial':'bc-astro-4'},
   };
 }

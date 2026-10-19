@@ -102,6 +102,10 @@ registerArtwork('bc-poppy', poppyImage);
 registerArtwork('canada-flag', { viewBox: [40, 20], draw: canadaFlag });
 registerArtwork('bc-memorial-cross', memorialCrossImage);
 registerArtwork('bc-collector-tilde', { viewBox: [20, 8], draw: tilde, aspect: 'stretch' });
+// The enlarged B8-0764 photograph has a shallow wave, rather than a straight dash.
+registerArtwork('bc-collector-mc-wave', {viewBox:[20,5],aspect:'stretch',draw:()=>[
+  n('path',{d:'M0 1 C5 3 8 3 12 1.5 C15 .4 18 .7 20 1.5 V4 C17 3 15 3 12 4 C8 5.5 4 5 0 3.5 Z',fill:'currentColor','data-part':'collector-wave'}),
+]});
 registerArtwork('bc-vintage-car-solid-hubs', { viewBox: [VINTAGE_CAR_BOX[2], VINTAGE_CAR_BOX[3]], draw: vintageCar('solidHubs') });
 registerArtwork('bc-vintage-car-open-hubs', { viewBox: [VINTAGE_CAR_BOX[2], VINTAGE_CAR_BOX[3]], draw: vintageCar('openHubs') });
 registerArtwork('bc-vintage-car-prototype', { viewBox: [PROTOTYPE_CAR_BOX[2], PROTOTYPE_CAR_BOX[3]], draw: prototypeCar });

@@ -1,8 +1,8 @@
 {
   "1970": {
     "lineBreaks": "BRITISH / COLUMBIA under outlined 70.",
-    "finding": "Province was too narrow and too tall; add photographed tracking and lower cap height. Circular outline-zero proportions corrected.",
-    "fontEvidence": "Wide squared capitals compared to period Microgramma/Eurostile specimens. Orbitron Black is a native open-font reconstruction candidate, not historical attribution.",
+    "finding": "Rounded square province capitals replace the angular cut-out candidate; heavier concentric outline numerals. Small original limits contour certainty.",
+    "fontEvidence": "Native Russo One outlines are a visual candidate for the rounded square printed capitals, not a historical font identification.",
     "runs": {
       "decal-year": [
         {
@@ -17,19 +17,19 @@
       "decal-legend": [
         {
           "x": 0.5,
-          "baseline": 0.694,
-          "cap": 0.123,
+          "baseline": 0.66,
+          "cap": 0.12,
           "width": 0.65,
-          "profile": "orbitron-900",
-          "tracking": 10
+          "profile": "russoone-400",
+          "tracking": 30
         },
         {
           "x": 0.5,
-          "baseline": 0.85,
-          "cap": 0.123,
+          "baseline": 0.81,
+          "cap": 0.12,
           "width": 0.8,
-          "profile": "orbitron-900",
-          "tracking": 10
+          "profile": "russoone-400",
+          "tracking": 45
         }
       ]
     },
@@ -2869,27 +2869,27 @@
   },
   "2014": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "NOV is too far left and the date group too high. Move month inward and put two serif province columns in the gap.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "finding": "Heavier native Anton month/year candidate with native spacing; separate serif province and broader bold control figures. July 2017 layout transition retained.",
+    "fontEvidence": "Native Anton 400 date outlines and native Nimbus Sans Bold control figures compared against the credited specimen; no horizontal glyph distortion or historical font attribution.",
     "runs": {
       "decal-month": [
         {
-          "x": 0.09,
+          "x": 0.055,
           "baseline": 0.66,
           "cap": 0.58,
-          "width": 0.32,
-          "profile": "heavy-month",
+          "width": 0.35,
+          "profile": "anton-400",
           "tracking": 0,
           "anchor": "start"
         }
       ],
       "decal-year": [
         {
-          "x": 0.95,
+          "x": 0.965,
           "baseline": 0.66,
           "cap": 0.58,
-          "width": 0.45,
-          "profile": "heavy-year",
+          "width": 0.47,
+          "profile": "anton-400",
           "tracking": 0,
           "anchor": "end"
         }
@@ -2918,9 +2918,9 @@
         {
           "x": 0.755,
           "baseline": 0.905,
-          "cap": 0.18,
-          "width": 0.44,
-          "profile": "control-bold",
+          "cap": 0.17,
+          "width": 0.39,
+          "profile": "normal",
           "tracking": 0
         }
       ]
@@ -2931,31 +2931,31 @@
       229,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-10-18"
   },
   "2015": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "JAN collided with the vertical province. Move the province columns right and lower the year cap slightly.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "finding": "Heavier native Anton month/year candidate with native spacing; separate serif province and broader bold control figures. July 2017 layout transition retained.",
+    "fontEvidence": "Native Anton 400 date outlines and native Nimbus Sans Bold control figures compared against the credited specimen; no horizontal glyph distortion or historical font attribution.",
     "runs": {
       "decal-month": [
         {
-          "x": 0.09,
+          "x": 0.055,
           "baseline": 0.66,
           "cap": 0.58,
-          "width": 0.32,
-          "profile": "heavy-month",
+          "width": 0.35,
+          "profile": "anton-400",
           "tracking": 0,
           "anchor": "start"
         }
       ],
       "decal-year": [
         {
-          "x": 0.95,
+          "x": 0.965,
           "baseline": 0.66,
           "cap": 0.58,
-          "width": 0.45,
-          "profile": "heavy-year",
+          "width": 0.47,
+          "profile": "anton-400",
           "tracking": 0,
           "anchor": "end"
         }
@@ -2984,9 +2984,9 @@
         {
           "x": 0.755,
           "baseline": 0.905,
-          "cap": 0.18,
-          "width": 0.44,
-          "profile": "control-bold",
+          "cap": 0.17,
+          "width": 0.39,
+          "profile": "normal",
           "tracking": 0
         }
       ]
@@ -2997,31 +2997,31 @@
       246,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-10-18"
   },
   "2016": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Keep the full 2016 date; move vertical province off the month and widen the footer control slightly.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "finding": "Heavier native Anton month/year candidate with native spacing; separate serif province and broader bold control figures. July 2017 layout transition retained.",
+    "fontEvidence": "Native Anton 400 date outlines and native Nimbus Sans Bold control figures compared against the credited specimen; no horizontal glyph distortion or historical font attribution.",
     "runs": {
       "decal-month": [
         {
-          "x": 0.09,
+          "x": 0.055,
           "baseline": 0.66,
           "cap": 0.58,
-          "width": 0.32,
-          "profile": "heavy-month",
+          "width": 0.35,
+          "profile": "anton-400",
           "tracking": 0,
           "anchor": "start"
         }
       ],
       "decal-year": [
         {
-          "x": 0.95,
+          "x": 0.965,
           "baseline": 0.66,
           "cap": 0.58,
-          "width": 0.45,
-          "profile": "heavy-year",
+          "width": 0.47,
+          "profile": "anton-400",
           "tracking": 0,
           "anchor": "end"
         }
@@ -3050,9 +3050,9 @@
         {
           "x": 0.755,
           "baseline": 0.905,
-          "cap": 0.18,
-          "width": 0.44,
-          "profile": "control-bold",
+          "cap": 0.17,
+          "width": 0.39,
+          "profile": "normal",
           "tracking": 0
         }
       ]
@@ -3063,31 +3063,31 @@
       239,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-10-18"
   },
   "2017": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "JAN\u2013JUN retain the earlier large square-corner design. JUL\u2013DEC use the documented smaller lettering and rounded-corner design.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "finding": "Heavier native Anton month/year candidate with native spacing; separate serif province and broader bold control figures. July 2017 layout transition retained.",
+    "fontEvidence": "Native Anton 400 date outlines and native Nimbus Sans Bold control figures compared against the credited specimen; no horizontal glyph distortion or historical font attribution.",
     "runs": {
       "decal-month": [
         {
-          "x": 0.09,
+          "x": 0.055,
           "baseline": 0.66,
           "cap": 0.58,
-          "width": 0.32,
-          "profile": "heavy-month",
+          "width": 0.35,
+          "profile": "anton-400",
           "tracking": 0,
           "anchor": "start"
         }
       ],
       "decal-year": [
         {
-          "x": 0.95,
+          "x": 0.965,
           "baseline": 0.66,
           "cap": 0.58,
-          "width": 0.45,
-          "profile": "heavy-year",
+          "width": 0.47,
+          "profile": "anton-400",
           "tracking": 0,
           "anchor": "end"
         }
@@ -3116,9 +3116,9 @@
         {
           "x": 0.755,
           "baseline": 0.905,
-          "cap": 0.18,
-          "width": 0.44,
-          "profile": "control-bold",
+          "cap": 0.17,
+          "width": 0.39,
+          "profile": "normal",
           "tracking": 0
         }
       ]
@@ -3129,7 +3129,7 @@
       235,
       100
     ],
-    "reviewedOn": "2026-10-06",
+    "reviewedOn": "2026-10-18",
     "layout": {
       "cornerRadius": 0
     },
@@ -3143,26 +3143,21 @@
               "x": 0.11,
               "baseline": 0.6,
               "cap": 0.47,
-              "width": 0.335,
-              "profile": "heavy-month",
+              "width": 0.32,
+              "profile": "anton-400",
               "tracking": 0,
               "anchor": "start"
             }
           ],
           "decal-year": [
             {
-              "x": 0.91,
+              "x": 0.93,
               "baseline": 0.6,
               "cap": 0.47,
               "width": 0.445,
-              "profile": "heavy-year",
+              "profile": "anton-400",
               "tracking": 0,
-              "anchor": "end",
-              "kerning": {
-                "20": -2.34,
-                "01": -1.84,
-                "17": -6.3
-              }
+              "anchor": "end"
             }
           ],
           "decal-legend": [
@@ -3191,7 +3186,7 @@
               "baseline": 0.92,
               "cap": 0.165,
               "width": 0.39,
-              "profile": "control-bold",
+              "profile": "normal",
               "tracking": 0
             }
           ]
@@ -3215,8 +3210,8 @@
   },
   "2018": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Late layout needs an inset month and narrower vertical province. Increase serif height slightly without changing its orientation.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "finding": "Heavier native Anton month/year candidate with native spacing; separate serif province and broader bold control figures. July 2017 layout transition retained.",
+    "fontEvidence": "Native Anton 400 date outlines and native Nimbus Sans Bold control figures compared against the credited specimen; no horizontal glyph distortion or historical font attribution.",
     "runs": {
       "decal-month": [
         {
@@ -3224,7 +3219,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.32,
-          "profile": "heavy-month",
+          "profile": "anton-400",
           "tracking": 0,
           "anchor": "start"
         }
@@ -3235,7 +3230,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.45,
-          "profile": "heavy-year",
+          "profile": "anton-400",
           "tracking": 0,
           "anchor": "end"
         }
@@ -3264,9 +3259,9 @@
         {
           "x": 0.755,
           "baseline": 0.905,
-          "cap": 0.18,
-          "width": 0.44,
-          "profile": "control-bold",
+          "cap": 0.17,
+          "width": 0.39,
+          "profile": "normal",
           "tracking": 0
         }
       ]
@@ -3277,12 +3272,12 @@
       231,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-10-18"
   },
   "2019": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "JAN is too far left and province too tall. Reduce vertical serif size and lower its group to match this specimen.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "finding": "Heavier native Anton month/year candidate with native spacing; separate serif province and broader bold control figures. July 2017 layout transition retained.",
+    "fontEvidence": "Native Anton 400 date outlines and native Nimbus Sans Bold control figures compared against the credited specimen; no horizontal glyph distortion or historical font attribution.",
     "runs": {
       "decal-month": [
         {
@@ -3290,7 +3285,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.32,
-          "profile": "heavy-month",
+          "profile": "anton-400",
           "tracking": 0,
           "anchor": "start"
         }
@@ -3301,7 +3296,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.45,
-          "profile": "heavy-year",
+          "profile": "anton-400",
           "tracking": 0,
           "anchor": "end"
         }
@@ -3330,9 +3325,9 @@
         {
           "x": 0.755,
           "baseline": 0.905,
-          "cap": 0.18,
-          "width": 0.44,
-          "profile": "control-bold",
+          "cap": 0.17,
+          "width": 0.39,
+          "profile": "normal",
           "tracking": 0
         }
       ]
@@ -3343,12 +3338,12 @@
       239,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-10-18"
   },
   "2020": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Keep the photographed eight zeroes as sample control; move month inward and reduce the vertical province.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "finding": "Heavier native Anton month/year candidate with native spacing; separate serif province and broader bold control figures. July 2017 layout transition retained.",
+    "fontEvidence": "Native Anton 400 date outlines and native Nimbus Sans Bold control figures compared against the credited specimen; no horizontal glyph distortion or historical font attribution.",
     "runs": {
       "decal-month": [
         {
@@ -3356,7 +3351,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.32,
-          "profile": "heavy-month",
+          "profile": "anton-400",
           "tracking": 0,
           "anchor": "start"
         }
@@ -3367,7 +3362,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.45,
-          "profile": "heavy-year",
+          "profile": "anton-400",
           "tracking": 0,
           "anchor": "end"
         }
@@ -3396,9 +3391,9 @@
         {
           "x": 0.755,
           "baseline": 0.905,
-          "cap": 0.18,
-          "width": 0.44,
-          "profile": "control-bold",
+          "cap": 0.17,
+          "width": 0.39,
+          "profile": "normal",
           "tracking": 0
         }
       ]
@@ -3409,12 +3404,12 @@
       229,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-10-18"
   },
   "2021": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "JUL was too far left. Move it inward and reduce the two serif columns; keep readable control 36946964.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "finding": "Heavier native Anton month/year candidate with native spacing; separate serif province and broader bold control figures. July 2017 layout transition retained.",
+    "fontEvidence": "Native Anton 400 date outlines and native Nimbus Sans Bold control figures compared against the credited specimen; no horizontal glyph distortion or historical font attribution.",
     "runs": {
       "decal-month": [
         {
@@ -3422,7 +3417,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.32,
-          "profile": "heavy-month",
+          "profile": "anton-400",
           "tracking": 0,
           "anchor": "start"
         }
@@ -3433,7 +3428,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.45,
-          "profile": "heavy-year",
+          "profile": "anton-400",
           "tracking": 0,
           "anchor": "end"
         }
@@ -3462,9 +3457,9 @@
         {
           "x": 0.755,
           "baseline": 0.905,
-          "cap": 0.18,
-          "width": 0.44,
-          "profile": "control-bold",
+          "cap": 0.17,
+          "width": 0.39,
+          "profile": "normal",
           "tracking": 0
         }
       ]
@@ -3475,12 +3470,12 @@
       230,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-10-18"
   },
   "2022": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "MAR was too wide and touched the vertical province. Use a narrower whole-run limit and distinct serif columns.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "finding": "Heavier native Anton month/year candidate with native spacing; separate serif province and broader bold control figures. July 2017 layout transition retained.",
+    "fontEvidence": "Native Anton 400 date outlines and native Nimbus Sans Bold control figures compared against the credited specimen; no horizontal glyph distortion or historical font attribution.",
     "runs": {
       "decal-month": [
         {
@@ -3488,7 +3483,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.32,
-          "profile": "heavy-month",
+          "profile": "anton-400",
           "tracking": 0,
           "anchor": "start"
         }
@@ -3499,7 +3494,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.45,
-          "profile": "heavy-year",
+          "profile": "anton-400",
           "tracking": 0,
           "anchor": "end"
         }
@@ -3528,9 +3523,9 @@
         {
           "x": 0.755,
           "baseline": 0.905,
-          "cap": 0.18,
-          "width": 0.44,
-          "profile": "control-bold",
+          "cap": 0.17,
+          "width": 0.39,
+          "profile": "normal",
           "tracking": 0
         }
       ]
@@ -3541,12 +3536,12 @@
       238,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-10-18"
   },
   "2023": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "MAR and the province were cramped. Move month inward, narrow its whole-run limit and separate both serif columns.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "finding": "Heavier native Anton month/year candidate with native spacing; separate serif province and broader bold control figures. July 2017 layout transition retained.",
+    "fontEvidence": "Native Anton 400 date outlines and native Nimbus Sans Bold control figures compared against the credited specimen; no horizontal glyph distortion or historical font attribution.",
     "runs": {
       "decal-month": [
         {
@@ -3554,7 +3549,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.32,
-          "profile": "heavy-month",
+          "profile": "anton-400",
           "tracking": 0,
           "anchor": "start"
         }
@@ -3565,7 +3560,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.45,
-          "profile": "heavy-year",
+          "profile": "anton-400",
           "tracking": 0,
           "anchor": "end"
         }
@@ -3594,9 +3589,9 @@
         {
           "x": 0.755,
           "baseline": 0.905,
-          "cap": 0.18,
-          "width": 0.44,
-          "profile": "control-bold",
+          "cap": 0.17,
+          "width": 0.39,
+          "profile": "normal",
           "tracking": 0
         }
       ]
@@ -3607,6 +3602,6 @@
       234,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-10-18"
   }
 }

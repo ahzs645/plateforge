@@ -6,7 +6,7 @@ upload was compared; Regular's lighter stroke is closer to the supplied B00~000
 photograph. All glyphs preserve native advances, side bearings and proportions,
 with one H-cap scale per line. The letters are flat screened artwork, outside
 the serial's optional embossed relief. The small MULTI-VEHICLE subtitle uses a
-separate plain sans substitute. Historical production version is unconfirmed.
+separate outlined Nimbus Roman Bold visual candidate. Collector has explicit tighter tracking; British/Columbia retain native spacing. Historical production version is unconfirmed.
 
 Regenerate the fixed-word paths with:
 
@@ -25,8 +25,8 @@ family's outlines. Unobserved characters retain the profile's constructed
 fallback; this does not certify every physical die or character contour.
 
 The full-size separator is a filled wave with sheared ends, guided by B00~000.
-Motorcycle variants retain the straight dash seen on their photographs.
-Full-photo comparisons for all five presets are published at
+Motorcycle variants use a separate shallow wave guided by the enlarged separator crop; the previous straight-dash interpretation was incorrect.
+Current comparisons are in `public/bc-visual-review/`. The earlier snapshots for all five presets remain at
 `public/bc-font-comparisons/collector/index.html`; source photographs retain
 their paint, wear and perspective. Whole-photo framing is approximate.
 

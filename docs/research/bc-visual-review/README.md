@@ -9,10 +9,9 @@ B.C. serials, logos or printed legends are exact. The interactive report is at
 
 - Chromium 141.0.7390.37 rendered the same deterministic default inputs for all
   **448 B.C. formats** from main `5c8538a` and the reviewed branch sources, with
-  research lettering loaded. **93 formats** exceed 0.1% changed pixels. Most
-  changes are portable Noto text substitutions; the issued 1994 Royal visit
-  badge placement is an intentional artwork placement correction.
-- **85 photographed specimens** receive three-way comparisons: **30 plates**
+  research lettering loaded. **100 formats** exceed 0.1% changed pixels. Changes include portable
+  Noto substitutions and the source-guided corrections described below.
+- **86 photographed specimens** receive three-way comparisons: **31 plates**
   and all **55 catalogued renewal decals**. The collection opens with logos.
   Monograms, totems, waving and full-face flags, personalized flowers, the
   Olympic mountain-sun, Centennial, royal, APEC and governor marks are included.
@@ -20,8 +19,11 @@ B.C. serials, logos or printed legends are exact. The interactive report is at
   and equal-height overlays. Preserve original width proportions; do not stretch
   a source crop to make its contour agree with a reconstruction. Covered artwork
   (the 1995 Centennial emblem behind a renewal panel) has no shape comparison.
-- The supplied logo and glyph masters remain unchanged. The review found and
-  corrected one clear **placement** mismatch: the 1994 issued Royal visit badge.
+- Original supplied logo and glyph master files remain unchanged. Separate
+  derived lettering, spacing and print compositions correct the flagged APEC,
+  carrier, bicycle, collector and renewal specimens. See
+  [the correction ledger](../bc-visual-corrections/README.md). The initial review
+  also corrected the **placement** of the 1994 issued Royal visit badge.
   See `royal-1994-placement.json`. Its prototype retains its previous placement
   because that specimen needs independent calibration.
 - The two governor designs need different source pairings. The 2003 and 2016
@@ -42,10 +44,10 @@ each path from its bytes with NUL, as the renderer does.
    interlock width, bowls, diagonals, leaf proportions and bird contours. Keep
    these as explicit reconstructions. Obtain larger, frontal specimens before
    replacing supplied contours or asserting shared tooling between classes.
-2. **Carrier full-face flag:** source geometry is retained, but sun placement,
-   screened printing, white wash and passenger/carrier labels differ visibly.
-   Calibrate the 2005 and 2024 plates independently before defining shared print
-   settings. Their decal dates do not establish manufacture dates.
+2. **Carrier full-face flag:** upper compression, crown/sun arrangement, province,
+   class labels and serial spacing now have a separate print composition checked
+   against 2005 and 2024. Exact halftone texture, palette, wave contours and serial
+   curves remain unresolved. Decal dates do not establish manufacture dates.
 3. **Older governor arms:** the flat filled reconstruction has substantial
    supporter/shield contour and relief differences. It needs its own traced
    source study rather than borrowing the circular crest.
@@ -53,11 +55,13 @@ each path from its bytes with NUL, as the renderer does.
    APEC globe/caption, Expo's final 6, gold Olympic legends and the governor
    shield/sun retain visible source limits. Supplied artwork is not an official
    historical production master. Treat print placement separately from paths.
-5. **Serials and decals:** bicycle lettering remains a broad construction;
-   collector serial paint/contours vary by source. Renewal colours, small text,
-   and barcode bars remain approximate. The barcode is synthetic and is not
-   decoded registration data. Tiny dogwood, Olympic and military APEC photos
-   support arrangement, not precise contour validation.
+5. **Serials and decals:** bicycles now separate outer lettering and centre
+   numerals, but irregular embossed contours remain constructed. Collector
+   serial paint/contours vary by source. Renewal colours, small text and generated
+   barcode bars remain approximate. The 2014 source barcode decodes to its
+   control; generated bars are synthetic. Enlarged APEC 149 improves military
+   figure evidence; 180/134 remain tiny. The newer date font is a heavier native
+   visual candidate, not a recovered historical typeface.
 
 These are documented reconstruction follow-ups, not hidden typography/export
 failures. The report exposes them beside the originals so later work can be
@@ -109,4 +113,6 @@ It never derives a historical accuracy percentage from photographic pixels.
 The CI browser matrix exercises every report specimen, available comparison
 mode, source asset, the inspector link, keyboard controls, blink, download and
 390-pixel mobile layout in Chromium, Firefox and WebKit. The separate typography
-suite covers actual application SVG/PNG/Tesla export and font-loading behavior.
+suite covers actual application SVG/PNG/Tesla export and font-loading behavior,
+including the corrected families and 2014/July 2017/2023 decal selections. All
+572 catalogue/month renderings pass printed-run bounds and collision checks.

@@ -482,8 +482,10 @@ const bicycles: Spec[] = [
     description: bikeDesc('City of Port Coquitlam', 'Unpainted tin shield: BICYCLE LICENSE, the number, PORT COQUITLAM and 1960.', docSize(85, 85, 'tin'), MFR) }),
   ...([[1953, 'dark on yellow', '#c8a63a', '#2a2418'], [1958, 'green on white', '#e4e4de', '#2a6a4a'], [1959, 'blue on maroon', '#5a1e28', '#6a9ad8']] as const).map(([year, words, bg, ink]) =>
     cycle(`prince-george-${year}`, 'Prince George', `${year} oval · ${words}`, { period: [year, year], era: 'bicycle-later', source: bike('PrinceGeorge', 'Prince George'), w: 130, h: 84, shell: 'oval', rim: 3, holes: 'round', hx: [0.24, 0.76], hy: [0.52], bg, ink,
-      arc: [['PR.GEORGE', 0.5, 0.95, 0.72, 0.17, 'top'], ['BICYCLE', 0.5, 0.02, 0.9, 0.17, 'bottom']], t: [['19', 0.12, 0.62, 0.19], [String(year).slice(2), 0.88, 0.62, 0.19]],
-      serial: [0.5, 0.62, 0.19, 0.4], grammar: nums(999),
+      die:'bc-pg-bicycle-legend',sdie:'bc-pg-bicycle-centre',
+      arc: [['PR.GEORGE', 0.5, 0.95, 0.72, 0.145, 'top'], ['BICYCLE', 0.5, 0.02, 0.9, 0.17, 'bottom']],
+      t: [['19', 0.155, 0.62, 0.15,{die:'bc-pg-bicycle-centre'}], [String(year).slice(2), 0.845, 0.62, 0.15,{die:'bc-pg-bicycle-centre'}]],
+      serial: [0.5, 0.62, 0.17, 0.4], grammar: nums(999),
       description: bikeDesc('City of Prince George', `Oval tin, ${words}: PR.GEORGE arched over 19 · number · ${String(year).slice(2)} and BICYCLE arched below (1953–59; the page leaves years and bylaws unresolved).`, tbd(130, 84), MFR) })),
   cycle('trail-1935', 'Trail', '1935–48', { period: [1935, 1948], era: 'bicycle-early', source: bike('Trail', 'Trail'), w: 140, h: 75, holes: 'round', hx: [0.23, 0.72], hy: [0.52], bg: '#ecebe4', ink: '#2a6a4a', rim: 2,
     t: [['BICYCLE LICENSE', 0.5, 0.32, 0.18, { mw: 0.88 }], ['19', 0.1, 0.63, 0.2], ['{yy}', 0.9, 0.63, 0.2], ['TRAIL-B.C.', 0.5, 0.92, 0.18, { mw: 0.74 }]], serial: [0.48, 0.63, 0.2, 0.38], grammar: nums(999),

@@ -37,7 +37,7 @@ try{
       await page.locator('#mode').selectOption(mode);
       if(mode!=='difference'||row.difference.changedFraction>0.001)assert(await page.locator('#overlay').evaluate(el=>{const data=el.getContext('2d').getImageData(0,0,900,500).data;return data.some((v,i)=>i%4!==3&&v<240)}),row.id+' '+mode+' empty overlay');
     }
-    if(['flag1989','centennial1986','lgcrest','decal-1976','carrier2005'].includes(row.id))await page.locator('.overlay').screenshot({path:path.join(evidence,row.id+'.png')});
+    if(['flag1989','centennial1986','lgcrest','decal-1970','decal-1976','decal-2014','apec149','carrier2005','collector-motorcycle'].includes(row.id)){await page.locator('#mode').selectOption('source');await page.locator('.overlay').screenshot({path:path.join(evidence,row.id+'.png')});}
   }
   await page.locator('#specimen').selectOption('flag1989');await page.waitForFunction(()=>document.getElementById('title').textContent.includes('Astrographic Classic'));
   await page.locator('#mode').selectOption('source');
@@ -55,7 +55,7 @@ try{
   await context.route(/^https?:/,route=>{offlineRequests.push(route.request().url());return route.abort()});
   await context.setOffline(name!=='webkit');await page.goto(pathToFileURL(path.resolve('typography-evidence/bc-visual/offline.html')).href);
   await page.locator('#title').filter({hasText:'1914'}).waitFor();await page.locator('#category').selectOption('all');
-  for(const index of [0,21,42,63,84]){
+  for(const index of [...new Set([0,21,42,63,84,manifest.cases.length-1])]){
     const row=manifest.cases[index];await page.locator('#specimen').selectOption(row.id);await page.waitForFunction(title=>document.getElementById('title').textContent===title,row.title);
     assert((await page.locator('#source').getAttribute('src')).startsWith('data:image/'));await page.locator('#mode').selectOption('source');
   }
