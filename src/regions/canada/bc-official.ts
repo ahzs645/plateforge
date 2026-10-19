@@ -482,7 +482,9 @@ const eventSpecs: Spec[] = [
   { id: 'events-royal-1994', label: '1994 Commonwealth Games visit', family: 'events', era: 'events-royal', period: [1994, 1994],
     recipe: flagBase('events-royal-1994', '1994 Royal Visit (Commonwealth Games)', SRC.royal, 'bc-astro-4', 'none', {
       ink: '#1e4fb0', fontLegends: [],
-      art: [cornerFlag, { art: 'official-royal-visit-1994', x: 55, y: 42, width: 62, height: 62, role: 'visit-badge' }],
+      // R1 photograph: badge bounds ~151,100–349,298 on the 800×411 crop.
+      // Register to the outer plate frame, retaining the supplied badge geometry.
+      art: [cornerFlag, { art: 'official-royal-visit-1994', x: 54, y: 35, width: 76, height: 76, role: 'visit-badge' }],
       panels: [{ x: 92, y: 117, width: 104, height: 23, radius: 0, rim: false, background: '#1e4fb0', ink: '#ffffff', role: 'games-city-decal',
         texts: [{ text: 'VICTORIA B.C.', x: 52, baseline: 17, cap: 13, maxWidth: 96, die: 'bc-commonwealth-helvetica-compressed', role: 'city', screened: true }] }],
       legends: [{ text: 'XV COMMONWEALTH GAMES', x: 150, baseline: 36, cap: 11.5, maxWidth: 232, die: 'bc-commonwealth-times-bolditalic', color: '#3a64b8', role: 'slogan', screened: true }],

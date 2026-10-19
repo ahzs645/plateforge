@@ -74,10 +74,26 @@ jobs:
           TYPOGRAPHY_BROWSER: ${{ matrix.browser }}
           TYPOGRAPHY_BROWSER_DEPS: ${{ runner.temp }}/typography-browser/package.json
         run: node scripts/typography-browser.mjs
+      - name: B.C. source photographs and logo overlay controls
+        env:
+          TYPOGRAPHY_BROWSER: ${{ matrix.browser }}
+          TYPOGRAPHY_BROWSER_DEPS: ${{ runner.temp }}/typography-browser/package.json
+        run: |
+          python3 scripts/bc-visual-review-offline.py
+          node scripts/bc-visual-review-smoke.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: typography-browser-${{ matrix.browser }}
-          path: typography-evidence/browser-${{ matrix.browser }}/
+          path: |
+            typography-evidence/browser-${{ matrix.browser }}/
+            typography-evidence/bc-report-browser-${{ matrix.browser }}/
+          if-no-files-found: error
+          retention-days: 14
+      - uses: actions/upload-artifact@v4
+        if: success() && matrix.browser == 'chromium'
+        with:
+          name: bc-visual-review-offline
+          path: typography-evidence/bc-visual/offline.html
           if-no-files-found: error
           retention-days: 14
