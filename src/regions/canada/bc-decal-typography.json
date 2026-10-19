@@ -2869,8 +2869,8 @@
   },
   "2014": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Heavier native Anton month/year candidate with native spacing; separate serif province and broader bold control figures. July 2017 layout transition retained.",
-    "fontEvidence": "Native Anton 400 date outlines and native Nimbus Sans Bold control figures compared against the credited specimen; no horizontal glyph distortion or historical font attribution.",
+    "finding": "Main\u2019s narrower month construction restored at the larger source-supported height, with heavier print weight. Separate Anton year, serif province and broader control retained; July 2017 layout transition preserved.",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances, with a 2.5-cap-unit same-ink stroke; no new horizontal scaling. Year uses native Anton and control uses native Nimbus Sans Bold. Visual candidates, not confirmed historical fonts.",
     "runs": {
       "decal-month": [
         {
@@ -2878,7 +2878,7 @@
           "baseline": 0.66,
           "cap": 0.58,
           "width": 0.35,
-          "profile": "anton-400",
+          "profile": "heavy-month-weighted",
           "tracking": 0,
           "anchor": "start"
         }
@@ -2935,8 +2935,8 @@
   },
   "2015": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Heavier native Anton month/year candidate with native spacing; separate serif province and broader bold control figures. July 2017 layout transition retained.",
-    "fontEvidence": "Native Anton 400 date outlines and native Nimbus Sans Bold control figures compared against the credited specimen; no horizontal glyph distortion or historical font attribution.",
+    "finding": "Main\u2019s narrower month construction restored at the larger source-supported height, with heavier print weight. Separate Anton year, serif province and broader control retained; July 2017 layout transition preserved.",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances, with a 2.5-cap-unit same-ink stroke; no new horizontal scaling. Year uses native Anton and control uses native Nimbus Sans Bold. Visual candidates, not confirmed historical fonts.",
     "runs": {
       "decal-month": [
         {
@@ -2944,7 +2944,7 @@
           "baseline": 0.66,
           "cap": 0.58,
           "width": 0.35,
-          "profile": "anton-400",
+          "profile": "heavy-month-weighted",
           "tracking": 0,
           "anchor": "start"
         }
@@ -3001,8 +3001,8 @@
   },
   "2016": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Heavier native Anton month/year candidate with native spacing; separate serif province and broader bold control figures. July 2017 layout transition retained.",
-    "fontEvidence": "Native Anton 400 date outlines and native Nimbus Sans Bold control figures compared against the credited specimen; no horizontal glyph distortion or historical font attribution.",
+    "finding": "Main\u2019s narrower month construction restored at the larger source-supported height, with heavier print weight. Separate Anton year, serif province and broader control retained; July 2017 layout transition preserved.",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances, with a 2.5-cap-unit same-ink stroke; no new horizontal scaling. Year uses native Anton and control uses native Nimbus Sans Bold. Visual candidates, not confirmed historical fonts.",
     "runs": {
       "decal-month": [
         {
@@ -3010,7 +3010,7 @@
           "baseline": 0.66,
           "cap": 0.58,
           "width": 0.35,
-          "profile": "anton-400",
+          "profile": "heavy-month-weighted",
           "tracking": 0,
           "anchor": "start"
         }
@@ -3067,8 +3067,8 @@
   },
   "2017": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Heavier native Anton month/year candidate with native spacing; separate serif province and broader bold control figures. July 2017 layout transition retained.",
-    "fontEvidence": "Native Anton 400 date outlines and native Nimbus Sans Bold control figures compared against the credited specimen; no horizontal glyph distortion or historical font attribution.",
+    "finding": "Main\u2019s narrower month construction restored at the larger source-supported height, with heavier print weight. Separate Anton year, serif province and broader control retained; July 2017 layout transition preserved.",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances, with a 2.5-cap-unit same-ink stroke; no new horizontal scaling. Year uses native Anton and control uses native Nimbus Sans Bold. Visual candidates, not confirmed historical fonts.",
     "runs": {
       "decal-month": [
         {
@@ -3076,7 +3076,7 @@
           "baseline": 0.66,
           "cap": 0.58,
           "width": 0.35,
-          "profile": "anton-400",
+          "profile": "heavy-month-weighted",
           "tracking": 0,
           "anchor": "start"
         }
@@ -3144,7 +3144,7 @@
               "baseline": 0.6,
               "cap": 0.47,
               "width": 0.32,
-              "profile": "anton-400",
+              "profile": "heavy-month-weighted",
               "tracking": 0,
               "anchor": "start"
             }
@@ -3210,8 +3210,8 @@
   },
   "2018": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Heavier native Anton month/year candidate with native spacing; separate serif province and broader bold control figures. July 2017 layout transition retained.",
-    "fontEvidence": "Native Anton 400 date outlines and native Nimbus Sans Bold control figures compared against the credited specimen; no horizontal glyph distortion or historical font attribution.",
+    "finding": "Main\u2019s narrower month construction restored at the larger source-supported height, with heavier print weight. Separate Anton year, serif province and broader control retained; July 2017 layout transition preserved.",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances, with a 2.5-cap-unit same-ink stroke; no new horizontal scaling. Year uses native Anton and control uses native Nimbus Sans Bold. Visual candidates, not confirmed historical fonts.",
     "runs": {
       "decal-month": [
         {
@@ -3219,7 +3219,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.32,
-          "profile": "anton-400",
+          "profile": "heavy-month-weighted",
           "tracking": 0,
           "anchor": "start"
         }
@@ -3276,8 +3276,8 @@
   },
   "2019": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Heavier native Anton month/year candidate with native spacing; separate serif province and broader bold control figures. July 2017 layout transition retained.",
-    "fontEvidence": "Native Anton 400 date outlines and native Nimbus Sans Bold control figures compared against the credited specimen; no horizontal glyph distortion or historical font attribution.",
+    "finding": "Main\u2019s narrower month construction restored at the larger source-supported height, with heavier print weight. Separate Anton year, serif province and broader control retained; July 2017 layout transition preserved.",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances, with a 2.5-cap-unit same-ink stroke; no new horizontal scaling. Year uses native Anton and control uses native Nimbus Sans Bold. Visual candidates, not confirmed historical fonts.",
     "runs": {
       "decal-month": [
         {
@@ -3285,7 +3285,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.32,
-          "profile": "anton-400",
+          "profile": "heavy-month-weighted",
           "tracking": 0,
           "anchor": "start"
         }
@@ -3342,8 +3342,8 @@
   },
   "2020": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Heavier native Anton month/year candidate with native spacing; separate serif province and broader bold control figures. July 2017 layout transition retained.",
-    "fontEvidence": "Native Anton 400 date outlines and native Nimbus Sans Bold control figures compared against the credited specimen; no horizontal glyph distortion or historical font attribution.",
+    "finding": "Main\u2019s narrower month construction restored at the larger source-supported height, with heavier print weight. Separate Anton year, serif province and broader control retained; July 2017 layout transition preserved.",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances, with a 2.5-cap-unit same-ink stroke; no new horizontal scaling. Year uses native Anton and control uses native Nimbus Sans Bold. Visual candidates, not confirmed historical fonts.",
     "runs": {
       "decal-month": [
         {
@@ -3351,7 +3351,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.32,
-          "profile": "anton-400",
+          "profile": "heavy-month-weighted",
           "tracking": 0,
           "anchor": "start"
         }
@@ -3408,8 +3408,8 @@
   },
   "2021": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Heavier native Anton month/year candidate with native spacing; separate serif province and broader bold control figures. July 2017 layout transition retained.",
-    "fontEvidence": "Native Anton 400 date outlines and native Nimbus Sans Bold control figures compared against the credited specimen; no horizontal glyph distortion or historical font attribution.",
+    "finding": "Main\u2019s narrower month construction restored at the larger source-supported height, with heavier print weight. Separate Anton year, serif province and broader control retained; July 2017 layout transition preserved.",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances, with a 2.5-cap-unit same-ink stroke; no new horizontal scaling. Year uses native Anton and control uses native Nimbus Sans Bold. Visual candidates, not confirmed historical fonts.",
     "runs": {
       "decal-month": [
         {
@@ -3417,7 +3417,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.32,
-          "profile": "anton-400",
+          "profile": "heavy-month-weighted",
           "tracking": 0,
           "anchor": "start"
         }
@@ -3474,8 +3474,8 @@
   },
   "2022": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Heavier native Anton month/year candidate with native spacing; separate serif province and broader bold control figures. July 2017 layout transition retained.",
-    "fontEvidence": "Native Anton 400 date outlines and native Nimbus Sans Bold control figures compared against the credited specimen; no horizontal glyph distortion or historical font attribution.",
+    "finding": "Main\u2019s narrower month construction restored at the larger source-supported height, with heavier print weight. Separate Anton year, serif province and broader control retained; July 2017 layout transition preserved.",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances, with a 2.5-cap-unit same-ink stroke; no new horizontal scaling. Year uses native Anton and control uses native Nimbus Sans Bold. Visual candidates, not confirmed historical fonts.",
     "runs": {
       "decal-month": [
         {
@@ -3483,7 +3483,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.32,
-          "profile": "anton-400",
+          "profile": "heavy-month-weighted",
           "tracking": 0,
           "anchor": "start"
         }
@@ -3540,8 +3540,8 @@
   },
   "2023": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Heavier native Anton month/year candidate with native spacing; separate serif province and broader bold control figures. July 2017 layout transition retained.",
-    "fontEvidence": "Native Anton 400 date outlines and native Nimbus Sans Bold control figures compared against the credited specimen; no horizontal glyph distortion or historical font attribution.",
+    "finding": "Main\u2019s narrower month construction restored at the larger source-supported height, with heavier print weight. Separate Anton year, serif province and broader control retained; July 2017 layout transition preserved.",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances, with a 2.5-cap-unit same-ink stroke; no new horizontal scaling. Year uses native Anton and control uses native Nimbus Sans Bold. Visual candidates, not confirmed historical fonts.",
     "runs": {
       "decal-month": [
         {
@@ -3549,7 +3549,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.32,
-          "profile": "anton-400",
+          "profile": "heavy-month-weighted",
           "tracking": 0,
           "anchor": "start"
         }

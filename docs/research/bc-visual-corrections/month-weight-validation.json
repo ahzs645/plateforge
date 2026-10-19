@@ -1,0 +1,82 @@
+{
+  "schema": "plateforge.bc-month-weight-validation/v1",
+  "reviewedOn": "2026-10-18",
+  "captureSourceSha256": "286a4fd390359b6cc2f9e38533f2d40aac2fd99ffebef7079bd0a1609b87cdd4",
+  "previousMain": "5c8538a3d2abcd705de01b1ebe3383d8000df6e8",
+  "unitTests": {
+    "passed": 1947,
+    "files": 67
+  },
+  "catalogueMonths": {
+    "renderings": 572,
+    "failures": 0,
+    "includesAddedInkPadding": true
+  },
+  "originalGlyphPathsAndAdvances": "unchanged; regression-tested against original month profile",
+  "monthStrokeCapUnits": 2.5,
+  "browsers": {
+    "chromium": {
+      "version": "141.0.7390.37",
+      "monthExportChecks": 3,
+      "selections": [
+        "2014 NOV",
+        "2017 JUL",
+        "2023 MAY"
+      ],
+      "outputs": [
+        "preview",
+        "SVG",
+        "PNG",
+        "Tesla PNG"
+      ],
+      "passed": true
+    },
+    "firefox": {
+      "version": "142.0.1",
+      "monthExportChecks": 3,
+      "selections": [
+        "2014 NOV",
+        "2017 JUL",
+        "2023 MAY"
+      ],
+      "outputs": [
+        "preview",
+        "SVG",
+        "PNG",
+        "Tesla PNG"
+      ],
+      "passed": true
+    },
+    "webkit": {
+      "version": "26.0",
+      "monthExportChecks": 3,
+      "selections": [
+        "2014 NOV",
+        "2017 JUL",
+        "2023 MAY"
+      ],
+      "outputs": [
+        "preview",
+        "SVG",
+        "PNG",
+        "Tesla PNG"
+      ],
+      "passed": true
+    }
+  },
+  "paintedMonthBounds": {
+    "2014 NOV": {
+      "x": 12.855,
+      "y": 8.461,
+      "right": 93.339,
+      "bottom": 67.793
+    },
+    "2023 MAR": {
+      "x": 21.099,
+      "y": 17.798,
+      "right": 94.871,
+      "bottom": 64.57
+    }
+  },
+  "report": "All 86 source cases and controls pass Chromium, including online-to-offline navigation. The required CI browser matrix repeats the complete report and 81 export/font checks on the pushed revision before merge."
+}

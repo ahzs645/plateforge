@@ -7,12 +7,21 @@ const manifest = embeddedLedger ? JSON.parse(embeddedLedger.textContent) : await
   return response.json();
 });
 const images = new Map();
-async function loadImage(url) {
-  url = inlineImages[url] ?? url;
-  if (!images.has(url)) images.set(url, (async () => {
-    const image = new Image(); image.src = url; await image.decode(); return image;
-  })());
-  return images.get(url);
+async function loadImage(asset) {
+  const url = inlineImages[asset] ?? asset;
+  if (images.has(url)) {
+    const cached = images.get(url); images.delete(url); images.set(url, cached); return cached;
+  }
+  const pending = (async () => {
+    const image = new Image(); image.src = url;
+    try { await image.decode(); return image; }
+    catch (error) { images.delete(url); throw Error(`Image ${asset}: ${error.message}`); }
+  })();
+  images.set(url, pending);
+  // Each full atlas decodes to 45 MB. Retaining every atlas and photograph can
+  // exhaust the decoder while moving through the report or its offline copy.
+  while (images.size > 9) images.delete(images.keys().next().value);
+  return pending;
 }
 function canvas(width = 900, height = 500) {
   const value = document.createElement('canvas'); value.width = width; value.height = height; return value;
@@ -21,6 +30,7 @@ function crop(image, rect) {
   const result = canvas(Math.max(1, Math.round(rect[2])), Math.max(1, Math.round(rect[3])));
   result.getContext('2d').drawImage(image, ...rect, 0, 0, result.width, result.height); return result;
 }
+function releaseCanvas(value) { value.width = value.height = 0; }
 function photoCrop(image, box) {
   const [x0, y0, x1, y1] = box;
   return crop(image, [x0 * image.width, y0 * image.height, (x1 - x0) * image.width, (y1 - y0) * image.height]);
@@ -48,8 +58,8 @@ function draw() {
       const difference = Math.max(...[0, 1, 2].map((c) => Math.abs(x.data[i + c] - y.data[i + c])));
       x.data[i] = 255; x.data[i + 1] = x.data[i + 2] = 255 - difference; x.data[i + 3] = 255;
     }
-    context.putImageData(x, 0, 0);
-    $('alignment').textContent = 'Red shows pixel differences between captured main and branch renders. This view includes antialiasing; the recorded measurements use the native captures.';
+    context.putImageData(x, 0, 0); releaseCanvas(a); releaseCanvas(b);
+    $('alignment').textContent = 'Red shows pixel differences between captured previous-main and revised renders. This view includes antialiasing; the recorded measurements use the native captures.';
     return;
   }
   let underneath = main, overlay = current, height;
@@ -64,9 +74,11 @@ function draw() {
   }
   fit(context, underneath, {height});
   fit(context, overlay, {height, alpha: blinkTimer ? Number(blinkState) : Number($('opacity').value), scale: Number($('scale').value), dx: Number($('shift-x').value), dy: Number($('shift-y').value)});
+  if (underneath !== main) releaseCanvas(underneath);
+  if (overlay !== current) releaseCanvas(overlay);
   $('alignment').textContent = mode === 'shape'
     ? 'Shape comparison: cropped logo, equal height and centre, with width proportions retained. White space, paint and photographic perspective can still affect this visual comparison.'
-    : mode === 'source' ? record.alignment : 'Main and branch share the same physical plate coordinates and deterministic inputs. The sliders allow exploratory adjustment; Reset restores captured placement.';
+    : mode === 'source' ? record.alignment : 'Previous main and the revision share the same physical plate coordinates and deterministic inputs. The sliders allow exploratory adjustment; Reset restores captured placement.';
 }
 async function show() {
   reset(); const version = ++renderVersion;
@@ -74,6 +86,7 @@ async function show() {
   if (!record) return;
   const [original, mainAtlas, currentAtlas] = await Promise.all([loadImage(record.source), loadImage(record.images.main.file), loadImage(record.images.current.file)]);
   if (version !== renderVersion) return;
+  if (active) { releaseCanvas(active.main); releaseCanvas(active.current); }
   active = {record, original, main: crop(mainAtlas, record.images.main.rect), current: crop(currentAtlas, record.images.current.rect)};
   $('title').textContent = record.title;
   $('finding').textContent = `${record.status}. ${record.finding ?? record.existingReview ?? ''}`;
@@ -86,7 +99,7 @@ async function show() {
     const context = $(state).getContext('2d'); context.fillStyle = 'white'; context.fillRect(0, 0, 900, 500); fit(context, active[state]);
   }
   const diff = record.difference;
-  $('measurement').textContent = `Main → branch: ${(diff.changedFraction * 100).toFixed(3)}% of native pixels change by more than 16/255; ${(diff.perceptualChangedFraction * 100).toFixed(3)}% with antialiasing excluded. These measurements compare digital renders, not the photograph.`;
+  $('measurement').textContent = `Previous main → revision: ${(diff.changedFraction * 100).toFixed(3)}% of native pixels change by more than 16/255; ${(diff.perceptualChangedFraction * 100).toFixed(3)}% with antialiasing excluded. These measurements compare digital renders, not the photograph.`;
   $('metadata').textContent = JSON.stringify({source: record.sourceUrl, referencePixels: record.referencePixels, referenceBytesSha256: record.referenceBytesSha256, referenceByteScope: record.referenceByteScope, storedPhotoSha256: record.sourceStoredSha256, renderSourceSha256: manifest.renderSourceSha256, inputs: record.parts, research: record.research, focus: record.focus, captured: record.states, limits: record.limits}, null, 2);
   history.replaceState(null, '', '#' + record.id); draw();
 }

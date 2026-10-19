@@ -22,6 +22,8 @@ export interface DieProfile {
   label: string;
   maker?: string;
   params: SkeletonParams;
+  /** Same-ink stroke on filled print outlines, in cap units; advances stay unchanged. */
+  filledStroke?: number;
   /** Hand-drawn replacements for individual glyphs. */
   overrides?: Readonly<Record<string, SkeletonGlyph>>;
   /** Research-only profiles may reject unobserved characters instead of inventing a fallback. */
@@ -97,14 +99,15 @@ export function buildDieText(props: DieTextProps): DieRun {
       ...(p.profile.researchChars?.has(char) ? { 'data-source': 'research', 'data-provenance': 'research-candidate', ...(p.profile.researchSourceUnits?.[char] ? { 'data-research-unit': p.profile.researchSourceUnits[char] } : {}) } : { 'data-provenance': p.profile.overrides?.[char] ? 'profile-override' : 'constructed' }), ...(glyph.stroke ? { strokeWidth: glyph.stroke } : {}),
       ...(glyph.cap ? { strokeLinecap: glyph.cap } : {}),
       // Traced outlines are filled shapes, not centrelines.
-      ...(glyph.fill ? { fill: p.ink, stroke: 'none', fillRule: 'evenodd' } : {}) },
+      ...(glyph.fill ? { fill: p.ink, stroke: p.profile.filledStroke ? p.ink : 'none', fillRule: 'evenodd',
+        ...(p.profile.filledStroke ? {strokeWidth:p.profile.filledStroke} : {}) } : {}) },
       ...glyph.paths.map((d) => n('path', { d })));
     cursor += glyph.advance + spacing + (pairAdjustments[i] ?? 0);
     return item;
   });
   const slant = p.profile.slant ? ` skewX(${-p.profile.slant})` : '';
   // Reduced runs keep the baseline; the cap height shrinks with the width.
-  const node = n('g', { 'data-role': p.role, 'data-die': p.profile.id, 'data-fit': fit, role: 'img', 'aria-label': p.text },
+  const node = n('g', { 'data-role': p.role, 'data-die': p.profile.id, 'data-fit': fit, ...(p.profile.filledStroke ? {'data-filled-stroke':p.profile.filledStroke,'data-ink-padding':round(p.profile.filledStroke*scale/2,5)} : {}), role: 'img', 'aria-label': p.text },
     n('title', {}, p.text),
     n('g', { transform: `translate(${round(left)} ${round(p.baseline - height)}) scale(${round(scale, 5)})${slant}`,
       fill: 'none', stroke: p.ink, strokeWidth: p.profile.params.stroke, strokeLinecap: 'square', strokeLinejoin: 'round' }, ...children));

@@ -56,7 +56,7 @@ try{
   await context.setOffline(name!=='webkit');await page.goto(pathToFileURL(path.resolve('typography-evidence/bc-visual/offline.html')).href);
   await page.locator('#title').filter({hasText:'1914'}).waitFor();await page.locator('#category').selectOption('all');
   for(const index of [...new Set([0,21,42,63,84,manifest.cases.length-1])]){
-    const row=manifest.cases[index];await page.locator('#specimen').selectOption(row.id);await page.waitForFunction(title=>document.getElementById('title').textContent===title,row.title);
+    const row=manifest.cases[index];await page.locator('#specimen').selectOption(row.id);await page.waitForFunction(title=>document.getElementById('title').textContent===title,row.title).catch(async error=>{throw Error(row.id+' offline: '+JSON.stringify(await page.evaluate(()=>({title:document.getElementById('title').textContent,finding:document.getElementById('finding').textContent})))+' '+JSON.stringify(errors)+' '+error)});
     assert((await page.locator('#source').getAttribute('src')).startsWith('data:image/'));await page.locator('#mode').selectOption('source');
   }
   assert.deepEqual(offlineRequests,[]);assert.deepEqual(errors,[]);

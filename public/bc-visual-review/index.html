@@ -3,14 +3,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>B.C. source and branch comparisons · PlateForge</title>
+  <title>B.C. source and revision comparisons · PlateForge</title>
   <link rel="stylesheet" href="review.css">
   <script src="review.js" type="module"></script>
 </head>
 <body>
   <header>
     <a href="../">← PlateForge</a>
-    <h1>B.C. source and branch comparisons</h1>
+    <h1>B.C. source and revision comparisons</h1>
     <p id="summary">Loading the reviewed specimens…</p>
     <p>Logo shape, plate placement and branch regressions are separate checks. Photographs retain wear, lighting and perspective; their overlays are visual evidence, not historical certification.</p>
   </header>
@@ -25,12 +25,12 @@
     <p><a id="source-link" target="_blank" rel="noreferrer">Original reference</a> · <a id="format-link">Open this format</a></p>
     <div class="panels">
       <figure><figcaption>Reference photograph · original proportions</figcaption><img id="source" alt=""></figure>
-      <figure><figcaption>Main · <span id="base-sha"></span></figcaption><canvas id="main" width="900" height="500"></canvas></figure>
-      <figure><figcaption>Branch · <span id="render-sha"></span></figcaption><canvas id="current" width="900" height="500"></canvas></figure>
+      <figure><figcaption>Previous main · <span id="base-sha"></span></figcaption><canvas id="main" width="900" height="500"></canvas></figure>
+      <figure><figcaption>Reviewed revision · <span id="render-sha"></span></figcaption><canvas id="current" width="900" height="500"></canvas></figure>
     </div>
     <section class="controls" aria-label="Overlay settings">
-      <label>Compare <select id="mode"><option value="branch">Main / branch placement</option><option value="source">Photo / branch placement</option><option value="shape">Photo / branch logo shape</option><option value="difference">Main / branch pixel differences</option></select></label>
-      <label>Branch opacity <input id="opacity" type="range" min="0" max="1" step="0.01" value="0.5"></label>
+      <label>Compare <select id="mode"><option value="branch">Previous main / revised placement</option><option value="source">Photo / revision placement</option><option value="shape">Photo / revision logo shape</option><option value="difference">Previous main / revised pixel differences</option></select></label>
+      <label>Revision opacity <input id="opacity" type="range" min="0" max="1" step="0.01" value="0.5"></label>
       <label>Uniform scale <input id="scale" type="range" min="0.6" max="1.4" step="0.005" value="1"></label>
       <label>Horizontal <input id="shift-x" type="range" min="-150" max="150" step="1" value="0"></label>
       <label>Vertical <input id="shift-y" type="range" min="-100" max="100" step="1" value="0"></label>

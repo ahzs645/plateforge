@@ -1,9 +1,9 @@
 {
   "schema": "plateforge.bc-visual-review/v1",
   "baseCommit": "5c8538a3d2abcd705de01b1ebe3383d8000df6e8",
-  "renderCommit": "37e0865d8de7b1356ad769c2f182da0f311644f6",
+  "renderCommit": "2f1550f9f98aa1c4990583aada63c5b75a7fefce",
   "browser": "141.0.7390.37",
-  "renderSourceSha256": "612ae4a38fcf27159bf14164da3a77e16c30aed35a2d62012bdbc1e630205ca5",
+  "renderSourceSha256": "286a4fd390359b6cc2f9e38533f2d40aac2fd99ffebef7079bd0a1609b87cdd4",
   "workingChanges": true,
   "reviewedOn": "2026-10-19",
   "auditCount": 448,
@@ -17948,7 +17948,7 @@
       "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
       "status": "Revised \u00b7 source comparison",
       "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-      "finding": "Heavier native date candidate with native spacing; separate serif province and broader bold control. July 2017 layout transition retained. Candidate font identity and exact small-letter contours remain unconfirmed. Source barcode is decoded to the printed control; generated bars remain synthetic.",
+      "finding": "Narrower month shapes retained from previous main, with heavier print and restored height; separate native year candidate; separate serif province and broader bold control. July 2017 layout transition retained. Candidate font identity and exact small-letter contours remain unconfirmed. Source barcode is decoded to the printed control; generated bars remain synthetic.",
       "referencePixels": [
         227,
         98
@@ -18047,13 +18047,13 @@
           "lettering": [
             {
               "text": "NOV",
-              "profile": "bc-decal-print-anton-400",
+              "profile": "bc-decal-print-heavy-month-weighted",
               "role": "decal-month",
               "box": [
-                14.759232521057129,
-                17.976398468017578,
-                77.74133300781249,
-                48.45620346069336
+                13.551970481872559,
+                9.15803337097168,
+                79.09020233154297,
+                57.93794250488281
               ]
             },
             {
@@ -18105,9 +18105,9 @@
       },
       "difference": {
         "pixels": 156600,
-        "changedFraction": 0.2342911877394636,
-        "meanAbsoluteChannelError": 23.110576841209024,
-        "perceptualChangedFraction": 0.17835887611749682
+        "changedFraction": 0.24689655172413794,
+        "meanAbsoluteChannelError": 24.53060876968923,
+        "perceptualChangedFraction": 0.19021072796934865
       },
       "images": {
         "main": {
@@ -18156,7 +18156,7 @@
       "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
       "status": "Revised \u00b7 source comparison",
       "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-      "finding": "Heavier native date candidate with native spacing; separate serif province and broader bold control. July 2017 layout transition retained. Candidate font identity and exact small-letter contours remain unconfirmed. Generated barcode bars remain synthetic.",
+      "finding": "Narrower month shapes retained from previous main, with heavier print and restored height; separate native year candidate; separate serif province and broader bold control. July 2017 layout transition retained. Candidate font identity and exact small-letter contours remain unconfirmed. Generated barcode bars remain synthetic.",
       "referencePixels": [
         244,
         98
@@ -18255,13 +18255,13 @@
           "lettering": [
             {
               "text": "JAN",
-              "profile": "bc-decal-print-anton-400",
+              "profile": "bc-decal-print-heavy-month-weighted",
               "role": "decal-month",
               "box": [
-                13.68027400970459,
-                18.280000686645508,
-                77.3550796508789,
-                48.153778076171875
+                13.608273506164549,
+                10.253999710083008,
+                78.63922119140625,
+                56.84197998046875
               ]
             },
             {
@@ -18313,9 +18313,9 @@
       },
       "difference": {
         "pixels": 156600,
-        "changedFraction": 0.23071519795657727,
-        "meanAbsoluteChannelError": 26.8759791400596,
-        "perceptualChangedFraction": 0.17537675606641123
+        "changedFraction": 0.23942528735632185,
+        "meanAbsoluteChannelError": 27.93311834823329,
+        "perceptualChangedFraction": 0.18383141762452107
       },
       "images": {
         "main": {
@@ -18364,7 +18364,7 @@
       "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
       "status": "Revised \u00b7 source comparison",
       "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-      "finding": "Heavier native date candidate with native spacing; separate serif province and broader bold control. July 2017 layout transition retained. Candidate font identity and exact small-letter contours remain unconfirmed. Generated barcode bars remain synthetic.",
+      "finding": "Narrower month shapes retained from previous main, with heavier print and restored height; separate native year candidate; separate serif province and broader bold control. July 2017 layout transition retained. Candidate font identity and exact small-letter contours remain unconfirmed. Generated barcode bars remain synthetic.",
       "referencePixels": [
         237,
         98
@@ -18463,13 +18463,13 @@
           "lettering": [
             {
               "text": "JAN",
-              "profile": "bc-decal-print-anton-400",
+              "profile": "bc-decal-print-heavy-month-weighted",
               "role": "decal-month",
               "box": [
-                13.68027400970459,
-                18.280000686645508,
-                77.3550796508789,
-                48.153778076171875
+                13.608273506164549,
+                10.253999710083008,
+                78.63922119140625,
+                56.84197998046875
               ]
             },
             {
@@ -18521,9 +18521,9 @@
       },
       "difference": {
         "pixels": 156600,
-        "changedFraction": 0.2275925925925926,
-        "meanAbsoluteChannelError": 21.29889527458493,
-        "perceptualChangedFraction": 0.17180715197956578
+        "changedFraction": 0.23628991060025542,
+        "meanAbsoluteChannelError": 22.14569391230311,
+        "perceptualChangedFraction": 0.180242656449553
       },
       "images": {
         "main": {
@@ -18572,7 +18572,7 @@
       "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
       "status": "Revised \u00b7 source comparison",
       "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-      "finding": "Heavier native date candidate with native spacing; separate serif province and broader bold control. July 2017 layout transition retained. Candidate font identity and exact small-letter contours remain unconfirmed. Generated barcode bars remain synthetic.",
+      "finding": "Narrower month shapes retained from previous main, with heavier print and restored height; separate native year candidate; separate serif province and broader bold control. July 2017 layout transition retained. Candidate font identity and exact small-letter contours remain unconfirmed. Generated barcode bars remain synthetic.",
       "referencePixels": [
         233,
         98
@@ -18671,13 +18671,13 @@
           "lettering": [
             {
               "text": "JAN",
-              "profile": "bc-decal-print-anton-400",
+              "profile": "bc-decal-print-heavy-month-weighted",
               "role": "decal-month",
               "box": [
-                13.68027400970459,
-                18.280000686645508,
-                77.3550796508789,
-                48.153778076171875
+                13.608273506164549,
+                10.253999710083008,
+                78.63922119140625,
+                56.84197998046875
               ]
             },
             {
@@ -18729,9 +18729,9 @@
       },
       "difference": {
         "pixels": 156600,
-        "changedFraction": 0.22367816091954024,
-        "meanAbsoluteChannelError": 17.943056619838227,
-        "perceptualChangedFraction": 0.17096424010217115
+        "changedFraction": 0.23237547892720306,
+        "meanAbsoluteChannelError": 18.662560664112387,
+        "perceptualChangedFraction": 0.1794125159642401
       },
       "images": {
         "main": {
@@ -18780,7 +18780,7 @@
       "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
       "status": "Revised \u00b7 source comparison",
       "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-      "finding": "Heavier native date candidate with native spacing; separate serif province and broader bold control. July 2017 layout transition retained. Candidate font identity and exact small-letter contours remain unconfirmed. Generated barcode bars remain synthetic.",
+      "finding": "Narrower month shapes retained from previous main, with heavier print and restored height; separate native year candidate; separate serif province and broader bold control. July 2017 layout transition retained. Candidate font identity and exact small-letter contours remain unconfirmed. Generated barcode bars remain synthetic.",
       "referencePixels": [
         225,
         96
@@ -18879,13 +18879,13 @@
           "lettering": [
             {
               "text": "JAN",
-              "profile": "bc-decal-print-anton-400",
+              "profile": "bc-decal-print-heavy-month-weighted",
               "role": "decal-month",
               "box": [
-                21.641971588134766,
-                20.370000839233395,
-                70.72511291503906,
-                44.02659606933594
+                21.490739822387695,
+                18,
+                64.89083099365234,
+                46.90436553955078
               ]
             },
             {
@@ -18937,9 +18937,9 @@
       },
       "difference": {
         "pixels": 156600,
-        "changedFraction": 0.17401660280970627,
-        "meanAbsoluteChannelError": 13.00707747977863,
-        "perceptualChangedFraction": 0.12530651340996168
+        "changedFraction": 0.1305300127713921,
+        "meanAbsoluteChannelError": 9.35624521072797,
+        "perceptualChangedFraction": 0.08023627075351213
       },
       "images": {
         "main": {
@@ -18988,7 +18988,7 @@
       "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
       "status": "Revised \u00b7 source comparison",
       "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-      "finding": "Heavier native date candidate with native spacing; separate serif province and broader bold control. July 2017 layout transition retained. Candidate font identity and exact small-letter contours remain unconfirmed. Generated barcode bars remain synthetic.",
+      "finding": "Narrower month shapes retained from previous main, with heavier print and restored height; separate native year candidate; separate serif province and broader bold control. July 2017 layout transition retained. Candidate font identity and exact small-letter contours remain unconfirmed. Generated barcode bars remain synthetic.",
       "referencePixels": [
         233,
         96
@@ -19087,13 +19087,13 @@
           "lettering": [
             {
               "text": "JAN",
-              "profile": "bc-decal-print-anton-400",
+              "profile": "bc-decal-print-heavy-month-weighted",
               "role": "decal-month",
               "box": [
-                21.641971588134766,
-                20.370000839233395,
-                70.72511291503906,
-                44.02659606933594
+                21.490739822387695,
+                18,
+                64.89083099365234,
+                46.90436553955078
               ]
             },
             {
@@ -19145,9 +19145,9 @@
       },
       "difference": {
         "pixels": 156600,
-        "changedFraction": 0.16821200510855683,
-        "meanAbsoluteChannelError": 17.76288633461047,
-        "perceptualChangedFraction": 0.12213282247765006
+        "changedFraction": 0.12476372924648786,
+        "meanAbsoluteChannelError": 12.527820349084717,
+        "perceptualChangedFraction": 0.07705619412515964
       },
       "images": {
         "main": {
@@ -19196,7 +19196,7 @@
       "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
       "status": "Revised \u00b7 source comparison",
       "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-      "finding": "Heavier native date candidate with native spacing; separate serif province and broader bold control. July 2017 layout transition retained. Candidate font identity and exact small-letter contours remain unconfirmed. Generated barcode bars remain synthetic.",
+      "finding": "Narrower month shapes retained from previous main, with heavier print and restored height; separate native year candidate; separate serif province and broader bold control. July 2017 layout transition retained. Candidate font identity and exact small-letter contours remain unconfirmed. Generated barcode bars remain synthetic.",
       "referencePixels": [
         223,
         96
@@ -19295,13 +19295,13 @@
           "lettering": [
             {
               "text": "JAN",
-              "profile": "bc-decal-print-anton-400",
+              "profile": "bc-decal-print-heavy-month-weighted",
               "role": "decal-month",
               "box": [
-                21.641971588134766,
-                20.370000839233395,
-                70.72511291503906,
-                44.02659606933594
+                21.490739822387695,
+                18,
+                64.89083099365234,
+                46.90436553955078
               ]
             },
             {
@@ -19353,9 +19353,9 @@
       },
       "difference": {
         "pixels": 156600,
-        "changedFraction": 0.19148786717752234,
-        "meanAbsoluteChannelError": 14.042271179225203,
-        "perceptualChangedFraction": 0.14476372924648787
+        "changedFraction": 0.14853128991060024,
+        "meanAbsoluteChannelError": 10.523959131545338,
+        "perceptualChangedFraction": 0.09961685823754789
       },
       "images": {
         "main": {
@@ -19404,7 +19404,7 @@
       "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
       "status": "Revised \u00b7 source comparison",
       "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-      "finding": "Heavier native date candidate with native spacing; separate serif province and broader bold control. July 2017 layout transition retained. Candidate font identity and exact small-letter contours remain unconfirmed. Generated barcode bars remain synthetic.",
+      "finding": "Narrower month shapes retained from previous main, with heavier print and restored height; separate native year candidate; separate serif province and broader bold control. July 2017 layout transition retained. Candidate font identity and exact small-letter contours remain unconfirmed. Generated barcode bars remain synthetic.",
       "referencePixels": [
         228,
         98
@@ -19503,13 +19503,13 @@
           "lettering": [
             {
               "text": "JUL",
-              "profile": "bc-decal-print-anton-400",
+              "profile": "bc-decal-print-heavy-month-weighted",
               "role": "decal-month",
               "box": [
-                21.693140029907223,
+                21.490739822387695,
                 18,
-                70.0193634033203,
-                46.41813659667969
+                59.401649475097656,
+                46.90436553955078
               ]
             },
             {
@@ -19561,9 +19561,9 @@
       },
       "difference": {
         "pixels": 156600,
-        "changedFraction": 0.18474457215836526,
-        "meanAbsoluteChannelError": 16.734591315453386,
-        "perceptualChangedFraction": 0.14071519795657728
+        "changedFraction": 0.13503192848020434,
+        "meanAbsoluteChannelError": 11.732675606641124,
+        "perceptualChangedFraction": 0.08841634738186463
       },
       "images": {
         "main": {
@@ -19612,7 +19612,7 @@
       "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
       "status": "Revised \u00b7 source comparison",
       "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-      "finding": "Heavier native date candidate with native spacing; separate serif province and broader bold control. July 2017 layout transition retained. Candidate font identity and exact small-letter contours remain unconfirmed. Generated barcode bars remain synthetic.",
+      "finding": "Narrower month shapes retained from previous main, with heavier print and restored height; separate native year candidate; separate serif province and broader bold control. July 2017 layout transition retained. Candidate font identity and exact small-letter contours remain unconfirmed. Generated barcode bars remain synthetic.",
       "referencePixels": [
         236,
         98
@@ -19711,13 +19711,13 @@
           "lettering": [
             {
               "text": "MAR",
-              "profile": "bc-decal-print-anton-400",
+              "profile": "bc-decal-print-heavy-month-weighted",
               "role": "decal-month",
               "box": [
-                22.34121513366699,
-                26.9689998626709,
-                71.15802764892578,
-                37.03099822998046
+                21.669223785400387,
+                18.368000030517578,
+                72.631103515625,
+                45.631999969482415
               ]
             },
             {
@@ -19769,9 +19769,9 @@
       },
       "difference": {
         "pixels": 156600,
-        "changedFraction": 0.17520434227330778,
-        "meanAbsoluteChannelError": 20.9070625798212,
-        "perceptualChangedFraction": 0.12620689655172415
+        "changedFraction": 0.1498595146871009,
+        "meanAbsoluteChannelError": 17.43392933163048,
+        "perceptualChangedFraction": 0.09959770114942529
       },
       "images": {
         "main": {
@@ -19820,7 +19820,7 @@
       "alignment": "Approximate outer-frame crop and uniform fit. Photograph perspective, wear and print spread are retained; no contour score is inferred.",
       "status": "Revised \u00b7 source comparison",
       "limits": "One source specimen; no complete historical alphabet or tooling identity is certified. Photograph wear, perspective and print spread remain visible.",
-      "finding": "Heavier native date candidate with native spacing; separate serif province and broader bold control. July 2017 layout transition retained. Candidate font identity and exact small-letter contours remain unconfirmed. Generated barcode bars remain synthetic.",
+      "finding": "Narrower month shapes retained from previous main, with heavier print and restored height; separate native year candidate; separate serif province and broader bold control. July 2017 layout transition retained. Candidate font identity and exact small-letter contours remain unconfirmed. Generated barcode bars remain synthetic.",
       "referencePixels": [
         232,
         98
@@ -19919,13 +19919,13 @@
           "lettering": [
             {
               "text": "MAR",
-              "profile": "bc-decal-print-anton-400",
+              "profile": "bc-decal-print-heavy-month-weighted",
               "role": "decal-month",
               "box": [
-                22.34121513366699,
-                26.9689998626709,
-                71.15802764892578,
-                37.03099822998046
+                21.669223785400387,
+                18.368000030517578,
+                72.631103515625,
+                45.631999969482415
               ]
             },
             {
@@ -19977,9 +19977,9 @@
       },
       "difference": {
         "pixels": 156600,
-        "changedFraction": 0.1828735632183908,
-        "meanAbsoluteChannelError": 17.00096636866752,
-        "perceptualChangedFraction": 0.13118773946360154
+        "changedFraction": 0.15752873563218392,
+        "meanAbsoluteChannelError": 14.304487015751384,
+        "perceptualChangedFraction": 0.10456577266922094
       },
       "images": {
         "main": {

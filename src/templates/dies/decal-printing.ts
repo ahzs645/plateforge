@@ -21,3 +21,12 @@ DECAL_PRINTING_PROFILES.push({
   }, allowResearchReplacement: false, allowConstructedFallback: false,
   evidence: {status:'legend-approximation',specimens:[{title:'1970 passenger decal',url:'https://www.bcpl8s.ca/images/Decals/Passenger/1970.jpg'}],notes:'Clean outlined 70 construction, independently inspected on the small original; not a precise paint trace.'},
 });
+
+/** Preserve main's narrow month construction; increase paint weight independently. */
+DECAL_PRINTING_PROFILES.push({
+  id:'bc-decal-print-heavy-month-weighted',label:'Modern decal month · retained narrow outlines, heavier print',
+  params:{width:60,stroke:0,curve:'oval',tracking:0},overrides:outlines['heavy-month'],
+  filledStroke:2.5,allowConstructedFallback:false,allowResearchReplacement:false,
+  evidence:{status:'legend-approximation',specimens:[{title:'2014 passenger decal',url:'https://www.bcpl8s.ca/images/Decals/Passenger/2014-99103688.jpg'}],
+    notes:'Retains the main compressed-month paths and advances. A 2.5-cap-unit same-ink stroke increases print weight without widening glyph construction or shrinking the run to accommodate a broader face. Source construction and supplied-font provenance remain in docs/research/decal-review/printing-provenance.json; historical font identity remains unconfirmed.'},
+});
