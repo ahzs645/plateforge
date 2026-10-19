@@ -1,0 +1,12 @@
+{
+  "schema": "plateforge.bc-report-memory-validation/v1",
+  "reviewedOn": "2026-10-18",
+  "captureSourceSha256": "286a4fd390359b6cc2f9e38533f2d40aac2fd99ffebef7079bd0a1609b87cdd4",
+  "nativeCapturesVerifiedLosslessly": 172,
+  "atlasFiles": 58,
+  "previousMaximumDecodedAtlasBytes": 45360000,
+  "maximumDecodedAtlasBytes": 6480000,
+  "decodedImageCacheLimit": 9,
+  "temporaryCanvasesReleased": true,
+  "offlineCoverage": "Every atlas after the complete online navigation pass; final CI matrix must pass before merge."
+}

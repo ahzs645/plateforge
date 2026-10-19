@@ -18,7 +18,7 @@ async function loadImage(asset) {
     catch (error) { images.delete(url); throw Error(`Image ${asset}: ${error.message}`); }
   })();
   images.set(url, pending);
-  // Each full atlas decodes to 45 MB. Retaining every atlas and photograph can
+  // Bound the decoded working set. Retaining every atlas and photograph can
   // exhaust the decoder while moving through the report or its offline copy.
   while (images.size > 9) images.delete(images.keys().next().value);
   return pending;

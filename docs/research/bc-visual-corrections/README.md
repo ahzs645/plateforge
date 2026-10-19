@@ -61,3 +61,8 @@ and superseded canvases. A full 2700×4200 atlas requires about 45 MB decoded;
 retaining all old surfaces could prevent the last offline atlas from decoding
 after a complete navigation pass. The report check exercises that transition
 and includes the failing asset name in any decode diagnostic.
+
+Atlases now contain at most three native captures in one row, reducing each
+full decoded image from about 45 MB to 6.5 MB. The final partial atlas also omits
+unused cells. Captures remain lossless and keep their native sizes and crop
+coordinates. The offline check covers every atlas after online navigation.

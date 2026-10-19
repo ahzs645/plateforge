@@ -32,18 +32,19 @@ for case in cases:
             assert min(matches[0]["box"][2:]) > 0
             state["focusBox"] = matches[0]["box"]
 
-# Twenty-one specimens per pair of atlases; fixed cells preserve native dimensions.
-for start in range(0, len(cases), 21):
-    group = cases[start:start + 21]
+# Three specimens per pair of atlases; fixed cells preserve native dimensions.
+# Cap each decoded image at 6.5 MB instead of allocating a 45 MB seven-row grid.
+for start in range(0, len(cases), 3):
+    group = cases[start:start + 3]
     for state in ("main", "current"):
-        atlas = Image.new("RGB", (2700, 4200), "white")
+        atlas = Image.new("RGB", (min(3, len(group)) * 900, 600), "white")
         for i, case in enumerate(group):
             image = Image.open(WORK / state / (case["id"] + ".png")).convert("RGB")
             assert image.width <= 900 and image.height <= 600, (case["id"], image.size)
             x, y = (i % 3) * 900, (i // 3) * 600
             atlas.paste(image, (x, y))
-            case.setdefault("images", {})[state] = {"file": f"{state}-{start // 21}.webp", "rect": [x, y, *image.size]}
-        atlas.save(OUT / f"{state}-{start // 21}.webp", lossless=True, method=6)
+            case.setdefault("images", {})[state] = {"file": f"{state}-{start // 3}.webp", "rect": [x, y, *image.size]}
+        atlas.save(OUT / f"{state}-{start // 3}.webp", lossless=True, method=6)
 
 audit = results["audit"]
 assert len(audit) == 448, "Use a complete audit before publishing"
