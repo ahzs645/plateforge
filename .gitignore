@@ -24,3 +24,11 @@ scripts/trace-bc-dies/refinement-*/
 
 # Preset renders from docs/research/iraq-customizer/render-presets.mjs
 docs/research/iraq-customizer/output/
+
+# Reproducible typography QA outputs (regenerate using the documented commands)
+qa-dist/
+typography-evidence/
+typography-harness.html
+# Temporary browser entries for the B.C. visual review
+bc-visual-harness.generated.html
+scripts/bc-visual-harness.generated.tsx

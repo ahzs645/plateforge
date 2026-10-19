@@ -3,6 +3,8 @@ import {BC_DECALS, decalId} from '../../regions/canada/bc-decals';
 import {decalArt} from '../../regions/canada/bc-kit';
 import {serializeSvgNode, type SvgNode} from '../svg-scene';
 import {buildDecal, decalBox} from './decal';
+import {buildDieText,dieGlyph} from '../dies/engine';
+import {dieProfile} from '../dies/profiles';
 import {code128Codes} from './decal-barcode';
 import {DECAL_TYPOGRAPHY, decalTypography} from './decal-typography';
 
@@ -23,6 +25,16 @@ describe('Photographed B.C. decal printing systems',()=>{
     expect(find(modern,'decal-legend').every(n=>n.attrs['data-die']==='bc-decal-print-vertical-province')).toBe(true);
     expect(serializeSvgNode(modern)).toContain('rotate(-90)');
     expect(find(render('2013'),'decal-year')[0].attrs['aria-label']).toBe('13');
+  });
+  it('adds month print weight without changing the retained narrow glyphs or advances',()=>{
+    const original=dieProfile('bc-decal-print-heavy-month'),weighted=dieProfile('bc-decal-print-heavy-month-weighted');
+    const settings={text:'NOV',x:0,baseline:66,capHeight:58,maxWidth:80.5,ink:'#111',role:'decal-month'};
+    const light=buildDieText({...settings,profile:original}),bold=buildDieText({...settings,profile:weighted});
+    expect(bold.width).toBe(light.width);expect(bold.height).toBe(light.height);
+    for(const c of 'NOV')expect(dieGlyph(weighted,c)).toEqual(dieGlyph(original,c));
+    expect(serializeSvgNode(bold.node)).toContain('stroke-width="2.5"');
+    expect(serializeSvgNode(light.node)).not.toContain('data-filled-stroke');
+    expect(find(render('2014'),'decal-month')[0].attrs['data-die']).toBe(weighted.id);
   });
   it('applies the ICBC July 2017 design boundary to the selected expiry month',()=>{
     const early=decalTypography('2017','JUN')!;

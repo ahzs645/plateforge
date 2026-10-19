@@ -1,0 +1,99 @@
+name: Typography validation
+
+on:
+  push:
+    branches: [main, 'work/typography-consistency-20261013']
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: typography-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - run: npm run typecheck
+      - name: Unit tests and format coverage
+        run: TYPOGRAPHY_EVIDENCE=1 npm test -- --maxWorkers=2
+      - name: Reproduce the font manifest and notices
+        run: |
+          python3 -m venv "$RUNNER_TEMP/font-manifest"
+          "$RUNNER_TEMP/font-manifest/bin/pip" install fonttools==4.61.1 brotli==1.2.0
+          "$RUNNER_TEMP/font-manifest/bin/python" scripts/typography-build-manifest.py --check
+          node scripts/typography-verify.mjs
+      - name: Production build
+        run: BASE_PATH=/plateforge/ npm run build
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: typography-metadata
+          path: typography-evidence/*.json
+          if-no-files-found: error
+          retention-days: 14
+
+  browser:
+    needs: validate
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    strategy:
+      fail-fast: false
+      matrix:
+        browser: [chromium, firefox, webkit]
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci
+      - name: Build the deployed application
+        run: BASE_PATH=/plateforge/ npm run build
+      - name: Install pinned browser tools separately from the app
+        run: |
+          npm install --prefix "$RUNNER_TEMP/typography-browser" --ignore-scripts --no-audit --save-exact playwright@1.56.1 pngjs@7.0.0 pixelmatch@7.1.0
+          node "$RUNNER_TEMP/typography-browser/node_modules/playwright/cli.js" install --with-deps ${{ matrix.browser }}
+      - name: Preview, standalone SVG, PNG, Tesla, and first-export comparisons
+        env:
+          TYPOGRAPHY_BROWSER: ${{ matrix.browser }}
+          TYPOGRAPHY_BROWSER_DEPS: ${{ runner.temp }}/typography-browser/package.json
+        run: node scripts/typography-browser.mjs
+      - name: B.C. source photographs and logo overlay controls
+        env:
+          TYPOGRAPHY_BROWSER: ${{ matrix.browser }}
+          TYPOGRAPHY_BROWSER_DEPS: ${{ runner.temp }}/typography-browser/package.json
+        run: |
+          python3 scripts/bc-visual-review-offline.py
+          node scripts/bc-visual-review-smoke.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: typography-browser-${{ matrix.browser }}
+          path: |
+            typography-evidence/browser-${{ matrix.browser }}/
+            typography-evidence/bc-report-browser-${{ matrix.browser }}/
+          if-no-files-found: error
+          retention-days: 14
+      - uses: actions/upload-artifact@v4
+        if: success() && matrix.browser == 'chromium'
+        with:
+          name: bc-visual-review-offline
+          path: typography-evidence/bc-visual/offline.html
+          if-no-files-found: error
+          retention-days: 14

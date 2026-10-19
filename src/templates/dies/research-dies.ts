@@ -22,6 +22,13 @@ export interface ResearchRegistry {
 
 const STORAGE_KEY = 'plateforge:research-dies';
 let registry: ResearchRegistry | null = null;
+let loadState: 'idle' | 'loading' | 'ready' | 'error' = 'idle';
+let loadError: string | null = null;
+let registryDigest: string | undefined;
+export const researchLoadState = () => loadState;
+export const researchLoadError = () => loadError;
+/** Actual loaded registry bytes, not an assertion that the glyphs are historically validated. */
+export const researchRegistryDigest = () => registryDigest;
 let enabled = readEnabled();
 let version = 0;
 let context: string | null = null;
@@ -40,17 +47,53 @@ function changed(): void {
   for (const l of listeners) l();
 }
 
-export function installResearchRegistry(data: ResearchRegistry | null): void { registry = data; changed(); }
+export function installResearchRegistry(data: ResearchRegistry | null, digest?: string): void {
+  registry = data; registryDigest = data ? digest : undefined;
+  loadState = data ? 'ready' : 'idle'; loadError = null; changed();
+}
+
+/** Reject malformed source indices before they can silently select another alphabet. */
+export function validateResearchRegistry(data: unknown): asserts data is ResearchRegistry {
+  if (!data || typeof data !== 'object') throw new TypeError('Research registry is not an object');
+  const r = data as ResearchRegistry;
+  if (!Array.isArray(r.glyphs) || !r.units || typeof r.units !== 'object' || !r.bindings || typeof r.bindings !== 'object') throw new TypeError('Invalid research registry sections');
+  for (const g of r.glyphs) {
+    if (!Array.isArray(g) || typeof g[0] !== 'number' || !Number.isFinite(g[0]) || g[0] < 0 || g.slice(1).some((p) => typeof p !== 'string')) throw new TypeError('Invalid research glyph metrics');
+  }
+  for (const unit of Object.values(r.units)) {
+    if (!unit || typeof unit.role !== 'string' || typeof unit.title !== 'string' || !unit.glyphs || typeof unit.glyphs !== 'object') throw new TypeError('Invalid research unit');
+    for (const index of Object.values(unit.glyphs)) if (!Number.isInteger(index) || index < 0 || index >= r.glyphs.length) throw new RangeError('Research glyph index is out of bounds');
+  }
+  for (const binding of Object.values(r.bindings)) {
+    if (!binding || typeof binding !== 'object') throw new TypeError('Invalid research binding');
+    for (const ids of Object.values(binding)) if (!Array.isArray(ids) || ids.some((id) => typeof id !== 'string' || !Object.hasOwn(r.units, id))) throw new RangeError('Research binding refers to an unknown unit');
+  }
+}
 export const researchRegistryLoaded = (): boolean => registry !== null;
 
 let loading: Promise<void> | null = null;
 /** Fetches the registry once (a separate ~5 MB asset, kept out of the main bundle). */
 export function loadResearchDies(): Promise<void> {
-  loading ??= import('./research-registry.json?url')
-    .then(({ default: url }) => fetch(url))
-    .then((r) => { if (!r.ok) throw new Error(`HTTP ${r.status}`); return r.json() as Promise<ResearchRegistry>; })
-    .then(installResearchRegistry)
-    .catch((e) => { loading = null; console.warn('Research dies unavailable; using production dies.', e); });
+  if (registry) return Promise.resolve();
+  if (loading) return loading;
+  loadState = 'loading'; loadError = null; changed();
+  loading = (async () => {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), 15000);
+    try {
+      const { default: url } = await import('./research-registry.json?url');
+      const response = await fetch(url, { signal: controller.signal });
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const text = await response.text(), data: unknown = JSON.parse(text);
+      validateResearchRegistry(data);
+      const digest = globalThis.crypto?.subtle ? [...new Uint8Array(await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text)))].map((v) => v.toString(16).padStart(2, '0')).join('') : undefined;
+      installResearchRegistry(data, digest);
+    } catch (error) {
+      loadState = 'error'; loadError = error instanceof Error ? error.message : 'Unknown loading error';
+      changed();
+      console.warn('Research dies unavailable; the preview uses production dies until explicitly retried.', error);
+    } finally { clearTimeout(timer); loading = null; }
+  })();
   return loading;
 }
 
@@ -96,6 +139,12 @@ function unitsFor(units: readonly string[], role?: string): readonly string[] {
   return same.length ? same : units;
 }
 
+function researchSources(units: readonly string[]): Readonly<Record<string, string>> {
+  const sources: Record<string, string> = Object.create(null);
+  for (const id of units) for (const char of Object.keys(registry!.units[id].glyphs)) if (!Object.hasOwn(sources, char)) sources[char] = id;
+  return sources;
+}
+
 function researchGlyphs(units: readonly string[]): Record<string, SkeletonGlyph> {
   const reg = registry!;
   const glyphs: Record<string, SkeletonGlyph> = {};
@@ -132,7 +181,7 @@ export function researchVariant(profile: DieProfile, role?: string, text?: strin
     p = {
       ...base,
       overrides: { ...base.overrides, ...glyphs },
-      researchChars: new Set(Object.keys(glyphs)),
+      researchChars: new Set(Object.keys(glyphs)), researchSourceUnits: researchSources(chosen),
       // Filled photo outlines already carry their source slant; only production fallbacks are skewed.
       slant: undefined, fallbackSlant: base.slant,
       evidence: { ...base.evidence, status: 'research-candidate',
@@ -164,7 +213,7 @@ export function researchTypeface(fontFamily: string, text: string, role: string)
     p = {
       id, label: `Research lettering for ${fontFamily}`,
       params: { width: 60, stroke: 12, curve: 'stadium', tracking: 6, one: 'plain', three: 'round', four: 'closed', seven: 'straight', narrow: 0.5, wide: 1.2 },
-      overrides: { ' ': SPACE, ...glyphs }, allowConstructedFallback: false, researchChars: new Set(Object.keys(glyphs)),
+      overrides: { ' ': SPACE, ...glyphs }, allowConstructedFallback: false, researchChars: new Set(Object.keys(glyphs)), researchSourceUnits: researchSources([unit]),
       evidence: { status: 'research-candidate', specimens: [], notes: `Observed outlines from ${registry!.units[unit].title} replacing a proxy typeface; unvalidated.` },
     };
     merged.set(key, p);

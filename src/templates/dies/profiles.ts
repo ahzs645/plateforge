@@ -13,6 +13,7 @@ import { ROYAL_1951_PROFILE } from './royal-1951';
 import { APEC_SCREENED_LEGENDS_PROFILE } from './apec-screened-legends';
 import { ROYAL_SCREENED_SLOGAN_PROFILE } from './royal-screened-slogan';
 import { COLLECTOR_HARRINGTON_PROFILE } from './collector-harrington';
+import {BC_CORRECTION_PRINTING,APEC_MOTORCADE_SERIAL,APEC_MILITARY_SERIAL,PG_BICYCLE_PROFILES} from './bc-visual-corrections';
 import { COMMERCIAL_1952_LEGEND, COMMERCIAL_1952_SERIAL, COMMERCIAL_1952_YEAR } from './commercial-1952';
 import { PCMR_PROFILE, PCMR_COMPANY_PROFILE } from './pcmr';
 import { researchVariant } from './research-dies';
@@ -23,6 +24,7 @@ const lettersNote = 'Letters follow the same construction and were checked again
 
 export const DIE_PROFILES: readonly DieProfile[] = [
   ...DECAL_PRINTING_PROFILES,
+  ...BC_CORRECTION_PRINTING,APEC_MOTORCADE_SERIAL,APEC_MILITARY_SERIAL,...PG_BICYCLE_PROFILES,
   FRANKFURTER_EXPO_PROFILE,
   FRANKFURTER_CENTENNIAL_YEARS_PROFILE,
   ROYAL_1987_PROFILE,

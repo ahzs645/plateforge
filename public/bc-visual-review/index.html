@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>B.C. source and revision comparisons · PlateForge</title>
+  <link rel="stylesheet" href="review.css">
+  <script src="review.js" type="module"></script>
+</head>
+<body>
+  <header>
+    <a href="../">← PlateForge</a>
+    <h1>B.C. source and revision comparisons</h1>
+    <p id="summary">Loading the reviewed specimens…</p>
+    <p>Logo shape, plate placement and branch regressions are separate checks. Photographs retain wear, lighting and perspective; their overlays are visual evidence, not historical certification.</p>
+  </header>
+  <main>
+    <section class="controls" aria-label="Choose a specimen">
+      <label>Collection <select id="category"><option value="logos">B.C. logos first</option><option value="lettering">Lettering specimens</option><option value="decals">Renewal decals</option><option value="all">All specimens</option></select></label>
+      <label>Specimen <select id="specimen"></select></label>
+      <button id="previous" type="button">Previous</button><button id="next" type="button">Next</button>
+    </section>
+    <h2 id="title"></h2>
+    <p id="finding"></p>
+    <p><a id="source-link" target="_blank" rel="noreferrer">Original reference</a> · <a id="format-link">Open this format</a></p>
+    <div class="panels">
+      <figure><figcaption>Reference photograph · original proportions</figcaption><img id="source" alt=""></figure>
+      <figure><figcaption>Previous main · <span id="base-sha"></span></figcaption><canvas id="main" width="900" height="500"></canvas></figure>
+      <figure><figcaption>Reviewed revision · <span id="render-sha"></span></figcaption><canvas id="current" width="900" height="500"></canvas></figure>
+    </div>
+    <section class="controls" aria-label="Overlay settings">
+      <label>Compare <select id="mode"><option value="branch">Previous main / revised placement</option><option value="source">Photo / revision placement</option><option value="shape">Photo / revision logo shape</option><option value="difference">Previous main / revised pixel differences</option></select></label>
+      <label>Revision opacity <input id="opacity" type="range" min="0" max="1" step="0.01" value="0.5"></label>
+      <label>Uniform scale <input id="scale" type="range" min="0.6" max="1.4" step="0.005" value="1"></label>
+      <label>Horizontal <input id="shift-x" type="range" min="-150" max="150" step="1" value="0"></label>
+      <label>Vertical <input id="shift-y" type="range" min="-100" max="100" step="1" value="0"></label>
+      <button id="blink" type="button" aria-pressed="false">Blink</button><button id="reset" type="button">Reset alignment</button><button id="save" type="button">Save overlay PNG</button>
+    </section>
+    <figure class="overlay"><canvas id="overlay" width="900" height="500" aria-label="Selected comparison overlay"></canvas><figcaption id="alignment"></figcaption></figure>
+    <p id="measurement"></p>
+    <details><summary>Evidence and captured rendering details</summary><pre id="metadata"></pre></details>
+    <details><summary>All 448 default-format comparisons</summary><p>One deterministic default specimen per format, with research lettering loaded. This checks branch changes in this browser; it does not cover every user-entered glyph, option or operating system.</p><div class="table"><table><thead><tr><th>Format</th><th>Changed pixels</th><th>Ignoring antialiasing</th></tr></thead><tbody id="audit"></tbody></table></div></details>
+  </main>
+  <footer>Photographs: BCpl8s and its contributors. Rights remain with the original photographers and gallery. Supplied reconstruction vectors are not official historical masters. <a href="manifest.json">Evidence ledger</a>.</footer>
+</body>
+</html>

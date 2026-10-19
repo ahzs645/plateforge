@@ -22,6 +22,8 @@ export interface DieProfile {
   label: string;
   maker?: string;
   params: SkeletonParams;
+  /** Same-ink stroke on filled print outlines, in cap units; advances stay unchanged. */
+  filledStroke?: number;
   /** Hand-drawn replacements for individual glyphs. */
   overrides?: Readonly<Record<string, SkeletonGlyph>>;
   /** Research-only profiles may reject unobserved characters instead of inventing a fallback. */
@@ -32,6 +34,8 @@ export interface DieProfile {
   slant?: number;
   /** Research-merged dies: characters drawn from research outlines rather than the production die. */
   researchChars?: ReadonlySet<string>;
+  /** Exact winning registry unit for each research character. Never inferred from the family name. */
+  researchSourceUnits?: Readonly<Record<string, string>>;
   /** Research-merged dies: slant for production fallback glyphs only (research outlines carry their own). */
   fallbackSlant?: number;
   evidence: DieEvidence;
@@ -50,7 +54,7 @@ export const dieSupports = (profile: DieProfile, text: string): boolean => [...t
 
 /** Natural run width in cap-height units (100). */
 export function dieRunWidth(profile: DieProfile, text: string): number {
-  const glyphs = [...text].map((c) => dieGlyph(profile, c)!);
+  const glyphs = [...text].map((c) => { const glyph = dieGlyph(profile, c); if (!glyph) throw new RangeError(`Die ${profile.id} does not support ${c}`); return glyph; });
   return glyphs.reduce((sum, g) => sum + g.advance, 0) + Math.max(0, glyphs.length - 1) * profile.params.tracking;
 }
 
@@ -92,17 +96,18 @@ export function buildDieText(props: DieTextProps): DieRun {
   const children = glyphs.map(({ char, glyph }, i) => {
     const skew = p.profile.fallbackSlant && !p.profile.researchChars?.has(char) ? ` skewX(${-p.profile.fallbackSlant})` : '';
     const item = n('g', { transform: `translate(${round(cursor)} 0)${skew}`, 'data-character': char,
-      ...(p.profile.researchChars?.has(char) ? { 'data-source': 'research' } : {}), ...(glyph.stroke ? { strokeWidth: glyph.stroke } : {}),
+      ...(p.profile.researchChars?.has(char) ? { 'data-source': 'research', 'data-provenance': 'research-candidate', ...(p.profile.researchSourceUnits?.[char] ? { 'data-research-unit': p.profile.researchSourceUnits[char] } : {}) } : { 'data-provenance': p.profile.overrides?.[char] ? 'profile-override' : 'constructed' }), ...(glyph.stroke ? { strokeWidth: glyph.stroke } : {}),
       ...(glyph.cap ? { strokeLinecap: glyph.cap } : {}),
       // Traced outlines are filled shapes, not centrelines.
-      ...(glyph.fill ? { fill: p.ink, stroke: 'none', fillRule: 'evenodd' } : {}) },
+      ...(glyph.fill ? { fill: p.ink, stroke: p.profile.filledStroke ? p.ink : 'none', fillRule: 'evenodd',
+        ...(p.profile.filledStroke ? {strokeWidth:p.profile.filledStroke} : {}) } : {}) },
       ...glyph.paths.map((d) => n('path', { d })));
     cursor += glyph.advance + spacing + (pairAdjustments[i] ?? 0);
     return item;
   });
   const slant = p.profile.slant ? ` skewX(${-p.profile.slant})` : '';
   // Reduced runs keep the baseline; the cap height shrinks with the width.
-  const node = n('g', { 'data-role': p.role, 'data-die': p.profile.id, 'data-fit': fit, role: 'img', 'aria-label': p.text },
+  const node = n('g', { 'data-role': p.role, 'data-die': p.profile.id, 'data-fit': fit, ...(p.profile.filledStroke ? {'data-filled-stroke':p.profile.filledStroke,'data-ink-padding':round(p.profile.filledStroke*scale/2,5)} : {}), role: 'img', 'aria-label': p.text },
     n('title', {}, p.text),
     n('g', { transform: `translate(${round(left)} ${round(p.baseline - height)}) scale(${round(scale, 5)})${slant}`,
       fill: 'none', stroke: p.ink, strokeWidth: p.profile.params.stroke, strokeLinecap: 'square', strokeLinejoin: 'round' }, ...children));

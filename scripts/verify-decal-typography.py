@@ -13,10 +13,14 @@ with sync_playwright() as p:
   page.set_content(f['svg'])
   metrics=page.evaluate('''() => {
    const svg=document.querySelector('svg'); const w=svg.viewBox.baseVal.width;
-   const runs=[...svg.querySelectorAll('[data-die]')].map(el=>{const b=el.getBBox(),m=el.getCTM();const pts=[[b.x,b.y],[b.x+b.width,b.y],[b.x,b.y+b.height],[b.x+b.width,b.y+b.height]].map(([x,y])=>new DOMPoint(x,y).matrixTransform(m));return {role:el.getAttribute('data-role'),text:el.getAttribute('aria-label'),profile:el.getAttribute('data-die'),fit:el.getAttribute('data-fit'),x:Math.min(...pts.map(p=>p.x)),y:Math.min(...pts.map(p=>p.y)),right:Math.max(...pts.map(p=>p.x)),bottom:Math.max(...pts.map(p=>p.y))};});
+   const runs=[...svg.querySelectorAll('[data-die]')].map(el=>{const b=el.getBBox(),m=el.getCTM();const pts=[[b.x,b.y],[b.x+b.width,b.y],[b.x,b.y+b.height],[b.x+b.width,b.y+b.height]].map(([x,y])=>new DOMPoint(x,y).matrixTransform(m));const pad=Number(el.getAttribute('data-ink-padding')??0);return {role:el.getAttribute('data-role'),text:el.getAttribute('aria-label'),profile:el.getAttribute('data-die'),fit:el.getAttribute('data-fit'),x:Math.min(...pts.map(p=>p.x))-pad,y:Math.min(...pts.map(p=>p.y))-pad,right:Math.max(...pts.map(p=>p.x))+pad,bottom:Math.max(...pts.map(p=>p.y))+pad};});
    return {w,runs};
   }''')
   reasons=[]
+  if (f['id'],f['month']) in [('2014','NOV'),('2023','MAR')]:
+   month=next(run for run in metrics['runs'] if run['role']=='decal-month')
+   minimum=54 if f['id']=='2014' else 44
+   if month['bottom']-month['y']<minimum:reasons.append(['month shrank below source-supported height',month])
   for run in metrics['runs']:
    if run['x']<-.5 or run['y']<-.5 or run['right']>metrics['w']+.5 or run['bottom']>100.5:reasons.append(['bounds',run])
   for i,a in enumerate(metrics['runs']):

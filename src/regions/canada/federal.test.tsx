@@ -27,9 +27,9 @@ describe('Canadian federal plates', () => {
     const [base,plain,leaves]=recipes;
     for(const variant of [plain,leaves]) {
       expect([variant.width,variant.height,variant.radius]).toEqual([base.width,base.height,base.radius]);
-      expect(variant.legends.map(({color,...legend})=>legend)).toEqual(base.legends.map(({color,...legend})=>legend));
-      expect(variant.serial.die).toBe(base.serial.die);
-      expect(variant.serial).toEqual({...base.serial,x:196,maxWidth:170});
+      expect(variant.legends[0]).toMatchObject({text:'CANADA',die:'bc-corrected-federal-country'});
+      expect(variant.serial.die).toBe('ca-apec-military-serial');
+      expect(variant.serial).toMatchObject({x:205,baseline:118,cap:71,maxWidth:158});
     }
     expect(plain.art!.some(art=>art.art==='official-maple-leaf')).toBe(false);
     expect(leaves.art!.filter(art=>art.art==='official-maple-leaf')).toEqual(base.art);

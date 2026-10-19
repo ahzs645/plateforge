@@ -1,0 +1,14 @@
+{
+  "reviewedOn": "2026-10-19",
+  "format": "events-royal-1994",
+  "source": "https://www.bcpl8s.ca/images/LiuetenantGovenor/1994-R1(XL).jpg",
+  "storedPhoto": "public/bc-font-comparisons/die-grouping/sources/Royal1994-R1.webp",
+  "storedPixels": [800, 411],
+  "outerFramePixels": [10, 7, 792, 404],
+  "badgePixels": [151, 100, 349, 298],
+  "method": "Manual inspection of the outer plate and printed badge boundaries, approximately frontal photograph. Uniform physical scaling yields a badge about 75 mm high, centred around x=92 mm and y=73 mm on a 300×150 mm blank. The photograph aspect differs from the assumed blank by about 1.5%; no independent x/y contour stretch is used.",
+  "uncertainty": "Boundaries approximately ±3 source pixels; no camera or lens calibration. Placement is a source-guided estimate, not factory dimensions.",
+  "previousBoxMm": {"x": 55, "y": 42, "width": 62, "height": 62},
+  "correctedBoxMm": {"x": 54, "y": 35, "width": 76, "height": 76},
+  "preserved": "All supplied badge paths, viewBox and negative spaces. Only the issued preset placement changes; the prototype awaits its own photograph calibration."
+}

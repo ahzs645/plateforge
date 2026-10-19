@@ -3,7 +3,7 @@ import type { Parts, PlateTemplate } from '../core/types';
 import { isLetteringType, letteringMetadata } from '../core/lettering';
 import { buildLettering, letteringLayout, supportsLettering } from './lettering';
 import { SvgScene } from './SvgScene';
-import { CONDENSED, FONTS } from './fonts';
+import { CONDENSED, FONTS, SANS, SERIF, SCRIPT } from './fonts';
 import { fit, measure, safeId, type FontSpec } from './measure';
 import { SCENES, type UsSceneId } from './us-scenes';
 
@@ -68,14 +68,11 @@ export interface UsDesign {
 
 const W = 600;
 const H = 300;
-const SCRIPT = '"Snell Roundhand", "Brush Script MT", "Segoe Script", cursive';
-const SERIF = '"Times New Roman", Times, Georgia, serif';
-const SANS = '"Helvetica Neue", Helvetica, Arial, sans-serif';
 const SERIAL_Y = 214;
 /** Barlow Condensed cap height as a share of the font size. */
 const CAP = 0.7;
 
-type Font = FontSpec & { style?: 'italic' };
+type Font = FontSpec;
 function fontFor(style: UsTextStyle, size: number): Font {
   switch (style) {
     case 'script': return { family: SCRIPT, size, weight: 400 };
@@ -335,5 +332,5 @@ export const usTemplate: PlateTemplate<UsDesign> = {
   name: 'North American 12×6″',
   size: () => ({ width: W, height: H }),
   render: ({ design, text, parts }) => <UsPlate design={design} text={text} parts={parts} />,
-  fonts: [FONTS.barlow600, FONTS.barlow700],
+  fonts: [FONTS.barlow500, FONTS.barlow600, FONTS.barlow700, FONTS.barlow700Italic],
 };

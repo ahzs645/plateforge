@@ -62,5 +62,5 @@ export const standInTemplate: PlateTemplate<StandInDesign> = {
     if (!p) return <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" role="img" aria-label="Missing stand-in artwork"><rect width="600" height="300" fill="#ddd" /></svg>;
     return <StandInPlate plate={p} text={text} />;
   },
-  fonts: [FONTS.antonio],
+  fonts: [FONTS.antonio, FONTS.antonioExtended],
 };

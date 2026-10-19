@@ -127,8 +127,7 @@ describe('research dies in the B.C. renderer', () => {
           expect(paths, `${id} ${die} ${char}`).toEqual(dieGlyph(passenger, char)!.paths);
         }
         const separator = byRole(root, 'serial-separator');
-        if (id.includes('motorcycle')) expect(separator).toBeUndefined();
-        else expect(all(separator!).some(n => n.attrs['data-part'] === 'collector-wave' && n.attrs.fill === 'currentColor')).toBe(true);
+        expect(all(separator!).some(n => n.attrs['data-part'] === 'collector-wave' && n.attrs.fill === 'currentColor')).toBe(true);
       }
     }
   });

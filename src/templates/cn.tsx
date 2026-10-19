@@ -1,6 +1,6 @@
 import { useId } from 'react';
 import type { PlateTemplate } from '../core/types';
-import { CJK_STACK, CONDENSED, FONTS } from './fonts';
+import { CN_STACK, CONDENSED, FONTS, BARLOW_CAP_HEIGHT } from './fonts';
 import { measure, safeId } from './measure';
 
 export interface CnDesign {
@@ -94,16 +94,16 @@ function Glyph({ ch, box, fill }: { ch: string; box: Box; fill: string }) {
     const sx = box.w / 92;
     const sy = box.h / 95;
     return (
-      <text transform={`translate(${cx} ${box.y + box.h - 7 * sy}) scale(${sx} ${sy})`} textAnchor="middle" fontFamily={CJK_STACK} fontWeight="700" fontSize="100" fill={fill}>
+      <text transform={`translate(${cx} ${box.y + box.h - 7 * sy}) scale(${sx} ${sy})`} textAnchor="middle" fontFamily={CN_STACK} fontWeight="700" fontSize="100" fill={fill}>
         {ch}
       </text>
     );
   }
-  // Barlow Condensed digits are ~0.75 em tall and digits 0.47 em wide: stretch to the box, squeeze wide letters.
+  // Barlow 1.408 has a 0.7-em cap height. This remains a labelled box-fitted approximation.
   const font = { family: CONDENSED, size: 100, weight: 600 };
   const sx = Math.min(box.w / (measure(ch, font) || 47), box.w / 47);
   return (
-    <text transform={`translate(${cx} ${box.y + box.h}) scale(${sx} ${box.h / 75})`} textAnchor="middle" fontFamily={font.family} fontWeight={font.weight} fontSize={font.size} fill={fill}>
+    <text transform={`translate(${cx} ${box.y + box.h}) scale(${sx} ${box.h / (100 * BARLOW_CAP_HEIGHT)})`} textAnchor="middle" fontFamily={font.family} fontWeight={font.weight} fontSize={font.size} fill={fill}>
       {ch}
     </text>
   );
@@ -141,7 +141,7 @@ function CnPlate({ design, parts, text }: { design: CnDesign; parts: Record<stri
   const inset = nev ? 3 : 2.25;
 
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={text}>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={text} lang="zh-CN">
       <defs>
         <linearGradient id={`${id}bg`} x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stopColor={v.bg[0]} />

@@ -1,22 +1,39 @@
-import barlow600 from '@fontsource/barlow-condensed/files/barlow-condensed-latin-600-normal.woff2?url';
-import barlow700 from '@fontsource/barlow-condensed/files/barlow-condensed-latin-700-normal.woff2?url';
-import antonio from '../assets/fonts/Antonio-latin.woff2?url';
-import euroPlate from '../assets/fonts/EuroPlate.ttf?url';
-import ukPlate from '../assets/fonts/UKNumberPlate.ttf?url';
 import type { FontAsset } from '../core/types';
+import { fontFaceCss } from '../core/font-contract';
+import { FONT_ASSETS } from './font-assets';
+export { FONT_ASSETS } from './font-assets';
 
-/** Plate fonts. On screen they come from index.css; on export they are inlined as data URLs. */
+const asset = (id: string): FontAsset => FONT_ASSETS.find((f) => f.id === id)!;
+/** Compatibility names used by existing templates. Subsets/styles expand at export. */
 export const FONTS = {
-  barlow600: { family: 'Barlow Condensed', url: barlow600, weight: 600, format: 'woff2' },
-  barlow700: { family: 'Barlow Condensed', url: barlow700, weight: 700, format: 'woff2' },
-  euro: { family: 'EuroPlate', url: euroPlate, format: 'truetype' },
-  uk: { family: 'UKNumberPlate', url: ukPlate, format: 'truetype' },
-  /** Variable (400–700), SIL OFL; the stand-in artwork's lettering. */
-  antonio: { family: 'Antonio', url: antonio, weight: '400 700', format: 'woff2' },
-} satisfies Record<string, FontAsset>;
+  barlow400: asset('barlow-400-normal-latin'),
+  barlow500: asset('barlow-500-normal-latin'),
+  barlow600: asset('barlow-600-normal-latin'),
+  barlow700: asset('barlow-700-normal-latin'),
+  barlow600Italic: asset('barlow-600-italic-latin'),
+  barlow700Italic: asset('barlow-700-italic-latin'),
+  euro: asset('euro'), uk: asset('uk'),
+  antonio: asset('antonio-latin'), antonioExtended: asset('antonio-latin-ext'),
+};
 
-/** CJK text relies on system fonts (these are available to SVG images, so PNG export still works). */
-export const CJK_STACK = '"PingFang SC", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans CJK SC", "Noto Sans JP", "Microsoft YaHei", "Yu Gothic", sans-serif';
-/** Korean hangul via system fonts; kept apart from CJK_STACK so Chinese/Japanese rendering is unchanged. */
-export const KR_STACK = '"Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Nanum Gothic", sans-serif';
-export const CONDENSED = '"Barlow Condensed", "Arial Narrow", sans-serif';
+/** Custom/unregistered assets are retained; built-in families gain their real variants. */
+export function expandFontAssets(declared: readonly FontAsset[]): FontAsset[] {
+  const families = new Set(declared.map((f) => f.family));
+  const assets = [...FONT_ASSETS.filter((f) => families.has(f.family)), ...declared];
+  return [...new Map(assets.map((f) => [JSON.stringify([f.url, f.family, f.weight, f.style, f.unicodeRange]), f])).values()];
+}
+
+export const availableFontAssets = (declared: readonly FontAsset[] = []): FontAsset[] => expandFontAssets([...FONT_ASSETS, ...declared]);
+
+export function installPlateFonts(doc: Document = document): void {
+  if (doc.getElementById('plateforge-font-faces')) return;
+  const style = doc.createElement('style');
+  style.id = 'plateforge-font-faces';
+  style.textContent = FONT_ASSETS.map((f) => fontFaceCss(f, f.url)).join('\n');
+  doc.head.appendChild(style);
+}
+
+export { CN_STACK, JP_STACK, KR_STACK, SANS, SERIF, SCRIPT, SYLLABICS } from './portable-typefaces';
+export { CN_STACK as CJK_STACK } from './portable-typefaces';
+export const CONDENSED = '"Barlow Condensed", "Noto Sans", sans-serif';
+export const BARLOW_CAP_HEIGHT = 0.7; // OS/2 capHeight 700 / unitsPerEm 1000, font version 1.408.

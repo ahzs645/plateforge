@@ -1,10 +1,18 @@
+import { portableFamily } from './portable-typefaces';
 /** Shared safe SVG scene contract for React and standalone serializers. */
 export interface SvgNode {
   tag: string;
   attrs: Record<string, string | number>;
   children: Array<SvgNode | string>;
 }
-export const node = (tag: string, attrs: SvgNode['attrs'] = {}, ...children: SvgNode['children']): SvgNode => ({ tag, attrs, children });
+export const node = (tag: string, attrs: SvgNode['attrs'] = {}, ...children: SvgNode['children']): SvgNode => {
+  const family = attrs.fontFamily;
+  const replacement = typeof family === 'string' ? portableFamily(family) : undefined;
+  // Retain the old lookup key so research replacement still resolves the same source-specific master.
+  const resolved = replacement && replacement !== family ? { ...attrs, fontFamily: replacement,
+    'data-original-font-family': family, 'data-typeface-status': 'portable-substitute' } : attrs;
+  return { tag, attrs: resolved, children };
+};
 const attrNames: Record<string, string> = {
   stopColor: 'stop-color', stopOpacity: 'stop-opacity',
   fontFamily: 'font-family', fontSize: 'font-size', fontWeight: 'font-weight', fontStyle: 'font-style', fontVariant: 'font-variant',

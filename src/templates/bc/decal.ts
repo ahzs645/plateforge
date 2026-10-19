@@ -108,7 +108,7 @@ export function buildDecal(art: DecalArt, b: Box): SvgNode {
       t(art.serial, x+w*(left+width/2), y+h*(top+height*.78), h*height*.50,
         w*width*.88, '#171717', 'decal-serial', 'middle', 'bc-decal-control'),
     ] : [];
-    const flower = (cx: number, cy: number) => buildDecalFlower(x+w*cx, y+h*cy, h*.30, art.ink);
+    const flower = (cx: number, cy: number, diameter=.30) => buildDecalFlower(x+w*cx, y+h*cy, h*diameter, art.ink);
     if (art.year === '71') {
       parts.push(...province(.30,.08,.52),
         t('71',x+w*.79,y+h*.84,h*.40,w*.38,art.ink,'decal-year','middle','bc-decal-wide'),
@@ -125,7 +125,7 @@ export function buildDecal(art: DecalArt, b: Box): SvgNode {
         ...control(.075,.42,.85,.30),
         t('PASS. COMM.',x+w*.5,y+h*.9,h*.12,w*.86,art.ink,'decal-class'));
     } else if (art.year === '76') {
-      parts.push(...province(.35,.07,.59), flower(.82,.23),
+      parts.push(...province(.35,.07,.59), flower(.80,.26,.40),
         t('76',x+w*.125,y+h*.52,h*.12,w*.16,art.ink,'decal-year'),
         t('PASS. COMM.',x+w*.57,y+h*.52,h*.12,w*.73,art.ink,'decal-class'),
         ...control(.07,.61,.86,.31));

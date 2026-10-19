@@ -11,7 +11,7 @@ import { buildLettering, letteringLayout, supportsLettering } from './lettering'
 import { SvgScene } from './SvgScene';
 import { NWT_SPECTACULAR_PROFILE, buildNwtSpectacularSerial } from './dies/nwt-spectacular';
 import ntAuroraUrl from '../assets/nt-aurora.png';
-import { CONDENSED, FONTS } from './fonts';
+import { CONDENSED, FONTS, SANS, SERIF, SCRIPT, SYLLABICS } from './fonts';
 import {AlbertaArtwork, type AlbertaWordmark} from './art/alberta';
 import {ALBERTA_AVANT_GARDE_PROFILE, buildAlbertaSlogan} from './dies/alberta-avant-garde';
 import { fit, measure, safeId } from './measure';
@@ -120,13 +120,12 @@ export interface CaDesign {
 const W = 600;
 const H = 300;
 export const CA_SIZE = { width: W, height: H };
-const SCRIPT = '"Snell Roundhand", "Brush Script MT", "Segoe Script", cursive';
 const FACES: Record<CaFace, string> = {
   block: CONDENSED,
-  sans: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-  serif: 'Georgia, "Times New Roman", Times, serif',
+  sans: SANS,
+  serif: SERIF,
   script: SCRIPT,
-  syllabics: '"Euphemia UCAS", "Noto Sans Canadian Aboriginal", Gadugi, "Aboriginal Sans", sans-serif',
+  syllabics: SYLLABICS,
 };
 const DEFAULT_WEIGHT: Record<CaFace, number> = { block: 700, sans: 700, serif: 700, script: 400, syllabics: 700 };
 
@@ -327,7 +326,7 @@ function Emblem({ p, defs }: { p: CaPlaced; defs?: { color?: string; accent?: st
 
 function Label({ l, ink }: { l: CaLabel; ink: string }) {
   const face = l.face ?? 'block';
-  const font = { family: FACES[face], size: l.size, weight: l.weight ?? DEFAULT_WEIGHT[face], letterSpacing: l.spacing ?? 0 };
+  const font = { family: FACES[face], size: l.size, weight: l.weight ?? DEFAULT_WEIGHT[face], style: l.italic ? 'italic' as const : 'normal' as const, letterSpacing: l.spacing ?? 0 };
   const sized = fit(l.text, font, l.maxWidth ?? 540);
   return (
     <text x={l.x ?? W / 2} y={l.y} textAnchor={l.anchor ?? 'middle'} fontFamily={font.family} fontSize={font.size}

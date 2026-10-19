@@ -248,14 +248,15 @@ const COL_NOTE = 'Collector reconstruction: Collector, British and Columbia use 
 const COL_INK = '#111111';
 const COL_SHARED_DIES = { 'bc-astro-4': '1985-flag', 'bc-waldale': '2001-flag' };
 const harrington = (text: string, x: number, baseline: number, cap: number, role: string) =>
-  die(text, x, baseline, cap, 'bc-harrington-collector', role, {color: COL_INK, screened: true});
+  die(text, x, baseline, cap, 'bc-harrington-collector', role, {color: COL_INK, screened: true, ...(text==='Collector'?{spacing:-3}:{})});
 function collectorFull(id: string, label: string, multi: boolean, wells: 'single' | 'dual', dieId: string): KitRecipe {
   const baseline = wells === 'single' ? 106 : 111;
   return plate(id, label, FULL, SRC.collector, COL_NOTE, {
     background: '#e3deda', ink: COL_INK, rim: { inset: 1.6, width: 1, color: '#c4c0bc' },
     legends: [harrington('Collector', 150, multi ? 22 : 33, multi ? 12 : 17.8, 'legend-top'),
-      harrington('British', 49, 124, 12, 'legend-left'), harrington('Columbia', 252, 124, 12, 'legend-right')],
-    fontLegends: multi ? [serif('MULTI-VEHICLE', 150, 29.5, 5.5, COL_INK, 'legend-multi', {font: 'sans', weight: 400, width: 53})] : [],
+      harrington('British', 49, 124, 12, 'legend-left'), harrington('Columbia', 252, 124, 12, 'legend-right'),
+      ...(multi?[die('MULTI-VEHICLE',150,29.5,4.9,'bc-corrected-collector-multi','legend-multi',{color:COL_INK,screened:true})]:[])],
+    fontLegends: [],
     serial: { x: 150, baseline, cap: 66, maxWidth: 266, die: dieId, researchFormats: COL_SHARED_DIES, color: COL_INK,
       separator: { kind: 'art', gap: 12.5, art: { art: 'bc-collector-tilde', x: 0, y: baseline - 36.25, width: 19, height: 6.5 } } },
     ...(wells === 'dual' ? dual(well(99, 113, 36, 30), well(137, 113, 70, 30)) : { decal: well(100, 113, 104, 30) }),
@@ -265,9 +266,11 @@ function collectorSmall(id: string, label: string, multi: boolean): KitRecipe {
   return plate(id, label, SMALL, SRC.collector, COL_NOTE, {
     background: '#e8e8e4', ink: COL_INK, rim: { inset: 1.4, width: 0.9, color: '#c4c4c0' },
     legends: [harrington('Collector', 101.5, multi ? 21 : 26, multi ? 11 : 14.5, 'legend-top'),
-      harrington('British', 30, 110, 7, 'legend-left'), harrington('Columbia', 172, 110, 7, 'legend-right')],
-    fontLegends: multi ? [serif('MULTI-VEHICLE', 101.5, 28, 4.5, COL_INK, 'legend-multi', {font: 'sans', weight: 400, width: 42})] : [],
-    serial: { x: 101.5, baseline: 86, cap: 48, maxWidth: 185, die: 'bc-astro-4', researchFormats: COL_SHARED_DIES, color: COL_INK },
+      harrington('British', 30, 110, 7, 'legend-left'), harrington('Columbia', 172, 110, 7, 'legend-right'),
+      ...(multi?[die('MULTI-VEHICLE',101.5,28,3.6,'bc-corrected-collector-multi','legend-multi',{color:COL_INK,screened:true})]:[])],
+    fontLegends: [],
+    serial: { x: 101.5, baseline: 86, cap: 48, maxWidth: 185, die: 'bc-astro-4', researchFormats: COL_SHARED_DIES, color: COL_INK,
+      separator: {kind:'art',gap:8,art:{art:'bc-collector-mc-wave',x:0,y:60,width:13,height:3.5}} },
     decal: well(71, 91, 75, 27),
   });
 }
