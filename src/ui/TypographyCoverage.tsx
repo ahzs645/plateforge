@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import type { Parts, PlateFormat, Region } from '../core/types';
 import { templateFor } from '../core/registry';
 import { availableFontAssets } from '../templates/fonts';
+import { FONT_ASSETS } from '../templates/font-assets';
 import { inspectSvgTypography, type SvgTypographyInspection } from './font-inspection';
 import { usePlateFontsVersion } from './font-loading';
 import { useResearchDiesVersion } from './ResearchDiesToggle';
@@ -31,7 +32,7 @@ export function TypographyCoverage({ region, format, parts }: { region: Region; 
   useEffect(() => {
     const frame = requestAnimationFrame(() => {
       const svg = document.querySelector<SVGSVGElement>('.plate-preview svg');
-      if (svg) setValue({ key, inspection: inspectSvgTypography(svg, availableFontAssets(template.fonts)) });
+      if (svg) setValue({ key, inspection: inspectSvgTypography(svg, availableFontAssets(template.fonts, FONT_ASSETS)) });
     });
     return () => cancelAnimationFrame(frame);
   }, [key, template, fontVersion, researchVersion]);

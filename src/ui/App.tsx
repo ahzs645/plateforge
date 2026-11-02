@@ -9,6 +9,7 @@ import { BatchView } from './BatchView';
 import { download, fileSafe, serializeSvg, svgToPngBlob, svgToTeslaPngBlob, TESLA_HINT, type ExportKind } from './exporting';
 import { FormatTimeline } from './FormatTimeline';
 import { GalleryView } from './GalleryView';
+import { FONT_ASSETS } from '../templates/font-assets';
 import { ChevronDown, CopyIcon, DownloadIcon, Logo, MonitorIcon, MoonIcon, RefreshIcon, SunIcon } from './icons';
 import { Inspector } from './Inspector';
 import { PlateView } from './PlateView';
@@ -134,6 +135,7 @@ export function App() {
       };
       unchanged();
       const text = await serializeSvg(svg, templateFor(region, format).fonts, {
+        catalogue: FONT_ASSETS,
         currentSvg: () => previewRef.current?.querySelector('svg'),
         context: { region: region.id, format: format.id, profileRights: review.rights, profileNotices: review.notices, ...(plate.region.id === 'ca-bc' ? { researchRequested: researchDiesEnabled(), researchRegistrySha256: researchRegistryDigest() } : {}) },
       });
