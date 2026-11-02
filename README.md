@@ -59,6 +59,8 @@ src/
     registry.ts     registerRegion / registerTemplate / generateBatch
     lettering.ts    optional appearance controls and dated source attribution
     timeline.ts     country/continent grouping; eras and chronological timeline
+    gallery.ts      gallery sections (family → era → design), shared with the embed
+  embed/            component and data API for other sites, with per-region entries (bc.ts)
   regions/          data and serial rules: us/, europe/, asia/, canada/
   templates/        SVG renderers and shared lettering/scene primitives
   library/          reference schema, validation, filtering, dated classifications
@@ -117,6 +119,7 @@ B.C. research uses [BCpl8s](https://www.bcpl8s.ca/). Lettering categories and th
 - Existing `EuroPlate.ttf` and `UKNumberPlate.ttf` assets came from the upstream reference project; check their licences before redistribution.
 - Iranian presets use portable candidate glyphs and complete HarfBuzz-shaped wordmark paths; their profiles, licenses and rebuild steps are documented in [Iran fonts](docs/research/iran-customizer/fonts/README.md). Older Iraqi Arabic-script outlines still use `westasia-arabic.ts` (Parastoo/Sahel, SIL OFL); regenerate those with `scripts/build-westasia-arabic.py`. Candidate fonts are not authenticated plate dies.
 - Browser tests mock third-party image responses. Passing CI does not verify every remote photograph.
+- **Embedding**: `src/embed/` exposes the renderer and gallery data to other sites; PofBC's Plates view uses it as a git submodule. See [embedding PlateForge plates](docs/embed.md).
 - Generated plates are for mockups, research, testing and design. They do not represent real registrations or official issuance.
 
 For future maintainers: [reconstruction workflow and lessons](docs/plate-reconstruction-workflow.md), [reusable reconstruction skill](skills/plate-reference-reconstruction/SKILL.md), and [repository handoff](AGENTS.md).

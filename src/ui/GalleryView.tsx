@@ -1,10 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { buildTimeline, countryOf, familyOf, formatPeriod, gapsFor, groupByCountry, regionFamilies, statusBadge, type CountryGroup } from '../core/timeline';
-import type { PlateFormat, PlateGap, Region } from '../core/types';
+import { galleryCountryIsSimple, gallerySectionsFor, type Card } from '../core/gallery';
+import { buildTimeline, countryOf, familyOf, formatPeriod, groupByCountry, regionFamilies, statusBadge, type CountryGroup } from '../core/timeline';
+import type { PlateFormat, Region } from '../core/types';
 import { ChevronDown, CloseIcon, SearchIcon } from './icons';
 import { PlateView } from './PlateView';
 import { samplePlate } from './samples';
 import './timeline.css';
+
+export { galleryCountryIsSimple, gallerySectionsFor } from '../core/gallery';
 
 type Scope = 'region' | 'country' | 'continent';
 
@@ -16,58 +19,6 @@ interface Props {
   /** Switches the gallery to another region without leaving it. */
   onSelectRegion(regionId: string): void;
 }
-
-interface Card { region: Region; format: PlateFormat; title: string; meta: string }
-interface Section { id: string; heading: string; period?: string; start?: number; summary?: string; cards: Card[]; gap?: PlateGap; coverageRoute?: string }
-
-export function gallerySectionsFor(group: CountryGroup, query: string, familyFilter = ''): Section[] {
-  const q = query.trim().toLowerCase();
-  const keep = (c: Card) => !q || `${c.title} ${c.meta} ${c.region.name} ${c.region.code} ${c.format.id}`.toLowerCase().includes(q);
-  const multi = group.regions.length > 1;
-  const sections: Section[] = [];
-  const loose: Card[] = [];
-  for (const region of group.regions) {
-    const families = regionFamilies(region);
-    const scopes = families.length ? families.filter((f) => !familyFilter || f.id === familyFilter) : [undefined];
-    for (const family of scopes) {
-      // Prefix headings when a region has several families or a country has several regions.
-      const prefix = [multi ? region.name : '', families.length > 1 && family ? family.label : ''].filter(Boolean).join(' · ');
-      const head = (label: string) => prefix ? `${prefix} · ${label}` : label;
-      const formats = family ? family.formats : region.formats;
-      const timeline = buildTimeline(region, family?.id);
-      if (timeline) {
-        const dated: Section[] = [];
-        for (const era of timeline.eras) {
-          const cards = era.entries.map(({ format, period }) => ({ region, format, title: format.label, meta: multi ? `${region.name} · ${formatPeriod(period)}` : formatPeriod(period) })).filter(keep);
-          if (cards.length) dated.push({ id: `${region.id}/${era.id}`, heading: head(era.label), period: formatPeriod(era.period), start: era.period[0], summary: era.summary, cards });
-        }
-        // Unbuilt periods stay visible (unless filtering) so the history reads without silent holes.
-        if (!q) for (const gap of gapsFor(region, family?.id)) dated.push({ id: `${region.id}/${gap.id}`, heading: head(gap.label), period: formatPeriod(gap.period), start: gap.period[0], summary: gap.note, cards: [], gap, coverageRoute: region.coverageRoute });
-        sections.push(...dated.sort((x, y) => x.start! - y.start!));
-        loose.push(...formats.filter((f) => !f.period).map((format) => ({ region, format, title: format.label, meta: prefix || region.name })).filter(keep));
-      } else if (family && families.length > 1) {
-        const cards = formats.map((format) => ({ region, format, title: format.label, meta: format.period ? formatPeriod(format.period) : format.pattern ?? '' })).filter(keep);
-        if (cards.length) sections.push({ id: `${region.id}/${family.id}`, heading: head('Designs'), summary: family.summary, cards });
-      } else {
-        loose.push(...formats.map((format) => multi
-          ? { region, format, title: region.name, meta: region.formats.length > 1 ? format.label : region.code }
-          : { region, format, title: format.label, meta: format.pattern ?? region.code }).filter(keep));
-      }
-      // A family can have too few dated designs for a timeline and still have documented gaps.
-      // Keep its existing source periods; never manufacture another dated format just to show them.
-      if (!timeline && !q) for (const gap of gapsFor(region, family?.id)) sections.push({
-        id: `${region.id}/${gap.id}`, heading: head(gap.label), period: formatPeriod(gap.period),
-        start: gap.period[0], summary: gap.note, cards: [], gap, coverageRoute: region.coverageRoute,
-      });
-    }
-  }
-  if (loose.length) sections.push({ id: `${group.country}/designs`, heading: sections.length ? 'Other designs' : multi ? 'All regions' : 'Designs', cards: loose });
-  return sections;
-}
-
-/** Gap-bearing countries need their own sections even when their formats do not form a timeline. */
-export const galleryCountryIsSimple = (group: CountryGroup): boolean => group.regions.length === 1
-  && !buildTimeline(group.regions[0]) && !(group.regions[0].gaps?.length);
 
 /** Every design for the current state/province, country or continent, with dated regions laid out as a timeline. */
 export function GalleryView({ regions, region, format, onOpen, onSelectRegion }: Props) {
@@ -91,7 +42,7 @@ export function GalleryView({ regions, region, format, onOpen, onSelectRegion }:
     const national: Card[] = countries.filter(simple).flatMap((g) => g.regions[0].formats.map((f) => ({ region: g.regions[0], format: f, title: g.country, meta: f.label })))
       .filter((c) => !q || `${c.title} ${c.meta} ${c.region.code}`.toLowerCase().includes(q));
     const list = countries.filter((g) => !simple(g)).map((g) => ({ key: g.country, group: g as CountryGroup | undefined, sections: gallerySectionsFor(g, query, g.regions.includes(region) ? activeFamily : '') }));
-    if (national.length) list.push({ key: 'national', group: undefined, sections: [{ id: 'national', heading: 'National designs', summary: 'Countries with a single national plate system.', cards: national }] });
+    if (national.length) list.push({ key: 'national', group: undefined, sections: [{ id: 'national', heading: 'National designs', label: 'National designs', summary: 'Countries with a single national plate system.', cards: national }] });
     return list.filter((b) => b.sections.length);
   }, [countries, query, scope, region, activeFamily]);
   const countryCount = new Set(blocks.flatMap((b) => b.sections.flatMap((s) => s.cards.map((c) => countryOf(c.region))))).size;

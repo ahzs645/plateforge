@@ -13,11 +13,13 @@ export interface SvgExportOptions {
   /** Font arrival can redraw the SVG. Read the current element after readiness, not a detached old one. */
   currentSvg?: () => SVGSVGElement | null | undefined;
   context?: Record<string, unknown>;
+  /** Faces export may embed. Defaults to the core (non-CJK) faces; pass FONT_ASSETS for every template. */
+  catalogue?: readonly FontAsset[];
 }
 
 /** Portable bundled faces plus explicit notices for OS-dependent or unverified material. */
 export async function serializeSvg(svg: SVGSVGElement, fonts: FontAsset[] = [], options: SvgExportOptions = {}): Promise<string> {
-  const available = availableFontAssets(fonts);
+  const available = availableFontAssets(fonts, options.catalogue);
   const doc = svg.ownerDocument;
   if (doc.fonts) {
     const requested = svgTextRuns(svg).map(async (run) => {

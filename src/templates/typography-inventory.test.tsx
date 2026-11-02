@@ -13,7 +13,7 @@ import {installResearchRegistry,setResearchDiesEnabled,validateResearchRegistry}
 import {IRAQ_FONT_PROFILES} from './iraq-custom-fonts';
 import {IRAN_FONT_PROFILES} from './iran-custom-fonts';
 import {reviewPlateExport} from '../ui/export-policy';
-import {FONT_ASSETS} from './fonts';
+import {FONT_ASSETS} from './font-assets';
 import {fontHasCharacter} from '../core/font-contract';
 import {TYPOGRAPHY_NOTES} from '../ui/TypographyCoverage';
 const rows:Record<string,unknown>[]=[];

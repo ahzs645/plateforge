@@ -8,13 +8,14 @@ import {getRegions,generatePlate,makePlate,templateFor} from '../src/core/regist
 import {createRng} from '../src/core/random';
 import {PlateView} from '../src/ui/PlateView';
 import {installPlateFonts,availableFontAssets} from '../src/templates/fonts';
+import {FONT_ASSETS} from '../src/templates/font-assets';
 import {serializeSvg,svgToPngBlob,svgToTeslaPngBlob} from '../src/ui/exporting';
 import {inspectSvgTypography,svgTextRuns} from '../src/ui/font-inspection';
 import {reviewPlateExport} from '../src/ui/export-policy';
 import {loadResearchDies,setResearchDiesEnabled} from '../src/templates/dies/research-dies';
 import {nextPaint} from '../src/ui/font-loading';
 import type {Plate} from '../src/core/types';
-installPlateFonts();
+installPlateFonts(document,FONT_ASSETS);
 const root=createRoot(document.getElementById('plate')!);
 let plate:Plate|null=null;
 const all=getRegions().flatMap(region=>region.formats.map(format=>({region,format,template:templateFor(region,format).id})));
@@ -29,7 +30,7 @@ async function ready(){
   await Promise.all(images);
 }
 function info(){
-  const svg=getSvg(),inspection=inspectSvgTypography(svg,availableFontAssets());
+  const svg=getSvg(),inspection=inspectSvgTypography(svg,availableFontAssets([],FONT_ASSETS));
   const {x,y,width,height}=svg.viewBox.baseVal;
   if(![x,y,width,height].every(Number.isFinite)||width<=0||height<=0)throw Error('Non-finite geometry');
   svg.style.width=width+'px';svg.style.height=height+'px';
@@ -54,7 +55,7 @@ function info(){
     await ready();return info();
   },
   async export(firstRaster='png'){
-    const svg=getSvg(),source=await serializeSvg(svg,[],{currentSvg:getSvg,context:{testOnly:true}});
+    const svg=getSvg(),source=await serializeSvg(svg,[],{catalogue:FONT_ASSETS,currentSvg:getSvg,context:{testOnly:true}});
     const parsed=new DOMParser().parseFromString(source,'image/svg+xml');if(parsed.querySelector('parsererror'))throw Error('Invalid exported XML');
     const metadata=JSON.parse(parsed.querySelector('[data-role="typography-export"]')!.textContent!);
     if([...parsed.querySelectorAll('image')].some(image=>!image.getAttribute('href')?.startsWith('data:')))throw Error('External exported image');

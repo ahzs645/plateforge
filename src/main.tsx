@@ -3,7 +3,8 @@ import { createRoot } from 'react-dom/client';
 import '@fontsource-variable/inter';
 import './index.css';
 import { installPlateFonts } from './templates/fonts';
-installPlateFonts();
+import { FONT_ASSETS } from './templates/font-assets';
+installPlateFonts(document, FONT_ASSETS);
 // Side-effect imports register the built-in templates and regions.
 import './templates';
 import './regions';
