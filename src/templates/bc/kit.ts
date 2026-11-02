@@ -10,7 +10,7 @@ import { buildLeatherScene } from './leather-scene';
 import { leatherGeometry } from './leather-specimens';
 import { buildDieText, dieRunWidth, dieSupports, type DieRun } from '../dies/engine';
 import { dieProfile } from '../dies/profiles';
-import { withResearchContext } from '../dies/research-dies';
+import { serialResearchContext, withResearchContext } from '../dies/research-dies';
 import { artwork } from './art';
 import { buildDaySticker, buildDecal, decalBox, type DecalArt } from './decal';
 
@@ -172,7 +172,7 @@ function serialNodes(recipe: KitRecipe, serial: string, ink: string): { nodes: S
 }
 
 function withSerialContext<T>(recipe: KitRecipe, build: () => T): T {
-  const format = recipe.serial.researchFormats?.[recipe.serial.die];
+  const format = serialResearchContext(recipe.serial.die, recipe.serial.researchFormats?.[recipe.serial.die]);
   return format ? withResearchContext(format, build) : build();
 }
 
@@ -219,7 +219,7 @@ function serialNodesInContext(recipe: KitRecipe, serial: string, ink: string): {
 /** Shared manufactured alphabets keep the same glyph when a different number is typed. */
 function serialProfile(recipe: KitRecipe) {
   const profile = dieProfile(recipe.serial.die);
-  return recipe.serial.researchFormats?.[recipe.serial.die]
+  return serialResearchContext(recipe.serial.die, recipe.serial.researchFormats?.[recipe.serial.die])
     ? {...profile, allowResearchReplacement: false} : profile;
 }
 
@@ -317,7 +317,8 @@ export function buildKitScene(recipe: KitRecipe, parts: Parts, options: KitScene
     serial, parts, source: recipe.source, construction: recipe.embossed ? 'embossed' : 'flat',
     dies: { serial: profile.id, evidence: profile.evidence.status, fit,
       ...(prefixed ? {prefix: {die: recipe.serial.prefix!.die, capMm: recipe.serial.prefix!.cap, numericCapMm: recipe.serial.cap}} : {}),
-      ...(recipe.serial.researchFormats?.[recipe.serial.die] ? {sharedPassengerFormat: recipe.serial.researchFormats[recipe.serial.die]} : {}) },
+      ...(serialResearchContext(recipe.serial.die, recipe.serial.researchFormats?.[recipe.serial.die])
+        ? {sharedPassengerFormat: serialResearchContext(recipe.serial.die, recipe.serial.researchFormats?.[recipe.serial.die])} : {}) },
     renewal: recipe.renewalPanel ? {rendering: parts.renewal === 'base-only' ? 'base only' : 'separately mounted tab',
       physicalMm: {width: recipe.renewalPanel.width, height: recipe.renewalPanel.height}, independentSerial: 'not supplied'}
       : decal ? (options.decal ? { rendering: 'dated decal', year: options.decal.year, month: options.decal.month ?? null, style: options.decal.style } : { rendering: 'empty placement box only' }) : null,

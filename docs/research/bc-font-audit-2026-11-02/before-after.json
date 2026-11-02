@@ -1,0 +1,602 @@
+{
+  "schemaVersion": 1,
+  "scope": "Sampled glyph-outline and provenance comparison for identical generated inputs and selected dies. Signatures include text, die, fit, per-character outline paths and provenance. They exclude run/glyph transforms and inherited paint/stroke, so unchanged does not establish pixel, spacing or full-scene equivalence. Historical photographic accuracy remains unmeasured.",
+  "baseline": {
+    "revision": "17b974f51c687780c5d0b106fd9ae37e4c83ccae",
+    "sourceTree": {
+      "algorithm": "SHA-256 of JSON [relative path, file SHA-256] pairs sorted by path traversal",
+      "files": 443,
+      "sha256": "513289d2453506fc4c9debe8767bd16d55c3f1d0f25ab72a15c5fae7404540e4"
+    },
+    "registrySha256": "3929f31db1a126911f58e943960c36286935b0a5442f03142b140bf531793743"
+  },
+  "current": {
+    "sourceTree": {
+      "algorithm": "SHA-256 of JSON [relative path, file SHA-256] pairs sorted by path traversal",
+      "files": 444,
+      "sha256": "978f4f7880645ffef6d5f9b6d09cf7a6dc5ef59392bcf34ca24cc051709f481a"
+    },
+    "registrySha256": "3929f31db1a126911f58e943960c36286935b0a5442f03142b140bf531793743"
+  },
+  "before": {
+    "formats": 447,
+    "defaultCases": 447,
+    "explicitDieCases": 193,
+    "focusCases": 13,
+    "totalCases": 653,
+    "sampledGlyphOccurrences": 13286,
+    "sampledNonWhitespace": 12960,
+    "research": 10365,
+    "profileOverride": 1315,
+    "constructed": 1280,
+    "unlabelled": 0,
+    "separateArtworkCharacters": 125,
+    "structuralErrors": 0,
+    "selectionMismatches": 0,
+    "invalidSampleCases": 0
+  },
+  "after": {
+    "formats": 447,
+    "defaultCases": 447,
+    "explicitDieCases": 193,
+    "focusCases": 13,
+    "totalCases": 653,
+    "sampledGlyphOccurrences": 13286,
+    "sampledNonWhitespace": 12960,
+    "research": 10354,
+    "profileOverride": 1315,
+    "constructed": 1291,
+    "unlabelled": 0,
+    "separateArtworkCharacters": 125,
+    "structuralErrors": 0,
+    "selectionMismatches": 0,
+    "invalidSampleCases": 0
+  },
+  "caseCoverage": {
+    "before": 653,
+    "after": 653,
+    "added": [],
+    "removed": []
+  },
+  "changedCases": [
+    {
+      "id": "1985-flag/bc-astro-1",
+      "format": "1985-flag",
+      "kind": "explicit-die",
+      "serial": "KXS-276",
+      "selectedDie": "bc-astro-1"
+    },
+    {
+      "id": "1985-flag/bc-astro-2",
+      "format": "1985-flag",
+      "kind": "explicit-die",
+      "serial": "KXS-276",
+      "selectedDie": "bc-astro-2"
+    },
+    {
+      "id": "1985-flag/bc-astro-3",
+      "format": "1985-flag",
+      "kind": "explicit-die",
+      "serial": "KXS-276",
+      "selectedDie": "bc-astro-3"
+    },
+    {
+      "id": "1985-flag/bc-waldale",
+      "format": "1985-flag",
+      "kind": "explicit-die",
+      "serial": "KXS-276",
+      "selectedDie": "bc-waldale"
+    },
+    {
+      "id": "focus/0/1985-flag",
+      "format": "1985-flag",
+      "kind": "focus",
+      "serial": "ABC-123",
+      "selectedDie": "bc-astro-1"
+    },
+    {
+      "id": "focus/1/1985-flag",
+      "format": "1985-flag",
+      "kind": "focus",
+      "serial": "ABC-123",
+      "selectedDie": "bc-astro-2"
+    },
+    {
+      "id": "focus/2/1985-flag",
+      "format": "1985-flag",
+      "kind": "focus",
+      "serial": "ABC-123",
+      "selectedDie": "bc-astro-3"
+    },
+    {
+      "id": "focus/4/1985-flag",
+      "format": "1985-flag",
+      "kind": "focus",
+      "serial": "KRL-978",
+      "selectedDie": "bc-waldale"
+    }
+  ],
+  "unchangedDefaultCasesDefinition": "Identical sampled glyph-outline/provenance signatures, including text and fit; not pixel, spacing or full-scene equivalence.",
+  "unchangedDefaultCases": 447,
+  "unexpectedChangedCases": [],
+  "focusedChanges": [
+    {
+      "id": "focus/0/1985-flag",
+      "serial": "ABC-123",
+      "die": "bc-astro-1",
+      "glyphChanges": [
+        {
+          "role": "serial-left",
+          "runIndex": 0,
+          "index": 0,
+          "character": "A",
+          "before": {
+            "unit": "research-bc-astro-4-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "58c81754b46d94b3ebe17a0a3921e15d746eb4cea39c2a1705d1fa3651cf4f52"
+          },
+          "after": {
+            "unit": "research-bc-astro-1-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "6e57f04f979abfa963adca641d0ee077878fd62eff2f7ccd66d2e382ad01eec8"
+          }
+        },
+        {
+          "role": "serial-left",
+          "runIndex": 0,
+          "index": 1,
+          "character": "B",
+          "before": {
+            "unit": "research-bc-astro-4-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "691fb21b52254e04d8207c5740c713d9fb97c5e22fbfec4fd48b7c2e72d4b95d"
+          },
+          "after": {
+            "unit": null,
+            "provenance": "constructed",
+            "outlineSha256": "f47f6e5bff93dc0340af835e60725cd56d8c1ca0cc38593a9625f81b22361075"
+          }
+        },
+        {
+          "role": "serial-left",
+          "runIndex": 0,
+          "index": 2,
+          "character": "C",
+          "before": {
+            "unit": "research-bc-astro-4-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "f40ff1b8e6cd9b84068033d81dc52b766220a6b39241ac299839939d853e5f76"
+          },
+          "after": {
+            "unit": null,
+            "provenance": "constructed",
+            "outlineSha256": "32e8d24c9064b316f986e56facfef91d58865437735ab6c11450cbdfe8ec2f6d"
+          }
+        },
+        {
+          "role": "serial-right",
+          "runIndex": 1,
+          "index": 0,
+          "character": "1",
+          "before": {
+            "unit": "research-bc-astro-4-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "e66c7775895054fbf965786a89345cef3aa54860993148412db90c8c80851f5d"
+          },
+          "after": {
+            "unit": "research-bc-astro-1-chart-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "17db673b25a3d6bd3a373e12191c06d38ca5b416f6a36b46c6351a4f175734f3"
+          }
+        },
+        {
+          "role": "serial-right",
+          "runIndex": 1,
+          "index": 1,
+          "character": "2",
+          "before": {
+            "unit": "research-bc-astro-4-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "0ac82b08f11e95938d6bf7a1797b893b57f2cce07a149259b8950c93364d5d48"
+          },
+          "after": {
+            "unit": "research-bc-astro-1-chart-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "ea70a21e320c57c8b8a133805230b3a37b2352cac965a3e80960ee0277eba4c3"
+          }
+        },
+        {
+          "role": "serial-right",
+          "runIndex": 1,
+          "index": 2,
+          "character": "3",
+          "before": {
+            "unit": "research-bc-astro-4-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "180f368a23948992ffc4d20808a2262f9fbe5719bec0d09f050b45b4e25717f3"
+          },
+          "after": {
+            "unit": "research-bc-astro-1-chart-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "d8a12b4e5a41229f5d3311155528c2ccfc54e29acba23b0092289e3f5b848c36"
+          }
+        }
+      ]
+    },
+    {
+      "id": "focus/1/1985-flag",
+      "serial": "ABC-123",
+      "die": "bc-astro-2",
+      "glyphChanges": [
+        {
+          "role": "serial-left",
+          "runIndex": 0,
+          "index": 0,
+          "character": "A",
+          "before": {
+            "unit": "research-bc-astro-4-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "58c81754b46d94b3ebe17a0a3921e15d746eb4cea39c2a1705d1fa3651cf4f52"
+          },
+          "after": {
+            "unit": null,
+            "provenance": "constructed",
+            "outlineSha256": "c4c2448bb3ab55e95f7e6da84e136bd2d350bab52413d3bd6afc950c715c8d43"
+          }
+        },
+        {
+          "role": "serial-left",
+          "runIndex": 0,
+          "index": 1,
+          "character": "B",
+          "before": {
+            "unit": "research-bc-astro-4-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "691fb21b52254e04d8207c5740c713d9fb97c5e22fbfec4fd48b7c2e72d4b95d"
+          },
+          "after": {
+            "unit": null,
+            "provenance": "constructed",
+            "outlineSha256": "010597522ddb91e43be3f5f8d0d82db3905b9e7f01d4a9ff82868ca84274c331"
+          }
+        },
+        {
+          "role": "serial-left",
+          "runIndex": 0,
+          "index": 2,
+          "character": "C",
+          "before": {
+            "unit": "research-bc-astro-4-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "f40ff1b8e6cd9b84068033d81dc52b766220a6b39241ac299839939d853e5f76"
+          },
+          "after": {
+            "unit": "research-bc-astro-2-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "8f4109e40bccf4ba1087a3c29cddc0570c2471815b96d11496ce12fd1bdf0b40"
+          }
+        },
+        {
+          "role": "serial-right",
+          "runIndex": 1,
+          "index": 0,
+          "character": "1",
+          "before": {
+            "unit": "research-bc-astro-4-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "e66c7775895054fbf965786a89345cef3aa54860993148412db90c8c80851f5d"
+          },
+          "after": {
+            "unit": "research-bc-astro-2-chart-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "35386d695e79ab973ffa158aa368196794e5b1a3ebe3005f5fad8d65430b5f22"
+          }
+        },
+        {
+          "role": "serial-right",
+          "runIndex": 1,
+          "index": 1,
+          "character": "2",
+          "before": {
+            "unit": "research-bc-astro-4-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "0ac82b08f11e95938d6bf7a1797b893b57f2cce07a149259b8950c93364d5d48"
+          },
+          "after": {
+            "unit": "research-bc-astro-2-chart-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "ec82e1882d00e6ce5d461d6abb3ff60f027d3dd4d06fb9758f9435002769a2a1"
+          }
+        },
+        {
+          "role": "serial-right",
+          "runIndex": 1,
+          "index": 2,
+          "character": "3",
+          "before": {
+            "unit": "research-bc-astro-4-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "180f368a23948992ffc4d20808a2262f9fbe5719bec0d09f050b45b4e25717f3"
+          },
+          "after": {
+            "unit": "research-bc-astro-2-chart-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "a206651d32b568544eb90e442308e4493c75ca7f85420caa3defe7eeb4337ae6"
+          }
+        }
+      ]
+    },
+    {
+      "id": "focus/2/1985-flag",
+      "serial": "ABC-123",
+      "die": "bc-astro-3",
+      "glyphChanges": [
+        {
+          "role": "serial-left",
+          "runIndex": 0,
+          "index": 0,
+          "character": "A",
+          "before": {
+            "unit": "research-bc-astro-4-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "58c81754b46d94b3ebe17a0a3921e15d746eb4cea39c2a1705d1fa3651cf4f52"
+          },
+          "after": {
+            "unit": null,
+            "provenance": "constructed",
+            "outlineSha256": "5d2c1d3a1f9091d26665e40b58c757475403fee42d952307c00fc46f941f26c0"
+          }
+        },
+        {
+          "role": "serial-left",
+          "runIndex": 0,
+          "index": 1,
+          "character": "B",
+          "before": {
+            "unit": "research-bc-astro-4-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "691fb21b52254e04d8207c5740c713d9fb97c5e22fbfec4fd48b7c2e72d4b95d"
+          },
+          "after": {
+            "unit": "research-bc-astro-3-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "c40e7796a1cf34a9f74cb1432406a61a6e6e5f6773c7b79ff5387908ef8db173"
+          }
+        },
+        {
+          "role": "serial-left",
+          "runIndex": 0,
+          "index": 2,
+          "character": "C",
+          "before": {
+            "unit": "research-bc-astro-4-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "f40ff1b8e6cd9b84068033d81dc52b766220a6b39241ac299839939d853e5f76"
+          },
+          "after": {
+            "unit": null,
+            "provenance": "constructed",
+            "outlineSha256": "3c95fe40573c299b811b7d417b5cb1e0b35c44921345b85476fea72ea0a2cb3a"
+          }
+        },
+        {
+          "role": "serial-right",
+          "runIndex": 1,
+          "index": 0,
+          "character": "1",
+          "before": {
+            "unit": "research-bc-astro-4-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "e66c7775895054fbf965786a89345cef3aa54860993148412db90c8c80851f5d"
+          },
+          "after": {
+            "unit": "research-bc-astro-3-chart-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "fff80bc6dfa5c92c3d437af48679b2870e34ec5e09f2b447d69371b809438ab8"
+          }
+        },
+        {
+          "role": "serial-right",
+          "runIndex": 1,
+          "index": 1,
+          "character": "2",
+          "before": {
+            "unit": "research-bc-astro-4-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "0ac82b08f11e95938d6bf7a1797b893b57f2cce07a149259b8950c93364d5d48"
+          },
+          "after": {
+            "unit": "research-bc-astro-3-chart-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "1a5263f35e256ca2d02677053e32ec0180df9be3c0576fe9c1436b749cdffc6b"
+          }
+        },
+        {
+          "role": "serial-right",
+          "runIndex": 1,
+          "index": 2,
+          "character": "3",
+          "before": {
+            "unit": "research-bc-astro-4-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "180f368a23948992ffc4d20808a2262f9fbe5719bec0d09f050b45b4e25717f3"
+          },
+          "after": {
+            "unit": "research-bc-astro-3-chart-smooth-complete",
+            "provenance": "research-candidate",
+            "outlineSha256": "36777a85e6dfa3911e6c2f26a6e7089cdcc97e62b6978884ad5e6ef206aa6bc2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "focus/4/1985-flag",
+      "serial": "KRL-978",
+      "die": "bc-waldale",
+      "glyphChanges": [
+        {
+          "role": "serial-left",
+          "runIndex": 0,
+          "index": 0,
+          "character": "K",
+          "before": {
+            "unit": "research-bc-waldale-passenger-refinement-v2",
+            "provenance": "research-candidate",
+            "outlineSha256": "b1fd854bcbed0dad38c1ba3dc497ee0c45caa84016614706f89546b3b4d2bfcb"
+          },
+          "after": {
+            "unit": "research-bc-waldale-trial-run-1998-1999",
+            "provenance": "research-candidate",
+            "outlineSha256": "6f1f492320f8c0eb246182107fda49b215d69058cf018080a3154bfcc0f2d94e"
+          }
+        },
+        {
+          "role": "serial-left",
+          "runIndex": 0,
+          "index": 1,
+          "character": "R",
+          "before": {
+            "unit": "research-bc-waldale-passenger-refinement-v2",
+            "provenance": "research-candidate",
+            "outlineSha256": "5db764072a014841ee9804c88afd0fdc290e36e4971812b5c1a4726cfd5580dc"
+          },
+          "after": {
+            "unit": null,
+            "provenance": "constructed",
+            "outlineSha256": "39f5708f52ff9924af38d656af9a210f7adfa1884cb41d0b6db13ca64302f334"
+          }
+        },
+        {
+          "role": "serial-left",
+          "runIndex": 0,
+          "index": 2,
+          "character": "L",
+          "before": {
+            "unit": "research-bc-waldale-passenger-refinement-v2",
+            "provenance": "research-candidate",
+            "outlineSha256": "444377e9c6ce0999d6fb1a3a8d22e4c5bf33c39bd964485e89ed271924b6a6f8"
+          },
+          "after": {
+            "unit": null,
+            "provenance": "constructed",
+            "outlineSha256": "44899abb0408649bc639412e0ce7bd1a23ffa0149da2bc56f2ef72b81f59b369"
+          }
+        },
+        {
+          "role": "serial-right",
+          "runIndex": 1,
+          "index": 0,
+          "character": "9",
+          "before": {
+            "unit": "research-bc-waldale-passenger-refinement-v2",
+            "provenance": "research-candidate",
+            "outlineSha256": "7f0879af290ff2d08fcccc08c0c0da5bf4c4911de503d5de6729d5f7d41e55fe"
+          },
+          "after": {
+            "unit": "research-bc-waldale-trial-run-1998-1999",
+            "provenance": "research-candidate",
+            "outlineSha256": "b77495f776763b847dd874e7a073c152d95dfb14f3afdd88741f29f63e55a03f"
+          }
+        },
+        {
+          "role": "serial-right",
+          "runIndex": 1,
+          "index": 1,
+          "character": "7",
+          "before": {
+            "unit": "research-bc-waldale-passenger-refinement-v2",
+            "provenance": "research-candidate",
+            "outlineSha256": "f77fb671e0875129517820d61ffa31293e5ab12186cb3e9b38c8a30c256ace1e"
+          },
+          "after": {
+            "unit": "research-bc-waldale-trial-run-1998-1999",
+            "provenance": "research-candidate",
+            "outlineSha256": "5d6560b816df43fe94959056477e269792fd5b60e6a29bbb7dba6c12544abad0"
+          }
+        },
+        {
+          "role": "serial-right",
+          "runIndex": 1,
+          "index": 2,
+          "character": "8",
+          "before": {
+            "unit": "research-bc-waldale-passenger-refinement-v2",
+            "provenance": "research-candidate",
+            "outlineSha256": "a686cc20ad09bf7d2138c3531e5885993cf4f81486a1a6b5f68438191a4b3986"
+          },
+          "after": {
+            "unit": "research-bc-waldale-trial-run-1998-1999",
+            "provenance": "research-candidate",
+            "outlineSha256": "6cc51bbe795599969df43532929933b5dcf3fdf8cc40cd69b5fc53b5d9042b2b"
+          }
+        }
+      ]
+    }
+  ],
+  "controls": [
+    {
+      "id": "focus/3/1985-flag",
+      "serial": "ABC-123",
+      "unchanged": true,
+      "constructedLetters": []
+    },
+    {
+      "id": "focus/5/2001-flag",
+      "serial": "123-ABC",
+      "unchanged": true,
+      "constructedLetters": []
+    },
+    {
+      "id": "focus/6/2001-flag",
+      "serial": "098-SJF",
+      "unchanged": true,
+      "constructedLetters": []
+    },
+    {
+      "id": "focus/7/2001-flag",
+      "serial": "976-SKP",
+      "unchanged": true,
+      "constructedLetters": []
+    },
+    {
+      "id": "focus/8/2014-flag",
+      "serial": "JA7-91L",
+      "unchanged": true,
+      "constructedLetters": []
+    },
+    {
+      "id": "focus/9/2025-flag",
+      "serial": "A12-3UY",
+      "unchanged": true,
+      "constructedLetters": [
+        "U",
+        "Y"
+      ]
+    },
+    {
+      "id": "focus/10/2025-flag",
+      "serial": "B45-6YZ",
+      "unchanged": true,
+      "constructedLetters": [
+        "Y",
+        "Z"
+      ]
+    },
+    {
+      "id": "focus/11/motorcycle-2011",
+      "serial": "S94546",
+      "unchanged": true,
+      "constructedLetters": []
+    },
+    {
+      "id": "focus/12/trailer-utility-2016",
+      "serial": "WKF-62B",
+      "unchanged": true,
+      "constructedLetters": [
+        "W",
+        "K",
+        "B"
+      ]
+    }
+  ]
+}

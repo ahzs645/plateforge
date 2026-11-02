@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1056" height="556" viewBox="0 0 1056 556" role="img" aria-labelledby="preview-title preview-description">
+  <title id="preview-title">Astrographic type 1: actual lettering before and after the selection correction</title>
+  <desc id="preview-description">Before, ABC-123 uses the Classic type 4 research unit. Current output uses the type 1 research specimens and digit chart, with constructed production B and C. All plate-lettering path data is copied unchanged from the committed comparison artifacts; placement is uniformly scaled. These remain candidate reconstructions.</desc>
+  <rect x=".5" y=".5" width="1055" height="555" rx="10" fill="#fff" stroke="#cfdee6" />
+  <rect x="21" y="132" width="495" height="170" fill="#f9fbfc" />
+  <svg viewBox="0 0 300 150" role="img" aria-label="Actual serial placement; artwork separator omitted" x="21" y="132" width="495" height="170" data-preview-component="before-strip">
+    <g>
+      <g data-role="serial" aria-label="ABC-123">
+        <g data-role="serial-left" data-die="bc-astro-1" data-fit="natural" role="img" aria-label="ABC">
+          <title>ABC</title>
+          <g transform="translate(16.719 45.5) scale(0.64)" fill="none" stroke="#1a45a0" stroke-width="12" stroke-linecap="square" stroke-linejoin="round">
+            <g transform="translate(0 0)" data-character="A" data-source="research" data-provenance="research-candidate" data-research-unit="research-bc-astro-4-smooth-complete" fill="#1a45a0" stroke="none" fill-rule="evenodd">
+              <path d="M0.224 98.517 L14.907 1.483 Q15.132 0.000 16.632 0.000 L30.243 0.000 Q31.743 0.000 31.968 1.483 L46.651 98.517 Q46.875 100.000 45.375 100.000 L38.625 100.000 Q37.125 100.000 36.912 98.515 L34.338 80.572 Q34.125 79.087 32.625 79.087 L14.250 79.087 Q12.750 79.087 12.537 80.572 L9.963 98.515 Q9.750 100.000 8.250 100.000 L1.500 100.000 Q0.000 100.000 0.224 98.517 Z M24.062 28.750 C19.312 28.750 18.312 31.750 17.312 35.750 L15.312 64.312 C14.312 69.312 17.312 70.312 24.062 70.312 C30.812 70.312 33.812 69.312 32.812 64.312 L29.812 35.750 C28.812 31.750 27.812 28.750 24.062 28.750 Z" />
+            </g>
+            <g transform="translate(59.261 0)" data-character="B" data-source="research" data-provenance="research-candidate" data-research-unit="research-bc-astro-4-smooth-complete" fill="#1a45a0" stroke="none" fill-rule="evenodd">
+              <path d="M2.000 0.000 L20.828 0.000 C38.266 0.000 46.016 10.000 46.016 25.000 C46.016 36.000 40.204 44.000 33.422 48.000 C43.594 52.000 48.438 62.000 48.438 77.000 C48.438 92.000 40.204 100.000 21.797 100.000 L2.000 100.000 C0.000 100.000 0.000 99.000 0.000 97.000 L0.000 3.000 C0.000 1.000 0.000 0.000 2.000 0.000 Z M8.750 8.120 L20.344 8.120 C32.938 8.120 36.560 15.000 36.560 25.000 C36.560 36.000 32.938 42.810 20.344 42.810 L8.750 42.810 Z M9.060 52.190 L21.313 52.190 C34.875 52.190 38.440 61.000 38.440 76.000 C38.440 85.000 34.391 89.060 21.313 89.060 L9.060 89.060 Z" />
+            </g>
+            <g transform="translate(120.085 0)" data-character="C" data-source="research" data-provenance="research-candidate" data-research-unit="research-bc-astro-4-smooth-complete" fill="#1a45a0" stroke="none" fill-rule="evenodd">
+              <path d="M46.562 20.000 C44.700 8.000 35.853 0.000 23.747 0.000 C8.381 0.000 0.000 11.000 0.000 28.000 L0.000 74.000 C0.000 91.000 8.381 100.000 23.281 100.000 C36.318 100.000 44.700 90.000 46.562 79.000 C46.562 74.000 38.122 73.000 38.122 78.000 C36.318 86.000 32.593 91.000 23.281 91.000 C13.969 91.000 8.440 84.000 8.440 74.000 L8.440 28.000 C8.440 16.000 13.503 9.000 23.747 9.000 C33.059 9.000 36.784 15.000 38.122 22.000 C39.122 26.000 46.562 25.000 46.562 20.000 Z" />
+            </g>
+          </g>
+        </g>
+        <g data-role="serial-right" data-die="bc-astro-1" data-fit="natural" role="img" aria-label="123">
+          <title>123</title>
+          <g transform="translate(173.18 45.5) scale(0.64)" fill="none" stroke="#1a45a0" stroke-width="12" stroke-linecap="square" stroke-linejoin="round">
+            <g transform="translate(0 0)" data-character="1" data-source="research" data-provenance="research-candidate" data-research-unit="research-bc-astro-4-smooth-complete" fill="#1a45a0" stroke="none" fill-rule="evenodd">
+              <path d="M18.775 6.504 L21.314 1.346 Q21.976 0.000 23.476 0.000 L27.976 0.000 Q29.476 0.000 29.476 1.500 L29.476 98.000 Q29.476 100.000 27.476 100.000 L20.976 100.000 Q18.976 100.000 18.976 98.000 L18.976 21.698 Q18.976 20.000 17.326 20.400 L12.376 21.600 Q10.726 22.000 10.726 20.302 L10.726 13.667 Q10.726 12.000 12.189 11.200 L16.576 8.800 Q18.038 8.000 18.775 6.504 Z" />
+            </g>
+            <g transform="translate(60.574 0)" data-character="2" data-source="research" data-provenance="research-candidate" data-research-unit="research-bc-astro-4-smooth-complete" fill="#1a45a0" stroke="none" fill-rule="evenodd">
+              <path d="M0.000 18.000 C3.725 6.000 11.175 0.000 22.815 0.000 C37.250 0.000 46.562 10.000 46.562 25.000 C46.562 36.000 40.975 42.000 30.265 54.000 C15.831 70.000 7.250 84.000 7.250 92.750 L46.562 92.750 L46.562 100.000 L0.000 100.000 L0.000 95.000 C0.000 77.000 9.312 65.000 24.678 48.000 C38.181 34.000 39.312 31.000 39.312 25.000 C39.312 15.000 32.128 7.250 22.815 7.250 C14.900 7.250 10.244 14.000 7.250 21.000 C7.250 25.000 0.000 24.000 0.000 18.000 Z" />
+            </g>
+            <g transform="translate(119.522 0)" data-character="3" data-source="research" data-provenance="research-candidate" data-research-unit="research-bc-astro-4-smooth-complete" fill="#1a45a0" stroke="none" fill-rule="evenodd">
+              <path d="M0.000 18.000 C3.369 6.000 11.550 0.000 23.581 0.000 C37.538 0.000 46.200 10.000 46.200 25.000 C46.200 36.000 41.388 44.000 32.725 49.000 C42.350 53.000 48.125 63.000 48.125 76.000 C48.125 91.000 37.538 100.000 23.581 100.000 C9.625 100.000 0.963 90.000 0.000 80.000 C0.000 76.000 8.181 75.000 8.662 80.000 C11.069 87.000 16.363 91.000 23.581 91.000 C34.650 91.000 39.625 85.000 39.625 76.000 C39.625 65.000 33.206 56.000 21.175 55.000 C18.288 55.000 18.288 46.000 21.175 46.000 C32.244 44.000 39.625 35.000 39.625 25.000 C39.625 15.000 33.688 9.000 23.581 9.000 C16.363 9.000 11.550 14.000 9.144 21.000 C8.181 25.000 0.000 23.000 0.000 18.000 Z" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <rect x="21.5" y="302.5" width="77" height="100" rx="3" fill="#fff" stroke="#c7dae5" />
+  <rect x="21" y="302" width="78" height="4" rx="2" fill="#3c7ba2" />
+  <svg viewBox="-14 -16 128 134" role="img" aria-label="A research-candidate" x="23" y="307" width="74" height="76" data-preview-component="before-glyph-0">
+    <g data-character="A" data-source="research" data-provenance="research-candidate" data-research-unit="research-bc-astro-4-smooth-complete" fill="#1a45a0" stroke="none" fill-rule="evenodd" stroke-width="12" stroke-linecap="square" stroke-linejoin="round">
+      <path d="M0.224 98.517 L14.907 1.483 Q15.132 0.000 16.632 0.000 L30.243 0.000 Q31.743 0.000 31.968 1.483 L46.651 98.517 Q46.875 100.000 45.375 100.000 L38.625 100.000 Q37.125 100.000 36.912 98.515 L34.338 80.572 Q34.125 79.087 32.625 79.087 L14.250 79.087 Q12.750 79.087 12.537 80.572 L9.963 98.515 Q9.750 100.000 8.250 100.000 L1.500 100.000 Q0.000 100.000 0.224 98.517 Z M24.062 28.750 C19.312 28.750 18.312 31.750 17.312 35.750 L15.312 64.312 C14.312 69.312 17.312 70.312 24.062 70.312 C30.812 70.312 33.812 69.312 32.812 64.312 L29.812 35.750 C28.812 31.750 27.812 28.750 24.062 28.750 Z" />
+    </g>
+  </svg>
+  <rect x="104.5" y="302.5" width="77" height="100" rx="3" fill="#fff" stroke="#c7dae5" />
+  <rect x="104" y="302" width="78" height="4" rx="2" fill="#3c7ba2" />
+  <svg viewBox="-14 -16 128 134" role="img" aria-label="B research-candidate" x="106" y="307" width="74" height="76" data-preview-component="before-glyph-1">
+    <g data-character="B" data-source="research" data-provenance="research-candidate" data-research-unit="research-bc-astro-4-smooth-complete" fill="#1a45a0" stroke="none" fill-rule="evenodd" stroke-width="12" stroke-linecap="square" stroke-linejoin="round">
+      <path d="M2.000 0.000 L20.828 0.000 C38.266 0.000 46.016 10.000 46.016 25.000 C46.016 36.000 40.204 44.000 33.422 48.000 C43.594 52.000 48.438 62.000 48.438 77.000 C48.438 92.000 40.204 100.000 21.797 100.000 L2.000 100.000 C0.000 100.000 0.000 99.000 0.000 97.000 L0.000 3.000 C0.000 1.000 0.000 0.000 2.000 0.000 Z M8.750 8.120 L20.344 8.120 C32.938 8.120 36.560 15.000 36.560 25.000 C36.560 36.000 32.938 42.810 20.344 42.810 L8.750 42.810 Z M9.060 52.190 L21.313 52.190 C34.875 52.190 38.440 61.000 38.440 76.000 C38.440 85.000 34.391 89.060 21.313 89.060 L9.060 89.060 Z" />
+    </g>
+  </svg>
+  <rect x="187.5" y="302.5" width="77" height="100" rx="3" fill="#fff" stroke="#c7dae5" />
+  <rect x="187" y="302" width="78" height="4" rx="2" fill="#3c7ba2" />
+  <svg viewBox="-14 -16 128 134" role="img" aria-label="C research-candidate" x="189" y="307" width="74" height="76" data-preview-component="before-glyph-2">
+    <g data-character="C" data-source="research" data-provenance="research-candidate" data-research-unit="research-bc-astro-4-smooth-complete" fill="#1a45a0" stroke="none" fill-rule="evenodd" stroke-width="12" stroke-linecap="square" stroke-linejoin="round">
+      <path d="M46.562 20.000 C44.700 8.000 35.853 0.000 23.747 0.000 C8.381 0.000 0.000 11.000 0.000 28.000 L0.000 74.000 C0.000 91.000 8.381 100.000 23.281 100.000 C36.318 100.000 44.700 90.000 46.562 79.000 C46.562 74.000 38.122 73.000 38.122 78.000 C36.318 86.000 32.593 91.000 23.281 91.000 C13.969 91.000 8.440 84.000 8.440 74.000 L8.440 28.000 C8.440 16.000 13.503 9.000 23.747 9.000 C33.059 9.000 36.784 15.000 38.122 22.000 C39.122 26.000 46.562 25.000 46.562 20.000 Z" />
+    </g>
+  </svg>
+  <rect x="270.5" y="302.5" width="77" height="100" rx="3" fill="#fff" stroke="#c7dae5" />
+  <rect x="270" y="302" width="78" height="4" rx="2" fill="#3c7ba2" />
+  <svg viewBox="-14 -16 128 134" role="img" aria-label="1 research-candidate" x="272" y="307" width="74" height="76" data-preview-component="before-glyph-3">
+    <g data-character="1" data-source="research" data-provenance="research-candidate" data-research-unit="research-bc-astro-4-smooth-complete" fill="#1a45a0" stroke="none" fill-rule="evenodd" stroke-width="12" stroke-linecap="square" stroke-linejoin="round">
+      <path d="M18.775 6.504 L21.314 1.346 Q21.976 0.000 23.476 0.000 L27.976 0.000 Q29.476 0.000 29.476 1.500 L29.476 98.000 Q29.476 100.000 27.476 100.000 L20.976 100.000 Q18.976 100.000 18.976 98.000 L18.976 21.698 Q18.976 20.000 17.326 20.400 L12.376 21.600 Q10.726 22.000 10.726 20.302 L10.726 13.667 Q10.726 12.000 12.189 11.200 L16.576 8.800 Q18.038 8.000 18.775 6.504 Z" />
+    </g>
+  </svg>
+  <rect x="353.5" y="302.5" width="77" height="100" rx="3" fill="#fff" stroke="#c7dae5" />
+  <rect x="353" y="302" width="78" height="4" rx="2" fill="#3c7ba2" />
+  <svg viewBox="-14 -16 128 134" role="img" aria-label="2 research-candidate" x="355" y="307" width="74" height="76" data-preview-component="before-glyph-4">
+    <g data-character="2" data-source="research" data-provenance="research-candidate" data-research-unit="research-bc-astro-4-smooth-complete" fill="#1a45a0" stroke="none" fill-rule="evenodd" stroke-width="12" stroke-linecap="square" stroke-linejoin="round">
+      <path d="M0.000 18.000 C3.725 6.000 11.175 0.000 22.815 0.000 C37.250 0.000 46.562 10.000 46.562 25.000 C46.562 36.000 40.975 42.000 30.265 54.000 C15.831 70.000 7.250 84.000 7.250 92.750 L46.562 92.750 L46.562 100.000 L0.000 100.000 L0.000 95.000 C0.000 77.000 9.312 65.000 24.678 48.000 C38.181 34.000 39.312 31.000 39.312 25.000 C39.312 15.000 32.128 7.250 22.815 7.250 C14.900 7.250 10.244 14.000 7.250 21.000 C7.250 25.000 0.000 24.000 0.000 18.000 Z" />
+    </g>
+  </svg>
+  <rect x="436.5" y="302.5" width="77" height="100" rx="3" fill="#fff" stroke="#c7dae5" />
+  <rect x="436" y="302" width="78" height="4" rx="2" fill="#3c7ba2" />
+  <svg viewBox="-14 -16 128 134" role="img" aria-label="3 research-candidate" x="438" y="307" width="74" height="76" data-preview-component="before-glyph-5">
+    <g data-character="3" data-source="research" data-provenance="research-candidate" data-research-unit="research-bc-astro-4-smooth-complete" fill="#1a45a0" stroke="none" fill-rule="evenodd" stroke-width="12" stroke-linecap="square" stroke-linejoin="round">
+      <path d="M0.000 18.000 C3.369 6.000 11.550 0.000 23.581 0.000 C37.538 0.000 46.200 10.000 46.200 25.000 C46.200 36.000 41.388 44.000 32.725 49.000 C42.350 53.000 48.125 63.000 48.125 76.000 C48.125 91.000 37.538 100.000 23.581 100.000 C9.625 100.000 0.963 90.000 0.000 80.000 C0.000 76.000 8.181 75.000 8.662 80.000 C11.069 87.000 16.363 91.000 23.581 91.000 C34.650 91.000 39.625 85.000 39.625 76.000 C39.625 65.000 33.206 56.000 21.175 55.000 C18.288 55.000 18.288 46.000 21.175 46.000 C32.244 44.000 39.625 35.000 39.625 25.000 C39.625 15.000 33.688 9.000 23.581 9.000 C16.363 9.000 11.550 14.000 9.144 21.000 C8.181 25.000 0.000 23.000 0.000 18.000 Z" />
+    </g>
+  </svg>
+  <rect x="540" y="132" width="495" height="170" fill="#f9fbfc" />
+  <svg viewBox="0 0 300 150" role="img" aria-label="Actual serial placement; artwork separator omitted" x="540" y="132" width="495" height="170" data-preview-component="current-strip">
+    <g>
+      <g data-role="serial" aria-label="ABC-123">
+        <g data-role="serial-left" data-die="bc-astro-1" data-fit="natural" role="img" aria-label="ABC">
+          <title>ABC</title>
+          <g transform="translate(30.884 45.5) scale(0.64)" fill="none" stroke="#1a45a0" stroke-width="12" stroke-linecap="square" stroke-linejoin="round">
+            <g transform="translate(0 0)" data-character="A" data-source="research" data-provenance="research-candidate" data-research-unit="research-bc-astro-1-smooth-complete" fill="#1a45a0" stroke="none" fill-rule="evenodd">
+              <path d="M0.267 98.524 L17.825 1.476 Q18.092 0.000 19.592 0.000 L26.033 0.000 Q27.533 0.000 27.800 1.476 L45.358 98.524 Q45.625 100.000 44.125 100.000 L37.375 100.000 Q35.875 100.000 35.717 98.508 L33.033 73.079 Q32.875 71.587 31.375 71.587 L14.250 71.587 Q12.750 71.587 12.592 73.079 L9.908 98.508 Q9.750 100.000 8.250 100.000 L1.500 100.000 Q0.000 100.000 0.267 98.524 Z M22.812 45.000 C20.875 45.000 19.875 48.000 18.875 52.000 L16.875 56.812 C15.875 61.812 18.875 62.812 22.812 62.812 C26.750 62.812 29.750 61.812 28.750 56.812 L25.750 52.000 C24.750 48.000 23.750 45.000 22.812 45.000 Z" />
+            </g>
+            <g transform="translate(57.174 0)" data-character="B" data-provenance="constructed">
+              <path d="M6 94 V6" />
+              <path d="M6 6 H24.23 H24.23 A18.23 18.23 0 0 1 42.45 24.23 V28 V31.78 A18.23 18.23 0 0 1 24.23 50 H24.23 H6" />
+              <path d="M6 50 H25.5 H25.5 A19.5 19.5 0 0 1 45 69.5 V72 V74.5 A19.5 19.5 0 0 1 25.5 94 H25.5 H6" />
+            </g>
+            <g transform="translate(116.174 0)" data-character="C" data-provenance="constructed">
+              <path d="M45 25.36 Q45 6 25.5 6 H25.5 A19.5 19.5 0 0 0 6 25.5 V50 V74.5 A19.5 19.5 0 0 0 25.5 94 H25.5 Q45 94 45 74.64" />
+            </g>
+          </g>
+        </g>
+        <g data-role="serial-right" data-die="bc-astro-1" data-fit="natural" role="img" aria-label="123">
+          <title>123</title>
+          <g transform="translate(184.876 45.5) scale(0.64)" fill="none" stroke="#1a45a0" stroke-width="12" stroke-linecap="square" stroke-linejoin="round">
+            <g transform="translate(0 0)" data-character="1" data-source="research" data-provenance="research-candidate" data-research-unit="research-bc-astro-1-chart-smooth-complete" fill="#1a45a0" stroke="none" fill-rule="evenodd">
+              <path d="M7.345 6.577 L9.747 1.253 Q10.313 0.000 11.688 0.000 L15.813 0.000 Q17.188 0.000 17.188 1.375 L17.188 98.000 Q17.188 100.000 15.188 100.000 L8.688 100.000 Q6.688 100.000 6.688 98.000 L6.688 21.396 Q6.688 20.000 5.350 20.400 L1.338 21.600 Q0.000 22.000 0.000 20.604 L0.000 13.561 Q0.000 12.000 1.341 11.200 L5.363 8.800 Q6.703 8.000 7.345 6.577 Z" />
+            </g>
+            <g transform="translate(25.188 0)" data-character="2" data-source="research" data-provenance="research-candidate" data-research-unit="research-bc-astro-1-chart-smooth-complete" fill="#1a45a0" stroke="none" fill-rule="evenodd">
+              <path d="M0.000 18.000 C4.025 6.000 12.075 0.000 24.653 0.000 C40.250 0.000 50.312 10.000 50.312 25.000 C50.312 36.000 44.275 42.000 32.703 54.000 C17.106 70.000 10.500 84.000 10.500 89.500 L50.312 89.500 L50.312 100.000 L0.000 100.000 L0.000 95.000 C0.000 77.000 10.062 65.000 26.665 48.000 C41.256 34.000 39.812 31.000 39.812 25.000 C39.812 15.000 34.715 10.500 24.653 10.500 C16.100 10.500 11.069 14.000 10.500 21.000 C10.500 25.000 0.000 24.000 0.000 18.000 Z" />
+            </g>
+            <g transform="translate(83.5 0)" data-character="3" data-source="research" data-provenance="research-candidate" data-research-unit="research-bc-astro-1-chart-smooth-complete" fill="#1a45a0" stroke="none" fill-rule="evenodd">
+              <path d="M0.000 18.000 C3.369 6.000 11.550 0.000 23.581 0.000 C38.019 0.000 46.200 10.000 46.200 25.000 C46.200 36.000 41.388 44.000 32.725 49.000 C42.831 53.000 48.125 63.000 48.125 76.000 C48.125 91.000 38.019 100.000 23.581 100.000 C9.625 100.000 0.963 90.000 0.000 80.000 C0.000 76.000 10.250 75.000 10.250 80.000 C11.550 87.000 16.363 89.750 23.581 89.750 C35.131 89.750 37.875 85.000 37.875 76.000 C37.875 65.000 33.206 55.000 21.175 54.000 C18.288 54.000 18.288 46.000 21.175 46.000 C32.244 44.000 37.875 35.000 37.875 25.000 C37.875 15.000 33.688 10.250 23.581 10.250 C16.363 10.250 11.550 14.000 10.250 21.000 C10.250 25.000 0.000 23.000 0.000 18.000 Z" />
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </svg>
+  <rect x="540.5" y="302.5" width="77" height="100" rx="3" fill="#fff" stroke="#c7dae5" />
+  <rect x="540" y="302" width="78" height="4" rx="2" fill="#3c7ba2" />
+  <svg viewBox="-14 -16 128 134" role="img" aria-label="A research-candidate" x="542" y="307" width="74" height="76" data-preview-component="current-glyph-0">
+    <g data-character="A" data-source="research" data-provenance="research-candidate" data-research-unit="research-bc-astro-1-smooth-complete" fill="#1a45a0" stroke="none" fill-rule="evenodd" stroke-width="12" stroke-linecap="square" stroke-linejoin="round">
+      <path d="M0.267 98.524 L17.825 1.476 Q18.092 0.000 19.592 0.000 L26.033 0.000 Q27.533 0.000 27.800 1.476 L45.358 98.524 Q45.625 100.000 44.125 100.000 L37.375 100.000 Q35.875 100.000 35.717 98.508 L33.033 73.079 Q32.875 71.587 31.375 71.587 L14.250 71.587 Q12.750 71.587 12.592 73.079 L9.908 98.508 Q9.750 100.000 8.250 100.000 L1.500 100.000 Q0.000 100.000 0.267 98.524 Z M22.812 45.000 C20.875 45.000 19.875 48.000 18.875 52.000 L16.875 56.812 C15.875 61.812 18.875 62.812 22.812 62.812 C26.750 62.812 29.750 61.812 28.750 56.812 L25.750 52.000 C24.750 48.000 23.750 45.000 22.812 45.000 Z" />
+    </g>
+  </svg>
+  <rect x="623.5" y="302.5" width="77" height="100" rx="3" fill="#fff" stroke="#c7dae5" />
+  <rect x="623" y="302" width="78" height="4" rx="2" fill="#c88e38" />
+  <svg viewBox="-14 -16 128 134" role="img" aria-label="B constructed" x="625" y="307" width="74" height="76" data-preview-component="current-glyph-1">
+    <g data-character="B" data-provenance="constructed" fill="none" stroke="#1a45a0" stroke-width="12" stroke-linecap="square" stroke-linejoin="round">
+      <path d="M6 94 V6" />
+      <path d="M6 6 H24.23 H24.23 A18.23 18.23 0 0 1 42.45 24.23 V28 V31.78 A18.23 18.23 0 0 1 24.23 50 H24.23 H6" />
+      <path d="M6 50 H25.5 H25.5 A19.5 19.5 0 0 1 45 69.5 V72 V74.5 A19.5 19.5 0 0 1 25.5 94 H25.5 H6" />
+    </g>
+  </svg>
+  <rect x="706.5" y="302.5" width="77" height="100" rx="3" fill="#fff" stroke="#c7dae5" />
+  <rect x="706" y="302" width="78" height="4" rx="2" fill="#c88e38" />
+  <svg viewBox="-14 -16 128 134" role="img" aria-label="C constructed" x="708" y="307" width="74" height="76" data-preview-component="current-glyph-2">
+    <g data-character="C" data-provenance="constructed" fill="none" stroke="#1a45a0" stroke-width="12" stroke-linecap="square" stroke-linejoin="round">
+      <path d="M45 25.36 Q45 6 25.5 6 H25.5 A19.5 19.5 0 0 0 6 25.5 V50 V74.5 A19.5 19.5 0 0 0 25.5 94 H25.5 Q45 94 45 74.64" />
+    </g>
+  </svg>
+  <rect x="789.5" y="302.5" width="77" height="100" rx="3" fill="#fff" stroke="#c7dae5" />
+  <rect x="789" y="302" width="78" height="4" rx="2" fill="#3c7ba2" />
+  <svg viewBox="-14 -16 128 134" role="img" aria-label="1 research-candidate" x="791" y="307" width="74" height="76" data-preview-component="current-glyph-3">
+    <g data-character="1" data-source="research" data-provenance="research-candidate" data-research-unit="research-bc-astro-1-chart-smooth-complete" fill="#1a45a0" stroke="none" fill-rule="evenodd" stroke-width="12" stroke-linecap="square" stroke-linejoin="round">
+      <path d="M7.345 6.577 L9.747 1.253 Q10.313 0.000 11.688 0.000 L15.813 0.000 Q17.188 0.000 17.188 1.375 L17.188 98.000 Q17.188 100.000 15.188 100.000 L8.688 100.000 Q6.688 100.000 6.688 98.000 L6.688 21.396 Q6.688 20.000 5.350 20.400 L1.338 21.600 Q0.000 22.000 0.000 20.604 L0.000 13.561 Q0.000 12.000 1.341 11.200 L5.363 8.800 Q6.703 8.000 7.345 6.577 Z" />
+    </g>
+  </svg>
+  <rect x="872.5" y="302.5" width="77" height="100" rx="3" fill="#fff" stroke="#c7dae5" />
+  <rect x="872" y="302" width="78" height="4" rx="2" fill="#3c7ba2" />
+  <svg viewBox="-14 -16 128 134" role="img" aria-label="2 research-candidate" x="874" y="307" width="74" height="76" data-preview-component="current-glyph-4">
+    <g data-character="2" data-source="research" data-provenance="research-candidate" data-research-unit="research-bc-astro-1-chart-smooth-complete" fill="#1a45a0" stroke="none" fill-rule="evenodd" stroke-width="12" stroke-linecap="square" stroke-linejoin="round">
+      <path d="M0.000 18.000 C4.025 6.000 12.075 0.000 24.653 0.000 C40.250 0.000 50.312 10.000 50.312 25.000 C50.312 36.000 44.275 42.000 32.703 54.000 C17.106 70.000 10.500 84.000 10.500 89.500 L50.312 89.500 L50.312 100.000 L0.000 100.000 L0.000 95.000 C0.000 77.000 10.062 65.000 26.665 48.000 C41.256 34.000 39.812 31.000 39.812 25.000 C39.812 15.000 34.715 10.500 24.653 10.500 C16.100 10.500 11.069 14.000 10.500 21.000 C10.500 25.000 0.000 24.000 0.000 18.000 Z" />
+    </g>
+  </svg>
+  <rect x="955.5" y="302.5" width="77" height="100" rx="3" fill="#fff" stroke="#c7dae5" />
+  <rect x="955" y="302" width="78" height="4" rx="2" fill="#3c7ba2" />
+  <svg viewBox="-14 -16 128 134" role="img" aria-label="3 research-candidate" x="957" y="307" width="74" height="76" data-preview-component="current-glyph-5">
+    <g data-character="3" data-source="research" data-provenance="research-candidate" data-research-unit="research-bc-astro-1-chart-smooth-complete" fill="#1a45a0" stroke="none" fill-rule="evenodd" stroke-width="12" stroke-linecap="square" stroke-linejoin="round">
+      <path d="M0.000 18.000 C3.369 6.000 11.550 0.000 23.581 0.000 C38.019 0.000 46.200 10.000 46.200 25.000 C46.200 36.000 41.388 44.000 32.725 49.000 C42.831 53.000 48.125 63.000 48.125 76.000 C48.125 91.000 38.019 100.000 23.581 100.000 C9.625 100.000 0.963 90.000 0.000 80.000 C0.000 76.000 10.250 75.000 10.250 80.000 C11.550 87.000 16.363 89.750 23.581 89.750 C35.131 89.750 37.875 85.000 37.875 76.000 C37.875 65.000 33.206 55.000 21.175 54.000 C18.288 54.000 18.288 46.000 21.175 46.000 C32.244 44.000 37.875 35.000 37.875 25.000 C37.875 15.000 33.688 10.250 23.581 10.250 C16.363 10.250 11.550 14.000 10.250 21.000 C10.250 25.000 0.000 23.000 0.000 18.000 Z" />
+    </g>
+  </svg>
+  <line x1="21" y1="471" x2="1035" y2="471" stroke="#dae3e8" />
+  <rect x="22" y="489" width="13" height="13" rx="2" fill="#3c7ba2" />
+  <rect x="246" y="489" width="13" height="13" rx="2" fill="#c88e38" />
+  <g font-family="system-ui, sans-serif" fill="#193244">
+    <text x="21" y="43" font-size="24" font-weight="700">Astrographic · male/female dies</text>
+    <text x="21" y="85" font-size="17">ABC-123 · 1985 passenger selection</text>
+    <text x="21" y="124" font-size="17" font-weight="700" fill="#486779">Before · 17b974f</text>
+    <text x="60" y="395" font-size="11" text-anchor="middle">research</text>
+    <text x="143" y="395" font-size="11" text-anchor="middle">research</text>
+    <text x="226" y="395" font-size="11" text-anchor="middle">research</text>
+    <text x="309" y="395" font-size="11" text-anchor="middle">research</text>
+    <text x="392" y="395" font-size="11" text-anchor="middle">research</text>
+    <text x="475" y="395" font-size="11" text-anchor="middle">research</text>
+    <text x="540" y="124" font-size="17" font-weight="700" fill="#486779">Current selection</text>
+    <text x="579" y="395" font-size="11" text-anchor="middle">research</text>
+    <text x="662" y="395" font-size="11" text-anchor="middle">constructed</text>
+    <text x="745" y="395" font-size="11" text-anchor="middle">constructed</text>
+    <text x="828" y="395" font-size="11" text-anchor="middle">research</text>
+    <text x="911" y="395" font-size="11" text-anchor="middle">research</text>
+    <text x="994" y="395" font-size="11" text-anchor="middle">research</text>
+    <text x="21" y="429" font-size="13" fill="#526575">Classic / type 4 research unit</text>
+    <text x="540" y="429" font-size="13" fill="#526575">Type 1 specimens + type 1 digit chart</text>
+    <text x="540" y="450" font-size="13" fill="#526575">B and C retain their constructed production outlines.</text>
+    <text x="43" y="501" font-size="14">Research candidate</text>
+    <text x="267" y="501" font-size="14">Constructed production fallback</text>
+    <text x="21" y="533" font-size="13" fill="#526575">Exact emitted path geometry · Uniform scaling · Historical accuracy remains subject to source review</text>
+  </g>
+</svg>

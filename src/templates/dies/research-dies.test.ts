@@ -8,10 +8,11 @@ import { buildKitScene } from '../bc/kit';
 import { buildBcLaterScene } from '../bc/later-scene';
 import { buildBcScene, type BcDesign } from '../bc/scene';
 import { serializeSvgNode, type SvgNode } from '../svg-scene';
-import { dieGlyph } from './engine';
+import { buildDieText, dieGlyph } from './engine';
 import { dieProfile } from './profiles';
-import { installResearchRegistry, setResearchDiesEnabled, withResearchContext, type ResearchRegistry } from './research-dies';
+import { installResearchRegistry, researchVariant, setResearchDiesEnabled, withResearchContext, type ResearchRegistry } from './research-dies';
 import { applyResearchTypefaces } from './research-text';
+import { BC_PASSENGER_RESEARCH_BINDINGS } from './research-policy';
 
 const registry: ResearchRegistry = JSON.parse(readFileSync('src/templates/dies/research-registry.json', 'utf8'));
 beforeAll(() => installResearchRegistry(registry));
@@ -37,6 +38,7 @@ const designOf = (id: string) => {
   return { format, design: { ...britishColumbia.design, ...format.design } as unknown as BcDesign };
 };
 const glyphPath = (unit: string, char: string) => registry.glyphs[registry.units[unit].glyphs[char]][1] as string;
+const all = (node: SvgNode): SvgNode[] => [node, ...node.children.flatMap(c => typeof c === 'string' ? [] : all(c))];
 
 describe('research dies in the B.C. renderer', () => {
   it('renders every format with research lettering, falling back for unobserved characters', () => {
@@ -106,7 +108,6 @@ describe('research dies in the B.C. renderer', () => {
   it('uses shared passenger alphabets for collector numbering while preserving its Harrington inscriptions', () => {
     const ids = ['collector-passenger', 'collector-passenger-dual', 'collector-multi',
       'collector-motorcycle', 'collector-motorcycle-multi'];
-    const all = (node: SvgNode): SvgNode[] => [node, ...node.children.flatMap(c => typeof c === 'string' ? [] : all(c))];
     for (const id of ids) {
       const {format, design} = designOf(id);
       const recipe = kitRecipe(String(design.kit));
@@ -130,6 +131,136 @@ describe('research dies in the B.C. renderer', () => {
         expect(all(separator!).some(n => n.attrs['data-part'] === 'collector-wave' && n.attrs.fill === 'currentColor')).toBe(true);
       }
     }
+  });
+
+  it.each([1, 2, 3, 4])('keeps Astrographic type %i within its own reviewed candidate pool', (type) => {
+    const die = `bc-astro-${type}`;
+    const { format, design } = designOf('1985-flag');
+    const parts = { ...format.generate(createRng(`astro-pool-${type}`)), serial: 'ABC-067', die };
+    const root = withResearchContext('1985-flag', () => scene(design, parts));
+    const serial = byRole(root, 'serial')!;
+    const glyphs = all(serial).filter(n => n.attrs['data-character']);
+    const allowed = BC_PASSENGER_RESEARCH_BINDINGS['1985-flag'][die];
+    const selected = withResearchContext('1985-flag', () => dieProfile(die));
+    const units = glyphs.map(n => n.attrs['data-research-unit']).filter(Boolean);
+    expect(units.length).toBeGreaterThan(0);
+    for (const unit of units) expect(allowed).toContain(unit);
+    for (const glyph of glyphs) {
+      const char = String(glyph.attrs['data-character']);
+      const paths = glyph.children.filter((n): n is SvgNode => typeof n !== 'string' && n.tag === 'path').map(n => n.attrs.d);
+      expect(paths, `${die} ${char}`).toEqual(dieGlyph(selected, char)!.paths);
+      if (!selected.researchChars?.has(char)) {
+        expect(glyph.attrs['data-source']).toBeUndefined();
+        expect(paths).toEqual(dieGlyph(dieProfile(die), char)!.paths);
+      }
+    }
+  });
+
+  it('keeps a digit contour and advance stable when the serial is edited, measured or split', () => {
+    withResearchContext('1985-flag', () => {
+      const profile = dieProfile('bc-astro-1');
+      // The broad registry's whole-run heuristic previously picked Classic for
+      // "0", its type-1 chart for "06", and its type-1 plate for "A0".
+      // Filtering families alone still lets "0" switch from chart to plate.
+      const zero = dieGlyph(profile, '0')!;
+      for (const text of ['0', '06', 'A0', '0A']) {
+        for (const role of ['x', 'serial-left', 'serial-right', 'serial']) {
+          const run = buildDieText({ text, profile, x: 0, baseline: 100, capHeight: 100, anchor: 'start', ink: '#000', role });
+          const glyph = all(run.node).find(n => n.attrs['data-character'] === '0')!;
+          expect(glyph.attrs['data-research-unit']).toBe(profile.researchSourceUnits!['0']);
+          expect(glyph.children.filter((n): n is SvgNode => typeof n !== 'string' && n.tag === 'path').map(n => n.attrs.d)).toEqual(zero.paths);
+          const expectedWidth = [...text].reduce((sum, char) => sum + dieGlyph(profile, char)!.advance, 0)
+            + (text.length - 1) * profile.params.tracking;
+          expect(run.width).toBeCloseTo(expectedWidth, 8);
+        }
+      }
+    });
+  });
+
+  it('uses the separately labelled Waldale trial-run source for the 1985 option', () => {
+    const { format, design } = designOf('1985-flag');
+    const parts = { ...format.generate(createRng('waldale-trial')), serial: 'KRL-018', die: 'bc-waldale' };
+    const root = withResearchContext('1985-flag', () => scene(design, parts));
+    const glyphs = all(byRole(root, 'serial')!).filter(n => n.attrs['data-character']);
+    const sources = glyphs.map(n => n.attrs['data-research-unit']).filter(Boolean);
+    expect(new Set(sources)).toEqual(new Set(['research-bc-waldale-trial-run-1998-1999']));
+    // R/L are not observed in this trial-run subset and must not be borrowed
+    // from ACME, Hi-Signs, modern passenger or another plate class.
+    for (const char of ['R', 'L']) {
+      const glyph = glyphs.find(n => n.attrs['data-character'] === char)!;
+      expect(glyph.attrs['data-research-unit']).toBeUndefined();
+      expect(glyph.attrs['data-provenance']).toBe('constructed');
+    }
+  });
+
+  it.each(['sample-flag', 'souvenir-bc0000', 'prop-flag-xqz', 'commercial-flag', 'commercial-flag-2008',
+    'farm-tractor-flag', 'farm-truck-flag', 'farm-truck-2025', 'trailer-comm-flag', 'trailer-floater-flag'])(
+    'does not pass the passenger trial-run exception to the cloned %s recipe', (id) => {
+      const { format, design } = designOf(id);
+      const parts = { ...format.generate(createRng(`independent-class-${id}`)), die: 'bc-waldale' };
+      const root = withResearchContext(id, () => scene(design, parts));
+      const glyphs = all(byRole(root, 'serial')!).filter(n => n.attrs['data-character']);
+      const modern = withResearchContext('2001-flag', () => dieProfile('bc-waldale'));
+      const units = glyphs.map(n => n.attrs['data-research-unit']).filter(Boolean);
+      expect(units.length).toBeGreaterThan(0);
+      for (const glyph of glyphs) {
+        const char = String(glyph.attrs['data-character']);
+        expect(glyph.attrs['data-research-unit']).toBe(modern.researchSourceUnits?.[char]);
+        const paths = glyph.children.filter((n): n is SvgNode => typeof n !== 'string' && n.tag === 'path').map(n => n.attrs.d);
+        expect(paths, `${id} ${char}`).toEqual(dieGlyph(modern, char)!.paths);
+      }
+    });
+
+  it('keeps unobserved new-series letters as constructed fallbacks', () => {
+    const { format, design } = designOf('2025-flag');
+    const parts = { ...format.generate(createRng('new-series-letters')), serial: 'A12-3UZ', die: 'bc-waldale' };
+    for (const serial of [parts.serial, 'A12-3YY']) {
+      const root = withResearchContext('2025-flag', () => scene(design, { ...parts, serial }));
+      for (const glyph of all(byRole(root, 'serial')!).filter(n => ['U', 'Y', 'Z'].includes(String(n.attrs['data-character'])))) {
+        expect(glyph.attrs['data-research-unit']).toBeUndefined();
+        expect(glyph.attrs['data-provenance']).toBe('constructed');
+      }
+    }
+  });
+
+  it('leaves small-format candidate selection independent of the passenger policy', () => {
+    for (const format of ['motorcycle-2011', 'trailer-utility-2016', 'personalized-motorcycle']) {
+      expect(BC_PASSENGER_RESEARCH_BINDINGS[format]).toBeUndefined();
+      const profile = withResearchContext(format, () => dieProfile('bc-waldale'));
+      for (const char of Object.keys(profile.researchSourceUnits ?? {})) {
+        const expected = registry.bindings[format]['bc-waldale'].find(id => Object.hasOwn(registry.units[id].glyphs, char));
+        expect(profile.researchSourceUnits![char]).toBe(expected);
+      }
+    }
+  });
+
+  it('keeps the review policy restricted to recorded serial units', () => {
+    for (const [format, profiles] of Object.entries(BC_PASSENGER_RESEARCH_BINDINGS)) {
+      for (const [die, units] of Object.entries(profiles)) {
+        for (const unit of units) {
+          expect(registry.units[unit]?.role, `${format} ${die} ${unit}`).toBe('serial');
+          expect(registry.bindings[format]?.[die], `${format} ${die} ${unit}`).toContain(unit);
+        }
+      }
+    }
+  });
+
+  it('drops a previous context’s merged research when a protected pool has no eligible source', () => {
+    const production = dieProfile('bc-waldale');
+    const inherited = withResearchContext('motorcycle-2011', () => dieProfile('bc-waldale'));
+    expect(inherited.researchChars?.size).toBeGreaterThan(0);
+    try {
+      // Both an absent archive binding and a binding containing only another
+      // class must fall back safely, even when given an already merged profile.
+      for (const candidates of [[], ['research-later-class-motorcycle-waldale']]) {
+        installResearchRegistry({ ...registry, bindings: { ...registry.bindings,
+          '2001-flag': { ...registry.bindings['2001-flag'], 'bc-waldale': candidates } } });
+        const selected = withResearchContext('2001-flag', () => researchVariant(inherited, 'serial', 'K1'));
+        expect(selected).toBe(production);
+        expect(selected.researchSourceUnits).toBeUndefined();
+        expect(dieGlyph(selected, '1')).toEqual(dieGlyph(production, '1'));
+      }
+    } finally { installResearchRegistry(registry); }
   });
 
   it('skews only production fallbacks on slanted dies', () => {
