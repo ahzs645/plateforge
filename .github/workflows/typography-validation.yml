@@ -30,6 +30,10 @@ jobs:
       - run: npm run typecheck
       - name: Unit tests and format coverage
         run: TYPOGRAPHY_EVIDENCE=1 npm test -- --maxWorkers=2
+      - name: Reproduce the B.C. font evidence audit
+        run: |
+          node scripts/audit-bc-font-evidence.mjs --check
+          node scripts/compare-bc-font-evidence.mjs --check
       - name: Reproduce the font manifest and notices
         run: |
           python3 -m venv "$RUNNER_TEMP/font-manifest"
@@ -48,7 +52,8 @@ jobs:
 
   browser:
     needs: validate
-    runs-on: ubuntu-latest
+    # Playwright 1.56.1 supports Ubuntu 24.04; latest now resolves to 26.04.
+    runs-on: ubuntu-24.04
     timeout-minutes: 20
     strategy:
       fail-fast: false
@@ -81,6 +86,11 @@ jobs:
         run: |
           python3 scripts/bc-visual-review-offline.py
           node scripts/bc-visual-review-smoke.mjs
+      - name: B.C. selected font families, exports and offline evidence report
+        env:
+          TYPOGRAPHY_BROWSER: ${{ matrix.browser }}
+          TYPOGRAPHY_BROWSER_DEPS: ${{ runner.temp }}/typography-browser/package.json
+        run: node scripts/bc-font-audit-smoke.mjs
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -88,6 +98,7 @@ jobs:
           path: |
             typography-evidence/browser-${{ matrix.browser }}/
             typography-evidence/bc-report-browser-${{ matrix.browser }}/
+            typography-evidence/bc-font-audit-${{ matrix.browser }}/
           if-no-files-found: error
           retention-days: 14
       - uses: actions/upload-artifact@v4
