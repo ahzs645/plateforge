@@ -163,7 +163,7 @@
       99
     ],
     "month": null,
-    "control": "70069890",
+    "control": "7006989",
     "sourceStatus": "issued photographic specimen",
     "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1977.jpg",
     "originalSha256": "c17d88371b80477a4a6cf7a92007f29cdfa7a3360f6625a54a8dc98ddff28632",
@@ -173,7 +173,11 @@
       145,
       99
     ],
-    "supplementalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1977-7995546.jpg"
+    "supplementalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1977-7995546.jpg",
+    "bindingCorrection": {
+      "previousControl": "70069890",
+      "reason": "The photographed seven-digit control is 7006989. The previous eight-digit input was invalid and silently selected an illustrative editor control."
+    }
   },
   {
     "id": "1978",
@@ -291,7 +295,7 @@
     ],
     "month": "JUN",
     "control": "85138416",
-    "sourceStatus": "issued photographic specimen",
+    "sourceStatus": "Photographed specimen; the faint control transcription is tentative and excluded from glyph scoring",
     "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1983.jpg",
     "originalSha256": "e1561e179e749ea86f5999e6f16c54579d1d651e2e5072beaa564d50176c3881",
     "originalCrop": [
@@ -729,18 +733,18 @@
   {
     "id": "1999",
     "catalogueId": "1999",
-    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1999-60204824.jpg",
+    "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1999-thick.jpg",
     "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
-    "sourceSha256": "dccb07b9aa6712a12c3ef2fe9cef5833fb67ac9973c7693dcbab8a3182716814",
-    "photoFile": "1999-60204824.jpg",
+    "sourceSha256": "614acea5c9bad07a30bedba69026b4a7856b8fb1ca15092c1c1f4111e34f413b",
+    "photoFile": "1999-thick.jpg",
     "crop": [
-      0,
-      0,
-      256,
-      75
+      1,
+      1,
+      243,
+      74
     ],
-    "month": "NOV",
-    "control": "60204824",
+    "month": "MAY",
+    "control": "54174570",
     "sourceStatus": "issued photographic specimen",
     "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/1999-thick.jpg",
     "originalSha256": "614acea5c9bad07a30bedba69026b4a7856b8fb1ca15092c1c1f4111e34f413b",
@@ -749,7 +753,61 @@
       1,
       243,
       74
-    ]
+    ],
+    "bindingCorrection": {
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1999-60204824.jpg",
+      "sourceSha256": "dccb07b9aa6712a12c3ef2fe9cef5833fb67ac9973c7693dcbab8a3182716814",
+      "photoFile": "1999-60204824.jpg",
+      "crop": [
+        0,
+        0,
+        256,
+        75
+      ],
+      "month": "NOV",
+      "control": "60204824",
+      "reason": "The previous NOV 60204824 source has a double-outline design and was paired to the thick-border catalogue variant. Restore the MAY 54174570 thick-border specimen and its original crop-specific inspection regions."
+    },
+    "inspectionRegions": {
+      "decal-year": [
+        [
+          0.72,
+          0.1,
+          0.985,
+          0.885
+        ]
+      ],
+      "decal-month": [
+        [
+          0.025,
+          0.105,
+          0.43,
+          0.885
+        ]
+      ],
+      "decal-legend": [
+        [
+          0.415,
+          0.1506849315068493,
+          0.705,
+          0.2876712328767123
+        ],
+        [
+          0.415,
+          0.3150684931506849,
+          0.705,
+          0.4520547945205479
+        ]
+      ],
+      "decal-serial": [
+        [
+          0.435,
+          0.54,
+          0.75,
+          0.8
+        ]
+      ]
+    }
   },
   {
     "id": "1999-white",
@@ -1216,7 +1274,7 @@
       99
     ],
     "month": "JAN",
-    "control": "20093481",
+    "control": "20993481",
     "sourceStatus": "issued photographic specimen",
     "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2017-20093481.jpg",
     "originalSha256": "415812d53297bedef10a087bd3dadd2485a4ca78fc66fd3eead81c5b46034571",
@@ -1225,7 +1283,11 @@
       1,
       234,
       99
-    ]
+    ],
+    "bindingCorrection": {
+      "previousControl": "20093481",
+      "reason": "The photographed digits and catalogue transcription are 20993481; the source filename contains 20093481 and must not be used as the transcription."
+    }
   },
   {
     "id": "2018",
@@ -1292,7 +1354,7 @@
     ],
     "month": "JAN",
     "control": "00000000",
-    "sourceStatus": "issued photographic specimen",
+    "sourceStatus": "Photographed zero-control specimen; ordinary issuance not independently verified",
     "originalSource": "https://www.bcpl8s.ca/images/Decals/Passenger/2020-0000000.jpg",
     "originalSha256": "a44fbe891e6d638011691b67fb83c82bbd784d0c1a0f002af3705b92ccdbca9a",
     "originalCrop": [
