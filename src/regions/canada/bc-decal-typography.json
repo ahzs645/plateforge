@@ -708,14 +708,14 @@
   },
   "1983": {
     "lineBreaks": "BRITISH / COLUMBIA above central control; month and year on opposite sides.",
-    "finding": "Widen the province stack and keep month/year proportions within their individual panels. Counter contours remain approximate. The photographed control is unreadable and remains explicitly illustrative.",
+    "finding": "Widen the province stack and keep month/year proportions within their individual panels. Counter contours remain approximate. The photographed control is unreadable and remains explicitly illustrative. November 2026 correction: restore a positive left inset and raise JUN toward its photographed baseline. The remaining native month-width difference is retained as a separate contour question.",
     "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
     "runs": {
       "decal-month": [
         {
-          "x": 0.18,
-          "baseline": 0.795,
-          "cap": 0.65,
+          "x": 0.205,
+          "baseline": 0.775,
+          "cap": 0.64,
           "width": 0.36,
           "profile": "oswald-600",
           "tracking": 2,
@@ -770,7 +770,7 @@
       247,
       75
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07"
   },
   "1987": {
     "lineBreaks": "BRITISH / COLUMBIA above central control; month and year on opposite sides.",
@@ -902,7 +902,7 @@
   },
   "1984": {
     "lineBreaks": "Two vertical province lines at left; vertical control at right.",
-    "finding": "The province was incorrectly one long rotated line. Restore two parallel BRITISH/COLUMBIA columns. Fit month/year independently within the orange panel and keep the control vertical. Weight and counter contours remain approximate.",
+    "finding": "The province was incorrectly one long rotated line. Restore two parallel BRITISH/COLUMBIA columns. Fit month/year independently within the orange panel and keep the control vertical. Weight and counter contours remain approximate. Vertical control now uses independent dark ink on the pale strip.",
     "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
     "runs": {
       "decal-month": [
@@ -963,7 +963,7 @@
       255,
       75
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07"
   },
   "1985": {
     "lineBreaks": "BRITISH COLUMBIA as one lower line below centered control.",
@@ -1910,7 +1910,7 @@
   },
   "1999-white": {
     "lineBreaks": "BRITISH / COLUMBIA above control, inside double outline.",
-    "finding": "DEC was too broad; use the narrower supplied candidate and preserve blue control printing.",
+    "finding": "DEC was too broad; use the narrower supplied candidate and preserve blue control printing. The outer and inner outline centre-line radii are now independently defined and concentric; the printed frame is distinct from the substrate rounding. Corner proportions remain photograph-estimated.",
     "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
     "runs": {
       "decal-month": [
@@ -1970,11 +1970,17 @@
       254,
       75
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "layout": {
+      "doubleBorder": {
+        "outerRadius": 0.08,
+        "innerRadius": 0.05
+      }
+    }
   },
   "2000": {
     "lineBreaks": "BRITISH / COLUMBIA above control, inside double outline.",
-    "finding": "Native outlines are supported, but control/province spacing is cramped. Reduce province cap and widen control tracking.",
+    "finding": "Native outlines are supported, but control/province spacing is cramped. Reduce province cap and widen control tracking. The outer and inner outline centre-line radii are now independently defined and concentric; the printed frame is distinct from the substrate rounding. Corner proportions remain photograph-estimated.",
     "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
     "runs": {
       "decal-month": [
@@ -2034,11 +2040,17 @@
       260,
       75
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "layout": {
+      "doubleBorder": {
+        "outerRadius": 0.08,
+        "innerRadius": 0.05
+      }
+    }
   },
   "2001": {
     "lineBreaks": "BRITISH / COLUMBIA above control, inside double outline.",
-    "finding": "Scoring obscures JUL but its tall arrangement remains visible. Increase cap height and preserve both province lines.",
+    "finding": "Scoring obscures JUL but its tall arrangement remains visible. Increase cap height and preserve both province lines. The outer and inner outline centre-line radii are now independently defined and concentric; the printed frame is distinct from the substrate rounding. Corner proportions remain photograph-estimated.",
     "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
     "runs": {
       "decal-month": [
@@ -2098,11 +2110,17 @@
       469,
       150
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "layout": {
+      "doubleBorder": {
+        "outerRadius": 0.08,
+        "innerRadius": 0.05
+      }
+    }
   },
   "2002": {
     "lineBreaks": "BRITISH / COLUMBIA above control, inside double outline.",
-    "finding": "NOV was too short. Give the run more width; widen the lighter province and lower control spacing.",
+    "finding": "NOV was too short. Give the run more width; widen the lighter province and lower control spacing. The outer and inner outline centre-line radii are now independently defined and concentric; the printed frame is distinct from the substrate rounding. Corner proportions remain photograph-estimated.",
     "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
     "runs": {
       "decal-month": [
@@ -2162,11 +2180,17 @@
       255,
       75
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "layout": {
+      "doubleBorder": {
+        "outerRadius": 0.08,
+        "innerRadius": 0.05
+      }
+    }
   },
   "2003": {
     "lineBreaks": "BRITISH / COLUMBIA above control, inside double outline.",
-    "finding": "SEP shape is supported; preserve its weight while adjusting province/control spacing.",
+    "finding": "SEP shape is supported; preserve its weight while adjusting province/control spacing. The outer and inner outline centre-line radii are now independently defined and concentric; the printed frame is distinct from the substrate rounding. Corner proportions remain photograph-estimated.",
     "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
     "runs": {
       "decal-month": [
@@ -2226,19 +2250,25 @@
       253,
       75
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "layout": {
+      "doubleBorder": {
+        "outerRadius": 0.08,
+        "innerRadius": 0.05
+      }
+    }
   },
   "2004": {
     "lineBreaks": "Tiny BRITISH / COLUMBIA between month/year; control beneath right group.",
-    "finding": "The whole date group was placed too far left. Center the month/year group within the long decal, reduce the tiny province and align control below the year.",
+    "finding": "Calibrated MAR, year, two province words and control independently against MAR 42591320: increase date/legend painted heights, raise year/province, and move the control right. Small legend contours and year width remain approximate; whole-run fitting is preserved.",
     "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
     "runs": {
       "decal-month": [
         {
-          "x": 0.185,
-          "baseline": 0.86,
-          "cap": 0.66,
-          "width": 0.34,
+          "x": 0.196,
+          "baseline": 0.855,
+          "cap": 0.68,
+          "width": 0.35,
           "profile": "heavy-month",
           "tracking": 0,
           "anchor": "start"
@@ -2246,9 +2276,9 @@
       ],
       "decal-year": [
         {
-          "x": 0.73,
-          "baseline": 0.7,
-          "cap": 0.48,
+          "x": 0.732,
+          "baseline": 0.683,
+          "cap": 0.515,
           "width": 0.2,
           "profile": "heavy-year",
           "tracking": 0
@@ -2256,17 +2286,17 @@
       ],
       "decal-legend": [
         {
-          "x": 0.58,
-          "baseline": 0.505,
-          "cap": 0.045,
+          "x": 0.594,
+          "baseline": 0.485,
+          "cap": 0.057,
           "width": 0.13,
           "profile": "normal",
           "tracking": 0
         },
         {
-          "x": 0.58,
+          "x": 0.594,
           "baseline": 0.57,
-          "cap": 0.045,
+          "cap": 0.057,
           "width": 0.13,
           "profile": "normal",
           "tracking": 0
@@ -2274,8 +2304,8 @@
       ],
       "decal-serial": [
         {
-          "x": 0.675,
-          "baseline": 0.91,
+          "x": 0.696,
+          "baseline": 0.915,
           "cap": 0.15,
           "width": 0.29,
           "profile": "control-bold",
@@ -2289,7 +2319,7 @@
       255,
       75
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07"
   },
   "2005": {
     "lineBreaks": "Tiny BRITISH / COLUMBIA between month/year; control underneath at right.",

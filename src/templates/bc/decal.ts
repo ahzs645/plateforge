@@ -214,14 +214,21 @@ export function buildDecal(art: DecalArt, b: Box): SvgNode {
       t('BRITISH',x+w*.59,y+h*.35,h*.085,w*.16,art.ink,'decal-legend'),
       t('COLUMBIA',x+w*.59,y+h*.48,h*.085,w*.16,art.ink,'decal-legend'),
       ...(art.serial ? [t(art.serial,x+w*.765,y+h*.91,h*.16,w*.43,art.serialInk,'decal-serial')] : []));
-    if (barcodeEra && art.serial) parts.push(buildCode128(art.serial,{x:x-w*.015,y:y+h*.75,width:w*.59,height:h*.16},art.ink));
+    if (barcodeEra && art.serial) {
+      const barcode = audit?.layout?.barcode;
+      parts.push(buildCode128(art.serial, barcode ? {x:x+w*barcode.x,y:y+h*barcode.y,width:w*barcode.width,height:h*barcode.height}
+        : {x:x-w*.015,y:y+h*.75,width:w*.59,height:h*.16},art.ink));
+    }
   } else {
     const bordered = art.style === 'bordered' || !!art.borderRatio;
     const edge = bordered ? h * (art.borderRatio ?? 0.055) : 0;
+    const frame = art.doubleBorder ? audit?.layout?.doubleBorder : undefined;
     parts.push(n('rect', { x, y, width: w, height: h, rx: art.style === 'solid' ? h * 0.08 : 0, fill: art.background }));
-    if (bordered) parts.push(n('rect', { x: x + edge / 2, y: y + edge / 2, width: w - edge, height: h - edge, fill: 'none', stroke: art.ink, strokeWidth: edge }));
+    if (bordered) parts.push(n('rect', { x: x + edge / 2, y: y + edge / 2, width: w - edge, height: h - edge,
+      rx: art.doubleBorder ? h*(frame?.outerRadius ?? .08) : 0,
+      fill: 'none', stroke: art.ink, strokeWidth: edge, 'data-role':'decal-outer-border' }));
     if (art.doubleBorder) parts.push(n('rect',{x:x+edge*1.7,y:y+edge*1.7,width:w-edge*3.4,height:h-edge*3.4,
-      rx:h*.05,fill:'none',stroke:art.ink,strokeWidth:edge*.4,'data-role':'decal-inner-border'}));
+      rx:h*(frame?.innerRadius ?? .05),fill:'none',stroke:art.ink,strokeWidth:edge*.4,'data-role':'decal-inner-border'}));
     const inner = { x: x + edge, w: w - 2 * edge, top: y + edge, h: h - 2 * edge };
     parts.push(
       t(art.month ?? '', inner.x + inner.w * 0.02, inner.top + inner.h * 0.86, inner.h * 0.72, inner.w * 0.38, art.ink, 'decal-month', 'start', 'bc-decal-panel'),
