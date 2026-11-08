@@ -19,12 +19,29 @@ function barFixture(codes,unit=1) {
 
 // Playwright serializes these callbacks into a browser context. Keep the same
 // isolation here, with delayed layout represented by null SVG transforms.
-const inDocument=(callback,document)=>vm.runInNewContext('('+callback.toString()+')()',{document});
+const inDocument=(callback,document,globals={})=>vm.runInNewContext('('+callback.toString()+')()',{document,...globals});
+
+class Matrix {
+  constructor(a,b,c,d,e,f) {Object.assign(this,{a,b,c,d,e,f});}
+  inverse() {
+    const {a,b,c,d,e,f}=this,det=a*d-b*c;
+    assert.notEqual(det,0,'Test transform must be invertible');
+    return new Matrix(d/det,-b/det,-c/det,a/det,(c*f-d*e)/det,(b*e-a*f)/det);
+  }
+  multiply(m) {
+    const {a,b,c,d,e,f}=this;
+    return new Matrix(a*m.a+c*m.b,b*m.a+d*m.b,a*m.c+c*m.d,b*m.c+d*m.d,a*m.e+c*m.f+e,b*m.e+d*m.f+f);
+  }
+}
+class Point {
+  constructor(x,y) {Object.assign(this,{x,y});}
+  matrixTransform(m) {return {x:m.a*this.x+m.c*this.y+m.e,y:m.b*this.x+m.d*this.y+m.f};}
+}
 
 test('SVG readiness waits for root, glyph and barcode transforms after DOMContentLoaded',()=>{
   let rootMatrix=null,glyphMatrix=null,barcodeMatrix=null;
-  const glyph={getCTM:()=>glyphMatrix},barcode={getCTM:()=>barcodeMatrix};
-  const svg={getCTM:()=>rootMatrix,querySelectorAll:()=>[glyph,barcode]};
+  const glyph={getScreenCTM:()=>glyphMatrix},barcode={getScreenCTM:()=>barcodeMatrix};
+  const svg={getCTM:()=>null,getScreenCTM:()=>rootMatrix,querySelectorAll:()=>[glyph,barcode]};
   const document={querySelector:()=>svg};
   assert.equal(inDocument(fixtureGeometryReady,{querySelector:()=>null}),false);
   assert.equal(inDocument(fixtureGeometryReady,document),false);
@@ -37,12 +54,38 @@ test('SVG readiness waits for root, glyph and barcode transforms after DOMConten
 });
 
 test('SVG measurement reports a missing root or run transform instead of dereferencing null',()=>{
-  const svg={localName:'svg',getCTM:()=>null,getAttribute:()=>null};
+  const svg={localName:'svg',getScreenCTM:()=>null,getAttribute:()=>null};
   assert.throws(()=>inDocument(measureFixture,{querySelector:()=>svg}),/Fixture SVG transform unavailable for svg; layout is not ready/);
-  const element={localName:'g',getCTM:()=>null,getBBox:()=>({x:0,y:0,width:10,height:10}),getAttribute:name=>name==='data-role'?'decal-year':null,querySelectorAll:()=>[]};
-  svg.getCTM=()=>({inverse:()=>({})});
+  const element={localName:'g',getScreenCTM:()=>null,getBBox:()=>({x:0,y:0,width:10,height:10}),getAttribute:name=>name==='data-role'?'decal-year':null,querySelectorAll:()=>[]};
+  svg.getScreenCTM=()=>({inverse:()=>({})});
   svg.querySelectorAll=()=>[element];
   assert.throws(()=>inDocument(measureFixture,{querySelector:()=>svg}),/Fixture SVG transform unavailable for g \[data-role="decal-year"\]; layout is not ready/);
+});
+
+test('screen normalization preserves rotated SVG bounds when outer getCTM is null',()=>{
+  const assertBox=(actual,expected)=>{
+    assert.equal(actual.length,expected.length);
+    expected.forEach((coordinate,index)=>assert.ok(Math.abs(actual[index]-coordinate)<1e-10,`Coordinate ${index}: ${actual[index]} != ${coordinate}`));
+  };
+  // The same local transform (0 2 -3 0 30 40) under an ordinary root and
+  // an ancestor translated by (100,200) and scaled by (2,3).
+  const cases=[
+    [new Matrix(1,0,0,1,0,0),new Matrix(0,2,-3,0,30,40)],
+    [new Matrix(2,0,0,3,100,200),new Matrix(0,6,-6,0,160,320)],
+  ];
+  for(const [rootMatrix,elementMatrix] of cases) {
+    const attrs={'data-role':'decal-year','aria-label':'70','data-die':'fixture','data-fit':'natural','data-ink-padding':'.5'};
+    const element={localName:'g',getCTM:()=>{throw new Error('Do not mix local and screen matrices');},getScreenCTM:()=>elementMatrix,
+      getBBox:()=>({x:1,y:2,width:3,height:4}),getAttribute:name=>attrs[name]??null,querySelectorAll:()=>[]};
+    const svg={localName:'svg',getCTM:()=>null,getScreenCTM:()=>rootMatrix,getAttribute:()=>null,viewBox:{baseVal:{width:190,height:100}},
+      querySelectorAll:selector=>selector==='[data-die]'||selector.includes('[data-character]')?[element]:[]};
+    const document={querySelector:()=>svg};
+    assert.equal(inDocument(fixtureGeometryReady,document),true);
+    const measured=inDocument(measureFixture,document,{DOMPoint:Point}).runs[0];
+    assertBox(measured.geometryBox,[12,42,24,48]);
+    assertBox(measured.box,[10.5,41,25.5,49]);
+    assert.deepEqual({...measured.padding},{declared:.5,x:1.5,y:1});
+  }
 });
 
 test('coverage rejects a missing or duplicated selectable month',()=>{

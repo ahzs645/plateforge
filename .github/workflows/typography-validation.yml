@@ -84,17 +84,17 @@ jobs:
         run: |
           npm install --prefix "$RUNNER_TEMP/typography-browser" --ignore-scripts --no-audit --save-exact playwright@1.56.1 pngjs@7.0.0 pixelmatch@7.1.0
           node "$RUNNER_TEMP/typography-browser/node_modules/playwright/cli.js" install --with-deps ${{ matrix.browser }}
-      - name: Preview, standalone SVG, PNG, Tesla, and first-export comparisons
-        env:
-          TYPOGRAPHY_BROWSER: ${{ matrix.browser }}
-          TYPOGRAPHY_BROWSER_DEPS: ${{ runner.temp }}/typography-browser/package.json
-        run: node scripts/typography-browser.mjs
       - name: All 572 B.C. decal browser geometry and input checks
         timeout-minutes: 6
         env:
           TYPOGRAPHY_BROWSER: ${{ matrix.browser }}
           TYPOGRAPHY_BROWSER_DEPS: ${{ runner.temp }}/typography-browser/package.json
         run: node scripts/verify-decal-browser-geometry.mjs
+      - name: Preview, standalone SVG, PNG, Tesla, and first-export comparisons
+        env:
+          TYPOGRAPHY_BROWSER: ${{ matrix.browser }}
+          TYPOGRAPHY_BROWSER_DEPS: ${{ runner.temp }}/typography-browser/package.json
+        run: node scripts/typography-browser.mjs
       - name: B.C. source photographs and logo overlay controls
         env:
           TYPOGRAPHY_BROWSER: ${{ matrix.browser }}

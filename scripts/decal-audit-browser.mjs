@@ -1,7 +1,15 @@
 /** Self-contained so Playwright or a browser review page can run the same extractor. */
 export default async function extractAuditRuns() {
   const root = document.querySelector('svg');
-  const inverse = root.getCTM().inverse(), counts = {}, runs = [], scale = 4;
+  if (!root) throw new Error('Decal audit SVG missing');
+  // Normalize screen matrices: Firefox's outer getCTM() can be null.
+  // https://bugzilla.mozilla.org/show_bug.cgi?id=873106
+  const transform = element => {
+    const matrix = element.getScreenCTM();
+    if (!matrix) throw new Error(`Decal audit SVG transform unavailable for ${element.localName}`);
+    return matrix;
+  };
+  const inverse = transform(root).inverse(), counts = {}, runs = [], scale = 4;
   const viewWidth = root.viewBox.baseVal.width, viewHeight = root.viewBox.baseVal.height;
   const width = Math.ceil(viewWidth * scale), height = Math.ceil(viewHeight * scale);
   const offsetX = (width - viewWidth * scale) / 2;
@@ -31,7 +39,7 @@ export default async function extractAuditRuns() {
     const role = element.getAttribute('data-role'), index = counts[role] ?? 0;
     counts[role] = index + 1;
     const chars = [...element.querySelectorAll('[data-character]')].map((glyph, index) => {
-      const b = glyph.getBBox(), matrix = inverse.multiply(glyph.getCTM());
+      const b = glyph.getBBox(), matrix = inverse.multiply(transform(glyph));
       const points = [[b.x, b.y], [b.x + b.width, b.y], [b.x, b.y + b.height], [b.x + b.width, b.y + b.height]]
         .map(([x, y]) => new DOMPoint(x, y).matrixTransform(matrix));
       return {index, char: glyph.getAttribute('data-character'), geometryBox: [Math.min(...points.map(p => p.x)), Math.min(...points.map(p => p.y)), Math.max(...points.map(p => p.x)), Math.max(...points.map(p => p.y))]};
@@ -42,7 +50,7 @@ export default async function extractAuditRuns() {
       const value = element.getAttribute(attribute);
       if (value && value !== 'none' && value !== 'transparent') element.setAttribute(attribute, 'black');
     }
-    const matrix = inverse.multiply(element.getCTM());
+    const matrix = inverse.multiply(transform(element));
     await raster(copy, matrix);
     const png = canvas.toDataURL().split(',')[1];
     const glyphCopies = [...copy.querySelectorAll('[data-character]')];

@@ -52,19 +52,22 @@ export function decodeBarcodeRects(rectangles,patterns) {
   return {control:data.map(code=>String(code).padStart(2,'0')).join(''),codes,moduleWidth:unit};
 }
 
-/** DOMContentLoaded can precede SVG layout in Firefox; poll on animation frames. */
+/** Wait for layout using the same screen transforms as the measurements below. */
 export function fixtureGeometryReady() {
   const svg=document.querySelector('svg');
-  if(!svg || !svg.getCTM())return false;
-  return [...svg.querySelectorAll('[data-die], [data-character], [data-role="decal-barcode"], [data-role="decal-barcode"] rect')].every(element=>element.getCTM()!==null);
+  if(!svg || !svg.getScreenCTM())return false;
+  return [...svg.querySelectorAll('[data-die], [data-character], [data-role="decal-barcode"], [data-role="decal-barcode"] rect')].every(element=>element.getScreenCTM()!==null);
 }
 
 /** Self-contained function passed to Playwright; no raster paint claim is made. */
 export function measureFixture() {
   const svg=document.querySelector('svg');
   if(!svg)throw new Error('Fixture SVG missing');
+  // Firefox can return null for an outer SVG's getCTM(): Mozilla bug 873106.
+  // Normalize real screen matrices to cancel page transforms without a fallback.
+  // https://bugzilla.mozilla.org/show_bug.cgi?id=873106
   const transform=element=>{
-    const matrix=element.getCTM();
+    const matrix=element.getScreenCTM();
     if(!matrix)throw new Error(`Fixture SVG transform unavailable for ${element.localName}${element.getAttribute('data-role')?' [data-role="'+element.getAttribute('data-role')+'"]':''}; layout is not ready`);
     return matrix;
   };
@@ -160,6 +163,21 @@ export function checkWeightedMonth(runs,fixture) {
   return {id:fixture.id,month:fixture.month,profile:month.profile,inkBoundsMethod:month.inkBoundsMethod,characters};
 }
 
+/** Compare repeated measurements, requiring exact structure and finite coordinates. */
+function assertEquivalentMeasurements(actual,expected,tolerance,label) {
+  if(typeof expected==='number') {
+    assert.ok(Number.isFinite(actual)&&Number.isFinite(expected),`${label}: coordinates must be finite`);
+    const delta=Math.abs(actual-expected);
+    assert.ok(delta<=tolerance,`${label}: coordinate delta ${delta} exceeds ${tolerance}`);
+    return delta;
+  }
+  if(expected===null || typeof expected!=='object') {assert.deepEqual(actual,expected,label);return 0;}
+  assert.ok(actual!==null&&typeof actual==='object',`${label}: measurement structure changed`);
+  assert.equal(Array.isArray(actual),Array.isArray(expected),label);
+  assert.deepEqual(Object.keys(actual).sort(),Object.keys(expected).sort(),label);
+  return Math.max(0,...Object.keys(expected).map(key=>assertEquivalentMeasurements(actual[key],expected[key],tolerance,`${label}.${key}`)));
+}
+
 function sourceProvenance() {
   const git=(...args)=>execFileSync('git',args,{cwd:ROOT,encoding:'utf8'}).trim();
   const files=[...new Set(execFileSync('git',['ls-files','-z','--cached','--others','--exclude-standard','--','src','package-lock.json'],{cwd:ROOT,encoding:'utf8'}).split('\0').filter(Boolean))].sort();
@@ -209,12 +227,53 @@ export async function main() {
       const metrics=await page.evaluate(measureFixture);
       const checked=checkFixtureMetrics(fixture,metrics,specimens[fixture.id],patterns);
       if(fixture.id==='2023'&&fixture.month==='MAR') {
+        let weighted;
         try {
-          const detail=checkWeightedMonth(await page.evaluate(extractAuditRuns),fixture);
-          report.checks.push({name:'Weighted modern month: actual alpha bounds include stroke',status:'passed',...detail});
+          weighted=checkWeightedMonth(await page.evaluate(extractAuditRuns),fixture);
+          report.checks.push({name:'Weighted modern month: actual alpha bounds include stroke',status:'passed',...weighted});
         } catch(error) {
           checked.reasons.push({code:'weighted-month-alpha-extraction',error:String(error)});
           report.checks.push({name:'Weighted modern month: actual alpha bounds include stroke',status:'failed',error:String(error)});
+        }
+        if(weighted) {
+          const name='Ancestor CSS translation and scale cancel in SVG-space measurements';
+          let originalStyle;
+          try {
+            const before=await page.evaluate(()=>{
+              const rect=document.querySelector('svg').getBoundingClientRect();
+              const style=document.body.getAttribute('style');
+              document.body.style.transformOrigin='0 0';
+              document.body.style.transform='translate(32px, 16px) scale(2)';
+              return {style,screenBox:[rect.x,rect.y,rect.width,rect.height]};
+            });
+            originalStyle=before.style;
+            await page.waitForFunction(fixtureGeometryReady,undefined,{polling:'raf',timeout:Math.max(1,Math.min(10000,deadline-Date.now()))});
+            const screenBox=await page.evaluate(()=>{const r=document.querySelector('svg').getBoundingClientRect();return [r.x,r.y,r.width,r.height];});
+            // Prove the ancestor transform reached layout before testing invariance.
+            assertEquivalentMeasurements(screenBox,[before.screenBox[0]*2+32,before.screenBox[1]*2+16,before.screenBox[2]*2,before.screenBox[3]*2],.01,'Transformed screen rectangle');
+            const moved=await page.evaluate(measureFixture);
+            const movedChecks=checkFixtureMetrics(fixture,moved,specimens[fixture.id],patterns);
+            assert.deepEqual(movedChecks.reasons,[],'Transformed fixture must pass every existing geometry/input gate');
+            let maxGeometryDelta=assertEquivalentMeasurements(moved,metrics,.0001,'Root-local geometry');
+            const maxBarcodeDelta=assertEquivalentMeasurements(movedChecks.decodedBarcodes,checked.decodedBarcodes,.0001,'Decoded barcode');
+            const movedWeighted=checkWeightedMonth(await page.evaluate(extractAuditRuns),fixture);
+            assert.deepEqual({...movedWeighted,characters:[]},{...weighted,characters:[]},'Weighted month identity');
+            assert.equal(movedWeighted.characters.length,weighted.characters.length);
+            let maxInkDelta=0;
+            movedWeighted.characters.forEach((character,index)=>{
+              const original=weighted.characters[index];
+              assert.equal(character.char,original.char);
+              maxGeometryDelta=Math.max(maxGeometryDelta,assertEquivalentMeasurements(character.geometryBox,original.geometryBox,.0001,'Weighted glyph geometry'));
+              maxInkDelta=Math.max(maxInkDelta,assertEquivalentMeasurements(character.inkBox,original.inkBox,.25,'Weighted glyph alpha bounds'));
+            });
+            report.checks.push({name,status:'passed',id:fixture.id,month:fixture.month,beforeScreenBox:before.screenBox,afterScreenBox:screenBox,
+              geometryToleranceSvgUnits:.0001,alphaToleranceSvgUnits:.25,maxGeometryDelta,maxBarcodeDelta,maxInkDelta});
+          } catch(error) {
+            checked.reasons.push({code:'screen-coordinate-invariance',error:String(error)});
+            report.checks.push({name,status:'failed',error:String(error)});
+          } finally {
+            if(originalStyle!==undefined)await page.evaluate(style=>{if(style===null)document.body.removeAttribute('style');else document.body.setAttribute('style',style);},originalStyle);
+          }
         }
       }
       const row={id:fixture.id,month:fixture.month,control:fixture.control,year:fixture.year,svgSha256:hash(fixture.svg),...checked,...metrics};
