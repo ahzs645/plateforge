@@ -1,5 +1,7 @@
 # Individual decal lettering audit
 
+> Historical review snapshot. The 2026-11-07 correction pass supersedes affected source bindings, glyph choices, geometry and validation claims below. See [the current correction record](../bc-decal-corrections/README.md) and its regenerated before/after overlays. Earlier measurements remain here as evidence of the previous implementation.
+
 Reviewed all 55 imported B.C. passenger renewal specimens individually against their credited photographs. This covers 1970–2023 and three same-year variants; 1973 and 1979 are unissued. It does not assert coverage of other classes or day-sticker variants. Renewal years are not manufacture dates.
 
 The renderer uses per-variant line positions, cap heights, width limits, font candidates and tracking. Candidate glyphs retain their selected proportions; only whole-run uniform fitting is allowed. Existing supplied Helvetica width reconstructions remain disclosed in ../decal-review/printing-provenance.json. Additional native Barlow Condensed outline candidates are identified in printing-provenance.json. No historical font identity is certified.

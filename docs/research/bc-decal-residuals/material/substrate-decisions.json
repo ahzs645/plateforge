@@ -1,0 +1,160 @@
+{
+  "schema": "plateforge.decal-substrate-review/v1",
+  "reviewedOn": "2026-11-07",
+  "baselineCommit": "24689246670c25f91e0d1676a0647f053dbca68e",
+  "method": "Read-only visual inspection of visible physical edges in original photographs. Fractions are chosen clean renderer approximations; no precise cut-radius measurement is asserted.",
+  "decisions": [
+    {
+      "catalogueId": "2004",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2004-42591320.jpg",
+      "sourcePixels": [
+        259,
+        75
+      ],
+      "modelRadiusHeightFraction": 0.08,
+      "previousModelRadiusHeightFraction": 0,
+      "evidence": "Photographed rounded silhouette; selected radius approximate"
+    },
+    {
+      "catalogueId": "2005",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2005.jpg",
+      "sourcePixels": [
+        230,
+        98
+      ],
+      "modelRadiusHeightFraction": 0.1,
+      "previousModelRadiusHeightFraction": 0.035,
+      "evidence": "Photographed rounded silhouette; selected radius approximate"
+    },
+    {
+      "catalogueId": "2006",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2006-24286311.jpg",
+      "sourcePixels": [
+        234,
+        100
+      ],
+      "modelRadiusHeightFraction": 0.1,
+      "previousModelRadiusHeightFraction": 0.035,
+      "evidence": "Photographed rounded silhouette; selected radius approximate; lower confidence from damaged or closely cropped edges"
+    },
+    {
+      "catalogueId": "2007",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2007-30289413.jpg",
+      "sourcePixels": [
+        233,
+        100
+      ],
+      "modelRadiusHeightFraction": 0.1,
+      "previousModelRadiusHeightFraction": 0.035,
+      "evidence": "Photographed rounded silhouette; selected radius approximate"
+    },
+    {
+      "catalogueId": "2008",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2008-47144166.jpg",
+      "sourcePixels": [
+        238,
+        100
+      ],
+      "modelRadiusHeightFraction": 0.1,
+      "previousModelRadiusHeightFraction": 0.035,
+      "evidence": "Photographed rounded silhouette; selected radius approximate; lower confidence from damaged or closely cropped edges"
+    },
+    {
+      "catalogueId": "2009",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2009-53054167.jpg",
+      "sourcePixels": [
+        237,
+        100
+      ],
+      "modelRadiusHeightFraction": 0.1,
+      "previousModelRadiusHeightFraction": 0.035,
+      "evidence": "Photographed rounded silhouette; selected radius approximate"
+    },
+    {
+      "catalogueId": "2010",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2010.jpg",
+      "sourcePixels": [
+        235,
+        98
+      ],
+      "modelRadiusHeightFraction": 0,
+      "previousModelRadiusHeightFraction": 0.035,
+      "evidence": "Photographed square silhouette; physical cut tolerances unknown"
+    },
+    {
+      "catalogueId": "2011",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2011-24516329.jpg",
+      "sourcePixels": [
+        239,
+        100
+      ],
+      "modelRadiusHeightFraction": 0,
+      "previousModelRadiusHeightFraction": 0.035,
+      "evidence": "Photographed square silhouette; physical cut tolerances unknown"
+    },
+    {
+      "catalogueId": "2012",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2012-97303194.jpg",
+      "sourcePixels": [
+        240,
+        100
+      ],
+      "modelRadiusHeightFraction": 0,
+      "previousModelRadiusHeightFraction": 0.035,
+      "evidence": "Photographed square silhouette; physical cut tolerances unknown"
+    },
+    {
+      "catalogueId": "2013",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2013-79670318.jpg",
+      "sourcePixels": [
+        238,
+        100
+      ],
+      "modelRadiusHeightFraction": 0,
+      "previousModelRadiusHeightFraction": 0.035,
+      "evidence": "Photographed square silhouette; physical cut tolerances unknown"
+    },
+    {
+      "catalogueId": "2014",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2014-53695502.jpg",
+      "sourcePixels": [
+        240,
+        100
+      ],
+      "modelRadiusHeightFraction": 0,
+      "previousModelRadiusHeightFraction": 0.035,
+      "evidence": "Photographed square silhouette; physical cut tolerances unknown"
+    },
+    {
+      "catalogueId": "2015",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2015-70118033(XL).jpg",
+      "sourcePixels": [
+        816,
+        332
+      ],
+      "modelRadiusHeightFraction": 0,
+      "previousModelRadiusHeightFraction": 0.035,
+      "evidence": "Photographed square silhouette; physical cut tolerances unknown"
+    },
+    {
+      "catalogueId": "2016",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2016-11203175.jpg",
+      "sourcePixels": [
+        245,
+        100
+      ],
+      "modelRadiusHeightFraction": 0,
+      "previousModelRadiusHeightFraction": 0.035,
+      "evidence": "Photographed square silhouette; physical cut tolerances unknown"
+    }
+  ],
+  "transitionRetained": {
+    "2017JanJun": 0,
+    "2017JulDec": 0.1,
+    "source": "https://www.partners.icbc.com/assets/3mOlwuSlJiQqbPjb7gfnBi/bulletin-14-leap-year-2016-insurance-decal-changes.pdf"
+  },
+  "excludedEdgeEvidence": [
+    "2006 APR Commons image is cropped to red at all corners; it is not an independent edge-radius measurement.",
+    "2012 torn/clipped edges are not die-cut profiles."
+  ]
+}

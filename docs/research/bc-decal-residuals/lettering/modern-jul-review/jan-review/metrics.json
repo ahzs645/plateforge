@@ -1,0 +1,4199 @@
+{
+  "registration": "Uniform equal painted height and horizontal centre. Original width retained. No x scaling, perspective correction, new glyph paths or score-driven contour fitting.",
+  "sources": [
+    {
+      "id": "2018-pinned",
+      "file": "public/bc-decal-corrections/evidence/2018/source.png",
+      "roi": [
+        18,
+        8,
+        96,
+        65
+      ],
+      "primary": true,
+      "sourceSha256": "12f496a6daf5ac038929f5f64c108904469a248e05e3193a13d7b91eaddb3b84",
+      "pixels": [
+        225,
+        96
+      ],
+      "sourcePaintedPixels": [
+        70,
+        47
+      ],
+      "sourceWidthPerHeight": 1.4893617021276595,
+      "threshold": 86.69349443711998,
+      "thresholdValidation": {
+        "threshold": 86.693,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          4,
+          6,
+          74,
+          53
+        ],
+        "widthPerHeight": 1.4893617021276595,
+        "classMeanDifference": 95.71118084289813,
+        "cropClearancePixels": [
+          4,
+          6,
+          4,
+          4
+        ]
+      },
+      "sensitivity": [
+        {
+          "threshold": 74.693,
+          "components": 3,
+          "accepted": true,
+          "rejectionReasons": [],
+          "paintedBoxInCrop": [
+            5,
+            6,
+            74,
+            53
+          ],
+          "widthPerHeight": 1.4680851063829787,
+          "classMeanDifference": 95.61470860087522,
+          "cropClearancePixels": [
+            5,
+            6,
+            4,
+            4
+          ]
+        },
+        {
+          "threshold": 80.693,
+          "components": 3,
+          "accepted": true,
+          "rejectionReasons": [],
+          "paintedBoxInCrop": [
+            4,
+            6,
+            74,
+            53
+          ],
+          "widthPerHeight": 1.4893617021276595,
+          "classMeanDifference": 95.7326108171798,
+          "cropClearancePixels": [
+            4,
+            6,
+            4,
+            4
+          ]
+        },
+        {
+          "threshold": 86.693,
+          "components": 3,
+          "accepted": true,
+          "rejectionReasons": [],
+          "paintedBoxInCrop": [
+            4,
+            6,
+            74,
+            53
+          ],
+          "widthPerHeight": 1.4893617021276595,
+          "classMeanDifference": 95.71118084289813,
+          "cropClearancePixels": [
+            4,
+            6,
+            4,
+            4
+          ]
+        },
+        {
+          "threshold": 92.693,
+          "components": 3,
+          "accepted": true,
+          "rejectionReasons": [],
+          "paintedBoxInCrop": [
+            4,
+            6,
+            74,
+            53
+          ],
+          "widthPerHeight": 1.4893617021276595,
+          "classMeanDifference": 95.6331921973443,
+          "cropClearancePixels": [
+            4,
+            6,
+            4,
+            4
+          ]
+        },
+        {
+          "threshold": 98.693,
+          "components": 3,
+          "accepted": true,
+          "rejectionReasons": [],
+          "paintedBoxInCrop": [
+            4,
+            6,
+            74,
+            53
+          ],
+          "widthPerHeight": 1.4893617021276595,
+          "classMeanDifference": 95.43646130582181,
+          "cropClearancePixels": [
+            4,
+            6,
+            4,
+            4
+          ]
+        }
+      ],
+      "glyphSegmentationAccepted": true,
+      "sourceComponents": {
+        "components": [
+          {
+            "box": [
+              0,
+              0,
+              20,
+              47
+            ],
+            "widthPerRunHeight": 0.425531914893617
+          },
+          {
+            "box": [
+              21,
+              0,
+              46,
+              46
+            ],
+            "widthPerRunHeight": 0.5319148936170213
+          },
+          {
+            "box": [
+              48,
+              0,
+              70,
+              46
+            ],
+            "widthPerRunHeight": 0.46808510638297873
+          }
+        ],
+        "gapPerRunHeight": [
+          0.02127659574468085,
+          0.0425531914893617
+        ]
+      },
+      "candidates": [
+        {
+          "key": "retained",
+          "widthPerHeight": 1.3733333333333333,
+          "widthRatio": 0.9220952380952381,
+          "widthRatioSensitivityRange": [
+            0.9220952380952381,
+            0.9354589371980676
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  128,
+                  300
+                ],
+                "widthPerRunHeight": 0.4266666666666667
+              },
+              {
+                "box": [
+                  133,
+                  0,
+                  268,
+                  294
+                ],
+                "widthPerRunHeight": 0.45
+              },
+              {
+                "box": [
+                  269,
+                  0,
+                  412,
+                  294
+                ],
+                "widthPerRunHeight": 0.4766666666666667
+              }
+            ],
+            "gapPerRunHeight": [
+              0.016666666666666666,
+              0.0033333333333333335
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.425531914893617,
+              "modelWidthPerHeight": 0.43,
+              "ratio": 1.0105
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5434782608695652,
+              "modelWidthPerHeight": 0.46,
+              "ratio": 0.8464
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4782608695652174,
+              "modelWidthPerHeight": 0.4866666666666667,
+              "ratio": 1.0175757575757576
+            }
+          ]
+        },
+        {
+          "key": "heavy-month-wide",
+          "widthPerHeight": 1.92,
+          "widthRatio": 1.2891428571428571,
+          "widthRatioSensitivityRange": [
+            1.2891428571428571,
+            1.3078260869565217
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  173,
+                  300
+                ],
+                "widthPerRunHeight": 0.5766666666666667
+              },
+              {
+                "box": [
+                  189,
+                  0,
+                  371,
+                  294
+                ],
+                "widthPerRunHeight": 0.6066666666666667
+              },
+              {
+                "box": [
+                  383,
+                  0,
+                  576,
+                  294
+                ],
+                "widthPerRunHeight": 0.6433333333333333
+              }
+            ],
+            "gapPerRunHeight": [
+              0.05333333333333334,
+              0.04
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.425531914893617,
+              "modelWidthPerHeight": 0.5766666666666667,
+              "ratio": 1.3551666666666666
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5434782608695652,
+              "modelWidthPerHeight": 0.62,
+              "ratio": 1.1408
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4782608695652174,
+              "modelWidthPerHeight": 0.6566666666666666,
+              "ratio": 1.3730303030303028
+            }
+          ]
+        },
+        {
+          "key": "spacing-2018",
+          "widthPerHeight": 1.4133333333333333,
+          "widthRatio": 0.948952380952381,
+          "widthRatioSensitivityRange": [
+            0.948952380952381,
+            0.9627053140096619
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  129,
+                  300
+                ],
+                "widthPerRunHeight": 0.43
+              },
+              {
+                "box": [
+                  133,
+                  0,
+                  268,
+                  294
+                ],
+                "widthPerRunHeight": 0.45
+              },
+              {
+                "box": [
+                  281,
+                  0,
+                  424,
+                  294
+                ],
+                "widthPerRunHeight": 0.4766666666666667
+              }
+            ],
+            "gapPerRunHeight": [
+              0.013333333333333334,
+              0.043333333333333335
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.425531914893617,
+              "modelWidthPerHeight": 0.43,
+              "ratio": 1.0105
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5434782608695652,
+              "modelWidthPerHeight": 0.46,
+              "ratio": 0.8464
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4782608695652174,
+              "modelWidthPerHeight": 0.4866666666666667,
+              "ratio": 1.0175757575757576
+            }
+          ]
+        },
+        {
+          "key": "spacing-2019",
+          "widthPerHeight": 1.5066666666666666,
+          "widthRatio": 1.0116190476190476,
+          "widthRatioSensitivityRange": [
+            1.0116190476190476,
+            1.026280193236715
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  128,
+                  300
+                ],
+                "widthPerRunHeight": 0.4266666666666667
+              },
+              {
+                "box": [
+                  147,
+                  0,
+                  282,
+                  294
+                ],
+                "widthPerRunHeight": 0.45
+              },
+              {
+                "box": [
+                  309,
+                  0,
+                  452,
+                  294
+                ],
+                "widthPerRunHeight": 0.4766666666666667
+              }
+            ],
+            "gapPerRunHeight": [
+              0.06333333333333334,
+              0.09
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.425531914893617,
+              "modelWidthPerHeight": 0.43,
+              "ratio": 1.0105
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5434782608695652,
+              "modelWidthPerHeight": 0.46,
+              "ratio": 0.8464
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4782608695652174,
+              "modelWidthPerHeight": 0.4866666666666667,
+              "ratio": 1.0175757575757576
+            }
+          ]
+        },
+        {
+          "key": "spacing-2020",
+          "widthPerHeight": 1.49,
+          "widthRatio": 1.0004285714285714,
+          "widthRatioSensitivityRange": [
+            1.0004285714285714,
+            1.0149275362318841
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  129,
+                  300
+                ],
+                "widthPerRunHeight": 0.43
+              },
+              {
+                "box": [
+                  147,
+                  0,
+                  283,
+                  294
+                ],
+                "widthPerRunHeight": 0.4533333333333333
+              },
+              {
+                "box": [
+                  304,
+                  0,
+                  447,
+                  294
+                ],
+                "widthPerRunHeight": 0.4766666666666667
+              }
+            ],
+            "gapPerRunHeight": [
+              0.06,
+              0.07
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.425531914893617,
+              "modelWidthPerHeight": 0.43,
+              "ratio": 1.0105
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5434782608695652,
+              "modelWidthPerHeight": 0.46,
+              "ratio": 0.8464
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4782608695652174,
+              "modelWidthPerHeight": 0.4866666666666667,
+              "ratio": 1.0175757575757576
+            }
+          ]
+        },
+        {
+          "key": "anton-400",
+          "widthPerHeight": 1.6066666666666667,
+          "widthRatio": 1.0787619047619048,
+          "widthRatioSensitivityRange": [
+            1.0787619047619048,
+            1.0943961352657006
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  145,
+                  300
+                ],
+                "widthPerRunHeight": 0.48333333333333334
+              },
+              {
+                "box": [
+                  160,
+                  0,
+                  318,
+                  297
+                ],
+                "widthPerRunHeight": 0.5266666666666666
+              },
+              {
+                "box": [
+                  336,
+                  0,
+                  482,
+                  297
+                ],
+                "widthPerRunHeight": 0.4866666666666667
+              }
+            ],
+            "gapPerRunHeight": [
+              0.05,
+              0.06
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.425531914893617,
+              "modelWidthPerHeight": 0.48333333333333334,
+              "ratio": 1.1358333333333333
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5434782608695652,
+              "modelWidthPerHeight": 0.53,
+              "ratio": 0.9752000000000001
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4782608695652174,
+              "modelWidthPerHeight": 0.49,
+              "ratio": 1.0245454545454544
+            }
+          ]
+        },
+        {
+          "key": "bebasneue-400",
+          "widthPerHeight": 1.47,
+          "widthRatio": 0.987,
+          "widthRatioSensitivityRange": [
+            0.987,
+            1.001304347826087
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  90,
+                  300
+                ],
+                "widthPerRunHeight": 0.3
+              },
+              {
+                "box": [
+                  111,
+                  0,
+                  271,
+                  298
+                ],
+                "widthPerRunHeight": 0.5333333333333333
+              },
+              {
+                "box": [
+                  294,
+                  0,
+                  441,
+                  298
+                ],
+                "widthPerRunHeight": 0.49
+              }
+            ],
+            "gapPerRunHeight": [
+              0.07,
+              0.07666666666666666
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.425531914893617,
+              "modelWidthPerHeight": 0.3,
+              "ratio": 0.705
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5434782608695652,
+              "modelWidthPerHeight": 0.54,
+              "ratio": 0.9936000000000001
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4782608695652174,
+              "modelWidthPerHeight": 0.49333333333333335,
+              "ratio": 1.0315151515151515
+            }
+          ]
+        },
+        {
+          "key": "oswald-300",
+          "widthPerHeight": 1.4166666666666667,
+          "widthRatio": 0.9511904761904763,
+          "widthRatioSensitivityRange": [
+            0.9511904761904763,
+            0.9649758454106281
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  71,
+                  300
+                ],
+                "widthPerRunHeight": 0.23666666666666666
+              },
+              {
+                "box": [
+                  106,
+                  0,
+                  256,
+                  287
+                ],
+                "widthPerRunHeight": 0.5
+              },
+              {
+                "box": [
+                  291,
+                  0,
+                  425,
+                  287
+                ],
+                "widthPerRunHeight": 0.44666666666666666
+              }
+            ],
+            "gapPerRunHeight": [
+              0.11666666666666667,
+              0.11666666666666667
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.425531914893617,
+              "modelWidthPerHeight": 0.23666666666666666,
+              "ratio": 0.5561666666666667
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5434782608695652,
+              "modelWidthPerHeight": 0.5233333333333333,
+              "ratio": 0.9629333333333333
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4782608695652174,
+              "modelWidthPerHeight": 0.4666666666666667,
+              "ratio": 0.9757575757575757
+            }
+          ]
+        },
+        {
+          "key": "oswald-400",
+          "widthPerHeight": 1.5066666666666666,
+          "widthRatio": 1.0116190476190476,
+          "widthRatioSensitivityRange": [
+            1.0116190476190476,
+            1.026280193236715
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  83,
+                  300
+                ],
+                "widthPerRunHeight": 0.27666666666666667
+              },
+              {
+                "box": [
+                  113,
+                  0,
+                  277,
+                  293
+                ],
+                "widthPerRunHeight": 0.5466666666666666
+              },
+              {
+                "box": [
+                  307,
+                  0,
+                  452,
+                  293
+                ],
+                "widthPerRunHeight": 0.48333333333333334
+              }
+            ],
+            "gapPerRunHeight": [
+              0.1,
+              0.1
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.425531914893617,
+              "modelWidthPerHeight": 0.27666666666666667,
+              "ratio": 0.6501666666666667
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5434782608695652,
+              "modelWidthPerHeight": 0.56,
+              "ratio": 1.0304000000000002
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4782608695652174,
+              "modelWidthPerHeight": 0.49666666666666665,
+              "ratio": 1.0384848484848483
+            }
+          ]
+        },
+        {
+          "key": "oswald-500",
+          "widthPerHeight": 1.59,
+          "widthRatio": 1.0675714285714286,
+          "widthRatioSensitivityRange": [
+            1.0675714285714286,
+            1.0830434782608696
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  92,
+                  300
+                ],
+                "widthPerRunHeight": 0.30666666666666664
+              },
+              {
+                "box": [
+                  122,
+                  0,
+                  295,
+                  293
+                ],
+                "widthPerRunHeight": 0.5766666666666667
+              },
+              {
+                "box": [
+                  325,
+                  0,
+                  477,
+                  293
+                ],
+                "widthPerRunHeight": 0.5066666666666667
+              }
+            ],
+            "gapPerRunHeight": [
+              0.1,
+              0.1
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.425531914893617,
+              "modelWidthPerHeight": 0.30666666666666664,
+              "ratio": 0.7206666666666666
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5434782608695652,
+              "modelWidthPerHeight": 0.5933333333333334,
+              "ratio": 1.0917333333333334
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4782608695652174,
+              "modelWidthPerHeight": 0.52,
+              "ratio": 1.0872727272727272
+            }
+          ]
+        },
+        {
+          "key": "oswald-600",
+          "widthPerHeight": 1.6333333333333333,
+          "widthRatio": 1.0966666666666667,
+          "widthRatioSensitivityRange": [
+            1.0966666666666667,
+            1.11256038647343
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  96,
+                  300
+                ],
+                "widthPerRunHeight": 0.32
+              },
+              {
+                "box": [
+                  126,
+                  0,
+                  305,
+                  293
+                ],
+                "widthPerRunHeight": 0.5966666666666667
+              },
+              {
+                "box": [
+                  334,
+                  0,
+                  490,
+                  293
+                ],
+                "widthPerRunHeight": 0.52
+              }
+            ],
+            "gapPerRunHeight": [
+              0.1,
+              0.09666666666666666
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.425531914893617,
+              "modelWidthPerHeight": 0.32,
+              "ratio": 0.752
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5434782608695652,
+              "modelWidthPerHeight": 0.6133333333333333,
+              "ratio": 1.1285333333333334
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4782608695652174,
+              "modelWidthPerHeight": 0.5333333333333333,
+              "ratio": 1.115151515151515
+            }
+          ]
+        },
+        {
+          "key": "oswald-700",
+          "widthPerHeight": 1.67,
+          "widthRatio": 1.1212857142857142,
+          "widthRatioSensitivityRange": [
+            1.1212857142857142,
+            1.1375362318840578
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  100,
+                  300
+                ],
+                "widthPerRunHeight": 0.3333333333333333
+              },
+              {
+                "box": [
+                  129,
+                  0,
+                  312,
+                  292
+                ],
+                "widthPerRunHeight": 0.61
+              },
+              {
+                "box": [
+                  342,
+                  0,
+                  501,
+                  292
+                ],
+                "widthPerRunHeight": 0.53
+              }
+            ],
+            "gapPerRunHeight": [
+              0.09666666666666666,
+              0.1
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.425531914893617,
+              "modelWidthPerHeight": 0.3333333333333333,
+              "ratio": 0.7833333333333333
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5434782608695652,
+              "modelWidthPerHeight": 0.6266666666666667,
+              "ratio": 1.153066666666667
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4782608695652174,
+              "modelWidthPerHeight": 0.5433333333333333,
+              "ratio": 1.136060606060606
+            }
+          ]
+        },
+        {
+          "key": "robotocondensed-400",
+          "widthPerHeight": 2.183333333333333,
+          "widthRatio": 1.465952380952381,
+          "widthRatioSensitivityRange": [
+            1.465952380952381,
+            1.48719806763285
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  159,
+                  300
+                ],
+                "widthPerRunHeight": 0.53
+              },
+              {
+                "box": [
+                  198,
+                  0,
+                  421,
+                  296
+                ],
+                "widthPerRunHeight": 0.7433333333333333
+              },
+              {
+                "box": [
+                  461,
+                  0,
+                  655,
+                  296
+                ],
+                "widthPerRunHeight": 0.6466666666666666
+              }
+            ],
+            "gapPerRunHeight": [
+              0.13,
+              0.13333333333333333
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.425531914893617,
+              "modelWidthPerHeight": 0.53,
+              "ratio": 1.2455
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5434782608695652,
+              "modelWidthPerHeight": 0.7533333333333333,
+              "ratio": 1.3861333333333334
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4782608695652174,
+              "modelWidthPerHeight": 0.6533333333333333,
+              "ratio": 1.366060606060606
+            }
+          ]
+        },
+        {
+          "key": "robotocondensed-600",
+          "widthPerHeight": 2.2333333333333334,
+          "widthRatio": 1.4995238095238097,
+          "widthRatioSensitivityRange": [
+            1.4995238095238097,
+            1.521256038647343
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  169,
+                  300
+                ],
+                "widthPerRunHeight": 0.5633333333333334
+              },
+              {
+                "box": [
+                  199,
+                  0,
+                  435,
+                  296
+                ],
+                "widthPerRunHeight": 0.7866666666666666
+              },
+              {
+                "box": [
+                  466,
+                  0,
+                  670,
+                  296
+                ],
+                "widthPerRunHeight": 0.68
+              }
+            ],
+            "gapPerRunHeight": [
+              0.1,
+              0.10333333333333333
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.425531914893617,
+              "modelWidthPerHeight": 0.5633333333333334,
+              "ratio": 1.3238333333333334
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5434782608695652,
+              "modelWidthPerHeight": 0.7966666666666666,
+              "ratio": 1.4658666666666667
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4782608695652174,
+              "modelWidthPerHeight": 0.69,
+              "ratio": 1.4427272727272726
+            }
+          ]
+        },
+        {
+          "key": "robotocondensed-700",
+          "widthPerHeight": 2.2466666666666666,
+          "widthRatio": 1.5084761904761905,
+          "widthRatioSensitivityRange": [
+            1.5084761904761905,
+            1.5303381642512077
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  171,
+                  300
+                ],
+                "widthPerRunHeight": 0.57
+              },
+              {
+                "box": [
+                  199,
+                  0,
+                  439,
+                  296
+                ],
+                "widthPerRunHeight": 0.8
+              },
+              {
+                "box": [
+                  467,
+                  0,
+                  674,
+                  296
+                ],
+                "widthPerRunHeight": 0.69
+              }
+            ],
+            "gapPerRunHeight": [
+              0.09333333333333334,
+              0.09333333333333334
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.425531914893617,
+              "modelWidthPerHeight": 0.57,
+              "ratio": 1.3395
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5434782608695652,
+              "modelWidthPerHeight": 0.81,
+              "ratio": 1.4904000000000002
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4782608695652174,
+              "modelWidthPerHeight": 0.7,
+              "ratio": 1.4636363636363634
+            }
+          ]
+        },
+        {
+          "key": "robotocondensed-900",
+          "widthPerHeight": 2.2733333333333334,
+          "widthRatio": 1.5263809523809526,
+          "widthRatioSensitivityRange": [
+            1.5263809523809526,
+            1.5485024154589373
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  176,
+                  300
+                ],
+                "widthPerRunHeight": 0.5866666666666667
+              },
+              {
+                "box": [
+                  199,
+                  0,
+                  446,
+                  296
+                ],
+                "widthPerRunHeight": 0.8233333333333334
+              },
+              {
+                "box": [
+                  469,
+                  0,
+                  682,
+                  296
+                ],
+                "widthPerRunHeight": 0.71
+              }
+            ],
+            "gapPerRunHeight": [
+              0.07666666666666666,
+              0.07666666666666666
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.425531914893617,
+              "modelWidthPerHeight": 0.5866666666666667,
+              "ratio": 1.3786666666666667
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5434782608695652,
+              "modelWidthPerHeight": 0.8366666666666667,
+              "ratio": 1.5394666666666668
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4782608695652174,
+              "modelWidthPerHeight": 0.72,
+              "ratio": 1.5054545454545454
+            }
+          ]
+        },
+        {
+          "key": "archivonarrow-400",
+          "widthPerHeight": 2.1,
+          "widthRatio": 1.4100000000000001,
+          "widthRatioSensitivityRange": [
+            1.4100000000000001,
+            1.4304347826086956
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  143,
+                  300
+                ],
+                "widthPerRunHeight": 0.4766666666666667
+              },
+              {
+                "box": [
+                  170,
+                  0,
+                  406,
+                  295
+                ],
+                "widthPerRunHeight": 0.7866666666666666
+              },
+              {
+                "box": [
+                  436,
+                  0,
+                  630,
+                  295
+                ],
+                "widthPerRunHeight": 0.6466666666666666
+              }
+            ],
+            "gapPerRunHeight": [
+              0.09,
+              0.1
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.425531914893617,
+              "modelWidthPerHeight": 0.4766666666666667,
+              "ratio": 1.1201666666666668
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5434782608695652,
+              "modelWidthPerHeight": 0.8,
+              "ratio": 1.4720000000000002
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4782608695652174,
+              "modelWidthPerHeight": 0.66,
+              "ratio": 1.3800000000000001
+            }
+          ]
+        },
+        {
+          "key": "archivonarrow-600",
+          "widthPerHeight": 2.2,
+          "widthRatio": 1.4771428571428573,
+          "widthRatioSensitivityRange": [
+            1.4771428571428573,
+            1.4985507246376812
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  158,
+                  300
+                ],
+                "widthPerRunHeight": 0.5266666666666666
+              },
+              {
+                "box": [
+                  185,
+                  0,
+                  432,
+                  295
+                ],
+                "widthPerRunHeight": 0.8233333333333334
+              },
+              {
+                "box": [
+                  460,
+                  0,
+                  660,
+                  295
+                ],
+                "widthPerRunHeight": 0.6666666666666666
+              }
+            ],
+            "gapPerRunHeight": [
+              0.09,
+              0.09333333333333334
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.425531914893617,
+              "modelWidthPerHeight": 0.5266666666666666,
+              "ratio": 1.2376666666666665
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5434782608695652,
+              "modelWidthPerHeight": 0.84,
+              "ratio": 1.5456
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4782608695652174,
+              "modelWidthPerHeight": 0.6766666666666666,
+              "ratio": 1.4148484848484848
+            }
+          ]
+        },
+        {
+          "key": "archivonarrow-700",
+          "widthPerHeight": 2.25,
+          "widthRatio": 1.5107142857142857,
+          "widthRatioSensitivityRange": [
+            1.5107142857142857,
+            1.5326086956521738
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  166,
+                  300
+                ],
+                "widthPerRunHeight": 0.5533333333333333
+              },
+              {
+                "box": [
+                  192,
+                  0,
+                  446,
+                  295
+                ],
+                "widthPerRunHeight": 0.8466666666666667
+              },
+              {
+                "box": [
+                  472,
+                  0,
+                  675,
+                  295
+                ],
+                "widthPerRunHeight": 0.6766666666666666
+              }
+            ],
+            "gapPerRunHeight": [
+              0.08666666666666667,
+              0.08666666666666667
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.425531914893617,
+              "modelWidthPerHeight": 0.5533333333333333,
+              "ratio": 1.3003333333333333
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5434782608695652,
+              "modelWidthPerHeight": 0.86,
+              "ratio": 1.5824
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4782608695652174,
+              "modelWidthPerHeight": 0.6866666666666666,
+              "ratio": 1.4357575757575756
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2019-pinned",
+      "file": "public/bc-decal-corrections/evidence/2019/source.png",
+      "roi": [
+        6,
+        8,
+        87,
+        64
+      ],
+      "sourceSha256": "617400a6590bf9234140767ee2dc0ffd85b97619c6d3604efa408199fbf8bfc5",
+      "pixels": [
+        233,
+        96
+      ],
+      "sourcePaintedPixels": [
+        71,
+        45
+      ],
+      "sourceWidthPerHeight": 1.5777777777777777,
+      "threshold": 100.48314159484372,
+      "thresholdValidation": {
+        "threshold": 100.483,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          4,
+          5,
+          75,
+          50
+        ],
+        "widthPerHeight": 1.5777777777777777,
+        "classMeanDifference": 128.76144531011977,
+        "cropClearancePixels": [
+          4,
+          5,
+          6,
+          6
+        ]
+      },
+      "sensitivity": [
+        {
+          "threshold": 88.483,
+          "components": 3,
+          "accepted": true,
+          "rejectionReasons": [],
+          "paintedBoxInCrop": [
+            4,
+            5,
+            75,
+            50
+          ],
+          "widthPerHeight": 1.5777777777777777,
+          "classMeanDifference": 128.8214574370593,
+          "cropClearancePixels": [
+            4,
+            5,
+            6,
+            6
+          ]
+        },
+        {
+          "threshold": 94.483,
+          "components": 3,
+          "accepted": true,
+          "rejectionReasons": [],
+          "paintedBoxInCrop": [
+            4,
+            5,
+            75,
+            50
+          ],
+          "widthPerHeight": 1.5777777777777777,
+          "classMeanDifference": 128.81010351594946,
+          "cropClearancePixels": [
+            4,
+            5,
+            6,
+            6
+          ]
+        },
+        {
+          "threshold": 100.483,
+          "components": 3,
+          "accepted": true,
+          "rejectionReasons": [],
+          "paintedBoxInCrop": [
+            4,
+            5,
+            75,
+            50
+          ],
+          "widthPerHeight": 1.5777777777777777,
+          "classMeanDifference": 128.76144531011977,
+          "cropClearancePixels": [
+            4,
+            5,
+            6,
+            6
+          ]
+        },
+        {
+          "threshold": 106.483,
+          "components": 3,
+          "accepted": true,
+          "rejectionReasons": [],
+          "paintedBoxInCrop": [
+            4,
+            5,
+            75,
+            50
+          ],
+          "widthPerHeight": 1.5777777777777777,
+          "classMeanDifference": 128.67858926682445,
+          "cropClearancePixels": [
+            4,
+            5,
+            6,
+            6
+          ]
+        },
+        {
+          "threshold": 112.483,
+          "components": 3,
+          "accepted": true,
+          "rejectionReasons": [],
+          "paintedBoxInCrop": [
+            4,
+            5,
+            75,
+            50
+          ],
+          "widthPerHeight": 1.5777777777777777,
+          "classMeanDifference": 128.47810673123203,
+          "cropClearancePixels": [
+            4,
+            5,
+            6,
+            6
+          ]
+        }
+      ],
+      "glyphSegmentationAccepted": true,
+      "sourceComponents": {
+        "components": [
+          {
+            "box": [
+              0,
+              0,
+              21,
+              45
+            ],
+            "widthPerRunHeight": 0.4666666666666667
+          },
+          {
+            "box": [
+              24,
+              0,
+              47,
+              45
+            ],
+            "widthPerRunHeight": 0.5111111111111111
+          },
+          {
+            "box": [
+              51,
+              0,
+              71,
+              45
+            ],
+            "widthPerRunHeight": 0.4444444444444444
+          }
+        ],
+        "gapPerRunHeight": [
+          0.06666666666666667,
+          0.08888888888888889
+        ]
+      },
+      "candidates": [
+        {
+          "key": "retained",
+          "widthPerHeight": 1.3733333333333333,
+          "widthRatio": 0.8704225352112676,
+          "widthRatioSensitivityRange": [
+            0.8704225352112676,
+            0.8704225352112676
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  128,
+                  300
+                ],
+                "widthPerRunHeight": 0.4266666666666667
+              },
+              {
+                "box": [
+                  133,
+                  0,
+                  268,
+                  294
+                ],
+                "widthPerRunHeight": 0.45
+              },
+              {
+                "box": [
+                  269,
+                  0,
+                  412,
+                  294
+                ],
+                "widthPerRunHeight": 0.4766666666666667
+              }
+            ],
+            "gapPerRunHeight": [
+              0.016666666666666666,
+              0.0033333333333333335
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4666666666666667,
+              "modelWidthPerHeight": 0.43,
+              "ratio": 0.9214285714285714
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5111111111111111,
+              "modelWidthPerHeight": 0.46,
+              "ratio": 0.9000000000000001
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4444444444444444,
+              "modelWidthPerHeight": 0.4866666666666667,
+              "ratio": 1.0950000000000002
+            }
+          ]
+        },
+        {
+          "key": "heavy-month-wide",
+          "widthPerHeight": 1.92,
+          "widthRatio": 1.2169014084507042,
+          "widthRatioSensitivityRange": [
+            1.2169014084507042,
+            1.2169014084507042
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  173,
+                  300
+                ],
+                "widthPerRunHeight": 0.5766666666666667
+              },
+              {
+                "box": [
+                  189,
+                  0,
+                  371,
+                  294
+                ],
+                "widthPerRunHeight": 0.6066666666666667
+              },
+              {
+                "box": [
+                  383,
+                  0,
+                  576,
+                  294
+                ],
+                "widthPerRunHeight": 0.6433333333333333
+              }
+            ],
+            "gapPerRunHeight": [
+              0.05333333333333334,
+              0.04
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4666666666666667,
+              "modelWidthPerHeight": 0.5766666666666667,
+              "ratio": 1.2357142857142858
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5111111111111111,
+              "modelWidthPerHeight": 0.62,
+              "ratio": 1.2130434782608697
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4444444444444444,
+              "modelWidthPerHeight": 0.6566666666666666,
+              "ratio": 1.4775
+            }
+          ]
+        },
+        {
+          "key": "spacing-2018",
+          "widthPerHeight": 1.4133333333333333,
+          "widthRatio": 0.895774647887324,
+          "widthRatioSensitivityRange": [
+            0.895774647887324,
+            0.895774647887324
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  129,
+                  300
+                ],
+                "widthPerRunHeight": 0.43
+              },
+              {
+                "box": [
+                  133,
+                  0,
+                  268,
+                  294
+                ],
+                "widthPerRunHeight": 0.45
+              },
+              {
+                "box": [
+                  281,
+                  0,
+                  424,
+                  294
+                ],
+                "widthPerRunHeight": 0.4766666666666667
+              }
+            ],
+            "gapPerRunHeight": [
+              0.013333333333333334,
+              0.043333333333333335
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4666666666666667,
+              "modelWidthPerHeight": 0.43,
+              "ratio": 0.9214285714285714
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5111111111111111,
+              "modelWidthPerHeight": 0.46,
+              "ratio": 0.9000000000000001
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4444444444444444,
+              "modelWidthPerHeight": 0.4866666666666667,
+              "ratio": 1.0950000000000002
+            }
+          ]
+        },
+        {
+          "key": "spacing-2019",
+          "widthPerHeight": 1.5066666666666666,
+          "widthRatio": 0.9549295774647887,
+          "widthRatioSensitivityRange": [
+            0.9549295774647887,
+            0.9549295774647887
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  128,
+                  300
+                ],
+                "widthPerRunHeight": 0.4266666666666667
+              },
+              {
+                "box": [
+                  147,
+                  0,
+                  282,
+                  294
+                ],
+                "widthPerRunHeight": 0.45
+              },
+              {
+                "box": [
+                  309,
+                  0,
+                  452,
+                  294
+                ],
+                "widthPerRunHeight": 0.4766666666666667
+              }
+            ],
+            "gapPerRunHeight": [
+              0.06333333333333334,
+              0.09
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4666666666666667,
+              "modelWidthPerHeight": 0.43,
+              "ratio": 0.9214285714285714
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5111111111111111,
+              "modelWidthPerHeight": 0.46,
+              "ratio": 0.9000000000000001
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4444444444444444,
+              "modelWidthPerHeight": 0.4866666666666667,
+              "ratio": 1.0950000000000002
+            }
+          ]
+        },
+        {
+          "key": "spacing-2020",
+          "widthPerHeight": 1.49,
+          "widthRatio": 0.9443661971830987,
+          "widthRatioSensitivityRange": [
+            0.9443661971830987,
+            0.9443661971830987
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  129,
+                  300
+                ],
+                "widthPerRunHeight": 0.43
+              },
+              {
+                "box": [
+                  147,
+                  0,
+                  283,
+                  294
+                ],
+                "widthPerRunHeight": 0.4533333333333333
+              },
+              {
+                "box": [
+                  304,
+                  0,
+                  447,
+                  294
+                ],
+                "widthPerRunHeight": 0.4766666666666667
+              }
+            ],
+            "gapPerRunHeight": [
+              0.06,
+              0.07
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4666666666666667,
+              "modelWidthPerHeight": 0.43,
+              "ratio": 0.9214285714285714
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5111111111111111,
+              "modelWidthPerHeight": 0.46,
+              "ratio": 0.9000000000000001
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4444444444444444,
+              "modelWidthPerHeight": 0.4866666666666667,
+              "ratio": 1.0950000000000002
+            }
+          ]
+        },
+        {
+          "key": "anton-400",
+          "widthPerHeight": 1.6066666666666667,
+          "widthRatio": 1.0183098591549296,
+          "widthRatioSensitivityRange": [
+            1.0183098591549296,
+            1.0183098591549296
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  145,
+                  300
+                ],
+                "widthPerRunHeight": 0.48333333333333334
+              },
+              {
+                "box": [
+                  160,
+                  0,
+                  318,
+                  297
+                ],
+                "widthPerRunHeight": 0.5266666666666666
+              },
+              {
+                "box": [
+                  336,
+                  0,
+                  482,
+                  297
+                ],
+                "widthPerRunHeight": 0.4866666666666667
+              }
+            ],
+            "gapPerRunHeight": [
+              0.05,
+              0.06
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4666666666666667,
+              "modelWidthPerHeight": 0.48333333333333334,
+              "ratio": 1.0357142857142858
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5111111111111111,
+              "modelWidthPerHeight": 0.53,
+              "ratio": 1.0369565217391306
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4444444444444444,
+              "modelWidthPerHeight": 0.49,
+              "ratio": 1.1025
+            }
+          ]
+        },
+        {
+          "key": "bebasneue-400",
+          "widthPerHeight": 1.47,
+          "widthRatio": 0.9316901408450704,
+          "widthRatioSensitivityRange": [
+            0.9316901408450704,
+            0.9316901408450704
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  90,
+                  300
+                ],
+                "widthPerRunHeight": 0.3
+              },
+              {
+                "box": [
+                  111,
+                  0,
+                  271,
+                  298
+                ],
+                "widthPerRunHeight": 0.5333333333333333
+              },
+              {
+                "box": [
+                  294,
+                  0,
+                  441,
+                  298
+                ],
+                "widthPerRunHeight": 0.49
+              }
+            ],
+            "gapPerRunHeight": [
+              0.07,
+              0.07666666666666666
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4666666666666667,
+              "modelWidthPerHeight": 0.3,
+              "ratio": 0.6428571428571428
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5111111111111111,
+              "modelWidthPerHeight": 0.54,
+              "ratio": 1.056521739130435
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4444444444444444,
+              "modelWidthPerHeight": 0.49333333333333335,
+              "ratio": 1.11
+            }
+          ]
+        },
+        {
+          "key": "oswald-300",
+          "widthPerHeight": 1.4166666666666667,
+          "widthRatio": 0.897887323943662,
+          "widthRatioSensitivityRange": [
+            0.897887323943662,
+            0.897887323943662
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  71,
+                  300
+                ],
+                "widthPerRunHeight": 0.23666666666666666
+              },
+              {
+                "box": [
+                  106,
+                  0,
+                  256,
+                  287
+                ],
+                "widthPerRunHeight": 0.5
+              },
+              {
+                "box": [
+                  291,
+                  0,
+                  425,
+                  287
+                ],
+                "widthPerRunHeight": 0.44666666666666666
+              }
+            ],
+            "gapPerRunHeight": [
+              0.11666666666666667,
+              0.11666666666666667
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4666666666666667,
+              "modelWidthPerHeight": 0.23666666666666666,
+              "ratio": 0.5071428571428571
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5111111111111111,
+              "modelWidthPerHeight": 0.5233333333333333,
+              "ratio": 1.0239130434782608
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4444444444444444,
+              "modelWidthPerHeight": 0.4666666666666667,
+              "ratio": 1.05
+            }
+          ]
+        },
+        {
+          "key": "oswald-400",
+          "widthPerHeight": 1.5066666666666666,
+          "widthRatio": 0.9549295774647887,
+          "widthRatioSensitivityRange": [
+            0.9549295774647887,
+            0.9549295774647887
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  83,
+                  300
+                ],
+                "widthPerRunHeight": 0.27666666666666667
+              },
+              {
+                "box": [
+                  113,
+                  0,
+                  277,
+                  293
+                ],
+                "widthPerRunHeight": 0.5466666666666666
+              },
+              {
+                "box": [
+                  307,
+                  0,
+                  452,
+                  293
+                ],
+                "widthPerRunHeight": 0.48333333333333334
+              }
+            ],
+            "gapPerRunHeight": [
+              0.1,
+              0.1
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4666666666666667,
+              "modelWidthPerHeight": 0.27666666666666667,
+              "ratio": 0.5928571428571429
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5111111111111111,
+              "modelWidthPerHeight": 0.56,
+              "ratio": 1.0956521739130436
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4444444444444444,
+              "modelWidthPerHeight": 0.49666666666666665,
+              "ratio": 1.1175
+            }
+          ]
+        },
+        {
+          "key": "oswald-500",
+          "widthPerHeight": 1.59,
+          "widthRatio": 1.0077464788732395,
+          "widthRatioSensitivityRange": [
+            1.0077464788732395,
+            1.0077464788732395
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  92,
+                  300
+                ],
+                "widthPerRunHeight": 0.30666666666666664
+              },
+              {
+                "box": [
+                  122,
+                  0,
+                  295,
+                  293
+                ],
+                "widthPerRunHeight": 0.5766666666666667
+              },
+              {
+                "box": [
+                  325,
+                  0,
+                  477,
+                  293
+                ],
+                "widthPerRunHeight": 0.5066666666666667
+              }
+            ],
+            "gapPerRunHeight": [
+              0.1,
+              0.1
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4666666666666667,
+              "modelWidthPerHeight": 0.30666666666666664,
+              "ratio": 0.657142857142857
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5111111111111111,
+              "modelWidthPerHeight": 0.5933333333333334,
+              "ratio": 1.1608695652173915
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4444444444444444,
+              "modelWidthPerHeight": 0.52,
+              "ratio": 1.1700000000000002
+            }
+          ]
+        },
+        {
+          "key": "oswald-600",
+          "widthPerHeight": 1.6333333333333333,
+          "widthRatio": 1.0352112676056338,
+          "widthRatioSensitivityRange": [
+            1.0352112676056338,
+            1.0352112676056338
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  96,
+                  300
+                ],
+                "widthPerRunHeight": 0.32
+              },
+              {
+                "box": [
+                  126,
+                  0,
+                  305,
+                  293
+                ],
+                "widthPerRunHeight": 0.5966666666666667
+              },
+              {
+                "box": [
+                  334,
+                  0,
+                  490,
+                  293
+                ],
+                "widthPerRunHeight": 0.52
+              }
+            ],
+            "gapPerRunHeight": [
+              0.1,
+              0.09666666666666666
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4666666666666667,
+              "modelWidthPerHeight": 0.32,
+              "ratio": 0.6857142857142857
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5111111111111111,
+              "modelWidthPerHeight": 0.6133333333333333,
+              "ratio": 1.2
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4444444444444444,
+              "modelWidthPerHeight": 0.5333333333333333,
+              "ratio": 1.2
+            }
+          ]
+        },
+        {
+          "key": "oswald-700",
+          "widthPerHeight": 1.67,
+          "widthRatio": 1.0584507042253521,
+          "widthRatioSensitivityRange": [
+            1.0584507042253521,
+            1.0584507042253521
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  100,
+                  300
+                ],
+                "widthPerRunHeight": 0.3333333333333333
+              },
+              {
+                "box": [
+                  129,
+                  0,
+                  312,
+                  292
+                ],
+                "widthPerRunHeight": 0.61
+              },
+              {
+                "box": [
+                  342,
+                  0,
+                  501,
+                  292
+                ],
+                "widthPerRunHeight": 0.53
+              }
+            ],
+            "gapPerRunHeight": [
+              0.09666666666666666,
+              0.1
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4666666666666667,
+              "modelWidthPerHeight": 0.3333333333333333,
+              "ratio": 0.7142857142857142
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5111111111111111,
+              "modelWidthPerHeight": 0.6266666666666667,
+              "ratio": 1.2260869565217394
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4444444444444444,
+              "modelWidthPerHeight": 0.5433333333333333,
+              "ratio": 1.2225000000000001
+            }
+          ]
+        },
+        {
+          "key": "robotocondensed-400",
+          "widthPerHeight": 2.183333333333333,
+          "widthRatio": 1.3838028169014083,
+          "widthRatioSensitivityRange": [
+            1.3838028169014083,
+            1.3838028169014083
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  159,
+                  300
+                ],
+                "widthPerRunHeight": 0.53
+              },
+              {
+                "box": [
+                  198,
+                  0,
+                  421,
+                  296
+                ],
+                "widthPerRunHeight": 0.7433333333333333
+              },
+              {
+                "box": [
+                  461,
+                  0,
+                  655,
+                  296
+                ],
+                "widthPerRunHeight": 0.6466666666666666
+              }
+            ],
+            "gapPerRunHeight": [
+              0.13,
+              0.13333333333333333
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4666666666666667,
+              "modelWidthPerHeight": 0.53,
+              "ratio": 1.1357142857142857
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5111111111111111,
+              "modelWidthPerHeight": 0.7533333333333333,
+              "ratio": 1.473913043478261
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4444444444444444,
+              "modelWidthPerHeight": 0.6533333333333333,
+              "ratio": 1.47
+            }
+          ]
+        },
+        {
+          "key": "robotocondensed-600",
+          "widthPerHeight": 2.2333333333333334,
+          "widthRatio": 1.415492957746479,
+          "widthRatioSensitivityRange": [
+            1.415492957746479,
+            1.415492957746479
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  169,
+                  300
+                ],
+                "widthPerRunHeight": 0.5633333333333334
+              },
+              {
+                "box": [
+                  199,
+                  0,
+                  435,
+                  296
+                ],
+                "widthPerRunHeight": 0.7866666666666666
+              },
+              {
+                "box": [
+                  466,
+                  0,
+                  670,
+                  296
+                ],
+                "widthPerRunHeight": 0.68
+              }
+            ],
+            "gapPerRunHeight": [
+              0.1,
+              0.10333333333333333
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4666666666666667,
+              "modelWidthPerHeight": 0.5633333333333334,
+              "ratio": 1.207142857142857
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5111111111111111,
+              "modelWidthPerHeight": 0.7966666666666666,
+              "ratio": 1.558695652173913
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4444444444444444,
+              "modelWidthPerHeight": 0.69,
+              "ratio": 1.5525
+            }
+          ]
+        },
+        {
+          "key": "robotocondensed-700",
+          "widthPerHeight": 2.2466666666666666,
+          "widthRatio": 1.423943661971831,
+          "widthRatioSensitivityRange": [
+            1.423943661971831,
+            1.423943661971831
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  171,
+                  300
+                ],
+                "widthPerRunHeight": 0.57
+              },
+              {
+                "box": [
+                  199,
+                  0,
+                  439,
+                  296
+                ],
+                "widthPerRunHeight": 0.8
+              },
+              {
+                "box": [
+                  467,
+                  0,
+                  674,
+                  296
+                ],
+                "widthPerRunHeight": 0.69
+              }
+            ],
+            "gapPerRunHeight": [
+              0.09333333333333334,
+              0.09333333333333334
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4666666666666667,
+              "modelWidthPerHeight": 0.57,
+              "ratio": 1.2214285714285713
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5111111111111111,
+              "modelWidthPerHeight": 0.81,
+              "ratio": 1.5847826086956525
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4444444444444444,
+              "modelWidthPerHeight": 0.7,
+              "ratio": 1.575
+            }
+          ]
+        },
+        {
+          "key": "robotocondensed-900",
+          "widthPerHeight": 2.2733333333333334,
+          "widthRatio": 1.4408450704225353,
+          "widthRatioSensitivityRange": [
+            1.4408450704225353,
+            1.4408450704225353
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  176,
+                  300
+                ],
+                "widthPerRunHeight": 0.5866666666666667
+              },
+              {
+                "box": [
+                  199,
+                  0,
+                  446,
+                  296
+                ],
+                "widthPerRunHeight": 0.8233333333333334
+              },
+              {
+                "box": [
+                  469,
+                  0,
+                  682,
+                  296
+                ],
+                "widthPerRunHeight": 0.71
+              }
+            ],
+            "gapPerRunHeight": [
+              0.07666666666666666,
+              0.07666666666666666
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4666666666666667,
+              "modelWidthPerHeight": 0.5866666666666667,
+              "ratio": 1.2571428571428571
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5111111111111111,
+              "modelWidthPerHeight": 0.8366666666666667,
+              "ratio": 1.6369565217391306
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4444444444444444,
+              "modelWidthPerHeight": 0.72,
+              "ratio": 1.62
+            }
+          ]
+        },
+        {
+          "key": "archivonarrow-400",
+          "widthPerHeight": 2.1,
+          "widthRatio": 1.3309859154929577,
+          "widthRatioSensitivityRange": [
+            1.3309859154929577,
+            1.3309859154929577
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  143,
+                  300
+                ],
+                "widthPerRunHeight": 0.4766666666666667
+              },
+              {
+                "box": [
+                  170,
+                  0,
+                  406,
+                  295
+                ],
+                "widthPerRunHeight": 0.7866666666666666
+              },
+              {
+                "box": [
+                  436,
+                  0,
+                  630,
+                  295
+                ],
+                "widthPerRunHeight": 0.6466666666666666
+              }
+            ],
+            "gapPerRunHeight": [
+              0.09,
+              0.1
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4666666666666667,
+              "modelWidthPerHeight": 0.4766666666666667,
+              "ratio": 1.0214285714285714
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5111111111111111,
+              "modelWidthPerHeight": 0.8,
+              "ratio": 1.5652173913043481
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4444444444444444,
+              "modelWidthPerHeight": 0.66,
+              "ratio": 1.485
+            }
+          ]
+        },
+        {
+          "key": "archivonarrow-600",
+          "widthPerHeight": 2.2,
+          "widthRatio": 1.3943661971830987,
+          "widthRatioSensitivityRange": [
+            1.3943661971830987,
+            1.3943661971830987
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  158,
+                  300
+                ],
+                "widthPerRunHeight": 0.5266666666666666
+              },
+              {
+                "box": [
+                  185,
+                  0,
+                  432,
+                  295
+                ],
+                "widthPerRunHeight": 0.8233333333333334
+              },
+              {
+                "box": [
+                  460,
+                  0,
+                  660,
+                  295
+                ],
+                "widthPerRunHeight": 0.6666666666666666
+              }
+            ],
+            "gapPerRunHeight": [
+              0.09,
+              0.09333333333333334
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4666666666666667,
+              "modelWidthPerHeight": 0.5266666666666666,
+              "ratio": 1.1285714285714283
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5111111111111111,
+              "modelWidthPerHeight": 0.84,
+              "ratio": 1.6434782608695653
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4444444444444444,
+              "modelWidthPerHeight": 0.6766666666666666,
+              "ratio": 1.5225
+            }
+          ]
+        },
+        {
+          "key": "archivonarrow-700",
+          "widthPerHeight": 2.25,
+          "widthRatio": 1.426056338028169,
+          "widthRatioSensitivityRange": [
+            1.426056338028169,
+            1.426056338028169
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  166,
+                  300
+                ],
+                "widthPerRunHeight": 0.5533333333333333
+              },
+              {
+                "box": [
+                  192,
+                  0,
+                  446,
+                  295
+                ],
+                "widthPerRunHeight": 0.8466666666666667
+              },
+              {
+                "box": [
+                  472,
+                  0,
+                  675,
+                  295
+                ],
+                "widthPerRunHeight": 0.6766666666666666
+              }
+            ],
+            "gapPerRunHeight": [
+              0.08666666666666667,
+              0.08666666666666667
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4666666666666667,
+              "modelWidthPerHeight": 0.5533333333333333,
+              "ratio": 1.1857142857142857
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5111111111111111,
+              "modelWidthPerHeight": 0.86,
+              "ratio": 1.682608695652174
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4444444444444444,
+              "modelWidthPerHeight": 0.6866666666666666,
+              "ratio": 1.5450000000000002
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2020-pinned",
+      "file": "public/bc-decal-corrections/evidence/2020/source.png",
+      "roi": [
+        6,
+        8,
+        86,
+        64
+      ],
+      "sourceSha256": "183c639af7d848480bb263827f5d588f5bc57707074d7cadd563f2a246d4f3ce",
+      "pixels": [
+        223,
+        96
+      ],
+      "sourcePaintedPixels": [
+        67,
+        44
+      ],
+      "sourceWidthPerHeight": 1.5227272727272727,
+      "threshold": 77.32023958631254,
+      "thresholdValidation": {
+        "threshold": 77.32,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          6,
+          5,
+          73,
+          49
+        ],
+        "widthPerHeight": 1.5227272727272727,
+        "classMeanDifference": 98.09620271474172,
+        "cropClearancePixels": [
+          6,
+          5,
+          7,
+          7
+        ]
+      },
+      "sensitivity": [
+        {
+          "threshold": 65.32,
+          "components": 3,
+          "accepted": true,
+          "rejectionReasons": [],
+          "paintedBoxInCrop": [
+            6,
+            5,
+            73,
+            49
+          ],
+          "widthPerHeight": 1.5227272727272727,
+          "classMeanDifference": 98.24515598158199,
+          "cropClearancePixels": [
+            6,
+            5,
+            7,
+            7
+          ]
+        },
+        {
+          "threshold": 71.32,
+          "components": 3,
+          "accepted": true,
+          "rejectionReasons": [],
+          "paintedBoxInCrop": [
+            6,
+            5,
+            73,
+            49
+          ],
+          "widthPerHeight": 1.5227272727272727,
+          "classMeanDifference": 98.20735832014347,
+          "cropClearancePixels": [
+            6,
+            5,
+            7,
+            7
+          ]
+        },
+        {
+          "threshold": 77.32,
+          "components": 3,
+          "accepted": true,
+          "rejectionReasons": [],
+          "paintedBoxInCrop": [
+            6,
+            5,
+            73,
+            49
+          ],
+          "widthPerHeight": 1.5227272727272727,
+          "classMeanDifference": 98.09620271474172,
+          "cropClearancePixels": [
+            6,
+            5,
+            7,
+            7
+          ]
+        },
+        {
+          "threshold": 83.32,
+          "components": 3,
+          "accepted": true,
+          "rejectionReasons": [],
+          "paintedBoxInCrop": [
+            6,
+            5,
+            73,
+            49
+          ],
+          "widthPerHeight": 1.5227272727272727,
+          "classMeanDifference": 97.95787757780181,
+          "cropClearancePixels": [
+            6,
+            5,
+            7,
+            7
+          ]
+        },
+        {
+          "threshold": 89.32,
+          "components": 3,
+          "accepted": true,
+          "rejectionReasons": [],
+          "paintedBoxInCrop": [
+            6,
+            5,
+            73,
+            49
+          ],
+          "widthPerHeight": 1.5227272727272727,
+          "classMeanDifference": 97.51378023652663,
+          "cropClearancePixels": [
+            6,
+            5,
+            7,
+            7
+          ]
+        }
+      ],
+      "glyphSegmentationAccepted": true,
+      "sourceComponents": {
+        "components": [
+          {
+            "box": [
+              0,
+              0,
+              19,
+              44
+            ],
+            "widthPerRunHeight": 0.4318181818181818
+          },
+          {
+            "box": [
+              22,
+              0,
+              45,
+              44
+            ],
+            "widthPerRunHeight": 0.5227272727272727
+          },
+          {
+            "box": [
+              48,
+              0,
+              67,
+              44
+            ],
+            "widthPerRunHeight": 0.4318181818181818
+          }
+        ],
+        "gapPerRunHeight": [
+          0.06818181818181818,
+          0.06818181818181818
+        ]
+      },
+      "candidates": [
+        {
+          "key": "retained",
+          "widthPerHeight": 1.3733333333333333,
+          "widthRatio": 0.9018905472636816,
+          "widthRatioSensitivityRange": [
+            0.9018905472636816,
+            0.9018905472636816
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  128,
+                  300
+                ],
+                "widthPerRunHeight": 0.4266666666666667
+              },
+              {
+                "box": [
+                  133,
+                  0,
+                  268,
+                  294
+                ],
+                "widthPerRunHeight": 0.45
+              },
+              {
+                "box": [
+                  269,
+                  0,
+                  412,
+                  294
+                ],
+                "widthPerRunHeight": 0.4766666666666667
+              }
+            ],
+            "gapPerRunHeight": [
+              0.016666666666666666,
+              0.0033333333333333335
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.43,
+              "ratio": 0.9957894736842104
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5227272727272727,
+              "modelWidthPerHeight": 0.46,
+              "ratio": 0.8800000000000001
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.4866666666666667,
+              "ratio": 1.1270175438596493
+            }
+          ]
+        },
+        {
+          "key": "heavy-month-wide",
+          "widthPerHeight": 1.92,
+          "widthRatio": 1.2608955223880596,
+          "widthRatioSensitivityRange": [
+            1.2608955223880596,
+            1.2608955223880596
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  173,
+                  300
+                ],
+                "widthPerRunHeight": 0.5766666666666667
+              },
+              {
+                "box": [
+                  189,
+                  0,
+                  371,
+                  294
+                ],
+                "widthPerRunHeight": 0.6066666666666667
+              },
+              {
+                "box": [
+                  383,
+                  0,
+                  576,
+                  294
+                ],
+                "widthPerRunHeight": 0.6433333333333333
+              }
+            ],
+            "gapPerRunHeight": [
+              0.05333333333333334,
+              0.04
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.5766666666666667,
+              "ratio": 1.335438596491228
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5227272727272727,
+              "modelWidthPerHeight": 0.62,
+              "ratio": 1.1860869565217391
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.6566666666666666,
+              "ratio": 1.5207017543859649
+            }
+          ]
+        },
+        {
+          "key": "spacing-2018",
+          "widthPerHeight": 1.4133333333333333,
+          "widthRatio": 0.9281592039800995,
+          "widthRatioSensitivityRange": [
+            0.9281592039800995,
+            0.9281592039800995
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  129,
+                  300
+                ],
+                "widthPerRunHeight": 0.43
+              },
+              {
+                "box": [
+                  133,
+                  0,
+                  268,
+                  294
+                ],
+                "widthPerRunHeight": 0.45
+              },
+              {
+                "box": [
+                  281,
+                  0,
+                  424,
+                  294
+                ],
+                "widthPerRunHeight": 0.4766666666666667
+              }
+            ],
+            "gapPerRunHeight": [
+              0.013333333333333334,
+              0.043333333333333335
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.43,
+              "ratio": 0.9957894736842104
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5227272727272727,
+              "modelWidthPerHeight": 0.46,
+              "ratio": 0.8800000000000001
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.4866666666666667,
+              "ratio": 1.1270175438596493
+            }
+          ]
+        },
+        {
+          "key": "spacing-2019",
+          "widthPerHeight": 1.5066666666666666,
+          "widthRatio": 0.9894527363184079,
+          "widthRatioSensitivityRange": [
+            0.9894527363184079,
+            0.9894527363184079
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  128,
+                  300
+                ],
+                "widthPerRunHeight": 0.4266666666666667
+              },
+              {
+                "box": [
+                  147,
+                  0,
+                  282,
+                  294
+                ],
+                "widthPerRunHeight": 0.45
+              },
+              {
+                "box": [
+                  309,
+                  0,
+                  452,
+                  294
+                ],
+                "widthPerRunHeight": 0.4766666666666667
+              }
+            ],
+            "gapPerRunHeight": [
+              0.06333333333333334,
+              0.09
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.43,
+              "ratio": 0.9957894736842104
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5227272727272727,
+              "modelWidthPerHeight": 0.46,
+              "ratio": 0.8800000000000001
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.4866666666666667,
+              "ratio": 1.1270175438596493
+            }
+          ]
+        },
+        {
+          "key": "spacing-2020",
+          "widthPerHeight": 1.49,
+          "widthRatio": 0.9785074626865672,
+          "widthRatioSensitivityRange": [
+            0.9785074626865672,
+            0.9785074626865672
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  129,
+                  300
+                ],
+                "widthPerRunHeight": 0.43
+              },
+              {
+                "box": [
+                  147,
+                  0,
+                  283,
+                  294
+                ],
+                "widthPerRunHeight": 0.4533333333333333
+              },
+              {
+                "box": [
+                  304,
+                  0,
+                  447,
+                  294
+                ],
+                "widthPerRunHeight": 0.4766666666666667
+              }
+            ],
+            "gapPerRunHeight": [
+              0.06,
+              0.07
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.43,
+              "ratio": 0.9957894736842104
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5227272727272727,
+              "modelWidthPerHeight": 0.46,
+              "ratio": 0.8800000000000001
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.4866666666666667,
+              "ratio": 1.1270175438596493
+            }
+          ]
+        },
+        {
+          "key": "anton-400",
+          "widthPerHeight": 1.6066666666666667,
+          "widthRatio": 1.0551243781094528,
+          "widthRatioSensitivityRange": [
+            1.0551243781094528,
+            1.0551243781094528
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  145,
+                  300
+                ],
+                "widthPerRunHeight": 0.48333333333333334
+              },
+              {
+                "box": [
+                  160,
+                  0,
+                  318,
+                  297
+                ],
+                "widthPerRunHeight": 0.5266666666666666
+              },
+              {
+                "box": [
+                  336,
+                  0,
+                  482,
+                  297
+                ],
+                "widthPerRunHeight": 0.4866666666666667
+              }
+            ],
+            "gapPerRunHeight": [
+              0.05,
+              0.06
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.48333333333333334,
+              "ratio": 1.119298245614035
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5227272727272727,
+              "modelWidthPerHeight": 0.53,
+              "ratio": 1.013913043478261
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.49,
+              "ratio": 1.134736842105263
+            }
+          ]
+        },
+        {
+          "key": "bebasneue-400",
+          "widthPerHeight": 1.47,
+          "widthRatio": 0.9653731343283583,
+          "widthRatioSensitivityRange": [
+            0.9653731343283583,
+            0.9653731343283583
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  90,
+                  300
+                ],
+                "widthPerRunHeight": 0.3
+              },
+              {
+                "box": [
+                  111,
+                  0,
+                  271,
+                  298
+                ],
+                "widthPerRunHeight": 0.5333333333333333
+              },
+              {
+                "box": [
+                  294,
+                  0,
+                  441,
+                  298
+                ],
+                "widthPerRunHeight": 0.49
+              }
+            ],
+            "gapPerRunHeight": [
+              0.07,
+              0.07666666666666666
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.3,
+              "ratio": 0.6947368421052631
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5227272727272727,
+              "modelWidthPerHeight": 0.54,
+              "ratio": 1.0330434782608697
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.49333333333333335,
+              "ratio": 1.1424561403508773
+            }
+          ]
+        },
+        {
+          "key": "oswald-300",
+          "widthPerHeight": 1.4166666666666667,
+          "widthRatio": 0.9303482587064678,
+          "widthRatioSensitivityRange": [
+            0.9303482587064678,
+            0.9303482587064678
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  71,
+                  300
+                ],
+                "widthPerRunHeight": 0.23666666666666666
+              },
+              {
+                "box": [
+                  106,
+                  0,
+                  256,
+                  287
+                ],
+                "widthPerRunHeight": 0.5
+              },
+              {
+                "box": [
+                  291,
+                  0,
+                  425,
+                  287
+                ],
+                "widthPerRunHeight": 0.44666666666666666
+              }
+            ],
+            "gapPerRunHeight": [
+              0.11666666666666667,
+              0.11666666666666667
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.23666666666666666,
+              "ratio": 0.5480701754385965
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5227272727272727,
+              "modelWidthPerHeight": 0.5233333333333333,
+              "ratio": 1.001159420289855
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.4666666666666667,
+              "ratio": 1.080701754385965
+            }
+          ]
+        },
+        {
+          "key": "oswald-400",
+          "widthPerHeight": 1.5066666666666666,
+          "widthRatio": 0.9894527363184079,
+          "widthRatioSensitivityRange": [
+            0.9894527363184079,
+            0.9894527363184079
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  83,
+                  300
+                ],
+                "widthPerRunHeight": 0.27666666666666667
+              },
+              {
+                "box": [
+                  113,
+                  0,
+                  277,
+                  293
+                ],
+                "widthPerRunHeight": 0.5466666666666666
+              },
+              {
+                "box": [
+                  307,
+                  0,
+                  452,
+                  293
+                ],
+                "widthPerRunHeight": 0.48333333333333334
+              }
+            ],
+            "gapPerRunHeight": [
+              0.1,
+              0.1
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.27666666666666667,
+              "ratio": 0.6407017543859649
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5227272727272727,
+              "modelWidthPerHeight": 0.56,
+              "ratio": 1.071304347826087
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.49666666666666665,
+              "ratio": 1.150175438596491
+            }
+          ]
+        },
+        {
+          "key": "oswald-500",
+          "widthPerHeight": 1.59,
+          "widthRatio": 1.044179104477612,
+          "widthRatioSensitivityRange": [
+            1.044179104477612,
+            1.044179104477612
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  92,
+                  300
+                ],
+                "widthPerRunHeight": 0.30666666666666664
+              },
+              {
+                "box": [
+                  122,
+                  0,
+                  295,
+                  293
+                ],
+                "widthPerRunHeight": 0.5766666666666667
+              },
+              {
+                "box": [
+                  325,
+                  0,
+                  477,
+                  293
+                ],
+                "widthPerRunHeight": 0.5066666666666667
+              }
+            ],
+            "gapPerRunHeight": [
+              0.1,
+              0.1
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.30666666666666664,
+              "ratio": 0.7101754385964911
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5227272727272727,
+              "modelWidthPerHeight": 0.5933333333333334,
+              "ratio": 1.135072463768116
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.52,
+              "ratio": 1.2042105263157894
+            }
+          ]
+        },
+        {
+          "key": "oswald-600",
+          "widthPerHeight": 1.6333333333333333,
+          "widthRatio": 1.072636815920398,
+          "widthRatioSensitivityRange": [
+            1.072636815920398,
+            1.072636815920398
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  96,
+                  300
+                ],
+                "widthPerRunHeight": 0.32
+              },
+              {
+                "box": [
+                  126,
+                  0,
+                  305,
+                  293
+                ],
+                "widthPerRunHeight": 0.5966666666666667
+              },
+              {
+                "box": [
+                  334,
+                  0,
+                  490,
+                  293
+                ],
+                "widthPerRunHeight": 0.52
+              }
+            ],
+            "gapPerRunHeight": [
+              0.1,
+              0.09666666666666666
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.32,
+              "ratio": 0.7410526315789474
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5227272727272727,
+              "modelWidthPerHeight": 0.6133333333333333,
+              "ratio": 1.1733333333333333
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.5333333333333333,
+              "ratio": 1.2350877192982457
+            }
+          ]
+        },
+        {
+          "key": "oswald-700",
+          "widthPerHeight": 1.67,
+          "widthRatio": 1.0967164179104478,
+          "widthRatioSensitivityRange": [
+            1.0967164179104478,
+            1.0967164179104478
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  100,
+                  300
+                ],
+                "widthPerRunHeight": 0.3333333333333333
+              },
+              {
+                "box": [
+                  129,
+                  0,
+                  312,
+                  292
+                ],
+                "widthPerRunHeight": 0.61
+              },
+              {
+                "box": [
+                  342,
+                  0,
+                  501,
+                  292
+                ],
+                "widthPerRunHeight": 0.53
+              }
+            ],
+            "gapPerRunHeight": [
+              0.09666666666666666,
+              0.1
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.3333333333333333,
+              "ratio": 0.7719298245614035
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5227272727272727,
+              "modelWidthPerHeight": 0.6266666666666667,
+              "ratio": 1.1988405797101451
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.5433333333333333,
+              "ratio": 1.2582456140350877
+            }
+          ]
+        },
+        {
+          "key": "robotocondensed-400",
+          "widthPerHeight": 2.183333333333333,
+          "widthRatio": 1.4338308457711442,
+          "widthRatioSensitivityRange": [
+            1.4338308457711442,
+            1.4338308457711442
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  159,
+                  300
+                ],
+                "widthPerRunHeight": 0.53
+              },
+              {
+                "box": [
+                  198,
+                  0,
+                  421,
+                  296
+                ],
+                "widthPerRunHeight": 0.7433333333333333
+              },
+              {
+                "box": [
+                  461,
+                  0,
+                  655,
+                  296
+                ],
+                "widthPerRunHeight": 0.6466666666666666
+              }
+            ],
+            "gapPerRunHeight": [
+              0.13,
+              0.13333333333333333
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.53,
+              "ratio": 1.2273684210526317
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5227272727272727,
+              "modelWidthPerHeight": 0.7533333333333333,
+              "ratio": 1.441159420289855
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.6533333333333333,
+              "ratio": 1.5129824561403509
+            }
+          ]
+        },
+        {
+          "key": "robotocondensed-600",
+          "widthPerHeight": 2.2333333333333334,
+          "widthRatio": 1.4666666666666668,
+          "widthRatioSensitivityRange": [
+            1.4666666666666668,
+            1.4666666666666668
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  169,
+                  300
+                ],
+                "widthPerRunHeight": 0.5633333333333334
+              },
+              {
+                "box": [
+                  199,
+                  0,
+                  435,
+                  296
+                ],
+                "widthPerRunHeight": 0.7866666666666666
+              },
+              {
+                "box": [
+                  466,
+                  0,
+                  670,
+                  296
+                ],
+                "widthPerRunHeight": 0.68
+              }
+            ],
+            "gapPerRunHeight": [
+              0.1,
+              0.10333333333333333
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.5633333333333334,
+              "ratio": 1.304561403508772
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5227272727272727,
+              "modelWidthPerHeight": 0.7966666666666666,
+              "ratio": 1.5240579710144928
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.69,
+              "ratio": 1.597894736842105
+            }
+          ]
+        },
+        {
+          "key": "robotocondensed-700",
+          "widthPerHeight": 2.2466666666666666,
+          "widthRatio": 1.4754228855721392,
+          "widthRatioSensitivityRange": [
+            1.4754228855721392,
+            1.4754228855721392
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  171,
+                  300
+                ],
+                "widthPerRunHeight": 0.57
+              },
+              {
+                "box": [
+                  199,
+                  0,
+                  439,
+                  296
+                ],
+                "widthPerRunHeight": 0.8
+              },
+              {
+                "box": [
+                  467,
+                  0,
+                  674,
+                  296
+                ],
+                "widthPerRunHeight": 0.69
+              }
+            ],
+            "gapPerRunHeight": [
+              0.09333333333333334,
+              0.09333333333333334
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.57,
+              "ratio": 1.3199999999999998
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5227272727272727,
+              "modelWidthPerHeight": 0.81,
+              "ratio": 1.5495652173913046
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.7,
+              "ratio": 1.6210526315789473
+            }
+          ]
+        },
+        {
+          "key": "robotocondensed-900",
+          "widthPerHeight": 2.2733333333333334,
+          "widthRatio": 1.4929353233830847,
+          "widthRatioSensitivityRange": [
+            1.4929353233830847,
+            1.4929353233830847
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  176,
+                  300
+                ],
+                "widthPerRunHeight": 0.5866666666666667
+              },
+              {
+                "box": [
+                  199,
+                  0,
+                  446,
+                  296
+                ],
+                "widthPerRunHeight": 0.8233333333333334
+              },
+              {
+                "box": [
+                  469,
+                  0,
+                  682,
+                  296
+                ],
+                "widthPerRunHeight": 0.71
+              }
+            ],
+            "gapPerRunHeight": [
+              0.07666666666666666,
+              0.07666666666666666
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.5866666666666667,
+              "ratio": 1.3585964912280701
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5227272727272727,
+              "modelWidthPerHeight": 0.8366666666666667,
+              "ratio": 1.6005797101449275
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.72,
+              "ratio": 1.6673684210526314
+            }
+          ]
+        },
+        {
+          "key": "archivonarrow-400",
+          "widthPerHeight": 2.1,
+          "widthRatio": 1.3791044776119403,
+          "widthRatioSensitivityRange": [
+            1.3791044776119403,
+            1.3791044776119403
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  143,
+                  300
+                ],
+                "widthPerRunHeight": 0.4766666666666667
+              },
+              {
+                "box": [
+                  170,
+                  0,
+                  406,
+                  295
+                ],
+                "widthPerRunHeight": 0.7866666666666666
+              },
+              {
+                "box": [
+                  436,
+                  0,
+                  630,
+                  295
+                ],
+                "widthPerRunHeight": 0.6466666666666666
+              }
+            ],
+            "gapPerRunHeight": [
+              0.09,
+              0.1
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.4766666666666667,
+              "ratio": 1.103859649122807
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5227272727272727,
+              "modelWidthPerHeight": 0.8,
+              "ratio": 1.5304347826086957
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.66,
+              "ratio": 1.528421052631579
+            }
+          ]
+        },
+        {
+          "key": "archivonarrow-600",
+          "widthPerHeight": 2.2,
+          "widthRatio": 1.4447761194029851,
+          "widthRatioSensitivityRange": [
+            1.4447761194029851,
+            1.4447761194029851
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  158,
+                  300
+                ],
+                "widthPerRunHeight": 0.5266666666666666
+              },
+              {
+                "box": [
+                  185,
+                  0,
+                  432,
+                  295
+                ],
+                "widthPerRunHeight": 0.8233333333333334
+              },
+              {
+                "box": [
+                  460,
+                  0,
+                  660,
+                  295
+                ],
+                "widthPerRunHeight": 0.6666666666666666
+              }
+            ],
+            "gapPerRunHeight": [
+              0.09,
+              0.09333333333333334
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.5266666666666666,
+              "ratio": 1.2196491228070174
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5227272727272727,
+              "modelWidthPerHeight": 0.84,
+              "ratio": 1.6069565217391304
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.6766666666666666,
+              "ratio": 1.567017543859649
+            }
+          ]
+        },
+        {
+          "key": "archivonarrow-700",
+          "widthPerHeight": 2.25,
+          "widthRatio": 1.4776119402985075,
+          "widthRatioSensitivityRange": [
+            1.4776119402985075,
+            1.4776119402985075
+          ],
+          "modelComponents": {
+            "components": [
+              {
+                "box": [
+                  0,
+                  0,
+                  166,
+                  300
+                ],
+                "widthPerRunHeight": 0.5533333333333333
+              },
+              {
+                "box": [
+                  192,
+                  0,
+                  446,
+                  295
+                ],
+                "widthPerRunHeight": 0.8466666666666667
+              },
+              {
+                "box": [
+                  472,
+                  0,
+                  675,
+                  295
+                ],
+                "widthPerRunHeight": 0.6766666666666666
+              }
+            ],
+            "gapPerRunHeight": [
+              0.08666666666666667,
+              0.08666666666666667
+            ]
+          },
+          "glyphWidthRatios": [
+            {
+              "character": "J",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.5533333333333333,
+              "ratio": 1.2814035087719298
+            },
+            {
+              "character": "A",
+              "sourceWidthPerHeight": 0.5227272727272727,
+              "modelWidthPerHeight": 0.86,
+              "ratio": 1.645217391304348
+            },
+            {
+              "character": "N",
+              "sourceWidthPerHeight": 0.4318181818181818,
+              "modelWidthPerHeight": 0.6866666666666666,
+              "ratio": 1.5901754385964912
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "renderedRuns": 76,
+  "allRunsNatural": true
+}

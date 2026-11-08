@@ -1,0 +1,410 @@
+{
+  "1970": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass implementation after the complete family review.",
+    "Remaining": "Outlined year construction and province spacing remain for focused review.",
+    "First-pass status": "evidence-only"
+  },
+  "1971": {
+    "Status": "updated",
+    "Implemented in this pass": "Reduce and space the control; move and widen its panel to the observed footprint.",
+    "Remaining": "COLUMBIA is clipped at the left photo edge; province glyph contours and emblem/ink appearance remain approximate.",
+    "First-pass status": "retained"
+  },
+  "1972": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass implementation after the complete family review.",
+    "Remaining": "Fine printed contour and historical typeface remain uncertain.",
+    "First-pass status": "implemented"
+  },
+  "1974": {
+    "Status": "updated",
+    "Implemented in this pass": "Reduce control cap/spacing and calibrate the outlined control panel.",
+    "Remaining": "Province and PASSENGER native candidates remain wider than the photograph; the small source does not settle exact capital outlines. The separately stacked year digits remain approximate.",
+    "First-pass status": "retained"
+  },
+  "1975": {
+    "Status": "updated",
+    "Implemented in this pass": "Correct control panel/print; reposition the province lines; reduce and move 75 uniformly to restore the photographed gap.",
+    "Remaining": "Native province/year/control contours remain visual candidates; colour and material are not established.",
+    "First-pass status": "retained"
+  },
+  "1976": {
+    "Status": "updated",
+    "Implemented in this pass": "Reduce the oversized control uniformly, refine its spacing, and fit its observed panel.",
+    "Remaining": "Small province and class lettering retain native candidates; the source flower is not an exact manufacturing trace.",
+    "First-pass status": "retained"
+  },
+  "1977": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass implementation after the complete family review.",
+    "Remaining": "Other role proportions retain their prior candidates.",
+    "First-pass status": "evidence-only"
+  },
+  "1978": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retain the present year, vertical class layout, and spaced control after inspection.",
+    "Remaining": "B/C shapes and control proportions still differ; the old specimen and small crop do not justify claiming exact contours. The separate B/C and vertical PASS/COMM constructions still need clearer evidence.",
+    "First-pass status": "retained"
+  },
+  "1980": {
+    "Status": "updated",
+    "Implemented in this pass": "Move only the independently inspected MAR unfilled panel; retain the first-pass control position.",
+    "Remaining": "The automated control mask touches the box/inspection boundary and is rejected. Control width/weight and exact registration remain unresolved; the diagonal scratch is excluded. MAR/80 proportions and the long province line remain approximate.",
+    "First-pass status": "retained"
+  },
+  "1981": {
+    "Status": "updated",
+    "Implemented in this pass": "Use an independent wide 12-capital province profile; calibrate the photographed JUN stack.",
+    "Remaining": "Large OCT source supports form/spacing, but fine print spread and the tiny JUN line height remain uncertain; other-month placement is retained. The retained year candidate still differs in weight and spacing.",
+    "First-pass status": "retained"
+  },
+  "1982": {
+    "Status": "updated",
+    "Implemented in this pass": "Use the corroborated wide province profile and calibrate the photographed JAN stack.",
+    "Remaining": "The larger JUL image is blurrier than 1981; exact fine curves and non-JAN placement remain provisional. The broad year candidate still differs in proportion and weight.",
+    "First-pass status": "retained"
+  },
+  "1983": {
+    "Status": "updated",
+    "Implemented in this pass": "Reconstructed only J/U/N for exact JUN; retained the improved margin and natural fitting.",
+    "Remaining": "Equal-height width is now about 0.2% broad, but small unrectified photographs limit fine contours. The faint control remains tentative and excluded from glyph scoring.",
+    "First-pass status": "implemented"
+  },
+  "1984": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass implementation after the complete family review.",
+    "Remaining": "Small vertical lettering, wear and colour remain approximate.",
+    "First-pass status": "implemented"
+  },
+  "1985": {
+    "Status": "updated",
+    "Implemented in this pass": "Use native Archivo 900 width 75 for the heavier province line and calibrate the JUL line size/location.",
+    "Remaining": "Large FEB corroborates the heavy candidate; precise historical font identity and non-JUL positioning remain unconfirmed. Month/year spacing and the faint control remain approximate.",
+    "First-pass status": "retained"
+  },
+  "1986": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass EXPO month reconstruction and supplied logo; all twelve months remain in the regenerated gallery.",
+    "Remaining": "Fine print weight and photographic variation remain uncertain. No new EXPO artwork change in this pass.",
+    "First-pass status": "implemented"
+  },
+  "1987": {
+    "Status": "updated",
+    "Implemented in this pass": "Use the heavy native province candidate; correct FEB line size/location and translate its control.",
+    "Remaining": "The control still has width/shape differences. Province contours are a visual candidate, not a verified historical typeface. Month/year widths remain approximate.",
+    "First-pass status": "retained"
+  },
+  "1988": {
+    "Status": "updated",
+    "Implemented in this pass": "Increase and reposition the DEC province stack while retaining its separate native face.",
+    "Remaining": "The larger FEB photo shows different small-letter proportions from 1987; blur prevents replacing the alphabet confidently. Panel boundaries and the 88 proportions remain approximate.",
+    "First-pass status": "retained"
+  },
+  "1989": {
+    "Status": "updated",
+    "Implemented in this pass": "Translate the observed APR control up and right.",
+    "Remaining": "Other months retain their positions; JUL corroboration shows specimen placement variation, and tiny province letters remain approximate. Month width and the central province candidate remain approximate.",
+    "First-pass status": "retained"
+  },
+  "1990": {
+    "Status": "updated",
+    "Implemented in this pass": "Lower the JAN control substantially and shift its painted centre slightly left.",
+    "Remaining": "An independent JAN specimen also places the control low; this does not establish identical registration for every month/serial. JAN/90 and control weight remain approximate despite corrected registration.",
+    "First-pass status": "retained"
+  },
+  "1991": {
+    "Status": "updated",
+    "Implemented in this pass": "Move the JUN control down and right to its observed painted centre.",
+    "Remaining": "The larger JAN specimen places its control much higher, so the JUN adjustment is deliberately month-scoped. The 91 contours and province spacing remain approximate.",
+    "First-pass status": "retained"
+  },
+  "1992": {
+    "Status": "updated",
+    "Implemented in this pass": "Move the OCT control down and left.",
+    "Remaining": "The independent DEC photograph is retained as corroboration, not substituted for the pinned OCT control; province contours remain approximate. OCT/92 contours remain approximate.",
+    "First-pass status": "retained"
+  },
+  "1993": {
+    "Status": "updated",
+    "Implemented in this pass": "Move the OCT control down and left without resizing its native glyphs.",
+    "Remaining": "A separate JAN specimen confirms that registration can vary; do not extrapolate the OCT position to the full year. Native month/year widths remain approximate.",
+    "First-pass status": "retained"
+  },
+  "1994": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retain the control position, whose displacement is about 1\u20132 source pixels.",
+    "Remaining": "The large scratch crosses the date; no scratched contour is copied. Province lettering and exact native candidate identity remain uncertain. OCT/94 proportions remain approximate.",
+    "First-pass status": "retained"
+  },
+  "1995": {
+    "Status": "updated",
+    "Implemented in this pass": "Lower the observed NOV control and recenter it slightly.",
+    "Remaining": "Native control/province shapes remain approximate; this is a specimen registration correction only. NOV/95 contours and weight remain approximate.",
+    "First-pass status": "retained"
+  },
+  "1996": {
+    "Status": "updated",
+    "Implemented in this pass": "Move the MAR control right while preserving its vertical position within source precision.",
+    "Remaining": "The black and pink variants are separate evidence cases; no colour or month generalization is inferred. MAR/96 proportions remain approximate.",
+    "First-pass status": "retained"
+  },
+  "1996-pink": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retain the pink NOV variant separately; measured registration differences are small enough to be source-sensitive.",
+    "Remaining": "No black-variant position is copied across; exact province/ink contours and colour remain unresolved. NOV and year proportions remain approximate.",
+    "First-pass status": "retained"
+  },
+  "1997": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retain the NOV control position after its whole-line comparison.",
+    "Remaining": "The remaining vertical difference is roughly 1\u20132 source pixels; finer province curves need a clearer independent specimen. NOV/97 proportions remain approximate.",
+    "First-pass status": "retained"
+  },
+  "1998": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retain the AUG case; keep its decision separate from the independently corrected MAY lettering.",
+    "Remaining": "Minor control registration and tiny province lettering remain approximate; a MAY fitting change is not applied indiscriminately. AUG proportions remain approximate; this is separate from Type II MAY.",
+    "First-pass status": "retained"
+  },
+  "1998-type-ii": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass implementation after the complete family review.",
+    "Remaining": "Other months retain prior candidates; fine small-source contours remain uncertain.",
+    "First-pass status": "implemented"
+  },
+  "1999": {
+    "Status": "updated",
+    "Implemented in this pass": "Separate thick-border 1999 MAY reconstruction with corroborated M/A, authored advances and AY spacing; preserves 1998 Type II.",
+    "Remaining": "The primary width now matches closely; threshold variation is about -1.1% to +1.2%. Y has one small source, fine contours remain provisional, and other months retain prior candidates.",
+    "First-pass status": "implemented"
+  },
+  "1999-white": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass independent concentric outline radii and lettering; regenerated the comparison.",
+    "Remaining": "Radii, existing lettering and exact physical edge/material properties remain approximate.",
+    "First-pass status": "implemented"
+  },
+  "2000": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass independent concentric outline radii and lettering; regenerated the comparison.",
+    "Remaining": "Radii, existing lettering and exact physical edge/material properties remain approximate.",
+    "First-pass status": "implemented"
+  },
+  "2001": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass independent concentric outline radii and lettering; regenerated the comparison.",
+    "Remaining": "Radii, existing lettering and exact physical edge/material properties remain approximate.",
+    "First-pass status": "implemented"
+  },
+  "2002": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass independent concentric outline radii and lettering; regenerated the comparison.",
+    "Remaining": "Radii, existing lettering and exact physical edge/material properties remain approximate.",
+    "First-pass status": "implemented"
+  },
+  "2003": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass independent concentric outline radii and lettering; regenerated the comparison.",
+    "Remaining": "Radii, existing lettering and exact physical edge/material properties remain approximate.",
+    "First-pass status": "implemented"
+  },
+  "2004": {
+    "Status": "updated",
+    "Implemented in this pass": "Broadened the fixed 04 from six photographs; calibrated MAR and added a small non-MAR year clearance translation. Corrected the rounded substrate silhouette.",
+    "Remaining": "The primary 04 is about 2.3% narrow; six-source range is about -2.3% to +0.2%. Tiny 5\u20136 px province masks fail separation/clearance checks and are retained as rejected evidence. Province contours are unchanged; source aspect and physical material remain uncertain.",
+    "First-pass status": "implemented"
+  },
+  "2005": {
+    "Status": "updated",
+    "Implemented in this pass": "Retain the small province candidate and control after inspecting their whole-line footprint. Use an approximate rounded substrate silhouette.",
+    "Remaining": "The pinned province is about 5\u20137 pixels high. No per-glyph score or new alphabet is inferred from that blur. JAN/05 contours remain approximate.",
+    "First-pass status": "retained"
+  },
+  "2006": {
+    "Status": "updated",
+    "Implemented in this pass": "Use the heavier native province candidate and nominal size supported by the large APR original; move the stack 2.5 SVG units right to clear wide month runs. Use an approximate rounded substrate silhouette.",
+    "Remaining": "The shift is a family collision guard, not exact specimen registration. Tiny MAY masks are rejected; no per-glyph score is inferred. Historical font identity and print spread remain unconfirmed. MAY/06 contours and control baseline/weight remain approximate; the province translation is a family clearance constraint.",
+    "First-pass status": "retained"
+  },
+  "2007": {
+    "Status": "updated",
+    "Implemented in this pass": "Retain the current province candidate and control pending an enlarged corroborating specimen. Use an approximate rounded substrate silhouette.",
+    "Remaining": "Province segmentation is unstable at about 5\u20137 pixels high and near adjacent year paint; invalid masks are retained as rejections. JAN/07 contours remain approximate.",
+    "First-pass status": "retained"
+  },
+  "2008": {
+    "Status": "updated",
+    "Implemented in this pass": "Corrected the approximate rounded substrate silhouette; retained the first-pass native AUG/08 lettering.",
+    "Remaining": "A aperture, G terminal, 0 bowl and tiny province width remain approximate. Other month candidates are retained; blurred/cropped edges lower confidence in the radius.",
+    "First-pass status": "implemented"
+  },
+  "2009": {
+    "Status": "updated",
+    "Implemented in this pass": "Raise the APR COLUMBIA line to restore the compact observed two-line stack. Use an approximate rounded substrate silhouette.",
+    "Remaining": "BRITISH remains too broad as a candidate; its small source cannot establish a new alphabet. Physical edge decisions belong to the central pass. APR/09 and barcode/control registration retain first-pass differences.",
+    "First-pass status": "retained"
+  },
+  "2010": {
+    "Status": "updated",
+    "Implemented in this pass": "Use the independent tall province subset; calibrate JAN stack/control and barcode; uniformly scale/place the date to preserve the observed gap. Use the observed square substrate silhouette.",
+    "Remaining": "JAN and 10 retain native shape-width residuals after height/position correction. The large 2012 original supplies province forms; surface/colour and historical font identity remain uncertain. JAN/10 contours are retained native candidates despite improved cap/placement.",
+    "First-pass status": "retained"
+  },
+  "2011": {
+    "Status": "updated",
+    "Implemented in this pass": "Added the limited tall province profile and calibrated the MAY province stack; preserved first-pass month/year/control/barcode. Corrected the square substrate.",
+    "Remaining": "The province construction has residual width/print-spread differences; COLUMBIA has a rejected low-threshold trial and its accepted primary extent is approximate. Fine control contours and other-month placement remain provisional.",
+    "First-pass status": "implemented"
+  },
+  "2012": {
+    "Status": "updated",
+    "Implemented in this pass": "Use the tall province subset; correct NOV stack/barcode; uniformly scale/place the date to preserve the photographed clear gap. Use the observed square substrate silhouette.",
+    "Remaining": "NOV remains about 8% narrow at equal height and 12 has a smaller width residual. The larger AUG province source has slight tilt; no exact historical font is claimed. NOV/12 contours are retained candidates despite improved cap/placement.",
+    "First-pass status": "retained"
+  },
+  "2013": {
+    "Status": "updated",
+    "Implemented in this pass": "Added the limited tall province profile and calibrated the OCT stack; preserved first-pass OCT/year/control/barcode. Corrected the square substrate.",
+    "Remaining": "Small-source and province contour/width differences remain. Other month forms retain their prior candidates.",
+    "First-pass status": "implemented"
+  },
+  "2014": {
+    "Status": "updated",
+    "Implemented in this pass": "Corroborated the retained year 4 across nine photographs and corrected the square substrate silhouette.",
+    "Remaining": "No enlarged year 4 was obtained; fine edges/counter shape remain limited by 53\u201356 px sources. Tiny vertical province forms and specimen placement remain approximate.",
+    "First-pass status": "implemented"
+  },
+  "2015": {
+    "Status": "updated",
+    "Implemented in this pass": "Corrected the square substrate silhouette and retained the earlier enlarged-source year/control calibration.",
+    "Remaining": "The existing source control slope limits width interpretation. Small province forms, colour and physical dimensions remain uncertain.",
+    "First-pass status": "implemented"
+  },
+  "2016": {
+    "Status": "updated",
+    "Implemented in this pass": "Corroborated the retained year 6 across eleven photographs and corrected the square substrate silhouette.",
+    "Remaining": "No enlarged year 6 was obtained; fine details remain limited by 56\u201360 px sources. Small province forms and exact specimen registration remain approximate.",
+    "First-pass status": "implemented"
+  },
+  "2017": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass early/later 2017 placement and June/July corner boundary; rechecked exact inputs in the regenerated family.",
+    "Remaining": "Fine early numeral and vertical province contours remain approximate. The July reference is an official illustration, not an issued photograph; colour is uncalibrated.",
+    "First-pass status": "implemented"
+  },
+  "2018": {
+    "Status": "updated",
+    "Implemented in this pass": "Retained the corroborated early year profile; corrected exact JAN role/column/footer placement and observed AN spacing.",
+    "Remaining": "JAN remains about 5.1% narrow at equal height; A remains narrow. Five early 8 examples support retention; six later 2018 specimens show a distinct unmodeled group. Tiny vertical province contours and other-month placement remain approximate.",
+    "First-pass status": "implemented"
+  },
+  "2019": {
+    "Status": "updated",
+    "Implemented in this pass": "Used the separate later-year profile and authored advances; corrected exact JAN role/footer placement and JA/AN spacing.",
+    "Remaining": "JAN remains about 4.5% narrow; A remains narrow and N broad. Year 9 has eleven small examples but no enlarged example. Small province contours and other-month positions remain approximate.",
+    "First-pass status": "implemented"
+  },
+  "2020": {
+    "Status": "updated",
+    "Implemented in this pass": "Used the later-year profile; corrected exact JAN role/footer placement and observed JA/AN spacing. Enlarged APR year/control evidence was independently checked.",
+    "Remaining": "JAN remains about 2.1% narrow with A/N contour differences. The canonical 00000000 photograph is qualified layout evidence, not proof of normal issuance. Small province contours remain approximate.",
+    "First-pass status": "implemented"
+  },
+  "2021": {
+    "Status": "updated",
+    "Implemented in this pass": "Used the later-year profile; corrected exact JUL role/footer placement and native Anton JUL with supported JU/UL spacing.",
+    "Remaining": "JUL width improves from about 23.0% narrow to 4.3% narrow. Its native L foot is about 15\u201317% short and J hook slightly high. Small province forms and other-month positions remain approximate.",
+    "First-pass status": "implemented"
+  },
+  "2022": {
+    "Status": "updated",
+    "Implemented in this pass": "Used the later-year profile; corrected exact MAR role/footer and province-column placement while keeping a visible year right margin.",
+    "Remaining": "The source frame is about 4.7% broader; the year deliberately remains about four authored units left of the frame-centred source target. Small province contours and other-month placement remain approximate.",
+    "First-pass status": "implemented"
+  },
+  "2023": {
+    "Status": "updated",
+    "Implemented in this pass": "Used the later-year 0/1/2/3/9 profile and authored advances within the retained MAR composition.",
+    "Remaining": "Year 3 has only one 46 px occurrence. Coarse width/openings improve, but its fine contour remains provisional. Small province forms and colour remain approximate.",
+    "First-pass status": "implemented"
+  },
+  "1986-jan": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass EXPO month reconstruction and supplied logo; all twelve months remain in the regenerated gallery.",
+    "Remaining": "Fine print weight and photographic variation remain uncertain. No new EXPO artwork change in this pass.",
+    "First-pass status": "implemented"
+  },
+  "1986-feb": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass EXPO month reconstruction and supplied logo; all twelve months remain in the regenerated gallery.",
+    "Remaining": "Fine print weight and photographic variation remain uncertain. No new EXPO artwork change in this pass.",
+    "First-pass status": "implemented"
+  },
+  "1986-apr": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass EXPO month reconstruction and supplied logo; all twelve months remain in the regenerated gallery.",
+    "Remaining": "Fine print weight and photographic variation remain uncertain. No new EXPO artwork change in this pass.",
+    "First-pass status": "implemented"
+  },
+  "1986-may": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass EXPO month reconstruction and supplied logo; all twelve months remain in the regenerated gallery.",
+    "Remaining": "Fine print weight and photographic variation remain uncertain. No new EXPO artwork change in this pass.",
+    "First-pass status": "implemented"
+  },
+  "1986-jun": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass EXPO month reconstruction and supplied logo; all twelve months remain in the regenerated gallery.",
+    "Remaining": "Fine print weight and photographic variation remain uncertain. No new EXPO artwork change in this pass.",
+    "First-pass status": "implemented"
+  },
+  "1986-jul": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass EXPO month reconstruction and supplied logo; all twelve months remain in the regenerated gallery.",
+    "Remaining": "Fine print weight and photographic variation remain uncertain. No new EXPO artwork change in this pass.",
+    "First-pass status": "implemented"
+  },
+  "1986-aug": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass EXPO month reconstruction and supplied logo; all twelve months remain in the regenerated gallery.",
+    "Remaining": "Fine print weight and photographic variation remain uncertain. No new EXPO artwork change in this pass.",
+    "First-pass status": "implemented"
+  },
+  "1986-sep": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass EXPO month reconstruction and supplied logo; all twelve months remain in the regenerated gallery.",
+    "Remaining": "Fine print weight and photographic variation remain uncertain. No new EXPO artwork change in this pass.",
+    "First-pass status": "implemented"
+  },
+  "1986-oct": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass EXPO month reconstruction and supplied logo; all twelve months remain in the regenerated gallery.",
+    "Remaining": "Fine print weight and photographic variation remain uncertain. No new EXPO artwork change in this pass.",
+    "First-pass status": "implemented"
+  },
+  "1986-nov": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass EXPO month reconstruction and supplied logo; all twelve months remain in the regenerated gallery.",
+    "Remaining": "Fine print weight and photographic variation remain uncertain. No new EXPO artwork change in this pass.",
+    "First-pass status": "implemented"
+  },
+  "1986-dec": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass EXPO month reconstruction and supplied logo; all twelve months remain in the regenerated gallery.",
+    "Remaining": "Fine print weight and photographic variation remain uncertain. No new EXPO artwork change in this pass.",
+    "First-pass status": "implemented"
+  },
+  "2017-nov": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass early/later 2017 placement and June/July corner boundary; rechecked exact inputs in the regenerated family.",
+    "Remaining": "Fine early numeral and vertical province contours remain approximate. The July reference is an official illustration, not an issued photograph; colour is uncalibrated.",
+    "First-pass status": "implemented"
+  },
+  "2017-jul": {
+    "Status": "reviewed-retained",
+    "Implemented in this pass": "Retained the first-pass early/later 2017 placement and June/July corner boundary; rechecked exact inputs in the regenerated family.",
+    "Remaining": "Fine early numeral and vertical province contours remain approximate. The July reference is an official illustration, not an issued photograph; colour is uncalibrated.",
+    "First-pass status": "implemented"
+  }
+}

@@ -1,0 +1,97 @@
+{
+  "scope": "Only the bounded 2021 JUL and 2018/2019/2020 JAN proposals. Inkscape actual paint and scene structure; no browser claim.",
+  "sceneChecks": [
+    {
+      "id": "2021",
+      "month": "JUL",
+      "nonMonthSceneIdentical": true,
+      "naturalMonthFit": true,
+      "inkInsideFrame": true,
+      "paintBounds": [
+        16.5366,
+        15.306,
+        86.9332,
+        60.204499999999996
+      ]
+    },
+    {
+      "id": "2018",
+      "month": "JAN",
+      "nonMonthSceneIdentical": true,
+      "naturalMonthFit": true,
+      "inkInsideFrame": true,
+      "paintBounds": [
+        22.6078,
+        14.5832,
+        91.7651,
+        63.541199999999996
+      ]
+    },
+    {
+      "id": "2019",
+      "month": "JAN",
+      "nonMonthSceneIdentical": true,
+      "naturalMonthFit": true,
+      "inkInsideFrame": true,
+      "paintBounds": [
+        5.69144,
+        13.5421,
+        76.39334,
+        60.416999999999994
+      ]
+    },
+    {
+      "id": "2020",
+      "month": "JAN",
+      "nonMonthSceneIdentical": true,
+      "naturalMonthFit": true,
+      "inkInsideFrame": true,
+      "paintBounds": [
+        12.1248,
+        13.5416,
+        80.3783,
+        59.375
+      ]
+    }
+  ],
+  "sourceChecks": [
+    {
+      "id": "2021-pinned",
+      "file": "public/bc-decal-corrections/evidence/2021/source.png",
+      "acceptedThresholds": 5,
+      "minCropClearancePixels": 2
+    },
+    {
+      "id": "2018-56309500",
+      "file": "docs/research/bc-decal-residuals/modern/sources/2018-56309500.jpg",
+      "acceptedThresholds": 5,
+      "minCropClearancePixels": 3
+    },
+    {
+      "id": "2019-16740833",
+      "file": "docs/research/bc-decal-residuals/modern/sources/2019-16740833.jpg",
+      "acceptedThresholds": 5,
+      "minCropClearancePixels": 3
+    },
+    {
+      "id": "2018-pinned",
+      "file": "public/bc-decal-corrections/evidence/2018/source.png",
+      "acceptedThresholds": 5,
+      "minCropClearancePixels": 4
+    },
+    {
+      "id": "2019-pinned",
+      "file": "public/bc-decal-corrections/evidence/2019/source.png",
+      "acceptedThresholds": 5,
+      "minCropClearancePixels": 4
+    },
+    {
+      "id": "2020-pinned",
+      "file": "public/bc-decal-corrections/evidence/2020/source.png",
+      "acceptedThresholds": 5,
+      "minCropClearancePixels": 5
+    }
+  ],
+  "isolatedNaturalRuns": 144,
+  "passed": true
+}

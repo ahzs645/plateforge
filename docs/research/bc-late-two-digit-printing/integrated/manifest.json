@@ -1,0 +1,50 @@
+{
+  "candidateTypography": false,
+  "records": [
+    {
+      "id": "2008",
+      "month": "AUG",
+      "control": "47144166",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2008.jpg",
+      "sourceFile": "public/bc-decal-online-review/2008/photo.png",
+      "viewBox": [
+        229.99999999999997,
+        100
+      ],
+      "candidateTypography": false,
+      "baseline": "17b974f51c687780c5d0b106fd9ae37e4c83ccae",
+      "beforeSvgSha256": "9bf5d3a5a41a230ce8276edb9c4add47d276b42daa7eb98f297379996add8a40",
+      "afterSvgSha256": "e9b73715e3db71e5ee82ca851ed05d0c683665fe10c027211d14531706e9fc6c"
+    },
+    {
+      "id": "2011",
+      "month": "MAY",
+      "control": "24516329",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2011.jpg",
+      "sourceFile": "public/bc-decal-online-review/2011/photo.png",
+      "viewBox": [
+        229.99999999999997,
+        100
+      ],
+      "candidateTypography": false,
+      "baseline": "17b974f51c687780c5d0b106fd9ae37e4c83ccae",
+      "beforeSvgSha256": "a26aac1b9d9449ccca45157e8624a96a8ab968509bcddd439f99c34877116d78",
+      "afterSvgSha256": "44e2f8a1253a23d0ed6391aba0af632f934664ca186f698dfd72f6e16db770d8"
+    },
+    {
+      "id": "2013",
+      "month": "OCT",
+      "control": "79670318",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2013.jpg",
+      "sourceFile": "public/bc-decal-online-review/2013/photo.png",
+      "viewBox": [
+        229.99999999999997,
+        100
+      ],
+      "candidateTypography": false,
+      "baseline": "17b974f51c687780c5d0b106fd9ae37e4c83ccae",
+      "beforeSvgSha256": "77542c169b0885910d085216891990f7daecaf41d41934b268ab7a836abf9952",
+      "afterSvgSha256": "3d38387bd52955beec5d7fc70204c66488e92257590704ddc0a90bc77f0e49a8"
+    }
+  ]
+}

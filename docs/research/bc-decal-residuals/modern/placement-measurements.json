@@ -1,0 +1,2095 @@
+{
+  "method": "Uniform decal-frame height and horizontal centre; source aspect and model aspect retained. Isolated ink extents thresholded at base and+/-8 levels. Approximate image geometry, not physical metrology. Barcode values measure bars, excluding quiet zones.",
+  "records": [
+    {
+      "id": "2018",
+      "sourceFile": "public/bc-decal-corrections/evidence/2018/source.png",
+      "sourceSha256": "12f496a6daf5ac038929f5f64c108904469a248e05e3193a13d7b91eaddb3b84",
+      "modelSha256": "370ad3227b58161fc579c16b65ac31ffb32109518976de061b24eb48f6eed7f0",
+      "sourcePixels": [
+        225,
+        96
+      ],
+      "modelViewBox": [
+        229.99999999999997,
+        100.0
+      ],
+      "roles": {
+        "month": {
+          "sourceRegionPixels": [
+            10,
+            6,
+            96,
+            62
+          ],
+          "sourceThreshold": 86.40369926104171,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                22,
+                14,
+                92,
+                61
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                22,
+                14,
+                92,
+                61
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                22,
+                14,
+                92,
+                61
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            22,
+            14,
+            92,
+            61
+          ],
+          "sourceBoundsUniformHeight": [
+            20.72917,
+            14.58333,
+            93.64583,
+            63.54167
+          ],
+          "modelPaintBounds": [
+            20.9157,
+            17.425,
+            86.9565,
+            65.4794
+          ],
+          "centreDeltaUnits": [
+            3.2514,
+            -2.3897
+          ],
+          "sourcePaintHeight": 48.95833333333333,
+          "modelPaintHeight": 48.0544,
+          "sourcePaintWidth": 72.91666666666667,
+          "modelPaintWidth": 66.0408
+        },
+        "year": {
+          "sourceRegionPixels": [
+            115,
+            4,
+            222,
+            63
+          ],
+          "sourceThreshold": 68.20717047998914,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                118,
+                13,
+                203,
+                60
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                117,
+                12,
+                204,
+                60
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                117,
+                12,
+                204,
+                60
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            117,
+            12,
+            204,
+            60
+          ],
+          "sourceBoundsUniformHeight": [
+            119.6875,
+            12.5,
+            210.3125,
+            62.5
+          ],
+          "modelPaintBounds": [
+            135.01,
+            18.0,
+            216.89,
+            64.0
+          ],
+          "centreDeltaUnits": [
+            -10.95,
+            -3.5
+          ],
+          "sourcePaintHeight": 50.0,
+          "modelPaintHeight": 46.0,
+          "sourcePaintWidth": 90.62500000000001,
+          "modelPaintWidth": 81.88
+        },
+        "legend0": {
+          "sourceRegionPixels": [
+            95,
+            8,
+            106,
+            62
+          ],
+          "sourceThreshold": 100.51835670127437,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                97,
+                21,
+                105,
+                53
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                97,
+                20,
+                105,
+                54
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                96,
+                20,
+                105,
+                54
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            97,
+            20,
+            105,
+            54
+          ],
+          "sourceBoundsUniformHeight": [
+            98.85417,
+            20.83333,
+            107.1875,
+            56.25
+          ],
+          "modelPaintBounds": [
+            96.208,
+            17.6715,
+            102.51868,
+            54.355000000000004
+          ],
+          "centreDeltaUnits": [
+            3.65749,
+            2.52842
+          ],
+          "sourcePaintHeight": 35.416666666666664,
+          "modelPaintHeight": 36.6835,
+          "sourcePaintWidth": 8.333333333333329,
+          "modelPaintWidth": 6.310680000000005
+        },
+        "legend1": {
+          "sourceRegionPixels": [
+            105,
+            6,
+            116,
+            62
+          ],
+          "sourceThreshold": 100.0484155003488,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                107,
+                15,
+                115,
+                59
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                107,
+                14,
+                115,
+                59
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                106,
+                14,
+                115,
+                59
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            107,
+            14,
+            115,
+            59
+          ],
+          "sourceBoundsUniformHeight": [
+            109.27083,
+            14.58333,
+            117.60417,
+            61.45833
+          ],
+          "modelPaintBounds": [
+            105.762,
+            12.7801,
+            111.7088,
+            59.0896
+          ],
+          "centreDeltaUnits": [
+            4.7021,
+            2.08598
+          ],
+          "sourcePaintHeight": 46.875,
+          "modelPaintHeight": 46.3095,
+          "sourcePaintWidth": 8.333333333333343,
+          "modelPaintWidth": 5.946799999999996
+        },
+        "serial": {
+          "sourceRegionPixels": [
+            130,
+            65,
+            222,
+            92
+          ],
+          "sourceThreshold": 73.36602597050509,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                138,
+                69,
+                213,
+                85
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                138,
+                69,
+                213,
+                85
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                138,
+                69,
+                213,
+                85
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            138,
+            69,
+            213,
+            85
+          ],
+          "sourceBoundsUniformHeight": [
+            141.5625,
+            71.875,
+            219.6875,
+            88.54167
+          ],
+          "modelPaintBounds": [
+            130.984,
+            73.6894,
+            216.2211,
+            90.94980000000001
+          ],
+          "centreDeltaUnits": [
+            7.02245,
+            -2.11127
+          ],
+          "sourcePaintHeight": 16.666666666666657,
+          "modelPaintHeight": 17.260400000000004,
+          "sourcePaintWidth": 78.125,
+          "modelPaintWidth": 85.2371
+        },
+        "barcode": {
+          "sourceRegionPixels": [
+            8,
+            63,
+            126,
+            90
+          ],
+          "sourceThreshold": 84.54512674702303,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                17,
+                67,
+                122,
+                87
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                17,
+                67,
+                123,
+                87
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                17,
+                67,
+                123,
+                87
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            17,
+            67,
+            123,
+            87
+          ],
+          "sourceBoundsUniformHeight": [
+            15.52083,
+            69.79167,
+            125.9375,
+            90.625
+          ],
+          "modelPaintBounds": [
+            10.2571,
+            75.0,
+            118.5431,
+            91.0
+          ],
+          "centreDeltaUnits": [
+            6.32907,
+            -2.79167
+          ],
+          "sourcePaintHeight": 20.833333333333343,
+          "modelPaintHeight": 16.0,
+          "sourcePaintWidth": 110.41666666666666,
+          "modelPaintWidth": 108.286
+        }
+      }
+    },
+    {
+      "id": "2019",
+      "sourceFile": "public/bc-decal-corrections/evidence/2019/source.png",
+      "sourceSha256": "617400a6590bf9234140767ee2dc0ffd85b97619c6d3604efa408199fbf8bfc5",
+      "modelSha256": "58893b96781b7a6f8e5f0a31875fe05852d65537cbc46312ee6ac9244883b3e9",
+      "sourcePixels": [
+        233,
+        96
+      ],
+      "modelViewBox": [
+        229.99999999999997,
+        100.0
+      ],
+      "roles": {
+        "month": {
+          "sourceRegionPixels": [
+            6,
+            6,
+            91,
+            62
+          ],
+          "sourceThreshold": 100.73590642768603,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                10,
+                13,
+                81,
+                58
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                10,
+                13,
+                81,
+                58
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                10,
+                13,
+                81,
+                58
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            10,
+            13,
+            81,
+            58
+          ],
+          "sourceBoundsUniformHeight": [
+            4.0625,
+            13.54167,
+            78.02083,
+            60.41667
+          ],
+          "modelPaintBounds": [
+            20.9157,
+            17.425,
+            86.9565,
+            65.4794
+          ],
+          "centreDeltaUnits": [
+            -12.89443,
+            -4.47303
+          ],
+          "sourcePaintHeight": 46.875,
+          "modelPaintHeight": 48.0544,
+          "sourcePaintWidth": 73.95833333333333,
+          "modelPaintWidth": 66.0408
+        },
+        "year": {
+          "sourceRegionPixels": [
+            121,
+            5,
+            230,
+            62
+          ],
+          "sourceThreshold": 104.04146646470832,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                126,
+                12,
+                215,
+                58
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                126,
+                12,
+                215,
+                58
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                126,
+                12,
+                215,
+                58
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            126,
+            12,
+            215,
+            58
+          ],
+          "sourceBoundsUniformHeight": [
+            124.89583,
+            12.5,
+            217.60417,
+            60.41667
+          ],
+          "modelPaintBounds": [
+            135.01,
+            18.0,
+            216.89,
+            64.0
+          ],
+          "centreDeltaUnits": [
+            -4.7,
+            -4.54167
+          ],
+          "sourcePaintHeight": 47.916666666666664,
+          "modelPaintHeight": 46.0,
+          "sourcePaintWidth": 92.70833333333334,
+          "modelPaintWidth": 81.88
+        },
+        "legend0": {
+          "sourceRegionPixels": [
+            93,
+            8,
+            102,
+            62
+          ],
+          "sourceThreshold": 121.93765374419254,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                95,
+                20,
+                101,
+                51
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                95,
+                20,
+                101,
+                51
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                94,
+                20,
+                101,
+                51
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            95,
+            20,
+            101,
+            51
+          ],
+          "sourceBoundsUniformHeight": [
+            92.60417,
+            20.83333,
+            98.85417,
+            53.125
+          ],
+          "modelPaintBounds": [
+            96.7198,
+            19.1993,
+            102.50459000000001,
+            52.8258
+          ],
+          "centreDeltaUnits": [
+            -3.88303,
+            0.96662
+          ],
+          "sourcePaintHeight": 32.291666666666664,
+          "modelPaintHeight": 33.6265,
+          "sourcePaintWidth": 6.25,
+          "modelPaintWidth": 5.784790000000001
+        },
+        "legend1": {
+          "sourceRegionPixels": [
+            102,
+            6,
+            113,
+            62
+          ],
+          "sourceThreshold": 123.41105990944831,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                103,
+                15,
+                110,
+                56
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                103,
+                15,
+                110,
+                56
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                103,
+                15,
+                110,
+                56
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            103,
+            15,
+            110,
+            56
+          ],
+          "sourceBoundsUniformHeight": [
+            100.9375,
+            15.625,
+            108.22917,
+            58.33333
+          ],
+          "modelPaintBounds": [
+            105.928,
+            13.4428,
+            111.70465,
+            58.427299999999995
+          ],
+          "centreDeltaUnits": [
+            -4.23299,
+            1.04412
+          ],
+          "sourcePaintHeight": 42.708333333333336,
+          "modelPaintHeight": 44.9845,
+          "sourcePaintWidth": 7.291666666666671,
+          "modelPaintWidth": 5.776650000000004
+        },
+        "serial": {
+          "sourceRegionPixels": [
+            123,
+            65,
+            230,
+            92
+          ],
+          "sourceThreshold": 105.19323371543888,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                125,
+                69,
+                214,
+                87
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                125,
+                69,
+                214,
+                87
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                125,
+                69,
+                214,
+                87
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            125,
+            69,
+            214,
+            87
+          ],
+          "sourceBoundsUniformHeight": [
+            123.85417,
+            71.875,
+            216.5625,
+            90.625
+          ],
+          "modelPaintBounds": [
+            131.823,
+            73.6894,
+            216.0553,
+            90.94980000000001
+          ],
+          "centreDeltaUnits": [
+            -3.73082,
+            -1.0696
+          ],
+          "sourcePaintHeight": 18.75,
+          "modelPaintHeight": 17.260400000000004,
+          "sourcePaintWidth": 92.70833333333334,
+          "modelPaintWidth": 84.23229999999998
+        },
+        "barcode": {
+          "sourceRegionPixels": [
+            6,
+            63,
+            119,
+            93
+          ],
+          "sourceThreshold": 104.77948876575248,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                9,
+                66,
+                108,
+                88
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                9,
+                66,
+                108,
+                89
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                9,
+                66,
+                109,
+                89
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            9,
+            66,
+            108,
+            89
+          ],
+          "sourceBoundsUniformHeight": [
+            3.02083,
+            68.75,
+            106.14583,
+            92.70833
+          ],
+          "modelPaintBounds": [
+            10.2571,
+            75.0,
+            118.5431,
+            91.0
+          ],
+          "centreDeltaUnits": [
+            -9.81677,
+            -2.27083
+          ],
+          "sourcePaintHeight": 23.958333333333343,
+          "modelPaintHeight": 16.0,
+          "sourcePaintWidth": 103.125,
+          "modelPaintWidth": 108.286
+        }
+      }
+    },
+    {
+      "id": "2020",
+      "sourceFile": "public/bc-decal-corrections/evidence/2020/source.png",
+      "sourceSha256": "183c639af7d848480bb263827f5d588f5bc57707074d7cadd563f2a246d4f3ce",
+      "modelSha256": "40128a049b4762b32be167618e06d87794033ed987583054da5d531ef9f29248",
+      "sourcePixels": [
+        223,
+        96
+      ],
+      "modelViewBox": [
+        229.99999999999997,
+        100.0
+      ],
+      "roles": {
+        "month": {
+          "sourceRegionPixels": [
+            6,
+            6,
+            89,
+            62
+          ],
+          "sourceThreshold": 77.47748301640186,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                12,
+                13,
+                79,
+                57
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                12,
+                13,
+                79,
+                57
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                12,
+                13,
+                79,
+                57
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            12,
+            13,
+            79,
+            57
+          ],
+          "sourceBoundsUniformHeight": [
+            11.35417,
+            13.54167,
+            81.14583,
+            59.375
+          ],
+          "modelPaintBounds": [
+            20.9157,
+            17.425,
+            86.9565,
+            65.4794
+          ],
+          "centreDeltaUnits": [
+            -7.6861,
+            -4.99387
+          ],
+          "sourcePaintHeight": 45.833333333333336,
+          "modelPaintHeight": 48.0544,
+          "sourcePaintWidth": 69.79166666666666,
+          "modelPaintWidth": 66.0408
+        },
+        "year": {
+          "sourceRegionPixels": [
+            116,
+            5,
+            220,
+            62
+          ],
+          "sourceThreshold": 77.83981867575791,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                120,
+                13,
+                211,
+                57
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                120,
+                13,
+                211,
+                57
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                120,
+                13,
+                211,
+                57
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            120,
+            13,
+            211,
+            57
+          ],
+          "sourceBoundsUniformHeight": [
+            123.85417,
+            13.54167,
+            218.64583,
+            59.375
+          ],
+          "modelPaintBounds": [
+            131.56,
+            18.0,
+            216.89,
+            64.0
+          ],
+          "centreDeltaUnits": [
+            -2.975,
+            -4.54167
+          ],
+          "sourcePaintHeight": 45.833333333333336,
+          "modelPaintHeight": 46.0,
+          "sourcePaintWidth": 94.79166666666666,
+          "modelPaintWidth": 85.32999999999998
+        },
+        "legend0": {
+          "sourceRegionPixels": [
+            90,
+            8,
+            100,
+            62
+          ],
+          "sourceThreshold": 95.70872586114743,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                93,
+                20,
+                99,
+                50
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                92,
+                20,
+                99,
+                50
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                92,
+                20,
+                99,
+                50
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            92,
+            20,
+            99,
+            50
+          ],
+          "sourceBoundsUniformHeight": [
+            94.6875,
+            20.83333,
+            101.97917,
+            52.08333
+          ],
+          "modelPaintBounds": [
+            96.7198,
+            19.1993,
+            102.50459000000001,
+            52.8258
+          ],
+          "centreDeltaUnits": [
+            -1.27886,
+            0.44578
+          ],
+          "sourcePaintHeight": 31.25,
+          "modelPaintHeight": 33.6265,
+          "sourcePaintWidth": 7.291666666666671,
+          "modelPaintWidth": 5.784790000000001
+        },
+        "legend1": {
+          "sourceRegionPixels": [
+            99,
+            6,
+            111,
+            62
+          ],
+          "sourceThreshold": 92.41217585259643,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                100,
+                15,
+                107,
+                55
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                100,
+                15,
+                107,
+                55
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                100,
+                15,
+                107,
+                55
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            100,
+            15,
+            107,
+            55
+          ],
+          "sourceBoundsUniformHeight": [
+            103.02083,
+            15.625,
+            110.3125,
+            57.29167
+          ],
+          "modelPaintBounds": [
+            105.928,
+            13.4428,
+            111.70465,
+            58.427299999999995
+          ],
+          "centreDeltaUnits": [
+            -2.14966,
+            0.52328
+          ],
+          "sourcePaintHeight": 41.666666666666664,
+          "modelPaintHeight": 44.9845,
+          "sourcePaintWidth": 7.291666666666671,
+          "modelPaintWidth": 5.776650000000004
+        },
+        "serial": {
+          "sourceRegionPixels": [
+            114,
+            65,
+            220,
+            92
+          ],
+          "sourceThreshold": 79.54608371384957,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                116,
+                68,
+                206,
+                85
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                116,
+                68,
+                206,
+                86
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                116,
+                68,
+                207,
+                86
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            116,
+            68,
+            206,
+            86
+          ],
+          "sourceBoundsUniformHeight": [
+            119.6875,
+            70.83333,
+            213.4375,
+            89.58333
+          ],
+          "modelPaintBounds": [
+            131.079,
+            73.6894,
+            216.2215,
+            90.94980000000001
+          ],
+          "centreDeltaUnits": [
+            -7.08775,
+            -2.11127
+          ],
+          "sourcePaintHeight": 18.75,
+          "modelPaintHeight": 17.260400000000004,
+          "sourcePaintWidth": 93.75000000000001,
+          "modelPaintWidth": 85.14249999999998
+        },
+        "barcode": {
+          "sourceRegionPixels": [
+            6,
+            63,
+            114,
+            93
+          ],
+          "sourceThreshold": 81.69374308695642,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                11,
+                65,
+                104,
+                86
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                10,
+                65,
+                104,
+                87
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                10,
+                65,
+                104,
+                87
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            10,
+            65,
+            104,
+            87
+          ],
+          "sourceBoundsUniformHeight": [
+            9.27083,
+            67.70833,
+            107.1875,
+            90.625
+          ],
+          "modelPaintBounds": [
+            10.2571,
+            75.0,
+            118.5431,
+            91.0
+          ],
+          "centreDeltaUnits": [
+            -6.17093,
+            -3.83333
+          ],
+          "sourcePaintHeight": 22.916666666666657,
+          "modelPaintHeight": 16.0,
+          "sourcePaintWidth": 97.91666666666667,
+          "modelPaintWidth": 108.286
+        }
+      }
+    },
+    {
+      "id": "2021",
+      "sourceFile": "public/bc-decal-corrections/evidence/2021/source.png",
+      "sourceSha256": "dc03e25c078d572782713a0bb852fc6b429bf348ac89bfd61d0d75a9d88ac6ca",
+      "modelSha256": "a4b929c7eded46d7bc56d66da9aad9502cadbd098039fee8b88b8e45f8e37a36",
+      "sourcePixels": [
+        228,
+        98
+      ],
+      "modelViewBox": [
+        229.99999999999997,
+        100.0
+      ],
+      "roles": {
+        "month": {
+          "sourceRegionPixels": [
+            8,
+            6,
+            91,
+            64
+          ],
+          "sourceThreshold": 71.82291237236703,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                16,
+                15,
+                88,
+                59
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                16,
+                15,
+                88,
+                59
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                16,
+                15,
+                88,
+                60
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            16,
+            15,
+            88,
+            59
+          ],
+          "sourceBoundsUniformHeight": [
+            15.0,
+            15.30612,
+            88.46939,
+            60.20408
+          ],
+          "modelPaintBounds": [
+            20.9157,
+            17.425,
+            81.4673,
+            65.4794
+          ],
+          "centreDeltaUnits": [
+            0.54319,
+            -3.6971
+          ],
+          "sourcePaintHeight": 44.89795918367347,
+          "modelPaintHeight": 48.0544,
+          "sourcePaintWidth": 73.46938775510203,
+          "modelPaintWidth": 60.55159999999999
+        },
+        "year": {
+          "sourceRegionPixels": [
+            123,
+            5,
+            225,
+            64
+          ],
+          "sourceThreshold": 68.74381685381059,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                129,
+                15,
+                212,
+                59
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                129,
+                15,
+                212,
+                59
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                129,
+                14,
+                213,
+                59
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            129,
+            15,
+            212,
+            59
+          ],
+          "sourceBoundsUniformHeight": [
+            130.30612,
+            15.30612,
+            215.0,
+            60.20408
+          ],
+          "modelPaintBounds": [
+            135.7,
+            18.0,
+            214.58999999999997,
+            64.0
+          ],
+          "centreDeltaUnits": [
+            -2.49194,
+            -3.2449
+          ],
+          "sourcePaintHeight": 44.89795918367347,
+          "modelPaintHeight": 46.0,
+          "sourcePaintWidth": 84.69387755102042,
+          "modelPaintWidth": 78.88999999999999
+        },
+        "legend0": {
+          "sourceRegionPixels": [
+            98,
+            10,
+            108,
+            64
+          ],
+          "sourceThreshold": 85.19656486156978,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                100,
+                22,
+                107,
+                52
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                100,
+                22,
+                107,
+                52
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                100,
+                22,
+                107,
+                53
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            100,
+            22,
+            107,
+            52
+          ],
+          "sourceBoundsUniformHeight": [
+            100.71429,
+            22.44898,
+            107.85714,
+            53.06122
+          ],
+          "modelPaintBounds": [
+            96.7198,
+            19.1993,
+            102.50459000000001,
+            52.8258
+          ],
+          "centreDeltaUnits": [
+            4.67352,
+            1.74255
+          ],
+          "sourcePaintHeight": 30.612244897959183,
+          "modelPaintHeight": 33.6265,
+          "sourcePaintWidth": 7.142857142857153,
+          "modelPaintWidth": 5.784790000000001
+        },
+        "legend1": {
+          "sourceRegionPixels": [
+            107,
+            7,
+            117,
+            64
+          ],
+          "sourceThreshold": 83.39349127096975,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                109,
+                17,
+                115,
+                57
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                108,
+                17,
+                115,
+                58
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                108,
+                17,
+                116,
+                58
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            108,
+            17,
+            115,
+            58
+          ],
+          "sourceBoundsUniformHeight": [
+            108.87755,
+            17.34694,
+            116.02041,
+            59.18367
+          ],
+          "modelPaintBounds": [
+            105.928,
+            13.4428,
+            111.70465,
+            58.427299999999995
+          ],
+          "centreDeltaUnits": [
+            3.63265,
+            2.33026
+          ],
+          "sourcePaintHeight": 41.83673469387755,
+          "modelPaintHeight": 44.9845,
+          "sourcePaintWidth": 7.142857142857139,
+          "modelPaintWidth": 5.776650000000004
+        },
+        "serial": {
+          "sourceRegionPixels": [
+            121,
+            67,
+            225,
+            94
+          ],
+          "sourceThreshold": 79.30347379528179,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                127,
+                70,
+                213,
+                88
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                126,
+                70,
+                213,
+                88
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                126,
+                70,
+                214,
+                88
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            126,
+            70,
+            213,
+            88
+          ],
+          "sourceBoundsUniformHeight": [
+            127.2449,
+            71.42857,
+            216.02041,
+            89.79592
+          ],
+          "modelPaintBounds": [
+            130.984,
+            73.6894,
+            216.2448,
+            90.94980000000001
+          ],
+          "centreDeltaUnits": [
+            -1.98175,
+            -1.70736
+          ],
+          "sourcePaintHeight": 18.367346938775512,
+          "modelPaintHeight": 17.260400000000004,
+          "sourcePaintWidth": 88.77551020408164,
+          "modelPaintWidth": 85.26079999999999
+        },
+        "barcode": {
+          "sourceRegionPixels": [
+            6,
+            65,
+            116,
+            95
+          ],
+          "sourceThreshold": 75.07801859371968,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                14,
+                67,
+                111,
+                89
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                14,
+                67,
+                111,
+                90
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                14,
+                67,
+                111,
+                90
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            14,
+            67,
+            111,
+            90
+          ],
+          "sourceBoundsUniformHeight": [
+            12.95918,
+            68.36735,
+            111.93878,
+            91.83673
+          ],
+          "modelPaintBounds": [
+            10.2571,
+            75.0,
+            118.5431,
+            91.0
+          ],
+          "centreDeltaUnits": [
+            -1.95112,
+            -2.89796
+          ],
+          "sourcePaintHeight": 23.469387755102048,
+          "modelPaintHeight": 16.0,
+          "sourcePaintWidth": 98.9795918367347,
+          "modelPaintWidth": 108.286
+        }
+      }
+    },
+    {
+      "id": "2022",
+      "sourceFile": "public/bc-decal-corrections/evidence/2022/source.png",
+      "sourceSha256": "bac3d62bab4777c9b4a3cb833c2d4b0a0f61a5c51f80ad2e64b0d4ae8bd21163",
+      "modelSha256": "4a9c7d107491358b319044b78de745034b4c877da0c360b85c9cfde488e5ed38",
+      "sourcePixels": [
+        236,
+        98
+      ],
+      "modelViewBox": [
+        229.99999999999997,
+        100.0
+      ],
+      "roles": {
+        "month": {
+          "sourceRegionPixels": [
+            6,
+            6,
+            94,
+            64
+          ],
+          "sourceThreshold": 106.54744493087998,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                15,
+                12,
+                90,
+                58
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                15,
+                12,
+                90,
+                59
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                15,
+                12,
+                90,
+                59
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            15,
+            12,
+            90,
+            59
+          ],
+          "sourceBoundsUniformHeight": [
+            9.89796,
+            12.2449,
+            86.42857,
+            60.20408
+          ],
+          "modelPaintBounds": [
+            21.0988,
+            17.7976,
+            94.8707,
+            64.57039999999999
+          ],
+          "centreDeltaUnits": [
+            -9.82148,
+            -4.95951
+          ],
+          "sourcePaintHeight": 47.95918367346939,
+          "modelPaintHeight": 46.77279999999999,
+          "sourcePaintWidth": 76.53061224489795,
+          "modelPaintWidth": 73.7719
+        },
+        "year": {
+          "sourceRegionPixels": [
+            123,
+            4,
+            232,
+            64
+          ],
+          "sourceThreshold": 109.92751553513396,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                131,
+                12,
+                226,
+                58
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                131,
+                12,
+                226,
+                58
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                131,
+                12,
+                226,
+                58
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            131,
+            12,
+            226,
+            58
+          ],
+          "sourceBoundsUniformHeight": [
+            128.26531,
+            12.2449,
+            225.20408,
+            59.18367
+          ],
+          "modelPaintBounds": [
+            131.79,
+            18.0,
+            217.12,
+            64.0
+          ],
+          "centreDeltaUnits": [
+            2.27969,
+            -5.28571
+          ],
+          "sourcePaintHeight": 46.93877551020408,
+          "modelPaintHeight": 46.0,
+          "sourcePaintWidth": 96.93877551020404,
+          "modelPaintWidth": 85.33000000000001
+        },
+        "legend0": {
+          "sourceRegionPixels": [
+            97,
+            10,
+            109,
+            64
+          ],
+          "sourceThreshold": 125.07065664704606,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                101,
+                19,
+                108,
+                50
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                101,
+                19,
+                108,
+                50
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                101,
+                19,
+                108,
+                50
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            101,
+            19,
+            108,
+            50
+          ],
+          "sourceBoundsUniformHeight": [
+            97.65306,
+            19.38776,
+            104.79592,
+            51.02041
+          ],
+          "modelPaintBounds": [
+            96.7198,
+            19.1993,
+            102.50459000000001,
+            52.8258
+          ],
+          "centreDeltaUnits": [
+            1.61229,
+            -0.80847
+          ],
+          "sourcePaintHeight": 31.63265306122449,
+          "modelPaintHeight": 33.6265,
+          "sourcePaintWidth": 7.142857142857139,
+          "modelPaintWidth": 5.784790000000001
+        },
+        "legend1": {
+          "sourceRegionPixels": [
+            108,
+            6,
+            119,
+            64
+          ],
+          "sourceThreshold": 124.14030596960365,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                110,
+                14,
+                116,
+                56
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                109,
+                14,
+                116,
+                56
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                109,
+                14,
+                117,
+                56
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            109,
+            14,
+            116,
+            56
+          ],
+          "sourceBoundsUniformHeight": [
+            105.81633,
+            14.28571,
+            112.95918,
+            57.14286
+          ],
+          "modelPaintBounds": [
+            105.928,
+            13.4428,
+            111.70465,
+            58.427299999999995
+          ],
+          "centreDeltaUnits": [
+            0.57143,
+            -0.22076
+          ],
+          "sourcePaintHeight": 42.857142857142854,
+          "modelPaintHeight": 44.9845,
+          "sourcePaintWidth": 7.142857142857139,
+          "modelPaintWidth": 5.776650000000004
+        },
+        "serial": {
+          "sourceRegionPixels": [
+            123,
+            67,
+            232,
+            94
+          ],
+          "sourceThreshold": 113.22618217682455,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                129,
+                68,
+                218,
+                87
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                128,
+                68,
+                218,
+                87
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                128,
+                68,
+                218,
+                87
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            128,
+            68,
+            218,
+            87
+          ],
+          "sourceBoundsUniformHeight": [
+            125.20408,
+            69.38776,
+            217.04082,
+            88.77551
+          ],
+          "modelPaintBounds": [
+            130.937,
+            73.6894,
+            216.22140000000002,
+            90.94980000000001
+          ],
+          "centreDeltaUnits": [
+            -2.45675,
+            -3.23797
+          ],
+          "sourcePaintHeight": 19.387755102040813,
+          "modelPaintHeight": 17.260400000000004,
+          "sourcePaintWidth": 91.83673469387756,
+          "modelPaintWidth": 85.2844
+        },
+        "barcode": {
+          "sourceRegionPixels": [
+            6,
+            65,
+            120,
+            95
+          ],
+          "sourceThreshold": 97.57562802767188,
+          "thresholdSensitivity": [
+            {
+              "thresholdOffset": -8,
+              "bounds": [
+                12,
+                66,
+                112,
+                89
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 0,
+              "bounds": [
+                12,
+                66,
+                112,
+                89
+              ],
+              "clipped": false
+            },
+            {
+              "thresholdOffset": 8,
+              "bounds": [
+                12,
+                66,
+                112,
+                89
+              ],
+              "clipped": false
+            }
+          ],
+          "sourceBoundsPixels": [
+            12,
+            66,
+            112,
+            89
+          ],
+          "sourceBoundsUniformHeight": [
+            6.83673,
+            67.34694,
+            108.87755,
+            90.81633
+          ],
+          "modelPaintBounds": [
+            10.2571,
+            75.0,
+            118.5431,
+            91.0
+          ],
+          "centreDeltaUnits": [
+            -6.54296,
+            -3.91837
+          ],
+          "sourcePaintHeight": 23.469387755102048,
+          "modelPaintHeight": 16.0,
+          "sourcePaintWidth": 102.04081632653062,
+          "modelPaintWidth": 108.286
+        }
+      }
+    }
+  ]
+}

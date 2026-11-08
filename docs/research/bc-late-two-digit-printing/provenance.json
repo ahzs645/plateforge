@@ -1,0 +1,100 @@
+{
+  "reviewedOn": "2026-11-07",
+  "nativeProfiles": [
+    {
+      "name": "BebasNeue",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/bebasneue/BebasNeue-Regular.ttf",
+      "sha256": "08e4623805102d819f58601e46e345648846075e363b2ceb23313c2d1c83ec73",
+      "bytes": 61400,
+      "profile": "bebasneue-400",
+      "weight": 400,
+      "horizontalScale": 1,
+      "usage": "comparison candidate, not historical identification",
+      "license": "SIL Open Font License 1.1; Google Fonts source",
+      "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/bebasneue/OFL.txt"
+    },
+    {
+      "name": "Oswald",
+      "url": "https://raw.githubusercontent.com/google/fonts/main/ofl/oswald/Oswald%5Bwght%5D.ttf",
+      "sha256": "5b38c246e255a12f5712d640d56bcced0472466fc68983d2d0410ec0457c2817",
+      "bytes": 172088,
+      "profile": "oswald-400",
+      "weight": 400,
+      "horizontalScale": 1,
+      "usage": "comparison candidate, not historical identification",
+      "license": "SIL Open Font License 1.1; Google Fonts source",
+      "licenseUrl": "https://raw.githubusercontent.com/google/fonts/main/ofl/oswald/OFL.txt"
+    }
+  ],
+  "sourceOutlines": "docs/research/decal-glyph-analysis/candidate-outlines.json",
+  "sourceOutlineFileSha256": "86d70f93fe4d63549eebce1354b4d6e9c962c3623ca169edf3c26a2f68b04fbe",
+  "generatedOutlineFile": "src/templates/dies/decal-late-printing.json",
+  "generatedOutlineFileSha256": "5bd5b509acf6bd1fba540e560fed833c7ea10f5f2bf1624bf09c208d212bbfcd",
+  "sources": [
+    {
+      "id": "2008",
+      "url": "https://www.bcpl8s.ca/images/Decals/Passenger/2008-47144166.jpg",
+      "file": "public/bc-decal-online-review/2008/photo.png",
+      "sha256": "7c276631bdd1f450822be275d60af7850642525c93b2b379d4fd7d35d017dde3",
+      "pixels": [
+        238,
+        100
+      ]
+    },
+    {
+      "id": "2011",
+      "url": "https://www.bcpl8s.ca/images/Decals/Passenger/2011-24516329.jpg",
+      "file": "public/bc-decal-online-review/2011/photo.png",
+      "sha256": "94a391f25b77541baf4aec2fe38cbcb62a38ee37b4e1d0945115aeba5ecd0e3a",
+      "pixels": [
+        239,
+        100
+      ]
+    },
+    {
+      "id": "2013",
+      "url": "https://www.bcpl8s.ca/images/Decals/Passenger/2013-79670318.jpg",
+      "file": "public/bc-decal-online-review/2013/photo.png",
+      "sha256": "b8cfcc9ddadeaf2ad42a8d51da846baf2e121309ef13790ca9b2eebab3c398fd",
+      "pixels": [
+        238,
+        100
+      ]
+    }
+  ],
+  "reconstructedProfile": {
+    "id": "late-oct-reconstruction",
+    "supportedSelection": {
+      "id": "2013",
+      "month": "OCT"
+    },
+    "sourcePaintHeightPixels": [
+      59,
+      59,
+      58
+    ],
+    "nativeGlyphWidths": {
+      "O": 37.5,
+      "C": 35.5,
+      "T": 34.5
+    },
+    "nativeAdvances": {
+      "O": 40.5,
+      "C": 37,
+      "T": 37
+    },
+    "status": "clean independent reconstruction; fine contours uncertain at small source resolution"
+  },
+  "retainedProfiles": [
+    "2011 MAY heavy-month (pre-existing supplied-font width construction)",
+    "2011 and2013 year heavy-year (pre-existing construction; paths unchanged)"
+  ],
+  "nativeFontSoftwareAdded": false,
+  "historicalFontIdentity": "unconfirmed",
+  "sourcePhotographsRectified": false,
+  "adjacentInkExclusions": [
+    "2008 year ROI startsx174 to exclude COLUMBIA fragment atx170",
+    "2013 COLUMBIA ROI startsy39 to exclude BRITISH bottom at37"
+  ],
+  "validation": "Actual die registry and buildDieText renders; source component count verified for every complete run; root handles final layouts and all-month collision tests."
+}

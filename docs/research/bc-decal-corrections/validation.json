@@ -1,0 +1,108 @@
+{
+  "reviewedOn": "2026-11-07",
+  "baselineCommit": "17b974f51c687780c5d0b106fd9ae37e4c83ccae",
+  "productionCapture": {
+    "commit": "850137f8b92e71ebdf47e4fea2c24ba9840e0416",
+    "workingChanges": true,
+    "sourceSha256": "a4870904e6d8cb1f44c37b46afb1509812d1cfbba5299bc7f48fcc6a44046c79",
+    "sourceHashScope": "Sorted tracked and nonignored untracked src files plus package-lock.json: relative path, NUL, file bytes"
+  },
+  "sourceManifestSha256": "1c7809736f1c5c322d65ccabf3e497f5736cbc06f97ab6e8f74bfd2b2f6b456a",
+  "sourceReferences": {
+    "count": 68,
+    "mode": "cached-crops",
+    "originalBytesVerified": false,
+    "status": "passed"
+  },
+  "applicationTests": {
+    "status": "passed in three disjoint bounded runs",
+    "totalPassed": 1966,
+    "groups": [
+      {
+        "command": "npx vitest run --exclude src/regions/regions.test.ts --maxWorkers=2",
+        "passed": 1166
+      },
+      {
+        "command": "npx vitest run src/regions/regions.test.ts --maxWorkers=1 --testNamePattern 'ca-bc/'",
+        "passed": 447
+      },
+      {
+        "command": "npx vitest run src/regions/regions.test.ts --maxWorkers=1 --testNamePattern '^(?!.*ca-bc/)'",
+        "passed": 353
+      }
+    ],
+    "coverage": "All 1966 application tests; generated-format sample counts unchanged. The filtered groups are disjoint and cover all 800 tests in regions.test.ts.",
+    "unboundedAttempt": "npm test -- --maxWorkers=2 exited 137; a full maxWorkers=1 run reported SIGKILL in regions.test.ts. Those full invocations are not passes."
+  },
+  "focusedAuditTests": {
+    "status": "passed",
+    "node": 14,
+    "python": 14,
+    "total": 28
+  },
+  "productionBuild": {
+    "status": "passed",
+    "command": "BASE_PATH=/plateforge/ npm run build",
+    "includesTypeScript": true,
+    "existingChunkSizeWarning": true
+  },
+  "familyPaintBounds": {
+    "status": "passed",
+    "backend": "Inkscape 1.4 (e7c3feb100, 2024-10-09)",
+    "catalogueVariants": 55,
+    "renderings": 572,
+    "failureCount": 0,
+    "report": "family-ink-verification.json"
+  },
+  "portableOutput": "New lettering consists of vector paths; integrated captures preserve explicit controls and require no browser font fallback.",
+  "browserVerification": {
+    "status": "blocked pending explicit authorization to publish the prepared branch",
+    "browsers": [
+      "chromium",
+      "firefox",
+      "webkit"
+    ],
+    "selectableFixtures": 572,
+    "applicationReferenceCases": 21,
+    "additionalLeadingZeroCase": true,
+    "localBlocker": "Chromium singleton socket failed with Operation not permitted; automatic approval rejected sandbox exception. Shared browser rejected local file protocol. No local browser success is claimed.",
+    "workflow": ".github/workflows/typography-validation.yml",
+    "publicationBlocker": "Automatic approval rejected the GitHub push because the user authorized implementation/review but did not explicitly authorize publishing the repository contents and generated evidence assets. No alternate publication route was attempted.",
+    "offeredSelectionValidation": {
+      "status": "passed without browser execution",
+      "referenceCases": 21,
+      "leadingZeroCases": 1,
+      "report": "application-selections.json"
+    }
+  },
+  "visualEvidence": {
+    "gallery": "public/bc-decal-corrections/index.html",
+    "selectedReferences": 68,
+    "families": 9,
+    "shapeMetricsAreAccuracyScores": false,
+    "completeFamilyReview": "All nine emitted contact sheets reviewed; no new blocker found.",
+    "visibleRasterChanges": 31,
+    "identicalBeforeAfterRasters": 37,
+    "implementedReferenceCases": 38,
+    "evidenceOnlyReferenceCases": 2,
+    "retainedReferenceCases": 28,
+    "residuals": "Recorded in case-ledger.csv and README; include contour/proportion uncertainty and pre-existing specimen-level placement differences."
+  },
+  "masterArtwork": {
+    "expoLogoUnchanged": true,
+    "frankfurterSouvenirUnchanged": true
+  },
+  "publication": {
+    "status": "local commits only; GitHub push rejected by automatic approval",
+    "branch": "codex/bc-decal-corrections-20261107",
+    "pullRequest": null
+  },
+  "standaloneReport": {
+    "file": "BC_Decal_Corrections_Review.html",
+    "references": 68,
+    "embeddedAssets": 340,
+    "javascriptSyntax": "passed",
+    "assetAndIdValidation": "passed",
+    "browserInteraction": "not executed; blocked"
+  }
+}

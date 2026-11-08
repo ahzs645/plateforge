@@ -10,9 +10,11 @@ test-results/
 scripts/trace-bc-dies/.cache/
 scripts/trace-bc-dies/out/
 
-# Intermediate Python bytecode from tracing tools
+# Intermediate Python bytecode from analysis tools
+scripts/__pycache__/
 scripts/trace-bc-dies/**/__pycache__/
 scripts/trace-bc-dies/__pycache__/
+docs/research/**/__pycache__/
 
 # Lettering research history and review interface: archived outside the repo (see docs/bc-research-dies.md)
 docs/research/bc-lettering/review-package/

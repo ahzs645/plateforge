@@ -1,0 +1,6133 @@
+[
+  {
+    "id": "1971",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/1971/source.png",
+    "sourceSha256": "1d97bf9a6c5414ad325ead95999748f9ea448876b37eb6f0e9b1bc52af5e55ca",
+    "sourcePixels": [
+      188,
+      98
+    ],
+    "inspectionRoi": [
+      19,
+      61,
+      101,
+      83
+    ],
+    "polarity": "dark",
+    "threshold": 180,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 170.399008,
+        "boxInRoi": [
+          6,
+          4,
+          78,
+          19
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 180.0,
+        "boxInRoi": [
+          6,
+          4,
+          78,
+          19
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 189.600992,
+        "boxInRoi": [
+          6,
+          4,
+          78,
+          19
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        6,
+        4,
+        78,
+        19
+      ],
+      [
+        6,
+        4,
+        78,
+        19
+      ],
+      [
+        6,
+        4,
+        78,
+        19
+      ]
+    ],
+    "paintBox": [
+      25,
+      65,
+      97,
+      80
+    ],
+    "paintPixels": [
+      72,
+      15
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1971",
+    "role": "british",
+    "sourceFile": "public/bc-decal-corrections/evidence/1971/source.png",
+    "sourceSha256": "1d97bf9a6c5414ad325ead95999748f9ea448876b37eb6f0e9b1bc52af5e55ca",
+    "sourcePixels": [
+      188,
+      98
+    ],
+    "inspectionRoi": [
+      9,
+      5,
+      102,
+      26
+    ],
+    "polarity": "light",
+    "threshold": 70.5,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 62.42,
+        "boxInRoi": [
+          6,
+          4,
+          88,
+          18
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 70.5,
+        "boxInRoi": [
+          7,
+          4,
+          88,
+          17
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 78.58,
+        "boxInRoi": [
+          7,
+          4,
+          87,
+          17
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        6,
+        4,
+        88,
+        18
+      ],
+      [
+        7,
+        4,
+        88,
+        17
+      ],
+      [
+        7,
+        4,
+        87,
+        17
+      ]
+    ],
+    "paintBox": [
+      16,
+      9,
+      97,
+      22
+    ],
+    "paintPixels": [
+      81,
+      13
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1971",
+    "role": "columbia",
+    "sourceFile": "public/bc-decal-corrections/evidence/1971/source.png",
+    "sourceSha256": "1d97bf9a6c5414ad325ead95999748f9ea448876b37eb6f0e9b1bc52af5e55ca",
+    "sourcePixels": [
+      188,
+      98
+    ],
+    "inspectionRoi": [
+      0,
+      24,
+      119,
+      44
+    ],
+    "polarity": "light",
+    "threshold": 72.0,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 63.68,
+        "boxInRoi": [
+          0,
+          0,
+          110,
+          20
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 72.0,
+        "boxInRoi": [
+          0,
+          0,
+          110,
+          20
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 80.32,
+        "boxInRoi": [
+          0,
+          0,
+          110,
+          20
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [],
+    "paintBox": [
+      0,
+      24,
+      110,
+      44
+    ],
+    "paintPixels": [
+      110,
+      20
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": true,
+    "extentAccepted": false,
+    "rejectionReasons": [
+      "paint touches inspection ROI"
+    ],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1974",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/1974/source.png",
+    "sourceSha256": "97360c9a963ef10ef156c72a5545bf53662bd1d7f7a743c1a9a2af3df57cabc0",
+    "sourcePixels": [
+      181,
+      100
+    ],
+    "inspectionRoi": [
+      37,
+      45,
+      119,
+      67
+    ],
+    "polarity": "dark",
+    "threshold": 131.6465,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 119.39419600000001,
+        "boxInRoi": [
+          8,
+          2,
+          77,
+          18
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 131.6465,
+        "boxInRoi": [
+          9,
+          2,
+          77,
+          18
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 143.898804,
+        "boxInRoi": [
+          9,
+          2,
+          77,
+          18
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        8,
+        2,
+        77,
+        18
+      ],
+      [
+        9,
+        2,
+        77,
+        18
+      ],
+      [
+        9,
+        2,
+        77,
+        18
+      ]
+    ],
+    "paintBox": [
+      46,
+      47,
+      114,
+      63
+    ],
+    "paintPixels": [
+      68,
+      16
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1974",
+    "role": "british",
+    "sourceFile": "public/bc-decal-corrections/evidence/1974/source.png",
+    "sourceSha256": "97360c9a963ef10ef156c72a5545bf53662bd1d7f7a743c1a9a2af3df57cabc0",
+    "sourcePixels": [
+      181,
+      100
+    ],
+    "inspectionRoi": [
+      32,
+      7,
+      110,
+      23
+    ],
+    "polarity": "green",
+    "threshold": 132.39925,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 119.626442,
+        "boxInRoi": [
+          4,
+          1,
+          70,
+          13
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 132.39925,
+        "boxInRoi": [
+          4,
+          2,
+          70,
+          13
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 145.172058,
+        "boxInRoi": [
+          4,
+          2,
+          70,
+          13
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        4,
+        1,
+        70,
+        13
+      ],
+      [
+        4,
+        2,
+        70,
+        13
+      ],
+      [
+        4,
+        2,
+        70,
+        13
+      ]
+    ],
+    "paintBox": [
+      36,
+      9,
+      102,
+      20
+    ],
+    "paintPixels": [
+      66,
+      11
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1974",
+    "role": "columbia",
+    "sourceFile": "public/bc-decal-corrections/evidence/1974/source.png",
+    "sourceSha256": "97360c9a963ef10ef156c72a5545bf53662bd1d7f7a743c1a9a2af3df57cabc0",
+    "sourcePixels": [
+      181,
+      100
+    ],
+    "inspectionRoi": [
+      23,
+      22,
+      120,
+      39
+    ],
+    "polarity": "green",
+    "threshold": 132.3445,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 119.10458000000001,
+        "boxInRoi": [
+          5,
+          3,
+          91,
+          14
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 132.3445,
+        "boxInRoi": [
+          5,
+          3,
+          91,
+          14
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 145.58442000000002,
+        "boxInRoi": [
+          5,
+          3,
+          91,
+          14
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        5,
+        3,
+        91,
+        14
+      ],
+      [
+        5,
+        3,
+        91,
+        14
+      ],
+      [
+        5,
+        3,
+        91,
+        14
+      ]
+    ],
+    "paintBox": [
+      28,
+      25,
+      114,
+      36
+    ],
+    "paintPixels": [
+      86,
+      11
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1975",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/1975/source.png",
+    "sourceSha256": "00fe04e497d7a1d7433e53aec9f241f46ba2ab63c52b22df0bea34d561c0b86d",
+    "sourcePixels": [
+      153,
+      100
+    ],
+    "inspectionRoi": [
+      32,
+      49,
+      129,
+      75
+    ],
+    "polarity": "dark",
+    "threshold": 158.9479,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 151.420076,
+        "boxInRoi": [
+          9,
+          0,
+          91,
+          21
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 158.9479,
+        "boxInRoi": [
+          9,
+          4,
+          91,
+          21
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 166.475724,
+        "boxInRoi": [
+          9,
+          4,
+          91,
+          21
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        9,
+        4,
+        91,
+        21
+      ],
+      [
+        9,
+        4,
+        91,
+        21
+      ]
+    ],
+    "paintBox": [
+      41,
+      53,
+      123,
+      70
+    ],
+    "paintPixels": [
+      82,
+      17
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1975",
+    "role": "british",
+    "sourceFile": "public/bc-decal-corrections/evidence/1975/source.png",
+    "sourceSha256": "00fe04e497d7a1d7433e53aec9f241f46ba2ab63c52b22df0bea34d561c0b86d",
+    "sourcePixels": [
+      153,
+      100
+    ],
+    "inspectionRoi": [
+      9,
+      4,
+      96,
+      25
+    ],
+    "polarity": "light",
+    "threshold": 61.5,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 57.26,
+        "boxInRoi": [
+          5,
+          5,
+          73,
+          18
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 61.5,
+        "boxInRoi": [
+          5,
+          5,
+          73,
+          18
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 65.74,
+        "boxInRoi": [
+          6,
+          6,
+          73,
+          18
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        5,
+        5,
+        73,
+        18
+      ],
+      [
+        5,
+        5,
+        73,
+        18
+      ],
+      [
+        6,
+        6,
+        73,
+        18
+      ]
+    ],
+    "paintBox": [
+      14,
+      9,
+      82,
+      22
+    ],
+    "paintPixels": [
+      68,
+      13
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1975",
+    "role": "columbia",
+    "sourceFile": "public/bc-decal-corrections/evidence/1975/source.png",
+    "sourceSha256": "00fe04e497d7a1d7433e53aec9f241f46ba2ab63c52b22df0bea34d561c0b86d",
+    "sourcePixels": [
+      153,
+      100
+    ],
+    "inspectionRoi": [
+      9,
+      24,
+      106,
+      43
+    ],
+    "polarity": "light",
+    "threshold": 65.5,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 60.78,
+        "boxInRoi": [
+          6,
+          2,
+          95,
+          15
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 65.5,
+        "boxInRoi": [
+          6,
+          2,
+          95,
+          15
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 70.22,
+        "boxInRoi": [
+          6,
+          2,
+          95,
+          15
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        6,
+        2,
+        95,
+        15
+      ],
+      [
+        6,
+        2,
+        95,
+        15
+      ],
+      [
+        6,
+        2,
+        95,
+        15
+      ]
+    ],
+    "paintBox": [
+      15,
+      26,
+      104,
+      39
+    ],
+    "paintPixels": [
+      89,
+      13
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1975",
+    "role": "year",
+    "sourceFile": "public/bc-decal-corrections/evidence/1975/source.png",
+    "sourceSha256": "00fe04e497d7a1d7433e53aec9f241f46ba2ab63c52b22df0bea34d561c0b86d",
+    "sourcePixels": [
+      153,
+      100
+    ],
+    "inspectionRoi": [
+      103,
+      6,
+      149,
+      42
+    ],
+    "polarity": "light",
+    "threshold": 80.0,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 72.96,
+        "boxInRoi": [
+          2,
+          4,
+          45,
+          33
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 80.0,
+        "boxInRoi": [
+          3,
+          4,
+          44,
+          33
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 87.04,
+        "boxInRoi": [
+          3,
+          4,
+          44,
+          33
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        2,
+        4,
+        45,
+        33
+      ],
+      [
+        3,
+        4,
+        44,
+        33
+      ],
+      [
+        3,
+        4,
+        44,
+        33
+      ]
+    ],
+    "paintBox": [
+      106,
+      10,
+      147,
+      39
+    ],
+    "paintPixels": [
+      41,
+      29
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1976",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/1976/source.png",
+    "sourceSha256": "983bfe184c8e346210392ce74b37791f74225ab62ebd2bbd9494923ec7b2d862",
+    "sourcePixels": [
+      158,
+      98
+    ],
+    "inspectionRoi": [
+      32,
+      63,
+      129,
+      90
+    ],
+    "polarity": "dark",
+    "threshold": 112.99500000000003,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 98.71964000000003,
+        "boxInRoi": [
+          7,
+          4,
+          92,
+          21
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 112.99500000000003,
+        "boxInRoi": [
+          7,
+          4,
+          92,
+          21
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 127.27036000000004,
+        "boxInRoi": [
+          7,
+          4,
+          92,
+          21
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        7,
+        4,
+        92,
+        21
+      ],
+      [
+        7,
+        4,
+        92,
+        21
+      ],
+      [
+        7,
+        4,
+        92,
+        21
+      ]
+    ],
+    "paintBox": [
+      39,
+      67,
+      124,
+      84
+    ],
+    "paintPixels": [
+      85,
+      17
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1976",
+    "role": "british",
+    "sourceFile": "public/bc-decal-corrections/evidence/1976/source.png",
+    "sourceSha256": "983bfe184c8e346210392ce74b37791f74225ab62ebd2bbd9494923ec7b2d862",
+    "sourcePixels": [
+      158,
+      98
+    ],
+    "inspectionRoi": [
+      11,
+      8,
+      80,
+      26
+    ],
+    "polarity": "light",
+    "threshold": 108.0,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 96.0,
+        "boxInRoi": [
+          3,
+          5,
+          62,
+          17
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 108.0,
+        "boxInRoi": [
+          3,
+          5,
+          62,
+          17
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 120.0,
+        "boxInRoi": [
+          3,
+          5,
+          62,
+          17
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        3,
+        5,
+        62,
+        17
+      ],
+      [
+        3,
+        5,
+        62,
+        17
+      ],
+      [
+        3,
+        5,
+        62,
+        17
+      ]
+    ],
+    "paintBox": [
+      14,
+      13,
+      73,
+      25
+    ],
+    "paintPixels": [
+      59,
+      12
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1976",
+    "role": "columbia",
+    "sourceFile": "public/bc-decal-corrections/evidence/1976/source.png",
+    "sourceSha256": "983bfe184c8e346210392ce74b37791f74225ab62ebd2bbd9494923ec7b2d862",
+    "sourcePixels": [
+      158,
+      98
+    ],
+    "inspectionRoi": [
+      11,
+      26,
+      103,
+      44
+    ],
+    "polarity": "light",
+    "threshold": 108.0,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 96.0,
+        "boxInRoi": [
+          3,
+          2,
+          86,
+          15
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 108.0,
+        "boxInRoi": [
+          4,
+          2,
+          86,
+          15
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 120.0,
+        "boxInRoi": [
+          4,
+          2,
+          86,
+          15
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        3,
+        2,
+        86,
+        15
+      ],
+      [
+        4,
+        2,
+        86,
+        15
+      ],
+      [
+        4,
+        2,
+        86,
+        15
+      ]
+    ],
+    "paintBox": [
+      15,
+      28,
+      97,
+      41
+    ],
+    "paintPixels": [
+      82,
+      13
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1977",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/1977/source.png",
+    "sourceSha256": "160522064853e79e4fe251127e81885010486fd83d35aaed9bab10102f2d1eb6",
+    "sourcePixels": [
+      144,
+      98
+    ],
+    "inspectionRoi": [
+      26,
+      68,
+      118,
+      87
+    ],
+    "polarity": "dark",
+    "threshold": 125.98625000000001,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 114.92974600000001,
+        "boxInRoi": [
+          8,
+          0,
+          87,
+          15
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 125.98625000000001,
+        "boxInRoi": [
+          9,
+          0,
+          87,
+          15
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 137.042754,
+        "boxInRoi": [
+          9,
+          0,
+          87,
+          15
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [],
+    "paintBox": [
+      35,
+      68,
+      113,
+      83
+    ],
+    "paintPixels": [
+      78,
+      15
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": true,
+    "extentAccepted": false,
+    "rejectionReasons": [
+      "paint touches inspection ROI"
+    ],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1978",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/1978/source.png",
+    "sourceSha256": "6dc3cb429ab20a90c1df07b42080ad8ca23019dc40ee63399eee8a95104c7ec6",
+    "sourcePixels": [
+      188,
+      100
+    ],
+    "inspectionRoi": [
+      20,
+      67,
+      135,
+      92
+    ],
+    "polarity": "dark",
+    "threshold": 109.77089999999997,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 99.54857999999997,
+        "boxInRoi": [
+          6,
+          2,
+          108,
+          23
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 109.77089999999997,
+        "boxInRoi": [
+          6,
+          2,
+          108,
+          23
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 119.99321999999997,
+        "boxInRoi": [
+          6,
+          2,
+          108,
+          23
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        6,
+        2,
+        108,
+        23
+      ],
+      [
+        6,
+        2,
+        108,
+        23
+      ],
+      [
+        6,
+        2,
+        108,
+        23
+      ]
+    ],
+    "paintBox": [
+      26,
+      69,
+      128,
+      90
+    ],
+    "paintPixels": [
+      102,
+      21
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1980",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/1980/source.png",
+    "sourceSha256": "3cbe285cbfc6838a9ae021bf77c48a0b4df8169260e1d7dd4a639fef6de73ba7",
+    "sourcePixels": [
+      255,
+      75
+    ],
+    "inspectionRoi": [
+      119,
+      49,
+      186,
+      62
+    ],
+    "polarity": "dark",
+    "threshold": 91.4825,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 80.69682,
+        "boxInRoi": [
+          0,
+          1,
+          66,
+          11
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 91.4825,
+        "boxInRoi": [
+          0,
+          2,
+          66,
+          11
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 102.26818,
+        "boxInRoi": [
+          0,
+          2,
+          66,
+          11
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [],
+    "paintBox": [
+      119,
+      51,
+      185,
+      60
+    ],
+    "paintPixels": [
+      66,
+      9
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": true,
+    "extentAccepted": false,
+    "rejectionReasons": [
+      "paint touches inspection ROI"
+    ],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1981",
+    "role": "british",
+    "sourceFile": "public/bc-decal-corrections/evidence/1981/source.png",
+    "sourceSha256": "3e814dcb6aabe05b53a79268bf7d20f5e7815e791719036df2dda742b39dc6b6",
+    "sourcePixels": [
+      256,
+      75
+    ],
+    "inspectionRoi": [
+      108,
+      7,
+      191,
+      23
+    ],
+    "polarity": "light",
+    "threshold": 123.5,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 110.14,
+        "boxInRoi": [
+          4,
+          4,
+          73,
+          13
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 123.5,
+        "boxInRoi": [
+          4,
+          4,
+          73,
+          13
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 136.86,
+        "boxInRoi": [
+          4,
+          4,
+          73,
+          12
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        4,
+        4,
+        73,
+        13
+      ],
+      [
+        4,
+        4,
+        73,
+        13
+      ],
+      [
+        4,
+        4,
+        73,
+        12
+      ]
+    ],
+    "paintBox": [
+      112,
+      11,
+      181,
+      20
+    ],
+    "paintPixels": [
+      69,
+      9
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1981",
+    "role": "columbia",
+    "sourceFile": "public/bc-decal-corrections/evidence/1981/source.png",
+    "sourceSha256": "3e814dcb6aabe05b53a79268bf7d20f5e7815e791719036df2dda742b39dc6b6",
+    "sourcePixels": [
+      256,
+      75
+    ],
+    "inspectionRoi": [
+      96,
+      21,
+      198,
+      37
+    ],
+    "polarity": "light",
+    "threshold": 126.5,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 112.66,
+        "boxInRoi": [
+          2,
+          2,
+          98,
+          11
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 126.5,
+        "boxInRoi": [
+          3,
+          3,
+          98,
+          11
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 140.34,
+        "boxInRoi": [
+          3,
+          3,
+          98,
+          11
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        2,
+        2,
+        98,
+        11
+      ],
+      [
+        3,
+        3,
+        98,
+        11
+      ],
+      [
+        3,
+        3,
+        98,
+        11
+      ]
+    ],
+    "paintBox": [
+      99,
+      24,
+      194,
+      32
+    ],
+    "paintPixels": [
+      95,
+      8
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1981",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/1981/source.png",
+    "sourceSha256": "3e814dcb6aabe05b53a79268bf7d20f5e7815e791719036df2dda742b39dc6b6",
+    "sourcePixels": [
+      256,
+      75
+    ],
+    "inspectionRoi": [
+      109,
+      41,
+      180,
+      60
+    ],
+    "polarity": "dark",
+    "threshold": 96.35060000000001,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 83.65959200000002,
+        "boxInRoi": [
+          5,
+          4,
+          65,
+          15
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 96.35060000000001,
+        "boxInRoi": [
+          5,
+          4,
+          65,
+          15
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 109.04160800000001,
+        "boxInRoi": [
+          6,
+          4,
+          65,
+          15
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        5,
+        4,
+        65,
+        15
+      ],
+      [
+        5,
+        4,
+        65,
+        15
+      ],
+      [
+        6,
+        4,
+        65,
+        15
+      ]
+    ],
+    "paintBox": [
+      114,
+      45,
+      174,
+      56
+    ],
+    "paintPixels": [
+      60,
+      11
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1982",
+    "role": "british",
+    "sourceFile": "public/bc-decal-corrections/evidence/1982/source.png",
+    "sourceSha256": "5f177837e110c8e7eba39f0be33de3b07629730bec7cf1e61779ce6ea75a5c84",
+    "sourcePixels": [
+      258,
+      75
+    ],
+    "inspectionRoi": [
+      110,
+      40,
+      188,
+      55
+    ],
+    "polarity": "light",
+    "threshold": 94.0,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 78.96,
+        "boxInRoi": [
+          6,
+          3,
+          71,
+          12
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 94.0,
+        "boxInRoi": [
+          6,
+          3,
+          71,
+          12
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 109.04,
+        "boxInRoi": [
+          6,
+          3,
+          71,
+          12
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        6,
+        3,
+        71,
+        12
+      ],
+      [
+        6,
+        3,
+        71,
+        12
+      ],
+      [
+        6,
+        3,
+        71,
+        12
+      ]
+    ],
+    "paintBox": [
+      116,
+      43,
+      181,
+      52
+    ],
+    "paintPixels": [
+      65,
+      9
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1982",
+    "role": "columbia",
+    "sourceFile": "public/bc-decal-corrections/evidence/1982/source.png",
+    "sourceSha256": "5f177837e110c8e7eba39f0be33de3b07629730bec7cf1e61779ce6ea75a5c84",
+    "sourcePixels": [
+      258,
+      75
+    ],
+    "inspectionRoi": [
+      99,
+      52,
+      201,
+      69
+    ],
+    "polarity": "light",
+    "threshold": 90.5,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 76.18,
+        "boxInRoi": [
+          6,
+          3,
+          94,
+          12
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 90.5,
+        "boxInRoi": [
+          6,
+          4,
+          94,
+          12
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 104.82,
+        "boxInRoi": [
+          6,
+          4,
+          94,
+          12
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        6,
+        3,
+        94,
+        12
+      ],
+      [
+        6,
+        4,
+        94,
+        12
+      ],
+      [
+        6,
+        4,
+        94,
+        12
+      ]
+    ],
+    "paintBox": [
+      105,
+      56,
+      193,
+      64
+    ],
+    "paintPixels": [
+      88,
+      8
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1982",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/1982/source.png",
+    "sourceSha256": "5f177837e110c8e7eba39f0be33de3b07629730bec7cf1e61779ce6ea75a5c84",
+    "sourcePixels": [
+      258,
+      75
+    ],
+    "inspectionRoi": [
+      106,
+      14,
+      186,
+      34
+    ],
+    "polarity": "dark",
+    "threshold": 68.6641,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 59.314036,
+        "boxInRoi": [
+          5,
+          4,
+          73,
+          16
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 68.6641,
+        "boxInRoi": [
+          5,
+          4,
+          72,
+          16
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 78.01416400000001,
+        "boxInRoi": [
+          6,
+          5,
+          72,
+          16
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        5,
+        4,
+        73,
+        16
+      ],
+      [
+        5,
+        4,
+        72,
+        16
+      ],
+      [
+        6,
+        5,
+        72,
+        16
+      ]
+    ],
+    "paintBox": [
+      111,
+      18,
+      178,
+      30
+    ],
+    "paintPixels": [
+      67,
+      12
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1985",
+    "role": "province",
+    "sourceFile": "public/bc-decal-corrections/evidence/1985/source.png",
+    "sourceSha256": "133b39ab52562b62d7c9e5ac4cc65c493a78c30058b1026652355d31ebc32c80",
+    "sourcePixels": [
+      255,
+      75
+    ],
+    "inspectionRoi": [
+      85,
+      51,
+      189,
+      65
+    ],
+    "polarity": "blue",
+    "threshold": 134.48174999999998,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 115.35330999999998,
+        "boxInRoi": [
+          4,
+          2,
+          97,
+          9
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 134.48174999999998,
+        "boxInRoi": [
+          4,
+          2,
+          97,
+          9
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 153.61019,
+        "boxInRoi": [
+          5,
+          2,
+          97,
+          9
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        4,
+        2,
+        97,
+        9
+      ],
+      [
+        4,
+        2,
+        97,
+        9
+      ],
+      [
+        5,
+        2,
+        97,
+        9
+      ]
+    ],
+    "paintBox": [
+      89,
+      53,
+      182,
+      60
+    ],
+    "paintPixels": [
+      93,
+      7
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1987",
+    "role": "british",
+    "sourceFile": "public/bc-decal-corrections/evidence/1987/source.png",
+    "sourceSha256": "b243fbfe5e89cb53c7807ab6954c390cecc26e711c97aeaddfe45c05e85107ce",
+    "sourcePixels": [
+      260,
+      75
+    ],
+    "inspectionRoi": [
+      117,
+      10,
+      188,
+      29
+    ],
+    "polarity": "red",
+    "threshold": 79.5,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 65.82,
+        "boxInRoi": [
+          7,
+          6,
+          62,
+          16
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 79.5,
+        "boxInRoi": [
+          8,
+          6,
+          62,
+          16
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 93.18,
+        "boxInRoi": [
+          8,
+          6,
+          61,
+          16
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        7,
+        6,
+        62,
+        16
+      ],
+      [
+        8,
+        6,
+        62,
+        16
+      ],
+      [
+        8,
+        6,
+        61,
+        16
+      ]
+    ],
+    "paintBox": [
+      125,
+      16,
+      179,
+      26
+    ],
+    "paintPixels": [
+      54,
+      10
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1987",
+    "role": "columbia",
+    "sourceFile": "public/bc-decal-corrections/evidence/1987/source.png",
+    "sourceSha256": "b243fbfe5e89cb53c7807ab6954c390cecc26e711c97aeaddfe45c05e85107ce",
+    "sourcePixels": [
+      260,
+      75
+    ],
+    "inspectionRoi": [
+      111,
+      28,
+      192,
+      42
+    ],
+    "polarity": "red",
+    "threshold": 85.0,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 70.92,
+        "boxInRoi": [
+          4,
+          2,
+          78,
+          12
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 85.0,
+        "boxInRoi": [
+          4,
+          2,
+          77,
+          12
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 99.08,
+        "boxInRoi": [
+          4,
+          2,
+          77,
+          12
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        4,
+        2,
+        78,
+        12
+      ],
+      [
+        4,
+        2,
+        77,
+        12
+      ],
+      [
+        4,
+        2,
+        77,
+        12
+      ]
+    ],
+    "paintBox": [
+      115,
+      30,
+      188,
+      40
+    ],
+    "paintPixels": [
+      73,
+      10
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1987",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/1987/source.png",
+    "sourceSha256": "b243fbfe5e89cb53c7807ab6954c390cecc26e711c97aeaddfe45c05e85107ce",
+    "sourcePixels": [
+      260,
+      75
+    ],
+    "inspectionRoi": [
+      116,
+      47,
+      189,
+      68
+    ],
+    "polarity": "dark",
+    "threshold": 100.38640000000001,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 89.592256,
+        "boxInRoi": [
+          13,
+          4,
+          65,
+          17
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 100.38640000000001,
+        "boxInRoi": [
+          13,
+          4,
+          64,
+          17
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 111.18054400000001,
+        "boxInRoi": [
+          13,
+          4,
+          64,
+          17
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        13,
+        4,
+        65,
+        17
+      ],
+      [
+        13,
+        4,
+        64,
+        17
+      ],
+      [
+        13,
+        4,
+        64,
+        17
+      ]
+    ],
+    "paintBox": [
+      129,
+      51,
+      180,
+      64
+    ],
+    "paintPixels": [
+      51,
+      13
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1988",
+    "role": "british",
+    "sourceFile": "public/bc-decal-corrections/evidence/1988/source.png",
+    "sourceSha256": "77f49b3b9e5a28423d5abf201e3bf1a30acd4c43942fb66aeac39ece2b6859a3",
+    "sourcePixels": [
+      254,
+      75
+    ],
+    "inspectionRoi": [
+      123,
+      10,
+      169,
+      25
+    ],
+    "polarity": "blue",
+    "threshold": 109.15090000000002,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 91.94373200000003,
+        "boxInRoi": [
+          3,
+          5,
+          40,
+          13
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 109.15090000000002,
+        "boxInRoi": [
+          3,
+          5,
+          40,
+          13
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 126.35806800000002,
+        "boxInRoi": [
+          4,
+          5,
+          40,
+          13
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        3,
+        5,
+        40,
+        13
+      ],
+      [
+        3,
+        5,
+        40,
+        13
+      ],
+      [
+        4,
+        5,
+        40,
+        13
+      ]
+    ],
+    "paintBox": [
+      126,
+      15,
+      163,
+      23
+    ],
+    "paintPixels": [
+      37,
+      8
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1988",
+    "role": "columbia",
+    "sourceFile": "public/bc-decal-corrections/evidence/1988/source.png",
+    "sourceSha256": "77f49b3b9e5a28423d5abf201e3bf1a30acd4c43942fb66aeac39ece2b6859a3",
+    "sourcePixels": [
+      254,
+      75
+    ],
+    "inspectionRoi": [
+      116,
+      24,
+      174,
+      36
+    ],
+    "polarity": "blue",
+    "threshold": 113.59124999999997,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 95.81064999999998,
+        "boxInRoi": [
+          3,
+          1,
+          54,
+          10
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 113.59124999999997,
+        "boxInRoi": [
+          3,
+          2,
+          54,
+          10
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 131.37184999999997,
+        "boxInRoi": [
+          3,
+          2,
+          54,
+          10
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        3,
+        1,
+        54,
+        10
+      ],
+      [
+        3,
+        2,
+        54,
+        10
+      ],
+      [
+        3,
+        2,
+        54,
+        10
+      ]
+    ],
+    "paintBox": [
+      119,
+      26,
+      170,
+      34
+    ],
+    "paintPixels": [
+      51,
+      8
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1989",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/1989/source.png",
+    "sourceSha256": "3a86a3e6478dca9ed1e4d5721215250e3205b2e8843891b519e5c2ba1c407d65",
+    "sourcePixels": [
+      249,
+      75
+    ],
+    "inspectionRoi": [
+      110,
+      36,
+      179,
+      54
+    ],
+    "polarity": "dark",
+    "threshold": 105.85350000000004,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 91.29326000000003,
+        "boxInRoi": [
+          8,
+          3,
+          65,
+          13
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 105.85350000000004,
+        "boxInRoi": [
+          8,
+          3,
+          65,
+          13
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 120.41374000000005,
+        "boxInRoi": [
+          8,
+          4,
+          65,
+          13
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        8,
+        3,
+        65,
+        13
+      ],
+      [
+        8,
+        3,
+        65,
+        13
+      ],
+      [
+        8,
+        4,
+        65,
+        13
+      ]
+    ],
+    "paintBox": [
+      118,
+      39,
+      175,
+      49
+    ],
+    "paintPixels": [
+      57,
+      10
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1990",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/1990/source.png",
+    "sourceSha256": "8df50dcea644e21142ed1e074db763f34824d03a6630d246a9c0b14348f6b05d",
+    "sourcePixels": [
+      254,
+      75
+    ],
+    "inspectionRoi": [
+      109,
+      51,
+      177,
+      69
+    ],
+    "polarity": "dark",
+    "threshold": 145.34955000000008,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 131.03003800000008,
+        "boxInRoi": [
+          4,
+          5,
+          62,
+          16
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 145.34955000000008,
+        "boxInRoi": [
+          4,
+          5,
+          62,
+          16
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 159.66906200000008,
+        "boxInRoi": [
+          5,
+          5,
+          62,
+          16
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        4,
+        5,
+        62,
+        16
+      ],
+      [
+        4,
+        5,
+        62,
+        16
+      ],
+      [
+        5,
+        5,
+        62,
+        16
+      ]
+    ],
+    "paintBox": [
+      113,
+      56,
+      171,
+      67
+    ],
+    "paintPixels": [
+      58,
+      11
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1991",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/1991/source.png",
+    "sourceSha256": "987427451c6b851a5234991cb10f5e41c28d60807a5abf14d7b8a12015ab0e76",
+    "sourcePixels": [
+      246,
+      75
+    ],
+    "inspectionRoi": [
+      113,
+      46,
+      180,
+      63
+    ],
+    "polarity": "dark",
+    "threshold": 115.69080000000002,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 100.39243200000003,
+        "boxInRoi": [
+          6,
+          4,
+          63,
+          13
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 115.69080000000002,
+        "boxInRoi": [
+          6,
+          4,
+          63,
+          13
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 130.98916800000003,
+        "boxInRoi": [
+          6,
+          4,
+          63,
+          13
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        6,
+        4,
+        63,
+        13
+      ],
+      [
+        6,
+        4,
+        63,
+        13
+      ],
+      [
+        6,
+        4,
+        63,
+        13
+      ]
+    ],
+    "paintBox": [
+      119,
+      50,
+      176,
+      59
+    ],
+    "paintPixels": [
+      57,
+      9
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1992",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/1992/source.png",
+    "sourceSha256": "c783080b5c288e380f2d2ba15f3c246c2d519064c86d26038006fae5fd884709",
+    "sourcePixels": [
+      250,
+      75
+    ],
+    "inspectionRoi": [
+      103,
+      45,
+      173,
+      63
+    ],
+    "polarity": "dark",
+    "threshold": 106.19025000000005,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 93.03829000000005,
+        "boxInRoi": [
+          4,
+          5,
+          60,
+          14
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 106.19025000000005,
+        "boxInRoi": [
+          4,
+          5,
+          60,
+          14
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 119.34221000000005,
+        "boxInRoi": [
+          4,
+          5,
+          60,
+          14
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        4,
+        5,
+        60,
+        14
+      ],
+      [
+        4,
+        5,
+        60,
+        14
+      ],
+      [
+        4,
+        5,
+        60,
+        14
+      ]
+    ],
+    "paintBox": [
+      107,
+      50,
+      163,
+      59
+    ],
+    "paintPixels": [
+      56,
+      9
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1993",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/1993/source.png",
+    "sourceSha256": "c9d90d3a8ca8c42e83f94f4fbd81ecd1f19af4a188d429166eb1b8c96ea726fd",
+    "sourcePixels": [
+      251,
+      75
+    ],
+    "inspectionRoi": [
+      104,
+      44,
+      173,
+      63
+    ],
+    "polarity": "dark",
+    "threshold": 93.47800000000002,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 81.05352000000002,
+        "boxInRoi": [
+          4,
+          4,
+          62,
+          14
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 93.47800000000002,
+        "boxInRoi": [
+          4,
+          4,
+          62,
+          14
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 105.90248000000003,
+        "boxInRoi": [
+          4,
+          4,
+          62,
+          14
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        4,
+        4,
+        62,
+        14
+      ],
+      [
+        4,
+        4,
+        62,
+        14
+      ],
+      [
+        4,
+        4,
+        62,
+        14
+      ]
+    ],
+    "paintBox": [
+      108,
+      48,
+      166,
+      58
+    ],
+    "paintPixels": [
+      58,
+      10
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1994",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/1994/source.png",
+    "sourceSha256": "fbbe9179ef40d52e9de3786169fcfa7824a61b4b04cfe38091496257132090c8",
+    "sourcePixels": [
+      249,
+      75
+    ],
+    "inspectionRoi": [
+      106,
+      40,
+      176,
+      57
+    ],
+    "polarity": "dark",
+    "threshold": 125.0183000000001,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 112.38910000000008,
+        "boxInRoi": [
+          5,
+          4,
+          63,
+          14
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 125.0183000000001,
+        "boxInRoi": [
+          5,
+          4,
+          63,
+          13
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 137.6475000000001,
+        "boxInRoi": [
+          5,
+          4,
+          63,
+          13
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        5,
+        4,
+        63,
+        14
+      ],
+      [
+        5,
+        4,
+        63,
+        13
+      ],
+      [
+        5,
+        4,
+        63,
+        13
+      ]
+    ],
+    "paintBox": [
+      111,
+      44,
+      169,
+      53
+    ],
+    "paintPixels": [
+      58,
+      9
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1995",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/1995/source.png",
+    "sourceSha256": "6f1651eebc451425046203ad17e1fddf958511906fb42ff6bbe6c12d476bbc1f",
+    "sourcePixels": [
+      251,
+      75
+    ],
+    "inspectionRoi": [
+      105,
+      45,
+      176,
+      63
+    ],
+    "polarity": "dark",
+    "threshold": 118.01799999999999,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 103.39048,
+        "boxInRoi": [
+          6,
+          4,
+          65,
+          13
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 118.01799999999999,
+        "boxInRoi": [
+          6,
+          4,
+          65,
+          13
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 132.64551999999998,
+        "boxInRoi": [
+          7,
+          4,
+          65,
+          13
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        6,
+        4,
+        65,
+        13
+      ],
+      [
+        6,
+        4,
+        65,
+        13
+      ],
+      [
+        7,
+        4,
+        65,
+        13
+      ]
+    ],
+    "paintBox": [
+      111,
+      49,
+      170,
+      58
+    ],
+    "paintPixels": [
+      59,
+      9
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1996",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/1996/source.png",
+    "sourceSha256": "9d8c38aa375f5bb5e9471b4ed0c76a580df2010c94574cec319a5daf953acabc",
+    "sourcePixels": [
+      247,
+      75
+    ],
+    "inspectionRoi": [
+      109,
+      41,
+      178,
+      61
+    ],
+    "polarity": "dark",
+    "threshold": 106.45400000000001,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 93.27928000000001,
+        "boxInRoi": [
+          9,
+          3,
+          66,
+          12
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 106.45400000000001,
+        "boxInRoi": [
+          9,
+          3,
+          66,
+          12
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 119.62872,
+        "boxInRoi": [
+          9,
+          3,
+          65,
+          12
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        9,
+        3,
+        66,
+        12
+      ],
+      [
+        9,
+        3,
+        66,
+        12
+      ],
+      [
+        9,
+        3,
+        65,
+        12
+      ]
+    ],
+    "paintBox": [
+      118,
+      44,
+      175,
+      53
+    ],
+    "paintPixels": [
+      57,
+      9
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1996-pink",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/1996-pink/source.png",
+    "sourceSha256": "3fa1d7f123c083387d6490ff8b554d83b94e3a79566876e53efa88a245ae636e",
+    "sourcePixels": [
+      243,
+      73
+    ],
+    "inspectionRoi": [
+      108,
+      40,
+      174,
+      60
+    ],
+    "polarity": "dark",
+    "threshold": 121.49735000000004,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 108.61195000000004,
+        "boxInRoi": [
+          1,
+          5,
+          56,
+          14
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 121.49735000000004,
+        "boxInRoi": [
+          1,
+          5,
+          56,
+          14
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 134.38275000000004,
+        "boxInRoi": [
+          1,
+          5,
+          56,
+          14
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        1,
+        5,
+        56,
+        14
+      ],
+      [
+        1,
+        5,
+        56,
+        14
+      ],
+      [
+        1,
+        5,
+        56,
+        14
+      ]
+    ],
+    "paintBox": [
+      109,
+      45,
+      164,
+      54
+    ],
+    "paintPixels": [
+      55,
+      9
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1997",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/1997/source.png",
+    "sourceSha256": "613f52569007ca13a9ab003e9a92078f53383fd04b4955e48d32e3884ef85a10",
+    "sourcePixels": [
+      250,
+      75
+    ],
+    "inspectionRoi": [
+      109,
+      43,
+      175,
+      62
+    ],
+    "polarity": "dark",
+    "threshold": 104.39350000000002,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 91.19623600000001,
+        "boxInRoi": [
+          5,
+          3,
+          60,
+          12
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 104.39350000000002,
+        "boxInRoi": [
+          5,
+          3,
+          60,
+          12
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 117.59076400000002,
+        "boxInRoi": [
+          5,
+          3,
+          60,
+          12
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        5,
+        3,
+        60,
+        12
+      ],
+      [
+        5,
+        3,
+        60,
+        12
+      ],
+      [
+        5,
+        3,
+        60,
+        12
+      ]
+    ],
+    "paintBox": [
+      114,
+      46,
+      169,
+      55
+    ],
+    "paintPixels": [
+      55,
+      9
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "1998",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/1998/source.png",
+    "sourceSha256": "b24c22fac0d66ad2029859a973e59daef56e627ea84d3c3a7f623bff91c05b39",
+    "sourcePixels": [
+      251,
+      75
+    ],
+    "inspectionRoi": [
+      106,
+      40,
+      174,
+      60
+    ],
+    "polarity": "dark",
+    "threshold": 117.04430000000004,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 103.79097200000004,
+        "boxInRoi": [
+          6,
+          3,
+          63,
+          12
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 117.04430000000004,
+        "boxInRoi": [
+          6,
+          3,
+          63,
+          12
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 130.29762800000003,
+        "boxInRoi": [
+          6,
+          3,
+          63,
+          12
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        6,
+        3,
+        63,
+        12
+      ],
+      [
+        6,
+        3,
+        63,
+        12
+      ],
+      [
+        6,
+        3,
+        63,
+        12
+      ]
+    ],
+    "paintBox": [
+      112,
+      43,
+      169,
+      52
+    ],
+    "paintPixels": [
+      57,
+      9
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2004",
+    "role": "british",
+    "sourceFile": "public/bc-decal-corrections/evidence/2004/source.png",
+    "sourceSha256": "6a77e42810bfe8179773413bac28dbb971f91d7a0697b855bdea8246035a5693",
+    "sourcePixels": [
+      259,
+      75
+    ],
+    "inspectionRoi": [
+      139,
+      30,
+      167,
+      38
+    ],
+    "polarity": "dark",
+    "threshold": 137.67095,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 122.69155,
+        "boxInRoi": [
+          3,
+          2,
+          27,
+          8
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 137.67095,
+        "boxInRoi": [
+          3,
+          2,
+          27,
+          8
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 152.65035,
+        "boxInRoi": [
+          3,
+          3,
+          27,
+          8
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [],
+    "paintBox": [
+      142,
+      32,
+      166,
+      38
+    ],
+    "paintPixels": [
+      24,
+      6
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": true,
+    "extentAccepted": false,
+    "rejectionReasons": [
+      "paint touches inspection ROI"
+    ],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2004",
+    "role": "columbia",
+    "sourceFile": "public/bc-decal-corrections/evidence/2004/source.png",
+    "sourceSha256": "6a77e42810bfe8179773413bac28dbb971f91d7a0697b855bdea8246035a5693",
+    "sourcePixels": [
+      259,
+      75
+    ],
+    "inspectionRoi": [
+      136,
+      38,
+      171,
+      45
+    ],
+    "polarity": "dark",
+    "threshold": 141.41320000000002,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 126.47707200000002,
+        "boxInRoi": [
+          1,
+          0,
+          34,
+          6
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 141.41320000000002,
+        "boxInRoi": [
+          1,
+          0,
+          34,
+          5
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 156.349328,
+        "boxInRoi": [
+          1,
+          0,
+          34,
+          5
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [],
+    "paintBox": [
+      137,
+      38,
+      170,
+      43
+    ],
+    "paintPixels": [
+      33,
+      5
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": true,
+    "extentAccepted": false,
+    "rejectionReasons": [
+      "paint touches inspection ROI"
+    ],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2005",
+    "role": "british",
+    "sourceFile": "public/bc-decal-corrections/evidence/2005/source.png",
+    "sourceSha256": "a20e53427757976ba06267b41b05094f712e7f1f35c0a519e954ee60a27fd302",
+    "sourcePixels": [
+      230,
+      98
+    ],
+    "inspectionRoi": [
+      125,
+      43,
+      167,
+      52
+    ],
+    "polarity": "dark",
+    "threshold": 191.89435000000003,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 184.71114200000002,
+        "boxInRoi": [
+          3,
+          2,
+          36,
+          9
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 191.89435000000003,
+        "boxInRoi": [
+          3,
+          2,
+          36,
+          9
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 199.07755800000004,
+        "boxInRoi": [
+          3,
+          2,
+          36,
+          9
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [],
+    "paintBox": [
+      128,
+      45,
+      161,
+      52
+    ],
+    "paintPixels": [
+      33,
+      7
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": true,
+    "extentAccepted": false,
+    "rejectionReasons": [
+      "paint touches inspection ROI"
+    ],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2005",
+    "role": "columbia",
+    "sourceFile": "public/bc-decal-corrections/evidence/2005/source.png",
+    "sourceSha256": "a20e53427757976ba06267b41b05094f712e7f1f35c0a519e954ee60a27fd302",
+    "sourcePixels": [
+      230,
+      98
+    ],
+    "inspectionRoi": [
+      121,
+      53,
+      169,
+      63
+    ],
+    "polarity": "dark",
+    "threshold": 192.9588,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 185.913888,
+        "boxInRoi": [
+          1,
+          0,
+          46,
+          7
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 192.9588,
+        "boxInRoi": [
+          2,
+          0,
+          46,
+          7
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 200.003712,
+        "boxInRoi": [
+          2,
+          0,
+          46,
+          7
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [],
+    "paintBox": [
+      123,
+      53,
+      167,
+      60
+    ],
+    "paintPixels": [
+      44,
+      7
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": true,
+    "extentAccepted": false,
+    "rejectionReasons": [
+      "paint touches inspection ROI"
+    ],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2005",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/2005/source.png",
+    "sourceSha256": "a20e53427757976ba06267b41b05094f712e7f1f35c0a519e954ee60a27fd302",
+    "sourcePixels": [
+      230,
+      98
+    ],
+    "inspectionRoi": [
+      136,
+      73,
+      224,
+      96
+    ],
+    "polarity": "dark",
+    "threshold": 193.66905,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 186.550994,
+        "boxInRoi": [
+          2,
+          3,
+          84,
+          21
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 193.66905,
+        "boxInRoi": [
+          2,
+          3,
+          84,
+          20
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 200.787106,
+        "boxInRoi": [
+          2,
+          3,
+          84,
+          20
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        2,
+        3,
+        84,
+        21
+      ],
+      [
+        2,
+        3,
+        84,
+        20
+      ],
+      [
+        2,
+        3,
+        84,
+        20
+      ]
+    ],
+    "paintBox": [
+      138,
+      76,
+      220,
+      93
+    ],
+    "paintPixels": [
+      82,
+      17
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2006",
+    "role": "british",
+    "sourceFile": "public/bc-decal-corrections/evidence/2006/source.png",
+    "sourceSha256": "28ef19a5764b2cfce6b477603d787f25351209fa5bbe55126cb6ea854185f902",
+    "sourcePixels": [
+      234,
+      100
+    ],
+    "inspectionRoi": [
+      128,
+      41,
+      169,
+      51
+    ],
+    "polarity": "black",
+    "threshold": 108.00000000000001,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 96.62400000000001,
+        "boxInRoi": [
+          4,
+          2,
+          37,
+          10
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 108.00000000000001,
+        "boxInRoi": [
+          4,
+          3,
+          37,
+          10
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 119.37600000000002,
+        "boxInRoi": [
+          4,
+          3,
+          37,
+          10
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [],
+    "paintBox": [
+      132,
+      44,
+      165,
+      51
+    ],
+    "paintPixels": [
+      33,
+      7
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": true,
+    "extentAccepted": false,
+    "rejectionReasons": [
+      "paint touches inspection ROI"
+    ],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2006",
+    "role": "columbia",
+    "sourceFile": "public/bc-decal-corrections/evidence/2006/source.png",
+    "sourceSha256": "28ef19a5764b2cfce6b477603d787f25351209fa5bbe55126cb6ea854185f902",
+    "sourcePixels": [
+      234,
+      100
+    ],
+    "inspectionRoi": [
+      123,
+      50,
+      174,
+      60
+    ],
+    "polarity": "black",
+    "threshold": 121.0,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 108.52,
+        "boxInRoi": [
+          3,
+          0,
+          51,
+          10
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 121.0,
+        "boxInRoi": [
+          4,
+          0,
+          51,
+          10
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 133.48,
+        "boxInRoi": [
+          4,
+          0,
+          51,
+          10
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [],
+    "paintBox": [
+      127,
+      50,
+      174,
+      60
+    ],
+    "paintPixels": [
+      47,
+      10
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": true,
+    "extentAccepted": false,
+    "rejectionReasons": [
+      "paint touches inspection ROI"
+    ],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2006",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/2006/source.png",
+    "sourceSha256": "28ef19a5764b2cfce6b477603d787f25351209fa5bbe55126cb6ea854185f902",
+    "sourcePixels": [
+      234,
+      100
+    ],
+    "inspectionRoi": [
+      137,
+      73,
+      228,
+      94
+    ],
+    "polarity": "dark",
+    "threshold": 186.54500000000002,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 181.3066,
+        "boxInRoi": [
+          3,
+          1,
+          86,
+          21
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 186.54500000000002,
+        "boxInRoi": [
+          4,
+          1,
+          86,
+          20
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 191.78340000000003,
+        "boxInRoi": [
+          4,
+          2,
+          86,
+          19
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        4,
+        1,
+        86,
+        20
+      ],
+      [
+        4,
+        2,
+        86,
+        19
+      ]
+    ],
+    "paintBox": [
+      141,
+      74,
+      223,
+      93
+    ],
+    "paintPixels": [
+      82,
+      19
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2007",
+    "role": "british",
+    "sourceFile": "public/bc-decal-corrections/evidence/2007/source.png",
+    "sourceSha256": "07fc893a13cddccc741e40307777ba25ba2cdea9672fe8fcbfcb013109607946",
+    "sourcePixels": [
+      233,
+      100
+    ],
+    "inspectionRoi": [
+      127,
+      42,
+      168,
+      51
+    ],
+    "polarity": "dark",
+    "threshold": 171.9581,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 161.684228,
+        "boxInRoi": [
+          3,
+          2,
+          36,
+          9
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 171.9581,
+        "boxInRoi": [
+          3,
+          2,
+          36,
+          9
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 182.231972,
+        "boxInRoi": [
+          3,
+          2,
+          36,
+          9
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [],
+    "paintBox": [
+      130,
+      44,
+      163,
+      51
+    ],
+    "paintPixels": [
+      33,
+      7
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": true,
+    "extentAccepted": false,
+    "rejectionReasons": [
+      "paint touches inspection ROI"
+    ],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2007",
+    "role": "columbia",
+    "sourceFile": "public/bc-decal-corrections/evidence/2007/source.png",
+    "sourceSha256": "07fc893a13cddccc741e40307777ba25ba2cdea9672fe8fcbfcb013109607946",
+    "sourcePixels": [
+      233,
+      100
+    ],
+    "inspectionRoi": [
+      122,
+      52,
+      172,
+      61
+    ],
+    "polarity": "dark",
+    "threshold": 175.73545000000001,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 165.32446600000003,
+        "boxInRoi": [
+          0,
+          0,
+          50,
+          9
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 175.73545000000001,
+        "boxInRoi": [
+          0,
+          0,
+          50,
+          9
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 186.146434,
+        "boxInRoi": [
+          0,
+          0,
+          50,
+          9
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [],
+    "paintBox": [
+      122,
+      52,
+      172,
+      61
+    ],
+    "paintPixels": [
+      50,
+      9
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": true,
+    "extentAccepted": false,
+    "rejectionReasons": [
+      "paint touches inspection ROI"
+    ],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2007",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/2007/source.png",
+    "sourceSha256": "07fc893a13cddccc741e40307777ba25ba2cdea9672fe8fcbfcb013109607946",
+    "sourcePixels": [
+      233,
+      100
+    ],
+    "inspectionRoi": [
+      135,
+      73,
+      227,
+      96
+    ],
+    "polarity": "dark",
+    "threshold": 174.33275,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 163.50975,
+        "boxInRoi": [
+          4,
+          2,
+          88,
+          19
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 174.33275,
+        "boxInRoi": [
+          4,
+          2,
+          88,
+          19
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 185.15575,
+        "boxInRoi": [
+          4,
+          2,
+          88,
+          19
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        4,
+        2,
+        88,
+        19
+      ],
+      [
+        4,
+        2,
+        88,
+        19
+      ],
+      [
+        4,
+        2,
+        88,
+        19
+      ]
+    ],
+    "paintBox": [
+      139,
+      75,
+      223,
+      92
+    ],
+    "paintPixels": [
+      84,
+      17
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2009",
+    "role": "british",
+    "sourceFile": "public/bc-decal-corrections/evidence/2009/source.png",
+    "sourceSha256": "f65d6c1df75422e13e6febc4d6070f0f2c3b5171ea01e33f1281854cdba3e1bc",
+    "sourcePixels": [
+      237,
+      100
+    ],
+    "inspectionRoi": [
+      118,
+      28,
+      153,
+      40
+    ],
+    "polarity": "dark",
+    "threshold": 163.787,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 156.90524,
+        "boxInRoi": [
+          2,
+          3,
+          31,
+          12
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 163.787,
+        "boxInRoi": [
+          2,
+          3,
+          30,
+          12
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 170.66876000000002,
+        "boxInRoi": [
+          2,
+          3,
+          30,
+          12
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [],
+    "paintBox": [
+      120,
+      31,
+      148,
+      40
+    ],
+    "paintPixels": [
+      28,
+      9
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": true,
+    "extentAccepted": false,
+    "rejectionReasons": [
+      "paint touches inspection ROI"
+    ],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2009",
+    "role": "columbia",
+    "sourceFile": "public/bc-decal-corrections/evidence/2009/source.png",
+    "sourceSha256": "f65d6c1df75422e13e6febc4d6070f0f2c3b5171ea01e33f1281854cdba3e1bc",
+    "sourcePixels": [
+      237,
+      100
+    ],
+    "inspectionRoi": [
+      112,
+      40,
+      158,
+      53
+    ],
+    "polarity": "dark",
+    "threshold": 160.38575,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 153.946094,
+        "boxInRoi": [
+          3,
+          1,
+          41,
+          10
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 160.38575,
+        "boxInRoi": [
+          3,
+          1,
+          41,
+          10
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 166.82540600000002,
+        "boxInRoi": [
+          3,
+          1,
+          41,
+          10
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        3,
+        1,
+        41,
+        10
+      ],
+      [
+        3,
+        1,
+        41,
+        10
+      ],
+      [
+        3,
+        1,
+        41,
+        10
+      ]
+    ],
+    "paintBox": [
+      115,
+      41,
+      153,
+      50
+    ],
+    "paintPixels": [
+      38,
+      9
+    ],
+    "sourceHeightTooSmallForContourClaims": true,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2009",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/2009/source.png",
+    "sourceSha256": "f65d6c1df75422e13e6febc4d6070f0f2c3b5171ea01e33f1281854cdba3e1bc",
+    "sourcePixels": [
+      237,
+      100
+    ],
+    "inspectionRoi": [
+      130,
+      72,
+      227,
+      96
+    ],
+    "polarity": "dark",
+    "threshold": 173.9886,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 165.36364,
+        "boxInRoi": [
+          5,
+          0,
+          95,
+          21
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 173.9886,
+        "boxInRoi": [
+          5,
+          2,
+          95,
+          21
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 182.61355999999998,
+        "boxInRoi": [
+          5,
+          2,
+          95,
+          21
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        5,
+        2,
+        95,
+        21
+      ],
+      [
+        5,
+        2,
+        95,
+        21
+      ]
+    ],
+    "paintBox": [
+      135,
+      74,
+      225,
+      93
+    ],
+    "paintPixels": [
+      90,
+      19
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2010",
+    "role": "british",
+    "sourceFile": "public/bc-decal-corrections/evidence/2010/source.png",
+    "sourceSha256": "7d2fd026289e77f5ec270589652c661f7d432b79fd172a94287262a7363d3604",
+    "sourcePixels": [
+      235,
+      98
+    ],
+    "inspectionRoi": [
+      112,
+      15,
+      165,
+      36
+    ],
+    "polarity": "dark",
+    "threshold": 187.4282,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 179.988296,
+        "boxInRoi": [
+          2,
+          5,
+          46,
+          19
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 187.4282,
+        "boxInRoi": [
+          2,
+          5,
+          46,
+          19
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 194.86810400000002,
+        "boxInRoi": [
+          2,
+          5,
+          46,
+          19
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        2,
+        5,
+        46,
+        19
+      ],
+      [
+        2,
+        5,
+        46,
+        19
+      ],
+      [
+        2,
+        5,
+        46,
+        19
+      ]
+    ],
+    "paintBox": [
+      114,
+      20,
+      158,
+      34
+    ],
+    "paintPixels": [
+      44,
+      14
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2010",
+    "role": "columbia",
+    "sourceFile": "public/bc-decal-corrections/evidence/2010/source.png",
+    "sourceSha256": "7d2fd026289e77f5ec270589652c661f7d432b79fd172a94287262a7363d3604",
+    "sourcePixels": [
+      235,
+      98
+    ],
+    "inspectionRoi": [
+      105,
+      35,
+      175,
+      53
+    ],
+    "polarity": "dark",
+    "threshold": 187.162,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 179.64008,
+        "boxInRoi": [
+          2,
+          1,
+          61,
+          15
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 187.162,
+        "boxInRoi": [
+          2,
+          1,
+          61,
+          15
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 194.68392,
+        "boxInRoi": [
+          2,
+          1,
+          61,
+          15
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        2,
+        1,
+        61,
+        15
+      ],
+      [
+        2,
+        1,
+        61,
+        15
+      ],
+      [
+        2,
+        1,
+        61,
+        15
+      ]
+    ],
+    "paintBox": [
+      107,
+      36,
+      166,
+      50
+    ],
+    "paintPixels": [
+      59,
+      14
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2010",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/2010/source.png",
+    "sourceSha256": "7d2fd026289e77f5ec270589652c661f7d432b79fd172a94287262a7363d3604",
+    "sourcePixels": [
+      235,
+      98
+    ],
+    "inspectionRoi": [
+      122,
+      65,
+      221,
+      90
+    ],
+    "polarity": "dark",
+    "threshold": 189.2946,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 182.096744,
+        "boxInRoi": [
+          3,
+          3,
+          87,
+          21
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 189.2946,
+        "boxInRoi": [
+          3,
+          3,
+          87,
+          21
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 196.492456,
+        "boxInRoi": [
+          3,
+          4,
+          87,
+          21
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        3,
+        3,
+        87,
+        21
+      ],
+      [
+        3,
+        3,
+        87,
+        21
+      ],
+      [
+        3,
+        4,
+        87,
+        21
+      ]
+    ],
+    "paintBox": [
+      125,
+      68,
+      209,
+      86
+    ],
+    "paintPixels": [
+      84,
+      18
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2010",
+    "role": "barcode",
+    "sourceFile": "public/bc-decal-corrections/evidence/2010/source.png",
+    "sourceSha256": "7d2fd026289e77f5ec270589652c661f7d432b79fd172a94287262a7363d3604",
+    "sourcePixels": [
+      235,
+      98
+    ],
+    "inspectionRoi": [
+      4,
+      65,
+      125,
+      91
+    ],
+    "polarity": "dark",
+    "threshold": 185.68375,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 178.08627,
+        "boxInRoi": [
+          4,
+          1,
+          113,
+          23
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 185.68375,
+        "boxInRoi": [
+          4,
+          2,
+          113,
+          23
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 193.28123,
+        "boxInRoi": [
+          4,
+          2,
+          113,
+          23
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        4,
+        1,
+        113,
+        23
+      ],
+      [
+        4,
+        2,
+        113,
+        23
+      ],
+      [
+        4,
+        2,
+        113,
+        23
+      ]
+    ],
+    "paintBox": [
+      8,
+      67,
+      117,
+      88
+    ],
+    "paintPixels": [
+      109,
+      21
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2010",
+    "role": "month",
+    "sourceFile": "public/bc-decal-corrections/evidence/2010/source.png",
+    "sourceSha256": "7d2fd026289e77f5ec270589652c661f7d432b79fd172a94287262a7363d3604",
+    "sourcePixels": [
+      235,
+      98
+    ],
+    "inspectionRoi": [
+      7,
+      1,
+      96,
+      65
+    ],
+    "polarity": "dark",
+    "threshold": 191.02775000000003,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 184.00355000000002,
+        "boxInRoi": [
+          3,
+          4,
+          85,
+          62
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 191.02775000000003,
+        "boxInRoi": [
+          3,
+          4,
+          85,
+          62
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 198.05195000000003,
+        "boxInRoi": [
+          4,
+          4,
+          85,
+          62
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        3,
+        4,
+        85,
+        62
+      ],
+      [
+        3,
+        4,
+        85,
+        62
+      ],
+      [
+        4,
+        4,
+        85,
+        62
+      ]
+    ],
+    "paintBox": [
+      10,
+      5,
+      92,
+      63
+    ],
+    "paintPixels": [
+      82,
+      58
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2010",
+    "role": "year",
+    "sourceFile": "public/bc-decal-corrections/evidence/2010/source.png",
+    "sourceSha256": "7d2fd026289e77f5ec270589652c661f7d432b79fd172a94287262a7363d3604",
+    "sourcePixels": [
+      235,
+      98
+    ],
+    "inspectionRoi": [
+      174,
+      1,
+      230,
+      65
+    ],
+    "polarity": "dark",
+    "threshold": 191.07065,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 184.176274,
+        "boxInRoi": [
+          4,
+          3,
+          51,
+          61
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 191.07065,
+        "boxInRoi": [
+          4,
+          3,
+          51,
+          61
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 197.965026,
+        "boxInRoi": [
+          4,
+          3,
+          51,
+          61
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        4,
+        3,
+        51,
+        61
+      ],
+      [
+        4,
+        3,
+        51,
+        61
+      ],
+      [
+        4,
+        3,
+        51,
+        61
+      ]
+    ],
+    "paintBox": [
+      178,
+      4,
+      225,
+      62
+    ],
+    "paintPixels": [
+      47,
+      58
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2011",
+    "role": "british",
+    "sourceFile": "public/bc-decal-corrections/evidence/2011/source.png",
+    "sourceSha256": "94a391f25b77541baf4aec2fe38cbcb62a38ee37b4e1d0945115aeba5ecd0e3a",
+    "sourcePixels": [
+      239,
+      100
+    ],
+    "inspectionRoi": [
+      112,
+      19,
+      164,
+      38
+    ],
+    "polarity": "dark",
+    "threshold": 167.224,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 155.29035199999998,
+        "boxInRoi": [
+          3,
+          4,
+          47,
+          17
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 167.224,
+        "boxInRoi": [
+          3,
+          4,
+          47,
+          17
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 179.157648,
+        "boxInRoi": [
+          3,
+          4,
+          47,
+          17
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        3,
+        4,
+        47,
+        17
+      ],
+      [
+        3,
+        4,
+        47,
+        17
+      ],
+      [
+        3,
+        4,
+        47,
+        17
+      ]
+    ],
+    "paintBox": [
+      115,
+      23,
+      159,
+      36
+    ],
+    "paintPixels": [
+      44,
+      13
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2011",
+    "role": "columbia",
+    "sourceFile": "public/bc-decal-corrections/evidence/2011/source.png",
+    "sourceSha256": "94a391f25b77541baf4aec2fe38cbcb62a38ee37b4e1d0945115aeba5ecd0e3a",
+    "sourcePixels": [
+      239,
+      100
+    ],
+    "inspectionRoi": [
+      103,
+      38,
+      173,
+      56
+    ],
+    "polarity": "dark",
+    "threshold": 167.1902,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 155.292728,
+        "boxInRoi": [
+          5,
+          0,
+          64,
+          14
+        ],
+        "accepted": false,
+        "rejectionReasons": [
+          "paint touches inspection ROI"
+        ]
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 167.1902,
+        "boxInRoi": [
+          5,
+          1,
+          64,
+          14
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 179.087672,
+        "boxInRoi": [
+          5,
+          1,
+          64,
+          14
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        5,
+        1,
+        64,
+        14
+      ],
+      [
+        5,
+        1,
+        64,
+        14
+      ]
+    ],
+    "paintBox": [
+      108,
+      39,
+      167,
+      52
+    ],
+    "paintPixels": [
+      59,
+      13
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2012",
+    "role": "british",
+    "sourceFile": "public/bc-decal-corrections/evidence/2012/source.png",
+    "sourceSha256": "d3900b6a44634ffe9999d4a25e3c864d59916b8c9025e0bb97f29d4bec52485d",
+    "sourcePixels": [
+      240,
+      100
+    ],
+    "inspectionRoi": [
+      113,
+      20,
+      165,
+      39
+    ],
+    "polarity": "dark",
+    "threshold": 205.9832,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 199.607968,
+        "boxInRoi": [
+          3,
+          4,
+          48,
+          18
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 205.9832,
+        "boxInRoi": [
+          3,
+          4,
+          48,
+          18
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 212.35843200000002,
+        "boxInRoi": [
+          3,
+          4,
+          48,
+          18
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        3,
+        4,
+        48,
+        18
+      ],
+      [
+        3,
+        4,
+        48,
+        18
+      ],
+      [
+        3,
+        4,
+        48,
+        18
+      ]
+    ],
+    "paintBox": [
+      116,
+      24,
+      161,
+      38
+    ],
+    "paintPixels": [
+      45,
+      14
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2012",
+    "role": "columbia",
+    "sourceFile": "public/bc-decal-corrections/evidence/2012/source.png",
+    "sourceSha256": "d3900b6a44634ffe9999d4a25e3c864d59916b8c9025e0bb97f29d4bec52485d",
+    "sourcePixels": [
+      240,
+      100
+    ],
+    "inspectionRoi": [
+      106,
+      39,
+      176,
+      56
+    ],
+    "polarity": "dark",
+    "threshold": 210.85415,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 204.810286,
+        "boxInRoi": [
+          2,
+          1,
+          63,
+          13
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 210.85415,
+        "boxInRoi": [
+          2,
+          1,
+          63,
+          13
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 216.89801400000002,
+        "boxInRoi": [
+          2,
+          1,
+          63,
+          13
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        2,
+        1,
+        63,
+        13
+      ],
+      [
+        2,
+        1,
+        63,
+        13
+      ],
+      [
+        2,
+        1,
+        63,
+        13
+      ]
+    ],
+    "paintBox": [
+      108,
+      40,
+      169,
+      52
+    ],
+    "paintPixels": [
+      61,
+      12
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2012",
+    "role": "serial",
+    "sourceFile": "public/bc-decal-corrections/evidence/2012/source.png",
+    "sourceSha256": "d3900b6a44634ffe9999d4a25e3c864d59916b8c9025e0bb97f29d4bec52485d",
+    "sourcePixels": [
+      240,
+      100
+    ],
+    "inspectionRoi": [
+      135,
+      70,
+      230,
+      96
+    ],
+    "polarity": "dark",
+    "threshold": 204.3625,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 197.60146,
+        "boxInRoi": [
+          2,
+          3,
+          93,
+          21
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 204.3625,
+        "boxInRoi": [
+          2,
+          3,
+          92,
+          21
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 211.12354000000002,
+        "boxInRoi": [
+          2,
+          3,
+          92,
+          21
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        2,
+        3,
+        93,
+        21
+      ],
+      [
+        2,
+        3,
+        92,
+        21
+      ],
+      [
+        2,
+        3,
+        92,
+        21
+      ]
+    ],
+    "paintBox": [
+      137,
+      73,
+      227,
+      91
+    ],
+    "paintPixels": [
+      90,
+      18
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2012",
+    "role": "barcode",
+    "sourceFile": "public/bc-decal-corrections/evidence/2012/source.png",
+    "sourceSha256": "d3900b6a44634ffe9999d4a25e3c864d59916b8c9025e0bb97f29d4bec52485d",
+    "sourcePixels": [
+      240,
+      100
+    ],
+    "inspectionRoi": [
+      4,
+      67,
+      125,
+      97
+    ],
+    "polarity": "dark",
+    "threshold": 195.91045,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 188.901722,
+        "boxInRoi": [
+          6,
+          3,
+          117,
+          26
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 195.91045,
+        "boxInRoi": [
+          6,
+          3,
+          117,
+          26
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 202.919178,
+        "boxInRoi": [
+          6,
+          3,
+          117,
+          25
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        6,
+        3,
+        117,
+        26
+      ],
+      [
+        6,
+        3,
+        117,
+        26
+      ],
+      [
+        6,
+        3,
+        117,
+        25
+      ]
+    ],
+    "paintBox": [
+      10,
+      70,
+      121,
+      93
+    ],
+    "paintPixels": [
+      111,
+      23
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2012",
+    "role": "month",
+    "sourceFile": "public/bc-decal-corrections/evidence/2012/source.png",
+    "sourceSha256": "d3900b6a44634ffe9999d4a25e3c864d59916b8c9025e0bb97f29d4bec52485d",
+    "sourcePixels": [
+      240,
+      100
+    ],
+    "inspectionRoi": [
+      6,
+      3,
+      101,
+      67
+    ],
+    "polarity": "dark",
+    "threshold": 203.9604,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 196.574224,
+        "boxInRoi": [
+          5,
+          4,
+          91,
+          62
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 203.9604,
+        "boxInRoi": [
+          5,
+          4,
+          91,
+          62
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 211.346576,
+        "boxInRoi": [
+          5,
+          4,
+          91,
+          62
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        5,
+        4,
+        91,
+        62
+      ],
+      [
+        5,
+        4,
+        91,
+        62
+      ],
+      [
+        5,
+        4,
+        91,
+        62
+      ]
+    ],
+    "paintBox": [
+      11,
+      7,
+      97,
+      65
+    ],
+    "paintPixels": [
+      86,
+      58
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2012",
+    "role": "year",
+    "sourceFile": "public/bc-decal-corrections/evidence/2012/source.png",
+    "sourceSha256": "d3900b6a44634ffe9999d4a25e3c864d59916b8c9025e0bb97f29d4bec52485d",
+    "sourcePixels": [
+      240,
+      100
+    ],
+    "inspectionRoi": [
+      180,
+      4,
+      235,
+      67
+    ],
+    "polarity": "dark",
+    "threshold": 203.6059,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 196.353308,
+        "boxInRoi": [
+          1,
+          5,
+          50,
+          60
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 203.6059,
+        "boxInRoi": [
+          1,
+          5,
+          50,
+          60
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 210.85849199999998,
+        "boxInRoi": [
+          2,
+          5,
+          50,
+          60
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        1,
+        5,
+        50,
+        60
+      ],
+      [
+        1,
+        5,
+        50,
+        60
+      ],
+      [
+        2,
+        5,
+        50,
+        60
+      ]
+    ],
+    "paintBox": [
+      181,
+      9,
+      230,
+      64
+    ],
+    "paintPixels": [
+      49,
+      55
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2013",
+    "role": "british",
+    "sourceFile": "public/bc-decal-corrections/evidence/2013/source.png",
+    "sourceSha256": "b8cfcc9ddadeaf2ad42a8d51da846baf2e121309ef13790ca9b2eebab3c398fd",
+    "sourcePixels": [
+      238,
+      100
+    ],
+    "inspectionRoi": [
+      111,
+      20,
+      163,
+      39
+    ],
+    "polarity": "dark",
+    "threshold": 196.65230000000003,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 188.36868400000003,
+        "boxInRoi": [
+          3,
+          4,
+          48,
+          18
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 196.65230000000003,
+        "boxInRoi": [
+          3,
+          4,
+          47,
+          18
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 204.93591600000002,
+        "boxInRoi": [
+          3,
+          4,
+          47,
+          18
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        3,
+        4,
+        48,
+        18
+      ],
+      [
+        3,
+        4,
+        47,
+        18
+      ],
+      [
+        3,
+        4,
+        47,
+        18
+      ]
+    ],
+    "paintBox": [
+      114,
+      24,
+      158,
+      38
+    ],
+    "paintPixels": [
+      44,
+      14
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  },
+  {
+    "id": "2013",
+    "role": "columbia",
+    "sourceFile": "public/bc-decal-corrections/evidence/2013/source.png",
+    "sourceSha256": "b8cfcc9ddadeaf2ad42a8d51da846baf2e121309ef13790ca9b2eebab3c398fd",
+    "sourcePixels": [
+      238,
+      100
+    ],
+    "inspectionRoi": [
+      103,
+      39,
+      171,
+      56
+    ],
+    "polarity": "dark",
+    "threshold": 197.9425,
+    "thresholdSamples": [
+      {
+        "contrastShift": -0.08,
+        "threshold": 189.95226,
+        "boxInRoi": [
+          3,
+          1,
+          64,
+          15
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0,
+        "threshold": 197.9425,
+        "boxInRoi": [
+          3,
+          1,
+          64,
+          15
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      },
+      {
+        "contrastShift": 0.08,
+        "threshold": 205.93274,
+        "boxInRoi": [
+          3,
+          1,
+          64,
+          15
+        ],
+        "accepted": true,
+        "rejectionReasons": []
+      }
+    ],
+    "acceptedThresholdPaintBoxesInRoi": [
+      [
+        3,
+        1,
+        64,
+        15
+      ],
+      [
+        3,
+        1,
+        64,
+        15
+      ],
+      [
+        3,
+        1,
+        64,
+        15
+      ]
+    ],
+    "paintBox": [
+      106,
+      40,
+      167,
+      54
+    ],
+    "paintPixels": [
+      61,
+      14
+    ],
+    "sourceHeightTooSmallForContourClaims": false,
+    "touchesInspectionRoi": false,
+    "extentAccepted": true,
+    "rejectionReasons": [],
+    "method": "Inspection ROI and contrast midpoint; small components removed; +/-8% local contrast threshold sensitivity retained. Extent diagnostic only; source is unrectified."
+  }
+]

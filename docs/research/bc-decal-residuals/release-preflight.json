@@ -1,0 +1,50 @@
+{
+  "schema": "plateforge.decal-release-preflight/v1",
+  "reviewDate": "2026-11-07",
+  "sourceSha256": "80f176a664755c5d41432cbac8150c9b77edf4d13694e82952f8b309b04bc6fd",
+  "matchesCapturedApplicationSource": true,
+  "typeScriptAndProductionBuild": {
+    "status": "passed",
+    "command": "BASE_PATH=/plateforge/ npm run build",
+    "warning": "Existing output chunk exceeds the 500 kB warning threshold."
+  },
+  "focusedTests": {
+    "status": "passed",
+    "totalPassed": 33,
+    "commands": [
+      "node --test scripts/test-decal-audit-inputs.mjs scripts/test-decal-browser-geometry.mjs",
+      "python3 -m unittest discover -s scripts -p test_decal_audit.py",
+      "python3 -m unittest discover -s scripts -p test_decal_correction_overlays.py",
+      "python3 docs/research/bc-decal-residuals/lettering/test_analysis.py"
+    ]
+  },
+  "applicationSelections": {
+    "status": "passed",
+    "references": 68,
+    "leadingZeroCases": 1,
+    "reportSha256": "309a43ae44eb62de196e4a180ef52868bbed1f2524c53e77b2c9127aa7d66f08",
+    "method": "Production registration and printed-input preflight; no browser claim."
+  },
+  "fullApplicationSuiteRetry": {
+    "status": "terminated",
+    "exitSignal": "SIGKILL",
+    "command": "node_modules/.bin/vitest run --exclude src/regions/regions.test.ts --maxWorkers=2",
+    "completedResult": false,
+    "releaseGate": "Complete application suite in the published revision\u2019s GitHub Typography validation workflow."
+  },
+  "localBrowserRetry": {
+    "status": "blocked-unexecuted",
+    "browser": "System Chromium through Playwright",
+    "error": "FATAL process_singleton_posix.cc: socket() failed: Operation not permitted",
+    "releaseGate": "Chromium, Firefox and WebKit GitHub jobs on Ubuntu 24.04 with the existing Playwright 1.56.1 pin."
+  },
+  "publishedCaptureTrees": {
+    "status": "passed",
+    "count": 8,
+    "mapping": "publication-commits.json"
+  },
+  "workflowSyntax": {
+    "status": "passed",
+    "method": "Parsed all .github/workflows/*.yml files with PyYAML."
+  }
+}

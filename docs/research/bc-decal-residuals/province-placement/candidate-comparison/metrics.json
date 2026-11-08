@@ -1,0 +1,2166 @@
+[
+  {
+    "id": "1981-oct-british",
+    "source": {
+      "id": "1981-oct-british",
+      "source": "1981-oct.jpg",
+      "text": "BRITISH",
+      "box": [
+        350,
+        20,
+        615,
+        71
+      ],
+      "mask": "light"
+    },
+    "threshold": 92.0,
+    "paintBoxInRoi": [
+      16,
+      12,
+      248,
+      43
+    ],
+    "sourcePaintPixels": [
+      232,
+      31
+    ],
+    "validation": {
+      "sourceSha256": "6d30e4265b4c4d36fc8c923574397bdf5d0545aa8a74af6af32604c89d4f57b3",
+      "thresholdSamples": [
+        {
+          "contrastShift": -0.08,
+          "threshold": 85.6,
+          "paintBoxInRoi": [
+            16,
+            12,
+            248,
+            43
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0,
+          "threshold": 92.0,
+          "paintBoxInRoi": [
+            16,
+            12,
+            248,
+            43
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0.08,
+          "threshold": 98.4,
+          "paintBoxInRoi": [
+            17,
+            12,
+            248,
+            43
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        }
+      ],
+      "acceptedExtentBoxesInRoi": [
+        [
+          16,
+          12,
+          248,
+          43
+        ],
+        [
+          16,
+          12,
+          248,
+          43
+        ],
+        [
+          17,
+          12,
+          248,
+          43
+        ]
+      ]
+    },
+    "candidates": [
+      {
+        "profile": "normal",
+        "widthAtEqualPaintedHeightRatio": 0.673448275862069
+      },
+      {
+        "profile": "regular",
+        "widthAtEqualPaintedHeightRatio": 0.6627586206896552
+      },
+      {
+        "profile": "control-bold",
+        "widthAtEqualPaintedHeightRatio": 0.5585344827586207
+      },
+      {
+        "profile": "condensed-bold",
+        "widthAtEqualPaintedHeightRatio": 0.5050862068965517
+      },
+      {
+        "profile": "archivo-900-wdth100",
+        "widthAtEqualPaintedHeightRatio": 0.8297844827586207
+      },
+      {
+        "profile": "archivo-700-wdth100",
+        "widthAtEqualPaintedHeightRatio": 0.7482758620689655
+      },
+      {
+        "profile": "archivo-900-wdth75",
+        "widthAtEqualPaintedHeightRatio": 0.6427155172413793
+      },
+      {
+        "profile": "orbitron-900",
+        "widthAtEqualPaintedHeightRatio": 0.8177586206896552
+      },
+      {
+        "profile": "orbitron-700",
+        "widthAtEqualPaintedHeightRatio": 0.8177586206896552
+      },
+      {
+        "profile": "russoone-400",
+        "widthAtEqualPaintedHeightRatio": 0.7843534482758622
+      },
+      {
+        "profile": "michroma-400",
+        "widthAtEqualPaintedHeightRatio": 0.935344827586207
+      },
+      {
+        "profile": "robotocondensed-700",
+        "widthAtEqualPaintedHeightRatio": 0.5919396551724138
+      },
+      {
+        "profile": "province-wide-1981-reconstruction",
+        "widthAtEqualPaintedHeightRatio": 0.9968103448275862
+      },
+      {
+        "profile": "province-tall-2010-reconstruction",
+        "widthAtEqualPaintedHeightRatio": 0.43961206896551724
+      },
+      {
+        "profile": "control",
+        "widthAtEqualPaintedHeightRatio": 0.5505172413793104
+      },
+      {
+        "profile": "condensed-medium",
+        "widthAtEqualPaintedHeightRatio": 0.4903879310344828
+      },
+      {
+        "profile": "oswald-400",
+        "widthAtEqualPaintedHeightRatio": 0.46232758620689657
+      },
+      {
+        "profile": "oswald-500",
+        "widthAtEqualPaintedHeightRatio": 0.49172413793103453
+      },
+      {
+        "profile": "oswald-600",
+        "widthAtEqualPaintedHeightRatio": 0.5077586206896552
+      },
+      {
+        "profile": "archivonarrow-400",
+        "widthAtEqualPaintedHeightRatio": 0.5839224137931035
+      },
+      {
+        "profile": "archivonarrow-600",
+        "widthAtEqualPaintedHeightRatio": 0.5906034482758621
+      },
+      {
+        "profile": "archivonarrow-700",
+        "widthAtEqualPaintedHeightRatio": 0.5946120689655173
+      },
+      {
+        "profile": "heavy-month-wide",
+        "widthAtEqualPaintedHeightRatio": 0.47836206896551725
+      }
+    ]
+  },
+  {
+    "id": "1981-oct-columbia",
+    "source": {
+      "id": "1981-oct-columbia",
+      "source": "1981-oct.jpg",
+      "text": "COLUMBIA",
+      "box": [
+        310,
+        70,
+        653,
+        116
+      ],
+      "mask": "light"
+    },
+    "threshold": 92.5,
+    "paintBoxInRoi": [
+      11,
+      5,
+      331,
+      37
+    ],
+    "sourcePaintPixels": [
+      320,
+      32
+    ],
+    "validation": {
+      "sourceSha256": "6d30e4265b4c4d36fc8c923574397bdf5d0545aa8a74af6af32604c89d4f57b3",
+      "thresholdSamples": [
+        {
+          "contrastShift": -0.08,
+          "threshold": 86.18,
+          "paintBoxInRoi": [
+            10,
+            5,
+            331,
+            38
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0,
+          "threshold": 92.5,
+          "paintBoxInRoi": [
+            11,
+            5,
+            331,
+            37
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0.08,
+          "threshold": 98.82,
+          "paintBoxInRoi": [
+            11,
+            5,
+            331,
+            37
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        }
+      ],
+      "acceptedExtentBoxesInRoi": [
+        [
+          10,
+          5,
+          331,
+          38
+        ],
+        [
+          11,
+          5,
+          331,
+          37
+        ],
+        [
+          11,
+          5,
+          331,
+          37
+        ]
+      ]
+    },
+    "candidates": [
+      {
+        "profile": "normal",
+        "widthAtEqualPaintedHeightRatio": 0.697
+      },
+      {
+        "profile": "regular",
+        "widthAtEqualPaintedHeightRatio": 0.6759999999999999
+      },
+      {
+        "profile": "control-bold",
+        "widthAtEqualPaintedHeightRatio": 0.5780000000000001
+      },
+      {
+        "profile": "condensed-bold",
+        "widthAtEqualPaintedHeightRatio": 0.492
+      },
+      {
+        "profile": "archivo-900-wdth100",
+        "widthAtEqualPaintedHeightRatio": 0.836
+      },
+      {
+        "profile": "archivo-700-wdth100",
+        "widthAtEqualPaintedHeightRatio": 0.765
+      },
+      {
+        "profile": "archivo-900-wdth75",
+        "widthAtEqualPaintedHeightRatio": 0.6519999999999999
+      },
+      {
+        "profile": "orbitron-900",
+        "widthAtEqualPaintedHeightRatio": 0.826
+      },
+      {
+        "profile": "orbitron-700",
+        "widthAtEqualPaintedHeightRatio": 0.826
+      },
+      {
+        "profile": "russoone-400",
+        "widthAtEqualPaintedHeightRatio": 0.753
+      },
+      {
+        "profile": "michroma-400",
+        "widthAtEqualPaintedHeightRatio": 0.9720000000000001
+      },
+      {
+        "profile": "robotocondensed-700",
+        "widthAtEqualPaintedHeightRatio": 0.596
+      },
+      {
+        "profile": "province-wide-1981-reconstruction",
+        "widthAtEqualPaintedHeightRatio": 0.994
+      },
+      {
+        "profile": "province-tall-2010-reconstruction",
+        "widthAtEqualPaintedHeightRatio": 0.44699999999999995
+      },
+      {
+        "profile": "control",
+        "widthAtEqualPaintedHeightRatio": 0.5599999999999999
+      },
+      {
+        "profile": "condensed-medium",
+        "widthAtEqualPaintedHeightRatio": 0.481
+      },
+      {
+        "profile": "oswald-400",
+        "widthAtEqualPaintedHeightRatio": 0.466
+      },
+      {
+        "profile": "oswald-500",
+        "widthAtEqualPaintedHeightRatio": 0.489
+      },
+      {
+        "profile": "oswald-600",
+        "widthAtEqualPaintedHeightRatio": 0.501
+      },
+      {
+        "profile": "archivonarrow-400",
+        "widthAtEqualPaintedHeightRatio": 0.597
+      },
+      {
+        "profile": "archivonarrow-600",
+        "widthAtEqualPaintedHeightRatio": 0.611
+      },
+      {
+        "profile": "archivonarrow-700",
+        "widthAtEqualPaintedHeightRatio": 0.617
+      },
+      {
+        "profile": "heavy-month-wide",
+        "widthAtEqualPaintedHeightRatio": 0.477
+      }
+    ]
+  },
+  {
+    "id": "1982-jul-british",
+    "source": {
+      "id": "1982-jul-british",
+      "source": "1982-jul.jpg",
+      "text": "BRITISH",
+      "box": [
+        388,
+        142,
+        595,
+        178
+      ],
+      "mask": "light"
+    },
+    "threshold": 86.5,
+    "paintBoxInRoi": [
+      9,
+      4,
+      189,
+      30
+    ],
+    "sourcePaintPixels": [
+      180,
+      26
+    ],
+    "validation": {
+      "sourceSha256": "fd246ed7cd097fab7e944b89f8fae308f5c6bead5f62ff328cf315a798878679",
+      "thresholdSamples": [
+        {
+          "contrastShift": -0.08,
+          "threshold": 76.18,
+          "paintBoxInRoi": [
+            8,
+            3,
+            189,
+            31
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0,
+          "threshold": 86.5,
+          "paintBoxInRoi": [
+            9,
+            4,
+            189,
+            30
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0.08,
+          "threshold": 96.82,
+          "paintBoxInRoi": [
+            9,
+            5,
+            188,
+            30
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        }
+      ],
+      "acceptedExtentBoxesInRoi": [
+        [
+          8,
+          3,
+          189,
+          31
+        ],
+        [
+          9,
+          4,
+          189,
+          30
+        ],
+        [
+          9,
+          5,
+          188,
+          30
+        ]
+      ]
+    },
+    "candidates": [
+      {
+        "profile": "normal",
+        "widthAtEqualPaintedHeightRatio": 0.728
+      },
+      {
+        "profile": "regular",
+        "widthAtEqualPaintedHeightRatio": 0.7164444444444444
+      },
+      {
+        "profile": "control-bold",
+        "widthAtEqualPaintedHeightRatio": 0.6037777777777777
+      },
+      {
+        "profile": "condensed-bold",
+        "widthAtEqualPaintedHeightRatio": 0.5459999999999999
+      },
+      {
+        "profile": "archivo-900-wdth100",
+        "widthAtEqualPaintedHeightRatio": 0.8969999999999999
+      },
+      {
+        "profile": "archivo-700-wdth100",
+        "widthAtEqualPaintedHeightRatio": 0.8088888888888888
+      },
+      {
+        "profile": "archivo-900-wdth75",
+        "widthAtEqualPaintedHeightRatio": 0.6947777777777777
+      },
+      {
+        "profile": "orbitron-900",
+        "widthAtEqualPaintedHeightRatio": 0.884
+      },
+      {
+        "profile": "orbitron-700",
+        "widthAtEqualPaintedHeightRatio": 0.884
+      },
+      {
+        "profile": "russoone-400",
+        "widthAtEqualPaintedHeightRatio": 0.8478888888888889
+      },
+      {
+        "profile": "michroma-400",
+        "widthAtEqualPaintedHeightRatio": 1.011111111111111
+      },
+      {
+        "profile": "robotocondensed-700",
+        "widthAtEqualPaintedHeightRatio": 0.6398888888888888
+      },
+      {
+        "profile": "province-wide-1981-reconstruction",
+        "widthAtEqualPaintedHeightRatio": 1.0775555555555556
+      },
+      {
+        "profile": "province-tall-2010-reconstruction",
+        "widthAtEqualPaintedHeightRatio": 0.4752222222222222
+      },
+      {
+        "profile": "control",
+        "widthAtEqualPaintedHeightRatio": 0.5951111111111111
+      },
+      {
+        "profile": "condensed-medium",
+        "widthAtEqualPaintedHeightRatio": 0.5301111111111111
+      },
+      {
+        "profile": "oswald-400",
+        "widthAtEqualPaintedHeightRatio": 0.49977777777777777
+      },
+      {
+        "profile": "oswald-500",
+        "widthAtEqualPaintedHeightRatio": 0.5315555555555556
+      },
+      {
+        "profile": "oswald-600",
+        "widthAtEqualPaintedHeightRatio": 0.5488888888888889
+      },
+      {
+        "profile": "archivonarrow-400",
+        "widthAtEqualPaintedHeightRatio": 0.6312222222222222
+      },
+      {
+        "profile": "archivonarrow-600",
+        "widthAtEqualPaintedHeightRatio": 0.6384444444444444
+      },
+      {
+        "profile": "archivonarrow-700",
+        "widthAtEqualPaintedHeightRatio": 0.6427777777777778
+      },
+      {
+        "profile": "heavy-month-wide",
+        "widthAtEqualPaintedHeightRatio": 0.5171111111111111
+      }
+    ]
+  },
+  {
+    "id": "1985-feb-province",
+    "source": {
+      "id": "1985-feb-province",
+      "source": "1985-feb.jpg",
+      "text": "BRITISH COLUMBIA",
+      "box": [
+        283,
+        169,
+        607,
+        214
+      ],
+      "mask": "dark"
+    },
+    "threshold": 151.63105000000002,
+    "paintBoxInRoi": [
+      10,
+      9,
+      309,
+      34
+    ],
+    "sourcePaintPixels": [
+      299,
+      25
+    ],
+    "validation": {
+      "sourceSha256": "4c9b96a48b875861a523790906c41051cfdee5045b6916d99203fd771f1c16bb",
+      "thresholdSamples": [
+        {
+          "contrastShift": -0.08,
+          "threshold": 141.47475400000002,
+          "paintBoxInRoi": [
+            10,
+            8,
+            309,
+            34
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0,
+          "threshold": 151.63105000000002,
+          "paintBoxInRoi": [
+            10,
+            9,
+            309,
+            34
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0.08,
+          "threshold": 161.787346,
+          "paintBoxInRoi": [
+            11,
+            9,
+            309,
+            33
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        }
+      ],
+      "acceptedExtentBoxesInRoi": [
+        [
+          10,
+          8,
+          309,
+          34
+        ],
+        [
+          10,
+          9,
+          309,
+          34
+        ],
+        [
+          11,
+          9,
+          309,
+          33
+        ]
+      ]
+    },
+    "candidates": [
+      {
+        "profile": "normal",
+        "widthAtEqualPaintedHeightRatio": 1.0468227424749164
+      },
+      {
+        "profile": "regular",
+        "widthAtEqualPaintedHeightRatio": 1.0234113712374582
+      },
+      {
+        "profile": "control-bold",
+        "widthAtEqualPaintedHeightRatio": 0.8678929765886287
+      },
+      {
+        "profile": "condensed-bold",
+        "widthAtEqualPaintedHeightRatio": 0.7600334448160534
+      },
+      {
+        "profile": "archivo-900-wdth100",
+        "widthAtEqualPaintedHeightRatio": 1.2533444816053512
+      },
+      {
+        "profile": "archivo-700-wdth100",
+        "widthAtEqualPaintedHeightRatio": 1.144648829431438
+      },
+      {
+        "profile": "archivo-900-wdth75",
+        "widthAtEqualPaintedHeightRatio": 0.9732441471571907
+      },
+      {
+        "profile": "orbitron-900",
+        "widthAtEqualPaintedHeightRatio": 1.2516722408026755
+      },
+      {
+        "profile": "orbitron-700",
+        "widthAtEqualPaintedHeightRatio": 1.2499999999999998
+      },
+      {
+        "profile": "russoone-400",
+        "widthAtEqualPaintedHeightRatio": 1.160535117056856
+      },
+      {
+        "profile": "michroma-400",
+        "widthAtEqualPaintedHeightRatio": 1.4456521739130432
+      },
+      {
+        "profile": "robotocondensed-700",
+        "widthAtEqualPaintedHeightRatio": 0.9063545150501672
+      },
+      {
+        "profile": "control",
+        "widthAtEqualPaintedHeightRatio": 0.8486622073578595
+      },
+      {
+        "profile": "condensed-medium",
+        "widthAtEqualPaintedHeightRatio": 0.7433110367892977
+      },
+      {
+        "profile": "oswald-400",
+        "widthAtEqualPaintedHeightRatio": 0.7140468227424748
+      },
+      {
+        "profile": "oswald-500",
+        "widthAtEqualPaintedHeightRatio": 0.7525083612040133
+      },
+      {
+        "profile": "oswald-600",
+        "widthAtEqualPaintedHeightRatio": 0.7725752508361203
+      },
+      {
+        "profile": "archivonarrow-400",
+        "widthAtEqualPaintedHeightRatio": 0.9046822742474916
+      },
+      {
+        "profile": "archivonarrow-600",
+        "widthAtEqualPaintedHeightRatio": 0.9188963210702341
+      },
+      {
+        "profile": "archivonarrow-700",
+        "widthAtEqualPaintedHeightRatio": 0.9264214046822742
+      },
+      {
+        "profile": "heavy-month-wide",
+        "widthAtEqualPaintedHeightRatio": 0.7282608695652174
+      }
+    ]
+  },
+  {
+    "id": "1987-feb-british",
+    "source": {
+      "id": "1987-feb-british",
+      "source": "1987-feb.jpg",
+      "text": "BRITISH",
+      "box": [
+        380,
+        45,
+        596,
+        95
+      ],
+      "mask": "red"
+    },
+    "threshold": 64.0,
+    "paintBoxInRoi": [
+      14,
+      9,
+      196,
+      46
+    ],
+    "sourcePaintPixels": [
+      182,
+      37
+    ],
+    "validation": {
+      "sourceSha256": "113a0d363915e01edbe9fff8b32cad20edb4811b5bda9db8e129152662115289",
+      "thresholdSamples": [
+        {
+          "contrastShift": -0.08,
+          "threshold": 57.92,
+          "paintBoxInRoi": [
+            13,
+            9,
+            197,
+            46
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0,
+          "threshold": 64.0,
+          "paintBoxInRoi": [
+            14,
+            9,
+            196,
+            46
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0.08,
+          "threshold": 70.08,
+          "paintBoxInRoi": [
+            14,
+            10,
+            196,
+            45
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        }
+      ],
+      "acceptedExtentBoxesInRoi": [
+        [
+          13,
+          9,
+          197,
+          46
+        ],
+        [
+          14,
+          9,
+          196,
+          46
+        ],
+        [
+          14,
+          10,
+          196,
+          45
+        ]
+      ]
+    },
+    "candidates": [
+      {
+        "profile": "normal",
+        "widthAtEqualPaintedHeightRatio": 1.0246153846153845
+      },
+      {
+        "profile": "regular",
+        "widthAtEqualPaintedHeightRatio": 1.0083516483516484
+      },
+      {
+        "profile": "control-bold",
+        "widthAtEqualPaintedHeightRatio": 0.8497802197802197
+      },
+      {
+        "profile": "condensed-bold",
+        "widthAtEqualPaintedHeightRatio": 0.7684615384615383
+      },
+      {
+        "profile": "archivo-900-wdth100",
+        "widthAtEqualPaintedHeightRatio": 1.2624725274725275
+      },
+      {
+        "profile": "archivo-700-wdth100",
+        "widthAtEqualPaintedHeightRatio": 1.1384615384615382
+      },
+      {
+        "profile": "archivo-900-wdth75",
+        "widthAtEqualPaintedHeightRatio": 0.9778571428571426
+      },
+      {
+        "profile": "orbitron-900",
+        "widthAtEqualPaintedHeightRatio": 1.244175824175824
+      },
+      {
+        "profile": "orbitron-700",
+        "widthAtEqualPaintedHeightRatio": 1.244175824175824
+      },
+      {
+        "profile": "russoone-400",
+        "widthAtEqualPaintedHeightRatio": 1.1933516483516482
+      },
+      {
+        "profile": "michroma-400",
+        "widthAtEqualPaintedHeightRatio": 1.423076923076923
+      },
+      {
+        "profile": "robotocondensed-700",
+        "widthAtEqualPaintedHeightRatio": 0.9006043956043954
+      },
+      {
+        "profile": "province-wide-1981-reconstruction",
+        "widthAtEqualPaintedHeightRatio": 1.5165934065934064
+      },
+      {
+        "profile": "province-tall-2010-reconstruction",
+        "widthAtEqualPaintedHeightRatio": 0.6688461538461538
+      },
+      {
+        "profile": "control",
+        "widthAtEqualPaintedHeightRatio": 0.8375824175824176
+      },
+      {
+        "profile": "condensed-medium",
+        "widthAtEqualPaintedHeightRatio": 0.746098901098901
+      },
+      {
+        "profile": "oswald-400",
+        "widthAtEqualPaintedHeightRatio": 0.7034065934065934
+      },
+      {
+        "profile": "oswald-500",
+        "widthAtEqualPaintedHeightRatio": 0.7481318681318682
+      },
+      {
+        "profile": "oswald-600",
+        "widthAtEqualPaintedHeightRatio": 0.7725274725274724
+      },
+      {
+        "profile": "archivonarrow-400",
+        "widthAtEqualPaintedHeightRatio": 0.8884065934065933
+      },
+      {
+        "profile": "archivonarrow-600",
+        "widthAtEqualPaintedHeightRatio": 0.8985714285714285
+      },
+      {
+        "profile": "archivonarrow-700",
+        "widthAtEqualPaintedHeightRatio": 0.9046703296703297
+      },
+      {
+        "profile": "heavy-month-wide",
+        "widthAtEqualPaintedHeightRatio": 0.7278021978021978
+      }
+    ]
+  },
+  {
+    "id": "1987-feb-columbia",
+    "source": {
+      "id": "1987-feb-columbia",
+      "source": "1987-feb.jpg",
+      "text": "COLUMBIA",
+      "box": [
+        347,
+        94,
+        622,
+        145
+      ],
+      "mask": "red"
+    },
+    "threshold": 63.5,
+    "paintBoxInRoi": [
+      13,
+      7,
+      261,
+      42
+    ],
+    "sourcePaintPixels": [
+      248,
+      35
+    ],
+    "validation": {
+      "sourceSha256": "113a0d363915e01edbe9fff8b32cad20edb4811b5bda9db8e129152662115289",
+      "thresholdSamples": [
+        {
+          "contrastShift": -0.08,
+          "threshold": 57.5,
+          "paintBoxInRoi": [
+            12,
+            6,
+            262,
+            43
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0,
+          "threshold": 63.5,
+          "paintBoxInRoi": [
+            13,
+            7,
+            261,
+            42
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0.08,
+          "threshold": 69.5,
+          "paintBoxInRoi": [
+            13,
+            7,
+            261,
+            42
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        }
+      ],
+      "acceptedExtentBoxesInRoi": [
+        [
+          12,
+          6,
+          262,
+          43
+        ],
+        [
+          13,
+          7,
+          261,
+          42
+        ],
+        [
+          13,
+          7,
+          261,
+          42
+        ]
+      ]
+    },
+    "candidates": [
+      {
+        "profile": "normal",
+        "widthAtEqualPaintedHeightRatio": 0.9836693548387097
+      },
+      {
+        "profile": "regular",
+        "widthAtEqualPaintedHeightRatio": 0.9540322580645162
+      },
+      {
+        "profile": "control-bold",
+        "widthAtEqualPaintedHeightRatio": 0.815725806451613
+      },
+      {
+        "profile": "condensed-bold",
+        "widthAtEqualPaintedHeightRatio": 0.6943548387096774
+      },
+      {
+        "profile": "archivo-900-wdth100",
+        "widthAtEqualPaintedHeightRatio": 1.1798387096774192
+      },
+      {
+        "profile": "archivo-700-wdth100",
+        "widthAtEqualPaintedHeightRatio": 1.0796370967741937
+      },
+      {
+        "profile": "archivo-900-wdth75",
+        "widthAtEqualPaintedHeightRatio": 0.9201612903225806
+      },
+      {
+        "profile": "orbitron-900",
+        "widthAtEqualPaintedHeightRatio": 1.165725806451613
+      },
+      {
+        "profile": "orbitron-700",
+        "widthAtEqualPaintedHeightRatio": 1.165725806451613
+      },
+      {
+        "profile": "russoone-400",
+        "widthAtEqualPaintedHeightRatio": 1.0627016129032258
+      },
+      {
+        "profile": "michroma-400",
+        "widthAtEqualPaintedHeightRatio": 1.3717741935483871
+      },
+      {
+        "profile": "robotocondensed-700",
+        "widthAtEqualPaintedHeightRatio": 0.8411290322580646
+      },
+      {
+        "profile": "province-wide-1981-reconstruction",
+        "widthAtEqualPaintedHeightRatio": 1.4028225806451613
+      },
+      {
+        "profile": "province-tall-2010-reconstruction",
+        "widthAtEqualPaintedHeightRatio": 0.6308467741935484
+      },
+      {
+        "profile": "control",
+        "widthAtEqualPaintedHeightRatio": 0.7903225806451613
+      },
+      {
+        "profile": "condensed-medium",
+        "widthAtEqualPaintedHeightRatio": 0.6788306451612903
+      },
+      {
+        "profile": "oswald-400",
+        "widthAtEqualPaintedHeightRatio": 0.6576612903225807
+      },
+      {
+        "profile": "oswald-500",
+        "widthAtEqualPaintedHeightRatio": 0.6901209677419354
+      },
+      {
+        "profile": "oswald-600",
+        "widthAtEqualPaintedHeightRatio": 0.7070564516129032
+      },
+      {
+        "profile": "archivonarrow-400",
+        "widthAtEqualPaintedHeightRatio": 0.8425403225806452
+      },
+      {
+        "profile": "archivonarrow-600",
+        "widthAtEqualPaintedHeightRatio": 0.8622983870967743
+      },
+      {
+        "profile": "archivonarrow-700",
+        "widthAtEqualPaintedHeightRatio": 0.8707661290322581
+      },
+      {
+        "profile": "heavy-month-wide",
+        "widthAtEqualPaintedHeightRatio": 0.6731854838709677
+      }
+    ]
+  },
+  {
+    "id": "1988-feb-british",
+    "source": {
+      "id": "1988-feb-british",
+      "source": "1988-feb.jpg",
+      "text": "BRITISH",
+      "box": [
+        386,
+        15,
+        531,
+        58
+      ],
+      "mask": "dark"
+    },
+    "threshold": 168.43900000000002,
+    "paintBoxInRoi": [
+      11,
+      9,
+      134,
+      37
+    ],
+    "sourcePaintPixels": [
+      123,
+      28
+    ],
+    "validation": {
+      "sourceSha256": "084a0cc27e8f56bc0693bf986e7718fc2fa60c2189736483972298cda8a92484",
+      "thresholdSamples": [
+        {
+          "contrastShift": -0.08,
+          "threshold": 159.67388000000003,
+          "paintBoxInRoi": [
+            11,
+            9,
+            134,
+            37
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0,
+          "threshold": 168.43900000000002,
+          "paintBoxInRoi": [
+            11,
+            9,
+            134,
+            37
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0.08,
+          "threshold": 177.20412000000002,
+          "paintBoxInRoi": [
+            12,
+            9,
+            134,
+            37
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        }
+      ],
+      "acceptedExtentBoxesInRoi": [
+        [
+          11,
+          9,
+          134,
+          37
+        ],
+        [
+          11,
+          9,
+          134,
+          37
+        ],
+        [
+          12,
+          9,
+          134,
+          37
+        ]
+      ]
+    },
+    "candidates": [
+      {
+        "profile": "normal",
+        "widthAtEqualPaintedHeightRatio": 1.1473170731707316
+      },
+      {
+        "profile": "regular",
+        "widthAtEqualPaintedHeightRatio": 1.1291056910569104
+      },
+      {
+        "profile": "control-bold",
+        "widthAtEqualPaintedHeightRatio": 0.9515447154471544
+      },
+      {
+        "profile": "condensed-bold",
+        "widthAtEqualPaintedHeightRatio": 0.8604878048780487
+      },
+      {
+        "profile": "archivo-900-wdth100",
+        "widthAtEqualPaintedHeightRatio": 1.4136585365853658
+      },
+      {
+        "profile": "archivo-700-wdth100",
+        "widthAtEqualPaintedHeightRatio": 1.2747967479674795
+      },
+      {
+        "profile": "archivo-900-wdth75",
+        "widthAtEqualPaintedHeightRatio": 1.0949593495934957
+      },
+      {
+        "profile": "orbitron-900",
+        "widthAtEqualPaintedHeightRatio": 1.393170731707317
+      },
+      {
+        "profile": "orbitron-700",
+        "widthAtEqualPaintedHeightRatio": 1.393170731707317
+      },
+      {
+        "profile": "russoone-400",
+        "widthAtEqualPaintedHeightRatio": 1.336260162601626
+      },
+      {
+        "profile": "michroma-400",
+        "widthAtEqualPaintedHeightRatio": 1.5934959349593494
+      },
+      {
+        "profile": "robotocondensed-700",
+        "widthAtEqualPaintedHeightRatio": 1.0084552845528454
+      },
+      {
+        "profile": "province-wide-1981-reconstruction",
+        "widthAtEqualPaintedHeightRatio": 1.698211382113821
+      },
+      {
+        "profile": "province-tall-2010-reconstruction",
+        "widthAtEqualPaintedHeightRatio": 0.7489430894308943
+      },
+      {
+        "profile": "control",
+        "widthAtEqualPaintedHeightRatio": 0.9378861788617886
+      },
+      {
+        "profile": "condensed-medium",
+        "widthAtEqualPaintedHeightRatio": 0.8354471544715446
+      },
+      {
+        "profile": "oswald-400",
+        "widthAtEqualPaintedHeightRatio": 0.7876422764227642
+      },
+      {
+        "profile": "oswald-500",
+        "widthAtEqualPaintedHeightRatio": 0.8377235772357723
+      },
+      {
+        "profile": "oswald-600",
+        "widthAtEqualPaintedHeightRatio": 0.8650406504065039
+      },
+      {
+        "profile": "archivonarrow-400",
+        "widthAtEqualPaintedHeightRatio": 0.9947967479674796
+      },
+      {
+        "profile": "archivonarrow-600",
+        "widthAtEqualPaintedHeightRatio": 1.0061788617886178
+      },
+      {
+        "profile": "archivonarrow-700",
+        "widthAtEqualPaintedHeightRatio": 1.0130081300813008
+      },
+      {
+        "profile": "heavy-month-wide",
+        "widthAtEqualPaintedHeightRatio": 0.8149593495934959
+      }
+    ]
+  },
+  {
+    "id": "1988-feb-columbia",
+    "source": {
+      "id": "1988-feb-columbia",
+      "source": "1988-feb.jpg",
+      "text": "COLUMBIA",
+      "box": [
+        362,
+        53,
+        550,
+        100
+      ],
+      "mask": "dark"
+    },
+    "threshold": 167.16950000000003,
+    "paintBoxInRoi": [
+      11,
+      6,
+      181,
+      35
+    ],
+    "sourcePaintPixels": [
+      170,
+      29
+    ],
+    "validation": {
+      "sourceSha256": "084a0cc27e8f56bc0693bf986e7718fc2fa60c2189736483972298cda8a92484",
+      "thresholdSamples": [
+        {
+          "contrastShift": -0.08,
+          "threshold": 158.23358000000002,
+          "paintBoxInRoi": [
+            11,
+            6,
+            181,
+            35
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0,
+          "threshold": 167.16950000000003,
+          "paintBoxInRoi": [
+            11,
+            6,
+            181,
+            35
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0.08,
+          "threshold": 176.10542000000004,
+          "paintBoxInRoi": [
+            11,
+            6,
+            181,
+            35
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        }
+      ],
+      "acceptedExtentBoxesInRoi": [
+        [
+          11,
+          6,
+          181,
+          35
+        ],
+        [
+          11,
+          6,
+          181,
+          35
+        ],
+        [
+          11,
+          6,
+          181,
+          35
+        ]
+      ]
+    },
+    "candidates": [
+      {
+        "profile": "normal",
+        "widthAtEqualPaintedHeightRatio": 1.189
+      },
+      {
+        "profile": "regular",
+        "widthAtEqualPaintedHeightRatio": 1.1531764705882352
+      },
+      {
+        "profile": "control-bold",
+        "widthAtEqualPaintedHeightRatio": 0.9860000000000001
+      },
+      {
+        "profile": "condensed-bold",
+        "widthAtEqualPaintedHeightRatio": 0.8392941176470589
+      },
+      {
+        "profile": "archivo-900-wdth100",
+        "widthAtEqualPaintedHeightRatio": 1.4261176470588235
+      },
+      {
+        "profile": "archivo-700-wdth100",
+        "widthAtEqualPaintedHeightRatio": 1.3050000000000002
+      },
+      {
+        "profile": "archivo-900-wdth75",
+        "widthAtEqualPaintedHeightRatio": 1.112235294117647
+      },
+      {
+        "profile": "orbitron-900",
+        "widthAtEqualPaintedHeightRatio": 1.4090588235294117
+      },
+      {
+        "profile": "orbitron-700",
+        "widthAtEqualPaintedHeightRatio": 1.4090588235294117
+      },
+      {
+        "profile": "russoone-400",
+        "widthAtEqualPaintedHeightRatio": 1.284529411764706
+      },
+      {
+        "profile": "michroma-400",
+        "widthAtEqualPaintedHeightRatio": 1.6581176470588237
+      },
+      {
+        "profile": "robotocondensed-700",
+        "widthAtEqualPaintedHeightRatio": 1.0167058823529411
+      },
+      {
+        "profile": "province-wide-1981-reconstruction",
+        "widthAtEqualPaintedHeightRatio": 1.6956470588235295
+      },
+      {
+        "profile": "province-tall-2010-reconstruction",
+        "widthAtEqualPaintedHeightRatio": 0.7625294117647059
+      },
+      {
+        "profile": "control",
+        "widthAtEqualPaintedHeightRatio": 0.9552941176470588
+      },
+      {
+        "profile": "condensed-medium",
+        "widthAtEqualPaintedHeightRatio": 0.8205294117647058
+      },
+      {
+        "profile": "oswald-400",
+        "widthAtEqualPaintedHeightRatio": 0.7949411764705883
+      },
+      {
+        "profile": "oswald-500",
+        "widthAtEqualPaintedHeightRatio": 0.8341764705882353
+      },
+      {
+        "profile": "oswald-600",
+        "widthAtEqualPaintedHeightRatio": 0.8546470588235294
+      },
+      {
+        "profile": "archivonarrow-400",
+        "widthAtEqualPaintedHeightRatio": 1.0184117647058823
+      },
+      {
+        "profile": "archivonarrow-600",
+        "widthAtEqualPaintedHeightRatio": 1.042294117647059
+      },
+      {
+        "profile": "archivonarrow-700",
+        "widthAtEqualPaintedHeightRatio": 1.052529411764706
+      },
+      {
+        "profile": "heavy-month-wide",
+        "widthAtEqualPaintedHeightRatio": 0.8137058823529412
+      }
+    ]
+  },
+  {
+    "id": "2006-apr-british",
+    "source": {
+      "id": "2006-apr-british",
+      "source": "2006-apr.png",
+      "text": "BRITISH",
+      "box": [
+        1028,
+        285,
+        1324,
+        360
+      ],
+      "mask": "dark"
+    },
+    "threshold": 203.6365,
+    "paintBoxInRoi": [
+      12,
+      13,
+      279,
+      70
+    ],
+    "sourcePaintPixels": [
+      267,
+      57
+    ],
+    "validation": {
+      "sourceSha256": "a414fc1f5c1d15d556b0e641393febfabc739349bff9ae89d8b0e35515d19357",
+      "thresholdSamples": [
+        {
+          "contrastShift": -0.08,
+          "threshold": 199.36122,
+          "paintBoxInRoi": [
+            12,
+            12,
+            279,
+            71
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0,
+          "threshold": 203.6365,
+          "paintBoxInRoi": [
+            12,
+            13,
+            279,
+            70
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0.08,
+          "threshold": 207.91178000000002,
+          "paintBoxInRoi": [
+            14,
+            13,
+            279,
+            70
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        }
+      ],
+      "acceptedExtentBoxesInRoi": [
+        [
+          12,
+          12,
+          279,
+          71
+        ],
+        [
+          12,
+          13,
+          279,
+          70
+        ],
+        [
+          14,
+          13,
+          279,
+          70
+        ]
+      ]
+    },
+    "candidates": [
+      {
+        "profile": "normal",
+        "widthAtEqualPaintedHeightRatio": 1.0759550561797753
+      },
+      {
+        "profile": "regular",
+        "widthAtEqualPaintedHeightRatio": 1.0588764044943821
+      },
+      {
+        "profile": "control-bold",
+        "widthAtEqualPaintedHeightRatio": 0.8923595505617977
+      },
+      {
+        "profile": "condensed-bold",
+        "widthAtEqualPaintedHeightRatio": 0.8069662921348314
+      },
+      {
+        "profile": "archivo-900-wdth100",
+        "widthAtEqualPaintedHeightRatio": 1.3257303370786517
+      },
+      {
+        "profile": "archivo-700-wdth100",
+        "widthAtEqualPaintedHeightRatio": 1.195505617977528
+      },
+      {
+        "profile": "archivo-900-wdth75",
+        "widthAtEqualPaintedHeightRatio": 1.0268539325842696
+      },
+      {
+        "profile": "orbitron-900",
+        "widthAtEqualPaintedHeightRatio": 1.3065168539325842
+      },
+      {
+        "profile": "orbitron-700",
+        "widthAtEqualPaintedHeightRatio": 1.3065168539325842
+      },
+      {
+        "profile": "russoone-400",
+        "widthAtEqualPaintedHeightRatio": 1.2531460674157304
+      },
+      {
+        "profile": "michroma-400",
+        "widthAtEqualPaintedHeightRatio": 1.4943820224719102
+      },
+      {
+        "profile": "robotocondensed-700",
+        "widthAtEqualPaintedHeightRatio": 0.9457303370786516
+      },
+      {
+        "profile": "province-wide-1981-reconstruction",
+        "widthAtEqualPaintedHeightRatio": 1.5925842696629213
+      },
+      {
+        "profile": "province-tall-2010-reconstruction",
+        "widthAtEqualPaintedHeightRatio": 0.7023595505617978
+      },
+      {
+        "profile": "control",
+        "widthAtEqualPaintedHeightRatio": 0.8795505617977528
+      },
+      {
+        "profile": "condensed-medium",
+        "widthAtEqualPaintedHeightRatio": 0.7834831460674158
+      },
+      {
+        "profile": "oswald-400",
+        "widthAtEqualPaintedHeightRatio": 0.7386516853932584
+      },
+      {
+        "profile": "oswald-500",
+        "widthAtEqualPaintedHeightRatio": 0.7856179775280899
+      },
+      {
+        "profile": "oswald-600",
+        "widthAtEqualPaintedHeightRatio": 0.8112359550561797
+      },
+      {
+        "profile": "archivonarrow-400",
+        "widthAtEqualPaintedHeightRatio": 0.9329213483146068
+      },
+      {
+        "profile": "archivonarrow-600",
+        "widthAtEqualPaintedHeightRatio": 0.9435955056179776
+      },
+      {
+        "profile": "archivonarrow-700",
+        "widthAtEqualPaintedHeightRatio": 0.9500000000000001
+      },
+      {
+        "profile": "heavy-month-wide",
+        "widthAtEqualPaintedHeightRatio": 0.7642696629213483
+      }
+    ]
+  },
+  {
+    "id": "2006-apr-columbia",
+    "source": {
+      "id": "2006-apr-columbia",
+      "source": "2006-apr.png",
+      "text": "COLUMBIA",
+      "box": [
+        982,
+        354,
+        1365,
+        431
+      ],
+      "mask": "dark"
+    },
+    "threshold": 203.9895,
+    "paintBoxInRoi": [
+      13,
+      9,
+      373,
+      67
+    ],
+    "sourcePaintPixels": [
+      360,
+      58
+    ],
+    "validation": {
+      "sourceSha256": "a414fc1f5c1d15d556b0e641393febfabc739349bff9ae89d8b0e35515d19357",
+      "thresholdSamples": [
+        {
+          "contrastShift": -0.08,
+          "threshold": 199.68974,
+          "paintBoxInRoi": [
+            13,
+            9,
+            373,
+            67
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0,
+          "threshold": 203.9895,
+          "paintBoxInRoi": [
+            13,
+            9,
+            373,
+            67
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0.08,
+          "threshold": 208.28925999999998,
+          "paintBoxInRoi": [
+            13,
+            9,
+            373,
+            67
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        }
+      ],
+      "acceptedExtentBoxesInRoi": [
+        [
+          13,
+          9,
+          373,
+          67
+        ],
+        [
+          13,
+          9,
+          373,
+          67
+        ],
+        [
+          13,
+          9,
+          373,
+          67
+        ]
+      ]
+    },
+    "candidates": [
+      {
+        "profile": "normal",
+        "widthAtEqualPaintedHeightRatio": 1.1229444444444443
+      },
+      {
+        "profile": "regular",
+        "widthAtEqualPaintedHeightRatio": 1.0891111111111111
+      },
+      {
+        "profile": "control-bold",
+        "widthAtEqualPaintedHeightRatio": 0.9312222222222223
+      },
+      {
+        "profile": "condensed-bold",
+        "widthAtEqualPaintedHeightRatio": 0.7926666666666666
+      },
+      {
+        "profile": "archivo-900-wdth100",
+        "widthAtEqualPaintedHeightRatio": 1.3468888888888888
+      },
+      {
+        "profile": "archivo-700-wdth100",
+        "widthAtEqualPaintedHeightRatio": 1.2325000000000002
+      },
+      {
+        "profile": "archivo-900-wdth75",
+        "widthAtEqualPaintedHeightRatio": 1.0504444444444443
+      },
+      {
+        "profile": "orbitron-900",
+        "widthAtEqualPaintedHeightRatio": 1.3307777777777778
+      },
+      {
+        "profile": "orbitron-700",
+        "widthAtEqualPaintedHeightRatio": 1.3307777777777778
+      },
+      {
+        "profile": "russoone-400",
+        "widthAtEqualPaintedHeightRatio": 1.2131666666666667
+      },
+      {
+        "profile": "michroma-400",
+        "widthAtEqualPaintedHeightRatio": 1.566
+      },
+      {
+        "profile": "robotocondensed-700",
+        "widthAtEqualPaintedHeightRatio": 0.9602222222222222
+      },
+      {
+        "profile": "province-wide-1981-reconstruction",
+        "widthAtEqualPaintedHeightRatio": 1.6014444444444444
+      },
+      {
+        "profile": "province-tall-2010-reconstruction",
+        "widthAtEqualPaintedHeightRatio": 0.7201666666666666
+      },
+      {
+        "profile": "control",
+        "widthAtEqualPaintedHeightRatio": 0.9022222222222221
+      },
+      {
+        "profile": "condensed-medium",
+        "widthAtEqualPaintedHeightRatio": 0.7749444444444444
+      },
+      {
+        "profile": "oswald-400",
+        "widthAtEqualPaintedHeightRatio": 0.7507777777777778
+      },
+      {
+        "profile": "oswald-500",
+        "widthAtEqualPaintedHeightRatio": 0.7878333333333333
+      },
+      {
+        "profile": "oswald-600",
+        "widthAtEqualPaintedHeightRatio": 0.8071666666666666
+      },
+      {
+        "profile": "archivonarrow-400",
+        "widthAtEqualPaintedHeightRatio": 0.9618333333333333
+      },
+      {
+        "profile": "archivonarrow-600",
+        "widthAtEqualPaintedHeightRatio": 0.984388888888889
+      },
+      {
+        "profile": "archivonarrow-700",
+        "widthAtEqualPaintedHeightRatio": 0.9940555555555556
+      },
+      {
+        "profile": "heavy-month-wide",
+        "widthAtEqualPaintedHeightRatio": 0.7685
+      }
+    ]
+  },
+  {
+    "id": "2012-aug-british",
+    "source": {
+      "id": "2012-aug-british",
+      "source": "2012-aug.png",
+      "text": "BRITISH",
+      "box": [
+        878,
+        155,
+        1254,
+        281
+      ],
+      "mask": "dark"
+    },
+    "threshold": 195.3625,
+    "paintBoxInRoi": [
+      11,
+      14,
+      358,
+      122
+    ],
+    "sourcePaintPixels": [
+      347,
+      108
+    ],
+    "validation": {
+      "sourceSha256": "bc952611d2b4ad0580906c4161fd1f63be4a56e02b41c921218ebe682ef187a3",
+      "thresholdSamples": [
+        {
+          "contrastShift": -0.08,
+          "threshold": 190.65314,
+          "paintBoxInRoi": [
+            10,
+            13,
+            358,
+            123
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0,
+          "threshold": 195.3625,
+          "paintBoxInRoi": [
+            11,
+            14,
+            358,
+            122
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0.08,
+          "threshold": 200.07186000000002,
+          "paintBoxInRoi": [
+            12,
+            15,
+            358,
+            122
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        }
+      ],
+      "acceptedExtentBoxesInRoi": [
+        [
+          10,
+          13,
+          358,
+          123
+        ],
+        [
+          11,
+          14,
+          358,
+          122
+        ],
+        [
+          12,
+          15,
+          358,
+          122
+        ]
+      ]
+    },
+    "candidates": [
+      {
+        "profile": "normal",
+        "widthAtEqualPaintedHeightRatio": 1.5686455331412104
+      },
+      {
+        "profile": "regular",
+        "widthAtEqualPaintedHeightRatio": 1.5437463976945245
+      },
+      {
+        "profile": "control-bold",
+        "widthAtEqualPaintedHeightRatio": 1.3009798270893371
+      },
+      {
+        "profile": "condensed-bold",
+        "widthAtEqualPaintedHeightRatio": 1.1764841498559078
+      },
+      {
+        "profile": "archivo-900-wdth100",
+        "widthAtEqualPaintedHeightRatio": 1.9327953890489915
+      },
+      {
+        "profile": "archivo-700-wdth100",
+        "widthAtEqualPaintedHeightRatio": 1.7429394812680115
+      },
+      {
+        "profile": "archivo-900-wdth75",
+        "widthAtEqualPaintedHeightRatio": 1.4970605187319885
+      },
+      {
+        "profile": "orbitron-900",
+        "widthAtEqualPaintedHeightRatio": 1.9047838616714698
+      },
+      {
+        "profile": "orbitron-700",
+        "widthAtEqualPaintedHeightRatio": 1.9047838616714698
+      },
+      {
+        "profile": "russoone-400",
+        "widthAtEqualPaintedHeightRatio": 1.8269740634005764
+      },
+      {
+        "profile": "michroma-400",
+        "widthAtEqualPaintedHeightRatio": 2.1786743515850144
+      },
+      {
+        "profile": "robotocondensed-700",
+        "widthAtEqualPaintedHeightRatio": 1.3787896253602305
+      },
+      {
+        "profile": "province-wide-1981-reconstruction",
+        "widthAtEqualPaintedHeightRatio": 2.3218443804034585
+      },
+      {
+        "profile": "province-tall-2010-reconstruction",
+        "widthAtEqualPaintedHeightRatio": 1.0239769452449567
+      },
+      {
+        "profile": "control",
+        "widthAtEqualPaintedHeightRatio": 1.2823054755043228
+      },
+      {
+        "profile": "condensed-medium",
+        "widthAtEqualPaintedHeightRatio": 1.1422478386167148
+      },
+      {
+        "profile": "oswald-400",
+        "widthAtEqualPaintedHeightRatio": 1.0768876080691643
+      },
+      {
+        "profile": "oswald-500",
+        "widthAtEqualPaintedHeightRatio": 1.1453602305475505
+      },
+      {
+        "profile": "oswald-600",
+        "widthAtEqualPaintedHeightRatio": 1.1827089337175793
+      },
+      {
+        "profile": "archivonarrow-400",
+        "widthAtEqualPaintedHeightRatio": 1.3601152737752162
+      },
+      {
+        "profile": "archivonarrow-600",
+        "widthAtEqualPaintedHeightRatio": 1.375677233429395
+      },
+      {
+        "profile": "archivonarrow-700",
+        "widthAtEqualPaintedHeightRatio": 1.385014409221902
+      },
+      {
+        "profile": "heavy-month-wide",
+        "widthAtEqualPaintedHeightRatio": 1.114236311239193
+      }
+    ]
+  },
+  {
+    "id": "2012-aug-columbia",
+    "source": {
+      "id": "2012-aug-columbia",
+      "source": "2012-aug.png",
+      "text": "COLUMBIA",
+      "box": [
+        811,
+        284,
+        1306,
+        410
+      ],
+      "mask": "dark"
+    },
+    "threshold": 195.6855,
+    "paintBoxInRoi": [
+      14,
+      7,
+      486,
+      119
+    ],
+    "sourcePaintPixels": [
+      472,
+      112
+    ],
+    "validation": {
+      "sourceSha256": "bc952611d2b4ad0580906c4161fd1f63be4a56e02b41c921218ebe682ef187a3",
+      "thresholdSamples": [
+        {
+          "contrastShift": -0.08,
+          "threshold": 190.95662,
+          "paintBoxInRoi": [
+            14,
+            6,
+            486,
+            119
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0,
+          "threshold": 195.6855,
+          "paintBoxInRoi": [
+            14,
+            7,
+            486,
+            119
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        },
+        {
+          "contrastShift": 0.08,
+          "threshold": 200.41438,
+          "paintBoxInRoi": [
+            15,
+            7,
+            485,
+            118
+          ],
+          "accepted": true,
+          "rejectionReasons": []
+        }
+      ],
+      "acceptedExtentBoxesInRoi": [
+        [
+          14,
+          6,
+          486,
+          119
+        ],
+        [
+          14,
+          7,
+          486,
+          119
+        ],
+        [
+          15,
+          7,
+          485,
+          118
+        ]
+      ]
+    },
+    "candidates": [
+      {
+        "profile": "normal",
+        "widthAtEqualPaintedHeightRatio": 1.6538983050847456
+      },
+      {
+        "profile": "regular",
+        "widthAtEqualPaintedHeightRatio": 1.6040677966101693
+      },
+      {
+        "profile": "control-bold",
+        "widthAtEqualPaintedHeightRatio": 1.3715254237288135
+      },
+      {
+        "profile": "condensed-bold",
+        "widthAtEqualPaintedHeightRatio": 1.167457627118644
+      },
+      {
+        "profile": "archivo-900-wdth100",
+        "widthAtEqualPaintedHeightRatio": 1.9837288135593218
+      },
+      {
+        "profile": "archivo-700-wdth100",
+        "widthAtEqualPaintedHeightRatio": 1.8152542372881357
+      },
+      {
+        "profile": "archivo-900-wdth75",
+        "widthAtEqualPaintedHeightRatio": 1.5471186440677964
+      },
+      {
+        "profile": "orbitron-900",
+        "widthAtEqualPaintedHeightRatio": 1.96
+      },
+      {
+        "profile": "orbitron-700",
+        "widthAtEqualPaintedHeightRatio": 1.96
+      },
+      {
+        "profile": "russoone-400",
+        "widthAtEqualPaintedHeightRatio": 1.786779661016949
+      },
+      {
+        "profile": "michroma-400",
+        "widthAtEqualPaintedHeightRatio": 2.3064406779661017
+      },
+      {
+        "profile": "robotocondensed-700",
+        "widthAtEqualPaintedHeightRatio": 1.4142372881355931
+      },
+      {
+        "profile": "province-wide-1981-reconstruction",
+        "widthAtEqualPaintedHeightRatio": 2.35864406779661
+      },
+      {
+        "profile": "province-tall-2010-reconstruction",
+        "widthAtEqualPaintedHeightRatio": 1.0606779661016947
+      },
+      {
+        "profile": "control",
+        "widthAtEqualPaintedHeightRatio": 1.3288135593220338
+      },
+      {
+        "profile": "condensed-medium",
+        "widthAtEqualPaintedHeightRatio": 1.1413559322033897
+      },
+      {
+        "profile": "oswald-400",
+        "widthAtEqualPaintedHeightRatio": 1.1057627118644069
+      },
+      {
+        "profile": "oswald-500",
+        "widthAtEqualPaintedHeightRatio": 1.1603389830508473
+      },
+      {
+        "profile": "oswald-600",
+        "widthAtEqualPaintedHeightRatio": 1.188813559322034
+      },
+      {
+        "profile": "archivonarrow-400",
+        "widthAtEqualPaintedHeightRatio": 1.4166101694915254
+      },
+      {
+        "profile": "archivonarrow-600",
+        "widthAtEqualPaintedHeightRatio": 1.4498305084745764
+      },
+      {
+        "profile": "archivonarrow-700",
+        "widthAtEqualPaintedHeightRatio": 1.4640677966101694
+      },
+      {
+        "profile": "heavy-month-wide",
+        "widthAtEqualPaintedHeightRatio": 1.1318644067796608
+      }
+    ]
+  }
+]

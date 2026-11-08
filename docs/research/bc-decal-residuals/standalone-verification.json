@@ -1,0 +1,23 @@
+{
+  "schema": "plateforge.decal-standalone-verification/v1",
+  "status": "passed",
+  "method": "Static HTML parsing, decoded asset byte equality, exact-string ledger comparison and separate node --check. No browser execution is claimed.",
+  "references": 68,
+  "uniqueCaseIds": 68,
+  "embeddedCoreAssetsVerified": 340,
+  "embeddedFiguresVerified": 8,
+  "embeddedSupplementalDownloadsVerified": 6,
+  "ledgerByteIdentical": true,
+  "exactMonthControlStringsPreserved": true,
+  "firstPassLedgerHistoryPreserved": true,
+  "allCasesRetainRemainingLimitations": true,
+  "externalImageLoads": 0,
+  "externalScriptLoads": 0,
+  "duplicateHtmlIds": 0,
+  "javascriptSyntax": "passed",
+  "changedRasterPairs": 38,
+  "unchangedRasterPairs": 30,
+  "sourceSha256": "80f176a664755c5d41432cbac8150c9b77edf4d13694e82952f8b309b04bc6fd",
+  "baselineCommit": "24689246670c25f91e0d1676a0647f053dbca68e",
+  "browserInteractionExportStatus": "unexecuted"
+}

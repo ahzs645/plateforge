@@ -1,0 +1,776 @@
+{
+  "baseline": "17b974f51c687780c5d0b106fd9ae37e4c83ccae",
+  "source": "BCpl8s; original source crops retained from the 2026-11-07 overlay review",
+  "registration": "Original crop, no perspective rectification. Placement uses uniform equal-height centering; shape uses uniform equal-ink-height centering.",
+  "specimens": [
+    {
+      "id": "1986-jan",
+      "month": "JAN",
+      "control": "10033703",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-10033703.jpg",
+      "storedPhotoSha256": "b353e652e2e41c3baa6f453e975958081ce58d9aafebdf12a2c32770a9360841",
+      "displayPhotoSha256": "b353e652e2e41c3baa6f453e975958081ce58d9aafebdf12a2c32770a9360841",
+      "photoPixels": [
+        245,
+        75
+      ],
+      "logoRegions": {
+        "wordmark": [
+          155,
+          7,
+          204,
+          23
+        ],
+        "linked86": [
+          154,
+          23,
+          206,
+          72
+        ]
+      },
+      "monthRegion": [
+        15,
+        18,
+        147,
+        71
+      ],
+      "glyphs": [
+        {
+          "char": "J",
+          "box": [
+            26,
+            23,
+            44,
+            68
+          ],
+          "quality": "usable for relative comparison"
+        },
+        {
+          "char": "A",
+          "box": [
+            47,
+            21,
+            78,
+            68
+          ],
+          "quality": "usable for relative comparison"
+        },
+        {
+          "char": "N",
+          "box": [
+            82,
+            21,
+            116,
+            69
+          ],
+          "quality": "usable for relative comparison"
+        }
+      ]
+    },
+    {
+      "id": "1986-feb",
+      "month": "FEB",
+      "control": "11834084",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-11834084.jpg",
+      "storedPhotoSha256": "7e5930b66ea4e7c4c63f85454745abd538c40b81e1f7c867b387fdbf616683b5",
+      "displayPhotoSha256": "7e5930b66ea4e7c4c63f85454745abd538c40b81e1f7c867b387fdbf616683b5",
+      "photoPixels": [
+        252,
+        75
+      ],
+      "logoRegions": {
+        "wordmark": [
+          162,
+          3,
+          213,
+          19
+        ],
+        "linked86": [
+          160,
+          18,
+          214,
+          70
+        ]
+      },
+      "monthRegion": [
+        15,
+        18,
+        151,
+        71
+      ],
+      "glyphs": [
+        {
+          "char": "F",
+          "box": [
+            34,
+            21,
+            58,
+            67
+          ],
+          "quality": "usable for relative comparison"
+        },
+        {
+          "char": "E",
+          "box": [
+            62,
+            21,
+            86,
+            68
+          ],
+          "quality": "usable for relative comparison"
+        },
+        {
+          "char": "B",
+          "box": [
+            91,
+            20,
+            121,
+            68
+          ],
+          "quality": "usable for relative comparison"
+        }
+      ]
+    },
+    {
+      "id": "1986",
+      "month": "MAR",
+      "control": "12137790",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-12137790.jpg",
+      "storedPhotoSha256": "ce4448d69236466ffd0a3773bcd2364232914cf1c6b5d0cf323af071bec2fb21",
+      "displayPhotoSha256": "ce4448d69236466ffd0a3773bcd2364232914cf1c6b5d0cf323af071bec2fb21",
+      "photoPixels": [
+        258,
+        75
+      ],
+      "logoRegions": {
+        "wordmark": [
+          161,
+          1,
+          216,
+          17
+        ],
+        "linked86": [
+          160,
+          16,
+          219,
+          70
+        ]
+      },
+      "monthRegion": [
+        15,
+        18,
+        155,
+        71
+      ],
+      "glyphs": [
+        {
+          "char": "M",
+          "box": [
+            15,
+            20,
+            65,
+            70
+          ],
+          "quality": "usable for relative comparison"
+        },
+        {
+          "char": "A",
+          "box": [
+            70,
+            19,
+            104,
+            69
+          ],
+          "quality": "usable for relative comparison"
+        },
+        {
+          "char": "R",
+          "box": [
+            109,
+            20,
+            142,
+            69
+          ],
+          "quality": "usable for relative comparison"
+        }
+      ],
+      "logoRegionNote": "The blue one-pixel image border at y=0 is excluded from the wordmark paint crop."
+    },
+    {
+      "id": "1986-apr",
+      "month": "APR",
+      "control": "13185411",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-13185411.jpg",
+      "storedPhotoSha256": "4552ad6a3ee67b0e027a43a8c31b5db094ce1f4b653d66c75b31e0f942999107",
+      "displayPhotoSha256": "4552ad6a3ee67b0e027a43a8c31b5db094ce1f4b653d66c75b31e0f942999107",
+      "photoPixels": [
+        240,
+        75
+      ],
+      "logoRegions": {
+        "wordmark": [
+          147,
+          7,
+          197,
+          23
+        ],
+        "linked86": [
+          145,
+          22,
+          198,
+          71
+        ]
+      },
+      "monthRegion": [
+        14,
+        18,
+        144,
+        71
+      ],
+      "glyphs": [
+        {
+          "char": "A",
+          "box": [
+            18,
+            23,
+            48,
+            68
+          ],
+          "quality": "usable for relative comparison"
+        },
+        {
+          "char": "P",
+          "box": [
+            53,
+            23,
+            86,
+            68
+          ],
+          "quality": "usable for relative comparison"
+        },
+        {
+          "char": "R",
+          "box": [
+            89,
+            23,
+            119,
+            68
+          ],
+          "quality": "usable for relative comparison"
+        }
+      ]
+    },
+    {
+      "id": "1986-may",
+      "month": "MAY",
+      "control": "14071545",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-14071545.jpg",
+      "storedPhotoSha256": "894cf681cc84978489825f23ea0b81a28ca771afd1286534e36bebf122587b3a",
+      "displayPhotoSha256": "894cf681cc84978489825f23ea0b81a28ca771afd1286534e36bebf122587b3a",
+      "photoPixels": [
+        245,
+        75
+      ],
+      "logoRegions": {
+        "wordmark": [
+          155,
+          1,
+          207,
+          17
+        ],
+        "linked86": [
+          154,
+          17,
+          209,
+          68
+        ]
+      },
+      "monthRegion": [
+        15,
+        18,
+        147,
+        71
+      ],
+      "glyphs": [
+        {
+          "char": "M",
+          "box": [
+            15,
+            20,
+            63,
+            66
+          ],
+          "quality": "usable for relative comparison"
+        },
+        {
+          "char": "A",
+          "box": [
+            68,
+            19,
+            100,
+            66
+          ],
+          "quality": "usable for relative comparison"
+        },
+        {
+          "char": "Y",
+          "box": [
+            101,
+            21,
+            135,
+            66
+          ],
+          "quality": "usable for relative comparison"
+        }
+      ]
+    },
+    {
+      "id": "1986-jun",
+      "month": "JUN",
+      "control": "15140523",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-15140523.jpg",
+      "storedPhotoSha256": "504eff01339f3af2f496fb894ae761a377baf961ab75667436e37d0ef293e3d7",
+      "displayPhotoSha256": "504eff01339f3af2f496fb894ae761a377baf961ab75667436e37d0ef293e3d7",
+      "photoPixels": [
+        243,
+        75
+      ],
+      "logoRegions": {
+        "wordmark": [
+          152,
+          4,
+          203,
+          20
+        ],
+        "linked86": [
+          150,
+          19,
+          204,
+          70
+        ]
+      },
+      "monthRegion": [
+        15,
+        18,
+        146,
+        71
+      ],
+      "glyphs": [
+        {
+          "char": "J",
+          "box": [
+            23,
+            22,
+            41,
+            68
+          ],
+          "quality": "usable for relative comparison"
+        },
+        {
+          "char": "U",
+          "box": [
+            45,
+            22,
+            77,
+            68
+          ],
+          "quality": "usable for relative comparison"
+        },
+        {
+          "char": "N",
+          "box": [
+            82,
+            21,
+            116,
+            67
+          ],
+          "quality": "usable for relative comparison"
+        }
+      ]
+    },
+    {
+      "id": "1986-jul",
+      "month": "JUL",
+      "control": "16126202",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986.jpg",
+      "storedPhotoSha256": "c8493efa78fa0db66353693158b6372c97e4dd9019570e4eae85b9aa6abf85f5",
+      "displayPhotoSha256": "c8493efa78fa0db66353693158b6372c97e4dd9019570e4eae85b9aa6abf85f5",
+      "photoPixels": [
+        243,
+        75
+      ],
+      "logoRegions": {
+        "wordmark": [
+          154,
+          3,
+          204,
+          19
+        ],
+        "linked86": [
+          152,
+          19,
+          205,
+          69
+        ]
+      },
+      "monthRegion": [
+        15,
+        18,
+        146,
+        71
+      ],
+      "glyphs": [
+        {
+          "char": "J",
+          "box": [
+            32,
+            24,
+            50,
+            69
+          ],
+          "quality": "usable for relative comparison"
+        },
+        {
+          "char": "U",
+          "box": [
+            54,
+            24,
+            86,
+            69
+          ],
+          "quality": "usable for relative comparison"
+        },
+        {
+          "char": "L",
+          "box": [
+            90,
+            24,
+            112,
+            68
+          ],
+          "quality": "usable for relative comparison"
+        }
+      ]
+    },
+    {
+      "id": "1986-aug",
+      "month": "AUG",
+      "control": "17062991",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-17062991.jpg",
+      "storedPhotoSha256": "7b08da75b243dba65a2d57ce8ca0fc9dc8e7c3d0e78867ec03b6f2731078c632",
+      "displayPhotoSha256": "7b08da75b243dba65a2d57ce8ca0fc9dc8e7c3d0e78867ec03b6f2731078c632",
+      "photoPixels": [
+        240,
+        75
+      ],
+      "logoRegions": {
+        "wordmark": [
+          143,
+          8,
+          194,
+          24
+        ],
+        "linked86": [
+          142,
+          23,
+          195,
+          72
+        ]
+      },
+      "monthRegion": [
+        14,
+        18,
+        144,
+        71
+      ],
+      "glyphs": [
+        {
+          "char": "A",
+          "box": [
+            18,
+            22,
+            48,
+            67
+          ],
+          "quality": "usable for relative comparison"
+        },
+        {
+          "char": "U",
+          "box": [
+            51,
+            23,
+            83,
+            68
+          ],
+          "quality": "usable for relative comparison"
+        },
+        {
+          "char": "G",
+          "box": [
+            85,
+            22,
+            121,
+            68
+          ],
+          "quality": "usable for relative comparison"
+        }
+      ]
+    },
+    {
+      "id": "1986-sep",
+      "month": "SEP",
+      "control": "18021283",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-18021283.jpg",
+      "storedPhotoSha256": "76105eea294029462293ceacd048d514b451482a935718164d37a945c5bdc5ec",
+      "displayPhotoSha256": "76105eea294029462293ceacd048d514b451482a935718164d37a945c5bdc5ec",
+      "photoPixels": [
+        244,
+        75
+      ],
+      "logoRegions": {
+        "wordmark": [
+          154,
+          2,
+          204,
+          18
+        ],
+        "linked86": [
+          152,
+          18,
+          206,
+          69
+        ]
+      },
+      "monthRegion": [
+        15,
+        18,
+        146,
+        71
+      ],
+      "glyphs": [
+        {
+          "char": "S",
+          "box": [
+            27,
+            23,
+            56,
+            69
+          ],
+          "quality": "usable for relative comparison"
+        },
+        {
+          "char": "E",
+          "box": [
+            59,
+            23,
+            82,
+            68
+          ],
+          "quality": "usable for relative comparison"
+        },
+        {
+          "char": "P",
+          "box": [
+            87,
+            22,
+            120,
+            68
+          ],
+          "quality": "usable for relative comparison"
+        }
+      ]
+    },
+    {
+      "id": "1986-oct",
+      "month": "OCT",
+      "control": "19062205",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-19062205.jpg",
+      "storedPhotoSha256": "c5ef43c4ba7b1ef878e5e3eb4428e91444d64e6884d72c2fe823750cd7a29600",
+      "displayPhotoSha256": "c5ef43c4ba7b1ef878e5e3eb4428e91444d64e6884d72c2fe823750cd7a29600",
+      "photoPixels": [
+        236,
+        75
+      ],
+      "logoRegions": {
+        "wordmark": [
+          149,
+          4,
+          199,
+          19
+        ],
+        "linked86": [
+          147,
+          18,
+          199,
+          67
+        ]
+      },
+      "monthRegion": [
+        14,
+        18,
+        142,
+        71
+      ],
+      "glyphs": [
+        {
+          "char": "O",
+          "box": [
+            14,
+            24,
+            51,
+            71
+          ],
+          "quality": "tentative"
+        },
+        {
+          "char": "C",
+          "box": [
+            51,
+            18,
+            87,
+            71
+          ],
+          "quality": "tentative"
+        },
+        {
+          "char": "T",
+          "box": [
+            87,
+            25,
+            124,
+            70
+          ],
+          "quality": "tentative"
+        }
+      ]
+    },
+    {
+      "id": "1986-nov",
+      "month": "NOV",
+      "control": "20072840",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-20072840.jpg",
+      "storedPhotoSha256": "6c73a87041a6a8e3c7cbab540264f73caad3077e6cbd8920f03763ea885f7a5c",
+      "displayPhotoSha256": "6c73a87041a6a8e3c7cbab540264f73caad3077e6cbd8920f03763ea885f7a5c",
+      "photoPixels": [
+        241,
+        75
+      ],
+      "logoRegions": {
+        "wordmark": [
+          152,
+          7,
+          203,
+          23
+        ],
+        "linked86": [
+          150,
+          22,
+          204,
+          72
+        ]
+      },
+      "monthRegion": [
+        14,
+        18,
+        145,
+        71
+      ],
+      "glyphs": [
+        {
+          "char": "N",
+          "box": [
+            18,
+            22,
+            51,
+            68
+          ],
+          "quality": "usable for relative comparison"
+        },
+        {
+          "char": "O",
+          "box": [
+            54,
+            22,
+            101,
+            69
+          ],
+          "quality": "usable for relative comparison"
+        },
+        {
+          "char": "V",
+          "box": [
+            100,
+            24,
+            133,
+            68
+          ],
+          "quality": "usable for relative comparison"
+        }
+      ]
+    },
+    {
+      "id": "1986-dec",
+      "month": "DEC",
+      "control": "21129670",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-21129670.jpg",
+      "storedPhotoSha256": "0eb9e8f8d530c9bb1e1e109462c3b36cae6b5e6395e250483822de00e6ae80e7",
+      "displayPhotoSha256": "0eb9e8f8d530c9bb1e1e109462c3b36cae6b5e6395e250483822de00e6ae80e7",
+      "photoPixels": [
+        237,
+        75
+      ],
+      "logoRegions": {
+        "wordmark": [
+          151,
+          7,
+          200,
+          22
+        ],
+        "linked86": [
+          149,
+          21,
+          201,
+          70
+        ]
+      },
+      "monthRegion": [
+        14,
+        18,
+        142,
+        71
+      ],
+      "glyphs": [
+        {
+          "char": "D",
+          "box": [
+            27,
+            23,
+            57,
+            67
+          ],
+          "quality": "usable for relative comparison"
+        },
+        {
+          "char": "E",
+          "box": [
+            59,
+            23,
+            81,
+            67
+          ],
+          "quality": "usable for relative comparison"
+        },
+        {
+          "char": "C",
+          "box": [
+            84,
+            22,
+            115,
+            68
+          ],
+          "quality": "usable for relative comparison"
+        }
+      ]
+    }
+  ]
+}

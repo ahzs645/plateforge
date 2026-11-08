@@ -1,0 +1,254 @@
+[
+  {
+    "id": "2018-pinned",
+    "sourceRatio": 1.4893617021276595,
+    "validThresholds": 5,
+    "segmentation": true,
+    "candidates": [
+      {
+        "key": "retained",
+        "ratio": 0.9221
+      },
+      {
+        "key": "heavy-month-wide",
+        "ratio": 1.2891
+      },
+      {
+        "key": "spacing-2018",
+        "ratio": 0.949
+      },
+      {
+        "key": "spacing-2019",
+        "ratio": 1.0116
+      },
+      {
+        "key": "spacing-2020",
+        "ratio": 1.0004
+      },
+      {
+        "key": "anton-400",
+        "ratio": 1.0788
+      },
+      {
+        "key": "bebasneue-400",
+        "ratio": 0.987
+      },
+      {
+        "key": "oswald-300",
+        "ratio": 0.9512
+      },
+      {
+        "key": "oswald-400",
+        "ratio": 1.0116
+      },
+      {
+        "key": "oswald-500",
+        "ratio": 1.0676
+      },
+      {
+        "key": "oswald-600",
+        "ratio": 1.0967
+      },
+      {
+        "key": "oswald-700",
+        "ratio": 1.1213
+      },
+      {
+        "key": "robotocondensed-400",
+        "ratio": 1.466
+      },
+      {
+        "key": "robotocondensed-600",
+        "ratio": 1.4995
+      },
+      {
+        "key": "robotocondensed-700",
+        "ratio": 1.5085
+      },
+      {
+        "key": "robotocondensed-900",
+        "ratio": 1.5264
+      },
+      {
+        "key": "archivonarrow-400",
+        "ratio": 1.41
+      },
+      {
+        "key": "archivonarrow-600",
+        "ratio": 1.4771
+      },
+      {
+        "key": "archivonarrow-700",
+        "ratio": 1.5107
+      }
+    ]
+  },
+  {
+    "id": "2019-pinned",
+    "sourceRatio": 1.5777777777777777,
+    "validThresholds": 5,
+    "segmentation": true,
+    "candidates": [
+      {
+        "key": "retained",
+        "ratio": 0.8704
+      },
+      {
+        "key": "heavy-month-wide",
+        "ratio": 1.2169
+      },
+      {
+        "key": "spacing-2018",
+        "ratio": 0.8958
+      },
+      {
+        "key": "spacing-2019",
+        "ratio": 0.9549
+      },
+      {
+        "key": "spacing-2020",
+        "ratio": 0.9444
+      },
+      {
+        "key": "anton-400",
+        "ratio": 1.0183
+      },
+      {
+        "key": "bebasneue-400",
+        "ratio": 0.9317
+      },
+      {
+        "key": "oswald-300",
+        "ratio": 0.8979
+      },
+      {
+        "key": "oswald-400",
+        "ratio": 0.9549
+      },
+      {
+        "key": "oswald-500",
+        "ratio": 1.0077
+      },
+      {
+        "key": "oswald-600",
+        "ratio": 1.0352
+      },
+      {
+        "key": "oswald-700",
+        "ratio": 1.0585
+      },
+      {
+        "key": "robotocondensed-400",
+        "ratio": 1.3838
+      },
+      {
+        "key": "robotocondensed-600",
+        "ratio": 1.4155
+      },
+      {
+        "key": "robotocondensed-700",
+        "ratio": 1.4239
+      },
+      {
+        "key": "robotocondensed-900",
+        "ratio": 1.4408
+      },
+      {
+        "key": "archivonarrow-400",
+        "ratio": 1.331
+      },
+      {
+        "key": "archivonarrow-600",
+        "ratio": 1.3944
+      },
+      {
+        "key": "archivonarrow-700",
+        "ratio": 1.4261
+      }
+    ]
+  },
+  {
+    "id": "2020-pinned",
+    "sourceRatio": 1.5227272727272727,
+    "validThresholds": 5,
+    "segmentation": true,
+    "candidates": [
+      {
+        "key": "retained",
+        "ratio": 0.9019
+      },
+      {
+        "key": "heavy-month-wide",
+        "ratio": 1.2609
+      },
+      {
+        "key": "spacing-2018",
+        "ratio": 0.9282
+      },
+      {
+        "key": "spacing-2019",
+        "ratio": 0.9895
+      },
+      {
+        "key": "spacing-2020",
+        "ratio": 0.9785
+      },
+      {
+        "key": "anton-400",
+        "ratio": 1.0551
+      },
+      {
+        "key": "bebasneue-400",
+        "ratio": 0.9654
+      },
+      {
+        "key": "oswald-300",
+        "ratio": 0.9303
+      },
+      {
+        "key": "oswald-400",
+        "ratio": 0.9895
+      },
+      {
+        "key": "oswald-500",
+        "ratio": 1.0442
+      },
+      {
+        "key": "oswald-600",
+        "ratio": 1.0726
+      },
+      {
+        "key": "oswald-700",
+        "ratio": 1.0967
+      },
+      {
+        "key": "robotocondensed-400",
+        "ratio": 1.4338
+      },
+      {
+        "key": "robotocondensed-600",
+        "ratio": 1.4667
+      },
+      {
+        "key": "robotocondensed-700",
+        "ratio": 1.4754
+      },
+      {
+        "key": "robotocondensed-900",
+        "ratio": 1.4929
+      },
+      {
+        "key": "archivonarrow-400",
+        "ratio": 1.3791
+      },
+      {
+        "key": "archivonarrow-600",
+        "ratio": 1.4448
+      },
+      {
+        "key": "archivonarrow-700",
+        "ratio": 1.4776
+      }
+    ]
+  }
+]

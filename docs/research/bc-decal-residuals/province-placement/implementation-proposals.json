@@ -1,0 +1,1324 @@
+{
+  "schema": "plateforge.bc-decal-residual-proposals/v1",
+  "baselineCommit": "24689246670c25f91e0d1676a0647f053dbca68e",
+  "stage": "Final 31 proposals integrated. Central 572-fixture actual-ink check passed with zero failures; final proof uses unmodified integrated checkout. No rejected segmentation drives a production target.",
+  "proposals": [
+    {
+      "id": "1971",
+      "month": null,
+      "runs": {
+        "decal-serial": [
+          {
+            "x": 0.323378,
+            "baseline": 0.812339,
+            "cap": 0.15075,
+            "width": 0.8,
+            "profile": "control-bold",
+            "tracking": 22.8
+          }
+        ]
+      },
+      "layout": {
+        "controlPanel": {
+          "x": 0.022019,
+          "y": 0.520408,
+          "width": 0.56391,
+          "height": 0.336735
+        }
+      },
+      "findings": "Reduce oversized control paint uniformly, preserve its native narrow digit outlines, and fit the independently measured panel. Tracking follows the observed separation; fine digit contours remain approximate.",
+      "scope": "Annual specimen",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/1971.jpg"
+      ],
+      "targetPaintBoxes": {
+        "decal-serial:0": [
+          24.591836734693874,
+          66.3265306122449,
+          98.06122448979592,
+          81.63265306122449
+        ]
+      },
+      "alignment": "Uniform source height to 100; horizontal frame centre aligned. Relative source width retained.",
+      "uncertainty": "Small pinned province lines support approximate whole-line extent/placement, not individual glyph contour scores. Native candidate or authored limited alphabet is not a historical typeface identification."
+    },
+    {
+      "id": "1974",
+      "month": null,
+      "runs": {
+        "decal-serial": [
+          {
+            "x": 0.445718,
+            "baseline": 0.62583,
+            "cap": 0.15759,
+            "width": 0.8,
+            "profile": "control-bold",
+            "tracking": 11.7
+          }
+        ]
+      },
+      "layout": {
+        "controlPanel": {
+          "x": 0.097368,
+          "y": 0.42,
+          "width": 0.610526,
+          "height": 0.3
+        }
+      },
+      "findings": "Reduce oversized control paint uniformly, preserve its native narrow digit outlines, and fit the independently measured panel. Tracking follows the observed separation; fine digit contours remain approximate.",
+      "scope": "Annual specimen",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/1974-769712.jpg"
+      ],
+      "targetPaintBoxes": {
+        "decal-serial:0": [
+          50.5,
+          47.0,
+          118.5,
+          63.0
+        ]
+      },
+      "alignment": "Uniform source height to 100; horizontal frame centre aligned. Relative source width retained.",
+      "uncertainty": "Small pinned province lines support approximate whole-line extent/placement, not individual glyph contour scores. Native candidate or authored limited alphabet is not a historical typeface identification."
+    },
+    {
+      "id": "1975",
+      "month": null,
+      "runs": {
+        "decal-serial": [
+          {
+            "x": 0.537223,
+            "baseline": 0.69557,
+            "cap": 0.16744,
+            "width": 0.8,
+            "profile": "control-bold",
+            "tracking": 8.65
+          }
+        ],
+        "decal-legend": [
+          {
+            "x": 0.069452,
+            "baseline": 0.216088,
+            "cap": 0.124,
+            "width": 0.66,
+            "profile": "normal",
+            "tracking": 4,
+            "anchor": "start"
+          },
+          {
+            "x": 0.082179,
+            "baseline": 0.386088,
+            "cap": 0.124,
+            "width": 0.66,
+            "profile": "normal",
+            "tracking": -1.8,
+            "anchor": "start"
+          }
+        ],
+        "decal-year": [
+          {
+            "x": 0.837027,
+            "baseline": 0.385029,
+            "cap": 0.285029,
+            "width": 0.35,
+            "profile": "archivo-900-wdth75",
+            "tracking": 0
+          }
+        ]
+      },
+      "layout": {
+        "controlPanel": {
+          "x": 0.147651,
+          "y": 0.43,
+          "width": 0.791946,
+          "height": 0.33
+        }
+      },
+      "findings": "Reduce oversized control paint uniformly, preserve its native narrow digit outlines, and fit the independently measured panel. Tracking follows the observed separation; fine digit contours remain approximate. Reposition the two province lines, tighten COLUMBIA tracking and reduce/translate 75 uniformly to restore the observed gap. No year contour is changed and no glyph is horizontally scaled.",
+      "scope": "Annual specimen",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/1975-4469530.jpg"
+      ],
+      "targetPaintBoxes": {
+        "decal-serial:0": [
+          39.0,
+          53.0,
+          121.0,
+          70.0
+        ],
+        "decal-legend:0": [
+          12.0,
+          9.0,
+          80.0,
+          22.0
+        ],
+        "decal-legend:1": [
+          13.0,
+          26.0,
+          102.0,
+          39.0
+        ],
+        "decal-year:0": [
+          104.0,
+          10.0,
+          145.0,
+          39.0
+        ]
+      },
+      "alignment": "Uniform source height to 100; horizontal frame centre aligned. Relative source width retained.",
+      "uncertainty": "Small pinned province lines support approximate whole-line extent/placement, not individual glyph contour scores. Native candidate or authored limited alphabet is not a historical typeface identification."
+    },
+    {
+      "id": "1976",
+      "month": null,
+      "runs": {
+        "decal-serial": [
+          {
+            "x": 0.513788,
+            "baseline": 0.852622,
+            "cap": 0.17086,
+            "width": 0.8,
+            "profile": "control-bold",
+            "tracking": 12.5
+          }
+        ]
+      },
+      "layout": {
+        "controlPanel": {
+          "x": 0.085459,
+          "y": 0.612245,
+          "width": 0.816327,
+          "height": 0.326531
+        }
+      },
+      "findings": "Reduce oversized control paint uniformly, preserve its native narrow digit outlines, and fit the independently measured panel. Tracking follows the observed separation; fine digit contours remain approximate.",
+      "scope": "Annual specimen",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/1976.jpg"
+      ],
+      "targetPaintBoxes": {
+        "decal-serial:0": [
+          39.183673469387756,
+          68.36734693877551,
+          125.91836734693878,
+          85.71428571428572
+        ]
+      },
+      "alignment": "Uniform source height to 100; horizontal frame centre aligned. Relative source width retained.",
+      "uncertainty": "Small pinned province lines support approximate whole-line extent/placement, not individual glyph contour scores. Native candidate or authored limited alphabet is not a historical typeface identification."
+    },
+    {
+      "id": "1981",
+      "month": null,
+      "runs": {
+        "decal-legend": [
+          {
+            "x": 0.57,
+            "baseline": 0.235,
+            "cap": 0.11,
+            "width": 0.35,
+            "profile": "province-wide-1981-reconstruction",
+            "tracking": 0
+          },
+          {
+            "x": 0.57,
+            "baseline": 0.415,
+            "cap": 0.11,
+            "width": 0.43,
+            "profile": "province-wide-1981-reconstruction",
+            "tracking": 0
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Use a limited independently authored wide province alphabet supported by larger 1981/82 photographs; keep unobserved-month placements unchanged.",
+      "scope": "Base role shape/size; province text is fixed.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/1981-59031991.jpg",
+        "https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_October_1981.jpg",
+        "https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_July_1982.jpg"
+      ],
+      "targetPaintBoxes": {},
+      "alignment": "Uniform source height to 100; horizontal frame centre aligned. Relative source width retained.",
+      "uncertainty": "Small pinned province lines support approximate whole-line extent/placement, not individual glyph contour scores. Native candidate or authored limited alphabet is not a historical typeface identification."
+    },
+    {
+      "id": "1981",
+      "month": "JUN",
+      "runs": {
+        "decal-legend": [
+          {
+            "x": 0.577587,
+            "baseline": 0.266667,
+            "cap": 0.125,
+            "width": 0.35,
+            "profile": "province-wide-1981-reconstruction",
+            "tracking": 0
+          },
+          {
+            "x": 0.577587,
+            "baseline": 0.426667,
+            "cap": 0.125,
+            "width": 0.43,
+            "profile": "province-wide-1981-reconstruction",
+            "tracking": 0
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Calibrate the two fixed province words to their pinned whole-line extents; retain uncertainty in the 8\u20139 px-high source. The larger photographs, not this tiny crop, support the capital forms.",
+      "scope": "Placement calibrated only to the photographed JUN specimen; not a claim of a historical month-specific printing design.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/1981-59031991.jpg",
+        "https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_October_1981.jpg",
+        "https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_July_1982.jpg"
+      ],
+      "targetPaintBoxes": {
+        "decal-legend:0": [
+          143.66666666666666,
+          14.666666666666666,
+          235.66666666666666,
+          26.666666666666664
+        ],
+        "decal-legend:1": [
+          126.33333333333334,
+          32.0,
+          252.99999999999997,
+          42.666666666666664
+        ]
+      },
+      "alignment": "Uniform source height to 100; horizontal frame centre aligned. Relative source width retained.",
+      "uncertainty": "Small pinned province lines support approximate whole-line extent/placement, not individual glyph contour scores. Native candidate or authored limited alphabet is not a historical typeface identification."
+    },
+    {
+      "id": "1982",
+      "month": null,
+      "runs": {
+        "decal-legend": [
+          {
+            "x": 0.57,
+            "baseline": 0.7,
+            "cap": 0.085,
+            "width": 0.35,
+            "profile": "province-wide-1981-reconstruction",
+            "tracking": 0
+          },
+          {
+            "x": 0.57,
+            "baseline": 0.83,
+            "cap": 0.085,
+            "width": 0.43,
+            "profile": "province-wide-1981-reconstruction",
+            "tracking": 0
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Use a limited independently authored wide province alphabet supported by larger 1981/82 photographs; keep unobserved-month placements unchanged.",
+      "scope": "Base role shape/size; province text is fixed.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/1982-66134375.jpg",
+        "https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_October_1981.jpg",
+        "https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_July_1982.jpg"
+      ],
+      "targetPaintBoxes": {},
+      "alignment": "Uniform source height to 100; horizontal frame centre aligned. Relative source width retained.",
+      "uncertainty": "Small pinned province lines support approximate whole-line extent/placement, not individual glyph contour scores. Native candidate or authored limited alphabet is not a historical typeface identification."
+    },
+    {
+      "id": "1982",
+      "month": "JAN",
+      "runs": {
+        "decal-legend": [
+          {
+            "x": 0.58147,
+            "baseline": 0.693333,
+            "cap": 0.118,
+            "width": 0.35,
+            "profile": "province-wide-1981-reconstruction",
+            "tracking": 0
+          },
+          {
+            "x": 0.58349,
+            "baseline": 0.853333,
+            "cap": 0.118,
+            "width": 0.43,
+            "profile": "province-wide-1981-reconstruction",
+            "tracking": 0
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Calibrate the two fixed province words to their pinned whole-line extents; retain uncertainty in the 8\u20139 px-high source. The larger photographs, not this tiny crop, support the capital forms.",
+      "scope": "Placement calibrated only to the photographed JAN specimen; not a claim of a historical month-specific printing design.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/1982-66134375.jpg",
+        "https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_October_1981.jpg",
+        "https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_July_1982.jpg"
+      ],
+      "targetPaintBoxes": {
+        "decal-legend:0": [
+          147.66666666666666,
+          57.33333333333333,
+          234.33333333333331,
+          69.33333333333333
+        ],
+        "decal-legend:1": [
+          133.0,
+          74.66666666666666,
+          250.33333333333331,
+          85.33333333333333
+        ]
+      },
+      "alignment": "Uniform source height to 100; horizontal frame centre aligned. Relative source width retained.",
+      "uncertainty": "Small pinned province lines support approximate whole-line extent/placement, not individual glyph contour scores. Native candidate or authored limited alphabet is not a historical typeface identification."
+    },
+    {
+      "id": "1985",
+      "month": null,
+      "runs": {
+        "decal-legend": [
+          {
+            "x": 0.54,
+            "baseline": 0.83,
+            "cap": 0.075,
+            "width": 0.49,
+            "profile": "archivo-900-wdth75",
+            "tracking": 2
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Choose native Archivo 900 at its width 75 design axis for the visibly heavy small capitals. This is a visual candidate, not historical font identification.",
+      "scope": "Base role shape/size; province text is fixed.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/1985-62333627.jpg",
+        "https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_February_1985.jpg"
+      ],
+      "targetPaintBoxes": {},
+      "alignment": "Uniform source height to 100; horizontal frame centre aligned. Relative source width retained.",
+      "uncertainty": "Small pinned province lines support approximate whole-line extent/placement, not individual glyph contour scores. Native candidate or authored limited alphabet is not a historical typeface identification."
+    },
+    {
+      "id": "1985",
+      "month": "JUL",
+      "runs": {
+        "decal-legend": [
+          {
+            "x": 0.531257,
+            "baseline": 0.798256,
+            "cap": 0.1,
+            "width": 0.49,
+            "profile": "archivo-900-wdth75",
+            "tracking": 2
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Resize and place the province words at observed whole-line extent, retaining native glyph proportions. The observed control is translated separately.",
+      "scope": "Placement calibrated only to the photographed JUL specimen; not a claim of a historical month-specific printing design.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/1985-62333627.jpg",
+        "https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_February_1985.jpg"
+      ],
+      "targetPaintBoxes": {
+        "decal-legend:0": [
+          113.66666666666666,
+          70.66666666666666,
+          237.66666666666666,
+          80.0
+        ]
+      },
+      "alignment": "Uniform source height to 100; horizontal frame centre aligned. Relative source width retained.",
+      "uncertainty": "Small pinned province lines support approximate whole-line extent/placement, not individual glyph contour scores. Native candidate or authored limited alphabet is not a historical typeface identification."
+    },
+    {
+      "id": "1987",
+      "month": null,
+      "runs": {
+        "decal-legend": [
+          {
+            "x": 0.57,
+            "baseline": 0.235,
+            "cap": 0.11,
+            "width": 0.35,
+            "profile": "archivo-900-wdth75",
+            "tracking": 12
+          },
+          {
+            "x": 0.57,
+            "baseline": 0.415,
+            "cap": 0.11,
+            "width": 0.35,
+            "profile": "archivo-900-wdth75",
+            "tracking": 12
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Choose native Archivo 900 at its width 75 design axis for the visibly heavy small capitals. This is a visual candidate, not historical font identification.",
+      "scope": "Base role shape/size; province text is fixed.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/1987-22687871.jpg",
+        "https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_February_1987.jpg"
+      ],
+      "targetPaintBoxes": {},
+      "alignment": "Uniform source height to 100; horizontal frame centre aligned. Relative source width retained.",
+      "uncertainty": "Small pinned province lines support approximate whole-line extent/placement, not individual glyph contour scores. Native candidate or authored limited alphabet is not a historical typeface identification."
+    },
+    {
+      "id": "1987",
+      "month": "FEB",
+      "runs": {
+        "decal-legend": [
+          {
+            "x": 0.588873,
+            "baseline": 0.3444,
+            "cap": 0.13,
+            "width": 0.35,
+            "profile": "archivo-900-wdth75",
+            "tracking": 12
+          },
+          {
+            "x": 0.585954,
+            "baseline": 0.531066,
+            "cap": 0.13,
+            "width": 0.35,
+            "profile": "archivo-900-wdth75",
+            "tracking": 12
+          }
+        ],
+        "decal-serial": [
+          {
+            "x": 0.603453,
+            "baseline": 0.849367,
+            "cap": 0.15,
+            "width": 0.31,
+            "profile": "control",
+            "tracking": 10
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Resize and place the province words at observed whole-line extent, retaining native glyph proportions. The observed control is translated separately.",
+      "scope": "Placement calibrated only to the photographed FEB specimen; not a claim of a historical month-specific printing design.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/1987-22687871.jpg",
+        "https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_February_1987.jpg"
+      ],
+      "targetPaintBoxes": {
+        "decal-legend:0": [
+          158.33333333333334,
+          21.333333333333332,
+          230.33333333333334,
+          34.666666666666664
+        ],
+        "decal-legend:1": [
+          145.0,
+          40.0,
+          242.33333333333334,
+          53.33333333333333
+        ],
+        "decal-serial:0": [
+          163.66666666666669,
+          68.0,
+          231.66666666666669,
+          85.33333333333333
+        ]
+      },
+      "alignment": "Uniform source height to 100; horizontal frame centre aligned. Relative source width retained.",
+      "uncertainty": "Small pinned province lines support approximate whole-line extent/placement, not individual glyph contour scores. Native candidate or authored limited alphabet is not a historical typeface identification."
+    },
+    {
+      "id": "1988",
+      "month": "DEC",
+      "runs": {
+        "decal-legend": [
+          {
+            "x": 0.57037,
+            "baseline": 0.30367,
+            "cap": 0.095,
+            "width": 0.26,
+            "profile": "normal",
+            "tracking": 0
+          },
+          {
+            "x": 0.570215,
+            "baseline": 0.450336,
+            "cap": 0.095,
+            "width": 0.26,
+            "profile": "normal",
+            "tracking": 0
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Retain the approximate province face; correct the clearly undersized/raised DEC stack only. Its blur prevents a confident new contour construction.",
+      "scope": "Placement calibrated only to the photographed DEC specimen; not a claim of a historical month-specific printing design.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/1988-21533872.jpg"
+      ],
+      "targetPaintBoxes": {
+        "decal-legend:0": [
+          163.66666666666669,
+          20.0,
+          213.0,
+          30.666666666666664
+        ],
+        "decal-legend:1": [
+          154.33333333333334,
+          34.666666666666664,
+          222.33333333333334,
+          45.33333333333333
+        ]
+      },
+      "alignment": "Uniform source height to 100; horizontal frame centre aligned. Relative source width retained.",
+      "uncertainty": "Small pinned province lines support approximate whole-line extent/placement, not individual glyph contour scores. Native candidate or authored limited alphabet is not a historical typeface identification."
+    },
+    {
+      "id": "1989",
+      "month": "APR",
+      "runs": {
+        "decal-serial": [
+          {
+            "x": 0.589021,
+            "baseline": 0.649216,
+            "cap": 0.125,
+            "width": 0.275,
+            "profile": "normal",
+            "tracking": 0
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Correct the observed control location by translation only. Native glyph shape, cap height and spacing are preserved; other months keep their established placement.",
+      "scope": "Placement calibrated only to the photographed APR specimen; not a claim of a historical month-specific printing design.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/1989-33187934.jpg"
+      ],
+      "targetPaintBoxes": {
+        "decal-serial:0": [
+          156.33333333333331,
+          52.0,
+          232.33333333333331,
+          65.33333333333333
+        ]
+      },
+      "alignment": "Uniform source height to 100; horizontal frame centre aligned. Relative source width retained.",
+      "uncertainty": "Small pinned province lines support approximate whole-line extent/placement, not individual glyph contour scores. Native candidate or authored limited alphabet is not a historical typeface identification."
+    },
+    {
+      "id": "1990",
+      "month": "JAN",
+      "runs": {
+        "decal-serial": [
+          {
+            "x": 0.560867,
+            "baseline": 0.88939,
+            "cap": 0.125,
+            "width": 0.275,
+            "profile": "normal",
+            "tracking": 0
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Correct the observed control location by translation only. Native glyph shape, cap height and spacing are preserved; other months keep their established placement.",
+      "scope": "Placement calibrated only to the photographed JAN specimen; not a claim of a historical month-specific printing design.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/1990-30863010.jpg",
+        "https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_January_1990.jpg"
+      ],
+      "targetPaintBoxes": {
+        "decal-serial:0": [
+          146.33333333333334,
+          74.66666666666666,
+          223.66666666666669,
+          89.33333333333333
+        ]
+      },
+      "alignment": "Uniform source height to 100; horizontal frame centre aligned. Relative source width retained.",
+      "uncertainty": "Small pinned province lines support approximate whole-line extent/placement, not individual glyph contour scores. Native candidate or authored limited alphabet is not a historical typeface identification."
+    },
+    {
+      "id": "1991",
+      "month": "JUN",
+      "runs": {
+        "decal-serial": [
+          {
+            "x": 0.599328,
+            "baseline": 0.782727,
+            "cap": 0.125,
+            "width": 0.275,
+            "profile": "normal",
+            "tracking": 0
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Correct the observed control location by translation only. Native glyph shape, cap height and spacing are preserved; other months keep their established placement.",
+      "scope": "Placement calibrated only to the photographed JUN specimen; not a claim of a historical month-specific printing design.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/1991-55232623.jpg",
+        "https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_January_1991.jpg"
+      ],
+      "targetPaintBoxes": {
+        "decal-serial:0": [
+          159.66666666666666,
+          66.66666666666666,
+          235.66666666666666,
+          78.66666666666666
+        ]
+      },
+      "alignment": "Uniform source height to 100; horizontal frame centre aligned. Relative source width retained.",
+      "uncertainty": "Small pinned province lines support approximate whole-line extent/placement, not individual glyph contour scores. Native candidate or authored limited alphabet is not a historical typeface identification."
+    },
+    {
+      "id": "1992",
+      "month": "OCT",
+      "runs": {
+        "decal-serial": [
+          {
+            "x": 0.544326,
+            "baseline": 0.782555,
+            "cap": 0.125,
+            "width": 0.275,
+            "profile": "normal",
+            "tracking": 0
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Correct the observed control location by translation only. Native glyph shape, cap height and spacing are preserved; other months keep their established placement.",
+      "scope": "Placement calibrated only to the photographed OCT specimen; not a claim of a historical month-specific printing design.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/1992-59693121.jpg"
+      ],
+      "targetPaintBoxes": {
+        "decal-serial:0": [
+          141.0,
+          66.66666666666666,
+          215.66666666666666,
+          78.66666666666666
+        ]
+      },
+      "alignment": "Uniform source height to 100; horizontal frame centre aligned. Relative source width retained.",
+      "uncertainty": "Small pinned province lines support approximate whole-line extent/placement, not individual glyph contour scores. Native candidate or authored limited alphabet is not a historical typeface identification."
+    },
+    {
+      "id": "1993",
+      "month": "OCT",
+      "runs": {
+        "decal-serial": [
+          {
+            "x": 0.546727,
+            "baseline": 0.769216,
+            "cap": 0.125,
+            "width": 0.275,
+            "profile": "normal",
+            "tracking": 0
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Correct the observed control location by translation only. Native glyph shape, cap height and spacing are preserved; other months keep their established placement.",
+      "scope": "Placement calibrated only to the photographed OCT specimen; not a claim of a historical month-specific printing design.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/1993-79096980.jpg"
+      ],
+      "targetPaintBoxes": {
+        "decal-serial:0": [
+          141.66666666666669,
+          64.0,
+          219.0,
+          77.33333333333333
+        ]
+      },
+      "alignment": "Uniform source height to 100; horizontal frame centre aligned. Relative source width retained.",
+      "uncertainty": "Small pinned province lines support approximate whole-line extent/placement, not individual glyph contour scores. Native candidate or authored limited alphabet is not a historical typeface identification."
+    },
+    {
+      "id": "1995",
+      "month": "NOV",
+      "runs": {
+        "decal-serial": [
+          {
+            "x": 0.561049,
+            "baseline": 0.76939,
+            "cap": 0.125,
+            "width": 0.275,
+            "profile": "normal",
+            "tracking": 0
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Correct the observed control location by translation only. Native glyph shape, cap height and spacing are preserved; other months keep their established placement.",
+      "scope": "Placement calibrated only to the photographed NOV specimen; not a claim of a historical month-specific printing design.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/1995-82287425.jpg"
+      ],
+      "targetPaintBoxes": {
+        "decal-serial:0": [
+          145.66666666666669,
+          65.33333333333333,
+          224.33333333333334,
+          77.33333333333333
+        ]
+      },
+      "alignment": "Uniform source height to 100; horizontal frame centre aligned. Relative source width retained.",
+      "uncertainty": "Small pinned province lines support approximate whole-line extent/placement, not individual glyph contour scores. Native candidate or authored limited alphabet is not a historical typeface identification."
+    },
+    {
+      "id": "1996",
+      "month": "MAR",
+      "runs": {
+        "decal-serial": [
+          {
+            "x": 0.593218,
+            "baseline": 0.702555,
+            "cap": 0.125,
+            "width": 0.275,
+            "profile": "normal",
+            "tracking": 0
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Correct the observed control location by translation only. Native glyph shape, cap height and spacing are preserved; other months keep their established placement.",
+      "scope": "Placement calibrated only to the photographed MAR specimen; not a claim of a historical month-specific printing design.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/1996-22710492.jpg"
+      ],
+      "targetPaintBoxes": {
+        "decal-serial:0": [
+          157.66666666666666,
+          58.666666666666664,
+          233.66666666666666,
+          70.66666666666666
+        ]
+      },
+      "alignment": "Uniform source height to 100; horizontal frame centre aligned. Relative source width retained.",
+      "uncertainty": "Small pinned province lines support approximate whole-line extent/placement, not individual glyph contour scores. Native candidate or authored limited alphabet is not a historical typeface identification."
+    },
+    {
+      "id": "1980",
+      "month": "MAR",
+      "runs": {},
+      "layout": {
+        "controlPanel": {
+          "x": 0.457576,
+          "y": 0.586667,
+          "width": 0.286869,
+          "height": 0.306667
+        }
+      },
+      "findings": "Reposition only the independently inspected unfilled control panel. Retain the first-pass control printing: its mask touches the frame/inspection boundary and is rejected.",
+      "scope": "Placement calibrated only to the photographed MAR specimen; not a claim of a historical month-specific printing design.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/1980-43052284.jpg"
+      ],
+      "targetPaintBoxes": {},
+      "alignment": "Uniform source height to 100; horizontal frame centre aligned. Relative source width retained.",
+      "uncertainty": "Small pinned province lines support approximate whole-line extent/placement, not individual glyph contour scores. Native candidate or authored limited alphabet is not a historical typeface identification.",
+      "measurementBasis": "Manual outer-frame bracket [117,44,188,67] in the 255\u00d775 source, with approximately one-pixel uncertainty. No serial mask or serial target is accepted."
+    },
+    {
+      "id": "2010",
+      "month": null,
+      "runs": {
+        "decal-legend": [
+          {
+            "x": 0.57,
+            "baseline": 0.405,
+            "cap": 0.13,
+            "width": 0.25,
+            "profile": "province-tall-2010-reconstruction",
+            "tracking": 0
+          },
+          {
+            "x": 0.57,
+            "baseline": 0.56,
+            "cap": 0.13,
+            "width": 0.29,
+            "profile": "province-tall-2010-reconstruction",
+            "tracking": 0
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Use the independently authored 12-capital tall province subset supported by the large 2012 original and corroborated whole-word proportions in 2010\u201313.",
+      "scope": "Fixed province alphabet/nominal size across the corroborated 2010\u201313 subset; unobserved-month positions retained.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/2010.jpg",
+        "https://commons.wikimedia.org/wiki/File:ICBC_Aug_2012_Registration_Decal.png"
+      ],
+      "targetPaintBoxes": {},
+      "alignment": "Uniform source height to 100 and horizontal frame-centre alignment; relative source width retained.",
+      "uncertainty": "Approximate whole-line placement; source-specific photograph tilt and print spread remain visible. Historical typeface identity is unconfirmed."
+    },
+    {
+      "id": "2010",
+      "month": "JAN",
+      "runs": {
+        "decal-legend": [
+          {
+            "x": 0.584389,
+            "baseline": 0.345609,
+            "cap": 0.133,
+            "width": 0.25,
+            "profile": "province-tall-2010-reconstruction",
+            "tracking": 0
+          },
+          {
+            "x": 0.586608,
+            "baseline": 0.508874,
+            "cap": 0.133,
+            "width": 0.29,
+            "profile": "province-tall-2010-reconstruction",
+            "tracking": 0
+          }
+        ],
+        "decal-serial": [
+          {
+            "x": 0.718028,
+            "baseline": 0.872788,
+            "cap": 0.18,
+            "width": 0.42,
+            "profile": "control-bold",
+            "tracking": 0
+          }
+        ],
+        "decal-month": [
+          {
+            "x": 0.022632,
+            "baseline": 0.631436,
+            "cap": 0.580425,
+            "width": 0.39,
+            "profile": "heavy-month",
+            "tracking": 0,
+            "anchor": "start"
+          }
+        ],
+        "decal-year": [
+          {
+            "x": 0.986087,
+            "baseline": 0.621457,
+            "cap": 0.569446,
+            "width": 0.27,
+            "profile": "heavy-year",
+            "tracking": 0,
+            "anchor": "end"
+          }
+        ]
+      },
+      "layout": {
+        "barcode": {
+          "x": -0.047016,
+          "y": 0.683673,
+          "width": 0.606011,
+          "height": 0.214286
+        }
+      },
+      "findings": "Calibrate the province stack using accepted whole-line extents. Preserve all unrelated existing month roles. In 2010/2012, uniformly reduce/place the date and restore the observed barcode gap; native date outlines remain unchanged.",
+      "scope": "Exact photographed JAN placement; merge with existing month variant roles/layout.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/2010.jpg",
+        "https://commons.wikimedia.org/wiki/File:ICBC_Aug_2012_Registration_Decal.png"
+      ],
+      "targetPaintBoxes": {
+        "decal-legend:0": [
+          111.4285714285714,
+          20.408163265306122,
+          156.32653061224488,
+          34.69387755102041
+        ],
+        "decal-legend:1": [
+          104.28571428571426,
+          36.734693877551024,
+          164.48979591836732,
+          51.02040816326531
+        ],
+        "decal-serial:0": [
+          122.65306122448978,
+          69.38775510204081,
+          208.36734693877548,
+          87.75510204081633
+        ],
+        "decal-month:0": [
+          5.306122448979568,
+          5.1020408163265305,
+          88.97959183673467,
+          64.28571428571429
+        ],
+        "decal-year:0": [
+          176.734693877551,
+          4.081632653061225,
+          224.6938775510204,
+          63.26530612244898
+        ]
+      },
+      "alignment": "Uniform source height to 100 and horizontal frame-centre alignment; relative source width retained.",
+      "uncertainty": "Approximate whole-line placement; source-specific photograph tilt and print spread remain visible. Historical typeface identity is unconfirmed. Matching date height and placement does not eliminate the retained month/year shape-width residuals."
+    },
+    {
+      "id": "2011",
+      "month": null,
+      "runs": {
+        "decal-legend": [
+          {
+            "x": 0.57,
+            "baseline": 0.405,
+            "cap": 0.13,
+            "width": 0.25,
+            "profile": "province-tall-2010-reconstruction",
+            "tracking": 0
+          },
+          {
+            "x": 0.57,
+            "baseline": 0.56,
+            "cap": 0.13,
+            "width": 0.29,
+            "profile": "province-tall-2010-reconstruction",
+            "tracking": 0
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Use the independently authored 12-capital tall province subset supported by the large 2012 original and corroborated whole-word proportions in 2010\u201313.",
+      "scope": "Fixed province alphabet/nominal size across the corroborated 2010\u201313 subset; unobserved-month positions retained.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/2011-24516329.jpg",
+        "https://commons.wikimedia.org/wiki/File:ICBC_Aug_2012_Registration_Decal.png"
+      ],
+      "targetPaintBoxes": {},
+      "alignment": "Uniform source height to 100 and horizontal frame-centre alignment; relative source width retained.",
+      "uncertainty": "Approximate whole-line placement; source-specific photograph tilt and print spread remain visible. Historical typeface identity is unconfirmed."
+    },
+    {
+      "id": "2011",
+      "month": "MAY",
+      "runs": {
+        "decal-legend": [
+          {
+            "x": 0.578348,
+            "baseline": 0.3587,
+            "cap": 0.13,
+            "width": 0.25,
+            "profile": "province-tall-2010-reconstruction",
+            "tracking": 0
+          },
+          {
+            "x": 0.580522,
+            "baseline": 0.5187,
+            "cap": 0.13,
+            "width": 0.29,
+            "profile": "province-tall-2010-reconstruction",
+            "tracking": 0
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Calibrate the province stack using accepted whole-line extents. Preserve all unrelated existing month roles. In 2010/2012, uniformly reduce/place the date and restore the observed barcode gap; native date outlines remain unchanged.",
+      "scope": "Exact photographed MAY placement; merge with existing month variant roles/layout.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/2011-24516329.jpg",
+        "https://commons.wikimedia.org/wiki/File:ICBC_Aug_2012_Registration_Decal.png"
+      ],
+      "targetPaintBoxes": {
+        "decal-legend:0": [
+          110.49999999999999,
+          23.0,
+          154.5,
+          36.0
+        ],
+        "decal-legend:1": [
+          103.49999999999999,
+          39.0,
+          162.5,
+          52.0
+        ]
+      },
+      "alignment": "Uniform source height to 100 and horizontal frame-centre alignment; relative source width retained.",
+      "uncertainty": "Approximate whole-line placement; source-specific photograph tilt and print spread remain visible. Historical typeface identity is unconfirmed. Matching date height and placement does not eliminate the retained month/year shape-width residuals."
+    },
+    {
+      "id": "2012",
+      "month": null,
+      "runs": {
+        "decal-legend": [
+          {
+            "x": 0.57,
+            "baseline": 0.405,
+            "cap": 0.13,
+            "width": 0.25,
+            "profile": "province-tall-2010-reconstruction",
+            "tracking": 0
+          },
+          {
+            "x": 0.57,
+            "baseline": 0.56,
+            "cap": 0.13,
+            "width": 0.29,
+            "profile": "province-tall-2010-reconstruction",
+            "tracking": 0
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Use the independently authored 12-capital tall province subset supported by the large 2012 original and corroborated whole-word proportions in 2010\u201313.",
+      "scope": "Fixed province alphabet/nominal size across the corroborated 2010\u201313 subset; unobserved-month positions retained.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/2012-97303194.jpg",
+        "https://commons.wikimedia.org/wiki/File:ICBC_Aug_2012_Registration_Decal.png"
+      ],
+      "targetPaintBoxes": {},
+      "alignment": "Uniform source height to 100 and horizontal frame-centre alignment; relative source width retained.",
+      "uncertainty": "Approximate whole-line placement; source-specific photograph tilt and print spread remain visible. Historical typeface identity is unconfirmed."
+    },
+    {
+      "id": "2012",
+      "month": "NOV",
+      "runs": {
+        "decal-legend": [
+          {
+            "x": 0.582765,
+            "baseline": 0.37866,
+            "cap": 0.134,
+            "width": 0.25,
+            "profile": "province-tall-2010-reconstruction",
+            "tracking": 0
+          },
+          {
+            "x": 0.582765,
+            "baseline": 0.51866,
+            "cap": 0.134,
+            "width": 0.29,
+            "profile": "province-tall-2010-reconstruction",
+            "tracking": 0
+          }
+        ],
+        "decal-month": [
+          {
+            "x": 0.036998,
+            "baseline": 0.639028,
+            "cap": 0.558057,
+            "width": 0.39,
+            "profile": "heavy-month",
+            "tracking": 0,
+            "anchor": "start"
+          }
+        ],
+        "decal-year": [
+          {
+            "x": 0.979644,
+            "baseline": 0.64,
+            "cap": 0.539395,
+            "width": 0.27,
+            "profile": "heavy-year",
+            "tracking": 0,
+            "anchor": "end"
+          }
+        ]
+      },
+      "layout": {
+        "barcode": {
+          "x": -0.039351,
+          "y": 0.7,
+          "width": 0.604788,
+          "height": 0.23
+        }
+      },
+      "findings": "Calibrate the province stack using accepted whole-line extents. Preserve all unrelated existing month roles. In 2010/2012, uniformly reduce/place the date and restore the observed barcode gap; native date outlines remain unchanged.",
+      "scope": "Exact photographed NOV placement; merge with existing month variant roles/layout.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/2012-97303194.jpg",
+        "https://commons.wikimedia.org/wiki/File:ICBC_Aug_2012_Registration_Decal.png"
+      ],
+      "targetPaintBoxes": {
+        "decal-legend:0": [
+          110.99999999999999,
+          24.0,
+          156.0,
+          38.0
+        ],
+        "decal-legend:1": [
+          102.99999999999999,
+          40.0,
+          164.0,
+          52.0
+        ],
+        "decal-month:0": [
+          5.999999999999986,
+          7.0,
+          91.99999999999999,
+          65.0
+        ],
+        "decal-year:0": [
+          176.0,
+          9.0,
+          225.0,
+          64.0
+        ]
+      },
+      "alignment": "Uniform source height to 100 and horizontal frame-centre alignment; relative source width retained.",
+      "uncertainty": "Approximate whole-line placement; source-specific photograph tilt and print spread remain visible. Historical typeface identity is unconfirmed. Matching date height and placement does not eliminate the retained month/year shape-width residuals."
+    },
+    {
+      "id": "2013",
+      "month": null,
+      "runs": {
+        "decal-legend": [
+          {
+            "x": 0.57,
+            "baseline": 0.405,
+            "cap": 0.13,
+            "width": 0.25,
+            "profile": "province-tall-2010-reconstruction",
+            "tracking": 0
+          },
+          {
+            "x": 0.57,
+            "baseline": 0.56,
+            "cap": 0.13,
+            "width": 0.29,
+            "profile": "province-tall-2010-reconstruction",
+            "tracking": 0
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Use the independently authored 12-capital tall province subset supported by the large 2012 original and corroborated whole-word proportions in 2010\u201313.",
+      "scope": "Fixed province alphabet/nominal size across the corroborated 2010\u201313 subset; unobserved-month positions retained.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/2013-79670318.jpg",
+        "https://commons.wikimedia.org/wiki/File:ICBC_Aug_2012_Registration_Decal.png"
+      ],
+      "targetPaintBoxes": {},
+      "alignment": "Uniform source height to 100 and horizontal frame-centre alignment; relative source width retained.",
+      "uncertainty": "Approximate whole-line placement; source-specific photograph tilt and print spread remain visible. Historical typeface identity is unconfirmed."
+    },
+    {
+      "id": "2013",
+      "month": "OCT",
+      "runs": {
+        "decal-legend": [
+          {
+            "x": 0.576174,
+            "baseline": 0.3787,
+            "cap": 0.13,
+            "width": 0.25,
+            "profile": "province-tall-2010-reconstruction",
+            "tracking": 0
+          },
+          {
+            "x": 0.578348,
+            "baseline": 0.5387,
+            "cap": 0.13,
+            "width": 0.29,
+            "profile": "province-tall-2010-reconstruction",
+            "tracking": 0
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Calibrate the province stack using accepted whole-line extents. Preserve all unrelated existing month roles. In 2010/2012, uniformly reduce/place the date and restore the observed barcode gap; native date outlines remain unchanged.",
+      "scope": "Exact photographed OCT placement; merge with existing month variant roles/layout.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/2013-79670318.jpg",
+        "https://commons.wikimedia.org/wiki/File:ICBC_Aug_2012_Registration_Decal.png"
+      ],
+      "targetPaintBoxes": {
+        "decal-legend:0": [
+          109.99999999999999,
+          24.0,
+          154.0,
+          38.0
+        ],
+        "decal-legend:1": [
+          101.99999999999999,
+          40.0,
+          163.0,
+          54.0
+        ]
+      },
+      "alignment": "Uniform source height to 100 and horizontal frame-centre alignment; relative source width retained.",
+      "uncertainty": "Approximate whole-line placement; source-specific photograph tilt and print spread remain visible. Historical typeface identity is unconfirmed. Matching date height and placement does not eliminate the retained month/year shape-width residuals."
+    },
+    {
+      "id": "2006",
+      "month": null,
+      "runs": {
+        "decal-legend": [
+          {
+            "x": 0.63587,
+            "baseline": 0.515,
+            "cap": 0.067,
+            "width": 0.22,
+            "profile": "archivo-900-wdth75",
+            "tracking": 0
+          },
+          {
+            "x": 0.63587,
+            "baseline": 0.595,
+            "cap": 0.067,
+            "width": 0.22,
+            "profile": "archivo-900-wdth75",
+            "tracking": 0
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Use native Archivo 900 width 75 for the heavy province capitals supported by the large APR photograph; nominal cap follows its province/year height proportion. Translate both lines +2.5 SVG units to preserve family clearance for wide month runs. No rejected MAY mask drives an exact coordinate.",
+      "scope": "2006 only: source-supported shape/nominal size plus a family collision guard. The shift is not asserted as exact specimen registration; no neighbouring-year generalization.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/2006-24286311.jpg",
+        "https://commons.wikimedia.org/wiki/File:ICBC_Apr_2006_Registration_Decal.png"
+      ],
+      "targetPaintBoxes": {},
+      "alignment": "Uniform source height to 100 and horizontal frame-centre alignment; relative source width retained.",
+      "uncertainty": "The tiny MAY masks touch neighbouring paint/inspection boundaries and are rejected. The larger APR source supports native face weight and approximate size, not exact MAY coordinates or historical typeface identity.",
+      "measurementBasis": "Actual-engine family collision guard: original COLUMBIA right edge 166.531, year left edge 170.122; +2.5 units leaves 1.091 units to the year and resolves the reported 1.7701-unit MAR and 1.2051-unit MAY overlaps without resizing type."
+    },
+    {
+      "id": "2009",
+      "month": "APR",
+      "runs": {
+        "decal-legend": [
+          {
+            "x": 0.57,
+            "baseline": 0.405,
+            "cap": 0.095,
+            "width": 0.18,
+            "profile": "condensed-medium",
+            "tracking": 0
+          },
+          {
+            "x": 0.566673,
+            "baseline": 0.499053,
+            "cap": 0.095,
+            "width": 0.18,
+            "profile": "condensed-medium",
+            "tracking": 0
+          }
+        ]
+      },
+      "layout": {},
+      "findings": "Raise COLUMBIA to the compact observed line gap; retain the existing native face and cap. BRITISH remains visibly broad and is explicitly unresolved.",
+      "scope": "Exact photographed APR placement; merge with existing month variant roles/layout.",
+      "evidenceUrls": [
+        "https://www.bcpl8s.ca/images/Decals/Passenger/2009-53054167.jpg"
+      ],
+      "targetPaintBoxes": {
+        "decal-legend:1": [
+          111.49999999999999,
+          41.0,
+          149.5,
+          50.0
+        ]
+      },
+      "alignment": "Uniform source height to 100 and horizontal frame-centre alignment; relative source width retained.",
+      "uncertainty": "Approximate whole-line placement; source-specific photograph tilt and print spread remain visible. Historical typeface identity is unconfirmed."
+    }
+  ]
+}

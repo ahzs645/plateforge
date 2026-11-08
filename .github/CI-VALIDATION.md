@@ -10,6 +10,7 @@ npm run typecheck
 npm test
 BASE_PATH=/plateforge/ npm run build
 # Full browser/overlay checks: Typography validation → Run workflow.
+# Full application navigation checks: Check plate systems → Run workflow.
 # Deliberate preview/comparison artifacts: Check Iraq and Iran plates / Compare Iraq and Iran typography.
 ```
 

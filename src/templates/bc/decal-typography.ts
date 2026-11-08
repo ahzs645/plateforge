@@ -15,6 +15,10 @@ export interface TypographyRun {
 }
 export interface TypographyLayout {
   cornerRadius?: number;
+  /** Control panel, in fractions of the decal; independent of control lettering. */
+  controlPanel?: { x: number; y: number; width: number; height: number };
+  /** Outline centre-line radii as fractions of decal height; independent of the substrate. */
+  doubleBorder?: { outerRadius: number; innerRadius: number };
   provinceCentre?: number;
   provinceColumns?: readonly number[];
   barcode?: { x: number; y: number; width: number; height: number };
@@ -29,13 +33,13 @@ export interface DecalTypographyReview {
   reviewedOn: string;
   runs: Record<string, TypographyRun[]>;
   layout?: TypographyLayout;
-  monthVariants?: { fromMonth: number; evidence: string; runs: Record<string, TypographyRun[]>; layout?: TypographyLayout }[];
+  monthVariants?: { fromMonth: number; throughMonth?: number; evidence: string; runs: Record<string, TypographyRun[]>; layout?: TypographyLayout }[];
 }
 export const DECAL_TYPOGRAPHY = records as Record<string, DecalTypographyReview>;
 export function decalTypography(id?: string, month?: string): DecalTypographyReview | undefined {
   const record = id ? DECAL_TYPOGRAPHY[id] : undefined;
   if (!record) return undefined;
   const monthNumber = ['JAN','FEB','MAR','APR','MAY','JUN','JUL','AUG','SEP','OCT','NOV','DEC'].indexOf(month ?? 'JAN') + 1;
-  const variant = record.monthVariants?.filter(v => monthNumber >= v.fromMonth).at(-1);
+  const variant = record.monthVariants?.filter(v => monthNumber >= v.fromMonth && monthNumber <= (v.throughMonth ?? 12)).at(-1);
   return variant ? { ...record, runs: { ...record.runs, ...variant.runs }, layout: { ...record.layout, ...variant.layout } } : record;
 }

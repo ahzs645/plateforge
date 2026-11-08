@@ -1,0 +1,138 @@
+{
+  "method": "Actual registry and makePlate validation; browser and export execution remain pending.",
+  "cases": [
+    {
+      "id": "1972",
+      "format": "1970-1972",
+      "control": "926403",
+      "validation": null
+    },
+    {
+      "id": "1983",
+      "format": "1979-first",
+      "control": "85138416",
+      "validation": null
+    },
+    {
+      "id": "1984",
+      "format": "1979-first",
+      "control": "42144483",
+      "validation": null
+    },
+    {
+      "id": "1986",
+      "format": "1985-flag",
+      "control": "12137790",
+      "validation": null
+    },
+    {
+      "id": "1998-type-ii",
+      "format": "1985-flag",
+      "control": "34838894",
+      "validation": null
+    },
+    {
+      "id": "1999",
+      "format": "1985-flag",
+      "control": "54174570",
+      "validation": null
+    },
+    {
+      "id": "2000",
+      "format": "1985-flag",
+      "control": "53583708",
+      "validation": null
+    },
+    {
+      "id": "2004",
+      "format": "2001-flag",
+      "control": "42591320",
+      "validation": null
+    },
+    {
+      "id": "2008",
+      "format": "2001-flag",
+      "control": "47144166",
+      "validation": null
+    },
+    {
+      "id": "2011",
+      "format": "2001-flag",
+      "control": "24516329",
+      "validation": null
+    },
+    {
+      "id": "2013",
+      "format": "2001-flag",
+      "control": "79670318",
+      "validation": null
+    },
+    {
+      "id": "2014",
+      "format": "2001-flag",
+      "control": "53695502",
+      "validation": null
+    },
+    {
+      "id": "2015",
+      "format": "2014-flag",
+      "control": "70118033",
+      "validation": null
+    },
+    {
+      "id": "2017",
+      "format": "2014-flag",
+      "control": "20993481",
+      "validation": null
+    },
+    {
+      "id": "2023",
+      "format": "2014-flag",
+      "control": "52843353",
+      "validation": null
+    },
+    {
+      "id": "1986-apr",
+      "format": "1985-flag",
+      "control": "13185411",
+      "validation": null
+    },
+    {
+      "id": "1986-sep",
+      "format": "1985-flag",
+      "control": "18021283",
+      "validation": null
+    },
+    {
+      "id": "1986-oct",
+      "format": "1985-flag",
+      "control": "19062205",
+      "validation": null
+    },
+    {
+      "id": "1986-nov",
+      "format": "1985-flag",
+      "control": "20072840",
+      "validation": null
+    },
+    {
+      "id": "2017-nov",
+      "format": "2014-flag",
+      "control": "91115136",
+      "validation": null
+    },
+    {
+      "id": "2017-jul",
+      "format": "2014-flag",
+      "control": "00000001",
+      "validation": null
+    }
+  ],
+  "additionalLeadingZeroCase": {
+    "id": "renewal-leading-zero-control",
+    "format": "2014-flag",
+    "control": "00001234",
+    "month": "MAY",
+    "validation": null
+  }
+}

@@ -1,0 +1,1526 @@
+[
+  {
+    "id": "2020-commons",
+    "role": "year",
+    "text": "2020",
+    "accepted": true,
+    "rejectionReason": null,
+    "sourceFile": "sources/2020-commons.jpg",
+    "sourceSha256": "7ca806176eff12e2408ea642996949bc23ed69e74cf83a95c4033e6c5678f569",
+    "originalSourcePixels": [
+      4205,
+      1911
+    ],
+    "roiPixels": [
+      2166,
+      191,
+      4079,
+      1242
+    ],
+    "threshold": 91.09630189589696,
+    "classContrast": 129.62987533490625,
+    "thresholdSensitivity": [
+      {
+        "thresholdOffset": -8,
+        "accepted": true,
+        "rejectionReason": null,
+        "boxes": [
+          [
+            72,
+            106,
+            447,
+            950
+          ],
+          [
+            515,
+            112,
+            914,
+            954
+          ],
+          [
+            980,
+            127,
+            1345,
+            964
+          ],
+          [
+            1409,
+            134,
+            1802,
+            969
+          ]
+        ]
+      },
+      {
+        "thresholdOffset": 0,
+        "accepted": true,
+        "rejectionReason": null,
+        "boxes": [
+          [
+            71,
+            105,
+            447,
+            950
+          ],
+          [
+            513,
+            112,
+            914,
+            955
+          ],
+          [
+            979,
+            127,
+            1345,
+            964
+          ],
+          [
+            1408,
+            133,
+            1803,
+            969
+          ]
+        ]
+      },
+      {
+        "thresholdOffset": 8,
+        "accepted": true,
+        "rejectionReason": null,
+        "boxes": [
+          [
+            71,
+            105,
+            448,
+            951
+          ],
+          [
+            511,
+            111,
+            916,
+            955
+          ],
+          [
+            978,
+            127,
+            1346,
+            965
+          ],
+          [
+            1407,
+            133,
+            1803,
+            970
+          ]
+        ]
+      }
+    ],
+    "occurrences": [
+      {
+        "index": 0,
+        "character": "2",
+        "sourceBoxInCrop": [
+          71,
+          105,
+          447,
+          950
+        ],
+        "sourcePaintedPixels": [
+          376,
+          845
+        ],
+        "beforeWidthRatio": 0.9908728239845261,
+        "candidateWidthRatio": 0.9908728239845261
+      },
+      {
+        "index": 1,
+        "character": "0",
+        "sourceBoxInCrop": [
+          513,
+          112,
+          914,
+          955
+        ],
+        "sourcePaintedPixels": [
+          401,
+          843
+        ],
+        "beforeWidthRatio": 0.926898662434822,
+        "candidateWidthRatio": 1.0128995692586715
+      },
+      {
+        "index": 2,
+        "character": "2",
+        "sourceBoxInCrop": [
+          979,
+          127,
+          1345,
+          964
+        ],
+        "sourcePaintedPixels": [
+          366,
+          837
+        ],
+        "beforeWidthRatio": 1.0083084947839045,
+        "candidateWidthRatio": 1.0083084947839045
+      },
+      {
+        "index": 3,
+        "character": "0",
+        "sourceBoxInCrop": [
+          1408,
+          133,
+          1803,
+          969
+        ],
+        "sourcePaintedPixels": [
+          395,
+          836
+        ],
+        "beforeWidthRatio": 0.9331645569620254,
+        "candidateWidthRatio": 1.019746835443038
+      }
+    ],
+    "licence": "CC BY-SA4.0",
+    "credit": "D5e58",
+    "candidateTypography": false,
+    "limits": "Worn, unrectified photograph. Large pixel count does not remove perspective, print spread, slope or the unknown physical frame aspect. Repeated glyph occurrences are not independent photographs."
+  },
+  {
+    "id": "2020-commons",
+    "role": "control",
+    "text": "23747480",
+    "accepted": true,
+    "rejectionReason": null,
+    "sourceFile": "sources/2020-commons.jpg",
+    "sourceSha256": "7ca806176eff12e2408ea642996949bc23ed69e74cf83a95c4033e6c5678f569",
+    "originalSourcePixels": [
+      4205,
+      1911
+    ],
+    "roiPixels": [
+      2102,
+      1242,
+      3953,
+      1739
+    ],
+    "threshold": 80.8131657782883,
+    "classContrast": 113.29054880004156,
+    "thresholdSensitivity": [
+      {
+        "thresholdOffset": -8,
+        "accepted": true,
+        "rejectionReason": null,
+        "boxes": [
+          [
+            96,
+            102,
+            277,
+            427
+          ],
+          [
+            300,
+            105,
+            484,
+            433
+          ],
+          [
+            511,
+            111,
+            695,
+            431
+          ],
+          [
+            709,
+            115,
+            895,
+            435
+          ],
+          [
+            917,
+            117,
+            1095,
+            436
+          ],
+          [
+            1109,
+            123,
+            1290,
+            441
+          ],
+          [
+            1308,
+            122,
+            1480,
+            447
+          ],
+          [
+            1503,
+            125,
+            1673,
+            451
+          ]
+        ]
+      },
+      {
+        "thresholdOffset": 0,
+        "accepted": true,
+        "rejectionReason": null,
+        "boxes": [
+          [
+            95,
+            102,
+            277,
+            428
+          ],
+          [
+            300,
+            104,
+            484,
+            434
+          ],
+          [
+            510,
+            111,
+            695,
+            431
+          ],
+          [
+            709,
+            115,
+            895,
+            435
+          ],
+          [
+            917,
+            117,
+            1096,
+            438
+          ],
+          [
+            1109,
+            123,
+            1291,
+            441
+          ],
+          [
+            1307,
+            121,
+            1482,
+            447
+          ],
+          [
+            1502,
+            125,
+            1676,
+            452
+          ]
+        ]
+      },
+      {
+        "thresholdOffset": 8,
+        "accepted": true,
+        "rejectionReason": null,
+        "boxes": [
+          [
+            95,
+            100,
+            279,
+            428
+          ],
+          [
+            299,
+            104,
+            485,
+            434
+          ],
+          [
+            509,
+            111,
+            695,
+            432
+          ],
+          [
+            708,
+            115,
+            896,
+            436
+          ],
+          [
+            916,
+            117,
+            1097,
+            439
+          ],
+          [
+            1109,
+            123,
+            1293,
+            441
+          ],
+          [
+            1307,
+            121,
+            1483,
+            448
+          ],
+          [
+            1502,
+            124,
+            1676,
+            453
+          ]
+        ]
+      }
+    ],
+    "occurrences": [
+      {
+        "index": 0,
+        "character": "2",
+        "sourceBoxInCrop": [
+          95,
+          102,
+          277,
+          428
+        ],
+        "sourcePaintedPixels": [
+          182,
+          326
+        ],
+        "beforeWidthRatio": 1.0014485514485514,
+        "candidateWidthRatio": 1.0014485514485514
+      },
+      {
+        "index": 1,
+        "character": "3",
+        "sourceBoxInCrop": [
+          300,
+          104,
+          484,
+          434
+        ],
+        "sourcePaintedPixels": [
+          184,
+          330
+        ],
+        "beforeWidthRatio": 0.9864130434782609,
+        "candidateWidthRatio": 0.9864130434782609
+      },
+      {
+        "index": 2,
+        "character": "7",
+        "sourceBoxInCrop": [
+          510,
+          111,
+          695,
+          431
+        ],
+        "sourcePaintedPixels": [
+          185,
+          320
+        ],
+        "beforeWidthRatio": 1.0221130221130221,
+        "candidateWidthRatio": 1.0221130221130221
+      },
+      {
+        "index": 3,
+        "character": "4",
+        "sourceBoxInCrop": [
+          709,
+          115,
+          895,
+          435
+        ],
+        "sourcePaintedPixels": [
+          186,
+          320
+        ],
+        "beforeWidthRatio": 0.9931573802541543,
+        "candidateWidthRatio": 0.9931573802541543
+      },
+      {
+        "index": 4,
+        "character": "7",
+        "sourceBoxInCrop": [
+          917,
+          117,
+          1096,
+          438
+        ],
+        "sourcePaintedPixels": [
+          179,
+          321
+        ],
+        "beforeWidthRatio": 1.0596749619095989,
+        "candidateWidthRatio": 1.0596749619095989
+      },
+      {
+        "index": 5,
+        "character": "4",
+        "sourceBoxInCrop": [
+          1109,
+          123,
+          1291,
+          441
+        ],
+        "sourcePaintedPixels": [
+          182,
+          318
+        ],
+        "beforeWidthRatio": 1.0086413586413587,
+        "candidateWidthRatio": 1.0086413586413587
+      },
+      {
+        "index": 6,
+        "character": "8",
+        "sourceBoxInCrop": [
+          1307,
+          121,
+          1482,
+          447
+        ],
+        "sourcePaintedPixels": [
+          175,
+          326
+        ],
+        "beforeWidthRatio": 1.033038961038961,
+        "candidateWidthRatio": 1.033038961038961
+      },
+      {
+        "index": 7,
+        "character": "0",
+        "sourceBoxInCrop": [
+          1502,
+          125,
+          1676,
+          452
+        ],
+        "sourcePaintedPixels": [
+          174,
+          327
+        ],
+        "beforeWidthRatio": 1.0421630094043888,
+        "candidateWidthRatio": 1.0421630094043888
+      }
+    ],
+    "licence": "CC BY-SA4.0",
+    "credit": "D5e58",
+    "candidateTypography": false,
+    "limits": "Worn, unrectified photograph. Large pixel count does not remove perspective, print spread, slope or the unknown physical frame aspect. Repeated glyph occurrences are not independent photographs."
+  },
+  {
+    "id": "2021-commons",
+    "role": "year",
+    "text": "2021",
+    "accepted": true,
+    "rejectionReason": null,
+    "sourceFile": "sources/2021-commons.jpg",
+    "sourceSha256": "4503e87e3610f76af5ca27449532bf0bf5a7666f0580cd1bbdd84f7f99c9aaa7",
+    "originalSourcePixels": [
+      4461,
+      1964
+    ],
+    "roiPixels": [
+      2454,
+      196,
+      4283,
+      1336
+    ],
+    "threshold": 71.94114713220465,
+    "classContrast": 69.52686428640527,
+    "thresholdSensitivity": [
+      {
+        "thresholdOffset": -8,
+        "accepted": true,
+        "rejectionReason": null,
+        "boxes": [
+          [
+            93,
+            66,
+            486,
+            968
+          ],
+          [
+            557,
+            69,
+            973,
+            966
+          ],
+          [
+            1039,
+            81,
+            1415,
+            962
+          ],
+          [
+            1482,
+            87,
+            1696,
+            960
+          ]
+        ]
+      },
+      {
+        "thresholdOffset": 0,
+        "accepted": true,
+        "rejectionReason": null,
+        "boxes": [
+          [
+            90,
+            65,
+            487,
+            970
+          ],
+          [
+            555,
+            66,
+            974,
+            967
+          ],
+          [
+            1037,
+            79,
+            1416,
+            963
+          ],
+          [
+            1481,
+            84,
+            1697,
+            963
+          ]
+        ]
+      },
+      {
+        "thresholdOffset": 8,
+        "accepted": true,
+        "rejectionReason": null,
+        "boxes": [
+          [
+            85,
+            64,
+            488,
+            973
+          ],
+          [
+            554,
+            65,
+            975,
+            969
+          ],
+          [
+            1035,
+            78,
+            1417,
+            964
+          ],
+          [
+            1478,
+            83,
+            1699,
+            964
+          ]
+        ]
+      }
+    ],
+    "occurrences": [
+      {
+        "index": 0,
+        "character": "2",
+        "sourceBoxInCrop": [
+          90,
+          65,
+          487,
+          970
+        ],
+        "sourcePaintedPixels": [
+          397,
+          905
+        ],
+        "beforeWidthRatio": 1.0050950309136708,
+        "candidateWidthRatio": 1.0050950309136708
+      },
+      {
+        "index": 1,
+        "character": "0",
+        "sourceBoxInCrop": [
+          555,
+          66,
+          974,
+          967
+        ],
+        "sourcePaintedPixels": [
+          419,
+          901
+        ],
+        "beforeWidthRatio": 0.948112388804513,
+        "candidateWidthRatio": 1.0360815795183338
+      },
+      {
+        "index": 2,
+        "character": "2",
+        "sourceBoxInCrop": [
+          1037,
+          79,
+          1416,
+          963
+        ],
+        "sourcePaintedPixels": [
+          379,
+          884
+        ],
+        "beforeWidthRatio": 1.0284000959462702,
+        "candidateWidthRatio": 1.0284000959462702
+      },
+      {
+        "index": 3,
+        "character": "1",
+        "sourceBoxInCrop": [
+          1481,
+          84,
+          1697,
+          963
+        ],
+        "sourcePaintedPixels": [
+          216,
+          879
+        ],
+        "beforeWidthRatio": 1.2208333333333334,
+        "candidateWidthRatio": 1.0358585858585858
+      }
+    ],
+    "licence": "CC BY-SA4.0",
+    "credit": "D5e58",
+    "candidateTypography": false,
+    "limits": "Worn, unrectified photograph. Large pixel count does not remove perspective, print spread, slope or the unknown physical frame aspect. Repeated glyph occurrences are not independent photographs."
+  },
+  {
+    "id": "2021-commons",
+    "role": "control",
+    "text": "33502027",
+    "accepted": true,
+    "rejectionReason": null,
+    "sourceFile": "sources/2021-commons.jpg",
+    "sourceSha256": "4503e87e3610f76af5ca27449532bf0bf5a7666f0580cd1bbdd84f7f99c9aaa7",
+    "originalSourcePixels": [
+      4461,
+      1964
+    ],
+    "roiPixels": [
+      2409,
+      1257,
+      4238,
+      1807
+    ],
+    "threshold": 65.81474349257809,
+    "classContrast": 65.82669106813178,
+    "thresholdSensitivity": [
+      {
+        "thresholdOffset": -8,
+        "accepted": true,
+        "rejectionReason": null,
+        "boxes": [
+          [
+            92,
+            114,
+            286,
+            457
+          ],
+          [
+            303,
+            111,
+            497,
+            455
+          ],
+          [
+            521,
+            115,
+            707,
+            455
+          ],
+          [
+            730,
+            108,
+            910,
+            454
+          ],
+          [
+            929,
+            108,
+            1113,
+            443
+          ],
+          [
+            1141,
+            107,
+            1313,
+            443
+          ],
+          [
+            1331,
+            106,
+            1512,
+            435
+          ],
+          [
+            1543,
+            109,
+            1718,
+            427
+          ]
+        ]
+      },
+      {
+        "thresholdOffset": 0,
+        "accepted": true,
+        "rejectionReason": null,
+        "boxes": [
+          [
+            91,
+            112,
+            287,
+            458
+          ],
+          [
+            302,
+            110,
+            498,
+            457
+          ],
+          [
+            518,
+            114,
+            708,
+            456
+          ],
+          [
+            726,
+            107,
+            912,
+            455
+          ],
+          [
+            927,
+            107,
+            1114,
+            444
+          ],
+          [
+            1136,
+            106,
+            1316,
+            444
+          ],
+          [
+            1329,
+            105,
+            1513,
+            437
+          ],
+          [
+            1540,
+            108,
+            1719,
+            428
+          ]
+        ]
+      },
+      {
+        "thresholdOffset": 8,
+        "accepted": true,
+        "rejectionReason": null,
+        "boxes": [
+          [
+            90,
+            110,
+            289,
+            459
+          ],
+          [
+            302,
+            108,
+            500,
+            460
+          ],
+          [
+            517,
+            113,
+            709,
+            458
+          ],
+          [
+            724,
+            105,
+            913,
+            457
+          ],
+          [
+            926,
+            105,
+            1115,
+            447
+          ],
+          [
+            1135,
+            105,
+            1317,
+            446
+          ],
+          [
+            1327,
+            105,
+            1515,
+            438
+          ],
+          [
+            1538,
+            105,
+            1721,
+            429
+          ]
+        ]
+      }
+    ],
+    "occurrences": [
+      {
+        "index": 0,
+        "character": "3",
+        "sourceBoxInCrop": [
+          91,
+          112,
+          287,
+          458
+        ],
+        "sourcePaintedPixels": [
+          196,
+          346
+        ],
+        "beforeWidthRatio": 0.9709183673469388,
+        "candidateWidthRatio": 0.9709183673469388
+      },
+      {
+        "index": 1,
+        "character": "3",
+        "sourceBoxInCrop": [
+          302,
+          110,
+          498,
+          457
+        ],
+        "sourcePaintedPixels": [
+          196,
+          347
+        ],
+        "beforeWidthRatio": 0.9737244897959184,
+        "candidateWidthRatio": 0.9737244897959184
+      },
+      {
+        "index": 2,
+        "character": "5",
+        "sourceBoxInCrop": [
+          518,
+          114,
+          708,
+          456
+        ],
+        "sourcePaintedPixels": [
+          190,
+          342
+        ],
+        "beforeWidthRatio": 1.0063636363636363,
+        "candidateWidthRatio": 1.0063636363636363
+      },
+      {
+        "index": 3,
+        "character": "0",
+        "sourceBoxInCrop": [
+          726,
+          107,
+          912,
+          455
+        ],
+        "sourcePaintedPixels": [
+          186,
+          348
+        ],
+        "beforeWidthRatio": 1.0375366568914957,
+        "candidateWidthRatio": 1.0375366568914957
+      },
+      {
+        "index": 4,
+        "character": "2",
+        "sourceBoxInCrop": [
+          927,
+          107,
+          1114,
+          444
+        ],
+        "sourcePaintedPixels": [
+          187,
+          337
+        ],
+        "beforeWidthRatio": 1.0075595527467185,
+        "candidateWidthRatio": 1.0075595527467185
+      },
+      {
+        "index": 5,
+        "character": "0",
+        "sourceBoxInCrop": [
+          1136,
+          106,
+          1316,
+          444
+        ],
+        "sourcePaintedPixels": [
+          180,
+          338
+        ],
+        "beforeWidthRatio": 1.0413131313131312,
+        "candidateWidthRatio": 1.0413131313131312
+      },
+      {
+        "index": 6,
+        "character": "2",
+        "sourceBoxInCrop": [
+          1329,
+          105,
+          1513,
+          437
+        ],
+        "sourcePaintedPixels": [
+          184,
+          332
+        ],
+        "beforeWidthRatio": 1.008794466403162,
+        "candidateWidthRatio": 1.008794466403162
+      },
+      {
+        "index": 7,
+        "character": "7",
+        "sourceBoxInCrop": [
+          1540,
+          108,
+          1719,
+          428
+        ],
+        "sourcePaintedPixels": [
+          179,
+          320
+        ],
+        "beforeWidthRatio": 1.0563737938039615,
+        "candidateWidthRatio": 1.0563737938039615
+      }
+    ],
+    "licence": "CC BY-SA4.0",
+    "credit": "D5e58",
+    "candidateTypography": false,
+    "limits": "Worn, unrectified photograph. Large pixel count does not remove perspective, print spread, slope or the unknown physical frame aspect. Repeated glyph occurrences are not independent photographs."
+  },
+  {
+    "id": "2022-commons",
+    "role": "year",
+    "text": "2022",
+    "accepted": true,
+    "rejectionReason": null,
+    "sourceFile": "sources/2022-commons.jpg",
+    "sourceSha256": "5e036169dc91b689c4bd14c18fb5ae3e390b8e771d91eb791776fc3ff9fa7953",
+    "originalSourcePixels": [
+      2137,
+      917
+    ],
+    "roiPixels": [
+      1111,
+      83,
+      2052,
+      569
+    ],
+    "threshold": 65.6783855984334,
+    "classContrast": 98.68598232756683,
+    "thresholdSensitivity": [
+      {
+        "thresholdOffset": -8,
+        "accepted": true,
+        "rejectionReason": null,
+        "boxes": [
+          [
+            50,
+            33,
+            233,
+            445
+          ],
+          [
+            269,
+            30,
+            471,
+            445
+          ],
+          [
+            506,
+            36,
+            692,
+            447
+          ],
+          [
+            723,
+            39,
+            910,
+            451
+          ]
+        ]
+      },
+      {
+        "thresholdOffset": 0,
+        "accepted": true,
+        "rejectionReason": null,
+        "boxes": [
+          [
+            50,
+            33,
+            233,
+            445
+          ],
+          [
+            268,
+            30,
+            472,
+            445
+          ],
+          [
+            505,
+            35,
+            692,
+            447
+          ],
+          [
+            723,
+            39,
+            911,
+            451
+          ]
+        ]
+      },
+      {
+        "thresholdOffset": 8,
+        "accepted": true,
+        "rejectionReason": null,
+        "boxes": [
+          [
+            50,
+            33,
+            234,
+            445
+          ],
+          [
+            267,
+            30,
+            472,
+            446
+          ],
+          [
+            505,
+            35,
+            693,
+            448
+          ],
+          [
+            722,
+            38,
+            911,
+            452
+          ]
+        ]
+      }
+    ],
+    "occurrences": [
+      {
+        "index": 0,
+        "character": "2",
+        "sourceBoxInCrop": [
+          50,
+          33,
+          233,
+          445
+        ],
+        "sourcePaintedPixels": [
+          183,
+          412
+        ],
+        "beforeWidthRatio": 0.9926477893691008,
+        "candidateWidthRatio": 0.9926477893691008
+      },
+      {
+        "index": 1,
+        "character": "0",
+        "sourceBoxInCrop": [
+          268,
+          30,
+          472,
+          445
+        ],
+        "sourcePaintedPixels": [
+          204,
+          415
+        ],
+        "beforeWidthRatio": 0.8969474153297683,
+        "candidateWidthRatio": 0.980169340463458
+      },
+      {
+        "index": 2,
+        "character": "2",
+        "sourceBoxInCrop": [
+          505,
+          35,
+          692,
+          447
+        ],
+        "sourcePaintedPixels": [
+          187,
+          412
+        ],
+        "beforeWidthRatio": 0.9714146815751094,
+        "candidateWidthRatio": 0.9714146815751094
+      },
+      {
+        "index": 3,
+        "character": "2",
+        "sourceBoxInCrop": [
+          723,
+          39,
+          911,
+          451
+        ],
+        "sourcePaintedPixels": [
+          188,
+          412
+        ],
+        "beforeWidthRatio": 0.966247582205029,
+        "candidateWidthRatio": 0.966247582205029
+      }
+    ],
+    "licence": "CC BY-SA4.0",
+    "credit": "D5e58",
+    "candidateTypography": false,
+    "limits": "Worn, unrectified photograph. Large pixel count does not remove perspective, print spread, slope or the unknown physical frame aspect. Repeated glyph occurrences are not independent photographs."
+  },
+  {
+    "id": "2022-commons",
+    "role": "control",
+    "text": "71708687",
+    "accepted": true,
+    "rejectionReason": null,
+    "sourceFile": "sources/2022-commons.jpg",
+    "sourceSha256": "5e036169dc91b689c4bd14c18fb5ae3e390b8e771d91eb791776fc3ff9fa7953",
+    "originalSourcePixels": [
+      2137,
+      917
+    ],
+    "roiPixels": [
+      1111,
+      596,
+      2009,
+      825
+    ],
+    "threshold": 68.61967629601727,
+    "classContrast": 94.0783492309284,
+    "thresholdSensitivity": [
+      {
+        "thresholdOffset": -8,
+        "accepted": true,
+        "rejectionReason": null,
+        "boxes": [
+          [
+            37,
+            38,
+            126,
+            192
+          ],
+          [
+            146,
+            38,
+            207,
+            193
+          ],
+          [
+            239,
+            37,
+            328,
+            193
+          ],
+          [
+            341,
+            35,
+            427,
+            196
+          ],
+          [
+            442,
+            35,
+            529,
+            196
+          ],
+          [
+            543,
+            37,
+            628,
+            198
+          ],
+          [
+            644,
+            40,
+            732,
+            201
+          ],
+          [
+            747,
+            44,
+            836,
+            201
+          ]
+        ]
+      },
+      {
+        "thresholdOffset": 0,
+        "accepted": true,
+        "rejectionReason": null,
+        "boxes": [
+          [
+            37,
+            38,
+            126,
+            192
+          ],
+          [
+            146,
+            38,
+            208,
+            193
+          ],
+          [
+            238,
+            37,
+            329,
+            193
+          ],
+          [
+            341,
+            35,
+            427,
+            196
+          ],
+          [
+            442,
+            35,
+            529,
+            197
+          ],
+          [
+            543,
+            36,
+            629,
+            198
+          ],
+          [
+            643,
+            39,
+            732,
+            201
+          ],
+          [
+            746,
+            44,
+            837,
+            202
+          ]
+        ]
+      },
+      {
+        "thresholdOffset": 8,
+        "accepted": true,
+        "rejectionReason": null,
+        "boxes": [
+          [
+            37,
+            38,
+            126,
+            193
+          ],
+          [
+            146,
+            37,
+            208,
+            193
+          ],
+          [
+            238,
+            37,
+            329,
+            194
+          ],
+          [
+            340,
+            34,
+            428,
+            197
+          ],
+          [
+            442,
+            35,
+            530,
+            197
+          ],
+          [
+            542,
+            36,
+            629,
+            198
+          ],
+          [
+            643,
+            39,
+            733,
+            201
+          ],
+          [
+            746,
+            43,
+            837,
+            202
+          ]
+        ]
+      }
+    ],
+    "occurrences": [
+      {
+        "index": 0,
+        "character": "7",
+        "sourceBoxInCrop": [
+          37,
+          38,
+          126,
+          192
+        ],
+        "sourcePaintedPixels": [
+          89,
+          154
+        ],
+        "beforeWidthRatio": 1.0224719101123596,
+        "candidateWidthRatio": 1.0224719101123596
+      },
+      {
+        "index": 1,
+        "character": "1",
+        "sourceBoxInCrop": [
+          146,
+          38,
+          208,
+          193
+        ],
+        "sourcePaintedPixels": [
+          62,
+          155
+        ],
+        "beforeWidthRatio": 0.9659090909090908,
+        "candidateWidthRatio": 0.9659090909090908
+      },
+      {
+        "index": 2,
+        "character": "7",
+        "sourceBoxInCrop": [
+          238,
+          37,
+          329,
+          193
+        ],
+        "sourcePaintedPixels": [
+          91,
+          156
+        ],
+        "beforeWidthRatio": 1.0129870129870129,
+        "candidateWidthRatio": 1.0129870129870129
+      },
+      {
+        "index": 3,
+        "character": "0",
+        "sourceBoxInCrop": [
+          341,
+          35,
+          427,
+          196
+        ],
+        "sourcePaintedPixels": [
+          86,
+          161
+        ],
+        "beforeWidthRatio": 1.0381606765327696,
+        "candidateWidthRatio": 1.0381606765327696
+      },
+      {
+        "index": 4,
+        "character": "8",
+        "sourceBoxInCrop": [
+          442,
+          35,
+          529,
+          197
+        ],
+        "sourcePaintedPixels": [
+          87,
+          162
+        ],
+        "beforeWidthRatio": 1.0326018808777429,
+        "candidateWidthRatio": 1.0326018808777429
+      },
+      {
+        "index": 5,
+        "character": "6",
+        "sourceBoxInCrop": [
+          543,
+          36,
+          629,
+          198
+        ],
+        "sourcePaintedPixels": [
+          86,
+          162
+        ],
+        "beforeWidthRatio": 1.036046511627907,
+        "candidateWidthRatio": 1.036046511627907
+      },
+      {
+        "index": 6,
+        "character": "8",
+        "sourceBoxInCrop": [
+          643,
+          39,
+          732,
+          201
+        ],
+        "sourcePaintedPixels": [
+          89,
+          162
+        ],
+        "beforeWidthRatio": 1.009397344228805,
+        "candidateWidthRatio": 1.009397344228805
+      },
+      {
+        "index": 7,
+        "character": "7",
+        "sourceBoxInCrop": [
+          746,
+          44,
+          837,
+          202
+        ],
+        "sourcePaintedPixels": [
+          91,
+          158
+        ],
+        "beforeWidthRatio": 1.0259740259740262,
+        "candidateWidthRatio": 1.0259740259740262
+      }
+    ],
+    "licence": "CC BY-SA4.0",
+    "credit": "D5e58",
+    "candidateTypography": false,
+    "limits": "Worn, unrectified photograph. Large pixel count does not remove perspective, print spread, slope or the unknown physical frame aspect. Repeated glyph occurrences are not independent photographs."
+  }
+]

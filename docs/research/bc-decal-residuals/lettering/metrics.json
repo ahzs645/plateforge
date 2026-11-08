@@ -1,0 +1,2793 @@
+[
+  {
+    "id": "1983-jun",
+    "case": "1983-jun",
+    "text": "JUN",
+    "file": "public/bc-decal-corrections/evidence/1983/source.png",
+    "roi": [
+      5,
+      7,
+      96,
+      65
+    ],
+    "light": true,
+    "primary": true,
+    "sourceSha256": "30360d3322ad42b29a59c2a9e0f3e54d6ef4fbd93beafbd2620e4518e87a36f1",
+    "pixels": [
+      254,
+      75
+    ],
+    "threshold": 118.46495828973376,
+    "sourcePaintedBoxInCrop": [
+      6,
+      4,
+      83,
+      52
+    ],
+    "sourcePaintedPixels": [
+      77,
+      48
+    ],
+    "sourceWidthPerHeight": 1.6041666666666667,
+    "thresholdValidation": {
+      "threshold": 118.465,
+      "components": 3,
+      "accepted": true,
+      "rejectionReasons": [],
+      "paintedBoxInCrop": [
+        6,
+        4,
+        83,
+        52
+      ],
+      "widthPerHeight": 1.6041666666666667,
+      "classMeanDifference": 182.95518980351122,
+      "cropClearancePixels": [
+        6,
+        4,
+        8,
+        6
+      ]
+    },
+    "sensitivity": [
+      {
+        "threshold": 106.465,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          6,
+          4,
+          83,
+          52
+        ],
+        "widthPerHeight": 1.6041666666666667,
+        "classMeanDifference": 182.71495691996813,
+        "cropClearancePixels": [
+          6,
+          4,
+          8,
+          6
+        ]
+      },
+      {
+        "threshold": 112.465,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          6,
+          4,
+          83,
+          52
+        ],
+        "widthPerHeight": 1.6041666666666667,
+        "classMeanDifference": 182.8128169907016,
+        "cropClearancePixels": [
+          6,
+          4,
+          8,
+          6
+        ]
+      },
+      {
+        "threshold": 118.465,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          6,
+          4,
+          83,
+          52
+        ],
+        "widthPerHeight": 1.6041666666666667,
+        "classMeanDifference": 182.95518980351122,
+        "cropClearancePixels": [
+          6,
+          4,
+          8,
+          6
+        ]
+      },
+      {
+        "threshold": 124.465,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          6,
+          4,
+          83,
+          52
+        ],
+        "widthPerHeight": 1.6041666666666667,
+        "classMeanDifference": 183.06789313915203,
+        "cropClearancePixels": [
+          6,
+          4,
+          8,
+          6
+        ]
+      },
+      {
+        "threshold": 130.465,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          6,
+          4,
+          83,
+          52
+        ],
+        "widthPerHeight": 1.6041666666666667,
+        "classMeanDifference": 183.11098001280467,
+        "cropClearancePixels": [
+          6,
+          4,
+          8,
+          6
+        ]
+      }
+    ],
+    "sourceWidthPerHeightSensitivityRange": [
+      1.6041666666666667,
+      1.6041666666666667
+    ],
+    "sensitivitySummary": {
+      "accepted": 5,
+      "rejected": 0,
+      "rangePolicy": "Only accepted samples contribute to ranges; rejected samples remain in this ledger with null widthPerHeight."
+    },
+    "alignment": "Equal painted height and horizontal centre, scaled uniformly. No x stretch, perspective correction, or score-based contour fitting.",
+    "occurrences": [
+      {
+        "index": 0,
+        "character": "J",
+        "boxInCrop": [
+          6,
+          4,
+          22,
+          51
+        ],
+        "sourcePaintedPixels": [
+          16,
+          47
+        ],
+        "sourceWidthPerHeight": 0.3404255319148936,
+        "startPerRunHeight": 0.0,
+        "beforeWidthPerHeight": 0.32,
+        "afterWidthPerHeight": 0.33
+      },
+      {
+        "index": 1,
+        "character": "U",
+        "boxInCrop": [
+          28,
+          4,
+          52,
+          52
+        ],
+        "sourcePaintedPixels": [
+          24,
+          48
+        ],
+        "sourceWidthPerHeight": 0.5,
+        "startPerRunHeight": 0.4583333333333333,
+        "beforeWidthPerHeight": 0.5733333333333334,
+        "afterWidthPerHeight": 0.49
+      },
+      {
+        "index": 2,
+        "character": "N",
+        "boxInCrop": [
+          59,
+          4,
+          83,
+          51
+        ],
+        "sourcePaintedPixels": [
+          24,
+          47
+        ],
+        "sourceWidthPerHeight": 0.5106382978723404,
+        "startPerRunHeight": 1.1041666666666667,
+        "beforeWidthPerHeight": 0.5333333333333333,
+        "afterWidthPerHeight": 0.51
+      }
+    ],
+    "beforeWidthPerHeight": 1.7233333333333334,
+    "afterWidthPerHeight": 1.6066666666666667,
+    "beforeRunWidthRatio": 1.0742857142857143,
+    "afterRunWidthRatio": 1.0015584415584415,
+    "beforeRunWidthRatioSensitivityRange": [
+      1.0742857142857143,
+      1.0742857142857143
+    ],
+    "afterRunWidthRatioSensitivityRange": [
+      1.0015584415584415,
+      1.0015584415584415
+    ],
+    "glyphSegmentation": {
+      "accepted": true,
+      "reason": "Every sensitivity sample valid; stable component count over threshold\u00b112"
+    }
+  },
+  {
+    "id": "1999-may",
+    "case": "1999-may",
+    "text": "MAY",
+    "file": "public/bc-decal-corrections/evidence/1999/source.png",
+    "roi": [
+      8,
+      9,
+      101,
+      63
+    ],
+    "light": false,
+    "primary": true,
+    "sourceSha256": "9411a53fc2d9a7fd37f887a69a937d3f852a24e37c754194d26150baeb0a77d0",
+    "pixels": [
+      242,
+      73
+    ],
+    "threshold": 130.6358552591986,
+    "sourcePaintedBoxInCrop": [
+      3,
+      3,
+      91,
+      52
+    ],
+    "sourcePaintedPixels": [
+      88,
+      49
+    ],
+    "sourceWidthPerHeight": 1.7959183673469388,
+    "thresholdValidation": {
+      "threshold": 130.636,
+      "components": 3,
+      "accepted": true,
+      "rejectionReasons": [],
+      "paintedBoxInCrop": [
+        3,
+        3,
+        91,
+        52
+      ],
+      "widthPerHeight": 1.7959183673469388,
+      "classMeanDifference": 111.88217369733756,
+      "cropClearancePixels": [
+        3,
+        3,
+        2,
+        2
+      ]
+    },
+    "sensitivity": [
+      {
+        "threshold": 118.636,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          3,
+          3,
+          90,
+          52
+        ],
+        "widthPerHeight": 1.7755102040816326,
+        "classMeanDifference": 110.84852256772125,
+        "cropClearancePixels": [
+          3,
+          3,
+          3,
+          2
+        ]
+      },
+      {
+        "threshold": 124.636,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          3,
+          3,
+          91,
+          52
+        ],
+        "widthPerHeight": 1.7959183673469388,
+        "classMeanDifference": 111.48951755369586,
+        "cropClearancePixels": [
+          3,
+          3,
+          2,
+          2
+        ]
+      },
+      {
+        "threshold": 130.636,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          3,
+          3,
+          91,
+          52
+        ],
+        "widthPerHeight": 1.7959183673469388,
+        "classMeanDifference": 111.88217369733756,
+        "cropClearancePixels": [
+          3,
+          3,
+          2,
+          2
+        ]
+      },
+      {
+        "threshold": 136.636,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          3,
+          3,
+          91,
+          52
+        ],
+        "widthPerHeight": 1.7959183673469388,
+        "classMeanDifference": 112.22674124955807,
+        "cropClearancePixels": [
+          3,
+          3,
+          2,
+          2
+        ]
+      },
+      {
+        "threshold": 142.636,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          2,
+          3,
+          91,
+          52
+        ],
+        "widthPerHeight": 1.816326530612245,
+        "classMeanDifference": 112.4308921459053,
+        "cropClearancePixels": [
+          2,
+          3,
+          2,
+          2
+        ]
+      }
+    ],
+    "sourceWidthPerHeightSensitivityRange": [
+      1.7755102040816326,
+      1.816326530612245
+    ],
+    "sensitivitySummary": {
+      "accepted": 5,
+      "rejected": 0,
+      "rangePolicy": "Only accepted samples contribute to ranges; rejected samples remain in this ledger with null widthPerHeight."
+    },
+    "alignment": "Equal painted height and horizontal centre, scaled uniformly. No x stretch, perspective correction, or score-based contour fitting.",
+    "occurrences": [
+      {
+        "index": 0,
+        "character": "M",
+        "boxInCrop": [
+          3,
+          3,
+          39,
+          51
+        ],
+        "sourcePaintedPixels": [
+          36,
+          48
+        ],
+        "sourceWidthPerHeight": 0.75,
+        "startPerRunHeight": 0.0,
+        "beforeWidthPerHeight": 0.7966666666666666,
+        "afterWidthPerHeight": 0.74
+      },
+      {
+        "index": 1,
+        "character": "A",
+        "boxInCrop": [
+          40,
+          3,
+          68,
+          52
+        ],
+        "sourcePaintedPixels": [
+          28,
+          49
+        ],
+        "sourceWidthPerHeight": 0.5714285714285714,
+        "startPerRunHeight": 0.7551020408163265,
+        "beforeWidthPerHeight": 0.6266666666666667,
+        "afterWidthPerHeight": 0.5766666666666667
+      },
+      {
+        "index": 2,
+        "character": "Y",
+        "boxInCrop": [
+          66,
+          3,
+          91,
+          52
+        ],
+        "sourcePaintedPixels": [
+          25,
+          49
+        ],
+        "sourceWidthPerHeight": 0.5102040816326531,
+        "startPerRunHeight": 1.2857142857142858,
+        "beforeWidthPerHeight": 0.5966666666666667,
+        "afterWidthPerHeight": 0.51
+      }
+    ],
+    "beforeWidthPerHeight": 1.93,
+    "afterWidthPerHeight": 1.7966666666666666,
+    "beforeRunWidthRatio": 1.074659090909091,
+    "afterRunWidthRatio": 1.0004166666666667,
+    "beforeRunWidthRatioSensitivityRange": [
+      1.0625842696629213,
+      1.0870114942528735
+    ],
+    "afterRunWidthRatioSensitivityRange": [
+      0.9891760299625468,
+      1.0119157088122606
+    ],
+    "glyphSegmentation": {
+      "accepted": true,
+      "reason": "Every sensitivity sample valid; stable component count over threshold\u00b112"
+    }
+  },
+  {
+    "id": "2004-mar",
+    "case": "2004-year",
+    "text": "04",
+    "file": "public/bc-decal-corrections/evidence/2004/source.png",
+    "roi": [
+      165,
+      8,
+      215,
+      56
+    ],
+    "light": false,
+    "primary": true,
+    "sourceSha256": "6a77e42810bfe8179773413bac28dbb971f91d7a0697b855bdea8246035a5693",
+    "pixels": [
+      259,
+      75
+    ],
+    "threshold": 105.34826604238368,
+    "sourcePaintedBoxInCrop": [
+      6,
+      4,
+      46,
+      44
+    ],
+    "sourcePaintedPixels": [
+      40,
+      40
+    ],
+    "sourceWidthPerHeight": 1.0,
+    "thresholdValidation": {
+      "threshold": 105.348,
+      "components": 1,
+      "accepted": true,
+      "rejectionReasons": [],
+      "paintedBoxInCrop": [
+        6,
+        4,
+        46,
+        44
+      ],
+      "widthPerHeight": 1.0,
+      "classMeanDifference": 181.26485787662259,
+      "cropClearancePixels": [
+        6,
+        4,
+        4,
+        4
+      ]
+    },
+    "sensitivity": [
+      {
+        "threshold": 93.348,
+        "components": 2,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          7,
+          4,
+          46,
+          44
+        ],
+        "widthPerHeight": 0.975,
+        "classMeanDifference": 181.3697095985163,
+        "cropClearancePixels": [
+          7,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "threshold": 99.348,
+        "components": 1,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          6,
+          4,
+          46,
+          44
+        ],
+        "widthPerHeight": 1.0,
+        "classMeanDifference": 181.34685351388234,
+        "cropClearancePixels": [
+          6,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "threshold": 105.348,
+        "components": 1,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          6,
+          4,
+          46,
+          44
+        ],
+        "widthPerHeight": 1.0,
+        "classMeanDifference": 181.26485787662259,
+        "cropClearancePixels": [
+          6,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "threshold": 111.348,
+        "components": 1,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          6,
+          4,
+          46,
+          44
+        ],
+        "widthPerHeight": 1.0,
+        "classMeanDifference": 181.1839932956212,
+        "cropClearancePixels": [
+          6,
+          4,
+          4,
+          4
+        ]
+      },
+      {
+        "threshold": 117.348,
+        "components": 1,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          6,
+          3,
+          46,
+          44
+        ],
+        "widthPerHeight": 0.975609756097561,
+        "classMeanDifference": 181.13736091871843,
+        "cropClearancePixels": [
+          6,
+          3,
+          4,
+          4
+        ]
+      }
+    ],
+    "sourceWidthPerHeightSensitivityRange": [
+      0.975,
+      1.0
+    ],
+    "sensitivitySummary": {
+      "accepted": 5,
+      "rejected": 0,
+      "rangePolicy": "Only accepted samples contribute to ranges; rejected samples remain in this ledger with null widthPerHeight."
+    },
+    "alignment": "Equal painted height and horizontal centre, scaled uniformly. No x stretch, perspective correction, or score-based contour fitting.",
+    "occurrences": [],
+    "beforeWidthPerHeight": 0.8733333333333333,
+    "afterWidthPerHeight": 0.9766666666666667,
+    "beforeRunWidthRatio": 0.8733333333333333,
+    "afterRunWidthRatio": 0.9766666666666667,
+    "beforeRunWidthRatioSensitivityRange": [
+      0.8733333333333333,
+      0.8957264957264957
+    ],
+    "afterRunWidthRatioSensitivityRange": [
+      0.9766666666666667,
+      1.0017094017094017
+    ],
+    "glyphSegmentation": {
+      "accepted": false,
+      "reason": "Joined or unstable source components; whole-run extent retained, per-glyph scores withheld."
+    }
+  },
+  {
+    "id": "1983-jan",
+    "case": "1983-jun",
+    "text": "JAN",
+    "checkCharacters": "JN",
+    "file": "docs/research/bc-decal-residuals/lettering/sources/1983-JANX.jpg",
+    "roi": [
+      3,
+      9,
+      87,
+      65
+    ],
+    "light": true,
+    "sourceSha256": "f5b26747b39ddaa138ba809bc9750c782136309691d17cc10f410826e99ca442",
+    "pixels": [
+      252,
+      75
+    ],
+    "threshold": 124.34265905517756,
+    "sourcePaintedBoxInCrop": [
+      2,
+      5,
+      77,
+      54
+    ],
+    "sourcePaintedPixels": [
+      75,
+      49
+    ],
+    "sourceWidthPerHeight": 1.530612244897959,
+    "thresholdValidation": {
+      "threshold": 124.343,
+      "components": 3,
+      "accepted": true,
+      "rejectionReasons": [],
+      "paintedBoxInCrop": [
+        2,
+        5,
+        77,
+        54
+      ],
+      "widthPerHeight": 1.530612244897959,
+      "classMeanDifference": 184.15650732163425,
+      "cropClearancePixels": [
+        2,
+        5,
+        7,
+        2
+      ]
+    },
+    "sensitivity": [
+      {
+        "threshold": 112.343,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          2,
+          5,
+          77,
+          54
+        ],
+        "widthPerHeight": 1.530612244897959,
+        "classMeanDifference": 183.90642201834862,
+        "cropClearancePixels": [
+          2,
+          5,
+          7,
+          2
+        ]
+      },
+      {
+        "threshold": 118.343,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          2,
+          5,
+          77,
+          54
+        ],
+        "widthPerHeight": 1.530612244897959,
+        "classMeanDifference": 184.10036185610898,
+        "cropClearancePixels": [
+          2,
+          5,
+          7,
+          2
+        ]
+      },
+      {
+        "threshold": 124.343,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          2,
+          5,
+          77,
+          54
+        ],
+        "widthPerHeight": 1.530612244897959,
+        "classMeanDifference": 184.15650732163425,
+        "cropClearancePixels": [
+          2,
+          5,
+          7,
+          2
+        ]
+      },
+      {
+        "threshold": 130.343,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          2,
+          5,
+          77,
+          54
+        ],
+        "widthPerHeight": 1.530612244897959,
+        "classMeanDifference": 184.1727092427091,
+        "cropClearancePixels": [
+          2,
+          5,
+          7,
+          2
+        ]
+      },
+      {
+        "threshold": 136.343,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          2,
+          5,
+          77,
+          54
+        ],
+        "widthPerHeight": 1.530612244897959,
+        "classMeanDifference": 184.11375127738035,
+        "cropClearancePixels": [
+          2,
+          5,
+          7,
+          2
+        ]
+      }
+    ],
+    "sourceWidthPerHeightSensitivityRange": [
+      1.530612244897959,
+      1.530612244897959
+    ],
+    "sensitivitySummary": {
+      "accepted": 5,
+      "rejected": 0,
+      "rangePolicy": "Only accepted samples contribute to ranges; rejected samples remain in this ledger with null widthPerHeight."
+    },
+    "alignment": "Equal painted height and horizontal centre, scaled uniformly. No x stretch, perspective correction, or score-based contour fitting.",
+    "occurrences": [
+      {
+        "index": 0,
+        "character": "J",
+        "boxInCrop": [
+          2,
+          5,
+          17,
+          54
+        ],
+        "sourcePaintedPixels": [
+          15,
+          49
+        ],
+        "sourceWidthPerHeight": 0.30612244897959184,
+        "startPerRunHeight": 0.0,
+        "beforeWidthPerHeight": 0.32,
+        "afterWidthPerHeight": 0.33
+      },
+      {
+        "index": 2,
+        "character": "N",
+        "boxInCrop": [
+          53,
+          6,
+          77,
+          54
+        ],
+        "sourcePaintedPixels": [
+          24,
+          48
+        ],
+        "sourceWidthPerHeight": 0.5,
+        "startPerRunHeight": 1.0408163265306123,
+        "beforeWidthPerHeight": 0.5333333333333333,
+        "afterWidthPerHeight": 0.51
+      }
+    ],
+    "glyphSegmentation": {
+      "accepted": true,
+      "reason": "Every sensitivity sample valid; stable component count over threshold\u00b112"
+    }
+  },
+  {
+    "id": "1983-jul-bcpl8s",
+    "case": "1983-jun",
+    "text": "JUL",
+    "checkCharacters": "JU",
+    "file": "docs/research/bc-decal-residuals/lettering/sources/1983-86105841.jpg",
+    "roi": [
+      8,
+      9,
+      90,
+      65
+    ],
+    "light": true,
+    "sourceSha256": "657dad6010b2fa1bcb4bbbc4fcda9dd7355a1d2378a426250d7af7163fcd1f01",
+    "pixels": [
+      247,
+      75
+    ],
+    "threshold": 142.930233055628,
+    "sourcePaintedBoxInCrop": [
+      2,
+      5,
+      75,
+      54
+    ],
+    "sourcePaintedPixels": [
+      73,
+      49
+    ],
+    "sourceWidthPerHeight": 1.489795918367347,
+    "thresholdValidation": {
+      "threshold": 142.93,
+      "components": 3,
+      "accepted": true,
+      "rejectionReasons": [],
+      "paintedBoxInCrop": [
+        2,
+        5,
+        75,
+        54
+      ],
+      "widthPerHeight": 1.489795918367347,
+      "classMeanDifference": 167.78677798323218,
+      "cropClearancePixels": [
+        2,
+        5,
+        7,
+        2
+      ]
+    },
+    "sensitivity": [
+      {
+        "threshold": 130.93,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          2,
+          5,
+          75,
+          54
+        ],
+        "widthPerHeight": 1.489795918367347,
+        "classMeanDifference": 167.21802985789537,
+        "cropClearancePixels": [
+          2,
+          5,
+          7,
+          2
+        ]
+      },
+      {
+        "threshold": 136.93,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          2,
+          5,
+          75,
+          54
+        ],
+        "widthPerHeight": 1.489795918367347,
+        "classMeanDifference": 167.46711561067838,
+        "cropClearancePixels": [
+          2,
+          5,
+          7,
+          2
+        ]
+      },
+      {
+        "threshold": 142.93,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          2,
+          5,
+          75,
+          54
+        ],
+        "widthPerHeight": 1.489795918367347,
+        "classMeanDifference": 167.78677798323218,
+        "cropClearancePixels": [
+          2,
+          5,
+          7,
+          2
+        ]
+      },
+      {
+        "threshold": 148.93,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          2,
+          5,
+          75,
+          54
+        ],
+        "widthPerHeight": 1.489795918367347,
+        "classMeanDifference": 167.98356592974403,
+        "cropClearancePixels": [
+          2,
+          5,
+          7,
+          2
+        ]
+      },
+      {
+        "threshold": 154.93,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          2,
+          5,
+          75,
+          54
+        ],
+        "widthPerHeight": 1.489795918367347,
+        "classMeanDifference": 168.14105980894368,
+        "cropClearancePixels": [
+          2,
+          5,
+          7,
+          2
+        ]
+      }
+    ],
+    "sourceWidthPerHeightSensitivityRange": [
+      1.489795918367347,
+      1.489795918367347
+    ],
+    "sensitivitySummary": {
+      "accepted": 5,
+      "rejected": 0,
+      "rangePolicy": "Only accepted samples contribute to ranges; rejected samples remain in this ledger with null widthPerHeight."
+    },
+    "alignment": "Equal painted height and horizontal centre, scaled uniformly. No x stretch, perspective correction, or score-based contour fitting.",
+    "occurrences": [
+      {
+        "index": 0,
+        "character": "J",
+        "boxInCrop": [
+          2,
+          5,
+          18,
+          53
+        ],
+        "sourcePaintedPixels": [
+          16,
+          48
+        ],
+        "sourceWidthPerHeight": 0.3333333333333333,
+        "startPerRunHeight": 0.0,
+        "beforeWidthPerHeight": 0.32,
+        "afterWidthPerHeight": 0.33
+      },
+      {
+        "index": 1,
+        "character": "U",
+        "boxInCrop": [
+          24,
+          5,
+          48,
+          54
+        ],
+        "sourcePaintedPixels": [
+          24,
+          49
+        ],
+        "sourceWidthPerHeight": 0.4897959183673469,
+        "startPerRunHeight": 0.4489795918367347,
+        "beforeWidthPerHeight": 0.5733333333333334,
+        "afterWidthPerHeight": 0.49
+      }
+    ],
+    "glyphSegmentation": {
+      "accepted": true,
+      "reason": "Every sensitivity sample valid; stable component count over threshold\u00b112"
+    }
+  },
+  {
+    "id": "1983-jul-commons",
+    "case": "1983-jun",
+    "text": "JUL",
+    "checkCharacters": "JU",
+    "file": "docs/research/bc-decal-residuals/lettering/sources/commons-1983-jul.jpg",
+    "roi": [
+      15,
+      35,
+      285,
+      230
+    ],
+    "light": true,
+    "licence": "CC BY-SA 2.0",
+    "author": "Jerry Woody",
+    "sourceSha256": "90c25abefe5f90db9e43369f27d38ea3644aa320d3c69d5650628ff9314e16dd",
+    "pixels": [
+      792,
+      242
+    ],
+    "threshold": 95.81102650888678,
+    "sourcePaintedBoxInCrop": [
+      16,
+      24,
+      254,
+      188
+    ],
+    "sourcePaintedPixels": [
+      238,
+      164
+    ],
+    "sourceWidthPerHeight": 1.451219512195122,
+    "thresholdValidation": {
+      "threshold": 95.811,
+      "components": 3,
+      "accepted": true,
+      "rejectionReasons": [],
+      "paintedBoxInCrop": [
+        16,
+        24,
+        254,
+        188
+      ],
+      "widthPerHeight": 1.451219512195122,
+      "classMeanDifference": 150.33989611831652,
+      "cropClearancePixels": [
+        16,
+        24,
+        16,
+        7
+      ]
+    },
+    "sensitivity": [
+      {
+        "threshold": 83.811,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          16,
+          23,
+          254,
+          188
+        ],
+        "widthPerHeight": 1.4424242424242424,
+        "classMeanDifference": 149.94499562921897,
+        "cropClearancePixels": [
+          16,
+          23,
+          16,
+          7
+        ]
+      },
+      {
+        "threshold": 89.811,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          16,
+          24,
+          254,
+          188
+        ],
+        "widthPerHeight": 1.451219512195122,
+        "classMeanDifference": 150.14991992888446,
+        "cropClearancePixels": [
+          16,
+          24,
+          16,
+          7
+        ]
+      },
+      {
+        "threshold": 95.811,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          16,
+          24,
+          254,
+          188
+        ],
+        "widthPerHeight": 1.451219512195122,
+        "classMeanDifference": 150.33989611831652,
+        "cropClearancePixels": [
+          16,
+          24,
+          16,
+          7
+        ]
+      },
+      {
+        "threshold": 101.811,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          16,
+          24,
+          254,
+          188
+        ],
+        "widthPerHeight": 1.451219512195122,
+        "classMeanDifference": 150.48132870257368,
+        "cropClearancePixels": [
+          16,
+          24,
+          16,
+          7
+        ]
+      },
+      {
+        "threshold": 107.811,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          16,
+          24,
+          254,
+          188
+        ],
+        "widthPerHeight": 1.451219512195122,
+        "classMeanDifference": 150.55226031355085,
+        "cropClearancePixels": [
+          16,
+          24,
+          16,
+          7
+        ]
+      }
+    ],
+    "sourceWidthPerHeightSensitivityRange": [
+      1.4424242424242424,
+      1.451219512195122
+    ],
+    "sensitivitySummary": {
+      "accepted": 5,
+      "rejected": 0,
+      "rangePolicy": "Only accepted samples contribute to ranges; rejected samples remain in this ledger with null widthPerHeight."
+    },
+    "alignment": "Equal painted height and horizontal centre, scaled uniformly. No x stretch, perspective correction, or score-based contour fitting.",
+    "occurrences": [
+      {
+        "index": 0,
+        "character": "J",
+        "boxInCrop": [
+          16,
+          24,
+          66,
+          186
+        ],
+        "sourcePaintedPixels": [
+          50,
+          162
+        ],
+        "sourceWidthPerHeight": 0.30864197530864196,
+        "startPerRunHeight": 0.0,
+        "beforeWidthPerHeight": 0.32,
+        "afterWidthPerHeight": 0.33
+      },
+      {
+        "index": 1,
+        "character": "U",
+        "boxInCrop": [
+          88,
+          24,
+          164,
+          188
+        ],
+        "sourcePaintedPixels": [
+          76,
+          164
+        ],
+        "sourceWidthPerHeight": 0.4634146341463415,
+        "startPerRunHeight": 0.43902439024390244,
+        "beforeWidthPerHeight": 0.5733333333333334,
+        "afterWidthPerHeight": 0.49
+      }
+    ],
+    "glyphSegmentation": {
+      "accepted": true,
+      "reason": "Every sensitivity sample valid; stable component count over threshold\u00b112"
+    }
+  },
+  {
+    "id": "1999-mar",
+    "case": "1999-may",
+    "text": "MAR",
+    "checkCharacters": "MA",
+    "file": "docs/research/bc-decal-residuals/lettering/sources/1999-52069021.jpg",
+    "roi": [
+      10,
+      10,
+      105,
+      65
+    ],
+    "light": false,
+    "sourceSha256": "f6644bd8c0bca9ae438a12ee826a9af87437ab4cfc7acebc02ce052b9d7e5eba",
+    "pixels": [
+      237,
+      75
+    ],
+    "threshold": 139.09144571956205,
+    "sourcePaintedBoxInCrop": [
+      4,
+      4,
+      92,
+      51
+    ],
+    "sourcePaintedPixels": [
+      88,
+      47
+    ],
+    "sourceWidthPerHeight": 1.872340425531915,
+    "thresholdValidation": {
+      "threshold": 139.091,
+      "components": 3,
+      "accepted": true,
+      "rejectionReasons": [],
+      "paintedBoxInCrop": [
+        4,
+        4,
+        92,
+        51
+      ],
+      "widthPerHeight": 1.872340425531915,
+      "classMeanDifference": 109.80695158950007,
+      "cropClearancePixels": [
+        4,
+        4,
+        3,
+        4
+      ]
+    },
+    "sensitivity": [
+      {
+        "threshold": 127.091,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          4,
+          5,
+          92,
+          51
+        ],
+        "widthPerHeight": 1.9130434782608696,
+        "classMeanDifference": 108.82217090241609,
+        "cropClearancePixels": [
+          4,
+          5,
+          3,
+          4
+        ]
+      },
+      {
+        "threshold": 133.091,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          4,
+          4,
+          92,
+          51
+        ],
+        "widthPerHeight": 1.872340425531915,
+        "classMeanDifference": 109.47210332271798,
+        "cropClearancePixels": [
+          4,
+          4,
+          3,
+          4
+        ]
+      },
+      {
+        "threshold": 139.091,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          4,
+          4,
+          92,
+          51
+        ],
+        "widthPerHeight": 1.872340425531915,
+        "classMeanDifference": 109.80695158950007,
+        "cropClearancePixels": [
+          4,
+          4,
+          3,
+          4
+        ]
+      },
+      {
+        "threshold": 145.091,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          4,
+          4,
+          92,
+          52
+        ],
+        "widthPerHeight": 1.8333333333333333,
+        "classMeanDifference": 110.03884841135421,
+        "cropClearancePixels": [
+          4,
+          4,
+          3,
+          3
+        ]
+      },
+      {
+        "threshold": 151.091,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          4,
+          4,
+          92,
+          52
+        ],
+        "widthPerHeight": 1.8333333333333333,
+        "classMeanDifference": 110.10956937799043,
+        "cropClearancePixels": [
+          4,
+          4,
+          3,
+          3
+        ]
+      }
+    ],
+    "sourceWidthPerHeightSensitivityRange": [
+      1.8333333333333333,
+      1.9130434782608696
+    ],
+    "sensitivitySummary": {
+      "accepted": 5,
+      "rejected": 0,
+      "rangePolicy": "Only accepted samples contribute to ranges; rejected samples remain in this ledger with null widthPerHeight."
+    },
+    "alignment": "Equal painted height and horizontal centre, scaled uniformly. No x stretch, perspective correction, or score-based contour fitting.",
+    "occurrences": [
+      {
+        "index": 0,
+        "character": "M",
+        "boxInCrop": [
+          4,
+          4,
+          38,
+          51
+        ],
+        "sourcePaintedPixels": [
+          34,
+          47
+        ],
+        "sourceWidthPerHeight": 0.723404255319149,
+        "startPerRunHeight": 0.0,
+        "beforeWidthPerHeight": 0.7966666666666666,
+        "afterWidthPerHeight": 0.74
+      },
+      {
+        "index": 1,
+        "character": "A",
+        "boxInCrop": [
+          40,
+          5,
+          66,
+          51
+        ],
+        "sourcePaintedPixels": [
+          26,
+          46
+        ],
+        "sourceWidthPerHeight": 0.5652173913043478,
+        "startPerRunHeight": 0.7659574468085106,
+        "beforeWidthPerHeight": 0.6266666666666667,
+        "afterWidthPerHeight": 0.5766666666666667
+      }
+    ],
+    "glyphSegmentation": {
+      "accepted": true,
+      "reason": "Every sensitivity sample valid; stable component count over threshold\u00b112"
+    }
+  },
+  {
+    "id": "1999-jan-commons",
+    "case": "1999-may",
+    "text": "JAN",
+    "checkCharacters": "A",
+    "file": "docs/research/bc-decal-residuals/lettering/sources/commons-1999-jan.jpg",
+    "roi": [
+      36,
+      28,
+      323,
+      211
+    ],
+    "light": false,
+    "licence": "CC BY-SA 2.0",
+    "author": "Jerry Woody",
+    "sourceSha256": "ec54ef3110215c50eed6bb4ff637dbf29197968c11ea887eccc3780b9c2a0dbd",
+    "pixels": [
+      804,
+      236
+    ],
+    "threshold": 104.1364858904524,
+    "sourcePaintedBoxInCrop": [
+      5,
+      10,
+      274,
+      179
+    ],
+    "sourcePaintedPixels": [
+      269,
+      169
+    ],
+    "sourceWidthPerHeight": 1.5917159763313609,
+    "thresholdValidation": {
+      "threshold": 104.136,
+      "components": 3,
+      "accepted": true,
+      "rejectionReasons": [],
+      "paintedBoxInCrop": [
+        5,
+        10,
+        274,
+        179
+      ],
+      "widthPerHeight": 1.5917159763313609,
+      "classMeanDifference": 92.19141997433422,
+      "cropClearancePixels": [
+        5,
+        10,
+        13,
+        4
+      ]
+    },
+    "sensitivity": [
+      {
+        "threshold": 92.136,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          5,
+          11,
+          274,
+          179
+        ],
+        "widthPerHeight": 1.6011904761904763,
+        "classMeanDifference": 91.6377419212838,
+        "cropClearancePixels": [
+          5,
+          11,
+          13,
+          4
+        ]
+      },
+      {
+        "threshold": 98.136,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          5,
+          11,
+          274,
+          179
+        ],
+        "widthPerHeight": 1.6011904761904763,
+        "classMeanDifference": 91.97777666356814,
+        "cropClearancePixels": [
+          5,
+          11,
+          13,
+          4
+        ]
+      },
+      {
+        "threshold": 104.136,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          5,
+          10,
+          274,
+          179
+        ],
+        "widthPerHeight": 1.5917159763313609,
+        "classMeanDifference": 92.19141997433422,
+        "cropClearancePixels": [
+          5,
+          10,
+          13,
+          4
+        ]
+      },
+      {
+        "threshold": 110.136,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          4,
+          10,
+          274,
+          179
+        ],
+        "widthPerHeight": 1.5976331360946745,
+        "classMeanDifference": 92.2661734829837,
+        "cropClearancePixels": [
+          4,
+          10,
+          13,
+          4
+        ]
+      },
+      {
+        "threshold": 116.136,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          3,
+          10,
+          275,
+          179
+        ],
+        "widthPerHeight": 1.6094674556213018,
+        "classMeanDifference": 92.2111219543535,
+        "cropClearancePixels": [
+          3,
+          10,
+          12,
+          4
+        ]
+      }
+    ],
+    "sourceWidthPerHeightSensitivityRange": [
+      1.5917159763313609,
+      1.6094674556213018
+    ],
+    "sensitivitySummary": {
+      "accepted": 5,
+      "rejected": 0,
+      "rangePolicy": "Only accepted samples contribute to ranges; rejected samples remain in this ledger with null widthPerHeight."
+    },
+    "alignment": "Equal painted height and horizontal centre, scaled uniformly. No x stretch, perspective correction, or score-based contour fitting.",
+    "occurrences": [
+      {
+        "index": 1,
+        "character": "A",
+        "boxInCrop": [
+          85,
+          12,
+          178,
+          176
+        ],
+        "sourcePaintedPixels": [
+          93,
+          164
+        ],
+        "sourceWidthPerHeight": 0.5670731707317073,
+        "startPerRunHeight": 0.47337278106508873,
+        "beforeWidthPerHeight": 0.6266666666666667,
+        "afterWidthPerHeight": 0.5766666666666667
+      }
+    ],
+    "glyphSegmentation": {
+      "accepted": true,
+      "reason": "Every sensitivity sample valid; stable component count over threshold\u00b112"
+    }
+  },
+  {
+    "id": "1999-may-alternate-crop",
+    "case": "1999-may",
+    "text": "MAY",
+    "file": "docs/research/bc-decal-residuals/lettering/sources/1999-54174570.jpg",
+    "roi": [
+      11,
+      11,
+      99,
+      63
+    ],
+    "light": false,
+    "duplicateOf": "1999-may",
+    "sourceSha256": "700703547282801f7ac07e738eb6b4ee4f00f2539feb73d441fc5673de18021a",
+    "pixels": [
+      235,
+      75
+    ],
+    "threshold": 142.20331048489464,
+    "sourcePaintedBoxInCrop": [
+      2,
+      3,
+      85,
+      49
+    ],
+    "sourcePaintedPixels": [
+      83,
+      46
+    ],
+    "sourceWidthPerHeight": 1.8043478260869565,
+    "thresholdValidation": {
+      "threshold": 142.203,
+      "components": 3,
+      "accepted": true,
+      "rejectionReasons": [],
+      "paintedBoxInCrop": [
+        2,
+        3,
+        85,
+        49
+      ],
+      "widthPerHeight": 1.8043478260869565,
+      "classMeanDifference": 119.70517390200558,
+      "cropClearancePixels": [
+        2,
+        3,
+        3,
+        3
+      ]
+    },
+    "sensitivity": [
+      {
+        "threshold": 130.203,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          3,
+          3,
+          85,
+          49
+        ],
+        "widthPerHeight": 1.7826086956521738,
+        "classMeanDifference": 118.89004361455636,
+        "cropClearancePixels": [
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "threshold": 136.203,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          3,
+          3,
+          85,
+          49
+        ],
+        "widthPerHeight": 1.7826086956521738,
+        "classMeanDifference": 119.34856900288905,
+        "cropClearancePixels": [
+          3,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "threshold": 142.203,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          2,
+          3,
+          85,
+          49
+        ],
+        "widthPerHeight": 1.8043478260869565,
+        "classMeanDifference": 119.70517390200558,
+        "cropClearancePixels": [
+          2,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "threshold": 148.203,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          2,
+          3,
+          85,
+          49
+        ],
+        "widthPerHeight": 1.8043478260869565,
+        "classMeanDifference": 119.96887686567383,
+        "cropClearancePixels": [
+          2,
+          3,
+          3,
+          3
+        ]
+      },
+      {
+        "threshold": 154.203,
+        "components": 3,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          2,
+          3,
+          85,
+          49
+        ],
+        "widthPerHeight": 1.8043478260869565,
+        "classMeanDifference": 120.08327508950288,
+        "cropClearancePixels": [
+          2,
+          3,
+          3,
+          3
+        ]
+      }
+    ],
+    "sourceWidthPerHeightSensitivityRange": [
+      1.7826086956521738,
+      1.8043478260869565
+    ],
+    "sensitivitySummary": {
+      "accepted": 5,
+      "rejected": 0,
+      "rangePolicy": "Only accepted samples contribute to ranges; rejected samples remain in this ledger with null widthPerHeight."
+    },
+    "alignment": "Equal painted height and horizontal centre, scaled uniformly. No x stretch, perspective correction, or score-based contour fitting.",
+    "occurrences": [
+      {
+        "index": 0,
+        "character": "M",
+        "boxInCrop": [
+          2,
+          3,
+          36,
+          49
+        ],
+        "sourcePaintedPixels": [
+          34,
+          46
+        ],
+        "sourceWidthPerHeight": 0.7391304347826086,
+        "startPerRunHeight": 0.0,
+        "beforeWidthPerHeight": 0.7966666666666666,
+        "afterWidthPerHeight": 0.74
+      },
+      {
+        "index": 1,
+        "character": "A",
+        "boxInCrop": [
+          38,
+          3,
+          64,
+          49
+        ],
+        "sourcePaintedPixels": [
+          26,
+          46
+        ],
+        "sourceWidthPerHeight": 0.5652173913043478,
+        "startPerRunHeight": 0.782608695652174,
+        "beforeWidthPerHeight": 0.6266666666666667,
+        "afterWidthPerHeight": 0.5766666666666667
+      },
+      {
+        "index": 2,
+        "character": "Y",
+        "boxInCrop": [
+          62,
+          3,
+          85,
+          49
+        ],
+        "sourcePaintedPixels": [
+          23,
+          46
+        ],
+        "sourceWidthPerHeight": 0.5,
+        "startPerRunHeight": 1.3043478260869565,
+        "beforeWidthPerHeight": 0.5966666666666667,
+        "afterWidthPerHeight": 0.51
+      }
+    ],
+    "beforeWidthPerHeight": 1.93,
+    "afterWidthPerHeight": 1.7966666666666666,
+    "beforeRunWidthRatio": 1.0696385542168674,
+    "afterRunWidthRatio": 0.9957429718875501,
+    "beforeRunWidthRatioSensitivityRange": [
+      1.0696385542168674,
+      1.0826829268292684
+    ],
+    "afterRunWidthRatioSensitivityRange": [
+      0.9957429718875501,
+      1.0078861788617886
+    ],
+    "glyphSegmentation": {
+      "accepted": true,
+      "reason": "Every sensitivity sample valid; stable component count over threshold\u00b112"
+    }
+  },
+  {
+    "id": "2004-jan",
+    "case": "2004-year",
+    "text": "04",
+    "file": "docs/research/bc-decal-residuals/lettering/sources/2004-40724602.jpg",
+    "roi": [
+      155,
+      8,
+      215,
+      56
+    ],
+    "light": false,
+    "sourceSha256": "b3470e12081281c0d733e39f7d12eea75973fcfa87fa1b33d0e005e87d3e0863",
+    "pixels": [
+      253,
+      75
+    ],
+    "threshold": 113.42594098722367,
+    "sourcePaintedBoxInCrop": [
+      11,
+      5,
+      49,
+      43
+    ],
+    "sourcePaintedPixels": [
+      38,
+      38
+    ],
+    "sourceWidthPerHeight": 1.0,
+    "thresholdValidation": {
+      "threshold": 113.426,
+      "components": 2,
+      "accepted": true,
+      "rejectionReasons": [],
+      "paintedBoxInCrop": [
+        11,
+        5,
+        49,
+        43
+      ],
+      "widthPerHeight": 1.0,
+      "classMeanDifference": 170.40423548069134,
+      "cropClearancePixels": [
+        11,
+        5,
+        11,
+        5
+      ]
+    },
+    "sensitivity": [
+      {
+        "threshold": 101.426,
+        "components": 2,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          11,
+          5,
+          49,
+          43
+        ],
+        "widthPerHeight": 1.0,
+        "classMeanDifference": 171.51266069651743,
+        "cropClearancePixels": [
+          11,
+          5,
+          11,
+          5
+        ]
+      },
+      {
+        "threshold": 107.426,
+        "components": 2,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          11,
+          5,
+          49,
+          43
+        ],
+        "widthPerHeight": 1.0,
+        "classMeanDifference": 171.0409716063608,
+        "cropClearancePixels": [
+          11,
+          5,
+          11,
+          5
+        ]
+      },
+      {
+        "threshold": 113.426,
+        "components": 2,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          11,
+          5,
+          49,
+          43
+        ],
+        "widthPerHeight": 1.0,
+        "classMeanDifference": 170.40423548069134,
+        "cropClearancePixels": [
+          11,
+          5,
+          11,
+          5
+        ]
+      },
+      {
+        "threshold": 119.426,
+        "components": 1,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          11,
+          5,
+          49,
+          43
+        ],
+        "widthPerHeight": 1.0,
+        "classMeanDifference": 169.77385359261532,
+        "cropClearancePixels": [
+          11,
+          5,
+          11,
+          5
+        ]
+      },
+      {
+        "threshold": 125.426,
+        "components": 1,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          11,
+          5,
+          49,
+          43
+        ],
+        "widthPerHeight": 1.0,
+        "classMeanDifference": 169.1236791705191,
+        "cropClearancePixels": [
+          11,
+          5,
+          11,
+          5
+        ]
+      }
+    ],
+    "sourceWidthPerHeightSensitivityRange": [
+      1.0,
+      1.0
+    ],
+    "sensitivitySummary": {
+      "accepted": 5,
+      "rejected": 0,
+      "rangePolicy": "Only accepted samples contribute to ranges; rejected samples remain in this ledger with null widthPerHeight."
+    },
+    "alignment": "Equal painted height and horizontal centre, scaled uniformly. No x stretch, perspective correction, or score-based contour fitting.",
+    "occurrences": [],
+    "beforeWidthPerHeight": 0.8733333333333333,
+    "afterWidthPerHeight": 0.9766666666666667,
+    "beforeRunWidthRatio": 0.8733333333333333,
+    "afterRunWidthRatio": 0.9766666666666667,
+    "beforeRunWidthRatioSensitivityRange": [
+      0.8733333333333333,
+      0.8733333333333333
+    ],
+    "afterRunWidthRatioSensitivityRange": [
+      0.9766666666666667,
+      0.9766666666666667
+    ],
+    "glyphSegmentation": {
+      "accepted": false,
+      "reason": "Joined or unstable source components; whole-run extent retained, per-glyph scores withheld."
+    }
+  },
+  {
+    "id": "2004-feb",
+    "case": "2004-year",
+    "text": "04",
+    "file": "docs/research/bc-decal-residuals/lettering/sources/2004-41568474.jpg",
+    "roi": [
+      155,
+      8,
+      215,
+      56
+    ],
+    "light": false,
+    "sourceSha256": "40d0c8b87f3d585095a715d518ef88d1ebf023c36d925f68f73eb2ee1c13d305",
+    "pixels": [
+      257,
+      75
+    ],
+    "threshold": 117.20055119101525,
+    "sourcePaintedBoxInCrop": [
+      15,
+      4,
+      53,
+      43
+    ],
+    "sourcePaintedPixels": [
+      38,
+      39
+    ],
+    "sourceWidthPerHeight": 0.9743589743589743,
+    "thresholdValidation": {
+      "threshold": 117.201,
+      "components": 2,
+      "accepted": true,
+      "rejectionReasons": [],
+      "paintedBoxInCrop": [
+        15,
+        4,
+        53,
+        43
+      ],
+      "widthPerHeight": 0.9743589743589743,
+      "classMeanDifference": 160.50128127290708,
+      "cropClearancePixels": [
+        15,
+        4,
+        7,
+        5
+      ]
+    },
+    "sensitivity": [
+      {
+        "threshold": 105.201,
+        "components": 2,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          15,
+          4,
+          53,
+          43
+        ],
+        "widthPerHeight": 0.9743589743589743,
+        "classMeanDifference": 161.22225318927823,
+        "cropClearancePixels": [
+          15,
+          4,
+          7,
+          5
+        ]
+      },
+      {
+        "threshold": 111.201,
+        "components": 2,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          15,
+          4,
+          53,
+          43
+        ],
+        "widthPerHeight": 0.9743589743589743,
+        "classMeanDifference": 160.79362437065834,
+        "cropClearancePixels": [
+          15,
+          4,
+          7,
+          5
+        ]
+      },
+      {
+        "threshold": 117.201,
+        "components": 2,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          15,
+          4,
+          53,
+          43
+        ],
+        "widthPerHeight": 0.9743589743589743,
+        "classMeanDifference": 160.50128127290708,
+        "cropClearancePixels": [
+          15,
+          4,
+          7,
+          5
+        ]
+      },
+      {
+        "threshold": 123.201,
+        "components": 1,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          15,
+          4,
+          53,
+          43
+        ],
+        "widthPerHeight": 0.9743589743589743,
+        "classMeanDifference": 160.28761253561254,
+        "cropClearancePixels": [
+          15,
+          4,
+          7,
+          5
+        ]
+      },
+      {
+        "threshold": 129.201,
+        "components": 1,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          15,
+          4,
+          53,
+          43
+        ],
+        "widthPerHeight": 0.9743589743589743,
+        "classMeanDifference": 159.65712244482557,
+        "cropClearancePixels": [
+          15,
+          4,
+          7,
+          5
+        ]
+      }
+    ],
+    "sourceWidthPerHeightSensitivityRange": [
+      0.9743589743589743,
+      0.9743589743589743
+    ],
+    "sensitivitySummary": {
+      "accepted": 5,
+      "rejected": 0,
+      "rangePolicy": "Only accepted samples contribute to ranges; rejected samples remain in this ledger with null widthPerHeight."
+    },
+    "alignment": "Equal painted height and horizontal centre, scaled uniformly. No x stretch, perspective correction, or score-based contour fitting.",
+    "occurrences": [],
+    "beforeWidthPerHeight": 0.8733333333333333,
+    "afterWidthPerHeight": 0.9766666666666667,
+    "beforeRunWidthRatio": 0.8963157894736842,
+    "afterRunWidthRatio": 1.0023684210526316,
+    "beforeRunWidthRatioSensitivityRange": [
+      0.8963157894736842,
+      0.8963157894736842
+    ],
+    "afterRunWidthRatioSensitivityRange": [
+      1.0023684210526316,
+      1.0023684210526316
+    ],
+    "glyphSegmentation": {
+      "accepted": false,
+      "reason": "Joined or unstable source components; whole-run extent retained, per-glyph scores withheld."
+    }
+  },
+  {
+    "id": "2004-jul",
+    "case": "2004-year",
+    "text": "04",
+    "file": "docs/research/bc-decal-residuals/lettering/sources/2004-48794381.jpg",
+    "roi": [
+      155,
+      8,
+      215,
+      56
+    ],
+    "light": false,
+    "sourceSha256": "d15a1a440f9029c869f9596c52679b5b47ccec694373c4193e96a3b5847ccc34",
+    "pixels": [
+      254,
+      75
+    ],
+    "threshold": 115.14142813693354,
+    "sourcePaintedBoxInCrop": [
+      10,
+      5,
+      48,
+      44
+    ],
+    "sourcePaintedPixels": [
+      38,
+      39
+    ],
+    "sourceWidthPerHeight": 0.9743589743589743,
+    "thresholdValidation": {
+      "threshold": 115.141,
+      "components": 1,
+      "accepted": true,
+      "rejectionReasons": [],
+      "paintedBoxInCrop": [
+        10,
+        5,
+        48,
+        44
+      ],
+      "widthPerHeight": 0.9743589743589743,
+      "classMeanDifference": 142.9167145415836,
+      "cropClearancePixels": [
+        10,
+        5,
+        12,
+        4
+      ]
+    },
+    "sensitivity": [
+      {
+        "threshold": 103.141,
+        "components": 2,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          10,
+          5,
+          47,
+          44
+        ],
+        "widthPerHeight": 0.9487179487179487,
+        "classMeanDifference": 143.70756063913853,
+        "cropClearancePixels": [
+          10,
+          5,
+          13,
+          4
+        ]
+      },
+      {
+        "threshold": 109.141,
+        "components": 2,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          10,
+          5,
+          47,
+          44
+        ],
+        "widthPerHeight": 0.9487179487179487,
+        "classMeanDifference": 143.33419853164398,
+        "cropClearancePixels": [
+          10,
+          5,
+          13,
+          4
+        ]
+      },
+      {
+        "threshold": 115.141,
+        "components": 1,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          10,
+          5,
+          48,
+          44
+        ],
+        "widthPerHeight": 0.9743589743589743,
+        "classMeanDifference": 142.9167145415836,
+        "cropClearancePixels": [
+          10,
+          5,
+          12,
+          4
+        ]
+      },
+      {
+        "threshold": 121.141,
+        "components": 1,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          10,
+          5,
+          48,
+          44
+        ],
+        "widthPerHeight": 0.9743589743589743,
+        "classMeanDifference": 142.02219739028004,
+        "cropClearancePixels": [
+          10,
+          5,
+          12,
+          4
+        ]
+      },
+      {
+        "threshold": 127.141,
+        "components": 1,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          10,
+          5,
+          48,
+          44
+        ],
+        "widthPerHeight": 0.9743589743589743,
+        "classMeanDifference": 141.65414215706667,
+        "cropClearancePixels": [
+          10,
+          5,
+          12,
+          4
+        ]
+      }
+    ],
+    "sourceWidthPerHeightSensitivityRange": [
+      0.9487179487179487,
+      0.9743589743589743
+    ],
+    "sensitivitySummary": {
+      "accepted": 5,
+      "rejected": 0,
+      "rangePolicy": "Only accepted samples contribute to ranges; rejected samples remain in this ledger with null widthPerHeight."
+    },
+    "alignment": "Equal painted height and horizontal centre, scaled uniformly. No x stretch, perspective correction, or score-based contour fitting.",
+    "occurrences": [],
+    "beforeWidthPerHeight": 0.8733333333333333,
+    "afterWidthPerHeight": 0.9766666666666667,
+    "beforeRunWidthRatio": 0.8963157894736842,
+    "afterRunWidthRatio": 1.0023684210526316,
+    "beforeRunWidthRatioSensitivityRange": [
+      0.8963157894736842,
+      0.9205405405405406
+    ],
+    "afterRunWidthRatioSensitivityRange": [
+      1.0023684210526316,
+      1.0294594594594595
+    ],
+    "glyphSegmentation": {
+      "accepted": false,
+      "reason": "Joined or unstable source components; whole-run extent retained, per-glyph scores withheld."
+    }
+  },
+  {
+    "id": "2004-nov",
+    "case": "2004-year",
+    "text": "04",
+    "file": "docs/research/bc-decal-residuals/lettering/sources/2004-64276099.jpg",
+    "roi": [
+      155,
+      8,
+      215,
+      56
+    ],
+    "light": false,
+    "sourceSha256": "65aaf7712ab03a902417a2f094361a7bf846cc3864340b353b89288a37006aa8",
+    "pixels": [
+      254,
+      75
+    ],
+    "threshold": 109.26210418794689,
+    "sourcePaintedBoxInCrop": [
+      12,
+      5,
+      50,
+      44
+    ],
+    "sourcePaintedPixels": [
+      38,
+      39
+    ],
+    "sourceWidthPerHeight": 0.9743589743589743,
+    "thresholdValidation": {
+      "threshold": 109.262,
+      "components": 2,
+      "accepted": true,
+      "rejectionReasons": [],
+      "paintedBoxInCrop": [
+        12,
+        5,
+        50,
+        44
+      ],
+      "widthPerHeight": 0.9743589743589743,
+      "classMeanDifference": 151.41511746680285,
+      "cropClearancePixels": [
+        12,
+        5,
+        10,
+        4
+      ]
+    },
+    "sensitivity": [
+      {
+        "threshold": 97.262,
+        "components": 2,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          12,
+          5,
+          49,
+          44
+        ],
+        "widthPerHeight": 0.9487179487179487,
+        "classMeanDifference": 152.10256367791726,
+        "cropClearancePixels": [
+          12,
+          5,
+          11,
+          4
+        ]
+      },
+      {
+        "threshold": 103.262,
+        "components": 2,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          12,
+          5,
+          50,
+          44
+        ],
+        "widthPerHeight": 0.9743589743589743,
+        "classMeanDifference": 151.65482035774693,
+        "cropClearancePixels": [
+          12,
+          5,
+          10,
+          4
+        ]
+      },
+      {
+        "threshold": 109.262,
+        "components": 2,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          12,
+          5,
+          50,
+          44
+        ],
+        "widthPerHeight": 0.9743589743589743,
+        "classMeanDifference": 151.41511746680285,
+        "cropClearancePixels": [
+          12,
+          5,
+          10,
+          4
+        ]
+      },
+      {
+        "threshold": 115.262,
+        "components": 2,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          12,
+          5,
+          50,
+          44
+        ],
+        "widthPerHeight": 0.9743589743589743,
+        "classMeanDifference": 151.07898149905438,
+        "cropClearancePixels": [
+          12,
+          5,
+          10,
+          4
+        ]
+      },
+      {
+        "threshold": 121.262,
+        "components": 1,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          11,
+          5,
+          50,
+          44
+        ],
+        "widthPerHeight": 1.0,
+        "classMeanDifference": 150.5177184451272,
+        "cropClearancePixels": [
+          11,
+          5,
+          10,
+          4
+        ]
+      }
+    ],
+    "sourceWidthPerHeightSensitivityRange": [
+      0.9487179487179487,
+      1.0
+    ],
+    "sensitivitySummary": {
+      "accepted": 5,
+      "rejected": 0,
+      "rangePolicy": "Only accepted samples contribute to ranges; rejected samples remain in this ledger with null widthPerHeight."
+    },
+    "alignment": "Equal painted height and horizontal centre, scaled uniformly. No x stretch, perspective correction, or score-based contour fitting.",
+    "occurrences": [],
+    "beforeWidthPerHeight": 0.8733333333333333,
+    "afterWidthPerHeight": 0.9766666666666667,
+    "beforeRunWidthRatio": 0.8963157894736842,
+    "afterRunWidthRatio": 1.0023684210526316,
+    "beforeRunWidthRatioSensitivityRange": [
+      0.8733333333333333,
+      0.9205405405405406
+    ],
+    "afterRunWidthRatioSensitivityRange": [
+      0.9766666666666667,
+      1.0294594594594595
+    ],
+    "glyphSegmentation": {
+      "accepted": false,
+      "reason": "Joined or unstable source components; whole-run extent retained, per-glyph scores withheld."
+    }
+  },
+  {
+    "id": "2004-dec",
+    "case": "2004-year",
+    "text": "04",
+    "file": "docs/research/bc-decal-residuals/lettering/sources/2004-65242308.jpg",
+    "roi": [
+      155,
+      8,
+      215,
+      56
+    ],
+    "light": false,
+    "sourceSha256": "a0c052a1cffc1406ca7fd70149552dc73f186afb260c8ee4a5f6d29fabc3845e",
+    "pixels": [
+      252,
+      75
+    ],
+    "threshold": 113.90990687189341,
+    "sourcePaintedBoxInCrop": [
+      8,
+      5,
+      46,
+      44
+    ],
+    "sourcePaintedPixels": [
+      38,
+      39
+    ],
+    "sourceWidthPerHeight": 0.9743589743589743,
+    "thresholdValidation": {
+      "threshold": 113.91,
+      "components": 1,
+      "accepted": true,
+      "rejectionReasons": [],
+      "paintedBoxInCrop": [
+        8,
+        5,
+        46,
+        44
+      ],
+      "widthPerHeight": 0.9743589743589743,
+      "classMeanDifference": 156.2047124546524,
+      "cropClearancePixels": [
+        8,
+        5,
+        14,
+        4
+      ]
+    },
+    "sensitivity": [
+      {
+        "threshold": 101.91,
+        "components": 1,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          8,
+          5,
+          46,
+          44
+        ],
+        "widthPerHeight": 0.9743589743589743,
+        "classMeanDifference": 156.6629654490873,
+        "cropClearancePixels": [
+          8,
+          5,
+          14,
+          4
+        ]
+      },
+      {
+        "threshold": 107.91,
+        "components": 1,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          8,
+          5,
+          46,
+          44
+        ],
+        "widthPerHeight": 0.9743589743589743,
+        "classMeanDifference": 156.4197754593474,
+        "cropClearancePixels": [
+          8,
+          5,
+          14,
+          4
+        ]
+      },
+      {
+        "threshold": 113.91,
+        "components": 1,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          8,
+          5,
+          46,
+          44
+        ],
+        "widthPerHeight": 0.9743589743589743,
+        "classMeanDifference": 156.2047124546524,
+        "cropClearancePixels": [
+          8,
+          5,
+          14,
+          4
+        ]
+      },
+      {
+        "threshold": 119.91,
+        "components": 1,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          8,
+          5,
+          46,
+          44
+        ],
+        "widthPerHeight": 0.9743589743589743,
+        "classMeanDifference": 155.78781409601635,
+        "cropClearancePixels": [
+          8,
+          5,
+          14,
+          4
+        ]
+      },
+      {
+        "threshold": 125.91,
+        "components": 1,
+        "accepted": true,
+        "rejectionReasons": [],
+        "paintedBoxInCrop": [
+          8,
+          5,
+          46,
+          44
+        ],
+        "widthPerHeight": 0.9743589743589743,
+        "classMeanDifference": 155.55282246473575,
+        "cropClearancePixels": [
+          8,
+          5,
+          14,
+          4
+        ]
+      }
+    ],
+    "sourceWidthPerHeightSensitivityRange": [
+      0.9743589743589743,
+      0.9743589743589743
+    ],
+    "sensitivitySummary": {
+      "accepted": 5,
+      "rejected": 0,
+      "rangePolicy": "Only accepted samples contribute to ranges; rejected samples remain in this ledger with null widthPerHeight."
+    },
+    "alignment": "Equal painted height and horizontal centre, scaled uniformly. No x stretch, perspective correction, or score-based contour fitting.",
+    "occurrences": [],
+    "beforeWidthPerHeight": 0.8733333333333333,
+    "afterWidthPerHeight": 0.9766666666666667,
+    "beforeRunWidthRatio": 0.8963157894736842,
+    "afterRunWidthRatio": 1.0023684210526316,
+    "beforeRunWidthRatioSensitivityRange": [
+      0.8963157894736842,
+      0.8963157894736842
+    ],
+    "afterRunWidthRatioSensitivityRange": [
+      1.0023684210526316,
+      1.0023684210526316
+    ],
+    "glyphSegmentation": {
+      "accepted": false,
+      "reason": "Joined or unstable source components; whole-run extent retained, per-glyph scores withheld."
+    }
+  }
+]

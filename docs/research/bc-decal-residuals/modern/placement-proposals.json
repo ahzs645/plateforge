@@ -1,0 +1,1147 @@
+{
+  "schema": "plateforge.modern-placement-proposals/v1",
+  "profileBindings": {
+    "2019": "modern-late-year-reconstruction",
+    "2020": "modern-late-year-reconstruction",
+    "2021": "modern-late-year-reconstruction",
+    "2022": "modern-late-year-reconstruction",
+    "2023": "modern-late-year-reconstruction"
+  },
+  "proposals": [
+    {
+      "id": "2018",
+      "month": "JAN",
+      "control": "50278580",
+      "scope": "Exact photographed month; no inferred issue-date boundary",
+      "baseYearProfile": "modern-year-reconstruction",
+      "monthVariant": {
+        "fromMonth": 1,
+        "throughMonth": 1,
+        "evidence": "Observed 2018 JAN specimen only, control 50278580. Uniform frame-height/centre registration, source aspect preserved. Actual ink bounds include native strokes; barcode dimensions fit painted bars with quiet zones accounted for. Month/province contours are retained. See docs/research/bc-decal-residuals/modern.",
+        "runs": {
+          "decal-month": [
+            {
+              "x": 0.10414,
+              "baseline": 0.6161,
+              "cap": 0.46,
+              "width": 0.32,
+              "profile": "heavy-month-weighted",
+              "tracking": 0,
+              "anchor": "start"
+            }
+          ],
+          "decal-year": [
+            {
+              "x": 0.91848,
+              "baseline": 0.625,
+              "cap": 0.5,
+              "width": 0.48,
+              "profile": "modern-year-reconstruction",
+              "tracking": 0,
+              "anchor": "end"
+            }
+          ],
+          "decal-serial": [
+            {
+              "x": 0.78553,
+              "baseline": 0.88107,
+              "cap": 0.16415,
+              "width": 0.44,
+              "profile": "modern-control-reconstruction",
+              "tracking": 0
+            }
+          ]
+        },
+        "layout": {
+          "provinceColumns": [
+            0.4609,
+            0.50544
+          ],
+          "provinceCentre": 0.38307,
+          "barcode": {
+            "x": 0.00671,
+            "y": 0.69792,
+            "width": 0.60161,
+            "height": 0.20833
+          }
+        }
+      },
+      "before": [
+        {
+          "role": "decal-month",
+          "index": 0,
+          "id": "paint-decal-month-0",
+          "text": "JAN",
+          "profile": "bc-decal-print-heavy-month-weighted",
+          "fit": "natural",
+          "box": [
+            20.9157,
+            17.425,
+            86.9565,
+            65.4794
+          ]
+        },
+        {
+          "role": "decal-year",
+          "index": 0,
+          "id": "paint-decal-year-0",
+          "text": "2018",
+          "profile": "bc-decal-print-modern-year-reconstruction",
+          "fit": "natural",
+          "box": [
+            135.01,
+            18,
+            216.89,
+            64
+          ]
+        },
+        {
+          "role": "decal-legend",
+          "index": 0,
+          "id": "paint-decal-legend-0",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-vertical-province",
+          "fit": "natural",
+          "box": [
+            96.208,
+            17.6715,
+            102.51868,
+            54.355000000000004
+          ]
+        },
+        {
+          "role": "decal-legend",
+          "index": 1,
+          "id": "paint-decal-legend-1",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-vertical-province",
+          "fit": "reduced",
+          "box": [
+            105.762,
+            12.7801,
+            111.7088,
+            59.0896
+          ]
+        },
+        {
+          "role": "decal-serial",
+          "index": 0,
+          "id": "paint-decal-serial-0",
+          "text": "50278580",
+          "profile": "bc-decal-print-modern-control-reconstruction",
+          "fit": "natural",
+          "box": [
+            130.984,
+            73.6894,
+            216.2211,
+            90.94980000000001
+          ]
+        },
+        {
+          "role": "decal-barcode",
+          "index": 0,
+          "id": "paint-decal-barcode-0",
+          "text": "Control barcode 50278580",
+          "box": [
+            10.2571,
+            75,
+            118.5431,
+            91
+          ]
+        }
+      ],
+      "after": [
+        {
+          "role": "decal-month",
+          "index": 0,
+          "id": "paint-decal-month-0",
+          "text": "JAN",
+          "profile": "bc-decal-print-heavy-month-weighted",
+          "fit": "natural",
+          "box": [
+            24.1677,
+            15.035,
+            90.2085,
+            63.0894
+          ]
+        },
+        {
+          "role": "decal-year",
+          "index": 0,
+          "id": "paint-decal-year-0",
+          "text": "2018",
+          "profile": "bc-decal-print-modern-year-reconstruction",
+          "fit": "natural",
+          "box": [
+            120.5,
+            12.5,
+            209.5,
+            62.5
+          ]
+        },
+        {
+          "role": "decal-legend",
+          "index": 0,
+          "id": "paint-decal-legend-0",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-vertical-province",
+          "fit": "natural",
+          "box": [
+            99.865,
+            19.9785,
+            106.17568,
+            56.662000000000006
+          ]
+        },
+        {
+          "role": "decal-legend",
+          "index": 1,
+          "id": "paint-decal-legend-1",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-vertical-province",
+          "fit": "reduced",
+          "box": [
+            110.464,
+            15.0871,
+            116.4108,
+            61.3966
+          ]
+        },
+        {
+          "role": "decal-serial",
+          "index": 0,
+          "id": "paint-decal-serial-0",
+          "text": "50278580",
+          "profile": "bc-decal-print-modern-control-reconstruction",
+          "fit": "natural",
+          "box": [
+            139.474,
+            71.8749,
+            221.778,
+            88.5414
+          ]
+        },
+        {
+          "role": "decal-barcode",
+          "index": 0,
+          "id": "paint-decal-barcode-0",
+          "text": "Control barcode 50278580",
+          "box": [
+            15.5201,
+            69.792,
+            125.9371,
+            90.625
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2019",
+      "month": "JAN",
+      "control": "10727925",
+      "scope": "Exact photographed month; no inferred issue-date boundary",
+      "baseYearProfile": "modern-late-year-reconstruction",
+      "monthVariant": {
+        "fromMonth": 1,
+        "throughMonth": 1,
+        "evidence": "Observed 2019 JAN specimen only, control 10727925. Uniform frame-height/centre registration, source aspect preserved. Actual ink bounds include native strokes; barcode dimensions fit painted bars with quiet zones accounted for. Month/province contours are retained. See docs/research/bc-decal-residuals/modern.",
+        "runs": {
+          "decal-month": [
+            {
+              "x": 0.03394,
+              "baseline": 0.59527,
+              "cap": 0.46,
+              "width": 0.32,
+              "profile": "heavy-month-weighted",
+              "tracking": 0,
+              "anchor": "start"
+            }
+          ],
+          "decal-year": [
+            {
+              "x": 0.95446,
+              "baseline": 0.60417,
+              "cap": 0.47917,
+              "width": 0.48,
+              "profile": "modern-late-year-reconstruction",
+              "tracking": 0,
+              "anchor": "end"
+            }
+          ],
+          "decal-serial": [
+            {
+              "x": 0.73867,
+              "baseline": 0.90136,
+              "cap": 0.18467,
+              "width": 0.44,
+              "profile": "modern-control-reconstruction",
+              "tracking": 0
+            }
+          ]
+        },
+        "layout": {
+          "provinceColumns": [
+            0.42812,
+            0.4666
+          ],
+          "provinceCentre": 0.37005,
+          "barcode": {
+            "x": -0.04362,
+            "y": 0.6875,
+            "width": 0.56188,
+            "height": 0.23958
+          }
+        }
+      },
+      "before": [
+        {
+          "role": "decal-month",
+          "index": 0,
+          "id": "paint-decal-month-0",
+          "text": "JAN",
+          "profile": "bc-decal-print-heavy-month-weighted",
+          "fit": "natural",
+          "box": [
+            20.9157,
+            17.425,
+            86.9565,
+            65.4794
+          ]
+        },
+        {
+          "role": "decal-year",
+          "index": 0,
+          "id": "paint-decal-year-0",
+          "text": "2019",
+          "profile": "bc-decal-print-modern-year-reconstruction",
+          "fit": "natural",
+          "box": [
+            135.01,
+            18,
+            216.89,
+            64
+          ]
+        },
+        {
+          "role": "decal-legend",
+          "index": 0,
+          "id": "paint-decal-legend-0",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-vertical-province",
+          "fit": "natural",
+          "box": [
+            96.7198,
+            19.1993,
+            102.50459000000001,
+            52.8258
+          ]
+        },
+        {
+          "role": "decal-legend",
+          "index": 1,
+          "id": "paint-decal-legend-1",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-vertical-province",
+          "fit": "natural",
+          "box": [
+            105.928,
+            13.4428,
+            111.70465,
+            58.427299999999995
+          ]
+        },
+        {
+          "role": "decal-serial",
+          "index": 0,
+          "id": "paint-decal-serial-0",
+          "text": "10727925",
+          "profile": "bc-decal-print-modern-control-reconstruction",
+          "fit": "natural",
+          "box": [
+            131.823,
+            73.6894,
+            216.0553,
+            90.94980000000001
+          ]
+        },
+        {
+          "role": "decal-barcode",
+          "index": 0,
+          "id": "paint-decal-barcode-0",
+          "text": "Control barcode 10727925",
+          "box": [
+            10.2571,
+            75,
+            118.5431,
+            91
+          ]
+        }
+      ],
+      "after": [
+        {
+          "role": "decal-month",
+          "index": 0,
+          "id": "paint-decal-month-0",
+          "text": "JAN",
+          "profile": "bc-decal-print-heavy-month-weighted",
+          "fit": "natural",
+          "box": [
+            8.02174,
+            12.952,
+            74.06254,
+            61.0064
+          ]
+        },
+        {
+          "role": "decal-year",
+          "index": 0,
+          "id": "paint-decal-year-0",
+          "text": "2019",
+          "profile": "bc-decal-print-modern-late-year-reconstruction",
+          "fit": "natural",
+          "box": [
+            124.89,
+            12.5,
+            217.6094,
+            60.417
+          ]
+        },
+        {
+          "role": "decal-legend",
+          "index": 0,
+          "id": "paint-decal-legend-0",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-vertical-province",
+          "fit": "natural",
+          "box": [
+            92.8374,
+            20.2043,
+            98.62219,
+            53.830799999999996
+          ]
+        },
+        {
+          "role": "decal-legend",
+          "index": 1,
+          "id": "paint-decal-legend-1",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-vertical-province",
+          "fit": "natural",
+          "box": [
+            101.696,
+            14.4478,
+            107.47265,
+            59.4323
+          ]
+        },
+        {
+          "role": "decal-serial",
+          "index": 0,
+          "id": "paint-decal-serial-0",
+          "text": "10727925",
+          "profile": "bc-decal-print-modern-control-reconstruction",
+          "fit": "natural",
+          "box": [
+            124.458,
+            71.8747,
+            215.959,
+            90.6246
+          ]
+        },
+        {
+          "role": "decal-barcode",
+          "index": 0,
+          "id": "paint-decal-barcode-0",
+          "text": "Control barcode 10727925",
+          "box": [
+            3.02118,
+            68.75,
+            106.14618,
+            92.708
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2020",
+      "month": "JAN",
+      "control": "00000000",
+      "scope": "Exact photographed month; no inferred issue-date boundary",
+      "baseYearProfile": "modern-late-year-reconstruction",
+      "monthVariant": {
+        "fromMonth": 1,
+        "throughMonth": 1,
+        "evidence": "Observed 2020 JAN specimen only, control 00000000. Uniform frame-height/centre registration, source aspect preserved. Actual ink bounds include native strokes; barcode dimensions fit painted bars with quiet zones accounted for. Month/province contours are retained. The all-zero sample is qualified evidence, not proof of normal issuance. See docs/research/bc-decal-residuals/modern.",
+        "runs": {
+          "decal-month": [
+            {
+              "x": 0.05658,
+              "baseline": 0.59006,
+              "cap": 0.46,
+              "width": 0.32,
+              "profile": "heavy-month-weighted",
+              "tracking": 0,
+              "anchor": "start"
+            }
+          ],
+          "decal-year": [
+            {
+              "x": 0.97124,
+              "baseline": 0.59375,
+              "cap": 0.45833,
+              "width": 0.48,
+              "profile": "modern-late-year-reconstruction",
+              "tracking": 0,
+              "anchor": "end"
+            }
+          ],
+          "decal-serial": [
+            {
+              "x": 0.72419,
+              "baseline": 0.89095,
+              "cap": 0.18467,
+              "width": 0.44,
+              "profile": "modern-control-reconstruction",
+              "tracking": 0
+            }
+          ]
+        },
+        "layout": {
+          "provinceColumns": [
+            0.43944,
+            0.47565
+          ],
+          "provinceCentre": 0.36485,
+          "barcode": {
+            "x": -0.01358,
+            "y": 0.67708,
+            "width": 0.5335,
+            "height": 0.22917
+          }
+        }
+      },
+      "before": [
+        {
+          "role": "decal-month",
+          "index": 0,
+          "id": "paint-decal-month-0",
+          "text": "JAN",
+          "profile": "bc-decal-print-heavy-month-weighted",
+          "fit": "natural",
+          "box": [
+            20.9157,
+            17.425,
+            86.9565,
+            65.4794
+          ]
+        },
+        {
+          "role": "decal-year",
+          "index": 0,
+          "id": "paint-decal-year-0",
+          "text": "2020",
+          "profile": "bc-decal-print-modern-year-reconstruction",
+          "fit": "natural",
+          "box": [
+            131.56,
+            18,
+            216.89,
+            64
+          ]
+        },
+        {
+          "role": "decal-legend",
+          "index": 0,
+          "id": "paint-decal-legend-0",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-vertical-province",
+          "fit": "natural",
+          "box": [
+            96.7198,
+            19.1993,
+            102.50459000000001,
+            52.8258
+          ]
+        },
+        {
+          "role": "decal-legend",
+          "index": 1,
+          "id": "paint-decal-legend-1",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-vertical-province",
+          "fit": "natural",
+          "box": [
+            105.928,
+            13.4428,
+            111.70465,
+            58.427299999999995
+          ]
+        },
+        {
+          "role": "decal-serial",
+          "index": 0,
+          "id": "paint-decal-serial-0",
+          "text": "00000000",
+          "profile": "bc-decal-print-modern-control-reconstruction",
+          "fit": "natural",
+          "box": [
+            131.079,
+            73.6894,
+            216.2215,
+            90.94980000000001
+          ]
+        },
+        {
+          "role": "decal-barcode",
+          "index": 0,
+          "id": "paint-decal-barcode-0",
+          "text": "Control barcode 00000000",
+          "box": [
+            10.2571,
+            75,
+            118.5431,
+            91
+          ]
+        }
+      ],
+      "after": [
+        {
+          "role": "decal-month",
+          "index": 0,
+          "id": "paint-decal-month-0",
+          "text": "JAN",
+          "profile": "bc-decal-print-heavy-month-weighted",
+          "fit": "natural",
+          "box": [
+            13.2287,
+            12.431,
+            79.26950000000001,
+            60.4854
+          ]
+        },
+        {
+          "role": "decal-year",
+          "index": 0,
+          "id": "paint-decal-year-0",
+          "text": "2020",
+          "profile": "bc-decal-print-modern-late-year-reconstruction",
+          "fit": "natural",
+          "box": [
+            123.011,
+            13.542,
+            219.4895,
+            59.375
+          ]
+        },
+        {
+          "role": "decal-legend",
+          "index": 0,
+          "id": "paint-decal-legend-0",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-vertical-province",
+          "fit": "natural",
+          "box": [
+            95.441,
+            19.6843,
+            101.22579,
+            53.3108
+          ]
+        },
+        {
+          "role": "decal-legend",
+          "index": 1,
+          "id": "paint-decal-legend-1",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-vertical-province",
+          "fit": "natural",
+          "box": [
+            103.777,
+            13.9278,
+            109.55365,
+            58.912299999999995
+          ]
+        },
+        {
+          "role": "decal-serial",
+          "index": 0,
+          "id": "paint-decal-serial-0",
+          "text": "00000000",
+          "profile": "bc-decal-print-modern-control-reconstruction",
+          "fit": "natural",
+          "box": [
+            120.319,
+            70.8337,
+            212.80880000000002,
+            89.58359999999999
+          ]
+        },
+        {
+          "role": "decal-barcode",
+          "index": 0,
+          "id": "paint-decal-barcode-0",
+          "text": "Control barcode 00000000",
+          "box": [
+            9.27104,
+            67.708,
+            107.18714,
+            90.625
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2021",
+      "month": "JUL",
+      "control": "36946964",
+      "scope": "Exact photographed month; no inferred issue-date boundary",
+      "baseYearProfile": "modern-late-year-reconstruction",
+      "monthVariant": {
+        "fromMonth": 7,
+        "throughMonth": 7,
+        "evidence": "Observed 2021 JUL specimen only, control 36946964. Uniform frame-height/centre registration, source aspect preserved. Actual ink bounds include native strokes; barcode dimensions fit painted bars with quiet zones accounted for. Month/province contours are retained. See docs/research/bc-decal-residuals/modern.",
+        "runs": {
+          "decal-month": [
+            {
+              "x": 0.09236,
+              "baseline": 0.60303,
+              "cap": 0.46,
+              "width": 0.32,
+              "profile": "heavy-month-weighted",
+              "tracking": 0,
+              "anchor": "start"
+            }
+          ],
+          "decal-year": [
+            {
+              "x": 0.95466,
+              "baseline": 0.60204,
+              "cap": 0.44898,
+              "width": 0.48,
+              "profile": "modern-late-year-reconstruction",
+              "tracking": 0,
+              "anchor": "end"
+            }
+          ],
+          "decal-serial": [
+            {
+              "x": 0.7464,
+              "baseline": 0.89317,
+              "cap": 0.1809,
+              "width": 0.44,
+              "profile": "modern-control-reconstruction",
+              "tracking": 0
+            }
+          ]
+        },
+        "layout": {
+          "provinceColumns": [
+            0.46532,
+            0.50079
+          ],
+          "provinceCentre": 0.38036,
+          "barcode": {
+            "x": 0.00187,
+            "y": 0.68367,
+            "width": 0.53929,
+            "height": 0.23469
+          }
+        }
+      },
+      "before": [
+        {
+          "role": "decal-month",
+          "index": 0,
+          "id": "paint-decal-month-0",
+          "text": "JUL",
+          "profile": "bc-decal-print-heavy-month-weighted",
+          "fit": "natural",
+          "box": [
+            20.9157,
+            17.425,
+            81.4673,
+            65.4794
+          ]
+        },
+        {
+          "role": "decal-year",
+          "index": 0,
+          "id": "paint-decal-year-0",
+          "text": "2021",
+          "profile": "bc-decal-print-modern-year-reconstruction",
+          "fit": "natural",
+          "box": [
+            135.7,
+            18,
+            214.58999999999997,
+            64
+          ]
+        },
+        {
+          "role": "decal-legend",
+          "index": 0,
+          "id": "paint-decal-legend-0",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-vertical-province",
+          "fit": "natural",
+          "box": [
+            96.7198,
+            19.1993,
+            102.50459000000001,
+            52.8258
+          ]
+        },
+        {
+          "role": "decal-legend",
+          "index": 1,
+          "id": "paint-decal-legend-1",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-vertical-province",
+          "fit": "natural",
+          "box": [
+            105.928,
+            13.4428,
+            111.70465,
+            58.427299999999995
+          ]
+        },
+        {
+          "role": "decal-serial",
+          "index": 0,
+          "id": "paint-decal-serial-0",
+          "text": "36946964",
+          "profile": "bc-decal-print-modern-control-reconstruction",
+          "fit": "natural",
+          "box": [
+            130.984,
+            73.6894,
+            216.2448,
+            90.94980000000001
+          ]
+        },
+        {
+          "role": "decal-barcode",
+          "index": 0,
+          "id": "paint-decal-barcode-0",
+          "text": "Control barcode 36946964",
+          "box": [
+            10.2571,
+            75,
+            118.5431,
+            91
+          ]
+        }
+      ],
+      "after": [
+        {
+          "role": "decal-month",
+          "index": 0,
+          "id": "paint-decal-month-0",
+          "text": "JUL",
+          "profile": "bc-decal-print-heavy-month-weighted",
+          "fit": "natural",
+          "box": [
+            21.4587,
+            13.728,
+            82.0103,
+            61.7824
+          ]
+        },
+        {
+          "role": "decal-year",
+          "index": 0,
+          "id": "paint-decal-year-0",
+          "text": "2021",
+          "profile": "bc-decal-print-modern-late-year-reconstruction",
+          "fit": "natural",
+          "box": [
+            130.449,
+            15.306,
+            214.8572,
+            60.204
+          ]
+        },
+        {
+          "role": "decal-legend",
+          "index": 0,
+          "id": "paint-decal-legend-0",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-vertical-province",
+          "fit": "natural",
+          "box": [
+            101.393,
+            21.2353,
+            107.17779,
+            54.8618
+          ]
+        },
+        {
+          "role": "decal-legend",
+          "index": 1,
+          "id": "paint-decal-legend-1",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-vertical-province",
+          "fit": "natural",
+          "box": [
+            109.56,
+            15.4788,
+            115.33665,
+            60.4633
+          ]
+        },
+        {
+          "role": "decal-serial",
+          "index": 0,
+          "id": "paint-decal-serial-0",
+          "text": "36946964",
+          "profile": "bc-decal-print-modern-control-reconstruction",
+          "fit": "natural",
+          "box": [
+            126.27,
+            71.4285,
+            216.9975,
+            89.79560000000001
+          ]
+        },
+        {
+          "role": "decal-barcode",
+          "index": 0,
+          "id": "paint-decal-barcode-0",
+          "text": "Control barcode 36946964",
+          "box": [
+            12.9591,
+            68.367,
+            111.93790000000001,
+            91.83600000000001
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2022",
+      "month": "MAR",
+      "control": "72919128",
+      "scope": "Exact photographed month; no inferred issue-date boundary",
+      "baseYearProfile": "modern-late-year-reconstruction",
+      "monthVariant": {
+        "fromMonth": 3,
+        "throughMonth": 3,
+        "evidence": "Observed 2022 MAR specimen only, control 72919128. Uniform frame-height/centre registration, source aspect preserved. Actual ink bounds include native strokes; barcode dimensions fit painted bars with quiet zones accounted for. Month/province contours are retained. See docs/research/bc-decal-residuals/modern.",
+        "runs": {
+          "decal-month": [
+            {
+              "x": 0.0473,
+              "baseline": 0.5904,
+              "cap": 0.46,
+              "width": 0.32,
+              "profile": "heavy-month-weighted",
+              "tracking": 0,
+              "anchor": "start"
+            }
+          ],
+          "decal-year": [
+            {
+              "x": 0.98,
+              "baseline": 0.59184,
+              "cap": 0.46939,
+              "width": 0.48,
+              "profile": "modern-late-year-reconstruction",
+              "tracking": 0,
+              "anchor": "end"
+            }
+          ],
+          "decal-serial": [
+            {
+              "x": 0.74436,
+              "baseline": 0.8827,
+              "cap": 0.19095,
+              "width": 0.44,
+              "profile": "modern-control-reconstruction",
+              "tracking": 0
+            }
+          ]
+        },
+        "layout": {
+          "provinceColumns": [
+            0.45201,
+            0.48748
+          ],
+          "provinceCentre": 0.35485,
+          "barcode": {
+            "x": -0.02643,
+            "y": 0.67347,
+            "width": 0.55597,
+            "height": 0.23469
+          }
+        }
+      },
+      "before": [
+        {
+          "role": "decal-month",
+          "index": 0,
+          "id": "paint-decal-month-0",
+          "text": "MAR",
+          "profile": "bc-decal-print-heavy-month-weighted",
+          "fit": "reduced",
+          "box": [
+            21.0988,
+            17.7976,
+            94.8707,
+            64.57039999999999
+          ]
+        },
+        {
+          "role": "decal-year",
+          "index": 0,
+          "id": "paint-decal-year-0",
+          "text": "2022",
+          "profile": "bc-decal-print-modern-year-reconstruction",
+          "fit": "natural",
+          "box": [
+            131.79,
+            18,
+            217.12,
+            64
+          ]
+        },
+        {
+          "role": "decal-legend",
+          "index": 0,
+          "id": "paint-decal-legend-0",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-vertical-province",
+          "fit": "natural",
+          "box": [
+            96.7198,
+            19.1993,
+            102.50459000000001,
+            52.8258
+          ]
+        },
+        {
+          "role": "decal-legend",
+          "index": 1,
+          "id": "paint-decal-legend-1",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-vertical-province",
+          "fit": "natural",
+          "box": [
+            105.928,
+            13.4428,
+            111.70465,
+            58.427299999999995
+          ]
+        },
+        {
+          "role": "decal-serial",
+          "index": 0,
+          "id": "paint-decal-serial-0",
+          "text": "72919128",
+          "profile": "bc-decal-print-modern-control-reconstruction",
+          "fit": "natural",
+          "box": [
+            130.937,
+            73.6894,
+            216.22140000000002,
+            90.94980000000001
+          ]
+        },
+        {
+          "role": "decal-barcode",
+          "index": 0,
+          "id": "paint-decal-barcode-0",
+          "text": "Control barcode 72919128",
+          "box": [
+            10.2571,
+            75,
+            118.5431,
+            91
+          ]
+        }
+      ],
+      "after": [
+        {
+          "role": "decal-month",
+          "index": 0,
+          "id": "paint-decal-month-0",
+          "text": "MAR",
+          "profile": "bc-decal-print-heavy-month-weighted",
+          "fit": "reduced",
+          "box": [
+            11.2778,
+            12.8376,
+            85.0497,
+            59.6104
+          ]
+        },
+        {
+          "role": "decal-year",
+          "index": 0,
+          "id": "paint-decal-year-0",
+          "text": "2022",
+          "profile": "bc-decal-print-modern-late-year-reconstruction",
+          "fit": "natural",
+          "box": [
+            124.246,
+            12.245,
+            221.175,
+            59.184
+          ]
+        },
+        {
+          "role": "decal-legend",
+          "index": 0,
+          "id": "paint-decal-legend-0",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-vertical-province",
+          "fit": "natural",
+          "box": [
+            98.3321,
+            18.6843,
+            104.11689,
+            52.3108
+          ]
+        },
+        {
+          "role": "decal-legend",
+          "index": 1,
+          "id": "paint-decal-legend-1",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-vertical-province",
+          "fit": "natural",
+          "box": [
+            106.498,
+            12.9278,
+            112.27465000000001,
+            57.912299999999995
+          ]
+        },
+        {
+          "role": "decal-serial",
+          "index": 0,
+          "id": "paint-decal-serial-0",
+          "text": "72919128",
+          "profile": "bc-decal-print-modern-control-reconstruction",
+          "fit": "natural",
+          "box": [
+            123.226,
+            69.3877,
+            219.0205,
+            88.7752
+          ]
+        },
+        {
+          "role": "decal-barcode",
+          "index": 0,
+          "id": "paint-decal-barcode-0",
+          "text": "Control barcode 72919128",
+          "box": [
+            6.83757,
+            67.347,
+            108.87757,
+            90.816
+          ]
+        }
+      ]
+    }
+  ]
+}

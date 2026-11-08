@@ -1,0 +1,207 @@
+{
+  "schema": "plateforge.decal-integration-corrections/v1",
+  "initialFixturesSha256": "a528befb4ddc8c038d39f027b8899c44fafaf55a1ef18a97795f1b55acb6dfd1",
+  "initialRenderings": 572,
+  "initialFailures": [
+    {
+      "id": "2004",
+      "month": "JAN",
+      "failures": [
+        {
+          "type": "painted-box-overlap",
+          "first": "04",
+          "second": "COLUMBIA",
+          "width": 1.3828,
+          "height": 5.9737
+        }
+      ]
+    },
+    {
+      "id": "2004",
+      "month": "FEB",
+      "failures": [
+        {
+          "type": "painted-box-overlap",
+          "first": "04",
+          "second": "COLUMBIA",
+          "width": 1.3828,
+          "height": 5.9737
+        }
+      ]
+    },
+    {
+      "id": "2004",
+      "month": "APR",
+      "failures": [
+        {
+          "type": "painted-box-overlap",
+          "first": "04",
+          "second": "COLUMBIA",
+          "width": 1.3828,
+          "height": 5.9737
+        }
+      ]
+    },
+    {
+      "id": "2004",
+      "month": "MAY",
+      "failures": [
+        {
+          "type": "painted-box-overlap",
+          "first": "04",
+          "second": "COLUMBIA",
+          "width": 1.3828,
+          "height": 5.9737
+        }
+      ]
+    },
+    {
+      "id": "2004",
+      "month": "JUN",
+      "failures": [
+        {
+          "type": "painted-box-overlap",
+          "first": "04",
+          "second": "COLUMBIA",
+          "width": 1.3828,
+          "height": 5.9737
+        }
+      ]
+    },
+    {
+      "id": "2004",
+      "month": "JUL",
+      "failures": [
+        {
+          "type": "painted-box-overlap",
+          "first": "04",
+          "second": "COLUMBIA",
+          "width": 1.3828,
+          "height": 5.9737
+        }
+      ]
+    },
+    {
+      "id": "2004",
+      "month": "AUG",
+      "failures": [
+        {
+          "type": "painted-box-overlap",
+          "first": "04",
+          "second": "COLUMBIA",
+          "width": 1.3828,
+          "height": 5.9737
+        }
+      ]
+    },
+    {
+      "id": "2004",
+      "month": "SEP",
+      "failures": [
+        {
+          "type": "painted-box-overlap",
+          "first": "04",
+          "second": "COLUMBIA",
+          "width": 1.3828,
+          "height": 5.9737
+        }
+      ]
+    },
+    {
+      "id": "2004",
+      "month": "OCT",
+      "failures": [
+        {
+          "type": "painted-box-overlap",
+          "first": "04",
+          "second": "COLUMBIA",
+          "width": 1.3828,
+          "height": 5.9737
+        }
+      ]
+    },
+    {
+      "id": "2004",
+      "month": "NOV",
+      "failures": [
+        {
+          "type": "painted-box-overlap",
+          "first": "04",
+          "second": "COLUMBIA",
+          "width": 1.3828,
+          "height": 5.9737
+        }
+      ]
+    },
+    {
+      "id": "2004",
+      "month": "DEC",
+      "failures": [
+        {
+          "type": "painted-box-overlap",
+          "first": "04",
+          "second": "COLUMBIA",
+          "width": 1.3828,
+          "height": 5.9737
+        }
+      ]
+    },
+    {
+      "id": "2006",
+      "month": "MAR",
+      "failures": [
+        {
+          "type": "painted-box-overlap",
+          "first": "MAR",
+          "second": "COLUMBIA",
+          "width": 1.7701,
+          "height": 6.9401
+        }
+      ]
+    },
+    {
+      "id": "2006",
+      "month": "MAY",
+      "failures": [
+        {
+          "type": "painted-box-overlap",
+          "first": "MAY",
+          "second": "COLUMBIA",
+          "width": 1.2051,
+          "height": 6.9401
+        }
+      ]
+    }
+  ],
+  "changes": [
+    {
+      "id": "2004",
+      "scope": "11 non-MAR months",
+      "role": "decal-year",
+      "field": "x",
+      "before": 0.732,
+      "after": 0.745,
+      "translationAtHeight100": 4.29,
+      "expectedClearanceAtHeight100": 2.9072,
+      "reason": "Broader supported 04 collided with COLUMBIA under the retained base anchor. Preserve native contours, cap, baseline and kerning; keep MAR variant unchanged. Six source photos visibly retain small positive gaps."
+    },
+    {
+      "id": "2006",
+      "scope": "base province; MAR/MAY were failing",
+      "role": "decal-legend",
+      "field": "x for both fixed words",
+      "before": 0.625,
+      "after": 0.63587,
+      "translationAtHeight100": 2.5,
+      "expectedMinimumClearanceAtHeight100": 0.73,
+      "reason": "The supported heavier province face collided with MAR/MAY. A small translation gives both month/province and province/year clearance. This is a family layout constraint, not a target derived from a rejected tiny MAY mask."
+    }
+  ],
+  "finalVerification": {
+    "renderings": 572,
+    "catalogueVariants": 55,
+    "failureCount": 0,
+    "fixturesSha256": "224954f55069a866ffc863c1874a5aa52127390cf18cd705d37ae6c5da0b29a0",
+    "report": "family-ink-verification.json"
+  }
+}

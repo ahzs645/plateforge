@@ -1,0 +1,126 @@
+[
+  {
+    "id": "1998-type-ii",
+    "sourceFile": "public/bc-decal-online-review/1998-type-ii/photo.png",
+    "sourceFileSha256": "e82cddeeef26dadd69423465c9f90ac08cf9cb6799cc828e0668aa4d43136710",
+    "roiPixels": [
+      15,
+      15,
+      157,
+      97
+    ],
+    "sourcePaintedPixels": [
+      133,
+      69
+    ],
+    "occurrences": [
+      {
+        "character": "M",
+        "boxInCrop": [
+          6,
+          4,
+          61,
+          73
+        ],
+        "widthPerOwnHeight": 0.7971014492753623,
+        "startPerRunHeight": 0.0
+      },
+      {
+        "character": "A",
+        "boxInCrop": [
+          63,
+          4,
+          106,
+          73
+        ],
+        "widthPerOwnHeight": 0.6231884057971014,
+        "startPerRunHeight": 0.8260869565217391
+      },
+      {
+        "character": "Y",
+        "boxInCrop": [
+          98,
+          4,
+          139,
+          73
+        ],
+        "widthPerOwnHeight": 0.5942028985507246,
+        "startPerRunHeight": 1.3333333333333333
+      }
+    ],
+    "beforeRunWidthRatio": 1.1413533834586467,
+    "afterRunWidthRatio": 1.0022214627477786,
+    "sourceThreshold": 143.4372670059825,
+    "newNativeAdvances": [
+      82.5,
+      65,
+      62
+    ],
+    "runKerning": {
+      "AY": -14
+    },
+    "limits": "Small unrectified photographs. M/A/Y are independent clean reconstructions, not an identified font. Pair overlap is a bounding-box relationship; painted strokes remain separate."
+  },
+  {
+    "id": "1999-thick",
+    "sourceFile": "public/data/decal-review/sources/1999.webp",
+    "sourceFileSha256": "1fb49e789ea4b059d5b7d28f36174ffcab8d9b3f3e6a51b94f3c0d81e1817975",
+    "roiPixels": [
+      10,
+      9,
+      101,
+      62
+    ],
+    "sourcePaintedPixels": [
+      88,
+      49
+    ],
+    "occurrences": [
+      {
+        "character": "M",
+        "boxInCrop": [
+          1,
+          3,
+          37,
+          51
+        ],
+        "widthPerOwnHeight": 0.75,
+        "startPerRunHeight": 0.0
+      },
+      {
+        "character": "A",
+        "boxInCrop": [
+          38,
+          3,
+          66,
+          52
+        ],
+        "widthPerOwnHeight": 0.5714285714285714,
+        "startPerRunHeight": 0.7551020408163265
+      },
+      {
+        "character": "Y",
+        "boxInCrop": [
+          64,
+          3,
+          89,
+          52
+        ],
+        "widthPerOwnHeight": 0.5102040816326531,
+        "startPerRunHeight": 1.2857142857142858
+      }
+    ],
+    "beforeRunWidthRatio": 1.225,
+    "afterRunWidthRatio": 1.0756714876033058,
+    "sourceThreshold": 130.27738903531503,
+    "newNativeAdvances": [
+      82.5,
+      65,
+      62
+    ],
+    "runKerning": {
+      "AY": -14
+    },
+    "limits": "Small unrectified photographs. M/A/Y are independent clean reconstructions, not an identified font. Pair overlap is a bounding-box relationship; painted strokes remain separate."
+  }
+]
