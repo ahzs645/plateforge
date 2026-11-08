@@ -11,6 +11,7 @@ scripts/trace-bc-dies/.cache/
 scripts/trace-bc-dies/out/
 
 # Intermediate Python bytecode from tracing tools
+scripts/__pycache__/
 scripts/trace-bc-dies/**/__pycache__/
 scripts/trace-bc-dies/__pycache__/
 

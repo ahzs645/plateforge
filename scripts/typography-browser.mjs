@@ -51,7 +51,19 @@ try{
  const representatives=[...new Map(formats.map(f=>[f.template,f])).values()];
  const extra=formats.filter(f=>['ca-bc','ca-nu','ca-ab','ca-nt','us-ca','eu-de','eu-gb','kr','jp','cn'].includes(f.region)&&!f.format.startsWith('stand-in-')).filter(f=>/^(standard|reflective|2020|electric|green|1951|1930|1964|1978|1979-first|1985|2001-flag|1985-flag|moraine-lake|spectacular)$/.test(f.format));
  const corrections=JSON.parse(await readFile('docs/research/bc-visual-review/cases.json','utf8')).filter(row=>['apec1997','apec149','apec134','carrier2005','bicycle-prince-george-1953','bicycle-prince-george-1959','collector-passenger','collector-multi','collector-motorcycle'].includes(row.id)).map(row=>({region:'ca-bc',format:row.format,parts:row.parts,specimen:row.id}));
- const dates=[['2014','NOV','99103688'],['2017','JUL','20093481'],['2023','MAY','12345678']].map(([decal,decalMonth,decalSerial])=>({region:'ca-bc',format:'2001-flag',parts:{decal,decalMonth,decalSerial},specimen:'renewal-'+decal}));
+ const decalReferences=JSON.parse(await readFile('docs/research/decal-online-analysis/reference-manifest.json','utf8'));
+ const correctedDecals=new Set(['1972','1983','1984','1986','1986-apr','1986-sep','1986-oct','1986-nov',
+   '1998-type-ii','1999','2000','2004','2008','2011','2013','2014','2015','2017','2017-jul','2017-nov','2023']);
+ const dates=decalReferences.filter(row=>correctedDecals.has(row.id)).map(row=>{
+   const hosts=formats.filter(format=>format.region==='ca-bc'&&format.decalIds.includes(row.catalogueId));
+   const host=hosts.find(format=>format.format==='2001-flag')??hosts.find(format=>format.format==='1985-flag')??hosts[0];
+   assert.ok(host,'No application format offers decal '+row.catalogueId);
+   return {region:'ca-bc',format:host.format,
+     parts:{decal:row.catalogueId,decalMonth:row.month??'JAN',decalSerial:row.control??''},
+     expectedDecal:{control:row.control,month:row.month},specimen:'renewal-'+row.id};
+ });
+ dates.push({region:'ca-bc',format:dates.find(row=>row.parts.decal==='2023').format,parts:{decal:'2023',decalMonth:'MAY',decalSerial:'00001234'},
+   expectedDecal:{control:'00001234',month:'MAY'},specimen:'renewal-leading-zero-control'});
  const selected=[...new Map([...representatives,...extra].map(f=>[f.region+'/'+f.format,f])).values(),...corrections,...dates];
  const cases=requested.length?selected.filter(f=>requested.includes(f.specimen)):selected;
  assert.ok(cases.length,'No selected export specimens');
@@ -64,6 +76,23 @@ try{
    }),'Carrier labels collide with renewal panel');
    await page.locator('#plate svg').first().evaluate(el=>{const {width,height}=el.viewBox.baseVal;el.style.width=Math.round(width)+'px';el.style.height=Math.round(height)+'px';});
    const data=await page.evaluate(()=>window.typographyQA.export());
+   if(f.expectedDecal){
+     assert.equal(info.validation,null,'Decal export case must be a valid offered application selection');
+     const printed=await page.evaluate(source=>{
+       const doc=new DOMParser().parseFromString(source,'image/svg+xml');
+       const decal=doc.querySelector('[data-role="renewal-decal"]');
+       if(!decal)return null;
+       return {control:decal.querySelector('[data-die][data-role="decal-serial"]')?.getAttribute('aria-label')??null,
+         month:decal.querySelector('[data-die][data-role="decal-month"]')?.getAttribute('aria-label')??null,
+         barcode:decal.querySelector('[data-role="decal-barcode"]')?.getAttribute('data-control')??null,
+         textNodes:decal.querySelectorAll('text').length};
+     },data.svg);
+     assert.ok(printed,'Portable export lost the renewal decal');
+     assert.equal(printed.control,f.expectedDecal.control);
+     assert.equal(printed.month,f.expectedDecal.month);
+     if(printed.barcode!==null)assert.equal(printed.barcode,f.expectedDecal.control);
+     assert.equal(printed.textNodes,0,'Decal export unexpectedly depends on browser font text');
+   }
    const name=(f.region+'-'+f.format+(f.specimen?'-'+f.specimen:'')).replace(/[^a-z0-9-]/gi,'_');
    const inline=await page.locator('#plate svg').first().screenshot();const png=Buffer.from(data.png.split(',')[1],'base64');
    const delta=pixels(inline,png);
@@ -74,6 +103,37 @@ try{
    // WebKit). Keep raw deltas as evidence and exclude antialias-only pixels.
    assert.ok(delta.perceptualChangedFraction<0.025,JSON.stringify(delta));
    return {region:f.region,format:f.format,info,delta,metadata:data.metadata,svgBytes:data.svgBytes};
+ });
+ if(!requested.length)await check('BC decal overlay viewer controls and responsive layout',async()=>{
+   const review=await context.newPage(),errors=[];
+   review.on('pageerror',error=>errors.push(String(error)));
+   try{
+     await review.goto('http://127.0.0.1:4173/plateforge/bc-decal-corrections/index.html');
+     assert.equal(await review.locator('#specimen option').count(),68);
+     await review.locator('#specimen').selectOption('1999');
+     assert.match(await review.locator('#caseTitle').textContent(),/MAY.*54174570/);
+     await review.waitForFunction(()=>['sourceLayer','modelLayer','source','before','after'].every(id=>{
+       const image=document.getElementById(id);return image.complete&&image.naturalWidth>0;
+     }));
+     await review.locator('#opacity').evaluate(element=>{
+       element.value='25';element.dispatchEvent(new Event('input',{bubbles:true}));
+     });
+     assert.equal(await review.locator('#opacityValue').textContent(),'25%');
+     await review.locator('#capture').selectOption('before');
+     assert.match(await review.locator('#modelLayer').getAttribute('src'),/before-aligned\.png$/);
+     await review.locator('#blink').click();
+     assert.equal(await review.locator('#blink').getAttribute('aria-pressed'),'true');
+     await review.waitForFunction(()=>['0','1'].includes(document.getElementById('modelLayer').style.opacity));
+     await review.locator('#blink').click();
+     assert.equal(await review.locator('#modelLayer').evaluate(element=>element.style.opacity),'0.25');
+     await review.locator('#family').selectOption('expo');
+     assert.equal(await review.locator('#specimen option').count(),12);
+     await review.setViewportSize({width:390,height:844});
+     assert(await review.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),'Overlay viewer overflows a narrow viewport');
+     assert.deepEqual(errors,[]);
+     await review.screenshot({path:path.join(out,'bc-decal-overlay-viewer.png'),fullPage:true});
+     return {references:68,expoMonths:12,opacityControls:true,beforeSelection:true,blink:true,mobileWidth:390};
+   }finally{await review.close();}
  });
  if(!requested.length){
  const specimens=[

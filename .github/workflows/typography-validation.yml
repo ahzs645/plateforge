@@ -74,6 +74,12 @@ jobs:
           TYPOGRAPHY_BROWSER: ${{ matrix.browser }}
           TYPOGRAPHY_BROWSER_DEPS: ${{ runner.temp }}/typography-browser/package.json
         run: node scripts/typography-browser.mjs
+      - name: All 572 B.C. decal browser geometry and input checks
+        timeout-minutes: 6
+        env:
+          TYPOGRAPHY_BROWSER: ${{ matrix.browser }}
+          TYPOGRAPHY_BROWSER_DEPS: ${{ runner.temp }}/typography-browser/package.json
+        run: node scripts/verify-decal-browser-geometry.mjs
       - name: B.C. source photographs and logo overlay controls
         env:
           TYPOGRAPHY_BROWSER: ${{ matrix.browser }}

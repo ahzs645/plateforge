@@ -205,3 +205,41 @@ before writing gallery artifacts. Optional `--dispositions-json` accepts an obje
 keyed by specimen ID or an array of records with `id`; the viewer displays those
 review decisions without generating its own conclusions. Keep the final 68-case
 regeneration separate from diagnostics and inspect the resulting contact sheets.
+
+## Browser CI gate for all selectable months
+
+`scripts/verify-decal-browser-geometry.mjs` uses the existing
+`render-decal-typography-fixtures.mjs` exporter and the repository's
+`TYPOGRAPHY_BROWSER` / `TYPOGRAPHY_BROWSER_DEPS` convention. The typography workflow
+runs it after the application/export checks in each Chromium, Firefox and WebKit
+job. It writes `typography-evidence/browser-<browser>/decal-geometry.json`, which
+is included by the existing browser artifact upload.
+
+The gate requires exactly 572 unique catalogue/month renders across all 55
+variants. It checks root-coordinate `getBBox()` geometry expanded by declared
+`data-ink-padding`, run/barcode collisions, actual character occurrences against
+printed labels, month/year/control inputs, and generated Code128 bar sequences
+against the control. Code128 is decoded from bar widths and gaps and its checksum
+is verified; a matching `data-control` attribute alone is insufficient. The
+untranscribed 1983 catalogue control is explicitly classified as an illustrative
+editor default. The observed MAY runs for 1998 Type II and thick-border 1999 must
+fit naturally, and the established NOV 2014 / MAR 2023 minimum-height guards remain.
+
+Those 572 browser bounds are **approximations**, separate from Inkscape visual
+paint bounds. One additional MAR 2023 fixture runs `extractAuditRuns` and confirms
+that actual alpha bounds retain the added month stroke, preserve all three
+letters, and contain no empty/tiny glyph windows. It exercises the repaired
+browser extractor without claiming that every 572-case box was raster-measured.
+
+Pure checks can run without Playwright or a browser launch:
+
+```sh
+node --check scripts/verify-decal-browser-geometry.mjs
+node --test scripts/test-decal-browser-geometry.mjs
+```
+
+The actual browser command is `node scripts/verify-decal-browser-geometry.mjs`
+with the two browser environment variables configured by CI. A browser launch
+failure records `status: "blocked"` and exits unsuccessfully; it is never reported
+as a completed geometry check. The browser loop has a four-minute budget and the
+workflow step has a six-minute limit.
