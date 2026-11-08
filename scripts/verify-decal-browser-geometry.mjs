@@ -52,13 +52,25 @@ export function decodeBarcodeRects(rectangles,patterns) {
   return {control:data.map(code=>String(code).padStart(2,'0')).join(''),codes,moduleWidth:unit};
 }
 
+/** DOMContentLoaded can precede SVG layout in Firefox; poll on animation frames. */
+export function fixtureGeometryReady() {
+  const svg=document.querySelector('svg');
+  if(!svg || !svg.getCTM())return false;
+  return [...svg.querySelectorAll('[data-die], [data-character], [data-role="decal-barcode"], [data-role="decal-barcode"] rect')].every(element=>element.getCTM()!==null);
+}
+
 /** Self-contained function passed to Playwright; no raster paint claim is made. */
 export function measureFixture() {
   const svg=document.querySelector('svg');
   if(!svg)throw new Error('Fixture SVG missing');
-  const inverse=svg.getCTM().inverse(),counts={};
+  const transform=element=>{
+    const matrix=element.getCTM();
+    if(!matrix)throw new Error(`Fixture SVG transform unavailable for ${element.localName}${element.getAttribute('data-role')?' [data-role="'+element.getAttribute('data-role')+'"]':''}; layout is not ready`);
+    return matrix;
+  };
+  const inverse=transform(svg).inverse(),counts={};
   const bounds=element=>{
-    const b=element.getBBox(),matrix=inverse.multiply(element.getCTM());
+    const b=element.getBBox(),matrix=inverse.multiply(transform(element));
     const points=[[b.x,b.y],[b.x+b.width,b.y],[b.x,b.y+b.height],[b.x+b.width,b.y+b.height]].map(([x,y])=>new DOMPoint(x,y).matrixTransform(matrix));
     const geometryBox=[Math.min(...points.map(p=>p.x)),Math.min(...points.map(p=>p.y)),Math.max(...points.map(p=>p.x)),Math.max(...points.map(p=>p.y))];
     const declared=Number(element.getAttribute('data-ink-padding')??0);
@@ -189,6 +201,11 @@ export async function main() {
     for(const [index,fixture] of fixtures.entries()) {
       if(Date.now()>deadline)throw new Error('572-case geometry check exceeded its four-minute browser budget');
       await page.setContent('<!doctype html><style>html,body{margin:0;padding:0}svg{display:block;max-width:none}</style>'+fixture.svg,{waitUntil:'domcontentloaded'});
+      try {
+        await page.waitForFunction(fixtureGeometryReady,undefined,{polling:'raf',timeout:Math.max(1,Math.min(10000,deadline-Date.now()))});
+      } catch(error) {
+        throw new Error(`Fixture ${fixture.id}/${fixture.month}: SVG transforms did not become ready: ${String(error)}`);
+      }
       const metrics=await page.evaluate(measureFixture);
       const checked=checkFixtureMetrics(fixture,metrics,specimens[fixture.id],patterns);
       if(fixture.id==='2023'&&fixture.month==='MAR') {
@@ -223,7 +240,7 @@ export async function main() {
     await writeFile(path.join(output,'decal-geometry.json'),JSON.stringify(report,null,2)+'\n');
     await rm(temporary,{recursive:true,force:true});
   }
-  console.log(JSON.stringify({browser:browserName,status:report.status,renderings:report.fixtures.length,failedFixtures:report.failures.length,report:path.join(output,'decal-geometry.json')}));
+  console.log(JSON.stringify({browser:browserName,status:report.status,renderings:report.fixtures.length,failedFixtures:report.failures.length,error:report.error,report:path.join(output,'decal-geometry.json')}));
   if(report.status!=='passed')process.exitCode=1;
 }
 

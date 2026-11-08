@@ -76,9 +76,11 @@ reference-library navigation and comparison-report smoke checks. It now has a
 manual entry point for explicit complete runs while retaining its existing PR
 path filters.
 
-Use the release pull request and the [Typography validation workflow](https://github.com/ahzs645/plateforge/actions/workflows/typography-validation.yml)
-for the result associated with the published revision. A successful Pages build
-alone does not establish that these browser checks passed.
+The final acceptance results and exact run links are recorded in
+[release pull request #18](https://github.com/ahzs645/plateforge/pull/18).
+The [Typography validation workflow](https://github.com/ahzs645/plateforge/actions/workflows/typography-validation.yml)
+also identifies the result associated with each published revision. A successful
+Pages build alone does not establish that these browser checks passed.
 
 ## Historical evidence still needed
 

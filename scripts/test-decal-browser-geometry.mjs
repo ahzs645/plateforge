@@ -1,7 +1,8 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
-import {validateFixtureCoverage,decodeBarcodeRects,checkFixtureMetrics,checkWeightedMonth} from './verify-decal-browser-geometry.mjs';
+import vm from 'node:vm';
+import {validateFixtureCoverage,decodeBarcodeRects,fixtureGeometryReady,measureFixture,checkFixtureMetrics,checkWeightedMonth} from './verify-decal-browser-geometry.mjs';
 
 const specimens=JSON.parse(fs.readFileSync(new URL('../src/regions/canada/bc-decal-specimens.json',import.meta.url)));
 const patterns=JSON.parse(fs.readFileSync(new URL('../src/templates/bc/code128-patterns.json',import.meta.url)));
@@ -15,6 +16,34 @@ function barFixture(codes,unit=1) {
   codes.flatMap(code=>patterns[code]).forEach((width,index)=>{if(index%2===0)bars.push({x:cursor,y:75,width:width*unit,height:15});cursor+=width*unit;});
   return bars;
 }
+
+// Playwright serializes these callbacks into a browser context. Keep the same
+// isolation here, with delayed layout represented by null SVG transforms.
+const inDocument=(callback,document)=>vm.runInNewContext('('+callback.toString()+')()',{document});
+
+test('SVG readiness waits for root, glyph and barcode transforms after DOMContentLoaded',()=>{
+  let rootMatrix=null,glyphMatrix=null,barcodeMatrix=null;
+  const glyph={getCTM:()=>glyphMatrix},barcode={getCTM:()=>barcodeMatrix};
+  const svg={getCTM:()=>rootMatrix,querySelectorAll:()=>[glyph,barcode]};
+  const document={querySelector:()=>svg};
+  assert.equal(inDocument(fixtureGeometryReady,{querySelector:()=>null}),false);
+  assert.equal(inDocument(fixtureGeometryReady,document),false);
+  rootMatrix={};
+  assert.equal(inDocument(fixtureGeometryReady,document),false);
+  glyphMatrix={};
+  assert.equal(inDocument(fixtureGeometryReady,document),false);
+  barcodeMatrix={};
+  assert.equal(inDocument(fixtureGeometryReady,document),true);
+});
+
+test('SVG measurement reports a missing root or run transform instead of dereferencing null',()=>{
+  const svg={localName:'svg',getCTM:()=>null,getAttribute:()=>null};
+  assert.throws(()=>inDocument(measureFixture,{querySelector:()=>svg}),/Fixture SVG transform unavailable for svg; layout is not ready/);
+  const element={localName:'g',getCTM:()=>null,getBBox:()=>({x:0,y:0,width:10,height:10}),getAttribute:name=>name==='data-role'?'decal-year':null,querySelectorAll:()=>[]};
+  svg.getCTM=()=>({inverse:()=>({})});
+  svg.querySelectorAll=()=>[element];
+  assert.throws(()=>inDocument(measureFixture,{querySelector:()=>svg}),/Fixture SVG transform unavailable for g \[data-role="decal-year"\]; layout is not ready/);
+});
 
 test('coverage rejects a missing or duplicated selectable month',()=>{
   const ids=Object.keys(specimens),fixtures=ids.flatMap(id=>(Number(id.slice(0,4))>=1980?months:['JAN']).map(month=>({id,month})));
