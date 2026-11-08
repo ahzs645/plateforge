@@ -1,0 +1,939 @@
+{
+  "date": "2026-11-07",
+  "method": "Source dark-component ink extent at three thresholds; Inkscape geometric renderer bounds. Source photos are unrectified. Center deltas are a diagnostic, not target dimensions. Both independent frame normalization and uniform height plus frame centering are reported.",
+  "records": [
+    {
+      "id": "2015",
+      "sourceSize": [
+        816,
+        332
+      ],
+      "sourceSha256": "7274fd056f23f7a2f3189a7fd0e0f24bb6c380dc6e041c8494f60988b878f0f4",
+      "modelSha256": "d4237068da7e5f25ad116a987ad0931191e4cc459c8d4b83458319761c88b0ba",
+      "roles": {
+        "decal-month": {
+          "region": [
+            35,
+            5,
+            340,
+            226
+          ],
+          "thresholdBounds80_95_110": [
+            [
+              49,
+              24,
+              336,
+              220
+            ],
+            [
+              49,
+              23,
+              336,
+              220
+            ],
+            [
+              48,
+              23,
+              336,
+              221
+            ]
+          ],
+          "sourceFrameBounds": [
+            0.06,
+            0.0693,
+            0.4118,
+            0.6627
+          ],
+          "modelFrameBounds": [
+            0.0561,
+            0.0956,
+            0.4041,
+            0.6779
+          ],
+          "centerDeltaFrame": [
+            0.0058,
+            -0.0208
+          ],
+          "centerDeltaUniformHeightCentered": [
+            -0.0123,
+            -0.0208
+          ],
+          "sourceHeight": 0.5934,
+          "modelHeight": 0.5824
+        },
+        "decal-year": {
+          "region": [
+            425,
+            0,
+            805,
+            225
+          ],
+          "thresholdBounds80_95_110": [
+            [
+              431,
+              17,
+              781,
+              215
+            ],
+            [
+              431,
+              16,
+              782,
+              215
+            ],
+            [
+              430,
+              16,
+              782,
+              215
+            ]
+          ],
+          "sourceFrameBounds": [
+            0.5282,
+            0.0482,
+            0.9583,
+            0.6476
+          ],
+          "modelFrameBounds": [
+            0.5086,
+            0.08,
+            0.9562,
+            0.66
+          ],
+          "centerDeltaFrame": [
+            0.0109,
+            -0.0221
+          ],
+          "centerDeltaUniformHeightCentered": [
+            0.0276,
+            -0.0221
+          ],
+          "sourceHeight": 0.5994,
+          "modelHeight": 0.58
+        },
+        "decal-legend-0": {
+          "region": [
+            343,
+            10,
+            383,
+            220
+          ],
+          "thresholdBounds80_95_110": [
+            [
+              348,
+              54,
+              378,
+              188
+            ],
+            [
+              347,
+              53,
+              379,
+              189
+            ],
+            [
+              347,
+              52,
+              379,
+              189
+            ]
+          ],
+          "sourceFrameBounds": [
+            0.4252,
+            0.1596,
+            0.4645,
+            0.5693
+          ],
+          "modelFrameBounds": [
+            0.4183,
+            0.1767,
+            0.4457,
+            0.5436
+          ],
+          "centerDeltaFrame": [
+            0.0128,
+            0.0043
+          ],
+          "centerDeltaUniformHeightCentered": [
+            0.0091,
+            0.0043
+          ],
+          "sourceHeight": 0.4096,
+          "modelHeight": 0.3668
+        },
+        "decal-legend-1": {
+          "region": [
+            385,
+            0,
+            426,
+            220
+          ],
+          "thresholdBounds80_95_110": [
+            [
+              389,
+              29,
+              419,
+              211
+            ],
+            [
+              388,
+              28,
+              420,
+              211
+            ],
+            [
+              388,
+              28,
+              420,
+              211
+            ]
+          ],
+          "sourceFrameBounds": [
+            0.4755,
+            0.0843,
+            0.5147,
+            0.6355
+          ],
+          "modelFrameBounds": [
+            0.4598,
+            0.1278,
+            0.4857,
+            0.5909
+          ],
+          "centerDeltaFrame": [
+            0.0223,
+            0.0006
+          ],
+          "centerDeltaUniformHeightCentered": [
+            0.022,
+            0.0006
+          ],
+          "sourceHeight": 0.5512,
+          "modelHeight": 0.4631
+        },
+        "decal-serial": {
+          "region": [
+            475,
+            225,
+            797,
+            315
+          ],
+          "thresholdBounds80_95_110": [
+            [
+              480,
+              235,
+              776,
+              298
+            ],
+            [
+              480,
+              234,
+              776,
+              299
+            ],
+            [
+              479,
+              234,
+              776,
+              299
+            ]
+          ],
+          "sourceFrameBounds": [
+            0.5882,
+            0.7048,
+            0.951,
+            0.9006
+          ],
+          "modelFrameBounds": [
+            0.5693,
+            0.7369,
+            0.9394,
+            0.9095
+          ],
+          "centerDeltaFrame": [
+            0.0153,
+            -0.0205
+          ],
+          "centerDeltaUniformHeightCentered": [
+            0.0338,
+            -0.0205
+          ],
+          "sourceHeight": 0.1958,
+          "modelHeight": 0.1726
+        },
+        "decal-barcode": {
+          "region": [
+            52,
+            226,
+            458,
+            320
+          ],
+          "thresholdBounds80_95_110": [
+            [
+              69,
+              238,
+              445,
+              308
+            ],
+            [
+              69,
+              237,
+              445,
+              309
+            ],
+            [
+              68,
+              237,
+              445,
+              309
+            ]
+          ],
+          "sourceFrameBounds": [
+            0.0846,
+            0.7139,
+            0.5453,
+            0.9307
+          ],
+          "modelFrameBounds": [
+            0.0446,
+            0.75,
+            0.5154,
+            0.91
+          ],
+          "centerDeltaFrame": [
+            0.035,
+            -0.0077
+          ],
+          "centerDeltaUniformHeightCentered": [
+            0.0223,
+            -0.0077
+          ],
+          "sourceHeight": 0.2169,
+          "modelHeight": 0.16
+        }
+      }
+    },
+    {
+      "id": "2017-nov",
+      "sourceSize": [
+        983,
+        414
+      ],
+      "sourceSha256": "de91dc8ba57307a7d259c7f08227eb75da3033b7a59ecf087ce2c20af3031fda",
+      "modelSha256": "d09a78bcb5ca5d1136bce6e82ad607c8f544e97feb052ca56cd7677060ae8a0a",
+      "roles": {
+        "decal-month": {
+          "region": [
+            95,
+            30,
+            424,
+            272
+          ],
+          "thresholdBounds80_95_110": [
+            [
+              110,
+              44,
+              419,
+              259
+            ],
+            [
+              109,
+              44,
+              419,
+              260
+            ],
+            [
+              109,
+              43,
+              419,
+              260
+            ]
+          ],
+          "sourceFrameBounds": [
+            0.1109,
+            0.1063,
+            0.4262,
+            0.628
+          ],
+          "modelFrameBounds": [
+            0.1108,
+            0.1149,
+            0.4058,
+            0.6151
+          ],
+          "centerDeltaFrame": [
+            0.0103,
+            0.0021
+          ],
+          "centerDeltaUniformHeightCentered": [
+            0.0028,
+            0.0021
+          ],
+          "sourceHeight": 0.5217,
+          "modelHeight": 0.5002
+        },
+        "decal-year": {
+          "region": [
+            508,
+            30,
+            895,
+            272
+          ],
+          "thresholdBounds80_95_110": [
+            [
+              513,
+              45,
+              880,
+              257
+            ],
+            [
+              513,
+              45,
+              880,
+              258
+            ],
+            [
+              513,
+              45,
+              880,
+              258
+            ]
+          ],
+          "sourceFrameBounds": [
+            0.5219,
+            0.1087,
+            0.8952,
+            0.6232
+          ],
+          "modelFrameBounds": [
+            0.5612,
+            0.13,
+            0.9228,
+            0.6
+          ],
+          "centerDeltaFrame": [
+            -0.0335,
+            0.0009
+          ],
+          "centerDeltaUniformHeightCentered": [
+            -0.0267,
+            0.0009
+          ],
+          "sourceHeight": 0.5145,
+          "modelHeight": 0.47
+        },
+        "decal-legend-0": {
+          "region": [
+            430,
+            20,
+            467,
+            272
+          ],
+          "thresholdBounds80_95_110": [
+            [
+              430,
+              78,
+              457,
+              227
+            ],
+            [
+              430,
+              77,
+              457,
+              227
+            ],
+            [
+              430,
+              77,
+              467,
+              259
+            ]
+          ],
+          "sourceFrameBounds": [
+            0.4374,
+            0.186,
+            0.4649,
+            0.5483
+          ],
+          "modelFrameBounds": [
+            0.4319,
+            0.2712,
+            0.4556,
+            0.5891
+          ],
+          "centerDeltaFrame": [
+            0.0074,
+            -0.063
+          ],
+          "centerDeltaUniformHeightCentered": [
+            0.0058,
+            -0.063
+          ],
+          "sourceHeight": 0.3623,
+          "modelHeight": 0.3179
+        },
+        "decal-legend-1": {
+          "region": [
+            470,
+            20,
+            507,
+            272
+          ],
+          "thresholdBounds80_95_110": [
+            [
+              470,
+              51,
+              500,
+              250
+            ],
+            [
+              470,
+              51,
+              500,
+              251
+            ],
+            [
+              470,
+              51,
+              507,
+              251
+            ]
+          ],
+          "sourceFrameBounds": [
+            0.4781,
+            0.1232,
+            0.5086,
+            0.6063
+          ],
+          "modelFrameBounds": [
+            0.4719,
+            0.2167,
+            0.4956,
+            0.642
+          ],
+          "centerDeltaFrame": [
+            0.0096,
+            -0.0647
+          ],
+          "centerDeltaUniformHeightCentered": [
+            0.0094,
+            -0.0647
+          ],
+          "sourceHeight": 0.4831,
+          "modelHeight": 0.4253
+        },
+        "decal-serial": {
+          "region": [
+            585,
+            287,
+            945,
+            390
+          ],
+          "thresholdBounds80_95_110": [
+            [
+              598,
+              301,
+              928,
+              369
+            ],
+            [
+              598,
+              300,
+              928,
+              370
+            ],
+            [
+              598,
+              299,
+              929,
+              390
+            ]
+          ],
+          "sourceFrameBounds": [
+            0.6083,
+            0.7246,
+            0.944,
+            0.8937
+          ],
+          "modelFrameBounds": [
+            0.6103,
+            0.7568,
+            0.9692,
+            0.9244
+          ],
+          "centerDeltaFrame": [
+            -0.0136,
+            -0.0314
+          ],
+          "centerDeltaUniformHeightCentered": [
+            -0.0046,
+            -0.0314
+          ],
+          "sourceHeight": 0.1691,
+          "modelHeight": 0.1675
+        },
+        "decal-barcode": {
+          "region": [
+            60,
+            274,
+            545,
+            390
+          ],
+          "thresholdBounds80_95_110": [
+            [
+              78,
+              286,
+              535,
+              377
+            ],
+            [
+              78,
+              286,
+              535,
+              377
+            ],
+            [
+              77,
+              286,
+              535,
+              377
+            ]
+          ],
+          "sourceFrameBounds": [
+            0.0793,
+            0.6908,
+            0.5443,
+            0.9106
+          ],
+          "modelFrameBounds": [
+            0.0721,
+            0.74,
+            0.5229,
+            0.91
+          ],
+          "centerDeltaFrame": [
+            0.0143,
+            -0.0243
+          ],
+          "centerDeltaUniformHeightCentered": [
+            0.0082,
+            -0.0243
+          ],
+          "sourceHeight": 0.2198,
+          "modelHeight": 0.17
+        }
+      }
+    },
+    {
+      "id": "2023",
+      "sourceSize": [
+        232,
+        98
+      ],
+      "sourceSha256": "919fea0fbd604f5344729eb24a117250fd7bf86ecc522499b1851ae8aab69782",
+      "modelSha256": "6f24ee0c65f9b4fe489d45baade1fa1936b31f236ea79966f3dfc43ab7f2d764",
+      "roles": {
+        "decal-month": {
+          "region": [
+            8,
+            5,
+            89,
+            61
+          ],
+          "thresholdBounds80_95_110": [
+            [
+              13,
+              10,
+              86,
+              56
+            ],
+            [
+              13,
+              9,
+              86,
+              56
+            ],
+            [
+              13,
+              9,
+              86,
+              56
+            ]
+          ],
+          "sourceFrameBounds": [
+            0.056,
+            0.0918,
+            0.3707,
+            0.5714
+          ],
+          "modelFrameBounds": [
+            0.0917,
+            0.178,
+            0.4125,
+            0.6457
+          ],
+          "centerDeltaFrame": [
+            -0.0387,
+            -0.0802
+          ],
+          "centerDeltaUniformHeightCentered": [
+            -0.0471,
+            -0.0802
+          ],
+          "sourceHeight": 0.4796,
+          "modelHeight": 0.4677
+        },
+        "decal-year": {
+          "region": [
+            122,
+            5,
+            225,
+            61
+          ],
+          "thresholdBounds80_95_110": [
+            [
+              125,
+              10,
+              221,
+              56
+            ],
+            [
+              125,
+              10,
+              221,
+              56
+            ],
+            [
+              125,
+              10,
+              221,
+              56
+            ]
+          ],
+          "sourceFrameBounds": [
+            0.5388,
+            0.102,
+            0.9526,
+            0.5714
+          ],
+          "modelFrameBounds": [
+            0.571,
+            0.18,
+            0.944,
+            0.64
+          ],
+          "centerDeltaFrame": [
+            -0.0118,
+            -0.0733
+          ],
+          "centerDeltaUniformHeightCentered": [
+            -0.0046,
+            -0.0733
+          ],
+          "sourceHeight": 0.4694,
+          "modelHeight": 0.46
+        },
+        "decal-legend-0": {
+          "region": [
+            93,
+            7,
+            104,
+            61
+          ],
+          "thresholdBounds80_95_110": [
+            [
+              96,
+              17,
+              102,
+              48
+            ],
+            [
+              96,
+              17,
+              102,
+              48
+            ],
+            [
+              96,
+              17,
+              102,
+              48
+            ]
+          ],
+          "sourceFrameBounds": [
+            0.4138,
+            0.1735,
+            0.4397,
+            0.4898
+          ],
+          "modelFrameBounds": [
+            0.4205,
+            0.192,
+            0.4457,
+            0.5283
+          ],
+          "centerDeltaFrame": [
+            -0.0064,
+            -0.0285
+          ],
+          "centerDeltaUniformHeightCentered": [
+            -0.0085,
+            -0.0285
+          ],
+          "sourceHeight": 0.3163,
+          "modelHeight": 0.3363
+        },
+        "decal-legend-1": {
+          "region": [
+            105,
+            7,
+            116,
+            61
+          ],
+          "thresholdBounds80_95_110": [
+            [
+              105,
+              13,
+              110,
+              53
+            ],
+            [
+              105,
+              13,
+              110,
+              53
+            ],
+            [
+              105,
+              12,
+              111,
+              54
+            ]
+          ],
+          "sourceFrameBounds": [
+            0.4526,
+            0.1327,
+            0.4741,
+            0.5408
+          ],
+          "modelFrameBounds": [
+            0.4606,
+            0.1344,
+            0.4857,
+            0.5843
+          ],
+          "centerDeltaFrame": [
+            -0.0098,
+            -0.0226
+          ],
+          "centerDeltaUniformHeightCentered": [
+            -0.0108,
+            -0.0226
+          ],
+          "sourceHeight": 0.4082,
+          "modelHeight": 0.4498
+        },
+        "decal-serial": {
+          "region": [
+            121,
+            62,
+            217,
+            91
+          ],
+          "thresholdBounds80_95_110": [
+            [
+              125,
+              68,
+              213,
+              86
+            ],
+            [
+              124,
+              67,
+              213,
+              86
+            ],
+            [
+              124,
+              67,
+              213,
+              86
+            ]
+          ],
+          "sourceFrameBounds": [
+            0.5345,
+            0.6837,
+            0.9181,
+            0.8776
+          ],
+          "modelFrameBounds": [
+            0.5695,
+            0.7369,
+            0.9394,
+            0.9095
+          ],
+          "centerDeltaFrame": [
+            -0.0281,
+            -0.0426
+          ],
+          "centerDeltaUniformHeightCentered": [
+            -0.0215,
+            -0.0426
+          ],
+          "sourceHeight": 0.1939,
+          "modelHeight": 0.1726
+        },
+        "decal-barcode": {
+          "region": [
+            7,
+            62,
+            111,
+            92
+          ],
+          "thresholdBounds80_95_110": [
+            [
+              10,
+              65,
+              108,
+              88
+            ],
+            [
+              10,
+              64,
+              108,
+              88
+            ],
+            [
+              10,
+              64,
+              109,
+              88
+            ]
+          ],
+          "sourceFrameBounds": [
+            0.0431,
+            0.6531,
+            0.4655,
+            0.898
+          ],
+          "modelFrameBounds": [
+            0.0446,
+            0.75,
+            0.5154,
+            0.91
+          ],
+          "centerDeltaFrame": [
+            -0.0257,
+            -0.0545
+          ],
+          "centerDeltaUniformHeightCentered": [
+            -0.0329,
+            -0.0545
+          ],
+          "sourceHeight": 0.2449,
+          "modelHeight": 0.16
+        }
+      }
+    }
+  ]
+}

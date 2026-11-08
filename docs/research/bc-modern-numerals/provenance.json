@@ -1,0 +1,200 @@
+{
+  "reviewedOn": "2026-11-07",
+  "sources": [
+    {
+      "id": "1998-type-ii",
+      "url": "https://www.bcpl8s.ca/images/Decals/Passenger/1998/1998-May-34838894.jpg",
+      "file": "public/bc-decal-online-review/1998-type-ii/photo.png",
+      "sha256": "e82cddeeef26dadd69423465c9f90ac08cf9cb6799cc828e0668aa4d43136710",
+      "pixels": [
+        373,
+        114
+      ]
+    },
+    {
+      "id": "2014",
+      "url": "https://www.bcpl8s.ca/images/Decals/Passenger/2014-53695502.jpg",
+      "file": "public/bc-decal-online-review/2014/photo.png",
+      "sha256": "484fba53b100de496cfdb8f9d24a25c131e83f1ec4a8f1d313245ad66a8d5480",
+      "pixels": [
+        240,
+        100
+      ]
+    },
+    {
+      "id": "2015",
+      "url": "https://www.bcpl8s.ca/images/Decals/Passenger/2015-70118033(XL).jpg",
+      "file": "public/bc-decal-online-review/2015/photo.png",
+      "sha256": "7274fd056f23f7a2f3189a7fd0e0f24bb6c380dc6e041c8494f60988b878f0f4",
+      "pixels": [
+        816,
+        332
+      ]
+    },
+    {
+      "id": "2016",
+      "url": "https://www.bcpl8s.ca/images/Decals/Passenger/2016-11203175.jpg",
+      "file": "public/bc-decal-online-review/2016/photo.png",
+      "sha256": "8acb02ff7420bf492f306d7d7d2bfd92cb28ae91e0b49b452f15e026576ae193",
+      "pixels": [
+        245,
+        100
+      ]
+    },
+    {
+      "id": "2018",
+      "url": "https://www.bcpl8s.ca/images/Decals/Passenger/2018-50278580.jpg",
+      "file": "public/bc-decal-online-review/2018/photo.png",
+      "sha256": "12f496a6daf5ac038929f5f64c108904469a248e05e3193a13d7b91eaddb3b84",
+      "pixels": [
+        225,
+        96
+      ]
+    },
+    {
+      "id": "2019",
+      "url": "https://www.bcpl8s.ca/images/Decals/Passenger/2019-10727925.jpg",
+      "file": "public/bc-decal-online-review/2019/photo.png",
+      "sha256": "617400a6590bf9234140767ee2dc0ffd85b97619c6d3604efa408199fbf8bfc5",
+      "pixels": [
+        233,
+        96
+      ]
+    },
+    {
+      "id": "2023",
+      "url": "https://www.bcpl8s.ca/images/Decals/Passenger/2023-52843353.jpg",
+      "file": "public/bc-decal-online-review/2023/photo.png",
+      "sha256": "919fea0fbd604f5344729eb24a117250fd7bf86ecc522499b1851ae8aab69782",
+      "pixels": [
+        232,
+        98
+      ]
+    },
+    {
+      "id": "2017-nov",
+      "url": "https://www.bcpl8s.ca/images/Decals/Passenger/2017-91115136(XL).jpg",
+      "file": "public/bc-decal-online-review/2017-nov/photo.png",
+      "sha256": "de91dc8ba57307a7d259c7f08227eb75da3033b7a59ecf087ce2c20af3031fda",
+      "pixels": [
+        983,
+        414
+      ]
+    },
+    {
+      "id": "1999-thick",
+      "url": "https://www.bcpl8s.ca/images/Decals/Passenger/1999-thick.jpg",
+      "file": "public/data/decal-review/sources/1999.webp",
+      "sha256": "1fb49e789ea4b059d5b7d28f36174ffcab8d9b3f3e6a51b94f3c0d81e1817975",
+      "pixels": [
+        242,
+        73
+      ]
+    }
+  ],
+  "profiles": [
+    {
+      "id": "modern-year-reconstruction",
+      "construction": "Independent smooth vectors with native painted width; no font-axis or x-coordinate scaling.",
+      "authoringScript": "scripts/build-bc-modern-numerals.py",
+      "capUnits": 100,
+      "nativeAdvances": {
+        "0": 47.5,
+        "1": 38.5,
+        "2": 47,
+        "3": 48,
+        "4": 49,
+        "5": 48,
+        "6": 48.5,
+        "7": 47.5,
+        "8": 48.5,
+        "9": 48.5
+      },
+      "observedEnlarged": [
+        "0",
+        "1",
+        "2",
+        "5",
+        "7"
+      ],
+      "repeatedAcrossEnlargedSources": [
+        "0",
+        "1",
+        "2"
+      ],
+      "lowerResolutionConstructions": [
+        "3",
+        "4",
+        "6",
+        "8",
+        "9"
+      ],
+      "assumptions": [
+        "9 uses the related 6 bowl construction; small 2019 source only"
+      ]
+    },
+    {
+      "id": "modern-control-reconstruction",
+      "construction": "Native Nimbus Sans Narrow Bold outlines and all native advances; explicit diagonal-flag reconstruction for 1 only.",
+      "fontPostScriptName": "NimbusSansNarrow-Bold",
+      "sourceFontSha256": "6d7cec07f5a9035e208532dab35a51312aef4a7f26eb524dd614c9fcd97c3264",
+      "fontProvenance": "docs/research/decal-review/printing-provenance.json",
+      "nativeOutlineSource": "src/templates/dies/decal-printing.json#control-bold",
+      "nativeAdvanceCapUnits": 63.51,
+      "horizontalScale": 1,
+      "filledStroke": 0,
+      "tracking": 0,
+      "observedEnlarged": [
+        "0",
+        "1",
+        "3",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "unobservedNativeCarryovers": [
+        "2",
+        "4"
+      ],
+      "reconstructedGlyphs": [
+        "1"
+      ],
+      "observedOneOccurrences": 6
+    },
+    {
+      "id": "bordered-may-reconstruction",
+      "construction": "Independent M/A/Y only; supported AY pair overlap.",
+      "sourceModule": "src/templates/dies/decal-bordered-may.ts",
+      "nativeAdvances": {
+        "M": 82.5,
+        "A": 65,
+        "Y": 62
+      },
+      "runKerning": {
+        "AY": -14
+      },
+      "supportedSelections": [
+        {
+          "id": "1998-type-ii",
+          "month": "MAY"
+        },
+        {
+          "id": "1999",
+          "month": "MAY"
+        }
+      ],
+      "limitations": [
+        "1999 remains 7.6 percent broader than its small source at equal height.",
+        "Other month letters are not part of this profile."
+      ]
+    }
+  ],
+  "historicalFontIdentity": "unconfirmed",
+  "fontSoftwareAdded": false,
+  "sourcePhotographsRectified": false,
+  "colourCalibrated": false,
+  "imageAlignment": "Uniform equal painted height and centre only; width preserved; no independent x fitting.",
+  "generatedDataSha256": "c982cf683776318e3410a343a76ac6236c575ded262bb053be2c269028ebd06a"
+}

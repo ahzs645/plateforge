@@ -1,0 +1,34 @@
+{
+  "patches": [
+    {
+      "id": "1998-type-ii",
+      "variantFromMonth": 5,
+      "variantThroughMonth": 5,
+      "role": "decal-month",
+      "index": 0,
+      "patch": {
+        "profile": "bordered-may-reconstruction",
+        "tracking": 0,
+        "kerning": {
+          "AY": -14
+        }
+      }
+    },
+    {
+      "id": "1999",
+      "variantFromMonth": 5,
+      "variantThroughMonth": 5,
+      "role": "decal-month",
+      "index": 0,
+      "patch": {
+        "profile": "bordered-may-reconstruction",
+        "tracking": 0,
+        "kerning": {
+          "AY": -14
+        }
+      }
+    }
+  ],
+  "selection": "Only exact MAY; other months preserve their existing profiles.",
+  "placementEvidence": "bordered-may-metrics.json; independent 1998 and 1999 paint extents in bordered-may.md"
+}

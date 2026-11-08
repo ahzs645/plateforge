@@ -1,0 +1,488 @@
+[
+  {
+    "id": "2008-month",
+    "catalogueId": "2008",
+    "month": 8,
+    "role": "decal-month",
+    "text": "AUG",
+    "roi": [
+      5,
+      10,
+      126,
+      88
+    ],
+    "polarity": "light",
+    "before": "heavy-month",
+    "after": "bebasneue-400",
+    "anchor": "start",
+    "renders": {
+      "before": {
+        "file": "2008-month-before.svg",
+        "nativeAdvance": 140.763,
+        "fit": "natural"
+      },
+      "after": {
+        "file": "2008-month-after.svg",
+        "nativeAdvance": 170.572,
+        "fit": "natural"
+      }
+    },
+    "sourceFile": "public/bc-decal-online-review/2008/photo.png",
+    "sourceFileSha256": "7c276631bdd1f450822be275d60af7850642525c93b2b379d4fd7d35d017dde3",
+    "sourcePixels": [
+      238,
+      100
+    ],
+    "sourcePaintBox": [
+      10,
+      14,
+      122,
+      85
+    ],
+    "sourceThreshold": 151.7863682984169,
+    "sourceOccurrences": [
+      {
+        "character": "A",
+        "boxInCrop": [
+          5,
+          5,
+          42,
+          73
+        ]
+      },
+      {
+        "character": "U",
+        "boxInCrop": [
+          47,
+          5,
+          78,
+          75
+        ]
+      },
+      {
+        "character": "G",
+        "boxInCrop": [
+          84,
+          4,
+          117,
+          75
+        ]
+      }
+    ],
+    "beforeWidthRatio": 0.8385146103896105,
+    "beforeNativePaintBox": [
+      1.112,
+      -1.9659999999999993,
+      138.64,
+      101.96600000000001
+    ],
+    "afterWidthRatio": 1.0142857142857145,
+    "afterNativePaintBox": [
+      1.7140000000000004,
+      -1.4290000000000003,
+      166.286,
+      101.429
+    ]
+  },
+  {
+    "id": "2008-year",
+    "catalogueId": "2008",
+    "role": "decal-year",
+    "text": "08",
+    "roi": [
+      174,
+      10,
+      235,
+      70
+    ],
+    "polarity": "light",
+    "before": "heavy-year",
+    "after": "oswald-400",
+    "anchor": "end",
+    "renders": {
+      "before": {
+        "file": "2008-year-before.svg",
+        "nativeAdvance": 93.842,
+        "fit": "natural"
+      },
+      "after": {
+        "file": "2008-year-after.svg",
+        "nativeAdvance": 125.43199999999999,
+        "fit": "natural"
+      }
+    },
+    "sourceFile": "public/bc-decal-online-review/2008/photo.png",
+    "sourceFileSha256": "7c276631bdd1f450822be275d60af7850642525c93b2b379d4fd7d35d017dde3",
+    "sourcePixels": [
+      238,
+      100
+    ],
+    "sourcePaintBox": [
+      175,
+      15,
+      231,
+      67
+    ],
+    "sourceThreshold": 149.26221300891015,
+    "sourceOccurrences": [
+      {
+        "character": "0",
+        "boxInCrop": [
+          1,
+          6,
+          27,
+          57
+        ]
+      },
+      {
+        "character": "8",
+        "boxInCrop": [
+          31,
+          5,
+          57,
+          56
+        ]
+      }
+    ],
+    "beforeWidthRatio": 0.8061688311688312,
+    "beforeNativePaintBox": [
+      2.1240000000000006,
+      -1.9659999999999993,
+      92.12299999999999,
+      101.96600000000001
+    ],
+    "afterWidthRatio": 1.0214285714285716,
+    "afterNativePaintBox": [
+      7.16,
+      -0.8640000000000008,
+      119.25900000000001,
+      101.11099999999999
+    ]
+  },
+  {
+    "id": "2011-month",
+    "catalogueId": "2011",
+    "month": 5,
+    "role": "decal-month",
+    "text": "MAY",
+    "roi": [
+      9,
+      4,
+      106,
+      65
+    ],
+    "polarity": "dark",
+    "before": "heavy-month",
+    "after": "heavy-month",
+    "anchor": "start",
+    "renders": {
+      "before": {
+        "file": "2011-month-before.svg",
+        "nativeAdvance": 161.291,
+        "fit": "natural"
+      },
+      "after": {
+        "file": "2011-month-after.svg",
+        "nativeAdvance": 161.291,
+        "fit": "natural"
+      }
+    },
+    "sourceFile": "public/bc-decal-online-review/2011/photo.png",
+    "sourceFileSha256": "94a391f25b77541baf4aec2fe38cbcb62a38ee37b4e1d0945115aeba5ecd0e3a",
+    "sourcePixels": [
+      239,
+      100
+    ],
+    "sourcePaintBox": [
+      14,
+      8,
+      103,
+      64
+    ],
+    "sourceThreshold": 98.65931419313432,
+    "sourceOccurrences": [
+      {
+        "character": "M",
+        "boxInCrop": [
+          5,
+          4,
+          40,
+          60
+        ]
+      },
+      {
+        "character": "A",
+        "boxInCrop": [
+          43,
+          4,
+          72,
+          60
+        ]
+      },
+      {
+        "character": "Y",
+        "boxInCrop": [
+          67,
+          4,
+          94,
+          60
+        ]
+      }
+    ],
+    "beforeWidthRatio": 0.9953013278855976,
+    "beforeNativePaintBox": [
+      2.1240000000000006,
+      0.0,
+      160.482,
+      100.0
+    ],
+    "afterWidthRatio": 0.9953013278855976,
+    "afterNativePaintBox": [
+      2.1240000000000006,
+      0.0,
+      160.482,
+      100.0
+    ]
+  },
+  {
+    "id": "2011-year",
+    "catalogueId": "2011",
+    "role": "decal-year",
+    "text": "11",
+    "roi": [
+      174,
+      4,
+      225,
+      65
+    ],
+    "polarity": "dark",
+    "before": "heavy-year",
+    "after": "heavy-year",
+    "kerning": {
+      "11": -4
+    },
+    "anchor": "end",
+    "renders": {
+      "before": {
+        "file": "2011-year-before.svg",
+        "nativeAdvance": 93.842,
+        "fit": "natural"
+      },
+      "after": {
+        "file": "2011-year-after.svg",
+        "nativeAdvance": 89.842,
+        "fit": "natural"
+      }
+    },
+    "sourceFile": "public/bc-decal-online-review/2011/photo.png",
+    "sourceFileSha256": "94a391f25b77541baf4aec2fe38cbcb62a38ee37b4e1d0945115aeba5ecd0e3a",
+    "sourcePixels": [
+      239,
+      100
+    ],
+    "sourcePaintBox": [
+      178,
+      7,
+      219,
+      63
+    ],
+    "sourceThreshold": 91.51949308036144,
+    "sourceOccurrences": [
+      {
+        "character": "1",
+        "boxInCrop": [
+          4,
+          3,
+          22,
+          59
+        ]
+      },
+      {
+        "character": "1",
+        "boxInCrop": [
+          28,
+          3,
+          45,
+          59
+        ]
+      }
+    ],
+    "beforeWidthRatio": 1.0305986696230598,
+    "beforeNativePaintBox": [
+      4.449,
+      0.0,
+      79.988,
+      100.0
+    ],
+    "afterWidthRatio": 0.9747228381374723,
+    "afterNativePaintBox": [
+      4.449,
+      0.0,
+      75.988,
+      100.0
+    ]
+  },
+  {
+    "id": "2013-month",
+    "catalogueId": "2013",
+    "month": 10,
+    "role": "decal-month",
+    "text": "OCT",
+    "roi": [
+      7,
+      5,
+      79,
+      69
+    ],
+    "polarity": "dark",
+    "before": "heavy-month",
+    "after": "late-oct-reconstruction",
+    "anchor": "start",
+    "renders": {
+      "before": {
+        "file": "2013-month-before.svg",
+        "nativeAdvance": 136.921,
+        "fit": "natural"
+      },
+      "after": {
+        "file": "2013-month-after.svg",
+        "nativeAdvance": 114.5,
+        "fit": "natural"
+      }
+    },
+    "sourceFile": "public/bc-decal-online-review/2013/photo.png",
+    "sourceFileSha256": "b8cfcc9ddadeaf2ad42a8d51da846baf2e121309ef13790ca9b2eebab3c398fd",
+    "sourcePixels": [
+      238,
+      100
+    ],
+    "sourcePaintBox": [
+      10,
+      8,
+      76,
+      67
+    ],
+    "sourceThreshold": 57.02839359920661,
+    "sourceOccurrences": [
+      {
+        "character": "O",
+        "boxInCrop": [
+          3,
+          3,
+          25,
+          62
+        ]
+      },
+      {
+        "character": "C",
+        "boxInCrop": [
+          27,
+          3,
+          48,
+          62
+        ]
+      },
+      {
+        "character": "T",
+        "boxInCrop": [
+          49,
+          4,
+          69,
+          62
+        ]
+      }
+    ],
+    "beforeWidthRatio": 1.1458677685950414,
+    "beforeNativePaintBox": [
+      2.2249999999999996,
+      -1.9659999999999993,
+      135.505,
+      101.96600000000001
+    ],
+    "afterWidthRatio": 0.9995867768595043,
+    "afterNativePaintBox": [
+      0.0,
+      0.0,
+      112.0,
+      100.0
+    ]
+  },
+  {
+    "id": "2013-year",
+    "catalogueId": "2013",
+    "role": "decal-year",
+    "text": "13",
+    "roi": [
+      174,
+      4,
+      228,
+      69
+    ],
+    "polarity": "dark",
+    "before": "heavy-year",
+    "after": "heavy-year",
+    "kerning": {
+      "13": -6
+    },
+    "anchor": "end",
+    "renders": {
+      "before": {
+        "file": "2013-year-before.svg",
+        "nativeAdvance": 93.842,
+        "fit": "natural"
+      },
+      "after": {
+        "file": "2013-year-after.svg",
+        "nativeAdvance": 87.842,
+        "fit": "natural"
+      }
+    },
+    "sourceFile": "public/bc-decal-online-review/2013/photo.png",
+    "sourceFileSha256": "b8cfcc9ddadeaf2ad42a8d51da846baf2e121309ef13790ca9b2eebab3c398fd",
+    "sourcePixels": [
+      238,
+      100
+    ],
+    "sourcePaintBox": [
+      178,
+      7,
+      224,
+      66
+    ],
+    "sourceThreshold": 70.16013630959553,
+    "sourceOccurrences": [
+      {
+        "character": "1",
+        "boxInCrop": [
+          4,
+          3,
+          21,
+          61
+        ]
+      },
+      {
+        "character": "3",
+        "boxInCrop": [
+          26,
+          3,
+          50,
+          62
+        ]
+      }
+    ],
+    "beforeWidthRatio": 1.0727272727272725,
+    "beforeNativePaintBox": [
+      4.449,
+      -1.9659999999999993,
+      91.41499999999999,
+      101.96600000000001
+    ],
+    "afterWidthRatio": 0.9969367588932805,
+    "afterNativePaintBox": [
+      4.449,
+      -1.9659999999999993,
+      85.41499999999999,
+      101.96600000000001
+    ]
+  }
+]

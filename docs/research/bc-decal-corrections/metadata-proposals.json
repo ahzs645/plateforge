@@ -1,0 +1,85 @@
+{
+  "1972": {
+    "reviewedOn": "2026-11-07",
+    "finding": "The narrow 72 year is independently reconstructed from the 926403 and 910938 photographs. Its authored proportions fit naturally at the requested cap height; uniform-height overlays preserve the remaining scan uncertainty.",
+    "fontEvidence": "Only the observed 7 and 2 are reconstructed. Smooth authored geometry and advances are supported by two specimens and compared against 60 named candidate profiles; no horizontal font scaling or historical typeface identification. See docs/research/bc-decal-corrections/annual-1972/."
+  },
+  "1983": {
+    "reviewedOn": "2026-11-07"
+  },
+  "1984": {
+    "reviewedOn": "2026-11-07"
+  },
+  "1986": {
+    "reviewedOn": "2026-11-07",
+    "finding": "Rounded P/R bowls are reconstructed from MAR, APR and SEP. Transparent overlap artifacts are removed from R/T/V. P/R have new authored advances; the other observed glyph advances are retained, with explicit AR/PR pair placement. The supplied EXPO composition is retained after twelve-source review.",
+    "fontEvidence": "All twelve selected month names were reviewed. M/A retain the prior geometric construction; P/R have new constructions; T/V retain native contours painted additively; other observed capitals retain documented candidates. Exact historical font identity and printed EXPO weight remain uncertain. See docs/research/bc-decal-corrections/expo86/."
+  },
+  "1999": {
+    "reviewedOn": "2026-11-07",
+    "fontEvidence": "MAY alone uses independently authored M/A/Y contours and advances with explicit AY pair spacing. Other months retain their prior candidates. The 1998 and thick-border 1999 sources are compared separately; the residual 1999 width difference does not establish identical historical printing. See docs/research/bc-modern-numerals/bordered-may.md."
+  },
+  "1998-type-ii": {
+    "reviewedOn": "2026-11-07",
+    "fontEvidence": "MAY alone uses independently authored M/A/Y contours and advances with explicit AY pair spacing. Other months retain their prior candidates. The 1998 and thick-border 1999 sources are compared separately; the residual 1999 width difference does not establish identical historical printing. See docs/research/bc-modern-numerals/bordered-may.md.",
+    "finding": "The exact MAY selection uses a source-supported M/A/Y reconstruction and AY spacing, with natural whole-run fitting. The lighter control and other month forms retain their existing role candidates."
+  },
+  "1999-white": {
+    "reviewedOn": "2026-11-07"
+  },
+  "2000": {
+    "reviewedOn": "2026-11-07"
+  },
+  "2001": {
+    "reviewedOn": "2026-11-07"
+  },
+  "2002": {
+    "reviewedOn": "2026-11-07"
+  },
+  "2003": {
+    "reviewedOn": "2026-11-07"
+  },
+  "2004": {
+    "reviewedOn": "2026-11-07"
+  },
+  "2014": {
+    "reviewedOn": "2026-11-07",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2–9 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/."
+  },
+  "2015": {
+    "reviewedOn": "2026-11-07",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2–9 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/."
+  },
+  "2016": {
+    "reviewedOn": "2026-11-07",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2–9 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/."
+  },
+  "2017": {
+    "reviewedOn": "2026-11-07",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2–9 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/."
+  },
+  "2018": {
+    "reviewedOn": "2026-11-07",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2–9 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/."
+  },
+  "2019": {
+    "reviewedOn": "2026-11-07",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2–9 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/."
+  },
+  "2020": {
+    "reviewedOn": "2026-11-07",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2–9 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/."
+  },
+  "2021": {
+    "reviewedOn": "2026-11-07",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2–9 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/."
+  },
+  "2022": {
+    "reviewedOn": "2026-11-07",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2–9 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/."
+  },
+  "2023": {
+    "reviewedOn": "2026-11-07",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2–9 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/."
+  }
+}

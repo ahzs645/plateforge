@@ -1,0 +1,106 @@
+{
+  "date": "2026-11-07",
+  "evidence": "modern-placement-review.json",
+  "principle": "Translations only for glyph roles: retain cap, width, profiles and tracking. Source photos are unrectified and have wider frames than the model. Barcode rectangles include quiet zones; suggested extents account for painted bars separately.",
+  "proposals": {
+    "2015": {
+      "runs": {
+        "decal-month": {
+          "baseline": 0.64
+        },
+        "decal-year": {
+          "baseline": 0.64
+        },
+        "decal-serial": {
+          "baseline": 0.885
+        }
+      },
+      "layout": {
+        "barcode": {
+          "x": -0.015,
+          "y": 0.715,
+          "width": 0.59,
+          "height": 0.21
+        }
+      },
+      "notes": [
+        "All three ink rows are centered about 0.02 frame-height too low.",
+        "Retain horizontal glyph positions: normalizing frame width versus uniform height changes the inferred month translation sign.",
+        "Retain barcode x and width; a right translation is plausible but less certain than its consistently taller source footprint.",
+        "Legend vertical centers already agree; its source run lengths differ, so do not substitute scale with a translation."
+      ]
+    },
+    "2017-nov": {
+      "scope": "2017 monthVariants[fromMonth=7]; verify the July specimen before applying to the shared July\u2013December layout.",
+      "runs": {
+        "decal-year": {
+          "x": 0.9
+        },
+        "decal-serial": {
+          "baseline": 0.89
+        }
+      },
+      "layout": {
+        "provinceCentre": 0.365,
+        "provinceColumns": [
+          0.463,
+          0.503
+        ],
+        "barcode": {
+          "x": 0.015,
+          "y": 0.695,
+          "width": 0.565,
+          "height": 0.215
+        }
+      },
+      "notes": [
+        "NOV month is already vertically centered; retain its complete run.",
+        "Year center is left of the model by 0.027\u20130.034 frame-width under both comparison methods; shift x by -0.03.",
+        "Both province lines are about 0.064 frame-height too low; columns are about 0.008 frame-width too far left.",
+        "Retain serial x: source and model left edges already agree while width differs.",
+        "Source barcode has stable lower edge near 0.91 and higher top near 0.69."
+      ]
+    },
+    "2023": {
+      "runs": {
+        "decal-month": {
+          "x": 0.055,
+          "baseline": 0.56
+        },
+        "decal-year": {
+          "baseline": 0.565
+        },
+        "decal-serial": {
+          "x": 0.73,
+          "baseline": 0.865
+        }
+      },
+      "layout": {
+        "provinceCentre": 0.335,
+        "provinceColumns": [
+          0.437,
+          0.477
+        ],
+        "barcode": {
+          "x": -0.015,
+          "y": 0.66,
+          "width": 0.54,
+          "height": 0.235
+        }
+      },
+      "notes": [
+        "MAR is left/up in the source: center deltas approximately -0.039 to -0.047 frame-width and -0.080 frame-height. Suggested left shift is deliberately smaller than the largest estimate.",
+        "Year requires an upward translation of 0.073 frame-height; retain x because its right edge already approximately agrees.",
+        "Province columns support small left/up translations.",
+        "Control supports a left shift of 0.022\u20130.028 frame-width and up 0.043 frame-height.",
+        "Source barcode painted height spans 0.653\u20130.898 versus 0.75\u20130.91; width reduction is supported both when comparing frame fractions and at uniform height."
+      ]
+    }
+  },
+  "limitations": [
+    "These are conservative proposals, not edits to shared typography data.",
+    "Barcode pattern decoding was not tested by this placement review.",
+    "The source photos do not establish the model physical frame aspect ratio.",
+    "Pixel bounds are threshold-dependent diagnostics; inspect the source images with the measurements."
+  ]
+}

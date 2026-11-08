@@ -1,0 +1,37 @@
+{
+  "baseline": "17b974f51c687780c5d0b106fd9ae37e4c83ccae",
+  "specimens": [
+    {
+      "control": "926403",
+      "file": "source-926403.png",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1972-926403.jpg",
+      "region": [
+        6,
+        8,
+        69,
+        85
+      ],
+      "sha256": "ba498e35690a33817455bf7adadedcc4ea87915e727e07875f15fa182f03622a",
+      "pixels": [
+        190,
+        100
+      ]
+    },
+    {
+      "control": "910938",
+      "file": "source-910938.png",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1972.jpg",
+      "region": [
+        6,
+        11,
+        65,
+        84
+      ],
+      "sha256": "983eb7c510edbdf669c1ca5e8048a2fbddbe043dda746b290a56339ab353d7d4",
+      "pixels": [
+        178,
+        98
+      ]
+    }
+  ]
+}

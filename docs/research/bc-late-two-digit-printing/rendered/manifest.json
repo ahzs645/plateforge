@@ -1,0 +1,179 @@
+[
+  {
+    "id": "2008-month",
+    "catalogueId": "2008",
+    "month": 8,
+    "role": "decal-month",
+    "text": "AUG",
+    "roi": [
+      5,
+      10,
+      126,
+      88
+    ],
+    "polarity": "light",
+    "before": "heavy-month",
+    "after": "bebasneue-400",
+    "anchor": "start",
+    "renders": {
+      "before": {
+        "file": "2008-month-before.svg",
+        "nativeAdvance": 140.763,
+        "fit": "natural"
+      },
+      "after": {
+        "file": "2008-month-after.svg",
+        "nativeAdvance": 170.572,
+        "fit": "natural"
+      }
+    }
+  },
+  {
+    "id": "2008-year",
+    "catalogueId": "2008",
+    "role": "decal-year",
+    "text": "08",
+    "roi": [
+      174,
+      10,
+      235,
+      70
+    ],
+    "polarity": "light",
+    "before": "heavy-year",
+    "after": "oswald-400",
+    "anchor": "end",
+    "renders": {
+      "before": {
+        "file": "2008-year-before.svg",
+        "nativeAdvance": 93.842,
+        "fit": "natural"
+      },
+      "after": {
+        "file": "2008-year-after.svg",
+        "nativeAdvance": 125.43199999999999,
+        "fit": "natural"
+      }
+    }
+  },
+  {
+    "id": "2011-month",
+    "catalogueId": "2011",
+    "month": 5,
+    "role": "decal-month",
+    "text": "MAY",
+    "roi": [
+      9,
+      4,
+      106,
+      65
+    ],
+    "polarity": "dark",
+    "before": "heavy-month",
+    "after": "heavy-month",
+    "anchor": "start",
+    "renders": {
+      "before": {
+        "file": "2011-month-before.svg",
+        "nativeAdvance": 161.291,
+        "fit": "natural"
+      },
+      "after": {
+        "file": "2011-month-after.svg",
+        "nativeAdvance": 161.291,
+        "fit": "natural"
+      }
+    }
+  },
+  {
+    "id": "2011-year",
+    "catalogueId": "2011",
+    "role": "decal-year",
+    "text": "11",
+    "roi": [
+      174,
+      4,
+      225,
+      65
+    ],
+    "polarity": "dark",
+    "before": "heavy-year",
+    "after": "heavy-year",
+    "kerning": {
+      "11": -4
+    },
+    "anchor": "end",
+    "renders": {
+      "before": {
+        "file": "2011-year-before.svg",
+        "nativeAdvance": 93.842,
+        "fit": "natural"
+      },
+      "after": {
+        "file": "2011-year-after.svg",
+        "nativeAdvance": 89.842,
+        "fit": "natural"
+      }
+    }
+  },
+  {
+    "id": "2013-month",
+    "catalogueId": "2013",
+    "month": 10,
+    "role": "decal-month",
+    "text": "OCT",
+    "roi": [
+      7,
+      5,
+      79,
+      69
+    ],
+    "polarity": "dark",
+    "before": "heavy-month",
+    "after": "late-oct-reconstruction",
+    "anchor": "start",
+    "renders": {
+      "before": {
+        "file": "2013-month-before.svg",
+        "nativeAdvance": 136.921,
+        "fit": "natural"
+      },
+      "after": {
+        "file": "2013-month-after.svg",
+        "nativeAdvance": 114.5,
+        "fit": "natural"
+      }
+    }
+  },
+  {
+    "id": "2013-year",
+    "catalogueId": "2013",
+    "role": "decal-year",
+    "text": "13",
+    "roi": [
+      174,
+      4,
+      228,
+      69
+    ],
+    "polarity": "dark",
+    "before": "heavy-year",
+    "after": "heavy-year",
+    "kerning": {
+      "13": -6
+    },
+    "anchor": "end",
+    "renders": {
+      "before": {
+        "file": "2013-year-before.svg",
+        "nativeAdvance": 93.842,
+        "fit": "natural"
+      },
+      "after": {
+        "file": "2013-year-after.svg",
+        "nativeAdvance": 87.842,
+        "fit": "natural"
+      }
+    }
+  }
+]

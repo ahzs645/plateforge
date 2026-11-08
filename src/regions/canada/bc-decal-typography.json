@@ -98,17 +98,17 @@
   },
   "1972": {
     "lineBreaks": "Tall 72 at left; BRITISH / COLUMBIA below control at right.",
-    "finding": "Control was incorrectly heavy compressed; use spaced medium digits. Province should be left aligned, narrower and slightly lower.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "finding": "The narrow 72 year is independently reconstructed from the 926403 and 910938 photographs. Its authored proportions fit naturally at the requested cap height; uniform-height overlays preserve the remaining scan uncertainty.",
+    "fontEvidence": "Only the observed 7 and 2 are reconstructed. Smooth authored geometry and advances are supported by two specimens and compared against 60 named candidate profiles; no horizontal font scaling or historical typeface identification. See docs/research/bc-decal-corrections/annual-1972/.",
     "runs": {
       "decal-year": [
         {
-          "x": 0.205,
-          "baseline": 0.83,
-          "cap": 0.68,
+          "x": 0.203,
+          "baseline": 0.82,
+          "cap": 0.71,
           "width": 0.33,
-          "profile": "heavy-year",
-          "tracking": 7
+          "profile": "annual-1972-reconstruction",
+          "tracking": 0
         }
       ],
       "decal-legend": [
@@ -148,7 +148,7 @@
       180,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07"
   },
   "1974": {
     "lineBreaks": "BRITISH / COLUMBIA, control, PASSENGER; 7 / 4 at right.",
@@ -1021,8 +1021,8 @@
   },
   "1986": {
     "lineBreaks": "One BRITISH COLUMBIA line over JUL; linked EXPO 86 at right.",
-    "finding": "Province was too broad and too close to JUL. Reduce its height and move JUL lower; use a stronger native condensed month candidate. Preserve supplied EXPO paths.",
-    "fontEvidence": "Every available month examined. Reconstructed rounded M/A from repeated photographs; other observed letters use separately documented native candidates. Mixed reconstruction, no identified historical typeface.",
+    "finding": "Rounded P/R bowls are reconstructed from MAR, APR and SEP. Transparent overlap artifacts are removed from R/T/V. P/R have new authored advances; the other observed glyph advances are retained, with explicit AR/PR pair placement. The supplied EXPO composition is retained after twelve-source review.",
+    "fontEvidence": "All twelve selected month names were reviewed. M/A retain the prior geometric construction; P/R have new constructions; T/V retain native contours painted additively; other observed capitals retain documented candidates. Exact historical font identity and printed EXPO weight remain uncertain. See docs/research/bc-decal-corrections/expo86/.",
     "runs": {
       "decal-legend": [
         {
@@ -1040,14 +1040,15 @@
           "baseline": 0.91,
           "cap": 0.63,
           "width": 0.53,
-          "profile": "1986-rounded-reconstruction",
+          "profile": "1986-rounded-corrected",
           "tracking": 1,
           "kerning": {
             "MA": 2.9,
-            "AR": -7.2,
+            "AR": 0,
             "JA": -2.2,
             "AN": -10.7,
-            "AY": -7.8
+            "AY": -7.8,
+            "PR": -3
           },
           "anchor": "middle"
         }
@@ -1070,7 +1071,7 @@
       243,
       75
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07"
   },
   "1989": {
     "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
@@ -1718,8 +1719,8 @@
   },
   "1999": {
     "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
-    "finding": "MAY was too short; give it more room. Keep the lighter control candidate on this specimen and expand its spacing.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "finding": "MAY was too short; give it more room. Keep the lighter control candidate on this specimen and expand its spacing. MAY now has an exact-month reconstruction and source-supported AY spacing; other month forms are unchanged. Residual 1999 width uncertainty remains explicit.",
+    "fontEvidence": "MAY alone uses independently authored M/A/Y contours and advances with explicit AY pair spacing. Other months retain their prior candidates. The 1998 and thick-border 1999 sources are compared separately; the residual 1999 width difference does not establish identical historical printing. See docs/research/bc-modern-numerals/bordered-may.md.",
     "runs": {
       "decal-month": [
         {
@@ -1778,7 +1779,30 @@
       244,
       75
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 5,
+        "throughMonth": 5,
+        "evidence": "Photographed MAY only; reconstructed M/A/Y and AY spacing. Other months retain the existing profile. Source-specific size/placement and residual width limits are recorded in docs/research/bc-modern-numerals.",
+        "runs": {
+          "decal-month": [
+            {
+              "x": 0.042,
+              "baseline": 0.836,
+              "cap": 0.671,
+              "width": 0.4,
+              "profile": "bordered-may-reconstruction",
+              "tracking": 0,
+              "anchor": "start",
+              "kerning": {
+                "AY": -14
+              }
+            }
+          ]
+        }
+      }
+    ]
   },
   "1996-pink": {
     "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
@@ -1846,8 +1870,8 @@
   },
   "1998-type-ii": {
     "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
-    "finding": "Preserve the visibly lighter control printing of this variant. Restore MAY height; use medium condensed control with extra spacing.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "finding": "The exact MAY selection uses a source-supported M/A/Y reconstruction and AY spacing, with natural whole-run fitting. The lighter control and other month forms retain their existing role candidates.",
+    "fontEvidence": "MAY alone uses independently authored M/A/Y contours and advances with explicit AY pair spacing. Other months retain their prior candidates. The 1998 and thick-border 1999 sources are compared separately; the residual 1999 width difference does not establish identical historical printing. See docs/research/bc-modern-numerals/bordered-may.md.",
     "runs": {
       "decal-month": [
         {
@@ -1906,7 +1930,30 @@
       375,
       116
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 5,
+        "throughMonth": 5,
+        "evidence": "Photographed MAY only; reconstructed M/A/Y and AY spacing. Other months retain the existing profile. Source-specific size/placement and residual width limits are recorded in docs/research/bc-modern-numerals.",
+        "runs": {
+          "decal-month": [
+            {
+              "x": 0.054,
+              "baseline": 0.772,
+              "cap": 0.605,
+              "width": 0.385,
+              "profile": "bordered-may-reconstruction",
+              "tracking": 0,
+              "anchor": "start",
+              "kerning": {
+                "AY": -14
+              }
+            }
+          ]
+        }
+      }
+    ]
   },
   "1999-white": {
     "lineBreaks": "BRITISH / COLUMBIA above control, inside double outline.",
@@ -2515,8 +2562,8 @@
   },
   "2008": {
     "lineBreaks": "Tiny BRITISH / COLUMBIA between month/year; control underneath at right.",
-    "finding": "Lower JAN and reduce the tiny province stack. Preserve light ink for every text role. The source looks lighter than the supplied compressed candidate; exact stroke weight remains unresolved.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "finding": "The photographed AUG uses lighter native Bebas Neue 400 outlines at source-supported painted height; year 08 uses native Oswald 400. The exact AUG override preserves other month candidates. The source crop excludes adjacent province ink; the 0 curve remains approximate. The exact AUG override also translates the control and province upward; tiny province contours and width remain approximate.",
+    "fontEvidence": "Native outline candidates selected after independent glyph and whole-run comparison; no independent x scaling or historical font identification. Other month names are not established by the AUG source. See docs/research/bc-late-two-digit-printing/.",
     "runs": {
       "decal-month": [
         {
@@ -2531,11 +2578,11 @@
       ],
       "decal-year": [
         {
-          "x": 0.955,
-          "baseline": 0.71,
-          "cap": 0.54,
-          "width": 0.245,
-          "profile": "heavy-year",
+          "x": 1.0006,
+          "baseline": 0.6643,
+          "cap": 0.5099,
+          "width": 0.2861,
+          "profile": "oswald-400",
           "tracking": 0,
           "anchor": "end"
         }
@@ -2575,7 +2622,55 @@
       235,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 8,
+        "throughMonth": 8,
+        "evidence": "Independent source-height comparison of the photographed 2008 month; only this observed month is calibrated. See docs/research/bc-late-two-digit-printing/.",
+        "runs": {
+          "decal-month": [
+            {
+              "x": 0.0209,
+              "baseline": 0.8401,
+              "cap": 0.6903,
+              "width": 0.5199,
+              "profile": "bebasneue-400",
+              "tracking": 0,
+              "anchor": "start"
+            }
+          ],
+          "decal-legend": [
+            {
+              "x": 0.6322,
+              "baseline": 0.4722,
+              "cap": 0.055,
+              "width": 0.16,
+              "profile": "normal",
+              "tracking": 0
+            },
+            {
+              "x": 0.6322,
+              "baseline": 0.5522,
+              "cap": 0.055,
+              "width": 0.16,
+              "profile": "normal",
+              "tracking": 0
+            }
+          ],
+          "decal-serial": [
+            {
+              "x": 0.7569,
+              "baseline": 0.8955,
+              "cap": 0.17,
+              "width": 0.39,
+              "profile": "control-bold",
+              "tracking": 0
+            }
+          ]
+        }
+      }
+    ]
   },
   "2009": {
     "lineBreaks": "BRITISH / COLUMBIA between month and two-digit year; barcode/control footer.",
@@ -2707,8 +2802,8 @@
   },
   "2011": {
     "lineBreaks": "BRITISH / COLUMBIA between month and two-digit year; barcode/control footer.",
-    "finding": "Enlarge the two province lines and reduce their gap. Keep the barcoded footer clear of the control.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "finding": "The photographed MAY retains its existing heavy-month contours, with its baseline restored upward. Year 11 uses source-supported cap height and a -4-cap-unit 11 pair adjustment. Other month placements retain their prior candidates. The photographed month override also calibrates legend/control translation and the actual barcode footprint; other month layouts retain their earlier positions.",
+    "fontEvidence": "MAY already agrees closely at equal painted height; this is principally a placement correction. Year 11 retains its existing glyph profile. No historical typeface identity is claimed. See docs/research/bc-late-two-digit-printing/.",
     "runs": {
       "decal-month": [
         {
@@ -2723,13 +2818,16 @@
       ],
       "decal-year": [
         {
-          "x": 0.965,
-          "baseline": 0.69,
-          "cap": 0.61,
-          "width": 0.27,
+          "x": 0.9663,
+          "baseline": 0.63,
+          "cap": 0.56,
+          "width": 0.2267,
           "profile": "heavy-year",
           "tracking": 0,
-          "anchor": "end"
+          "anchor": "end",
+          "kerning": {
+            "11": -4
+          }
         }
       ],
       "decal-legend": [
@@ -2767,7 +2865,63 @@
       232,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 5,
+        "throughMonth": 5,
+        "evidence": "Independent source-height comparison of the photographed 2011 month; only this observed month is calibrated. See docs/research/bc-late-two-digit-printing/.",
+        "runs": {
+          "decal-month": [
+            {
+              "x": 0.0361,
+              "baseline": 0.64,
+              "cap": 0.56,
+              "width": 0.4007,
+              "profile": "heavy-month",
+              "tracking": 0,
+              "anchor": "start"
+            }
+          ],
+          "decal-legend": [
+            {
+              "x": 0.5761,
+              "baseline": 0.3586,
+              "cap": 0.12,
+              "width": 0.23,
+              "profile": "condensed-bold",
+              "tracking": 0
+            },
+            {
+              "x": 0.5776,
+              "baseline": 0.5188,
+              "cap": 0.12,
+              "width": 0.24,
+              "profile": "condensed-bold",
+              "tracking": 0
+            }
+          ],
+          "decal-serial": [
+            {
+              "x": 0.7525,
+              "baseline": 0.8452,
+              "cap": 0.18,
+              "width": 0.42,
+              "profile": "control-bold",
+              "tracking": 0
+            }
+          ]
+        },
+        "layout": {
+          "barcode": {
+            "x": -0.0045,
+            "y": 0.66,
+            "width": 0.583,
+            "height": 0.2
+          }
+        }
+      }
+    ]
   },
   "2012": {
     "lineBreaks": "BRITISH / COLUMBIA between month and two-digit year; barcode/control footer.",
@@ -2835,8 +2989,8 @@
   },
   "2013": {
     "lineBreaks": "BRITISH / COLUMBIA between month and two-digit year; barcode/control footer.",
-    "finding": "Province needs taller condensed letters. Preserve the photographed two-digit year and separate control footer.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "finding": "The exact OCT selection uses independent O/C/T contours at natural width. Year 13 retains its existing glyph profile with a -6-cap-unit 13 pair adjustment. Other month forms retain prior candidates. The photographed month override also calibrates legend/control translation and the actual barcode footprint; other month layouts retain their earlier positions.",
+    "fontEvidence": "Only O/C/T are reconstructed from the clean 59-pixel source capitals. Explicit pair placement is separate from glyph contours and no x-only scaling is applied. Historical typeface remains unknown. See docs/research/bc-late-two-digit-printing/.",
     "runs": {
       "decal-month": [
         {
@@ -2851,13 +3005,16 @@
       ],
       "decal-year": [
         {
-          "x": 0.965,
-          "baseline": 0.69,
-          "cap": 0.61,
-          "width": 0.27,
+          "x": 0.9625,
+          "baseline": 0.6488,
+          "cap": 0.5677,
+          "width": 0.2248,
           "profile": "heavy-year",
           "tracking": 0,
-          "anchor": "end"
+          "anchor": "end",
+          "kerning": {
+            "13": -6
+          }
         }
       ],
       "decal-legend": [
@@ -2895,12 +3052,68 @@
       239,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 10,
+        "throughMonth": 10,
+        "evidence": "Independent source-height comparison of the photographed 2013 month; only this observed month is calibrated. See docs/research/bc-late-two-digit-printing/.",
+        "runs": {
+          "decal-month": [
+            {
+              "x": 0.0261,
+              "baseline": 0.67,
+              "cap": 0.59,
+              "width": 0.3017,
+              "profile": "late-oct-reconstruction",
+              "tracking": 0,
+              "anchor": "start"
+            }
+          ],
+          "decal-legend": [
+            {
+              "x": 0.5761,
+              "baseline": 0.3786,
+              "cap": 0.12,
+              "width": 0.23,
+              "profile": "condensed-medium",
+              "tracking": 0
+            },
+            {
+              "x": 0.5751,
+              "baseline": 0.5387,
+              "cap": 0.12,
+              "width": 0.24,
+              "profile": "condensed-medium",
+              "tracking": 0
+            }
+          ],
+          "decal-serial": [
+            {
+              "x": 0.7482,
+              "baseline": 0.8852,
+              "cap": 0.18,
+              "width": 0.42,
+              "profile": "control-bold",
+              "tracking": 0
+            }
+          ]
+        },
+        "layout": {
+          "barcode": {
+            "x": -0.0209,
+            "y": 0.69,
+            "width": 0.5939,
+            "height": 0.22
+          }
+        }
+      }
+    ]
   },
   "2014": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Main\u2019s narrower month construction restored at the larger source-supported height, with heavier print weight. Separate Anton year, serif province and broader control retained; July 2017 layout transition preserved.",
-    "fontEvidence": "Month retains the existing supplied-font construction and advances, with a 2.5-cap-unit same-ink stroke; no new horizontal scaling. Year uses native Anton and control uses native Nimbus Sans Bold. Visual candidates, not confirmed historical fonts.",
+    "finding": "Retains the narrow month construction and independent vertical province printing. Year numerals use a source-supported reusable reconstruction; control uses native Nimbus Narrow advances with an observed diagonal-flag 1. Glyph and source limitations are documented in the numeral review. July 2017 boundary remains separate.",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2\u20139 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/.",
     "runs": {
       "decal-month": [
         {
@@ -2919,7 +3132,7 @@
           "baseline": 0.66,
           "cap": 0.58,
           "width": 0.47,
-          "profile": "anton-400",
+          "profile": "modern-year-reconstruction",
           "tracking": 0,
           "anchor": "end"
         }
@@ -2950,7 +3163,7 @@
           "baseline": 0.905,
           "cap": 0.17,
           "width": 0.39,
-          "profile": "normal",
+          "profile": "modern-control-reconstruction",
           "tracking": 0
         }
       ]
@@ -2961,17 +3174,17 @@
       229,
       100
     ],
-    "reviewedOn": "2026-10-18"
+    "reviewedOn": "2026-11-07"
   },
   "2015": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Main\u2019s narrower month construction restored at the larger source-supported height, with heavier print weight. Separate Anton year, serif province and broader control retained; July 2017 layout transition preserved.",
-    "fontEvidence": "Month retains the existing supplied-font construction and advances, with a 2.5-cap-unit same-ink stroke; no new horizontal scaling. Year uses native Anton and control uses native Nimbus Sans Bold. Visual candidates, not confirmed historical fonts.",
+    "finding": "Retains the narrow month construction and independent vertical province printing. Year numerals use a source-supported reusable reconstruction; control uses native Nimbus Narrow advances with an observed diagonal-flag 1. Glyph and source limitations are documented in the numeral review. July 2017 boundary remains separate. Whole-run vertical translations and a taller barcode footprint follow the enlarged JAN source; horizontal placement is retained because the unrectified crop has a different aspect ratio.",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2\u20139 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/.",
     "runs": {
       "decal-month": [
         {
           "x": 0.055,
-          "baseline": 0.66,
+          "baseline": 0.64,
           "cap": 0.58,
           "width": 0.35,
           "profile": "heavy-month-weighted",
@@ -2982,10 +3195,10 @@
       "decal-year": [
         {
           "x": 0.965,
-          "baseline": 0.66,
+          "baseline": 0.64,
           "cap": 0.58,
           "width": 0.47,
-          "profile": "anton-400",
+          "profile": "modern-year-reconstruction",
           "tracking": 0,
           "anchor": "end"
         }
@@ -3013,10 +3226,10 @@
       "decal-serial": [
         {
           "x": 0.755,
-          "baseline": 0.905,
+          "baseline": 0.885,
           "cap": 0.17,
           "width": 0.39,
-          "profile": "normal",
+          "profile": "modern-control-reconstruction",
           "tracking": 0
         }
       ]
@@ -3027,12 +3240,20 @@
       246,
       100
     ],
-    "reviewedOn": "2026-10-18"
+    "reviewedOn": "2026-11-07",
+    "layout": {
+      "barcode": {
+        "x": -0.015,
+        "y": 0.715,
+        "width": 0.59,
+        "height": 0.21
+      }
+    }
   },
   "2016": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Main\u2019s narrower month construction restored at the larger source-supported height, with heavier print weight. Separate Anton year, serif province and broader control retained; July 2017 layout transition preserved.",
-    "fontEvidence": "Month retains the existing supplied-font construction and advances, with a 2.5-cap-unit same-ink stroke; no new horizontal scaling. Year uses native Anton and control uses native Nimbus Sans Bold. Visual candidates, not confirmed historical fonts.",
+    "finding": "Retains the narrow month construction and independent vertical province printing. Year numerals use a source-supported reusable reconstruction; control uses native Nimbus Narrow advances with an observed diagonal-flag 1. Glyph and source limitations are documented in the numeral review. July 2017 boundary remains separate.",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2\u20139 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/.",
     "runs": {
       "decal-month": [
         {
@@ -3051,7 +3272,7 @@
           "baseline": 0.66,
           "cap": 0.58,
           "width": 0.47,
-          "profile": "anton-400",
+          "profile": "modern-year-reconstruction",
           "tracking": 0,
           "anchor": "end"
         }
@@ -3082,7 +3303,7 @@
           "baseline": 0.905,
           "cap": 0.17,
           "width": 0.39,
-          "profile": "normal",
+          "profile": "modern-control-reconstruction",
           "tracking": 0
         }
       ]
@@ -3093,12 +3314,12 @@
       239,
       100
     ],
-    "reviewedOn": "2026-10-18"
+    "reviewedOn": "2026-11-07"
   },
   "2017": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Main\u2019s narrower month construction restored at the larger source-supported height, with heavier print weight. Separate Anton year, serif province and broader control retained; July 2017 layout transition preserved.",
-    "fontEvidence": "Month retains the existing supplied-font construction and advances, with a 2.5-cap-unit same-ink stroke; no new horizontal scaling. Year uses native Anton and control uses native Nimbus Sans Bold. Visual candidates, not confirmed historical fonts.",
+    "finding": "Retains the narrow month construction and independent vertical province printing. Year numerals use a source-supported reusable reconstruction; control uses native Nimbus Narrow advances with an observed diagonal-flag 1. Glyph and source limitations are documented in the numeral review. July 2017 boundary remains separate.",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2\u20139 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/.",
     "runs": {
       "decal-month": [
         {
@@ -3117,7 +3338,7 @@
           "baseline": 0.66,
           "cap": 0.58,
           "width": 0.47,
-          "profile": "anton-400",
+          "profile": "modern-year-reconstruction",
           "tracking": 0,
           "anchor": "end"
         }
@@ -3148,7 +3369,7 @@
           "baseline": 0.905,
           "cap": 0.17,
           "width": 0.39,
-          "profile": "normal",
+          "profile": "modern-control-reconstruction",
           "tracking": 0
         }
       ]
@@ -3159,14 +3380,14 @@
       235,
       100
     ],
-    "reviewedOn": "2026-10-18",
+    "reviewedOn": "2026-11-07",
     "layout": {
       "cornerRadius": 0
     },
     "monthVariants": [
       {
         "fromMonth": 7,
-        "evidence": "ICBC Bulletin 14, February 3 2016: design changes commence with July 2017 expiry. Corroborated by issued NOV 2017 enlarged photograph.",
+        "evidence": "ICBC Bulletin 14, February 3 2016: design changes commence with July 2017 expiry. Corroborated by issued NOV 2017 enlarged photograph. The enlarged NOV photo supports conservative year/province/control translations and barcode height; the July illustration is checked as a layout cross-check, not as an issued photograph.",
         "runs": {
           "decal-month": [
             {
@@ -3181,11 +3402,11 @@
           ],
           "decal-year": [
             {
-              "x": 0.93,
+              "x": 0.9,
               "baseline": 0.6,
               "cap": 0.47,
               "width": 0.445,
-              "profile": "anton-400",
+              "profile": "modern-year-reconstruction",
               "tracking": 0,
               "anchor": "end"
             }
@@ -3213,26 +3434,26 @@
           "decal-serial": [
             {
               "x": 0.79,
-              "baseline": 0.92,
+              "baseline": 0.89,
               "cap": 0.165,
               "width": 0.39,
-              "profile": "normal",
+              "profile": "modern-control-reconstruction",
               "tracking": 0
             }
           ]
         },
         "layout": {
           "cornerRadius": 0.1,
-          "provinceCentre": 0.43,
+          "provinceCentre": 0.365,
           "provinceColumns": [
-            0.455,
-            0.495
+            0.463,
+            0.503
           ],
           "barcode": {
             "x": 0.015,
-            "y": 0.74,
+            "y": 0.695,
             "width": 0.565,
-            "height": 0.17
+            "height": 0.215
           }
         }
       }
@@ -3240,8 +3461,8 @@
   },
   "2018": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Main\u2019s narrower month construction restored at the larger source-supported height, with heavier print weight. Separate Anton year, serif province and broader control retained; July 2017 layout transition preserved.",
-    "fontEvidence": "Month retains the existing supplied-font construction and advances, with a 2.5-cap-unit same-ink stroke; no new horizontal scaling. Year uses native Anton and control uses native Nimbus Sans Bold. Visual candidates, not confirmed historical fonts.",
+    "finding": "Retains the narrow month construction and independent vertical province printing. Year numerals use a source-supported reusable reconstruction; control uses native Nimbus Narrow advances with an observed diagonal-flag 1. Glyph and source limitations are documented in the numeral review. July 2017 boundary remains separate.",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2\u20139 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/.",
     "runs": {
       "decal-month": [
         {
@@ -3260,7 +3481,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.45,
-          "profile": "anton-400",
+          "profile": "modern-year-reconstruction",
           "tracking": 0,
           "anchor": "end"
         }
@@ -3291,7 +3512,7 @@
           "baseline": 0.905,
           "cap": 0.17,
           "width": 0.39,
-          "profile": "normal",
+          "profile": "modern-control-reconstruction",
           "tracking": 0
         }
       ]
@@ -3302,12 +3523,12 @@
       231,
       100
     ],
-    "reviewedOn": "2026-10-18"
+    "reviewedOn": "2026-11-07"
   },
   "2019": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Main\u2019s narrower month construction restored at the larger source-supported height, with heavier print weight. Separate Anton year, serif province and broader control retained; July 2017 layout transition preserved.",
-    "fontEvidence": "Month retains the existing supplied-font construction and advances, with a 2.5-cap-unit same-ink stroke; no new horizontal scaling. Year uses native Anton and control uses native Nimbus Sans Bold. Visual candidates, not confirmed historical fonts.",
+    "finding": "Retains the narrow month construction and independent vertical province printing. Year numerals use a source-supported reusable reconstruction; control uses native Nimbus Narrow advances with an observed diagonal-flag 1. Glyph and source limitations are documented in the numeral review. July 2017 boundary remains separate.",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2\u20139 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/.",
     "runs": {
       "decal-month": [
         {
@@ -3326,7 +3547,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.45,
-          "profile": "anton-400",
+          "profile": "modern-year-reconstruction",
           "tracking": 0,
           "anchor": "end"
         }
@@ -3357,7 +3578,7 @@
           "baseline": 0.905,
           "cap": 0.17,
           "width": 0.39,
-          "profile": "normal",
+          "profile": "modern-control-reconstruction",
           "tracking": 0
         }
       ]
@@ -3368,12 +3589,12 @@
       239,
       100
     ],
-    "reviewedOn": "2026-10-18"
+    "reviewedOn": "2026-11-07"
   },
   "2020": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Main\u2019s narrower month construction restored at the larger source-supported height, with heavier print weight. Separate Anton year, serif province and broader control retained; July 2017 layout transition preserved.",
-    "fontEvidence": "Month retains the existing supplied-font construction and advances, with a 2.5-cap-unit same-ink stroke; no new horizontal scaling. Year uses native Anton and control uses native Nimbus Sans Bold. Visual candidates, not confirmed historical fonts.",
+    "finding": "Retains the narrow month construction and independent vertical province printing. Year numerals use a source-supported reusable reconstruction; control uses native Nimbus Narrow advances with an observed diagonal-flag 1. Glyph and source limitations are documented in the numeral review. July 2017 boundary remains separate.",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2\u20139 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/.",
     "runs": {
       "decal-month": [
         {
@@ -3392,7 +3613,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.45,
-          "profile": "anton-400",
+          "profile": "modern-year-reconstruction",
           "tracking": 0,
           "anchor": "end"
         }
@@ -3423,7 +3644,7 @@
           "baseline": 0.905,
           "cap": 0.17,
           "width": 0.39,
-          "profile": "normal",
+          "profile": "modern-control-reconstruction",
           "tracking": 0
         }
       ]
@@ -3434,12 +3655,12 @@
       229,
       100
     ],
-    "reviewedOn": "2026-10-18"
+    "reviewedOn": "2026-11-07"
   },
   "2021": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Main\u2019s narrower month construction restored at the larger source-supported height, with heavier print weight. Separate Anton year, serif province and broader control retained; July 2017 layout transition preserved.",
-    "fontEvidence": "Month retains the existing supplied-font construction and advances, with a 2.5-cap-unit same-ink stroke; no new horizontal scaling. Year uses native Anton and control uses native Nimbus Sans Bold. Visual candidates, not confirmed historical fonts.",
+    "finding": "Retains the narrow month construction and independent vertical province printing. Year numerals use a source-supported reusable reconstruction; control uses native Nimbus Narrow advances with an observed diagonal-flag 1. Glyph and source limitations are documented in the numeral review. July 2017 boundary remains separate.",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2\u20139 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/.",
     "runs": {
       "decal-month": [
         {
@@ -3458,7 +3679,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.45,
-          "profile": "anton-400",
+          "profile": "modern-year-reconstruction",
           "tracking": 0,
           "anchor": "end"
         }
@@ -3489,7 +3710,7 @@
           "baseline": 0.905,
           "cap": 0.17,
           "width": 0.39,
-          "profile": "normal",
+          "profile": "modern-control-reconstruction",
           "tracking": 0
         }
       ]
@@ -3500,12 +3721,12 @@
       230,
       100
     ],
-    "reviewedOn": "2026-10-18"
+    "reviewedOn": "2026-11-07"
   },
   "2022": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Main\u2019s narrower month construction restored at the larger source-supported height, with heavier print weight. Separate Anton year, serif province and broader control retained; July 2017 layout transition preserved.",
-    "fontEvidence": "Month retains the existing supplied-font construction and advances, with a 2.5-cap-unit same-ink stroke; no new horizontal scaling. Year uses native Anton and control uses native Nimbus Sans Bold. Visual candidates, not confirmed historical fonts.",
+    "finding": "Retains the narrow month construction and independent vertical province printing. Year numerals use a source-supported reusable reconstruction; control uses native Nimbus Narrow advances with an observed diagonal-flag 1. Glyph and source limitations are documented in the numeral review. July 2017 boundary remains separate.",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2\u20139 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/.",
     "runs": {
       "decal-month": [
         {
@@ -3524,7 +3745,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.45,
-          "profile": "anton-400",
+          "profile": "modern-year-reconstruction",
           "tracking": 0,
           "anchor": "end"
         }
@@ -3555,7 +3776,7 @@
           "baseline": 0.905,
           "cap": 0.17,
           "width": 0.39,
-          "profile": "normal",
+          "profile": "modern-control-reconstruction",
           "tracking": 0
         }
       ]
@@ -3566,17 +3787,17 @@
       238,
       100
     ],
-    "reviewedOn": "2026-10-18"
+    "reviewedOn": "2026-11-07"
   },
   "2023": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Main\u2019s narrower month construction restored at the larger source-supported height, with heavier print weight. Separate Anton year, serif province and broader control retained; July 2017 layout transition preserved.",
-    "fontEvidence": "Month retains the existing supplied-font construction and advances, with a 2.5-cap-unit same-ink stroke; no new horizontal scaling. Year uses native Anton and control uses native Nimbus Sans Bold. Visual candidates, not confirmed historical fonts.",
+    "finding": "Retains the narrow month construction and independent vertical province printing. Year numerals use a source-supported reusable reconstruction; control uses native Nimbus Narrow advances with an observed diagonal-flag 1. Glyph and source limitations are documented in the numeral review. July 2017 boundary remains separate. The month/year/province/control runs move to source-supported positions while retaining their selected sizes; barcode paint becomes narrower and taller, with quiet zones accounted for separately.",
+    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2\u20139 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/.",
     "runs": {
       "decal-month": [
         {
-          "x": 0.09,
-          "baseline": 0.64,
+          "x": 0.055,
+          "baseline": 0.56,
           "cap": 0.46,
           "width": 0.32,
           "profile": "heavy-month-weighted",
@@ -3587,10 +3808,10 @@
       "decal-year": [
         {
           "x": 0.95,
-          "baseline": 0.64,
+          "baseline": 0.565,
           "cap": 0.46,
           "width": 0.45,
-          "profile": "anton-400",
+          "profile": "modern-year-reconstruction",
           "tracking": 0,
           "anchor": "end"
         }
@@ -3617,11 +3838,11 @@
       ],
       "decal-serial": [
         {
-          "x": 0.755,
-          "baseline": 0.905,
+          "x": 0.73,
+          "baseline": 0.865,
           "cap": 0.17,
           "width": 0.39,
-          "profile": "normal",
+          "profile": "modern-control-reconstruction",
           "tracking": 0
         }
       ]
@@ -3632,6 +3853,19 @@
       234,
       100
     ],
-    "reviewedOn": "2026-10-18"
+    "reviewedOn": "2026-11-07",
+    "layout": {
+      "provinceCentre": 0.335,
+      "provinceColumns": [
+        0.437,
+        0.477
+      ],
+      "barcode": {
+        "x": -0.015,
+        "y": 0.66,
+        "width": 0.54,
+        "height": 0.235
+      }
+    }
   }
 }

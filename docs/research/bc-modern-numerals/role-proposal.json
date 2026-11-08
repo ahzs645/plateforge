@@ -1,0 +1,233 @@
+{
+  "status": "Ready for integration; placement calibration remains with the shared typography owner",
+  "patches": [
+    {
+      "id": "2014",
+      "role": "decal-year",
+      "index": 0,
+      "patch": {
+        "profile": "modern-year-reconstruction",
+        "tracking": 0
+      }
+    },
+    {
+      "id": "2014",
+      "role": "decal-serial",
+      "index": 0,
+      "patch": {
+        "profile": "modern-control-reconstruction",
+        "tracking": 0
+      }
+    },
+    {
+      "id": "2015",
+      "role": "decal-year",
+      "index": 0,
+      "patch": {
+        "profile": "modern-year-reconstruction",
+        "tracking": 0
+      }
+    },
+    {
+      "id": "2015",
+      "role": "decal-serial",
+      "index": 0,
+      "patch": {
+        "profile": "modern-control-reconstruction",
+        "tracking": 0
+      }
+    },
+    {
+      "id": "2016",
+      "role": "decal-year",
+      "index": 0,
+      "patch": {
+        "profile": "modern-year-reconstruction",
+        "tracking": 0
+      }
+    },
+    {
+      "id": "2016",
+      "role": "decal-serial",
+      "index": 0,
+      "patch": {
+        "profile": "modern-control-reconstruction",
+        "tracking": 0
+      }
+    },
+    {
+      "id": "2017",
+      "role": "decal-year",
+      "index": 0,
+      "patch": {
+        "profile": "modern-year-reconstruction",
+        "tracking": 0
+      }
+    },
+    {
+      "id": "2017",
+      "role": "decal-serial",
+      "index": 0,
+      "patch": {
+        "profile": "modern-control-reconstruction",
+        "tracking": 0
+      }
+    },
+    {
+      "id": "2018",
+      "role": "decal-year",
+      "index": 0,
+      "patch": {
+        "profile": "modern-year-reconstruction",
+        "tracking": 0
+      }
+    },
+    {
+      "id": "2018",
+      "role": "decal-serial",
+      "index": 0,
+      "patch": {
+        "profile": "modern-control-reconstruction",
+        "tracking": 0
+      }
+    },
+    {
+      "id": "2019",
+      "role": "decal-year",
+      "index": 0,
+      "patch": {
+        "profile": "modern-year-reconstruction",
+        "tracking": 0
+      }
+    },
+    {
+      "id": "2019",
+      "role": "decal-serial",
+      "index": 0,
+      "patch": {
+        "profile": "modern-control-reconstruction",
+        "tracking": 0
+      }
+    },
+    {
+      "id": "2020",
+      "role": "decal-year",
+      "index": 0,
+      "patch": {
+        "profile": "modern-year-reconstruction",
+        "tracking": 0
+      }
+    },
+    {
+      "id": "2020",
+      "role": "decal-serial",
+      "index": 0,
+      "patch": {
+        "profile": "modern-control-reconstruction",
+        "tracking": 0
+      }
+    },
+    {
+      "id": "2021",
+      "role": "decal-year",
+      "index": 0,
+      "patch": {
+        "profile": "modern-year-reconstruction",
+        "tracking": 0
+      }
+    },
+    {
+      "id": "2021",
+      "role": "decal-serial",
+      "index": 0,
+      "patch": {
+        "profile": "modern-control-reconstruction",
+        "tracking": 0
+      }
+    },
+    {
+      "id": "2022",
+      "role": "decal-year",
+      "index": 0,
+      "patch": {
+        "profile": "modern-year-reconstruction",
+        "tracking": 0
+      }
+    },
+    {
+      "id": "2022",
+      "role": "decal-serial",
+      "index": 0,
+      "patch": {
+        "profile": "modern-control-reconstruction",
+        "tracking": 0
+      }
+    },
+    {
+      "id": "2023",
+      "role": "decal-year",
+      "index": 0,
+      "patch": {
+        "profile": "modern-year-reconstruction",
+        "tracking": 0
+      }
+    },
+    {
+      "id": "2023",
+      "role": "decal-serial",
+      "index": 0,
+      "patch": {
+        "profile": "modern-control-reconstruction",
+        "tracking": 0
+      }
+    },
+    {
+      "id": "2017",
+      "variantFromMonth": 7,
+      "role": "decal-year",
+      "index": 0,
+      "patch": {
+        "profile": "modern-year-reconstruction",
+        "tracking": 0
+      }
+    },
+    {
+      "id": "2017",
+      "variantFromMonth": 7,
+      "role": "decal-serial",
+      "index": 0,
+      "patch": {
+        "profile": "modern-control-reconstruction",
+        "tracking": 0
+      }
+    }
+  ],
+  "layoutHints": {
+    "year": {
+      "2015SourceWholeRunPaintHeightFraction": 0.5993975903614458,
+      "2017NovSourceWholeRunPaintHeightFraction": 0.5144927536231884,
+      "newProfilePaintHeightPerCap": 1,
+      "note": "Original Anton runs were width-limited in early modern layouts. New native constructions release that shrink. Set source-supported cap and baseline after inspecting actual whole-decal paint extents; do not force widths by scaling x."
+    },
+    "control": {
+      "2015SourceIndividualDigitHeightRangePixels": [
+        58,
+        60
+      ],
+      "2015PhotoHeightPixels": 332,
+      "2017NovSourceIndividualDigitHeightRangePixels": [
+        66,
+        68
+      ],
+      "2017NovPhotoHeightPixels": 414,
+      "nativeAdvanceCapUnits": 63.51,
+      "note": "Keep tracking zero: observed individual-digit pitch supports native tabular advances. Whole-run 2015 height includes 5 px of baseline slope."
+    }
+  },
+  "preserved": [
+    "All modern month profile assignments",
+    "All July 2017 selection boundaries",
+    "Original vector/font comparison profiles",
+    "Other decal families"
+  ]
+}
