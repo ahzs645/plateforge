@@ -15,6 +15,8 @@ export interface TypographyRun {
 }
 export interface TypographyLayout {
   cornerRadius?: number;
+  /** Control panel, in fractions of the decal; independent of control lettering. */
+  controlPanel?: { x: number; y: number; width: number; height: number };
   /** Outline centre-line radii as fractions of decal height; independent of the substrate. */
   doubleBorder?: { outerRadius: number; innerRadius: number };
   provinceCentre?: number;

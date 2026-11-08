@@ -102,12 +102,15 @@ export function buildDecal(art: DecalArt, b: Box): SvgNode {
       t('BRITISH', x+w*cx, y+h*(top+cap), h*cap, w*width, art.ink, 'decal-legend'),
       t('COLUMBIA', x+w*cx, y+h*(top+cap*2.5), h*cap, w*width, art.ink, 'decal-legend'),
     ];
-    const control = (left: number, top: number, width: number, height: number) => art.serial ? [
-      n('rect', { x:x+w*left, y:y+h*top, width:w*width, height:h*height,
-        fill: art.year==='74'?art.background:art.ink, stroke:art.ink, strokeWidth:h*.008, 'data-role':'decal-control-panel' }),
-      t(art.serial, x+w*(left+width/2), y+h*(top+height*.78), h*height*.50,
-        w*width*.88, '#171717', 'decal-serial', 'middle', 'bc-decal-control'),
-    ] : [];
+    const control = (left: number, top: number, width: number, height: number) => {
+      const panel = audit?.layout?.controlPanel ?? {x: left, y: top, width, height};
+      return art.serial ? [
+        n('rect', { x:x+w*panel.x, y:y+h*panel.y, width:w*panel.width, height:h*panel.height,
+          fill: art.year==='74'?art.background:art.ink, stroke:art.ink, strokeWidth:h*.008, 'data-role':'decal-control-panel' }),
+        t(art.serial, x+w*(panel.x+panel.width/2), y+h*(panel.y+panel.height*.78), h*panel.height*.50,
+          w*panel.width*.88, '#171717', 'decal-serial', 'middle', 'bc-decal-control'),
+      ] : [];
+    };
     const flower = (cx: number, cy: number, diameter=.30) => buildDecalFlower(x+w*cx, y+h*cy, h*diameter, art.ink);
     if (art.year === '71') {
       parts.push(...province(.30,.08,.52),
@@ -144,11 +147,12 @@ export function buildDecal(art: DecalArt, b: Box): SvgNode {
       ...(art.serial ? [n('rect',{x:x+w*.40,y:y+h*.14,width:w*.54,height:h*.33,fill:'none',stroke:art.ink,strokeWidth:h*.015}),
         t(art.serial, x+w*.69, y+h*.34, h*.17, w*.44, art.serialInk, 'decal-serial','middle','bc-decal-control-bold')] : []));
   } else if (art.fullProvincePanel) {
+    const controlPanel = audit?.layout?.controlPanel ?? {x: .44, y: .55, width: .3, height: .31};
     parts.push(n('rect', {x,y,width:w,height:h,fill:art.background}),
       t('BRITISH COLUMBIA',x+w*.5,y+h*.3,h*.22,w*.94,art.ink,'decal-legend','middle','bc-decal-print-regular'),
       t(art.month ?? '',x+w*.02,y+h*.88,h*.44,w*.4,art.ink,'decal-month','start','bc-decal-wide'),
       t(art.year,x+w*.98,y+h*.88,h*.44,w*.25,art.ink,'decal-year','end','bc-decal-wide'),
-      ...(art.serial ? [n('rect',{x:x+w*.44,y:y+h*.55,width:w*.3,height:h*.31,fill:'none',stroke:art.serialInk,strokeWidth:h*.007}),t(art.serial,x+w*.59,y+h*.78,h*.17,w*.27,art.serialInk,'decal-serial','middle','bc-decal-control')] : []));
+      ...(art.serial ? [n('rect',{x:x+w*controlPanel.x,y:y+h*controlPanel.y,width:w*controlPanel.width,height:h*controlPanel.height,fill:'none',stroke:art.serialInk,strokeWidth:h*.007,'data-role':'decal-control-panel'}),t(art.serial,x+w*.59,y+h*.78,h*.17,w*.27,art.serialInk,'decal-serial','middle','bc-decal-control')] : []));
   } else if (art.panelLayout==='vertical-sides') {
     parts.push(n('rect',{x,y,width:w,height:h,fill:art.background}),
       n('rect',{x,y,width:w*.09,height:h,fill:'#f4f1e7'}),
@@ -200,7 +204,7 @@ export function buildDecal(art: DecalArt, b: Box): SvgNode {
       parts.push(buildCode128(art.serial, barcode ? { x:x+w*barcode.x, y:y+h*barcode.y, width:w*barcode.width, height:h*barcode.height } : {x:x-w*.015,y:y+h*.75,width:w*.59,height:h*.16},art.ink));
     }
   } else if (art.year === '04') {
-    parts.push(n('rect', {x,y,width:w,height:h,fill:art.background}),
+    parts.push(n('rect', {x,y,width:w,height:h,rx:h*(audit?.layout?.cornerRadius ?? 0),fill:art.background}),
       t(art.month ?? '', x+w*.025, y+h*.80, h*.73, w*.37, art.ink, 'decal-month', 'start'),
       t(art.year, x+w*.595, y+h*.59, h*.51, w*.26, art.ink, 'decal-year'),
       t('BRITISH', x+w*.43, y+h*.38, h*.085, w*.12, art.ink, 'decal-legend'),
@@ -208,7 +212,7 @@ export function buildDecal(art: DecalArt, b: Box): SvgNode {
       ...(art.serial ? [t(art.serial,x+w*.51,y+h*.95,h*.16,w*.5,art.serialInk,'decal-serial')] : []));
   } else if (art.style === 'solid' && Number(art.year) >= 5 && Number(art.year) <= 13) {
     const barcodeEra = Number(art.year) >= 9;
-    parts.push(n('rect',{x,y,width:w,height:h,rx:h*.035,fill:art.background}),
+    parts.push(n('rect',{x,y,width:w,height:h,rx:h*(audit?.layout?.cornerRadius ?? .035),fill:art.background}),
       t(art.month ?? '',x+w*.025,y+h*(barcodeEra ? .70 : .80),h*(barcodeEra ? .64 : .73),w*.46,art.ink,'decal-month','start'),
       t(art.year,x+w*.975,y+h*.68,h*(barcodeEra ? .62 : .55),w*.26,art.ink,'decal-year','end'),
       t('BRITISH',x+w*.59,y+h*.35,h*.085,w*.16,art.ink,'decal-legend'),

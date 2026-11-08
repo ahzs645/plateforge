@@ -43,7 +43,7 @@
   },
   "1971": {
     "lineBreaks": "BRITISH / COLUMBIA; boxed control; 71 at right.",
-    "finding": "Province needs wider tracking; control digits were too light and tightly spaced. Keep supplied emblem separate from the printing.",
+    "finding": "Reduce oversized control paint uniformly, preserve its native narrow digit outlines, and fit the independently measured panel. Tracking follows the observed separation; fine digit contours remain approximate. Annual specimen",
     "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
     "runs": {
       "decal-legend": [
@@ -79,12 +79,12 @@
       ],
       "decal-serial": [
         {
-          "x": 0.305,
-          "baseline": 0.77,
-          "cap": 0.185,
-          "width": 0.45,
+          "x": 0.323378,
+          "baseline": 0.812339,
+          "cap": 0.15075,
+          "width": 0.8,
           "profile": "control-bold",
-          "tracking": 18
+          "tracking": 22.8
         }
       ]
     },
@@ -94,7 +94,15 @@
       190,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "layout": {
+      "controlPanel": {
+        "x": 0.022019,
+        "y": 0.520408,
+        "width": 0.56391,
+        "height": 0.336735
+      }
+    }
   },
   "1972": {
     "lineBreaks": "Tall 72 at left; BRITISH / COLUMBIA below control at right.",
@@ -152,7 +160,7 @@
   },
   "1974": {
     "lineBreaks": "BRITISH / COLUMBIA, control, PASSENGER; 7 / 4 at right.",
-    "finding": "Province and class label need wider spacing. Preserve two separately stacked year digits; make the boxed control bolder and spaced.",
+    "finding": "Reduce oversized control paint uniformly, preserve its native narrow digit outlines, and fit the independently measured panel. Tracking follows the observed separation; fine digit contours remain approximate. Annual specimen",
     "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
     "runs": {
       "decal-legend": [
@@ -193,12 +201,12 @@
       ],
       "decal-serial": [
         {
-          "x": 0.4,
-          "baseline": 0.685,
-          "cap": 0.18,
-          "width": 0.57,
+          "x": 0.445718,
+          "baseline": 0.62583,
+          "cap": 0.15759,
+          "width": 0.8,
           "profile": "control-bold",
-          "tracking": 18
+          "tracking": 11.7
         }
       ],
       "decal-class": [
@@ -218,38 +226,46 @@
       179,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "layout": {
+      "controlPanel": {
+        "x": 0.097368,
+        "y": 0.42,
+        "width": 0.610526,
+        "height": 0.3
+      }
+    }
   },
   "1975": {
     "lineBreaks": "BRITISH / COLUMBIA; separate 75; boxed control; PASS. COMM.",
-    "finding": "Year was too small and control too thin. Increase their height; use lighter province and class printing and preserve the single class line.",
+    "finding": "Reduce oversized control paint uniformly, preserve its native narrow digit outlines, and fit the independently measured panel. Tracking follows the observed separation; fine digit contours remain approximate. Reposition the two province lines, tighten COLUMBIA tracking and reduce/translate 75 uniformly to restore the observed gap. No year contour is changed and no glyph is horizontally scaled. Annual specimen",
     "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
     "runs": {
       "decal-legend": [
         {
-          "x": 0.025,
-          "baseline": 0.24,
-          "cap": 0.125,
-          "width": 0.56,
+          "x": 0.069452,
+          "baseline": 0.216088,
+          "cap": 0.124,
+          "width": 0.66,
           "profile": "normal",
           "tracking": 4,
           "anchor": "start"
         },
         {
-          "x": 0.025,
-          "baseline": 0.41,
-          "cap": 0.125,
-          "width": 0.56,
+          "x": 0.082179,
+          "baseline": 0.386088,
+          "cap": 0.124,
+          "width": 0.66,
           "profile": "normal",
-          "tracking": 4,
+          "tracking": -1.8,
           "anchor": "start"
         }
       ],
       "decal-year": [
         {
-          "x": 0.79,
-          "baseline": 0.4,
-          "cap": 0.34,
+          "x": 0.837027,
+          "baseline": 0.385029,
+          "cap": 0.285029,
           "width": 0.35,
           "profile": "archivo-900-wdth75",
           "tracking": 0
@@ -257,12 +273,12 @@
       ],
       "decal-serial": [
         {
-          "x": 0.51,
-          "baseline": 0.67,
-          "cap": 0.18,
-          "width": 0.76,
+          "x": 0.537223,
+          "baseline": 0.69557,
+          "cap": 0.16744,
+          "width": 0.8,
           "profile": "control-bold",
-          "tracking": 18
+          "tracking": 8.65
         }
       ],
       "decal-class": [
@@ -282,11 +298,19 @@
       149,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "layout": {
+      "controlPanel": {
+        "x": 0.147651,
+        "y": 0.43,
+        "width": 0.791946,
+        "height": 0.33
+      }
+    }
   },
   "1976": {
     "lineBreaks": "BRITISH / COLUMBIA; 76 PASS. COMM. on one line.",
-    "finding": "Province should align on the left. The small year and class were too bold and short; the control needs spaced, heavier digits.",
+    "finding": "Reduce oversized control paint uniformly, preserve its native narrow digit outlines, and fit the independently measured panel. Tracking follows the observed separation; fine digit contours remain approximate. Annual specimen",
     "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
     "runs": {
       "decal-legend": [
@@ -322,12 +346,12 @@
       ],
       "decal-serial": [
         {
-          "x": 0.5,
-          "baseline": 0.865,
-          "cap": 0.2,
-          "width": 0.78,
+          "x": 0.513788,
+          "baseline": 0.852622,
+          "cap": 0.17086,
+          "width": 0.8,
           "profile": "control-bold",
-          "tracking": 18
+          "tracking": 12.5
         }
       ],
       "decal-class": [
@@ -348,7 +372,15 @@
       160,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "layout": {
+      "controlPanel": {
+        "x": 0.085459,
+        "y": 0.612245,
+        "width": 0.816327,
+        "height": 0.326531
+      }
+    }
   },
   "1977": {
     "lineBreaks": "Stacked B / C beside 77; PASS. COMM. above boxed control.",
@@ -528,7 +560,7 @@
   },
   "1980": {
     "lineBreaks": "BRITISH COLUMBIA on one top line; month / control / 80 below.",
-    "finding": "Top legend is a lighter native sans candidate. Month and year need native bold width; control is smaller, bolder and spaced within its existing box.",
+    "finding": "Reposition only the independently inspected unfilled control panel. Retain the first-pass control printing: its mask touches the frame/inspection boundary and is rejected. Placement calibrated only to the photographed MAR specimen; not a claim of a historical month-specific printing design.",
     "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
     "runs": {
       "decal-legend": [
@@ -580,12 +612,28 @@
       253,
       75
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 3,
+        "throughMonth": 3,
+        "runs": {},
+        "layout": {
+          "controlPanel": {
+            "x": 0.457576,
+            "y": 0.586667,
+            "width": 0.286869,
+            "height": 0.306667
+          }
+        },
+        "evidence": "Reposition only the independently inspected unfilled control panel. Retain the first-pass control printing: its mask touches the frame/inspection boundary and is rejected. Placement calibrated only to the photographed MAR specimen; not a claim of a historical month-specific printing design. https://www.bcpl8s.ca/images/Decals/Passenger/1980-43052284.jpg"
+      }
+    ]
   },
   "1981": {
     "lineBreaks": "BRITISH / COLUMBIA above central control; month and year on opposite sides.",
-    "finding": "SEP and 81 were too broad. Use a narrower printing candidate, widen province tracking and space the control digits. Exact stroke weight and counter shapes remain unresolved at this resolution.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "finding": "Use a limited independently authored wide province alphabet supported by larger 1981/82 photographs; keep unobserved-month placements unchanged. Base role shape/size; province text is fixed. Calibrate the two fixed province words to their pinned whole-line extents; retain uncertainty in the 8\u20139 px-high source. The larger photographs, not this tiny crop, support the capital forms. Placement calibrated only to the photographed JUN specimen; not a claim of a historical month-specific printing design.",
+    "fontEvidence": "The fixed province words use an independently authored twelve-capital wide reconstruction, corroborated by larger 1981 and 1982 photographs. Month, year and control retain separate approximate candidates. No historical typeface identification. See docs/research/bc-decal-residuals/province-placement.",
     "runs": {
       "decal-month": [
         {
@@ -612,17 +660,17 @@
           "x": 0.57,
           "baseline": 0.235,
           "cap": 0.11,
-          "width": 0.3,
-          "profile": "normal",
-          "tracking": 12
+          "width": 0.35,
+          "profile": "province-wide-1981-reconstruction",
+          "tracking": 0
         },
         {
           "x": 0.57,
           "baseline": 0.415,
           "cap": 0.11,
-          "width": 0.33,
-          "profile": "normal",
-          "tracking": 12
+          "width": 0.43,
+          "profile": "province-wide-1981-reconstruction",
+          "tracking": 0
         }
       ],
       "decal-serial": [
@@ -642,12 +690,39 @@
       249,
       75
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 6,
+        "throughMonth": 6,
+        "evidence": "Calibrate the two fixed province words to their pinned whole-line extents; retain uncertainty in the 8\u20139 px-high source. The larger photographs, not this tiny crop, support the capital forms. Placement calibrated only to the photographed JUN specimen; not a claim of a historical month-specific printing design. https://www.bcpl8s.ca/images/Decals/Passenger/1981-59031991.jpg https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_October_1981.jpg https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_July_1982.jpg",
+        "runs": {
+          "decal-legend": [
+            {
+              "x": 0.577587,
+              "baseline": 0.266667,
+              "cap": 0.125,
+              "width": 0.35,
+              "profile": "province-wide-1981-reconstruction",
+              "tracking": 0
+            },
+            {
+              "x": 0.577587,
+              "baseline": 0.426667,
+              "cap": 0.125,
+              "width": 0.43,
+              "profile": "province-wide-1981-reconstruction",
+              "tracking": 0
+            }
+          ]
+        }
+      }
+    ]
   },
   "1982": {
     "lineBreaks": "BRITISH / COLUMBIA below central control; month and year on opposite sides.",
-    "finding": "Give JUN and 82 narrower printing candidates; retain the small tracked province stack beneath the boxed control. Exact font weight remains unresolved.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "finding": "Use a limited independently authored wide province alphabet supported by larger 1981/82 photographs; keep unobserved-month placements unchanged. Base role shape/size; province text is fixed. Calibrate the two fixed province words to their pinned whole-line extents; retain uncertainty in the 8\u20139 px-high source. The larger photographs, not this tiny crop, support the capital forms. Placement calibrated only to the photographed JAN specimen; not a claim of a historical month-specific printing design.",
+    "fontEvidence": "The fixed province words use an independently authored twelve-capital wide reconstruction, corroborated by larger 1981 and 1982 photographs. Month, year and control retain separate approximate candidates. No historical typeface identification. See docs/research/bc-decal-residuals/province-placement.",
     "runs": {
       "decal-month": [
         {
@@ -674,17 +749,17 @@
           "x": 0.57,
           "baseline": 0.7,
           "cap": 0.085,
-          "width": 0.3,
-          "profile": "normal",
-          "tracking": 12
+          "width": 0.35,
+          "profile": "province-wide-1981-reconstruction",
+          "tracking": 0
         },
         {
           "x": 0.57,
           "baseline": 0.83,
           "cap": 0.085,
-          "width": 0.33,
-          "profile": "normal",
-          "tracking": 12
+          "width": 0.43,
+          "profile": "province-wide-1981-reconstruction",
+          "tracking": 0
         }
       ],
       "decal-serial": [
@@ -704,12 +779,39 @@
       251,
       75
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 1,
+        "throughMonth": 1,
+        "evidence": "Calibrate the two fixed province words to their pinned whole-line extents; retain uncertainty in the 8\u20139 px-high source. The larger photographs, not this tiny crop, support the capital forms. Placement calibrated only to the photographed JAN specimen; not a claim of a historical month-specific printing design. https://www.bcpl8s.ca/images/Decals/Passenger/1982-66134375.jpg https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_October_1981.jpg https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_July_1982.jpg",
+        "runs": {
+          "decal-legend": [
+            {
+              "x": 0.58147,
+              "baseline": 0.693333,
+              "cap": 0.118,
+              "width": 0.35,
+              "profile": "province-wide-1981-reconstruction",
+              "tracking": 0
+            },
+            {
+              "x": 0.58349,
+              "baseline": 0.853333,
+              "cap": 0.118,
+              "width": 0.43,
+              "profile": "province-wide-1981-reconstruction",
+              "tracking": 0
+            }
+          ]
+        }
+      }
+    ]
   },
   "1983": {
     "lineBreaks": "BRITISH / COLUMBIA above central control; month and year on opposite sides.",
-    "finding": "Widen the province stack and keep month/year proportions within their individual panels. Counter contours remain approximate. The photographed control is unreadable and remains explicitly illustrative. November 2026 correction: restore a positive left inset and raise JUN toward its photographed baseline. The remaining native month-width difference is retained as a separate contour question.",
-    "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
+    "finding": "Exact JUN uses narrower U/N and a source-supported J hook, with natural advances and separate placement calibration. Equal-height run width ratio improves from 1.074 to 1.002. This resolves the primary width/spacing residual; one-pixel edges, print weight and unrectified photographic variation remain uncertain. Other month profiles are retained. The faint control is not glyph-scored.",
+    "fontEvidence": "Independent J/U/N construction, not an identified historical typeface. J/U corroborated by small and larger JUL specimens; N by JAN. All observed occurrences and threshold checks remain in docs/research/bc-decal-residuals/lettering.",
     "runs": {
       "decal-month": [
         {
@@ -770,12 +872,31 @@
       247,
       75
     ],
-    "reviewedOn": "2026-11-07"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 6,
+        "throughMonth": 6,
+        "evidence": "Observed JUN 85138416 (control tentative). J/U/N are separate clean constructions; J/U have corroboration from two JUL photographs and N from JAN. This exact-month geometry preserves positive clearance while fitting natural glyph advances. No claim that specimen placement is a production-wide monthly rule.",
+        "runs": {
+          "decal-month": [
+            {
+              "x": 0.189,
+              "baseline": 0.775,
+              "cap": 0.6275,
+              "width": 0.36,
+              "profile": "panel-1983-jun-reconstruction",
+              "tracking": 0
+            }
+          ]
+        }
+      }
+    ]
   },
   "1987": {
     "lineBreaks": "BRITISH / COLUMBIA above central control; month and year on opposite sides.",
-    "finding": "JAN and 87 were too heavy and JAN too short. Retain the supplied narrow printing candidate, wider province spacing and black control ink. Exact stroke weight and counter contours remain uncertain at source resolution; the supplied narrow printing candidate is retained.",
-    "fontEvidence": "Occurrence-level photographic overlays support oswald-600 for decal-month. Visual reconstruction candidate; historical typeface unconfirmed. Native proportions retained; no per-character horizontal scaling.",
+    "finding": "Choose native Archivo 900 at its width 75 design axis for the visibly heavy small capitals. This is a visual candidate, not historical font identification. Base role shape/size; province text is fixed. Resize and place the province words at observed whole-line extent, retaining native glyph proportions. The observed control is translated separately. Placement calibrated only to the photographed FEB specimen; not a claim of a historical month-specific printing design.",
+    "fontEvidence": "The heavier province words use existing native Archivo 900 outlines at the font width-axis value 75, supported by an enlarged independent source. This is a visual candidate; it does not identify the historical font. Other printed roles retain their separate profiles. See docs/research/bc-decal-residuals/province-placement.",
     "runs": {
       "decal-month": [
         {
@@ -806,16 +927,16 @@
           "x": 0.57,
           "baseline": 0.235,
           "cap": 0.11,
-          "width": 0.3,
-          "profile": "normal",
+          "width": 0.35,
+          "profile": "archivo-900-wdth75",
           "tracking": 12
         },
         {
           "x": 0.57,
           "baseline": 0.415,
           "cap": 0.11,
-          "width": 0.33,
-          "profile": "normal",
+          "width": 0.35,
+          "profile": "archivo-900-wdth75",
           "tracking": 12
         }
       ],
@@ -836,11 +957,48 @@
       239,
       75
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 2,
+        "throughMonth": 2,
+        "evidence": "Resize and place the province words at observed whole-line extent, retaining native glyph proportions. The observed control is translated separately. Placement calibrated only to the photographed FEB specimen; not a claim of a historical month-specific printing design. https://www.bcpl8s.ca/images/Decals/Passenger/1987-22687871.jpg https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_February_1987.jpg",
+        "runs": {
+          "decal-legend": [
+            {
+              "x": 0.588873,
+              "baseline": 0.3444,
+              "cap": 0.13,
+              "width": 0.35,
+              "profile": "archivo-900-wdth75",
+              "tracking": 12
+            },
+            {
+              "x": 0.585954,
+              "baseline": 0.531066,
+              "cap": 0.13,
+              "width": 0.35,
+              "profile": "archivo-900-wdth75",
+              "tracking": 12
+            }
+          ],
+          "decal-serial": [
+            {
+              "x": 0.603453,
+              "baseline": 0.849367,
+              "cap": 0.15,
+              "width": 0.31,
+              "profile": "control",
+              "tracking": 10
+            }
+          ]
+        }
+      }
+    ]
   },
   "1988": {
     "lineBreaks": "BRITISH / COLUMBIA above central control; month and year on opposite sides.",
-    "finding": "FEB proportions are broadly supported; enlarge its cap height. Province is too large; use a smaller, narrower stack and a wider, lighter control.",
+    "finding": "Retain the approximate province face; correct the clearly undersized/raised DEC stack only. Its blur prevents a confident new contour construction. Placement calibrated only to the photographed DEC specimen; not a claim of a historical month-specific printing design.",
     "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
     "runs": {
       "decal-month": [
@@ -898,7 +1056,34 @@
       247,
       75
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 12,
+        "throughMonth": 12,
+        "evidence": "Retain the approximate province face; correct the clearly undersized/raised DEC stack only. Its blur prevents a confident new contour construction. Placement calibrated only to the photographed DEC specimen; not a claim of a historical month-specific printing design. https://www.bcpl8s.ca/images/Decals/Passenger/1988-21533872.jpg",
+        "runs": {
+          "decal-legend": [
+            {
+              "x": 0.57037,
+              "baseline": 0.30367,
+              "cap": 0.095,
+              "width": 0.26,
+              "profile": "normal",
+              "tracking": 0
+            },
+            {
+              "x": 0.570215,
+              "baseline": 0.450336,
+              "cap": 0.095,
+              "width": 0.26,
+              "profile": "normal",
+              "tracking": 0
+            }
+          ]
+        }
+      }
+    ]
   },
   "1984": {
     "lineBreaks": "Two vertical province lines at left; vertical control at right.",
@@ -967,8 +1152,8 @@
   },
   "1985": {
     "lineBreaks": "BRITISH COLUMBIA as one lower line below centered control.",
-    "finding": "Bottom province was too large; reduce its cap height. Move the control down between the date groups and use lighter narrow digits.",
-    "fontEvidence": "Occurrence-level photographic overlays support anton-400 for decal-month. Visual reconstruction candidate; historical typeface unconfirmed. Native proportions retained; no per-character horizontal scaling.",
+    "finding": "Choose native Archivo 900 at its width 75 design axis for the visibly heavy small capitals. This is a visual candidate, not historical font identification. Base role shape/size; province text is fixed. Resize and place the province words at observed whole-line extent, retaining native glyph proportions. The observed control is translated separately. Placement calibrated only to the photographed JUL specimen; not a claim of a historical month-specific printing design.",
+    "fontEvidence": "The heavier province words use existing native Archivo 900 outlines at the font width-axis value 75, supported by an enlarged independent source. This is a visual candidate; it does not identify the historical font. Other printed roles retain their separate profiles. See docs/research/bc-decal-residuals/province-placement.",
     "runs": {
       "decal-month": [
         {
@@ -996,7 +1181,7 @@
           "baseline": 0.83,
           "cap": 0.075,
           "width": 0.49,
-          "profile": "normal",
+          "profile": "archivo-900-wdth75",
           "tracking": 2
         }
       ],
@@ -1017,7 +1202,26 @@
       244,
       75
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 7,
+        "throughMonth": 7,
+        "evidence": "Resize and place the province words at observed whole-line extent, retaining native glyph proportions. The observed control is translated separately. Placement calibrated only to the photographed JUL specimen; not a claim of a historical month-specific printing design. https://www.bcpl8s.ca/images/Decals/Passenger/1985-62333627.jpg https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_February_1985.jpg",
+        "runs": {
+          "decal-legend": [
+            {
+              "x": 0.531257,
+              "baseline": 0.798256,
+              "cap": 0.1,
+              "width": 0.49,
+              "profile": "archivo-900-wdth75",
+              "tracking": 2
+            }
+          ]
+        }
+      }
+    ]
   },
   "1986": {
     "lineBreaks": "One BRITISH COLUMBIA line over JUL; linked EXPO 86 at right.",
@@ -1075,7 +1279,7 @@
   },
   "1989": {
     "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
-    "finding": "Province was slightly undersized; control was too narrow. Use native bold sans control and lift its baseline.",
+    "finding": "Correct the observed control location by translation only. Native glyph shape, cap height and spacing are preserved; other months keep their established placement. Placement calibrated only to the photographed APR specimen; not a claim of a historical month-specific printing design.",
     "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
     "runs": {
       "decal-month": [
@@ -1135,11 +1339,30 @@
       245,
       75
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 4,
+        "throughMonth": 4,
+        "evidence": "Correct the observed control location by translation only. Native glyph shape, cap height and spacing are preserved; other months keep their established placement. Placement calibrated only to the photographed APR specimen; not a claim of a historical month-specific printing design. https://www.bcpl8s.ca/images/Decals/Passenger/1989-33187934.jpg",
+        "runs": {
+          "decal-serial": [
+            {
+              "x": 0.589021,
+              "baseline": 0.649216,
+              "cap": 0.125,
+              "width": 0.275,
+              "profile": "normal",
+              "tracking": 0
+            }
+          ]
+        }
+      }
+    ]
   },
   "1990": {
     "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
-    "finding": "Province/control stack was too low and compressed. Raise the control and restore its native bold width.",
+    "finding": "Correct the observed control location by translation only. Native glyph shape, cap height and spacing are preserved; other months keep their established placement. Placement calibrated only to the photographed JAN specimen; not a claim of a historical month-specific printing design.",
     "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
     "runs": {
       "decal-month": [
@@ -1199,11 +1422,30 @@
       245,
       75
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 1,
+        "throughMonth": 1,
+        "evidence": "Correct the observed control location by translation only. Native glyph shape, cap height and spacing are preserved; other months keep their established placement. Placement calibrated only to the photographed JAN specimen; not a claim of a historical month-specific printing design. https://www.bcpl8s.ca/images/Decals/Passenger/1990-30863010.jpg https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_January_1990.jpg",
+        "runs": {
+          "decal-serial": [
+            {
+              "x": 0.560867,
+              "baseline": 0.88939,
+              "cap": 0.125,
+              "width": 0.275,
+              "profile": "normal",
+              "tracking": 0
+            }
+          ]
+        }
+      }
+    ]
   },
   "1991": {
     "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
-    "finding": "The wrapping is correct. Increase province size slightly and widen the control using native bold sans outlines.",
+    "finding": "Correct the observed control location by translation only. Native glyph shape, cap height and spacing are preserved; other months keep their established placement. Placement calibrated only to the photographed JUN specimen; not a claim of a historical month-specific printing design.",
     "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
     "runs": {
       "decal-month": [
@@ -1263,11 +1505,30 @@
       249,
       75
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 6,
+        "throughMonth": 6,
+        "evidence": "Correct the observed control location by translation only. Native glyph shape, cap height and spacing are preserved; other months keep their established placement. Placement calibrated only to the photographed JUN specimen; not a claim of a historical month-specific printing design. https://www.bcpl8s.ca/images/Decals/Passenger/1991-55232623.jpg https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_January_1991.jpg",
+        "runs": {
+          "decal-serial": [
+            {
+              "x": 0.599328,
+              "baseline": 0.782727,
+              "cap": 0.125,
+              "width": 0.275,
+              "profile": "normal",
+              "tracking": 0
+            }
+          ]
+        }
+      }
+    ]
   },
   "1992": {
     "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
-    "finding": "JUN was slightly short; raise its cap height. Widen the province and control without changing their line breaks.",
+    "finding": "Correct the observed control location by translation only. Native glyph shape, cap height and spacing are preserved; other months keep their established placement. Placement calibrated only to the photographed OCT specimen; not a claim of a historical month-specific printing design.",
     "fontEvidence": "Occurrence-level photographic overlays support anton-400 for decal-month. Visual reconstruction candidate; historical typeface unconfirmed. Native proportions retained; no per-character horizontal scaling.",
     "runs": {
       "decal-month": [
@@ -1331,11 +1592,30 @@
       245,
       75
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 10,
+        "throughMonth": 10,
+        "evidence": "Correct the observed control location by translation only. Native glyph shape, cap height and spacing are preserved; other months keep their established placement. Placement calibrated only to the photographed OCT specimen; not a claim of a historical month-specific printing design. https://www.bcpl8s.ca/images/Decals/Passenger/1992-59693121.jpg",
+        "runs": {
+          "decal-serial": [
+            {
+              "x": 0.544326,
+              "baseline": 0.782555,
+              "cap": 0.125,
+              "width": 0.275,
+              "profile": "normal",
+              "tracking": 0
+            }
+          ]
+        }
+      }
+    ]
   },
   "1993": {
     "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
-    "finding": "NOV and 93 are supported condensed candidates. Raise and widen the control; reduce the gap between province lines.",
+    "finding": "Correct the observed control location by translation only. Native glyph shape, cap height and spacing are preserved; other months keep their established placement. Placement calibrated only to the photographed OCT specimen; not a claim of a historical month-specific printing design.",
     "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
     "runs": {
       "decal-month": [
@@ -1395,7 +1675,26 @@
       247,
       75
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 10,
+        "throughMonth": 10,
+        "evidence": "Correct the observed control location by translation only. Native glyph shape, cap height and spacing are preserved; other months keep their established placement. Placement calibrated only to the photographed OCT specimen; not a claim of a historical month-specific printing design. https://www.bcpl8s.ca/images/Decals/Passenger/1993-79096980.jpg",
+        "runs": {
+          "decal-serial": [
+            {
+              "x": 0.546727,
+              "baseline": 0.769216,
+              "cap": 0.125,
+              "width": 0.275,
+              "profile": "normal",
+              "tracking": 0
+            }
+          ]
+        }
+      }
+    ]
   },
   "1994": {
     "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
@@ -1463,7 +1762,7 @@
   },
   "1995": {
     "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
-    "finding": "Province/control are slightly narrow and low. Increase province cap and use native bold sans digits for the control.",
+    "finding": "Correct the observed control location by translation only. Native glyph shape, cap height and spacing are preserved; other months keep their established placement. Placement calibrated only to the photographed NOV specimen; not a claim of a historical month-specific printing design.",
     "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
     "runs": {
       "decal-month": [
@@ -1523,11 +1822,30 @@
       246,
       75
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 11,
+        "throughMonth": 11,
+        "evidence": "Correct the observed control location by translation only. Native glyph shape, cap height and spacing are preserved; other months keep their established placement. Placement calibrated only to the photographed NOV specimen; not a claim of a historical month-specific printing design. https://www.bcpl8s.ca/images/Decals/Passenger/1995-82287425.jpg",
+        "runs": {
+          "decal-serial": [
+            {
+              "x": 0.561049,
+              "baseline": 0.76939,
+              "cap": 0.125,
+              "width": 0.275,
+              "profile": "normal",
+              "tracking": 0
+            }
+          ]
+        }
+      }
+    ]
   },
   "1996": {
     "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
-    "finding": "MAY was visibly short because width fitting reduced the entire run. Give the month more horizontal room and a taller cap.",
+    "finding": "Correct the observed control location by translation only. Native glyph shape, cap height and spacing are preserved; other months keep their established placement. Placement calibrated only to the photographed MAR specimen; not a claim of a historical month-specific printing design.",
     "fontEvidence": "Online gallery corroboration and occurrence-level native candidate comparison; visually supported reconstruction, not confirmed historical font identity. See docs/research/decal-online-analysis.",
     "runs": {
       "decal-month": [
@@ -1587,7 +1905,26 @@
       242,
       75
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 3,
+        "throughMonth": 3,
+        "evidence": "Correct the observed control location by translation only. Native glyph shape, cap height and spacing are preserved; other months keep their established placement. Placement calibrated only to the photographed MAR specimen; not a claim of a historical month-specific printing design. https://www.bcpl8s.ca/images/Decals/Passenger/1996-22710492.jpg",
+        "runs": {
+          "decal-serial": [
+            {
+              "x": 0.593218,
+              "baseline": 0.702555,
+              "cap": 0.125,
+              "width": 0.275,
+              "profile": "normal",
+              "tracking": 0
+            }
+          ]
+        }
+      }
+    ]
   },
   "1997": {
     "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
@@ -1719,8 +2056,8 @@
   },
   "1999": {
     "lineBreaks": "BRITISH / COLUMBIA above control; month at left, two-digit year at right.",
-    "finding": "MAY was too short; give it more room. Keep the lighter control candidate on this specimen and expand its spacing. MAY now has an exact-month reconstruction and source-supported AY spacing; other month forms are unchanged. Residual 1999 width uncertainty remains explicit.",
-    "fontEvidence": "MAY alone uses independently authored M/A/Y contours and advances with explicit AY pair spacing. Other months retain their prior candidates. The 1998 and thick-border 1999 sources are compared separately; the residual 1999 width difference does not establish identical historical printing. See docs/research/bc-modern-numerals/bordered-may.md.",
+    "finding": "Replace the shared 1998 MAY master only for thick-border 1999 MAY with independently authored narrower glyphs and a shallower M notch. Equal-height run width ratio improves 1.075 to 1.000; threshold variation places the revised ratio roughly 0.989\u20131.012, so this is a corrected proportion, not an exact contour claim. Y remains lower confidence and other months retain their prior profiles.",
+    "fontEvidence": "Independent observed-letter 1999 M/A/Y reconstruction. Authored widths 74/57.5/51 and advances 75.5/60.5/53 with AY:-7.5. M/A have separate 1999 corroboration; Y has one small source. No x-only font compression or historical typeface attribution. See docs/research/bc-decal-residuals/lettering.",
     "runs": {
       "decal-month": [
         {
@@ -1784,7 +2121,7 @@
       {
         "fromMonth": 5,
         "throughMonth": 5,
-        "evidence": "Photographed MAY only; reconstructed M/A/Y and AY spacing. Other months retain the existing profile. Source-specific size/placement and residual width limits are recorded in docs/research/bc-modern-numerals.",
+        "evidence": "MAY-only 1999 construction. Independent MAR corroborates narrower M/A; a larger independent JAN photograph corroborates A. Y still relies on the small MAY photograph. The alternate same-control crop is treated as a duplicate, not independent proof. 1998 Type II remains on its existing master.",
         "runs": {
           "decal-month": [
             {
@@ -1792,11 +2129,11 @@
               "baseline": 0.836,
               "cap": 0.671,
               "width": 0.4,
-              "profile": "bordered-may-reconstruction",
+              "profile": "thick-1999-may-reconstruction",
               "tracking": 0,
               "anchor": "start",
               "kerning": {
-                "AY": -14
+                "AY": -7.5
               }
             }
           ]
@@ -2307,8 +2644,8 @@
   },
   "2004": {
     "lineBreaks": "Tiny BRITISH / COLUMBIA between month/year; control beneath right group.",
-    "finding": "Calibrated MAR, year, two province words and control independently against MAR 42591320: increase date/legend painted heights, raise year/province, and move the control right. Small legend contours and year width remain approximate; whole-run fitting is preserved.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "finding": "Broaden the fixed 04 by independently authored 0/4 contours and advances. Six month photographs reduce the equal-height run discrepancy from 10.4\u201312.7% narrow to between 2.3% narrow and 0.2% broad. MAR is calibrated to its photographed composition; other months receive only the small base clearance accommodation documented below. Province lettering and colour remain separate evidence questions. The rounded substrate uses an approximate radius of 0.08 times decal height from the visible silhouette; exact physical cutting dimensions remain unknown. The shared non-MAR year anchor moves from 0.732 to 0.745 to retain a small positive province/year gap after broadening the glyphs. This family clearance adjustment preserves its cap, baseline and kerning; the separately calibrated MAR variant is unchanged.",
+    "fontEvidence": "Limited clean 0/4 construction supported by six small photographs. Whole-run extent is stable enough for width correction, but the digits touch under several segmentation thresholds, so per-glyph scores are withheld. Tiny counter and edge precision remain provisional. No horizontal font squeeze or historical typeface attribution. See docs/research/bc-decal-residuals/lettering.",
     "runs": {
       "decal-month": [
         {
@@ -2323,12 +2660,15 @@
       ],
       "decal-year": [
         {
-          "x": 0.732,
+          "x": 0.745,
           "baseline": 0.683,
           "cap": 0.515,
           "width": 0.2,
-          "profile": "heavy-year",
-          "tracking": 0
+          "profile": "solid-2004-year-reconstruction",
+          "tracking": 0,
+          "kerning": {
+            "04": -1.5
+          }
         }
       ],
       "decal-legend": [
@@ -2366,11 +2706,36 @@
       255,
       75
     ],
-    "reviewedOn": "2026-11-07"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 3,
+        "throughMonth": 3,
+        "evidence": "Photographed MAR 42591320 geometry only. Fixed 04 shape has independent JAN/FEB/JUL/NOV/DEC corroboration; placement is calibrated separately and is not asserted to be a historical month-specific print design.",
+        "runs": {
+          "decal-year": [
+            {
+              "x": 0.75,
+              "baseline": 0.688,
+              "cap": 0.536,
+              "width": 0.2,
+              "profile": "solid-2004-year-reconstruction",
+              "tracking": 0,
+              "kerning": {
+                "04": -1.5
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "layout": {
+      "cornerRadius": 0.08
+    }
   },
   "2005": {
     "lineBreaks": "Tiny BRITISH / COLUMBIA between month/year; control underneath at right.",
-    "finding": "Lower JAN, shrink the province stack and move it down between date groups; preserve black control.",
+    "finding": "The rounded substrate uses an approximate radius of 0.1 times decal height from the visible silhouette; exact physical cutting dimensions remain unknown.",
     "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
     "runs": {
       "decal-month": [
@@ -2430,12 +2795,15 @@
       232,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "layout": {
+      "cornerRadius": 0.1
+    }
   },
   "2006": {
     "lineBreaks": "Tiny BRITISH / COLUMBIA between month/year; control underneath at right.",
-    "finding": "Lower FEB and the tiny province; preserve the broad native month shapes supported by the photograph.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "finding": "Use native Archivo 900 width 75 for the heavy province capitals supported by the 1855\u00d7715 APR photograph. Nominal cap follows its province/year height proportion. Retain existing placement; the rejected tiny MAY masks do not drive an exact translation. Province shape/nominal size for 2006 only; existing MAY placement retained. No neighbouring-year generalization. The rounded substrate uses an approximate radius of 0.1 times decal height from the visible silhouette; exact physical cutting dimensions remain unknown. Damage or tight cropping lowers radius confidence. A 2.5-unit province translation at 100-unit decal height provides clearance for MAR/MAY and the fixed year while preserving the supported native contours, cap height and spacing; this layout constraint is not derived from the rejected MAY mask.",
+    "fontEvidence": "The heavier province words use existing native Archivo 900 outlines at the font width-axis value 75, supported by an enlarged independent source. This is a visual candidate; it does not identify the historical font. Other printed roles retain their separate profiles. See docs/research/bc-decal-residuals/province-placement.",
     "runs": {
       "decal-month": [
         {
@@ -2461,19 +2829,19 @@
       ],
       "decal-legend": [
         {
-          "x": 0.625,
+          "x": 0.63587,
           "baseline": 0.515,
-          "cap": 0.055,
-          "width": 0.16,
-          "profile": "normal",
+          "cap": 0.067,
+          "width": 0.22,
+          "profile": "archivo-900-wdth75",
           "tracking": 0
         },
         {
-          "x": 0.625,
+          "x": 0.63587,
           "baseline": 0.595,
-          "cap": 0.055,
-          "width": 0.16,
-          "profile": "normal",
+          "cap": 0.067,
+          "width": 0.22,
+          "profile": "archivo-900-wdth75",
           "tracking": 0
         }
       ],
@@ -2494,11 +2862,14 @@
       228,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "layout": {
+      "cornerRadius": 0.1
+    }
   },
   "2007": {
     "lineBreaks": "Tiny BRITISH / COLUMBIA between month/year; control underneath at right.",
-    "finding": "Lower JUN and make the tiny province more compact. Keep the control below the right group.",
+    "finding": "The rounded substrate uses an approximate radius of 0.1 times decal height from the visible silhouette; exact physical cutting dimensions remain unknown.",
     "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
     "runs": {
       "decal-month": [
@@ -2558,11 +2929,14 @@
       226,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "layout": {
+      "cornerRadius": 0.1
+    }
   },
   "2008": {
     "lineBreaks": "Tiny BRITISH / COLUMBIA between month/year; control underneath at right.",
-    "finding": "The photographed AUG uses lighter native Bebas Neue 400 outlines at source-supported painted height; year 08 uses native Oswald 400. The exact AUG override preserves other month candidates. The source crop excludes adjacent province ink; the 0 curve remains approximate. The exact AUG override also translates the control and province upward; tiny province contours and width remain approximate.",
+    "finding": "The rounded substrate uses an approximate radius of 0.1 times decal height from the visible silhouette; exact physical cutting dimensions remain unknown. Damage or tight cropping lowers radius confidence.",
     "fontEvidence": "Native outline candidates selected after independent glyph and whole-run comparison; no independent x scaling or historical font identification. Other month names are not established by the AUG source. See docs/research/bc-late-two-digit-printing/.",
     "runs": {
       "decal-month": [
@@ -2670,11 +3044,14 @@
           ]
         }
       }
-    ]
+    ],
+    "layout": {
+      "cornerRadius": 0.1
+    }
   },
   "2009": {
     "lineBreaks": "BRITISH / COLUMBIA between month and two-digit year; barcode/control footer.",
-    "finding": "The province stack is tall and very condensed; replace the broad small bold sans with a native condensed candidate.",
+    "finding": "Raise COLUMBIA to the compact observed line gap; retain the existing native face and cap. BRITISH remains visibly broad and is explicitly unresolved. Exact photographed APR placement; merge with existing month variant roles/layout. The rounded substrate uses an approximate radius of 0.1 times decal height from the visible silhouette; exact physical cutting dimensions remain unknown.",
     "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
     "runs": {
       "decal-month": [
@@ -2734,12 +3111,42 @@
       230,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "layout": {
+      "cornerRadius": 0.1
+    },
+    "monthVariants": [
+      {
+        "fromMonth": 4,
+        "throughMonth": 4,
+        "evidence": "Raise COLUMBIA to the compact observed line gap; retain the existing native face and cap. BRITISH remains visibly broad and is explicitly unresolved. Exact photographed APR placement; merge with existing month variant roles/layout. https://www.bcpl8s.ca/images/Decals/Passenger/2009-53054167.jpg",
+        "runs": {
+          "decal-legend": [
+            {
+              "x": 0.57,
+              "baseline": 0.405,
+              "cap": 0.095,
+              "width": 0.18,
+              "profile": "condensed-medium",
+              "tracking": 0
+            },
+            {
+              "x": 0.566673,
+              "baseline": 0.499053,
+              "cap": 0.095,
+              "width": 0.18,
+              "profile": "condensed-medium",
+              "tracking": 0
+            }
+          ]
+        }
+      }
+    ]
   },
   "2010": {
     "lineBreaks": "BRITISH / COLUMBIA between month and two-digit year; barcode/control footer.",
-    "finding": "Province was much too small and broad. Increase its height with medium condensed glyphs; align JAN and year higher.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "finding": "Use the independently authored 12-capital tall province subset supported by the large 2012 original and corroborated whole-word proportions in 2010\u201313. Fixed province alphabet/nominal size across the corroborated 2010\u201313 subset; unobserved-month positions retained. Calibrate the province stack using accepted whole-line extents. Preserve all unrelated existing month roles. In 2010/2012, uniformly reduce/place the date and restore the observed barcode gap; native date outlines remain unchanged. Exact photographed JAN placement; merge with existing month variant roles/layout. The photographed square substrate replaces the previous generic rounding; physical cutting tolerances remain unknown.",
+    "fontEvidence": "The fixed province words use a limited independently authored tall-capital reconstruction supported by the enlarged 2012 AUG photograph and corroborating 2010\u20132013 word proportions. Other roles retain their independently reviewed candidates. Slight photographic tilt and print spread remain; historical font identity is unconfirmed. See docs/research/bc-decal-residuals/province-placement.",
     "runs": {
       "decal-month": [
         {
@@ -2767,17 +3174,17 @@
         {
           "x": 0.57,
           "baseline": 0.405,
-          "cap": 0.12,
-          "width": 0.23,
-          "profile": "condensed-medium",
+          "cap": 0.13,
+          "width": 0.25,
+          "profile": "province-tall-2010-reconstruction",
           "tracking": 0
         },
         {
           "x": 0.57,
           "baseline": 0.56,
-          "cap": 0.12,
-          "width": 0.24,
-          "profile": "condensed-medium",
+          "cap": 0.13,
+          "width": 0.29,
+          "profile": "province-tall-2010-reconstruction",
           "tracking": 0
         }
       ],
@@ -2798,12 +3205,82 @@
       237,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "layout": {
+      "cornerRadius": 0
+    },
+    "monthVariants": [
+      {
+        "fromMonth": 1,
+        "throughMonth": 1,
+        "evidence": "Calibrate the province stack using accepted whole-line extents. Preserve all unrelated existing month roles. In 2010/2012, uniformly reduce/place the date and restore the observed barcode gap; native date outlines remain unchanged. Exact photographed JAN placement; merge with existing month variant roles/layout. https://www.bcpl8s.ca/images/Decals/Passenger/2010.jpg https://commons.wikimedia.org/wiki/File:ICBC_Aug_2012_Registration_Decal.png",
+        "runs": {
+          "decal-legend": [
+            {
+              "x": 0.584389,
+              "baseline": 0.345609,
+              "cap": 0.133,
+              "width": 0.25,
+              "profile": "province-tall-2010-reconstruction",
+              "tracking": 0
+            },
+            {
+              "x": 0.586608,
+              "baseline": 0.508874,
+              "cap": 0.133,
+              "width": 0.29,
+              "profile": "province-tall-2010-reconstruction",
+              "tracking": 0
+            }
+          ],
+          "decal-serial": [
+            {
+              "x": 0.718028,
+              "baseline": 0.872788,
+              "cap": 0.18,
+              "width": 0.42,
+              "profile": "control-bold",
+              "tracking": 0
+            }
+          ],
+          "decal-month": [
+            {
+              "x": 0.022632,
+              "baseline": 0.631436,
+              "cap": 0.580425,
+              "width": 0.39,
+              "profile": "heavy-month",
+              "tracking": 0,
+              "anchor": "start"
+            }
+          ],
+          "decal-year": [
+            {
+              "x": 0.986087,
+              "baseline": 0.621457,
+              "cap": 0.569446,
+              "width": 0.27,
+              "profile": "heavy-year",
+              "tracking": 0,
+              "anchor": "end"
+            }
+          ]
+        },
+        "layout": {
+          "barcode": {
+            "x": -0.047016,
+            "y": 0.683673,
+            "width": 0.606011,
+            "height": 0.214286
+          }
+        }
+      }
+    ]
   },
   "2011": {
     "lineBreaks": "BRITISH / COLUMBIA between month and two-digit year; barcode/control footer.",
-    "finding": "The photographed MAY retains its existing heavy-month contours, with its baseline restored upward. Year 11 uses source-supported cap height and a -4-cap-unit 11 pair adjustment. Other month placements retain their prior candidates. The photographed month override also calibrates legend/control translation and the actual barcode footprint; other month layouts retain their earlier positions.",
-    "fontEvidence": "MAY already agrees closely at equal painted height; this is principally a placement correction. Year 11 retains its existing glyph profile. No historical typeface identity is claimed. See docs/research/bc-late-two-digit-printing/.",
+    "finding": "Use the independently authored 12-capital tall province subset supported by the large 2012 original and corroborated whole-word proportions in 2010\u201313. Fixed province alphabet/nominal size across the corroborated 2010\u201313 subset; unobserved-month positions retained. Calibrate the province stack using accepted whole-line extents. Preserve all unrelated existing month roles. In 2010/2012, uniformly reduce/place the date and restore the observed barcode gap; native date outlines remain unchanged. Exact photographed MAY placement; merge with existing month variant roles/layout. The photographed square substrate replaces the previous generic rounding; physical cutting tolerances remain unknown.",
+    "fontEvidence": "The fixed province words use a limited independently authored tall-capital reconstruction supported by the enlarged 2012 AUG photograph and corroborating 2010\u20132013 word proportions. Other roles retain their independently reviewed candidates. Slight photographic tilt and print spread remain; historical font identity is unconfirmed. See docs/research/bc-decal-residuals/province-placement.",
     "runs": {
       "decal-month": [
         {
@@ -2834,17 +3311,17 @@
         {
           "x": 0.57,
           "baseline": 0.405,
-          "cap": 0.12,
-          "width": 0.23,
-          "profile": "condensed-bold",
+          "cap": 0.13,
+          "width": 0.25,
+          "profile": "province-tall-2010-reconstruction",
           "tracking": 0
         },
         {
           "x": 0.57,
           "baseline": 0.56,
-          "cap": 0.12,
-          "width": 0.24,
-          "profile": "condensed-bold",
+          "cap": 0.13,
+          "width": 0.29,
+          "profile": "province-tall-2010-reconstruction",
           "tracking": 0
         }
       ],
@@ -2870,7 +3347,7 @@
       {
         "fromMonth": 5,
         "throughMonth": 5,
-        "evidence": "Independent source-height comparison of the photographed 2011 month; only this observed month is calibrated. See docs/research/bc-late-two-digit-printing/.",
+        "evidence": "Calibrate the province stack using accepted whole-line extents. Preserve all unrelated existing month roles. In 2010/2012, uniformly reduce/place the date and restore the observed barcode gap; native date outlines remain unchanged. Exact photographed MAY placement; merge with existing month variant roles/layout. https://www.bcpl8s.ca/images/Decals/Passenger/2011-24516329.jpg https://commons.wikimedia.org/wiki/File:ICBC_Aug_2012_Registration_Decal.png",
         "runs": {
           "decal-month": [
             {
@@ -2885,19 +3362,19 @@
           ],
           "decal-legend": [
             {
-              "x": 0.5761,
-              "baseline": 0.3586,
-              "cap": 0.12,
-              "width": 0.23,
-              "profile": "condensed-bold",
+              "x": 0.578348,
+              "baseline": 0.3587,
+              "cap": 0.13,
+              "width": 0.25,
+              "profile": "province-tall-2010-reconstruction",
               "tracking": 0
             },
             {
-              "x": 0.5776,
-              "baseline": 0.5188,
-              "cap": 0.12,
-              "width": 0.24,
-              "profile": "condensed-bold",
+              "x": 0.580522,
+              "baseline": 0.5187,
+              "cap": 0.13,
+              "width": 0.29,
+              "profile": "province-tall-2010-reconstruction",
               "tracking": 0
             }
           ],
@@ -2921,12 +3398,15 @@
           }
         }
       }
-    ]
+    ],
+    "layout": {
+      "cornerRadius": 0
+    }
   },
   "2012": {
     "lineBreaks": "BRITISH / COLUMBIA between month and two-digit year; barcode/control footer.",
-    "finding": "Restore taller province letters and lower month/date caps slightly to the source extents.",
-    "fontEvidence": "Visual candidate; historical typeface unconfirmed. Selected candidate glyph proportions retained; whole runs reduce uniformly only when needed.",
+    "finding": "Use the independently authored 12-capital tall province subset supported by the large 2012 original and corroborated whole-word proportions in 2010\u201313. Fixed province alphabet/nominal size across the corroborated 2010\u201313 subset; unobserved-month positions retained. Calibrate the province stack using accepted whole-line extents. Preserve all unrelated existing month roles. In 2010/2012, uniformly reduce/place the date and restore the observed barcode gap; native date outlines remain unchanged. Exact photographed NOV placement; merge with existing month variant roles/layout. The photographed square substrate replaces the previous generic rounding; physical cutting tolerances remain unknown.",
+    "fontEvidence": "The fixed province words use a limited independently authored tall-capital reconstruction supported by the enlarged 2012 AUG photograph and corroborating 2010\u20132013 word proportions. Other roles retain their independently reviewed candidates. Slight photographic tilt and print spread remain; historical font identity is unconfirmed. See docs/research/bc-decal-residuals/province-placement.",
     "runs": {
       "decal-month": [
         {
@@ -2954,17 +3434,17 @@
         {
           "x": 0.57,
           "baseline": 0.405,
-          "cap": 0.12,
-          "width": 0.23,
-          "profile": "condensed-medium",
+          "cap": 0.13,
+          "width": 0.25,
+          "profile": "province-tall-2010-reconstruction",
           "tracking": 0
         },
         {
           "x": 0.57,
           "baseline": 0.56,
-          "cap": 0.12,
-          "width": 0.24,
-          "profile": "condensed-medium",
+          "cap": 0.13,
+          "width": 0.29,
+          "profile": "province-tall-2010-reconstruction",
           "tracking": 0
         }
       ],
@@ -2985,12 +3465,72 @@
       234,
       100
     ],
-    "reviewedOn": "2026-10-06"
+    "reviewedOn": "2026-11-07",
+    "layout": {
+      "cornerRadius": 0
+    },
+    "monthVariants": [
+      {
+        "fromMonth": 11,
+        "throughMonth": 11,
+        "evidence": "Calibrate the province stack using accepted whole-line extents. Preserve all unrelated existing month roles. In 2010/2012, uniformly reduce/place the date and restore the observed barcode gap; native date outlines remain unchanged. Exact photographed NOV placement; merge with existing month variant roles/layout. https://www.bcpl8s.ca/images/Decals/Passenger/2012-97303194.jpg https://commons.wikimedia.org/wiki/File:ICBC_Aug_2012_Registration_Decal.png",
+        "runs": {
+          "decal-legend": [
+            {
+              "x": 0.582765,
+              "baseline": 0.37866,
+              "cap": 0.134,
+              "width": 0.25,
+              "profile": "province-tall-2010-reconstruction",
+              "tracking": 0
+            },
+            {
+              "x": 0.582765,
+              "baseline": 0.51866,
+              "cap": 0.134,
+              "width": 0.29,
+              "profile": "province-tall-2010-reconstruction",
+              "tracking": 0
+            }
+          ],
+          "decal-month": [
+            {
+              "x": 0.036998,
+              "baseline": 0.639028,
+              "cap": 0.558057,
+              "width": 0.39,
+              "profile": "heavy-month",
+              "tracking": 0,
+              "anchor": "start"
+            }
+          ],
+          "decal-year": [
+            {
+              "x": 0.979644,
+              "baseline": 0.64,
+              "cap": 0.539395,
+              "width": 0.27,
+              "profile": "heavy-year",
+              "tracking": 0,
+              "anchor": "end"
+            }
+          ]
+        },
+        "layout": {
+          "barcode": {
+            "x": -0.039351,
+            "y": 0.7,
+            "width": 0.604788,
+            "height": 0.23
+          }
+        }
+      }
+    ]
   },
   "2013": {
     "lineBreaks": "BRITISH / COLUMBIA between month and two-digit year; barcode/control footer.",
-    "finding": "The exact OCT selection uses independent O/C/T contours at natural width. Year 13 retains its existing glyph profile with a -6-cap-unit 13 pair adjustment. Other month forms retain prior candidates. The photographed month override also calibrates legend/control translation and the actual barcode footprint; other month layouts retain their earlier positions.",
-    "fontEvidence": "Only O/C/T are reconstructed from the clean 59-pixel source capitals. Explicit pair placement is separate from glyph contours and no x-only scaling is applied. Historical typeface remains unknown. See docs/research/bc-late-two-digit-printing/.",
+    "finding": "Use the independently authored 12-capital tall province subset supported by the large 2012 original and corroborated whole-word proportions in 2010\u201313. Fixed province alphabet/nominal size across the corroborated 2010\u201313 subset; unobserved-month positions retained. Calibrate the province stack using accepted whole-line extents. Preserve all unrelated existing month roles. In 2010/2012, uniformly reduce/place the date and restore the observed barcode gap; native date outlines remain unchanged. Exact photographed OCT placement; merge with existing month variant roles/layout. The photographed square substrate replaces the previous generic rounding; physical cutting tolerances remain unknown.",
+    "fontEvidence": "The fixed province words use a limited independently authored tall-capital reconstruction supported by the enlarged 2012 AUG photograph and corroborating 2010\u20132013 word proportions. Other roles retain their independently reviewed candidates. Slight photographic tilt and print spread remain; historical font identity is unconfirmed. See docs/research/bc-decal-residuals/province-placement.",
     "runs": {
       "decal-month": [
         {
@@ -3021,17 +3561,17 @@
         {
           "x": 0.57,
           "baseline": 0.405,
-          "cap": 0.12,
-          "width": 0.23,
-          "profile": "condensed-medium",
+          "cap": 0.13,
+          "width": 0.25,
+          "profile": "province-tall-2010-reconstruction",
           "tracking": 0
         },
         {
           "x": 0.57,
           "baseline": 0.56,
-          "cap": 0.12,
-          "width": 0.24,
-          "profile": "condensed-medium",
+          "cap": 0.13,
+          "width": 0.29,
+          "profile": "province-tall-2010-reconstruction",
           "tracking": 0
         }
       ],
@@ -3057,7 +3597,7 @@
       {
         "fromMonth": 10,
         "throughMonth": 10,
-        "evidence": "Independent source-height comparison of the photographed 2013 month; only this observed month is calibrated. See docs/research/bc-late-two-digit-printing/.",
+        "evidence": "Calibrate the province stack using accepted whole-line extents. Preserve all unrelated existing month roles. In 2010/2012, uniformly reduce/place the date and restore the observed barcode gap; native date outlines remain unchanged. Exact photographed OCT placement; merge with existing month variant roles/layout. https://www.bcpl8s.ca/images/Decals/Passenger/2013-79670318.jpg https://commons.wikimedia.org/wiki/File:ICBC_Aug_2012_Registration_Decal.png",
         "runs": {
           "decal-month": [
             {
@@ -3072,19 +3612,19 @@
           ],
           "decal-legend": [
             {
-              "x": 0.5761,
-              "baseline": 0.3786,
-              "cap": 0.12,
-              "width": 0.23,
-              "profile": "condensed-medium",
+              "x": 0.576174,
+              "baseline": 0.3787,
+              "cap": 0.13,
+              "width": 0.25,
+              "profile": "province-tall-2010-reconstruction",
               "tracking": 0
             },
             {
-              "x": 0.5751,
+              "x": 0.578348,
               "baseline": 0.5387,
-              "cap": 0.12,
-              "width": 0.24,
-              "profile": "condensed-medium",
+              "cap": 0.13,
+              "width": 0.29,
+              "profile": "province-tall-2010-reconstruction",
               "tracking": 0
             }
           ],
@@ -3108,12 +3648,15 @@
           }
         }
       }
-    ]
+    ],
+    "layout": {
+      "cornerRadius": 0
+    }
   },
   "2014": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Retains the narrow month construction and independent vertical province printing. Year numerals use a source-supported reusable reconstruction; control uses native Nimbus Narrow advances with an observed diagonal-flag 1. Glyph and source limitations are documented in the numeral review. July 2017 boundary remains separate.",
-    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2\u20139 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/.",
+    "finding": "The photographed square substrate replaces the previous generic rounding; physical cutting tolerances remain unknown. Repeated independent year occurrences corroborate the retained early numeral construction: nine photographs for 4 and eleven for 6. Fine contours remain limited by small source pixels.",
+    "fontEvidence": "Early modern year and modern control profiles remain separate. Additional 4/6 occurrence evidence supports retaining the early forms; the later 2019\u20132023 year profile is not assigned here. Native-derived control contours remain approximate. See docs/research/bc-decal-residuals/modern.",
     "runs": {
       "decal-month": [
         {
@@ -3174,11 +3717,14 @@
       229,
       100
     ],
-    "reviewedOn": "2026-11-07"
+    "reviewedOn": "2026-11-07",
+    "layout": {
+      "cornerRadius": 0
+    }
   },
   "2015": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Retains the narrow month construction and independent vertical province printing. Year numerals use a source-supported reusable reconstruction; control uses native Nimbus Narrow advances with an observed diagonal-flag 1. Glyph and source limitations are documented in the numeral review. July 2017 boundary remains separate. Whole-run vertical translations and a taller barcode footprint follow the enlarged JAN source; horizontal placement is retained because the unrectified crop has a different aspect ratio.",
+    "finding": "The photographed square substrate replaces the previous generic rounding; physical cutting tolerances remain unknown.",
     "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2\u20139 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/.",
     "runs": {
       "decal-month": [
@@ -3247,13 +3793,14 @@
         "y": 0.715,
         "width": 0.59,
         "height": 0.21
-      }
+      },
+      "cornerRadius": 0
     }
   },
   "2016": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Retains the narrow month construction and independent vertical province printing. Year numerals use a source-supported reusable reconstruction; control uses native Nimbus Narrow advances with an observed diagonal-flag 1. Glyph and source limitations are documented in the numeral review. July 2017 boundary remains separate.",
-    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2\u20139 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/.",
+    "finding": "The photographed square substrate replaces the previous generic rounding; physical cutting tolerances remain unknown. Repeated independent year occurrences corroborate the retained early numeral construction: nine photographs for 4 and eleven for 6. Fine contours remain limited by small source pixels.",
+    "fontEvidence": "Early modern year and modern control profiles remain separate. Additional 4/6 occurrence evidence supports retaining the early forms; the later 2019\u20132023 year profile is not assigned here. Native-derived control contours remain approximate. See docs/research/bc-decal-residuals/modern.",
     "runs": {
       "decal-month": [
         {
@@ -3314,7 +3861,10 @@
       239,
       100
     ],
-    "reviewedOn": "2026-11-07"
+    "reviewedOn": "2026-11-07",
+    "layout": {
+      "cornerRadius": 0
+    }
   },
   "2017": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
@@ -3461,8 +4011,8 @@
   },
   "2018": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Retains the narrow month construction and independent vertical province printing. Year numerals use a source-supported reusable reconstruction; control uses native Nimbus Narrow advances with an observed diagonal-flag 1. Glyph and source limitations are documented in the numeral review. July 2017 boundary remains separate.",
-    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2\u20139 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/.",
+    "finding": "The selected JAN specimen retains its early numeral profile; its year, control, province columns and barcode receive independent paint-based registration. Later 2018 replacement forms remain documented but are not assigned by an inferred expiry-month boundary. Exact JAN retains its glyph contours with source-supported pair spacing and uniform paint-height/centre registration. The A remains narrow; this spacing improvement does not imply an exact font match.",
+    "fontEvidence": "Five early 2018 photographs corroborate the retained early 8. Six later 2018 photographs show a different printing group, which remains unmodeled. JAN retains its original contours with observed AN spacing; historical font identity is unconfirmed. See docs/research/bc-decal-residuals/modern and lettering/modern-jul-review/jan-review.",
     "runs": {
       "decal-month": [
         {
@@ -3523,12 +4073,69 @@
       231,
       100
     ],
-    "reviewedOn": "2026-11-07"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 1,
+        "throughMonth": 1,
+        "evidence": "Observed 2018 JAN specimen only, control 50278580. Uniform frame-height/centre registration, source aspect preserved. Actual ink bounds include native strokes; barcode dimensions fit painted bars with quiet zones accounted for. Month/province contours are retained. See docs/research/bc-decal-residuals/modern. JAN retains its existing contours with independently supported pair spacing and uniform paint-height/centre registration. See docs/research/bc-decal-residuals/lettering/modern-jul-review/jan-review.",
+        "runs": {
+          "decal-month": [
+            {
+              "x": 0.09734,
+              "baseline": 0.62034,
+              "cap": 0.46865,
+              "width": 0.32,
+              "profile": "heavy-month-weighted",
+              "tracking": 0,
+              "anchor": "start",
+              "kerning": {
+                "AN": 4
+              }
+            }
+          ],
+          "decal-year": [
+            {
+              "x": 0.91848,
+              "baseline": 0.625,
+              "cap": 0.5,
+              "width": 0.48,
+              "profile": "modern-year-reconstruction",
+              "tracking": 0,
+              "anchor": "end"
+            }
+          ],
+          "decal-serial": [
+            {
+              "x": 0.78553,
+              "baseline": 0.88107,
+              "cap": 0.16415,
+              "width": 0.44,
+              "profile": "modern-control-reconstruction",
+              "tracking": 0
+            }
+          ]
+        },
+        "layout": {
+          "provinceColumns": [
+            0.4609,
+            0.50544
+          ],
+          "provinceCentre": 0.38307,
+          "barcode": {
+            "x": 0.00671,
+            "y": 0.69792,
+            "width": 0.60161,
+            "height": 0.20833
+          }
+        }
+      }
+    ]
   },
   "2019": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Retains the narrow month construction and independent vertical province printing. Year numerals use a source-supported reusable reconstruction; control uses native Nimbus Narrow advances with an observed diagonal-flag 1. Glyph and source limitations are documented in the numeral review. July 2017 boundary remains separate.",
-    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2\u20139 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/.",
+    "finding": "The fixed year uses the separate later 0/1/2/3/9 construction and independently authored advances, supported by repeated small photographs and three enlarged 2020\u20132022 originals. Control contours remain separate and unchanged; year 3 fine detail remains provisional. Only the photographed month receives recalibrated role, province-column and barcode placement; other month positions retain their prior values. Exact JAN retains its glyph contours with source-supported pair spacing and uniform paint-height/centre registration. The A remains narrow; this spacing improvement does not imply an exact font match.",
+    "fontEvidence": "The 2019\u20132023 year uses a separate limited 0/1/2/3/9 reconstruction, with a broader 0, narrower 1 and independently authored advances. Repeated catalogue photos and three enlarged Commons originals support the distinction from early modern printing; 3 remains provisional. Control contours remain the separately evidenced native-derived candidate. Historical font identity is unconfirmed.",
     "runs": {
       "decal-month": [
         {
@@ -3547,7 +4154,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.45,
-          "profile": "modern-year-reconstruction",
+          "profile": "modern-late-year-reconstruction",
           "tracking": 0,
           "anchor": "end"
         }
@@ -3589,12 +4196,70 @@
       239,
       100
     ],
-    "reviewedOn": "2026-11-07"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 1,
+        "throughMonth": 1,
+        "evidence": "Observed 2019 JAN specimen only, control 10727925. Uniform frame-height/centre registration, source aspect preserved. Actual ink bounds include native strokes; barcode dimensions fit painted bars with quiet zones accounted for. Month/province contours are retained. See docs/research/bc-decal-residuals/modern. JAN retains its existing contours with independently supported pair spacing and uniform paint-height/centre registration. See docs/research/bc-decal-residuals/lettering/modern-jul-review/jan-review.",
+        "runs": {
+          "decal-month": [
+            {
+              "x": 0.02383,
+              "baseline": 0.58974,
+              "cap": 0.44871,
+              "width": 0.32,
+              "profile": "heavy-month-weighted",
+              "tracking": 0,
+              "anchor": "start",
+              "kerning": {
+                "JA": 5,
+                "AN": 9
+              }
+            }
+          ],
+          "decal-year": [
+            {
+              "x": 0.95446,
+              "baseline": 0.60417,
+              "cap": 0.47917,
+              "width": 0.48,
+              "profile": "modern-late-year-reconstruction",
+              "tracking": 0,
+              "anchor": "end"
+            }
+          ],
+          "decal-serial": [
+            {
+              "x": 0.73867,
+              "baseline": 0.90136,
+              "cap": 0.18467,
+              "width": 0.44,
+              "profile": "modern-control-reconstruction",
+              "tracking": 0
+            }
+          ]
+        },
+        "layout": {
+          "provinceColumns": [
+            0.42812,
+            0.4666
+          ],
+          "provinceCentre": 0.37005,
+          "barcode": {
+            "x": -0.04362,
+            "y": 0.6875,
+            "width": 0.56188,
+            "height": 0.23958
+          }
+        }
+      }
+    ]
   },
   "2020": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Retains the narrow month construction and independent vertical province printing. Year numerals use a source-supported reusable reconstruction; control uses native Nimbus Narrow advances with an observed diagonal-flag 1. Glyph and source limitations are documented in the numeral review. July 2017 boundary remains separate.",
-    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2\u20139 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/.",
+    "finding": "The fixed year uses the separate later 0/1/2/3/9 construction and independently authored advances, supported by repeated small photographs and three enlarged 2020\u20132022 originals. Control contours remain separate and unchanged; year 3 fine detail remains provisional. Only the photographed month receives recalibrated role, province-column and barcode placement; other month positions retain their prior values. Exact JAN retains its glyph contours with source-supported pair spacing and uniform paint-height/centre registration. The A remains narrow; this spacing improvement does not imply an exact font match. The canonical all-zero control photograph remains qualified layout evidence, not proof of normal issuance.",
+    "fontEvidence": "The 2019\u20132023 year uses a separate limited 0/1/2/3/9 reconstruction, with a broader 0, narrower 1 and independently authored advances. Repeated catalogue photos and three enlarged Commons originals support the distinction from early modern printing; 3 remains provisional. Control contours remain the separately evidenced native-derived candidate. Historical font identity is unconfirmed.",
     "runs": {
       "decal-month": [
         {
@@ -3613,7 +4278,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.45,
-          "profile": "modern-year-reconstruction",
+          "profile": "modern-late-year-reconstruction",
           "tracking": 0,
           "anchor": "end"
         }
@@ -3655,12 +4320,70 @@
       229,
       100
     ],
-    "reviewedOn": "2026-11-07"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 1,
+        "throughMonth": 1,
+        "evidence": "Observed 2020 JAN specimen only, control 00000000. Uniform frame-height/centre registration, source aspect preserved. Actual ink bounds include native strokes; barcode dimensions fit painted bars with quiet zones accounted for. Month/province contours are retained. The all-zero sample is qualified evidence, not proof of normal issuance. See docs/research/bc-decal-residuals/modern. JAN retains its existing contours with independently supported pair spacing and uniform paint-height/centre registration. See docs/research/bc-decal-residuals/lettering/modern-jul-review/jan-review.",
+        "runs": {
+          "decal-month": [
+            {
+              "x": 0.05182,
+              "baseline": 0.57964,
+              "cap": 0.43874,
+              "width": 0.32,
+              "profile": "heavy-month-weighted",
+              "tracking": 0,
+              "anchor": "start",
+              "kerning": {
+                "JA": 5,
+                "AN": 7
+              }
+            }
+          ],
+          "decal-year": [
+            {
+              "x": 0.97124,
+              "baseline": 0.59375,
+              "cap": 0.45833,
+              "width": 0.48,
+              "profile": "modern-late-year-reconstruction",
+              "tracking": 0,
+              "anchor": "end"
+            }
+          ],
+          "decal-serial": [
+            {
+              "x": 0.72419,
+              "baseline": 0.89095,
+              "cap": 0.18467,
+              "width": 0.44,
+              "profile": "modern-control-reconstruction",
+              "tracking": 0
+            }
+          ]
+        },
+        "layout": {
+          "provinceColumns": [
+            0.43944,
+            0.47565
+          ],
+          "provinceCentre": 0.36485,
+          "barcode": {
+            "x": -0.01358,
+            "y": 0.67708,
+            "width": 0.5335,
+            "height": 0.22917
+          }
+        }
+      }
+    ]
   },
   "2021": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Retains the narrow month construction and independent vertical province printing. Year numerals use a source-supported reusable reconstruction; control uses native Nimbus Narrow advances with an observed diagonal-flag 1. Glyph and source limitations are documented in the numeral review. July 2017 boundary remains separate.",
-    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2\u20139 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/.",
+    "finding": "The fixed year uses the separate later 0/1/2/3/9 construction and independently authored advances, supported by repeated small photographs and three enlarged 2020\u20132022 originals. Control contours remain separate and unchanged; year 3 fine detail remains provisional. Only the photographed month receives recalibrated role, province-column and barcode placement; other month positions retain their prior values. Exact JUL uses native Anton with supported JU/UL spacing; its L foot remains short and J hook slightly high.",
+    "fontEvidence": "The 2019\u20132023 year uses a separate limited 0/1/2/3/9 reconstruction, with a broader 0, narrower 1 and independently authored advances. Repeated catalogue photos and three enlarged Commons originals support the distinction from early modern printing; 3 remains provisional. Control contours remain the separately evidenced native-derived candidate. Historical font identity is unconfirmed.",
     "runs": {
       "decal-month": [
         {
@@ -3679,7 +4402,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.45,
-          "profile": "modern-year-reconstruction",
+          "profile": "modern-late-year-reconstruction",
           "tracking": 0,
           "anchor": "end"
         }
@@ -3721,12 +4444,70 @@
       230,
       100
     ],
-    "reviewedOn": "2026-11-07"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 7,
+        "throughMonth": 7,
+        "evidence": "Observed 2021 JUL specimen only, control 36946964. Uniform frame-height/centre registration, source aspect preserved. Actual ink bounds include native strokes; barcode dimensions fit painted bars with quiet zones accounted for. Month/province contours are retained. See docs/research/bc-decal-residuals/modern. JUL now uses native Anton with source-supported JU/UL spacing; L foot and J hook remain approximate. See docs/research/bc-decal-residuals/lettering/modern-jul-review.",
+        "runs": {
+          "decal-month": [
+            {
+              "x": 0.06772,
+              "baseline": 0.598,
+              "cap": 0.44494,
+              "width": 0.34,
+              "profile": "anton-400",
+              "tracking": 0,
+              "anchor": "start",
+              "kerning": {
+                "JU": 2.5,
+                "UL": 3.5
+              }
+            }
+          ],
+          "decal-year": [
+            {
+              "x": 0.95466,
+              "baseline": 0.60204,
+              "cap": 0.44898,
+              "width": 0.48,
+              "profile": "modern-late-year-reconstruction",
+              "tracking": 0,
+              "anchor": "end"
+            }
+          ],
+          "decal-serial": [
+            {
+              "x": 0.7464,
+              "baseline": 0.89317,
+              "cap": 0.1809,
+              "width": 0.44,
+              "profile": "modern-control-reconstruction",
+              "tracking": 0
+            }
+          ]
+        },
+        "layout": {
+          "provinceColumns": [
+            0.46532,
+            0.50079
+          ],
+          "provinceCentre": 0.38036,
+          "barcode": {
+            "x": 0.00187,
+            "y": 0.68367,
+            "width": 0.53929,
+            "height": 0.23469
+          }
+        }
+      }
+    ]
   },
   "2022": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Retains the narrow month construction and independent vertical province printing. Year numerals use a source-supported reusable reconstruction; control uses native Nimbus Narrow advances with an observed diagonal-flag 1. Glyph and source limitations are documented in the numeral review. July 2017 boundary remains separate.",
-    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2\u20139 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/.",
+    "finding": "The fixed year uses the separate later 0/1/2/3/9 construction and independently authored advances, supported by repeated small photographs and three enlarged 2020\u20132022 originals. Control contours remain separate and unchanged; year 3 fine detail remains provisional. Only the photographed month receives recalibrated role, province-column and barcode placement; other month positions retain their prior values. The year keeps a visible right margin rather than following the full width of an unrectified photograph with a broader frame.",
+    "fontEvidence": "The 2019\u20132023 year uses a separate limited 0/1/2/3/9 reconstruction, with a broader 0, narrower 1 and independently authored advances. Repeated catalogue photos and three enlarged Commons originals support the distinction from early modern printing; 3 remains provisional. Control contours remain the separately evidenced native-derived candidate. Historical font identity is unconfirmed.",
     "runs": {
       "decal-month": [
         {
@@ -3745,7 +4526,7 @@
           "baseline": 0.64,
           "cap": 0.46,
           "width": 0.45,
-          "profile": "modern-year-reconstruction",
+          "profile": "modern-late-year-reconstruction",
           "tracking": 0,
           "anchor": "end"
         }
@@ -3787,12 +4568,66 @@
       238,
       100
     ],
-    "reviewedOn": "2026-11-07"
+    "reviewedOn": "2026-11-07",
+    "monthVariants": [
+      {
+        "fromMonth": 3,
+        "throughMonth": 3,
+        "evidence": "Observed 2022 MAR specimen only, control 72919128. Uniform frame-height/centre registration, source aspect preserved. Actual ink bounds include native strokes; barcode dimensions fit painted bars with quiet zones accounted for. Month/province contours are retained. See docs/research/bc-decal-residuals/modern.",
+        "runs": {
+          "decal-month": [
+            {
+              "x": 0.0473,
+              "baseline": 0.5904,
+              "cap": 0.46,
+              "width": 0.32,
+              "profile": "heavy-month-weighted",
+              "tracking": 0,
+              "anchor": "start"
+            }
+          ],
+          "decal-year": [
+            {
+              "x": 0.98,
+              "baseline": 0.59184,
+              "cap": 0.46939,
+              "width": 0.48,
+              "profile": "modern-late-year-reconstruction",
+              "tracking": 0,
+              "anchor": "end"
+            }
+          ],
+          "decal-serial": [
+            {
+              "x": 0.74436,
+              "baseline": 0.8827,
+              "cap": 0.19095,
+              "width": 0.44,
+              "profile": "modern-control-reconstruction",
+              "tracking": 0
+            }
+          ]
+        },
+        "layout": {
+          "provinceColumns": [
+            0.45201,
+            0.48748
+          ],
+          "provinceCentre": 0.35485,
+          "barcode": {
+            "x": -0.02643,
+            "y": 0.67347,
+            "width": 0.55597,
+            "height": 0.23469
+          }
+        }
+      }
+    ]
   },
   "2023": {
     "lineBreaks": "Vertical BRITISH and COLUMBIA in separate columns; full-year date; barcode/control footer.",
-    "finding": "Retains the narrow month construction and independent vertical province printing. Year numerals use a source-supported reusable reconstruction; control uses native Nimbus Narrow advances with an observed diagonal-flag 1. Glyph and source limitations are documented in the numeral review. July 2017 boundary remains separate. The month/year/province/control runs move to source-supported positions while retaining their selected sizes; barcode paint becomes narrower and taller, with quiet zones accounted for separately.",
-    "fontEvidence": "Month retains the existing supplied-font construction and advances with a 2.5-cap-unit ink stroke. Year numerals are independent constructions with per-glyph confidence limits; control retains native Nimbus Sans Narrow Bold 0/2\u20139 and tabular advances with a reconstructed 1. No historical typeface or manufacturer identity is claimed. See docs/research/bc-modern-numerals/.",
+    "finding": "The fixed year uses the separate later 0/1/2/3/9 construction and independently authored advances, supported by repeated small photographs and three enlarged 2020\u20132022 originals. Control contours remain separate and unchanged; year 3 fine detail remains provisional. The existing MAR composition is retained with the later year profile. The 3 has only one small year occurrence and is not promoted to high-confidence historical lettering.",
+    "fontEvidence": "The 2019\u20132023 year uses a separate limited 0/1/2/3/9 reconstruction, with a broader 0, narrower 1 and independently authored advances. Repeated catalogue photos and three enlarged Commons originals support the distinction from early modern printing; 3 remains provisional. Control contours remain the separately evidenced native-derived candidate. Historical font identity is unconfirmed.",
     "runs": {
       "decal-month": [
         {
@@ -3811,7 +4646,7 @@
           "baseline": 0.565,
           "cap": 0.46,
           "width": 0.45,
-          "profile": "modern-year-reconstruction",
+          "profile": "modern-late-year-reconstruction",
           "tracking": 0,
           "anchor": "end"
         }

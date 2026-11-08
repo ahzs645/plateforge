@@ -7,6 +7,9 @@ import { DECAL_MODERN_PRINTING_PROFILES } from './decal-modern-printing';
 import { DECAL_BORDERED_MAY_PROFILE } from './decal-bordered-may';
 import { DECAL_ANNUAL_1972_PROFILE } from './decal-annual-1972';
 import { DECAL_LATE_PRINTING_PROFILES } from './decal-late-printing';
+import { DECAL_RESIDUAL_LETTERING_PROFILES } from './decal-residual-lettering';
+import { DECAL_PROVINCE_WIDE_PROFILE } from './decal-province-wide';
+import { DECAL_PROVINCE_TALL_PROFILE } from './decal-province-tall';
 
 /** Filled printed candidates, separate from every stamped serial/legend die. */
 export const DECAL_PRINTING_PROFILES: DieProfile[] = Object.entries({...outlines, ...auditOutlines, ...glyphOutlines}).map(([name, glyphs]) => ({
@@ -22,6 +25,9 @@ DECAL_PRINTING_PROFILES.push(...DECAL_MODERN_PRINTING_PROFILES);
 DECAL_PRINTING_PROFILES.push(DECAL_BORDERED_MAY_PROFILE);
 DECAL_PRINTING_PROFILES.push(DECAL_ANNUAL_1972_PROFILE);
 DECAL_PRINTING_PROFILES.push(...DECAL_LATE_PRINTING_PROFILES);
+DECAL_PRINTING_PROFILES.push(...DECAL_RESIDUAL_LETTERING_PROFILES);
+DECAL_PRINTING_PROFILES.push(DECAL_PROVINCE_WIDE_PROFILE);
+DECAL_PRINTING_PROFILES.push(DECAL_PROVINCE_TALL_PROFILE);
 
 DECAL_PRINTING_PROFILES.push({
   id: 'bc-decal-1970', label: '1970 decal · outline numerals',
