@@ -1,5 +1,7 @@
 # BC decals: second overlay and implementation pass
 
+**Publication follow-up, 7 November 2026:** the user explicitly authorized pushing both reviewed decal passes to `main`. The local-only and authorization-pending statements below and in the captured validation records describe the earlier review state. The source snapshots, evidence and test outcomes are preserved.
+
 Reviewed 7 November 2026. This pass starts from the completed first-pass commit
 `24689246670c25f91e0d1676a0647f053dbca68e`.
 
