@@ -1,6 +1,6 @@
 # Validation scope and local commands
 
-Core unit/build/browser checks remain automatic. Typography validation shares its exact Node 24 / /plateforge/ build with all three browser engines, stamped and checked against github.sha. The separate Iraq/Iran preview and specimen-comparison generation are manual artifact reviews; they no longer duplicate automatic app tests or automatically commit generated reports to a draft branch. The original browser/visual correctness suites remain.
+Core unit/build/browser checks remain automatic. Typography validation shares its exact Ubuntu 24.04 / Node 24 / /plateforge/ build with all three browser engines, stamped and checked against github.sha. The separate Iraq/Iran preview and specimen-comparison generation are manual artifact reviews; they no longer duplicate automatic app tests or automatically commit generated reports to a draft branch. The original browser/visual correctness suites remain.
 
 ## Local entry points
 
