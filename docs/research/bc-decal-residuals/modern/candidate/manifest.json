@@ -1,0 +1,202 @@
+[
+  {
+    "name": "before",
+    "text": "0",
+    "filename": "before-0.svg",
+    "width": 47.5,
+    "height": 100,
+    "fit": "natural",
+    "profile": "bc-decal-print-modern-year-reconstruction",
+    "candidateTypography": false
+  },
+  {
+    "name": "candidate",
+    "text": "0",
+    "filename": "candidate-0.svg",
+    "width": 56.5,
+    "height": 100,
+    "fit": "natural",
+    "profile": "bc-decal-print-modern-late-year-reconstruction",
+    "candidateTypography": false
+  },
+  {
+    "name": "before",
+    "text": "1",
+    "filename": "before-1.svg",
+    "width": 38.5,
+    "height": 100,
+    "fit": "natural",
+    "profile": "bc-decal-print-modern-year-reconstruction",
+    "candidateTypography": false
+  },
+  {
+    "name": "candidate",
+    "text": "1",
+    "filename": "candidate-1.svg",
+    "width": 36,
+    "height": 100,
+    "fit": "natural",
+    "profile": "bc-decal-print-modern-late-year-reconstruction",
+    "candidateTypography": false
+  },
+  {
+    "name": "before",
+    "text": "2",
+    "filename": "before-2.svg",
+    "width": 47,
+    "height": 100,
+    "fit": "natural",
+    "profile": "bc-decal-print-modern-year-reconstruction",
+    "candidateTypography": false
+  },
+  {
+    "name": "candidate",
+    "text": "2",
+    "filename": "candidate-2.svg",
+    "width": 53,
+    "height": 100,
+    "fit": "natural",
+    "profile": "bc-decal-print-modern-late-year-reconstruction",
+    "candidateTypography": false
+  },
+  {
+    "name": "before",
+    "text": "3",
+    "filename": "before-3.svg",
+    "width": 48,
+    "height": 100,
+    "fit": "natural",
+    "profile": "bc-decal-print-modern-year-reconstruction",
+    "candidateTypography": false
+  },
+  {
+    "name": "candidate",
+    "text": "3",
+    "filename": "candidate-3.svg",
+    "width": 51.5,
+    "height": 100,
+    "fit": "natural",
+    "profile": "bc-decal-print-modern-late-year-reconstruction",
+    "candidateTypography": false
+  },
+  {
+    "name": "before",
+    "text": "9",
+    "filename": "before-9.svg",
+    "width": 48.5,
+    "height": 100,
+    "fit": "natural",
+    "profile": "bc-decal-print-modern-year-reconstruction",
+    "candidateTypography": false
+  },
+  {
+    "name": "candidate",
+    "text": "9",
+    "filename": "candidate-9.svg",
+    "width": 52,
+    "height": 100,
+    "fit": "natural",
+    "profile": "bc-decal-print-modern-late-year-reconstruction",
+    "candidateTypography": false
+  },
+  {
+    "name": "before",
+    "text": "2019",
+    "filename": "before-2019.svg",
+    "width": 181.5,
+    "height": 100,
+    "fit": "natural",
+    "profile": "bc-decal-print-modern-year-reconstruction",
+    "candidateTypography": false
+  },
+  {
+    "name": "candidate",
+    "text": "2019",
+    "filename": "candidate-2019.svg",
+    "width": 197.5,
+    "height": 100,
+    "fit": "natural",
+    "profile": "bc-decal-print-modern-late-year-reconstruction",
+    "candidateTypography": false
+  },
+  {
+    "name": "before",
+    "text": "2020",
+    "filename": "before-2020.svg",
+    "width": 189,
+    "height": 100,
+    "fit": "natural",
+    "profile": "bc-decal-print-modern-year-reconstruction",
+    "candidateTypography": false
+  },
+  {
+    "name": "candidate",
+    "text": "2020",
+    "filename": "candidate-2020.svg",
+    "width": 219,
+    "height": 100,
+    "fit": "natural",
+    "profile": "bc-decal-print-modern-late-year-reconstruction",
+    "candidateTypography": false
+  },
+  {
+    "name": "before",
+    "text": "2021",
+    "filename": "before-2021.svg",
+    "width": 180,
+    "height": 100,
+    "fit": "natural",
+    "profile": "bc-decal-print-modern-year-reconstruction",
+    "candidateTypography": false
+  },
+  {
+    "name": "candidate",
+    "text": "2021",
+    "filename": "candidate-2021.svg",
+    "width": 198.5,
+    "height": 100,
+    "fit": "natural",
+    "profile": "bc-decal-print-modern-late-year-reconstruction",
+    "candidateTypography": false
+  },
+  {
+    "name": "before",
+    "text": "2022",
+    "filename": "before-2022.svg",
+    "width": 188.5,
+    "height": 100,
+    "fit": "natural",
+    "profile": "bc-decal-print-modern-year-reconstruction",
+    "candidateTypography": false
+  },
+  {
+    "name": "candidate",
+    "text": "2022",
+    "filename": "candidate-2022.svg",
+    "width": 215.5,
+    "height": 100,
+    "fit": "natural",
+    "profile": "bc-decal-print-modern-late-year-reconstruction",
+    "candidateTypography": false
+  },
+  {
+    "name": "before",
+    "text": "2023",
+    "filename": "before-2023.svg",
+    "width": 189.5,
+    "height": 100,
+    "fit": "natural",
+    "profile": "bc-decal-print-modern-year-reconstruction",
+    "candidateTypography": false
+  },
+  {
+    "name": "candidate",
+    "text": "2023",
+    "filename": "candidate-2023.svg",
+    "width": 214,
+    "height": 100,
+    "fit": "natural",
+    "profile": "bc-decal-print-modern-late-year-reconstruction",
+    "candidateTypography": false
+  }
+]

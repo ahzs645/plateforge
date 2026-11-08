@@ -1,0 +1,109 @@
+{
+  "scope": "Isolated actual-engine SVGs rasterized by Inkscape at 300 painted pixels high; not a browser/export parity claim.",
+  "comparisonRuns": 64,
+  "naturalRuns": 64,
+  "checks": [
+    {
+      "file": "1983-jun--after--JUN.svg",
+      "text": "JUN",
+      "fit": "natural",
+      "paintedComponents": 3,
+      "openCounters": 0,
+      "passed": true
+    },
+    {
+      "file": "1983-jun--after--J.svg",
+      "text": "J",
+      "fit": "natural",
+      "paintedComponents": 1,
+      "openCounters": 0,
+      "passed": true
+    },
+    {
+      "file": "1983-jun--after--U.svg",
+      "text": "U",
+      "fit": "natural",
+      "paintedComponents": 1,
+      "openCounters": 0,
+      "passed": true
+    },
+    {
+      "file": "1983-jun--after--N.svg",
+      "text": "N",
+      "fit": "natural",
+      "paintedComponents": 1,
+      "openCounters": 0,
+      "passed": true
+    },
+    {
+      "file": "1999-may--after--MAY.svg",
+      "text": "MAY",
+      "fit": "natural",
+      "paintedComponents": 3,
+      "openCounters": 1,
+      "passed": true
+    },
+    {
+      "file": "1999-may--after--M.svg",
+      "text": "M",
+      "fit": "natural",
+      "paintedComponents": 1,
+      "openCounters": 0,
+      "passed": true
+    },
+    {
+      "file": "1999-may--after--A.svg",
+      "text": "A",
+      "fit": "natural",
+      "paintedComponents": 1,
+      "openCounters": 1,
+      "passed": true
+    },
+    {
+      "file": "1999-may--after--Y.svg",
+      "text": "Y",
+      "fit": "natural",
+      "paintedComponents": 1,
+      "openCounters": 0,
+      "passed": true
+    },
+    {
+      "file": "2004-year--after--04.svg",
+      "text": "04",
+      "fit": "natural",
+      "paintedComponents": 2,
+      "openCounters": 2,
+      "passed": true
+    },
+    {
+      "file": "2004-year--after--0.svg",
+      "text": "0",
+      "fit": "natural",
+      "paintedComponents": 1,
+      "openCounters": 1,
+      "passed": true
+    },
+    {
+      "file": "2004-year--after--4.svg",
+      "text": "4",
+      "fit": "natural",
+      "paintedComponents": 1,
+      "openCounters": 1,
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "glyphSegmentationExcluded": [
+    "2004-mar",
+    "2004-jan",
+    "2004-feb",
+    "2004-jul",
+    "2004-nov",
+    "2004-dec"
+  ],
+  "sourceSensitivity": {
+    "accepted": 70,
+    "rejected": 0,
+    "rangePolicy": "Invalid samples are retained with reasons and excluded from ratios and glyph acceptance."
+  }
+}

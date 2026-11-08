@@ -1,0 +1,185 @@
+{
+  "schema": "plateforge.exact-month-native-proposal/v1",
+  "id": "2021",
+  "month": "JUL",
+  "control": "36946964",
+  "scope": "Only replace decal-month inside the existing exact 2021 JUL variant. Do not alter the base run, other months, other years, province, year, control or barcode.",
+  "source": {
+    "file": "public/bc-decal-corrections/evidence/2021/source.png",
+    "sha256": "dc03e25c078d572782713a0bb852fc6b429bf348ac89bfd61d0d75a9d88ac6ca",
+    "pixels": [
+      228,
+      98
+    ],
+    "boundsPixels": [
+      16,
+      15,
+      88,
+      59
+    ],
+    "boundsUniformHeight": [
+      15,
+      15.306122448979592,
+      88.46938775510205,
+      60.204081632653065
+    ]
+  },
+  "registration": "Uniform source frame-height and horizontal centre. Match actual paint height and centre; preserve native contour width and paint weight.",
+  "role": "decal-month",
+  "run": {
+    "x": 0.06772,
+    "baseline": 0.598,
+    "cap": 0.44494,
+    "width": 0.34,
+    "profile": "anton-400",
+    "tracking": 0,
+    "anchor": "start",
+    "kerning": {
+      "JU": 2.5,
+      "UL": 3.5
+    }
+  },
+  "contourProvenance": "Existing bc-decal-print-anton-400 native outlines. No path edits, artificial stroke, or horizontal scaling.",
+  "spacingEvidence": "Observed JU gap is about 0.091–0.093 of painted run height. UL is about 0.093–0.114. JU +2.5 and UL +3.5 cap units bring the native pair gaps into that interval without expanding the L to hide its short foot.",
+  "residual": "Native L remains about 15–17% short in painted width at equal glyph height. J hook is slightly higher than the photographs. Small blurred unrectified sources do not establish historical font identity or exact contours.",
+  "before": {
+    "file": "scene/before.svg",
+    "roles": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "id": "paint-decal-month-0",
+        "profile": "bc-decal-print-heavy-month-weighted",
+        "fit": "natural",
+        "box": [
+          21.4587,
+          13.728,
+          82.0103,
+          61.7824
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "id": "paint-decal-year-0",
+        "profile": "bc-decal-print-modern-late-year-reconstruction",
+        "fit": "natural",
+        "box": [
+          130.449,
+          15.306,
+          214.8572,
+          60.204
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "id": "paint-decal-legend-0",
+        "profile": "bc-decal-print-vertical-province",
+        "fit": "natural",
+        "box": [
+          101.393,
+          21.2353,
+          107.17779,
+          54.8618
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "id": "paint-decal-legend-1",
+        "profile": "bc-decal-print-vertical-province",
+        "fit": "natural",
+        "box": [
+          109.56,
+          15.4788,
+          115.33665,
+          60.4633
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "id": "paint-decal-serial-0",
+        "profile": "bc-decal-print-modern-control-reconstruction",
+        "fit": "natural",
+        "box": [
+          126.27,
+          71.4285,
+          216.9975,
+          89.79560000000001
+        ]
+      }
+    ]
+  },
+  "after": {
+    "file": "scene/after.svg",
+    "roles": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "id": "paint-decal-month-0",
+        "profile": "bc-decal-print-anton-400",
+        "fit": "natural",
+        "box": [
+          16.5366,
+          15.306,
+          86.9332,
+          60.204499999999996
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "id": "paint-decal-year-0",
+        "profile": "bc-decal-print-modern-late-year-reconstruction",
+        "fit": "natural",
+        "box": [
+          130.449,
+          15.306,
+          214.8572,
+          60.204
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "id": "paint-decal-legend-0",
+        "profile": "bc-decal-print-vertical-province",
+        "fit": "natural",
+        "box": [
+          101.393,
+          21.2353,
+          107.17779,
+          54.8618
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "id": "paint-decal-legend-1",
+        "profile": "bc-decal-print-vertical-province",
+        "fit": "natural",
+        "box": [
+          109.56,
+          15.4788,
+          115.33665,
+          60.4633
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "id": "paint-decal-serial-0",
+        "profile": "bc-decal-print-modern-control-reconstruction",
+        "fit": "natural",
+        "box": [
+          126.27,
+          71.4285,
+          216.9975,
+          89.79560000000001
+        ]
+      }
+    ]
+  }
+}

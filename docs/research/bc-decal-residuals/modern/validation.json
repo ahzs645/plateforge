@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "verifiedOriginalHashes": 60,
+  "acceptedSmallYearPhotographs": 57,
+  "acceptedEnlargedPhotographs": 3,
+  "acceptedEnlargedRoleCrops": 6,
+  "yearOccurrences": 240,
+  "controlOccurrences": 24,
+  "thresholdSamplesValidated": 189,
+  "rejectedExtractions": 0,
+  "registeredNaturalYearRuns": 20,
+  "integratedYearBindings": 5,
+  "integratedExactMonthPlacements": 5,
+  "composedFollowUpOverrides": [
+    "lettering/modern-jul-review/proposal.json: 2021 JUL decal-month",
+    "lettering/modern-jul-review/jan-review/proposals.json: 2018/2019/2020 JAN decal-month"
+  ],
+  "limits": "Numeric checks enforce input/hash/segmentation/profile/placement contracts. The original placement-stage proposal is preserved; the separately evidenced JUL and JAN lettering/spacing runs are composed explicitly and checked exactly. Visual original and overlay inspection remains required. This is not a browser check or an authenticity score."
+}

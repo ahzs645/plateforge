@@ -1,0 +1,3033 @@
+{
+  "comparison": "Uniform painted height and horizontal centre, no x-only resizing. Whole-run height includes local photographed slope. Ratios are geometric diagnostics, not quality scores.",
+  "candidateTypography": false,
+  "candidateSha256": "e4a183943c3e50b68c53da870be095749c81ca99fcf4f5b0c7f0bb89fe3fa339",
+  "records": [
+    {
+      "id": "2019-10727925",
+      "observedYear": "2019",
+      "sourceSha256": "6f1d3638b36fa43b6c9a47b5ce05a45d2c1ed89877bec44c2372dbaff152d118",
+      "sourceYearBoxInROI": [
+        8,
+        12,
+        97,
+        58
+      ],
+      "sourceYearPixels": [
+        89,
+        46
+      ],
+      "beforeRunWidthRatio": 0.9209397344228805,
+      "candidateRunWidthRatio": 1.000817160367722,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            20,
+            45
+          ],
+          "sourceBox": [
+            8,
+            13,
+            28,
+            58
+          ],
+          "beforeWidthRatio": 0.9920454545454546,
+          "candidateWidthRatio": 0.9920454545454546,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            23,
+            45
+          ],
+          "sourceBox": [
+            32,
+            13,
+            55,
+            58
+          ],
+          "beforeWidthRatio": 0.8626482213438736,
+          "candidateWidthRatio": 0.9426877470355732,
+          "sourceCounters": [
+            [
+              0.2,
+              0.17778,
+              0.31111,
+              0.82222
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "1",
+          "sourcePixels": [
+            12,
+            46
+          ],
+          "sourceBox": [
+            58,
+            12,
+            70,
+            58
+          ],
+          "beforeWidthRatio": 1.15,
+          "candidateWidthRatio": 0.9757575757575757,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "9",
+          "sourcePixels": [
+            22,
+            45
+          ],
+          "sourceBox": [
+            75,
+            12,
+            97,
+            57
+          ],
+          "beforeWidthRatio": 0.9204545454545455,
+          "candidateWidthRatio": 0.9855371900826446,
+          "sourceCounters": [
+            [
+              0.2,
+              0.2,
+              0.28889,
+              0.48889
+            ],
+            [
+              0.13333,
+              0.48889,
+              0.2,
+              0.53333
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.48182
+            ]
+          ]
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2019-11776934",
+      "observedYear": "2019",
+      "sourceSha256": "3fc8222b9762516debff27a9c143528d2bb90d74b16c8dd9807dfcdb2dbb379d",
+      "sourceYearBoxInROI": [
+        10,
+        11,
+        94,
+        55
+      ],
+      "sourceYearPixels": [
+        84,
+        44
+      ],
+      "beforeRunWidthRatio": 0.9333333333333332,
+      "candidateRunWidthRatio": 1.0142857142857142,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            19,
+            43
+          ],
+          "sourceBox": [
+            10,
+            11,
+            29,
+            54
+          ],
+          "beforeWidthRatio": 0.9978468899521531,
+          "candidateWidthRatio": 0.9978468899521531,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            21,
+            43
+          ],
+          "sourceBox": [
+            33,
+            11,
+            54,
+            54
+          ],
+          "beforeWidthRatio": 0.9028138528138528,
+          "candidateWidthRatio": 0.9865800865800866,
+          "sourceCounters": [
+            [
+              0.2093,
+              0.18605,
+              0.27907,
+              0.83721
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "1",
+          "sourcePixels": [
+            11,
+            44
+          ],
+          "sourceBox": [
+            57,
+            11,
+            68,
+            55
+          ],
+          "beforeWidthRatio": 1.2,
+          "candidateWidthRatio": 1.018181818181818,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "9",
+          "sourcePixels": [
+            21,
+            44
+          ],
+          "sourceBox": [
+            73,
+            11,
+            94,
+            55
+          ],
+          "beforeWidthRatio": 0.9428571428571428,
+          "candidateWidthRatio": 1.0095238095238095,
+          "sourceCounters": [
+            [
+              0.18182,
+              0.18182,
+              0.27273,
+              0.47727
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.48182
+            ]
+          ]
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2019-12710517",
+      "observedYear": "2019",
+      "sourceSha256": "4311411d9686e44f12a9380d42b34ea68bd306d17f1d27df4fc224fdf7dccd47",
+      "sourceYearBoxInROI": [
+        10,
+        11,
+        93,
+        55
+      ],
+      "sourceYearPixels": [
+        83,
+        44
+      ],
+      "beforeRunWidthRatio": 0.944578313253012,
+      "candidateRunWidthRatio": 1.0265060240963855,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            19,
+            43
+          ],
+          "sourceBox": [
+            10,
+            11,
+            29,
+            54
+          ],
+          "beforeWidthRatio": 0.9978468899521531,
+          "candidateWidthRatio": 0.9978468899521531,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            21,
+            43
+          ],
+          "sourceBox": [
+            33,
+            11,
+            54,
+            54
+          ],
+          "beforeWidthRatio": 0.9028138528138528,
+          "candidateWidthRatio": 0.9865800865800866,
+          "sourceCounters": [
+            [
+              0.18605,
+              0.18605,
+              0.30233,
+              0.83721
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "1",
+          "sourcePixels": [
+            11,
+            44
+          ],
+          "sourceBox": [
+            57,
+            11,
+            68,
+            55
+          ],
+          "beforeWidthRatio": 1.2,
+          "candidateWidthRatio": 1.018181818181818,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "9",
+          "sourcePixels": [
+            20,
+            43
+          ],
+          "sourceBox": [
+            73,
+            11,
+            93,
+            54
+          ],
+          "beforeWidthRatio": 0.9675,
+          "candidateWidthRatio": 1.035909090909091,
+          "sourceCounters": [
+            [
+              0.18605,
+              0.18605,
+              0.27907,
+              0.48837
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.48182
+            ]
+          ]
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2019-12978657",
+      "observedYear": "2019",
+      "sourceSha256": "bce0e1d098f44a9dc597b258b812f5d28aca6c2b0649a9593308427821d24d1d",
+      "sourceYearBoxInROI": [
+        12,
+        15,
+        95,
+        58
+      ],
+      "sourceYearPixels": [
+        83,
+        43
+      ],
+      "beforeRunWidthRatio": 0.9231106243154436,
+      "candidateRunWidthRatio": 1.0031763417305586,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            19,
+            43
+          ],
+          "sourceBox": [
+            12,
+            15,
+            31,
+            58
+          ],
+          "beforeWidthRatio": 0.9978468899521531,
+          "candidateWidthRatio": 0.9978468899521531,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            21,
+            43
+          ],
+          "sourceBox": [
+            35,
+            15,
+            56,
+            58
+          ],
+          "beforeWidthRatio": 0.9028138528138528,
+          "candidateWidthRatio": 0.9865800865800866,
+          "sourceCounters": [
+            [
+              0.18605,
+              0.18605,
+              0.27907,
+              0.81395
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "1",
+          "sourcePixels": [
+            11,
+            43
+          ],
+          "sourceBox": [
+            59,
+            15,
+            70,
+            58
+          ],
+          "beforeWidthRatio": 1.1727272727272726,
+          "candidateWidthRatio": 0.9950413223140494,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "9",
+          "sourcePixels": [
+            21,
+            42
+          ],
+          "sourceBox": [
+            74,
+            15,
+            95,
+            57
+          ],
+          "beforeWidthRatio": 0.9,
+          "candidateWidthRatio": 0.9636363636363636,
+          "sourceCounters": [
+            [
+              0.19048,
+              0.19048,
+              0.28571,
+              0.5
+            ],
+            [
+              0.19048,
+              0.61905,
+              0.28571,
+              0.83333
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.48182
+            ]
+          ]
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2019-13835059",
+      "observedYear": "2019",
+      "sourceSha256": "2952a3c8f6fecb20fbf451dc26d071becd8f11f054a522d0d4ded69a1753417f",
+      "sourceYearBoxInROI": [
+        12,
+        12,
+        100,
+        59
+      ],
+      "sourceYearPixels": [
+        88,
+        47
+      ],
+      "beforeRunWidthRatio": 0.9516528925619834,
+      "candidateRunWidthRatio": 1.034194214876033,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            21,
+            46
+          ],
+          "sourceBox": [
+            12,
+            13,
+            33,
+            59
+          ],
+          "beforeWidthRatio": 0.9658008658008659,
+          "candidateWidthRatio": 0.9658008658008659,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            22,
+            46
+          ],
+          "sourceBox": [
+            37,
+            12,
+            59,
+            58
+          ],
+          "beforeWidthRatio": 0.921900826446281,
+          "candidateWidthRatio": 1.0074380165289256,
+          "sourceCounters": [
+            [
+              0.19565,
+              0.19565,
+              0.28261,
+              0.82609
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "1",
+          "sourcePixels": [
+            12,
+            47
+          ],
+          "sourceBox": [
+            62,
+            12,
+            74,
+            59
+          ],
+          "beforeWidthRatio": 1.175,
+          "candidateWidthRatio": 0.996969696969697,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "9",
+          "sourcePixels": [
+            22,
+            46
+          ],
+          "sourceBox": [
+            78,
+            12,
+            100,
+            58
+          ],
+          "beforeWidthRatio": 0.9409090909090909,
+          "candidateWidthRatio": 1.0074380165289256,
+          "sourceCounters": [
+            [
+              0.19565,
+              0.17391,
+              0.28261,
+              0.47826
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.48182
+            ]
+          ]
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2019-15618118",
+      "observedYear": "2019",
+      "sourceSha256": "42ac484248c3c2b65fc24f3949e5d16f1b1988d68c221d353501a065ccacb1a8",
+      "sourceYearBoxInROI": [
+        11,
+        13,
+        94,
+        57
+      ],
+      "sourceYearPixels": [
+        83,
+        44
+      ],
+      "beforeRunWidthRatio": 0.944578313253012,
+      "candidateRunWidthRatio": 1.0265060240963855,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            19,
+            43
+          ],
+          "sourceBox": [
+            11,
+            14,
+            30,
+            57
+          ],
+          "beforeWidthRatio": 0.9978468899521531,
+          "candidateWidthRatio": 0.9978468899521531,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            21,
+            43
+          ],
+          "sourceBox": [
+            34,
+            13,
+            55,
+            56
+          ],
+          "beforeWidthRatio": 0.9028138528138528,
+          "candidateWidthRatio": 0.9865800865800866,
+          "sourceCounters": [
+            [
+              0.2093,
+              0.18605,
+              0.27907,
+              0.83721
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "1",
+          "sourcePixels": [
+            12,
+            44
+          ],
+          "sourceBox": [
+            57,
+            13,
+            69,
+            57
+          ],
+          "beforeWidthRatio": 1.1,
+          "candidateWidthRatio": 0.9333333333333333,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "9",
+          "sourcePixels": [
+            21,
+            43
+          ],
+          "sourceBox": [
+            73,
+            13,
+            94,
+            56
+          ],
+          "beforeWidthRatio": 0.9214285714285715,
+          "candidateWidthRatio": 0.9865800865800866,
+          "sourceCounters": [
+            [
+              0.2093,
+              0.18605,
+              0.27907,
+              0.48837
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.48182
+            ]
+          ]
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2019-16740833",
+      "observedYear": "2019",
+      "sourceSha256": "d356a268af97ad30f8cd200b7db3d12c0137c3fc19fadf11be49bcd4b2bc39b5",
+      "sourceYearBoxInROI": [
+        11,
+        15,
+        92,
+        58
+      ],
+      "sourceYearPixels": [
+        81,
+        43
+      ],
+      "beforeRunWidthRatio": 0.9459034792368125,
+      "candidateRunWidthRatio": 1.027946127946128,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            19,
+            42
+          ],
+          "sourceBox": [
+            11,
+            15,
+            30,
+            57
+          ],
+          "beforeWidthRatio": 0.9746411483253589,
+          "candidateWidthRatio": 0.9746411483253589,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            21,
+            42
+          ],
+          "sourceBox": [
+            33,
+            15,
+            54,
+            57
+          ],
+          "beforeWidthRatio": 0.8818181818181818,
+          "candidateWidthRatio": 0.9636363636363636,
+          "sourceCounters": [
+            [
+              0.21429,
+              0.19048,
+              0.30952,
+              0.83333
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "1",
+          "sourcePixels": [
+            11,
+            43
+          ],
+          "sourceBox": [
+            57,
+            15,
+            68,
+            58
+          ],
+          "beforeWidthRatio": 1.1727272727272726,
+          "candidateWidthRatio": 0.9950413223140494,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "9",
+          "sourcePixels": [
+            20,
+            42
+          ],
+          "sourceBox": [
+            72,
+            15,
+            92,
+            57
+          ],
+          "beforeWidthRatio": 0.9450000000000001,
+          "candidateWidthRatio": 1.011818181818182,
+          "sourceCounters": [
+            [
+              0.19048,
+              0.19048,
+              0.28571,
+              0.47619
+            ],
+            [
+              0.19048,
+              0.59524,
+              0.28571,
+              0.80952
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.48182
+            ]
+          ]
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2019-19963045",
+      "observedYear": "2019",
+      "sourceSha256": "2c751a9677e6af372160ddf8e17d38414700cbda57e91d75470eb12e0e1aa4df",
+      "sourceYearBoxInROI": [
+        13,
+        15,
+        94,
+        57
+      ],
+      "sourceYearPixels": [
+        81,
+        42
+      ],
+      "beforeRunWidthRatio": 0.9239057239057239,
+      "candidateRunWidthRatio": 1.004040404040404,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            19,
+            42
+          ],
+          "sourceBox": [
+            13,
+            15,
+            32,
+            57
+          ],
+          "beforeWidthRatio": 0.9746411483253589,
+          "candidateWidthRatio": 0.9746411483253589,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            21,
+            42
+          ],
+          "sourceBox": [
+            35,
+            15,
+            56,
+            57
+          ],
+          "beforeWidthRatio": 0.8818181818181818,
+          "candidateWidthRatio": 0.9636363636363636,
+          "sourceCounters": [
+            [
+              0.21429,
+              0.16667,
+              0.30952,
+              0.83333
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "1",
+          "sourcePixels": [
+            11,
+            42
+          ],
+          "sourceBox": [
+            59,
+            15,
+            70,
+            57
+          ],
+          "beforeWidthRatio": 1.1454545454545453,
+          "candidateWidthRatio": 0.9719008264462808,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "9",
+          "sourcePixels": [
+            20,
+            42
+          ],
+          "sourceBox": [
+            74,
+            15,
+            94,
+            57
+          ],
+          "beforeWidthRatio": 0.9450000000000001,
+          "candidateWidthRatio": 1.011818181818182,
+          "sourceCounters": [
+            [
+              0.19048,
+              0.16667,
+              0.28571,
+              0.47619
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.48182
+            ]
+          ]
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2019-95367094",
+      "observedYear": "2019",
+      "sourceSha256": "16d5ff40cef34f6597d9791121e0e99ed965f24608df5ac031aa28617c273718",
+      "sourceYearBoxInROI": [
+        14,
+        13,
+        99,
+        58
+      ],
+      "sourceYearPixels": [
+        85,
+        45
+      ],
+      "beforeRunWidthRatio": 0.9433155080213904,
+      "candidateRunWidthRatio": 1.0251336898395722,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            19,
+            44
+          ],
+          "sourceBox": [
+            14,
+            14,
+            33,
+            58
+          ],
+          "beforeWidthRatio": 1.0210526315789474,
+          "candidateWidthRatio": 1.0210526315789474,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            22,
+            45
+          ],
+          "sourceBox": [
+            37,
+            13,
+            59,
+            58
+          ],
+          "beforeWidthRatio": 0.9018595041322315,
+          "candidateWidthRatio": 0.9855371900826446,
+          "sourceCounters": [
+            [
+              0.2,
+              0.17778,
+              0.28889,
+              0.82222
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "1",
+          "sourcePixels": [
+            12,
+            45
+          ],
+          "sourceBox": [
+            62,
+            13,
+            74,
+            58
+          ],
+          "beforeWidthRatio": 1.125,
+          "candidateWidthRatio": 0.9545454545454545,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "9",
+          "sourcePixels": [
+            21,
+            45
+          ],
+          "sourceBox": [
+            78,
+            13,
+            99,
+            58
+          ],
+          "beforeWidthRatio": 0.9642857142857143,
+          "candidateWidthRatio": 1.0324675324675325,
+          "sourceCounters": [
+            [
+              0.2,
+              0.17778,
+              0.28889,
+              0.48889
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.48182
+            ]
+          ]
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2019-95826877",
+      "observedYear": "2019",
+      "sourceSha256": "244853324887d58977f2be2dd68eef74e46ea8edb0dc5bf749c816f89e0a538a",
+      "sourceYearBoxInROI": [
+        15,
+        13,
+        101,
+        58
+      ],
+      "sourceYearPixels": [
+        86,
+        45
+      ],
+      "beforeRunWidthRatio": 0.9323467230443974,
+      "candidateRunWidthRatio": 1.013213530655391,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            20,
+            44
+          ],
+          "sourceBox": [
+            15,
+            14,
+            35,
+            58
+          ],
+          "beforeWidthRatio": 0.9700000000000001,
+          "candidateWidthRatio": 0.9700000000000001,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            21,
+            45
+          ],
+          "sourceBox": [
+            39,
+            13,
+            60,
+            58
+          ],
+          "beforeWidthRatio": 0.9448051948051948,
+          "candidateWidthRatio": 1.0324675324675325,
+          "sourceCounters": [
+            [
+              0.17778,
+              0.17778,
+              0.28889,
+              0.84444
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "1",
+          "sourcePixels": [
+            12,
+            45
+          ],
+          "sourceBox": [
+            63,
+            13,
+            75,
+            58
+          ],
+          "beforeWidthRatio": 1.125,
+          "candidateWidthRatio": 0.9545454545454545,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "9",
+          "sourcePixels": [
+            21,
+            45
+          ],
+          "sourceBox": [
+            80,
+            13,
+            101,
+            58
+          ],
+          "beforeWidthRatio": 0.9642857142857143,
+          "candidateWidthRatio": 1.0324675324675325,
+          "sourceCounters": [
+            [
+              0.17778,
+              0.17778,
+              0.26667,
+              0.48889
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.48182
+            ]
+          ]
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2020-17918347",
+      "observedYear": "2019",
+      "sourceSha256": "3ca1edcfef3cc22142c3d1e0eea8c0a903a4bd0611e2308843c57fd2f4ec58f1",
+      "sourceYearBoxInROI": [
+        14,
+        14,
+        99,
+        59
+      ],
+      "sourceYearPixels": [
+        85,
+        45
+      ],
+      "beforeRunWidthRatio": 0.9433155080213904,
+      "candidateRunWidthRatio": 1.0251336898395722,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            19,
+            44
+          ],
+          "sourceBox": [
+            14,
+            15,
+            33,
+            59
+          ],
+          "beforeWidthRatio": 1.0210526315789474,
+          "candidateWidthRatio": 1.0210526315789474,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            21,
+            45
+          ],
+          "sourceBox": [
+            37,
+            14,
+            58,
+            59
+          ],
+          "beforeWidthRatio": 0.9448051948051948,
+          "candidateWidthRatio": 1.0324675324675325,
+          "sourceCounters": [
+            [
+              0.2,
+              0.17778,
+              0.28889,
+              0.82222
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "1",
+          "sourcePixels": [
+            11,
+            45
+          ],
+          "sourceBox": [
+            62,
+            14,
+            73,
+            59
+          ],
+          "beforeWidthRatio": 1.2272727272727273,
+          "candidateWidthRatio": 1.0413223140495866,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "9",
+          "sourcePixels": [
+            21,
+            44
+          ],
+          "sourceBox": [
+            78,
+            14,
+            99,
+            58
+          ],
+          "beforeWidthRatio": 0.9428571428571428,
+          "candidateWidthRatio": 1.0095238095238095,
+          "sourceCounters": [
+            [
+              0.18182,
+              0.18182,
+              0.27273,
+              0.5
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.48182
+            ]
+          ]
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2020-20726786",
+      "observedYear": "2020",
+      "sourceSha256": "d2e440382adaafa5bcc93d2313e56e30465ce7bd6e40c3f9126747c003d7c4a7",
+      "sourceYearBoxInROI": [
+        9,
+        11,
+        101,
+        55
+      ],
+      "sourceYearPixels": [
+        92,
+        44
+      ],
+      "beforeRunWidthRatio": 0.8869565217391304,
+      "candidateRunWidthRatio": 1.0065217391304349,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            20,
+            43
+          ],
+          "sourceBox": [
+            9,
+            12,
+            29,
+            55
+          ],
+          "beforeWidthRatio": 0.9479545454545455,
+          "candidateWidthRatio": 0.9479545454545455,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            21,
+            43
+          ],
+          "sourceBox": [
+            32,
+            12,
+            53,
+            55
+          ],
+          "beforeWidthRatio": 0.9028138528138528,
+          "candidateWidthRatio": 0.9865800865800866,
+          "sourceCounters": [
+            [
+              0.2093,
+              0.18605,
+              0.30233,
+              0.81395
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "2",
+          "sourcePixels": [
+            19,
+            43
+          ],
+          "sourceBox": [
+            57,
+            12,
+            76,
+            55
+          ],
+          "beforeWidthRatio": 0.9978468899521531,
+          "candidateWidthRatio": 0.9978468899521531,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "0",
+          "sourcePixels": [
+            21,
+            44
+          ],
+          "sourceBox": [
+            80,
+            11,
+            101,
+            55
+          ],
+          "beforeWidthRatio": 0.9238095238095237,
+          "candidateWidthRatio": 1.0095238095238095,
+          "sourceCounters": [
+            [
+              0.18182,
+              0.18182,
+              0.29545,
+              0.81818
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2020-21790645",
+      "observedYear": "2020",
+      "sourceSha256": "e6b849785fc998753628d4b157e0ce307191bc1dfac01fad56f145d403aab234",
+      "sourceYearBoxInROI": [
+        9,
+        14,
+        100,
+        57
+      ],
+      "sourceYearPixels": [
+        91,
+        43
+      ],
+      "beforeRunWidthRatio": 0.8763236763236762,
+      "candidateRunWidthRatio": 0.9944555444555443,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            19,
+            43
+          ],
+          "sourceBox": [
+            9,
+            14,
+            28,
+            57
+          ],
+          "beforeWidthRatio": 0.9978468899521531,
+          "candidateWidthRatio": 0.9978468899521531,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            21,
+            43
+          ],
+          "sourceBox": [
+            32,
+            14,
+            53,
+            57
+          ],
+          "beforeWidthRatio": 0.9028138528138528,
+          "candidateWidthRatio": 0.9865800865800866,
+          "sourceCounters": [
+            [
+              0.18605,
+              0.16279,
+              0.27907,
+              0.81395
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "2",
+          "sourcePixels": [
+            18,
+            43
+          ],
+          "sourceBox": [
+            57,
+            14,
+            75,
+            57
+          ],
+          "beforeWidthRatio": 1.0532828282828282,
+          "candidateWidthRatio": 1.0532828282828282,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "0",
+          "sourcePixels": [
+            21,
+            43
+          ],
+          "sourceBox": [
+            79,
+            14,
+            100,
+            57
+          ],
+          "beforeWidthRatio": 0.9028138528138528,
+          "candidateWidthRatio": 0.9865800865800866,
+          "sourceCounters": [
+            [
+              0.18605,
+              0.18605,
+              0.30233,
+              0.81395
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2020-22735808",
+      "observedYear": "2020",
+      "sourceSha256": "048db40c8e0211b409616733266466fa9cdb80414e796831d4c3527590ac3c63",
+      "sourceYearBoxInROI": [
+        9,
+        12,
+        97,
+        55
+      ],
+      "sourceYearPixels": [
+        88,
+        43
+      ],
+      "beforeRunWidthRatio": 0.906198347107438,
+      "candidateRunWidthRatio": 1.0283574380165288,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            19,
+            41
+          ],
+          "sourceBox": [
+            9,
+            14,
+            28,
+            55
+          ],
+          "beforeWidthRatio": 0.9514354066985645,
+          "candidateWidthRatio": 0.9514354066985645,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            21,
+            42
+          ],
+          "sourceBox": [
+            31,
+            13,
+            52,
+            55
+          ],
+          "beforeWidthRatio": 0.8818181818181818,
+          "candidateWidthRatio": 0.9636363636363636,
+          "sourceCounters": [
+            [
+              0.21429,
+              0.19048,
+              0.30952,
+              0.80952
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "2",
+          "sourcePixels": [
+            19,
+            41
+          ],
+          "sourceBox": [
+            55,
+            13,
+            74,
+            54
+          ],
+          "beforeWidthRatio": 0.9514354066985645,
+          "candidateWidthRatio": 0.9514354066985645,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "0",
+          "sourcePixels": [
+            20,
+            41
+          ],
+          "sourceBox": [
+            77,
+            12,
+            97,
+            53
+          ],
+          "beforeWidthRatio": 0.9038636363636364,
+          "candidateWidthRatio": 0.9877272727272728,
+          "sourceCounters": [
+            [
+              0.19512,
+              0.19512,
+              0.29268,
+              0.82927
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2020-23840887",
+      "observedYear": "2020",
+      "sourceSha256": "3c3bb4a9b528b5739f77d908a832df45f0dec746f06beda335a8b50d74a4de25",
+      "sourceYearBoxInROI": [
+        11,
+        14,
+        100,
+        57
+      ],
+      "sourceYearPixels": [
+        89,
+        43
+      ],
+      "beforeRunWidthRatio": 0.8960163432073543,
+      "candidateRunWidthRatio": 1.0168028600612868,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            18,
+            42
+          ],
+          "sourceBox": [
+            11,
+            14,
+            29,
+            56
+          ],
+          "beforeWidthRatio": 1.0287878787878788,
+          "candidateWidthRatio": 1.0287878787878788,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            20,
+            42
+          ],
+          "sourceBox": [
+            33,
+            14,
+            53,
+            56
+          ],
+          "beforeWidthRatio": 0.925909090909091,
+          "candidateWidthRatio": 1.011818181818182,
+          "sourceCounters": [
+            [
+              0.19048,
+              0.19048,
+              0.28571,
+              0.83333
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "2",
+          "sourcePixels": [
+            19,
+            43
+          ],
+          "sourceBox": [
+            57,
+            14,
+            76,
+            57
+          ],
+          "beforeWidthRatio": 0.9978468899521531,
+          "candidateWidthRatio": 0.9978468899521531,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "0",
+          "sourcePixels": [
+            21,
+            42
+          ],
+          "sourceBox": [
+            79,
+            14,
+            100,
+            56
+          ],
+          "beforeWidthRatio": 0.8818181818181818,
+          "candidateWidthRatio": 0.9636363636363636,
+          "sourceCounters": [
+            [
+              0.21429,
+              0.19048,
+              0.30952,
+              0.83333
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2020-24611893",
+      "observedYear": "2020",
+      "sourceSha256": "a837a013099714332fad4c28e48cc17249dd8fa4708cc04e4a92b4adaacd6878",
+      "sourceYearBoxInROI": [
+        11,
+        15,
+        88,
+        51
+      ],
+      "sourceYearPixels": [
+        77,
+        36
+      ],
+      "beforeRunWidthRatio": 0.867060212514758,
+      "candidateRunWidthRatio": 0.9839433293978749,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            16,
+            35
+          ],
+          "sourceBox": [
+            11,
+            15,
+            27,
+            50
+          ],
+          "beforeWidthRatio": 0.9644886363636365,
+          "candidateWidthRatio": 0.9644886363636365,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            18,
+            35
+          ],
+          "sourceBox": [
+            30,
+            15,
+            48,
+            50
+          ],
+          "beforeWidthRatio": 0.8573232323232324,
+          "candidateWidthRatio": 0.936868686868687,
+          "sourceCounters": [
+            [
+              0.2,
+              0.17143,
+              0.31429,
+              0.85714
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "2",
+          "sourcePixels": [
+            16,
+            36
+          ],
+          "sourceBox": [
+            51,
+            15,
+            67,
+            51
+          ],
+          "beforeWidthRatio": 0.9920454545454546,
+          "candidateWidthRatio": 0.9920454545454546,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "0",
+          "sourcePixels": [
+            17,
+            35
+          ],
+          "sourceBox": [
+            71,
+            16,
+            88,
+            51
+          ],
+          "beforeWidthRatio": 0.9077540106951872,
+          "candidateWidthRatio": 0.9919786096256684,
+          "sourceCounters": [
+            [
+              0.2,
+              0.17143,
+              0.31429,
+              0.82857
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2020-28614611",
+      "observedYear": "2020",
+      "sourceSha256": "72ea8ba81cb767d5b78cfe84ccea9779a23d1dd6f78700023b8a02796d00673d",
+      "sourceYearBoxInROI": [
+        11,
+        12,
+        103,
+        57
+      ],
+      "sourceYearPixels": [
+        92,
+        45
+      ],
+      "beforeRunWidthRatio": 0.907114624505929,
+      "candidateRunWidthRatio": 1.029397233201581,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            19,
+            44
+          ],
+          "sourceBox": [
+            11,
+            12,
+            30,
+            56
+          ],
+          "beforeWidthRatio": 1.0210526315789474,
+          "candidateWidthRatio": 1.0210526315789474,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            21,
+            44
+          ],
+          "sourceBox": [
+            34,
+            12,
+            55,
+            56
+          ],
+          "beforeWidthRatio": 0.9238095238095237,
+          "candidateWidthRatio": 1.0095238095238095,
+          "sourceCounters": [
+            [
+              0.20455,
+              0.20455,
+              0.29545,
+              0.84091
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "2",
+          "sourcePixels": [
+            19,
+            44
+          ],
+          "sourceBox": [
+            59,
+            13,
+            78,
+            57
+          ],
+          "beforeWidthRatio": 1.0210526315789474,
+          "candidateWidthRatio": 1.0210526315789474,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "0",
+          "sourcePixels": [
+            21,
+            44
+          ],
+          "sourceBox": [
+            82,
+            13,
+            103,
+            57
+          ],
+          "beforeWidthRatio": 0.9238095238095237,
+          "candidateWidthRatio": 1.0095238095238095,
+          "sourceCounters": [
+            [
+              0.18182,
+              0.18182,
+              0.27273,
+              0.81818
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2020-96351885",
+      "observedYear": "2020",
+      "sourceSha256": "2044a586bb01c3147a3c1892aaa1e7219f0b986a7f47d5827d17427ffe1c8f0e",
+      "sourceYearBoxInROI": [
+        9,
+        10,
+        104,
+        56
+      ],
+      "sourceYearPixels": [
+        95,
+        46
+      ],
+      "beforeRunWidthRatio": 0.8979904306220096,
+      "candidateRunWidthRatio": 1.019043062200957,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            20,
+            46
+          ],
+          "sourceBox": [
+            9,
+            10,
+            29,
+            56
+          ],
+          "beforeWidthRatio": 1.0140909090909092,
+          "candidateWidthRatio": 1.0140909090909092,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            22,
+            46
+          ],
+          "sourceBox": [
+            33,
+            10,
+            55,
+            56
+          ],
+          "beforeWidthRatio": 0.921900826446281,
+          "candidateWidthRatio": 1.0074380165289256,
+          "sourceCounters": [
+            [
+              0.19565,
+              0.19565,
+              0.28261,
+              0.82609
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "2",
+          "sourcePixels": [
+            20,
+            46
+          ],
+          "sourceBox": [
+            59,
+            10,
+            79,
+            56
+          ],
+          "beforeWidthRatio": 1.0140909090909092,
+          "candidateWidthRatio": 1.0140909090909092,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "0",
+          "sourcePixels": [
+            21,
+            46
+          ],
+          "sourceBox": [
+            83,
+            10,
+            104,
+            56
+          ],
+          "beforeWidthRatio": 0.9658008658008659,
+          "candidateWidthRatio": 1.0554112554112554,
+          "sourceCounters": [
+            [
+              0.17391,
+              0.17391,
+              0.28261,
+              0.82609
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2021-30995874",
+      "observedYear": "2021",
+      "sourceSha256": "f9db84eba76e3012cdb665c3ed247c7371bd2ff284f0fddc3650502a40791401",
+      "sourceYearBoxInROI": [
+        15,
+        12,
+        96,
+        57
+      ],
+      "sourceYearPixels": [
+        81,
+        45
+      ],
+      "beforeRunWidthRatio": 0.952020202020202,
+      "candidateRunWidthRatio": 1.0454545454545454,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            19,
+            44
+          ],
+          "sourceBox": [
+            15,
+            13,
+            34,
+            57
+          ],
+          "beforeWidthRatio": 1.0210526315789474,
+          "candidateWidthRatio": 1.0210526315789474,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            21,
+            44
+          ],
+          "sourceBox": [
+            38,
+            13,
+            59,
+            57
+          ],
+          "beforeWidthRatio": 0.9238095238095237,
+          "candidateWidthRatio": 1.0095238095238095,
+          "sourceCounters": [
+            [
+              0.20455,
+              0.18182,
+              0.29545,
+              0.81818
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "2",
+          "sourcePixels": [
+            19,
+            44
+          ],
+          "sourceBox": [
+            63,
+            13,
+            82,
+            57
+          ],
+          "beforeWidthRatio": 1.0210526315789474,
+          "candidateWidthRatio": 1.0210526315789474,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "1",
+          "sourcePixels": [
+            11,
+            45
+          ],
+          "sourceBox": [
+            85,
+            12,
+            96,
+            57
+          ],
+          "beforeWidthRatio": 1.2272727272727273,
+          "candidateWidthRatio": 1.0413223140495866,
+          "sourceCounters": [],
+          "candidateCounters": []
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2021-36946964",
+      "observedYear": "2021",
+      "sourceSha256": "e8b849bad4eba73ef0373fbb772a9bd017d135230161fd9a00ef3730669b1c74",
+      "sourceYearBoxInROI": [
+        14,
+        14,
+        97,
+        58
+      ],
+      "sourceYearPixels": [
+        83,
+        44
+      ],
+      "beforeRunWidthRatio": 0.908433734939759,
+      "candidateRunWidthRatio": 0.9975903614457831,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            20,
+            44
+          ],
+          "sourceBox": [
+            14,
+            14,
+            34,
+            58
+          ],
+          "beforeWidthRatio": 0.9700000000000001,
+          "candidateWidthRatio": 0.9700000000000001,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            21,
+            44
+          ],
+          "sourceBox": [
+            38,
+            14,
+            59,
+            58
+          ],
+          "beforeWidthRatio": 0.9238095238095237,
+          "candidateWidthRatio": 1.0095238095238095,
+          "sourceCounters": [
+            [
+              0.20455,
+              0.18182,
+              0.29545,
+              0.81818
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "2",
+          "sourcePixels": [
+            20,
+            44
+          ],
+          "sourceBox": [
+            63,
+            14,
+            83,
+            58
+          ],
+          "beforeWidthRatio": 0.9700000000000001,
+          "candidateWidthRatio": 0.9700000000000001,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "1",
+          "sourcePixels": [
+            11,
+            44
+          ],
+          "sourceBox": [
+            86,
+            14,
+            97,
+            58
+          ],
+          "beforeWidthRatio": 1.2,
+          "candidateWidthRatio": 1.018181818181818,
+          "sourceCounters": [],
+          "candidateCounters": []
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2021-38569246",
+      "observedYear": "2021",
+      "sourceSha256": "1591f711c77976ec938e09672079cf5f756d4e656f7fe49fef7572ed78e80081",
+      "sourceYearBoxInROI": [
+        13,
+        13,
+        96,
+        57
+      ],
+      "sourceYearPixels": [
+        83,
+        44
+      ],
+      "beforeRunWidthRatio": 0.908433734939759,
+      "candidateRunWidthRatio": 0.9975903614457831,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            20,
+            43
+          ],
+          "sourceBox": [
+            13,
+            14,
+            33,
+            57
+          ],
+          "beforeWidthRatio": 0.9479545454545455,
+          "candidateWidthRatio": 0.9479545454545455,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            22,
+            44
+          ],
+          "sourceBox": [
+            36,
+            13,
+            58,
+            57
+          ],
+          "beforeWidthRatio": 0.8818181818181818,
+          "candidateWidthRatio": 0.9636363636363636,
+          "sourceCounters": [
+            [
+              0.20455,
+              0.18182,
+              0.29545,
+              0.81818
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "2",
+          "sourcePixels": [
+            20,
+            44
+          ],
+          "sourceBox": [
+            61,
+            13,
+            81,
+            57
+          ],
+          "beforeWidthRatio": 0.9700000000000001,
+          "candidateWidthRatio": 0.9700000000000001,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "1",
+          "sourcePixels": [
+            12,
+            44
+          ],
+          "sourceBox": [
+            84,
+            13,
+            96,
+            57
+          ],
+          "beforeWidthRatio": 1.1,
+          "candidateWidthRatio": 0.9333333333333333,
+          "sourceCounters": [],
+          "candidateCounters": []
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2021-97885334",
+      "observedYear": "2021",
+      "sourceSha256": "fb0f8393d19dab8ca172a485e06efba1c3bd61d148316625b3ec296e88f78e1a",
+      "sourceYearBoxInROI": [
+        13,
+        12,
+        96,
+        57
+      ],
+      "sourceYearPixels": [
+        83,
+        45
+      ],
+      "beforeRunWidthRatio": 0.9290799561883899,
+      "candidateRunWidthRatio": 1.0202628696604599,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            19,
+            45
+          ],
+          "sourceBox": [
+            13,
+            12,
+            32,
+            57
+          ],
+          "beforeWidthRatio": 1.0442583732057416,
+          "candidateWidthRatio": 1.0442583732057416,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            22,
+            45
+          ],
+          "sourceBox": [
+            36,
+            12,
+            58,
+            57
+          ],
+          "beforeWidthRatio": 0.9018595041322315,
+          "candidateWidthRatio": 0.9855371900826446,
+          "sourceCounters": [
+            [
+              0.2,
+              0.17778,
+              0.28889,
+              0.8
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "2",
+          "sourcePixels": [
+            19,
+            45
+          ],
+          "sourceBox": [
+            62,
+            12,
+            81,
+            57
+          ],
+          "beforeWidthRatio": 1.0442583732057416,
+          "candidateWidthRatio": 1.0442583732057416,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "1",
+          "sourcePixels": [
+            12,
+            45
+          ],
+          "sourceBox": [
+            84,
+            12,
+            96,
+            57
+          ],
+          "beforeWidthRatio": 1.125,
+          "candidateWidthRatio": 0.9545454545454545,
+          "sourceCounters": [],
+          "candidateCounters": []
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2022-72919128",
+      "observedYear": "2022",
+      "sourceSha256": "8a5d4db2c66d5beb742dbb8e5f80737559c3136e306985495576fa8b5928fa64",
+      "sourceYearBoxInROI": [
+        12,
+        11,
+        107,
+        57
+      ],
+      "sourceYearPixels": [
+        95,
+        46
+      ],
+      "beforeRunWidthRatio": 0.8979904306220096,
+      "candidateRunWidthRatio": 0.9992344497607656,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            20,
+            46
+          ],
+          "sourceBox": [
+            12,
+            11,
+            32,
+            57
+          ],
+          "beforeWidthRatio": 1.0140909090909092,
+          "candidateWidthRatio": 1.0140909090909092,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            23,
+            46
+          ],
+          "sourceBox": [
+            36,
+            11,
+            59,
+            57
+          ],
+          "beforeWidthRatio": 0.8818181818181818,
+          "candidateWidthRatio": 0.9636363636363636,
+          "sourceCounters": [
+            [
+              0.21739,
+              0.17391,
+              0.30435,
+              0.80435
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "2",
+          "sourcePixels": [
+            20,
+            45
+          ],
+          "sourceBox": [
+            63,
+            11,
+            83,
+            56
+          ],
+          "beforeWidthRatio": 0.9920454545454546,
+          "candidateWidthRatio": 0.9920454545454546,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "2",
+          "sourcePixels": [
+            20,
+            45
+          ],
+          "sourceBox": [
+            87,
+            11,
+            107,
+            56
+          ],
+          "beforeWidthRatio": 0.9920454545454546,
+          "candidateWidthRatio": 0.9920454545454546,
+          "sourceCounters": [],
+          "candidateCounters": []
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2022-7484530",
+      "observedYear": "2022",
+      "sourceSha256": "a639c107b72781fd21ca2d8bf3e8aa0349c0f9536cb8153ca4f2757f215b0d4a",
+      "sourceYearBoxInROI": [
+        10,
+        12,
+        103,
+        57
+      ],
+      "sourceYearPixels": [
+        93,
+        45
+      ],
+      "beforeRunWidthRatio": 0.8973607038123166,
+      "candidateRunWidthRatio": 0.9985337243401757,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            20,
+            44
+          ],
+          "sourceBox": [
+            10,
+            13,
+            30,
+            57
+          ],
+          "beforeWidthRatio": 0.9700000000000001,
+          "candidateWidthRatio": 0.9700000000000001,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            22,
+            45
+          ],
+          "sourceBox": [
+            33,
+            12,
+            55,
+            57
+          ],
+          "beforeWidthRatio": 0.9018595041322315,
+          "candidateWidthRatio": 0.9855371900826446,
+          "sourceCounters": [
+            [
+              0.22222,
+              0.2,
+              0.31111,
+              0.82222
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "2",
+          "sourcePixels": [
+            20,
+            45
+          ],
+          "sourceBox": [
+            59,
+            12,
+            79,
+            57
+          ],
+          "beforeWidthRatio": 0.9920454545454546,
+          "candidateWidthRatio": 0.9920454545454546,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "2",
+          "sourcePixels": [
+            20,
+            44
+          ],
+          "sourceBox": [
+            83,
+            12,
+            103,
+            56
+          ],
+          "beforeWidthRatio": 0.9700000000000001,
+          "candidateWidthRatio": 0.9700000000000001,
+          "sourceCounters": [],
+          "candidateCounters": []
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2022-77540937",
+      "observedYear": "2022",
+      "sourceSha256": "5f67f35bddff1bfaa5394c60da8e278b151223d032515b34bf0bbd35d35033d8",
+      "sourceYearBoxInROI": [
+        11,
+        12,
+        105,
+        58
+      ],
+      "sourceYearPixels": [
+        94,
+        46
+      ],
+      "beforeRunWidthRatio": 0.9075435203094776,
+      "candidateRunWidthRatio": 1.0098646034816245,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            20,
+            45
+          ],
+          "sourceBox": [
+            11,
+            12,
+            31,
+            57
+          ],
+          "beforeWidthRatio": 0.9920454545454546,
+          "candidateWidthRatio": 0.9920454545454546,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            22,
+            45
+          ],
+          "sourceBox": [
+            35,
+            12,
+            57,
+            57
+          ],
+          "beforeWidthRatio": 0.9018595041322315,
+          "candidateWidthRatio": 0.9855371900826446,
+          "sourceCounters": [
+            [
+              0.2,
+              0.17778,
+              0.28889,
+              0.84444
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "2",
+          "sourcePixels": [
+            20,
+            44
+          ],
+          "sourceBox": [
+            61,
+            13,
+            81,
+            57
+          ],
+          "beforeWidthRatio": 0.9700000000000001,
+          "candidateWidthRatio": 0.9700000000000001,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "2",
+          "sourcePixels": [
+            19,
+            45
+          ],
+          "sourceBox": [
+            86,
+            13,
+            105,
+            58
+          ],
+          "beforeWidthRatio": 1.0442583732057416,
+          "candidateWidthRatio": 1.0442583732057416,
+          "sourceCounters": [],
+          "candidateCounters": []
+        }
+      ],
+      "candidateTypography": false
+    },
+    {
+      "id": "2023-52843353",
+      "observedYear": "2023",
+      "sourceSha256": "e53879fc4a5e160fcfb76135db66af71b95302799b31ed16e0da39cc4e85b62d",
+      "sourceYearBoxInROI": [
+        8,
+        9,
+        104,
+        55
+      ],
+      "sourceYearPixels": [
+        96,
+        46
+      ],
+      "beforeRunWidthRatio": 0.8929924242424242,
+      "candidateRunWidthRatio": 1.0084280303030304,
+      "occurrences": [
+        {
+          "index": 0,
+          "character": "2",
+          "sourcePixels": [
+            20,
+            46
+          ],
+          "sourceBox": [
+            8,
+            9,
+            28,
+            55
+          ],
+          "beforeWidthRatio": 1.0140909090909092,
+          "candidateWidthRatio": 1.0140909090909092,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 1,
+          "character": "0",
+          "sourcePixels": [
+            22,
+            46
+          ],
+          "sourceBox": [
+            32,
+            9,
+            54,
+            55
+          ],
+          "beforeWidthRatio": 0.921900826446281,
+          "candidateWidthRatio": 1.0074380165289256,
+          "sourceCounters": [
+            [
+              0.19565,
+              0.17391,
+              0.28261,
+              0.82609
+            ]
+          ],
+          "candidateCounters": [
+            [
+              0.19091,
+              0.16818,
+              0.29091,
+              0.83182
+            ]
+          ]
+        },
+        {
+          "index": 2,
+          "character": "2",
+          "sourcePixels": [
+            20,
+            46
+          ],
+          "sourceBox": [
+            58,
+            9,
+            78,
+            55
+          ],
+          "beforeWidthRatio": 1.0140909090909092,
+          "candidateWidthRatio": 1.0140909090909092,
+          "sourceCounters": [],
+          "candidateCounters": []
+        },
+        {
+          "index": 3,
+          "character": "3",
+          "sourcePixels": [
+            22,
+            46
+          ],
+          "sourceBox": [
+            82,
+            9,
+            104,
+            55
+          ],
+          "beforeWidthRatio": 0.9409090909090909,
+          "candidateWidthRatio": 1.0074380165289256,
+          "sourceCounters": [],
+          "candidateCounters": []
+        }
+      ],
+      "candidateTypography": false
+    }
+  ]
+}

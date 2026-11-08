@@ -1,0 +1,1006 @@
+{
+  "baseline": "/workspace/scratch/ea908a79795c/plateforge-decal-pass1",
+  "baselineCommit": "24689246670c25f91e0d1676a0647f053dbca68e",
+  "provenance": {
+    "baselineCommit": "24689246670c25f91e0d1676a0647f053dbca68e",
+    "baselineSourceSha256": "a4870904e6d8cb1f44c37b46afb1509812d1cfbba5299bc7f48fcc6a44046c79",
+    "currentCommit": "24689246670c25f91e0d1676a0647f053dbca68e",
+    "currentSourceSha256": "80f176a664755c5d41432cbac8150c9b77edf4d13694e82952f8b309b04bc6fd"
+  },
+  "proposalSha256": "61e43bd0671603b52db6a34fba81b22525a5d6a37a1ea9d5eb438abfb0dce493",
+  "candidateScope": "After is the unmodified integrated current checkout. Before is the complete clean first-pass checkout.",
+  "records": [
+    {
+      "id": "1971",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1971.jpg",
+      "month": null,
+      "control": "553645",
+      "printedInputs": {
+        "month": null,
+        "control": "553645"
+      },
+      "svgSha256": "4e048c6dcbb293064a2c209239dba834c593dc61546d7136e0ffb6ad801fda3d",
+      "viewBox": [
+        190,
+        100
+      ]
+    },
+    {
+      "id": "1974",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1974-769712.jpg",
+      "month": null,
+      "control": "769712",
+      "printedInputs": {
+        "month": null,
+        "control": "769712"
+      },
+      "svgSha256": "a9b5a4c8734785ef774e7cefedef205ee1742f3cc0a7c12ab1ace3193a0acedd",
+      "viewBox": [
+        190,
+        100
+      ]
+    },
+    {
+      "id": "1975",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1975-4469530.jpg",
+      "month": null,
+      "control": "4469530",
+      "printedInputs": {
+        "month": null,
+        "control": "4469530"
+      },
+      "svgSha256": "197be623d34178dcacad7f4a7650231e440a59d552a6f91ef1a799796dcbcb6a",
+      "viewBox": [
+        149,
+        100
+      ]
+    },
+    {
+      "id": "1976",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1976.jpg",
+      "month": null,
+      "control": "1007289",
+      "printedInputs": {
+        "month": null,
+        "control": "1007289"
+      },
+      "svgSha256": "2b1381d1bbd938166432dc89c776afe260be7550097aa2ad4b3fc866648da4fd",
+      "viewBox": [
+        160,
+        100
+      ]
+    },
+    {
+      "id": "1978",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1978.jpg",
+      "month": null,
+      "control": "0718662",
+      "printedInputs": {
+        "month": null,
+        "control": "0718662"
+      },
+      "svgSha256": "c254277e1e5884d5d82526b9cd86ad5ff7e1670d439a5d5ae429c3ca8707282f",
+      "viewBox": [
+        186,
+        100
+      ]
+    },
+    {
+      "id": "1980",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1980-43052284.jpg",
+      "month": "MAR",
+      "control": "43052284",
+      "printedInputs": {
+        "month": "MAR",
+        "control": "43052284"
+      },
+      "svgSha256": "6a6483d07a6d58fdbd35bafd58c1a72e856938a5b0a3e16f54005cb35e23b846",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1981",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1981-59031991.jpg",
+      "month": "JUN",
+      "control": "59031991",
+      "printedInputs": {
+        "month": "JUN",
+        "control": "59031991"
+      },
+      "svgSha256": "5728d6e0c5e3351a49bd1ca099644a8a48ee660e067b263ccec5bcf25f2b8e7c",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1982",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1982-66134375.jpg",
+      "month": "JAN",
+      "control": "66134375",
+      "printedInputs": {
+        "month": "JAN",
+        "control": "66134375"
+      },
+      "svgSha256": "9273dac8ca38cff24c5c4bbcaa81db7ab309b9f7dff661aa6657ffca08034064",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1985",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1985-62333627.jpg",
+      "month": "JUL",
+      "control": "62333627",
+      "printedInputs": {
+        "month": "JUL",
+        "control": "62333627"
+      },
+      "svgSha256": "253c7475c770598d20987e1d2669bca9fe151c3cd784bd68a557668fcab51657",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1987",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1987-22687871.jpg",
+      "month": "FEB",
+      "control": "22687871",
+      "printedInputs": {
+        "month": "FEB",
+        "control": "22687871"
+      },
+      "svgSha256": "d83edbd7af6e044438a4a239f5ddabe9c203988e91cc4bd4608a4b4649176e49",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1988",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1988-21533872.jpg",
+      "month": "DEC",
+      "control": "21533872",
+      "printedInputs": {
+        "month": "DEC",
+        "control": "21533872"
+      },
+      "svgSha256": "aa9ad4e088cc5a34ea33108789ee2f559c21799b363df80d7e32b033748cf853",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1989",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1989-33187934.jpg",
+      "month": "APR",
+      "control": "33187934",
+      "printedInputs": {
+        "month": "APR",
+        "control": "33187934"
+      },
+      "svgSha256": "9ab9a1f0bf3ff0d0e17c490d102d002902117d287ad56cf04a1894ba0d2d0c31",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1990",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1990-30863010.jpg",
+      "month": "JAN",
+      "control": "30863010",
+      "printedInputs": {
+        "month": "JAN",
+        "control": "30863010"
+      },
+      "svgSha256": "8cd2877aab3defb1d67c45f18a76c0564b072c90517bbbeaf49a4a2db75c4e39",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1991",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1991-55232623.jpg",
+      "month": "JUN",
+      "control": "55232623",
+      "printedInputs": {
+        "month": "JUN",
+        "control": "55232623"
+      },
+      "svgSha256": "1aa06ad0aac6d19ae6984a560fb04aa9d46c65d493aa97b6fe49a3623212c13a",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1992",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1992-59693121.jpg",
+      "month": "OCT",
+      "control": "59693121",
+      "printedInputs": {
+        "month": "OCT",
+        "control": "59693121"
+      },
+      "svgSha256": "ebebea9332768858d247f26c72a1b9bbf67a56a0e3ad7c162e39b05ef2e0d0c8",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1993",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1993-79096980.jpg",
+      "month": "OCT",
+      "control": "79096980",
+      "printedInputs": {
+        "month": "OCT",
+        "control": "79096980"
+      },
+      "svgSha256": "f25ff6deb23f04449b7974574c02352aeeb99c40e54bd89bb775fd0b7810661b",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1994",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1994-79533496.jpg",
+      "month": "OCT",
+      "control": "79533496",
+      "printedInputs": {
+        "month": "OCT",
+        "control": "79533496"
+      },
+      "svgSha256": "d9f04932808e41b02d1722155ae5f5ecb68fbd8b03cc11a9d29b07a6a2aedca8",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1995",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1995-82287425.jpg",
+      "month": "NOV",
+      "control": "82287425",
+      "printedInputs": {
+        "month": "NOV",
+        "control": "82287425"
+      },
+      "svgSha256": "b06fea44f8dd79efe29442c6a44a3a78e24222de7412fbcb03469bebc6dbd331",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1996",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1996-22710492.jpg",
+      "month": "MAR",
+      "control": "22710492",
+      "printedInputs": {
+        "month": "MAR",
+        "control": "22710492"
+      },
+      "svgSha256": "fb32f5057f27b36a1534a19e87502a3507d4732b6f1097952ddce35b473ef3a5",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1996-pink",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1996-pink.jpg",
+      "month": "NOV",
+      "control": "82903198",
+      "printedInputs": {
+        "month": "NOV",
+        "control": "82903198"
+      },
+      "svgSha256": "421dfe4756c3eb6da4ac885ba0480ccdb9db2392049afe1d6bf9328d2f462d9d",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1997",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1997-84261541.jpg",
+      "month": "NOV",
+      "control": "84261541",
+      "printedInputs": {
+        "month": "NOV",
+        "control": "84261541"
+      },
+      "svgSha256": "ca2919ebe4a48fdb49404a44118f5cd0e65440b34a6d5a446991598399f2bcd2",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1998",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1998-37685128.jpg",
+      "month": "AUG",
+      "control": "37685128",
+      "printedInputs": {
+        "month": "AUG",
+        "control": "37685128"
+      },
+      "svgSha256": "ad59fa30da74686eba418b560e167c2dfa5cfb4326c1aa994049f78b5660389d",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "2004",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2004-42591320.jpg",
+      "month": "MAR",
+      "control": "42591320",
+      "printedInputs": {
+        "month": "MAR",
+        "control": "42591320"
+      },
+      "svgSha256": "da180ad23c0cb77b667a404feda0daa0e45d3cebad8ec05cb2db30702e5d12fd",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "2005",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2005.jpg",
+      "month": "JAN",
+      "control": "10167427",
+      "printedInputs": {
+        "month": "JAN",
+        "control": "10167427"
+      },
+      "svgSha256": "febf34018ec12f8d560b558d359dc62e2c4558ddce51ca398416a35ac6eda9eb",
+      "viewBox": [
+        229.99999999999997,
+        100
+      ]
+    },
+    {
+      "id": "2006",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2006-24286311.jpg",
+      "month": "MAY",
+      "control": "24286311",
+      "printedInputs": {
+        "month": "MAY",
+        "control": "24286311"
+      },
+      "svgSha256": "c34774e93ce28b22ed2e06594704d9497e8302283da32e0c22d0938c40dfab36",
+      "viewBox": [
+        229.99999999999997,
+        100
+      ]
+    },
+    {
+      "id": "2007",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2007-30289413.jpg",
+      "month": "JAN",
+      "control": "30289413",
+      "printedInputs": {
+        "month": "JAN",
+        "control": "30289413"
+      },
+      "svgSha256": "ea7864e34cadc0522b24da4939913380f14e7eae1599969fe2950b5cd00772de",
+      "viewBox": [
+        229.99999999999997,
+        100
+      ]
+    },
+    {
+      "id": "2009",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2009-53054167.jpg",
+      "month": "APR",
+      "control": "53054167",
+      "printedInputs": {
+        "month": "APR",
+        "control": "53054167"
+      },
+      "svgSha256": "2c7628804b13a641850355a8844f9e8e01ac8bab85b03b5bd47246a34ac40a7d",
+      "viewBox": [
+        229.99999999999997,
+        100
+      ]
+    },
+    {
+      "id": "2010",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2010.jpg",
+      "month": "JAN",
+      "control": "10717219",
+      "printedInputs": {
+        "month": "JAN",
+        "control": "10717219"
+      },
+      "svgSha256": "bde7819f76452bae17cb7a83e182847b517b62dce17011cdda9e346d04f01b80",
+      "viewBox": [
+        229.99999999999997,
+        100
+      ]
+    },
+    {
+      "id": "2011",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2011-24516329.jpg",
+      "month": "MAY",
+      "control": "24516329",
+      "printedInputs": {
+        "month": "MAY",
+        "control": "24516329"
+      },
+      "svgSha256": "44e2f8a1253a23d0ed6391aba0af632f934664ca186f698dfd72f6e16db770d8",
+      "viewBox": [
+        229.99999999999997,
+        100
+      ]
+    },
+    {
+      "id": "2012",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2012-97303194.jpg",
+      "month": "NOV",
+      "control": "97303194",
+      "printedInputs": {
+        "month": "NOV",
+        "control": "97303194"
+      },
+      "svgSha256": "464e11542e6fb56a20a17d122a2c4dfd2fb99ab683738403474f6d871f306365",
+      "viewBox": [
+        229.99999999999997,
+        100
+      ]
+    },
+    {
+      "id": "2013",
+      "stage": "before",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2013-79670318.jpg",
+      "month": "OCT",
+      "control": "79670318",
+      "printedInputs": {
+        "month": "OCT",
+        "control": "79670318"
+      },
+      "svgSha256": "3d38387bd52955beec5d7fc70204c66488e92257590704ddc0a90bc77f0e49a8",
+      "viewBox": [
+        229.99999999999997,
+        100
+      ]
+    },
+    {
+      "id": "1971",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1971.jpg",
+      "month": null,
+      "control": "553645",
+      "printedInputs": {
+        "month": null,
+        "control": "553645"
+      },
+      "svgSha256": "b1329f17e4fd828c868c881975ba5fd47f865bdd82bb282f49457d857b6f0ec0",
+      "viewBox": [
+        190,
+        100
+      ]
+    },
+    {
+      "id": "1974",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1974-769712.jpg",
+      "month": null,
+      "control": "769712",
+      "printedInputs": {
+        "month": null,
+        "control": "769712"
+      },
+      "svgSha256": "d396e83f2c4c8c544e6be7c95d2c8e57975c3d9feab802b12bc66ac60225fbb3",
+      "viewBox": [
+        190,
+        100
+      ]
+    },
+    {
+      "id": "1975",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1975-4469530.jpg",
+      "month": null,
+      "control": "4469530",
+      "printedInputs": {
+        "month": null,
+        "control": "4469530"
+      },
+      "svgSha256": "bf92530cc71f142aa8c6fd9a46c38dca65e953a0fb51f908f0f143b53b31b981",
+      "viewBox": [
+        149,
+        100
+      ]
+    },
+    {
+      "id": "1976",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1976.jpg",
+      "month": null,
+      "control": "1007289",
+      "printedInputs": {
+        "month": null,
+        "control": "1007289"
+      },
+      "svgSha256": "c9b2893b2496fe6b55950676dea235aaab8cc5928d201ee487fc65b55d0bc176",
+      "viewBox": [
+        160,
+        100
+      ]
+    },
+    {
+      "id": "1978",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1978.jpg",
+      "month": null,
+      "control": "0718662",
+      "printedInputs": {
+        "month": null,
+        "control": "0718662"
+      },
+      "svgSha256": "c254277e1e5884d5d82526b9cd86ad5ff7e1670d439a5d5ae429c3ca8707282f",
+      "viewBox": [
+        186,
+        100
+      ]
+    },
+    {
+      "id": "1980",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1980-43052284.jpg",
+      "month": "MAR",
+      "control": "43052284",
+      "printedInputs": {
+        "month": "MAR",
+        "control": "43052284"
+      },
+      "svgSha256": "4703756b2f79387fe1e14a08f70ef31e681e39e6be15371c7961739d26957037",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1981",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1981-59031991.jpg",
+      "month": "JUN",
+      "control": "59031991",
+      "printedInputs": {
+        "month": "JUN",
+        "control": "59031991"
+      },
+      "svgSha256": "354166afbf7d4efa607c67c33723f04765a3d01365db8f642aa55aeef32fed9d",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1982",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1982-66134375.jpg",
+      "month": "JAN",
+      "control": "66134375",
+      "printedInputs": {
+        "month": "JAN",
+        "control": "66134375"
+      },
+      "svgSha256": "47c8a58f02b2075e696201ac50c357367af66b7cee3eff2c9bb36fb7efa44ee0",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1985",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1985-62333627.jpg",
+      "month": "JUL",
+      "control": "62333627",
+      "printedInputs": {
+        "month": "JUL",
+        "control": "62333627"
+      },
+      "svgSha256": "34360f7727c26c37183b7e35bab381e2758d8c85394ba660e5bca4e5ff9e22c5",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1987",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1987-22687871.jpg",
+      "month": "FEB",
+      "control": "22687871",
+      "printedInputs": {
+        "month": "FEB",
+        "control": "22687871"
+      },
+      "svgSha256": "2bf18d6a23130c92a5a84eabf16eea28216c0f4cdeed87f9c378da8c9cac2961",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1988",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1988-21533872.jpg",
+      "month": "DEC",
+      "control": "21533872",
+      "printedInputs": {
+        "month": "DEC",
+        "control": "21533872"
+      },
+      "svgSha256": "a08f3373927b6b18195ea0191289243a062e6b284207ec9e0309e9ce04f740bf",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1989",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1989-33187934.jpg",
+      "month": "APR",
+      "control": "33187934",
+      "printedInputs": {
+        "month": "APR",
+        "control": "33187934"
+      },
+      "svgSha256": "d2dedd6143865eb26eb1280079df36d316fbc1cc7a83cf4dc8b1ad690300a767",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1990",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1990-30863010.jpg",
+      "month": "JAN",
+      "control": "30863010",
+      "printedInputs": {
+        "month": "JAN",
+        "control": "30863010"
+      },
+      "svgSha256": "02bca61b07cb8137410659767967747720a270041a6860ef1bc21af891f30c0b",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1991",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1991-55232623.jpg",
+      "month": "JUN",
+      "control": "55232623",
+      "printedInputs": {
+        "month": "JUN",
+        "control": "55232623"
+      },
+      "svgSha256": "a5b5bac3b727f8912fc08c119c50577019b01829b3382f7a50c6584e10cb5254",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1992",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1992-59693121.jpg",
+      "month": "OCT",
+      "control": "59693121",
+      "printedInputs": {
+        "month": "OCT",
+        "control": "59693121"
+      },
+      "svgSha256": "93f957b022d881720c9aef44a05467c6e82e7a589005ca1f737626bf75a0b488",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1993",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1993-79096980.jpg",
+      "month": "OCT",
+      "control": "79096980",
+      "printedInputs": {
+        "month": "OCT",
+        "control": "79096980"
+      },
+      "svgSha256": "ed942b43c62e4dd081c7c8be41da07c28f025624856a1493810868742ea2c18f",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1994",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1994-79533496.jpg",
+      "month": "OCT",
+      "control": "79533496",
+      "printedInputs": {
+        "month": "OCT",
+        "control": "79533496"
+      },
+      "svgSha256": "d9f04932808e41b02d1722155ae5f5ecb68fbd8b03cc11a9d29b07a6a2aedca8",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1995",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1995-82287425.jpg",
+      "month": "NOV",
+      "control": "82287425",
+      "printedInputs": {
+        "month": "NOV",
+        "control": "82287425"
+      },
+      "svgSha256": "a476e2a3b64ed4210f5ac41e6c7e9129ee1d622482e1c115d46e896b2e56beed",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1996",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1996-22710492.jpg",
+      "month": "MAR",
+      "control": "22710492",
+      "printedInputs": {
+        "month": "MAR",
+        "control": "22710492"
+      },
+      "svgSha256": "3411ebdb42a15569c88ad0e1d5815e5243bcd124534da8e90a918bb99efa9a2e",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1996-pink",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1996-pink.jpg",
+      "month": "NOV",
+      "control": "82903198",
+      "printedInputs": {
+        "month": "NOV",
+        "control": "82903198"
+      },
+      "svgSha256": "421dfe4756c3eb6da4ac885ba0480ccdb9db2392049afe1d6bf9328d2f462d9d",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1997",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1997-84261541.jpg",
+      "month": "NOV",
+      "control": "84261541",
+      "printedInputs": {
+        "month": "NOV",
+        "control": "84261541"
+      },
+      "svgSha256": "ca2919ebe4a48fdb49404a44118f5cd0e65440b34a6d5a446991598399f2bcd2",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "1998",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1998-37685128.jpg",
+      "month": "AUG",
+      "control": "37685128",
+      "printedInputs": {
+        "month": "AUG",
+        "control": "37685128"
+      },
+      "svgSha256": "ad59fa30da74686eba418b560e167c2dfa5cfb4326c1aa994049f78b5660389d",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "2004",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2004-42591320.jpg",
+      "month": "MAR",
+      "control": "42591320",
+      "printedInputs": {
+        "month": "MAR",
+        "control": "42591320"
+      },
+      "svgSha256": "8448695bc8c8212a782e7de9903cdff513c8caab486ba3a9c6d809e48a522109",
+      "viewBox": [
+        330,
+        100
+      ]
+    },
+    {
+      "id": "2005",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2005.jpg",
+      "month": "JAN",
+      "control": "10167427",
+      "printedInputs": {
+        "month": "JAN",
+        "control": "10167427"
+      },
+      "svgSha256": "03d55f68f1e58118e5287f768b48ceb6188b856cc81f1fa3a3b323665553ae3d",
+      "viewBox": [
+        229.99999999999997,
+        100
+      ]
+    },
+    {
+      "id": "2006",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2006-24286311.jpg",
+      "month": "MAY",
+      "control": "24286311",
+      "printedInputs": {
+        "month": "MAY",
+        "control": "24286311"
+      },
+      "svgSha256": "d3146fa1259d808822c3794f3cc877105d8f1d580e018bc2f721af6f11cf3d86",
+      "viewBox": [
+        229.99999999999997,
+        100
+      ]
+    },
+    {
+      "id": "2007",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2007-30289413.jpg",
+      "month": "JAN",
+      "control": "30289413",
+      "printedInputs": {
+        "month": "JAN",
+        "control": "30289413"
+      },
+      "svgSha256": "42c39fef301acb0cd039963a1bf22ff94a9142692582d3831808274207ed9b65",
+      "viewBox": [
+        229.99999999999997,
+        100
+      ]
+    },
+    {
+      "id": "2009",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2009-53054167.jpg",
+      "month": "APR",
+      "control": "53054167",
+      "printedInputs": {
+        "month": "APR",
+        "control": "53054167"
+      },
+      "svgSha256": "f820d28d8a03cb01abc388527bd0753d5451a4c7845c38c6e0b75b81fc8ccede",
+      "viewBox": [
+        229.99999999999997,
+        100
+      ]
+    },
+    {
+      "id": "2010",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2010.jpg",
+      "month": "JAN",
+      "control": "10717219",
+      "printedInputs": {
+        "month": "JAN",
+        "control": "10717219"
+      },
+      "svgSha256": "406af3402be09ef7504134e1e63c179b85afa38fa65989f9edde4fb83d20e75b",
+      "viewBox": [
+        229.99999999999997,
+        100
+      ]
+    },
+    {
+      "id": "2011",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2011-24516329.jpg",
+      "month": "MAY",
+      "control": "24516329",
+      "printedInputs": {
+        "month": "MAY",
+        "control": "24516329"
+      },
+      "svgSha256": "b3cb407ec270fbe3e1a0778ddadfb467c91f45658fedb4c3c33132212122432c",
+      "viewBox": [
+        229.99999999999997,
+        100
+      ]
+    },
+    {
+      "id": "2012",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2012-97303194.jpg",
+      "month": "NOV",
+      "control": "97303194",
+      "printedInputs": {
+        "month": "NOV",
+        "control": "97303194"
+      },
+      "svgSha256": "818356f979ce6d652e129a173da88cc43ddd07807ec18e76810dc75ec95e28a3",
+      "viewBox": [
+        229.99999999999997,
+        100
+      ]
+    },
+    {
+      "id": "2013",
+      "stage": "after",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2013-79670318.jpg",
+      "month": "OCT",
+      "control": "79670318",
+      "printedInputs": {
+        "month": "OCT",
+        "control": "79670318"
+      },
+      "svgSha256": "14a95f066825f5299b7461648600bb9f62beff6ce8c7d479d004982ff8402d3b",
+      "viewBox": [
+        229.99999999999997,
+        100
+      ]
+    }
+  ]
+}

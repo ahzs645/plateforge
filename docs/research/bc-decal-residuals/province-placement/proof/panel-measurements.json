@@ -1,0 +1,242 @@
+[
+  {
+    "id": "1971",
+    "sourcePanelBoxPixelsManual": [
+      5,
+      51,
+      110,
+      84
+    ],
+    "sourcePanelBoundaryUncertaintyPixels": 1,
+    "sourceControlBoxPixels": [
+      25,
+      65,
+      97,
+      80
+    ],
+    "sourceControlMaskAccepted": true,
+    "beforePanelPaintBox": [
+      12.9,
+      50.6,
+      106.80000000000001,
+      82.4
+    ],
+    "afterPanelPaintBox": [
+      3.78361,
+      51.6408,
+      111.72661,
+      86.1143
+    ],
+    "beforeControlPaintBox": [
+      15.7561,
+      59.0512,
+      99.8678,
+      77.4803
+    ],
+    "afterControlPaintBox": [
+      24.5889,
+      66.3269,
+      98.06439999999999,
+      81.63279999999999
+    ],
+    "controlClearanceInsidePanelStroke": {
+      "left": 20.00529,
+      "top": 13.886099999999995,
+      "right": 12.862210000000001,
+      "bottom": 3.6815000000000113
+    },
+    "baselinePanelMethod": "Actual Inkscape query of labelled panel.",
+    "meaning": "Actual SVG paint boxes include stroke. Source panel brackets are manual approximate evidence, not accepted masks or calibrated physical edges. Rejected control masks are excluded."
+  },
+  {
+    "id": "1974",
+    "sourcePanelBoxPixelsManual": [
+      14,
+      42,
+      130,
+      72
+    ],
+    "sourcePanelBoundaryUncertaintyPixels": 1,
+    "sourceControlBoxPixels": [
+      46,
+      47,
+      114,
+      63
+    ],
+    "sourceControlMaskAccepted": true,
+    "beforePanelPaintBox": [
+      16.7,
+      42.6,
+      135.29999999999998,
+      71.4
+    ],
+    "afterPanelPaintBox": [
+      18.0999,
+      41.6,
+      134.8999,
+      72.4
+    ],
+    "beforeControlPaintBox": [
+      34.1065,
+      50.7005,
+      117.4683,
+      68.9763
+    ],
+    "afterControlPaintBox": [
+      50.49,
+      46.9996,
+      118.50919999999999,
+      63.0
+    ],
+    "controlClearanceInsidePanelStroke": {
+      "left": 31.590100000000003,
+      "top": 4.5996,
+      "right": 15.590700000000009,
+      "bottom": 8.600000000000005
+    },
+    "baselinePanelMethod": "Actual Inkscape query of labelled panel.",
+    "meaning": "Actual SVG paint boxes include stroke. Source panel brackets are manual approximate evidence, not accepted masks or calibrated physical edges. Rejected control masks are excluded."
+  },
+  {
+    "id": "1975",
+    "sourcePanelBoxPixelsManual": [
+      24,
+      43,
+      142,
+      76
+    ],
+    "sourcePanelBoundaryUncertaintyPixels": 1,
+    "sourceControlBoxPixels": [
+      41,
+      53,
+      123,
+      70
+    ],
+    "sourceControlMaskAccepted": true,
+    "beforePanelPaintBox": [
+      10.775,
+      41.6,
+      138.225,
+      72.4
+    ],
+    "afterPanelPaintBox": [
+      21.6,
+      42.6,
+      140.4,
+      76.4
+    ],
+    "beforeControlPaintBox": [
+      26.8105,
+      49.2005,
+      125.0698,
+      67.4763
+    ],
+    "afterControlPaintBox": [
+      38.995,
+      52.9995,
+      121.00460000000001,
+      70.0
+    ],
+    "controlClearanceInsidePanelStroke": {
+      "left": 16.594999999999995,
+      "top": 9.599499999999995,
+      "right": 18.595399999999994,
+      "bottom": 5.600000000000006
+    },
+    "baselinePanelMethod": "Actual Inkscape query of labelled panel.",
+    "meaning": "Actual SVG paint boxes include stroke. Source panel brackets are manual approximate evidence, not accepted masks or calibrated physical edges. Rejected control masks are excluded."
+  },
+  {
+    "id": "1976",
+    "sourcePanelBoxPixelsManual": [
+      14,
+      60,
+      142,
+      92
+    ],
+    "sourcePanelBoundaryUncertaintyPixels": 1,
+    "sourceControlBoxPixels": [
+      39,
+      67,
+      124,
+      84
+    ],
+    "sourceControlMaskAccepted": true,
+    "beforePanelPaintBox": [
+      10.8,
+      60.6,
+      149.20000000000002,
+      92.4
+    ],
+    "afterPanelPaintBox": [
+      13.2734,
+      60.8245,
+      144.68540000000002,
+      94.2776
+    ],
+    "beforeControlPaintBox": [
+      26.3308,
+      66.7228,
+      134.4768,
+      87.0292
+    ],
+    "afterControlPaintBox": [
+      39.1755,
+      68.3663,
+      125.9264,
+      85.7141
+    ],
+    "controlClearanceInsidePanelStroke": {
+      "left": 25.102099999999997,
+      "top": 6.741799999999995,
+      "right": 17.959000000000014,
+      "bottom": 7.763500000000005
+    },
+    "baselinePanelMethod": "Actual Inkscape query of labelled panel.",
+    "meaning": "Actual SVG paint boxes include stroke. Source panel brackets are manual approximate evidence, not accepted masks or calibrated physical edges. Rejected control masks are excluded."
+  },
+  {
+    "id": "1980",
+    "sourcePanelBoxPixelsManual": [
+      117,
+      44,
+      188,
+      67
+    ],
+    "sourcePanelBoundaryUncertaintyPixels": 1,
+    "sourceControlBoxPixels": null,
+    "sourceControlMaskAccepted": false,
+    "beforePanelPaintBox": [
+      144.85,
+      54.65,
+      244.55,
+      86.35
+    ],
+    "afterPanelPaintBox": [
+      150.65,
+      58.3167,
+      246.0168,
+      89.6834
+    ],
+    "beforeControlPaintBox": [
+      158.078,
+      65.6393,
+      231.2698,
+      78.33080000000001
+    ],
+    "afterControlPaintBox": [
+      158.078,
+      65.6393,
+      231.2698,
+      78.33080000000001
+    ],
+    "controlClearanceInsidePanelStroke": {
+      "left": 6.727999999999997,
+      "top": 6.622600000000008,
+      "right": 14.046999999999986,
+      "bottom": 10.652599999999996
+    },
+    "baselinePanelMethod": "Actual Inkscape bounds; unique unfilled stroke rectangle in 1980 is queried with a temporary id only.",
+    "meaning": "Actual SVG paint boxes include stroke. Source panel brackets are manual approximate evidence, not accepted masks or calibrated physical edges. Rejected control masks are excluded."
+  }
+]

@@ -1,0 +1,1189 @@
+{
+  "provenance": {
+    "baselineCommit": "24689246670c25f91e0d1676a0647f053dbca68e",
+    "baselineSourceSha256": "a4870904e6d8cb1f44c37b46afb1509812d1cfbba5299bc7f48fcc6a44046c79",
+    "currentCommit": "24689246670c25f91e0d1676a0647f053dbca68e",
+    "currentSourceSha256": "80f176a664755c5d41432cbac8150c9b77edf4d13694e82952f8b309b04bc6fd"
+  },
+  "mode": "After is the unmodified integrated current checkout. Before is the complete clean first-pass checkout.",
+  "rows": [
+    {
+      "id": "1971",
+      "month": null,
+      "control": "553645",
+      "role": "decal-serial",
+      "index": 0,
+      "sourceApproximateBox": [
+        24.591836734693874,
+        66.3265306122449,
+        98.06122448979592,
+        81.63265306122449
+      ],
+      "beforePaintBox": [
+        15.7561,
+        59.0512,
+        99.8678,
+        77.4803
+      ],
+      "afterPaintBox": [
+        24.5889,
+        66.3269,
+        98.06439999999999,
+        81.63279999999999
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -3.5145806122448917,
+      "centreErrorAfter": 0.00011938775509889865,
+      "bottomErrorBefore": -4.152353061224488,
+      "bottomErrorAfter": 0.0001469387755008711,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "1974",
+      "month": null,
+      "control": "769712",
+      "role": "decal-serial",
+      "index": 0,
+      "sourceApproximateBox": [
+        50.5,
+        47.0,
+        118.5,
+        63.0
+      ],
+      "beforePaintBox": [
+        34.1065,
+        50.7005,
+        117.4683,
+        68.9763
+      ],
+      "afterPaintBox": [
+        50.49,
+        46.9996,
+        118.50919999999999,
+        63.0
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -8.712600000000009,
+      "centreErrorAfter": -0.00039999999999906777,
+      "bottomErrorBefore": 5.976299999999995,
+      "bottomErrorAfter": 0.0,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "1975",
+      "month": null,
+      "control": "4469530",
+      "role": "decal-serial",
+      "index": 0,
+      "sourceApproximateBox": [
+        39.0,
+        53.0,
+        121.0,
+        70.0
+      ],
+      "beforePaintBox": [
+        26.8105,
+        49.2005,
+        125.0698,
+        67.4763
+      ],
+      "afterPaintBox": [
+        38.995,
+        52.9995,
+        121.00460000000001,
+        70.0
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -4.059849999999997,
+      "centreErrorAfter": -0.00019999999999242846,
+      "bottomErrorBefore": -2.523700000000005,
+      "bottomErrorAfter": 0.0,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "1975",
+      "month": null,
+      "control": "4469530",
+      "role": "decal-legend",
+      "index": 0,
+      "sourceApproximateBox": [
+        12.0,
+        9.0,
+        80.0,
+        22.0
+      ],
+      "beforePaintBox": [
+        5.131,
+        11.2942,
+        74.1974,
+        24.3943
+      ],
+      "afterPaintBox": [
+        11.7428,
+        9.0049,
+        80.2566,
+        22.0002
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -6.335799999999999,
+      "centreErrorAfter": -0.0002999999999957481,
+      "bottomErrorBefore": 2.394300000000001,
+      "bottomErrorAfter": 0.00019999999999953388,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "1975",
+      "month": null,
+      "control": "4469530",
+      "role": "decal-legend",
+      "index": 1,
+      "sourceApproximateBox": [
+        13.0,
+        26.0,
+        102.0,
+        39.0
+      ],
+      "beforePaintBox": [
+        4.38154,
+        29.944,
+        86.87834,
+        41.343199999999996
+      ],
+      "afterPaintBox": [
+        12.9935,
+        26.0049,
+        102.0071,
+        39.0002
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -11.870060000000002,
+      "centreErrorAfter": 0.0002999999999957481,
+      "bottomErrorBefore": 2.343199999999996,
+      "bottomErrorAfter": 0.00019999999999953388,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "1975",
+      "month": null,
+      "control": "4469530",
+      "role": "decal-year",
+      "index": 0,
+      "sourceApproximateBox": [
+        104.0,
+        10.0,
+        145.0,
+        39.0
+      ],
+      "beforePaintBox": [
+        93.8004,
+        6.0,
+        141.1019,
+        40.593
+      ],
+      "afterPaintBox": [
+        104.673,
+        10.0,
+        144.3269,
+        39.0001
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -7.048850000000002,
+      "centreErrorAfter": -5.000000000165983e-05,
+      "bottomErrorBefore": 1.5930000000000035,
+      "bottomErrorAfter": 0.00010000000000331966,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "1976",
+      "month": null,
+      "control": "1007289",
+      "role": "decal-serial",
+      "index": 0,
+      "sourceApproximateBox": [
+        39.183673469387756,
+        68.36734693877551,
+        125.91836734693878,
+        85.71428571428572
+      ],
+      "beforePaintBox": [
+        26.3308,
+        66.7228,
+        134.4768,
+        87.0292
+      ],
+      "afterPaintBox": [
+        39.1755,
+        68.3663,
+        125.9264,
+        85.7141
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -2.147220408163264,
+      "centreErrorAfter": -7.040816326764343e-05,
+      "bottomErrorBefore": 1.3149142857142806,
+      "bottomErrorAfter": -0.0001857142857204508,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "1981",
+      "month": "JUN",
+      "control": "59031991",
+      "role": "decal-legend",
+      "index": 0,
+      "sourceApproximateBox": [
+        143.66666666666666,
+        14.666666666666666,
+        235.66666666666666,
+        26.666666666666664
+      ],
+      "beforePaintBox": [
+        155.199,
+        12.3189,
+        221.25740000000002,
+        23.847
+      ],
+      "afterPaintBox": [
+        143.041,
+        14.167,
+        236.291,
+        26.667
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -1.438466666666642,
+      "centreErrorAfter": -0.000666666666660376,
+      "bottomErrorBefore": -2.819666666666663,
+      "bottomErrorAfter": 0.0003333333333372934,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "1981",
+      "month": "JUN",
+      "control": "59031991",
+      "role": "decal-legend",
+      "index": 1,
+      "sourceApproximateBox": [
+        126.33333333333334,
+        32.0,
+        252.99999999999997,
+        42.666666666666664
+      ],
+      "beforePaintBox": [
+        143.494,
+        30.3189,
+        233.0837,
+        41.847
+      ],
+      "afterPaintBox": [
+        127.541,
+        30.167,
+        251.791,
+        42.667
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -1.3778166666666607,
+      "centreErrorAfter": -0.000666666666660376,
+      "bottomErrorBefore": -0.819666666666663,
+      "bottomErrorAfter": 0.0003333333333372934,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "1982",
+      "month": "JAN",
+      "control": "66134375",
+      "role": "decal-legend",
+      "index": 0,
+      "sourceApproximateBox": [
+        147.66666666666666,
+        57.33333333333333,
+        234.33333333333331,
+        69.33333333333333
+      ],
+      "beforePaintBox": [
+        162.676,
+        61.3601,
+        213.72109999999998,
+        70.26818
+      ],
+      "afterPaintBox": [
+        146.986,
+        57.533,
+        235.014,
+        69.333
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -2.801450000000017,
+      "centreErrorAfter": 0.0,
+      "bottomErrorBefore": 0.9348466666666724,
+      "bottomErrorAfter": -0.000333333333330188,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "1982",
+      "month": "JAN",
+      "control": "66134375",
+      "role": "decal-legend",
+      "index": 1,
+      "sourceApproximateBox": [
+        133.0,
+        74.66666666666666,
+        250.33333333333331,
+        85.33333333333333
+      ],
+      "beforePaintBox": [
+        153.631,
+        74.3601,
+        222.8594,
+        83.26818
+      ],
+      "afterPaintBox": [
+        133.021,
+        73.533,
+        250.313,
+        85.333
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -3.421466666666646,
+      "centreErrorAfter": 0.00033333333331597714,
+      "bottomErrorBefore": -2.0651533333333276,
+      "bottomErrorAfter": -0.000333333333330188,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "1985",
+      "month": "JUL",
+      "control": "62333627",
+      "role": "decal-legend",
+      "index": 0,
+      "sourceApproximateBox": [
+        113.66666666666666,
+        70.66666666666666,
+        237.66666666666666,
+        80.0
+      ],
+      "beforePaintBox": [
+        128.197,
+        75.3765,
+        228.852,
+        83.23657999999999
+      ],
+      "afterPaintBox": [
+        113.889,
+        69.642,
+        237.44299999999998,
+        80.0004
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": 2.857833333333332,
+      "centreErrorAfter": -0.000666666666660376,
+      "bottomErrorBefore": 3.2365799999999894,
+      "bottomErrorAfter": 0.00039999999999906777,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "1987",
+      "month": "FEB",
+      "control": "22687871",
+      "role": "decal-legend",
+      "index": 0,
+      "sourceApproximateBox": [
+        158.33333333333334,
+        21.333333333333332,
+        230.33333333333334,
+        34.666666666666664
+      ],
+      "beforePaintBox": [
+        155.199,
+        12.3189,
+        221.25740000000002,
+        23.847
+      ],
+      "afterPaintBox": [
+        157.274,
+        21.2008,
+        231.3922,
+        34.6667
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -6.1051333333333275,
+      "centreErrorAfter": -0.0002333333333410792,
+      "bottomErrorBefore": -10.819666666666663,
+      "bottomErrorAfter": 3.3333333334439885e-05,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "1987",
+      "month": "FEB",
+      "control": "22687871",
+      "role": "decal-legend",
+      "index": 1,
+      "sourceApproximateBox": [
+        145.0,
+        40.0,
+        242.33333333333334,
+        53.33333333333333
+      ],
+      "beforePaintBox": [
+        143.494,
+        30.3189,
+        233.0837,
+        41.847
+      ],
+      "afterPaintBox": [
+        144.306,
+        39.8678,
+        243.0258,
+        53.3337
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -5.377816666666689,
+      "centreErrorAfter": -0.0007666666666636957,
+      "bottomErrorBefore": -11.486333333333327,
+      "bottomErrorAfter": 0.0003666666666717333,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "1987",
+      "month": "FEB",
+      "control": "22687871",
+      "role": "decal-serial",
+      "index": 0,
+      "sourceApproximateBox": [
+        163.66666666666669,
+        68.0,
+        231.66666666666669,
+        85.33333333333333
+      ],
+      "beforePaintBox": [
+        145.183,
+        63.3133,
+        228.0718,
+        78.3969
+      ],
+      "afterPaintBox": [
+        156.222,
+        70.2503,
+        239.1108,
+        85.3339
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -11.039266666666691,
+      "centreErrorAfter": -0.0002666666666755191,
+      "bottomErrorBefore": -6.936433333333326,
+      "bottomErrorAfter": 0.0005666666666712672,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "1988",
+      "month": "DEC",
+      "control": "21533872",
+      "role": "decal-legend",
+      "index": 0,
+      "sourceApproximateBox": [
+        163.66666666666669,
+        20.0,
+        213.0,
+        30.666666666666664
+      ],
+      "beforePaintBox": [
+        172.336,
+        14.8601,
+        217.2611,
+        23.76818
+      ],
+      "afterPaintBox": [
+        163.228,
+        20.7106,
+        213.4384,
+        30.66669
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": 6.465216666666663,
+      "centreErrorAfter": -0.00013333333333775954,
+      "bottomErrorBefore": -6.898486666666663,
+      "bottomErrorAfter": 2.3333333334818462e-05,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "1988",
+      "month": "DEC",
+      "control": "21533872",
+      "role": "decal-legend",
+      "index": 1,
+      "sourceApproximateBox": [
+        154.33333333333334,
+        34.666666666666664,
+        222.33333333333334,
+        45.33333333333333
+      ],
+      "beforePaintBox": [
+        163.801,
+        32.8601,
+        225.8894,
+        41.76818
+      ],
+      "afterPaintBox": [
+        153.637,
+        35.3776,
+        223.0299,
+        45.3337
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": 6.511866666666634,
+      "centreErrorAfter": 0.00011666666665632874,
+      "bottomErrorBefore": -3.5651533333333276,
+      "bottomErrorAfter": 0.0003666666666717333,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "1989",
+      "month": "APR",
+      "control": "33187934",
+      "role": "decal-serial",
+      "index": 0,
+      "sourceApproximateBox": [
+        156.33333333333331,
+        52.0,
+        232.33333333333331,
+        65.33333333333333
+      ],
+      "beforePaintBox": [
+        150.463,
+        58.5857,
+        225.6517,
+        71.4115
+      ],
+      "afterPaintBox": [
+        156.739,
+        52.5077,
+        231.92770000000002,
+        65.3335
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -6.275983333333329,
+      "centreErrorAfter": 1.6666666681430797e-05,
+      "bottomErrorBefore": 6.078166666666675,
+      "bottomErrorAfter": 0.00016666666667219943,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "1990",
+      "month": "JAN",
+      "control": "30863010",
+      "role": "decal-serial",
+      "index": 0,
+      "sourceApproximateBox": [
+        146.33333333333334,
+        74.66666666666666,
+        223.66666666666669,
+        89.33333333333333
+      ],
+      "beforePaintBox": [
+        150.463,
+        58.5857,
+        225.56599999999997,
+        71.3943
+      ],
+      "afterPaintBox": [
+        147.449,
+        76.5247,
+        222.55200000000002,
+        89.3333
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": 3.014499999999998,
+      "centreErrorAfter": 0.0005000000000165983,
+      "bottomErrorBefore": -17.939033333333327,
+      "bottomErrorAfter": -3.3333333334439885e-05,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "1991",
+      "month": "JUN",
+      "control": "55232623",
+      "role": "decal-serial",
+      "index": 0,
+      "sourceApproximateBox": [
+        159.66666666666666,
+        66.66666666666666,
+        235.66666666666666,
+        78.66666666666666
+      ],
+      "beforePaintBox": [
+        150.429,
+        58.5857,
+        225.5491,
+        71.3943
+      ],
+      "afterPaintBox": [
+        160.107,
+        65.8588,
+        235.2271,
+        78.6674
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -9.677616666666637,
+      "centreErrorAfter": 0.00038333333336026953,
+      "bottomErrorBefore": -7.272366666666656,
+      "bottomErrorAfter": 0.0007333333333434666,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "1992",
+      "month": "OCT",
+      "control": "59693121",
+      "role": "decal-serial",
+      "index": 0,
+      "sourceApproximateBox": [
+        141.0,
+        66.66666666666666,
+        215.66666666666666,
+        78.66666666666666
+      ],
+      "beforePaintBox": [
+        150.429,
+        58.5857,
+        223.18290000000002,
+        71.4115
+      ],
+      "afterPaintBox": [
+        141.956,
+        65.8418,
+        214.7099,
+        78.6675
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": 8.472616666666681,
+      "centreErrorAfter": -0.0003833333333318478,
+      "bottomErrorBefore": -7.255166666666653,
+      "bottomErrorAfter": 0.0008333333333467863,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "1993",
+      "month": "OCT",
+      "control": "79096980",
+      "role": "decal-serial",
+      "index": 0,
+      "sourceApproximateBox": [
+        141.66666666666669,
+        64.0,
+        219.0,
+        77.33333333333333
+      ],
+      "beforePaintBox": [
+        150.463,
+        58.5857,
+        225.56599999999997,
+        71.4115
+      ],
+      "afterPaintBox": [
+        142.782,
+        64.5078,
+        217.885,
+        77.3335
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": 7.681166666666655,
+      "centreErrorAfter": 0.00016666666667219943,
+      "bottomErrorBefore": -5.921833333333325,
+      "bottomErrorAfter": 0.00016666666667219943,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "1995",
+      "month": "NOV",
+      "control": "82287425",
+      "role": "decal-serial",
+      "index": 0,
+      "sourceApproximateBox": [
+        145.66666666666669,
+        65.33333333333333,
+        224.33333333333334,
+        77.33333333333333
+      ],
+      "beforePaintBox": [
+        150.343,
+        58.5857,
+        225.56599999999997,
+        71.3943
+      ],
+      "afterPaintBox": [
+        147.389,
+        64.5247,
+        222.61200000000002,
+        77.3333
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": 2.954499999999996,
+      "centreErrorAfter": 0.0005000000000165983,
+      "bottomErrorBefore": -5.939033333333327,
+      "bottomErrorAfter": -3.3333333334439885e-05,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "1996",
+      "month": "MAR",
+      "control": "22710492",
+      "role": "decal-serial",
+      "index": 0,
+      "sourceApproximateBox": [
+        157.66666666666666,
+        58.666666666666664,
+        233.66666666666666,
+        70.66666666666666
+      ],
+      "beforePaintBox": [
+        150.48,
+        58.5857,
+        225.53159999999997,
+        71.4115
+      ],
+      "afterPaintBox": [
+        158.141,
+        57.8417,
+        233.19259999999997,
+        70.6675
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -7.660866666666692,
+      "centreErrorAfter": 0.00013333333330933783,
+      "bottomErrorBefore": 0.7448333333333466,
+      "bottomErrorAfter": 0.0008333333333467863,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "2010",
+      "month": "JAN",
+      "control": "10717219",
+      "role": "decal-legend",
+      "index": 0,
+      "sourceApproximateBox": [
+        111.4285714285714,
+        20.408163265306122,
+        156.32653061224488,
+        34.69387755102041
+      ],
+      "beforePaintBox": [
+        108.592,
+        28.3628,
+        153.6092,
+        40.637100000000004
+      ],
+      "afterPaintBox": [
+        111.533,
+        21.128,
+        156.221,
+        34.694
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -2.7769510204081485,
+      "centreErrorAfter": -0.0005510204081247139,
+      "bottomErrorBefore": 5.943222448979597,
+      "bottomErrorAfter": 0.00012244897959590162,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "2010",
+      "month": "JAN",
+      "control": "10717219",
+      "role": "decal-legend",
+      "index": 1,
+      "sourceApproximateBox": [
+        104.28571428571426,
+        36.734693877551024,
+        164.48979591836732,
+        51.02040816326531
+      ],
+      "beforePaintBox": [
+        104.163,
+        44.8247,
+        158.4768,
+        56.1263
+      ],
+      "afterPaintBox": [
+        104.064,
+        37.454,
+        164.712,
+        51.02
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -3.067855102040795,
+      "centreErrorAfter": 0.00024489795919180324,
+      "bottomErrorBefore": 5.105891836734692,
+      "bottomErrorAfter": -0.0004081632653054612,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "2010",
+      "month": "JAN",
+      "control": "10717219",
+      "role": "decal-serial",
+      "index": 0,
+      "sourceApproximateBox": [
+        122.65306122448978,
+        69.38775510204081,
+        208.36734693877548,
+        87.75510204081633
+      ],
+      "beforePaintBox": [
+        131.652,
+        72.7005,
+        220.97539999999998,
+        90.97630000000001
+      ],
+      "afterPaintBox": [
+        120.848,
+        69.4795,
+        210.1714,
+        87.7553
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": 10.80349591836736,
+      "centreErrorAfter": -0.0005040816326129516,
+      "bottomErrorBefore": 3.2211979591836837,
+      "bottomErrorAfter": 0.00019795918368004095,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "2010",
+      "month": "JAN",
+      "control": "10717219",
+      "role": "decal-month",
+      "index": 0,
+      "sourceApproximateBox": [
+        5.306122448979568,
+        5.1020408163265305,
+        88.97959183673467,
+        64.28571428571429
+      ],
+      "beforePaintBox": [
+        11.3986,
+        8.0,
+        97.4495,
+        70.1993
+      ],
+      "afterPaintBox": [
+        6.20276,
+        5.101,
+        88.08225999999999,
+        64.2851
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": 7.281192857142884,
+      "centreErrorAfter": -0.0003471428571231172,
+      "bottomErrorBefore": 5.913585714285702,
+      "bottomErrorAfter": -0.0006142857142918956,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "2010",
+      "month": "JAN",
+      "control": "10717219",
+      "role": "decal-year",
+      "index": 0,
+      "sourceApproximateBox": [
+        176.734693877551,
+        4.081632653061225,
+        224.6938775510204,
+        63.26530612244898
+      ],
+      "beforePaintBox": [
+        167.42,
+        6.80074,
+        220.5931,
+        70.19924
+      ],
+      "afterPaintBox": [
+        175.895,
+        4.08146,
+        225.5334,
+        63.26556
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -6.70773571428569,
+      "centreErrorAfter": -8.571428568870942e-05,
+      "bottomErrorBefore": 6.93393387755102,
+      "bottomErrorAfter": 0.00025387755101746734,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "2011",
+      "month": "MAY",
+      "control": "24516329",
+      "role": "decal-legend",
+      "index": 0,
+      "sourceApproximateBox": [
+        110.49999999999999,
+        23.0,
+        154.5,
+        36.0
+      ],
+      "beforePaintBox": [
+        109.317,
+        23.7228,
+        155.68849999999998,
+        35.9971
+      ],
+      "afterPaintBox": [
+        110.66,
+        22.74,
+        154.34,
+        36.0
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": 0.0027499999999918145,
+      "centreErrorAfter": 0.0,
+      "bottomErrorBefore": -0.002899999999996794,
+      "bottomErrorAfter": 0.0,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "2011",
+      "month": "MAY",
+      "control": "24516329",
+      "role": "decal-legend",
+      "index": 1,
+      "sourceApproximateBox": [
+        103.49999999999999,
+        39.0,
+        162.5,
+        52.0
+      ],
+      "beforePaintBox": [
+        105.773,
+        40.9394,
+        160.24439999999998,
+        52.003699999999995
+      ],
+      "afterPaintBox": [
+        103.36,
+        38.74,
+        162.64,
+        52.0
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": 0.008699999999976171,
+      "centreErrorAfter": 0.0,
+      "bottomErrorBefore": 0.0036999999999949296,
+      "bottomErrorAfter": 0.0,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "2012",
+      "month": "NOV",
+      "control": "97303194",
+      "role": "decal-legend",
+      "index": 0,
+      "sourceApproximateBox": [
+        110.99999999999999,
+        24.0,
+        156.0,
+        38.0
+      ],
+      "beforePaintBox": [
+        108.592,
+        28.3628,
+        153.6092,
+        40.637100000000004
+      ],
+      "afterPaintBox": [
+        110.988,
+        24.332,
+        156.012,
+        38.0
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -2.399400000000014,
+      "centreErrorAfter": 0.0,
+      "bottomErrorBefore": 2.6371000000000038,
+      "bottomErrorAfter": 0.0,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "2012",
+      "month": "NOV",
+      "control": "97303194",
+      "role": "decal-legend",
+      "index": 1,
+      "sourceApproximateBox": [
+        102.99999999999999,
+        40.0,
+        164.0,
+        52.0
+      ],
+      "beforePaintBox": [
+        104.163,
+        44.8247,
+        158.4768,
+        56.1263
+      ],
+      "afterPaintBox": [
+        102.948,
+        38.332,
+        164.052,
+        52.0
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -2.18010000000001,
+      "centreErrorAfter": 0.0,
+      "bottomErrorBefore": 4.1263000000000005,
+      "bottomErrorAfter": 0.0,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "2012",
+      "month": "NOV",
+      "control": "97303194",
+      "role": "decal-month",
+      "index": 0,
+      "sourceApproximateBox": [
+        5.999999999999986,
+        7.0,
+        91.99999999999999,
+        65.0
+      ],
+      "beforePaintBox": [
+        11.337,
+        6.80074,
+        97.8814,
+        70.19924
+      ],
+      "afterPaintBox": [
+        9.41294,
+        6.99985,
+        88.58824,
+        65.00015
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": 5.6092000000000155,
+      "centreErrorAfter": 0.0005900000000167438,
+      "bottomErrorBefore": 5.199240000000003,
+      "bottomErrorAfter": 0.00015000000000497948,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "2012",
+      "month": "NOV",
+      "control": "97303194",
+      "role": "decal-year",
+      "index": 0,
+      "sourceApproximateBox": [
+        176.0,
+        9.0,
+        225.0,
+        64.0
+      ],
+      "beforePaintBox": [
+        167.42,
+        6.80074,
+        220.346,
+        69.00004
+      ],
+      "afterPaintBox": [
+        177.1,
+        9.00056,
+        223.8996,
+        63.99996
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -6.617000000000019,
+      "centreErrorAfter": -0.0002000000000066393,
+      "bottomErrorBefore": 5.0000399999999985,
+      "bottomErrorAfter": -3.999999999848569e-05,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "2013",
+      "month": "OCT",
+      "control": "79670318",
+      "role": "decal-legend",
+      "index": 0,
+      "sourceApproximateBox": [
+        109.99999999999999,
+        24.0,
+        154.0,
+        38.0
+      ],
+      "beforePaintBox": [
+        109.995,
+        25.7228,
+        155.0122,
+        37.9971
+      ],
+      "afterPaintBox": [
+        110.16,
+        24.74,
+        153.84,
+        38.0
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": 0.5036000000000058,
+      "centreErrorAfter": 0.0,
+      "bottomErrorBefore": -0.002899999999996794,
+      "bottomErrorAfter": 0.0,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "2013",
+      "month": "OCT",
+      "control": "79670318",
+      "role": "decal-legend",
+      "index": 1,
+      "sourceApproximateBox": [
+        101.99999999999999,
+        40.0,
+        163.0,
+        54.0
+      ],
+      "beforePaintBox": [
+        105.336,
+        42.6947,
+        159.6498,
+        53.9963
+      ],
+      "afterPaintBox": [
+        102.86,
+        40.74,
+        162.14,
+        54.0
+      ],
+      "afterFit": "natural",
+      "centreErrorBefore": -0.007100000000008322,
+      "centreErrorAfter": 0.0,
+      "bottomErrorBefore": -0.003700000000002035,
+      "bottomErrorAfter": 0.0,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    },
+    {
+      "id": "2009",
+      "month": "APR",
+      "control": "53054167",
+      "role": "decal-legend",
+      "index": 1,
+      "sourceApproximateBox": [
+        111.49999999999999,
+        41.0,
+        149.5,
+        50.0
+      ],
+      "beforePaintBox": [
+        110.897,
+        47.6183,
+        151.6336,
+        56.09474
+      ],
+      "afterPaintBox": [
+        110.132,
+        41.5233,
+        150.86860000000001,
+        49.99974
+      ],
+      "afterFit": "reduced",
+      "centreErrorBefore": 0.7652999999999963,
+      "centreErrorAfter": 0.00030000000000995897,
+      "bottomErrorBefore": 6.094740000000002,
+      "bottomErrorAfter": -0.0002599999999972624,
+      "meaning": "SVG units in a height 100 frame. Model bounds are actual Inkscape painted extents; photographic bounds remain approximate. A tiny-line extent is not a glyph contour score."
+    }
+  ]
+}

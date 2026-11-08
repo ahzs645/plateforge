@@ -1,0 +1,32 @@
+{
+  "stage": "Modern year-profile and original specimen-placement stage; separately reviewed month-role follow-ups are composed by the parent integration review.",
+  "followUpEvidence": [
+    "../lettering/modern-jul-review/proposal.json",
+    "../lettering/modern-jul-review/jan-review/proposals.json"
+  ],
+  "productionProfiles": [
+    "bc-decal-print-modern-year-reconstruction",
+    "bc-decal-print-modern-late-year-reconstruction",
+    "bc-decal-print-modern-control-reconstruction"
+  ],
+  "newProfileFile": "src/templates/dies/decal-modern-late-printing.json",
+  "newProfileSha256": "c0d6aa1d36ea7da24632b7618bd645b5000260ae00e121c4f7938f993e1571c7",
+  "sourceInventorySha256": "0c9095412ad5043751a3ed5f30dab1f651093f5ba71c7ad24bc39832ff0eacc7",
+  "authorship": "Independent smooth constructions in cap units; 2 retains the earlier authored contour but uses the later observed advance. No x-only font scaling, scan tracing, automatic contour fitting or synthetic ink stroke. Historical font and manufacturer identity unknown.",
+  "retainedInThisStageContours": [
+    "early year 0\u20139",
+    "all modern control contours",
+    "all modern month contours",
+    "all modern province contours"
+  ],
+  "newLateProfileGlyphs": [
+    "0",
+    "1",
+    "2",
+    "3",
+    "9"
+  ],
+  "application": "2019\u20132023 fixed years. 2018 retains the early profile because later replacement variants are not safely inferable from expiry month. Exact-month placement changes only for 2018 JAN, 2019 JAN, 2020 JAN, 2021 JUL, 2022 MAR.",
+  "shapeRegistration": "Each occurrence normalized uniformly to painted height and centered; its native width remains visible. No homography/perspective rectification. Threshold sensitivity \u00b18, minimum contrast 25, component count and clipping validated.",
+  "photoLicensing": "Commons originals and derivative crops/masks/figures: D5e58, CC BY-SA 4.0. BCpl8s catalogue images are credited research references; no reusable photo licence was located. Independently authored vector code is separate from photographic derivatives."
+}

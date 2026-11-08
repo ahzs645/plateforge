@@ -1,0 +1,24 @@
+[
+  {
+    "id": "icbc-bulletin-14",
+    "author": "Insurance Corporation of British Columbia",
+    "sourceUrl": "https://www.bcpl8s.ca/PDFs/ICBCBulletin14.pdf",
+    "savedFile": "ICBCBulletin14.pdf",
+    "sha256": "a01a0b4339fe0dab9f6278a7e5ba9010697a01ce5f96313842fc378f541e76fe",
+    "sourceType": "primary ICBC bulletin archived by BCpl8s",
+    "retrievedOn": "2026-11-07",
+    "officialSourceUrl": "https://www.partners.icbc.com/assets/3mOlwuSlJiQqbPjb7gfnBi/bulletin-14-leap-year-2016-insurance-decal-changes.pdf",
+    "officialContentCrossChecked": true
+  },
+  {
+    "id": "icbc-bulletin-17",
+    "author": "Insurance Corporation of British Columbia",
+    "sourceUrl": "https://www.bcpl8s.ca/PDFs/ICBCBulletin17.pdf",
+    "savedFile": "ICBCBulletin17.pdf",
+    "sha256": "a0176e9654338df8ebef8afc8d57b866bc4c5f3867aed56dd92f8a87c8bb4e21",
+    "sourceType": "primary ICBC bulletin archived by BCpl8s",
+    "retrievedOn": "2026-11-07",
+    "officialSourceUrl": "https://www.partners.icbc.com/assets/4R45ykMZi3RDDG0z2BP6mA/bulletin-17-decal-replacements.pdf",
+    "officialContentCrossChecked": true
+  }
+]
