@@ -71,6 +71,11 @@ the real application/export path, the new decal comparison controls and mobile
 layout, all 572 catalogue/month fixtures, and the existing source-photo report.
 The workflow uploads each engine's results and failing-case diagnostics.
 
+The separate Check plate systems workflow also retains its application,
+reference-library navigation and comparison-report smoke checks. It now has a
+manual entry point for explicit complete runs while retaining its existing PR
+path filters.
+
 Use the release pull request and the [Typography validation workflow](https://github.com/ahzs645/plateforge/actions/workflows/typography-validation.yml)
 for the result associated with the published revision. A successful Pages build
 alone does not establish that these browser checks passed.
