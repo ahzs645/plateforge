@@ -1,26 +1,21 @@
 name: Compare Iraq and Iran typography
 on:
-  pull_request:
-    paths:
-      - 'scripts/compare-westasia-fonts.py'
-      - 'scripts/compare-westasia-suite.py'
-      - '.github/workflows/compare-westasia-fonts.yml'
+  workflow_dispatch:
+
 permissions:
   contents: read
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
 jobs:
   compare:
-    if: github.event.pull_request.head.repo.full_name == github.repository
-    permissions:
-      contents: write
     runs-on: ubuntu-latest
     timeout-minutes: 12
-    env:
-      HEAD_REF: ${{ github.head_ref }}
-      INPUT_SHA: ${{ github.event.pull_request.head.sha }}
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: ${{ github.sha }}
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
@@ -53,19 +48,3 @@ jobs:
           name: typography-reference-comparison
           path: public/typography-review/
           retention-days: 30
-      - name: Retain only raster and report outputs on the same draft branch
-        run: |
-          # Do not overwrite concurrent edits or write to the default branch.
-          test "$HEAD_REF" = 'feat/iraq-iran-source-aware'
-          git fetch origin "$HEAD_REF"
-          if [ "$(git rev-parse FETCH_HEAD)" != "$INPUT_SHA" ]; then
-            echo 'Branch moved during comparison. Report remains available as the workflow artifact.'
-            exit 0
-          fi
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add public/typography-review
-          if ! git diff --cached --quiet; then
-            git commit -m 'Retain font-free typography comparison sheets and measured evidence'
-            git push origin "HEAD:$HEAD_REF"
-          fi

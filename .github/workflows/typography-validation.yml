@@ -2,7 +2,7 @@ name: Typography validation
 
 on:
   push:
-    branches: [main, 'work/typography-consistency-20261013']
+    branches: [main]
   pull_request:
     branches: [main]
   workflow_dispatch:
@@ -38,6 +38,15 @@ jobs:
           node scripts/typography-verify.mjs
       - name: Production build
         run: BASE_PATH=/plateforge/ npm run build
+      - name: Stamp the browser build
+        run: printf '%s\n' "$GITHUB_SHA" > dist/.ci-source-sha
+      - name: Share this revision's browser build
+        uses: actions/upload-artifact@v4
+        with:
+          name: typography-app-${{ github.sha }}
+          path: dist/
+          include-hidden-files: true
+          retention-days: 2
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -63,8 +72,13 @@ jobs:
           node-version: '24'
           cache: npm
       - run: npm ci
-      - name: Build the deployed application
-        run: BASE_PATH=/plateforge/ npm run build
+      - name: Restore this revision's deployed application
+        uses: actions/download-artifact@v4
+        with:
+          name: typography-app-${{ github.sha }}
+          path: dist/
+      - name: Verify the build source
+        run: test "$(cat dist/.ci-source-sha)" = "$GITHUB_SHA"
       - name: Install pinned browser tools separately from the app
         run: |
           npm install --prefix "$RUNNER_TEMP/typography-browser" --ignore-scripts --no-audit --save-exact playwright@1.56.1 pngjs@7.0.0 pixelmatch@7.1.0
