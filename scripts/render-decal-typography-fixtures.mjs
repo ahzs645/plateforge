@@ -3,7 +3,8 @@ import {createServer} from 'vite';
 import fs from 'node:fs';
 const destination=process.argv[2];
 if(!destination) throw new Error('Supply an output JSON path.');
-const server=await createServer({server:{middlewareMode:true},appType:'custom'});
+const server=await createServer({configFile:false,server:{middlewareMode:true,hmr:false,watch:null},
+  appType:'custom',optimizeDeps:{noDiscovery:true,entries:[]}});
 try {
   const {BC_DECALS,decalId}=await server.ssrLoadModule('/src/regions/canada/bc-decals.ts');
   const {decalArt}=await server.ssrLoadModule('/src/regions/canada/bc-kit.ts');
@@ -15,7 +16,8 @@ try {
     for(const month of months) {
       const art=decalArt(decal,{decalMonth:month,decalSerial:decal.specimen.control??''});
       const width=art.aspect*100;
-      fixtures.push({id:decalId(decal),month,svg:serializeSvgNode(node('svg',{
+      fixtures.push({id:decalId(decal),month,control:art.serial??null,year:art.year,
+        svg:serializeSvgNode(node('svg',{
         xmlns:'http://www.w3.org/2000/svg',viewBox:`0 0 ${width} 100`,width,height:100,
       },buildDecal(art,{x:0,y:0,width,height:100})))});
     }

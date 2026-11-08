@@ -2,6 +2,14 @@ import type { DieProfile } from './engine';
 import outlines from './decal-printing.json';
 import auditOutlines from './decal-audit-printing.json';
 import glyphOutlines from './decal-glyph-printing.json';
+import { DECAL_EXPO_MONTH_PROFILE } from './decal-expo-month';
+import { DECAL_MODERN_PRINTING_PROFILES } from './decal-modern-printing';
+import { DECAL_BORDERED_MAY_PROFILE } from './decal-bordered-may';
+import { DECAL_ANNUAL_1972_PROFILE } from './decal-annual-1972';
+import { DECAL_LATE_PRINTING_PROFILES } from './decal-late-printing';
+import { DECAL_RESIDUAL_LETTERING_PROFILES } from './decal-residual-lettering';
+import { DECAL_PROVINCE_WIDE_PROFILE } from './decal-province-wide';
+import { DECAL_PROVINCE_TALL_PROFILE } from './decal-province-tall';
 
 /** Filled printed candidates, separate from every stamped serial/legend die. */
 export const DECAL_PRINTING_PROFILES: DieProfile[] = Object.entries({...outlines, ...auditOutlines, ...glyphOutlines}).map(([name, glyphs]) => ({
@@ -11,6 +19,15 @@ export const DECAL_PRINTING_PROFILES: DieProfile[] = Object.entries({...outlines
   evidence: { status: 'legend-approximation', specimens: [{ title: 'BCpl8s · Passenger renewal decals', url: 'https://www.bcpl8s.ca/Decals.htm' }],
     notes: 'Printed font candidates from supplied Helvetica Compressed and open URW Nimbus outlines. Month/year profiles deliberately narrow the supplied curves to photographed proportions; province/control use separate native outlines. These are visual reconstructions, not confirmed historical typeface or printing tooling. Source hashes and transforms are recorded in docs/research/decal-review/printing-provenance.json. Additional native Barlow Condensed candidates and their hashes are recorded in docs/research/decal-typography/printing-provenance.json. Native Oswald, Anton, Roboto Condensed and Archivo Narrow candidates selected by occurrence overlays are documented in docs/research/decal-glyph-analysis/candidate-provenance.json. Additional online sources, native width-axis Archivo candidates, squared Orbitron candidates and the explicitly reconstructed 1986 M/A are documented in docs/research/decal-online-analysis. No font software is bundled.' },
 }));
+
+DECAL_PRINTING_PROFILES.push(DECAL_EXPO_MONTH_PROFILE);
+DECAL_PRINTING_PROFILES.push(...DECAL_MODERN_PRINTING_PROFILES);
+DECAL_PRINTING_PROFILES.push(DECAL_BORDERED_MAY_PROFILE);
+DECAL_PRINTING_PROFILES.push(DECAL_ANNUAL_1972_PROFILE);
+DECAL_PRINTING_PROFILES.push(...DECAL_LATE_PRINTING_PROFILES);
+DECAL_PRINTING_PROFILES.push(...DECAL_RESIDUAL_LETTERING_PROFILES);
+DECAL_PRINTING_PROFILES.push(DECAL_PROVINCE_WIDE_PROFILE);
+DECAL_PRINTING_PROFILES.push(DECAL_PROVINCE_TALL_PROFILE);
 
 DECAL_PRINTING_PROFILES.push({
   id: 'bc-decal-1970', label: '1970 decal · outline numerals',

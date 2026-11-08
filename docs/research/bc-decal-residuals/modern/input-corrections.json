@@ -1,0 +1,53 @@
+[
+  {
+    "sourceId": "bcpl8s-2020-17918347",
+    "kind": "source caption/filename mismatch",
+    "observedYear": "2019",
+    "observedMonth": "AUG",
+    "observedControl": "17918347",
+    "notes": [
+      "Filename starts 2020; actual photograph shows AUG 2019. Classified by visible year."
+    ],
+    "sourceSha256": "3ca1edcfef3cc22142c3d1e0eea8c0a903a4bd0611e2308843c57fd2f4ec58f1"
+  },
+  {
+    "sourceId": "bcpl8s-2022-7484530",
+    "kind": "source caption/filename mismatch",
+    "observedYear": "2022",
+    "observedMonth": "MAY",
+    "observedControl": "74845430",
+    "notes": [
+      "Filename omits a control digit; actual photograph shows 74845430."
+    ],
+    "sourceSha256": "a639c107b72781fd21ca2d8bf3e8aa0349c0f9536cb8153ca4f2757f215b0d4a"
+  },
+  {
+    "sourceId": "2020-commons",
+    "kind": "preliminary audit transcription corrected",
+    "sourceSha256": "7ca806176eff12e2408ea642996949bc23ed69e74cf83a95c4033e6c5678f569",
+    "preliminaryTranscription": "23743780",
+    "correctedTranscription": "23747480",
+    "basis": "Direct inspection of enlarged original control crop; prior mislabeled occurrence overlays regenerated.",
+    "effects": "Control comparison labels/masks regenerated; year-profile contours and retained control outlines unchanged."
+  },
+  {
+    "sourceId": "2021-commons",
+    "kind": "preliminary audit transcription corrected",
+    "sourceSha256": "4503e87e3610f76af5ca27449532bf0bf5a7666f0580cd1bbdd84f7f99c9aaa7",
+    "preliminaryTranscription": "33560207",
+    "correctedTranscription": "33502027",
+    "basis": "Direct inspection of enlarged original control crop; prior mislabeled occurrence overlays regenerated.",
+    "effects": "Control comparison labels/masks regenerated; year-profile contours and retained control outlines unchanged."
+  },
+  {
+    "sourceId": "2022-commons",
+    "kind": "source caption/filename mismatch",
+    "observedYear": "2022",
+    "observedMonth": "FEB",
+    "observedControl": "71708687",
+    "notes": [
+      "Commons description says 2021; visible year is 2022. Title and image agree on 2022."
+    ],
+    "sourceSha256": "5e036169dc91b689c4bd14c18fb5ae3e390b8e771d91eb791776fc3ff9fa7953"
+  }
+]

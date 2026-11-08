@@ -1,0 +1,678 @@
+[
+  {
+    "profile": "anton-400",
+    "text": "2015",
+    "width": 210.966,
+    "height": 100,
+    "fit": "natural",
+    "file": "anton-400-2015.svg"
+  },
+  {
+    "profile": "anton-400",
+    "text": "2017",
+    "width": 210.966,
+    "height": 100,
+    "fit": "natural",
+    "file": "anton-400-2017.svg"
+  },
+  {
+    "profile": "anton-400",
+    "text": "70118033",
+    "width": 421.932,
+    "height": 100,
+    "fit": "natural",
+    "file": "anton-400-70118033.svg"
+  },
+  {
+    "profile": "anton-400",
+    "text": "91115136",
+    "width": 383.86400000000003,
+    "height": 100,
+    "fit": "natural",
+    "file": "anton-400-91115136.svg"
+  },
+  {
+    "profile": "anton-400",
+    "text": "0123456789",
+    "width": 555.966,
+    "height": 100,
+    "fit": "natural",
+    "file": "anton-400-0123456789.svg"
+  },
+  {
+    "profile": "anton-400",
+    "text": "0",
+    "width": 57.5,
+    "height": 100,
+    "fit": "natural",
+    "file": "anton-400-0.svg"
+  },
+  {
+    "profile": "anton-400",
+    "text": "1",
+    "width": 38.466,
+    "height": 100,
+    "fit": "natural",
+    "file": "anton-400-1.svg"
+  },
+  {
+    "profile": "anton-400",
+    "text": "2",
+    "width": 57.5,
+    "height": 100,
+    "fit": "natural",
+    "file": "anton-400-2.svg"
+  },
+  {
+    "profile": "anton-400",
+    "text": "3",
+    "width": 57.5,
+    "height": 100,
+    "fit": "natural",
+    "file": "anton-400-3.svg"
+  },
+  {
+    "profile": "anton-400",
+    "text": "4",
+    "width": 57.5,
+    "height": 100,
+    "fit": "natural",
+    "file": "anton-400-4.svg"
+  },
+  {
+    "profile": "anton-400",
+    "text": "5",
+    "width": 57.5,
+    "height": 100,
+    "fit": "natural",
+    "file": "anton-400-5.svg"
+  },
+  {
+    "profile": "anton-400",
+    "text": "6",
+    "width": 57.5,
+    "height": 100,
+    "fit": "natural",
+    "file": "anton-400-6.svg"
+  },
+  {
+    "profile": "anton-400",
+    "text": "7",
+    "width": 57.5,
+    "height": 100,
+    "fit": "natural",
+    "file": "anton-400-7.svg"
+  },
+  {
+    "profile": "anton-400",
+    "text": "8",
+    "width": 57.5,
+    "height": 100,
+    "fit": "natural",
+    "file": "anton-400-8.svg"
+  },
+  {
+    "profile": "anton-400",
+    "text": "9",
+    "width": 57.5,
+    "height": 100,
+    "fit": "natural",
+    "file": "anton-400-9.svg"
+  },
+  {
+    "profile": "normal",
+    "text": "2015",
+    "width": 305.076,
+    "height": 100,
+    "fit": "natural",
+    "file": "normal-2015.svg"
+  },
+  {
+    "profile": "normal",
+    "text": "2017",
+    "width": 305.076,
+    "height": 100,
+    "fit": "natural",
+    "file": "normal-2017.svg"
+  },
+  {
+    "profile": "normal",
+    "text": "70118033",
+    "width": 610.152,
+    "height": 100,
+    "fit": "natural",
+    "file": "normal-70118033.svg"
+  },
+  {
+    "profile": "normal",
+    "text": "91115136",
+    "width": 610.152,
+    "height": 100,
+    "fit": "natural",
+    "file": "normal-91115136.svg"
+  },
+  {
+    "profile": "normal",
+    "text": "0123456789",
+    "width": 762.69,
+    "height": 100,
+    "fit": "natural",
+    "file": "normal-0123456789.svg"
+  },
+  {
+    "profile": "normal",
+    "text": "0",
+    "width": 76.269,
+    "height": 100,
+    "fit": "natural",
+    "file": "normal-0.svg"
+  },
+  {
+    "profile": "normal",
+    "text": "1",
+    "width": 76.269,
+    "height": 100,
+    "fit": "natural",
+    "file": "normal-1.svg"
+  },
+  {
+    "profile": "normal",
+    "text": "2",
+    "width": 76.269,
+    "height": 100,
+    "fit": "natural",
+    "file": "normal-2.svg"
+  },
+  {
+    "profile": "normal",
+    "text": "3",
+    "width": 76.269,
+    "height": 100,
+    "fit": "natural",
+    "file": "normal-3.svg"
+  },
+  {
+    "profile": "normal",
+    "text": "4",
+    "width": 76.269,
+    "height": 100,
+    "fit": "natural",
+    "file": "normal-4.svg"
+  },
+  {
+    "profile": "normal",
+    "text": "5",
+    "width": 76.269,
+    "height": 100,
+    "fit": "natural",
+    "file": "normal-5.svg"
+  },
+  {
+    "profile": "normal",
+    "text": "6",
+    "width": 76.269,
+    "height": 100,
+    "fit": "natural",
+    "file": "normal-6.svg"
+  },
+  {
+    "profile": "normal",
+    "text": "7",
+    "width": 76.269,
+    "height": 100,
+    "fit": "natural",
+    "file": "normal-7.svg"
+  },
+  {
+    "profile": "normal",
+    "text": "8",
+    "width": 76.269,
+    "height": 100,
+    "fit": "natural",
+    "file": "normal-8.svg"
+  },
+  {
+    "profile": "normal",
+    "text": "9",
+    "width": 76.269,
+    "height": 100,
+    "fit": "natural",
+    "file": "normal-9.svg"
+  },
+  {
+    "profile": "control-bold",
+    "text": "2015",
+    "width": 254.04,
+    "height": 100,
+    "fit": "natural",
+    "file": "control-bold-2015.svg"
+  },
+  {
+    "profile": "control-bold",
+    "text": "2017",
+    "width": 254.04,
+    "height": 100,
+    "fit": "natural",
+    "file": "control-bold-2017.svg"
+  },
+  {
+    "profile": "control-bold",
+    "text": "70118033",
+    "width": 508.08,
+    "height": 100,
+    "fit": "natural",
+    "file": "control-bold-70118033.svg"
+  },
+  {
+    "profile": "control-bold",
+    "text": "91115136",
+    "width": 508.08,
+    "height": 100,
+    "fit": "natural",
+    "file": "control-bold-91115136.svg"
+  },
+  {
+    "profile": "control-bold",
+    "text": "0123456789",
+    "width": 635.1,
+    "height": 100,
+    "fit": "natural",
+    "file": "control-bold-0123456789.svg"
+  },
+  {
+    "profile": "control-bold",
+    "text": "0",
+    "width": 63.51,
+    "height": 100,
+    "fit": "natural",
+    "file": "control-bold-0.svg"
+  },
+  {
+    "profile": "control-bold",
+    "text": "1",
+    "width": 63.51,
+    "height": 100,
+    "fit": "natural",
+    "file": "control-bold-1.svg"
+  },
+  {
+    "profile": "control-bold",
+    "text": "2",
+    "width": 63.51,
+    "height": 100,
+    "fit": "natural",
+    "file": "control-bold-2.svg"
+  },
+  {
+    "profile": "control-bold",
+    "text": "3",
+    "width": 63.51,
+    "height": 100,
+    "fit": "natural",
+    "file": "control-bold-3.svg"
+  },
+  {
+    "profile": "control-bold",
+    "text": "4",
+    "width": 63.51,
+    "height": 100,
+    "fit": "natural",
+    "file": "control-bold-4.svg"
+  },
+  {
+    "profile": "control-bold",
+    "text": "5",
+    "width": 63.51,
+    "height": 100,
+    "fit": "natural",
+    "file": "control-bold-5.svg"
+  },
+  {
+    "profile": "control-bold",
+    "text": "6",
+    "width": 63.51,
+    "height": 100,
+    "fit": "natural",
+    "file": "control-bold-6.svg"
+  },
+  {
+    "profile": "control-bold",
+    "text": "7",
+    "width": 63.51,
+    "height": 100,
+    "fit": "natural",
+    "file": "control-bold-7.svg"
+  },
+  {
+    "profile": "control-bold",
+    "text": "8",
+    "width": 63.51,
+    "height": 100,
+    "fit": "natural",
+    "file": "control-bold-8.svg"
+  },
+  {
+    "profile": "control-bold",
+    "text": "9",
+    "width": 63.51,
+    "height": 100,
+    "fit": "natural",
+    "file": "control-bold-9.svg"
+  },
+  {
+    "profile": "modern-year-reconstruction",
+    "text": "2015",
+    "width": 181,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-year-reconstruction-2015.svg"
+  },
+  {
+    "profile": "modern-year-reconstruction",
+    "text": "2017",
+    "width": 180.5,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-year-reconstruction-2017.svg"
+  },
+  {
+    "profile": "modern-year-reconstruction",
+    "text": "70118033",
+    "width": 364,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-year-reconstruction-70118033.svg"
+  },
+  {
+    "profile": "modern-year-reconstruction",
+    "text": "91115136",
+    "width": 347,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-year-reconstruction-91115136.svg"
+  },
+  {
+    "profile": "modern-year-reconstruction",
+    "text": "0123456789",
+    "width": 471,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-year-reconstruction-0123456789.svg"
+  },
+  {
+    "profile": "modern-year-reconstruction",
+    "text": "0",
+    "width": 47.5,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-year-reconstruction-0.svg"
+  },
+  {
+    "profile": "modern-year-reconstruction",
+    "text": "1",
+    "width": 38.5,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-year-reconstruction-1.svg"
+  },
+  {
+    "profile": "modern-year-reconstruction",
+    "text": "2",
+    "width": 47,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-year-reconstruction-2.svg"
+  },
+  {
+    "profile": "modern-year-reconstruction",
+    "text": "3",
+    "width": 48,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-year-reconstruction-3.svg"
+  },
+  {
+    "profile": "modern-year-reconstruction",
+    "text": "4",
+    "width": 49,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-year-reconstruction-4.svg"
+  },
+  {
+    "profile": "modern-year-reconstruction",
+    "text": "5",
+    "width": 48,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-year-reconstruction-5.svg"
+  },
+  {
+    "profile": "modern-year-reconstruction",
+    "text": "6",
+    "width": 48.5,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-year-reconstruction-6.svg"
+  },
+  {
+    "profile": "modern-year-reconstruction",
+    "text": "7",
+    "width": 47.5,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-year-reconstruction-7.svg"
+  },
+  {
+    "profile": "modern-year-reconstruction",
+    "text": "8",
+    "width": 48.5,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-year-reconstruction-8.svg"
+  },
+  {
+    "profile": "modern-year-reconstruction",
+    "text": "9",
+    "width": 48.5,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-year-reconstruction-9.svg"
+  },
+  {
+    "profile": "modern-control-reconstruction",
+    "text": "2015",
+    "width": 254.04,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-control-reconstruction-2015.svg"
+  },
+  {
+    "profile": "modern-control-reconstruction",
+    "text": "2017",
+    "width": 254.04,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-control-reconstruction-2017.svg"
+  },
+  {
+    "profile": "modern-control-reconstruction",
+    "text": "70118033",
+    "width": 508.08,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-control-reconstruction-70118033.svg"
+  },
+  {
+    "profile": "modern-control-reconstruction",
+    "text": "91115136",
+    "width": 508.08,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-control-reconstruction-91115136.svg"
+  },
+  {
+    "profile": "modern-control-reconstruction",
+    "text": "0123456789",
+    "width": 635.1,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-control-reconstruction-0123456789.svg"
+  },
+  {
+    "profile": "modern-control-reconstruction",
+    "text": "0",
+    "width": 63.51,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-control-reconstruction-0.svg"
+  },
+  {
+    "profile": "modern-control-reconstruction",
+    "text": "1",
+    "width": 63.51,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-control-reconstruction-1.svg"
+  },
+  {
+    "profile": "modern-control-reconstruction",
+    "text": "2",
+    "width": 63.51,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-control-reconstruction-2.svg"
+  },
+  {
+    "profile": "modern-control-reconstruction",
+    "text": "3",
+    "width": 63.51,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-control-reconstruction-3.svg"
+  },
+  {
+    "profile": "modern-control-reconstruction",
+    "text": "4",
+    "width": 63.51,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-control-reconstruction-4.svg"
+  },
+  {
+    "profile": "modern-control-reconstruction",
+    "text": "5",
+    "width": 63.51,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-control-reconstruction-5.svg"
+  },
+  {
+    "profile": "modern-control-reconstruction",
+    "text": "6",
+    "width": 63.51,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-control-reconstruction-6.svg"
+  },
+  {
+    "profile": "modern-control-reconstruction",
+    "text": "7",
+    "width": 63.51,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-control-reconstruction-7.svg"
+  },
+  {
+    "profile": "modern-control-reconstruction",
+    "text": "8",
+    "width": 63.51,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-control-reconstruction-8.svg"
+  },
+  {
+    "profile": "modern-control-reconstruction",
+    "text": "9",
+    "width": 63.51,
+    "height": 100,
+    "fit": "natural",
+    "file": "modern-control-reconstruction-9.svg"
+  },
+  {
+    "profile": "heavy-month-wide",
+    "text": "MAY",
+    "width": 224.01799999999997,
+    "height": 100,
+    "fit": "natural",
+    "file": "heavy-month-wide-MAY.svg"
+  },
+  {
+    "profile": "heavy-month-wide",
+    "text": "M",
+    "width": 93.68,
+    "height": 100,
+    "fit": "natural",
+    "file": "heavy-month-wide-M.svg"
+  },
+  {
+    "profile": "heavy-month-wide",
+    "text": "A",
+    "width": 65.169,
+    "height": 100,
+    "fit": "natural",
+    "file": "heavy-month-wide-A.svg"
+  },
+  {
+    "profile": "heavy-month-wide",
+    "text": "Y",
+    "width": 65.169,
+    "height": 100,
+    "fit": "natural",
+    "file": "heavy-month-wide-Y.svg"
+  },
+  {
+    "profile": "bordered-may-reconstruction",
+    "text": "MAY",
+    "width": 195.5,
+    "height": 100,
+    "fit": "natural",
+    "file": "bordered-may-reconstruction-MAY.svg",
+    "kerning": {
+      "AY": -14
+    }
+  },
+  {
+    "profile": "bordered-may-reconstruction",
+    "text": "M",
+    "width": 82.5,
+    "height": 100,
+    "fit": "natural",
+    "file": "bordered-may-reconstruction-M.svg",
+    "kerning": {
+      "AY": -14
+    }
+  },
+  {
+    "profile": "bordered-may-reconstruction",
+    "text": "A",
+    "width": 65,
+    "height": 100,
+    "fit": "natural",
+    "file": "bordered-may-reconstruction-A.svg",
+    "kerning": {
+      "AY": -14
+    }
+  },
+  {
+    "profile": "bordered-may-reconstruction",
+    "text": "Y",
+    "width": 62,
+    "height": 100,
+    "fit": "natural",
+    "file": "bordered-may-reconstruction-Y.svg",
+    "kerning": {
+      "AY": -14
+    }
+  }
+]

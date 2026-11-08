@@ -35,12 +35,14 @@ function info(){
   if(![x,y,width,height].every(Number.isFinite)||width<=0||height<=0)throw Error('Non-finite geometry');
   svg.style.width=width+'px';svg.style.height=height+'px';
   return {width,height,serial:plate?.text,template:plate&&templateFor(plate.region,plate.format).id,
+    validation:plate?(plate.format.validate?.(plate.parts)??null):null,
     liveRuns:inspection.liveRuns,fonts:inspection.faces.map(f=>({id:f.id,family:f.family,weight:f.weight,style:f.style,version:f.sourceVersion,sha256:f.sha256})),
     warnings:inspection.warnings,systems:inspection.systemFamilies,profiles:inspection.profileIds,researchUnits:inspection.researchUnits,
     review:plate?reviewPlateExport(plate):null};
 }
 (window as any).typographyQA={
-  formats:all.map(({region,format,template})=>({region:region.id,format:format.id,template,label:format.label,status:format.status})),
+  formats:all.map(({region,format,template})=>({region:region.id,format:format.id,template,label:format.label,status:format.status,
+    decalIds:format.fields.find(field=>field.key==='decal')?.options?.map(option=>option.value)??[]})),
   async render(regionId:string,formatId:string,parts:Record<string,string>={},research=false){
     const found=all.find(x=>x.region.id===regionId&&x.format.id===formatId);if(!found)throw Error('Unknown exact format');
     setResearchDiesEnabled(research);if(research)await loadResearchDies();

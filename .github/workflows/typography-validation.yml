@@ -57,6 +57,7 @@ jobs:
 
   browser:
     needs: validate
+    # Playwright 1.56.1's browser dependencies support Ubuntu 24.04.
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     strategy:
@@ -88,6 +89,12 @@ jobs:
           TYPOGRAPHY_BROWSER: ${{ matrix.browser }}
           TYPOGRAPHY_BROWSER_DEPS: ${{ runner.temp }}/typography-browser/package.json
         run: node scripts/typography-browser.mjs
+      - name: All 572 B.C. decal browser geometry and input checks
+        timeout-minutes: 6
+        env:
+          TYPOGRAPHY_BROWSER: ${{ matrix.browser }}
+          TYPOGRAPHY_BROWSER_DEPS: ${{ runner.temp }}/typography-browser/package.json
+        run: node scripts/verify-decal-browser-geometry.mjs
       - name: B.C. source photographs and logo overlay controls
         env:
           TYPOGRAPHY_BROWSER: ${{ matrix.browser }}

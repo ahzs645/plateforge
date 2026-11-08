@@ -1,0 +1,342 @@
+{
+  "1970": {
+    "Status": "evidence-only",
+    "Implemented": "Rejected invalid one-pixel segmentation before scoring.",
+    "Remaining": "Outlined year construction and province spacing remain for focused review."
+  },
+  "1971": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "The control box inset, control height/weight and province spacing do not coincide. The supplied sun is a separate artwork component. Calibrate panel bounds and control typography before adjusting the supplied emblem placement."
+  },
+  "1972": {
+    "Status": "implemented",
+    "Implemented": "Independent observed 7/2 construction and advances; natural fit, checked against two specimens.",
+    "Remaining": "Fine printed contour and historical typeface remain uncertain."
+  },
+  "1974": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "Province/class tracking and the boxed control placement differ; the stacked 7 and 4 must stay separate. Refine the two year occurrences, class line, and control box independently. Photograph aging is not a calibrated buff colour."
+  },
+  "1975": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "The province group extends too far left in the current composition; the class line and control row also differ in size/spacing. Calibrate the three printed rows and year relative to the physical sticker frame."
+  },
+  "1976": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "The control is larger/heavier than the photograph; province and class spacing need another pass. The enlarged flower is already present in main. Reduce control extent/weight with a source-supported candidate; preserve the supplied flower master and assess only its placement first."
+  },
+  "1977": {
+    "Status": "evidence-only",
+    "Implemented": "Corrected explicit control to 7006989 and rejected invalid inputs before editor fallback.",
+    "Remaining": "Other role proportions retain their prior candidates."
+  },
+  "1978": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "The B/C block and vertical PASS/COMM have different letter construction and spacing from the source. Keep the two large initials, two vertical class words, year and control as separate roles; do not fit one font to all of them."
+  },
+  "1980": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "Month/year proportions and the control box footprint do not align with the source; the long province line also differs. Calibrate the lower row and its panel first, then compare native month/year shapes."
+  },
+  "1981": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "JUN is relatively close in overall equal-height width, but the province stack is narrower and has different tracking. Year weight/spacing differs. Refine small province words and the year independently rather than replacing the month alphabet globally."
+  },
+  "1982": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "The province stack is too compact and the broad year has different width/weight. The control must remain above the province. Retain the special line order and refine year, province and control sizes independently."
+  },
+  "1983": {
+    "Status": "implemented",
+    "Implemented": "Restored left month margin and raised JUN; retained existing contours.",
+    "Remaining": "JUN proportions remain approximate and the faint control is tentative."
+  },
+  "1984": {
+    "Status": "implemented",
+    "Implemented": "Dark vertical control ink independent of pale date lettering.",
+    "Remaining": "Small vertical lettering, wear and colour remain approximate."
+  },
+  "1985": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "Month/year and the bottom province line have different spacing; the current control is more regular than the faint source. Refine the independent bottom-legend composition and obtain a sharper control reference before tracing its contours."
+  },
+  "1986": {
+    "Status": "implemented",
+    "Implemented": "Reconstructed P/R; repaired R/T/V transparent overlaps; adjusted supported pair spacing; reviewed all 12 months.",
+    "Remaining": "Supplied Expo logo retained after twelve-source comparison; fine print weight remains uncertain."
+  },
+  "1987": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "The centre province text is lighter/more open than the source. Month/year width and the control baseline also differ. Keep the red end panels and pale centre separate; calibrate the central two-line legend and control first."
+  },
+  "1988": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "Panel boundaries, the centre text and year placement differ; the broad 88 construction is visually heavier. Check centre width, side-group centres and the two 8 occurrences separately."
+  },
+  "1989": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "The source and model retain the same overall architecture, but month width, centre text and control baseline differ. Refine typography within the thick-border frame, retaining native glyph proportions."
+  },
+  "1990": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "The control row sits higher and appears heavier than the source; JAN and 90 do not exactly coincide. Prioritize the control baseline/weight, then the month and year spacing."
+  },
+  "1991": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "Province/control spacing and the 91 forms remain different despite broadly similar month placement. Review the two year digits and each central line separately."
+  },
+  "1992": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "The OCT construction and 92 contours differ; the current control row is higher than the source. Preserve the thick black frame and correct independent text roles."
+  },
+  "1993": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "OCT and 93 are broadly placed correctly, but native widths, centre lettering and control position need refinement. Use the source frame to calibrate layout before changing the text profiles."
+  },
+  "1994": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "The year 94 shape and the OCT run are different; scratches obscure part of the source. Do not trace the scratch into a glyph. Refine only reliable contours/placement and corroborate with another specimen."
+  },
+  "1995": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "NOV and 95 differ in width/weight, while the central control is higher than the photograph. Refine control baseline and the two date runs independently."
+  },
+  "1996": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "MAR, 96 and the central control retain width/weight differences. Wear reduces contour certainty. Retain black as its own variant and compare the source-supported month forms without changing the pink variant by inheritance."
+  },
+  "1996-pink": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "The pink variant has its own month/control placement and should not borrow the black specimen\u2019s corrections automatically. Keep a separate source binding and adjust NOV, province and control line extents."
+  },
+  "1997": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "The model NOV and 97 proportions differ and the control row is high relative to the source. Correct control baseline and native month/year widths in this variant."
+  },
+  "1998": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "The AUG run and central control position differ; it must remain distinct from the Type II specimen. Refine month placement and control baseline without assigning Type II printing to this source."
+  },
+  "1998-type-ii": {
+    "Status": "implemented",
+    "Implemented": "Exact MAY construction with authored advances, AY:-14, source-supported placement and natural fit.",
+    "Remaining": "Other months retain prior candidates; fine small-source contours remain uncertain."
+  },
+  "1999": {
+    "Status": "implemented",
+    "Implemented": "Correct thick-border MAY reference/control; exact MAY construction and AY spacing with natural fit.",
+    "Remaining": "MAY remains about 7.6% broad at equal height against the small source; no squeeze masks it."
+  },
+  "1999-white": {
+    "Status": "implemented",
+    "Implemented": "Independent concentric rounded outer/inner outline radii.",
+    "Remaining": "Radii are approximate; existing lettering and physical edge treatment retain uncertainty."
+  },
+  "2000": {
+    "Status": "implemented",
+    "Implemented": "Independent concentric rounded outer/inner outline radii.",
+    "Remaining": "Radii are approximate; existing lettering and physical edge treatment retain uncertainty."
+  },
+  "2001": {
+    "Status": "implemented",
+    "Implemented": "Independent concentric rounded outer/inner outline radii.",
+    "Remaining": "Radii are approximate; existing lettering and physical edge treatment retain uncertainty."
+  },
+  "2002": {
+    "Status": "implemented",
+    "Implemented": "Independent concentric rounded outer/inner outline radii.",
+    "Remaining": "Radii are approximate; existing lettering and physical edge treatment retain uncertainty."
+  },
+  "2003": {
+    "Status": "implemented",
+    "Implemented": "Independent concentric rounded outer/inner outline radii.",
+    "Remaining": "Radii are approximate; existing lettering and physical edge treatment retain uncertainty."
+  },
+  "2004": {
+    "Status": "implemented",
+    "Implemented": "Calibrated MAR, year, province and control positions/heights independently.",
+    "Remaining": "Year width and tiny province contours remain approximate; photo aspect differs from the model."
+  },
+  "2005": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "The source-supported JAN/year arrangement is present, but letter contours, province extent and control weight differ. Refine the small province words and control before replacing broad month shapes."
+  },
+  "2006": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "MAY/year placement is relatively close; control baseline/weight and the small province stack differ. Keep the date footprint and refine secondary printing with a clearer source where needed."
+  },
+  "2007": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "JAN and 07 differ in contour/spacing; the province group and control row are slightly displaced. Review each run independently, retaining the no-barcode layout."
+  },
+  "2008": {
+    "Status": "implemented",
+    "Implemented": "Observed AUG uses native Bebas Neue 400; fixed 08 uses native Oswald 400; AUG legend/control translations are scoped.",
+    "Remaining": "A aperture, G terminal,0 bowl and tiny province width remain approximate; other months are retained."
+  },
+  "2009": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "APR and the narrow province stack differ; barcode footprint and control placement need separate review. Check the barcode bounds/decoded value independently of text-shape comparison."
+  },
+  "2010": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "The province stack is more compact and differently placed than the source; JAN/year and footer baselines differ. Refine province height/spacing and align the footer as a distinct row."
+  },
+  "2011": {
+    "Status": "implemented",
+    "Implemented": "Retained close MAY shape, raised placement, supported 11 pair spacing, scoped legend/control/barcode calibration.",
+    "Remaining": "Tiny province proportions and some control contours remain approximate; other month placements are retained."
+  },
+  "2012": {
+    "Status": "retained",
+    "Implemented": "Existing implementation retained after family review.",
+    "Remaining": "NOV/year proportions and the province/control positions differ; the source control is 97303194. Preserve exact observed text and refine the independent text groups. Do not use barcode pixel differences as a font score."
+  },
+  "2013": {
+    "Status": "implemented",
+    "Implemented": "Exact OCT reconstruction, supported 13 pair spacing, scoped legend/control/barcode calibration.",
+    "Remaining": "Small-source contour and province proportions remain uncertain; other month forms are retained."
+  },
+  "2014": {
+    "Status": "implemented",
+    "Implemented": "Separate reconstructed year and native-derived control profiles; retained tabular control advances and reconstructed diagonal-flag 1.",
+    "Remaining": "Year 3/4/6/8/9 have lower-confidence construction; control 2/4 are native carryovers; colour/photo aspect are uncalibrated."
+  },
+  "2015": {
+    "Status": "implemented",
+    "Implemented": "Separate reconstructed year and native-derived control profiles; retained tabular control advances and reconstructed diagonal-flag 1. Vertical translations and a taller barcode footprint.",
+    "Remaining": "Year 3/4/6/8/9 have lower-confidence construction; control 2/4 are native carryovers; colour/photo aspect are uncalibrated. Source control-line slope limits whole-run width interpretation."
+  },
+  "2016": {
+    "Status": "implemented",
+    "Implemented": "Separate reconstructed year and native-derived control profiles; retained tabular control advances and reconstructed diagonal-flag 1.",
+    "Remaining": "Year 3/4/6/8/9 have lower-confidence construction; control 2/4 are native carryovers; colour/photo aspect are uncalibrated."
+  },
+  "2017": {
+    "Status": "implemented",
+    "Implemented": "Separate reconstructed year and native-derived control profiles; retained tabular control advances and reconstructed diagonal-flag 1. Correct JAN control; July boundary retained; later layout calibrated with NOV and July cross-check.",
+    "Remaining": "Year 3/4/6/8/9 have lower-confidence construction; control 2/4 are native carryovers; colour/photo aspect are uncalibrated. July is an official illustration, not an issued photograph."
+  },
+  "2018": {
+    "Status": "implemented",
+    "Implemented": "Separate reconstructed year and native-derived control profiles; retained tabular control advances and reconstructed diagonal-flag 1.",
+    "Remaining": "Year 3/4/6/8/9 have lower-confidence construction; control 2/4 are native carryovers; colour/photo aspect are uncalibrated."
+  },
+  "2019": {
+    "Status": "implemented",
+    "Implemented": "Separate reconstructed year and native-derived control profiles; retained tabular control advances and reconstructed diagonal-flag 1.",
+    "Remaining": "Year 3/4/6/8/9 have lower-confidence construction; control 2/4 are native carryovers; colour/photo aspect are uncalibrated."
+  },
+  "2020": {
+    "Status": "implemented",
+    "Implemented": "Separate reconstructed year and native-derived control profiles; retained tabular control advances and reconstructed diagonal-flag 1.",
+    "Remaining": "Year 3/4/6/8/9 have lower-confidence construction; control 2/4 are native carryovers; colour/photo aspect are uncalibrated. Zero-control photograph does not establish ordinary issuance."
+  },
+  "2021": {
+    "Status": "implemented",
+    "Implemented": "Separate reconstructed year and native-derived control profiles; retained tabular control advances and reconstructed diagonal-flag 1.",
+    "Remaining": "Year 3/4/6/8/9 have lower-confidence construction; control 2/4 are native carryovers; colour/photo aspect are uncalibrated."
+  },
+  "2022": {
+    "Status": "implemented",
+    "Implemented": "Separate reconstructed year and native-derived control profiles; retained tabular control advances and reconstructed diagonal-flag 1.",
+    "Remaining": "Year 3/4/6/8/9 have lower-confidence construction; control 2/4 are native carryovers; colour/photo aspect are uncalibrated."
+  },
+  "2023": {
+    "Status": "implemented",
+    "Implemented": "Separate reconstructed year and native-derived control profiles; retained tabular control advances and reconstructed diagonal-flag 1. Raised/translated runs and narrowed/tallened barcode with quiet zones accounted for.",
+    "Remaining": "Year 3/4/6/8/9 have lower-confidence construction; control 2/4 are native carryovers; colour/photo aspect are uncalibrated."
+  },
+  "1986-jan": {
+    "Status": "implemented",
+    "Implemented": "Reconstructed P/R; repaired R/T/V transparent overlaps; adjusted supported pair spacing; reviewed all 12 months.",
+    "Remaining": "Supplied Expo logo retained after twelve-source comparison; fine print weight remains uncertain."
+  },
+  "1986-feb": {
+    "Status": "implemented",
+    "Implemented": "Reconstructed P/R; repaired R/T/V transparent overlaps; adjusted supported pair spacing; reviewed all 12 months.",
+    "Remaining": "Supplied Expo logo retained after twelve-source comparison; fine print weight remains uncertain."
+  },
+  "1986-apr": {
+    "Status": "implemented",
+    "Implemented": "Reconstructed P/R; repaired R/T/V transparent overlaps; adjusted supported pair spacing; reviewed all 12 months.",
+    "Remaining": "Supplied Expo logo retained after twelve-source comparison; fine print weight remains uncertain."
+  },
+  "1986-may": {
+    "Status": "implemented",
+    "Implemented": "Reconstructed P/R; repaired R/T/V transparent overlaps; adjusted supported pair spacing; reviewed all 12 months.",
+    "Remaining": "Supplied Expo logo retained after twelve-source comparison; fine print weight remains uncertain."
+  },
+  "1986-jun": {
+    "Status": "implemented",
+    "Implemented": "Reconstructed P/R; repaired R/T/V transparent overlaps; adjusted supported pair spacing; reviewed all 12 months.",
+    "Remaining": "Supplied Expo logo retained after twelve-source comparison; fine print weight remains uncertain."
+  },
+  "1986-jul": {
+    "Status": "implemented",
+    "Implemented": "Reconstructed P/R; repaired R/T/V transparent overlaps; adjusted supported pair spacing; reviewed all 12 months.",
+    "Remaining": "Supplied Expo logo retained after twelve-source comparison; fine print weight remains uncertain."
+  },
+  "1986-aug": {
+    "Status": "implemented",
+    "Implemented": "Reconstructed P/R; repaired R/T/V transparent overlaps; adjusted supported pair spacing; reviewed all 12 months.",
+    "Remaining": "Supplied Expo logo retained after twelve-source comparison; fine print weight remains uncertain."
+  },
+  "1986-sep": {
+    "Status": "implemented",
+    "Implemented": "Reconstructed P/R; repaired R/T/V transparent overlaps; adjusted supported pair spacing; reviewed all 12 months.",
+    "Remaining": "Supplied Expo logo retained after twelve-source comparison; fine print weight remains uncertain."
+  },
+  "1986-oct": {
+    "Status": "implemented",
+    "Implemented": "Reconstructed P/R; repaired R/T/V transparent overlaps; adjusted supported pair spacing; reviewed all 12 months.",
+    "Remaining": "Supplied Expo logo retained after twelve-source comparison; fine print weight remains uncertain."
+  },
+  "1986-nov": {
+    "Status": "implemented",
+    "Implemented": "Reconstructed P/R; repaired R/T/V transparent overlaps; adjusted supported pair spacing; reviewed all 12 months.",
+    "Remaining": "Supplied Expo logo retained after twelve-source comparison; fine print weight remains uncertain."
+  },
+  "1986-dec": {
+    "Status": "implemented",
+    "Implemented": "Reconstructed P/R; repaired R/T/V transparent overlaps; adjusted supported pair spacing; reviewed all 12 months.",
+    "Remaining": "Supplied Expo logo retained after twelve-source comparison; fine print weight remains uncertain."
+  },
+  "2017-nov": {
+    "Status": "implemented",
+    "Implemented": "Separate reconstructed year and native-derived control profiles; retained tabular control advances and reconstructed diagonal-flag 1. Correct JAN control; July boundary retained; later layout calibrated with NOV and July cross-check.",
+    "Remaining": "Year 3/4/6/8/9 have lower-confidence construction; control 2/4 are native carryovers; colour/photo aspect are uncalibrated. July is an official illustration, not an issued photograph."
+  },
+  "2017-jul": {
+    "Status": "implemented",
+    "Implemented": "Separate reconstructed year and native-derived control profiles; retained tabular control advances and reconstructed diagonal-flag 1. Correct JAN control; July boundary retained; later layout calibrated with NOV and July cross-check.",
+    "Remaining": "Year 3/4/6/8/9 have lower-confidence construction; control 2/4 are native carryovers; colour/photo aspect are uncalibrated. July is an official illustration, not an issued photograph."
+  }
+}

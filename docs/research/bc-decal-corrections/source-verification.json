@@ -1,0 +1,958 @@
+{
+  "schema": "plateforge.decal-source-verification/v1",
+  "manifestSha256": "1c7809736f1c5c322d65ccabf3e497f5736cbc06f97ab6e8f74bfd2b2f6b456a",
+  "specimens": [
+    {
+      "id": "1970",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1970.jpg",
+      "cropPixels": [
+        191,
+        98
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1970/photo.png",
+      "verifiedSha256": "648c0f830c3b74b84f6b899aeacd1965c143758c8edcd9a82ad7e55bb3b7fc13",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "365c0fd8f4978c6b650d056c11b127bfbc923b8732e936900908cc9edc63c6f1"
+    },
+    {
+      "id": "1971",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1971.jpg",
+      "cropPixels": [
+        188,
+        98
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1971/photo.png",
+      "verifiedSha256": "1d97bf9a6c5414ad325ead95999748f9ea448876b37eb6f0e9b1bc52af5e55ca",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "8ba2bc1e206af4d44cbea46b85b96ddbc8a28665049b70c9b9be1863d9759fa7"
+    },
+    {
+      "id": "1972",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1972-926403.jpg",
+      "cropPixels": [
+        190,
+        100
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1972/photo.png",
+      "verifiedSha256": "ba498e35690a33817455bf7adadedcc4ea87915e727e07875f15fa182f03622a",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "77267f4f105e15c3bdf1c9c33249500b63a14a2de6e9c169cd30d20a87d0d0c4"
+    },
+    {
+      "id": "1974",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1974-769712.jpg",
+      "cropPixels": [
+        181,
+        100
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1974/photo.png",
+      "verifiedSha256": "97360c9a963ef10ef156c72a5545bf53662bd1d7f7a743c1a9a2af3df57cabc0",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "2966d150e6e115530ae31a9ecf56e2dbbc102fc42566945fa8294cd15d29de56"
+    },
+    {
+      "id": "1975",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1975-4469530.jpg",
+      "cropPixels": [
+        153,
+        100
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1975/photo.png",
+      "verifiedSha256": "00fe04e497d7a1d7433e53aec9f241f46ba2ab63c52b22df0bea34d561c0b86d",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "431d3e8fb25c5ceb49cb1695a52a60575eeffba43b79b0abed0bb7beca147b12"
+    },
+    {
+      "id": "1976",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1976.jpg",
+      "cropPixels": [
+        158,
+        98
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1976/photo.png",
+      "verifiedSha256": "983bfe184c8e346210392ce74b37791f74225ab62ebd2bbd9494923ec7b2d862",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "264c2405c740ac20838f5318ba1e4930b66b476ade29d7da87170afccc25bd15"
+    },
+    {
+      "id": "1977",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1977.jpg",
+      "cropPixels": [
+        144,
+        98
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1977/photo.png",
+      "verifiedSha256": "160522064853e79e4fe251127e81885010486fd83d35aaed9bab10102f2d1eb6",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "c17d88371b80477a4a6cf7a92007f29cdfa7a3360f6625a54a8dc98ddff28632"
+    },
+    {
+      "id": "1978",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1978.jpg",
+      "cropPixels": [
+        188,
+        100
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1978/photo.png",
+      "verifiedSha256": "6dc3cb429ab20a90c1df07b42080ad8ca23019dc40ee63399eee8a95104c7ec6",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "3607b0af9652d9ab644e365cebfff8159eb9378ec2c17c9d1fba10743d4734bb"
+    },
+    {
+      "id": "1980",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1980-43052284.jpg",
+      "cropPixels": [
+        255,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1980/photo.png",
+      "verifiedSha256": "3cbe285cbfc6838a9ae021bf77c48a0b4df8169260e1d7dd4a639fef6de73ba7",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "4aec1ef6a9c46cfc8982cb11ab75b64f9bf87a2c1c71cff747791eb9afc30f72"
+    },
+    {
+      "id": "1981",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1981-59031991.jpg",
+      "cropPixels": [
+        256,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1981/photo.png",
+      "verifiedSha256": "3e814dcb6aabe05b53a79268bf7d20f5e7815e791719036df2dda742b39dc6b6",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "e9f6809d8a5e2ab222652a39c0c134ae940b7e9bd3500716a5f65917a1114301"
+    },
+    {
+      "id": "1982",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1982-66134375.jpg",
+      "cropPixels": [
+        258,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1982/photo.png",
+      "verifiedSha256": "5f177837e110c8e7eba39f0be33de3b07629730bec7cf1e61779ce6ea75a5c84",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "a6fc137b91355d675999f354f73ed9dadeb643d12b623873efb27548f8473abc"
+    },
+    {
+      "id": "1983",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1983-85138416.jpg",
+      "cropPixels": [
+        254,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1983/photo.png",
+      "verifiedSha256": "30360d3322ad42b29a59c2a9e0f3e54d6ef4fbd93beafbd2620e4518e87a36f1",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "2d8ca52802f994bfb9e632f47962f2a69027ed29553bb657b782c1d3027f389a"
+    },
+    {
+      "id": "1984",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1984-42144483.jpg",
+      "cropPixels": [
+        255,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1984/photo.png",
+      "verifiedSha256": "4c95caa266237b77d143381a3235d3ee69de6abaf8c50f9525eb9f37a84c15d8",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "2fcf48f5c7554a9c9cb57de02fbbf1b51f96cccc1e19d01ed2ebc7ddf64434a9"
+    },
+    {
+      "id": "1985",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1985-62333627.jpg",
+      "cropPixels": [
+        255,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1985/photo.png",
+      "verifiedSha256": "133b39ab52562b62d7c9e5ac4cc65c493a78c30058b1026652355d31ebc32c80",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "fb316e4932f314f1599b375a3d961b316f0c91558b675d6b0898ab22da89e4ce"
+    },
+    {
+      "id": "1986",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-12137790.jpg",
+      "cropPixels": [
+        258,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1986/photo.png",
+      "verifiedSha256": "ce4448d69236466ffd0a3773bcd2364232914cf1c6b5d0cf323af071bec2fb21",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "3b5a701dca266008aa866ae51efe3087672878a101a3a144d8d25bee437706f5"
+    },
+    {
+      "id": "1987",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1987-22687871.jpg",
+      "cropPixels": [
+        260,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1987/photo.png",
+      "verifiedSha256": "b243fbfe5e89cb53c7807ab6954c390cecc26e711c97aeaddfe45c05e85107ce",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "9323fd4707a7352b6109bb21467313738f18b46241ebefe1d139490504bf479f"
+    },
+    {
+      "id": "1988",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1988-21533872.jpg",
+      "cropPixels": [
+        254,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1988/photo.png",
+      "verifiedSha256": "77f49b3b9e5a28423d5abf201e3bf1a30acd4c43942fb66aeac39ece2b6859a3",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "c82fae217ec7edeb39abac963cf0d99eaffac4263e8f6e3b195b510417161711"
+    },
+    {
+      "id": "1989",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1989-33187934.jpg",
+      "cropPixels": [
+        249,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1989/photo.png",
+      "verifiedSha256": "3a86a3e6478dca9ed1e4d5721215250e3205b2e8843891b519e5c2ba1c407d65",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "c31b8e58dfc3bbdd94b61c4db7a7baab5869eec20c06909b1a7debca87972cdb"
+    },
+    {
+      "id": "1990",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1990-30863010.jpg",
+      "cropPixels": [
+        254,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1990/photo.png",
+      "verifiedSha256": "8df50dcea644e21142ed1e074db763f34824d03a6630d246a9c0b14348f6b05d",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "ce2a731bd4cfb9b9f8aaaf9a90b1688d11ce67cc813cff83d0c0179806e198ba"
+    },
+    {
+      "id": "1991",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1991-55232623.jpg",
+      "cropPixels": [
+        246,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1991/photo.png",
+      "verifiedSha256": "987427451c6b851a5234991cb10f5e41c28d60807a5abf14d7b8a12015ab0e76",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "eac1429999333059ff23e9d0974b5f5b61e3058924a23940a76b36e1c1f92e18"
+    },
+    {
+      "id": "1992",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1992-59693121.jpg",
+      "cropPixels": [
+        250,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1992/photo.png",
+      "verifiedSha256": "c783080b5c288e380f2d2ba15f3c246c2d519064c86d26038006fae5fd884709",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "3fcc9731660652ba010de377f610663a7f8432921da9aa9ee3014eccdfd9ffdc"
+    },
+    {
+      "id": "1993",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1993-79096980.jpg",
+      "cropPixels": [
+        251,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1993/photo.png",
+      "verifiedSha256": "c9d90d3a8ca8c42e83f94f4fbd81ecd1f19af4a188d429166eb1b8c96ea726fd",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "dd1db23deb518804d6c5a3248e90cf0dcf3cb1b7317d82d3b5e2462685a41dfc"
+    },
+    {
+      "id": "1994",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1994-79533496.jpg",
+      "cropPixels": [
+        249,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1994/photo.png",
+      "verifiedSha256": "fbbe9179ef40d52e9de3786169fcfa7824a61b4b04cfe38091496257132090c8",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "58f3d02f385569622e09e1f37b2f97dee10b2da539abd685df6d5805e7d5d1c6"
+    },
+    {
+      "id": "1995",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1995-82287425.jpg",
+      "cropPixels": [
+        251,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1995/photo.png",
+      "verifiedSha256": "6f1651eebc451425046203ad17e1fddf958511906fb42ff6bbe6c12d476bbc1f",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "57e093658b7b48eb5cb5ca62747b959cebab4cfa369d192a477a0f9c7039d8c7"
+    },
+    {
+      "id": "1996",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1996-22710492.jpg",
+      "cropPixels": [
+        247,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1996/photo.png",
+      "verifiedSha256": "9d8c38aa375f5bb5e9471b4ed0c76a580df2010c94574cec319a5daf953acabc",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "3ce6a9302396f0ae45d9abeca5abe2234d3ab3b0ead4abc65b20ee4197ce45a9"
+    },
+    {
+      "id": "1996-pink",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1996-pink.jpg",
+      "cropPixels": [
+        243,
+        73
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1996-pink/photo.png",
+      "verifiedSha256": "3fa1d7f123c083387d6490ff8b554d83b94e3a79566876e53efa88a245ae636e",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "7af3adbfaff4f8170d470b34103357d7fba2a8e40eb7a4974fad2be0c191db41"
+    },
+    {
+      "id": "1997",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1997-84261541.jpg",
+      "cropPixels": [
+        250,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1997/photo.png",
+      "verifiedSha256": "613f52569007ca13a9ab003e9a92078f53383fd04b4955e48d32e3884ef85a10",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "057d4919237a53981168769beff6193ae572b82f935e8ed69d4ca655ad382d5c"
+    },
+    {
+      "id": "1998",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1998-37685128.jpg",
+      "cropPixels": [
+        251,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1998/photo.png",
+      "verifiedSha256": "b24c22fac0d66ad2029859a973e59daef56e627ea84d3c3a7f623bff91c05b39",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "61783f37ff3584c7d06d039a41871f53eb3d020647b152ff29958b58d002e188"
+    },
+    {
+      "id": "1998-type-ii",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1998/1998-May-34838894.jpg",
+      "cropPixels": [
+        373,
+        114
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1998-type-ii/photo.png",
+      "verifiedSha256": "e82cddeeef26dadd69423465c9f90ac08cf9cb6799cc828e0668aa4d43136710",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "432fd7f851c03d00dde60da02f0d9aa310d4e0ead108cd8f5ada068f6d18d2fc"
+    },
+    {
+      "id": "1999",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1999-thick.jpg",
+      "cropPixels": [
+        242,
+        73
+      ],
+      "mode": "cached-crop",
+      "file": "public/data/decal-review/sources/1999.webp",
+      "verifiedSha256": "1fb49e789ea4b059d5b7d28f36174ffcab8d9b3f3e6a51b94f3c0d81e1817975",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "614acea5c9bad07a30bedba69026b4a7856b8fb1ca15092c1c1f4111e34f413b"
+    },
+    {
+      "id": "1999-white",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1999-thin.jpg",
+      "cropPixels": [
+        257,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1999-white/photo.png",
+      "verifiedSha256": "9c2cab3b04bb1dc17181f02301ecfa582273533b74a1868887e3ad6003987c31",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "46da3069c19f0303e185737422a37fb7c8ea020ff1f962997b6bafbdad51b196"
+    },
+    {
+      "id": "2000",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2000-53583708.jpg",
+      "cropPixels": [
+        263,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2000/photo.png",
+      "verifiedSha256": "a5050f2a3216f5436b8efaf12b1aa07a93e998060aa438ffe601dbe9226a3ebe",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "7b5614d67a88d907eb9ff385e86f6faf1badee6bddf2530931104b6b13afe3c6"
+    },
+    {
+      "id": "2001",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2001-770364670.jpg",
+      "cropPixels": [
+        264,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2001/photo.png",
+      "verifiedSha256": "07323e77011fb80c7eacac77ebb0c28fff1763a732eb113d6c332b7c520ab379",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "25174885c3d7037289935e22a31b3b6615c954ae0d4e5aed441d3eaca30bfe1c"
+    },
+    {
+      "id": "2002",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2002-86673867.jpg",
+      "cropPixels": [
+        260,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2002/photo.png",
+      "verifiedSha256": "05f13c9c1843d1ea92ec1d84b6c557b7708d5ef3758120a1ede3d94a2c8d44fd",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "2da8bf1857b9bd88f3ac3d9073936b889503ce11f6cb8a48034d0699f12fd016"
+    },
+    {
+      "id": "2003",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2003-65718201.jpg",
+      "cropPixels": [
+        264,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2003/photo.png",
+      "verifiedSha256": "e55711c88e9f8c265311a9b06ae5e30ce479ce692286e6ad7c35fe0a77fd9220",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "a0a0877295d0898975cdd930c68b5254c1f7fd5cc39b5cf98a7fa88043f1fbc4"
+    },
+    {
+      "id": "2004",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2004-42591320.jpg",
+      "cropPixels": [
+        259,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2004/photo.png",
+      "verifiedSha256": "6a77e42810bfe8179773413bac28dbb971f91d7a0697b855bdea8246035a5693",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "a3c96c191af4dbac41dfa222074b0b9076fbab04611083cb93727bd4d1c4d7c9"
+    },
+    {
+      "id": "2005",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2005.jpg",
+      "cropPixels": [
+        230,
+        98
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2005/photo.png",
+      "verifiedSha256": "a20e53427757976ba06267b41b05094f712e7f1f35c0a519e954ee60a27fd302",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "2e1bdc39fcd8b47e50bf2ee293d7ed9f185ab3c81d85cf50d19ad92256a69ac1"
+    },
+    {
+      "id": "2006",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2006-24286311.jpg",
+      "cropPixels": [
+        234,
+        100
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2006/photo.png",
+      "verifiedSha256": "28ef19a5764b2cfce6b477603d787f25351209fa5bbe55126cb6ea854185f902",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "a6dcfe59a935c99dedf13f619467e73835a77bad5244bfa1036a3b47aaccd580"
+    },
+    {
+      "id": "2007",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2007-30289413.jpg",
+      "cropPixels": [
+        233,
+        100
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2007/photo.png",
+      "verifiedSha256": "07fc893a13cddccc741e40307777ba25ba2cdea9672fe8fcbfcb013109607946",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "1c1ce5e06208aec2d4d3785c08ca7bed1f64db76eb8e176cd87e7630ecee30d7"
+    },
+    {
+      "id": "2008",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2008-47144166.jpg",
+      "cropPixels": [
+        238,
+        100
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2008/photo.png",
+      "verifiedSha256": "7c276631bdd1f450822be275d60af7850642525c93b2b379d4fd7d35d017dde3",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "7a42d4f4e1f013488a65f68fef89a8c31870cdbd826c60ceb9b4582e1cde9ee4"
+    },
+    {
+      "id": "2009",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2009-53054167.jpg",
+      "cropPixels": [
+        237,
+        100
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2009/photo.png",
+      "verifiedSha256": "f65d6c1df75422e13e6febc4d6070f0f2c3b5171ea01e33f1281854cdba3e1bc",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "e5e313c6c568ef43e47735afe293b202e0dae0d7565cce721c3ee576be8547f3"
+    },
+    {
+      "id": "2010",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2010.jpg",
+      "cropPixels": [
+        235,
+        98
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2010/photo.png",
+      "verifiedSha256": "7d2fd026289e77f5ec270589652c661f7d432b79fd172a94287262a7363d3604",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "4bd838377cf0ed363381212b629a7024fe8d86fe54398dbb97119d18ab2cf274"
+    },
+    {
+      "id": "2011",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2011-24516329.jpg",
+      "cropPixels": [
+        239,
+        100
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2011/photo.png",
+      "verifiedSha256": "94a391f25b77541baf4aec2fe38cbcb62a38ee37b4e1d0945115aeba5ecd0e3a",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "c168f8aab671d03dfa0630e5df38f868c67ad0ee322dccf3198e209cba428d39"
+    },
+    {
+      "id": "2012",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2012-97303194.jpg",
+      "cropPixels": [
+        240,
+        100
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2012/photo.png",
+      "verifiedSha256": "d3900b6a44634ffe9999d4a25e3c864d59916b8c9025e0bb97f29d4bec52485d",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "9d18050af384b2962a72700575af0d2a073d6ae644e58f0341d8fd848cdc6259"
+    },
+    {
+      "id": "2013",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2013-79670318.jpg",
+      "cropPixels": [
+        238,
+        100
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2013/photo.png",
+      "verifiedSha256": "b8cfcc9ddadeaf2ad42a8d51da846baf2e121309ef13790ca9b2eebab3c398fd",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "a5a2ea16c33849bafa94c299e8cf043a01f37babe96f19b1ae9da3956ce69b78"
+    },
+    {
+      "id": "2014",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2014-53695502.jpg",
+      "cropPixels": [
+        240,
+        100
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2014/photo.png",
+      "verifiedSha256": "484fba53b100de496cfdb8f9d24a25c131e83f1ec4a8f1d313245ad66a8d5480",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "d1b1153b37711692c5ddbfd32d79f8d57545aedde5ea5bd45b3f3eb9d0e63481"
+    },
+    {
+      "id": "2015",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2015-70118033(XL).jpg",
+      "cropPixels": [
+        816,
+        332
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2015/photo.png",
+      "verifiedSha256": "7274fd056f23f7a2f3189a7fd0e0f24bb6c380dc6e041c8494f60988b878f0f4",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "c6641422c2bd11792a36b19bda7b00d39b4b0afffb353fcfc4d80d6fa577706c"
+    },
+    {
+      "id": "2016",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2016-11203175.jpg",
+      "cropPixels": [
+        245,
+        100
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2016/photo.png",
+      "verifiedSha256": "8acb02ff7420bf492f306d7d7d2bfd92cb28ae91e0b49b452f15e026576ae193",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "75b51d88043d4c504fcdac9b213cf7af3a6d4d99f13f3c566936f2fd12ce07ab"
+    },
+    {
+      "id": "2017",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2017-20093481.jpg",
+      "cropPixels": [
+        233,
+        98
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2017/photo.png",
+      "verifiedSha256": "9c69c167b2100a94f2402e38ade371d3c9cd95a48b4cc2295674c7cbb933588d",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "415812d53297bedef10a087bd3dadd2485a4ca78fc66fd3eead81c5b46034571"
+    },
+    {
+      "id": "2018",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2018-50278580.jpg",
+      "cropPixels": [
+        225,
+        96
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2018/photo.png",
+      "verifiedSha256": "12f496a6daf5ac038929f5f64c108904469a248e05e3193a13d7b91eaddb3b84",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "ef1407945ec73e9fcc16fab308a9e0d6ba45725e5f5a3b175c942976c062aa49"
+    },
+    {
+      "id": "2019",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2019-10727925.jpg",
+      "cropPixels": [
+        233,
+        96
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2019/photo.png",
+      "verifiedSha256": "617400a6590bf9234140767ee2dc0ffd85b97619c6d3604efa408199fbf8bfc5",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "6f1d3638b36fa43b6c9a47b5ce05a45d2c1ed89877bec44c2372dbaff152d118"
+    },
+    {
+      "id": "2020",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2020-0000000.jpg",
+      "cropPixels": [
+        223,
+        96
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2020/photo.png",
+      "verifiedSha256": "183c639af7d848480bb263827f5d588f5bc57707074d7cadd563f2a246d4f3ce",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "a44fbe891e6d638011691b67fb83c82bbd784d0c1a0f002af3705b92ccdbca9a"
+    },
+    {
+      "id": "2021",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2021-36946964.jpg",
+      "cropPixels": [
+        228,
+        98
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2021/photo.png",
+      "verifiedSha256": "dc03e25c078d572782713a0bb852fc6b429bf348ac89bfd61d0d75a9d88ac6ca",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "e8b849bad4eba73ef0373fbb772a9bd017d135230161fd9a00ef3730669b1c74"
+    },
+    {
+      "id": "2022",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2022-72919128.jpg",
+      "cropPixels": [
+        236,
+        98
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2022/photo.png",
+      "verifiedSha256": "bac3d62bab4777c9b4a3cb833c2d4b0a0f61a5c51f80ad2e64b0d4ae8bd21163",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "8a5d4db2c66d5beb742dbb8e5f80737559c3136e306985495576fa8b5928fa64"
+    },
+    {
+      "id": "2023",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2023-52843353.jpg",
+      "cropPixels": [
+        232,
+        98
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2023/photo.png",
+      "verifiedSha256": "919fea0fbd604f5344729eb24a117250fd7bf86ecc522499b1851ae8aab69782",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "e53879fc4a5e160fcfb76135db66af71b95302799b31ed16e0da39cc4e85b62d"
+    },
+    {
+      "id": "1986-jan",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-10033703.jpg",
+      "cropPixels": [
+        245,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1986-jan/photo.png",
+      "verifiedSha256": "b353e652e2e41c3baa6f453e975958081ce58d9aafebdf12a2c32770a9360841",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "4a6546670e6eef9b254c75975b1b42071870f4c670032323ecf65ec4d392fa30"
+    },
+    {
+      "id": "1986-feb",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-11834084.jpg",
+      "cropPixels": [
+        252,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1986-feb/photo.png",
+      "verifiedSha256": "7e5930b66ea4e7c4c63f85454745abd538c40b81e1f7c867b387fdbf616683b5",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "ab1f33cefb4124e8efc8bdbac184868c2daa199c0bc2564673c4d7dc96cb674b"
+    },
+    {
+      "id": "1986-apr",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-13185411.jpg",
+      "cropPixels": [
+        240,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1986-apr/photo.png",
+      "verifiedSha256": "4552ad6a3ee67b0e027a43a8c31b5db094ce1f4b653d66c75b31e0f942999107",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "1f88f4dafa04acc419b7e186d310097351e69212a65f1fc0ae4b8a0296c1395a"
+    },
+    {
+      "id": "1986-may",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-14071545.jpg",
+      "cropPixels": [
+        245,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1986-may/photo.png",
+      "verifiedSha256": "894cf681cc84978489825f23ea0b81a28ca771afd1286534e36bebf122587b3a",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "d6ddd0c22d5aeb2c87b6006c1ed671461a3eab7473cb17f3eb32d9b7117a7057"
+    },
+    {
+      "id": "1986-jun",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-15140523.jpg",
+      "cropPixels": [
+        243,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1986-jun/photo.png",
+      "verifiedSha256": "504eff01339f3af2f496fb894ae761a377baf961ab75667436e37d0ef293e3d7",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "60c6dd43ff347dd9b8b11cc495321961b0112bc13610d746c824b272faf3a7ee"
+    },
+    {
+      "id": "1986-jul",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986.jpg",
+      "cropPixels": [
+        243,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1986-jul/photo.png",
+      "verifiedSha256": "c8493efa78fa0db66353693158b6372c97e4dd9019570e4eae85b9aa6abf85f5",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "9645aff724be8aaa482404d503a397f33381b3050df75c334a8b4aee167f3596"
+    },
+    {
+      "id": "1986-aug",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-17062991.jpg",
+      "cropPixels": [
+        240,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1986-aug/photo.png",
+      "verifiedSha256": "7b08da75b243dba65a2d57ce8ca0fc9dc8e7c3d0e78867ec03b6f2731078c632",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "6438fd60e5ad611004b232744e81d0d8131ae7eb959a2ab1c1bd77aaa8a861d1"
+    },
+    {
+      "id": "1986-sep",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-18021283.jpg",
+      "cropPixels": [
+        244,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1986-sep/photo.png",
+      "verifiedSha256": "76105eea294029462293ceacd048d514b451482a935718164d37a945c5bdc5ec",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "6da65487d2383717e859125b871d458bfc63479cb3c335daca4cad0a6123ef60"
+    },
+    {
+      "id": "1986-oct",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-19062205.jpg",
+      "cropPixels": [
+        236,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1986-oct/photo.png",
+      "verifiedSha256": "c5ef43c4ba7b1ef878e5e3eb4428e91444d64e6884d72c2fe823750cd7a29600",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "45abe52ce0f32e310d15d11568772c555ce393db360fb6a0dac8ff1bd007622e"
+    },
+    {
+      "id": "1986-nov",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-20072840.jpg",
+      "cropPixels": [
+        241,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1986-nov/photo.png",
+      "verifiedSha256": "6c73a87041a6a8e3c7cbab540264f73caad3077e6cbd8920f03763ea885f7a5c",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "0514c021c5cc44273c59d36a679d469040c276b7e22ed95942dec24c12ce1a08"
+    },
+    {
+      "id": "1986-dec",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/1986-21129670.jpg",
+      "cropPixels": [
+        237,
+        75
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/1986-dec/photo.png",
+      "verifiedSha256": "0eb9e8f8d530c9bb1e1e109462c3b36cae6b5e6395e250483822de00e6ae80e7",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "74ddc7fc8e32bdc1b346bba685dbbfeaf9d283af0959cc44d4d15bf80914d8d5"
+    },
+    {
+      "id": "2017-nov",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2017-91115136(XL).jpg",
+      "cropPixels": [
+        983,
+        414
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2017-nov/photo.png",
+      "verifiedSha256": "de91dc8ba57307a7d259c7f08227eb75da3033b7a59ecf087ce2c20af3031fda",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "c137d2661e32a0d0d99e254454e068306b635b76549dc0d69e15781c5221b128"
+    },
+    {
+      "id": "2017-jul",
+      "source": "https://www.bcpl8s.ca/PDFs/ICBCBulletin14.pdf",
+      "cropPixels": [
+        391,
+        176
+      ],
+      "mode": "cached-crop",
+      "file": "public/bc-decal-online-review/2017-jul/photo.png",
+      "verifiedSha256": "5ed4075cb6201a047a2993fdf972141636ba09286b2b33ad1a0a537c8c7f85c8",
+      "hashScope": "Committed local crop bytes only. The recorded original-source SHA-256 is provenance, not a claim that original bytes were verified in cached-crop mode.",
+      "originalBytesVerified": false,
+      "recordedOriginalSha256": "495be3ed4c8d25eb0f62916175a8fd4dd33d5f611988ce76f970de0830408f3d"
+    }
+  ]
+}

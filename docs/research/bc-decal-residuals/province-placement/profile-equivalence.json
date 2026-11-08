@@ -1,0 +1,16 @@
+[
+  {
+    "productionFile": "src/templates/dies/decal-province-wide.ts",
+    "profile": "province-wide-1981-reconstruction",
+    "glyphs": 12,
+    "exactPathsAndAdvancesMatch": true,
+    "productionSha256": "f2b5357885333027c942832910a291701f6cd5fa92a37d6b7a380d967a2ef6fa"
+  },
+  {
+    "productionFile": "src/templates/dies/decal-province-tall.ts",
+    "profile": "province-tall-2010-reconstruction",
+    "glyphs": 12,
+    "exactPathsAndAdvancesMatch": true,
+    "productionSha256": "c738ff895d6a43edeaff5f9fdd8fe51c13303978a4a7381f1670e53c537c9b9b"
+  }
+]

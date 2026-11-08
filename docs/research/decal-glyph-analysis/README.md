@@ -1,5 +1,7 @@
 # B.C. decal letters, numbers and spacing
 
+> Historical review snapshot. The 2026-11-07 correction pass supersedes affected source bindings, glyph choices, geometry and validation claims below. See [the current correction record](../bc-decal-corrections/README.md) and its regenerated before/after overlays. Earlier measurements remain here as evidence of the previous implementation.
+
 55 catalogue specimens inspected against the original BCpl8s photographs. These are renewal labels, not manufacture dates. The earlier typography review was a layout/candidate review; it did not identify the historical fonts.
 
 [Portable visual report](../../../public/bc-decal-glyph-review/standalone.html) · [Full measurements](analysis.json) · [Font provenance](candidate-provenance.json)

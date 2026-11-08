@@ -1,0 +1,133 @@
+{
+  "registration": {
+    "module": "src/templates/dies/decal-residual-lettering.ts",
+    "export": "DECAL_RESIDUAL_LETTERING_PROFILES",
+    "appendTo": "DECAL_PRINTING_PROFILES"
+  },
+  "changes": [
+    {
+      "catalogueId": "1983",
+      "operation": "add exact JUN month variant",
+      "variant": {
+        "fromMonth": 6,
+        "throughMonth": 6,
+        "evidence": "Observed JUN 85138416 (control tentative). J/U/N are separate clean constructions; J/U have corroboration from two JUL photographs and N from JAN. This exact-month geometry preserves positive clearance while fitting natural glyph advances. No claim that specimen placement is a production-wide monthly rule.",
+        "runs": {
+          "decal-month": [
+            {
+              "x": 0.189,
+              "baseline": 0.775,
+              "cap": 0.6275,
+              "width": 0.36,
+              "profile": "panel-1983-jun-reconstruction",
+              "tracking": 0
+            }
+          ]
+        }
+      },
+      "finding": "Exact JUN uses narrower U/N and a source-supported J hook, with natural advances and separate placement calibration. Equal-height run width ratio improves from 1.074 to 1.002. This resolves the primary width/spacing residual; one-pixel edges, print weight and unrectified photographic variation remain uncertain. Other month profiles are retained. The faint control is not glyph-scored.",
+      "fontEvidence": "Independent J/U/N construction, not an identified historical typeface. J/U corroborated by small and larger JUL specimens; N by JAN. All observed occurrences and threshold checks remain in docs/research/bc-decal-residuals/lettering."
+    },
+    {
+      "catalogueId": "1999",
+      "operation": "replace exact MAY variant decal-month run; preserve 1998 Type II",
+      "fromMonth": 5,
+      "throughMonth": 5,
+      "run": {
+        "x": 0.042,
+        "baseline": 0.836,
+        "cap": 0.671,
+        "width": 0.4,
+        "profile": "thick-1999-may-reconstruction",
+        "tracking": 0,
+        "anchor": "start",
+        "kerning": {
+          "AY": -7.5
+        }
+      },
+      "evidence": "MAY-only 1999 construction. Independent MAR corroborates narrower M/A; a larger independent JAN photograph corroborates A. Y still relies on the small MAY photograph. The alternate same-control crop is treated as a duplicate, not independent proof. 1998 Type II remains on its existing master.",
+      "finding": "Replace the shared 1998 MAY master only for thick-border 1999 MAY with independently authored narrower glyphs and a shallower M notch. Equal-height run width ratio improves 1.075 to 1.000; threshold variation places the revised ratio roughly 0.989–1.012, so this is a corrected proportion, not an exact contour claim. Y remains lower confidence and other months retain their prior profiles.",
+      "fontEvidence": "Independent observed-letter 1999 M/A/Y reconstruction. Authored widths 74/57.5/51 and advances 75.5/60.5/53 with AY:-7.5. M/A have separate 1999 corroboration; Y has one small source. No x-only font compression or historical typeface attribution. See docs/research/bc-decal-residuals/lettering."
+    },
+    {
+      "catalogueId": "2004",
+      "operation": "replace base decal-year profile/kerning, apply minimal base collision accommodation, and retain exact MAR placement variant",
+      "baseRunPatch": {
+        "profile": "solid-2004-year-reconstruction",
+        "tracking": 0,
+        "kerning": {
+          "04": -1.5
+        },
+        "x": 0.745
+      },
+      "variant": {
+        "fromMonth": 3,
+        "throughMonth": 3,
+        "evidence": "Photographed MAR 42591320 geometry only. Fixed 04 shape has independent JAN/FEB/JUL/NOV/DEC corroboration; placement is calibrated separately and is not asserted to be a historical month-specific print design.",
+        "runs": {
+          "decal-year": [
+            {
+              "x": 0.75,
+              "baseline": 0.688,
+              "cap": 0.536,
+              "width": 0.2,
+              "profile": "solid-2004-year-reconstruction",
+              "tracking": 0,
+              "kerning": {
+                "04": -1.5
+              }
+            }
+          ]
+        }
+      },
+      "finding": "Broaden the fixed 04 by independently authored 0/4 contours and advances. Six month photographs reduce the equal-height run discrepancy from 10.4–12.7% narrow to between 2.3% narrow and 0.2% broad. The photographed MAR placement is calibrated separately. Family-wide actual-ink verification found that the broader year overlapped COLUMBIA outside MAR; the base x is shifted from 0.732 to 0.745 to leave a clear gap, preserving cap, baseline and contours. This is a collision accommodation, not a claim of exact historical placement for the other months. Province lettering and colour remain separate evidence questions.",
+      "fontEvidence": "Limited clean 0/4 construction supported by six small photographs. Whole-run extent is stable enough for width correction, but the digits touch under several segmentation thresholds, so per-glyph scores are withheld. Tiny counter and edge precision remain provisional. No horizontal font squeeze or historical typeface attribution. See docs/research/bc-decal-residuals/lettering.",
+      "baseCollisionAccommodation": {
+        "classification": "Minimal layout collision accommodation; not newly established month-specific historical positioning.",
+        "scope": "All eleven non-MAR month selections; the exact MAR run remains unchanged.",
+        "previousX": 0.732,
+        "revisedX": 0.745,
+        "viewBox": [
+          330,
+          100
+        ],
+        "translationX": 4.29,
+        "previousYearPaintBounds": [
+          215.553,
+          16.285,
+          266.7955,
+          68.815
+        ],
+        "revisedYearPaintBounds": [
+          219.843,
+          16.285,
+          271.0855,
+          68.815
+        ],
+        "columbiaRight": 216.9358,
+        "previousClearance": -1.3828,
+        "revisedClearance": 2.9072,
+        "marClearanceUnchanged": 3.4962,
+        "evidence": "The six existing JAN/FEB/MAR/JUL/NOV/DEC photographs show a small positive province/year gap, approximately 2–3 source pixels under visual inspection. The revised guard is about 2.18 pixels at 75-pixel source height; no tiny-legend precision or exact physical placement is asserted.",
+        "preserved": [
+          "glyph contours",
+          "cap 0.515",
+          "baseline 0.683",
+          "tracking 0",
+          "kerning 04:-1.5",
+          "width guard 0.2",
+          "MAR variant",
+          "all other scene roles"
+        ],
+        "verification": "docs/research/bc-decal-residuals/lettering/2004-base-guard/verification.json"
+      }
+    }
+  ],
+  "implementationLimits": [
+    "No synthetic stroke or independent x-scale is used on the new constructions.",
+    "The profiles refuse unobserved characters rather than constructing a fallback alphabet.",
+    "All measurements use actual engine output and uniform painted-height registration. Ratios are diagnostics, not authenticity scores.",
+    "The 2004 run is measured as a whole; unstable connected-glyph segmentation is excluded from character scoring.",
+    "New metadata prose may be merged with the separate province/placement work; do not overwrite unrelated findings."
+  ]
+}

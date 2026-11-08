@@ -1,0 +1,192 @@
+{
+  "schema": "plateforge.decal-material-observations/v1",
+  "reviewedOn": "2026-11-07",
+  "measurement": "Decoded RGB medians and 10th/90th channel percentiles in manually selected blank substrate patches.",
+  "interpretation": "Photographic pixel observations only; not measured reflectance, calibrated sRGB appearance, Pantone, CMYK, or a historical manufacturing specification.",
+  "sources": [
+    {
+      "id": "2015",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2015-70118033(XL).jpg",
+      "sourceStatus": "issued photographic specimen",
+      "sourcePixels": [
+        816,
+        332
+      ],
+      "pinnedCropSha256": "7274fd056f23f7a2f3189a7fd0e0f24bb6c380dc6e041c8494f60988b878f0f4",
+      "modelBackground": "#f3b001",
+      "patches": [
+        {
+          "patch": 1,
+          "boxPixelsExclusive": [
+            15,
+            30,
+            35,
+            130
+          ],
+          "pixels": 2000,
+          "medianRGB": [
+            249,
+            178,
+            0
+          ],
+          "medianHex": "#f9b200",
+          "channelP10": [
+            242,
+            171,
+            0
+          ],
+          "channelP90": [
+            255,
+            187,
+            2
+          ]
+        },
+        {
+          "patch": 2,
+          "boxPixelsExclusive": [
+            450,
+            218,
+            500,
+            231
+          ],
+          "pixels": 650,
+          "medianRGB": [
+            240,
+            175,
+            0
+          ],
+          "medianHex": "#f0af00",
+          "channelP10": [
+            231,
+            168,
+            0
+          ],
+          "channelP90": [
+            250,
+            183,
+            2
+          ]
+        },
+        {
+          "patch": 3,
+          "boxPixelsExclusive": [
+            790,
+            40,
+            808,
+            200
+          ],
+          "pixels": 2880,
+          "medianRGB": [
+            245,
+            176,
+            0
+          ],
+          "medianHex": "#f5b000",
+          "channelP10": [
+            238,
+            169,
+            0
+          ],
+          "channelP90": [
+            252,
+            185,
+            2
+          ]
+        }
+      ],
+      "decision": "Retain the approximate palette. Photograph RGB is not calibrated material colour."
+    },
+    {
+      "id": "2017-nov",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2017-91115136(XL).jpg",
+      "sourceStatus": "issued photographic specimen; post-July design",
+      "sourcePixels": [
+        983,
+        414
+      ],
+      "pinnedCropSha256": "de91dc8ba57307a7d259c7f08227eb75da3033b7a59ecf087ce2c20af3031fda",
+      "modelBackground": "#08aa8f",
+      "patches": [
+        {
+          "patch": 1,
+          "boxPixelsExclusive": [
+            25,
+            80,
+            55,
+            250
+          ],
+          "pixels": 5100,
+          "medianRGB": [
+            1,
+            210,
+            179
+          ],
+          "medianHex": "#01d2b3",
+          "channelP10": [
+            0,
+            199,
+            169
+          ],
+          "channelP90": [
+            11,
+            224,
+            192
+          ]
+        },
+        {
+          "patch": 2,
+          "boxPixelsExclusive": [
+            450,
+            264,
+            500,
+            282
+          ],
+          "pixels": 900,
+          "medianRGB": [
+            2,
+            197,
+            162
+          ],
+          "medianHex": "#02c5a2",
+          "channelP10": [
+            0,
+            187,
+            152
+          ],
+          "channelP90": [
+            23,
+            211,
+            176
+          ]
+        },
+        {
+          "patch": 3,
+          "boxPixelsExclusive": [
+            949,
+            80,
+            968,
+            250
+          ],
+          "pixels": 3230,
+          "medianRGB": [
+            3,
+            203,
+            164
+          ],
+          "medianHex": "#03cba4",
+          "channelP10": [
+            0,
+            187,
+            146
+          ],
+          "channelP90": [
+            30,
+            221,
+            183
+          ]
+        }
+      ],
+      "decision": "Retain the approximate palette. Photograph RGB is not calibrated material colour."
+    }
+  ]
+}

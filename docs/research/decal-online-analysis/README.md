@@ -1,5 +1,7 @@
 # Online photographic and font research
 
+> Historical review snapshot. The 2026-11-07 correction pass supersedes affected source bindings, glyph choices, geometry and validation claims below. See [the current correction record](../bc-decal-corrections/README.md) and its regenerated before/after overlays. Earlier measurements remain here as evidence of the previous implementation.
+
 This review extends the earlier glyph audit with independent online evidence. It
 covers all **55 catalogue variants**, all twelve expiry months of 1986, and the
 July/November 2017 change: **68 selected specimens**. A downloadable before/after

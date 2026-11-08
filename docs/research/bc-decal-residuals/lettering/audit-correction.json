@@ -1,0 +1,147 @@
+{
+  "issue": "The initial MAY crop reached its left boundary at the high sensitivity threshold; that sample had incorrectly contributed to the reported range.",
+  "originalRoi": [
+    10,
+    9,
+    101,
+    63
+  ],
+  "originalHighThresholdReevaluated": {
+    "threshold": 142.523,
+    "components": 3,
+    "accepted": false,
+    "rejectionReasons": [
+      "Painted component touches the crop boundary"
+    ],
+    "paintedBoxInCrop": [
+      0,
+      3,
+      89,
+      52
+    ],
+    "widthPerHeight": null,
+    "classMeanDifference": 112.33233532562197,
+    "cropClearancePixels": [
+      0,
+      3,
+      2,
+      2
+    ]
+  },
+  "correctedRoi": [
+    8,
+    9,
+    101,
+    63
+  ],
+  "correctedSensitivity": [
+    {
+      "threshold": 118.636,
+      "components": 3,
+      "accepted": true,
+      "rejectionReasons": [],
+      "paintedBoxInCrop": [
+        3,
+        3,
+        90,
+        52
+      ],
+      "widthPerHeight": 1.7755102040816326,
+      "classMeanDifference": 110.84852256772125,
+      "cropClearancePixels": [
+        3,
+        3,
+        3,
+        2
+      ]
+    },
+    {
+      "threshold": 124.636,
+      "components": 3,
+      "accepted": true,
+      "rejectionReasons": [],
+      "paintedBoxInCrop": [
+        3,
+        3,
+        91,
+        52
+      ],
+      "widthPerHeight": 1.7959183673469388,
+      "classMeanDifference": 111.48951755369586,
+      "cropClearancePixels": [
+        3,
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "threshold": 130.636,
+      "components": 3,
+      "accepted": true,
+      "rejectionReasons": [],
+      "paintedBoxInCrop": [
+        3,
+        3,
+        91,
+        52
+      ],
+      "widthPerHeight": 1.7959183673469388,
+      "classMeanDifference": 111.88217369733756,
+      "cropClearancePixels": [
+        3,
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "threshold": 136.636,
+      "components": 3,
+      "accepted": true,
+      "rejectionReasons": [],
+      "paintedBoxInCrop": [
+        3,
+        3,
+        91,
+        52
+      ],
+      "widthPerHeight": 1.7959183673469388,
+      "classMeanDifference": 112.22674124955807,
+      "cropClearancePixels": [
+        3,
+        3,
+        2,
+        2
+      ]
+    },
+    {
+      "threshold": 142.636,
+      "components": 3,
+      "accepted": true,
+      "rejectionReasons": [],
+      "paintedBoxInCrop": [
+        2,
+        3,
+        91,
+        52
+      ],
+      "widthPerHeight": 1.816326530612245,
+      "classMeanDifference": 112.4308921459053,
+      "cropClearancePixels": [
+        2,
+        3,
+        2,
+        2
+      ]
+    }
+  ],
+  "correctedAfterWidthRatio": 1.0004166666666667,
+  "correctedAfterRatioSensitivityRange": [
+    0.9891760299625468,
+    1.0119157088122606
+  ],
+  "finding": "The wider crop provides at least two pixels of clearance at all five tested thresholds. The corrected valid range is numerically unchanged; invalid measurements are nevertheless excluded by policy.",
+  "productionGlyphsChangedByThisAuditCorrection": false,
+  "regressionTests": "docs/research/bc-decal-residuals/lettering/test_analysis.py"
+}

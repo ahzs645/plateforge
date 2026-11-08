@@ -1,0 +1,59 @@
+{
+  "schema": "plateforge.decal-publication-commits/v1",
+  "reviewDate": "2026-11-07",
+  "originalMain": "17b974f51c687780c5d0b106fd9ae37e4c83ccae",
+  "integrationMain": "585e52247aa120ef89e62a7f89cbc07e8f089da2",
+  "sourceSha256": "80f176a664755c5d41432cbac8150c9b77edf4d13694e82952f8b309b04bc6fd",
+  "method": "For each captured local commit, the published Git tree was compared with the complete original tree and required to have the same Git object SHA. Commit metadata and commit IDs differ; file contents, paths and modes match. Historical capture identifiers are unchanged.",
+  "allTreesVerified": true,
+  "commits": [
+    {
+      "localCommit": "271a5ff26603d2a370b452fc8d5099e4000f1bb3",
+      "githubCommit": "7c07e6f13f5c3474dc8cf0e4866ab137d5b5b6c1",
+      "tree": "4fa6e713277414e22b60d94dad6d5dae689b7ab8",
+      "message": "fix(bc decals): make reference audits exact and reproducible"
+    },
+    {
+      "localCommit": "2196b8de38c05ed501a945bd4deeb3a81cd047b2",
+      "githubCommit": "ffce4483ae95218565b480261aa819f58cf1b3cd",
+      "tree": "3721db1308b9afced5a2ccafb0ac4154b96f66fb",
+      "message": "fix(bc decals): correct control ink, frames and layout geometry"
+    },
+    {
+      "localCommit": "850137f8b92e71ebdf47e4fea2c24ba9840e0416",
+      "githubCommit": "74827ce618d59f1ecc75b6032d5cc8db99826b26",
+      "tree": "fd57b1591b4abc85c89aa150dd52b4fffd4d3296",
+      "message": "fix(bc decals): refine observed lettering and source placements"
+    },
+    {
+      "localCommit": "24689246670c25f91e0d1676a0647f053dbca68e",
+      "githubCommit": "cb028c060bfc0f0438168187419c155e8ee8bca7",
+      "tree": "0251d854f6e65f99ac047bde041f8dbc76ba1e88",
+      "message": "test(bc decals): regenerate overlays and verify every selectable month"
+    },
+    {
+      "localCommit": "a94580ee09b2b054499914efee71a43b4959e813",
+      "githubCommit": "4e80a63e982a00e3cfdb622c0019aba1e7e6defd",
+      "tree": "65565d300fb97e3871e2ff46fbf178135c43dcc6",
+      "message": "Refine remaining BC decal lettering and specimen layouts"
+    },
+    {
+      "localCommit": "1ceca604c66259d9c6e0cf5d367a33fe3851bae0",
+      "githubCommit": "4af040a29e73973ec21e2a3b50ad50003e9f3f50",
+      "tree": "0ea44db2ef83ca65aabf86f670cb56488dfe106e",
+      "message": "Record source-backed evidence for the second BC decal pass"
+    },
+    {
+      "localCommit": "19a9741cab1f40e101cf8937b133faf9460b2933",
+      "githubCommit": "1c74065c837e1c71b0ad56bd8bc06b9d1b6d63f6",
+      "tree": "2d5d33b7782b7ede3a06c1ac1c8d098c5b3aee2d",
+      "message": "Verify and package the second BC decal overlay review"
+    },
+    {
+      "localCommit": "5d1341370985c5a26b737e3616dc2c558d7b7bf8",
+      "githubCommit": "94986e784863299d0a5f03499b3619d74d2a493c",
+      "tree": "3b3817bb744bec37e38a294a06c459de6a1be173",
+      "message": "Record authorization to publish the reviewed decal passes"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "baseline": "17b974f51c687780c5d0b106fd9ae37e4c83ccae",
+  "profile": "bc-decal-print-1986-rounded-corrected",
+  "scope": "1986 passenger renewal month capitals; supplied souvenir/booster artwork excluded",
+  "preservedSources": {
+    "src/templates/bc/expo86-logo.json": "4e1f03ebfbf570f248640d1cae063ed84076037021c88613a88649e29f7ba4ce",
+    "src/templates/bc/expo86-logo.ts": "02c9e1b69cd0d51c00b6d75869d8bf65ee372b8eb7811ab590258673a263f5d5",
+    "src/templates/dies/frankfurter-expo.json": "f81139be057e3ae086f9b99e41029974e43dee3bd63ff8191a0dcfecadbd31f9",
+    "src/templates/dies/frankfurter-expo.ts": "c6dcd2af3f4009fd094441c549e7340f2d084f38fff3e6266235ceafacfd8728",
+    "src/templates/dies/decal-glyph-printing.json": "c63d6066efe1f7b14c26b327021867770d230c5bf606afba7a9c247951863b8b"
+  },
+  "reconstructed": {
+    "P": {
+      "advance": 82,
+      "outsideBowlDiameter": 72,
+      "counterDiameter": 38.4,
+      "stem": 16.5,
+      "sourceMonths": [
+        "APR",
+        "SEP"
+      ]
+    },
+    "R": {
+      "advance": 77,
+      "outsideBowlDiameter": 63,
+      "counterDiameter": 30,
+      "stem": 16.5,
+      "inkWidth": 67,
+      "sourceMonths": [
+        "MAR",
+        "APR"
+      ]
+    }
+  },
+  "additiveContourFixes": {
+    "T": "Two unchanged native contours paint separately; previously cancelled at the cap/stem intersection.",
+    "V": "Two unchanged native contours paint separately; previously cancelled at the foot."
+  },
+  "layout": {
+    "AR": 0,
+    "PR": -3,
+    "allOtherTypography": "unchanged by this scoped correction"
+  },
+  "retainedGlyphs": [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "J",
+    "L",
+    "M",
+    "N",
+    "O",
+    "S",
+    "U",
+    "Y"
+  ],
+  "horizontalScale": 1,
+  "artworkDecision": "Retain supplied EXPO word/symbol centrelines, composition and weight. Component ratios lie within the photographed range. Heavier mask-fitting trials remain diagnostics because scan blur/print spread cannot be separated from original master weight.",
+  "status": "Explicit visual reconstruction; historical typeface and exact production tooling unconfirmed."
+}

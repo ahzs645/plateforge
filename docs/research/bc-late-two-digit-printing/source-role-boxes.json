@@ -1,0 +1,302 @@
+[
+  {
+    "id": "2008",
+    "role": "year",
+    "roi": [
+      174,
+      10,
+      235,
+      70
+    ],
+    "sourcePaintBox": [
+      175,
+      15,
+      231,
+      67
+    ],
+    "sourcePixels": [
+      238,
+      100
+    ],
+    "threshold": 149.26221300891015,
+    "polarity": "light",
+    "sourceFile": "public/bc-decal-online-review/2008/photo.png",
+    "sourceFileSha256": "7c276631bdd1f450822be275d60af7850642525c93b2b379d4fd7d35d017dde3",
+    "evidenceUse": "Placement only; no font identification inferred from these small lines."
+  },
+  {
+    "id": "2008",
+    "role": "legend",
+    "roi": [
+      124,
+      35,
+      174,
+      60
+    ],
+    "sourcePaintBox": [
+      127,
+      41,
+      172,
+      56
+    ],
+    "sourcePixels": [
+      238,
+      100
+    ],
+    "threshold": 146.80983969149923,
+    "polarity": "light",
+    "sourceFile": "public/bc-decal-online-review/2008/photo.png",
+    "sourceFileSha256": "7c276631bdd1f450822be275d60af7850642525c93b2b379d4fd7d35d017dde3",
+    "evidenceUse": "Placement only; no font identification inferred from these small lines."
+  },
+  {
+    "id": "2008",
+    "role": "serial",
+    "roi": [
+      131,
+      70,
+      229,
+      94
+    ],
+    "sourcePaintBox": [
+      136,
+      72,
+      220,
+      90
+    ],
+    "sourcePixels": [
+      238,
+      100
+    ],
+    "threshold": 151.84853994420712,
+    "polarity": "light",
+    "sourceFile": "public/bc-decal-online-review/2008/photo.png",
+    "sourceFileSha256": "7c276631bdd1f450822be275d60af7850642525c93b2b379d4fd7d35d017dde3",
+    "evidenceUse": "Placement only; no font identification inferred from these small lines."
+  },
+  {
+    "id": "2011",
+    "role": "year",
+    "roi": [
+      174,
+      4,
+      225,
+      65
+    ],
+    "sourcePaintBox": [
+      178,
+      7,
+      219,
+      63
+    ],
+    "sourcePixels": [
+      239,
+      100
+    ],
+    "threshold": 91.51949308036144,
+    "polarity": "dark",
+    "sourceFile": "public/bc-decal-online-review/2011/photo.png",
+    "sourceFileSha256": "94a391f25b77541baf4aec2fe38cbcb62a38ee37b4e1d0945115aeba5ecd0e3a",
+    "evidenceUse": "Placement only; no font identification inferred from these small lines."
+  },
+  {
+    "id": "2011",
+    "role": "legend1",
+    "roi": [
+      108,
+      20,
+      166,
+      38
+    ],
+    "sourcePaintBox": [
+      115,
+      23,
+      159,
+      36
+    ],
+    "sourcePixels": [
+      239,
+      100
+    ],
+    "threshold": 96.81240822890454,
+    "polarity": "dark",
+    "sourceFile": "public/bc-decal-online-review/2011/photo.png",
+    "sourceFileSha256": "94a391f25b77541baf4aec2fe38cbcb62a38ee37b4e1d0945115aeba5ecd0e3a",
+    "evidenceUse": "Placement only; no font identification inferred from these small lines."
+  },
+  {
+    "id": "2011",
+    "role": "legend2",
+    "roi": [
+      105,
+      37,
+      169,
+      55
+    ],
+    "sourcePaintBox": [
+      108,
+      39,
+      167,
+      52
+    ],
+    "sourcePixels": [
+      239,
+      100
+    ],
+    "threshold": 91.89716040493857,
+    "polarity": "dark",
+    "sourceFile": "public/bc-decal-online-review/2011/photo.png",
+    "sourceFileSha256": "94a391f25b77541baf4aec2fe38cbcb62a38ee37b4e1d0945115aeba5ecd0e3a",
+    "evidenceUse": "Placement only; no font identification inferred from these small lines."
+  },
+  {
+    "id": "2011",
+    "role": "serial",
+    "roi": [
+      130,
+      64,
+      226,
+      89
+    ],
+    "sourcePaintBox": [
+      134,
+      67,
+      221,
+      85
+    ],
+    "sourcePixels": [
+      239,
+      100
+    ],
+    "threshold": 93.04681440476377,
+    "polarity": "dark",
+    "sourceFile": "public/bc-decal-online-review/2011/photo.png",
+    "sourceFileSha256": "94a391f25b77541baf4aec2fe38cbcb62a38ee37b4e1d0945115aeba5ecd0e3a",
+    "evidenceUse": "Placement only; no font identification inferred from these small lines."
+  },
+  {
+    "id": "2011",
+    "role": "barcode",
+    "roi": [
+      13,
+      64,
+      127,
+      89
+    ],
+    "sourcePaintBox": [
+      17,
+      66,
+      124,
+      86
+    ],
+    "sourcePixels": [
+      239,
+      100
+    ],
+    "threshold": 89.66666955104841,
+    "polarity": "dark",
+    "sourceFile": "public/bc-decal-online-review/2011/photo.png",
+    "sourceFileSha256": "94a391f25b77541baf4aec2fe38cbcb62a38ee37b4e1d0945115aeba5ecd0e3a",
+    "evidenceUse": "Placement only; no font identification inferred from these small lines."
+  },
+  {
+    "id": "2013",
+    "role": "legend1",
+    "roi": [
+      109,
+      20,
+      168,
+      39
+    ],
+    "sourcePaintBox": [
+      114,
+      24,
+      159,
+      38
+    ],
+    "sourcePixels": [
+      238,
+      100
+    ],
+    "threshold": 65.93458340761087,
+    "polarity": "dark",
+    "sourceFile": "public/bc-decal-online-review/2013/photo.png",
+    "sourceFileSha256": "b8cfcc9ddadeaf2ad42a8d51da846baf2e121309ef13790ca9b2eebab3c398fd",
+    "evidenceUse": "Placement only; no font identification inferred from these small lines."
+  },
+  {
+    "id": "2013",
+    "role": "serial",
+    "roi": [
+      129,
+      66,
+      225,
+      93
+    ],
+    "sourcePaintBox": [
+      132,
+      70,
+      220,
+      89
+    ],
+    "sourcePixels": [
+      238,
+      100
+    ],
+    "threshold": 68.52997936499663,
+    "polarity": "dark",
+    "sourceFile": "public/bc-decal-online-review/2013/photo.png",
+    "sourceFileSha256": "b8cfcc9ddadeaf2ad42a8d51da846baf2e121309ef13790ca9b2eebab3c398fd",
+    "evidenceUse": "Placement only; no font identification inferred from these small lines."
+  },
+  {
+    "id": "2013",
+    "role": "barcode",
+    "roi": [
+      10,
+      68,
+      125,
+      94
+    ],
+    "sourcePaintBox": [
+      13,
+      69,
+      122,
+      91
+    ],
+    "sourcePixels": [
+      238,
+      100
+    ],
+    "threshold": 59.839674007272194,
+    "polarity": "dark",
+    "sourceFile": "public/bc-decal-online-review/2013/photo.png",
+    "sourceFileSha256": "b8cfcc9ddadeaf2ad42a8d51da846baf2e121309ef13790ca9b2eebab3c398fd",
+    "evidenceUse": "Placement only; no font identification inferred from these small lines."
+  },
+  {
+    "id": "2013",
+    "role": "legend2",
+    "roi": [
+      103,
+      39,
+      170,
+      57
+    ],
+    "sourcePaintBox": [
+      106,
+      40,
+      167,
+      54
+    ],
+    "sourcePixels": [
+      238,
+      100
+    ],
+    "threshold": 63.36079862291756,
+    "polarity": "dark",
+    "sourceFile": "public/bc-decal-online-review/2013/photo.png",
+    "sourceFileSha256": "b8cfcc9ddadeaf2ad42a8d51da846baf2e121309ef13790ca9b2eebab3c398fd",
+    "evidenceUse": "Placement only; no font identification inferred from these small lines."
+  }
+]

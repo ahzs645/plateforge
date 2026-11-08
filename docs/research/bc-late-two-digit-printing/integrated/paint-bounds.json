@@ -1,0 +1,491 @@
+{
+  "candidateTypography": false,
+  "records": [
+    {
+      "id": "2008",
+      "month": "AUG",
+      "control": "47144166",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2008.jpg",
+      "sourceFile": "public/bc-decal-online-review/2008/photo.png",
+      "viewBox": [
+        229.99999999999997,
+        100
+      ],
+      "candidateTypography": false,
+      "baseline": "17b974f51c687780c5d0b106fd9ae37e4c83ccae",
+      "beforeSvgSha256": "9bf5d3a5a41a230ce8276edb9c4add47d276b42daa7eb98f297379996add8a40",
+      "afterSvgSha256": "e9b73715e3db71e5ee82ca851ed05d0c683665fe10c027211d14531706e9fc6c",
+      "sourcePixels": [
+        238,
+        100
+      ],
+      "stages": {
+        "before": [
+          {
+            "role": "decal-month",
+            "index": 0,
+            "text": "AUG",
+            "profile": "bc-decal-print-heavy-month",
+            "paintBox": [
+              11.1395,
+              14.6041,
+              108.7844,
+              88.39580000000001
+            ]
+          },
+          {
+            "role": "decal-year",
+            "index": 0,
+            "text": "08",
+            "profile": "bc-decal-print-heavy-year",
+            "paintBox": [
+              170.122,
+              15.9384,
+              218.72150000000002,
+              72.0617
+            ]
+          },
+          {
+            "role": "decal-legend",
+            "index": 0,
+            "text": "BRITISH",
+            "profile": "bc-decal-print-normal",
+            "paintBox": [
+              129.28,
+              45.9095,
+              158.3492,
+              51.67355
+            ]
+          },
+          {
+            "role": "decal-legend",
+            "index": 1,
+            "text": "COLUMBIA",
+            "profile": "bc-decal-print-normal",
+            "paintBox": [
+              125.651,
+              54.439,
+              162.0202,
+              59.65704
+            ]
+          },
+          {
+            "role": "decal-serial",
+            "index": 0,
+            "text": "47144166",
+            "profile": "bc-decal-print-control-bold",
+            "paintBox": [
+              135.584,
+              76.6894,
+              220.7263,
+              93.94980000000001
+            ]
+          }
+        ],
+        "after": [
+          {
+            "role": "decal-month",
+            "index": 0,
+            "text": "AUG",
+            "profile": "bc-decal-print-bebasneue-400",
+            "paintBox": [
+              5.99017,
+              13.9936,
+              119.59417,
+              84.9965
+            ]
+          },
+          {
+            "role": "decal-year",
+            "index": 0,
+            "text": "08",
+            "profile": "bc-decal-print-oswald-400",
+            "paintBox": [
+              169.831,
+              14.9994,
+              226.9903,
+              66.9965
+            ]
+          },
+          {
+            "role": "decal-legend",
+            "index": 0,
+            "text": "BRITISH",
+            "profile": "bc-decal-print-normal",
+            "paintBox": [
+              130.936,
+              41.6295,
+              160.0052,
+              47.39355
+            ]
+          },
+          {
+            "role": "decal-legend",
+            "index": 1,
+            "text": "COLUMBIA",
+            "profile": "bc-decal-print-normal",
+            "paintBox": [
+              127.307,
+              50.159,
+              163.6762,
+              55.37704
+            ]
+          },
+          {
+            "role": "decal-serial",
+            "index": 0,
+            "text": "47144166",
+            "profile": "bc-decal-print-control-bold",
+            "paintBox": [
+              131.421,
+              72.7394,
+              216.5633,
+              89.99980000000001
+            ]
+          }
+        ]
+      },
+      "alignment": "Uniform equal height and horizontal centre; no perspective correction or independent x fitting."
+    },
+    {
+      "id": "2011",
+      "month": "MAY",
+      "control": "24516329",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2011.jpg",
+      "sourceFile": "public/bc-decal-online-review/2011/photo.png",
+      "viewBox": [
+        229.99999999999997,
+        100
+      ],
+      "candidateTypography": false,
+      "baseline": "17b974f51c687780c5d0b106fd9ae37e4c83ccae",
+      "beforeSvgSha256": "a26aac1b9d9449ccca45157e8624a96a8ab968509bcddd439f99c34877116d78",
+      "afterSvgSha256": "44e2f8a1253a23d0ed6391aba0af632f934664ca186f698dfd72f6e16db770d8",
+      "sourcePixels": [
+        239,
+        100
+      ],
+      "stages": {
+        "before": [
+          {
+            "role": "decal-month",
+            "index": 0,
+            "text": "MAY",
+            "profile": "bc-decal-print-heavy-month",
+            "paintBox": [
+              11.5312,
+              13.386,
+              99.6004,
+              69.0
+            ]
+          },
+          {
+            "role": "decal-year",
+            "index": 0,
+            "text": "11",
+            "profile": "bc-decal-print-heavy-year",
+            "paintBox": [
+              167.42,
+              8.0,
+              213.4988,
+              69.0
+            ]
+          },
+          {
+            "role": "decal-legend",
+            "index": 0,
+            "text": "BRITISH",
+            "profile": "bc-decal-print-condensed-bold",
+            "paintBox": [
+              107.914,
+              28.3628,
+              154.2855,
+              40.637100000000004
+            ]
+          },
+          {
+            "role": "decal-legend",
+            "index": 1,
+            "text": "COLUMBIA",
+            "profile": "bc-decal-print-condensed-bold",
+            "paintBox": [
+              104.025,
+              45.0594,
+              158.4964,
+              56.1237
+            ]
+          },
+          {
+            "role": "decal-serial",
+            "index": 0,
+            "text": "24516329",
+            "profile": "bc-decal-print-control-bold",
+            "paintBox": [
+              130.75,
+              72.7005,
+              220.9759,
+              90.97630000000001
+            ]
+          },
+          {
+            "role": "decal-barcode",
+            "index": 0,
+            "text": "Control barcode 24516329",
+            "profile": null,
+            "paintBox": [
+              10.2571,
+              75.0,
+              118.5431,
+              91.0
+            ]
+          }
+        ],
+        "after": [
+          {
+            "role": "decal-month",
+            "index": 0,
+            "text": "MAY",
+            "profile": "bc-decal-print-heavy-month",
+            "paintBox": [
+              9.49244,
+              8.0,
+              98.17294,
+              64.0
+            ]
+          },
+          {
+            "role": "decal-year",
+            "index": 0,
+            "text": "11",
+            "profile": "bc-decal-print-heavy-year",
+            "paintBox": [
+              174.428,
+              7.0,
+              214.4898,
+              63.0
+            ]
+          },
+          {
+            "role": "decal-legend",
+            "index": 0,
+            "text": "BRITISH",
+            "profile": "bc-decal-print-condensed-bold",
+            "paintBox": [
+              109.317,
+              23.7228,
+              155.68849999999998,
+              35.9971
+            ]
+          },
+          {
+            "role": "decal-legend",
+            "index": 1,
+            "text": "COLUMBIA",
+            "profile": "bc-decal-print-condensed-bold",
+            "paintBox": [
+              105.773,
+              40.9394,
+              160.24439999999998,
+              52.003699999999995
+            ]
+          },
+          {
+            "role": "decal-serial",
+            "index": 0,
+            "text": "24516329",
+            "profile": "bc-decal-print-control-bold",
+            "paintBox": [
+              127.874,
+              66.7205,
+              218.0999,
+              84.9963
+            ]
+          },
+          {
+            "role": "decal-barcode",
+            "index": 0,
+            "text": "Control barcode 24516329",
+            "profile": null,
+            "paintBox": [
+              12.5094,
+              66.0,
+              119.5104,
+              86.0
+            ]
+          }
+        ]
+      },
+      "alignment": "Uniform equal height and horizontal centre; no perspective correction or independent x fitting."
+    },
+    {
+      "id": "2013",
+      "month": "OCT",
+      "control": "79670318",
+      "source": "https://www.bcpl8s.ca/images/Decals/Passenger/2013.jpg",
+      "sourceFile": "public/bc-decal-online-review/2013/photo.png",
+      "viewBox": [
+        229.99999999999997,
+        100
+      ],
+      "candidateTypography": false,
+      "baseline": "17b974f51c687780c5d0b106fd9ae37e4c83ccae",
+      "beforeSvgSha256": "77542c169b0885910d085216891990f7daecaf41d41934b268ab7a836abf9952",
+      "afterSvgSha256": "3d38387bd52955beec5d7fc70204c66488e92257590704ddc0a90bc77f0e49a8",
+      "sourcePixels": [
+        238,
+        100
+      ],
+      "stages": {
+        "before": [
+          {
+            "role": "decal-month",
+            "index": 0,
+            "text": "OCT",
+            "profile": "bc-decal-print-heavy-month",
+            "paintBox": [
+              11.7073,
+              6.80074,
+              93.0081,
+              70.19924
+            ]
+          },
+          {
+            "role": "decal-year",
+            "index": 0,
+            "text": "13",
+            "profile": "bc-decal-print-heavy-year",
+            "paintBox": [
+              167.42,
+              6.80074,
+              220.46929999999998,
+              70.19924
+            ]
+          },
+          {
+            "role": "decal-legend",
+            "index": 0,
+            "text": "BRITISH",
+            "profile": "bc-decal-print-condensed-medium",
+            "paintBox": [
+              108.592,
+              28.3628,
+              153.6092,
+              40.637100000000004
+            ]
+          },
+          {
+            "role": "decal-legend",
+            "index": 1,
+            "text": "COLUMBIA",
+            "profile": "bc-decal-print-condensed-medium",
+            "paintBox": [
+              104.163,
+              44.8247,
+              158.4768,
+              56.1263
+            ]
+          },
+          {
+            "role": "decal-serial",
+            "index": 0,
+            "text": "79670318",
+            "profile": "bc-decal-print-control-bold",
+            "paintBox": [
+              130.724,
+              72.7005,
+              221.0251,
+              90.97630000000001
+            ]
+          },
+          {
+            "role": "decal-barcode",
+            "index": 0,
+            "text": "Control barcode 79670318",
+            "profile": null,
+            "paintBox": [
+              10.2571,
+              75.0,
+              118.5431,
+              91.0
+            ]
+          }
+        ],
+        "after": [
+          {
+            "role": "decal-month",
+            "index": 0,
+            "text": "OCT",
+            "profile": "bc-decal-print-late-oct-reconstruction",
+            "paintBox": [
+              6.003,
+              8.0,
+              72.083,
+              67.0
+            ]
+          },
+          {
+            "role": "decal-year",
+            "index": 0,
+            "text": "13",
+            "profile": "bc-decal-print-heavy-year",
+            "paintBox": [
+              174.033,
+              6.9939,
+              219.99739999999997,
+              65.9961
+            ]
+          },
+          {
+            "role": "decal-legend",
+            "index": 0,
+            "text": "BRITISH",
+            "profile": "bc-decal-print-condensed-medium",
+            "paintBox": [
+              109.995,
+              25.7228,
+              155.0122,
+              37.9971
+            ]
+          },
+          {
+            "role": "decal-legend",
+            "index": 1,
+            "text": "COLUMBIA",
+            "profile": "bc-decal-print-condensed-medium",
+            "paintBox": [
+              105.336,
+              42.6947,
+              159.6498,
+              53.9963
+            ]
+          },
+          {
+            "role": "decal-serial",
+            "index": 0,
+            "text": "79670318",
+            "profile": "bc-decal-print-control-bold",
+            "paintBox": [
+              126.86,
+              70.7205,
+              217.1611,
+              88.9963
+            ]
+          },
+          {
+            "role": "decal-barcode",
+            "index": 0,
+            "text": "Control barcode 79670318",
+            "profile": null,
+            "paintBox": [
+              8.99068,
+              69.0,
+              117.99268,
+              91.0
+            ]
+          }
+        ]
+      },
+      "alignment": "Uniform equal height and horizontal centre; no perspective correction or independent x fitting."
+    }
+  ]
+}

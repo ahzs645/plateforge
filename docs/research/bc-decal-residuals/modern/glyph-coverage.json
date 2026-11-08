@@ -1,0 +1,621 @@
+{
+  "schema": "plateforge.modern-glyph-coverage/v1",
+  "downloadedFiles": 60,
+  "uniqueDownloadedHashes": 60,
+  "canonicalDuplicateFiles": 7,
+  "newIndependentOfCanonicalCatalogueFiles": 53,
+  "acceptedSmallYearPhotographs": 57,
+  "acceptedEnlargedPhotographs": 3,
+  "acceptedEnlargedRoleCrops": 6,
+  "rejectedSmallYearPhotographs": [],
+  "rejectedEnlargedRoleCrops": [],
+  "yearOccurrences": 240,
+  "controlOccurrences": 24,
+  "matrix": [
+    {
+      "role": "control",
+      "printingGroup": "later modern 2019\u20132023",
+      "glyph": "0",
+      "occurrences": 4,
+      "photographs": 3,
+      "newToCanonicalCataloguePhotographs": 3,
+      "sourcePaintedHeightRange": [
+        161,
+        348
+      ],
+      "sources": [
+        "sources/2020-commons.jpg",
+        "sources/2021-commons.jpg",
+        "sources/2022-commons.jpg"
+      ]
+    },
+    {
+      "role": "control",
+      "printingGroup": "later modern 2019\u20132023",
+      "glyph": "1",
+      "occurrences": 1,
+      "photographs": 1,
+      "newToCanonicalCataloguePhotographs": 1,
+      "sourcePaintedHeightRange": [
+        155,
+        155
+      ],
+      "sources": [
+        "sources/2022-commons.jpg"
+      ]
+    },
+    {
+      "role": "control",
+      "printingGroup": "later modern 2019\u20132023",
+      "glyph": "2",
+      "occurrences": 3,
+      "photographs": 2,
+      "newToCanonicalCataloguePhotographs": 2,
+      "sourcePaintedHeightRange": [
+        326,
+        337
+      ],
+      "sources": [
+        "sources/2020-commons.jpg",
+        "sources/2021-commons.jpg"
+      ]
+    },
+    {
+      "role": "control",
+      "printingGroup": "later modern 2019\u20132023",
+      "glyph": "3",
+      "occurrences": 3,
+      "photographs": 2,
+      "newToCanonicalCataloguePhotographs": 2,
+      "sourcePaintedHeightRange": [
+        330,
+        347
+      ],
+      "sources": [
+        "sources/2020-commons.jpg",
+        "sources/2021-commons.jpg"
+      ]
+    },
+    {
+      "role": "control",
+      "printingGroup": "later modern 2019\u20132023",
+      "glyph": "4",
+      "occurrences": 2,
+      "photographs": 1,
+      "newToCanonicalCataloguePhotographs": 1,
+      "sourcePaintedHeightRange": [
+        318,
+        320
+      ],
+      "sources": [
+        "sources/2020-commons.jpg"
+      ]
+    },
+    {
+      "role": "control",
+      "printingGroup": "later modern 2019\u20132023",
+      "glyph": "5",
+      "occurrences": 1,
+      "photographs": 1,
+      "newToCanonicalCataloguePhotographs": 1,
+      "sourcePaintedHeightRange": [
+        342,
+        342
+      ],
+      "sources": [
+        "sources/2021-commons.jpg"
+      ]
+    },
+    {
+      "role": "control",
+      "printingGroup": "later modern 2019\u20132023",
+      "glyph": "6",
+      "occurrences": 1,
+      "photographs": 1,
+      "newToCanonicalCataloguePhotographs": 1,
+      "sourcePaintedHeightRange": [
+        162,
+        162
+      ],
+      "sources": [
+        "sources/2022-commons.jpg"
+      ]
+    },
+    {
+      "role": "control",
+      "printingGroup": "later modern 2019\u20132023",
+      "glyph": "7",
+      "occurrences": 6,
+      "photographs": 3,
+      "newToCanonicalCataloguePhotographs": 3,
+      "sourcePaintedHeightRange": [
+        154,
+        321
+      ],
+      "sources": [
+        "sources/2020-commons.jpg",
+        "sources/2021-commons.jpg",
+        "sources/2022-commons.jpg"
+      ]
+    },
+    {
+      "role": "control",
+      "printingGroup": "later modern 2019\u20132023",
+      "glyph": "8",
+      "occurrences": 3,
+      "photographs": 2,
+      "newToCanonicalCataloguePhotographs": 2,
+      "sourcePaintedHeightRange": [
+        162,
+        326
+      ],
+      "sources": [
+        "sources/2020-commons.jpg",
+        "sources/2022-commons.jpg"
+      ]
+    },
+    {
+      "role": "year",
+      "printingGroup": "early 2018",
+      "glyph": "0",
+      "occurrences": 5,
+      "photographs": 5,
+      "newToCanonicalCataloguePhotographs": 4,
+      "sourcePaintedHeightRange": [
+        47,
+        50
+      ],
+      "sources": [
+        "sources/2018-50278580.jpg",
+        "sources/2018-51303500.jpg",
+        "sources/2018-52327423.jpg",
+        "sources/2018-53306771.jpg",
+        "sources/2018-54317707.jpg"
+      ]
+    },
+    {
+      "role": "year",
+      "printingGroup": "early 2018",
+      "glyph": "1",
+      "occurrences": 5,
+      "photographs": 5,
+      "newToCanonicalCataloguePhotographs": 4,
+      "sourcePaintedHeightRange": [
+        46,
+        49
+      ],
+      "sources": [
+        "sources/2018-50278580.jpg",
+        "sources/2018-51303500.jpg",
+        "sources/2018-52327423.jpg",
+        "sources/2018-53306771.jpg",
+        "sources/2018-54317707.jpg"
+      ]
+    },
+    {
+      "role": "year",
+      "printingGroup": "early 2018",
+      "glyph": "2",
+      "occurrences": 5,
+      "photographs": 5,
+      "newToCanonicalCataloguePhotographs": 4,
+      "sourcePaintedHeightRange": [
+        47,
+        49
+      ],
+      "sources": [
+        "sources/2018-50278580.jpg",
+        "sources/2018-51303500.jpg",
+        "sources/2018-52327423.jpg",
+        "sources/2018-53306771.jpg",
+        "sources/2018-54317707.jpg"
+      ]
+    },
+    {
+      "role": "year",
+      "printingGroup": "early 2018",
+      "glyph": "8",
+      "occurrences": 5,
+      "photographs": 5,
+      "newToCanonicalCataloguePhotographs": 4,
+      "sourcePaintedHeightRange": [
+        48,
+        50
+      ],
+      "sources": [
+        "sources/2018-50278580.jpg",
+        "sources/2018-51303500.jpg",
+        "sources/2018-52327423.jpg",
+        "sources/2018-53306771.jpg",
+        "sources/2018-54317707.jpg"
+      ]
+    },
+    {
+      "role": "year",
+      "printingGroup": "early modern 2014\u20132017",
+      "glyph": "0",
+      "occurrences": 20,
+      "photographs": 20,
+      "newToCanonicalCataloguePhotographs": 18,
+      "sourcePaintedHeightRange": [
+        54,
+        59
+      ],
+      "sources": [
+        "sources/2014-51724164.jpg",
+        "sources/2014-53695502.jpg",
+        "sources/2014-54530173.jpg",
+        "sources/2014-56728781.jpg",
+        "sources/2014-57656145.jpg",
+        "sources/2014-58738659.jpg",
+        "sources/2014-59688498.jpg",
+        "sources/2014-99103688.jpg",
+        "sources/2014-99512418.jpg",
+        "sources/2016-10076867.jpg",
+        "sources/2016-11203175.jpg",
+        "sources/2016-12232590.jpg",
+        "sources/2016-13320933.jpg",
+        "sources/2016-15390595.jpg",
+        "sources/2016-16296336.jpg",
+        "sources/2016-17252015.jpg",
+        "sources/2016-18277986.jpg",
+        "sources/2016-19457587.jpg",
+        "sources/2016-90425309.jpg",
+        "sources/2016-90733559.jpg"
+      ]
+    },
+    {
+      "role": "year",
+      "printingGroup": "early modern 2014\u20132017",
+      "glyph": "1",
+      "occurrences": 20,
+      "photographs": 20,
+      "newToCanonicalCataloguePhotographs": 18,
+      "sourcePaintedHeightRange": [
+        55,
+        58
+      ],
+      "sources": [
+        "sources/2014-51724164.jpg",
+        "sources/2014-53695502.jpg",
+        "sources/2014-54530173.jpg",
+        "sources/2014-56728781.jpg",
+        "sources/2014-57656145.jpg",
+        "sources/2014-58738659.jpg",
+        "sources/2014-59688498.jpg",
+        "sources/2014-99103688.jpg",
+        "sources/2014-99512418.jpg",
+        "sources/2016-10076867.jpg",
+        "sources/2016-11203175.jpg",
+        "sources/2016-12232590.jpg",
+        "sources/2016-13320933.jpg",
+        "sources/2016-15390595.jpg",
+        "sources/2016-16296336.jpg",
+        "sources/2016-17252015.jpg",
+        "sources/2016-18277986.jpg",
+        "sources/2016-19457587.jpg",
+        "sources/2016-90425309.jpg",
+        "sources/2016-90733559.jpg"
+      ]
+    },
+    {
+      "role": "year",
+      "printingGroup": "early modern 2014\u20132017",
+      "glyph": "2",
+      "occurrences": 20,
+      "photographs": 20,
+      "newToCanonicalCataloguePhotographs": 18,
+      "sourcePaintedHeightRange": [
+        53,
+        59
+      ],
+      "sources": [
+        "sources/2014-51724164.jpg",
+        "sources/2014-53695502.jpg",
+        "sources/2014-54530173.jpg",
+        "sources/2014-56728781.jpg",
+        "sources/2014-57656145.jpg",
+        "sources/2014-58738659.jpg",
+        "sources/2014-59688498.jpg",
+        "sources/2014-99103688.jpg",
+        "sources/2014-99512418.jpg",
+        "sources/2016-10076867.jpg",
+        "sources/2016-11203175.jpg",
+        "sources/2016-12232590.jpg",
+        "sources/2016-13320933.jpg",
+        "sources/2016-15390595.jpg",
+        "sources/2016-16296336.jpg",
+        "sources/2016-17252015.jpg",
+        "sources/2016-18277986.jpg",
+        "sources/2016-19457587.jpg",
+        "sources/2016-90425309.jpg",
+        "sources/2016-90733559.jpg"
+      ]
+    },
+    {
+      "role": "year",
+      "printingGroup": "early modern 2014\u20132017",
+      "glyph": "4",
+      "occurrences": 9,
+      "photographs": 9,
+      "newToCanonicalCataloguePhotographs": 8,
+      "sourcePaintedHeightRange": [
+        53,
+        56
+      ],
+      "sources": [
+        "sources/2014-51724164.jpg",
+        "sources/2014-53695502.jpg",
+        "sources/2014-54530173.jpg",
+        "sources/2014-56728781.jpg",
+        "sources/2014-57656145.jpg",
+        "sources/2014-58738659.jpg",
+        "sources/2014-59688498.jpg",
+        "sources/2014-99103688.jpg",
+        "sources/2014-99512418.jpg"
+      ]
+    },
+    {
+      "role": "year",
+      "printingGroup": "early modern 2014\u20132017",
+      "glyph": "6",
+      "occurrences": 11,
+      "photographs": 11,
+      "newToCanonicalCataloguePhotographs": 10,
+      "sourcePaintedHeightRange": [
+        56,
+        60
+      ],
+      "sources": [
+        "sources/2016-10076867.jpg",
+        "sources/2016-11203175.jpg",
+        "sources/2016-12232590.jpg",
+        "sources/2016-13320933.jpg",
+        "sources/2016-15390595.jpg",
+        "sources/2016-16296336.jpg",
+        "sources/2016-17252015.jpg",
+        "sources/2016-18277986.jpg",
+        "sources/2016-19457587.jpg",
+        "sources/2016-90425309.jpg",
+        "sources/2016-90733559.jpg"
+      ]
+    },
+    {
+      "role": "year",
+      "printingGroup": "later 2018 replacement variant (unmodeled)",
+      "glyph": "0",
+      "occurrences": 6,
+      "photographs": 6,
+      "newToCanonicalCataloguePhotographs": 6,
+      "sourcePaintedHeightRange": [
+        43,
+        46
+      ],
+      "sources": [
+        "sources/2018-56309500.jpg",
+        "sources/2018-57319422.jpg",
+        "sources/2018-58332533.jpg",
+        "sources/2018-59478189.jpg",
+        "sources/2018-94296768.jpg",
+        "sources/2018-94817214.jpg"
+      ]
+    },
+    {
+      "role": "year",
+      "printingGroup": "later 2018 replacement variant (unmodeled)",
+      "glyph": "1",
+      "occurrences": 6,
+      "photographs": 6,
+      "newToCanonicalCataloguePhotographs": 6,
+      "sourcePaintedHeightRange": [
+        44,
+        47
+      ],
+      "sources": [
+        "sources/2018-56309500.jpg",
+        "sources/2018-57319422.jpg",
+        "sources/2018-58332533.jpg",
+        "sources/2018-59478189.jpg",
+        "sources/2018-94296768.jpg",
+        "sources/2018-94817214.jpg"
+      ]
+    },
+    {
+      "role": "year",
+      "printingGroup": "later 2018 replacement variant (unmodeled)",
+      "glyph": "2",
+      "occurrences": 6,
+      "photographs": 6,
+      "newToCanonicalCataloguePhotographs": 6,
+      "sourcePaintedHeightRange": [
+        44,
+        46
+      ],
+      "sources": [
+        "sources/2018-56309500.jpg",
+        "sources/2018-57319422.jpg",
+        "sources/2018-58332533.jpg",
+        "sources/2018-59478189.jpg",
+        "sources/2018-94296768.jpg",
+        "sources/2018-94817214.jpg"
+      ]
+    },
+    {
+      "role": "year",
+      "printingGroup": "later 2018 replacement variant (unmodeled)",
+      "glyph": "8",
+      "occurrences": 6,
+      "photographs": 6,
+      "newToCanonicalCataloguePhotographs": 6,
+      "sourcePaintedHeightRange": [
+        44,
+        46
+      ],
+      "sources": [
+        "sources/2018-56309500.jpg",
+        "sources/2018-57319422.jpg",
+        "sources/2018-58332533.jpg",
+        "sources/2018-59478189.jpg",
+        "sources/2018-94296768.jpg",
+        "sources/2018-94817214.jpg"
+      ]
+    },
+    {
+      "role": "year",
+      "printingGroup": "later modern 2019\u20132023",
+      "glyph": "0",
+      "occurrences": 37,
+      "photographs": 29,
+      "newToCanonicalCataloguePhotographs": 25,
+      "sourcePaintedHeightRange": [
+        35,
+        901
+      ],
+      "sources": [
+        "sources/2019-10727925.jpg",
+        "sources/2019-11776934.jpg",
+        "sources/2019-12710517.jpg",
+        "sources/2019-12978657.jpg",
+        "sources/2019-13835059.jpg",
+        "sources/2019-15618118.jpg",
+        "sources/2019-16740833.jpg",
+        "sources/2019-19963045.jpg",
+        "sources/2019-95367094.jpg",
+        "sources/2019-95826877.jpg",
+        "sources/2020-17918347.jpg",
+        "sources/2020-20726786.jpg",
+        "sources/2020-21790645.jpg",
+        "sources/2020-22735808.jpg",
+        "sources/2020-23840887.jpg",
+        "sources/2020-24611893.jpg",
+        "sources/2020-28614611.jpg",
+        "sources/2020-96351885.jpg",
+        "sources/2020-commons.jpg",
+        "sources/2021-30995874.jpg",
+        "sources/2021-36946964.jpg",
+        "sources/2021-38569246.jpg",
+        "sources/2021-97885334.jpg",
+        "sources/2021-commons.jpg",
+        "sources/2022-72919128.jpg",
+        "sources/2022-7484530.jpg",
+        "sources/2022-77540937.jpg",
+        "sources/2022-commons.jpg",
+        "sources/2023-52843353.jpg"
+      ]
+    },
+    {
+      "role": "year",
+      "printingGroup": "later modern 2019\u20132023",
+      "glyph": "1",
+      "occurrences": 16,
+      "photographs": 16,
+      "newToCanonicalCataloguePhotographs": 14,
+      "sourcePaintedHeightRange": [
+        42,
+        879
+      ],
+      "sources": [
+        "sources/2019-10727925.jpg",
+        "sources/2019-11776934.jpg",
+        "sources/2019-12710517.jpg",
+        "sources/2019-12978657.jpg",
+        "sources/2019-13835059.jpg",
+        "sources/2019-15618118.jpg",
+        "sources/2019-16740833.jpg",
+        "sources/2019-19963045.jpg",
+        "sources/2019-95367094.jpg",
+        "sources/2019-95826877.jpg",
+        "sources/2020-17918347.jpg",
+        "sources/2021-30995874.jpg",
+        "sources/2021-36946964.jpg",
+        "sources/2021-38569246.jpg",
+        "sources/2021-97885334.jpg",
+        "sources/2021-commons.jpg"
+      ]
+    },
+    {
+      "role": "year",
+      "printingGroup": "later modern 2019\u20132023",
+      "glyph": "2",
+      "occurrences": 51,
+      "photographs": 29,
+      "newToCanonicalCataloguePhotographs": 25,
+      "sourcePaintedHeightRange": [
+        35,
+        905
+      ],
+      "sources": [
+        "sources/2019-10727925.jpg",
+        "sources/2019-11776934.jpg",
+        "sources/2019-12710517.jpg",
+        "sources/2019-12978657.jpg",
+        "sources/2019-13835059.jpg",
+        "sources/2019-15618118.jpg",
+        "sources/2019-16740833.jpg",
+        "sources/2019-19963045.jpg",
+        "sources/2019-95367094.jpg",
+        "sources/2019-95826877.jpg",
+        "sources/2020-17918347.jpg",
+        "sources/2020-20726786.jpg",
+        "sources/2020-21790645.jpg",
+        "sources/2020-22735808.jpg",
+        "sources/2020-23840887.jpg",
+        "sources/2020-24611893.jpg",
+        "sources/2020-28614611.jpg",
+        "sources/2020-96351885.jpg",
+        "sources/2020-commons.jpg",
+        "sources/2021-30995874.jpg",
+        "sources/2021-36946964.jpg",
+        "sources/2021-38569246.jpg",
+        "sources/2021-97885334.jpg",
+        "sources/2021-commons.jpg",
+        "sources/2022-72919128.jpg",
+        "sources/2022-7484530.jpg",
+        "sources/2022-77540937.jpg",
+        "sources/2022-commons.jpg",
+        "sources/2023-52843353.jpg"
+      ]
+    },
+    {
+      "role": "year",
+      "printingGroup": "later modern 2019\u20132023",
+      "glyph": "3",
+      "occurrences": 1,
+      "photographs": 1,
+      "newToCanonicalCataloguePhotographs": 0,
+      "sourcePaintedHeightRange": [
+        46,
+        46
+      ],
+      "sources": [
+        "sources/2023-52843353.jpg"
+      ]
+    },
+    {
+      "role": "year",
+      "printingGroup": "later modern 2019\u20132023",
+      "glyph": "9",
+      "occurrences": 11,
+      "photographs": 11,
+      "newToCanonicalCataloguePhotographs": 10,
+      "sourcePaintedHeightRange": [
+        42,
+        46
+      ],
+      "sources": [
+        "sources/2019-10727925.jpg",
+        "sources/2019-11776934.jpg",
+        "sources/2019-12710517.jpg",
+        "sources/2019-12978657.jpg",
+        "sources/2019-13835059.jpg",
+        "sources/2019-15618118.jpg",
+        "sources/2019-16740833.jpg",
+        "sources/2019-19963045.jpg",
+        "sources/2019-95367094.jpg",
+        "sources/2019-95826877.jpg",
+        "sources/2020-17918347.jpg"
+      ]
+    }
+  ],
+  "counting": "Photograph counts are per row and overlap across digits; do not sum them. A repeated digit adds an occurrence, not a new specimen. Seven downloaded catalogue originals duplicate canonical references, so 60 files are not 60 new specimens. Previous enlarged 2015/2017 evidence is retained in docs/research/bc-modern-numerals and is additional to this supplemental inventory."
+}

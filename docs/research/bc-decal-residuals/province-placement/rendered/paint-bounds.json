@@ -1,0 +1,5238 @@
+[
+  {
+    "id": "1971",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          15.3778,
+          8.30248,
+          93.20150000000001,
+          20.87858
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          2.12832,
+          26.8025,
+          106.58232,
+          39.3786
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "71",
+        "fit": "natural",
+        "profile": "bc-decal-print-russoone-400",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          121.645,
+          45.7,
+          179.4411,
+          86.5
+        ]
+      },
+      {
+        "role": "decal-control-panel",
+        "index": 0,
+        "text": null,
+        "fit": null,
+        "profile": null,
+        "queryId": "measure-decal-control-panel-0",
+        "box": [
+          3.78361,
+          51.6408,
+          111.72661,
+          86.1143
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "553645",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          24.5889,
+          66.3269,
+          98.06439999999999,
+          81.63279999999999
+        ]
+      }
+    ],
+    "svgSha256": "b1329f17e4fd828c868c881975ba5fd47f865bdd82bb282f49457d857b6f0ec0"
+  },
+  {
+    "id": "1971",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          15.3778,
+          8.30248,
+          93.20150000000001,
+          20.87858
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          2.12832,
+          26.8025,
+          106.58232,
+          39.3786
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "71",
+        "fit": "natural",
+        "profile": "bc-decal-print-russoone-400",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          121.645,
+          45.7,
+          179.4411,
+          86.5
+        ]
+      },
+      {
+        "role": "decal-control-panel",
+        "index": 0,
+        "text": null,
+        "fit": null,
+        "profile": null,
+        "queryId": "measure-decal-control-panel-0",
+        "box": [
+          12.9,
+          50.6,
+          106.80000000000001,
+          82.4
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "553645",
+        "fit": "reduced",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          15.7561,
+          59.0512,
+          99.8678,
+          77.4803
+        ]
+      }
+    ],
+    "svgSha256": "4e048c6dcbb293064a2c209239dba834c593dc61546d7136e0ffb6ad801fda3d"
+  },
+  {
+    "id": "1974",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-archivo-900-wdth100",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          34.3722,
+          8.30816,
+          117.62880000000001,
+          19.69186
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-archivo-900-wdth100",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          21.3755,
+          24.8082,
+          131.2005,
+          36.1919
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "7",
+        "fit": "natural",
+        "profile": "bc-decal-print-archivo-900-wdth75",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          151.913,
+          8.0,
+          174.9258,
+          43.0
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 1,
+        "text": "4",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-year-1",
+        "box": [
+          151.205,
+          53.9601,
+          175.11450000000002,
+          88.0
+        ]
+      },
+      {
+        "role": "decal-control-panel",
+        "index": 0,
+        "text": null,
+        "fit": null,
+        "profile": null,
+        "queryId": "measure-decal-control-panel-0",
+        "box": [
+          18.0999,
+          41.6,
+          134.8999,
+          72.4
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "769712",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          50.49,
+          46.9996,
+          118.50919999999999,
+          63.0
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 0,
+        "text": "PASSENGER",
+        "fit": "reduced",
+        "profile": "bc-decal-print-archivo-900-wdth100",
+        "queryId": "measure-decal-class-0",
+        "box": [
+          12.5459,
+          79.6602,
+          136.4749,
+          90.6858
+        ]
+      }
+    ],
+    "svgSha256": "d396e83f2c4c8c544e6be7c95d2c8e57975c3d9feab802b12bc66ac60225fbb3"
+  },
+  {
+    "id": "1974",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-archivo-900-wdth100",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          34.3722,
+          8.30816,
+          117.62880000000001,
+          19.69186
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-archivo-900-wdth100",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          21.3755,
+          24.8082,
+          131.2005,
+          36.1919
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "7",
+        "fit": "natural",
+        "profile": "bc-decal-print-archivo-900-wdth75",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          151.913,
+          8.0,
+          174.9258,
+          43.0
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 1,
+        "text": "4",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-year-1",
+        "box": [
+          151.205,
+          53.9601,
+          175.11450000000002,
+          88.0
+        ]
+      },
+      {
+        "role": "decal-control-panel",
+        "index": 0,
+        "text": null,
+        "fit": null,
+        "profile": null,
+        "queryId": "measure-decal-control-panel-0",
+        "box": [
+          16.7,
+          42.6,
+          135.29999999999998,
+          71.4
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "769712",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          34.1065,
+          50.7005,
+          117.4683,
+          68.9763
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 0,
+        "text": "PASSENGER",
+        "fit": "reduced",
+        "profile": "bc-decal-print-archivo-900-wdth100",
+        "queryId": "measure-decal-class-0",
+        "box": [
+          12.5459,
+          79.6602,
+          136.4749,
+          90.6858
+        ]
+      }
+    ],
+    "svgSha256": "a9b5a4c8734785ef774e7cefedef205ee1742f3cc0a7c12ab1ace3193a0acedd"
+  },
+  {
+    "id": "1975",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          11.7428,
+          9.0049,
+          80.2566,
+          22.0002
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          12.9935,
+          26.0049,
+          102.0071,
+          39.0002
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "75",
+        "fit": "natural",
+        "profile": "bc-decal-print-archivo-900-wdth75",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          104.673,
+          10.0,
+          144.3269,
+          39.0001
+        ]
+      },
+      {
+        "role": "decal-control-panel",
+        "index": 0,
+        "text": null,
+        "fit": null,
+        "profile": null,
+        "queryId": "measure-decal-control-panel-0",
+        "box": [
+          21.6,
+          42.6,
+          140.4,
+          76.4
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "4469530",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          38.995,
+          52.9995,
+          121.00460000000001,
+          70.0
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 0,
+        "text": "PASS. COMM.",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-class-0",
+        "box": [
+          14.6113,
+          82.286,
+          134.6033,
+          95.9101
+        ]
+      }
+    ],
+    "svgSha256": "bf92530cc71f142aa8c6fd9a46c38dca65e953a0fb51f908f0f143b53b31b981"
+  },
+  {
+    "id": "1975",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          5.131,
+          11.2942,
+          74.1974,
+          24.3943
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "reduced",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          4.38154,
+          29.944,
+          86.87834,
+          41.343199999999996
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "75",
+        "fit": "natural",
+        "profile": "bc-decal-print-archivo-900-wdth75",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          93.8004,
+          6.0,
+          141.1019,
+          40.593
+        ]
+      },
+      {
+        "role": "decal-control-panel",
+        "index": 0,
+        "text": null,
+        "fit": null,
+        "profile": null,
+        "queryId": "measure-decal-control-panel-0",
+        "box": [
+          10.775,
+          41.6,
+          138.225,
+          72.4
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "4469530",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          26.8105,
+          49.2005,
+          125.0698,
+          67.4763
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 0,
+        "text": "PASS. COMM.",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-class-0",
+        "box": [
+          14.6113,
+          82.286,
+          134.6033,
+          95.9101
+        ]
+      }
+    ],
+    "svgSha256": "197be623d34178dcacad7f4a7650231e440a59d552a6f91ef1a799796dcbcb6a"
+  },
+  {
+    "id": "1976",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          15.0622,
+          12.286,
+          84.55120000000001,
+          25.9101
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-regular",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          14.4559,
+          28.786,
+          107.4003,
+          42.4101
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "76",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          14.0654,
+          43.9803,
+          30.97,
+          55.9692
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 0,
+        "text": "PASS. COMM.",
+        "fit": "reduced",
+        "profile": "bc-decal-print-regular",
+        "queryId": "measure-decal-class-0",
+        "box": [
+          41.4903,
+          45.3645,
+          148.9723,
+          57.8767
+        ]
+      },
+      {
+        "role": "decal-control-panel",
+        "index": 0,
+        "text": null,
+        "fit": null,
+        "profile": null,
+        "queryId": "measure-decal-control-panel-0",
+        "box": [
+          13.2734,
+          60.8245,
+          144.68540000000002,
+          94.2776
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "1007289",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          39.1755,
+          68.3663,
+          125.9264,
+          85.7141
+        ]
+      }
+    ],
+    "svgSha256": "c9b2893b2496fe6b55950676dea235aaab8cc5928d201ee487fc65b55d0bc176"
+  },
+  {
+    "id": "1976",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          15.0622,
+          12.286,
+          84.55120000000001,
+          25.9101
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-regular",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          14.4559,
+          28.786,
+          107.4003,
+          42.4101
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "76",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          14.0654,
+          43.9803,
+          30.97,
+          55.9692
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 0,
+        "text": "PASS. COMM.",
+        "fit": "reduced",
+        "profile": "bc-decal-print-regular",
+        "queryId": "measure-decal-class-0",
+        "box": [
+          41.4903,
+          45.3645,
+          148.9723,
+          57.8767
+        ]
+      },
+      {
+        "role": "decal-control-panel",
+        "index": 0,
+        "text": null,
+        "fit": null,
+        "profile": null,
+        "queryId": "measure-decal-control-panel-0",
+        "box": [
+          10.8,
+          60.6,
+          149.20000000000002,
+          92.4
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "1007289",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          26.3308,
+          66.7228,
+          134.4768,
+          87.0292
+        ]
+      }
+    ],
+    "svgSha256": "2b1381d1bbd938166432dc89c776afe260be7550097aa2ad4b3fc866648da4fd"
+  },
+  {
+    "id": "1978",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "78",
+        "fit": "natural",
+        "profile": "bc-decal-print-archivonarrow-700",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          38.8266,
+          8.09052,
+          104.98,
+          61.90952
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 0,
+        "text": "B",
+        "fit": "natural",
+        "profile": "bc-decal-print-orbitron-900",
+        "queryId": "measure-decal-class-0",
+        "box": [
+          124.376,
+          8.0,
+          147.376,
+          31.0
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 1,
+        "text": "C",
+        "fit": "natural",
+        "profile": "bc-decal-print-orbitron-900",
+        "queryId": "measure-decal-class-1",
+        "box": [
+          124.44,
+          37.0,
+          147.3761,
+          60.0
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 2,
+        "text": "P",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-class-2",
+        "box": [
+          13.7848,
+          14.0,
+          22.18946,
+          25.0
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 3,
+        "text": "A",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-class-3",
+        "box": [
+          12.6154,
+          26.0,
+          22.8307,
+          37.0
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 4,
+        "text": "S",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-class-4",
+        "box": [
+          13.1209,
+          37.8189,
+          22.189410000000002,
+          49.347
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 5,
+        "text": "S",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-class-5",
+        "box": [
+          13.1209,
+          49.8189,
+          22.189410000000002,
+          61.347
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 6,
+        "text": "C",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-class-6",
+        "box": [
+          169.127,
+          15.8189,
+          178.79908,
+          27.347
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 7,
+        "text": "O",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-class-7",
+        "box": [
+          168.644,
+          27.8189,
+          179.2366,
+          39.347
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 8,
+        "text": "M",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-class-8",
+        "box": [
+          168.621,
+          40.0,
+          179.3343,
+          51.0
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 9,
+        "text": "M",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-class-9",
+        "box": [
+          168.621,
+          52.0,
+          179.3343,
+          63.0
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "0718662",
+        "fit": "natural",
+        "profile": "bc-decal-print-control",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          43.1723,
+          71.3551,
+          142.5919,
+          88.4498
+        ]
+      }
+    ],
+    "svgSha256": "c254277e1e5884d5d82526b9cd86ad5ff7e1670d439a5d5ae429c3ca8707282f"
+  },
+  {
+    "id": "1978",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "78",
+        "fit": "natural",
+        "profile": "bc-decal-print-archivonarrow-700",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          38.8266,
+          8.09052,
+          104.98,
+          61.90952
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 0,
+        "text": "B",
+        "fit": "natural",
+        "profile": "bc-decal-print-orbitron-900",
+        "queryId": "measure-decal-class-0",
+        "box": [
+          124.376,
+          8.0,
+          147.376,
+          31.0
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 1,
+        "text": "C",
+        "fit": "natural",
+        "profile": "bc-decal-print-orbitron-900",
+        "queryId": "measure-decal-class-1",
+        "box": [
+          124.44,
+          37.0,
+          147.3761,
+          60.0
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 2,
+        "text": "P",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-class-2",
+        "box": [
+          13.7848,
+          14.0,
+          22.18946,
+          25.0
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 3,
+        "text": "A",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-class-3",
+        "box": [
+          12.6154,
+          26.0,
+          22.8307,
+          37.0
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 4,
+        "text": "S",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-class-4",
+        "box": [
+          13.1209,
+          37.8189,
+          22.189410000000002,
+          49.347
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 5,
+        "text": "S",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-class-5",
+        "box": [
+          13.1209,
+          49.8189,
+          22.189410000000002,
+          61.347
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 6,
+        "text": "C",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-class-6",
+        "box": [
+          169.127,
+          15.8189,
+          178.79908,
+          27.347
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 7,
+        "text": "O",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-class-7",
+        "box": [
+          168.644,
+          27.8189,
+          179.2366,
+          39.347
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 8,
+        "text": "M",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-class-8",
+        "box": [
+          168.621,
+          40.0,
+          179.3343,
+          51.0
+        ]
+      },
+      {
+        "role": "decal-class",
+        "index": 9,
+        "text": "M",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-class-9",
+        "box": [
+          168.621,
+          52.0,
+          179.3343,
+          63.0
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "0718662",
+        "fit": "natural",
+        "profile": "bc-decal-print-control",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          43.1723,
+          71.3551,
+          142.5919,
+          88.4498
+        ]
+      }
+    ],
+    "svgSha256": "c254277e1e5884d5d82526b9cd86ad5ff7e1670d439a5d5ae429c3ca8707282f"
+  },
+  {
+    "id": "1980",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-regular",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          23.2021,
+          9.13788,
+          308.76009999999997,
+          32.19408
+        ]
+      },
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "MAR",
+        "fit": "reduced",
+        "profile": "bc-decal-print-archivo-900-wdth100",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          18.3088,
+          53.843,
+          132.6698,
+          86.0
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "80",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          258.532,
+          44.2881,
+          319.5034,
+          87.32509999999999
+        ]
+      },
+      {
+        "role": "decal-control-panel",
+        "index": 0,
+        "text": null,
+        "fit": null,
+        "profile": null,
+        "queryId": "measure-decal-control-panel-0",
+        "box": [
+          150.65,
+          58.3167,
+          246.0168,
+          89.6834
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "43052284",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          158.078,
+          65.6393,
+          231.2698,
+          78.33080000000001
+        ]
+      }
+    ],
+    "svgSha256": "4703756b2f79387fe1e14a08f70ef31e681e39e6be15371c7961739d26957037"
+  },
+  {
+    "id": "1980",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-regular",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          23.2021,
+          9.13788,
+          308.76009999999997,
+          32.19408
+        ]
+      },
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "MAR",
+        "fit": "reduced",
+        "profile": "bc-decal-print-archivo-900-wdth100",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          18.3088,
+          53.843,
+          132.6698,
+          86.0
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "80",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          258.532,
+          44.2881,
+          319.5034,
+          87.32509999999999
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "43052284",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          158.078,
+          65.6393,
+          231.2698,
+          78.33080000000001
+        ]
+      }
+    ],
+    "svgSha256": "6a6483d07a6d58fdbd35bafd58c1a72e856938a5b0a3e16f54005cb35e23b846"
+  },
+  {
+    "id": "1981",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-control-panel",
+        "index": 0,
+        "text": null,
+        "fit": null,
+        "profile": null,
+        "queryId": "measure-decal-control-panel-0",
+        "box": [
+          125.4,
+          47.0,
+          250.8,
+          78.0
+        ]
+      },
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "JUN",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          15.9871,
+          11.0,
+          116.0831,
+          81.3565
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "81",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          252.977,
+          12.7024,
+          306.6145,
+          81.2975
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-province-wide-1981-reconstruction",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          143.041,
+          14.167,
+          236.291,
+          26.667
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-province-wide-1981-reconstruction",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          127.541,
+          30.167,
+          251.791,
+          42.667
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "59031991",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          149.043,
+          59.156,
+          224.7383,
+          73.37049999999999
+        ]
+      }
+    ],
+    "svgSha256": "354166afbf7d4efa607c67c33723f04765a3d01365db8f642aa55aeef32fed9d"
+  },
+  {
+    "id": "1981",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-control-panel",
+        "index": 0,
+        "text": null,
+        "fit": null,
+        "profile": null,
+        "queryId": "measure-decal-control-panel-0",
+        "box": [
+          125.4,
+          47.0,
+          250.8,
+          78.0
+        ]
+      },
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "JUN",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          15.9871,
+          11.0,
+          116.0831,
+          81.3565
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "81",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          252.977,
+          12.7024,
+          306.6145,
+          81.2975
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          155.199,
+          12.3189,
+          221.25740000000002,
+          23.847
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          143.494,
+          30.3189,
+          233.0837,
+          41.847
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "59031991",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          149.043,
+          59.156,
+          224.7383,
+          73.37049999999999
+        ]
+      }
+    ],
+    "svgSha256": "5728d6e0c5e3351a49bd1ca099644a8a48ee660e067b263ccec5bcf25f2b8e7c"
+  },
+  {
+    "id": "1982",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-control-panel",
+        "index": 0,
+        "text": null,
+        "fit": null,
+        "profile": null,
+        "queryId": "measure-decal-control-panel-0",
+        "box": [
+          125.4,
+          20.0,
+          250.8,
+          52.0
+        ]
+      },
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "JAN",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          15.9871,
+          11.0,
+          116.0831,
+          81.3565
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "82",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          252.977,
+          12.7024,
+          314.023,
+          81.2975
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-province-wide-1981-reconstruction",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          146.986,
+          57.533,
+          235.014,
+          69.333
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-province-wide-1981-reconstruction",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          133.021,
+          73.533,
+          250.313,
+          85.333
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "66134375",
+        "fit": "natural",
+        "profile": "bc-decal-print-control",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          145.392,
+          30.3133,
+          230.7251,
+          45.3969
+        ]
+      }
+    ],
+    "svgSha256": "47c8a58f02b2075e696201ac50c357367af66b7cee3eff2c9bb36fb7efa44ee0"
+  },
+  {
+    "id": "1982",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-control-panel",
+        "index": 0,
+        "text": null,
+        "fit": null,
+        "profile": null,
+        "queryId": "measure-decal-control-panel-0",
+        "box": [
+          125.4,
+          20.0,
+          250.8,
+          52.0
+        ]
+      },
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "JAN",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          15.9871,
+          11.0,
+          116.0831,
+          81.3565
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "82",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          252.977,
+          12.7024,
+          314.023,
+          81.2975
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          162.676,
+          61.3601,
+          213.72109999999998,
+          70.26818
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          153.631,
+          74.3601,
+          222.8594,
+          83.26818
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "66134375",
+        "fit": "natural",
+        "profile": "bc-decal-print-control",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          145.392,
+          30.3133,
+          230.7251,
+          45.3969
+        ]
+      }
+    ],
+    "svgSha256": "9273dac8ca38cff24c5c4bbcaa81db7ab309b9f7dff661aa6657ffca08034064"
+  },
+  {
+    "id": "1985",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "JUL",
+        "fit": "natural",
+        "profile": "bc-decal-print-anton-400",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          13.0018,
+          19.5,
+          112.98,
+          84.0818
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "85",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          254.231,
+          16.7418,
+          313.111,
+          83.25829999999999
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-archivo-900-wdth75",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          113.889,
+          69.642,
+          237.44299999999998,
+          80.0004
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "62333627",
+        "fit": "reduced",
+        "profile": "bc-decal-print-control",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          130.974,
+          45.8558,
+          212.30509999999998,
+          60.3823
+        ]
+      }
+    ],
+    "svgSha256": "34360f7727c26c37183b7e35bab381e2758d8c85394ba660e5bca4e5ff9e22c5"
+  },
+  {
+    "id": "1985",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "JUL",
+        "fit": "natural",
+        "profile": "bc-decal-print-anton-400",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          13.0018,
+          19.5,
+          112.98,
+          84.0818
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "85",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          254.231,
+          16.7418,
+          313.111,
+          83.25829999999999
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          128.197,
+          75.3765,
+          228.852,
+          83.23657999999999
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "62333627",
+        "fit": "reduced",
+        "profile": "bc-decal-print-control",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          130.974,
+          45.8558,
+          212.30509999999998,
+          60.3823
+        ]
+      }
+    ],
+    "svgSha256": "253c7475c770598d20987e1d2669bca9fe151c3cd784bd68a557668fcab51657"
+  },
+  {
+    "id": "1987",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "FEB",
+        "fit": "reduced",
+        "profile": "bc-decal-print-oswald-600",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          14.5301,
+          16.15,
+          119.4841,
+          78.0
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "87",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          252.977,
+          12.7024,
+          314.6236,
+          81.2975
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-archivo-900-wdth75",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          157.274,
+          21.2008,
+          231.3922,
+          34.6667
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-archivo-900-wdth75",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          144.306,
+          39.8678,
+          243.0258,
+          53.3337
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "22687871",
+        "fit": "natural",
+        "profile": "bc-decal-print-control",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          156.222,
+          70.2503,
+          239.1108,
+          85.3339
+        ]
+      }
+    ],
+    "svgSha256": "2bf18d6a23130c92a5a84eabf16eea28216c0f4cdeed87f9c378da8c9cac2961"
+  },
+  {
+    "id": "1987",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "FEB",
+        "fit": "reduced",
+        "profile": "bc-decal-print-oswald-600",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          14.5301,
+          16.15,
+          119.4841,
+          78.0
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "87",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          252.977,
+          12.7024,
+          314.6236,
+          81.2975
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          155.199,
+          12.3189,
+          221.25740000000002,
+          23.847
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          143.494,
+          30.3189,
+          233.0837,
+          41.847
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "22687871",
+        "fit": "natural",
+        "profile": "bc-decal-print-control",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          145.183,
+          63.3133,
+          228.0718,
+          78.3969
+        ]
+      }
+    ],
+    "svgSha256": "d83edbd7af6e044438a4a239f5ddabe9c203988e91cc4bd4608a4b4649176e49"
+  },
+  {
+    "id": "1988",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "DEC",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month-wide",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          18.4118,
+          16.7811,
+          130.0888,
+          81.21889999999999
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "88",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          247.838,
+          16.7811,
+          319.7617,
+          81.21889999999999
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          163.228,
+          20.7106,
+          213.4384,
+          30.66669
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          153.637,
+          35.3776,
+          223.0299,
+          45.3337
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "21533872",
+        "fit": "reduced",
+        "profile": "bc-decal-print-control",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          155.532,
+          63.5346,
+          233.4773,
+          78.3909
+        ]
+      }
+    ],
+    "svgSha256": "a08f3373927b6b18195ea0191289243a062e6b284207ec9e0309e9ce04f740bf"
+  },
+  {
+    "id": "1988",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "DEC",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month-wide",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          18.4118,
+          16.7811,
+          130.0888,
+          81.21889999999999
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "88",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          247.838,
+          16.7811,
+          319.7617,
+          81.21889999999999
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          172.336,
+          14.8601,
+          217.2611,
+          23.76818
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          163.801,
+          32.8601,
+          225.8894,
+          41.76818
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "21533872",
+        "fit": "reduced",
+        "profile": "bc-decal-print-control",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          155.532,
+          63.5346,
+          233.4773,
+          78.3909
+        ]
+      }
+    ],
+    "svgSha256": "aa9ad4e088cc5a34ea33108789ee2f559c21799b363df80d7e32b033748cf853"
+  },
+  {
+    "id": "1989",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "APR",
+        "fit": "reduced",
+        "profile": "bc-decal-print-heavy-month-wide",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          12.554,
+          18.515,
+          138.6,
+          83.5
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "89",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          243.599,
+          17.2221,
+          316.5596,
+          84.7779
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          160.474,
+          16.8272,
+          215.9698,
+          27.8313
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          149.932,
+          32.3272,
+          226.6295,
+          43.3313
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "33187934",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          156.739,
+          52.5077,
+          231.92770000000002,
+          65.3335
+        ]
+      }
+    ],
+    "svgSha256": "d2dedd6143865eb26eb1280079df36d316fbc1cc7a83cf4dc8b1ad690300a767"
+  },
+  {
+    "id": "1989",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "APR",
+        "fit": "reduced",
+        "profile": "bc-decal-print-heavy-month-wide",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          12.554,
+          18.515,
+          138.6,
+          83.5
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "89",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          243.599,
+          17.2221,
+          316.5596,
+          84.7779
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          160.474,
+          16.8272,
+          215.9698,
+          27.8313
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          149.932,
+          32.3272,
+          226.6295,
+          43.3313
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "33187934",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          150.463,
+          58.5857,
+          225.6517,
+          71.4115
+        ]
+      }
+    ],
+    "svgSha256": "9ab9a1f0bf3ff0d0e17c490d102d002902117d287ad56cf04a1894ba0d2d0c31"
+  },
+  {
+    "id": "1990",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "JAN",
+        "fit": "reduced",
+        "profile": "bc-decal-print-heavy-month-wide",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          13.0627,
+          20.153,
+          137.1777,
+          84.74539999999999
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "90",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          244.01,
+          17.2221,
+          316.6423,
+          84.7779
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          160.474,
+          16.8272,
+          215.9698,
+          27.8313
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          149.932,
+          32.3272,
+          226.6295,
+          43.3313
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "30863010",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          147.449,
+          76.5247,
+          222.55200000000002,
+          89.3333
+        ]
+      }
+    ],
+    "svgSha256": "02bca61b07cb8137410659767967747720a270041a6860ef1bc21af891f30c0b"
+  },
+  {
+    "id": "1990",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "JAN",
+        "fit": "reduced",
+        "profile": "bc-decal-print-heavy-month-wide",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          13.0627,
+          20.153,
+          137.1777,
+          84.74539999999999
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "90",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          244.01,
+          17.2221,
+          316.6423,
+          84.7779
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          160.474,
+          16.8272,
+          215.9698,
+          27.8313
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          149.932,
+          32.3272,
+          226.6295,
+          43.3313
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "30863010",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          150.463,
+          58.5857,
+          225.56599999999997,
+          71.3943
+        ]
+      }
+    ],
+    "svgSha256": "8cd2877aab3defb1d67c45f18a76c0564b072c90517bbbeaf49a4a2db75c4e39"
+  },
+  {
+    "id": "1991",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "JUN",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          12.9683,
+          17.5,
+          129.3493,
+          84.7976
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "91",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          244.01,
+          17.2221,
+          307.1933,
+          84.7779
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          160.474,
+          16.8272,
+          215.9698,
+          27.8313
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          149.932,
+          32.3272,
+          226.6295,
+          43.3313
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "55232623",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          160.107,
+          65.8588,
+          235.2271,
+          78.6674
+        ]
+      }
+    ],
+    "svgSha256": "a5b5bac3b727f8912fc08c119c50577019b01829b3382f7a50c6584e10cb5254"
+  },
+  {
+    "id": "1991",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "JUN",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          12.9683,
+          17.5,
+          129.3493,
+          84.7976
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "91",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          244.01,
+          17.2221,
+          307.1933,
+          84.7779
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          160.474,
+          16.8272,
+          215.9698,
+          27.8313
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          149.932,
+          32.3272,
+          226.6295,
+          43.3313
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "55232623",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          150.429,
+          58.5857,
+          225.5491,
+          71.3943
+        ]
+      }
+    ],
+    "svgSha256": "1aa06ad0aac6d19ae6984a560fb04aa9d46c65d493aa97b6fe49a3623212c13a"
+  },
+  {
+    "id": "1992",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "OCT",
+        "fit": "natural",
+        "profile": "bc-decal-print-anton-400",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          13.9861,
+          15.891,
+          116.50309999999999,
+          84.10910000000001
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "92",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          244.01,
+          17.2221,
+          316.3134,
+          84.7779
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          160.474,
+          16.8272,
+          215.9698,
+          27.8313
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          149.932,
+          32.3272,
+          226.6295,
+          43.3313
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "59693121",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          141.956,
+          65.8418,
+          214.7099,
+          78.6675
+        ]
+      }
+    ],
+    "svgSha256": "93f957b022d881720c9aef44a05467c6e82e7a589005ca1f737626bf75a0b488"
+  },
+  {
+    "id": "1992",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "OCT",
+        "fit": "natural",
+        "profile": "bc-decal-print-anton-400",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          13.9861,
+          15.891,
+          116.50309999999999,
+          84.10910000000001
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "92",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          244.01,
+          17.2221,
+          316.3134,
+          84.7779
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          160.474,
+          16.8272,
+          215.9698,
+          27.8313
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          149.932,
+          32.3272,
+          226.6295,
+          43.3313
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "59693121",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          150.429,
+          58.5857,
+          223.18290000000002,
+          71.4115
+        ]
+      }
+    ],
+    "svgSha256": "ebebea9332768858d247f26c72a1b9bbf67a56a0e3ad7c162e39b05ef2e0d0c8"
+  },
+  {
+    "id": "1993",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "OCT",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month-wide",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          13.5894,
+          16.2024,
+          135.7644,
+          84.7975
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "93",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          244.01,
+          17.2221,
+          316.4779,
+          84.7779
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          160.474,
+          16.8272,
+          215.9698,
+          27.8313
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          149.932,
+          32.3272,
+          226.6295,
+          43.3313
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "79096980",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          142.782,
+          64.5078,
+          217.885,
+          77.3335
+        ]
+      }
+    ],
+    "svgSha256": "ed942b43c62e4dd081c7c8be41da07c28f025624856a1493810868742ea2c18f"
+  },
+  {
+    "id": "1993",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "OCT",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month-wide",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          13.5894,
+          16.2024,
+          135.7644,
+          84.7975
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "93",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          244.01,
+          17.2221,
+          316.4779,
+          84.7779
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          160.474,
+          16.8272,
+          215.9698,
+          27.8313
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          149.932,
+          32.3272,
+          226.6295,
+          43.3313
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "79096980",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          150.463,
+          58.5857,
+          225.56599999999997,
+          71.4115
+        ]
+      }
+    ],
+    "svgSha256": "f25ff6deb23f04449b7974574c02352aeeb99c40e54bd89bb775fd0b7810661b"
+  },
+  {
+    "id": "1994",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "OCT",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month-wide",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          13.5894,
+          16.2024,
+          135.7644,
+          84.7975
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "94",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          244.01,
+          17.2221,
+          317.5458,
+          84.7779
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          160.474,
+          16.8272,
+          215.9698,
+          27.8313
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          149.932,
+          32.3272,
+          226.6295,
+          43.3313
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "79533496",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          150.463,
+          58.5857,
+          225.6002,
+          71.4115
+        ]
+      }
+    ],
+    "svgSha256": "d9f04932808e41b02d1722155ae5f5ecb68fbd8b03cc11a9d29b07a6a2aedca8"
+  },
+  {
+    "id": "1994",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "OCT",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month-wide",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          13.5894,
+          16.2024,
+          135.7644,
+          84.7975
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "94",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          244.01,
+          17.2221,
+          317.5458,
+          84.7779
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          160.474,
+          16.8272,
+          215.9698,
+          27.8313
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          149.932,
+          32.3272,
+          226.6295,
+          43.3313
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "79533496",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          150.463,
+          58.5857,
+          225.6002,
+          71.4115
+        ]
+      }
+    ],
+    "svgSha256": "d9f04932808e41b02d1722155ae5f5ecb68fbd8b03cc11a9d29b07a6a2aedca8"
+  },
+  {
+    "id": "1995",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "NOV",
+        "fit": "reduced",
+        "profile": "bc-decal-print-heavy-month-wide",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          12.9734,
+          18.9076,
+          137.7994,
+          84.7454
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "95",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          244.01,
+          17.2221,
+          316.7242,
+          84.7779
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          160.474,
+          16.8272,
+          215.9698,
+          27.8313
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          149.932,
+          32.3272,
+          226.6295,
+          43.3313
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "82287425",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          147.389,
+          64.5247,
+          222.61200000000002,
+          77.3333
+        ]
+      }
+    ],
+    "svgSha256": "a476e2a3b64ed4210f5ac41e6c7e9129ee1d622482e1c115d46e896b2e56beed"
+  },
+  {
+    "id": "1995",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "NOV",
+        "fit": "reduced",
+        "profile": "bc-decal-print-heavy-month-wide",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          12.9734,
+          18.9076,
+          137.7994,
+          84.7454
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "95",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          244.01,
+          17.2221,
+          316.7242,
+          84.7779
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          160.474,
+          16.8272,
+          215.9698,
+          27.8313
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          149.932,
+          32.3272,
+          226.6295,
+          43.3313
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "82287425",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          150.343,
+          58.5857,
+          225.56599999999997,
+          71.3943
+        ]
+      }
+    ],
+    "svgSha256": "b06fea44f8dd79efe29442c6a44a3a78e24222de7412fbcb03469bebc6dbd331"
+  },
+  {
+    "id": "1996",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "MAR",
+        "fit": "reduced",
+        "profile": "bc-decal-print-anton-400",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          14.3832,
+          19.575,
+          137.2202,
+          83.5
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "96",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          244.01,
+          17.2221,
+          316.5598,
+          84.7779
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          160.474,
+          16.8272,
+          215.9698,
+          27.8313
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          149.932,
+          32.3272,
+          226.6295,
+          43.3313
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "22710492",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          158.141,
+          57.8417,
+          233.19259999999997,
+          70.6675
+        ]
+      }
+    ],
+    "svgSha256": "3411ebdb42a15569c88ad0e1d5815e5243bcd124534da8e90a918bb99efa9a2e"
+  },
+  {
+    "id": "1996",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "MAR",
+        "fit": "reduced",
+        "profile": "bc-decal-print-anton-400",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          14.3832,
+          19.575,
+          137.2202,
+          83.5
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "96",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          244.01,
+          17.2221,
+          316.5598,
+          84.7779
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          160.474,
+          16.8272,
+          215.9698,
+          27.8313
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          149.932,
+          32.3272,
+          226.6295,
+          43.3313
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "22710492",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          150.48,
+          58.5857,
+          225.53159999999997,
+          71.4115
+        ]
+      }
+    ],
+    "svgSha256": "fb32f5057f27b36a1534a19e87502a3507d4732b6f1097952ddce35b473ef3a5"
+  },
+  {
+    "id": "1996-pink",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "NOV",
+        "fit": "reduced",
+        "profile": "bc-decal-print-heavy-month-wide",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          12.9734,
+          18.9076,
+          137.7994,
+          84.7454
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "96",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          244.01,
+          17.2221,
+          316.5598,
+          84.7779
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          160.474,
+          16.8272,
+          215.9698,
+          27.8313
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          149.932,
+          32.3272,
+          226.6295,
+          43.3313
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "82903198",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          150.343,
+          58.5857,
+          225.7031,
+          71.4115
+        ]
+      }
+    ],
+    "svgSha256": "421dfe4756c3eb6da4ac885ba0480ccdb9db2392049afe1d6bf9328d2f462d9d"
+  },
+  {
+    "id": "1996-pink",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "NOV",
+        "fit": "reduced",
+        "profile": "bc-decal-print-heavy-month-wide",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          12.9734,
+          18.9076,
+          137.7994,
+          84.7454
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "96",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          244.01,
+          17.2221,
+          316.5598,
+          84.7779
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          160.474,
+          16.8272,
+          215.9698,
+          27.8313
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          149.932,
+          32.3272,
+          226.6295,
+          43.3313
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "82903198",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          150.343,
+          58.5857,
+          225.7031,
+          71.4115
+        ]
+      }
+    ],
+    "svgSha256": "421dfe4756c3eb6da4ac885ba0480ccdb9db2392049afe1d6bf9328d2f462d9d"
+  },
+  {
+    "id": "1997",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "NOV",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          12.8845,
+          16.2024,
+          129.9325,
+          84.7975
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "97",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          244.01,
+          17.2221,
+          317.0531,
+          84.7779
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          160.474,
+          16.8272,
+          215.9698,
+          27.8313
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          149.932,
+          32.3272,
+          226.6295,
+          43.3313
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "84261541",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          150.343,
+          58.5857,
+          223.18259999999998,
+          71.3943
+        ]
+      }
+    ],
+    "svgSha256": "ca2919ebe4a48fdb49404a44118f5cd0e65440b34a6d5a446991598399f2bcd2"
+  },
+  {
+    "id": "1997",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "NOV",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          12.8845,
+          16.2024,
+          129.9325,
+          84.7975
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "97",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          244.01,
+          17.2221,
+          317.0531,
+          84.7779
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          160.474,
+          16.8272,
+          215.9698,
+          27.8313
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          149.932,
+          32.3272,
+          226.6295,
+          43.3313
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "84261541",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          150.343,
+          58.5857,
+          223.18259999999998,
+          71.3943
+        ]
+      }
+    ],
+    "svgSha256": "ca2919ebe4a48fdb49404a44118f5cd0e65440b34a6d5a446991598399f2bcd2"
+  },
+  {
+    "id": "1998",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "AUG",
+        "fit": "reduced",
+        "profile": "bc-decal-print-heavy-month-wide",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          12.554,
+          17.2374,
+          136.683,
+          84.7776
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "98",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          244.01,
+          17.2221,
+          317.0531,
+          84.7779
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          160.474,
+          16.8272,
+          215.9698,
+          27.8313
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          149.932,
+          32.3272,
+          226.6295,
+          43.3313
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "37685128",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          150.463,
+          58.5857,
+          225.7031,
+          71.3943
+        ]
+      }
+    ],
+    "svgSha256": "ad59fa30da74686eba418b560e167c2dfa5cfb4326c1aa994049f78b5660389d"
+  },
+  {
+    "id": "1998",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "AUG",
+        "fit": "reduced",
+        "profile": "bc-decal-print-heavy-month-wide",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          12.554,
+          17.2374,
+          136.683,
+          84.7776
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "98",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year-wide",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          244.01,
+          17.2221,
+          317.0531,
+          84.7779
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          160.474,
+          16.8272,
+          215.9698,
+          27.8313
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          149.932,
+          32.3272,
+          226.6295,
+          43.3313
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "37685128",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          150.463,
+          58.5857,
+          225.7031,
+          71.3943
+        ]
+      }
+    ],
+    "svgSha256": "ad59fa30da74686eba418b560e167c2dfa5cfb4326c1aa994049f78b5660389d"
+  },
+  {
+    "id": "2004",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "MAR",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          66.1243,
+          17.5,
+          174.35829999999999,
+          85.5
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "04",
+        "fit": "natural",
+        "profile": "bc-decal-print-solid-2004-year-reconstruction",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          220.432,
+          14.664,
+          273.764,
+          69.336
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          181.023,
+          42.7062,
+          211.14929999999998,
+          48.679860000000005
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          175.3,
+          51.2062,
+          216.93580000000003,
+          57.179860000000005
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "42591320",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          190.459,
+          76.6671,
+          268.8182,
+          91.8969
+        ]
+      }
+    ],
+    "svgSha256": "8448695bc8c8212a782e7de9903cdff513c8caab486ba3a9c6d809e48a522109"
+  },
+  {
+    "id": "2004",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "MAR",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          66.1243,
+          17.5,
+          174.35829999999999,
+          85.5
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "04",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          218.49,
+          15.7875,
+          265.1521,
+          69.3125
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          181.023,
+          42.7062,
+          211.14929999999998,
+          48.679860000000005
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          175.3,
+          51.2062,
+          216.93580000000003,
+          57.179860000000005
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "42591320",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          190.459,
+          76.6671,
+          268.8182,
+          91.8969
+        ]
+      }
+    ],
+    "svgSha256": "da180ad23c0cb77b667a404feda0daa0e45d3cebad8ec05cb2db30702e5d12fd"
+  },
+  {
+    "id": "2005",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "JAN",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          11.5705,
+          16.0,
+          111.7285,
+          88.3959
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "05",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          170.122,
+          15.9384,
+          218.50330000000002,
+          72.0617
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          129.28,
+          45.9095,
+          158.3492,
+          51.67355
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "reduced",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          125.651,
+          54.439,
+          162.0202,
+          59.65704
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "10167427",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          136.413,
+          76.6894,
+          220.8923,
+          93.94980000000001
+        ]
+      }
+    ],
+    "svgSha256": "03d55f68f1e58118e5287f768b48ceb6188b856cc81f1fa3a3b323665553ae3d"
+  },
+  {
+    "id": "2005",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "JAN",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          11.5705,
+          16.0,
+          111.7285,
+          88.3959
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "05",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          170.122,
+          15.9384,
+          218.50330000000002,
+          72.0617
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          129.28,
+          45.9095,
+          158.3492,
+          51.67355
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "reduced",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          125.651,
+          54.439,
+          162.0202,
+          59.65704
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "10167427",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          136.413,
+          76.6894,
+          220.8923,
+          93.94980000000001
+        ]
+      }
+    ],
+    "svgSha256": "febf34018ec12f8d560b558d359dc62e2c4558ddce51ca398416a35ac6eda9eb"
+  },
+  {
+    "id": "2006",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "MAY",
+        "fit": "reduced",
+        "profile": "bc-decal-print-heavy-month",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          11.8341,
+          17.126,
+          122.48509999999999,
+          87.0
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "06",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          170.122,
+          15.9384,
+          218.3942,
+          72.0617
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-archivo-900-wdth75",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          129.565,
+          44.6767,
+          162.9404,
+          51.61682999999999
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-archivo-900-wdth75",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          123.78,
+          52.6767,
+          169.0307,
+          59.61682999999999
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "24286311",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          135.56,
+          76.6894,
+          217.9794,
+          93.94980000000001
+        ]
+      }
+    ],
+    "svgSha256": "d3146fa1259d808822c3794f3cc877105d8f1d580e018bc2f721af6f11cf3d86"
+  },
+  {
+    "id": "2006",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "MAY",
+        "fit": "reduced",
+        "profile": "bc-decal-print-heavy-month",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          11.8341,
+          17.126,
+          122.48509999999999,
+          87.0
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "06",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          170.122,
+          15.9384,
+          218.3942,
+          72.0617
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          129.28,
+          45.9095,
+          158.3492,
+          51.67355
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "reduced",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          125.651,
+          54.439,
+          162.0202,
+          59.65704
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "24286311",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          135.56,
+          76.6894,
+          217.9794,
+          93.94980000000001
+        ]
+      }
+    ],
+    "svgSha256": "c34774e93ce28b22ed2e06594704d9497e8302283da32e0c22d0938c40dfab36"
+  },
+  {
+    "id": "2007",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "JAN",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          11.5705,
+          16.0,
+          111.7285,
+          88.3959
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "07",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          170.122,
+          15.9384,
+          218.72150000000002,
+          72.0617
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          129.28,
+          45.9095,
+          158.3492,
+          51.67355
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "reduced",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          125.651,
+          54.439,
+          162.0202,
+          59.65704
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "30289413",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          135.584,
+          76.6894,
+          220.6554,
+          93.94980000000001
+        ]
+      }
+    ],
+    "svgSha256": "42c39fef301acb0cd039963a1bf22ff94a9142692582d3831808274207ed9b65"
+  },
+  {
+    "id": "2007",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "JAN",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          11.5705,
+          16.0,
+          111.7285,
+          88.3959
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "07",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          170.122,
+          15.9384,
+          218.72150000000002,
+          72.0617
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          129.28,
+          45.9095,
+          158.3492,
+          51.67355
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "reduced",
+        "profile": "bc-decal-print-normal",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          125.651,
+          54.439,
+          162.0202,
+          59.65704
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "30289413",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          135.584,
+          76.6894,
+          220.6554,
+          93.94980000000001
+        ]
+      }
+    ],
+    "svgSha256": "ea7864e34cadc0522b24da4939913380f14e7eae1599969fe2950b5cd00772de"
+  },
+  {
+    "id": "2009",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "APR",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          11.0283,
+          8.0,
+          96.2154,
+          69.0
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "09",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          166.002,
+          6.80074,
+          220.5317,
+          70.19924
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-condensed-medium",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          113.281,
+          30.8914,
+          148.9196,
+          40.60857
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "reduced",
+        "profile": "bc-decal-print-condensed-medium",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          110.132,
+          41.5233,
+          150.86860000000001,
+          49.99974
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "53054167",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          130.775,
+          72.7005,
+          221.1012,
+          90.97630000000001
+        ]
+      },
+      {
+        "role": "decal-barcode",
+        "index": 0,
+        "text": "Control barcode 53054167",
+        "fit": null,
+        "profile": null,
+        "queryId": "measure-decal-barcode-0",
+        "box": [
+          10.2571,
+          75.0,
+          118.5431,
+          91.0
+        ]
+      }
+    ],
+    "svgSha256": "f820d28d8a03cb01abc388527bd0753d5451a4c7845c38c6e0b75b81fc8ccede"
+  },
+  {
+    "id": "2009",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "APR",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          11.0283,
+          8.0,
+          96.2154,
+          69.0
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "09",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          166.002,
+          6.80074,
+          220.5317,
+          70.19924
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-condensed-medium",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          113.281,
+          30.8914,
+          148.9196,
+          40.60857
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "reduced",
+        "profile": "bc-decal-print-condensed-medium",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          110.897,
+          47.6183,
+          151.6336,
+          56.09474
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "53054167",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          130.775,
+          72.7005,
+          221.1012,
+          90.97630000000001
+        ]
+      },
+      {
+        "role": "decal-barcode",
+        "index": 0,
+        "text": "Control barcode 53054167",
+        "fit": null,
+        "profile": null,
+        "queryId": "measure-decal-barcode-0",
+        "box": [
+          10.2571,
+          75.0,
+          118.5431,
+          91.0
+        ]
+      }
+    ],
+    "svgSha256": "2c7628804b13a641850355a8844f9e8e01ac8bab85b03b5bd47246a34ac40a7d"
+  },
+  {
+    "id": "2010",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "JAN",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          6.20276,
+          5.101,
+          88.08225999999999,
+          64.2851
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "10",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          175.895,
+          4.08146,
+          225.5334,
+          63.26556
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-province-tall-2010-reconstruction",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          111.533,
+          21.128,
+          156.221,
+          34.694
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-province-tall-2010-reconstruction",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          104.064,
+          37.454,
+          164.712,
+          51.02
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "10717219",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          120.848,
+          69.4795,
+          210.1714,
+          87.7553
+        ]
+      },
+      {
+        "role": "decal-barcode",
+        "index": 0,
+        "text": "Control barcode 10717219",
+        "fit": null,
+        "profile": null,
+        "queryId": "measure-decal-barcode-0",
+        "box": [
+          3.26536,
+          68.3673,
+          114.48936,
+          89.7959
+        ]
+      }
+    ],
+    "svgSha256": "406af3402be09ef7504134e1e63c179b85afa38fa65989f9edde4fb83d20e75b"
+  },
+  {
+    "id": "2010",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "JAN",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          11.3986,
+          8.0,
+          97.4495,
+          70.1993
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "10",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          167.42,
+          6.80074,
+          220.5931,
+          70.19924
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-condensed-medium",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          108.592,
+          28.3628,
+          153.6092,
+          40.637100000000004
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "reduced",
+        "profile": "bc-decal-print-condensed-medium",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          104.163,
+          44.8247,
+          158.4768,
+          56.1263
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "10717219",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          131.652,
+          72.7005,
+          220.97539999999998,
+          90.97630000000001
+        ]
+      },
+      {
+        "role": "decal-barcode",
+        "index": 0,
+        "text": "Control barcode 10717219",
+        "fit": null,
+        "profile": null,
+        "queryId": "measure-decal-barcode-0",
+        "box": [
+          10.2571,
+          75.0,
+          118.5431,
+          91.0
+        ]
+      }
+    ],
+    "svgSha256": "bde7819f76452bae17cb7a83e182847b517b62dce17011cdda9e346d04f01b80"
+  },
+  {
+    "id": "2011",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "MAY",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          9.49244,
+          8.0,
+          98.17294,
+          64.0
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "11",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          174.428,
+          7.0,
+          214.4898,
+          63.0
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-province-tall-2010-reconstruction",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          110.66,
+          22.74,
+          154.34,
+          36.0
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-province-tall-2010-reconstruction",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          103.36,
+          38.74,
+          162.64,
+          52.0
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "24516329",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          127.874,
+          66.7205,
+          218.0999,
+          84.9963
+        ]
+      },
+      {
+        "role": "decal-barcode",
+        "index": 0,
+        "text": "Control barcode 24516329",
+        "fit": null,
+        "profile": null,
+        "queryId": "measure-decal-barcode-0",
+        "box": [
+          12.5094,
+          66.0,
+          119.5104,
+          86.0
+        ]
+      }
+    ],
+    "svgSha256": "b3cb407ec270fbe3e1a0778ddadfb467c91f45658fedb4c3c33132212122432c"
+  },
+  {
+    "id": "2011",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "MAY",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          9.49244,
+          8.0,
+          98.17294,
+          64.0
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "11",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          174.428,
+          7.0,
+          214.4898,
+          63.0
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-condensed-bold",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          109.317,
+          23.7228,
+          155.68849999999998,
+          35.9971
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "reduced",
+        "profile": "bc-decal-print-condensed-bold",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          105.773,
+          40.9394,
+          160.24439999999998,
+          52.003699999999995
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "24516329",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          127.874,
+          66.7205,
+          218.0999,
+          84.9963
+        ]
+      },
+      {
+        "role": "decal-barcode",
+        "index": 0,
+        "text": "Control barcode 24516329",
+        "fit": null,
+        "profile": null,
+        "queryId": "measure-decal-barcode-0",
+        "box": [
+          12.5094,
+          66.0,
+          119.5104,
+          86.0
+        ]
+      }
+    ],
+    "svgSha256": "44e2f8a1253a23d0ed6391aba0af632f934664ca186f698dfd72f6e16db770d8"
+  },
+  {
+    "id": "2012",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "NOV",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          9.41294,
+          6.99985,
+          88.58824,
+          65.00015
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "12",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          177.1,
+          9.00056,
+          223.8996,
+          63.99996
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-province-tall-2010-reconstruction",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          110.988,
+          24.332,
+          156.012,
+          38.0
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-province-tall-2010-reconstruction",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          102.948,
+          38.332,
+          164.052,
+          52.0
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "97303194",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          130.85,
+          72.7005,
+          221.0509,
+          90.97630000000001
+        ]
+      },
+      {
+        "role": "decal-barcode",
+        "index": 0,
+        "text": "Control barcode 97303194",
+        "fit": null,
+        "profile": null,
+        "queryId": "measure-decal-barcode-0",
+        "box": [
+          4.9999,
+          70.0,
+          115.9999,
+          93.0
+        ]
+      }
+    ],
+    "svgSha256": "818356f979ce6d652e129a173da88cc43ddd07807ec18e76810dc75ec95e28a3"
+  },
+  {
+    "id": "2012",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "NOV",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-month",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          11.337,
+          6.80074,
+          97.8814,
+          70.19924
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "12",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          167.42,
+          6.80074,
+          220.346,
+          69.00004
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-condensed-medium",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          108.592,
+          28.3628,
+          153.6092,
+          40.637100000000004
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "reduced",
+        "profile": "bc-decal-print-condensed-medium",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          104.163,
+          44.8247,
+          158.4768,
+          56.1263
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "97303194",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          130.85,
+          72.7005,
+          221.0509,
+          90.97630000000001
+        ]
+      },
+      {
+        "role": "decal-barcode",
+        "index": 0,
+        "text": "Control barcode 97303194",
+        "fit": null,
+        "profile": null,
+        "queryId": "measure-decal-barcode-0",
+        "box": [
+          10.2571,
+          75.0,
+          118.5431,
+          91.0
+        ]
+      }
+    ],
+    "svgSha256": "464e11542e6fb56a20a17d122a2c4dfd2fb99ab683738403474f6d871f306365"
+  },
+  {
+    "id": "2013",
+    "stage": "after",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "OCT",
+        "fit": "natural",
+        "profile": "bc-decal-print-late-oct-reconstruction",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          6.003,
+          8.0,
+          72.083,
+          67.0
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "13",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          174.033,
+          6.9939,
+          219.99739999999997,
+          65.9961
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-province-tall-2010-reconstruction",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          110.16,
+          24.74,
+          153.84,
+          38.0
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "natural",
+        "profile": "bc-decal-print-province-tall-2010-reconstruction",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          102.86,
+          40.74,
+          162.14,
+          54.0
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "79670318",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          126.86,
+          70.7205,
+          217.1611,
+          88.9963
+        ]
+      },
+      {
+        "role": "decal-barcode",
+        "index": 0,
+        "text": "Control barcode 79670318",
+        "fit": null,
+        "profile": null,
+        "queryId": "measure-decal-barcode-0",
+        "box": [
+          8.99068,
+          69.0,
+          117.99268,
+          91.0
+        ]
+      }
+    ],
+    "svgSha256": "14a95f066825f5299b7461648600bb9f62beff6ce8c7d479d004982ff8402d3b"
+  },
+  {
+    "id": "2013",
+    "stage": "before",
+    "runs": [
+      {
+        "role": "decal-month",
+        "index": 0,
+        "text": "OCT",
+        "fit": "natural",
+        "profile": "bc-decal-print-late-oct-reconstruction",
+        "queryId": "measure-decal-month-0",
+        "box": [
+          6.003,
+          8.0,
+          72.083,
+          67.0
+        ]
+      },
+      {
+        "role": "decal-year",
+        "index": 0,
+        "text": "13",
+        "fit": "natural",
+        "profile": "bc-decal-print-heavy-year",
+        "queryId": "measure-decal-year-0",
+        "box": [
+          174.033,
+          6.9939,
+          219.99739999999997,
+          65.9961
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 0,
+        "text": "BRITISH",
+        "fit": "natural",
+        "profile": "bc-decal-print-condensed-medium",
+        "queryId": "measure-decal-legend-0",
+        "box": [
+          109.995,
+          25.7228,
+          155.0122,
+          37.9971
+        ]
+      },
+      {
+        "role": "decal-legend",
+        "index": 1,
+        "text": "COLUMBIA",
+        "fit": "reduced",
+        "profile": "bc-decal-print-condensed-medium",
+        "queryId": "measure-decal-legend-1",
+        "box": [
+          105.336,
+          42.6947,
+          159.6498,
+          53.9963
+        ]
+      },
+      {
+        "role": "decal-serial",
+        "index": 0,
+        "text": "79670318",
+        "fit": "natural",
+        "profile": "bc-decal-print-control-bold",
+        "queryId": "measure-decal-serial-0",
+        "box": [
+          126.86,
+          70.7205,
+          217.1611,
+          88.9963
+        ]
+      },
+      {
+        "role": "decal-barcode",
+        "index": 0,
+        "text": "Control barcode 79670318",
+        "fit": null,
+        "profile": null,
+        "queryId": "measure-decal-barcode-0",
+        "box": [
+          8.99068,
+          69.0,
+          117.99268,
+          91.0
+        ]
+      }
+    ],
+    "svgSha256": "3d38387bd52955beec5d7fc70204c66488e92257590704ddc0a90bc77f0e49a8"
+  }
+]

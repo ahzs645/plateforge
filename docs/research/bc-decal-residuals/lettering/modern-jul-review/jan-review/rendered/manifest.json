@@ -1,0 +1,870 @@
+[
+  {
+    "key": "retained",
+    "native": false,
+    "text": "JAN",
+    "profile": "bc-decal-print-heavy-month-weighted",
+    "file": "retained--JAN.svg",
+    "fit": "natural",
+    "advanceWidth": 144.404,
+    "filledStroke": 2.5,
+    "kerning": {}
+  },
+  {
+    "key": "retained",
+    "native": false,
+    "text": "J",
+    "profile": "bc-decal-print-heavy-month-weighted",
+    "file": "retained--J.svg",
+    "fit": "natural",
+    "advanceWidth": 46.921,
+    "filledStroke": 2.5,
+    "kerning": {}
+  },
+  {
+    "key": "retained",
+    "native": false,
+    "text": "A",
+    "profile": "bc-decal-print-heavy-month-weighted",
+    "file": "retained--A.svg",
+    "fit": "natural",
+    "advanceWidth": 46.921,
+    "filledStroke": 2.5,
+    "kerning": {}
+  },
+  {
+    "key": "retained",
+    "native": false,
+    "text": "N",
+    "profile": "bc-decal-print-heavy-month-weighted",
+    "file": "retained--N.svg",
+    "fit": "natural",
+    "advanceWidth": 50.562,
+    "filledStroke": 2.5,
+    "kerning": {}
+  },
+  {
+    "key": "heavy-month-wide",
+    "native": true,
+    "text": "JAN",
+    "profile": "bc-decal-print-heavy-month-wide",
+    "file": "heavy-month-wide--JAN.svg",
+    "fit": "natural",
+    "advanceWidth": 200.563,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "heavy-month-wide",
+    "native": true,
+    "text": "J",
+    "profile": "bc-decal-print-heavy-month-wide",
+    "file": "heavy-month-wide--J.svg",
+    "fit": "natural",
+    "advanceWidth": 65.169,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "heavy-month-wide",
+    "native": true,
+    "text": "A",
+    "profile": "bc-decal-print-heavy-month-wide",
+    "file": "heavy-month-wide--A.svg",
+    "fit": "natural",
+    "advanceWidth": 65.169,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "heavy-month-wide",
+    "native": true,
+    "text": "N",
+    "profile": "bc-decal-print-heavy-month-wide",
+    "file": "heavy-month-wide--N.svg",
+    "fit": "natural",
+    "advanceWidth": 70.225,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "spacing-2018",
+    "native": false,
+    "text": "JAN",
+    "profile": "bc-decal-print-heavy-month-weighted",
+    "file": "spacing-2018--JAN.svg",
+    "fit": "natural",
+    "advanceWidth": 148.404,
+    "filledStroke": 2.5,
+    "kerning": {
+      "AN": 4
+    }
+  },
+  {
+    "key": "spacing-2018",
+    "native": false,
+    "text": "J",
+    "profile": "bc-decal-print-heavy-month-weighted",
+    "file": "spacing-2018--J.svg",
+    "fit": "natural",
+    "advanceWidth": 46.921,
+    "filledStroke": 2.5,
+    "kerning": {
+      "AN": 4
+    }
+  },
+  {
+    "key": "spacing-2018",
+    "native": false,
+    "text": "A",
+    "profile": "bc-decal-print-heavy-month-weighted",
+    "file": "spacing-2018--A.svg",
+    "fit": "natural",
+    "advanceWidth": 46.921,
+    "filledStroke": 2.5,
+    "kerning": {
+      "AN": 4
+    }
+  },
+  {
+    "key": "spacing-2018",
+    "native": false,
+    "text": "N",
+    "profile": "bc-decal-print-heavy-month-weighted",
+    "file": "spacing-2018--N.svg",
+    "fit": "natural",
+    "advanceWidth": 50.562,
+    "filledStroke": 2.5,
+    "kerning": {
+      "AN": 4
+    }
+  },
+  {
+    "key": "spacing-2019",
+    "native": false,
+    "text": "JAN",
+    "profile": "bc-decal-print-heavy-month-weighted",
+    "file": "spacing-2019--JAN.svg",
+    "fit": "natural",
+    "advanceWidth": 158.404,
+    "filledStroke": 2.5,
+    "kerning": {
+      "JA": 5,
+      "AN": 9
+    }
+  },
+  {
+    "key": "spacing-2019",
+    "native": false,
+    "text": "J",
+    "profile": "bc-decal-print-heavy-month-weighted",
+    "file": "spacing-2019--J.svg",
+    "fit": "natural",
+    "advanceWidth": 46.921,
+    "filledStroke": 2.5,
+    "kerning": {
+      "JA": 5,
+      "AN": 9
+    }
+  },
+  {
+    "key": "spacing-2019",
+    "native": false,
+    "text": "A",
+    "profile": "bc-decal-print-heavy-month-weighted",
+    "file": "spacing-2019--A.svg",
+    "fit": "natural",
+    "advanceWidth": 46.921,
+    "filledStroke": 2.5,
+    "kerning": {
+      "JA": 5,
+      "AN": 9
+    }
+  },
+  {
+    "key": "spacing-2019",
+    "native": false,
+    "text": "N",
+    "profile": "bc-decal-print-heavy-month-weighted",
+    "file": "spacing-2019--N.svg",
+    "fit": "natural",
+    "advanceWidth": 50.562,
+    "filledStroke": 2.5,
+    "kerning": {
+      "JA": 5,
+      "AN": 9
+    }
+  },
+  {
+    "key": "spacing-2020",
+    "native": false,
+    "text": "JAN",
+    "profile": "bc-decal-print-heavy-month-weighted",
+    "file": "spacing-2020--JAN.svg",
+    "fit": "natural",
+    "advanceWidth": 156.404,
+    "filledStroke": 2.5,
+    "kerning": {
+      "JA": 5,
+      "AN": 7
+    }
+  },
+  {
+    "key": "spacing-2020",
+    "native": false,
+    "text": "J",
+    "profile": "bc-decal-print-heavy-month-weighted",
+    "file": "spacing-2020--J.svg",
+    "fit": "natural",
+    "advanceWidth": 46.921,
+    "filledStroke": 2.5,
+    "kerning": {
+      "JA": 5,
+      "AN": 7
+    }
+  },
+  {
+    "key": "spacing-2020",
+    "native": false,
+    "text": "A",
+    "profile": "bc-decal-print-heavy-month-weighted",
+    "file": "spacing-2020--A.svg",
+    "fit": "natural",
+    "advanceWidth": 46.921,
+    "filledStroke": 2.5,
+    "kerning": {
+      "JA": 5,
+      "AN": 7
+    }
+  },
+  {
+    "key": "spacing-2020",
+    "native": false,
+    "text": "N",
+    "profile": "bc-decal-print-heavy-month-weighted",
+    "file": "spacing-2020--N.svg",
+    "fit": "natural",
+    "advanceWidth": 50.562,
+    "filledStroke": 2.5,
+    "kerning": {
+      "JA": 5,
+      "AN": 7
+    }
+  },
+  {
+    "key": "anton-400",
+    "native": true,
+    "text": "JAN",
+    "profile": "native-anton-400",
+    "file": "anton-400--JAN.svg",
+    "fit": "natural",
+    "advanceWidth": 168.69299999999998,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "anton-400",
+    "native": true,
+    "text": "J",
+    "profile": "native-anton-400",
+    "file": "anton-400--J.svg",
+    "fit": "natural",
+    "advanceWidth": 54.261,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "anton-400",
+    "native": true,
+    "text": "A",
+    "profile": "native-anton-400",
+    "file": "anton-400--A.svg",
+    "fit": "natural",
+    "advanceWidth": 56.477,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "anton-400",
+    "native": true,
+    "text": "N",
+    "profile": "native-anton-400",
+    "file": "anton-400--N.svg",
+    "fit": "natural",
+    "advanceWidth": 57.955,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "bebasneue-400",
+    "native": true,
+    "text": "JAN",
+    "profile": "native-bebasneue-400",
+    "file": "bebasneue-400--JAN.svg",
+    "fit": "natural",
+    "advanceWidth": 156.143,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "bebasneue-400",
+    "native": true,
+    "text": "J",
+    "profile": "native-bebasneue-400",
+    "file": "bebasneue-400--J.svg",
+    "fit": "natural",
+    "advanceWidth": 37.857,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "bebasneue-400",
+    "native": true,
+    "text": "A",
+    "profile": "native-bebasneue-400",
+    "file": "bebasneue-400--A.svg",
+    "fit": "natural",
+    "advanceWidth": 57.286,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "bebasneue-400",
+    "native": true,
+    "text": "N",
+    "profile": "native-bebasneue-400",
+    "file": "bebasneue-400--N.svg",
+    "fit": "natural",
+    "advanceWidth": 61,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "oswald-300",
+    "native": true,
+    "text": "JAN",
+    "profile": "native-oswald-300",
+    "file": "oswald-300--JAN.svg",
+    "fit": "natural",
+    "advanceWidth": 157.531,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "oswald-300",
+    "native": true,
+    "text": "J",
+    "profile": "native-oswald-300",
+    "file": "oswald-300--J.svg",
+    "fit": "natural",
+    "advanceWidth": 34.444,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "oswald-300",
+    "native": true,
+    "text": "A",
+    "profile": "native-oswald-300",
+    "file": "oswald-300--A.svg",
+    "fit": "natural",
+    "advanceWidth": 58.889,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "oswald-300",
+    "native": true,
+    "text": "N",
+    "profile": "native-oswald-300",
+    "file": "oswald-300--N.svg",
+    "fit": "natural",
+    "advanceWidth": 64.198,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "oswald-400",
+    "native": true,
+    "text": "JAN",
+    "profile": "native-oswald-400",
+    "file": "oswald-400--JAN.svg",
+    "fit": "natural",
+    "advanceWidth": 163.086,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "oswald-400",
+    "native": true,
+    "text": "J",
+    "profile": "native-oswald-400",
+    "file": "oswald-400--J.svg",
+    "fit": "natural",
+    "advanceWidth": 37.16,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "oswald-400",
+    "native": true,
+    "text": "A",
+    "profile": "native-oswald-400",
+    "file": "oswald-400--A.svg",
+    "fit": "natural",
+    "advanceWidth": 60.741,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "oswald-400",
+    "native": true,
+    "text": "N",
+    "profile": "native-oswald-400",
+    "file": "oswald-400--N.svg",
+    "fit": "natural",
+    "advanceWidth": 65.185,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "oswald-500",
+    "native": true,
+    "text": "JAN",
+    "profile": "native-oswald-500",
+    "file": "oswald-500--JAN.svg",
+    "fit": "natural",
+    "advanceWidth": 171.97500000000002,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "oswald-500",
+    "native": true,
+    "text": "J",
+    "profile": "native-oswald-500",
+    "file": "oswald-500--J.svg",
+    "fit": "natural",
+    "advanceWidth": 40.247,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "oswald-500",
+    "native": true,
+    "text": "A",
+    "profile": "native-oswald-500",
+    "file": "oswald-500--A.svg",
+    "fit": "natural",
+    "advanceWidth": 64.444,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "oswald-500",
+    "native": true,
+    "text": "N",
+    "profile": "native-oswald-500",
+    "file": "oswald-500--N.svg",
+    "fit": "natural",
+    "advanceWidth": 67.284,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "oswald-600",
+    "native": true,
+    "text": "JAN",
+    "profile": "native-oswald-600",
+    "file": "oswald-600--JAN.svg",
+    "fit": "natural",
+    "advanceWidth": 176.66699999999997,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "oswald-600",
+    "native": true,
+    "text": "J",
+    "profile": "native-oswald-600",
+    "file": "oswald-600--J.svg",
+    "fit": "natural",
+    "advanceWidth": 41.852,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "oswald-600",
+    "native": true,
+    "text": "A",
+    "profile": "native-oswald-600",
+    "file": "oswald-600--A.svg",
+    "fit": "natural",
+    "advanceWidth": 66.42,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "oswald-600",
+    "native": true,
+    "text": "N",
+    "profile": "native-oswald-600",
+    "file": "oswald-600--N.svg",
+    "fit": "natural",
+    "advanceWidth": 68.395,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "oswald-700",
+    "native": true,
+    "text": "JAN",
+    "profile": "native-oswald-700",
+    "file": "oswald-700--JAN.svg",
+    "fit": "natural",
+    "advanceWidth": 180.37,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "oswald-700",
+    "native": true,
+    "text": "J",
+    "profile": "native-oswald-700",
+    "file": "oswald-700--J.svg",
+    "fit": "natural",
+    "advanceWidth": 43.086,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "oswald-700",
+    "native": true,
+    "text": "A",
+    "profile": "native-oswald-700",
+    "file": "oswald-700--A.svg",
+    "fit": "natural",
+    "advanceWidth": 68.025,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "oswald-700",
+    "native": true,
+    "text": "N",
+    "profile": "native-oswald-700",
+    "file": "oswald-700--N.svg",
+    "fit": "natural",
+    "advanceWidth": 69.259,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "robotocondensed-400",
+    "native": true,
+    "text": "JAN",
+    "profile": "native-robotocondensed-400",
+    "file": "robotocondensed-400--JAN.svg",
+    "fit": "natural",
+    "advanceWidth": 236.265,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "robotocondensed-400",
+    "native": true,
+    "text": "J",
+    "profile": "native-robotocondensed-400",
+    "file": "robotocondensed-400--J.svg",
+    "fit": "natural",
+    "advanceWidth": 67.995,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "robotocondensed-400",
+    "native": true,
+    "text": "A",
+    "profile": "native-robotocondensed-400",
+    "file": "robotocondensed-400--A.svg",
+    "fit": "natural",
+    "advanceWidth": 81.113,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "robotocondensed-400",
+    "native": true,
+    "text": "N",
+    "profile": "native-robotocondensed-400",
+    "file": "robotocondensed-400--N.svg",
+    "fit": "natural",
+    "advanceWidth": 87.157,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "robotocondensed-600",
+    "native": true,
+    "text": "JAN",
+    "profile": "native-robotocondensed-600",
+    "file": "robotocondensed-600--JAN.svg",
+    "fit": "natural",
+    "advanceWidth": 238.461,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "robotocondensed-600",
+    "native": true,
+    "text": "J",
+    "profile": "native-robotocondensed-600",
+    "file": "robotocondensed-600--J.svg",
+    "fit": "natural",
+    "advanceWidth": 68.75,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "robotocondensed-600",
+    "native": true,
+    "text": "A",
+    "profile": "native-robotocondensed-600",
+    "file": "robotocondensed-600--A.svg",
+    "fit": "natural",
+    "advanceWidth": 83.31,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "robotocondensed-600",
+    "native": true,
+    "text": "N",
+    "profile": "native-robotocondensed-600",
+    "file": "robotocondensed-600--N.svg",
+    "fit": "natural",
+    "advanceWidth": 86.401,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "robotocondensed-700",
+    "native": true,
+    "text": "JAN",
+    "profile": "native-robotocondensed-700",
+    "file": "robotocondensed-700--JAN.svg",
+    "fit": "natural",
+    "advanceWidth": 239.079,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "robotocondensed-700",
+    "native": true,
+    "text": "J",
+    "profile": "native-robotocondensed-700",
+    "file": "robotocondensed-700--J.svg",
+    "fit": "natural",
+    "advanceWidth": 68.956,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "robotocondensed-700",
+    "native": true,
+    "text": "A",
+    "profile": "native-robotocondensed-700",
+    "file": "robotocondensed-700--A.svg",
+    "fit": "natural",
+    "advanceWidth": 83.997,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "robotocondensed-700",
+    "native": true,
+    "text": "N",
+    "profile": "native-robotocondensed-700",
+    "file": "robotocondensed-700--N.svg",
+    "fit": "natural",
+    "advanceWidth": 86.126,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "robotocondensed-900",
+    "native": true,
+    "text": "JAN",
+    "profile": "native-robotocondensed-900",
+    "file": "robotocondensed-900--JAN.svg",
+    "fit": "natural",
+    "advanceWidth": 240.179,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "robotocondensed-900",
+    "native": true,
+    "text": "J",
+    "profile": "native-robotocondensed-900",
+    "file": "robotocondensed-900--J.svg",
+    "fit": "natural",
+    "advanceWidth": 69.437,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "robotocondensed-900",
+    "native": true,
+    "text": "A",
+    "profile": "native-robotocondensed-900",
+    "file": "robotocondensed-900--A.svg",
+    "fit": "natural",
+    "advanceWidth": 85.165,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "robotocondensed-900",
+    "native": true,
+    "text": "N",
+    "profile": "native-robotocondensed-900",
+    "file": "robotocondensed-900--N.svg",
+    "fit": "natural",
+    "advanceWidth": 85.577,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "archivonarrow-400",
+    "native": true,
+    "text": "JAN",
+    "profile": "native-archivonarrow-400",
+    "file": "archivonarrow-400--JAN.svg",
+    "fit": "natural",
+    "advanceWidth": 225.802,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "archivonarrow-400",
+    "native": true,
+    "text": "J",
+    "profile": "native-archivonarrow-400",
+    "file": "archivonarrow-400--J.svg",
+    "fit": "natural",
+    "advanceWidth": 59.767,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "archivonarrow-400",
+    "native": true,
+    "text": "A",
+    "profile": "native-archivonarrow-400",
+    "file": "archivonarrow-400--A.svg",
+    "fit": "natural",
+    "advanceWidth": 79.738,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "archivonarrow-400",
+    "native": true,
+    "text": "N",
+    "profile": "native-archivonarrow-400",
+    "file": "archivonarrow-400--N.svg",
+    "fit": "natural",
+    "advanceWidth": 86.297,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "archivonarrow-600",
+    "native": true,
+    "text": "JAN",
+    "profile": "native-archivonarrow-600",
+    "file": "archivonarrow-600--JAN.svg",
+    "fit": "natural",
+    "advanceWidth": 234.548,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "archivonarrow-600",
+    "native": true,
+    "text": "J",
+    "profile": "native-archivonarrow-600",
+    "file": "archivonarrow-600--J.svg",
+    "fit": "natural",
+    "advanceWidth": 64.14,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "archivonarrow-600",
+    "native": true,
+    "text": "A",
+    "profile": "native-archivonarrow-600",
+    "file": "archivonarrow-600--A.svg",
+    "fit": "natural",
+    "advanceWidth": 84.111,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "archivonarrow-600",
+    "native": true,
+    "text": "N",
+    "profile": "native-archivonarrow-600",
+    "file": "archivonarrow-600--N.svg",
+    "fit": "natural",
+    "advanceWidth": 86.297,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "archivonarrow-700",
+    "native": true,
+    "text": "JAN",
+    "profile": "native-archivonarrow-700",
+    "file": "archivonarrow-700--JAN.svg",
+    "fit": "natural",
+    "advanceWidth": 239.066,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "archivonarrow-700",
+    "native": true,
+    "text": "J",
+    "profile": "native-archivonarrow-700",
+    "file": "archivonarrow-700--J.svg",
+    "fit": "natural",
+    "advanceWidth": 66.472,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "archivonarrow-700",
+    "native": true,
+    "text": "A",
+    "profile": "native-archivonarrow-700",
+    "file": "archivonarrow-700--A.svg",
+    "fit": "natural",
+    "advanceWidth": 86.297,
+    "filledStroke": 0,
+    "kerning": {}
+  },
+  {
+    "key": "archivonarrow-700",
+    "native": true,
+    "text": "N",
+    "profile": "native-archivonarrow-700",
+    "file": "archivonarrow-700--N.svg",
+    "fit": "natural",
+    "advanceWidth": 86.297,
+    "filledStroke": 0,
+    "kerning": {}
+  }
+]

@@ -1,0 +1,235 @@
+{
+  "reviewedOn": "2026-11-07",
+  "baselineCommit": "24689246670c25f91e0d1676a0647f053dbca68e",
+  "primarySources": [
+    {
+      "id": "1983",
+      "file": "public/bc-decal-corrections/evidence/1983/source.png",
+      "sha256": "30360d3322ad42b29a59c2a9e0f3e54d6ef4fbd93beafbd2620e4518e87a36f1",
+      "mode": "existing pinned crop",
+      "upstreamProvenance": "public/bc-decal-corrections/render-metadata.json",
+      "remoteOriginalBytesReverified": false
+    },
+    {
+      "id": "1999",
+      "file": "public/bc-decal-corrections/evidence/1999/source.png",
+      "sha256": "9411a53fc2d9a7fd37f887a69a937d3f852a24e37c754194d26150baeb0a77d0",
+      "mode": "existing pinned crop",
+      "upstreamProvenance": "public/bc-decal-corrections/render-metadata.json",
+      "remoteOriginalBytesReverified": false
+    },
+    {
+      "id": "2004",
+      "file": "public/bc-decal-corrections/evidence/2004/source.png",
+      "sha256": "6a77e42810bfe8179773413bac28dbb971f91d7a0697b855bdea8246035a5693",
+      "mode": "existing pinned crop",
+      "upstreamProvenance": "public/bc-decal-corrections/render-metadata.json",
+      "remoteOriginalBytesReverified": false
+    }
+  ],
+  "supplementarySources": [
+    {
+      "file": "docs/research/bc-decal-residuals/lettering/sources/commons-1983-jul.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/6/6c/British_Columbia_Sticker_Decal_July_1983.jpg",
+      "sha256": "90c25abefe5f90db9e43369f27d38ea3644aa320d3c69d5650628ff9314e16dd",
+      "pixels": [
+        792,
+        242
+      ],
+      "retrievedOn": "2026-11-07",
+      "originalBytesRetained": true,
+      "descriptionPage": "https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_July_1983.jpg",
+      "sourcePage": "https://www.flickr.com/photos/woodysworld1778/2140453295/",
+      "author": "Jerry Woody",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "observedMonth": "JUL",
+      "observedControl": "Control not used",
+      "changes": "Original file retained unchanged; separate crops, masks and overlays derived for comparison.",
+      "use": "J/U corroboration only"
+    },
+    {
+      "file": "docs/research/bc-decal-residuals/lettering/sources/commons-1999-jan.jpg",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/8/8a/British_Columbia_Sticker_Decal_January_1999.jpg",
+      "sha256": "ec54ef3110215c50eed6bb4ff637dbf29197968c11ea887eccc3780b9c2a0dbd",
+      "pixels": [
+        804,
+        236
+      ],
+      "retrievedOn": "2026-11-07",
+      "originalBytesRetained": true,
+      "descriptionPage": "https://commons.wikimedia.org/wiki/File:British_Columbia_Sticker_Decal_January_1999.jpg",
+      "sourcePage": "https://www.flickr.com/photos/woodysworld1778/2143567091/",
+      "author": "Jerry Woody",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "observedMonth": "JAN",
+      "observedControl": "50438109",
+      "changes": "Original file retained unchanged; separate crops, masks and overlays derived for comparison.",
+      "use": "A corroboration only"
+    },
+    {
+      "file": "docs/research/bc-decal-residuals/lettering/sources/1999-54174570.jpg",
+      "url": "https://www.bcpl8s.ca/images/Decals/Passenger/1999-54174570.jpg",
+      "sha256": "700703547282801f7ac07e738eb6b4ee4f00f2539feb73d441fc5673de18021a",
+      "pixels": [
+        235,
+        75
+      ],
+      "retrievedOn": "2026-11-07",
+      "originalBytesRetained": true,
+      "authorCredit": "BCpl8s.ca photographic collection; individual photographer not identified on the gallery",
+      "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+      "license": "Source rights retained; no new redistribution licence asserted",
+      "changes": "Original file retained unchanged; separate crops and masks for targeted research",
+      "duplicate": "Same MAY54174570 specimen as pinned1999-thick source; same visible blemish; not an independent specimen."
+    },
+    {
+      "file": "docs/research/bc-decal-residuals/lettering/sources/1999-52069021.jpg",
+      "url": "https://www.bcpl8s.ca/images/Decals/Passenger/1999-52069021.jpg",
+      "sha256": "f6644bd8c0bca9ae438a12ee826a9af87437ab4cfc7acebc02ce052b9d7e5eba",
+      "pixels": [
+        237,
+        75
+      ],
+      "retrievedOn": "2026-11-07",
+      "originalBytesRetained": true,
+      "authorCredit": "BCpl8s.ca photographic collection; individual photographer not identified on the gallery",
+      "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+      "license": "Source rights retained; no new redistribution licence asserted",
+      "changes": "Original file retained unchanged; separate crops and masks for targeted research"
+    },
+    {
+      "file": "docs/research/bc-decal-residuals/lettering/sources/1999-56304128.jpg",
+      "url": "https://www.bcpl8s.ca/images/Decals/Passenger/1999-56304128.jpg",
+      "sha256": "2d77f92a35c0b1acc260141bd8203baa03cae20224f75533449f3169bd12961f",
+      "pixels": [
+        242,
+        75
+      ],
+      "retrievedOn": "2026-11-07",
+      "originalBytesRetained": true,
+      "authorCredit": "BCpl8s.ca photographic collection; individual photographer not identified on the gallery",
+      "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+      "license": "Source rights retained; no new redistribution licence asserted",
+      "changes": "Original file retained unchanged; separate crops and masks for targeted research",
+      "use": "Inspected context only; excluded fromM/A/Ymetrics"
+    },
+    {
+      "file": "docs/research/bc-decal-residuals/lettering/sources/1983-JANX.jpg",
+      "url": "https://www.bcpl8s.ca/images/Decals/Passenger/1983-JANX.jpg",
+      "sha256": "f5b26747b39ddaa138ba809bc9750c782136309691d17cc10f410826e99ca442",
+      "pixels": [
+        252,
+        75
+      ],
+      "retrievedOn": "2026-11-07",
+      "originalBytesRetained": true,
+      "authorCredit": "BCpl8s.ca photographic collection; individual photographer not identified on the gallery",
+      "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+      "license": "Source rights retained; no new redistribution licence asserted",
+      "changes": "Original file retained unchanged; separate crops and masks for targeted research"
+    },
+    {
+      "file": "docs/research/bc-decal-residuals/lettering/sources/1983-86105841.jpg",
+      "url": "https://www.bcpl8s.ca/images/Decals/Passenger/1983-86105841.jpg",
+      "sha256": "657dad6010b2fa1bcb4bbbc4fcda9dd7355a1d2378a426250d7af7163fcd1f01",
+      "pixels": [
+        247,
+        75
+      ],
+      "retrievedOn": "2026-11-07",
+      "originalBytesRetained": true,
+      "authorCredit": "BCpl8s.ca photographic collection; individual photographer not identified on the gallery",
+      "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+      "license": "Source rights retained; no new redistribution licence asserted",
+      "changes": "Original file retained unchanged; separate crops and masks for targeted research"
+    },
+    {
+      "file": "docs/research/bc-decal-residuals/lettering/sources/2004-40724602.jpg",
+      "url": "https://www.bcpl8s.ca/images/Decals/Passenger/2004-40724602.jpg",
+      "sha256": "b3470e12081281c0d733e39f7d12eea75973fcfa87fa1b33d0e005e87d3e0863",
+      "pixels": [
+        253,
+        75
+      ],
+      "retrievedOn": "2026-11-07",
+      "originalBytesRetained": true,
+      "authorCredit": "BCpl8s.ca photographic collection; individual photographer not identified on the gallery",
+      "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+      "license": "Source rights retained; no new redistribution licence asserted",
+      "changes": "Original file retained unchanged; separate crops and masks for targeted research"
+    },
+    {
+      "file": "docs/research/bc-decal-residuals/lettering/sources/2004-41568474.jpg",
+      "url": "https://www.bcpl8s.ca/images/Decals/Passenger/2004-41568474.jpg",
+      "sha256": "40d0c8b87f3d585095a715d518ef88d1ebf023c36d925f68f73eb2ee1c13d305",
+      "pixels": [
+        257,
+        75
+      ],
+      "retrievedOn": "2026-11-07",
+      "originalBytesRetained": true,
+      "authorCredit": "BCpl8s.ca photographic collection; individual photographer not identified on the gallery",
+      "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+      "license": "Source rights retained; no new redistribution licence asserted",
+      "changes": "Original file retained unchanged; separate crops and masks for targeted research",
+      "observedControl": "41598474",
+      "filenameControl": "41568474",
+      "controlUse": "Not rendered or scored; only04is compared"
+    },
+    {
+      "file": "docs/research/bc-decal-residuals/lettering/sources/2004-48794381.jpg",
+      "url": "https://www.bcpl8s.ca/images/Decals/Passenger/2004-48794381.jpg",
+      "sha256": "d15a1a440f9029c869f9596c52679b5b47ccec694373c4193e96a3b5847ccc34",
+      "pixels": [
+        254,
+        75
+      ],
+      "retrievedOn": "2026-11-07",
+      "originalBytesRetained": true,
+      "authorCredit": "BCpl8s.ca photographic collection; individual photographer not identified on the gallery",
+      "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+      "license": "Source rights retained; no new redistribution licence asserted",
+      "changes": "Original file retained unchanged; separate crops and masks for targeted research"
+    },
+    {
+      "file": "docs/research/bc-decal-residuals/lettering/sources/2004-64276099.jpg",
+      "url": "https://www.bcpl8s.ca/images/Decals/Passenger/2004-64276099.jpg",
+      "sha256": "65aaf7712ab03a902417a2f094361a7bf846cc3864340b353b89288a37006aa8",
+      "pixels": [
+        254,
+        75
+      ],
+      "retrievedOn": "2026-11-07",
+      "originalBytesRetained": true,
+      "authorCredit": "BCpl8s.ca photographic collection; individual photographer not identified on the gallery",
+      "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+      "license": "Source rights retained; no new redistribution licence asserted",
+      "changes": "Original file retained unchanged; separate crops and masks for targeted research"
+    },
+    {
+      "file": "docs/research/bc-decal-residuals/lettering/sources/2004-65242308.jpg",
+      "url": "https://www.bcpl8s.ca/images/Decals/Passenger/2004-65242308.jpg",
+      "sha256": "a0c052a1cffc1406ca7fd70149552dc73f186afb260c8ee4a5f6d29fabc3845e",
+      "pixels": [
+        252,
+        75
+      ],
+      "retrievedOn": "2026-11-07",
+      "originalBytesRetained": true,
+      "authorCredit": "BCpl8s.ca photographic collection; individual photographer not identified on the gallery",
+      "sourcePage": "https://www.bcpl8s.ca/Decals-Gallery.html",
+      "license": "Source rights retained; no new redistribution licence asserted",
+      "changes": "Original file retained unchanged; separate crops and masks for targeted research"
+    }
+  ],
+  "photoGeometry": "All source images remain unrectified; width retained when normalized to painted height.",
+  "photoStatus": "Photographic evidence only; no independent ordinary-issuance authentication claimed.",
+  "sourceCounts": {
+    "comparisonRows": 14,
+    "distinctPhotographedSpecimensInComparisons": 13,
+    "additionalRetrievedContextOnly": 1
+  },
+  "nativeCandidateProvenance": "docs/research/decal-glyph-analysis/candidate-provenance.json"
+}

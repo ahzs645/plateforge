@@ -1,0 +1,675 @@
+{
+  "method": "Uniform frame-height and horizontal-centre registration; actual vector paint bounds; no x-only scaling; source and model widths retained. Province columns translate independently but share a centre. Barcode paint is measured excluding quiet zones.",
+  "specimens": [
+    {
+      "id": "2018",
+      "month": "JAN",
+      "control": "50278580",
+      "roles": [
+        {
+          "role": "month",
+          "sourcePaintedWidth": 72.9167,
+          "sourcePaintedHeight": 48.9583,
+          "before": {
+            "centreDeltaUnits": [
+              -3.2514,
+              2.3897
+            ],
+            "paintedWidth": 66.0408,
+            "paintedHeight": 48.0544
+          },
+          "after": {
+            "centreDeltaUnits": [
+              0.0006,
+              -0.0003
+            ],
+            "paintedWidth": 66.0408,
+            "paintedHeight": 48.0544
+          }
+        },
+        {
+          "role": "year",
+          "sourcePaintedWidth": 90.625,
+          "sourcePaintedHeight": 50.0,
+          "before": {
+            "centreDeltaUnits": [
+              10.95,
+              3.5
+            ],
+            "paintedWidth": 81.88,
+            "paintedHeight": 46
+          },
+          "after": {
+            "centreDeltaUnits": [
+              0.0,
+              0.0
+            ],
+            "paintedWidth": 89.0,
+            "paintedHeight": 50.0
+          }
+        },
+        {
+          "role": "serial",
+          "sourcePaintedWidth": 78.125,
+          "sourcePaintedHeight": 16.6667,
+          "before": {
+            "centreDeltaUnits": [
+              -7.0224,
+              2.1113
+            ],
+            "paintedWidth": 85.2371,
+            "paintedHeight": 17.2604
+          },
+          "after": {
+            "centreDeltaUnits": [
+              0.001,
+              -0.0002
+            ],
+            "paintedWidth": 82.304,
+            "paintedHeight": 16.6665
+          }
+        },
+        {
+          "role": "legend0",
+          "sourcePaintedWidth": 8.3333,
+          "sourcePaintedHeight": 35.4167,
+          "before": {
+            "centreDeltaUnits": [
+              -3.6575,
+              -2.5284
+            ],
+            "paintedWidth": 6.3107,
+            "paintedHeight": 36.6835
+          },
+          "after": {
+            "centreDeltaUnits": [
+              -0.0005,
+              -0.2214
+            ],
+            "paintedWidth": 6.3107,
+            "paintedHeight": 36.6835
+          }
+        },
+        {
+          "role": "legend1",
+          "sourcePaintedWidth": 8.3333,
+          "sourcePaintedHeight": 46.875,
+          "before": {
+            "centreDeltaUnits": [
+              -4.7021,
+              -2.086
+            ],
+            "paintedWidth": 5.9468,
+            "paintedHeight": 46.3095
+          },
+          "after": {
+            "centreDeltaUnits": [
+              -0.0001,
+              0.221
+            ],
+            "paintedWidth": 5.9468,
+            "paintedHeight": 46.3095
+          }
+        },
+        {
+          "role": "barcode",
+          "sourcePaintedWidth": 110.4167,
+          "sourcePaintedHeight": 20.8333,
+          "before": {
+            "centreDeltaUnits": [
+              -6.3291,
+              2.7917
+            ],
+            "paintedWidth": 108.286,
+            "paintedHeight": 16
+          },
+          "after": {
+            "centreDeltaUnits": [
+              -0.0006,
+              0.0002
+            ],
+            "paintedWidth": 110.417,
+            "paintedHeight": 20.833
+          }
+        }
+      ],
+      "limits": "Measured centre improvements are intended layout effects, not independent evidence of historical accuracy. Source aspect is unrectified. 2022 year retains a conservative right margin instead of matching the wider photograph centre exactly."
+    },
+    {
+      "id": "2019",
+      "month": "JAN",
+      "control": "10727925",
+      "roles": [
+        {
+          "role": "month",
+          "sourcePaintedWidth": 73.9583,
+          "sourcePaintedHeight": 46.875,
+          "before": {
+            "centreDeltaUnits": [
+              12.8944,
+              4.473
+            ],
+            "paintedWidth": 66.0408,
+            "paintedHeight": 48.0544
+          },
+          "after": {
+            "centreDeltaUnits": [
+              0.0005,
+              0.0
+            ],
+            "paintedWidth": 66.0408,
+            "paintedHeight": 48.0544
+          }
+        },
+        {
+          "role": "year",
+          "sourcePaintedWidth": 92.7083,
+          "sourcePaintedHeight": 47.9167,
+          "before": {
+            "centreDeltaUnits": [
+              4.7,
+              4.5417
+            ],
+            "paintedWidth": 81.88,
+            "paintedHeight": 46
+          },
+          "after": {
+            "centreDeltaUnits": [
+              -0.0003,
+              0.0002
+            ],
+            "paintedWidth": 92.7194,
+            "paintedHeight": 47.917
+          }
+        },
+        {
+          "role": "serial",
+          "sourcePaintedWidth": 92.7083,
+          "sourcePaintedHeight": 18.75,
+          "before": {
+            "centreDeltaUnits": [
+              3.7308,
+              1.0696
+            ],
+            "paintedWidth": 84.2323,
+            "paintedHeight": 17.2604
+          },
+          "after": {
+            "centreDeltaUnits": [
+              0.0002,
+              -0.0003
+            ],
+            "paintedWidth": 91.501,
+            "paintedHeight": 18.7499
+          }
+        },
+        {
+          "role": "legend0",
+          "sourcePaintedWidth": 6.25,
+          "sourcePaintedHeight": 32.2917,
+          "before": {
+            "centreDeltaUnits": [
+              3.883,
+              -0.9666
+            ],
+            "paintedWidth": 5.7848,
+            "paintedHeight": 33.6265
+          },
+          "after": {
+            "centreDeltaUnits": [
+              0.0006,
+              0.0384
+            ],
+            "paintedWidth": 5.7848,
+            "paintedHeight": 33.6265
+          }
+        },
+        {
+          "role": "legend1",
+          "sourcePaintedWidth": 7.2917,
+          "sourcePaintedHeight": 42.7083,
+          "before": {
+            "centreDeltaUnits": [
+              4.233,
+              -1.0441
+            ],
+            "paintedWidth": 5.7767,
+            "paintedHeight": 44.9845
+          },
+          "after": {
+            "centreDeltaUnits": [
+              0.001,
+              -0.0391
+            ],
+            "paintedWidth": 5.7767,
+            "paintedHeight": 44.9845
+          }
+        },
+        {
+          "role": "barcode",
+          "sourcePaintedWidth": 103.125,
+          "sourcePaintedHeight": 23.9583,
+          "before": {
+            "centreDeltaUnits": [
+              9.8168,
+              2.2708
+            ],
+            "paintedWidth": 108.286,
+            "paintedHeight": 16
+          },
+          "after": {
+            "centreDeltaUnits": [
+              0.0003,
+              -0.0002
+            ],
+            "paintedWidth": 103.125,
+            "paintedHeight": 23.958
+          }
+        }
+      ],
+      "limits": "Measured centre improvements are intended layout effects, not independent evidence of historical accuracy. Source aspect is unrectified. 2022 year retains a conservative right margin instead of matching the wider photograph centre exactly."
+    },
+    {
+      "id": "2020",
+      "month": "JAN",
+      "control": "00000000",
+      "roles": [
+        {
+          "role": "month",
+          "sourcePaintedWidth": 69.7917,
+          "sourcePaintedHeight": 45.8333,
+          "before": {
+            "centreDeltaUnits": [
+              7.6861,
+              4.9939
+            ],
+            "paintedWidth": 66.0408,
+            "paintedHeight": 48.0544
+          },
+          "after": {
+            "centreDeltaUnits": [
+              -0.0009,
+              -0.0001
+            ],
+            "paintedWidth": 66.0408,
+            "paintedHeight": 48.0544
+          }
+        },
+        {
+          "role": "year",
+          "sourcePaintedWidth": 94.7917,
+          "sourcePaintedHeight": 45.8333,
+          "before": {
+            "centreDeltaUnits": [
+              2.975,
+              4.5417
+            ],
+            "paintedWidth": 85.33,
+            "paintedHeight": 46
+          },
+          "after": {
+            "centreDeltaUnits": [
+              0.0002,
+              0.0002
+            ],
+            "paintedWidth": 96.4785,
+            "paintedHeight": 45.833
+          }
+        },
+        {
+          "role": "serial",
+          "sourcePaintedWidth": 93.75,
+          "sourcePaintedHeight": 18.75,
+          "before": {
+            "centreDeltaUnits": [
+              7.0877,
+              2.1113
+            ],
+            "paintedWidth": 85.1425,
+            "paintedHeight": 17.2604
+          },
+          "after": {
+            "centreDeltaUnits": [
+              0.0014,
+              0.0003
+            ],
+            "paintedWidth": 92.4898,
+            "paintedHeight": 18.7499
+          }
+        },
+        {
+          "role": "legend0",
+          "sourcePaintedWidth": 7.2917,
+          "sourcePaintedHeight": 31.25,
+          "before": {
+            "centreDeltaUnits": [
+              1.2789,
+              -0.4458
+            ],
+            "paintedWidth": 5.7848,
+            "paintedHeight": 33.6265
+          },
+          "after": {
+            "centreDeltaUnits": [
+              0.0001,
+              0.0392
+            ],
+            "paintedWidth": 5.7848,
+            "paintedHeight": 33.6265
+          }
+        },
+        {
+          "role": "legend1",
+          "sourcePaintedWidth": 7.2917,
+          "sourcePaintedHeight": 41.6667,
+          "before": {
+            "centreDeltaUnits": [
+              2.1497,
+              -0.5233
+            ],
+            "paintedWidth": 5.7767,
+            "paintedHeight": 44.9845
+          },
+          "after": {
+            "centreDeltaUnits": [
+              -0.0013,
+              -0.0383
+            ],
+            "paintedWidth": 5.7767,
+            "paintedHeight": 44.9845
+          }
+        },
+        {
+          "role": "barcode",
+          "sourcePaintedWidth": 97.9167,
+          "sourcePaintedHeight": 22.9167,
+          "before": {
+            "centreDeltaUnits": [
+              6.1709,
+              3.8333
+            ],
+            "paintedWidth": 108.286,
+            "paintedHeight": 16
+          },
+          "after": {
+            "centreDeltaUnits": [
+              -0.0001,
+              -0.0002
+            ],
+            "paintedWidth": 97.9161,
+            "paintedHeight": 22.917
+          }
+        }
+      ],
+      "limits": "Measured centre improvements are intended layout effects, not independent evidence of historical accuracy. Source aspect is unrectified. 2022 year retains a conservative right margin instead of matching the wider photograph centre exactly."
+    },
+    {
+      "id": "2021",
+      "month": "JUL",
+      "control": "36946964",
+      "roles": [
+        {
+          "role": "month",
+          "sourcePaintedWidth": 73.4694,
+          "sourcePaintedHeight": 44.898,
+          "before": {
+            "centreDeltaUnits": [
+              -0.5432,
+              3.6971
+            ],
+            "paintedWidth": 60.5516,
+            "paintedHeight": 48.0544
+          },
+          "after": {
+            "centreDeltaUnits": [
+              -0.0002,
+              0.0001
+            ],
+            "paintedWidth": 60.5516,
+            "paintedHeight": 48.0544
+          }
+        },
+        {
+          "role": "year",
+          "sourcePaintedWidth": 84.6939,
+          "sourcePaintedHeight": 44.898,
+          "before": {
+            "centreDeltaUnits": [
+              2.4919,
+              3.2449
+            ],
+            "paintedWidth": 78.89,
+            "paintedHeight": 46
+          },
+          "after": {
+            "centreDeltaUnits": [
+              0.0,
+              -0.0001
+            ],
+            "paintedWidth": 84.4082,
+            "paintedHeight": 44.898
+          }
+        },
+        {
+          "role": "serial",
+          "sourcePaintedWidth": 88.7755,
+          "sourcePaintedHeight": 18.3674,
+          "before": {
+            "centreDeltaUnits": [
+              1.9817,
+              1.7074
+            ],
+            "paintedWidth": 85.2608,
+            "paintedHeight": 17.2604
+          },
+          "after": {
+            "centreDeltaUnits": [
+              0.0011,
+              -0.0002
+            ],
+            "paintedWidth": 90.7275,
+            "paintedHeight": 18.3671
+          }
+        },
+        {
+          "role": "legend0",
+          "sourcePaintedWidth": 7.1428,
+          "sourcePaintedHeight": 30.6122,
+          "before": {
+            "centreDeltaUnits": [
+              -4.6735,
+              -1.7425
+            ],
+            "paintedWidth": 5.7848,
+            "paintedHeight": 33.6265
+          },
+          "after": {
+            "centreDeltaUnits": [
+              -0.0003,
+              0.2934
+            ],
+            "paintedWidth": 5.7848,
+            "paintedHeight": 33.6265
+          }
+        },
+        {
+          "role": "legend1",
+          "sourcePaintedWidth": 7.1429,
+          "sourcePaintedHeight": 41.8367,
+          "before": {
+            "centreDeltaUnits": [
+              -3.6327,
+              -2.3303
+            ],
+            "paintedWidth": 5.7767,
+            "paintedHeight": 44.9845
+          },
+          "after": {
+            "centreDeltaUnits": [
+              -0.0007,
+              -0.2943
+            ],
+            "paintedWidth": 5.7767,
+            "paintedHeight": 44.9845
+          }
+        },
+        {
+          "role": "barcode",
+          "sourcePaintedWidth": 98.9796,
+          "sourcePaintedHeight": 23.4694,
+          "before": {
+            "centreDeltaUnits": [
+              1.9511,
+              2.898
+            ],
+            "paintedWidth": 108.286,
+            "paintedHeight": 16
+          },
+          "after": {
+            "centreDeltaUnits": [
+              -0.0005,
+              -0.0005
+            ],
+            "paintedWidth": 98.9788,
+            "paintedHeight": 23.469
+          }
+        }
+      ],
+      "limits": "Measured centre improvements are intended layout effects, not independent evidence of historical accuracy. Source aspect is unrectified. 2022 year retains a conservative right margin instead of matching the wider photograph centre exactly."
+    },
+    {
+      "id": "2022",
+      "month": "MAR",
+      "control": "72919128",
+      "roles": [
+        {
+          "role": "month",
+          "sourcePaintedWidth": 76.5306,
+          "sourcePaintedHeight": 47.9592,
+          "before": {
+            "centreDeltaUnits": [
+              9.8215,
+              4.9595
+            ],
+            "paintedWidth": 73.7719,
+            "paintedHeight": 46.7728
+          },
+          "after": {
+            "centreDeltaUnits": [
+              0.0005,
+              -0.0005
+            ],
+            "paintedWidth": 73.7719,
+            "paintedHeight": 46.7728
+          }
+        },
+        {
+          "role": "year",
+          "sourcePaintedWidth": 96.9388,
+          "sourcePaintedHeight": 46.9388,
+          "before": {
+            "centreDeltaUnits": [
+              -2.2797,
+              5.2857
+            ],
+            "paintedWidth": 85.33,
+            "paintedHeight": 46
+          },
+          "after": {
+            "centreDeltaUnits": [
+              -4.0242,
+              0.0002
+            ],
+            "paintedWidth": 96.929,
+            "paintedHeight": 46.939
+          }
+        },
+        {
+          "role": "serial",
+          "sourcePaintedWidth": 91.8367,
+          "sourcePaintedHeight": 19.3877,
+          "before": {
+            "centreDeltaUnits": [
+              2.4567,
+              3.238
+            ],
+            "paintedWidth": 85.2844,
+            "paintedHeight": 17.2604
+          },
+          "after": {
+            "centreDeltaUnits": [
+              0.0008,
+              -0.0002
+            ],
+            "paintedWidth": 95.7945,
+            "paintedHeight": 19.3875
+          }
+        },
+        {
+          "role": "legend0",
+          "sourcePaintedWidth": 7.1429,
+          "sourcePaintedHeight": 31.6326,
+          "before": {
+            "centreDeltaUnits": [
+              -1.6123,
+              0.8085
+            ],
+            "paintedWidth": 5.7848,
+            "paintedHeight": 33.6265
+          },
+          "after": {
+            "centreDeltaUnits": [
+              0.0,
+              0.2935
+            ],
+            "paintedWidth": 5.7848,
+            "paintedHeight": 33.6265
+          }
+        },
+        {
+          "role": "legend1",
+          "sourcePaintedWidth": 7.1429,
+          "sourcePaintedHeight": 42.8571,
+          "before": {
+            "centreDeltaUnits": [
+              -0.5714,
+              0.2208
+            ],
+            "paintedWidth": 5.7767,
+            "paintedHeight": 44.9845
+          },
+          "after": {
+            "centreDeltaUnits": [
+              -0.0014,
+              -0.2942
+            ],
+            "paintedWidth": 5.7767,
+            "paintedHeight": 44.9845
+          }
+        },
+        {
+          "role": "barcode",
+          "sourcePaintedWidth": 102.0408,
+          "sourcePaintedHeight": 23.4694,
+          "before": {
+            "centreDeltaUnits": [
+              6.543,
+              3.9184
+            ],
+            "paintedWidth": 108.286,
+            "paintedHeight": 16
+          },
+          "after": {
+            "centreDeltaUnits": [
+              0.0004,
+              -0.0001
+            ],
+            "paintedWidth": 102.04,
+            "paintedHeight": 23.469
+          }
+        }
+      ],
+      "limits": "Measured centre improvements are intended layout effects, not independent evidence of historical accuracy. Source aspect is unrectified. 2022 year retains a conservative right margin instead of matching the wider photograph centre exactly."
+    }
+  ]
+}

@@ -1,0 +1,820 @@
+{
+  "method": "Production engine paths rasterized by Inkscape at 400 painted pixels; connected ink and open counters checked at three alpha thresholds. This validates topology, not historical contour accuracy.",
+  "inputsSha256": "e4a2b63dd1b6365f96855fdac11f06ec1a585f7734f85fba2086ba97e1fd8fdc",
+  "glyphs": 29,
+  "failures": [],
+  "rows": [
+    {
+      "profile": "province-wide-1981-reconstruction",
+      "character": "A",
+      "expectedCounters": 1,
+      "fit": "natural",
+      "svgSha256": "39b707f7103093c46801f5d984396128e2f44d501158341ab06ecfdf188c1b68",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "province-wide-1981-reconstruction",
+      "character": "B",
+      "expectedCounters": 2,
+      "fit": "natural",
+      "svgSha256": "f174492b7da0b1dcd5bf72dcdc0020e039d749ba71ecc9afebfa91d29e2c509f",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 2,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 2,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 2,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "province-wide-1981-reconstruction",
+      "character": "C",
+      "expectedCounters": 0,
+      "fit": "natural",
+      "svgSha256": "e082631c7b9cb51acb38da5d8789e2f1a22f68104769c6f780e7d4de16c4c5ff",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "province-wide-1981-reconstruction",
+      "character": "H",
+      "expectedCounters": 0,
+      "fit": "natural",
+      "svgSha256": "b638a36f53bf0b43ce72f69a2ef5f9dbedadf6bb37e4e02cbff898ec35bc5bce",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "province-wide-1981-reconstruction",
+      "character": "I",
+      "expectedCounters": 0,
+      "fit": "natural",
+      "svgSha256": "35b90eed2932257279a4e5b6ff9f606a4c8da2a6ca9fce507d1f221775134cad",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "province-wide-1981-reconstruction",
+      "character": "L",
+      "expectedCounters": 0,
+      "fit": "natural",
+      "svgSha256": "93ee06fc685f3e9e40229e379ae116495d5f9db82053999ca2691b71771e6f7f",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "province-wide-1981-reconstruction",
+      "character": "M",
+      "expectedCounters": 0,
+      "fit": "natural",
+      "svgSha256": "614bda89abfd76bbfb173b663569c905a8dc2034758554f577420ee370133e0f",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "province-wide-1981-reconstruction",
+      "character": "O",
+      "expectedCounters": 1,
+      "fit": "natural",
+      "svgSha256": "c675914c5b0e27c957265f9a573cd1ea9cb7744f975faa5f9605bae0166a4df6",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "province-wide-1981-reconstruction",
+      "character": "R",
+      "expectedCounters": 1,
+      "fit": "natural",
+      "svgSha256": "401dd95cd050db562a89a24e5ed85965b56fb5000c39bcacc67da597df950854",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "province-wide-1981-reconstruction",
+      "character": "S",
+      "expectedCounters": 0,
+      "fit": "natural",
+      "svgSha256": "60e2635981400fe97baf5c475d2e5a07a6f80d50be005b25c3128438a59550ff",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "province-wide-1981-reconstruction",
+      "character": "T",
+      "expectedCounters": 0,
+      "fit": "natural",
+      "svgSha256": "c7e9742160ef968888e30db3dc595c6a5ecf17aa1c51ed5c4c911a9d22ba3e3b",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "province-wide-1981-reconstruction",
+      "character": "U",
+      "expectedCounters": 0,
+      "fit": "natural",
+      "svgSha256": "c38ee3f5c3988888ecf2686594b0d261c2e392b3d78a22e1f597e0b7714b5b1c",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "province-tall-2010-reconstruction",
+      "character": "A",
+      "expectedCounters": 1,
+      "fit": "natural",
+      "svgSha256": "ea3968f62c9f31c62eb444a87de24a06bf27cac0e8d1027c72c06ee84b90a1b9",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "province-tall-2010-reconstruction",
+      "character": "B",
+      "expectedCounters": 2,
+      "fit": "natural",
+      "svgSha256": "91e44c8b7702e9139f42c05bba739bc2b2d28733fab77ba0bd1fa9591594f8f8",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 2,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 2,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 2,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "province-tall-2010-reconstruction",
+      "character": "C",
+      "expectedCounters": 0,
+      "fit": "natural",
+      "svgSha256": "06ce53bcce9cdc9e51faf405d683744ec31ad3b881f27ae7b510eb86439ee924",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "province-tall-2010-reconstruction",
+      "character": "H",
+      "expectedCounters": 0,
+      "fit": "natural",
+      "svgSha256": "897cc23c5f604cb363fe3ddf447215242c271d95b5abf36e91c0099a2bce8346",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "province-tall-2010-reconstruction",
+      "character": "I",
+      "expectedCounters": 0,
+      "fit": "natural",
+      "svgSha256": "b7a2c3a0289124a905b24cd3cd74e052bf42b1467bb3171e62e7175d9fbd50b7",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "province-tall-2010-reconstruction",
+      "character": "L",
+      "expectedCounters": 0,
+      "fit": "natural",
+      "svgSha256": "96efc30fb15dd9300813a9ec49187a5b1227b1ec177c8156dd98b71aca975def",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "province-tall-2010-reconstruction",
+      "character": "M",
+      "expectedCounters": 0,
+      "fit": "natural",
+      "svgSha256": "41f1c6da8eb3301493e45025bdda8b80ec4410213d693f1cfcbd40290656a8bd",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "province-tall-2010-reconstruction",
+      "character": "O",
+      "expectedCounters": 1,
+      "fit": "natural",
+      "svgSha256": "52d5b187252baa15e12d6ea8468e58d012cb44d53496b58d2c97b4a478d228a9",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "province-tall-2010-reconstruction",
+      "character": "R",
+      "expectedCounters": 1,
+      "fit": "natural",
+      "svgSha256": "ad272a1338840f7c1be8a16f943e13f7035e14442f2238117cfbeed871b50c91",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "province-tall-2010-reconstruction",
+      "character": "S",
+      "expectedCounters": 0,
+      "fit": "natural",
+      "svgSha256": "dc8afcc1d3b970150963e5951c748d5115d4dcad0f7557a8dc861e9ce0081912",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "province-tall-2010-reconstruction",
+      "character": "T",
+      "expectedCounters": 0,
+      "fit": "natural",
+      "svgSha256": "d380ef228dd352c2ff4a14c3439a30ce486ca6f25592922033180e107783e88e",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "province-tall-2010-reconstruction",
+      "character": "U",
+      "expectedCounters": 0,
+      "fit": "natural",
+      "svgSha256": "c4c9ffe05db49037def95f222b9affe9dafe1840d49d67fc2ed2884bb1ffca56",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "modern-late-year-reconstruction",
+      "character": "0",
+      "expectedCounters": 1,
+      "fit": "natural",
+      "svgSha256": "fbe098508f91a68ccf8b083429f866bd8c95f39eac607ba2c50e186f7d5f4f11",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "modern-late-year-reconstruction",
+      "character": "1",
+      "expectedCounters": 0,
+      "fit": "natural",
+      "svgSha256": "c14cf91241ff4c377309be0385dcbe2bc7b6fe3a4239cb07a861e92a3d8ac658",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "modern-late-year-reconstruction",
+      "character": "2",
+      "expectedCounters": 0,
+      "fit": "natural",
+      "svgSha256": "f2e55664ebbee1704d78f194b2a5c4260ed3ab18ba89ecc0c95f1432d6f814b7",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "modern-late-year-reconstruction",
+      "character": "3",
+      "expectedCounters": 0,
+      "fit": "natural",
+      "svgSha256": "5c0890fe78f864ed37bd8d71f8784ee9b8171cc5c0df6009022c423d2ebe5673",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 0,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "profile": "modern-late-year-reconstruction",
+      "character": "9",
+      "expectedCounters": 1,
+      "fit": "natural",
+      "svgSha256": "01ecab242b0333a9290fa952f8453c9750a7a16580f578b0d7f22ee3528e76e6",
+      "samples": [
+        {
+          "threshold": 64,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        },
+        {
+          "threshold": 128,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        },
+        {
+          "threshold": 192,
+          "paintedComponents": 1,
+          "counters": 1,
+          "passed": true
+        }
+      ],
+      "passed": true
+    }
+  ]
+}
