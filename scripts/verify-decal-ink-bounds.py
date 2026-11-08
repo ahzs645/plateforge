@@ -19,9 +19,15 @@ def inspect_fixture(fixture, directory):
     view_box = [float(value) for value in document.attrib['viewBox'].split()]
     width, height = view_box[2:]
     elements = []
+    control_panels = []
     reasons = []
     for element in document.iter():
         role = element.get('data-role')
+        if role == 'decal-control-panel':
+            # Panel geometry is an intended container for the control, not a
+            # peer text run for the collision check below.
+            control_panels.append({key: float(element.get(key, '0'))
+                                   for key in ('x', 'y', 'width', 'height')})
         if 'data-die' not in element.attrib and role != 'decal-barcode':
             continue
         identifier = f"audit-run-{len(elements)}"
@@ -61,6 +67,18 @@ def inspect_fixture(fixture, directory):
             if dx > .6 and dy > .6:
                 reasons.append({'type': 'painted-box-overlap', 'first': first['text'],
                                 'second': second['text'], 'width': round(dx, 4), 'height': round(dy, 4)})
+    if fixture['id'] in ('1971', '1974', '1975', '1976', '1980'):
+        controls = [row for row in elements if row['role'] == 'decal-serial' and 'x' in row]
+        if len(control_panels) != 1 or len(controls) != 1:
+            reasons.append({'type': 'control-panel-missing'})
+        else:
+            panel, control = control_panels[0], controls[0]
+            clearances = [control['x'] - panel['x'], control['y'] - panel['y'],
+                          panel['x'] + panel['width'] - control['right'],
+                          panel['y'] + panel['height'] - control['bottom']]
+            control['panelClearances'] = clearances
+            if min(clearances) < .4:
+                reasons.append({'type': 'control-outside-panel', 'clearances': clearances})
     for row in elements:
         if row['role'] != 'decal-month':
             continue

@@ -7,6 +7,7 @@ import {createRequire} from 'node:module';
 import {execFileSync} from 'node:child_process';
 import {build} from 'vite';
 import react from '@vitejs/plugin-react';
+import {decalApplicationCases} from './decal-application-cases.mjs';
 const require=createRequire(path.resolve(process.env.TYPOGRAPHY_BROWSER_DEPS??'package.json'));
 const {chromium,firefox,webkit}=require('playwright');
 const {PNG}=require('pngjs');
@@ -52,18 +53,10 @@ try{
  const extra=formats.filter(f=>['ca-bc','ca-nu','ca-ab','ca-nt','us-ca','eu-de','eu-gb','kr','jp','cn'].includes(f.region)&&!f.format.startsWith('stand-in-')).filter(f=>/^(standard|reflective|2020|electric|green|1951|1930|1964|1978|1979-first|1985|2001-flag|1985-flag|moraine-lake|spectacular)$/.test(f.format));
  const corrections=JSON.parse(await readFile('docs/research/bc-visual-review/cases.json','utf8')).filter(row=>['apec1997','apec149','apec134','carrier2005','bicycle-prince-george-1953','bicycle-prince-george-1959','collector-passenger','collector-multi','collector-motorcycle'].includes(row.id)).map(row=>({region:'ca-bc',format:row.format,parts:row.parts,specimen:row.id}));
  const decalReferences=JSON.parse(await readFile('docs/research/decal-online-analysis/reference-manifest.json','utf8'));
- const correctedDecals=new Set(['1972','1983','1984','1986','1986-apr','1986-sep','1986-oct','1986-nov',
-   '1998-type-ii','1999','2000','2004','2008','2011','2013','2014','2015','2017','2017-jul','2017-nov','2023']);
- const dates=decalReferences.filter(row=>correctedDecals.has(row.id)).map(row=>{
-   const hosts=formats.filter(format=>format.region==='ca-bc'&&format.decalIds.includes(row.catalogueId));
-   const host=hosts.find(format=>format.format==='2001-flag')??hosts.find(format=>format.format==='1985-flag')??hosts[0];
-   assert.ok(host,'No application format offers decal '+row.catalogueId);
-   return {region:'ca-bc',format:host.format,
-     parts:{decal:row.catalogueId,decalMonth:row.month??'JAN',decalSerial:row.control??''},
-     expectedDecal:{control:row.control,month:row.month},specimen:'renewal-'+row.id};
- });
- dates.push({region:'ca-bc',format:dates.find(row=>row.parts.decal==='2023').format,parts:{decal:'2023',decalMonth:'MAY',decalSerial:'00001234'},
-   expectedDecal:{control:'00001234',month:'MAY'},specimen:'renewal-leading-zero-control'});
+ // The residual pass changes multiple older and later families. Exercise every
+ // pinned specimen through an actually offered application format, including
+ // the retained references and their exact leading-zero control strings.
+ const dates=decalApplicationCases(decalReferences,formats);
  const selected=[...new Map([...representatives,...extra].map(f=>[f.region+'/'+f.format,f])).values(),...corrections,...dates];
  const cases=requested.length?selected.filter(f=>requested.includes(f.specimen)):selected;
  assert.ok(cases.length,'No selected export specimens');
@@ -108,7 +101,9 @@ try{
    const review=await context.newPage(),errors=[];
    review.on('pageerror',error=>errors.push(String(error)));
    try{
-     await review.goto('http://127.0.0.1:4173/plateforge/bc-decal-corrections/index.html');
+     await review.goto('http://127.0.0.1:4173/plateforge/bc-decal-residuals/index.html');
+     assert.equal(await review.locator('#data').evaluate(element=>JSON.parse(element.textContent).provenance.baseline.commit),
+       '24689246670c25f91e0d1676a0647f053dbca68e','Residual viewer must compare with the complete first-pass baseline');
      assert.equal(await review.locator('#specimen option').count(),68);
      await review.locator('#specimen').selectOption('1999');
      assert.match(await review.locator('#caseTitle').textContent(),/MAY.*54174570/);

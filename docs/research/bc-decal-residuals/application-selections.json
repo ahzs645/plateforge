@@ -1,0 +1,2867 @@
+{
+  "schema": "plateforge.decal-application-preflight/v1",
+  "status": "passed",
+  "method": "Production offered fields, generatePlate/makePlate, format.validate, decalArt and actual vector glyph sequences. No browser or raster-export execution.",
+  "referenceManifestSha256": "1c7809736f1c5c322d65ccabf3e497f5736cbc06f97ab6e8f74bfd2b2f6b456a",
+  "referenceCases": 68,
+  "leadingZeroCases": 1,
+  "cases": [
+    {
+      "region": "ca-bc",
+      "format": "1970-1972",
+      "parts": {
+        "decal": "1970",
+        "decalMonth": "JAN",
+        "decalSerial": ""
+      },
+      "expectedDecal": {
+        "control": null,
+        "month": null
+      },
+      "specimen": "renewal-1970",
+      "generatedPlateSerial": "HBF-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-year",
+          "text": "70",
+          "profile": "bc-decal-1970"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-russoone-400"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-russoone-400"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1970-1972",
+      "parts": {
+        "decal": "1971",
+        "decalMonth": "JAN",
+        "decalSerial": "553645"
+      },
+      "expectedDecal": {
+        "control": "553645",
+        "month": null
+      },
+      "specimen": "renewal-1971",
+      "generatedPlateSerial": "HBF-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-year",
+          "text": "71",
+          "profile": "bc-decal-print-russoone-400"
+        },
+        {
+          "role": "decal-serial",
+          "text": "553645",
+          "profile": "bc-decal-print-control-bold"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1970-1972",
+      "parts": {
+        "decal": "1972",
+        "decalMonth": "JAN",
+        "decalSerial": "926403"
+      },
+      "expectedDecal": {
+        "control": "926403",
+        "month": null
+      },
+      "specimen": "renewal-1972",
+      "generatedPlateSerial": "HBF-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-year",
+          "text": "72",
+          "profile": "bc-decal-print-annual-1972-reconstruction"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "926403",
+          "profile": "bc-decal-print-control-bold"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1970-1972",
+      "parts": {
+        "decal": "1974",
+        "decalMonth": "JAN",
+        "decalSerial": "769712"
+      },
+      "expectedDecal": {
+        "control": "769712",
+        "month": null
+      },
+      "specimen": "renewal-1974",
+      "generatedPlateSerial": "HBF-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-archivo-900-wdth100"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-archivo-900-wdth100"
+        },
+        {
+          "role": "decal-year",
+          "text": "7",
+          "profile": "bc-decal-print-archivo-900-wdth75"
+        },
+        {
+          "role": "decal-year",
+          "text": "4",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "769712",
+          "profile": "bc-decal-print-control-bold"
+        },
+        {
+          "role": "decal-class",
+          "text": "PASSENGER",
+          "profile": "bc-decal-print-archivo-900-wdth100"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1970-1972",
+      "parts": {
+        "decal": "1975",
+        "decalMonth": "JAN",
+        "decalSerial": "4469530"
+      },
+      "expectedDecal": {
+        "control": "4469530",
+        "month": null
+      },
+      "specimen": "renewal-1975",
+      "generatedPlateSerial": "HBF-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-year",
+          "text": "75",
+          "profile": "bc-decal-print-archivo-900-wdth75"
+        },
+        {
+          "role": "decal-serial",
+          "text": "4469530",
+          "profile": "bc-decal-print-control-bold"
+        },
+        {
+          "role": "decal-class",
+          "text": "PASS. COMM.",
+          "profile": "bc-decal-print-normal"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1970-1972",
+      "parts": {
+        "decal": "1976",
+        "decalMonth": "JAN",
+        "decalSerial": "1007289"
+      },
+      "expectedDecal": {
+        "control": "1007289",
+        "month": null
+      },
+      "specimen": "renewal-1976",
+      "generatedPlateSerial": "HBF-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-regular"
+        },
+        {
+          "role": "decal-year",
+          "text": "76",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-class",
+          "text": "PASS. COMM.",
+          "profile": "bc-decal-print-regular"
+        },
+        {
+          "role": "decal-serial",
+          "text": "1007289",
+          "profile": "bc-decal-print-control-bold"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1970-1972",
+      "parts": {
+        "decal": "1977",
+        "decalMonth": "JAN",
+        "decalSerial": "7006989"
+      },
+      "expectedDecal": {
+        "control": "7006989",
+        "month": null
+      },
+      "specimen": "renewal-1977",
+      "generatedPlateSerial": "HBF-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-class",
+          "text": "B",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-class",
+          "text": "C",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-year",
+          "text": "77",
+          "profile": "bc-decal-print-archivo-900-wdth100"
+        },
+        {
+          "role": "decal-class",
+          "text": "PASS. COMM.",
+          "profile": "bc-decal-print-regular"
+        },
+        {
+          "role": "decal-serial",
+          "text": "7006989",
+          "profile": "bc-decal-print-control-bold"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1970-1972",
+      "parts": {
+        "decal": "1978",
+        "decalMonth": "JAN",
+        "decalSerial": "0718662"
+      },
+      "expectedDecal": {
+        "control": "0718662",
+        "month": null
+      },
+      "specimen": "renewal-1978",
+      "generatedPlateSerial": "HBF-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-year",
+          "text": "78",
+          "profile": "bc-decal-print-archivonarrow-700"
+        },
+        {
+          "role": "decal-class",
+          "text": "B",
+          "profile": "bc-decal-print-orbitron-900"
+        },
+        {
+          "role": "decal-class",
+          "text": "C",
+          "profile": "bc-decal-print-orbitron-900"
+        },
+        {
+          "role": "decal-class",
+          "text": "P",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-class",
+          "text": "A",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-class",
+          "text": "S",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-class",
+          "text": "S",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-class",
+          "text": "C",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-class",
+          "text": "O",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-class",
+          "text": "M",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-class",
+          "text": "M",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "0718662",
+          "profile": "bc-decal-print-control"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1979-first",
+      "parts": {
+        "decal": "1980",
+        "decalMonth": "MAR",
+        "decalSerial": "43052284"
+      },
+      "expectedDecal": {
+        "control": "43052284",
+        "month": "MAR"
+      },
+      "specimen": "renewal-1980",
+      "generatedPlateSerial": "BKJ-488",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-legend",
+          "text": "BRITISH COLUMBIA",
+          "profile": "bc-decal-print-regular"
+        },
+        {
+          "role": "decal-month",
+          "text": "MAR",
+          "profile": "bc-decal-print-archivo-900-wdth100"
+        },
+        {
+          "role": "decal-year",
+          "text": "80",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "43052284",
+          "profile": "bc-decal-print-control-bold"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1979-first",
+      "parts": {
+        "decal": "1981",
+        "decalMonth": "JUN",
+        "decalSerial": "59031991"
+      },
+      "expectedDecal": {
+        "control": "59031991",
+        "month": "JUN"
+      },
+      "specimen": "renewal-1981",
+      "generatedPlateSerial": "BKJ-488",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "JUN",
+          "profile": "bc-decal-print-heavy-month"
+        },
+        {
+          "role": "decal-year",
+          "text": "81",
+          "profile": "bc-decal-print-heavy-year"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-province-wide-1981-reconstruction"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-province-wide-1981-reconstruction"
+        },
+        {
+          "role": "decal-serial",
+          "text": "59031991",
+          "profile": "bc-decal-print-control-bold"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1979-first",
+      "parts": {
+        "decal": "1982",
+        "decalMonth": "JAN",
+        "decalSerial": "66134375"
+      },
+      "expectedDecal": {
+        "control": "66134375",
+        "month": "JAN"
+      },
+      "specimen": "renewal-1982",
+      "generatedPlateSerial": "BKJ-488",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "JAN",
+          "profile": "bc-decal-print-heavy-month"
+        },
+        {
+          "role": "decal-year",
+          "text": "82",
+          "profile": "bc-decal-print-heavy-year"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-province-wide-1981-reconstruction"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-province-wide-1981-reconstruction"
+        },
+        {
+          "role": "decal-serial",
+          "text": "66134375",
+          "profile": "bc-decal-print-control"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1979-first",
+      "parts": {
+        "decal": "1983",
+        "decalMonth": "JUN",
+        "decalSerial": "85138416"
+      },
+      "expectedDecal": {
+        "control": "85138416",
+        "month": "JUN"
+      },
+      "specimen": "renewal-1983",
+      "generatedPlateSerial": "BKJ-488",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "JUN",
+          "profile": "bc-decal-print-panel-1983-jun-reconstruction"
+        },
+        {
+          "role": "decal-year",
+          "text": "83",
+          "profile": "bc-decal-print-heavy-year-wide"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-archivo-900-wdth100"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-archivo-900-wdth100"
+        },
+        {
+          "role": "decal-serial",
+          "text": "85138416",
+          "profile": "bc-decal-print-control"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1979-first",
+      "parts": {
+        "decal": "1984",
+        "decalMonth": "MAY",
+        "decalSerial": "42144483"
+      },
+      "expectedDecal": {
+        "control": "42144483",
+        "month": "MAY"
+      },
+      "specimen": "renewal-1984",
+      "generatedPlateSerial": "BKJ-488",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-month",
+          "text": "MAY",
+          "profile": "bc-decal-print-heavy-month-wide"
+        },
+        {
+          "role": "decal-year",
+          "text": "84",
+          "profile": "bc-decal-print-heavy-year-wide"
+        },
+        {
+          "role": "decal-serial",
+          "text": "42144483",
+          "profile": "bc-decal-print-control"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1985",
+        "decalMonth": "JUL",
+        "decalSerial": "62333627"
+      },
+      "expectedDecal": {
+        "control": "62333627",
+        "month": "JUL"
+      },
+      "specimen": "renewal-1985",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "JUL",
+          "profile": "bc-decal-print-anton-400"
+        },
+        {
+          "role": "decal-year",
+          "text": "85",
+          "profile": "bc-decal-print-heavy-year"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH COLUMBIA",
+          "profile": "bc-decal-print-archivo-900-wdth75"
+        },
+        {
+          "role": "decal-serial",
+          "text": "62333627",
+          "profile": "bc-decal-print-control"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1986",
+        "decalMonth": "MAR",
+        "decalSerial": "12137790"
+      },
+      "expectedDecal": {
+        "control": "12137790",
+        "month": "MAR"
+      },
+      "specimen": "renewal-1986",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-legend",
+          "text": "BRITISH COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-month",
+          "text": "MAR",
+          "profile": "bc-decal-print-1986-rounded-corrected"
+        },
+        {
+          "role": "decal-serial",
+          "text": "12137790",
+          "profile": "bc-decal-print-control"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1987",
+        "decalMonth": "FEB",
+        "decalSerial": "22687871"
+      },
+      "expectedDecal": {
+        "control": "22687871",
+        "month": "FEB"
+      },
+      "specimen": "renewal-1987",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "FEB",
+          "profile": "bc-decal-print-oswald-600"
+        },
+        {
+          "role": "decal-year",
+          "text": "87",
+          "profile": "bc-decal-print-heavy-year"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-archivo-900-wdth75"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-archivo-900-wdth75"
+        },
+        {
+          "role": "decal-serial",
+          "text": "22687871",
+          "profile": "bc-decal-print-control"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1988",
+        "decalMonth": "DEC",
+        "decalSerial": "21533872"
+      },
+      "expectedDecal": {
+        "control": "21533872",
+        "month": "DEC"
+      },
+      "specimen": "renewal-1988",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "DEC",
+          "profile": "bc-decal-print-heavy-month-wide"
+        },
+        {
+          "role": "decal-year",
+          "text": "88",
+          "profile": "bc-decal-print-heavy-year-wide"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "21533872",
+          "profile": "bc-decal-print-control"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1989",
+        "decalMonth": "APR",
+        "decalSerial": "33187934"
+      },
+      "expectedDecal": {
+        "control": "33187934",
+        "month": "APR"
+      },
+      "specimen": "renewal-1989",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "APR",
+          "profile": "bc-decal-print-heavy-month-wide"
+        },
+        {
+          "role": "decal-year",
+          "text": "89",
+          "profile": "bc-decal-print-heavy-year-wide"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "33187934",
+          "profile": "bc-decal-print-normal"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1990",
+        "decalMonth": "JAN",
+        "decalSerial": "30863010"
+      },
+      "expectedDecal": {
+        "control": "30863010",
+        "month": "JAN"
+      },
+      "specimen": "renewal-1990",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "JAN",
+          "profile": "bc-decal-print-heavy-month-wide"
+        },
+        {
+          "role": "decal-year",
+          "text": "90",
+          "profile": "bc-decal-print-heavy-year-wide"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "30863010",
+          "profile": "bc-decal-print-normal"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1991",
+        "decalMonth": "JUN",
+        "decalSerial": "55232623"
+      },
+      "expectedDecal": {
+        "control": "55232623",
+        "month": "JUN"
+      },
+      "specimen": "renewal-1991",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "JUN",
+          "profile": "bc-decal-print-heavy-year-wide"
+        },
+        {
+          "role": "decal-year",
+          "text": "91",
+          "profile": "bc-decal-print-heavy-year-wide"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "55232623",
+          "profile": "bc-decal-print-normal"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1992",
+        "decalMonth": "OCT",
+        "decalSerial": "59693121"
+      },
+      "expectedDecal": {
+        "control": "59693121",
+        "month": "OCT"
+      },
+      "specimen": "renewal-1992",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "OCT",
+          "profile": "bc-decal-print-anton-400"
+        },
+        {
+          "role": "decal-year",
+          "text": "92",
+          "profile": "bc-decal-print-heavy-year-wide"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "59693121",
+          "profile": "bc-decal-print-normal"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1993",
+        "decalMonth": "OCT",
+        "decalSerial": "79096980"
+      },
+      "expectedDecal": {
+        "control": "79096980",
+        "month": "OCT"
+      },
+      "specimen": "renewal-1993",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "OCT",
+          "profile": "bc-decal-print-heavy-month-wide"
+        },
+        {
+          "role": "decal-year",
+          "text": "93",
+          "profile": "bc-decal-print-heavy-year-wide"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "79096980",
+          "profile": "bc-decal-print-normal"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1994",
+        "decalMonth": "OCT",
+        "decalSerial": "79533496"
+      },
+      "expectedDecal": {
+        "control": "79533496",
+        "month": "OCT"
+      },
+      "specimen": "renewal-1994",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "OCT",
+          "profile": "bc-decal-print-heavy-month-wide"
+        },
+        {
+          "role": "decal-year",
+          "text": "94",
+          "profile": "bc-decal-print-heavy-year-wide"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "79533496",
+          "profile": "bc-decal-print-normal"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1995",
+        "decalMonth": "NOV",
+        "decalSerial": "82287425"
+      },
+      "expectedDecal": {
+        "control": "82287425",
+        "month": "NOV"
+      },
+      "specimen": "renewal-1995",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "NOV",
+          "profile": "bc-decal-print-heavy-month-wide"
+        },
+        {
+          "role": "decal-year",
+          "text": "95",
+          "profile": "bc-decal-print-heavy-year-wide"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "82287425",
+          "profile": "bc-decal-print-normal"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1996",
+        "decalMonth": "MAR",
+        "decalSerial": "22710492"
+      },
+      "expectedDecal": {
+        "control": "22710492",
+        "month": "MAR"
+      },
+      "specimen": "renewal-1996",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "MAR",
+          "profile": "bc-decal-print-anton-400"
+        },
+        {
+          "role": "decal-year",
+          "text": "96",
+          "profile": "bc-decal-print-heavy-year-wide"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "22710492",
+          "profile": "bc-decal-print-normal"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1996-pink",
+        "decalMonth": "NOV",
+        "decalSerial": "82903198"
+      },
+      "expectedDecal": {
+        "control": "82903198",
+        "month": "NOV"
+      },
+      "specimen": "renewal-1996-pink",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "NOV",
+          "profile": "bc-decal-print-heavy-month-wide"
+        },
+        {
+          "role": "decal-year",
+          "text": "96",
+          "profile": "bc-decal-print-heavy-year-wide"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "82903198",
+          "profile": "bc-decal-print-normal"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1997",
+        "decalMonth": "NOV",
+        "decalSerial": "84261541"
+      },
+      "expectedDecal": {
+        "control": "84261541",
+        "month": "NOV"
+      },
+      "specimen": "renewal-1997",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "NOV",
+          "profile": "bc-decal-print-heavy-year-wide"
+        },
+        {
+          "role": "decal-year",
+          "text": "97",
+          "profile": "bc-decal-print-heavy-year-wide"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "84261541",
+          "profile": "bc-decal-print-normal"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1998",
+        "decalMonth": "AUG",
+        "decalSerial": "37685128"
+      },
+      "expectedDecal": {
+        "control": "37685128",
+        "month": "AUG"
+      },
+      "specimen": "renewal-1998",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "AUG",
+          "profile": "bc-decal-print-heavy-month-wide"
+        },
+        {
+          "role": "decal-year",
+          "text": "98",
+          "profile": "bc-decal-print-heavy-year-wide"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "37685128",
+          "profile": "bc-decal-print-normal"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1998-type-ii",
+        "decalMonth": "MAY",
+        "decalSerial": "34838894"
+      },
+      "expectedDecal": {
+        "control": "34838894",
+        "month": "MAY"
+      },
+      "specimen": "renewal-1998-type-ii",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "MAY",
+          "profile": "bc-decal-print-bordered-may-reconstruction"
+        },
+        {
+          "role": "decal-year",
+          "text": "98",
+          "profile": "bc-decal-print-heavy-year-wide"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "34838894",
+          "profile": "bc-decal-print-control"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1999",
+        "decalMonth": "MAY",
+        "decalSerial": "54174570"
+      },
+      "expectedDecal": {
+        "control": "54174570",
+        "month": "MAY"
+      },
+      "specimen": "renewal-1999",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "MAY",
+          "profile": "bc-decal-print-thick-1999-may-reconstruction"
+        },
+        {
+          "role": "decal-year",
+          "text": "99",
+          "profile": "bc-decal-print-heavy-year-wide"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "54174570",
+          "profile": "bc-decal-print-control"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1999-white",
+        "decalMonth": "OCT",
+        "decalSerial": "59145746"
+      },
+      "expectedDecal": {
+        "control": "59145746",
+        "month": "OCT"
+      },
+      "specimen": "renewal-1999-white",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "OCT",
+          "profile": "bc-decal-print-heavy-month"
+        },
+        {
+          "role": "decal-year",
+          "text": "99",
+          "profile": "bc-decal-print-heavy-year-wide"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "59145746",
+          "profile": "bc-decal-print-control-bold"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "2000",
+        "decalMonth": "APR",
+        "decalSerial": "53583708"
+      },
+      "expectedDecal": {
+        "control": "53583708",
+        "month": "APR"
+      },
+      "specimen": "renewal-2000",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "APR",
+          "profile": "bc-decal-print-heavy-month"
+        },
+        {
+          "role": "decal-year",
+          "text": "00",
+          "profile": "bc-decal-print-heavy-year-wide"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "53583708",
+          "profile": "bc-decal-print-control-bold"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2001-flag",
+      "parts": {
+        "decal": "2001",
+        "decalMonth": "AUG",
+        "decalSerial": "77036470"
+      },
+      "expectedDecal": {
+        "control": "77036470",
+        "month": "AUG"
+      },
+      "specimen": "renewal-2001",
+      "generatedPlateSerial": "355-CRG",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "AUG",
+          "profile": "bc-decal-print-heavy-month"
+        },
+        {
+          "role": "decal-year",
+          "text": "01",
+          "profile": "bc-decal-print-heavy-year-wide"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "77036470",
+          "profile": "bc-decal-print-control-bold"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2001-flag",
+      "parts": {
+        "decal": "2002",
+        "decalMonth": "SEP",
+        "decalSerial": "86673867"
+      },
+      "expectedDecal": {
+        "control": "86673867",
+        "month": "SEP"
+      },
+      "specimen": "renewal-2002",
+      "generatedPlateSerial": "355-CRG",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "SEP",
+          "profile": "bc-decal-print-heavy-month"
+        },
+        {
+          "role": "decal-year",
+          "text": "02",
+          "profile": "bc-decal-print-heavy-year-wide"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "86673867",
+          "profile": "bc-decal-print-control-bold"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2001-flag",
+      "parts": {
+        "decal": "2003",
+        "decalMonth": "APR",
+        "decalSerial": "65718201"
+      },
+      "expectedDecal": {
+        "control": "65718201",
+        "month": "APR"
+      },
+      "specimen": "renewal-2003",
+      "generatedPlateSerial": "355-CRG",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "APR",
+          "profile": "bc-decal-print-heavy-month"
+        },
+        {
+          "role": "decal-year",
+          "text": "03",
+          "profile": "bc-decal-print-heavy-year-wide"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "65718201",
+          "profile": "bc-decal-print-control-bold"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2001-flag",
+      "parts": {
+        "decal": "2004",
+        "decalMonth": "MAR",
+        "decalSerial": "42591320"
+      },
+      "expectedDecal": {
+        "control": "42591320",
+        "month": "MAR"
+      },
+      "specimen": "renewal-2004",
+      "generatedPlateSerial": "355-CRG",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "MAR",
+          "profile": "bc-decal-print-heavy-month"
+        },
+        {
+          "role": "decal-year",
+          "text": "04",
+          "profile": "bc-decal-print-solid-2004-year-reconstruction"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "42591320",
+          "profile": "bc-decal-print-control-bold"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2001-flag",
+      "parts": {
+        "decal": "2005",
+        "decalMonth": "JAN",
+        "decalSerial": "10167427"
+      },
+      "expectedDecal": {
+        "control": "10167427",
+        "month": "JAN"
+      },
+      "specimen": "renewal-2005",
+      "generatedPlateSerial": "355-CRG",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "JAN",
+          "profile": "bc-decal-print-heavy-month"
+        },
+        {
+          "role": "decal-year",
+          "text": "05",
+          "profile": "bc-decal-print-heavy-year"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "10167427",
+          "profile": "bc-decal-print-control-bold"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2001-flag",
+      "parts": {
+        "decal": "2006",
+        "decalMonth": "MAY",
+        "decalSerial": "24286311"
+      },
+      "expectedDecal": {
+        "control": "24286311",
+        "month": "MAY"
+      },
+      "specimen": "renewal-2006",
+      "generatedPlateSerial": "355-CRG",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "MAY",
+          "profile": "bc-decal-print-heavy-month"
+        },
+        {
+          "role": "decal-year",
+          "text": "06",
+          "profile": "bc-decal-print-heavy-year"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-archivo-900-wdth75"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-archivo-900-wdth75"
+        },
+        {
+          "role": "decal-serial",
+          "text": "24286311",
+          "profile": "bc-decal-print-control-bold"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2001-flag",
+      "parts": {
+        "decal": "2007",
+        "decalMonth": "JAN",
+        "decalSerial": "30289413"
+      },
+      "expectedDecal": {
+        "control": "30289413",
+        "month": "JAN"
+      },
+      "specimen": "renewal-2007",
+      "generatedPlateSerial": "355-CRG",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "JAN",
+          "profile": "bc-decal-print-heavy-month"
+        },
+        {
+          "role": "decal-year",
+          "text": "07",
+          "profile": "bc-decal-print-heavy-year"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "30289413",
+          "profile": "bc-decal-print-control-bold"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2001-flag",
+      "parts": {
+        "decal": "2008",
+        "decalMonth": "AUG",
+        "decalSerial": "47144166"
+      },
+      "expectedDecal": {
+        "control": "47144166",
+        "month": "AUG"
+      },
+      "specimen": "renewal-2008",
+      "generatedPlateSerial": "355-CRG",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "AUG",
+          "profile": "bc-decal-print-bebasneue-400"
+        },
+        {
+          "role": "decal-year",
+          "text": "08",
+          "profile": "bc-decal-print-oswald-400"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-serial",
+          "text": "47144166",
+          "profile": "bc-decal-print-control-bold"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2001-flag",
+      "parts": {
+        "decal": "2009",
+        "decalMonth": "APR",
+        "decalSerial": "53054167"
+      },
+      "expectedDecal": {
+        "control": "53054167",
+        "month": "APR"
+      },
+      "specimen": "renewal-2009",
+      "generatedPlateSerial": "355-CRG",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "APR",
+          "profile": "bc-decal-print-heavy-month"
+        },
+        {
+          "role": "decal-year",
+          "text": "09",
+          "profile": "bc-decal-print-heavy-year"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-condensed-medium"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-condensed-medium"
+        },
+        {
+          "role": "decal-serial",
+          "text": "53054167",
+          "profile": "bc-decal-print-control-bold"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2001-flag",
+      "parts": {
+        "decal": "2010",
+        "decalMonth": "JAN",
+        "decalSerial": "10717219"
+      },
+      "expectedDecal": {
+        "control": "10717219",
+        "month": "JAN"
+      },
+      "specimen": "renewal-2010",
+      "generatedPlateSerial": "355-CRG",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "JAN",
+          "profile": "bc-decal-print-heavy-month"
+        },
+        {
+          "role": "decal-year",
+          "text": "10",
+          "profile": "bc-decal-print-heavy-year"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-province-tall-2010-reconstruction"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-province-tall-2010-reconstruction"
+        },
+        {
+          "role": "decal-serial",
+          "text": "10717219",
+          "profile": "bc-decal-print-control-bold"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2001-flag",
+      "parts": {
+        "decal": "2011",
+        "decalMonth": "MAY",
+        "decalSerial": "24516329"
+      },
+      "expectedDecal": {
+        "control": "24516329",
+        "month": "MAY"
+      },
+      "specimen": "renewal-2011",
+      "generatedPlateSerial": "355-CRG",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "MAY",
+          "profile": "bc-decal-print-heavy-month"
+        },
+        {
+          "role": "decal-year",
+          "text": "11",
+          "profile": "bc-decal-print-heavy-year"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-province-tall-2010-reconstruction"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-province-tall-2010-reconstruction"
+        },
+        {
+          "role": "decal-serial",
+          "text": "24516329",
+          "profile": "bc-decal-print-control-bold"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2001-flag",
+      "parts": {
+        "decal": "2012",
+        "decalMonth": "NOV",
+        "decalSerial": "97303194"
+      },
+      "expectedDecal": {
+        "control": "97303194",
+        "month": "NOV"
+      },
+      "specimen": "renewal-2012",
+      "generatedPlateSerial": "355-CRG",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "NOV",
+          "profile": "bc-decal-print-heavy-month"
+        },
+        {
+          "role": "decal-year",
+          "text": "12",
+          "profile": "bc-decal-print-heavy-year"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-province-tall-2010-reconstruction"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-province-tall-2010-reconstruction"
+        },
+        {
+          "role": "decal-serial",
+          "text": "97303194",
+          "profile": "bc-decal-print-control-bold"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2001-flag",
+      "parts": {
+        "decal": "2013",
+        "decalMonth": "OCT",
+        "decalSerial": "79670318"
+      },
+      "expectedDecal": {
+        "control": "79670318",
+        "month": "OCT"
+      },
+      "specimen": "renewal-2013",
+      "generatedPlateSerial": "355-CRG",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "OCT",
+          "profile": "bc-decal-print-late-oct-reconstruction"
+        },
+        {
+          "role": "decal-year",
+          "text": "13",
+          "profile": "bc-decal-print-heavy-year"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-province-tall-2010-reconstruction"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-province-tall-2010-reconstruction"
+        },
+        {
+          "role": "decal-serial",
+          "text": "79670318",
+          "profile": "bc-decal-print-control-bold"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2001-flag",
+      "parts": {
+        "decal": "2014",
+        "decalMonth": "APR",
+        "decalSerial": "53695502"
+      },
+      "expectedDecal": {
+        "control": "53695502",
+        "month": "APR"
+      },
+      "specimen": "renewal-2014",
+      "generatedPlateSerial": "355-CRG",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "APR",
+          "profile": "bc-decal-print-heavy-month-weighted"
+        },
+        {
+          "role": "decal-year",
+          "text": "2014",
+          "profile": "bc-decal-print-modern-year-reconstruction"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-serial",
+          "text": "53695502",
+          "profile": "bc-decal-print-modern-control-reconstruction"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2014-flag",
+      "parts": {
+        "decal": "2015",
+        "decalMonth": "JAN",
+        "decalSerial": "70118033"
+      },
+      "expectedDecal": {
+        "control": "70118033",
+        "month": "JAN"
+      },
+      "specimen": "renewal-2015",
+      "generatedPlateSerial": "EL0-58T",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "JAN",
+          "profile": "bc-decal-print-heavy-month-weighted"
+        },
+        {
+          "role": "decal-year",
+          "text": "2015",
+          "profile": "bc-decal-print-modern-year-reconstruction"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-serial",
+          "text": "70118033",
+          "profile": "bc-decal-print-modern-control-reconstruction"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2014-flag",
+      "parts": {
+        "decal": "2016",
+        "decalMonth": "FEB",
+        "decalSerial": "11203175"
+      },
+      "expectedDecal": {
+        "control": "11203175",
+        "month": "FEB"
+      },
+      "specimen": "renewal-2016",
+      "generatedPlateSerial": "EL0-58T",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "FEB",
+          "profile": "bc-decal-print-heavy-month-weighted"
+        },
+        {
+          "role": "decal-year",
+          "text": "2016",
+          "profile": "bc-decal-print-modern-year-reconstruction"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-serial",
+          "text": "11203175",
+          "profile": "bc-decal-print-modern-control-reconstruction"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2014-flag",
+      "parts": {
+        "decal": "2017",
+        "decalMonth": "JAN",
+        "decalSerial": "20993481"
+      },
+      "expectedDecal": {
+        "control": "20993481",
+        "month": "JAN"
+      },
+      "specimen": "renewal-2017",
+      "generatedPlateSerial": "EL0-58T",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "JAN",
+          "profile": "bc-decal-print-heavy-month-weighted"
+        },
+        {
+          "role": "decal-year",
+          "text": "2017",
+          "profile": "bc-decal-print-modern-year-reconstruction"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-serial",
+          "text": "20993481",
+          "profile": "bc-decal-print-modern-control-reconstruction"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2014-flag",
+      "parts": {
+        "decal": "2018",
+        "decalMonth": "JAN",
+        "decalSerial": "50278580"
+      },
+      "expectedDecal": {
+        "control": "50278580",
+        "month": "JAN"
+      },
+      "specimen": "renewal-2018",
+      "generatedPlateSerial": "EL0-58T",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "JAN",
+          "profile": "bc-decal-print-heavy-month-weighted"
+        },
+        {
+          "role": "decal-year",
+          "text": "2018",
+          "profile": "bc-decal-print-modern-year-reconstruction"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-serial",
+          "text": "50278580",
+          "profile": "bc-decal-print-modern-control-reconstruction"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2014-flag",
+      "parts": {
+        "decal": "2019",
+        "decalMonth": "JAN",
+        "decalSerial": "10727925"
+      },
+      "expectedDecal": {
+        "control": "10727925",
+        "month": "JAN"
+      },
+      "specimen": "renewal-2019",
+      "generatedPlateSerial": "EL0-58T",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "JAN",
+          "profile": "bc-decal-print-heavy-month-weighted"
+        },
+        {
+          "role": "decal-year",
+          "text": "2019",
+          "profile": "bc-decal-print-modern-late-year-reconstruction"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-serial",
+          "text": "10727925",
+          "profile": "bc-decal-print-modern-control-reconstruction"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2014-flag",
+      "parts": {
+        "decal": "2020",
+        "decalMonth": "JAN",
+        "decalSerial": "00000000"
+      },
+      "expectedDecal": {
+        "control": "00000000",
+        "month": "JAN"
+      },
+      "specimen": "renewal-2020",
+      "generatedPlateSerial": "EL0-58T",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "JAN",
+          "profile": "bc-decal-print-heavy-month-weighted"
+        },
+        {
+          "role": "decal-year",
+          "text": "2020",
+          "profile": "bc-decal-print-modern-late-year-reconstruction"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-serial",
+          "text": "00000000",
+          "profile": "bc-decal-print-modern-control-reconstruction"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2014-flag",
+      "parts": {
+        "decal": "2021",
+        "decalMonth": "JUL",
+        "decalSerial": "36946964"
+      },
+      "expectedDecal": {
+        "control": "36946964",
+        "month": "JUL"
+      },
+      "specimen": "renewal-2021",
+      "generatedPlateSerial": "EL0-58T",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "JUL",
+          "profile": "bc-decal-print-anton-400"
+        },
+        {
+          "role": "decal-year",
+          "text": "2021",
+          "profile": "bc-decal-print-modern-late-year-reconstruction"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-serial",
+          "text": "36946964",
+          "profile": "bc-decal-print-modern-control-reconstruction"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2014-flag",
+      "parts": {
+        "decal": "2022",
+        "decalMonth": "MAR",
+        "decalSerial": "72919128"
+      },
+      "expectedDecal": {
+        "control": "72919128",
+        "month": "MAR"
+      },
+      "specimen": "renewal-2022",
+      "generatedPlateSerial": "EL0-58T",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "MAR",
+          "profile": "bc-decal-print-heavy-month-weighted"
+        },
+        {
+          "role": "decal-year",
+          "text": "2022",
+          "profile": "bc-decal-print-modern-late-year-reconstruction"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-serial",
+          "text": "72919128",
+          "profile": "bc-decal-print-modern-control-reconstruction"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2014-flag",
+      "parts": {
+        "decal": "2023",
+        "decalMonth": "MAR",
+        "decalSerial": "52843353"
+      },
+      "expectedDecal": {
+        "control": "52843353",
+        "month": "MAR"
+      },
+      "specimen": "renewal-2023",
+      "generatedPlateSerial": "EL0-58T",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "MAR",
+          "profile": "bc-decal-print-heavy-month-weighted"
+        },
+        {
+          "role": "decal-year",
+          "text": "2023",
+          "profile": "bc-decal-print-modern-late-year-reconstruction"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-serial",
+          "text": "52843353",
+          "profile": "bc-decal-print-modern-control-reconstruction"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1986",
+        "decalMonth": "JAN",
+        "decalSerial": "10033703"
+      },
+      "expectedDecal": {
+        "control": "10033703",
+        "month": "JAN"
+      },
+      "specimen": "renewal-1986-jan",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-legend",
+          "text": "BRITISH COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-month",
+          "text": "JAN",
+          "profile": "bc-decal-print-1986-rounded-corrected"
+        },
+        {
+          "role": "decal-serial",
+          "text": "10033703",
+          "profile": "bc-decal-print-control"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1986",
+        "decalMonth": "FEB",
+        "decalSerial": "11834084"
+      },
+      "expectedDecal": {
+        "control": "11834084",
+        "month": "FEB"
+      },
+      "specimen": "renewal-1986-feb",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-legend",
+          "text": "BRITISH COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-month",
+          "text": "FEB",
+          "profile": "bc-decal-print-1986-rounded-corrected"
+        },
+        {
+          "role": "decal-serial",
+          "text": "11834084",
+          "profile": "bc-decal-print-control"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1986",
+        "decalMonth": "APR",
+        "decalSerial": "13185411"
+      },
+      "expectedDecal": {
+        "control": "13185411",
+        "month": "APR"
+      },
+      "specimen": "renewal-1986-apr",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-legend",
+          "text": "BRITISH COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-month",
+          "text": "APR",
+          "profile": "bc-decal-print-1986-rounded-corrected"
+        },
+        {
+          "role": "decal-serial",
+          "text": "13185411",
+          "profile": "bc-decal-print-control"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1986",
+        "decalMonth": "MAY",
+        "decalSerial": "14071545"
+      },
+      "expectedDecal": {
+        "control": "14071545",
+        "month": "MAY"
+      },
+      "specimen": "renewal-1986-may",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-legend",
+          "text": "BRITISH COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-month",
+          "text": "MAY",
+          "profile": "bc-decal-print-1986-rounded-corrected"
+        },
+        {
+          "role": "decal-serial",
+          "text": "14071545",
+          "profile": "bc-decal-print-control"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1986",
+        "decalMonth": "JUN",
+        "decalSerial": "15140523"
+      },
+      "expectedDecal": {
+        "control": "15140523",
+        "month": "JUN"
+      },
+      "specimen": "renewal-1986-jun",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-legend",
+          "text": "BRITISH COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-month",
+          "text": "JUN",
+          "profile": "bc-decal-print-1986-rounded-corrected"
+        },
+        {
+          "role": "decal-serial",
+          "text": "15140523",
+          "profile": "bc-decal-print-control"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1986",
+        "decalMonth": "JUL",
+        "decalSerial": "16126202"
+      },
+      "expectedDecal": {
+        "control": "16126202",
+        "month": "JUL"
+      },
+      "specimen": "renewal-1986-jul",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-legend",
+          "text": "BRITISH COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-month",
+          "text": "JUL",
+          "profile": "bc-decal-print-1986-rounded-corrected"
+        },
+        {
+          "role": "decal-serial",
+          "text": "16126202",
+          "profile": "bc-decal-print-control"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1986",
+        "decalMonth": "AUG",
+        "decalSerial": "17062991"
+      },
+      "expectedDecal": {
+        "control": "17062991",
+        "month": "AUG"
+      },
+      "specimen": "renewal-1986-aug",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-legend",
+          "text": "BRITISH COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-month",
+          "text": "AUG",
+          "profile": "bc-decal-print-1986-rounded-corrected"
+        },
+        {
+          "role": "decal-serial",
+          "text": "17062991",
+          "profile": "bc-decal-print-control"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1986",
+        "decalMonth": "SEP",
+        "decalSerial": "18021283"
+      },
+      "expectedDecal": {
+        "control": "18021283",
+        "month": "SEP"
+      },
+      "specimen": "renewal-1986-sep",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-legend",
+          "text": "BRITISH COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-month",
+          "text": "SEP",
+          "profile": "bc-decal-print-1986-rounded-corrected"
+        },
+        {
+          "role": "decal-serial",
+          "text": "18021283",
+          "profile": "bc-decal-print-control"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1986",
+        "decalMonth": "OCT",
+        "decalSerial": "19062205"
+      },
+      "expectedDecal": {
+        "control": "19062205",
+        "month": "OCT"
+      },
+      "specimen": "renewal-1986-oct",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-legend",
+          "text": "BRITISH COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-month",
+          "text": "OCT",
+          "profile": "bc-decal-print-1986-rounded-corrected"
+        },
+        {
+          "role": "decal-serial",
+          "text": "19062205",
+          "profile": "bc-decal-print-control"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1986",
+        "decalMonth": "NOV",
+        "decalSerial": "20072840"
+      },
+      "expectedDecal": {
+        "control": "20072840",
+        "month": "NOV"
+      },
+      "specimen": "renewal-1986-nov",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-legend",
+          "text": "BRITISH COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-month",
+          "text": "NOV",
+          "profile": "bc-decal-print-1986-rounded-corrected"
+        },
+        {
+          "role": "decal-serial",
+          "text": "20072840",
+          "profile": "bc-decal-print-control"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "1985-flag",
+      "parts": {
+        "decal": "1986",
+        "decalMonth": "DEC",
+        "decalSerial": "21129670"
+      },
+      "expectedDecal": {
+        "control": "21129670",
+        "month": "DEC"
+      },
+      "specimen": "renewal-1986-dec",
+      "generatedPlateSerial": "VJV-255",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-legend",
+          "text": "BRITISH COLUMBIA",
+          "profile": "bc-decal-print-normal"
+        },
+        {
+          "role": "decal-month",
+          "text": "DEC",
+          "profile": "bc-decal-print-1986-rounded-corrected"
+        },
+        {
+          "role": "decal-serial",
+          "text": "21129670",
+          "profile": "bc-decal-print-control"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2014-flag",
+      "parts": {
+        "decal": "2017",
+        "decalMonth": "NOV",
+        "decalSerial": "91115136"
+      },
+      "expectedDecal": {
+        "control": "91115136",
+        "month": "NOV"
+      },
+      "specimen": "renewal-2017-nov",
+      "generatedPlateSerial": "EL0-58T",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "NOV",
+          "profile": "bc-decal-print-heavy-month-weighted"
+        },
+        {
+          "role": "decal-year",
+          "text": "2017",
+          "profile": "bc-decal-print-modern-year-reconstruction"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-serial",
+          "text": "91115136",
+          "profile": "bc-decal-print-modern-control-reconstruction"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2014-flag",
+      "parts": {
+        "decal": "2017",
+        "decalMonth": "JUL",
+        "decalSerial": "00000001"
+      },
+      "expectedDecal": {
+        "control": "00000001",
+        "month": "JUL"
+      },
+      "specimen": "renewal-2017-jul",
+      "generatedPlateSerial": "EL0-58T",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "JUL",
+          "profile": "bc-decal-print-heavy-month-weighted"
+        },
+        {
+          "role": "decal-year",
+          "text": "2017",
+          "profile": "bc-decal-print-modern-year-reconstruction"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-serial",
+          "text": "00000001",
+          "profile": "bc-decal-print-modern-control-reconstruction"
+        }
+      ]
+    },
+    {
+      "region": "ca-bc",
+      "format": "2014-flag",
+      "parts": {
+        "decal": "2023",
+        "decalMonth": "MAY",
+        "decalSerial": "00001234"
+      },
+      "expectedDecal": {
+        "control": "00001234",
+        "month": "MAY"
+      },
+      "specimen": "renewal-leading-zero-control",
+      "generatedPlateSerial": "EL0-58T",
+      "validation": null,
+      "printed": [
+        {
+          "role": "decal-month",
+          "text": "MAY",
+          "profile": "bc-decal-print-heavy-month-weighted"
+        },
+        {
+          "role": "decal-year",
+          "text": "2023",
+          "profile": "bc-decal-print-modern-late-year-reconstruction"
+        },
+        {
+          "role": "decal-legend",
+          "text": "BRITISH",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-legend",
+          "text": "COLUMBIA",
+          "profile": "bc-decal-print-vertical-province"
+        },
+        {
+          "role": "decal-serial",
+          "text": "00001234",
+          "profile": "bc-decal-print-modern-control-reconstruction"
+        }
+      ]
+    }
+  ]
+}

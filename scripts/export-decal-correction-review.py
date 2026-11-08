@@ -29,10 +29,15 @@ def replace_once(text, old, new):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path, required=True)
+    parser.add_argument('--gallery', type=Path, default=ROOT / 'public/bc-decal-corrections')
+    parser.add_argument('--report', type=Path, default=ROOT / 'docs/research/bc-decal-corrections')
+    parser.add_argument('--configuration', type=Path,
+                        help='Optional local report configuration with title, overviewFile, and figures')
     args = parser.parse_args()
     args.output.mkdir(parents=True, exist_ok=True)
-    gallery = ROOT / 'public/bc-decal-corrections'
-    report = ROOT / 'docs/research/bc-decal-corrections'
+    gallery = args.gallery
+    report = args.report
+    configuration = json.loads(args.configuration.read_text()) if args.configuration else {}
     metadata = json.loads((gallery / 'render-metadata.json').read_text())
     validation = json.loads((report / 'validation.json').read_text())
     document = (gallery / 'index.html').read_text()
@@ -71,11 +76,16 @@ def main():
         ('Integrated 2008, 2011 and 2013', ROOT / 'docs/research/bc-late-two-digit-printing/integrated/comparison.png',
          'Actual integrated renderer output with the exact photographed controls. The model uses portable vector paths; source perspective and colour uncertainty remain visible.'),
     ]
+    if configuration:
+        overview = (ROOT / configuration['overviewFile']).read_text()
+        figures = [(figure['title'], ROOT / figure['path'], figure['caption'])
+                   for figure in configuration['figures']]
     figures_html = '<section class="panel"><h2>Focused comparisons</h2>'
     for title, path, caption in figures:
         figures_html += '<details><summary>' + html.escape(title) + '</summary><img style="display:block;width:100%;height:auto;margin-top:16px" src="' + data_url(path, 'image/png') + '" alt="' + html.escape(title) + '"><p class="muted">' + html.escape(caption) + '</p></details>'
     figures_html += '</section>'
-    document = replace_once(document, '<h1>Source, baseline and correction overlays</h1>', '<h1>BC decal corrections and overlay review</h1>' + overview + figures_html)
+    title = configuration.get('title', 'BC decal corrections and overlay review')
+    document = replace_once(document, '<h1>Source, baseline and correction overlays</h1>', '<h1>' + html.escape(title) + '</h1>' + overview + figures_html)
     payload = json.dumps(assets, separators=(',', ':'))
     document = replace_once(document, '<script id="data"', '<script id="assets" type="application/json">' + payload + '</script><script id="data"')
     document = replace_once(document, "function provenanceText(label,p)", "const assets=JSON.parse(document.getElementById('assets').textContent),asset=name=>assets[name]||name;\nfunction provenanceText(label,p)")
@@ -94,7 +104,7 @@ $('overlayDownload').onclick=async event=>{event.preventDefault();const r=rows[i
     document = document.replace('<h2>Family contact sheets</h2>', '<h2>Explore all nine families</h2>')
     ledger_url = data_url(report / 'case-ledger.csv', 'text/csv')
     document = replace_once(document, '<a id="ledgerLink" download=', '<a id="ledgerLink" href="' + ledger_url + '" download=')
-    document = document.replace('<title>BC decal correction overlays</title>', '<title>BC decal corrections — implementation and overlays</title>')
+    document = document.replace('<title>BC decal correction overlays</title>', '<title>' + html.escape(title) + '</title>')
     output = args.output / 'BC_Decal_Corrections_Review.html'
     output.write_text(document)
     shutil.copyfile(report / 'case-ledger.csv', args.output / 'BC_Decal_Correction_Ledger.csv')

@@ -1,0 +1,46 @@
+{
+  "title": "BC decal corrections \u2014 second overlay review",
+  "overviewFile": "docs/research/bc-decal-residuals/offline-overview.html",
+  "figures": [
+    {
+      "title": "1983 JUN, 1999 MAY and 2004 year construction",
+      "path": "docs/research/bc-decal-residuals/lettering/shape-comparison.png",
+      "caption": "Original BCpl8s crops and equal-painted-height overlays. Magenta is source-only ink, blue model-only ink, and dark their overlap. Widths are preserved; ratios are not accuracy scores."
+    },
+    {
+      "title": "Later modern year shapes and advances",
+      "path": "docs/research/bc-decal-residuals/modern/late-year-candidate-summary.png",
+      "caption": "Actual registered profiles compared at equal painted height. The repeated photographs support a separate later printing group; fine 3/9 details remain limited."
+    },
+    {
+      "title": "Modern JAN: measured pair gaps, retained contours",
+      "path": "docs/research/bc-decal-residuals/lettering/modern-jul-review/jan-review/before-after.png",
+      "caption": "Native font substitution was rejected on the A counter and J/N proportions. Exact JAN variants receive observed spacing and uniform registration; residual letter shapes remain visible."
+    },
+    {
+      "title": "2021 JUL: native Anton and observed pair spacing",
+      "path": "docs/research/bc-decal-residuals/lettering/modern-jul-review/before-after.png",
+      "caption": "Three existing JUL photographs corroborate the direction of the change. Production scope is exact 2021 JUL. The native L foot remains short and the J hook slightly high."
+    },
+    {
+      "title": "Wide 1981\u20131982 province capitals",
+      "path": "docs/research/bc-decal-residuals/province-placement/proof/1981-oct-shape-proof.png",
+      "caption": "Larger 1981 OCT photograph by Jerry Woody, CC BY-SA 2.0. The independently authored fixed-word alphabet is limited to twelve observed capitals; fine print spread remains approximate."
+    },
+    {
+      "title": "Tall 2010\u20132013 province capitals",
+      "path": "docs/research/bc-decal-residuals/province-placement/proof/2012-aug-shape-proof.png",
+      "caption": "Larger 2012 AUG photograph by PartColumbia, CC BY-SA 4.0. Original photo tilt remains; the remaining whole-word width difference is not hidden by horizontal scaling."
+    },
+    {
+      "title": "1990 control placement: complete composition",
+      "path": "docs/research/bc-decal-residuals/province-placement/proof/1990-proof.png",
+      "caption": "The exact JAN control moves down and slightly left. Source, before/after and painted bounds are retained together; this does not establish the position of every other month."
+    },
+    {
+      "title": "Photographic colour variation and the retained palette",
+      "path": "docs/research/bc-decal-residuals/material/colour-observations.png",
+      "caption": "Explicit substrate patches from the enlarged 2015 and November 2017 BCpl8s photographs. Pixel colours vary within each source; these are decoded photographic values, not calibrated physical colour specifications."
+    }
+  ]
+}

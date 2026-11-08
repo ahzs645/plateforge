@@ -1,0 +1,22 @@
+{
+  "schema": "plateforge.decal-audit-render/v2",
+  "current": {
+    "commit": "1ceca604c66259d9c6e0cf5d367a33fe3851bae0",
+    "workingChanges": true,
+    "sourceSha256": "80f176a664755c5d41432cbac8150c9b77edf4d13694e82952f8b309b04bc6fd",
+    "sourceHashScope": "Sorted tracked and nonignored untracked src files plus package-lock.json: relative path, NUL, file bytes"
+  },
+  "manifestSha256": "1c7809736f1c5c322d65ccabf3e497f5736cbc06f97ab6e8f74bfd2b2f6b456a",
+  "auditorSha256": {
+    "scripts/render-decal-online-analysis.mjs": "68d215e60bd0ba325efd5fdf64a763ef32f695eaeabaf03945edf9fef3046f12",
+    "scripts/decal-audit-inputs.mjs": "d1bdc2331817eae61cb35af440bb54108694fd4d3aec9f64b5377c9a193e3e2b"
+  },
+  "inputPolicy": "Explicit source month/control preserved. Invalid values fail; null control is omitted. Editor fallbacks are unchanged.",
+  "baseline": {
+    "commit": "24689246670c25f91e0d1676a0647f053dbca68e",
+    "workingChanges": false,
+    "sourceSha256": "a4870904e6d8cb1f44c37b46afb1509812d1cfbba5299bc7f48fcc6a44046c79",
+    "sourceHashScope": "Sorted tracked and nonignored untracked src files plus package-lock.json: relative path, NUL, file bytes"
+  },
+  "comparison": "Complete clean baseline checkout and current checkout, rendered with the same corrected explicit specimen inputs. This is a newly reproduced comparison, not an archived historical capture."
+}

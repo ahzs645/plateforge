@@ -1,0 +1,290 @@
+{
+  "schema": "plateforge.decal-residual-validation/v1",
+  "reviewDate": "2026-11-07",
+  "summary": "All completed application, geometry, evidence, visual and static packaging checks pass. Browser interaction/export remains unexecuted under the documented environment restriction.",
+  "provenance": {
+    "schema": "plateforge.decal-audit-render/v2",
+    "current": {
+      "commit": "1ceca604c66259d9c6e0cf5d367a33fe3851bae0",
+      "workingChanges": true,
+      "sourceSha256": "80f176a664755c5d41432cbac8150c9b77edf4d13694e82952f8b309b04bc6fd",
+      "sourceHashScope": "Sorted tracked and nonignored untracked src files plus package-lock.json: relative path, NUL, file bytes"
+    },
+    "manifestSha256": "1c7809736f1c5c322d65ccabf3e497f5736cbc06f97ab6e8f74bfd2b2f6b456a",
+    "auditorSha256": {
+      "scripts/render-decal-online-analysis.mjs": "68d215e60bd0ba325efd5fdf64a763ef32f695eaeabaf03945edf9fef3046f12",
+      "scripts/decal-audit-inputs.mjs": "d1bdc2331817eae61cb35af440bb54108694fd4d3aec9f64b5377c9a193e3e2b"
+    },
+    "inputPolicy": "Explicit source month/control preserved. Invalid values fail; null control is omitted. Editor fallbacks are unchanged.",
+    "baseline": {
+      "commit": "24689246670c25f91e0d1676a0647f053dbca68e",
+      "workingChanges": false,
+      "sourceSha256": "a4870904e6d8cb1f44c37b46afb1509812d1cfbba5299bc7f48fcc6a44046c79",
+      "sourceHashScope": "Sorted tracked and nonignored untracked src files plus package-lock.json: relative path, NUL, file bytes"
+    },
+    "comparison": "Complete clean baseline checkout and current checkout, rendered with the same corrected explicit specimen inputs. This is a newly reproduced comparison, not an archived historical capture."
+  },
+  "sourceSnapshotUnchangedAfterApplicationChecks": true,
+  "applicationTests": {
+    "status": "passed",
+    "totalPassed": 1969,
+    "uniqueTestFiles": 71,
+    "sampleCountsUnchanged": true,
+    "execution": "Three disjoint bounded runs cover the complete application suite. The region file is partitioned by ca-bc/; skipped counts belong to the other passing partition, not omitted coverage.",
+    "runs": [
+      {
+        "command": "npx vitest run --exclude src/regions/regions.test.ts --maxWorkers=2",
+        "filesPassed": 70,
+        "passed": 1169,
+        "log": "verification-logs/tests-other.log"
+      },
+      {
+        "command": "npx vitest run src/regions/regions.test.ts --maxWorkers=1 --testNamePattern 'ca-bc/'",
+        "filesPassed": 1,
+        "passed": 447,
+        "skippedForOtherPartition": 353,
+        "log": "verification-logs/tests-bc.log"
+      },
+      {
+        "command": "npx vitest run src/regions/regions.test.ts --maxWorkers=1 --testNamePattern '^(?!.*ca-bc/)'",
+        "filesPassed": 1,
+        "passed": 353,
+        "skippedForOtherPartition": 447,
+        "log": "verification-logs/tests-other-regions.log"
+      }
+    ]
+  },
+  "productionBuild": {
+    "status": "passed",
+    "command": "BASE_PATH=/plateforge/ npm run build",
+    "includes": "TypeScript checking and Vite production build",
+    "log": "verification-logs/build.log",
+    "warnings": [
+      "Existing output chunk exceeds the 500 kB warning threshold."
+    ]
+  },
+  "familyPaintBounds": {
+    "status": "passed",
+    "renderings": 572,
+    "catalogueVariants": 55,
+    "failures": 0,
+    "backend": "Inkscape 1.4 (e7c3feb100, 2024-10-09)",
+    "fixturesSha256": "224954f55069a866ffc863c1874a5aa52127390cf18cd705d37ae6c5da0b29a0",
+    "report": "family-ink-verification.json",
+    "initialIntegrationFailures": 13,
+    "initialFailuresResolved": true,
+    "correctionRecord": "integration-corrections.json",
+    "limits": "Stroke-inclusive paint bounds, run collision and selected panel containment checks; not a photographic-accuracy score."
+  },
+  "applicationSelections": {
+    "status": "passed",
+    "referenceCases": 68,
+    "leadingZeroCases": 1,
+    "report": "application-selections.json",
+    "method": "Production offered fields, generatePlate/makePlate, format.validate, decalArt and actual vector glyph sequences. No browser or raster-export execution."
+  },
+  "focusedAuditTests": {
+    "status": "passed",
+    "totalPassed": 33,
+    "runs": [
+      {
+        "command": "node --test scripts/test-decal-audit-inputs.mjs scripts/test-decal-browser-geometry.mjs",
+        "passed": 14
+      },
+      {
+        "command": "python3 -m unittest discover -s scripts -p test_decal_audit.py",
+        "passed": 9
+      },
+      {
+        "command": "python3 -m unittest discover -s scripts -p test_decal_correction_overlays.py",
+        "passed": 5
+      },
+      {
+        "command": "python3 docs/research/bc-decal-residuals/lettering/test_analysis.py",
+        "passed": 5
+      }
+    ],
+    "excludedFailure": "A broader discovery command using test_decal_*.py also selected a browser fixture and failed at setUpClass because Chromium could not create its singleton socket. That broader invocation is not reported as passed."
+  },
+  "newProfileTopology": {
+    "status": "passed",
+    "glyphs": 29,
+    "thresholdsPerGlyph": 3,
+    "report": "profile-topology-verification.json",
+    "limits": "Actual raster connected components and open counters; not historical typeface identity."
+  },
+  "focusedLettering": {
+    "status": "passed",
+    "originalNaturalRunChecks": 64,
+    "originalRasterTopologyChecks": 11,
+    "janJulNaturalRunChecks": 144,
+    "janJulAcceptedThresholdSamples": 30,
+    "changedMonthOnlyScenePairs": 4,
+    "finalScopeMonthSelections": 108,
+    "finalScopePrintedRuns": 540,
+    "finalChangedRoleProbesNatural": 78,
+    "registeredFallbackDetected": false,
+    "reports": [
+      "lettering/README.md",
+      "lettering/modern-jul-review/verification.json",
+      "lettering/2004-base-guard/verification.json",
+      "lettering/modern-jul-review/jan-review/metrics.json"
+    ]
+  },
+  "modernEvidence": {
+    "status": "passed",
+    "originalHashes": 60,
+    "yearOccurrences": 240,
+    "controlOccurrences": 24,
+    "thresholdSamples": 189,
+    "registeredNaturalYearRuns": 20,
+    "report": "modern/validation.json",
+    "inputCorrections": "modern/input-corrections.json"
+  },
+  "provinceEvidence": {
+    "status": "passed",
+    "integratedProposals": 31,
+    "explicitAcceptedPrimaryTargets": 38,
+    "supplementalOriginalHashes": 13,
+    "profileGlyphs": {
+      "wide": 12,
+      "tall": 12
+    },
+    "unchangedOtherRoles": "All month/year/control/barcode roles remain first-pass-identical across all months of 2011 and 2013.",
+    "limitations": [
+      "1975 control and 2011 COLUMBIA have valid primary extents but one rejected low-threshold sensitivity sample each.",
+      "Rejected 1980 control and tiny 2006 MAY province masks supply no production target."
+    ],
+    "report": "province-placement/README.md"
+  },
+  "referenceVerification": {
+    "status": "passed",
+    "canonicalCachedCrops": 68,
+    "originalBytesVerified": false,
+    "report": "source-verification.json",
+    "limits": "Canonical cached crop hashes are verified. Previously recorded original hashes are provenance; the canonical remote originals were not redownloaded in this capture. Supplemental originals have separate verified inventories."
+  },
+  "visualReview": {
+    "status": "completed-with-known-limitations",
+    "references": 68,
+    "familySheets": 9,
+    "focusedFigures": 8,
+    "changedRasterPairs": 38,
+    "unchangedRasterPairs": 30,
+    "families": [
+      {
+        "family": "annual",
+        "specimens": 8,
+        "file": "contact-sheets/annual.png",
+        "sha256": "fe0f5a4b26e182e3a55c29b139c720c7cfa61e0fb00b3fe861900f364e7102c7",
+        "result": "Inspected; no new blocking regression. Existing limitations remain in the ledger."
+      },
+      {
+        "family": "panels",
+        "specimens": 8,
+        "file": "contact-sheets/panels.png",
+        "sha256": "79c38aba62ba3aeaef96dfc773bf4aefb679187ea855416ae36eddd1e0929383",
+        "result": "Inspected; no new blocking regression. Existing limitations remain in the ledger."
+      },
+      {
+        "family": "expo",
+        "specimens": 12,
+        "file": "contact-sheets/expo.png",
+        "sha256": "fca74b48fc6cbadd6b4181d1e3d8cfcacf9b0b75fd304e2478fbac4cb95e4a37",
+        "result": "Inspected; no new blocking regression. Existing limitations remain in the ledger."
+      },
+      {
+        "family": "thick",
+        "specimens": 13,
+        "file": "contact-sheets/thick.png",
+        "sha256": "7f732c7b14b01b913ed7e8cff6ca1ef91ffb0724ea95ad94a855226f01df39ba",
+        "result": "Inspected; no new blocking regression. Existing limitations remain in the ledger."
+      },
+      {
+        "family": "double",
+        "specimens": 5,
+        "file": "contact-sheets/double.png",
+        "sha256": "a57baece014fafb63231276b3a8a093c3a9ba1ddd935f165250a7e6132ef6c22",
+        "result": "Inspected; no new blocking regression. Existing limitations remain in the ledger."
+      },
+      {
+        "family": "solid",
+        "specimens": 5,
+        "file": "contact-sheets/solid.png",
+        "sha256": "46782e6f2ad797340877a792e117b969e6a3d9f74670031674537f3b08ed928c",
+        "result": "Inspected; no new blocking regression. Existing limitations remain in the ledger."
+      },
+      {
+        "family": "barcode",
+        "specimens": 5,
+        "file": "contact-sheets/barcode.png",
+        "sha256": "2c7e08ed8dfd0c5a09ef414adf9e8f041f6f4194a7e7d388f7ae77ba7b0ab3be",
+        "result": "Inspected; no new blocking regression. Existing limitations remain in the ledger."
+      },
+      {
+        "family": "full",
+        "specimens": 4,
+        "file": "contact-sheets/full.png",
+        "sha256": "ab6442b950fae5b18ec8ef6f6e19f8b7adac233e5b5c02209aac668781d8718f",
+        "result": "Inspected; no new blocking regression. Existing limitations remain in the ledger."
+      },
+      {
+        "family": "revised",
+        "specimens": 8,
+        "file": "contact-sheets/revised.png",
+        "sha256": "dae41b59252f6fd6465515437b162fec189c757b4739574f77c74581cbbe4cb3",
+        "result": "Inspected; no new blocking regression. Existing limitations remain in the ledger."
+      }
+    ],
+    "method": "Visual inspection of source/baseline/current/overlay family sheets, affected detailed rows and eight focused report figures. All preserved source perspective, captions and known residuals remain visible."
+  },
+  "standaloneReview": {
+    "schema": "plateforge.decal-standalone-verification/v1",
+    "status": "passed",
+    "method": "Static HTML parsing, decoded asset byte equality, exact-string ledger comparison and separate node --check. No browser execution is claimed.",
+    "references": 68,
+    "uniqueCaseIds": 68,
+    "embeddedCoreAssetsVerified": 340,
+    "embeddedFiguresVerified": 8,
+    "embeddedSupplementalDownloadsVerified": 6,
+    "ledgerByteIdentical": true,
+    "exactMonthControlStringsPreserved": true,
+    "firstPassLedgerHistoryPreserved": true,
+    "allCasesRetainRemainingLimitations": true,
+    "externalImageLoads": 0,
+    "externalScriptLoads": 0,
+    "duplicateHtmlIds": 0,
+    "javascriptSyntax": "passed",
+    "changedRasterPairs": 38,
+    "unchangedRasterPairs": 30,
+    "sourceSha256": "80f176a664755c5d41432cbac8150c9b77edf4d13694e82952f8b309b04bc6fd",
+    "baselineCommit": "24689246670c25f91e0d1676a0647f053dbca68e",
+    "browserInteractionExportStatus": "unexecuted",
+    "report": "standalone-verification.json"
+  },
+  "browserVerification": {
+    "status": "blocked-unexecuted",
+    "preparedFor": [
+      "Chromium",
+      "Firefox",
+      "WebKit"
+    ],
+    "applicationReferenceCases": 68,
+    "leadingZeroCases": 1,
+    "familyFixtures": 572,
+    "script": "scripts/typography-browser.mjs",
+    "workflow": ".github/workflows/typography-validation.yml",
+    "reason": "Local Chromium cannot create its singleton socket: Operation not permitted. The prior escalation was rejected. No browser workaround or successful browser/export execution is claimed."
+  },
+  "publication": {
+    "status": "local-only",
+    "reason": "Automatic approval review previously rejected publishing the branch and generated evidence assets to GitHub without explicit publication authorization. No push, pull request or deployment was performed."
+  },
+  "verificationLogSha256": {
+    "tests-other.log": "a239617ea17ed7153b7b6033853700a074771c843fbf08af7a2c48f50c31f906",
+    "tests-bc.log": "e58a13932d0c9c019e245d0429df7fe35c9ac3378dd24d7a2e12fb5a1f7143c0",
+    "tests-other-regions.log": "d39e83803ce89999b91e23bc295e575a4523d91b8b785c4fa836bb659f143485",
+    "build.log": "68f68e550441bcca38c8adf73aa388bb5cfc464dc7365eb6f9a39506bbc0bef0"
+  },
+  "galleryMetadataSha256": "4496e00c32a2753f11bb05c0d050147ea5b8c041276175cd75d46f63d93dca7a"
+}

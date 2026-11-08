@@ -1,5 +1,7 @@
 # B.C. decal corrections — 7 November 2026
 
+**Follow-up review:** the [second overlay and implementation pass](../bc-decal-residuals/README.md) works through the remaining lettering, placement, province and substrate issues, including all 28 references retained here. This document and its gallery preserve the first-pass baseline and findings.
+
 This pass implements the supported corrections from the overlay review in four reviewable batches. The baseline is the complete clean checkout at `17b974f51c687780c5d0b106fd9ae37e4c83ccae`. The revised production source is recorded in the generated gallery metadata; both sides use the same corrected explicit specimen inputs.
 
 **Publication status:** the four batches are committed locally. Automatic approval rejected the GitHub push because publishing the repository changes and generated evidence assets requires explicit authorization. Browser/export CI therefore remains pending that authorization; no PR or deployment is claimed.
