@@ -2,6 +2,18 @@
 
 Reviewed **2 November 2026**, starting from main **`17b974f51c687780c5d0b106fd9ae37e4c83ccae`**.
 
+**Integration reviewed 8 November 2026:** PR #17 has been reconciled with main
+`68d5fe07cf8b72cf3afb932d6b59d631b7eb2893`, including the published decal corrections.
+The shared browser build, source stamp, Ubuntu 24.04 pin and 572-case decal checks
+are retained. Regenerating the font reports changes only their current source
+digests: the frozen baseline and all sampled glyph results remain intact. See the
+[integration validation receipt](integration-validation-2026-11-08.json) for
+1,989 passing tests across 71 files, the production build, audit reproduction and
+15 focused checks in each browser. The original [2 November receipt](validation.json)
+remains a historical record. The integration receipt also retains an initial
+Chromium raster-export crash and the passing, unchanged full rerun; its cause was
+not established.
+
 This pass fixes the selected passenger alphabet, audits actual rendered characters
 across the B.C. catalogue, and adds primary references for the next contour study.
 It preserves the committed glyph geometry and research registry. The original
@@ -182,7 +194,9 @@ toggle, phone layout, report filters and offline use. Existing typography tests
 continue to cover broader raster/font parity.
 
 The new regression tests were also run against original source: **six intended
-regressions fail, while twenty control tests pass**. Full current validation and
-browser results are recorded in [validation.json](validation.json). The
+regressions fail, while twenty control tests pass**. Original validation and
+browser results are recorded in [validation.json](validation.json), with the
+current-main integration recorded separately in the
+[8 November receipt](integration-validation-2026-11-08.json). The
 `Typography validation` workflow reproduces both audits and runs the new browser
 checks in all three engines.
