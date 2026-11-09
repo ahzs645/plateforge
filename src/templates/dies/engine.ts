@@ -36,9 +36,18 @@ export interface DieProfile {
   researchChars?: ReadonlySet<string>;
   /** Exact winning registry unit for each research character. Never inferred from the family name. */
   researchSourceUnits?: Readonly<Record<string, string>>;
+  /** Authored source-informed masters, separate from exact registry candidates. */
+  reconstructedGlyphs?: Readonly<Record<string, ReconstructedGlyphEvidence>>;
   /** Research-merged dies: slant for production fallback glyphs only (research outlines carry their own). */
   fallbackSlant?: number;
   evidence: DieEvidence;
+}
+
+export interface ReconstructedGlyphEvidence {
+  id: string;
+  status: 'source-informed';
+  source: string;
+  recovery: 'report-vector' | 'new-2026-11-08';
 }
 
 // Identity matters: research comparisons can use different revisions of one named die.
@@ -96,7 +105,13 @@ export function buildDieText(props: DieTextProps): DieRun {
   const children = glyphs.map(({ char, glyph }, i) => {
     const skew = p.profile.fallbackSlant && !p.profile.researchChars?.has(char) ? ` skewX(${-p.profile.fallbackSlant})` : '';
     const item = n('g', { transform: `translate(${round(cursor)} 0)${skew}`, 'data-character': char,
-      ...(p.profile.researchChars?.has(char) ? { 'data-source': 'research', 'data-provenance': 'research-candidate', ...(p.profile.researchSourceUnits?.[char] ? { 'data-research-unit': p.profile.researchSourceUnits[char] } : {}) } : { 'data-provenance': p.profile.overrides?.[char] ? 'profile-override' : 'constructed' }), ...(glyph.stroke ? { strokeWidth: glyph.stroke } : {}),
+      ...(p.profile.researchChars?.has(char) ? { 'data-source': 'research', 'data-provenance': 'research-candidate', ...(p.profile.researchSourceUnits?.[char] ? { 'data-research-unit': p.profile.researchSourceUnits[char] } : {}) } : { 'data-provenance': p.profile.overrides?.[char] ? 'profile-override' : 'constructed' }),
+      ...(p.profile.reconstructedGlyphs?.[char] ? {
+        'data-reconstruction-id': p.profile.reconstructedGlyphs[char].id,
+        'data-reconstruction-status': p.profile.reconstructedGlyphs[char].status,
+        'data-reconstruction-source': p.profile.reconstructedGlyphs[char].source,
+        'data-reconstruction-recovery': p.profile.reconstructedGlyphs[char].recovery,
+      } : {}), ...(glyph.stroke ? { strokeWidth: glyph.stroke } : {}),
       ...(glyph.cap ? { strokeLinecap: glyph.cap } : {}),
       // Traced outlines are filled shapes, not centrelines.
       ...(glyph.fill ? { fill: p.ink, stroke: p.profile.filledStroke ? p.ink : 'none', fillRule: 'evenodd',

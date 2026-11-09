@@ -1,0 +1,714 @@
+{
+  "schema": "plateforge.passenger-reconstruction-sources/v1",
+  "created": "2026-11-08",
+  "scope": "Five masters; five source plates; all 30 serial-character occurrences. No complete-alphabet or independent-holdout approval.",
+  "archiveReportSha256": "4c2b7eaea97b245c81670f0b61643594216b65b90d9c2d8d8159cfe75d05c911",
+  "recoveries": {
+    "exactReportVectors": [
+      "bc-waldale-2025-U-v1",
+      "bc-waldale-2025-Y-v1",
+      "bc-waldale-2025-Z-v1"
+    ],
+    "newMasters": [
+      "bc-astro-3-passenger-N-20261108-v1",
+      "bc-astro-4-passenger-N-20261108-v1"
+    ],
+    "unavailable": "Source modules and commits 93a100a/f34cbab; no assertion that the new N paths reproduce those lost coordinates."
+  },
+  "specimens": [
+    {
+      "id": "modern-u",
+      "serial": "A90-7GU",
+      "format": "2025-flag",
+      "profile": "bc-waldale",
+      "changed": [
+        "U"
+      ],
+      "shapeSpace": "image plane",
+      "corners": null,
+      "cornerUncertaintyPx": null,
+      "placementNote": "Physical shell corners are obscured by the holder. No plate-plane placement comparison is claimed; uniform image-plane shape alignment retains unresolved perspective.",
+      "sourceUrl": "https://www.bcpl8s.ca/images/Passenger/2025/2025-A907GU.jpg",
+      "originalPath": "sources/modern-u.jpg",
+      "sha256": "f3c5691b65b91dde0ffe464e9cd6b3e95f969567c6e4725a468a8fa5aa77221c",
+      "dimensions": [
+        222,
+        123
+      ],
+      "originalBytes": 45209,
+      "matchesArchivedHash": true,
+      "credit": "BCpl8s.ca / Christopher John Garrish and credited contributors; original owners retain their rights.",
+      "dateEvidence": "Gallery filename/caption only; renewal year is not a manufacture date.",
+      "holdout": false,
+      "occurrences": [
+        {
+          "index": 1,
+          "character": "A",
+          "cropBounds": [
+            25,
+            47,
+            52,
+            100
+          ],
+          "alignmentInCrop": {
+            "xCenter": 11.5,
+            "yTop": 3.0,
+            "height": 49.0
+          },
+          "measurementOrigin": "Recovered report SVG image alignment; crop pixels verified identical to original."
+        },
+        {
+          "index": 2,
+          "character": "9",
+          "cropBounds": [
+            51,
+            42,
+            78,
+            94
+          ],
+          "alignmentInCrop": {
+            "xCenter": 13.499999999999998,
+            "yTop": 4.0,
+            "height": 48.0
+          },
+          "measurementOrigin": "Recovered report SVG image alignment; crop pixels verified identical to original."
+        },
+        {
+          "index": 3,
+          "character": "0",
+          "cropBounds": [
+            78,
+            39,
+            101,
+            89
+          ],
+          "alignmentInCrop": {
+            "xCenter": 11.5,
+            "yTop": 4.0,
+            "height": 46.0
+          },
+          "measurementOrigin": "Recovered report SVG image alignment; crop pixels verified identical to original."
+        },
+        {
+          "index": 4,
+          "character": "7",
+          "cropBounds": [
+            126,
+            32,
+            152,
+            84
+          ],
+          "alignmentInCrop": {
+            "xCenter": 14.000000000000002,
+            "yTop": 3.0,
+            "height": 47.0
+          },
+          "measurementOrigin": "Recovered report SVG image alignment; crop pixels verified identical to original."
+        },
+        {
+          "index": 5,
+          "character": "G",
+          "cropBounds": [
+            151,
+            29,
+            176,
+            79
+          ],
+          "alignmentInCrop": {
+            "xCenter": 12.5,
+            "yTop": 4.0,
+            "height": 46.0
+          },
+          "measurementOrigin": "Recovered report SVG image alignment; crop pixels verified identical to original."
+        },
+        {
+          "index": 6,
+          "character": "U",
+          "cropBounds": [
+            175,
+            26,
+            198,
+            76
+          ],
+          "alignmentInCrop": {
+            "xCenter": 11.5,
+            "yTop": 2.0000000000000004,
+            "height": 48.0
+          },
+          "measurementOrigin": "Recovered report SVG image alignment; crop pixels verified identical to original."
+        }
+      ],
+      "appliesToFormats": [
+        "2025-flag"
+      ]
+    },
+    {
+      "id": "modern-y",
+      "serial": "A82-0EY",
+      "format": "2025-flag",
+      "profile": "bc-waldale",
+      "changed": [
+        "Y"
+      ],
+      "shapeSpace": "image plane",
+      "corners": [
+        [
+          16,
+          17
+        ],
+        [
+          250,
+          10
+        ],
+        [
+          247,
+          113
+        ],
+        [
+          22,
+          120
+        ]
+      ],
+      "cornerUncertaintyPx": 2,
+      "placementNote": "Manual intersections of the visible shell edges, approximately \u00b12 px. Rounded corners and low resolution limit precision. One projective mapping is used for the whole plate, never independent per-glyph placement fitting.",
+      "sourceUrl": "https://www.bcpl8s.ca/images/Passenger/2025/2025-A820EY.jpg",
+      "originalPath": "sources/modern-y.jpg",
+      "sha256": "af54da06e8daee0ee4a1d56001596201f24bd47c30dbb067b72817abe3bc37ab",
+      "dimensions": [
+        261,
+        123
+      ],
+      "originalBytes": 51506,
+      "matchesArchivedHash": true,
+      "credit": "BCpl8s.ca / Christopher John Garrish and credited contributors; original owners retain their rights.",
+      "dateEvidence": "Gallery filename/caption only; renewal year is not a manufacture date.",
+      "holdout": false,
+      "occurrences": [
+        {
+          "index": 1,
+          "character": "A",
+          "cropBounds": [
+            30,
+            43,
+            59,
+            94
+          ],
+          "alignmentInCrop": {
+            "xCenter": 15.0,
+            "yTop": 2.0,
+            "height": 47.0
+          },
+          "measurementOrigin": "Recovered report SVG image alignment; crop pixels verified identical to original."
+        },
+        {
+          "index": 2,
+          "character": "8",
+          "cropBounds": [
+            59,
+            42,
+            89,
+            92
+          ],
+          "alignmentInCrop": {
+            "xCenter": 15.0,
+            "yTop": 0.9999999999999991,
+            "height": 47.0
+          },
+          "measurementOrigin": "Recovered report SVG image alignment; crop pixels verified identical to original."
+        },
+        {
+          "index": 3,
+          "character": "2",
+          "cropBounds": [
+            89,
+            40,
+            118,
+            91
+          ],
+          "alignmentInCrop": {
+            "xCenter": 15.5,
+            "yTop": 2.0,
+            "height": 47.0
+          },
+          "measurementOrigin": "Recovered report SVG image alignment; crop pixels verified identical to original."
+        },
+        {
+          "index": 4,
+          "character": "0",
+          "cropBounds": [
+            150,
+            39,
+            179,
+            89
+          ],
+          "alignmentInCrop": {
+            "xCenter": 14.5,
+            "yTop": 1.0000000000000004,
+            "height": 46.0
+          },
+          "measurementOrigin": "Recovered report SVG image alignment; crop pixels verified identical to original."
+        },
+        {
+          "index": 5,
+          "character": "E",
+          "cropBounds": [
+            179,
+            38,
+            209,
+            87
+          ],
+          "alignmentInCrop": {
+            "xCenter": 15.5,
+            "yTop": 2.0,
+            "height": 47.0
+          },
+          "measurementOrigin": "Recovered report SVG image alignment; crop pixels verified identical to original."
+        },
+        {
+          "index": 6,
+          "character": "Y",
+          "cropBounds": [
+            210,
+            37,
+            240,
+            87
+          ],
+          "alignmentInCrop": {
+            "xCenter": 15.499999999999998,
+            "yTop": 2.0,
+            "height": 46.0
+          },
+          "measurementOrigin": "Recovered report SVG image alignment; crop pixels verified identical to original."
+        }
+      ],
+      "appliesToFormats": [
+        "2025-flag"
+      ]
+    },
+    {
+      "id": "modern-z",
+      "serial": "A25-0EZ",
+      "format": "2025-flag",
+      "profile": "bc-waldale",
+      "changed": [
+        "Z"
+      ],
+      "shapeSpace": "image plane",
+      "corners": null,
+      "cornerUncertaintyPx": null,
+      "placementNote": "Holder obscures the upper shell corners. Vertical foreshortening remains visible; no plate-plane placement comparison is claimed.",
+      "sourceUrl": "https://www.bcpl8s.ca/images/Passenger/2025/2025-A250EZ.jpg",
+      "originalPath": "sources/modern-z.jpg",
+      "sha256": "ee1ba102f918972f9915136d7aa01aa45bff74f77f06061b9c6c013435bc8e1a",
+      "dimensions": [
+        250,
+        123
+      ],
+      "originalBytes": 52521,
+      "matchesArchivedHash": true,
+      "credit": "BCpl8s.ca / Christopher John Garrish and credited contributors; original owners retain their rights.",
+      "dateEvidence": "Gallery filename/caption only; renewal year is not a manufacture date.",
+      "holdout": false,
+      "occurrences": [
+        {
+          "index": 1,
+          "character": "A",
+          "cropBounds": [
+            38,
+            43,
+            61,
+            83
+          ],
+          "alignmentInCrop": {
+            "xCenter": 12.0,
+            "yTop": 1.0,
+            "height": 38.0
+          },
+          "measurementOrigin": "Recovered report SVG image alignment; crop pixels verified identical to original."
+        },
+        {
+          "index": 2,
+          "character": "2",
+          "cropBounds": [
+            61,
+            44,
+            87,
+            84
+          ],
+          "alignmentInCrop": {
+            "xCenter": 13.0,
+            "yTop": 0.9999999999999998,
+            "height": 37.99999999999999
+          },
+          "measurementOrigin": "Recovered report SVG image alignment; crop pixels verified identical to original."
+        },
+        {
+          "index": 3,
+          "character": "5",
+          "cropBounds": [
+            87,
+            44,
+            113,
+            84
+          ],
+          "alignmentInCrop": {
+            "xCenter": 12.499999999999998,
+            "yTop": 0.9999999999999998,
+            "height": 37.99999999999999
+          },
+          "measurementOrigin": "Recovered report SVG image alignment; crop pixels verified identical to original."
+        },
+        {
+          "index": 4,
+          "character": "0",
+          "cropBounds": [
+            139,
+            44,
+            167,
+            85
+          ],
+          "alignmentInCrop": {
+            "xCenter": 14.0,
+            "yTop": 2.0,
+            "height": 38.0
+          },
+          "measurementOrigin": "Recovered report SVG image alignment; crop pixels verified identical to original."
+        },
+        {
+          "index": 5,
+          "character": "E",
+          "cropBounds": [
+            167,
+            45,
+            193,
+            87
+          ],
+          "alignmentInCrop": {
+            "xCenter": 13.0,
+            "yTop": 1.0000000000000004,
+            "height": 39.0
+          },
+          "measurementOrigin": "Recovered report SVG image alignment; crop pixels verified identical to original."
+        },
+        {
+          "index": 6,
+          "character": "Z",
+          "cropBounds": [
+            194,
+            46,
+            221,
+            87
+          ],
+          "alignmentInCrop": {
+            "xCenter": 13.0,
+            "yTop": 0.0,
+            "height": 40.0
+          },
+          "measurementOrigin": "Recovered report SVG image alignment; crop pixels verified identical to original."
+        }
+      ],
+      "appliesToFormats": [
+        "2025-flag"
+      ]
+    },
+    {
+      "id": "astro3-n",
+      "serial": "NJB-300",
+      "format": "1985-flag",
+      "profile": "bc-astro-3",
+      "changed": [
+        "N"
+      ],
+      "shapeSpace": "rectified plate plane",
+      "corners": [
+        [
+          20,
+          17
+        ],
+        [
+          1720,
+          21
+        ],
+        [
+          1730,
+          868
+        ],
+        [
+          13,
+          872
+        ]
+      ],
+      "cornerUncertaintyPx": 8,
+      "placementNote": "Near frontal photograph; corners extrapolated from the visible physical shell edges, approximately \u00b18 px. Rectified to 2:1. The renderer uses its existing 300\u00d7150 coordinate plane with no serial-specific adjustment.",
+      "sourceUrl": "https://www.bcpl8s.ca/images/Passenger/1985-2001/1988-NJB300(XL).jpg",
+      "originalPath": "sources/astro3-n.jpg",
+      "sha256": "7f76a7341e0956eaf4056d1c09b533affec303bf3e7b3f574c6b5c9a85a04faa",
+      "dimensions": [
+        1750,
+        886
+      ],
+      "originalBytes": 932942,
+      "matchesArchivedHash": true,
+      "credit": "BCpl8s.ca / Christopher John Garrish and credited contributors; original owners retain their rights.",
+      "dateEvidence": "Gallery filename/caption only; renewal year is not a manufacture date.",
+      "holdout": false,
+      "occurrences": [
+        {
+          "index": 1,
+          "character": "N",
+          "paintBounds": [
+            98,
+            263,
+            269,
+            634
+          ],
+          "cropBounds": [
+            92,
+            257,
+            275,
+            640
+          ],
+          "measurementOrigin": "Manual paint-body extent in original pixels; not a traced contour. Whole-image rectification precedes common-height comparison."
+        },
+        {
+          "index": 2,
+          "character": "J",
+          "paintBounds": [
+            316,
+            263,
+            485,
+            633
+          ],
+          "cropBounds": [
+            310,
+            257,
+            491,
+            639
+          ],
+          "measurementOrigin": "Manual paint-body extent in original pixels; not a traced contour. Whole-image rectification precedes common-height comparison."
+        },
+        {
+          "index": 3,
+          "character": "B",
+          "paintBounds": [
+            535,
+            264,
+            705,
+            637
+          ],
+          "cropBounds": [
+            529,
+            258,
+            711,
+            643
+          ],
+          "measurementOrigin": "Manual paint-body extent in original pixels; not a traced contour. Whole-image rectification precedes common-height comparison."
+        },
+        {
+          "index": 4,
+          "character": "3",
+          "paintBounds": [
+            1047,
+            268,
+            1220,
+            641
+          ],
+          "cropBounds": [
+            1041,
+            262,
+            1226,
+            647
+          ],
+          "measurementOrigin": "Manual paint-body extent in original pixels; not a traced contour. Whole-image rectification precedes common-height comparison."
+        },
+        {
+          "index": 5,
+          "character": "0",
+          "paintBounds": [
+            1271,
+            273,
+            1439,
+            639
+          ],
+          "cropBounds": [
+            1265,
+            267,
+            1445,
+            645
+          ],
+          "measurementOrigin": "Manual paint-body extent in original pixels; not a traced contour. Whole-image rectification precedes common-height comparison."
+        },
+        {
+          "index": 6,
+          "character": "0",
+          "paintBounds": [
+            1484,
+            271,
+            1656,
+            641
+          ],
+          "cropBounds": [
+            1478,
+            265,
+            1662,
+            647
+          ],
+          "measurementOrigin": "Manual paint-body extent in original pixels; not a traced contour. Whole-image rectification precedes common-height comparison."
+        }
+      ],
+      "appliesToFormats": [
+        "1985-flag"
+      ]
+    },
+    {
+      "id": "classic4-n",
+      "serial": "NPN-030",
+      "format": "1985-flag",
+      "profile": "bc-astro-4",
+      "changed": [
+        "N"
+      ],
+      "shapeSpace": "rectified plate plane",
+      "corners": [
+        [
+          22,
+          23
+        ],
+        [
+          1718,
+          24
+        ],
+        [
+          1731,
+          874
+        ],
+        [
+          18,
+          872
+        ]
+      ],
+      "cornerUncertaintyPx": 8,
+      "placementNote": "Near frontal photograph; corners extrapolated from the visible physical shell edges, approximately \u00b18 px. Rectified to 2:1. Both N occurrences are inputs from this one plate, not independent holdouts.",
+      "sourceUrl": "https://www.bcpl8s.ca/images/Passenger/1985-2001/1989-NPN030(XL).jpg",
+      "originalPath": "sources/classic4-n.jpg",
+      "sha256": "e2efd384224edb93a3d9e241ce6c156d83422921e990e71b2796f38156e9b2a6",
+      "dimensions": [
+        1750,
+        887
+      ],
+      "originalBytes": 958936,
+      "matchesArchivedHash": true,
+      "credit": "BCpl8s.ca / Christopher John Garrish and credited contributors; original owners retain their rights.",
+      "dateEvidence": "Gallery filename/caption only; renewal year is not a manufacture date.",
+      "holdout": false,
+      "occurrences": [
+        {
+          "index": 1,
+          "character": "N",
+          "paintBounds": [
+            104,
+            260,
+            298,
+            644
+          ],
+          "cropBounds": [
+            98,
+            254,
+            304,
+            650
+          ],
+          "measurementOrigin": "Manual paint-body extent in original pixels; not a traced contour. Whole-image rectification precedes common-height comparison."
+        },
+        {
+          "index": 2,
+          "character": "P",
+          "paintBounds": [
+            330,
+            260,
+            514,
+            643
+          ],
+          "cropBounds": [
+            324,
+            254,
+            520,
+            649
+          ],
+          "measurementOrigin": "Manual paint-body extent in original pixels; not a traced contour. Whole-image rectification precedes common-height comparison."
+        },
+        {
+          "index": 3,
+          "character": "N",
+          "paintBounds": [
+            560,
+            264,
+            746,
+            647
+          ],
+          "cropBounds": [
+            554,
+            258,
+            752,
+            653
+          ],
+          "measurementOrigin": "Manual paint-body extent in original pixels; not a traced contour. Whole-image rectification precedes common-height comparison."
+        },
+        {
+          "index": 4,
+          "character": "0",
+          "paintBounds": [
+            1023,
+            258,
+            1214,
+            646
+          ],
+          "cropBounds": [
+            1017,
+            252,
+            1220,
+            652
+          ],
+          "measurementOrigin": "Manual paint-body extent in original pixels; not a traced contour. Whole-image rectification precedes common-height comparison."
+        },
+        {
+          "index": 5,
+          "character": "3",
+          "paintBounds": [
+            1248,
+            269,
+            1430,
+            648
+          ],
+          "cropBounds": [
+            1242,
+            263,
+            1436,
+            654
+          ],
+          "measurementOrigin": "Manual paint-body extent in original pixels; not a traced contour. Whole-image rectification precedes common-height comparison."
+        },
+        {
+          "index": 6,
+          "character": "0",
+          "paintBounds": [
+            1478,
+            270,
+            1658,
+            649
+          ],
+          "cropBounds": [
+            1472,
+            264,
+            1664,
+            655
+          ],
+          "measurementOrigin": "Manual paint-body extent in original pixels; not a traced contour. Whole-image rectification precedes common-height comparison."
+        }
+      ],
+      "appliesToFormats": [
+        "1985-flag",
+        "2001-flag"
+      ]
+    }
+  ]
+}

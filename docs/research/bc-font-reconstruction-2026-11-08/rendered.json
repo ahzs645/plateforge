@@ -1,0 +1,1368 @@
+{
+  "schema": "plateforge.passenger-reconstruction-render/v1",
+  "records": [
+    {
+      "id": "modern-u",
+      "modes": {
+        "previous-production": {
+          "glyphs": {
+            "0": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"0\"><title>0</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M26.5 5.5 H26.5 A21 21 0 0 1 47.5 26.5 V50 V73.5 A21 21 0 0 1 26.5 94.5 H26.5 H26.5 A21 21 0 0 1 5.5 73.5 V50 V26.5 A21 21 0 0 1 26.5 5.5 H26.5 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "7": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"7\"><title>7</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"7\" data-provenance=\"constructed\"><path d=\"M5.5 5.5 H47.5 C31 30 23 57 23 94.5\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "9": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53.125,
+                101
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"9\"><title>9</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"9\" data-provenance=\"constructed\"><path d=\"M26.5 5.5 C38.1 5.5 47.5 17.25 47.5 31.75 C47.5 46.25 38.1 58 26.5 58 C14.9 58 5.5 46.25 5.5 31.75 C5.5 17.25 14.9 5.5 26.5 5.5 Z\"></path><path d=\"M47.5 29 C49.5 66 30.5 90.5 11.5 94.5\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "A": {
+              "advance": 53,
+              "bounds": [
+                -1,
+                0,
+                54,
+                101
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A\"><title>A</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-provenance=\"constructed\"><path d=\"M5.5 94.5 L23.32 5.5 H29.68 L47.5 94.5\"></path><path d=\"M15.91 70 H37.09\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "G": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"G\"><title>G</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"G\" data-provenance=\"constructed\"><path d=\"M47.5 25.08 Q47.5 5.5 26.5 5.5 C14.9 5.5 5.5 25.42 5.5 50 C5.5 74.58 14.9 94.5 26.5 94.5 Q47.5 94.5 47.5 74.92\"></path><path d=\"M47.5 74.5 V56 H28.5\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "U": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"U\"><title>U</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"U\" data-provenance=\"constructed\"><path d=\"M5.5 5.5 V70.35 C5.5 83.69 14.9 94.5 26.5 94.5 C38.1 94.5 47.5 83.69 47.5 70.35 V5.5\"></path></g></g></g>",
+              "reconstructed": null
+            }
+          },
+          "serialSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"600\" viewBox=\"0 0 300 150\"><g data-role=\"serial\" aria-label=\"A90-7GU\"><g data-role=\"serial-left\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A90\"><title>A90</title><g transform=\"translate(16 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-provenance=\"constructed\"><path d=\"M5.5 94.5 L23.32 5.5 H29.68 L47.5 94.5\"></path><path d=\"M15.91 70 H37.09\"></path></g><g transform=\"translate(61 0)\" data-character=\"9\" data-provenance=\"constructed\"><path d=\"M26.5 5.5 C38.1 5.5 47.5 17.25 47.5 31.75 C47.5 46.25 38.1 58 26.5 58 C14.9 58 5.5 46.25 5.5 31.75 C5.5 17.25 14.9 5.5 26.5 5.5 Z\"></path><path d=\"M47.5 29 C49.5 66 30.5 90.5 11.5 94.5\"></path></g><g transform=\"translate(122 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M26.5 5.5 H26.5 A21 21 0 0 1 47.5 26.5 V50 V73.5 A21 21 0 0 1 26.5 94.5 H26.5 H26.5 A21 21 0 0 1 5.5 73.5 V50 V26.5 A21 21 0 0 1 26.5 5.5 H26.5 Z\"></path></g></g></g><g data-role=\"serial-right\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"7GU\"><title>7GU</title><g transform=\"translate(173.24 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"7\" data-provenance=\"constructed\"><path d=\"M5.5 5.5 H47.5 C31 30 23 57 23 94.5\"></path></g><g transform=\"translate(61 0)\" data-character=\"G\" data-provenance=\"constructed\"><path d=\"M47.5 25.08 Q47.5 5.5 26.5 5.5 C14.9 5.5 5.5 25.42 5.5 50 C5.5 74.58 14.9 94.5 26.5 94.5 Q47.5 94.5 47.5 74.92\"></path><path d=\"M47.5 74.5 V56 H28.5\"></path></g><g transform=\"translate(122 0)\" data-character=\"U\" data-provenance=\"constructed\"><path d=\"M5.5 5.5 V70.35 C5.5 83.69 14.9 94.5 26.5 94.5 C38.1 94.5 47.5 83.69 47.5 70.35 V5.5\"></path></g></g></g></g></svg>"
+        },
+        "previous-research": {
+          "glyphs": {
+            "0": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"0\"><title>0</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 26.5 0 C 10.5 0 0 12 0 28 L 0 73 C 0 89 10.5 100 26.5 100 C 42 100 53 89 53 73 L 53 28 C 53 12 42 0 26.5 0 Z M 26.5 9 C 37 9 44 17 44 28 L 44 73 C 44 84 37 91 26.5 91 C 16 91 9 84 9 73 L 9 28 C 9 17 16 9 26.5 9 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "7": {
+              "advance": 53,
+              "bounds": [
+                0.5,
+                0,
+                52.5,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"7\"><title>7</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"7\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 0.5 0 L 52.5 0 L 52.5 9 C 36.5 34 27.5 65 27.5 100 L 18.5 100 C 18.5 66 27.5 34 41.5 9 L 0.5 9 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "9": {
+              "advance": 53,
+              "bounds": [
+                0.5,
+                0,
+                52.5,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"9\"><title>9</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"9\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 26.5 0 C 42.5 0 52.5 12 52.5 31 C 52.5 58 39.5 80 16.5 100 L 5.5 100 C 17.5 89 27.5 78 34.5 66 C 37.5 61 39.5 57 40.5 52 C 36.5 57 30.5 60 23.5 60 C 9.5 60 0.5 49 0.5 31 C 0.5 12 10.5 0 26.5 0 Z M 26.5 9 C 15.5 9 9.5 17 9.5 30 C 9.5 43 15.5 51 26.5 51 C 37.5 51 43.5 43 43.5 30 C 43.5 17 37.5 9 26.5 9 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "A": {
+              "advance": 53,
+              "bounds": [
+                0.5,
+                0,
+                52.5,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A\"><title>A</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 21 0 L 32 0 L 52.5 100 L 43 100 L 39 79 L 14 79 L 10 100 L 0.5 100 Z M 26.5 17 L 16 70 L 37 70 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "G": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"G\"><title>G</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"G\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 53 22 L 44 22 C 42 14 36 9 26.5 9 C 16 9 9 17 9 28 L 9 72 C 9 83 16 91 26.5 91 C 37 91 44 83 44 72 L 44 62 L 31 62 L 31 53 L 53 53 L 53 72 C 53 89 42 100 26.5 100 C 10.5 100 0 89 0 72 L 0 28 C 0 11 10.5 0 26.5 0 C 41 0 51 8 53 22 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "U": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"U\"><title>U</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"U\" data-provenance=\"constructed\"><path d=\"M5.5 5.5 V70.35 C5.5 83.69 14.9 94.5 26.5 94.5 C38.1 94.5 47.5 83.69 47.5 70.35 V5.5\"></path></g></g></g>",
+              "reconstructed": null
+            }
+          },
+          "serialSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"600\" viewBox=\"0 0 300 150\"><g data-role=\"serial\" aria-label=\"A90-7GU\"><g data-role=\"serial-left\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A90\"><title>A90</title><g transform=\"translate(16 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 21 0 L 32 0 L 52.5 100 L 43 100 L 39 79 L 14 79 L 10 100 L 0.5 100 Z M 26.5 17 L 16 70 L 37 70 Z\"></path></g><g transform=\"translate(61 0)\" data-character=\"9\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 26.5 0 C 42.5 0 52.5 12 52.5 31 C 52.5 58 39.5 80 16.5 100 L 5.5 100 C 17.5 89 27.5 78 34.5 66 C 37.5 61 39.5 57 40.5 52 C 36.5 57 30.5 60 23.5 60 C 9.5 60 0.5 49 0.5 31 C 0.5 12 10.5 0 26.5 0 Z M 26.5 9 C 15.5 9 9.5 17 9.5 30 C 9.5 43 15.5 51 26.5 51 C 37.5 51 43.5 43 43.5 30 C 43.5 17 37.5 9 26.5 9 Z\"></path></g><g transform=\"translate(122 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 26.5 0 C 10.5 0 0 12 0 28 L 0 73 C 0 89 10.5 100 26.5 100 C 42 100 53 89 53 73 L 53 28 C 53 12 42 0 26.5 0 Z M 26.5 9 C 37 9 44 17 44 28 L 44 73 C 44 84 37 91 26.5 91 C 16 91 9 84 9 73 L 9 28 C 9 17 16 9 26.5 9 Z\"></path></g></g></g><g data-role=\"serial-right\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"7GU\"><title>7GU</title><g transform=\"translate(173.24 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"7\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 0.5 0 L 52.5 0 L 52.5 9 C 36.5 34 27.5 65 27.5 100 L 18.5 100 C 18.5 66 27.5 34 41.5 9 L 0.5 9 Z\"></path></g><g transform=\"translate(61 0)\" data-character=\"G\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 53 22 L 44 22 C 42 14 36 9 26.5 9 C 16 9 9 17 9 28 L 9 72 C 9 83 16 91 26.5 91 C 37 91 44 83 44 72 L 44 62 L 31 62 L 31 53 L 53 53 L 53 72 C 53 89 42 100 26.5 100 C 10.5 100 0 89 0 72 L 0 28 C 0 11 10.5 0 26.5 0 C 41 0 51 8 53 22 Z\"></path></g><g transform=\"translate(122 0)\" data-character=\"U\" data-provenance=\"constructed\"><path d=\"M5.5 5.5 V70.35 C5.5 83.69 14.9 94.5 26.5 94.5 C38.1 94.5 47.5 83.69 47.5 70.35 V5.5\"></path></g></g></g></g></svg>"
+        },
+        "current-production": {
+          "glyphs": {
+            "0": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"0\"><title>0</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M26.5 5.5 H26.5 A21 21 0 0 1 47.5 26.5 V50 V73.5 A21 21 0 0 1 26.5 94.5 H26.5 H26.5 A21 21 0 0 1 5.5 73.5 V50 V26.5 A21 21 0 0 1 26.5 5.5 H26.5 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "7": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"7\"><title>7</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"7\" data-provenance=\"constructed\"><path d=\"M5.5 5.5 H47.5 C31 30 23 57 23 94.5\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "9": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53.125,
+                101
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"9\"><title>9</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"9\" data-provenance=\"constructed\"><path d=\"M26.5 5.5 C38.1 5.5 47.5 17.25 47.5 31.75 C47.5 46.25 38.1 58 26.5 58 C14.9 58 5.5 46.25 5.5 31.75 C5.5 17.25 14.9 5.5 26.5 5.5 Z\"></path><path d=\"M47.5 29 C49.5 66 30.5 90.5 11.5 94.5\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "A": {
+              "advance": 53,
+              "bounds": [
+                -1,
+                0,
+                54,
+                101
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A\"><title>A</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-provenance=\"constructed\"><path d=\"M5.5 94.5 L23.32 5.5 H29.68 L47.5 94.5\"></path><path d=\"M15.91 70 H37.09\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "G": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"G\"><title>G</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"G\" data-provenance=\"constructed\"><path d=\"M47.5 25.08 Q47.5 5.5 26.5 5.5 C14.9 5.5 5.5 25.42 5.5 50 C5.5 74.58 14.9 94.5 26.5 94.5 Q47.5 94.5 47.5 74.92\"></path><path d=\"M47.5 74.5 V56 H28.5\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "U": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"U\"><title>U</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"U\" data-provenance=\"profile-override\" data-reconstruction-id=\"bc-waldale-2025-U-v1\" data-reconstruction-status=\"source-informed\" data-reconstruction-source=\"https://www.bcpl8s.ca/images/Passenger/2025/2025-A907GU.jpg\" data-reconstruction-recovery=\"report-vector\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0 0 H9 V73 C9 84 16 91 26.5 91 C37 91 44 84 44 73 V0 H53 V73 C53 89 42 100 26.5 100 C10.5 100 0 89 0 73 Z\"></path></g></g></g>",
+              "reconstructed": {
+                "id": "bc-waldale-2025-U-v1",
+                "status": "source-informed",
+                "recovery": "report-vector",
+                "source": "https://www.bcpl8s.ca/images/Passenger/2025/2025-A907GU.jpg"
+              }
+            }
+          },
+          "serialSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"600\" viewBox=\"0 0 300 150\"><g data-role=\"serial\" aria-label=\"A90-7GU\"><g data-role=\"serial-left\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A90\"><title>A90</title><g transform=\"translate(16 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-provenance=\"constructed\"><path d=\"M5.5 94.5 L23.32 5.5 H29.68 L47.5 94.5\"></path><path d=\"M15.91 70 H37.09\"></path></g><g transform=\"translate(61 0)\" data-character=\"9\" data-provenance=\"constructed\"><path d=\"M26.5 5.5 C38.1 5.5 47.5 17.25 47.5 31.75 C47.5 46.25 38.1 58 26.5 58 C14.9 58 5.5 46.25 5.5 31.75 C5.5 17.25 14.9 5.5 26.5 5.5 Z\"></path><path d=\"M47.5 29 C49.5 66 30.5 90.5 11.5 94.5\"></path></g><g transform=\"translate(122 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M26.5 5.5 H26.5 A21 21 0 0 1 47.5 26.5 V50 V73.5 A21 21 0 0 1 26.5 94.5 H26.5 H26.5 A21 21 0 0 1 5.5 73.5 V50 V26.5 A21 21 0 0 1 26.5 5.5 H26.5 Z\"></path></g></g></g><g data-role=\"serial-right\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"7GU\"><title>7GU</title><g transform=\"translate(173.24 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"7\" data-provenance=\"constructed\"><path d=\"M5.5 5.5 H47.5 C31 30 23 57 23 94.5\"></path></g><g transform=\"translate(61 0)\" data-character=\"G\" data-provenance=\"constructed\"><path d=\"M47.5 25.08 Q47.5 5.5 26.5 5.5 C14.9 5.5 5.5 25.42 5.5 50 C5.5 74.58 14.9 94.5 26.5 94.5 Q47.5 94.5 47.5 74.92\"></path><path d=\"M47.5 74.5 V56 H28.5\"></path></g><g transform=\"translate(122 0)\" data-character=\"U\" data-provenance=\"profile-override\" data-reconstruction-id=\"bc-waldale-2025-U-v1\" data-reconstruction-status=\"source-informed\" data-reconstruction-source=\"https://www.bcpl8s.ca/images/Passenger/2025/2025-A907GU.jpg\" data-reconstruction-recovery=\"report-vector\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0 0 H9 V73 C9 84 16 91 26.5 91 C37 91 44 84 44 73 V0 H53 V73 C53 89 42 100 26.5 100 C10.5 100 0 89 0 73 Z\"></path></g></g></g></g></svg>"
+        },
+        "current-research": {
+          "glyphs": {
+            "0": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"0\"><title>0</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 26.5 0 C 10.5 0 0 12 0 28 L 0 73 C 0 89 10.5 100 26.5 100 C 42 100 53 89 53 73 L 53 28 C 53 12 42 0 26.5 0 Z M 26.5 9 C 37 9 44 17 44 28 L 44 73 C 44 84 37 91 26.5 91 C 16 91 9 84 9 73 L 9 28 C 9 17 16 9 26.5 9 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "7": {
+              "advance": 53,
+              "bounds": [
+                0.5,
+                0,
+                52.5,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"7\"><title>7</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"7\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 0.5 0 L 52.5 0 L 52.5 9 C 36.5 34 27.5 65 27.5 100 L 18.5 100 C 18.5 66 27.5 34 41.5 9 L 0.5 9 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "9": {
+              "advance": 53,
+              "bounds": [
+                0.5,
+                0,
+                52.5,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"9\"><title>9</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"9\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 26.5 0 C 42.5 0 52.5 12 52.5 31 C 52.5 58 39.5 80 16.5 100 L 5.5 100 C 17.5 89 27.5 78 34.5 66 C 37.5 61 39.5 57 40.5 52 C 36.5 57 30.5 60 23.5 60 C 9.5 60 0.5 49 0.5 31 C 0.5 12 10.5 0 26.5 0 Z M 26.5 9 C 15.5 9 9.5 17 9.5 30 C 9.5 43 15.5 51 26.5 51 C 37.5 51 43.5 43 43.5 30 C 43.5 17 37.5 9 26.5 9 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "A": {
+              "advance": 53,
+              "bounds": [
+                0.5,
+                0,
+                52.5,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A\"><title>A</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 21 0 L 32 0 L 52.5 100 L 43 100 L 39 79 L 14 79 L 10 100 L 0.5 100 Z M 26.5 17 L 16 70 L 37 70 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "G": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"G\"><title>G</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"G\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 53 22 L 44 22 C 42 14 36 9 26.5 9 C 16 9 9 17 9 28 L 9 72 C 9 83 16 91 26.5 91 C 37 91 44 83 44 72 L 44 62 L 31 62 L 31 53 L 53 53 L 53 72 C 53 89 42 100 26.5 100 C 10.5 100 0 89 0 72 L 0 28 C 0 11 10.5 0 26.5 0 C 41 0 51 8 53 22 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "U": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"U\"><title>U</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"U\" data-provenance=\"profile-override\" data-reconstruction-id=\"bc-waldale-2025-U-v1\" data-reconstruction-status=\"source-informed\" data-reconstruction-source=\"https://www.bcpl8s.ca/images/Passenger/2025/2025-A907GU.jpg\" data-reconstruction-recovery=\"report-vector\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0 0 H9 V73 C9 84 16 91 26.5 91 C37 91 44 84 44 73 V0 H53 V73 C53 89 42 100 26.5 100 C10.5 100 0 89 0 73 Z\"></path></g></g></g>",
+              "reconstructed": {
+                "id": "bc-waldale-2025-U-v1",
+                "status": "source-informed",
+                "recovery": "report-vector",
+                "source": "https://www.bcpl8s.ca/images/Passenger/2025/2025-A907GU.jpg"
+              }
+            }
+          },
+          "serialSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"600\" viewBox=\"0 0 300 150\"><g data-role=\"serial\" aria-label=\"A90-7GU\"><g data-role=\"serial-left\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A90\"><title>A90</title><g transform=\"translate(16 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 21 0 L 32 0 L 52.5 100 L 43 100 L 39 79 L 14 79 L 10 100 L 0.5 100 Z M 26.5 17 L 16 70 L 37 70 Z\"></path></g><g transform=\"translate(61 0)\" data-character=\"9\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 26.5 0 C 42.5 0 52.5 12 52.5 31 C 52.5 58 39.5 80 16.5 100 L 5.5 100 C 17.5 89 27.5 78 34.5 66 C 37.5 61 39.5 57 40.5 52 C 36.5 57 30.5 60 23.5 60 C 9.5 60 0.5 49 0.5 31 C 0.5 12 10.5 0 26.5 0 Z M 26.5 9 C 15.5 9 9.5 17 9.5 30 C 9.5 43 15.5 51 26.5 51 C 37.5 51 43.5 43 43.5 30 C 43.5 17 37.5 9 26.5 9 Z\"></path></g><g transform=\"translate(122 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 26.5 0 C 10.5 0 0 12 0 28 L 0 73 C 0 89 10.5 100 26.5 100 C 42 100 53 89 53 73 L 53 28 C 53 12 42 0 26.5 0 Z M 26.5 9 C 37 9 44 17 44 28 L 44 73 C 44 84 37 91 26.5 91 C 16 91 9 84 9 73 L 9 28 C 9 17 16 9 26.5 9 Z\"></path></g></g></g><g data-role=\"serial-right\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"7GU\"><title>7GU</title><g transform=\"translate(173.24 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"7\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 0.5 0 L 52.5 0 L 52.5 9 C 36.5 34 27.5 65 27.5 100 L 18.5 100 C 18.5 66 27.5 34 41.5 9 L 0.5 9 Z\"></path></g><g transform=\"translate(61 0)\" data-character=\"G\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 53 22 L 44 22 C 42 14 36 9 26.5 9 C 16 9 9 17 9 28 L 9 72 C 9 83 16 91 26.5 91 C 37 91 44 83 44 72 L 44 62 L 31 62 L 31 53 L 53 53 L 53 72 C 53 89 42 100 26.5 100 C 10.5 100 0 89 0 72 L 0 28 C 0 11 10.5 0 26.5 0 C 41 0 51 8 53 22 Z\"></path></g><g transform=\"translate(122 0)\" data-character=\"U\" data-provenance=\"profile-override\" data-reconstruction-id=\"bc-waldale-2025-U-v1\" data-reconstruction-status=\"source-informed\" data-reconstruction-source=\"https://www.bcpl8s.ca/images/Passenger/2025/2025-A907GU.jpg\" data-reconstruction-recovery=\"report-vector\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0 0 H9 V73 C9 84 16 91 26.5 91 C37 91 44 84 44 73 V0 H53 V73 C53 89 42 100 26.5 100 C10.5 100 0 89 0 73 Z\"></path></g></g></g></g></svg>"
+        }
+      }
+    },
+    {
+      "id": "modern-y",
+      "modes": {
+        "previous-production": {
+          "glyphs": {
+            "0": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"0\"><title>0</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M26.5 5.5 H26.5 A21 21 0 0 1 47.5 26.5 V50 V73.5 A21 21 0 0 1 26.5 94.5 H26.5 H26.5 A21 21 0 0 1 5.5 73.5 V50 V26.5 A21 21 0 0 1 26.5 5.5 H26.5 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "2": {
+              "advance": 53,
+              "bounds": [
+                0,
+                2.375,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"2\"><title>2</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"2\" data-provenance=\"constructed\"><path d=\"M5.5 23.5 C5.5 1.5 47.5 1.5 47.5 31.5 C47.5 56 5.5 72.5 5.5 94.5 H47.5\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "8": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"8\"><title>8</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"8\" data-provenance=\"constructed\"><path d=\"M26.5 5.5 C36.63 5.5 44.85 15.46 44.85 27.75 C44.85 40.04 36.63 50 26.5 50 C16.37 50 8.15 40.04 8.15 27.75 C8.15 15.46 16.37 5.5 26.5 5.5 Z\"></path><path d=\"M26.5 50 C38.1 50 47.5 59.96 47.5 72.25 C47.5 84.54 38.1 94.5 26.5 94.5 C14.9 94.5 5.5 84.54 5.5 72.25 C5.5 59.96 14.9 50 26.5 50 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "A": {
+              "advance": 53,
+              "bounds": [
+                -1,
+                0,
+                54,
+                101
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A\"><title>A</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-provenance=\"constructed\"><path d=\"M5.5 94.5 L23.32 5.5 H29.68 L47.5 94.5\"></path><path d=\"M15.91 70 H37.09\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "E": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"E\"><title>E</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"E\" data-provenance=\"constructed\"><path d=\"M47.5 5.5 H5.5 V94.5 H47.5\"></path><path d=\"M5.5 50 H40.08\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "Y": {
+              "advance": 53,
+              "bounds": [
+                -1.75,
+                -1.75,
+                54.75,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"Y\"><title>Y</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"Y\" data-provenance=\"constructed\"><path d=\"M5.5 5.5 L26.5 50 L47.5 5.5\"></path><path d=\"M26.5 50 V94.5\"></path></g></g></g>",
+              "reconstructed": null
+            }
+          },
+          "serialSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"600\" viewBox=\"0 0 300 150\"><g data-role=\"serial\" aria-label=\"A82-0EY\"><g data-role=\"serial-left\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A82\"><title>A82</title><g transform=\"translate(16 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-provenance=\"constructed\"><path d=\"M5.5 94.5 L23.32 5.5 H29.68 L47.5 94.5\"></path><path d=\"M15.91 70 H37.09\"></path></g><g transform=\"translate(61 0)\" data-character=\"8\" data-provenance=\"constructed\"><path d=\"M26.5 5.5 C36.63 5.5 44.85 15.46 44.85 27.75 C44.85 40.04 36.63 50 26.5 50 C16.37 50 8.15 40.04 8.15 27.75 C8.15 15.46 16.37 5.5 26.5 5.5 Z\"></path><path d=\"M26.5 50 C38.1 50 47.5 59.96 47.5 72.25 C47.5 84.54 38.1 94.5 26.5 94.5 C14.9 94.5 5.5 84.54 5.5 72.25 C5.5 59.96 14.9 50 26.5 50 Z\"></path></g><g transform=\"translate(122 0)\" data-character=\"2\" data-provenance=\"constructed\"><path d=\"M5.5 23.5 C5.5 1.5 47.5 1.5 47.5 31.5 C47.5 56 5.5 72.5 5.5 94.5 H47.5\"></path></g></g></g><g data-role=\"serial-right\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"0EY\"><title>0EY</title><g transform=\"translate(173.24 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M26.5 5.5 H26.5 A21 21 0 0 1 47.5 26.5 V50 V73.5 A21 21 0 0 1 26.5 94.5 H26.5 H26.5 A21 21 0 0 1 5.5 73.5 V50 V26.5 A21 21 0 0 1 26.5 5.5 H26.5 Z\"></path></g><g transform=\"translate(61 0)\" data-character=\"E\" data-provenance=\"constructed\"><path d=\"M47.5 5.5 H5.5 V94.5 H47.5\"></path><path d=\"M5.5 50 H40.08\"></path></g><g transform=\"translate(122 0)\" data-character=\"Y\" data-provenance=\"constructed\"><path d=\"M5.5 5.5 L26.5 50 L47.5 5.5\"></path><path d=\"M26.5 50 V94.5\"></path></g></g></g></g></svg>"
+        },
+        "previous-research": {
+          "glyphs": {
+            "0": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"0\"><title>0</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 26.5 0 C 10.5 0 0 12 0 28 L 0 73 C 0 89 10.5 100 26.5 100 C 42 100 53 89 53 73 L 53 28 C 53 12 42 0 26.5 0 Z M 26.5 9 C 37 9 44 17 44 28 L 44 73 C 44 84 37 91 26.5 91 C 16 91 9 84 9 73 L 9 28 C 9 17 16 9 26.5 9 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "2": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0.125,
+                51.625,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"2\"><title>2</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"2\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0 23.351 C1 8.072 10.818000000000001 0.072 25.818 0.072 C41.818 0.072 51.636 10.072 51.636 28.508 C51.636 40 43.636 49 30.818 59 C19.818 68.004 11.559 82 10.559 90.635 L51.636 90.635 L51.636 100 L0 100 L0 94 C0 77 13 63 25.818 50 C37.636 40 42.077000000000005 33 42.077000000000005 28.508 C42.077000000000005 15.072 35.818 9.630999999999998 25.818 9.630999999999998 C15.818000000000001 9.630999999999998 10.559 14.072 9.559 23.351 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "8": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"8\"><title>8</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"8\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 26.5 0 C 42 0 52 10 52 25 C 52 35 47 43 38 47 C 48 52 53 60 53 73 C 53 89 42 100 26.5 100 C 11 100 0 89 0 73 C 0 60 5 52 15 47 C 6 43 1 35 1 25 C 1 10 11 0 26.5 0 Z M 26.5 9 C 16 9 10 15 10 25 C 10 35 16 41 26.5 41 C 37 41 43 35 43 25 C 43 15 37 9 26.5 9 Z M 26.5 51 C 16 51 9 59 9 73 C 9 84 16 91 26.5 91 C 37 91 44 84 44 73 C 44 59 37 51 26.5 51 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "A": {
+              "advance": 53,
+              "bounds": [
+                0.5,
+                0,
+                52.5,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A\"><title>A</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 21 0 L 32 0 L 52.5 100 L 43 100 L 39 79 L 14 79 L 10 100 L 0.5 100 Z M 26.5 17 L 16 70 L 37 70 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "E": {
+              "advance": 53,
+              "bounds": [
+                -0.5,
+                0,
+                53.5,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"E\"><title>E</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"E\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M -0.5 0 L 53.5 0 L 53.5 9 L 8.5 9 L 8.5 41 L 29.5 41 L 29.5 50 L 8.5 50 L 8.5 91 L 53.5 91 L 53.5 100 L -0.5 100 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "Y": {
+              "advance": 53,
+              "bounds": [
+                -1.75,
+                -1.75,
+                54.75,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"Y\"><title>Y</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"Y\" data-provenance=\"constructed\"><path d=\"M5.5 5.5 L26.5 50 L47.5 5.5\"></path><path d=\"M26.5 50 V94.5\"></path></g></g></g>",
+              "reconstructed": null
+            }
+          },
+          "serialSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"600\" viewBox=\"0 0 300 150\"><g data-role=\"serial\" aria-label=\"A82-0EY\"><g data-role=\"serial-left\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A82\"><title>A82</title><g transform=\"translate(16 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 21 0 L 32 0 L 52.5 100 L 43 100 L 39 79 L 14 79 L 10 100 L 0.5 100 Z M 26.5 17 L 16 70 L 37 70 Z\"></path></g><g transform=\"translate(61 0)\" data-character=\"8\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 26.5 0 C 42 0 52 10 52 25 C 52 35 47 43 38 47 C 48 52 53 60 53 73 C 53 89 42 100 26.5 100 C 11 100 0 89 0 73 C 0 60 5 52 15 47 C 6 43 1 35 1 25 C 1 10 11 0 26.5 0 Z M 26.5 9 C 16 9 10 15 10 25 C 10 35 16 41 26.5 41 C 37 41 43 35 43 25 C 43 15 37 9 26.5 9 Z M 26.5 51 C 16 51 9 59 9 73 C 9 84 16 91 26.5 91 C 37 91 44 84 44 73 C 44 59 37 51 26.5 51 Z\"></path></g><g transform=\"translate(122 0)\" data-character=\"2\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0 23.351 C1 8.072 10.818000000000001 0.072 25.818 0.072 C41.818 0.072 51.636 10.072 51.636 28.508 C51.636 40 43.636 49 30.818 59 C19.818 68.004 11.559 82 10.559 90.635 L51.636 90.635 L51.636 100 L0 100 L0 94 C0 77 13 63 25.818 50 C37.636 40 42.077000000000005 33 42.077000000000005 28.508 C42.077000000000005 15.072 35.818 9.630999999999998 25.818 9.630999999999998 C15.818000000000001 9.630999999999998 10.559 14.072 9.559 23.351 Z\"></path></g></g></g><g data-role=\"serial-right\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"0EY\"><title>0EY</title><g transform=\"translate(173.24 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 26.5 0 C 10.5 0 0 12 0 28 L 0 73 C 0 89 10.5 100 26.5 100 C 42 100 53 89 53 73 L 53 28 C 53 12 42 0 26.5 0 Z M 26.5 9 C 37 9 44 17 44 28 L 44 73 C 44 84 37 91 26.5 91 C 16 91 9 84 9 73 L 9 28 C 9 17 16 9 26.5 9 Z\"></path></g><g transform=\"translate(61 0)\" data-character=\"E\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M -0.5 0 L 53.5 0 L 53.5 9 L 8.5 9 L 8.5 41 L 29.5 41 L 29.5 50 L 8.5 50 L 8.5 91 L 53.5 91 L 53.5 100 L -0.5 100 Z\"></path></g><g transform=\"translate(122 0)\" data-character=\"Y\" data-provenance=\"constructed\"><path d=\"M5.5 5.5 L26.5 50 L47.5 5.5\"></path><path d=\"M26.5 50 V94.5\"></path></g></g></g></g></svg>"
+        },
+        "current-production": {
+          "glyphs": {
+            "0": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"0\"><title>0</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M26.5 5.5 H26.5 A21 21 0 0 1 47.5 26.5 V50 V73.5 A21 21 0 0 1 26.5 94.5 H26.5 H26.5 A21 21 0 0 1 5.5 73.5 V50 V26.5 A21 21 0 0 1 26.5 5.5 H26.5 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "2": {
+              "advance": 53,
+              "bounds": [
+                0,
+                2.375,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"2\"><title>2</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"2\" data-provenance=\"constructed\"><path d=\"M5.5 23.5 C5.5 1.5 47.5 1.5 47.5 31.5 C47.5 56 5.5 72.5 5.5 94.5 H47.5\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "8": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"8\"><title>8</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"8\" data-provenance=\"constructed\"><path d=\"M26.5 5.5 C36.63 5.5 44.85 15.46 44.85 27.75 C44.85 40.04 36.63 50 26.5 50 C16.37 50 8.15 40.04 8.15 27.75 C8.15 15.46 16.37 5.5 26.5 5.5 Z\"></path><path d=\"M26.5 50 C38.1 50 47.5 59.96 47.5 72.25 C47.5 84.54 38.1 94.5 26.5 94.5 C14.9 94.5 5.5 84.54 5.5 72.25 C5.5 59.96 14.9 50 26.5 50 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "A": {
+              "advance": 53,
+              "bounds": [
+                -1,
+                0,
+                54,
+                101
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A\"><title>A</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-provenance=\"constructed\"><path d=\"M5.5 94.5 L23.32 5.5 H29.68 L47.5 94.5\"></path><path d=\"M15.91 70 H37.09\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "E": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"E\"><title>E</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"E\" data-provenance=\"constructed\"><path d=\"M47.5 5.5 H5.5 V94.5 H47.5\"></path><path d=\"M5.5 50 H40.08\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "Y": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"Y\"><title>Y</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"Y\" data-provenance=\"profile-override\" data-reconstruction-id=\"bc-waldale-2025-Y-v1\" data-reconstruction-status=\"source-informed\" data-reconstruction-source=\"https://www.bcpl8s.ca/images/Passenger/2025/2025-A820EY.jpg\" data-reconstruction-recovery=\"report-vector\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0 0 H10 L22.5 28 C24 31.5 25 33 26.5 33 C28 33 29 31.5 30.5 28 L43 0 H53 L31 53 V100 H22 V53 Z\"></path></g></g></g>",
+              "reconstructed": {
+                "id": "bc-waldale-2025-Y-v1",
+                "status": "source-informed",
+                "recovery": "report-vector",
+                "source": "https://www.bcpl8s.ca/images/Passenger/2025/2025-A820EY.jpg"
+              }
+            }
+          },
+          "serialSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"600\" viewBox=\"0 0 300 150\"><g data-role=\"serial\" aria-label=\"A82-0EY\"><g data-role=\"serial-left\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A82\"><title>A82</title><g transform=\"translate(16 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-provenance=\"constructed\"><path d=\"M5.5 94.5 L23.32 5.5 H29.68 L47.5 94.5\"></path><path d=\"M15.91 70 H37.09\"></path></g><g transform=\"translate(61 0)\" data-character=\"8\" data-provenance=\"constructed\"><path d=\"M26.5 5.5 C36.63 5.5 44.85 15.46 44.85 27.75 C44.85 40.04 36.63 50 26.5 50 C16.37 50 8.15 40.04 8.15 27.75 C8.15 15.46 16.37 5.5 26.5 5.5 Z\"></path><path d=\"M26.5 50 C38.1 50 47.5 59.96 47.5 72.25 C47.5 84.54 38.1 94.5 26.5 94.5 C14.9 94.5 5.5 84.54 5.5 72.25 C5.5 59.96 14.9 50 26.5 50 Z\"></path></g><g transform=\"translate(122 0)\" data-character=\"2\" data-provenance=\"constructed\"><path d=\"M5.5 23.5 C5.5 1.5 47.5 1.5 47.5 31.5 C47.5 56 5.5 72.5 5.5 94.5 H47.5\"></path></g></g></g><g data-role=\"serial-right\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"0EY\"><title>0EY</title><g transform=\"translate(173.24 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M26.5 5.5 H26.5 A21 21 0 0 1 47.5 26.5 V50 V73.5 A21 21 0 0 1 26.5 94.5 H26.5 H26.5 A21 21 0 0 1 5.5 73.5 V50 V26.5 A21 21 0 0 1 26.5 5.5 H26.5 Z\"></path></g><g transform=\"translate(61 0)\" data-character=\"E\" data-provenance=\"constructed\"><path d=\"M47.5 5.5 H5.5 V94.5 H47.5\"></path><path d=\"M5.5 50 H40.08\"></path></g><g transform=\"translate(122 0)\" data-character=\"Y\" data-provenance=\"profile-override\" data-reconstruction-id=\"bc-waldale-2025-Y-v1\" data-reconstruction-status=\"source-informed\" data-reconstruction-source=\"https://www.bcpl8s.ca/images/Passenger/2025/2025-A820EY.jpg\" data-reconstruction-recovery=\"report-vector\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0 0 H10 L22.5 28 C24 31.5 25 33 26.5 33 C28 33 29 31.5 30.5 28 L43 0 H53 L31 53 V100 H22 V53 Z\"></path></g></g></g></g></svg>"
+        },
+        "current-research": {
+          "glyphs": {
+            "0": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"0\"><title>0</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 26.5 0 C 10.5 0 0 12 0 28 L 0 73 C 0 89 10.5 100 26.5 100 C 42 100 53 89 53 73 L 53 28 C 53 12 42 0 26.5 0 Z M 26.5 9 C 37 9 44 17 44 28 L 44 73 C 44 84 37 91 26.5 91 C 16 91 9 84 9 73 L 9 28 C 9 17 16 9 26.5 9 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "2": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0.125,
+                51.625,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"2\"><title>2</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"2\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0 23.351 C1 8.072 10.818000000000001 0.072 25.818 0.072 C41.818 0.072 51.636 10.072 51.636 28.508 C51.636 40 43.636 49 30.818 59 C19.818 68.004 11.559 82 10.559 90.635 L51.636 90.635 L51.636 100 L0 100 L0 94 C0 77 13 63 25.818 50 C37.636 40 42.077000000000005 33 42.077000000000005 28.508 C42.077000000000005 15.072 35.818 9.630999999999998 25.818 9.630999999999998 C15.818000000000001 9.630999999999998 10.559 14.072 9.559 23.351 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "8": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"8\"><title>8</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"8\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 26.5 0 C 42 0 52 10 52 25 C 52 35 47 43 38 47 C 48 52 53 60 53 73 C 53 89 42 100 26.5 100 C 11 100 0 89 0 73 C 0 60 5 52 15 47 C 6 43 1 35 1 25 C 1 10 11 0 26.5 0 Z M 26.5 9 C 16 9 10 15 10 25 C 10 35 16 41 26.5 41 C 37 41 43 35 43 25 C 43 15 37 9 26.5 9 Z M 26.5 51 C 16 51 9 59 9 73 C 9 84 16 91 26.5 91 C 37 91 44 84 44 73 C 44 59 37 51 26.5 51 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "A": {
+              "advance": 53,
+              "bounds": [
+                0.5,
+                0,
+                52.5,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A\"><title>A</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 21 0 L 32 0 L 52.5 100 L 43 100 L 39 79 L 14 79 L 10 100 L 0.5 100 Z M 26.5 17 L 16 70 L 37 70 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "E": {
+              "advance": 53,
+              "bounds": [
+                -0.5,
+                0,
+                53.5,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"E\"><title>E</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"E\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M -0.5 0 L 53.5 0 L 53.5 9 L 8.5 9 L 8.5 41 L 29.5 41 L 29.5 50 L 8.5 50 L 8.5 91 L 53.5 91 L 53.5 100 L -0.5 100 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "Y": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"Y\"><title>Y</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"Y\" data-provenance=\"profile-override\" data-reconstruction-id=\"bc-waldale-2025-Y-v1\" data-reconstruction-status=\"source-informed\" data-reconstruction-source=\"https://www.bcpl8s.ca/images/Passenger/2025/2025-A820EY.jpg\" data-reconstruction-recovery=\"report-vector\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0 0 H10 L22.5 28 C24 31.5 25 33 26.5 33 C28 33 29 31.5 30.5 28 L43 0 H53 L31 53 V100 H22 V53 Z\"></path></g></g></g>",
+              "reconstructed": {
+                "id": "bc-waldale-2025-Y-v1",
+                "status": "source-informed",
+                "recovery": "report-vector",
+                "source": "https://www.bcpl8s.ca/images/Passenger/2025/2025-A820EY.jpg"
+              }
+            }
+          },
+          "serialSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"600\" viewBox=\"0 0 300 150\"><g data-role=\"serial\" aria-label=\"A82-0EY\"><g data-role=\"serial-left\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A82\"><title>A82</title><g transform=\"translate(16 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 21 0 L 32 0 L 52.5 100 L 43 100 L 39 79 L 14 79 L 10 100 L 0.5 100 Z M 26.5 17 L 16 70 L 37 70 Z\"></path></g><g transform=\"translate(61 0)\" data-character=\"8\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 26.5 0 C 42 0 52 10 52 25 C 52 35 47 43 38 47 C 48 52 53 60 53 73 C 53 89 42 100 26.5 100 C 11 100 0 89 0 73 C 0 60 5 52 15 47 C 6 43 1 35 1 25 C 1 10 11 0 26.5 0 Z M 26.5 9 C 16 9 10 15 10 25 C 10 35 16 41 26.5 41 C 37 41 43 35 43 25 C 43 15 37 9 26.5 9 Z M 26.5 51 C 16 51 9 59 9 73 C 9 84 16 91 26.5 91 C 37 91 44 84 44 73 C 44 59 37 51 26.5 51 Z\"></path></g><g transform=\"translate(122 0)\" data-character=\"2\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0 23.351 C1 8.072 10.818000000000001 0.072 25.818 0.072 C41.818 0.072 51.636 10.072 51.636 28.508 C51.636 40 43.636 49 30.818 59 C19.818 68.004 11.559 82 10.559 90.635 L51.636 90.635 L51.636 100 L0 100 L0 94 C0 77 13 63 25.818 50 C37.636 40 42.077000000000005 33 42.077000000000005 28.508 C42.077000000000005 15.072 35.818 9.630999999999998 25.818 9.630999999999998 C15.818000000000001 9.630999999999998 10.559 14.072 9.559 23.351 Z\"></path></g></g></g><g data-role=\"serial-right\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"0EY\"><title>0EY</title><g transform=\"translate(173.24 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 26.5 0 C 10.5 0 0 12 0 28 L 0 73 C 0 89 10.5 100 26.5 100 C 42 100 53 89 53 73 L 53 28 C 53 12 42 0 26.5 0 Z M 26.5 9 C 37 9 44 17 44 28 L 44 73 C 44 84 37 91 26.5 91 C 16 91 9 84 9 73 L 9 28 C 9 17 16 9 26.5 9 Z\"></path></g><g transform=\"translate(61 0)\" data-character=\"E\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M -0.5 0 L 53.5 0 L 53.5 9 L 8.5 9 L 8.5 41 L 29.5 41 L 29.5 50 L 8.5 50 L 8.5 91 L 53.5 91 L 53.5 100 L -0.5 100 Z\"></path></g><g transform=\"translate(122 0)\" data-character=\"Y\" data-provenance=\"profile-override\" data-reconstruction-id=\"bc-waldale-2025-Y-v1\" data-reconstruction-status=\"source-informed\" data-reconstruction-source=\"https://www.bcpl8s.ca/images/Passenger/2025/2025-A820EY.jpg\" data-reconstruction-recovery=\"report-vector\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0 0 H10 L22.5 28 C24 31.5 25 33 26.5 33 C28 33 29 31.5 30.5 28 L43 0 H53 L31 53 V100 H22 V53 Z\"></path></g></g></g></g></svg>"
+        }
+      }
+    },
+    {
+      "id": "modern-z",
+      "modes": {
+        "previous-production": {
+          "glyphs": {
+            "0": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"0\"><title>0</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M26.5 5.5 H26.5 A21 21 0 0 1 47.5 26.5 V50 V73.5 A21 21 0 0 1 26.5 94.5 H26.5 H26.5 A21 21 0 0 1 5.5 73.5 V50 V26.5 A21 21 0 0 1 26.5 5.5 H26.5 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "2": {
+              "advance": 53,
+              "bounds": [
+                0,
+                2.375,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"2\"><title>2</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"2\" data-provenance=\"constructed\"><path d=\"M5.5 23.5 C5.5 1.5 47.5 1.5 47.5 31.5 C47.5 56 5.5 72.5 5.5 94.5 H47.5\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "5": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"5\"><title>5</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"5\" data-provenance=\"constructed\"><path d=\"M47.5 5.5 H7.5 L5.5 46 H26.5 C38.1 42 47.5 53.75 47.5 68.25 C47.5 82.75 38.1 94.5 26.5 94.5 H15.04 Q5.5 94.5 5.5 82.5\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "A": {
+              "advance": 53,
+              "bounds": [
+                -1,
+                0,
+                54,
+                101
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A\"><title>A</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-provenance=\"constructed\"><path d=\"M5.5 94.5 L23.32 5.5 H29.68 L47.5 94.5\"></path><path d=\"M15.91 70 H37.09\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "E": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"E\"><title>E</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"E\" data-provenance=\"constructed\"><path d=\"M47.5 5.5 H5.5 V94.5 H47.5\"></path><path d=\"M5.5 50 H40.08\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "Z": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"Z\"><title>Z</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"Z\" data-provenance=\"constructed\"><path d=\"M5.5 5.5 H47.5 L5.5 94.5 H47.5\"></path></g></g></g>",
+              "reconstructed": null
+            }
+          },
+          "serialSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"600\" viewBox=\"0 0 300 150\"><g data-role=\"serial\" aria-label=\"A25-0EZ\"><g data-role=\"serial-left\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A25\"><title>A25</title><g transform=\"translate(16 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-provenance=\"constructed\"><path d=\"M5.5 94.5 L23.32 5.5 H29.68 L47.5 94.5\"></path><path d=\"M15.91 70 H37.09\"></path></g><g transform=\"translate(61 0)\" data-character=\"2\" data-provenance=\"constructed\"><path d=\"M5.5 23.5 C5.5 1.5 47.5 1.5 47.5 31.5 C47.5 56 5.5 72.5 5.5 94.5 H47.5\"></path></g><g transform=\"translate(122 0)\" data-character=\"5\" data-provenance=\"constructed\"><path d=\"M47.5 5.5 H7.5 L5.5 46 H26.5 C38.1 42 47.5 53.75 47.5 68.25 C47.5 82.75 38.1 94.5 26.5 94.5 H15.04 Q5.5 94.5 5.5 82.5\"></path></g></g></g><g data-role=\"serial-right\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"0EZ\"><title>0EZ</title><g transform=\"translate(173.24 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M26.5 5.5 H26.5 A21 21 0 0 1 47.5 26.5 V50 V73.5 A21 21 0 0 1 26.5 94.5 H26.5 H26.5 A21 21 0 0 1 5.5 73.5 V50 V26.5 A21 21 0 0 1 26.5 5.5 H26.5 Z\"></path></g><g transform=\"translate(61 0)\" data-character=\"E\" data-provenance=\"constructed\"><path d=\"M47.5 5.5 H5.5 V94.5 H47.5\"></path><path d=\"M5.5 50 H40.08\"></path></g><g transform=\"translate(122 0)\" data-character=\"Z\" data-provenance=\"constructed\"><path d=\"M5.5 5.5 H47.5 L5.5 94.5 H47.5\"></path></g></g></g></g></svg>"
+        },
+        "previous-research": {
+          "glyphs": {
+            "0": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"0\"><title>0</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 26.5 0 C 10.5 0 0 12 0 28 L 0 73 C 0 89 10.5 100 26.5 100 C 42 100 53 89 53 73 L 53 28 C 53 12 42 0 26.5 0 Z M 26.5 9 C 37 9 44 17 44 28 L 44 73 C 44 84 37 91 26.5 91 C 16 91 9 84 9 73 L 9 28 C 9 17 16 9 26.5 9 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "2": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0.125,
+                51.625,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"2\"><title>2</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"2\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0 23.351 C1 8.072 10.818000000000001 0.072 25.818 0.072 C41.818 0.072 51.636 10.072 51.636 28.508 C51.636 40 43.636 49 30.818 59 C19.818 68.004 11.559 82 10.559 90.635 L51.636 90.635 L51.636 100 L0 100 L0 94 C0 77 13 63 25.818 50 C37.636 40 42.077000000000005 33 42.077000000000005 28.508 C42.077000000000005 15.072 35.818 9.630999999999998 25.818 9.630999999999998 C15.818000000000001 9.630999999999998 10.559 14.072 9.559 23.351 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "5": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"5\"><title>5</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"5\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 2 0 L 52.5 0 L 52.5 9 L 11 9 L 10 34 C 15 32 21 31 27 31 C 43.5 31 53 42 53 58 L 53 75 C 53 91 43 100 26.5 100 C 10.5 100 0 91 0 78 L 0 75 L 9 75 L 9 78 C 9 86 15.5 91 26.5 91 C 37.5 91 44 85 44 75 L 44 58 C 44 47 38 40 27 40 C 20 40 14 42 9 47 L 0 47 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "A": {
+              "advance": 53,
+              "bounds": [
+                0.5,
+                0,
+                52.5,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A\"><title>A</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 21 0 L 32 0 L 52.5 100 L 43 100 L 39 79 L 14 79 L 10 100 L 0.5 100 Z M 26.5 17 L 16 70 L 37 70 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "E": {
+              "advance": 53,
+              "bounds": [
+                -0.5,
+                0,
+                53.5,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"E\"><title>E</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"E\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M -0.5 0 L 53.5 0 L 53.5 9 L 8.5 9 L 8.5 41 L 29.5 41 L 29.5 50 L 8.5 50 L 8.5 91 L 53.5 91 L 53.5 100 L -0.5 100 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "Z": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"Z\"><title>Z</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"Z\" data-provenance=\"constructed\"><path d=\"M5.5 5.5 H47.5 L5.5 94.5 H47.5\"></path></g></g></g>",
+              "reconstructed": null
+            }
+          },
+          "serialSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"600\" viewBox=\"0 0 300 150\"><g data-role=\"serial\" aria-label=\"A25-0EZ\"><g data-role=\"serial-left\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A25\"><title>A25</title><g transform=\"translate(16 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 21 0 L 32 0 L 52.5 100 L 43 100 L 39 79 L 14 79 L 10 100 L 0.5 100 Z M 26.5 17 L 16 70 L 37 70 Z\"></path></g><g transform=\"translate(61 0)\" data-character=\"2\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0 23.351 C1 8.072 10.818000000000001 0.072 25.818 0.072 C41.818 0.072 51.636 10.072 51.636 28.508 C51.636 40 43.636 49 30.818 59 C19.818 68.004 11.559 82 10.559 90.635 L51.636 90.635 L51.636 100 L0 100 L0 94 C0 77 13 63 25.818 50 C37.636 40 42.077000000000005 33 42.077000000000005 28.508 C42.077000000000005 15.072 35.818 9.630999999999998 25.818 9.630999999999998 C15.818000000000001 9.630999999999998 10.559 14.072 9.559 23.351 Z\"></path></g><g transform=\"translate(122 0)\" data-character=\"5\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 2 0 L 52.5 0 L 52.5 9 L 11 9 L 10 34 C 15 32 21 31 27 31 C 43.5 31 53 42 53 58 L 53 75 C 53 91 43 100 26.5 100 C 10.5 100 0 91 0 78 L 0 75 L 9 75 L 9 78 C 9 86 15.5 91 26.5 91 C 37.5 91 44 85 44 75 L 44 58 C 44 47 38 40 27 40 C 20 40 14 42 9 47 L 0 47 Z\"></path></g></g></g><g data-role=\"serial-right\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"0EZ\"><title>0EZ</title><g transform=\"translate(173.24 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 26.5 0 C 10.5 0 0 12 0 28 L 0 73 C 0 89 10.5 100 26.5 100 C 42 100 53 89 53 73 L 53 28 C 53 12 42 0 26.5 0 Z M 26.5 9 C 37 9 44 17 44 28 L 44 73 C 44 84 37 91 26.5 91 C 16 91 9 84 9 73 L 9 28 C 9 17 16 9 26.5 9 Z\"></path></g><g transform=\"translate(61 0)\" data-character=\"E\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M -0.5 0 L 53.5 0 L 53.5 9 L 8.5 9 L 8.5 41 L 29.5 41 L 29.5 50 L 8.5 50 L 8.5 91 L 53.5 91 L 53.5 100 L -0.5 100 Z\"></path></g><g transform=\"translate(122 0)\" data-character=\"Z\" data-provenance=\"constructed\"><path d=\"M5.5 5.5 H47.5 L5.5 94.5 H47.5\"></path></g></g></g></g></svg>"
+        },
+        "current-production": {
+          "glyphs": {
+            "0": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"0\"><title>0</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M26.5 5.5 H26.5 A21 21 0 0 1 47.5 26.5 V50 V73.5 A21 21 0 0 1 26.5 94.5 H26.5 H26.5 A21 21 0 0 1 5.5 73.5 V50 V26.5 A21 21 0 0 1 26.5 5.5 H26.5 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "2": {
+              "advance": 53,
+              "bounds": [
+                0,
+                2.375,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"2\"><title>2</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"2\" data-provenance=\"constructed\"><path d=\"M5.5 23.5 C5.5 1.5 47.5 1.5 47.5 31.5 C47.5 56 5.5 72.5 5.5 94.5 H47.5\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "5": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"5\"><title>5</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"5\" data-provenance=\"constructed\"><path d=\"M47.5 5.5 H7.5 L5.5 46 H26.5 C38.1 42 47.5 53.75 47.5 68.25 C47.5 82.75 38.1 94.5 26.5 94.5 H15.04 Q5.5 94.5 5.5 82.5\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "A": {
+              "advance": 53,
+              "bounds": [
+                -1,
+                0,
+                54,
+                101
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A\"><title>A</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-provenance=\"constructed\"><path d=\"M5.5 94.5 L23.32 5.5 H29.68 L47.5 94.5\"></path><path d=\"M15.91 70 H37.09\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "E": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"E\"><title>E</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"E\" data-provenance=\"constructed\"><path d=\"M47.5 5.5 H5.5 V94.5 H47.5\"></path><path d=\"M5.5 50 H40.08\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "Z": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"Z\"><title>Z</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"Z\" data-provenance=\"profile-override\" data-reconstruction-id=\"bc-waldale-2025-Z-v1\" data-reconstruction-status=\"source-informed\" data-reconstruction-source=\"https://www.bcpl8s.ca/images/Passenger/2025/2025-A250EZ.jpg\" data-reconstruction-recovery=\"report-vector\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0 0 H53 V9 L11 91 H53 V100 H0 V91 L42 9 H0 Z\"></path></g></g></g>",
+              "reconstructed": {
+                "id": "bc-waldale-2025-Z-v1",
+                "status": "source-informed",
+                "recovery": "report-vector",
+                "source": "https://www.bcpl8s.ca/images/Passenger/2025/2025-A250EZ.jpg"
+              }
+            }
+          },
+          "serialSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"600\" viewBox=\"0 0 300 150\"><g data-role=\"serial\" aria-label=\"A25-0EZ\"><g data-role=\"serial-left\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A25\"><title>A25</title><g transform=\"translate(16 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-provenance=\"constructed\"><path d=\"M5.5 94.5 L23.32 5.5 H29.68 L47.5 94.5\"></path><path d=\"M15.91 70 H37.09\"></path></g><g transform=\"translate(61 0)\" data-character=\"2\" data-provenance=\"constructed\"><path d=\"M5.5 23.5 C5.5 1.5 47.5 1.5 47.5 31.5 C47.5 56 5.5 72.5 5.5 94.5 H47.5\"></path></g><g transform=\"translate(122 0)\" data-character=\"5\" data-provenance=\"constructed\"><path d=\"M47.5 5.5 H7.5 L5.5 46 H26.5 C38.1 42 47.5 53.75 47.5 68.25 C47.5 82.75 38.1 94.5 26.5 94.5 H15.04 Q5.5 94.5 5.5 82.5\"></path></g></g></g><g data-role=\"serial-right\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"0EZ\"><title>0EZ</title><g transform=\"translate(173.24 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M26.5 5.5 H26.5 A21 21 0 0 1 47.5 26.5 V50 V73.5 A21 21 0 0 1 26.5 94.5 H26.5 H26.5 A21 21 0 0 1 5.5 73.5 V50 V26.5 A21 21 0 0 1 26.5 5.5 H26.5 Z\"></path></g><g transform=\"translate(61 0)\" data-character=\"E\" data-provenance=\"constructed\"><path d=\"M47.5 5.5 H5.5 V94.5 H47.5\"></path><path d=\"M5.5 50 H40.08\"></path></g><g transform=\"translate(122 0)\" data-character=\"Z\" data-provenance=\"profile-override\" data-reconstruction-id=\"bc-waldale-2025-Z-v1\" data-reconstruction-status=\"source-informed\" data-reconstruction-source=\"https://www.bcpl8s.ca/images/Passenger/2025/2025-A250EZ.jpg\" data-reconstruction-recovery=\"report-vector\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0 0 H53 V9 L11 91 H53 V100 H0 V91 L42 9 H0 Z\"></path></g></g></g></g></svg>"
+        },
+        "current-research": {
+          "glyphs": {
+            "0": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"0\"><title>0</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 26.5 0 C 10.5 0 0 12 0 28 L 0 73 C 0 89 10.5 100 26.5 100 C 42 100 53 89 53 73 L 53 28 C 53 12 42 0 26.5 0 Z M 26.5 9 C 37 9 44 17 44 28 L 44 73 C 44 84 37 91 26.5 91 C 16 91 9 84 9 73 L 9 28 C 9 17 16 9 26.5 9 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "2": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0.125,
+                51.625,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"2\"><title>2</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"2\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0 23.351 C1 8.072 10.818000000000001 0.072 25.818 0.072 C41.818 0.072 51.636 10.072 51.636 28.508 C51.636 40 43.636 49 30.818 59 C19.818 68.004 11.559 82 10.559 90.635 L51.636 90.635 L51.636 100 L0 100 L0 94 C0 77 13 63 25.818 50 C37.636 40 42.077000000000005 33 42.077000000000005 28.508 C42.077000000000005 15.072 35.818 9.630999999999998 25.818 9.630999999999998 C15.818000000000001 9.630999999999998 10.559 14.072 9.559 23.351 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "5": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"5\"><title>5</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"5\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 2 0 L 52.5 0 L 52.5 9 L 11 9 L 10 34 C 15 32 21 31 27 31 C 43.5 31 53 42 53 58 L 53 75 C 53 91 43 100 26.5 100 C 10.5 100 0 91 0 78 L 0 75 L 9 75 L 9 78 C 9 86 15.5 91 26.5 91 C 37.5 91 44 85 44 75 L 44 58 C 44 47 38 40 27 40 C 20 40 14 42 9 47 L 0 47 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "A": {
+              "advance": 53,
+              "bounds": [
+                0.5,
+                0,
+                52.5,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A\"><title>A</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 21 0 L 32 0 L 52.5 100 L 43 100 L 39 79 L 14 79 L 10 100 L 0.5 100 Z M 26.5 17 L 16 70 L 37 70 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "E": {
+              "advance": 53,
+              "bounds": [
+                -0.5,
+                0,
+                53.5,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"E\"><title>E</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"E\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M -0.5 0 L 53.5 0 L 53.5 9 L 8.5 9 L 8.5 41 L 29.5 41 L 29.5 50 L 8.5 50 L 8.5 91 L 53.5 91 L 53.5 100 L -0.5 100 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "Z": {
+              "advance": 53,
+              "bounds": [
+                0,
+                0,
+                53,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"Z\"><title>Z</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"Z\" data-provenance=\"profile-override\" data-reconstruction-id=\"bc-waldale-2025-Z-v1\" data-reconstruction-status=\"source-informed\" data-reconstruction-source=\"https://www.bcpl8s.ca/images/Passenger/2025/2025-A250EZ.jpg\" data-reconstruction-recovery=\"report-vector\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0 0 H53 V9 L11 91 H53 V100 H0 V91 L42 9 H0 Z\"></path></g></g></g>",
+              "reconstructed": {
+                "id": "bc-waldale-2025-Z-v1",
+                "status": "source-informed",
+                "recovery": "report-vector",
+                "source": "https://www.bcpl8s.ca/images/Passenger/2025/2025-A250EZ.jpg"
+              }
+            }
+          },
+          "serialSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"600\" viewBox=\"0 0 300 150\"><g data-role=\"serial\" aria-label=\"A25-0EZ\"><g data-role=\"serial-left\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"A25\"><title>A25</title><g transform=\"translate(16 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"A\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 21 0 L 32 0 L 52.5 100 L 43 100 L 39 79 L 14 79 L 10 100 L 0.5 100 Z M 26.5 17 L 16 70 L 37 70 Z\"></path></g><g transform=\"translate(61 0)\" data-character=\"2\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0 23.351 C1 8.072 10.818000000000001 0.072 25.818 0.072 C41.818 0.072 51.636 10.072 51.636 28.508 C51.636 40 43.636 49 30.818 59 C19.818 68.004 11.559 82 10.559 90.635 L51.636 90.635 L51.636 100 L0 100 L0 94 C0 77 13 63 25.818 50 C37.636 40 42.077000000000005 33 42.077000000000005 28.508 C42.077000000000005 15.072 35.818 9.630999999999998 25.818 9.630999999999998 C15.818000000000001 9.630999999999998 10.559 14.072 9.559 23.351 Z\"></path></g><g transform=\"translate(122 0)\" data-character=\"5\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 2 0 L 52.5 0 L 52.5 9 L 11 9 L 10 34 C 15 32 21 31 27 31 C 43.5 31 53 42 53 58 L 53 75 C 53 91 43 100 26.5 100 C 10.5 100 0 91 0 78 L 0 75 L 9 75 L 9 78 C 9 86 15.5 91 26.5 91 C 37.5 91 44 85 44 75 L 44 58 C 44 47 38 40 27 40 C 20 40 14 42 9 47 L 0 47 Z\"></path></g></g></g><g data-role=\"serial-right\" data-die=\"bc-waldale\" data-fit=\"natural\" role=\"img\" aria-label=\"0EZ\"><title>0EZ</title><g transform=\"translate(173.24 46.208) scale(0.63292)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M 26.5 0 C 10.5 0 0 12 0 28 L 0 73 C 0 89 10.5 100 26.5 100 C 42 100 53 89 53 73 L 53 28 C 53 12 42 0 26.5 0 Z M 26.5 9 C 37 9 44 17 44 28 L 44 73 C 44 84 37 91 26.5 91 C 16 91 9 84 9 73 L 9 28 C 9 17 16 9 26.5 9 Z\"></path></g><g transform=\"translate(61 0)\" data-character=\"E\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-waldale-passenger-refinement-v2\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M -0.5 0 L 53.5 0 L 53.5 9 L 8.5 9 L 8.5 41 L 29.5 41 L 29.5 50 L 8.5 50 L 8.5 91 L 53.5 91 L 53.5 100 L -0.5 100 Z\"></path></g><g transform=\"translate(122 0)\" data-character=\"Z\" data-provenance=\"profile-override\" data-reconstruction-id=\"bc-waldale-2025-Z-v1\" data-reconstruction-status=\"source-informed\" data-reconstruction-source=\"https://www.bcpl8s.ca/images/Passenger/2025/2025-A250EZ.jpg\" data-reconstruction-recovery=\"report-vector\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0 0 H53 V9 L11 91 H53 V100 H0 V91 L42 9 H0 Z\"></path></g></g></g></g></svg>"
+        }
+      }
+    },
+    {
+      "id": "astro3-n",
+      "modes": {
+        "previous-production": {
+          "glyphs": {
+            "0": {
+              "advance": 46,
+              "bounds": [
+                0,
+                0,
+                46,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"0\"><title>0</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M23 7 H23 A16 16 0 0 1 39 23 V50 V77 A16 16 0 0 1 23 93 H23 H23 A16 16 0 0 1 7 77 V50 V23 A16 16 0 0 1 23 7 H23 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "3": {
+              "advance": 46,
+              "bounds": [
+                5.5,
+                0,
+                46,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"3\"><title>3</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"3\" data-provenance=\"constructed\"><path d=\"M12.52 7 H22.08 H22.08 A15.08 15.08 0 0 1 37.16 22.08 V28.5 V34.92 A15.08 15.08 0 0 1 22.08 50 H22.08 H12.52\"></path><path d=\"M12.52 50 H23 H23 A16 16 0 0 1 39 66 V71.5 V77 A16 16 0 0 1 23 93 H23 H12.52\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "N": {
+              "advance": 46,
+              "bounds": [
+                0,
+                0,
+                46,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"N\"><title>N</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"N\" data-provenance=\"constructed\"><path d=\"M7 93 V7 L39 93 V7\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "J": {
+              "advance": 46,
+              "bounds": [
+                0,
+                0,
+                46,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"J\"><title>J</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"J\" data-provenance=\"constructed\"><path d=\"M39 7 V69 Q39 93 23 93 Q7 93 7 69\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "B": {
+              "advance": 46,
+              "bounds": [
+                0,
+                0,
+                46,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"B\"><title>B</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"B\" data-provenance=\"constructed\"><path d=\"M7 93 V7\"></path><path d=\"M7 7 H21.85 H21.85 A14.85 14.85 0 0 1 36.7 21.85 V28.5 V35.15 A14.85 14.85 0 0 1 21.85 50 H21.85 H7\"></path><path d=\"M7 50 H23 H23 A16 16 0 0 1 39 66 V71.5 V77 A16 16 0 0 1 23 93 H23 H7\"></path></g></g></g>",
+              "reconstructed": null
+            }
+          },
+          "serialSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"600\" viewBox=\"0 0 300 150\"><g data-role=\"serial\" aria-label=\"NJB-300\"><g data-role=\"serial-left\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"NJB\"><title>NJB</title><g transform=\"translate(27.94 45.5) scale(0.64)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"N\" data-provenance=\"constructed\"><path d=\"M7 93 V7 L39 93 V7\"></path></g><g transform=\"translate(54 0)\" data-character=\"J\" data-provenance=\"constructed\"><path d=\"M39 7 V69 Q39 93 23 93 Q7 93 7 69\"></path></g><g transform=\"translate(108 0)\" data-character=\"B\" data-provenance=\"constructed\"><path d=\"M7 93 V7\"></path><path d=\"M7 7 H21.85 H21.85 A14.85 14.85 0 0 1 36.7 21.85 V28.5 V35.15 A14.85 14.85 0 0 1 21.85 50 H21.85 H7\"></path><path d=\"M7 50 H23 H23 A16 16 0 0 1 39 66 V71.5 V77 A16 16 0 0 1 23 93 H23 H7\"></path></g></g></g><g data-role=\"serial-right\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"300\"><title>300</title><g transform=\"translate(173.5 45.5) scale(0.64)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"3\" data-provenance=\"constructed\"><path d=\"M12.52 7 H22.08 H22.08 A15.08 15.08 0 0 1 37.16 22.08 V28.5 V34.92 A15.08 15.08 0 0 1 22.08 50 H22.08 H12.52\"></path><path d=\"M12.52 50 H23 H23 A16 16 0 0 1 39 66 V71.5 V77 A16 16 0 0 1 23 93 H23 H12.52\"></path></g><g transform=\"translate(54 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M23 7 H23 A16 16 0 0 1 39 23 V50 V77 A16 16 0 0 1 23 93 H23 H23 A16 16 0 0 1 7 77 V50 V23 A16 16 0 0 1 23 7 H23 Z\"></path></g><g transform=\"translate(108 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M23 7 H23 A16 16 0 0 1 39 23 V50 V77 A16 16 0 0 1 23 93 H23 H23 A16 16 0 0 1 7 77 V50 V23 A16 16 0 0 1 23 7 H23 Z\"></path></g></g></g></g></svg>"
+        },
+        "previous-research": {
+          "glyphs": {
+            "0": {
+              "advance": 43.438,
+              "bounds": [
+                0,
+                0,
+                43.5,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"0\"><title>0</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-3-chart-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M21.719 0.000 C7.819 0.000 0.000 8.688 0.000 21.719 L0.000 78.281 C0.000 91.312 7.819 100.000 21.719 100.000 C35.619 100.000 43.438 91.312 43.438 78.281 L43.438 21.719 C43.438 8.688 35.619 0.000 21.719 0.000 Z M22.031 9.688 C13.731 9.688 9.062 14.876 9.062 22.657 L9.062 76.093 C9.062 83.874 13.731 89.062 22.031 89.062 C30.331 89.062 35.000 83.874 35.000 76.093 L35.000 22.657 C35.000 14.876 30.331 9.688 22.031 9.688 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "3": {
+              "advance": 45.312,
+              "bounds": [
+                0,
+                0,
+                45.25,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"3\"><title>3</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"3\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-3-chart-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0.000 18.000 C3.172 6.000 10.875 0.000 22.203 0.000 C35.796 0.000 43.500 10.000 43.500 25.000 C43.500 36.000 38.968 44.000 30.812 49.000 C40.328 53.000 45.312 63.000 45.312 76.000 C45.312 91.000 35.796 100.000 22.203 100.000 C9.062 100.000 0.906 90.000 0.000 80.000 C0.000 76.000 11.750 75.000 11.750 80.000 C10.875 87.000 15.406 88.250 22.203 88.250 C33.078 88.250 33.562 85.000 33.562 76.000 C33.562 65.000 31.265 55.000 19.937 54.000 C17.219 54.000 17.219 46.000 19.937 46.000 C30.359 44.000 33.562 35.000 33.562 25.000 C33.562 15.000 31.718 11.750 22.203 11.750 C15.406 11.750 10.875 14.000 11.750 21.000 C11.750 25.000 0.000 23.000 0.000 18.000 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "N": {
+              "advance": 52.301,
+              "bounds": [
+                0,
+                0,
+                46,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"N\"><title>N</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"N\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-3-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M8.500 100.000 L1.500 100.000 Q0.000 100.000 0.000 98.500 L0.000 1.500 Q0.000 0.000 1.500 0.000 L8.500 0.000 Q10.000 0.000 10.508 1.411 L35.430 70.589 Q35.938 72.000 35.938 70.500 L35.938 1.500 Q35.938 0.000 37.438 0.000 L44.438 0.000 Q45.938 0.000 45.938 1.500 L45.938 98.500 Q45.938 100.000 44.438 100.000 L37.438 100.000 Q35.938 100.000 35.430 98.589 L10.508 29.411 Q10.000 28.000 10.000 29.500 L10.000 98.500 Q10.000 100.000 8.500 100.000 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "J": {
+              "advance": 51.675,
+              "bounds": [
+                0,
+                0,
+                45.25,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"J\"><title>J</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"J\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-3-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M35.062 0.000 L45.312 0.000 L45.312 74.000 C45.312 92.000 36.250 100.000 22.656 100.000 C7.703 100.000 0.000 87.000 0.000 76.000 L0.000 66.000 L10.250 66.000 L10.250 75.000 C10.250 85.000 13.140 89.750 22.656 89.750 C33.078 89.750 35.062 83.000 35.062 72.000 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "B": {
+              "advance": 51.988,
+              "bounds": [
+                0,
+                0,
+                45.625,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"B\"><title>B</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"B\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-3-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M1.000 0.000 L20.531 0.000 C36.956 0.000 43.800 11.000 43.800 26.000 C43.800 37.000 38.325 44.000 31.937 47.969 C41.062 51.969 45.625 63.000 45.625 77.000 C45.625 93.000 36.956 100.000 20.988 100.000 L1.000 100.000 Q0.000 100.000 0.000 98.000 L0.000 2.000 Q0.000 0.000 1.000 0.000 Z M12.188 12.500 L22.500 12.500 C29.812 12.500 32.812 17.344 32.812 27.344 C32.812 37.344 29.812 42.188 22.500 42.188 L12.188 42.188 Z M11.875 53.750 L21.875 53.750 C28.875 53.750 31.875 59.688 31.875 69.688 C31.875 79.688 28.875 85.625 21.875 85.625 L11.875 85.625 Z\"></path></g></g></g>",
+              "reconstructed": null
+            }
+          },
+          "serialSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"600\" viewBox=\"0 0 300 150\"><g data-role=\"serial\" aria-label=\"NJB-300\"><g data-role=\"serial-left\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"NJB\"><title>NJB</title><g transform=\"translate(24.051 45.5) scale(0.64)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"N\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-3-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M8.500 100.000 L1.500 100.000 Q0.000 100.000 0.000 98.500 L0.000 1.500 Q0.000 0.000 1.500 0.000 L8.500 0.000 Q10.000 0.000 10.508 1.411 L35.430 70.589 Q35.938 72.000 35.938 70.500 L35.938 1.500 Q35.938 0.000 37.438 0.000 L44.438 0.000 Q45.938 0.000 45.938 1.500 L45.938 98.500 Q45.938 100.000 44.438 100.000 L37.438 100.000 Q35.938 100.000 35.430 98.589 L10.508 29.411 Q10.000 28.000 10.000 29.500 L10.000 98.500 Q10.000 100.000 8.500 100.000 Z\"></path></g><g transform=\"translate(60.301 0)\" data-character=\"J\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-3-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M35.062 0.000 L45.312 0.000 L45.312 74.000 C45.312 92.000 36.250 100.000 22.656 100.000 C7.703 100.000 0.000 87.000 0.000 76.000 L0.000 66.000 L10.250 66.000 L10.250 75.000 C10.250 85.000 13.140 89.750 22.656 89.750 C33.078 89.750 35.062 83.000 35.062 72.000 Z\"></path></g><g transform=\"translate(119.976 0)\" data-character=\"B\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-3-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M1.000 0.000 L20.531 0.000 C36.956 0.000 43.800 11.000 43.800 26.000 C43.800 37.000 38.325 44.000 31.937 47.969 C41.062 51.969 45.625 63.000 45.625 77.000 C45.625 93.000 36.956 100.000 20.988 100.000 L1.000 100.000 Q0.000 100.000 0.000 98.000 L0.000 2.000 Q0.000 0.000 1.000 0.000 Z M12.188 12.500 L22.500 12.500 C29.812 12.500 32.812 17.344 32.812 27.344 C32.812 37.344 29.812 42.188 22.500 42.188 L12.188 42.188 Z M11.875 53.750 L21.875 53.750 C28.875 53.750 31.875 59.688 31.875 69.688 C31.875 79.688 28.875 85.625 21.875 85.625 L11.875 85.625 Z\"></path></g></g></g><g data-role=\"serial-right\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"300\"><title>300</title><g transform=\"translate(181.108 45.5) scale(0.64)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"3\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-3-chart-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0.000 18.000 C3.172 6.000 10.875 0.000 22.203 0.000 C35.796 0.000 43.500 10.000 43.500 25.000 C43.500 36.000 38.968 44.000 30.812 49.000 C40.328 53.000 45.312 63.000 45.312 76.000 C45.312 91.000 35.796 100.000 22.203 100.000 C9.062 100.000 0.906 90.000 0.000 80.000 C0.000 76.000 11.750 75.000 11.750 80.000 C10.875 87.000 15.406 88.250 22.203 88.250 C33.078 88.250 33.562 85.000 33.562 76.000 C33.562 65.000 31.265 55.000 19.937 54.000 C17.219 54.000 17.219 46.000 19.937 46.000 C30.359 44.000 33.562 35.000 33.562 25.000 C33.562 15.000 31.718 11.750 22.203 11.750 C15.406 11.750 10.875 14.000 11.750 21.000 C11.750 25.000 0.000 23.000 0.000 18.000 Z\"></path></g><g transform=\"translate(53.312 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-3-chart-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M21.719 0.000 C7.819 0.000 0.000 8.688 0.000 21.719 L0.000 78.281 C0.000 91.312 7.819 100.000 21.719 100.000 C35.619 100.000 43.438 91.312 43.438 78.281 L43.438 21.719 C43.438 8.688 35.619 0.000 21.719 0.000 Z M22.031 9.688 C13.731 9.688 9.062 14.876 9.062 22.657 L9.062 76.093 C9.062 83.874 13.731 89.062 22.031 89.062 C30.331 89.062 35.000 83.874 35.000 76.093 L35.000 22.657 C35.000 14.876 30.331 9.688 22.031 9.688 Z\"></path></g><g transform=\"translate(104.75 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-3-chart-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M21.719 0.000 C7.819 0.000 0.000 8.688 0.000 21.719 L0.000 78.281 C0.000 91.312 7.819 100.000 21.719 100.000 C35.619 100.000 43.438 91.312 43.438 78.281 L43.438 21.719 C43.438 8.688 35.619 0.000 21.719 0.000 Z M22.031 9.688 C13.731 9.688 9.062 14.876 9.062 22.657 L9.062 76.093 C9.062 83.874 13.731 89.062 22.031 89.062 C30.331 89.062 35.000 83.874 35.000 76.093 L35.000 22.657 C35.000 14.876 30.331 9.688 22.031 9.688 Z\"></path></g></g></g></g></svg>"
+        },
+        "current-production": {
+          "glyphs": {
+            "0": {
+              "advance": 46,
+              "bounds": [
+                0,
+                0,
+                46,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"0\"><title>0</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M23 7 H23 A16 16 0 0 1 39 23 V50 V77 A16 16 0 0 1 23 93 H23 H23 A16 16 0 0 1 7 77 V50 V23 A16 16 0 0 1 23 7 H23 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "3": {
+              "advance": 46,
+              "bounds": [
+                5.5,
+                0,
+                46,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"3\"><title>3</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"3\" data-provenance=\"constructed\"><path d=\"M12.52 7 H22.08 H22.08 A15.08 15.08 0 0 1 37.16 22.08 V28.5 V34.92 A15.08 15.08 0 0 1 22.08 50 H22.08 H12.52\"></path><path d=\"M12.52 50 H23 H23 A16 16 0 0 1 39 66 V71.5 V77 A16 16 0 0 1 23 93 H23 H12.52\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "N": {
+              "advance": 46,
+              "bounds": [
+                0,
+                0,
+                46,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"N\"><title>N</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"N\" data-provenance=\"profile-override\" data-reconstruction-id=\"bc-astro-3-passenger-N-20261108-v1\" data-reconstruction-status=\"source-informed\" data-reconstruction-source=\"https://www.bcpl8s.ca/images/Passenger/1985-2001/1988-NJB300(XL).jpg\" data-reconstruction-recovery=\"new-2026-11-08\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M1.5 100 Q0 100 0 98.5 V1.5 Q0 0 1.5 0 H10.3 Q12.5 0 13.3 2.6 L29.6 49.6 C31 53.7 32.4 56 33.9 56 C35.5 56 35.938 52.8 35.938 48.5 V1.5 Q35.938 0 37.438 0 H44.438 Q45.938 0 45.938 1.5 V98.5 Q45.938 100 44.438 100 H34.9 Q33.2 100 32.5 97.7 L17.1 50 C15.8 46 14.5 44.8 13 44.8 C10.8 44.8 10 48.8 10 54 V98.5 Q10 100 8.5 100 Z\"></path></g></g></g>",
+              "reconstructed": {
+                "id": "bc-astro-3-passenger-N-20261108-v1",
+                "status": "source-informed",
+                "recovery": "new-2026-11-08",
+                "source": "https://www.bcpl8s.ca/images/Passenger/1985-2001/1988-NJB300(XL).jpg"
+              }
+            },
+            "J": {
+              "advance": 46,
+              "bounds": [
+                0,
+                0,
+                46,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"J\"><title>J</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"J\" data-provenance=\"constructed\"><path d=\"M39 7 V69 Q39 93 23 93 Q7 93 7 69\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "B": {
+              "advance": 46,
+              "bounds": [
+                0,
+                0,
+                46,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"B\"><title>B</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"B\" data-provenance=\"constructed\"><path d=\"M7 93 V7\"></path><path d=\"M7 7 H21.85 H21.85 A14.85 14.85 0 0 1 36.7 21.85 V28.5 V35.15 A14.85 14.85 0 0 1 21.85 50 H21.85 H7\"></path><path d=\"M7 50 H23 H23 A16 16 0 0 1 39 66 V71.5 V77 A16 16 0 0 1 23 93 H23 H7\"></path></g></g></g>",
+              "reconstructed": null
+            }
+          },
+          "serialSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"600\" viewBox=\"0 0 300 150\"><g data-role=\"serial\" aria-label=\"NJB-300\"><g data-role=\"serial-left\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"NJB\"><title>NJB</title><g transform=\"translate(27.94 45.5) scale(0.64)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"N\" data-provenance=\"profile-override\" data-reconstruction-id=\"bc-astro-3-passenger-N-20261108-v1\" data-reconstruction-status=\"source-informed\" data-reconstruction-source=\"https://www.bcpl8s.ca/images/Passenger/1985-2001/1988-NJB300(XL).jpg\" data-reconstruction-recovery=\"new-2026-11-08\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M1.5 100 Q0 100 0 98.5 V1.5 Q0 0 1.5 0 H10.3 Q12.5 0 13.3 2.6 L29.6 49.6 C31 53.7 32.4 56 33.9 56 C35.5 56 35.938 52.8 35.938 48.5 V1.5 Q35.938 0 37.438 0 H44.438 Q45.938 0 45.938 1.5 V98.5 Q45.938 100 44.438 100 H34.9 Q33.2 100 32.5 97.7 L17.1 50 C15.8 46 14.5 44.8 13 44.8 C10.8 44.8 10 48.8 10 54 V98.5 Q10 100 8.5 100 Z\"></path></g><g transform=\"translate(54 0)\" data-character=\"J\" data-provenance=\"constructed\"><path d=\"M39 7 V69 Q39 93 23 93 Q7 93 7 69\"></path></g><g transform=\"translate(108 0)\" data-character=\"B\" data-provenance=\"constructed\"><path d=\"M7 93 V7\"></path><path d=\"M7 7 H21.85 H21.85 A14.85 14.85 0 0 1 36.7 21.85 V28.5 V35.15 A14.85 14.85 0 0 1 21.85 50 H21.85 H7\"></path><path d=\"M7 50 H23 H23 A16 16 0 0 1 39 66 V71.5 V77 A16 16 0 0 1 23 93 H23 H7\"></path></g></g></g><g data-role=\"serial-right\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"300\"><title>300</title><g transform=\"translate(173.5 45.5) scale(0.64)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"3\" data-provenance=\"constructed\"><path d=\"M12.52 7 H22.08 H22.08 A15.08 15.08 0 0 1 37.16 22.08 V28.5 V34.92 A15.08 15.08 0 0 1 22.08 50 H22.08 H12.52\"></path><path d=\"M12.52 50 H23 H23 A16 16 0 0 1 39 66 V71.5 V77 A16 16 0 0 1 23 93 H23 H12.52\"></path></g><g transform=\"translate(54 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M23 7 H23 A16 16 0 0 1 39 23 V50 V77 A16 16 0 0 1 23 93 H23 H23 A16 16 0 0 1 7 77 V50 V23 A16 16 0 0 1 23 7 H23 Z\"></path></g><g transform=\"translate(108 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M23 7 H23 A16 16 0 0 1 39 23 V50 V77 A16 16 0 0 1 23 93 H23 H23 A16 16 0 0 1 7 77 V50 V23 A16 16 0 0 1 23 7 H23 Z\"></path></g></g></g></g></svg>"
+        },
+        "current-research": {
+          "glyphs": {
+            "0": {
+              "advance": 43.438,
+              "bounds": [
+                0,
+                0,
+                43.5,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"0\"><title>0</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-3-chart-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M21.719 0.000 C7.819 0.000 0.000 8.688 0.000 21.719 L0.000 78.281 C0.000 91.312 7.819 100.000 21.719 100.000 C35.619 100.000 43.438 91.312 43.438 78.281 L43.438 21.719 C43.438 8.688 35.619 0.000 21.719 0.000 Z M22.031 9.688 C13.731 9.688 9.062 14.876 9.062 22.657 L9.062 76.093 C9.062 83.874 13.731 89.062 22.031 89.062 C30.331 89.062 35.000 83.874 35.000 76.093 L35.000 22.657 C35.000 14.876 30.331 9.688 22.031 9.688 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "3": {
+              "advance": 45.312,
+              "bounds": [
+                0,
+                0,
+                45.25,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"3\"><title>3</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"3\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-3-chart-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0.000 18.000 C3.172 6.000 10.875 0.000 22.203 0.000 C35.796 0.000 43.500 10.000 43.500 25.000 C43.500 36.000 38.968 44.000 30.812 49.000 C40.328 53.000 45.312 63.000 45.312 76.000 C45.312 91.000 35.796 100.000 22.203 100.000 C9.062 100.000 0.906 90.000 0.000 80.000 C0.000 76.000 11.750 75.000 11.750 80.000 C10.875 87.000 15.406 88.250 22.203 88.250 C33.078 88.250 33.562 85.000 33.562 76.000 C33.562 65.000 31.265 55.000 19.937 54.000 C17.219 54.000 17.219 46.000 19.937 46.000 C30.359 44.000 33.562 35.000 33.562 25.000 C33.562 15.000 31.718 11.750 22.203 11.750 C15.406 11.750 10.875 14.000 11.750 21.000 C11.750 25.000 0.000 23.000 0.000 18.000 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "N": {
+              "advance": 52.301,
+              "bounds": [
+                0,
+                0,
+                46,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"N\"><title>N</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"N\" data-provenance=\"profile-override\" data-reconstruction-id=\"bc-astro-3-passenger-N-20261108-v1\" data-reconstruction-status=\"source-informed\" data-reconstruction-source=\"https://www.bcpl8s.ca/images/Passenger/1985-2001/1988-NJB300(XL).jpg\" data-reconstruction-recovery=\"new-2026-11-08\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M1.5 100 Q0 100 0 98.5 V1.5 Q0 0 1.5 0 H10.3 Q12.5 0 13.3 2.6 L29.6 49.6 C31 53.7 32.4 56 33.9 56 C35.5 56 35.938 52.8 35.938 48.5 V1.5 Q35.938 0 37.438 0 H44.438 Q45.938 0 45.938 1.5 V98.5 Q45.938 100 44.438 100 H34.9 Q33.2 100 32.5 97.7 L17.1 50 C15.8 46 14.5 44.8 13 44.8 C10.8 44.8 10 48.8 10 54 V98.5 Q10 100 8.5 100 Z\"></path></g></g></g>",
+              "reconstructed": {
+                "id": "bc-astro-3-passenger-N-20261108-v1",
+                "status": "source-informed",
+                "recovery": "new-2026-11-08",
+                "source": "https://www.bcpl8s.ca/images/Passenger/1985-2001/1988-NJB300(XL).jpg"
+              }
+            },
+            "J": {
+              "advance": 51.675,
+              "bounds": [
+                0,
+                0,
+                45.25,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"J\"><title>J</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"J\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-3-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M35.062 0.000 L45.312 0.000 L45.312 74.000 C45.312 92.000 36.250 100.000 22.656 100.000 C7.703 100.000 0.000 87.000 0.000 76.000 L0.000 66.000 L10.250 66.000 L10.250 75.000 C10.250 85.000 13.140 89.750 22.656 89.750 C33.078 89.750 35.062 83.000 35.062 72.000 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "B": {
+              "advance": 51.988,
+              "bounds": [
+                0,
+                0,
+                45.625,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"B\"><title>B</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"B\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-3-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M1.000 0.000 L20.531 0.000 C36.956 0.000 43.800 11.000 43.800 26.000 C43.800 37.000 38.325 44.000 31.937 47.969 C41.062 51.969 45.625 63.000 45.625 77.000 C45.625 93.000 36.956 100.000 20.988 100.000 L1.000 100.000 Q0.000 100.000 0.000 98.000 L0.000 2.000 Q0.000 0.000 1.000 0.000 Z M12.188 12.500 L22.500 12.500 C29.812 12.500 32.812 17.344 32.812 27.344 C32.812 37.344 29.812 42.188 22.500 42.188 L12.188 42.188 Z M11.875 53.750 L21.875 53.750 C28.875 53.750 31.875 59.688 31.875 69.688 C31.875 79.688 28.875 85.625 21.875 85.625 L11.875 85.625 Z\"></path></g></g></g>",
+              "reconstructed": null
+            }
+          },
+          "serialSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"600\" viewBox=\"0 0 300 150\"><g data-role=\"serial\" aria-label=\"NJB-300\"><g data-role=\"serial-left\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"NJB\"><title>NJB</title><g transform=\"translate(24.051 45.5) scale(0.64)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"N\" data-provenance=\"profile-override\" data-reconstruction-id=\"bc-astro-3-passenger-N-20261108-v1\" data-reconstruction-status=\"source-informed\" data-reconstruction-source=\"https://www.bcpl8s.ca/images/Passenger/1985-2001/1988-NJB300(XL).jpg\" data-reconstruction-recovery=\"new-2026-11-08\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M1.5 100 Q0 100 0 98.5 V1.5 Q0 0 1.5 0 H10.3 Q12.5 0 13.3 2.6 L29.6 49.6 C31 53.7 32.4 56 33.9 56 C35.5 56 35.938 52.8 35.938 48.5 V1.5 Q35.938 0 37.438 0 H44.438 Q45.938 0 45.938 1.5 V98.5 Q45.938 100 44.438 100 H34.9 Q33.2 100 32.5 97.7 L17.1 50 C15.8 46 14.5 44.8 13 44.8 C10.8 44.8 10 48.8 10 54 V98.5 Q10 100 8.5 100 Z\"></path></g><g transform=\"translate(60.301 0)\" data-character=\"J\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-3-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M35.062 0.000 L45.312 0.000 L45.312 74.000 C45.312 92.000 36.250 100.000 22.656 100.000 C7.703 100.000 0.000 87.000 0.000 76.000 L0.000 66.000 L10.250 66.000 L10.250 75.000 C10.250 85.000 13.140 89.750 22.656 89.750 C33.078 89.750 35.062 83.000 35.062 72.000 Z\"></path></g><g transform=\"translate(119.976 0)\" data-character=\"B\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-3-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M1.000 0.000 L20.531 0.000 C36.956 0.000 43.800 11.000 43.800 26.000 C43.800 37.000 38.325 44.000 31.937 47.969 C41.062 51.969 45.625 63.000 45.625 77.000 C45.625 93.000 36.956 100.000 20.988 100.000 L1.000 100.000 Q0.000 100.000 0.000 98.000 L0.000 2.000 Q0.000 0.000 1.000 0.000 Z M12.188 12.500 L22.500 12.500 C29.812 12.500 32.812 17.344 32.812 27.344 C32.812 37.344 29.812 42.188 22.500 42.188 L12.188 42.188 Z M11.875 53.750 L21.875 53.750 C28.875 53.750 31.875 59.688 31.875 69.688 C31.875 79.688 28.875 85.625 21.875 85.625 L11.875 85.625 Z\"></path></g></g></g><g data-role=\"serial-right\" data-die=\"bc-astro-3\" data-fit=\"natural\" role=\"img\" aria-label=\"300\"><title>300</title><g transform=\"translate(181.108 45.5) scale(0.64)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"14\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"3\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-3-chart-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0.000 18.000 C3.172 6.000 10.875 0.000 22.203 0.000 C35.796 0.000 43.500 10.000 43.500 25.000 C43.500 36.000 38.968 44.000 30.812 49.000 C40.328 53.000 45.312 63.000 45.312 76.000 C45.312 91.000 35.796 100.000 22.203 100.000 C9.062 100.000 0.906 90.000 0.000 80.000 C0.000 76.000 11.750 75.000 11.750 80.000 C10.875 87.000 15.406 88.250 22.203 88.250 C33.078 88.250 33.562 85.000 33.562 76.000 C33.562 65.000 31.265 55.000 19.937 54.000 C17.219 54.000 17.219 46.000 19.937 46.000 C30.359 44.000 33.562 35.000 33.562 25.000 C33.562 15.000 31.718 11.750 22.203 11.750 C15.406 11.750 10.875 14.000 11.750 21.000 C11.750 25.000 0.000 23.000 0.000 18.000 Z\"></path></g><g transform=\"translate(53.312 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-3-chart-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M21.719 0.000 C7.819 0.000 0.000 8.688 0.000 21.719 L0.000 78.281 C0.000 91.312 7.819 100.000 21.719 100.000 C35.619 100.000 43.438 91.312 43.438 78.281 L43.438 21.719 C43.438 8.688 35.619 0.000 21.719 0.000 Z M22.031 9.688 C13.731 9.688 9.062 14.876 9.062 22.657 L9.062 76.093 C9.062 83.874 13.731 89.062 22.031 89.062 C30.331 89.062 35.000 83.874 35.000 76.093 L35.000 22.657 C35.000 14.876 30.331 9.688 22.031 9.688 Z\"></path></g><g transform=\"translate(104.75 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-3-chart-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M21.719 0.000 C7.819 0.000 0.000 8.688 0.000 21.719 L0.000 78.281 C0.000 91.312 7.819 100.000 21.719 100.000 C35.619 100.000 43.438 91.312 43.438 78.281 L43.438 21.719 C43.438 8.688 35.619 0.000 21.719 0.000 Z M22.031 9.688 C13.731 9.688 9.062 14.876 9.062 22.657 L9.062 76.093 C9.062 83.874 13.731 89.062 22.031 89.062 C30.331 89.062 35.000 83.874 35.000 76.093 L35.000 22.657 C35.000 14.876 30.331 9.688 22.031 9.688 Z\"></path></g></g></g></g></svg>"
+        }
+      }
+    },
+    {
+      "id": "classic4-n",
+      "modes": {
+        "previous-production": {
+          "glyphs": {
+            "0": {
+              "advance": 52,
+              "bounds": [
+                0,
+                0,
+                52,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"0\"><title>0</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M26 5.75 H26 A20.25 20.25 0 0 1 46.25 26 V50 V74 A20.25 20.25 0 0 1 26 94.25 H26 H26 A20.25 20.25 0 0 1 5.75 74 V50 V26 A20.25 20.25 0 0 1 26 5.75 H26 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "3": {
+              "advance": 52,
+              "bounds": [
+                6.25,
+                0,
+                52,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"3\"><title>3</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"3\" data-provenance=\"constructed\"><path d=\"M11.99 5.75 H24.96 H24.96 A19.21 19.21 0 0 1 44.17 24.96 V27.88 V30.79 A19.21 19.21 0 0 1 24.96 50 H24.96 H11.99\"></path><path d=\"M11.99 50 H26 H26 A20.25 20.25 0 0 1 46.25 70.25 V72.13 V74 A20.25 20.25 0 0 1 26 94.25 H26 H11.99\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "N": {
+              "advance": 52,
+              "bounds": [
+                0,
+                0,
+                52,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"N\"><title>N</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"N\" data-provenance=\"constructed\"><path d=\"M5.75 94.25 V5.75 L46.25 94.25 V5.75\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "P": {
+              "advance": 52,
+              "bounds": [
+                0,
+                0,
+                52,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"P\"><title>P</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"P\" data-provenance=\"constructed\"><path d=\"M5.75 94.25 V5.75\"></path><path d=\"M5.75 5.75 H26 H26 A20.25 20.25 0 0 1 46.25 26 V29.88 V33.75 A20.25 20.25 0 0 1 26 54 H26 H5.75\"></path></g></g></g>",
+              "reconstructed": null
+            }
+          },
+          "serialSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"600\" viewBox=\"0 0 300 150\"><g data-role=\"serial\" aria-label=\"NPN-030\"><g data-role=\"serial-left\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"NPN\"><title>NPN</title><g transform=\"translate(16.42 45.5) scale(0.64)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"N\" data-provenance=\"constructed\"><path d=\"M5.75 94.25 V5.75 L46.25 94.25 V5.75\"></path></g><g transform=\"translate(60 0)\" data-character=\"P\" data-provenance=\"constructed\"><path d=\"M5.75 94.25 V5.75\"></path><path d=\"M5.75 5.75 H26 H26 A20.25 20.25 0 0 1 46.25 26 V29.88 V33.75 A20.25 20.25 0 0 1 26 54 H26 H5.75\"></path></g><g transform=\"translate(120 0)\" data-character=\"N\" data-provenance=\"constructed\"><path d=\"M5.75 94.25 V5.75 L46.25 94.25 V5.75\"></path></g></g></g><g data-role=\"serial-right\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"030\"><title>030</title><g transform=\"translate(173.5 45.5) scale(0.64)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M26 5.75 H26 A20.25 20.25 0 0 1 46.25 26 V50 V74 A20.25 20.25 0 0 1 26 94.25 H26 H26 A20.25 20.25 0 0 1 5.75 74 V50 V26 A20.25 20.25 0 0 1 26 5.75 H26 Z\"></path></g><g transform=\"translate(60 0)\" data-character=\"3\" data-provenance=\"constructed\"><path d=\"M11.99 5.75 H24.96 H24.96 A19.21 19.21 0 0 1 44.17 24.96 V27.88 V30.79 A19.21 19.21 0 0 1 24.96 50 H24.96 H11.99\"></path><path d=\"M11.99 50 H26 H26 A20.25 20.25 0 0 1 46.25 70.25 V72.13 V74 A20.25 20.25 0 0 1 26 94.25 H26 H11.99\"></path></g><g transform=\"translate(120 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M26 5.75 H26 A20.25 20.25 0 0 1 46.25 26 V50 V74 A20.25 20.25 0 0 1 26 94.25 H26 H26 A20.25 20.25 0 0 1 5.75 74 V50 V26 A20.25 20.25 0 0 1 26 5.75 H26 Z\"></path></g></g></g></g></svg>"
+        },
+        "previous-research": {
+          "glyphs": {
+            "0": {
+              "advance": 52.511,
+              "bounds": [
+                0,
+                0,
+                48.125,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"0\"><title>0</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-4-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M24.062 0.000 C7.700 0.000 0.000 10.000 0.000 26.000 L0.000 74.000 C0.000 91.000 7.700 100.000 24.062 100.000 C40.425 100.000 48.125 91.000 48.125 74.000 L48.125 26.000 C48.125 10.000 40.425 0.000 24.062 0.000 Z M24.062 10.500 C14.919 10.500 10.620 16.000 10.620 28.000 L10.620 73.000 C10.620 84.000 14.919 88.000 24.062 88.000 C35.131 88.000 38.440 84.000 38.440 73.000 L38.440 28.000 C38.440 16.000 35.131 10.500 24.062 10.500 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "3": {
+              "advance": 52.511,
+              "bounds": [
+                0,
+                0,
+                48.125,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"3\"><title>3</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"3\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-4-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0.000 18.000 C3.369 6.000 11.550 0.000 23.581 0.000 C37.538 0.000 46.200 10.000 46.200 25.000 C46.200 36.000 41.388 44.000 32.725 49.000 C42.350 53.000 48.125 63.000 48.125 76.000 C48.125 91.000 37.538 100.000 23.581 100.000 C9.625 100.000 0.963 90.000 0.000 80.000 C0.000 76.000 8.181 75.000 8.662 80.000 C11.069 87.000 16.363 91.000 23.581 91.000 C34.650 91.000 39.625 85.000 39.625 76.000 C39.625 65.000 33.206 56.000 21.175 55.000 C18.288 55.000 18.288 46.000 21.175 46.000 C32.244 44.000 39.625 35.000 39.625 25.000 C39.625 15.000 33.688 9.000 23.581 9.000 C16.363 9.000 11.550 14.000 9.144 21.000 C8.181 25.000 0.000 23.000 0.000 18.000 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "N": {
+              "advance": 53.448,
+              "bounds": [
+                0,
+                0,
+                49,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"N\"><title>N</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"N\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-4-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M6.500 100.000 L1.500 100.000 Q0.000 100.000 0.000 98.500 L0.000 1.500 Q0.000 0.000 1.500 0.000 L6.500 0.000 Q8.000 0.000 8.626 1.363 L40.436 70.637 Q41.062 72.000 41.062 70.500 L41.062 1.500 Q41.062 0.000 42.562 0.000 L47.562 0.000 Q49.062 0.000 49.062 1.500 L49.062 98.500 Q49.062 100.000 47.562 100.000 L42.562 100.000 Q41.062 100.000 40.436 98.637 L8.626 29.363 Q8.000 28.000 8.000 29.500 L8.000 98.500 Q8.000 100.000 6.500 100.000 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "P": {
+              "advance": 52.511,
+              "bounds": [
+                0,
+                0,
+                48.125,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"P\"><title>P</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"P\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-4-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M1.000 0.000 L21.175 0.000 C39.462 0.000 48.125 10.000 48.125 25.625 C48.125 42.625 38.981 51.625 21.175 51.625 L9.750 51.625 L9.750 98.000 Q9.750 100.000 7.750 100.000 L2.000 100.000 Q0.000 100.000 0.000 98.000 L0.000 2.000 Q0.000 0.000 1.000 0.000 Z M10.000 9.375 L21.175 9.375 C36.125 9.375 38.125 15.375 38.125 25.625 C38.125 35.875 36.125 41.875 21.175 41.875 L10.000 41.875 Z\"></path></g></g></g>",
+              "reconstructed": null
+            }
+          },
+          "serialSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"600\" viewBox=\"0 0 300 150\"><g data-role=\"serial\" aria-label=\"NPN-030\"><g data-role=\"serial-left\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"NPN\"><title>NPN</title><g transform=\"translate(16 46.05) scale(0.6345)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"N\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-4-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M6.500 100.000 L1.500 100.000 Q0.000 100.000 0.000 98.500 L0.000 1.500 Q0.000 0.000 1.500 0.000 L6.500 0.000 Q8.000 0.000 8.626 1.363 L40.436 70.637 Q41.062 72.000 41.062 70.500 L41.062 1.500 Q41.062 0.000 42.562 0.000 L47.562 0.000 Q49.062 0.000 49.062 1.500 L49.062 98.500 Q49.062 100.000 47.562 100.000 L42.562 100.000 Q41.062 100.000 40.436 98.637 L8.626 29.363 Q8.000 28.000 8.000 29.500 L8.000 98.500 Q8.000 100.000 6.500 100.000 Z\"></path></g><g transform=\"translate(61.448 0)\" data-character=\"P\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-4-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M1.000 0.000 L21.175 0.000 C39.462 0.000 48.125 10.000 48.125 25.625 C48.125 42.625 38.981 51.625 21.175 51.625 L9.750 51.625 L9.750 98.000 Q9.750 100.000 7.750 100.000 L2.000 100.000 Q0.000 100.000 0.000 98.000 L0.000 2.000 Q0.000 0.000 1.000 0.000 Z M10.000 9.375 L21.175 9.375 C36.125 9.375 38.125 15.375 38.125 25.625 C38.125 35.875 36.125 41.875 21.175 41.875 L10.000 41.875 Z\"></path></g><g transform=\"translate(121.959 0)\" data-character=\"N\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-4-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M6.500 100.000 L1.500 100.000 Q0.000 100.000 0.000 98.500 L0.000 1.500 Q0.000 0.000 1.500 0.000 L6.500 0.000 Q8.000 0.000 8.626 1.363 L40.436 70.637 Q41.062 72.000 41.062 70.500 L41.062 1.500 Q41.062 0.000 42.562 0.000 L47.562 0.000 Q49.062 0.000 49.062 1.500 L49.062 98.500 Q49.062 100.000 47.562 100.000 L42.562 100.000 Q41.062 100.000 40.436 98.637 L8.626 29.363 Q8.000 28.000 8.000 29.500 L8.000 98.500 Q8.000 100.000 6.500 100.000 Z\"></path></g></g></g><g data-role=\"serial-right\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"030\"><title>030</title><g transform=\"translate(173.893 46.05) scale(0.6345)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-4-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M24.062 0.000 C7.700 0.000 0.000 10.000 0.000 26.000 L0.000 74.000 C0.000 91.000 7.700 100.000 24.062 100.000 C40.425 100.000 48.125 91.000 48.125 74.000 L48.125 26.000 C48.125 10.000 40.425 0.000 24.062 0.000 Z M24.062 10.500 C14.919 10.500 10.620 16.000 10.620 28.000 L10.620 73.000 C10.620 84.000 14.919 88.000 24.062 88.000 C35.131 88.000 38.440 84.000 38.440 73.000 L38.440 28.000 C38.440 16.000 35.131 10.500 24.062 10.500 Z\"></path></g><g transform=\"translate(60.511 0)\" data-character=\"3\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-4-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0.000 18.000 C3.369 6.000 11.550 0.000 23.581 0.000 C37.538 0.000 46.200 10.000 46.200 25.000 C46.200 36.000 41.388 44.000 32.725 49.000 C42.350 53.000 48.125 63.000 48.125 76.000 C48.125 91.000 37.538 100.000 23.581 100.000 C9.625 100.000 0.963 90.000 0.000 80.000 C0.000 76.000 8.181 75.000 8.662 80.000 C11.069 87.000 16.363 91.000 23.581 91.000 C34.650 91.000 39.625 85.000 39.625 76.000 C39.625 65.000 33.206 56.000 21.175 55.000 C18.288 55.000 18.288 46.000 21.175 46.000 C32.244 44.000 39.625 35.000 39.625 25.000 C39.625 15.000 33.688 9.000 23.581 9.000 C16.363 9.000 11.550 14.000 9.144 21.000 C8.181 25.000 0.000 23.000 0.000 18.000 Z\"></path></g><g transform=\"translate(121.022 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-4-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M24.062 0.000 C7.700 0.000 0.000 10.000 0.000 26.000 L0.000 74.000 C0.000 91.000 7.700 100.000 24.062 100.000 C40.425 100.000 48.125 91.000 48.125 74.000 L48.125 26.000 C48.125 10.000 40.425 0.000 24.062 0.000 Z M24.062 10.500 C14.919 10.500 10.620 16.000 10.620 28.000 L10.620 73.000 C10.620 84.000 14.919 88.000 24.062 88.000 C35.131 88.000 38.440 84.000 38.440 73.000 L38.440 28.000 C38.440 16.000 35.131 10.500 24.062 10.500 Z\"></path></g></g></g></g></svg>"
+        },
+        "current-production": {
+          "glyphs": {
+            "0": {
+              "advance": 52,
+              "bounds": [
+                0,
+                0,
+                52,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"0\"><title>0</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M26 5.75 H26 A20.25 20.25 0 0 1 46.25 26 V50 V74 A20.25 20.25 0 0 1 26 94.25 H26 H26 A20.25 20.25 0 0 1 5.75 74 V50 V26 A20.25 20.25 0 0 1 26 5.75 H26 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "3": {
+              "advance": 52,
+              "bounds": [
+                6.25,
+                0,
+                52,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"3\"><title>3</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"3\" data-provenance=\"constructed\"><path d=\"M11.99 5.75 H24.96 H24.96 A19.21 19.21 0 0 1 44.17 24.96 V27.88 V30.79 A19.21 19.21 0 0 1 24.96 50 H24.96 H11.99\"></path><path d=\"M11.99 50 H26 H26 A20.25 20.25 0 0 1 46.25 70.25 V72.13 V74 A20.25 20.25 0 0 1 26 94.25 H26 H11.99\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "N": {
+              "advance": 52,
+              "bounds": [
+                0,
+                0,
+                49,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"N\"><title>N</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"N\" data-provenance=\"profile-override\" data-reconstruction-id=\"bc-astro-4-passenger-N-20261108-v1\" data-reconstruction-status=\"source-informed\" data-reconstruction-source=\"https://www.bcpl8s.ca/images/Passenger/1985-2001/1989-NPN030(XL).jpg\" data-reconstruction-recovery=\"new-2026-11-08\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M1.8 100 Q0 100 0 98.2 V2 Q0 0 2 0 H7.5 Q10 0 11 2.8 L30.5 50.8 C32.2 55 34 57 36.3 57 C39.6 57 41.062 54.5 41.062 50 V1.8 Q41.062 0 42.862 0 H47.262 Q49.062 0 49.062 1.8 V98.2 Q49.062 100 47.262 100 H43 Q40.2 100 39 96.8 L18.7 49.3 C17 45.2 15.4 43.8 12.9 43.8 C9.4 43.8 8 46.7 8 51.4 V98.2 Q8 100 6.2 100 Z\"></path></g></g></g>",
+              "reconstructed": {
+                "id": "bc-astro-4-passenger-N-20261108-v1",
+                "status": "source-informed",
+                "recovery": "new-2026-11-08",
+                "source": "https://www.bcpl8s.ca/images/Passenger/1985-2001/1989-NPN030(XL).jpg"
+              }
+            },
+            "P": {
+              "advance": 52,
+              "bounds": [
+                0,
+                0,
+                52,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"P\"><title>P</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"P\" data-provenance=\"constructed\"><path d=\"M5.75 94.25 V5.75\"></path><path d=\"M5.75 5.75 H26 H26 A20.25 20.25 0 0 1 46.25 26 V29.88 V33.75 A20.25 20.25 0 0 1 26 54 H26 H5.75\"></path></g></g></g>",
+              "reconstructed": null
+            }
+          },
+          "serialSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"600\" viewBox=\"0 0 300 150\"><g data-role=\"serial\" aria-label=\"NPN-030\"><g data-role=\"serial-left\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"NPN\"><title>NPN</title><g transform=\"translate(16.42 45.5) scale(0.64)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"N\" data-provenance=\"profile-override\" data-reconstruction-id=\"bc-astro-4-passenger-N-20261108-v1\" data-reconstruction-status=\"source-informed\" data-reconstruction-source=\"https://www.bcpl8s.ca/images/Passenger/1985-2001/1989-NPN030(XL).jpg\" data-reconstruction-recovery=\"new-2026-11-08\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M1.8 100 Q0 100 0 98.2 V2 Q0 0 2 0 H7.5 Q10 0 11 2.8 L30.5 50.8 C32.2 55 34 57 36.3 57 C39.6 57 41.062 54.5 41.062 50 V1.8 Q41.062 0 42.862 0 H47.262 Q49.062 0 49.062 1.8 V98.2 Q49.062 100 47.262 100 H43 Q40.2 100 39 96.8 L18.7 49.3 C17 45.2 15.4 43.8 12.9 43.8 C9.4 43.8 8 46.7 8 51.4 V98.2 Q8 100 6.2 100 Z\"></path></g><g transform=\"translate(60 0)\" data-character=\"P\" data-provenance=\"constructed\"><path d=\"M5.75 94.25 V5.75\"></path><path d=\"M5.75 5.75 H26 H26 A20.25 20.25 0 0 1 46.25 26 V29.88 V33.75 A20.25 20.25 0 0 1 26 54 H26 H5.75\"></path></g><g transform=\"translate(120 0)\" data-character=\"N\" data-provenance=\"profile-override\" data-reconstruction-id=\"bc-astro-4-passenger-N-20261108-v1\" data-reconstruction-status=\"source-informed\" data-reconstruction-source=\"https://www.bcpl8s.ca/images/Passenger/1985-2001/1989-NPN030(XL).jpg\" data-reconstruction-recovery=\"new-2026-11-08\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M1.8 100 Q0 100 0 98.2 V2 Q0 0 2 0 H7.5 Q10 0 11 2.8 L30.5 50.8 C32.2 55 34 57 36.3 57 C39.6 57 41.062 54.5 41.062 50 V1.8 Q41.062 0 42.862 0 H47.262 Q49.062 0 49.062 1.8 V98.2 Q49.062 100 47.262 100 H43 Q40.2 100 39 96.8 L18.7 49.3 C17 45.2 15.4 43.8 12.9 43.8 C9.4 43.8 8 46.7 8 51.4 V98.2 Q8 100 6.2 100 Z\"></path></g></g></g><g data-role=\"serial-right\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"030\"><title>030</title><g transform=\"translate(173.5 45.5) scale(0.64)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M26 5.75 H26 A20.25 20.25 0 0 1 46.25 26 V50 V74 A20.25 20.25 0 0 1 26 94.25 H26 H26 A20.25 20.25 0 0 1 5.75 74 V50 V26 A20.25 20.25 0 0 1 26 5.75 H26 Z\"></path></g><g transform=\"translate(60 0)\" data-character=\"3\" data-provenance=\"constructed\"><path d=\"M11.99 5.75 H24.96 H24.96 A19.21 19.21 0 0 1 44.17 24.96 V27.88 V30.79 A19.21 19.21 0 0 1 24.96 50 H24.96 H11.99\"></path><path d=\"M11.99 50 H26 H26 A20.25 20.25 0 0 1 46.25 70.25 V72.13 V74 A20.25 20.25 0 0 1 26 94.25 H26 H11.99\"></path></g><g transform=\"translate(120 0)\" data-character=\"0\" data-provenance=\"constructed\"><path d=\"M26 5.75 H26 A20.25 20.25 0 0 1 46.25 26 V50 V74 A20.25 20.25 0 0 1 26 94.25 H26 H26 A20.25 20.25 0 0 1 5.75 74 V50 V26 A20.25 20.25 0 0 1 26 5.75 H26 Z\"></path></g></g></g></g></svg>"
+        },
+        "current-research": {
+          "glyphs": {
+            "0": {
+              "advance": 52.511,
+              "bounds": [
+                0,
+                0,
+                48.125,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"0\"><title>0</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-4-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M24.062 0.000 C7.700 0.000 0.000 10.000 0.000 26.000 L0.000 74.000 C0.000 91.000 7.700 100.000 24.062 100.000 C40.425 100.000 48.125 91.000 48.125 74.000 L48.125 26.000 C48.125 10.000 40.425 0.000 24.062 0.000 Z M24.062 10.500 C14.919 10.500 10.620 16.000 10.620 28.000 L10.620 73.000 C10.620 84.000 14.919 88.000 24.062 88.000 C35.131 88.000 38.440 84.000 38.440 73.000 L38.440 28.000 C38.440 16.000 35.131 10.500 24.062 10.500 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "3": {
+              "advance": 52.511,
+              "bounds": [
+                0,
+                0,
+                48.125,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"3\"><title>3</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"3\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-4-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0.000 18.000 C3.369 6.000 11.550 0.000 23.581 0.000 C37.538 0.000 46.200 10.000 46.200 25.000 C46.200 36.000 41.388 44.000 32.725 49.000 C42.350 53.000 48.125 63.000 48.125 76.000 C48.125 91.000 37.538 100.000 23.581 100.000 C9.625 100.000 0.963 90.000 0.000 80.000 C0.000 76.000 8.181 75.000 8.662 80.000 C11.069 87.000 16.363 91.000 23.581 91.000 C34.650 91.000 39.625 85.000 39.625 76.000 C39.625 65.000 33.206 56.000 21.175 55.000 C18.288 55.000 18.288 46.000 21.175 46.000 C32.244 44.000 39.625 35.000 39.625 25.000 C39.625 15.000 33.688 9.000 23.581 9.000 C16.363 9.000 11.550 14.000 9.144 21.000 C8.181 25.000 0.000 23.000 0.000 18.000 Z\"></path></g></g></g>",
+              "reconstructed": null
+            },
+            "N": {
+              "advance": 53.448,
+              "bounds": [
+                0,
+                0,
+                49,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"N\"><title>N</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"N\" data-provenance=\"profile-override\" data-reconstruction-id=\"bc-astro-4-passenger-N-20261108-v1\" data-reconstruction-status=\"source-informed\" data-reconstruction-source=\"https://www.bcpl8s.ca/images/Passenger/1985-2001/1989-NPN030(XL).jpg\" data-reconstruction-recovery=\"new-2026-11-08\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M1.8 100 Q0 100 0 98.2 V2 Q0 0 2 0 H7.5 Q10 0 11 2.8 L30.5 50.8 C32.2 55 34 57 36.3 57 C39.6 57 41.062 54.5 41.062 50 V1.8 Q41.062 0 42.862 0 H47.262 Q49.062 0 49.062 1.8 V98.2 Q49.062 100 47.262 100 H43 Q40.2 100 39 96.8 L18.7 49.3 C17 45.2 15.4 43.8 12.9 43.8 C9.4 43.8 8 46.7 8 51.4 V98.2 Q8 100 6.2 100 Z\"></path></g></g></g>",
+              "reconstructed": {
+                "id": "bc-astro-4-passenger-N-20261108-v1",
+                "status": "source-informed",
+                "recovery": "new-2026-11-08",
+                "source": "https://www.bcpl8s.ca/images/Passenger/1985-2001/1989-NPN030(XL).jpg"
+              }
+            },
+            "P": {
+              "advance": 52.511,
+              "bounds": [
+                0,
+                0,
+                48.125,
+                100
+              ],
+              "node": "<g data-role=\"serial\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"P\"><title>P</title><g transform=\"translate(0 0) scale(1)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"P\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-4-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M1.000 0.000 L21.175 0.000 C39.462 0.000 48.125 10.000 48.125 25.625 C48.125 42.625 38.981 51.625 21.175 51.625 L9.750 51.625 L9.750 98.000 Q9.750 100.000 7.750 100.000 L2.000 100.000 Q0.000 100.000 0.000 98.000 L0.000 2.000 Q0.000 0.000 1.000 0.000 Z M10.000 9.375 L21.175 9.375 C36.125 9.375 38.125 15.375 38.125 25.625 C38.125 35.875 36.125 41.875 21.175 41.875 L10.000 41.875 Z\"></path></g></g></g>",
+              "reconstructed": null
+            }
+          },
+          "serialSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"1200\" height=\"600\" viewBox=\"0 0 300 150\"><g data-role=\"serial\" aria-label=\"NPN-030\"><g data-role=\"serial-left\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"NPN\"><title>NPN</title><g transform=\"translate(16 46.05) scale(0.6345)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"N\" data-provenance=\"profile-override\" data-reconstruction-id=\"bc-astro-4-passenger-N-20261108-v1\" data-reconstruction-status=\"source-informed\" data-reconstruction-source=\"https://www.bcpl8s.ca/images/Passenger/1985-2001/1989-NPN030(XL).jpg\" data-reconstruction-recovery=\"new-2026-11-08\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M1.8 100 Q0 100 0 98.2 V2 Q0 0 2 0 H7.5 Q10 0 11 2.8 L30.5 50.8 C32.2 55 34 57 36.3 57 C39.6 57 41.062 54.5 41.062 50 V1.8 Q41.062 0 42.862 0 H47.262 Q49.062 0 49.062 1.8 V98.2 Q49.062 100 47.262 100 H43 Q40.2 100 39 96.8 L18.7 49.3 C17 45.2 15.4 43.8 12.9 43.8 C9.4 43.8 8 46.7 8 51.4 V98.2 Q8 100 6.2 100 Z\"></path></g><g transform=\"translate(61.448 0)\" data-character=\"P\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-4-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M1.000 0.000 L21.175 0.000 C39.462 0.000 48.125 10.000 48.125 25.625 C48.125 42.625 38.981 51.625 21.175 51.625 L9.750 51.625 L9.750 98.000 Q9.750 100.000 7.750 100.000 L2.000 100.000 Q0.000 100.000 0.000 98.000 L0.000 2.000 Q0.000 0.000 1.000 0.000 Z M10.000 9.375 L21.175 9.375 C36.125 9.375 38.125 15.375 38.125 25.625 C38.125 35.875 36.125 41.875 21.175 41.875 L10.000 41.875 Z\"></path></g><g transform=\"translate(121.959 0)\" data-character=\"N\" data-provenance=\"profile-override\" data-reconstruction-id=\"bc-astro-4-passenger-N-20261108-v1\" data-reconstruction-status=\"source-informed\" data-reconstruction-source=\"https://www.bcpl8s.ca/images/Passenger/1985-2001/1989-NPN030(XL).jpg\" data-reconstruction-recovery=\"new-2026-11-08\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M1.8 100 Q0 100 0 98.2 V2 Q0 0 2 0 H7.5 Q10 0 11 2.8 L30.5 50.8 C32.2 55 34 57 36.3 57 C39.6 57 41.062 54.5 41.062 50 V1.8 Q41.062 0 42.862 0 H47.262 Q49.062 0 49.062 1.8 V98.2 Q49.062 100 47.262 100 H43 Q40.2 100 39 96.8 L18.7 49.3 C17 45.2 15.4 43.8 12.9 43.8 C9.4 43.8 8 46.7 8 51.4 V98.2 Q8 100 6.2 100 Z\"></path></g></g></g><g data-role=\"serial-right\" data-die=\"bc-astro-4\" data-fit=\"natural\" role=\"img\" aria-label=\"030\"><title>030</title><g transform=\"translate(173.893 46.05) scale(0.6345)\" fill=\"none\" stroke=\"#000000\" stroke-width=\"11.5\" stroke-linecap=\"square\" stroke-linejoin=\"round\"><g transform=\"translate(0 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-4-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M24.062 0.000 C7.700 0.000 0.000 10.000 0.000 26.000 L0.000 74.000 C0.000 91.000 7.700 100.000 24.062 100.000 C40.425 100.000 48.125 91.000 48.125 74.000 L48.125 26.000 C48.125 10.000 40.425 0.000 24.062 0.000 Z M24.062 10.500 C14.919 10.500 10.620 16.000 10.620 28.000 L10.620 73.000 C10.620 84.000 14.919 88.000 24.062 88.000 C35.131 88.000 38.440 84.000 38.440 73.000 L38.440 28.000 C38.440 16.000 35.131 10.500 24.062 10.500 Z\"></path></g><g transform=\"translate(60.511 0)\" data-character=\"3\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-4-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M0.000 18.000 C3.369 6.000 11.550 0.000 23.581 0.000 C37.538 0.000 46.200 10.000 46.200 25.000 C46.200 36.000 41.388 44.000 32.725 49.000 C42.350 53.000 48.125 63.000 48.125 76.000 C48.125 91.000 37.538 100.000 23.581 100.000 C9.625 100.000 0.963 90.000 0.000 80.000 C0.000 76.000 8.181 75.000 8.662 80.000 C11.069 87.000 16.363 91.000 23.581 91.000 C34.650 91.000 39.625 85.000 39.625 76.000 C39.625 65.000 33.206 56.000 21.175 55.000 C18.288 55.000 18.288 46.000 21.175 46.000 C32.244 44.000 39.625 35.000 39.625 25.000 C39.625 15.000 33.688 9.000 23.581 9.000 C16.363 9.000 11.550 14.000 9.144 21.000 C8.181 25.000 0.000 23.000 0.000 18.000 Z\"></path></g><g transform=\"translate(121.022 0)\" data-character=\"0\" data-source=\"research\" data-provenance=\"research-candidate\" data-research-unit=\"research-bc-astro-4-smooth-complete\" fill=\"#000000\" stroke=\"none\" fill-rule=\"evenodd\"><path d=\"M24.062 0.000 C7.700 0.000 0.000 10.000 0.000 26.000 L0.000 74.000 C0.000 91.000 7.700 100.000 24.062 100.000 C40.425 100.000 48.125 91.000 48.125 74.000 L48.125 26.000 C48.125 10.000 40.425 0.000 24.062 0.000 Z M24.062 10.500 C14.919 10.500 10.620 16.000 10.620 28.000 L10.620 73.000 C10.620 84.000 14.919 88.000 24.062 88.000 C35.131 88.000 38.440 84.000 38.440 73.000 L38.440 28.000 C38.440 16.000 35.131 10.500 24.062 10.500 Z\"></path></g></g></g></g></svg>"
+        }
+      }
+    }
+  ]
+}

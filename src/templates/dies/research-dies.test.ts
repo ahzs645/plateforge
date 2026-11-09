@@ -211,14 +211,16 @@ describe('research dies in the B.C. renderer', () => {
       }
     });
 
-  it('keeps unobserved new-series letters as constructed fallbacks', () => {
+  it('labels the source-informed new-series letters separately from research-registry candidates', () => {
     const { format, design } = designOf('2025-flag');
     const parts = { ...format.generate(createRng('new-series-letters')), serial: 'A12-3UZ', die: 'bc-waldale' };
     for (const serial of [parts.serial, 'A12-3YY']) {
       const root = withResearchContext('2025-flag', () => scene(design, { ...parts, serial }));
       for (const glyph of all(byRole(root, 'serial')!).filter(n => ['U', 'Y', 'Z'].includes(String(n.attrs['data-character'])))) {
         expect(glyph.attrs['data-research-unit']).toBeUndefined();
-        expect(glyph.attrs['data-provenance']).toBe('constructed');
+        expect(glyph.attrs['data-provenance']).toBe('profile-override');
+        expect(glyph.attrs['data-reconstruction-status']).toBe('source-informed');
+        expect(glyph.attrs['data-reconstruction-recovery']).toBe('report-vector');
       }
     }
   });

@@ -1,0 +1,344 @@
+[
+  {
+    "source": "modern-u",
+    "occurrence": 1,
+    "svgIndex": 2,
+    "character": "A",
+    "crop": [
+      [
+        25,
+        47,
+        52,
+        100
+      ]
+    ],
+    "alignmentInCrop": {
+      "xCenter": 11.5,
+      "yTop": 3.0,
+      "height": 49.0
+    }
+  },
+  {
+    "source": "modern-u",
+    "occurrence": 2,
+    "svgIndex": 3,
+    "character": "9",
+    "crop": [
+      [
+        51,
+        42,
+        78,
+        94
+      ]
+    ],
+    "alignmentInCrop": {
+      "xCenter": 13.499999999999998,
+      "yTop": 4.0,
+      "height": 48.0
+    }
+  },
+  {
+    "source": "modern-u",
+    "occurrence": 3,
+    "svgIndex": 4,
+    "character": "0",
+    "crop": [
+      [
+        78,
+        39,
+        101,
+        89
+      ]
+    ],
+    "alignmentInCrop": {
+      "xCenter": 11.5,
+      "yTop": 4.0,
+      "height": 46.0
+    }
+  },
+  {
+    "source": "modern-u",
+    "occurrence": 4,
+    "svgIndex": 5,
+    "character": "7",
+    "crop": [
+      [
+        126,
+        32,
+        152,
+        84
+      ]
+    ],
+    "alignmentInCrop": {
+      "xCenter": 14.000000000000002,
+      "yTop": 3.0,
+      "height": 47.0
+    }
+  },
+  {
+    "source": "modern-u",
+    "occurrence": 5,
+    "svgIndex": 6,
+    "character": "G",
+    "crop": [
+      [
+        151,
+        29,
+        176,
+        79
+      ]
+    ],
+    "alignmentInCrop": {
+      "xCenter": 12.5,
+      "yTop": 4.0,
+      "height": 46.0
+    }
+  },
+  {
+    "source": "modern-u",
+    "occurrence": 6,
+    "svgIndex": 7,
+    "character": "U",
+    "crop": [
+      [
+        175,
+        26,
+        198,
+        76
+      ]
+    ],
+    "alignmentInCrop": {
+      "xCenter": 11.5,
+      "yTop": 2.0000000000000004,
+      "height": 48.0
+    }
+  },
+  {
+    "source": "modern-y",
+    "occurrence": 1,
+    "svgIndex": 8,
+    "character": "A",
+    "crop": [
+      [
+        30,
+        43,
+        59,
+        94
+      ]
+    ],
+    "alignmentInCrop": {
+      "xCenter": 15.0,
+      "yTop": 2.0,
+      "height": 47.0
+    }
+  },
+  {
+    "source": "modern-y",
+    "occurrence": 2,
+    "svgIndex": 9,
+    "character": "8",
+    "crop": [
+      [
+        59,
+        42,
+        89,
+        92
+      ]
+    ],
+    "alignmentInCrop": {
+      "xCenter": 15.0,
+      "yTop": 0.9999999999999991,
+      "height": 47.0
+    }
+  },
+  {
+    "source": "modern-y",
+    "occurrence": 3,
+    "svgIndex": 10,
+    "character": "2",
+    "crop": [
+      [
+        89,
+        40,
+        118,
+        91
+      ]
+    ],
+    "alignmentInCrop": {
+      "xCenter": 15.5,
+      "yTop": 2.0,
+      "height": 47.0
+    }
+  },
+  {
+    "source": "modern-y",
+    "occurrence": 4,
+    "svgIndex": 11,
+    "character": "0",
+    "crop": [
+      [
+        150,
+        39,
+        179,
+        89
+      ]
+    ],
+    "alignmentInCrop": {
+      "xCenter": 14.5,
+      "yTop": 1.0000000000000004,
+      "height": 46.0
+    }
+  },
+  {
+    "source": "modern-y",
+    "occurrence": 5,
+    "svgIndex": 12,
+    "character": "E",
+    "crop": [
+      [
+        179,
+        38,
+        209,
+        87
+      ]
+    ],
+    "alignmentInCrop": {
+      "xCenter": 15.5,
+      "yTop": 2.0,
+      "height": 47.0
+    }
+  },
+  {
+    "source": "modern-y",
+    "occurrence": 6,
+    "svgIndex": 13,
+    "character": "Y",
+    "crop": [
+      [
+        210,
+        37,
+        240,
+        87
+      ]
+    ],
+    "alignmentInCrop": {
+      "xCenter": 15.499999999999998,
+      "yTop": 2.0,
+      "height": 46.0
+    }
+  },
+  {
+    "source": "modern-z",
+    "occurrence": 1,
+    "svgIndex": 14,
+    "character": "A",
+    "crop": [
+      [
+        38,
+        43,
+        61,
+        83
+      ]
+    ],
+    "alignmentInCrop": {
+      "xCenter": 12.0,
+      "yTop": 1.0,
+      "height": 38.0
+    }
+  },
+  {
+    "source": "modern-z",
+    "occurrence": 2,
+    "svgIndex": 15,
+    "character": "2",
+    "crop": [
+      [
+        61,
+        44,
+        87,
+        84
+      ]
+    ],
+    "alignmentInCrop": {
+      "xCenter": 13.0,
+      "yTop": 0.9999999999999998,
+      "height": 37.99999999999999
+    }
+  },
+  {
+    "source": "modern-z",
+    "occurrence": 3,
+    "svgIndex": 16,
+    "character": "5",
+    "crop": [
+      [
+        87,
+        44,
+        113,
+        84
+      ]
+    ],
+    "alignmentInCrop": {
+      "xCenter": 12.499999999999998,
+      "yTop": 0.9999999999999998,
+      "height": 37.99999999999999
+    }
+  },
+  {
+    "source": "modern-z",
+    "occurrence": 4,
+    "svgIndex": 17,
+    "character": "0",
+    "crop": [
+      [
+        139,
+        44,
+        167,
+        85
+      ]
+    ],
+    "alignmentInCrop": {
+      "xCenter": 14.0,
+      "yTop": 2.0,
+      "height": 38.0
+    }
+  },
+  {
+    "source": "modern-z",
+    "occurrence": 5,
+    "svgIndex": 18,
+    "character": "E",
+    "crop": [
+      [
+        167,
+        45,
+        193,
+        87
+      ]
+    ],
+    "alignmentInCrop": {
+      "xCenter": 13.0,
+      "yTop": 1.0000000000000004,
+      "height": 39.0
+    }
+  },
+  {
+    "source": "modern-z",
+    "occurrence": 6,
+    "svgIndex": 19,
+    "character": "Z",
+    "crop": [
+      [
+        194,
+        46,
+        221,
+        87
+      ]
+    ],
+    "alignmentInCrop": {
+      "xCenter": 13.0,
+      "yTop": 0.0,
+      "height": 40.0
+    }
+  }
+]

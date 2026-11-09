@@ -1,0 +1,67 @@
+[
+  {
+    "id": "modern-u",
+    "url": "https://www.bcpl8s.ca/images/Passenger/2025/2025-A907GU.jpg",
+    "file": "docs/research/bc-font-reconstruction-2026-11-08/sources/modern-u.jpg",
+    "size": 45209,
+    "dimensions": [
+      222,
+      123
+    ],
+    "sha256": "f3c5691b65b91dde0ffe464e9cd6b3e95f969567c6e4725a468a8fa5aa77221c",
+    "previousReportSha256": "f3c5691b65b91dde0ffe464e9cd6b3e95f969567c6e4725a468a8fa5aa77221c",
+    "matchesReportHash": true
+  },
+  {
+    "id": "modern-y",
+    "url": "https://www.bcpl8s.ca/images/Passenger/2025/2025-A820EY.jpg",
+    "file": "docs/research/bc-font-reconstruction-2026-11-08/sources/modern-y.jpg",
+    "size": 51506,
+    "dimensions": [
+      261,
+      123
+    ],
+    "sha256": "af54da06e8daee0ee4a1d56001596201f24bd47c30dbb067b72817abe3bc37ab",
+    "previousReportSha256": "af54da06e8daee0ee4a1d56001596201f24bd47c30dbb067b72817abe3bc37ab",
+    "matchesReportHash": true
+  },
+  {
+    "id": "modern-z",
+    "url": "https://www.bcpl8s.ca/images/Passenger/2025/2025-A250EZ.jpg",
+    "file": "docs/research/bc-font-reconstruction-2026-11-08/sources/modern-z.jpg",
+    "size": 52521,
+    "dimensions": [
+      250,
+      123
+    ],
+    "sha256": "ee1ba102f918972f9915136d7aa01aa45bff74f77f06061b9c6c013435bc8e1a",
+    "previousReportSha256": "ee1ba102f918972f9915136d7aa01aa45bff74f77f06061b9c6c013435bc8e1a",
+    "matchesReportHash": true
+  },
+  {
+    "id": "astro3-n",
+    "url": "https://www.bcpl8s.ca/images/Passenger/1985-2001/1988-NJB300(XL).jpg",
+    "file": "docs/research/bc-font-reconstruction-2026-11-08/sources/astro3-n.jpg",
+    "size": 932942,
+    "dimensions": [
+      1750,
+      886
+    ],
+    "sha256": "7f76a7341e0956eaf4056d1c09b533affec303bf3e7b3f574c6b5c9a85a04faa",
+    "previousReportSha256": "7f76a7341e0956eaf4056d1c09b533affec303bf3e7b3f574c6b5c9a85a04faa",
+    "matchesReportHash": true
+  },
+  {
+    "id": "classic4-n",
+    "url": "https://www.bcpl8s.ca/images/Passenger/1985-2001/1989-NPN030(XL).jpg",
+    "file": "docs/research/bc-font-reconstruction-2026-11-08/sources/classic4-n.jpg",
+    "size": 958936,
+    "dimensions": [
+      1750,
+      887
+    ],
+    "sha256": "e2efd384224edb93a3d9e241ce6c156d83422921e990e71b2796f38156e9b2a6",
+    "previousReportSha256": "e2efd384224edb93a3d9e241ce6c156d83422921e990e71b2796f38156e9b2a6",
+    "matchesReportHash": true
+  }
+]

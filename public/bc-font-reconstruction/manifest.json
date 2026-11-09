@@ -1,0 +1,473 @@
+{
+  "schema": "plateforge.passenger-reconstruction-comparisons/v1",
+  "generated": "2026-11-08",
+  "specimens": 5,
+  "occurrences": 30,
+  "changedOccurrences": 6,
+  "independentHoldouts": 0,
+  "sourceHashesVerified": true,
+  "shapeAlignment": "uniform actual ink-height and centre; width is never fitted independently",
+  "placementAlignment": "single physical-shell homography where corners are sufficiently visible; otherwise withheld",
+  "comparisons": [
+    {
+      "specimen": "modern-u",
+      "occurrence": 1,
+      "character": "A",
+      "shapeSpace": "image plane",
+      "figure": "modern-u-01-A-shape.svg",
+      "changed": false
+    },
+    {
+      "specimen": "modern-u",
+      "occurrence": 2,
+      "character": "9",
+      "shapeSpace": "image plane",
+      "figure": "modern-u-02-9-shape.svg",
+      "changed": false
+    },
+    {
+      "specimen": "modern-u",
+      "occurrence": 3,
+      "character": "0",
+      "shapeSpace": "image plane",
+      "figure": "modern-u-03-0-shape.svg",
+      "changed": false
+    },
+    {
+      "specimen": "modern-u",
+      "occurrence": 4,
+      "character": "7",
+      "shapeSpace": "image plane",
+      "figure": "modern-u-04-7-shape.svg",
+      "changed": false
+    },
+    {
+      "specimen": "modern-u",
+      "occurrence": 5,
+      "character": "G",
+      "shapeSpace": "image plane",
+      "figure": "modern-u-05-G-shape.svg",
+      "changed": false
+    },
+    {
+      "specimen": "modern-u",
+      "occurrence": 6,
+      "character": "U",
+      "shapeSpace": "image plane",
+      "figure": "modern-u-06-U-shape.svg",
+      "changed": true
+    },
+    {
+      "specimen": "modern-y",
+      "occurrence": 1,
+      "character": "A",
+      "shapeSpace": "image plane",
+      "figure": "modern-y-01-A-shape.svg",
+      "changed": false
+    },
+    {
+      "specimen": "modern-y",
+      "occurrence": 2,
+      "character": "8",
+      "shapeSpace": "image plane",
+      "figure": "modern-y-02-8-shape.svg",
+      "changed": false
+    },
+    {
+      "specimen": "modern-y",
+      "occurrence": 3,
+      "character": "2",
+      "shapeSpace": "image plane",
+      "figure": "modern-y-03-2-shape.svg",
+      "changed": false
+    },
+    {
+      "specimen": "modern-y",
+      "occurrence": 4,
+      "character": "0",
+      "shapeSpace": "image plane",
+      "figure": "modern-y-04-0-shape.svg",
+      "changed": false
+    },
+    {
+      "specimen": "modern-y",
+      "occurrence": 5,
+      "character": "E",
+      "shapeSpace": "image plane",
+      "figure": "modern-y-05-E-shape.svg",
+      "changed": false
+    },
+    {
+      "specimen": "modern-y",
+      "occurrence": 6,
+      "character": "Y",
+      "shapeSpace": "image plane",
+      "figure": "modern-y-06-Y-shape.svg",
+      "changed": true
+    },
+    {
+      "specimen": "modern-z",
+      "occurrence": 1,
+      "character": "A",
+      "shapeSpace": "image plane",
+      "figure": "modern-z-01-A-shape.svg",
+      "changed": false
+    },
+    {
+      "specimen": "modern-z",
+      "occurrence": 2,
+      "character": "2",
+      "shapeSpace": "image plane",
+      "figure": "modern-z-02-2-shape.svg",
+      "changed": false
+    },
+    {
+      "specimen": "modern-z",
+      "occurrence": 3,
+      "character": "5",
+      "shapeSpace": "image plane",
+      "figure": "modern-z-03-5-shape.svg",
+      "changed": false
+    },
+    {
+      "specimen": "modern-z",
+      "occurrence": 4,
+      "character": "0",
+      "shapeSpace": "image plane",
+      "figure": "modern-z-04-0-shape.svg",
+      "changed": false
+    },
+    {
+      "specimen": "modern-z",
+      "occurrence": 5,
+      "character": "E",
+      "shapeSpace": "image plane",
+      "figure": "modern-z-05-E-shape.svg",
+      "changed": false
+    },
+    {
+      "specimen": "modern-z",
+      "occurrence": 6,
+      "character": "Z",
+      "shapeSpace": "image plane",
+      "figure": "modern-z-06-Z-shape.svg",
+      "changed": true
+    },
+    {
+      "specimen": "astro3-n",
+      "occurrence": 1,
+      "character": "N",
+      "shapeSpace": "rectified plate plane",
+      "figure": "astro3-n-01-N-shape.svg",
+      "changed": true
+    },
+    {
+      "specimen": "astro3-n",
+      "occurrence": 2,
+      "character": "J",
+      "shapeSpace": "rectified plate plane",
+      "figure": "astro3-n-02-J-shape.svg",
+      "changed": false
+    },
+    {
+      "specimen": "astro3-n",
+      "occurrence": 3,
+      "character": "B",
+      "shapeSpace": "rectified plate plane",
+      "figure": "astro3-n-03-B-shape.svg",
+      "changed": false
+    },
+    {
+      "specimen": "astro3-n",
+      "occurrence": 4,
+      "character": "3",
+      "shapeSpace": "rectified plate plane",
+      "figure": "astro3-n-04-3-shape.svg",
+      "changed": false
+    },
+    {
+      "specimen": "astro3-n",
+      "occurrence": 5,
+      "character": "0",
+      "shapeSpace": "rectified plate plane",
+      "figure": "astro3-n-05-0-shape.svg",
+      "changed": false
+    },
+    {
+      "specimen": "astro3-n",
+      "occurrence": 6,
+      "character": "0",
+      "shapeSpace": "rectified plate plane",
+      "figure": "astro3-n-06-0-shape.svg",
+      "changed": false
+    },
+    {
+      "specimen": "classic4-n",
+      "occurrence": 1,
+      "character": "N",
+      "shapeSpace": "rectified plate plane",
+      "figure": "classic4-n-01-N-shape.svg",
+      "changed": true
+    },
+    {
+      "specimen": "classic4-n",
+      "occurrence": 2,
+      "character": "P",
+      "shapeSpace": "rectified plate plane",
+      "figure": "classic4-n-02-P-shape.svg",
+      "changed": false
+    },
+    {
+      "specimen": "classic4-n",
+      "occurrence": 3,
+      "character": "N",
+      "shapeSpace": "rectified plate plane",
+      "figure": "classic4-n-03-N-shape.svg",
+      "changed": true
+    },
+    {
+      "specimen": "classic4-n",
+      "occurrence": 4,
+      "character": "0",
+      "shapeSpace": "rectified plate plane",
+      "figure": "classic4-n-04-0-shape.svg",
+      "changed": false
+    },
+    {
+      "specimen": "classic4-n",
+      "occurrence": 5,
+      "character": "3",
+      "shapeSpace": "rectified plate plane",
+      "figure": "classic4-n-05-3-shape.svg",
+      "changed": false
+    },
+    {
+      "specimen": "classic4-n",
+      "occurrence": 6,
+      "character": "0",
+      "shapeSpace": "rectified plate plane",
+      "figure": "classic4-n-06-0-shape.svg",
+      "changed": false
+    }
+  ],
+  "sourceLedgerSha256": "619cd58b5ade074d817a3c5262b99597990f6ab4a6ea3de7eb73cc2c37472cf5",
+  "renderedSha256": "d60952d890170858591bd1d4181e7b47fe5573bdc849025bed0367cedf52893f",
+  "assets": [
+    {
+      "path": "astro3-n-01-N-shape.svg",
+      "sha256": "9faacda93526c04e711c12e5a9461da48042e4e8eb071c4bb40e133d95fa4119"
+    },
+    {
+      "path": "astro3-n-02-J-shape.svg",
+      "sha256": "d351d1b1eb40b941e56c00bf46c01f85c69753659f92b8bf078ab6bb97516f4e"
+    },
+    {
+      "path": "astro3-n-03-B-shape.svg",
+      "sha256": "5bdf4cf4210bfcd1a87b74b446bad50dc7be5f194f28f098442b61525740f8a6"
+    },
+    {
+      "path": "astro3-n-04-3-shape.svg",
+      "sha256": "5a303b78750fe643be044879f52fc6e2661970a8b575e4f51b7b797f55852582"
+    },
+    {
+      "path": "astro3-n-05-0-shape.svg",
+      "sha256": "c1090cc9ee001367e195d9b95617891e2aae8e0b90a270cf0c89ddae8b9eff9f"
+    },
+    {
+      "path": "astro3-n-06-0-shape.svg",
+      "sha256": "daefc3bb469e00324ef64e29e17431a67aa91a3e97d3e86701d7f6cc1138283d"
+    },
+    {
+      "path": "astro3-n-current-research-placement.svg",
+      "sha256": "23382fb949249e91711435e35b0b55ebdc60058a5b36ed8c7753aeb582b2c0e5"
+    },
+    {
+      "path": "astro3-n-previous-production-placement.svg",
+      "sha256": "aae890386932c277e653f46f8c0597e26b7c1b11eb21e5340b17dc3f2f217529"
+    },
+    {
+      "path": "astro3-n-previous-research-placement.svg",
+      "sha256": "50c72f617abe38dab48eeae910e23c36f431b769255af8e2826ae6e90dfc78cf"
+    },
+    {
+      "path": "classic4-n-01-N-shape.svg",
+      "sha256": "bdfff4a69c2fff8cf650da32036be777fd81d789eade0143b70a98ee4e47d89f"
+    },
+    {
+      "path": "classic4-n-02-P-shape.svg",
+      "sha256": "c7bf19c4b0af4e5bec0f952219420e4e693b6b50c0bff11a14c6f27692c0df20"
+    },
+    {
+      "path": "classic4-n-03-N-shape.svg",
+      "sha256": "05f76a695b39a9a914aff13fac01c22de605e6978b64d18e995f7c622403de19"
+    },
+    {
+      "path": "classic4-n-04-0-shape.svg",
+      "sha256": "48ac13e7feb804f13f55d1763973880c9893367086e2d55962c2c5d58ed8a143"
+    },
+    {
+      "path": "classic4-n-05-3-shape.svg",
+      "sha256": "bfe7dbdb8d3920d23a1b736773bb0212d60bf379963a72da27d851c462090669"
+    },
+    {
+      "path": "classic4-n-06-0-shape.svg",
+      "sha256": "b02ddd23c38965663bb8de51d8822b84250a8b7b7c09b44f3e53dbec9cf229be"
+    },
+    {
+      "path": "classic4-n-current-research-placement.svg",
+      "sha256": "af36769fd3c6aadf8c8b1c348bb5974d1c5cece8ffcccfa24e367703085454e6"
+    },
+    {
+      "path": "classic4-n-previous-production-placement.svg",
+      "sha256": "6006967a9566773355136e03f3e380de968b0fa4af31057be1d460c1b5ce640a"
+    },
+    {
+      "path": "classic4-n-previous-research-placement.svg",
+      "sha256": "be376a5a7c0b9f128de855d67d38aad65274e01d0c5d99d96f6c3d27c0e48ced"
+    },
+    {
+      "path": "index.html",
+      "sha256": "5e3eedb89d339f25a9b45fd433b07cd1878f14d94d9cac9ccfa233bdc578b799"
+    },
+    {
+      "path": "modern-overview.svg",
+      "sha256": "ee1839ccbcb8fdeb504e60ecad96cac61bbe91278942528df4d5e068dd23da8c"
+    },
+    {
+      "path": "modern-u-01-A-shape.svg",
+      "sha256": "c6b8a72f583892074c2a0d51ce5e03de9e73c00d107237a2886bebe3bdfad90a"
+    },
+    {
+      "path": "modern-u-02-9-shape.svg",
+      "sha256": "b2a82e0bfaf1e9ca164ee674ec6124e0a2654ff59dff59e99140c12c103cfd48"
+    },
+    {
+      "path": "modern-u-03-0-shape.svg",
+      "sha256": "4e09203d17cfd3e6683d42ac55d06b20513a93f97a4ce366047c5cacc3e62c8a"
+    },
+    {
+      "path": "modern-u-04-7-shape.svg",
+      "sha256": "47b84e7456a1d6dc999ee312fcd4a21e1af444c818a68fd8b00ba69a3f6dedbe"
+    },
+    {
+      "path": "modern-u-05-G-shape.svg",
+      "sha256": "74b5cecfb3cc0a6f167b142ca8f2c1b0fae7248b74ef50b7ad8a6b9577db6eb5"
+    },
+    {
+      "path": "modern-u-06-U-shape.svg",
+      "sha256": "e4ba85538aeecf6c9a22e57906a45d4519714ea4baca61752121ed5e51e047f4"
+    },
+    {
+      "path": "modern-y-01-A-shape.svg",
+      "sha256": "5a11918eb7ce180c39febdadb7490c47773fcb47fc8cf691033b4a0146a27e79"
+    },
+    {
+      "path": "modern-y-02-8-shape.svg",
+      "sha256": "bb5d1e1c49e596ed86706cb48afefe8e45d5a408be2ec485947ee52fae002568"
+    },
+    {
+      "path": "modern-y-03-2-shape.svg",
+      "sha256": "5f1409ca180335229771a11c69159d362d50e5c066cf9bc90798b26581530d93"
+    },
+    {
+      "path": "modern-y-04-0-shape.svg",
+      "sha256": "b45b4da2b13ec14fa4a97389d59be53a8dc31c19edad18560d619e33abd37837"
+    },
+    {
+      "path": "modern-y-05-E-shape.svg",
+      "sha256": "5d4bae724305deec79de777139cf782b351d479d445a5e493bb693c0b566aee2"
+    },
+    {
+      "path": "modern-y-06-Y-shape.svg",
+      "sha256": "be73812c65c578ca00475d7914c9d0bf4371937e8dafb112fe8a29ba112e6a2d"
+    },
+    {
+      "path": "modern-y-current-research-placement.svg",
+      "sha256": "b5a5fd1678d048dc3f551fc449094e5150d37097d9555dbc3ff15630bb6466c0"
+    },
+    {
+      "path": "modern-y-previous-production-placement.svg",
+      "sha256": "786bdb567e59fa930db02d8c49eb8c74f080787f207e55b0af58580e860c6fc8"
+    },
+    {
+      "path": "modern-y-previous-research-placement.svg",
+      "sha256": "76ac5d0298ec8f8c70a7184262a9b3bff9b968097d04e0663224fa3c4a282c76"
+    },
+    {
+      "path": "modern-z-01-A-shape.svg",
+      "sha256": "69a6dec20c147a73264f5553942b02dbb4dcb3582323771254a076da634b3e07"
+    },
+    {
+      "path": "modern-z-02-2-shape.svg",
+      "sha256": "e1fd223d143a5316b7f4d7d704c80c96ddb4de9b153b4443ca714da7952ee26b"
+    },
+    {
+      "path": "modern-z-03-5-shape.svg",
+      "sha256": "8c43f2042385f11c1a11d0f66955be1a59efaf486c4ee9234fb85f4022e5bbd9"
+    },
+    {
+      "path": "modern-z-04-0-shape.svg",
+      "sha256": "48469bc7f187e2f63cd9937ba70473b2234a735ab4dac16de92bd749ea1e169a"
+    },
+    {
+      "path": "modern-z-05-E-shape.svg",
+      "sha256": "2926add11846112625f3ff7c909709642f06eaa403cd87c0bc035d485085d1a8"
+    },
+    {
+      "path": "modern-z-06-Z-shape.svg",
+      "sha256": "0f726a5f26e4821d0312234b121df258fea9a5e18e3d63c425fe8c557dacfeed"
+    },
+    {
+      "path": "n-overview.svg",
+      "sha256": "30c352119aa33f317e031089a368fbef83d6a60f15b101b77809b63cd8749c9d"
+    },
+    {
+      "path": "source-plates/astro3-n-rectified.webp",
+      "sha256": "f5b19181ea3c53067de5ba50fe4e57bb57d7964a0138a56da98ce64ef06f4581"
+    },
+    {
+      "path": "source-plates/astro3-n.webp",
+      "sha256": "603c0afb9269bbd4460942dda3b70052e0f73659e791aaaf49af6cccb97b67d1"
+    },
+    {
+      "path": "source-plates/classic4-n-rectified.webp",
+      "sha256": "4b530ac7643911fc0159e23024ec5c4c2013e521a6dd26a2bdfb038dce55c222"
+    },
+    {
+      "path": "source-plates/classic4-n.webp",
+      "sha256": "118be3a9bedfdc4c164d71b19a4d7811f0e011cef625e739e6797a663b136d78"
+    },
+    {
+      "path": "source-plates/modern-u.webp",
+      "sha256": "6cfc2a26a74a9c411dfdb9675ae9adc0db864babf5161d3493757e52d4e6866d"
+    },
+    {
+      "path": "source-plates/modern-y-rectified.webp",
+      "sha256": "5bf6d8993d7055122a123fee92b9476b1dedc34cc93a2e00045b099aa39db791"
+    },
+    {
+      "path": "source-plates/modern-y.webp",
+      "sha256": "d2bea55ca2a048f960bb4e0d448c5dc118df76b6dbfb41ab8685c085831302bd"
+    },
+    {
+      "path": "source-plates/modern-z.webp",
+      "sha256": "3a6910a9710a2f206cff8c677facd0e3f465a66c85101893a4296cb3fa923a3a"
+    }
+  ],
+  "overviews": [
+    {
+      "svg": "modern-overview.svg",
+      "png": "modern-overview.png",
+      "width": 1200,
+      "height": 1251,
+      "sha256": "1baed1538df119196a732c10d4b41f8b98c63fc0da335b4b042f58afcd352e14"
+    },
+    {
+      "svg": "n-overview.svg",
+      "png": "n-overview.png",
+      "width": 1200,
+      "height": 1251,
+      "sha256": "ed0500f9bf0ed5b49ca898f08dcf063f4b65ddfebce2857390533da63eacfc62"
+    }
+  ]
+}

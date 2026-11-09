@@ -1,0 +1,13 @@
+{
+  "schema": "plateforge.passenger-reconstruction-validation/v1",
+  "date": "2026-11-08",
+  "originalsWithVerifiedSha256": 5,
+  "distinctPhotographedOccurrences": 30,
+  "modeOccurrenceChecks": 60,
+  "changedModeOccurrences": 12,
+  "serialPlacementsPreserved": 10,
+  "overviewPngHashesVerified": 2,
+  "exactRecoveredModernCrops": 18,
+  "independentHoldouts": 0,
+  "limitation": "These checks verify selected geometry/provenance/placement consistency. Full suite, production build, browser and live deployment are recorded by the release validation, not asserted here."
+}

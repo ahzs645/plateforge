@@ -12,6 +12,7 @@
 import type { DieProfile } from './engine';
 import type { SkeletonGlyph } from './skeleton';
 import { BC_PASSENGER_RESEARCH_BINDINGS } from './research-policy';
+import { reconstructedPassengerVariant } from './passenger-reconstruction';
 
 export interface ResearchRegistry {
   /** `[advance, ...paths]` filled outlines at cap height 100. */
@@ -33,6 +34,10 @@ export const researchRegistryDigest = () => registryDigest;
 let enabled = readEnabled();
 let version = 0;
 let context: string | null = null;
+// A shared serial pool is an inner context; it must not broaden a narrowly
+// evidenced passenger reconstruction to collector/commercial/small plates.
+let plateContext: string | null = null;
+let contextDepth = 0;
 const listeners = new Set<() => void>();
 const merged = new Map<string, DieProfile>();
 /** Merged profile → the production profile it was built from. */
@@ -115,8 +120,10 @@ export const researchDiesVersion = (): number => version;
 /** Renders `build` with research glyphs for `formatId` (synchronous scene builders only). */
 export function withResearchContext<T>(formatId: unknown, build: () => T): T {
   const previous = context;
+  const previousPlate = plateContext;
   context = typeof formatId === 'string' ? formatId : null;
-  try { return build(); } finally { context = previous; }
+  if (contextDepth++ === 0) plateContext = context;
+  try { return build(); } finally { context = previous; plateContext = previousPlate; contextDepth--; }
 }
 
 /**
@@ -174,8 +181,10 @@ function researchGlyphs(units: readonly string[]): Record<string, SkeletonGlyph>
 }
 
 /**
- * The research variant of a production die for the current format, or the die
- * itself when research is off, unloaded, outside a plate, or not bound here.
+ * The research variant of a production die for the current format. Registry
+ * candidates are omitted when research is off, unloaded or unbound. Narrowly
+ * scoped source-informed passenger reconstructions are a separate layer and
+ * remain available without the registry; their metadata distinguishes them.
  * With `text`, a single unit that observed the whole run is preferred, so a
  * word is not assembled from different sources when it need not be. Reviewed
  * passenger serial pools instead keep the same alphabet for every edited run.
@@ -183,11 +192,16 @@ function researchGlyphs(units: readonly string[]): Record<string, SkeletonGlyph>
 export function researchVariant(profile: DieProfile, role?: string, text?: string): DieProfile {
   const base = bases.get(profile) ?? profile;
   if (base.allowResearchReplacement === false) return base;
+  const finish = (candidate: DieProfile) => {
+    const result = reconstructedPassengerVariant(candidate, plateContext, role);
+    if (result !== candidate) bases.set(result, base);
+    return result;
+  };
   const fixedAlphabet = context && BC_PASSENGER_RESEARCH_BINDINGS[context]?.[base.id];
   const units = activeUnits(base.id);
   // A profile can be handed across nested render contexts. If this protected
   // context has no admissible research, discard an earlier context's merge.
-  if (!units?.length) return fixedAlphabet ? base : profile;
+  if (!units?.length) return finish(fixedAlphabet || profile.reconstructedGlyphs ? base : profile);
   const ranked = unitsFor(units, role);
   const chars = text ? [...new Set(text)].filter((c) => c !== ' ') : [];
   // A named passenger serial alphabet is stable when text is edited or split
@@ -212,7 +226,7 @@ export function researchVariant(profile: DieProfile, role?: string, text?: strin
     bases.set(p, base);
     merged.set(key, p);
   }
-  return p;
+  return finish(p);
 }
 
 const SPACE: SkeletonGlyph = { advance: 28, paths: [], fill: true };
