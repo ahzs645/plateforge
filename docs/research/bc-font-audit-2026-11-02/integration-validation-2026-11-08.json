@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-08",
+  "timezone": "America/Vancouver",
+  "pullRequest": "https://github.com/ahzs645/plateforge/pull/17",
+  "originalPrHead": "87f1250912301848bb0d86be86bc6769d9f56de3",
+  "integratedMainRevision": "68d5fe07cf8b72cf3afb932d6b59d631b7eb2893",
+  "integrationCommit": "23069c96007b902cab63255f599da8c5eb65004d",
+  "reviewedSourceTree": {
+    "algorithm": "SHA-256 of JSON [relative path, file SHA-256] pairs sorted by path traversal",
+    "files": 458,
+    "sha256": "64a7a5992b9fa5dec5da054a60a3761b2fc485b78cd10ad859068c3cd4f1dc00"
+  },
+  "researchRegistrySha256": "3929f31db1a126911f58e943960c36286935b0a5442f03142b140bf531793743",
+  "typographyWorkflowSha256": "8ed383255518af904baefdd1074fa685f668ce8bed10be086a8a8435f40c6667",
+  "scope": "Reconcile the original passenger font-selection PR with published decal corrections. Regenerated audit and comparison outputs change only their current source digests; baseline, geometry, registry, sampled cases and selection conclusions are unchanged.",
+  "preservedWorkflowBehavior": [
+    "Shared production build with exact source stamp and verification",
+    "Ubuntu 24.04 for the pinned Playwright toolchain",
+    "All 572 B.C. decal browser geometry/input checks",
+    "Existing typography/export and source-photo review checks"
+  ],
+  "environment": {
+    "node": "v24.22.1",
+    "python": "3.12.14",
+    "playwright": "1.56.1"
+  },
+  "unitTests": {
+    "command": "npm test -- --maxWorkers=2",
+    "filesPassed": 71,
+    "testsPassed": 1989,
+    "failures": 0
+  },
+  "typecheckAndProductionBuild": {
+    "command": "BASE_PATH=/plateforge/ npm run build",
+    "result": "passed",
+    "note": "Includes tsc -b and the Vite production build."
+  },
+  "fontIntegrity": {
+    "command": "node scripts/typography-verify.mjs",
+    "result": "passed",
+    "fontFaces": 449,
+    "immutableGeometryFiles": 19
+  },
+  "actualRendererAudit": {
+    "command": "node scripts/audit-bc-font-evidence.mjs --check",
+    "result": "passed",
+    "summary": {
+      "formats": 447,
+      "defaultCases": 447,
+      "explicitDieCases": 193,
+      "focusCases": 13,
+      "totalCases": 653,
+      "sampledGlyphOccurrences": 13286,
+      "sampledNonWhitespace": 12960,
+      "research": 10354,
+      "profileOverride": 1315,
+      "constructed": 1291,
+      "unlabelled": 0,
+      "separateArtworkCharacters": 125,
+      "structuralErrors": 0,
+      "selectionMismatches": 0,
+      "invalidSampleCases": 0
+    }
+  },
+  "frozenComparison": {
+    "command": "node scripts/compare-bc-font-evidence.mjs --check",
+    "result": "passed",
+    "baselineRevision": "17b974f51c687780c5d0b106fd9ae37e4c83ccae",
+    "changedCases": 8,
+    "unchangedDefaultGlyphSignatures": 447,
+    "unexpectedChangedCases": [],
+    "added": [],
+    "removed": [],
+    "scope": "Sampled glyph-outline and provenance comparison for identical generated inputs and selected dies. Signatures include text, die, fit, per-character outline paths and provenance. They exclude run/glyph transforms and inherited paint/stroke, so unchanged does not establish pixel, spacing or full-scene equivalence. Historical photographic accuracy remains unmeasured."
+  },
+  "focusedBrowserCommand": "TYPOGRAPHY_BROWSER=<engine> node scripts/bc-font-audit-smoke.mjs",
+  "focusedBrowserTests": [
+    {
+      "engine": "chromium",
+      "version": "141.0.7390.37",
+      "checksPassed": 15,
+      "checks": [
+        {
+          "name": "1985-flag bc-astro-1 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-astro-2 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-astro-3 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-astro-4 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-waldale KRL-067",
+          "status": "passed"
+        },
+        {
+          "name": "2001-flag bc-astro-4 067-LAA",
+          "status": "passed"
+        },
+        {
+          "name": "2001-flag bc-waldale 067-SJF",
+          "status": "passed"
+        },
+        {
+          "name": "2025-flag default A12-3UY",
+          "status": "passed"
+        },
+        {
+          "name": "2025-flag default A12-3UZ",
+          "status": "passed"
+        },
+        {
+          "name": "PNG and Tesla downloads retain a visible serial",
+          "status": "passed"
+        },
+        {
+          "name": "research toggle switches to production and back",
+          "status": "passed"
+        },
+        {
+          "name": "report filters and per-character evidence",
+          "status": "passed"
+        },
+        {
+          "name": "report and application fit a phone viewport",
+          "status": "passed"
+        },
+        {
+          "name": "before/after review shows all four corrected choices on a phone",
+          "status": "passed"
+        },
+        {
+          "name": "standalone report works without network",
+          "status": "passed"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "engine": "firefox",
+      "version": "142.0.1",
+      "checksPassed": 15,
+      "checks": [
+        {
+          "name": "1985-flag bc-astro-1 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-astro-2 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-astro-3 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-astro-4 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-waldale KRL-067",
+          "status": "passed"
+        },
+        {
+          "name": "2001-flag bc-astro-4 067-LAA",
+          "status": "passed"
+        },
+        {
+          "name": "2001-flag bc-waldale 067-SJF",
+          "status": "passed"
+        },
+        {
+          "name": "2025-flag default A12-3UY",
+          "status": "passed"
+        },
+        {
+          "name": "2025-flag default A12-3UZ",
+          "status": "passed"
+        },
+        {
+          "name": "PNG and Tesla downloads retain a visible serial",
+          "status": "passed"
+        },
+        {
+          "name": "research toggle switches to production and back",
+          "status": "passed"
+        },
+        {
+          "name": "report filters and per-character evidence",
+          "status": "passed"
+        },
+        {
+          "name": "report and application fit a phone viewport",
+          "status": "passed"
+        },
+        {
+          "name": "before/after review shows all four corrected choices on a phone",
+          "status": "passed"
+        },
+        {
+          "name": "standalone report works without network",
+          "status": "passed"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "version": "26.0",
+      "checksPassed": 15,
+      "checks": [
+        {
+          "name": "1985-flag bc-astro-1 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-astro-2 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-astro-3 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-astro-4 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-waldale KRL-067",
+          "status": "passed"
+        },
+        {
+          "name": "2001-flag bc-astro-4 067-LAA",
+          "status": "passed"
+        },
+        {
+          "name": "2001-flag bc-waldale 067-SJF",
+          "status": "passed"
+        },
+        {
+          "name": "2025-flag default A12-3UY",
+          "status": "passed"
+        },
+        {
+          "name": "2025-flag default A12-3UZ",
+          "status": "passed"
+        },
+        {
+          "name": "PNG and Tesla downloads retain a visible serial",
+          "status": "passed"
+        },
+        {
+          "name": "research toggle switches to production and back",
+          "status": "passed"
+        },
+        {
+          "name": "report filters and per-character evidence",
+          "status": "passed"
+        },
+        {
+          "name": "report and application fit a phone viewport",
+          "status": "passed"
+        },
+        {
+          "name": "before/after review shows all four corrected choices on a phone",
+          "status": "passed"
+        },
+        {
+          "name": "standalone report works without network",
+          "status": "passed"
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "initialChromiumAttempt": {
+    "checksPassed": 11,
+    "failedChecks": [
+      {
+        "name": "PNG and Tesla downloads retain a visible serial",
+        "error": "Error: page.waitForEvent: Page crashed\n=========================== logs ===========================\nwaiting for event \"download\"\n============================================================"
+      },
+      {
+        "name": "research toggle switches to production and back",
+        "error": "Error: locator.uncheck: Target crashed \nCall log:\n\u001b[2m  - waiting for getByRole('checkbox', { name: 'Research lettering', exact: true })\u001b[22m\n"
+      },
+      {
+        "name": "report and application fit a phone viewport",
+        "error": "Error: page.setViewportSize: Target crashed "
+      },
+      {
+        "name": "before/after review shows all four corrected choices on a phone",
+        "error": "Error: locator.count: Target crashed "
+      }
+    ],
+    "observation": "The first PNG export crashed the application page after all nine selected-family/SVG-export cases passed. Three later checks also failed after pages crashed. Tesla export was not reached.",
+    "followup": "The complete unchanged suite passed all 15 checks on the same build with DEBUG=pw:browser diagnostics enabled. No application changes, test changes, launch-flag changes or reduced acceptance criteria were used. The cause of the first crash is not established."
+  },
+  "webkitEnvironmentNote": "Used the already installed pinned WebKit bundle and verified that all ten required user-local shared libraries load with ctypes.CDLL. PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS=1 skips a system-cache dependency heuristic that cannot see the installed local GLES library; actual browser launch and all 15 application checks passed.",
+  "limits": [
+    "This receipt records local validation; current GitHub workflow results are separate.",
+    "The original 2 November validation.json is retained as historical evidence.",
+    "Sampled outline/provenance signatures do not establish pixel or spacing parity or photographic accuracy.",
+    "The separate later five-glyph reconstruction continuation is outside this integration.",
+    "The broad existing browser/export and 572-case decal suites were preserved for GitHub validation, not rerun locally in this integration review."
+  ]
+}

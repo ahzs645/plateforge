@@ -2,3 +2,8 @@
 src/templates/dies/research-registry.json -diff linguist-generated=true
 # Preserve the exact upstream licence bytes, including original end-of-line spacing.
 docs/research/iran-customizer/fonts/source/*LICENSE.txt whitespace=-blank-at-eol
+# Reproducible B.C. evidence artifacts; review their generators and source policy.
+docs/research/bc-font-audit-2026-11-02/audit.json linguist-generated=true
+docs/research/bc-font-audit-2026-11-02/baseline-17b974f.json linguist-generated=true
+docs/research/bc-font-audit-2026-11-02/before-after.json linguist-generated=true
+public/bc-font-audit/*.html linguist-generated=true

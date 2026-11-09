@@ -5,6 +5,13 @@ photographs) is drawn by default on B.C. plates, compiled into
 `src/templates/dies/research-registry.json`. These
 are **unvalidated research candidates**, not certified historical alphabets.
 
+The [2 November 2026 continuation](research/bc-font-audit-2026-11-02/README.md)
+adds an audit of actual emitted glyphs for every current B.C. format and explicit
+die choice, plus a frozen before/after comparison. Ordinary passenger candidate
+pools are constrained by `src/templates/dies/research-policy.ts`; their named
+Astrographic variants and historical Waldale trial no longer inherit another
+family's research merely because a broader registry binding ranks it first.
+
 ## How a plate picks its glyphs
 
 `src/templates/dies/research-registry.json` binds each B.C. format, and each
@@ -20,6 +27,10 @@ While a plate renders (`withResearchContext` in `src/templates/bc.tsx`):
   keeps its production glyph**, so every serial still renders.
 - A run of text prefers one unit that observed the whole run, so a word is not
   stitched together from different sources when it need not be.
+- Reviewed ordinary passenger serial pools keep a stable merged alphabet across
+  editing, measurement and splitting around a flag. Their explicit source pools
+  take precedence over the general whole-run preference. Other classes preserve
+  their independent source contexts and documented shared-master mappings.
 - Proxy-typeface text (Georgia, Barlow) is replaced only when one unit observed
   every character; otherwise the typeface stays.
 - Research outlines carry their own source slant; on slanted dies only the
