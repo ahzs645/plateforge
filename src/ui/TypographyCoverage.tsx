@@ -43,6 +43,7 @@ export function TypographyCoverage({ region, format, parts }: { region: Region; 
     <p className="insp-note small">{TYPOGRAPHY_NOTES[template.id] ?? 'This template has no typography classification. Inspect its sources before claiming fidelity.'}</p>
     {region.id === 'ca-bc' && <p className="insp-note small">
       <a href={`${import.meta.env.BASE_URL}bc-visual-review/`} target="_blank" rel="noreferrer">Compare B.C. logos and source photographs</a>
+      {' · '}<a href={`${import.meta.env.BASE_URL}bc-font-audit/`} target="_blank" rel="noreferrer">Review B.C. font families and glyph evidence</a>
     </p>}
     {(region.id === 'iraq' || region.id === 'iran') && <p className="insp-note small">
       <a href={`${import.meta.env.BASE_URL}typography-review/index.html`} target="_blank" rel="noreferrer">Open reference-photo comparisons</a>

@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-11-02",
+  "timezone": "America/Vancouver",
+  "baselineRevision": "17b974f51c687780c5d0b106fd9ae37e4c83ccae",
+  "reviewedSourceTree": {
+    "algorithm": "SHA-256 of JSON [relative path, file SHA-256] pairs sorted by path traversal",
+    "files": 444,
+    "sha256": "978f4f7880645ffef6d5f9b6d09cf7a6dc5ef59392bcf34ca24cc051709f481a"
+  },
+  "environment": {
+    "node": "v24.22.1",
+    "python": "3.12.14",
+    "playwright": "1.56.1"
+  },
+  "unitTests": {
+    "command": "npm test -- --maxWorkers=2",
+    "filesPassed": 68,
+    "testsPassed": 1972,
+    "failures": 0,
+    "baselineTestsPassed": 1952
+  },
+  "typecheckAndProductionBuild": {
+    "command": "BASE_PATH=/plateforge/ npm run build",
+    "result": "passed",
+    "note": "Includes tsc -b and the Vite production build."
+  },
+  "fontIntegrity": {
+    "command": "node scripts/typography-verify.mjs",
+    "result": "passed",
+    "fontFaces": 449,
+    "immutableGeometryFiles": 19
+  },
+  "manifestReproduction": {
+    "command": "python scripts/typography-build-manifest.py --check",
+    "result": "passed",
+    "files": 16,
+    "fonttools": "4.61.1",
+    "brotli": "1.2.0"
+  },
+  "actualRendererAudit": {
+    "command": "node scripts/audit-bc-font-evidence.mjs --check",
+    "result": "passed",
+    "summary": {
+      "formats": 447,
+      "defaultCases": 447,
+      "explicitDieCases": 193,
+      "focusCases": 13,
+      "totalCases": 653,
+      "sampledGlyphOccurrences": 13286,
+      "sampledNonWhitespace": 12960,
+      "research": 10354,
+      "profileOverride": 1315,
+      "constructed": 1291,
+      "unlabelled": 0,
+      "separateArtworkCharacters": 125,
+      "structuralErrors": 0,
+      "selectionMismatches": 0,
+      "invalidSampleCases": 0
+    }
+  },
+  "frozenComparison": {
+    "command": "node scripts/compare-bc-font-evidence.mjs --check",
+    "result": "passed",
+    "changedCases": 8,
+    "unchangedDefaultGlyphSignatures": 447,
+    "unexpectedChangedCases": [],
+    "scope": "Sampled glyph-outline and provenance comparison for identical generated inputs and selected dies. Signatures include text, die, fit, per-character outline paths and provenance. They exclude run/glyph transforms and inherited paint/stroke, so unchanged does not establish pixel, spacing or full-scene equivalence. Historical photographic accuracy remains unmeasured."
+  },
+  "originalSourceNegativeControl": {
+    "tests": 26,
+    "expectedFailures": 6,
+    "passingControls": 20,
+    "expectedFailingTests": [
+      "research dies in the B.C. renderer keeps Astrographic type 1 within its own reviewed candidate pool",
+      "research dies in the B.C. renderer keeps Astrographic type 2 within its own reviewed candidate pool",
+      "research dies in the B.C. renderer keeps Astrographic type 3 within its own reviewed candidate pool",
+      "research dies in the B.C. renderer keeps a digit contour and advance stable when the serial is edited, measured or split",
+      "research dies in the B.C. renderer uses the separately labelled Waldale trial-run source for the 1985 option",
+      "research dies in the B.C. renderer drops a previous context\u2019s merged research when a protected pool has no eligible source"
+    ]
+  },
+  "focusedBrowserTests": [
+    {
+      "engine": "chromium",
+      "version": "141.0.7390.37",
+      "passed": 15,
+      "checks": [
+        {
+          "name": "1985-flag bc-astro-1 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-astro-2 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-astro-3 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-astro-4 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-waldale KRL-067",
+          "status": "passed"
+        },
+        {
+          "name": "2001-flag bc-astro-4 067-LAA",
+          "status": "passed"
+        },
+        {
+          "name": "2001-flag bc-waldale 067-SJF",
+          "status": "passed"
+        },
+        {
+          "name": "2025-flag default A12-3UY",
+          "status": "passed"
+        },
+        {
+          "name": "2025-flag default A12-3UZ",
+          "status": "passed"
+        },
+        {
+          "name": "PNG and Tesla downloads retain a visible serial",
+          "status": "passed"
+        },
+        {
+          "name": "research toggle switches to production and back",
+          "status": "passed"
+        },
+        {
+          "name": "report filters and per-character evidence",
+          "status": "passed"
+        },
+        {
+          "name": "report and application fit a phone viewport",
+          "status": "passed"
+        },
+        {
+          "name": "before/after review shows all four corrected choices on a phone",
+          "status": "passed"
+        },
+        {
+          "name": "standalone report works without network",
+          "status": "passed"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "engine": "firefox",
+      "version": "142.0.1",
+      "passed": 15,
+      "checks": [
+        {
+          "name": "1985-flag bc-astro-1 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-astro-2 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-astro-3 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-astro-4 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-waldale KRL-067",
+          "status": "passed"
+        },
+        {
+          "name": "2001-flag bc-astro-4 067-LAA",
+          "status": "passed"
+        },
+        {
+          "name": "2001-flag bc-waldale 067-SJF",
+          "status": "passed"
+        },
+        {
+          "name": "2025-flag default A12-3UY",
+          "status": "passed"
+        },
+        {
+          "name": "2025-flag default A12-3UZ",
+          "status": "passed"
+        },
+        {
+          "name": "PNG and Tesla downloads retain a visible serial",
+          "status": "passed"
+        },
+        {
+          "name": "research toggle switches to production and back",
+          "status": "passed"
+        },
+        {
+          "name": "report filters and per-character evidence",
+          "status": "passed"
+        },
+        {
+          "name": "report and application fit a phone viewport",
+          "status": "passed"
+        },
+        {
+          "name": "before/after review shows all four corrected choices on a phone",
+          "status": "passed"
+        },
+        {
+          "name": "standalone report works without network",
+          "status": "passed"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "engine": "webkit",
+      "version": "26.0",
+      "passed": 15,
+      "checks": [
+        {
+          "name": "1985-flag bc-astro-1 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-astro-2 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-astro-3 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-astro-4 LAA-067",
+          "status": "passed"
+        },
+        {
+          "name": "1985-flag bc-waldale KRL-067",
+          "status": "passed"
+        },
+        {
+          "name": "2001-flag bc-astro-4 067-LAA",
+          "status": "passed"
+        },
+        {
+          "name": "2001-flag bc-waldale 067-SJF",
+          "status": "passed"
+        },
+        {
+          "name": "2025-flag default A12-3UY",
+          "status": "passed"
+        },
+        {
+          "name": "2025-flag default A12-3UZ",
+          "status": "passed"
+        },
+        {
+          "name": "PNG and Tesla downloads retain a visible serial",
+          "status": "passed"
+        },
+        {
+          "name": "research toggle switches to production and back",
+          "status": "passed"
+        },
+        {
+          "name": "report filters and per-character evidence",
+          "status": "passed"
+        },
+        {
+          "name": "report and application fit a phone viewport",
+          "status": "passed"
+        },
+        {
+          "name": "before/after review shows all four corrected choices on a phone",
+          "status": "passed"
+        },
+        {
+          "name": "standalone report works without network",
+          "status": "passed"
+        }
+      ],
+      "errors": []
+    }
+  ],
+  "existingTypographyBrowserSuite": {
+    "command": "node scripts/typography-browser.mjs",
+    "engine": "chromium",
+    "version": "141.0.7390.37",
+    "checksPassed": 81,
+    "formatsRendered": 878,
+    "errors": []
+  },
+  "limits": [
+    "Renderer and regression coverage do not establish photographic accuracy or complete historic alphabets.",
+    "Default comparison signatures cover sampled glyph outlines/provenance/text/fit, not pixels, spacing or complete scenes.",
+    "Original research registry and protected geometry/font assets remain unchanged.",
+    "Focused browser tests use the actual production UI and exported SVGs; offline file tests explicitly block HTTP/HTTPS requests.",
+    "GitHub workflow results are separate from this local validation receipt."
+  ]
+}

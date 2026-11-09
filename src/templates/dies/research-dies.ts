@@ -11,6 +11,7 @@
  */
 import type { DieProfile } from './engine';
 import type { SkeletonGlyph } from './skeleton';
+import { BC_PASSENGER_RESEARCH_BINDINGS } from './research-policy';
 
 export interface ResearchRegistry {
   /** `[advance, ...paths]` filled outlines at cap height 100. */
@@ -118,6 +119,15 @@ export function withResearchContext<T>(formatId: unknown, build: () => T): T {
   try { return build(); } finally { context = previous; }
 }
 
+/**
+ * Use a reviewed format-local serial pool before an inherited shared master.
+ * The current format, not a cloned recipe's age, owns an exceptional choice
+ * such as the 1985 passenger format's separately labelled Waldale trial run.
+ */
+export function serialResearchContext(profileId: string, sharedContext?: string): string | undefined {
+  return context && BC_PASSENGER_RESEARCH_BINDINGS[context]?.[profileId] ? context : sharedContext;
+}
+
 /** Which kind of lettering a role names; research units only stand in for the same kind first. */
 export function roleClass(role: string): 'serial' | 'legend' | 'date' | 'decal' {
   const r = role.toLowerCase();
@@ -129,7 +139,12 @@ export function roleClass(role: string): 'serial' | 'legend' | 'date' | 'decal' 
 
 function activeUnits(key: string): string[] | null {
   if (!enabled || !registry || !context) return null;
-  return registry.bindings[context]?.[key] ?? null;
+  const units = registry.bindings[context]?.[key];
+  if (!units) return null;
+  const pool = BC_PASSENGER_RESEARCH_BINDINGS[context]?.[key];
+  // A comparison baseline or broad date overlap is not permission to substitute
+  // another maker/type. Retain source ranking only within the reviewed pool.
+  return pool ? units.filter((id) => pool.includes(id) && registry!.units[id].role === 'serial') : units;
 }
 
 /** Units for a role: only that kind of lettering when the format has any, else all, keeping the ranking. */
@@ -162,16 +177,23 @@ function researchGlyphs(units: readonly string[]): Record<string, SkeletonGlyph>
  * The research variant of a production die for the current format, or the die
  * itself when research is off, unloaded, outside a plate, or not bound here.
  * With `text`, a single unit that observed the whole run is preferred, so a
- * word is not assembled from different sources when it need not be.
+ * word is not assembled from different sources when it need not be. Reviewed
+ * passenger serial pools instead keep the same alphabet for every edited run.
  */
 export function researchVariant(profile: DieProfile, role?: string, text?: string): DieProfile {
   const base = bases.get(profile) ?? profile;
   if (base.allowResearchReplacement === false) return base;
+  const fixedAlphabet = context && BC_PASSENGER_RESEARCH_BINDINGS[context]?.[base.id];
   const units = activeUnits(base.id);
-  if (!units?.length) return profile;
+  // A profile can be handed across nested render contexts. If this protected
+  // context has no admissible research, discard an earlier context's merge.
+  if (!units?.length) return fixedAlphabet ? base : profile;
   const ranked = unitsFor(units, role);
   const chars = text ? [...new Set(text)].filter((c) => c !== ' ') : [];
-  const whole = chars.length ? ranked.find((u) => chars.every((c) => c in registry!.units[u].glyphs)) : undefined;
+  // A named passenger serial alphabet is stable when text is edited or split
+  // around the flag. Selecting a different whole-run unit can otherwise change
+  // the same digit's contour/advance between measurement and the visible run.
+  const whole = chars.length && !fixedAlphabet ? ranked.find((u) => chars.every((c) => c in registry!.units[u].glyphs)) : undefined;
   const chosen = whole ? [whole] : ranked;
   const key = `${context}|${base.id}|${whole ?? (role ? roleClass(role) : '')}`;
   let p = merged.get(key);

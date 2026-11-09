@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 1,
+  "reviewDate": "2026-11-02",
+  "reviewTimezone": "America/Vancouver",
+  "scope": "New primary-source specifications, newly photographed passenger U/Y/Z, and independently authored font candidates. This extends, rather than replaces, the existing BC die-grouping ledger.",
+  "method": "Retrieved source-owner pages and official documents; inspected three original JPEGs, the ICBC identification guide, PDF image/font inventories, and the BC atlas and template in the creator's publicly downloadable BeamNG package. No pixel-fit score or exact contour validation was performed.",
+  "originalBinariesCommitted": false,
+  "sources": [
+    {
+      "id": "icbc-rfq-2013-056",
+      "title": "ICBC RFQ 2013-056: Vehicle Licence Plates, with addenda",
+      "url": "https://www.bcpl8s.ca/PDFs/2013-RFQ/2013RFQ.pdf",
+      "publisher": "Insurance Corporation of British Columbia",
+      "host": "BCpl8s archival mirror",
+      "sourceType": "official-document-archived-by-source-owner",
+      "documentDate": "2013-07-03",
+      "addendumDate": "2013-07-12",
+      "pdfPages": 61,
+      "sha256": "1c53f5a7e5e9db5a8b12a0fac49853471ab6b835cf6921310f006c34e5def42b",
+      "byteLength": 1782604,
+      "locations": [
+        { "pdfPage": 10, "printedPage": "10 of 33", "section": "Appendix A(b): Plate Size and Design" },
+        { "pdfPage": 11, "printedPage": "11 of 33", "section": "Appendix A(f): Numbering" },
+        { "pdfPage": 60, "printedPage": null, "section": "Questions and Answers #2, July 12, 2013: Q3/A3" }
+      ],
+      "observations": {
+        "largePlateMm": { "height": 152, "width": 304, "tolerance": 2 },
+        "smallPlateMm": { "height": 126, "width": 201, "tolerance": 2 },
+        "largeCharacterHeightMm": { "value": 65, "tolerance": 1.7 },
+        "smallCharacterHeightMm": { "value": 44, "tolerance": 1 },
+        "fontCategoriesAtDocumentDate": ["large plates", "motorcycle", "other small plates"]
+      },
+      "supports": "Three separately identified font categories in 2013; historical physical reference dimensions.",
+      "limitations": [
+        "A dated procurement specification, not a current universal dimension certificate or downloadable font.",
+        "Generic small-plate height does not resolve the enlarged motorcycle height described in the 2012 government release.",
+        "Appendix C sample plates are low-resolution raster images; document-label fonts are not serial die fonts.",
+        "Seven/eight character spaces in the RFQ include the graphic separator and must not be read as seven/eight registration characters."
+      ]
+    },
+    {
+      "id": "bc-government-motorcycle-2012",
+      "title": "Province rolls out new motorcycle laws",
+      "url": "https://news.gov.bc.ca/releases/2012JAG0061-000569",
+      "publisher": "Government of British Columbia, Ministry of Justice",
+      "sourceType": "official-primary-webpage",
+      "documentDate": "2012-04-30",
+      "location": "Main release, licence-plate bullet; backgrounder section 3, Licence Plate Improvements",
+      "observations": {
+        "motorcycleLargerLetteringSince": "2011-05",
+        "statedIncreaseCm": 0.95,
+        "statedIncreaseInches": "3/8"
+      },
+      "supports": "Independent official corroboration of the motorcycle lettering enlargement.",
+      "limitations": ["Does not give an absolute final cap height, complete alphabet, or exact contour geometry."]
+    },
+    {
+      "id": "icbc-bulletin-33-2025",
+      "title": "New licence plate number configurations, bulletin 33",
+      "url": "https://partners.icbc.com/assets/5GMseymkqs8E4Otb8osoGQ/bulletin-33-new-licence-plate-configurations.pdf",
+      "publisher": "Insurance Corporation of British Columbia",
+      "sourceType": "official-primary-pdf",
+      "documentDate": "2025-06-09",
+      "locations": [
+        { "pdfPage": 1, "section": "What are key facts for law enforcement?" },
+        { "pdfPage": 2, "section": "Examples of new licence plate patterns" }
+      ],
+      "observations": {
+        "passengerPattern": "A123BC",
+        "newlyAvailableLetters": ["U", "Y", "Z"],
+        "excludedLetters": ["I", "O", "Q"],
+        "registrationCharacterCount": 6,
+        "rollout": "Porteau Cove Parks first; passenger as early as August 2025, with inventory-dependent rollout."
+      },
+      "supports": "The contemporary passenger repertoire and format; the bulletin retains design, reflectivity and materials.",
+      "limitations": ["Repertoire evidence does not certify a particular U/Y/Z outline or individual plate allocation."]
+    },
+    {
+      "id": "icbc-guide-2011",
+      "title": "BC Licence Plate Identification Guide, MV1675 (052011)",
+      "url": "https://www.bcpl8s.ca/PDFs/2011-Licence-Plate-Guide.pdf",
+      "publisher": "Insurance Corporation of British Columbia",
+      "host": "BCpl8s archival mirror",
+      "sourceType": "official-document-archived-by-source-owner",
+      "documentEdition": "052011",
+      "pdfPages": 1,
+      "sha256": "9362591f4464e4e42b488c1724f1a6c0d0617f8928190aab3e8bb10336a953d7",
+      "byteLength": 684929,
+      "supports": "Official cross-class samples, including separate motorcycle presentations and utility-trailer lettering.",
+      "inspection": "PDF text, font and image inventory inspected. Plate specimens are raster images, not embedded serial fonts.",
+      "limitations": ["Illustrative sample serials and catalogue layouts are not manufacture-dated issued-plate measurements."]
+    },
+    {
+      "id": "icbc-guide-112014",
+      "title": "BC Licence Plate Identification Guide, MV1675 (112014)",
+      "url": "https://www.bcpl8s.ca/PDFs/2015-Licence-Plate-Guide.pdf",
+      "publisher": "Insurance Corporation of British Columbia",
+      "host": "BCpl8s archival mirror",
+      "sourceType": "official-document-archived-by-source-owner",
+      "documentEdition": "112014",
+      "filenameYear": 2015,
+      "pdfPages": 1,
+      "sha256": "3a964794e3dab6907979f028f5eb53124140dc5e93e2a344c29bffadc92e250c",
+      "byteLength": 830562,
+      "supports": "Side-by-side official samples of older/enlarged motorcycle, utility trailer, full-size passenger, commercial and specialty lettering.",
+      "inspection": "Complete page rendered and visually inspected; embedded image/font inventory inspected.",
+      "limitations": [
+        "Use the printed November 2014 edition, not the archive filename, as document dating evidence.",
+        "The sample plates are raster images, typically about 200–330 pixels wide.",
+        "Helvetica Neue and Univers embedded fonts describe document labels; they do not identify the plate serial font."
+      ]
+    },
+    {
+      "id": "bcpl8s-passenger-2025-page",
+      "title": "British Columbia Passenger License Plates: 2025 and beyond",
+      "url": "https://www.bcpl8s.ca/Passenger-2025.html",
+      "publisher": "Christopher John Garrish / BCpl8s",
+      "sourceType": "source-owner-photograph-gallery-and-research",
+      "location": "Official Confirmation; three photographs captioned as new-series U, Y and Z examples",
+      "supports": "Context for the three original plate photographs below.",
+      "limitations": ["Gallery presentation supplies series context, not an exact manufacture or photography date for each image."]
+    },
+    {
+      "id": "bcpl8s-2025-a907gu",
+      "title": "A907GU, passenger U reference",
+      "url": "https://www.bcpl8s.ca/images/Passenger/2025/2025-A907GU.jpg",
+      "contextSourceId": "bcpl8s-passenger-2025-page",
+      "publisher": "BCpl8s; individual photographer not identified in inspected caption",
+      "sourceType": "original-photograph-on-source-owner-gallery",
+      "observedSerial": "A907GU",
+      "serialOccurrences": ["A", "9", "0", "7", "G", "U"],
+      "targetGlyph": "U",
+      "widthPx": 222,
+      "heightPx": 123,
+      "byteLength": 45209,
+      "sha256": "f3c5691b65b91dde0ffe464e9cd6b3e95f969567c6e4725a468a8fa5aa77221c",
+      "inspected": true,
+      "rectified": false,
+      "outlineFitted": false,
+      "dateEvidence": "2025-series source placement and filename only; manufacture/photography date unknown.",
+      "supports": "Observed U on the new passenger series, plus qualitative G/7/0 comparison.",
+      "limitations": ["Oblique view, low resolution and frame obstruction prevent an exact plate-plane registration."]
+    },
+    {
+      "id": "bcpl8s-2025-a820ey",
+      "title": "A820EY, passenger Y reference",
+      "url": "https://www.bcpl8s.ca/images/Passenger/2025/2025-A820EY.jpg",
+      "contextSourceId": "bcpl8s-passenger-2025-page",
+      "publisher": "BCpl8s; individual photographer not identified in inspected caption",
+      "sourceType": "original-photograph-on-source-owner-gallery",
+      "observedSerial": "A820EY",
+      "serialOccurrences": ["A", "8", "2", "0", "E", "Y"],
+      "targetGlyph": "Y",
+      "widthPx": 261,
+      "heightPx": 123,
+      "byteLength": 51506,
+      "sha256": "af54da06e8daee0ee4a1d56001596201f24bd47c30dbb067b72817abe3bc37ab",
+      "inspected": true,
+      "rectified": false,
+      "outlineFitted": false,
+      "dateEvidence": "2025-series source placement and filename only; manufacture/photography date unknown.",
+      "supports": "Observed Y on the new passenger series, plus qualitative E/8/2/0 comparison.",
+      "limitations": ["Low resolution and perspective; the clearest plate outline of this trio still does not establish an exact master contour."]
+    },
+    {
+      "id": "bcpl8s-2025-a250ez",
+      "title": "A250EZ, passenger Z reference",
+      "url": "https://www.bcpl8s.ca/images/Passenger/2025/2025-A250EZ.jpg",
+      "contextSourceId": "bcpl8s-passenger-2025-page",
+      "publisher": "BCpl8s; individual photographer not identified in inspected caption",
+      "sourceType": "original-photograph-on-source-owner-gallery",
+      "observedSerial": "A250EZ",
+      "serialOccurrences": ["A", "2", "5", "0", "E", "Z"],
+      "targetGlyph": "Z",
+      "widthPx": 250,
+      "heightPx": 123,
+      "byteLength": 52521,
+      "sha256": "ee1ba102f918972f9915136d7aa01aa45bff74f77f06061b9c6c013435bc8e1a",
+      "inspected": true,
+      "rectified": false,
+      "outlineFitted": false,
+      "dateEvidence": "2025-series source placement and filename only; manufacture/photography date unknown.",
+      "supports": "Observed Z on the new passenger series, plus qualitative E/2/5/0 comparison.",
+      "limitations": ["Low resolution and a holder covering plate corners prevent an exact plate-plane registration."]
+    },
+    {
+      "id": "canada-type-driver-gothic",
+      "title": "Driver Gothic",
+      "url": "https://canadatype.com/product/driver-gothic/",
+      "publisher": "Canada Type",
+      "sourceType": "font-creator-product-and-licence-page",
+      "supports": "The creator identifies the design as Ontario-based; this is not an identified BC font.",
+      "licenceObservation": "Commercial font. The displayed ordinary web licence excludes interactive text/image-generation applications; a suitable licence would need to cover the actual proposed use.",
+      "binaryDownloaded": false,
+      "limitations": ["No fresh rendering from font software in this review; prior PlateForge study compared published specimens."]
+    },
+    {
+      "id": "typodermic-dealerplate",
+      "title": "Dealerplate — North American Plate Lettering",
+      "url": "https://typodermicfonts.com/dealerplate/",
+      "publisher": "Typodermic Fonts / Ray Larabie",
+      "sourceType": "font-creator-product-page",
+      "supports": "The creator lists 17 regional styles including Ontario and Quebec, with no British Columbia style.",
+      "licenceObservation": "Creator distinguishes desktop/static-graphics uses from website/application embedding licences.",
+      "binaryDownloaded": false,
+      "limitations": ["A regional comparator, not an exact BC replacement; no font software was evaluated in this review."]
+    },
+    {
+      "id": "googlefluff-canadian-pack",
+      "title": "Canadian License Plate Pack 1.2.1",
+      "url": "https://www.beamng.com/resources/canadian-license-plate-pack.912/",
+      "downloadUrl": "https://www.beamng.com/resources/canadian-license-plate-pack.912/download?version=71226",
+      "publisher": "Googlefluff, hosted by BeamNG",
+      "sourceType": "creator-published-recreation",
+      "version": "1.2.1",
+      "listingUpdateDate": "2026-08-07",
+      "packageSha256": "06e5366062860d813a68ac9df9aa2240a0b63e48d350e12adac0bd04c8cb660f",
+      "packageByteLength": 5556847,
+      "inspectedArchiveMembers": [
+        "mod_info/M8FXVTUS3/info.json",
+        "vehicles/common/licenseplates/british_columbia/licensePlate-default.sktemplate.json",
+        "vehicles/common/licenseplates/british_columbia/platefont_d.png",
+        "vehicles/common/licenseplates/british_columbia/platefont_n.png",
+        "vehicles/common/licenseplates/british_columbia/platefont_s.png"
+      ],
+      "atlas": {
+        "widthPx": 1024,
+        "heightPx": 512,
+        "diffuseSha256": "9edd7e1d068fe5bbdc76eb8ba4f0bebe335509455c9e4b3fa8fe8a3c52286c12",
+        "normalSha256": "e85b458b73c3811df54b64d103d1f7778c430ce29d7de73bda7a3c017f935b78",
+        "specularSha256": "523e24c15ce53dc0033a16337687964fabe602192efd6eb68e7070e7131299fc"
+      },
+      "supports": "Independent BC-specific raster recreation with visibly sweeping 6/9 and a bent 7, useful as a candidate comparator.",
+      "licenceObservation": "Creator expressly permits reuse of custom fonts with credit, both on the listing and in package metadata; this does not extend that statement to every background/logo asset.",
+      "limitations": [
+        "A game-mod recreation, not manufacturer artwork or a physical specimen.",
+        "Raster atlases, not installable TTF/OTF/WOFF fonts.",
+        "Current template uses the older AB1-23C pattern and all 26 letters; do not reuse its grammar as official allocation evidence.",
+        "Template points to BeamNG's default font metrics, which are not included in this archive; this review inspected the atlas rather than claiming an independent exact game render.",
+        "Package metadata retains an older last_update field; the listing date and packed-by timestamp identify this downloaded version."
+      ]
+    },
+    {
+      "id": "googlefluff-bc-2023-update",
+      "title": "Canadian License Plate Pack: August 12, 2023 update",
+      "url": "https://www.beamng.com/resources/canadian-license-plate-pack.912/updates",
+      "publisher": "Googlefluff, hosted by BeamNG",
+      "sourceType": "creator-release-note",
+      "documentDate": "2023-08-12",
+      "supports": "Creator reports rebuilding the BC background/font and separating the flag from the background.",
+      "limitations": ["An author's description of the recreation, not validation against original tooling."]
+    }
+  ],
+  "reusePolicyForThisReview": "Original PDFs, photographs, commercial fonts and the BeamNG package are not committed. Sources, hashes and inspected observations are recorded; photographs remain with the source owner. No full-alphabet or current manufacturing-equivalence claim follows from this research."
+}

@@ -2,6 +2,14 @@
 
 Study date: 28 September 2026.
 
+**Continuation, 2 November 2026:** the Waldale `0/1/7/A/J/P` production changes
+described below were subsequently implemented in the application and are covered
+by `src/templates/dies/waldale.test.ts`. The findings below describe the isolated
+September study, not the current implementation state. The
+[current renderer and source-evidence audit](../../research/bc-font-audit-2026-11-02/README.md)
+checks actual selected die families, per-character provenance and remaining
+research gaps. Do not reapply the old experimental patch as a new change.
+
 ## Open the comparison
 
 Open `output/bc-font-comparison.html` in a modern browser. The geometry and all
