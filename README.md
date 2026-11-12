@@ -122,4 +122,8 @@ B.C. research uses [BCpl8s](https://www.bcpl8s.ca/). Lettering categories and th
 - **Embedding**: `src/embed/` exposes the renderer and gallery data to other sites; PofBC's Plates view uses it as a git submodule. See [embedding PlateForge plates](docs/embed.md).
 - Generated plates are for mockups, research, testing and design. They do not represent real registrations or official issuance.
 
+## Archival stationery study
+
+The [Grace M. McCarthy calling-card study](docs/research/grace-mccarthy-card/README.md) includes editable and outlined SVGs, an offline editor, three source-informed script cuts and seven comparison fonts, with source overlays and complete font provenance. Its separate page is under `public/stationery/grace-mccarthy/`. The historical font remains unverified, and the supplied coat of arms is explicitly labelled as a different engraving from the photograph.
+
 For future maintainers: [reconstruction workflow and lessons](docs/plate-reconstruction-workflow.md), [reusable reconstruction skill](skills/plate-reference-reconstruction/SKILL.md), and [repository handoff](AGENTS.md).
