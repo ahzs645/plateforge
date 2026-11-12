@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Grace McCarthy calling card · PlateForge</title>
+  <style>/*__EDITOR_CSS__*/</style>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="https://github.com/ahzs645/plateforge" target="_blank" rel="noreferrer">PlateForge <span>/ Archive</span></a>
+    <div class="top-actions"><button id="fontReview">Compare lettering</button><button id="downloadSvg" class="primary" disabled>Export SVG</button><button id="downloadPng" disabled>Export PNG</button></div>
+  </header>
+  <main>
+    <section class="workbench" aria-label="Card preview">
+      <div class="heading"><div><p class="eyebrow">BRITISH COLUMBIA · CALLING CARD</p><h1>Grace M. McCarthy</h1><p class="subheading">An editable reconstruction from your reference.</p></div><span class="status-tag">Source study</span></div>
+      <div class="preview-tools"><div class="segmented" aria-label="Comparison view"><button data-view="rebuilt" aria-pressed="true">Rebuilt</button><button data-view="source" aria-pressed="false">Source</button><button data-view="overlay" aria-pressed="false">Overlay</button><button data-view="side" aria-pressed="false">Side by side</button></div><label id="opacityControl" hidden>Source <input id="sourceOpacity" aria-label="Source overlay opacity" type="range" min="0" max="100" value="50"></label></div>
+      <div id="stage" class="stage" data-view="rebuilt" aria-busy="true">
+        <div id="cardFrame" class="card-frame"><img id="referenceImage" class="reference-image" alt="Perspective-adjusted source photograph of the Grace McCarthy calling card"><div id="cardMount"></div><div id="loading" role="status">Loading the included fonts…</div></div>
+        <figure id="sideSource"><img id="sideReference" alt="Source card for side-by-side comparison"><figcaption>Source photograph · perspective adjusted</figcaption></figure>
+      </div>
+      <div class="preview-caption"><span id="selectionHint">Select lettering or the arms to edit. Drag to position.</span><span>1800 × 1038 · source proportions</span></div>
+      <aside class="study-note"><span class="note-mark" aria-hidden="true">i</span><p><strong>A reconstruction with visible limits.</strong> The script is a candidate study, not an authenticated historical font. Your supplied coat of arms is a different engraving from the photograph; its original proportions are preserved. <button class="text-button" id="openEvidence">Read the evidence</button></p></aside>
+      <section class="downloads"><h2>Reference files</h2><div><button id="downloadOutlines">SVG with outlined lettering</button><button id="downloadFonts">Font files &amp; licences</button><button id="mobileFontReview">Compare lettering</button><button id="downloadProject">Save editable project</button><button id="importProject">Open project</button><input id="projectFile" type="file" accept="application/json,.json" hidden></div><p>The outline file preserves the reference wording. Export SVG above to keep your current text editable.</p></section>
+      <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+    </section>
+    <aside class="inspector" aria-label="Card editing controls">
+      <div class="inspector-heading"><h2>Edit the card</h2><button id="reset" class="text-button">Reset</button></div>
+      <div class="inspector-tabs" role="tablist" aria-label="Edit section"><button role="tab" id="tabText" data-tab="text" aria-controls="textPanel" aria-selected="true">Lettering</button><button role="tab" id="tabArms" data-tab="arms" aria-controls="armsPanel" aria-selected="false">Arms</button><button role="tab" id="tabCard" data-tab="card" aria-controls="cardPanel" aria-selected="false">Paper</button></div>
+      <section id="textPanel" role="tabpanel" aria-labelledby="tabText">
+        <label>Line<select id="lineSelect"></select></label>
+        <label>Wording<textarea id="lineText" rows="3" maxlength="180" spellcheck="false"></textarea></label>
+        <label>Typeface<select id="lineFont"></select></label><p id="fontStatus" class="field-note"></p>
+        <button id="applyFont" class="full-width secondary">Use this typeface for all lines</button>
+        <div class="field-pair"><label>Capital height <span class="unit">px</span><input id="lineSize" type="number" min="10" max="240" step="1"></label><label>Ink colour<input id="lineColor" type="color"></label></div>
+        <div class="field-pair"><label>Centre X <span class="unit">px</span><input id="lineX" type="number" min="-1800" max="3600" step="1"></label><label>Centre Y <span class="unit">px</span><input id="lineY" type="number" min="-1038" max="2076" step="1"></label></div>
+        <button id="fitWidth" class="full-width secondary">Fit the reference line width</button>
+        <p class="field-note">Fitting changes size uniformly and keeps the letters’ proportions.</p>
+        <div class="measurement"><span>Current ink bounds</span><strong id="lineBounds">—</strong></div>
+        <p id="glyphNotice" class="field-note"></p>
+      </section>
+      <section id="armsPanel" role="tabpanel" aria-labelledby="tabArms" hidden>
+        <p class="panel-intro">The vector you supplied is used intact, with its internal spaces and original proportions.</p>
+        <label class="checkbox"><input id="crestVisible" type="checkbox" checked> Show coat of arms</label>
+        <div class="field-pair"><label>Height <span class="unit">px</span><input id="crestHeight" type="number" min="25" max="600" step="1"></label><label>Ink colour<input id="crestColor" type="color"></label></div>
+        <div class="field-pair"><label>Centre X <span class="unit">px</span><input id="crestX" type="number" min="-1800" max="3600" step="1"></label><label>Centre Y <span class="unit">px</span><input id="crestY" type="number" min="-1038" max="2076" step="1"></label></div>
+        <div class="measurement"><span>Width at original proportions</span><strong id="crestWidth">—</strong></div>
+        <p class="field-note">The photograph shows a wider engraving with different supporters and ribbon tails. Enlarging this vector will not reproduce those differences.</p>
+      </section>
+      <section id="cardPanel" role="tabpanel" aria-labelledby="tabCard" hidden>
+        <label>Paper colour<input id="paperColor" type="color"></label>
+        <label class="checkbox"><input id="transparent" type="checkbox"> Transparent export background</label>
+        <label>PNG width <span class="unit">px</span><select id="pngWidth"><option value="1800">1800 · reference size</option><option value="3600" selected>3600 · high resolution</option><option value="5400">5400 · extra large</option></select></label>
+        <p class="field-note">The screenshot does not establish the original physical card size. The recreation follows its estimated proportions; no standard print size is assumed.</p>
+        <p class="field-note">The pale edge in the photograph appears to be the paper and its shadow. It has not been added as a printed border.</p>
+      </section>
+      <div class="inspector-footer"><span class="offline-dot"></span>Works offline. Edits stay in this page.<p>Save a project to keep changes after closing.</p></div>
+    </aside>
+  </main>
+  <dialog id="evidenceDialog" class="dialog"><div class="dialog-heading"><h2>Source &amp; reconstruction</h2><button data-close="evidenceDialog" aria-label="Close evidence">×</button></div><div class="dialog-body" id="evidenceBody"></div></dialog>
+  <dialog id="fontDialog" class="dialog font-dialog"><div class="dialog-heading"><h2>Lettering comparison</h2><button data-close="fontDialog" aria-label="Close font comparison">×</button></div><div class="dialog-body"><p>These comparisons retain each typeface’s natural proportions. Similarity does not establish the original font.</p><div id="fontComparison"></div><h3>Characters visible in the reference</h3><p id="observedCharacters" class="observed"></p><p>Additional characters in the supplied fonts remain inherited or constructed forms. This card does not document a complete historical alphabet.</p></div></dialog>
+  <script type="application/json" id="cardModel">/*__CARD_MODEL__*/</script>
+  <script type="application/json" id="cardAssets">/*__CARD_ASSETS__*/</script>
+  <script>/*__EDITOR_JS__*/</script>
+</body>
+</html>
